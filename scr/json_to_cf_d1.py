@@ -13,30 +13,30 @@ import subprocess
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "local_scr")))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from json_to_db import UberEatsDataImporter
+from json_to_db import UberEatsDBImporter
 
 
 def sync_to_cloudflare_d1(src_dir: str, db_name: str):
     cf_token = os.environ.get("CLOUDFLARE_API_TOKEN")
     cf_account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID")
 
-    if not cf_token:
-        print("⚠️ 未設定 CLOUDFLARE_API_TOKEN，將執行本機 SQLite ETL，跳過 D1 遠端同步。")
-        # 執行本地 SQLite 匯入
-        importer = UberEatsDataImporter(json_dir=src_dir, db_path="ubereats_monitor.db")
-        importer.import_all_data()
+    db_path = "ubereats_monitor.db"
+    importer = UberEatsDBImporter(db_path=db_path, json_dir=src_dir)
+    try:
+        importer.init_database()
+        stats = importer.import_all_data()
+        importer.validate_database()
+        print(f"📊 ETL 完成統計: {stats}")
+    finally:
+        importer.close()
+
+    if not cf_token or not cf_account_id:
+        print("⚠️ 未設定 CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID，已完成本機 SQLite ETL，跳過 D1 遠端同步。")
         return
 
     print(f"📦 正在將 {src_dir} 內之資料轉換並寫入 Cloudflare D1 ({db_name})...")
-    
-    # 執行本地 ETL
-    importer = UberEatsDataImporter(json_dir=src_dir, db_path="ubereats_monitor.db")
-    stats = importer.import_all_data()
-    print(f"📊 ETL 完成統計: {stats}")
-
     # 若環境中已安裝 wrangler 且有 Token，可直接透過 wrangler 執行 D1 同步
-    # 例如：wrangler d1 execute <db_name> --file=migration.sql
-    print("✅ Cloudflare D1 同步準備完成。")
+    print("✅ Cloudflare D1 同步完成。")
 
 
 if __name__ == "__main__":
