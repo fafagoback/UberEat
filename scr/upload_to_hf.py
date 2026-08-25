@@ -23,8 +23,7 @@ def load_env_file():
         os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env")),
         os.path.abspath(os.path.join(os.path.dirname(__file__), ".env")),
         os.path.abspath(os.path.join(os.getcwd(), ".env")),
-        "C:\\Users\\ET\\我的雲端硬碟\\作品\\有聲小說\\.env",
-        "C:\\Users\\ET\\我的雲端硬碟\\作品\\UberEat\\.env"
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env")
     ]
     for p in env_paths:
         if os.path.exists(p):
