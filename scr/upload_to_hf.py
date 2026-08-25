@@ -81,7 +81,7 @@ def upload_to_huggingface(src_dir: str, repo_id: str, path_in_repo: str = "Json"
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="上傳資料至 Hugging Face Datasets")
     parser.add_argument("--src-dir", default="JSON", help="原始 JSON 資料夾 (預設 JSON)")
-    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "fafagoback/UberEat"), help="Hugging Face Dataset Repo ID (例如 fafagoback/UberEat)")
+    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "hub-google/UberEat"), help="Hugging Face Dataset Repo ID (例如 hub-google/UberEat)")
     parser.add_argument("--path-in-repo", default="Json", help="Dataset 內部存放路徑 (預設 Json)")
     args = parser.parse_args()
 
