@@ -1,6 +1,13 @@
 /**
  * UberEats Radar - Cloudflare Worker API
  * 直接連線 Cloudflare D1 (Serverless SQL)，為線上前端提供 100% 即時動態查詢。
+ *
+ * v2.1 - 修正邏輯:
+ * - 大特價: 今日價格 vs 過去7天最高價比較
+ * - 新店家: 首次出現在 Uber Eats 平台 ≤ 7 天的店家
+ * - 老店新菜: 首次出現在 Uber Eats 平台 ≤ 7 天的商品 (所屬店家已存在 > 7 天)
+ * - 促銷篩選: 使用正向匹配 (quantity > 1 OR promo_type LIKE '%買%送%')
+ * - 全面過濾 price <= 0 的廣告/公告項目
  */
 
 export default {
@@ -25,7 +32,7 @@ export default {
     const corsHeaders = {
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json; charset=utf-8",
-      "Cache-Control": "public, max-age=60, s-maxage=300", // 快取 1~5 分鐘提升極速體驗
+      "Cache-Control": "public, max-age=60, s-maxage=300",
     };
 
     const jsonResponse = (data, status = 200) => {
@@ -55,6 +62,22 @@ export default {
       const latestBatch = batches[0] || "";
       const prevBatch = batches[1] || "";
 
+      // 計算 7 天前的時間戳記 (台灣時間 UTC+8 格式 YYYYMMDDhhmmss)
+      const now = new Date();
+      const twNow = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+      const sevenDaysAgo = new Date(twNow.getTime() - 7 * 24 * 60 * 60 * 1000);
+      const sevenDaysAgoStr = [
+        sevenDaysAgo.getUTCFullYear(),
+        String(sevenDaysAgo.getUTCMonth() + 1).padStart(2, '0'),
+        String(sevenDaysAgo.getUTCDate()).padStart(2, '0'),
+        String(sevenDaysAgo.getUTCHours()).padStart(2, '0'),
+        String(sevenDaysAgo.getUTCMinutes()).padStart(2, '0'),
+        String(sevenDaysAgo.getUTCSeconds()).padStart(2, '0'),
+      ].join('');
+
+      // 正向匹配促銷條件 SQL 片段
+      const PROMO_CONDITION = "(p.quantity > 1 OR p.promo_type LIKE '%買%送%')";
+
       // -------------------------------------------------------------
       // 1. GET /api/stats (系統概覽統計)
       // -------------------------------------------------------------
@@ -72,17 +95,75 @@ export default {
           });
         }
 
-        const [storeRes, prodRes, alertRes, promoRes] = await Promise.all([
+        // 直接查詢計算各項統計，與顯示邏輯一致
+        const [storeRes, prodRes, promoRes, newStoreRes, newProdRes] = await Promise.all([
           env.DB.prepare("SELECT COUNT(DISTINCT store_id) as cnt FROM stores WHERE crawled_time = ?").bind(latestBatch).first(),
           env.DB.prepare("SELECT COUNT(*) as cnt FROM products WHERE crawled_time = ? AND price > 0").bind(latestBatch).first(),
-          env.DB.prepare("SELECT alert_type, COUNT(*) as cnt FROM alerts_history WHERE crawled_time = ? GROUP BY alert_type").bind(latestBatch).all(),
-          env.DB.prepare("SELECT COUNT(*) as cnt FROM products WHERE crawled_time = ? AND (quantity > 1 OR (promo_type != '無' AND promo_type != '' AND promo_type IS NOT NULL)) AND price > 0").bind(latestBatch).first(),
+          env.DB.prepare(`SELECT COUNT(*) as cnt FROM products p WHERE p.crawled_time = ? AND p.price > 0 AND ${PROMO_CONDITION}`).bind(latestBatch).first(),
+          // 新店家: 首次出現 >= 7天前
+          env.DB.prepare(`
+            SELECT COUNT(DISTINCT s1.store_id) as cnt FROM stores s1
+            WHERE s1.crawled_time = ?
+              AND (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = s1.store_id) >= ?
+          `).bind(latestBatch, sevenDaysAgoStr).first(),
+          // 新菜品: 首次出現 >= 7天前 且所屬店家首次出現 < 7天前
+          env.DB.prepare(`
+            SELECT COUNT(*) as cnt FROM products p1
+            WHERE p1.crawled_time = ?
+              AND p1.price > 0
+              AND (SELECT MIN(p0.crawled_time) FROM products p0 WHERE p0.product_id = p1.product_id) >= ?
+              AND (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = p1.store_id) < ?
+          `).bind(latestBatch, sevenDaysAgoStr, sevenDaysAgoStr).first(),
         ]);
 
-        const alertCounts = {};
-        for (const row of alertRes.results || []) {
-          alertCounts[row.alert_type] = row.cnt;
-        }
+        // 大特價計數: 今日價 vs 過去7天最高價
+        const discountCountQuery = `
+          SELECT COUNT(*) as cnt FROM (
+            SELECT
+              p1.product_id,
+              ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff,
+              (
+                SELECT MAX(p0.price * 1.0 / p0.quantity)
+                FROM products p0
+                WHERE p0.product_id = p1.product_id
+                  AND p0.crawled_time >= ?
+                  AND p0.crawled_time < p1.crawled_time
+                  AND p0.price > 0
+              ) as max_7d_eff
+            FROM products p1
+            WHERE p1.crawled_time = ?
+              AND p1.price > 0
+          ) sub
+          WHERE sub.max_7d_eff IS NOT NULL
+            AND sub.max_7d_eff > 0
+            AND ((sub.max_7d_eff - sub.curr_eff) / sub.max_7d_eff * 100.0) >= 30.0
+            AND (sub.max_7d_eff - sub.curr_eff) >= 20.0
+        `;
+        const discountCountRes = await env.DB.prepare(discountCountQuery).bind(sevenDaysAgoStr, latestBatch).first();
+
+        // 找最大現省金額
+        const maxSavingsQuery = `
+          SELECT MAX(sub.max_7d_eff - sub.curr_eff) as max_savings FROM (
+            SELECT
+              ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff,
+              (
+                SELECT MAX(p0.price * 1.0 / p0.quantity)
+                FROM products p0
+                WHERE p0.product_id = p1.product_id
+                  AND p0.crawled_time >= ?
+                  AND p0.crawled_time < p1.crawled_time
+                  AND p0.price > 0
+              ) as max_7d_eff
+            FROM products p1
+            WHERE p1.crawled_time = ?
+              AND p1.price > 0
+          ) sub
+          WHERE sub.max_7d_eff IS NOT NULL
+            AND sub.max_7d_eff > 0
+            AND ((sub.max_7d_eff - sub.curr_eff) / sub.max_7d_eff * 100.0) >= 30.0
+            AND (sub.max_7d_eff - sub.curr_eff) >= 20.0
+        `;
+        const maxSavingsRes = await env.DB.prepare(maxSavingsQuery).bind(sevenDaysAgoStr, latestBatch).first();
 
         let dateFmt = "";
         if (latestBatch.length === 14) {
@@ -97,15 +178,17 @@ export default {
           batches: batches,
           total_stores: storeRes?.cnt || 0,
           total_products: prodRes?.cnt || 0,
-          big_discounts_count: alertCounts["BIG_DISCOUNT"] || 0,
-          new_stores_count: alertCounts["NEW_STORE"] || 0,
-          new_products_count: alertCounts["NEW_PRODUCT"] || 0,
+          big_discounts_count: discountCountRes?.cnt || 0,
+          new_stores_count: newStoreRes?.cnt || 0,
+          new_products_count: newProdRes?.cnt || 0,
           promotions_count: promoRes?.cnt || 0,
+          max_savings_twd: Math.round(maxSavingsRes?.max_savings || 0),
         });
       }
 
       // -------------------------------------------------------------
       // 2. GET /api/discounts (大特價即時篩選)
+      //    邏輯: 今日實質單價 vs 過去 7 天內該商品最高實質單價
       // -------------------------------------------------------------
       if (path === "/api/discounts") {
         const minDiscount = parseFloat(params.get("min_discount") || "30.0");
@@ -114,7 +197,7 @@ export default {
         const category = (params.get("category") || "").trim();
         const sortBy = params.get("sort") || "discount_desc";
 
-        if (!prevBatch || !latestBatch) {
+        if (!latestBatch) {
           return jsonResponse({ status: "success", total: 0, items: [] });
         }
 
@@ -126,37 +209,41 @@ export default {
             p1.product_name,
             p1.category_name,
             p1.description,
-            ROUND(p0.price * 1.0 / p0.quantity, 2) as prev_eff_price,
-            ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff_price,
-            p0.price as prev_raw_price,
             p1.price as curr_raw_price,
-            p0.quantity as prev_qty,
             p1.quantity as curr_qty,
             p1.promo_type,
+            ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff_price,
+            (
+              SELECT MAX(p0.price * 1.0 / p0.quantity)
+              FROM products p0
+              WHERE p0.product_id = p1.product_id
+                AND p0.crawled_time >= ?
+                AND p0.crawled_time < p1.crawled_time
+                AND p0.price > 0
+            ) as max_7day_eff_price,
             COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             s.review_count,
             s.locality,
             s.street_address
           FROM products p1
-          JOIN products p0 ON p1.product_id = p0.product_id AND p1.store_id = p0.store_id
           LEFT JOIN stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
-          WHERE p0.crawled_time = ?
-            AND p1.crawled_time = ?
-            AND p0.price > 0
+          WHERE p1.crawled_time = ?
             AND p1.price > 0
         `;
 
-        const res = await env.DB.prepare(query).bind(prevBatch, latestBatch).all();
+        const res = await env.DB.prepare(query).bind(sevenDaysAgoStr, latestBatch).all();
         let items = [];
 
         for (const r of res.results || []) {
-          const prevEff = Number(r.prev_eff_price);
           const currEff = Number(r.curr_eff_price);
-          if (prevEff <= 0) continue;
+          const maxEff = r.max_7day_eff_price !== null ? Number(r.max_7day_eff_price) : null;
 
-          const savings = prevEff - currEff;
-          const dropPct = (savings / prevEff) * 100.0;
+          // 跳過無歷史比較資料的商品
+          if (maxEff === null || maxEff <= 0) continue;
+
+          const savings = maxEff - currEff;
+          const dropPct = (savings / maxEff) * 100.0;
 
           if (dropPct >= minDiscount && savings >= minSavings) {
             const pName = r.product_name || "";
@@ -177,11 +264,11 @@ export default {
               product_name: pName,
               category_name: catName,
               description: r.description || "",
-              original_price: prevEff,
+              original_price: maxEff,
               current_price: currEff,
-              prev_raw_price: Number(r.prev_raw_price),
+              prev_raw_price: maxEff,
               curr_raw_price: Number(r.curr_raw_price),
-              prev_qty: Number(r.prev_qty),
+              prev_qty: 1,
               curr_qty: Number(r.curr_qty),
               discount_pct: Math.round(dropPct * 10) / 10,
               savings_amount: Math.round(savings * 10) / 10,
@@ -210,7 +297,7 @@ export default {
       }
 
       // -------------------------------------------------------------
-      // 3. GET /api/new-stores (全新店家)
+      // 3. GET /api/new-stores (新店家: 首次出現 ≤ 7 天)
       // -------------------------------------------------------------
       if (path === "/api/new-stores") {
         const query = `
@@ -233,17 +320,14 @@ export default {
               SELECT GROUP_CONCAT(cuisine_name, '、')
               FROM store_cuisines sc
               WHERE sc.store_id = s1.store_id AND sc.crawled_time = s1.crawled_time
-            ) as cuisines
+            ) as cuisines,
+            (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = s1.store_id) as first_seen
           FROM stores s1
           WHERE s1.crawled_time = ?
-            AND s1.store_id NOT IN (
-              SELECT DISTINCT s0.store_id
-              FROM stores s0
-              WHERE s0.crawled_time < ?
-            )
+            AND (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = s1.store_id) >= ?
           ORDER BY s1.rating_value DESC, s1.total_menu_items DESC;
         `;
-        const res = await env.DB.prepare(query).bind(latestBatch, latestBatch).all();
+        const res = await env.DB.prepare(query).bind(latestBatch, sevenDaysAgoStr).all();
         const items = (res.results || []).map((d) => ({
           ...d,
           store_url: (d.store_url || "").replace(/&amp;/g, "&"),
@@ -253,7 +337,7 @@ export default {
       }
 
       // -------------------------------------------------------------
-      // 4. GET /api/new-products (老店新品)
+      // 4. GET /api/new-products (老店新菜: 商品首次出現 ≤ 7 天，店家已存在 > 7 天)
       // -------------------------------------------------------------
       if (path === "/api/new-products") {
         const query = `
@@ -270,24 +354,17 @@ export default {
             p1.quantity,
             ROUND(p1.price * 1.0 / p1.quantity, 2) as eff_price,
             COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
-            s.rating_value
+            s.rating_value,
+            (SELECT MIN(p0.crawled_time) FROM products p0 WHERE p0.product_id = p1.product_id) as product_first_seen
           FROM products p1
           JOIN stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
           WHERE p1.crawled_time = ?
             AND p1.price > 0
-            AND p1.product_id NOT IN (
-              SELECT DISTINCT p0.product_id
-              FROM products p0
-              WHERE p0.crawled_time < ?
-            )
-            AND p1.store_id IN (
-              SELECT DISTINCT s0.store_id
-              FROM stores s0
-              WHERE s0.crawled_time < ?
-            )
+            AND (SELECT MIN(p0.crawled_time) FROM products p0 WHERE p0.product_id = p1.product_id) >= ?
+            AND (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = p1.store_id) < ?
           ORDER BY p1.store_name, (p1.price * 1.0 / p1.quantity) DESC;
         `;
-        const res = await env.DB.prepare(query).bind(latestBatch, latestBatch, latestBatch).all();
+        const res = await env.DB.prepare(query).bind(latestBatch, sevenDaysAgoStr, sevenDaysAgoStr).all();
         const items = (res.results || []).map((d) => ({
           ...d,
           order_action_url: (d.order_action_url || "").replace(/&amp;/g, "&"),
@@ -297,6 +374,7 @@ export default {
 
       // -------------------------------------------------------------
       // 5. GET /api/promotions (買一送一與促銷特惠專區)
+      //    正向匹配: quantity > 1 OR promo_type LIKE '%買%送%'
       // -------------------------------------------------------------
       if (path === "/api/promotions") {
         const query = `
@@ -317,7 +395,7 @@ export default {
           FROM products p
           LEFT JOIN stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
           WHERE p.crawled_time = ?
-            AND (p.quantity > 1 OR (p.promo_type != '無' AND p.promo_type != '' AND p.promo_type IS NOT NULL))
+            AND ${PROMO_CONDITION}
             AND p.price > 0
           ORDER BY (CASE WHEN p.quantity > 1 THEN 0 ELSE 1 END) ASC, (p.price * 1.0 / p.quantity) ASC;
         `;
@@ -369,10 +447,13 @@ export default {
 
         let sortClause = "ORDER BY s.rating_value DESC, (p.price * 1.0 / p.quantity) ASC";
         if (sortBy === "promo_only") {
-          sqlWhere.push("((p.quantity > 1) OR (p.promo_type != '無' AND p.promo_type != '' AND p.promo_type IS NOT NULL))");
+          // 僅顯示促銷: 正向匹配過濾 + 排序
+          sqlWhere.push("(p.quantity > 1 OR p.promo_type LIKE '%買%送%')");
           sortClause = "ORDER BY (CASE WHEN p.quantity > 1 THEN 0 ELSE 1 END) ASC, (p.price * 1.0 / p.quantity) ASC, s.rating_value DESC";
         } else if (sortBy === "promo_first") {
-          sortClause = "ORDER BY (CASE WHEN (p.quantity > 1 OR (p.promo_type != '無' AND p.promo_type != '' AND p.promo_type IS NOT NULL)) THEN 0 ELSE 1 END) ASC, (p.price * 1.0 / p.quantity) ASC, s.rating_value DESC";
+          // 優惠優先: 也使用正向匹配過濾，只顯示有促銷的商品
+          sqlWhere.push("(p.quantity > 1 OR p.promo_type LIKE '%買%送%')");
+          sortClause = "ORDER BY (CASE WHEN p.quantity > 1 THEN 0 ELSE 1 END) ASC, (p.price * 1.0 / p.quantity) ASC, s.rating_value DESC";
         } else if (sortBy === "price_asc") {
           sortClause = "ORDER BY (p.price * 1.0 / p.quantity) ASC";
         } else if (sortBy === "price_desc") {

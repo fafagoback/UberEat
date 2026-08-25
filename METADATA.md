@@ -4,7 +4,7 @@
 > **資料庫檔案名稱**：`ubereats_monitor.db`  
 > **資料庫引擎**：SQLite 3 (啟用 `WAL` 模式與 `PRAGMA foreign_keys = ON;`)  
 > **核心設計架構**：以全域統一時間戳記（**`crawled_time`** = `YYYYMMDDhhmmss`）驅動之不可變時序快照架構 (Immutable Time-Series Snapshots)  
-> **文件版本**：v2.0 (包含 6 大實體資料表、完整欄位定義與商業情報指標)
+> **文件版本**：v2.1 (包含 6 大實體資料表、完整欄位定義與商業情報指標；v2.1 修正大特價/新店家/新菜品判定標準為 7 日滑動視窗，新增促銷正向匹配規則)
 
 ---
 
@@ -278,17 +278,28 @@ $$\text{實質單價 (Effective Unit Price)} = \frac{\text{平台標價 (price)}
 - **買 1 送 1**：標價 \$200，`quantity = 2` $\rightarrow$ 實質單價 = \$100。
 
 ### 5.2 大特價 (Big Discount) 判定標準
-當前次批次（$T_{prev}$）與本次批次（$T_{curr}$）比對時，滿足以下條件即觸發 `BIG_DISCOUNT` 警報：
+以該商品「今日批次實質單價」與「過去 7 天內所有批次中該商品最高實質單價」進行比對，滿足以下條件即觸發 `BIG_DISCOUNT` 警報：
+
+設 $P_{max7d}$ 為過去 7 天內該商品最高實質單價，$P_{curr}$ 為今日實質單價：
+
 1. **降價幅度 (Discount Percentage)**：
-   $$\text{discount\_pct} = \frac{\text{prev\_eff\_price} - \text{curr\_eff\_price}}{\text{prev\_eff\_price}} \times 100\% \ge 30.0\%$$
+   $$\text{discount\_pct} = \frac{P_{max7d} - P_{curr}}{P_{max7d}} \times 100\% \ge 30.0\%$$
 2. **現省金額 (Savings Amount)**：
-   $$\text{savings\_amount} = \text{prev\_eff\_price} - \text{curr\_eff\_price} \ge \$20.0\text{ 元}$$
+   $$\text{savings\_amount} = P_{max7d} - P_{curr} \ge \$20.0\text{ 元}$$
 
 ### 5.3 全新進駐店家 (New Store) 判定標準
-$$\text{store\_id} \in \text{Stores}(T_{curr}) \quad \text{AND} \quad \text{store\_id} \notin \text{Stores}(T < T_{curr})$$
+設 $T_{7d}$ 為 7 天前的時間戳記。店家首次出現於平台的時間在 7 天以內，即判定為全新進駐店家：
+$$\min_{T}(\text{store\_id} \in \text{Stores}(T)) \ge T_{7d}$$
 
 ### 5.4 老店新上架菜色 (New Product) 判定標準
-$$\text{product\_id} \in \text{Products}(T_{curr}) \quad \text{AND} \quad \text{product\_id} \notin \text{Products}(T < T_{curr}) \quad \text{AND} \quad \text{store\_id} \in \text{Stores}(T < T_{curr})$$
+設 $T_{7d}$ 為 7 天前的時間戳記。商品首次出現於平台的時間在 7 天以內，且所屬店家已存在超過 7 天（老店），即判定為老店新菜：
+$$\min_{T}(\text{product\_id} \in \text{Products}(T)) \ge T_{7d} \quad \text{AND} \quad \min_{T}(\text{store\_id} \in \text{Stores}(T)) < T_{7d}$$
+
+### 5.5 促銷活動篩選 (Promotion Filtering) 判定標準
+促銷活動商品採正向匹配策略，僅識別以下情況為有效促銷：
+1. **多件組合**：`quantity > 1`（買1送1、買2送1等）
+2. **促銷標籤匹配**：`promo_type` 包含「買…送…」關鍵字
+$$\text{is\_promo} = (\text{quantity} > 1) \quad \text{OR} \quad (\text{promo\_type} \text{ LIKE } '\%買\%送\%')$$
 
 ---
 

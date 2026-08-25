@@ -143,6 +143,7 @@ function renderDiscounts() {
   if (!APP_STATE.isServerMode) {
     const { discountMinPct, discountMinSavings, discountSort, discountCategory, discountSearch } = APP_STATE.filters;
     items = items.filter(item => {
+      if (!item.current_price || item.current_price <= 0) return false;
       if (item.discount_pct < discountMinPct) return false;
       if (item.savings_amount < discountMinSavings) return false;
       if (discountCategory !== '全部' && !item.category_name.includes(discountCategory)) return false;
@@ -448,7 +449,7 @@ async function fetchPromotions() {
 function renderPromotions() {
   const container = document.getElementById('promos-grid');
   // 嚴格過濾非商品廣告與 price <= 0 之項目
-  const items = APP_STATE.promotions.filter(p => p.price > 0);
+  const items = APP_STATE.promotions.filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type.includes('送'))));
 
   document.getElementById('promos-counter').textContent = `${items.length} 筆特惠`;
 
