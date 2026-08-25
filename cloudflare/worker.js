@@ -76,7 +76,7 @@ export default {
           env.DB.prepare("SELECT COUNT(DISTINCT store_id) as cnt FROM stores WHERE crawled_time = ?").bind(latestBatch).first(),
           env.DB.prepare("SELECT COUNT(*) as cnt FROM products WHERE crawled_time = ? AND price > 0").bind(latestBatch).first(),
           env.DB.prepare("SELECT alert_type, COUNT(*) as cnt FROM alerts_history WHERE crawled_time = ? GROUP BY alert_type").bind(latestBatch).all(),
-          env.DB.prepare("SELECT COUNT(*) as cnt FROM products WHERE crawled_time = ? AND quantity > 1 AND price > 0").bind(latestBatch).first(),
+          env.DB.prepare("SELECT COUNT(*) as cnt FROM products WHERE crawled_time = ? AND (quantity > 1 OR (promo_type != '無' AND promo_type != '' AND promo_type IS NOT NULL)) AND price > 0").bind(latestBatch).first(),
         ]);
 
         const alertCounts = {};
@@ -133,7 +133,7 @@ export default {
             p0.quantity as prev_qty,
             p1.quantity as curr_qty,
             p1.promo_type,
-            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
+            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             s.review_count,
             s.locality,
@@ -269,7 +269,7 @@ export default {
             p1.promo_type,
             p1.quantity,
             ROUND(p1.price * 1.0 / p1.quantity, 2) as eff_price,
-            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
+            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
             s.rating_value
           FROM products p1
           JOIN stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
@@ -285,7 +285,7 @@ export default {
               FROM stores s0
               WHERE s0.crawled_time < ?
             )
-          ORDER BY p1.store_name, p1.price DESC;
+          ORDER BY p1.store_name, (p1.price * 1.0 / p1.quantity) DESC;
         `;
         const res = await env.DB.prepare(query).bind(latestBatch, latestBatch, latestBatch).all();
         const items = (res.results || []).map((d) => ({
@@ -296,7 +296,7 @@ export default {
       }
 
       // -------------------------------------------------------------
-      // 5. GET /api/promotions (買一送一專區)
+      // 5. GET /api/promotions (買一送一與促銷特惠專區)
       // -------------------------------------------------------------
       if (path === "/api/promotions") {
         const query = `
@@ -311,15 +311,15 @@ export default {
             p.promo_type,
             ROUND(p.price * 1.0 / p.quantity, 2) as eff_price,
             p.description,
-            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
+            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             s.locality
           FROM products p
           LEFT JOIN stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
           WHERE p.crawled_time = ?
-            AND p.quantity > 1
+            AND (p.quantity > 1 OR (p.promo_type != '無' AND p.promo_type != '' AND p.promo_type IS NOT NULL))
             AND p.price > 0
-          ORDER BY p.promo_type DESC, (p.price * 1.0 / p.quantity) ASC;
+          ORDER BY (CASE WHEN p.quantity > 1 THEN 0 ELSE 1 END) ASC, (p.price * 1.0 / p.quantity) ASC;
         `;
         const res = await env.DB.prepare(query).bind(latestBatch).all();
         const items = (res.results || []).map((d) => ({
@@ -359,12 +359,28 @@ export default {
           sqlParams.push(storeId);
         }
         if (minPrice > 0) {
-          sqlWhere.push("p.price >= ?");
+          sqlWhere.push("(p.price * 1.0 / p.quantity) >= ?");
           sqlParams.push(minPrice);
         }
         if (maxPrice < 99999) {
-          sqlWhere.push("p.price <= ?");
+          sqlWhere.push("(p.price * 1.0 / p.quantity) <= ?");
           sqlParams.push(maxPrice);
+        }
+
+        let sortClause = "ORDER BY s.rating_value DESC, (p.price * 1.0 / p.quantity) ASC";
+        if (sortBy === "promo_only") {
+          sqlWhere.push("((p.quantity > 1) OR (p.promo_type != '無' AND p.promo_type != '' AND p.promo_type IS NOT NULL))");
+          sortClause = "ORDER BY (CASE WHEN p.quantity > 1 THEN 0 ELSE 1 END) ASC, (p.price * 1.0 / p.quantity) ASC, s.rating_value DESC";
+        } else if (sortBy === "promo_first") {
+          sortClause = "ORDER BY (CASE WHEN (p.quantity > 1 OR (p.promo_type != '無' AND p.promo_type != '' AND p.promo_type IS NOT NULL)) THEN 0 ELSE 1 END) ASC, (p.price * 1.0 / p.quantity) ASC, s.rating_value DESC";
+        } else if (sortBy === "price_asc") {
+          sortClause = "ORDER BY (p.price * 1.0 / p.quantity) ASC";
+        } else if (sortBy === "price_desc") {
+          sortClause = "ORDER BY (p.price * 1.0 / p.quantity) DESC";
+        } else if (sortBy === "name_asc") {
+          sortClause = "ORDER BY p.product_name ASC";
+        } else if (sortBy === "rating_desc") {
+          sortClause = "ORDER BY s.rating_value DESC, (p.price * 1.0 / p.quantity) ASC";
         }
 
         const whereClause = " WHERE " + sqlWhere.join(" AND ");
@@ -373,11 +389,6 @@ export default {
         const countQuery = `SELECT COUNT(*) as total FROM products p ${whereClause}`;
         const countRes = await env.DB.prepare(countQuery).bind(...sqlParams).first();
         const total = countRes?.total || 0;
-
-        let sortClause = "ORDER BY s.rating_value DESC, p.price ASC";
-        if (sortBy === "price_asc") sortClause = "ORDER BY p.price ASC";
-        if (sortBy === "price_desc") sortClause = "ORDER BY p.price DESC";
-        if (sortBy === "name_asc") sortClause = "ORDER BY p.product_name ASC";
 
         const offset = (page - 1) * limit;
         const dataQuery = `
@@ -392,7 +403,7 @@ export default {
             p.promo_type,
             ROUND(p.price * 1.0 / p.quantity, 2) as eff_price,
             p.description,
-            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
+            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             s.review_count,
             s.locality

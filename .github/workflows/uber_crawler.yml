@@ -2,8 +2,8 @@ name: Uber Crawler
 
 on:
   schedule:
-    # 每天早上 08:00 與晚上 18:00 (UTC+8 即 00:00 & 10:00 UTC) 自動執行
-    - cron: '0 0,10 * * *'
+    # 每天台灣時間 早上 06:00、早上 11:00、下午 17:00 (UTC 22:00 (前一日), 03:00, 09:00) 自動執行三次
+    - cron: '0 22,3,9 * * *'
   workflow_dispatch:
     inputs:
       address:

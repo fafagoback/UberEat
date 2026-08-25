@@ -248,7 +248,7 @@ function renderDiscounts() {
               價格走勢
             </button>
 
-            <a href="${orderUrl}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(orderUrl)}', '${escapeJs(item.product_name)}')" class="px-3 py-2 text-xs font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white shadow-md shadow-emerald-600/20 transition-all flex items-center justify-center gap-1.5 active:scale-95">
+            <a href="${orderUrl}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(orderUrl)}', '${escapeJs(item.product_name)}', '${escapeJs(item.store_name)}')" class="px-3 py-2 text-xs font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white shadow-md shadow-emerald-600/20 transition-all flex items-center justify-center gap-1.5 active:scale-95">
               <span>前往下單</span>
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
@@ -330,7 +330,7 @@ function renderNewStores() {
             菜單共 <strong>${store.total_menu_items || 0}</strong> 道菜品
           </span>
 
-          <a href="${store.order_action_url || store.store_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(store.order_action_url || store.store_url || '')}', '')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-300 dark:hover:bg-emerald-900 transition-colors">
+          <a href="${store.order_action_url || store.store_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(store.order_action_url || store.store_url || '')}', '', '${escapeJs(store.store_name)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-300 dark:hover:bg-emerald-900 transition-colors">
             <span>瀏覽店家</span>
             <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
           </a>
@@ -416,7 +416,7 @@ function renderNewProducts() {
         </div>
 
         <div class="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-end">
-          <a href="${prod.order_action_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(prod.order_action_url || '')}', '${escapeJs(prod.product_name)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-600/20 transition-all active:scale-95">
+          <a href="${prod.order_action_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(prod.order_action_url || '')}', '${escapeJs(prod.product_name)}', '${escapeJs(prod.store_name)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-600/20 transition-all active:scale-95">
             <span>前往點餐</span>
             <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
           </a>
@@ -453,12 +453,16 @@ function renderPromotions() {
   document.getElementById('promos-counter').textContent = `${items.length} 筆特惠`;
 
   if (items.length === 0) {
-    container.innerHTML = '<div class="col-span-3 py-12 text-center text-slate-400">目前沒有買一送一活動</div>';
+    container.innerHTML = '<div class="col-span-3 py-12 text-center text-slate-400">目前沒有促銷活動</div>';
     return;
   }
 
   container.innerHTML = items.map(p => {
-    const discountPct = (p.price > 0 && p.eff_price > 0) ? Math.max(0, Math.round((1 - p.eff_price / p.price) * 100)) : 50;
+    const eff = (p.eff_price !== undefined && p.eff_price !== null && !isNaN(p.eff_price))
+      ? Number(p.eff_price)
+      : (p.quantity > 1 ? (p.price / p.quantity) : p.price);
+    const discountPct = (p.price > 0 && eff > 0) ? Math.max(0, Math.round((1 - eff / p.price) * 100)) : 50;
+    
     return `
       <div class="radar-card bg-white dark:bg-slate-900 rounded-2xl p-5 border border-purple-100 dark:border-purple-950/60 shadow-sm flex flex-col justify-between group">
         <div>
@@ -483,17 +487,19 @@ function renderPromotions() {
         <div class="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800">
           <div class="flex items-baseline justify-between mb-3">
             <div>
-              <div class="text-xs text-slate-400">標價 $${Math.round(p.price)} (共 ${p.quantity} 份)</div>
+              <div class="text-xs text-slate-400">標價 $${Math.round(p.price)}${p.quantity > 1 ? ` (共 ${p.quantity} 份)` : ''}</div>
               <div class="text-xl font-black text-purple-600 dark:text-purple-400 font-mono">
-                單份約 $${Math.round(p.eff_price)}
+                實質單價 $${Math.round(eff)}
               </div>
             </div>
-            <span class="text-xs font-semibold px-2 py-1 rounded-lg bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300">
-              折合 ${discountPct}% OFF
-            </span>
+            ${discountPct > 0 ? `
+              <span class="text-xs font-semibold px-2 py-1 rounded-lg bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300">
+                折合 ${discountPct}% OFF
+              </span>
+            ` : ''}
           </div>
 
-          <a href="${p.order_action_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(p.order_action_url || '')}', '${escapeJs(p.product_name)}')" class="w-full py-2 rounded-xl text-xs font-semibold bg-purple-600 hover:bg-purple-700 text-white shadow-md shadow-purple-600/20 transition-all flex items-center justify-center gap-1.5 active:scale-95">
+          <a href="${p.order_action_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(p.order_action_url || '')}', '${escapeJs(p.product_name)}', '${escapeJs(p.store_name)}')" class="w-full py-2 rounded-xl text-xs font-semibold bg-purple-600 hover:bg-purple-700 text-white shadow-md shadow-purple-600/20 transition-all flex items-center justify-center gap-1.5 active:scale-95">
             <span>前往搶購</span>
             <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
           </a>
@@ -556,42 +562,49 @@ function renderGlobalProducts() {
     return `
       <div class="radar-card bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between group">
         <div>
-          <div class="flex items-center justify-between text-xs text-slate-500 mb-1.5">
-            <span class="truncate max-w-[140px]" title="${escapeHtml(p.store_name)}">${escapeHtml(p.store_name)}</span>
-            <div class="flex items-center gap-1.5 shrink-0">
-              ${hasPromo ? `
-                <span class="inline-flex items-center gap-0.5 text-[11px] font-bold px-1.5 py-0.5 rounded bg-purple-50 text-purple-700 dark:bg-purple-950/80 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
-                  <i data-lucide="gift" class="w-3 h-3"></i>${escapeHtml(p.promo_type)}
-                </span>
-              ` : ''}
-              <div class="text-right flex items-baseline gap-0.5">
-                <span class="font-bold text-slate-800 dark:text-slate-200 font-mono text-sm">
-                  $${displayUnitPrice}
-                </span>
-                ${hasQtyPromo ? `<span class="text-[10px] text-slate-400 dark:text-slate-500">/件</span>` : ''}
-              </div>
+          <!-- 頂部：店家名稱 & 實質單價 -->
+          <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1.5 gap-2">
+            <div class="flex items-center gap-1.5 truncate min-w-0" title="${escapeHtml(p.store_name)}">
+              <i data-lucide="store" class="w-3.5 h-3.5 shrink-0 text-slate-400"></i>
+              <span class="truncate font-medium">${escapeHtml(p.store_name)}</span>
+            </div>
+            <div class="text-right shrink-0 flex items-baseline gap-0.5">
+              <span class="font-bold text-slate-900 dark:text-white font-mono text-base ${hasQtyPromo ? 'text-purple-600 dark:text-purple-400' : ''}">
+                $${displayUnitPrice}
+              </span>
+              ${hasQtyPromo ? `<span class="text-[11px] font-semibold text-purple-600 dark:text-purple-400">/件</span>` : ''}
             </div>
           </div>
-          <h4 class="text-sm font-bold text-slate-900 dark:text-white line-clamp-1 group-hover:text-emerald-600 transition-colors" title="${escapeHtml(p.product_name)}">
+
+          <!-- 商品名稱 -->
+          <h4 class="text-sm font-bold text-slate-900 dark:text-white line-clamp-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors mb-2" title="${escapeHtml(p.product_name)}">
             ${escapeHtml(p.product_name)}
           </h4>
-          <div class="flex items-center gap-1.5 mt-1.5 flex-wrap">
-            <span class="inline-block text-[11px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">
+
+          <!-- 活動與分類標籤 -->
+          <div class="flex items-center gap-1.5 flex-wrap text-xs">
+            ${hasPromo ? `
+              <span class="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 dark:bg-purple-950/80 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
+                <i data-lucide="gift" class="w-3 h-3"></i>${escapeHtml(p.promo_type)}
+              </span>
+            ` : ''}
+            <span class="inline-block text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
               ${escapeHtml(p.category_name || '一般')}
             </span>
             ${hasQtyPromo ? `
-              <span class="text-[11px] text-slate-400 dark:text-slate-500">
+              <span class="text-[11px] text-slate-400 dark:text-slate-500 font-mono">
                 (整份標價 $${Math.round(p.price)} 共 ${p.quantity} 件)
               </span>
             ` : ''}
           </div>
         </div>
 
-        <div class="pt-3 mt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+        <!-- 底部按鈕：走勢 & 直達 Uber Eats 下單 -->
+        <div class="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
           <button onclick="showPriceHistoryModal('${p.product_id}', '${escapeJs(p.product_name)}', '${escapeJs(p.store_name)}', '${escapeJs(p.order_action_url || '')}')" class="text-xs text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-1">
             <i data-lucide="line-chart" class="w-3.5 h-3.5"></i>走勢
           </button>
-          <a href="${p.order_action_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(p.order_action_url || '')}', '${escapeJs(p.product_name)}')" class="text-xs text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1">
+          <a href="${p.order_action_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(p.order_action_url || '')}', '${escapeJs(p.product_name)}', '${escapeJs(p.store_name)}')" class="text-xs text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1 active:scale-95 transition-transform">
             下單 <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
           </a>
         </div>
@@ -636,7 +649,7 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
   const orderBtn = document.getElementById('modal-order-btn');
   if (orderBtn) {
     orderBtn.href = orderUrl || '#';
-    orderBtn.onclick = (e) => openUberEatsOrder(e, orderUrl, productName);
+    orderBtn.onclick = (e) => openUberEatsOrder(e, orderUrl, productName, storeName);
   }
 
   modal.classList.remove('hidden');
@@ -890,18 +903,23 @@ function escapeJs(str) {
 // -----------------------------------------------------------------------------
 // 11. Uber Eats 智慧下單跳轉與剪貼簿輔助
 // -----------------------------------------------------------------------------
-async function openUberEatsOrder(event, url, productName = '') {
+async function openUberEatsOrder(event, url, productName = '', storeName = '') {
   if (event) {
     event.preventDefault();
     event.stopPropagation();
   }
 
   // 清理 URL 實體編碼
-  const targetUrl = (url || '').replace(/&amp;/g, '&').trim();
+  let targetUrl = (url || '').replace(/&amp;/g, '&').trim();
 
+  // 若目標 URL 為空或無效，自動 fallback 透過 Uber Eats 搜尋店家或商品
   if (!targetUrl || targetUrl === '#' || targetUrl === '') {
-    showToast('無法前往店家', '該店家暫無有效的 Uber Eats 網址連結', 'alert');
-    return;
+    const query = (storeName || productName || '').trim();
+    if (query) {
+      targetUrl = `https://www.ubereats.com/tw/search?q=${encodeURIComponent(query)}`;
+    } else {
+      targetUrl = 'https://www.ubereats.com/tw';
+    }
   }
 
   if (productName && productName.trim()) {
@@ -923,9 +941,9 @@ async function openUberEatsOrder(event, url, productName = '') {
       }
       showToast(
         '已複製商品並開啟店家',
-        `已複製「${cleanName}」！已為您開啟 Uber Eats 店家，可直接在店家搜尋欄貼上下單。`,
+        `已複製「${cleanName}」！已為您開啟店家網頁，可直接在搜尋欄貼上下單。`,
         'copy',
-        4500
+        4000
       );
     } catch (e) {
       showToast(
