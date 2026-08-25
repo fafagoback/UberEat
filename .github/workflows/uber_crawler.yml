@@ -135,7 +135,7 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
         run: |
-          python scr/upload_to_hf.py --src-dir all_json_lake/ --repo-id "${{ secrets.HF_REPO_ID || 'fafagoback/UberEat' }}" --path-in-repo "Json"
+          python scr/upload_to_hf.py --src-dir all_json_lake/ --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" --path-in-repo "Json"
 
       - name: ② 執行 ETL 並將資料同步至 Cloudflare D1
         env:
