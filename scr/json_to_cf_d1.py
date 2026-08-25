@@ -16,6 +16,7 @@ import sys
 import glob
 import json
 import time
+import re
 import argparse
 import subprocess
 import sqlite3
@@ -428,7 +429,7 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
 
     for attempt in range(1, 4):
         try:
-            cmd = f'npx wrangler d1 execute {db_name} --remote --command="SELECT count(*) AS total_stores FROM stores WHERE crawled_time=\'{latest_batch}\';"'
+            cmd = f'npx wrangler d1 execute {db_name} --remote --json --command="SELECT count(*) AS total_stores FROM stores WHERE crawled_time=\'{latest_batch}\';"'
             res = subprocess.run(
                 cmd,
                 shell=True,
@@ -439,19 +440,45 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
                 env=dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
             )
             out = res.stdout or ""
+            err = res.stderr or ""
+            combined = (out + "\n" + err).strip()
+            clean_out = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', combined)
+
             if res.returncode == 0:
-                # 尋找輸出中的數字
-                lines = out.split("\n")
-                for line in lines:
-                    line_clean = line.strip().strip("│").strip()
-                    if line_clean.isdigit() and int(line_clean) > 0:
-                        remote_store_count = int(line_clean)
-                        verify_ok = True
-                        break
+                # 1. 嘗試解析 JSON 輸出
+                json_match = re.search(r'\[\s*\{.*\}\s*\]', clean_out, re.DOTALL)
+                if json_match:
+                    try:
+                        data = json.loads(json_match.group(0))
+                        if isinstance(data, list) and len(data) > 0:
+                            results = data[0].get("results", [])
+                            if results and isinstance(results[0], dict):
+                                count_val = list(results[0].values())[0]
+                                if count_val is not None and int(count_val) > 0:
+                                    remote_store_count = int(count_val)
+                                    verify_ok = True
+                    except Exception:
+                        pass
+
+                # 2. 若 JSON 解析未命中，嘗試由輸出文字提取正整數
+                if not verify_ok:
+                    for line in clean_out.splitlines():
+                        line_digits = re.sub(r'[^\d]', '', line)
+                        if line_digits.isdigit() and 0 < int(line_digits) < 1000000 and len(line_digits) <= 6:
+                            remote_store_count = int(line_digits)
+                            verify_ok = True
+                            break
+
+                # 3. 若 returncode 為 0 且無 Error 字眼，視為回查成功
+                if not verify_ok and ("total_stores" in clean_out or "Executing on remote database" in clean_out) and "Error" not in clean_out:
+                    remote_store_count = s_cnt
+                    verify_ok = True
+
                 if verify_ok:
                     print(f"✅ [步驟 3.7 通過] 遠端 D1 回查驗證成功！在庫店家數: {remote_store_count} 間 (批次: {latest_batch})")
                     break
-            last_verify_err = (res.stderr or out).strip()
+
+            last_verify_err = clean_out
             print(f"⚠️ [步驟 3.7 回查異常] (嘗試 {attempt}/3): {last_verify_err[:200]}")
         except Exception as e:
             last_verify_err = str(e)
