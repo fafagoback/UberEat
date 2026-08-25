@@ -214,8 +214,8 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str):
 
     print(f"🚀 正在透過 Wrangler 同步資料至 Cloudflare D1 ({db_name})...")
     try:
-        cmd = ["npx", "wrangler", "d1", "execute", db_name, "--remote", f"--file={sql_file}"]
-        res = subprocess.run(cmd, capture_output=True, text=True, env=dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id))
+        cmd = f'npx wrangler d1 execute {db_name} --remote --file="{sql_file}"'
+        res = subprocess.run(cmd, shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id))
         if res.returncode == 0:
             print("✅ Cloudflare D1 遠端同步成功！")
             print(res.stdout)

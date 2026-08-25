@@ -224,5 +224,5 @@ window.UBER_RADAR_DATA = {
     "max_discount_pct": 0.0,
     "max_savings_twd": 0.0
   },
-  "generated_at": "2026-08-26 01:28:42"
+  "generated_at": "2026-08-26 01:38:45"
 };

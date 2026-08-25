@@ -6,4 +6,4 @@ compatibility_date = "2024-04-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "ubereats_monitor"
-database_id = "fa6a47a1-8d29-4b68-b76f-0043c7fe352b"
+database_id = "9a107803-29be-4486-9d01-899b93da6b35"
