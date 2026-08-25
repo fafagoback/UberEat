@@ -1,0 +1,1123 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%88%B6%E5%B1%B1%E7%99%BD%E4%BF%A0%E6%B5%B7%E9%99%B8%E9%BA%B5%E7%B2%A5-%E4%B8%89%E9%87%8D%E4%BB%81%E6%84%9B%E5%BA%97/vIg9MIfRXe2A9aKyE4gjOA",
+  "name": "父山白俠海陸麵粥 三重仁愛店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁愛街495號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0822438,
+    "longitude": 121.4883522
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 81
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Chinese",
+    "Noodles",
+    "Congee"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋廋肉粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條皮蛋及瘦肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "父山廣東粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 玉米, 皮蛋, 吻仔魚及小卷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吻仔魚瘦肉粥",
+            "description": "含蔥油, 胡椒, 蔥花, 吻仔魚及瘦肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌海鮮麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花, 鮮蝦, 鯛魚, 吻仔魚及小卷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "眷村牛腱粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及牛腱片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒羊肉乾麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸白帶魚",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒羊肉粥 (微辣)",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及帶骨羊肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌海鮮粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 鮮蝦, 鯛魚, 吻仔魚及小卷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "眷村牛燙青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸父山白蝦",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點（以及口味），請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選🔥",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅燒羊燙青菜",
+            "description": "羊肉燙青菜，搭配紅燒風味，帶來獨特的香氣和口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米雞柳粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 玉米及雞柳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吻仔魚瘦肉麵",
+            "description": "含時蔬,胡椒, 蔥花, 蔥油, 吻仔魚及瘦肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "父山鮮蝦粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及鮮白蝦 5 隻。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒羊肉麵 (微辣)",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花及帶骨羊肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "櫻花蝦雞湯 ( 麵)⭐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "吻仔魚麵",
+            "description": "含時蔬,胡椒, 蔥花, 蔥油及吻仔魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥蝦吻魚麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花, 炸富山白蝦及吻仔魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "父山廣東麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花, 玉米, 皮蛋, 吻仔魚及小卷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吻仔魚瘦肉麵",
+            "description": "含時蔬,胡椒, 蔥花, 蔥油, 吻仔魚及瘦肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "父山鮮蝦麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花及鮮白蝦 5 隻。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌海鮮麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花, 鮮蝦, 鯛魚, 吻仔魚及小卷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙魚麵",
+            "description": "含胡椒, 蔥花,蔥油, 鯛魚及吻魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龜山島白帶魚麵",
+            "description": "含時蔬,胡椒, 蔥花, 蔥油及炸白帶魚 3 至 4 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "129.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱻魚麵",
+            "description": "含時蔬,胡椒, 蔥花, 蔥油,鯛魚,鱸魚及吻仔魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱸魚麵",
+            "description": "含時蔬,胡椒, 蔥花, 蔥油,鱸魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鯛魚麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "櫻花蝦雞湯 ( 粥)🌟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酥蝦吻魚粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 炸富山白蝦及吻仔魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "父山廣東粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 玉米, 皮蛋, 吻仔魚及小卷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吻仔魚瘦肉粥",
+            "description": "含蔥油, 胡椒, 蔥花, 吻仔魚及瘦肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吻仔魚粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條,及吻仔魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "父山鮮蝦粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及鮮白蝦 5 隻。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌海鮮粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 鮮蝦, 鯛魚, 吻仔魚及小卷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龜山島白帶魚粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條,及炸白帶魚 3 至 4 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "129.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙魚粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 鯛魚及吻魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱻魚粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條,鯛魚,鱸魚,吻仔魚",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱸魚粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條,鱸魚",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鯛魚粥",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "濃大骨雞湯 ( 麵)🌀",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥豬肉麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花及洋蔥豬肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋廋肉麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花, 皮蛋及瘦肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米雞柳麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花, 玉米及雞柳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥雞肉串麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花及炸雞肉串 2 串。\n(圖片為粥的示意圖)",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "眷村牛腱麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花及牛腱片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒羊肉麵 (微辣)",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花及帶骨羊肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "濃大骨雞湯 ( 粥)🌪️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥豬肉粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及洋蔥豬肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋廋肉粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條皮蛋及瘦肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米雞柳粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 玉米及雞柳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥雞肉串粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及炸雞肉串 2 串。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "眷村牛腱粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及牛腱片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒羊肉粥 (微辣)",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及帶骨羊肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "獨家限定💫",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮蚵瘦肉粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 鮮蚵及瘦肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "186.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蚵瘦肉麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花, 鮮蚵及瘦肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "186.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小卷小魚粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 小卷圈及吻仔魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小卷小魚麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花, 小卷圈及吻仔魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣鮮蚵粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及蛤蠣鮮蚵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣鮮蚵麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花及蛤蠣鮮蚵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海龍王粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條, 蛤蠣, 鮮蚵, 鮮蝦, 鯛魚, 吻仔魚及小卷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海龍王麵",
+            "description": "含時蔬, 蔥油, 胡椒, 蔥花, 蛤蠣, 鮮蚵, 鮮蝦, 鯛魚, 吻仔魚及小卷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣粥",
+            "description": "含雞蛋, 絞肉, 胡椒, 蔥花, 辣菜脯, 油條及蛤蠣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣麵",
+            "description": "含時蔬,蔥油, 胡椒, 蔥花, 及蛤蠣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣風味麵",
+            "description": "含時蔬,蔥花,白蝦,鯛魚,鱸魚,小卷,生辣椒",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣洋蔥豬肉麵",
+            "description": "含時蔬,蔥花,洋蔥豬肉,生辣椒",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "乾麵系列🍜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥豬肉乾麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒羊肉乾麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物小點♨️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酥炸雞肉串",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸白帶魚",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸父山白蝦",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸魚薯條",
+            "description": "無骨白帶魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸",
+            "description": "5條",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋泥餅",
+            "description": "2塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "銀絲卷",
+            "description": "3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "57.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞塊",
+            "description": "5塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香檸雞柳",
+            "description": "2條",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞蛋豆腐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "A雞塊+甜不辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B雞塊+脆薯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "82.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "C薯條+甜不辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "D薯條+花枝丸",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "E銀絲卷+芋泥餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸三拼",
+            "description": "雞塊2,雞柳條1,薯條1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "細薯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "57.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆薯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "地瓜條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "63.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜系列☘️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "吻仔魚燙青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒羊燙青菜",
+            "description": "羊肉燙青菜，搭配紅燒風味，帶來獨特的香氣和口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "眷村牛燙青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚香蘿蔔",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蔥椒麻雞腿肉",
+            "description": "限量供應。",
+            "offers": {
+              "@type": "Offer",
+              "price": "121.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品系列🥣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "青菜蛋花湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蚵湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合湯",
+            "description": "含蛤蠣及鮮蚵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱸魚湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "百事可樂(涼,無加冰塊",
+            "description": "450cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "七喜(涼,無加冰塊",
+            "description": "450cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬紅茶(涼,無加冰塊",
+            "description": "450cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "葡萄汽水(涼,無加冰塊",
+            "description": "450cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

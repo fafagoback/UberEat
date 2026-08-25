@@ -1,0 +1,1298 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%B8%85%E5%BF%83%E7%A6%8F%E5%85%A8-%E5%8C%97%E6%8A%95%E5%85%89%E6%98%8E%E5%BA%97/Ab5qwl1qXE2ueRoCFLbKhw",
+  "name": "清心福全 北投光明店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "148 Guangming Road",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1343094,
+    "longitude": 121.5024292
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 1000
+  },
+  "servesCuisine": [
+    "Bubble Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅心芭樂優多 Guava Yogurt Drink",
+            "description": "大杯。總糖量 110 克最高量。總熱量 485 大卡最高量。嚴選在地紅心芭樂為基底, 搭配清心福全獨家研發活菌發酵乳清心優多, 彼此相輔相成, 毫無違和。口感細緻甘甜, 極度滑順, 一入口味蕾立即被濃郁的珊瑚紅芭樂香氣霸佔, 每一口都喝得到芭樂沙沙的口感, 感受著紅心芭樂獨有的香氣, 同時清心優多的陣陣香甜也紛至沓來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠鮮奶茶 (珍珠紅茶拿鐵) Pearl Tea with Fresh Milk",
+            "description": "大杯。總糖量 58 克 (最高量), 總熱量 636 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。清雅渾厚的錫蘭紅茶, 溶入香醇濃郁的義美鮮乳, 再加入 Q 彈綿密的珍珠, 成就醲醇厚實, 圓柔豐潤的極致口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗金桔 Sugarcane Kumquat Juice",
+            "description": "大杯。總糖量 79 克最高量, 總熱量 351 大卡最高量。清甜甘蔗原汁搭配酸爽金桔原汁, 碰撞出豐富的酸甜層次, 尾韻甘蔗甜味讓層次更豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶三兄弟 (珍珠冰淇淋布丁紅茶) Pearl Ice Cream Pudding Black Tea",
+            "description": "大杯。總糖量 73克 最高量, 總熱量 648 大卡最高量。咖啡因含量: 綠 (100mg 以下)。清雅厚實的錫蘭紅茶, 加入綿密彈牙的珍珠, 軟 Q 細密的布丁, 香甜濃郁的香草冰淇淋, 多重混搭而毫無違和, 多層次的豐富口感令人食指大動。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗菁茶 Sugarcane Juice Premium Oolong Tea",
+            "description": "大杯。總糖量 82 克最高量, 總熱量 352 大卡最高量。 咖啡因含量: 綠 (100 毫克以下)。清冽優雅的菁茶融入清甜甘蔗原汁，共創香甜回甘的極致口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅心芭樂檸檬 Guava Lemon Juice",
+            "description": "大杯。總糖量 100 克 最高量, 總熱量 439 大卡最高量。果肉呈現粉嫩珊瑚紅色的紅心芭樂, 加入新鮮現榨的檸檬原汁調製, 內斂含蓄的果酸, 不張揚的清爽質地, 細細品味檸檬的淡雅香氣與芭樂微微沙沙的口感, 享受水果最鮮甜的絕頂滋味還能夠攝取豐富的營養價值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白韻杏仁奶 Almond Creamer Milk Tea",
+            "description": "大杯。總糖量 58.6 克最高量, 總熱量 727.4 大卡最高量。以南杏研磨的特級杏仁粉, 搭配醇正香濃的嚴選奶精, 每一口都是幸福細密的滑順口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠琥珀黑糖鮮奶 Brown Sugar Pearl with Fresh Milk",
+            "description": "大杯。總糖量 73 克 (最高量), 總熱量 732 大卡 (最高量)。以傳統工法拌炒熬煮而成的黑糖, 溶入香醇崙背鮮乳, 再加入 Q 彈綿密的珍珠, 成就琥珀交織, 醲醇豐潤的絕倫口感, 入喉溫順馥郁, 唇齒散發獨特焦香古味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚茶凍綠 Ruby Grapefruit Green Tea with Green Tea Jelly",
+            "description": "大杯。總糖量 98.8 克 (最高量), 總熱量 438 大卡 (最高量)。咖啡因含量為黃 (101 mg 至 200 mg 以下)。以經典回甘的紅柚綠茶為完美基底, 嚴選封存果韻及柚香的紅柚果漿, 加入 Ｑ 彈滑順的茉綠茶凍, 清涼的茶凍滑溜入口, 雙重茶韻與果香層層交疊, 每一口都是極致的味蕾饗宴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(隱藏版) 珍珠蜜香鮮奶普洱 Pearl Puer Tea with Fresh Milk and Honey",
+            "description": "大杯。總糖量 70 克 (最高量), 總熱量 541 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。渾厚甘醇的特選普洱, 溶入濃郁崙背鮮乳, 香甜龍眼花蜜, 再加入 Q 彈綿密的珍珠, 共創芳醇鮮甜, 富潤厚實的奢華口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶冬瓜 Winter Melon Tea with Fresh Milk",
+            "description": "大杯。總糖量 56 克 (最高量), 總熱量 322 大卡 (最高量)。以優質崙背鮮乳與招牌清心冬瓜露沖調而成, 黃金比例, 芳醇鮮甜, 濃郁潤澤。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優多紅柚茶凍 Ruby Grapefruit Probiotic Drink with Green Tea Jelly",
+            "description": "大杯。總糖量 109.4克 (最高量), 總熱量 490.6 大卡 (最高量)。咖啡因含量為綠 (100 mg 以下)。嚴選台灣在地紅寶石葡萄柚凝萃而成的果漿, 佐以酸甜濃郁的清心優多, 杯中點綴著口感 Ｑ 滑的茉綠茶凍, 味覺層次豐富, 酸甜迷人, 馥郁的果香, 乳酸香與茉莉茶韻完美融合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶 (紅茶拿鐵) Fresh Milk Tea",
+            "description": "大杯。總糖量 61 克 (最高量), 總熱量 375 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。醇雅錫蘭紅茶結合優質崙背鮮乳, 茶味, 乳香完美交融, 口感香醇滑潤。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜香奶茶 Honey Milk Tea",
+            "description": "大杯。總糖量 72 克 (最高量) , 總熱量 737 大卡 (最高量)。咖啡因含量: 紅 (201 毫克以上)。醲醇芳香的「錫蘭奶紅」, 加入甘甜醇美的「龍眼花蜜」, 成就茶香, 奶香與蜜香三合一的特級口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳橙綠 Orange Green Tea",
+            "description": "大杯。總糖量93克(最高量)   總熱量403大卡(最高量)  ｜ 咖啡因含量：黃(101mg至200mg) ｜ 陽光熟成的柳橙，自然無添加，果香濃郁，略有柳橙外皮的天然清香，加入清爽特級綠茶調配，香甜中尾韻帶有綠茶厚度，層次豐富，對味順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金桔檸檬 Kumquat Lemon Juice",
+            "description": "大杯。總糖量 48 克最高量, 總熱量 211 大卡最高量。現榨新鮮檸檬原汁結合金桔原汁, 金桔與檸檬的果香, 酸度與澀感完美交融, 入口生津潤喉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝蘋果醋 Litchi Apple Cider Vinegar",
+            "description": "大杯。總糖量 96.6 克最高量, 總熱量 411.2 大卡最高量。以清心福全蘋果醋為基底, 與滋味濃郁的荔枝果漿完美結合, 造就酸與甜的絕妙口感, 清爽開胃又解膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉綠茶凍拿鐵 Green Tea Jelly Tea with Fresh Milk",
+            "description": "大杯。總糖量 62 克 (最高量), 總熱量 367 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。醇和清爽的特級綠茶, 結合優質崙背鮮乳, 再加入滑嫩 Q 彈的茉莉香綠茶凍, 乳香與茉莉茶香的完美搭配, 順口香甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優多百香果綠茶 Passion Fruit Yogurt Green Tea",
+            "description": "大杯。總糖量 91 克最高量, 總熱量 446 大卡最高量。咖啡因含量: 綠 (100 毫克以下)。酸甜濃郁的百香果汁, 加入酸甜香濃的清心優多, 香甜而帶微酸的清新好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優多檸檬 Lemon Yogurt Drink",
+            "description": "大杯。總糖量 73 克最高量, 總熱量 333 大卡最高量。酸甜香濃的清心優多, 搭配新鮮檸檬原汁, 香甜而帶微酸的清新利爽口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "新品上市",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醇蜜普洱奶 Honey Puer Milk Tea",
+            "description": "大杯。總糖量最高量 72 克, 總熱量最高量 737 大卡。咖啡因含量為紅 201 毫克以上。沉香普洱與厚實奶香的極致邂逅, 點綴一抹醇蜜的優雅。蜜香與茶香在喉間久久不散, 交織出最紮實, 溫潤的經典滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚綠茶 Ruby Grapefruit Green Tea",
+            "description": "大杯。總糖量 73.1 克 (最高量), 總熱量 331.2 大卡 (最高量)。咖啡因含量為黃 (101 mg 至 200 mg 以下)。當台灣在地的紅寶石葡萄柚遇上清心福全經典的特級綠茶, 我們嚴選紅柚果漿, 封存果韻飽滿的葡萄柚果粒, 巧妙融入清雅回甘的綠茶底蘊之中。輕盈解渴而不甜膩, 完美詮釋了夏日陽光下的果韻魅力。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚茶凍綠 Ruby Grapefruit Green Tea with Green Tea Jelly",
+            "description": "大杯。總糖量 98.8 克 (最高量), 總熱量 438 大卡 (最高量)。咖啡因含量為黃 (101 mg 至 200 mg 以下)。以經典回甘的紅柚綠茶為完美基底, 嚴選封存果韻及柚香的紅柚果漿, 加入 Ｑ 彈滑順的茉綠茶凍, 清涼的茶凍滑溜入口, 雙重茶韻與果香層層交疊, 每一口都是極致的味蕾饗宴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優多紅柚茶凍 Ruby Grapefruit Probiotic Drink with Green Tea Jelly",
+            "description": "大杯。總糖量 109.4克 (最高量), 總熱量 490.6 大卡 (最高量)。咖啡因含量為綠 (100 mg 以下)。嚴選台灣在地紅寶石葡萄柚凝萃而成的果漿, 佐以酸甜濃郁的清心優多, 杯中點綴著口感 Ｑ 滑的茉綠茶凍, 味覺層次豐富, 酸甜迷人, 馥郁的果香, 乳酸香與茉莉茶韻完美融合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "店長推薦",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "優多綠茶 Yogurt Green Tea",
+            "description": "大杯。總糖量 72 克最高量, 總熱量 330 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清爽醇和的「特級綠茶」, 加入酸甜香濃的「清心優多」, 對味爽口, 共譜完美口感協奏曲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶 Pearl Milk Tea",
+            "description": "大杯。總糖量 50 克最高量, 總熱量 720 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。醲醇芳香的「錫蘭奶紅」, 加入滑溜 Q 彈, 綿密紮實, 圓潤飽滿, 亮澤水嫩的「珍珠」, 柔順豐厚口感於咀嚼之間更上一層樓。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨紅茶 Pineapple Black Tea",
+            "description": "大杯。總糖量 75 克最高量, 總熱量 314 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清雅厚實的錫蘭紅茶, 搭配香甜可口的南投產金鑽鳳梨 (40%) 與土鳳梨 (60%), 順口對味, 甜美豐潤沁人心脾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍綠茶 Oolong Green Tea",
+            "description": "大杯。總糖量 51 克最高量, 總熱量 226 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。澄澈的黃褐色茶湯, 入口清新芳香, 甘醇渾厚, 微有炭燒味, 回甘馥郁而綿長。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗四季 Sugarcane Juice Taiwan Four Seasons Oolong Tea",
+            "description": "大杯。總糖量 82 克最高量, 總熱量 352 大卡最高量。咖啡因含量: 綠 (100mg 以下)。香醇細密的四季茶湯與甘蔗原汁巧妙融合, 特殊蔗香, 茶香在嘴中同時迸發。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(隱藏版) 珍珠蜜香鮮奶普洱 Pearl Puer Tea with Fresh Milk and Honey",
+            "description": "大杯。總糖量 70 克 (最高量), 總熱量 541 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。渾厚甘醇的特選普洱, 溶入濃郁崙背鮮乳, 香甜龍眼花蜜, 再加入 Q 彈綿密的珍珠, 共創芳醇鮮甜, 富潤厚實的奢華口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶 (紅茶拿鐵) Fresh Milk Tea",
+            "description": "大杯。總糖量 61 克 (最高量), 總熱量 375 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。醇雅錫蘭紅茶結合優質崙背鮮乳, 茶味, 乳香完美交融, 口感香醇滑潤。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜檸檬 Lemon Winter Melon Tea",
+            "description": "大杯。總糖量 61 克最高量, 總熱量 261 大卡最高量。清心冬瓜露。混搭新鮮檸檬原汁, 挑逗味蕾, 激盪出又甜又酸, 甜中帶酸的奇妙口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "茗品系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "極品菁茶 Premium Oolong Tea",
+            "description": "大杯。總糖量 51 克最高量, 總熱量 226 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。金黃明淨的茶湯, 清冽優雅的茶香, 入口潤澤回甘, 如此菁華極致, 令人心曠神怡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原鄉四季 Taiwan Four Seasons Oolong Tea",
+            "description": "大杯。總糖量 28 克最高量, 總熱量 128 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。透亮金黃的茶湯色澤, 入口新綠清香, 利爽甘甜, 回味芳醇細密, 餘香尾韻迴盪, 多層次的絕佳口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特級綠茶 Finest Green Tea",
+            "description": "大杯。總糖量 46 克最高量, 總熱量 205 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。嫩黃微綠的明澈茶湯, 醇和清爽的茶味, 清雅芬馥的茶香, 回甘尾韻豐厚而深細。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特選普洱 Finest Puer Tea",
+            "description": "大杯。總糖量 46 克最高量, 總熱量 202 大卡最高量。咖啡因含量: 紅 (201mg 以上)。茶湯呈深褐色, 茶味濃烈甘醇, 回味厚實, 餘香悠長, 忠實呈現正宗普洱茶特色。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "錫蘭紅茶 Ceylon Black Tea",
+            "description": "大杯。總糖量 48 克最高量, 總熱量 211 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。有如琥珀一般的紅褐色茶湯, 清雅又厚實的茶味, 略帶些許澀感, 完美演繹錫蘭紅茶的經典風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍綠茶 Oolong Green Tea",
+            "description": "大杯。總糖量 51 克最高量, 總熱量 226 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。澄澈的黃褐色茶湯, 入口清新芳香, 甘醇渾厚, 微有炭燒味, 回甘馥郁而綿長。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "@綠+紅 @Green Tea + Black Tea",
+            "description": "大杯。總糖量 47.1 克 (最高量)。總熱量 208 大卡 (最高量)。咖啡因含量: 黃 (101mg 至 200mg)。Threads 上的爆紅飲品 (綠茶＋紅茶), 醇和清爽的 (特級綠茶) 加上醲醇芳香的 (錫蘭紅茶), 獨特溫順的口感讓您的喉嚨暖心療癒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "優多系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅心芭樂優多 Guava Yogurt Drink",
+            "description": "大杯。總糖量 110 克最高量。總熱量 485 大卡最高量。嚴選在地紅心芭樂為基底, 搭配清心福全獨家研發活菌發酵乳清心優多, 彼此相輔相成, 毫無違和。口感細緻甘甜, 極度滑順, 一入口味蕾立即被濃郁的珊瑚紅芭樂香氣霸佔, 每一口都喝得到芭樂沙沙的口感, 感受著紅心芭樂獨有的香氣, 同時清心優多的陣陣香甜也紛至沓來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優多檸檬 Lemon Yogurt Drink",
+            "description": "大杯。總糖量 73 克最高量, 總熱量 333 大卡最高量。酸甜香濃的清心優多, 搭配新鮮檸檬原汁, 香甜而帶微酸的清新利爽口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優多百香果綠茶 Passion Fruit Yogurt Green Tea",
+            "description": "大杯。總糖量 91 克最高量, 總熱量 446 大卡最高量。咖啡因含量: 綠 (100 毫克以下)。酸甜濃郁的百香果汁, 加入酸甜香濃的清心優多, 香甜而帶微酸的清新好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優多綠茶 Yogurt Green Tea",
+            "description": "大杯。總糖量 72 克最高量, 總熱量 330 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清爽醇和的「特級綠茶」, 加入酸甜香濃的「清心優多」, 對味爽口, 共譜完美口感協奏曲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優多紅柚茶凍 Ruby Grapefruit Probiotic Drink with Green Tea Jelly",
+            "description": "大杯。總糖量 109.4克 (最高量), 總熱量 490.6 大卡 (最高量)。咖啡因含量為綠 (100 mg 以下)。嚴選台灣在地紅寶石葡萄柚凝萃而成的果漿, 佐以酸甜濃郁的清心優多, 杯中點綴著口感 Ｑ 滑的茉綠茶凍, 味覺層次豐富, 酸甜迷人, 馥郁的果香, 乳酸香與茉莉茶韻完美融合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冬瓜系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜茶 Winter Melon Tea",
+            "description": "大杯。總糖量 59 克最高量, 總熱量 261 大卡最高量。以清心冬瓜露為基底並用調酒杯調製而成, 口味濃郁香醇, 鮮甜甘美, 順口潤喉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜菁茶 Winter Melon Oolong Tea",
+            "description": "大杯。總糖量 67 克最高量, 總熱量 291 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清冽優雅的極品菁茶結合香醇鮮甜的清心冬瓜露, 絕佳比例, 共創豐富口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香果綠茶 Passion Fruit Green Tea",
+            "description": "總糖量 71 克 (最高量), 總熱量 399 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。醇和清爽的特級綠茶加入酸甜的百香果汁, 酸甜可口, 清爽怡人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜檸檬 Lemon Winter Melon Tea",
+            "description": "大杯。總糖量 61 克最高量, 總熱量 261 大卡最高量。清心冬瓜露。混搭新鮮檸檬原汁, 挑逗味蕾, 激盪出又甜又酸, 甜中帶酸的奇妙口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶茶系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶 Pearl Milk Tea",
+            "description": "大杯。總糖量 50 克最高量, 總熱量 720 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。醲醇芳香的「錫蘭奶紅」, 加入滑溜 Q 彈, 綿密紮實, 圓潤飽滿, 亮澤水嫩的「珍珠」, 柔順豐厚口感於咀嚼之間更上一層樓。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰果奶茶 Coconut Jelly Milk Tea",
+            "description": "大杯。總糖量 65 克最高量, 總熱量 538 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。醲醇芳香的「錫蘭奶紅」, 加入香甜而略帶酸的椰果, 增添 Q 彈, 爽脆的咀嚼口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草凍奶茶 Grass Jelly Milk Tea",
+            "description": "大杯。總糖量 59 克最高量, 總熱量 469 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。醲醇芳香的「錫蘭奶紅」, 加入清新馥郁的仙草凍, 增添軟嫩, 圓順且綿密的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻奶茶 Sesame Milk Tea",
+            "description": "大杯。總糖量 58 克最高量, 總熱量 737 大卡最高量。咖啡因含量: 紅 (201mg 以上)。芝麻, 紅茶與奶精的絕妙組合, 濃郁純正的芝麻香味伴隨清醇茶味, 淡雅奶香, 迴盪口中, 更能喝到芝麻碎粒, 富潤厚實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍奶茶 Oolong Milk Tea",
+            "description": "大杯。總糖量 58 克最高量, 總熱量 633 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。甘醇渾厚的烏龍綠茶佐醇正香濃的嚴選奶精, 茶味與奶香完美交融整合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特級奶綠 Finest Green Milk Tea",
+            "description": "大杯。總糖量 54 克最高量, 總熱量 620 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。醇和清爽的特級綠茶, 溶入香濃醇正的嚴選奶精, 美味相乘, 成就豐富口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜香奶茶 Honey Milk Tea",
+            "description": "大杯。總糖量 72 克 (最高量) , 總熱量 737 大卡 (最高量)。咖啡因含量: 紅 (201 毫克以上)。醲醇芳香的「錫蘭奶紅」, 加入甘甜醇美的「龍眼花蜜」, 成就茶香, 奶香與蜜香三合一的特級口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "錫蘭奶紅 Ceylon Black Milk Tea",
+            "description": "大杯。總糖量 56 克 (最高量) , 總熱量 654 大卡 (最高量)。咖啡因含量: 紅 (201 毫克以上)。清雅又厚實的「錫蘭紅茶」, 搭配醇正香濃的「嚴選奶精」, 共創經典奶茶風味, 醲醇芳香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茶凍奶綠 Green Tea Jelly Milk Tea",
+            "description": "大杯。總糖量 92 克最高量, 總熱量 665 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。濃醇的特級奶綠, 加入滑嫩 Q 彈的茉莉香綠茶凍, 美味香甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖啡凍奶茶 Coffee Jelly Milk Tea",
+            "description": "大杯。總糖量 92 克最高量, 總熱量 665 大卡最高量。咖啡因含量: 紅 (201mg以上)。醲醇芳香的「錫蘭奶紅」, 加入爽脆 Q 彈, 細密滑順的咖啡凍, 而淡雅咖啡香盡在咀嚼之間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀黑糖奶茶 Brown Sugar Milk Tea",
+            "description": "大杯。 總糖量 63 克最高量, 總熱量 518 大卡最高量。以傳統工法拌炒熬煮而成的黑糖, 搭配醇正香濃的嚴選奶精, 琥珀色黑糖焦香與奶香完美交融整合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醇蜜普洱奶 Honey Puer Milk Tea",
+            "description": "大杯。總糖量最高量 72 克, 總熱量最高量 737 大卡。咖啡因含量為紅 201 毫克以上。沉香普洱與厚實奶香的極致邂逅, 點綴一抹醇蜜的優雅。蜜香與茶香在喉間久久不散, 交織出最紮實, 溫潤的經典滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "相思紅豆奶茶 Adzuki Bean Milk Tea",
+            "description": "大杯。總糖量 59 克最高量, 總熱量 617 大卡最高量。咖啡因含量為黃 101 毫克至 200毫克。醲醇芳香的錫蘭奶紅, 加入鬆軟飽滿, 柔順綿密的紅豆, 豐厚馥郁的口感於咀嚼之間更上一層樓, 輕啜一口即可感受優雅細緻的迷人韻味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮奶及拿鐵系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "茉綠茶凍拿鐵 Green Tea Jelly Tea with Fresh Milk",
+            "description": "大杯。總糖量 62 克 (最高量), 總熱量 367 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。醇和清爽的特級綠茶, 結合優質崙背鮮乳, 再加入滑嫩 Q 彈的茉莉香綠茶凍, 乳香與茉莉茶香的完美搭配, 順口香甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠芝麻拿鐵 (珍珠芝麻紅茶拿鐵) Pearl Sesame Latte",
+            "description": "大杯。總糖量 71 克 (最高量), 總熱量 547 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。濃郁純正的芝麻飲品, 溶進清雅厚實的錫蘭紅茶, 芳醇鮮潤的崙背鮮乳, 再加入綿密彈牙的珍珠, 共譜美味三重奏, 同時喝到滑滑的奶茶, 沙沙的芝麻, QQ 的珍珠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠鮮奶茶 (珍珠紅茶拿鐵) Pearl Tea with Fresh Milk",
+            "description": "大杯。總糖量 58 克 (最高量), 總熱量 636 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。清雅渾厚的錫蘭紅茶, 溶入香醇濃郁的義美鮮乳, 再加入 Q 彈綿密的珍珠, 成就醲醇厚實, 圓柔豐潤的極致口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "頂級可可拿鐵 Premium Chocolate Latte",
+            "description": "大杯。總糖量 87 克 (最高量), 總熱量 596 大卡 (最高量)。咖啡因含量: 綠 (100 毫克以下)。香醇豐厚的可可溶入鮮潤的崙背鮮乳, 成就濃郁渾厚, 圓柔豐潤的極致口感, 而厚實細密的巧克力香味盡在其中。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶冬瓜 Winter Melon Tea with Fresh Milk",
+            "description": "大杯。總糖量 56 克 (最高量), 總熱量 322 大卡 (最高量)。以優質崙背鮮乳與招牌清心冬瓜露沖調而成, 黃金比例, 芳醇鮮甜, 濃郁潤澤。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠琥珀黑糖鮮奶 Brown Sugar Pearl with Fresh Milk",
+            "description": "大杯。總糖量 73 克 (最高量), 總熱量 732 大卡 (最高量)。以傳統工法拌炒熬煮而成的黑糖, 溶入香醇崙背鮮乳, 再加入 Q 彈綿密的珍珠, 成就琥珀交織, 醲醇豐潤的絕倫口感, 入喉溫順馥郁, 唇齒散發獨特焦香古味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(隱藏版) 珍珠蜜香鮮奶普洱 Pearl Puer Tea with Fresh Milk and Honey",
+            "description": "大杯。總糖量 70 克 (最高量), 總熱量 541 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。渾厚甘醇的特選普洱, 溶入濃郁崙背鮮乳, 香甜龍眼花蜜, 再加入 Q 彈綿密的珍珠, 共創芳醇鮮甜, 富潤厚實的奢華口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶 (紅茶拿鐵) Fresh Milk Tea",
+            "description": "大杯。總糖量 61 克 (最高量), 總熱量 375 大卡 (最高量)。咖啡因含量: 黃 (101 毫克至 200 毫克)。醇雅錫蘭紅茶結合優質崙背鮮乳, 茶味, 乳香完美交融, 口感香醇滑潤。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "相思紅豆鮮奶茶 Adzuki Bean Tea with Fresh Milk",
+            "description": "大杯。總糖量 64 克最高量, 總熱量 485 大卡最高量。咖啡因含量為綠 100 毫克以下。清雅又厚實的錫蘭紅茶, 溶入濃郁崙背鮮乳, 再加入鬆軟飽滿, 柔順綿密的紅豆, 共創芳醇甜香, 富潤厚實的多重味覺體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特調系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "荔枝紅茶 Litchi Black Tea",
+            "description": "大杯。總糖量 71.8 克最高量, 總熱量 299.5 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清雅醇厚的錫蘭紅茶, 搭配軟滑細緻的荔枝果漿, 香味濃郁, 順口對味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "情人茶 Lemon Plum Green Tea",
+            "description": "大杯。總糖量 45 克最高量, 總熱量 193 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清爽醇和的「特級綠茶」, 加入嚴選話梅, 新鮮檸檬原汁, 共譜戀愛般清新, 醇厚, 甘甜且帶酸, 鹹, 澀的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅子綠茶 Plum Green Tea",
+            "description": "大杯。總糖量 46 克最高量, 總熱量 202 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清爽醇和的特級綠茶, 加入嚴選話梅, 增添酸, 鹹, 甘, 甜的舒爽口感, 更帶出綠茶的原有茶香與茶味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "頂級可可 Premium Chocolate Milk",
+            "description": "大杯。總糖量 74 克最高量, 總熱量 540 大卡最高量。咖啡因含量: 綠 (100mg 以下)。香醇豐厚, 富潤柔滑的可可飲品, 伴隨深細淡雅的奶香, 絕佳比例打造頂級誘人口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜香烏龍 Honey Oolong Tea",
+            "description": "大杯。總糖量 70 克最高量, 總熱量 321 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。甘醇渾厚的「烏龍綠茶」, 加入醇美甘甜的「龍眼花蜜」, 茶香與蜜香的有機交融。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜茶 Iced Honey Drink",
+            "description": "大杯。總糖量 55 克最高量, 總熱量 255 大卡最高量。上等龍眼花蜜沖調, 金黃的色澤, 濃郁芬芳的蜜香, 潤澤柔順的口感, 醇美甘甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃情巧克力 Dark Chocolate Milk",
+            "description": "大杯。總糖量 63 克最高量, 總熱量 472 大卡最高量。咖啡因含量: 綠 (100mg 以下)。濃郁醇厚的巧克力, 伴隨淡雅的奶香, 入口香濃夠味, 極致濃厚的巧克力味覺體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "季節鮮果系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅心芭樂檸檬 Guava Lemon Juice",
+            "description": "大杯。總糖量 100 克 最高量, 總熱量 439 大卡最高量。果肉呈現粉嫩珊瑚紅色的紅心芭樂, 加入新鮮現榨的檸檬原汁調製, 內斂含蓄的果酸, 不張揚的清爽質地, 細細品味檸檬的淡雅香氣與芭樂微微沙沙的口感, 享受水果最鮮甜的絕頂滋味還能夠攝取豐富的營養價值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗菁茶 Sugarcane Juice Premium Oolong Tea",
+            "description": "大杯。總糖量 82 克最高量, 總熱量 352 大卡最高量。 咖啡因含量: 綠 (100 毫克以下)。清冽優雅的菁茶融入清甜甘蔗原汁，共創香甜回甘的極致口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金桔檸檬 Kumquat Lemon Juice",
+            "description": "大杯。總糖量 48 克最高量, 總熱量 211 大卡最高量。現榨新鮮檸檬原汁結合金桔原汁, 金桔與檸檬的果香, 酸度與澀感完美交融, 入口生津潤喉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桔茶 Kumquat Juice",
+            "description": "大杯。總糖量 48 克最高量, 總熱量 202 大卡最高量。金桔原汁調製，恰如其分的酸度，酸中略帶鮮甜, 微澀, 更有金桔清香，爽口暢快。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜香檸檬 Honey Lemon Juice",
+            "description": "大杯。總糖量 55 克最高量, 總熱量 258 大卡最高量。現榨新鮮檸檬原汁混搭龍眼花蜜, 檸檬的酸澀與果香以及蜂蜜的甘甜與蜜香, 交融成酸中帶甜, 澀而後甘的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬汁 Lemon Juice",
+            "description": "大杯。總糖量 47 克最高量, 總熱量 205 大卡最高量。現榨新鮮檸檬原汁調製, 富含維生素 C, 以恰到好處的酸度, 帶出檸檬的天然清香, 舌齒間的些許酸澀感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬綠茶 Lemon Green Tea",
+            "description": "大杯。總糖量 47 克最高量, 總熱量 202 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清爽醇和的「特級綠茶」, 加入新鮮檸檬原汁, 於原有茶味增添酸中帶澀的清新口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗金桔 Sugarcane Kumquat Juice",
+            "description": "大杯。總糖量 79 克最高量, 總熱量 351 大卡最高量。清甜甘蔗原汁搭配酸爽金桔原汁, 碰撞出豐富的酸甜層次, 尾韻甘蔗甜味讓層次更豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃凍紅茶 Peach Black Tea with Green Tea Jelly",
+            "description": "大杯。總糖量 67 克最高量, 總熱量 326 大卡最高量。 咖啡因含量: 黃 (101mg至200mg)。 溫潤厚實的錫蘭紅茶, 搭配果香馥郁, 細緻飽滿的水蜜桃果肉與清爽滑嫩的茉莉香綠茶凍, 口感層次豐富迷人，美味香甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨紅茶 Pineapple Black Tea",
+            "description": "大杯。總糖量 75 克最高量, 總熱量 314 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清雅厚實的錫蘭紅茶, 搭配香甜可口的南投產金鑽鳳梨 (40%) 與土鳳梨 (60%), 順口對味, 甜美豐潤沁人心脾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗四季 Sugarcane Juice Taiwan Four Seasons Oolong Tea",
+            "description": "大杯。總糖量 82 克最高量, 總熱量 352 大卡最高量。咖啡因含量: 綠 (100mg 以下)。香醇細密的四季茶湯與甘蔗原汁巧妙融合, 特殊蔗香, 茶香在嘴中同時迸發。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳橙綠 Orange Green Tea",
+            "description": "大杯。總糖量93克(最高量)   總熱量403大卡(最高量)  ｜ 咖啡因含量：黃(101mg至200mg) ｜ 陽光熟成的柳橙，自然無添加，果香濃郁，略有柳橙外皮的天然清香，加入清爽特級綠茶調配，香甜中尾韻帶有綠茶厚度，層次豐富，對味順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚綠茶 Ruby Grapefruit Green Tea",
+            "description": "大杯。總糖量 73.1 克 (最高量), 總熱量 331.2 大卡 (最高量)。咖啡因含量為黃 (101 mg 至 200 mg 以下)。當台灣在地的紅寶石葡萄柚遇上清心福全經典的特級綠茶, 我們嚴選紅柚果漿, 封存果韻飽滿的葡萄柚果粒, 巧妙融入清雅回甘的綠茶底蘊之中。輕盈解渴而不甜膩, 完美詮釋了夏日陽光下的果韻魅力。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚茶凍綠 Ruby Grapefruit Green Tea with Green Tea Jelly",
+            "description": "大杯。總糖量 98.8 克 (最高量), 總熱量 438 大卡 (最高量)。咖啡因含量為黃 (101 mg 至 200 mg 以下)。以經典回甘的紅柚綠茶為完美基底, 嚴選封存果韻及柚香的紅柚果漿, 加入 Ｑ 彈滑順的茉綠茶凍, 清涼的茶凍滑溜入口, 雙重茶韻與果香層層交疊, 每一口都是極致的味蕾饗宴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "果醋系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蜜香蘋果醋 Honey Infused Apple Cider Vinegar",
+            "description": "大杯。總糖量 109 克最高量, 總熱量 493 大卡最高量。蘋果醋與龍眼花蜜交融, 毫無違和, 造就酸酸甜甜的誘人口感, 其中更有蘋果的清甜與果香, 蜂蜜的甘醇與蜜香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果醋 Apple Cider Vinegar Drink",
+            "description": "總糖量 86 克 (最高量), 總熱量 374 大卡 (最高量)。以清心福全蘋果醋為基底所沖調的飲品, 微酸清爽, 順口潤澤, 更有蘋果的清新甜味與淡雅果香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜香藍莓醋 Honey Infused Blueberry Vinegar",
+            "description": "大杯。總糖量 111 克最高量, 總熱量 481 大卡最高量。藍莓醋與龍眼花蜜完美交融, 酸酸甜甜, 入口感受藍莓的鮮甜與果香, 蜂蜜的甘醇與蜜香, 清爽且豐潤。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓醋 Blueberry Vinegar Drink",
+            "description": "大杯。總糖量 82 克最高量, 總熱量 356 大卡最高量。以清心福全藍莓醋為基底所沖調的飲品, 微紅淡紫的夢幻色澤, 清甜微酸的爽朗口感, 藍莓的鮮甜, 清香令人陶醉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果醋紅茶 Apple Cider Vinegar Black Tea",
+            "description": "大杯。總糖量 88 克最高量, 總熱量 386 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。「蘋果醋」溶入「錫蘭紅茶」, 微酸口感恰到好處, 清爽順口, 略帶些許澀感, 紅茶的醇雅與蘋果的清甜盡在其中。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝蘋果醋 Litchi Apple Cider Vinegar",
+            "description": "大杯。總糖量 96.6 克最高量, 總熱量 411.2 大卡最高量。以清心福全蘋果醋為基底, 與滋味濃郁的荔枝果漿完美結合, 造就酸與甜的絕妙口感, 清爽開胃又解膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冰淇淋系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋紅茶 Ice Cream Black Tea",
+            "description": "大杯。總糖量 86 克最高量, 總熱量 532 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。清雅厚實的「錫蘭紅茶」, 加入香甜濃郁的香草冰淇淋, 凸顯茶味, 加倍冰涼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋奶茶 Ice Cream Milk Tea",
+            "description": "大杯。總糖量 71 克最高量, 總熱量 750 大卡最高量。咖啡因含量: 黃 (101mg 至 200mg)。醲醇芳香的「錫蘭奶紅」, 加入香甜濃郁的香草冰淇淋, 絕對爽口, 極致冰涼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶三兄弟 (珍珠冰淇淋布丁紅茶) Pearl Ice Cream Pudding Black Tea",
+            "description": "大杯。總糖量 73克 最高量, 總熱量 648 大卡最高量。咖啡因含量: 綠 (100mg 以下)。清雅厚實的錫蘭紅茶, 加入綿密彈牙的珍珠, 軟 Q 細密的布丁, 香甜濃郁的香草冰淇淋, 多重混搭而毫無違和, 多層次的豐富口感令人食指大動。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冬季熱飲系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白韻杏仁奶 Almond Creamer Milk Tea",
+            "description": "大杯。總糖量 58.6 克最高量, 總熱量 727.4 大卡最高量。以南杏研磨的特級杏仁粉, 搭配醇正香濃的嚴選奶精, 每一口都是幸福細密的滑順口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白韻杏仁頂級可可 Almond Cocoa",
+            "description": "大杯。總糖量 74.8 克最高量, 總熱量 613.2 大卡最高量。咖啡因含量: 綠 (100mg以下)。創新口味, 將東方傳統風味的杏仁粉搭配頂級可可, 雙重甜蜜滋味豪華升級。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂圓茶 Longan Tea",
+            "description": "大杯。總糖量 65 克最高量, 總熱量 290 大卡最高量。台灣冬季傳統飲品, 入口濃郁醇厚, 香甜滋潤, 呈現道地桂圓 (龍眼干) 口味, 袪寒暖身。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂圓鮮奶茶 Longan Fresh Milk Tea",
+            "description": "大杯。總糖量 65 克最高量, 總熱量 405 大卡最高量。濃郁醇厚, 香甜滋潤的桂圓 (龍眼干) 茶, 佐醇正香濃的鮮乳, 口感再升級。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑薑奶茶 Ginger Milk Tea",
+            "description": "大杯。總糖量 63 克最高量, 總熱量 515 大卡最高量。醇正濃厚, 潤澤滋養的薑母茶, 溶入香醇的嚴選奶精, 口感更加圓順馥郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑薑好茶 Ginger Tea",
+            "description": "大杯。總糖量 66 克最高量, 總熱量 273 大卡最高量。醇正濃厚的薑母與黑糖滋味, 辛辣而不嗆口, 潤澤滋養, 冬季首選暖身袪寒飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "塑膠袋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "塑膠袋 Plastic Bag",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "優多系列產品若沉澱時間較長或加到椰果時, 會產生雪花般分層, 並不影響口感, 飲用前搖勻即可。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋系列遇到長時間配送則會有融化的問題, 若無法接受請選擇其他產品。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加料項目椰果, QQ, 建議製作冷飲, 因椰果製作熱飲會產生分層沈澱, 屬自然現象, 請搖勻飲用。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本店茶湯皆為現煮, 珍珠熬煮需要 1 小時以上, 若訂購杯數大於 15 杯時，建議先與門市聯繫或使用預訂單的模式 (須提前 1 小時以上), 確保訂單能即時處理, 謝謝。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "如有疑問, 請洽平台線上客服。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "配合政策, 本店不免費提供塑膠袋, 為避免確保飲料運送完整, 建議消費時一併購買塑膠袋 (2 元)。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "產品圖片僅供參考, 外送產品皆不製作漸層, 飲用前搖勻後再喝, 為保持最佳口感, 請盡快飲用。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不建議經期婦女, 孕婦, 授乳者, 孩童, 消化道或肝腎疾病患者食用蘆薈。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本店僅使用崙背鮮乳: 原產地為台灣，種類為鮮乳。",
+            "description": "崙背鮮乳: 原產地為台灣，種類為鮮乳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "茶葉原產地",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烏龍綠茶來源為台灣及越南。特級綠茶來源為越南及台灣。極品菁茶來源為越南及台灣。原鄉四季來源為台灣及越南。錫蘭紅茶來源為印度及印尼。特選普洱來源為大陸及越南。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

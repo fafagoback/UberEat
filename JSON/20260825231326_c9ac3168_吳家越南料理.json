@@ -1,0 +1,694 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%90%B3%E5%AE%B6%E8%B6%8A%E5%8D%97%E6%96%99%E7%90%86/9_-wL-JYVm-MX-tJejrCQw",
+  "name": "吳家越南料理",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "47, Sec 3, Tz Chiang Rd.",
+    "addressLocality": "Sanchong District",
+    "addressRegion": "New Taipei City",
+    "postalCode": "241067",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0728813,
+    "longitude": 121.48699
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 1500
+  },
+  "servesCuisine": [
+    "Vietnamese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉河粉",
+            "description": "牛肉片、河粉，搭配洋蔥、青蔥、九層塔、檸檬角及紅辣椒，清湯上桌。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "越南鮮蝦春捲",
+            "description": "含生菜, 九層塔, 香菜, 小黃瓜, 豬肉, 蝦子及米粉搭配酸甜醬料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現烤法國麵包",
+            "description": "烤麵包搭配小黃瓜, 香菜, 越南火腿, 豬肉及醃蘿蔔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "猪肉蕃茄米粉",
+            "description": "蕃茄湯米粉，搭配豬肉片、九層塔、檸檬角及辣椒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮炒泡麵",
+            "description": "泡麵拌炒海鮮，越式調味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤豬肉涼拌米粉",
+            "description": "米粉搭配烤豬肉、香菜及花生，拌酸甜醬料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒河粉",
+            "description": "牛肉片、河粉拌炒，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "越南牛奶咖啡",
+            "description": "越南咖啡搭配牛奶與冰塊，口感順滑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "涼拌青木瓜(微辣)",
+            "description": "青木瓜絲、胡蘿蔔，搭配蝦仁與花生，微辣清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血臭豆腐",
+            "description": "麻辣湯頭，鴨血及臭豆腐，麻香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "現烤法國麵包",
+            "description": "烤麵包搭配小黃瓜, 香菜, 越南火腿, 豬肉及醃蘿蔔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "越南鮮蝦春捲",
+            "description": "含生菜, 九層塔, 香菜, 小黃瓜, 豬肉, 蝦子及米粉搭配酸甜醬料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤豬肉涼拌米粉",
+            "description": "米粉搭配烤豬肉、香菜及花生，拌酸甜醬料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血臭豆腐",
+            "description": "麻辣湯頭，鴨血及臭豆腐，麻香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "越南牛奶咖啡",
+            "description": "越南咖啡搭配牛奶與冰塊，口感順滑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸春捲",
+            "description": "春捲皮包餡，油炸上桌，越式風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "越式料理",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉河粉",
+            "description": "牛肉片、河粉，搭配洋蔥、青蔥、九層塔、檸檬角及紅辣椒，清湯上桌。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸春捲凉拌米粉",
+            "description": "涼拌米粉搭配生菜、香菜與碎花生，放上切段炸春捲，佐酸甜醬汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "涼拌青木瓜(微辣)",
+            "description": "青木瓜絲、胡蘿蔔，搭配蝦仁與花生，微辣清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "猪肉蕃茄米粉",
+            "description": "蕃茄湯米粉，搭配豬肉片、九層塔、檸檬角及辣椒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋火腿麵包",
+            "description": "烤麵包搭配小黃瓜, 香菜, 荷包蛋、越南火腿, 豬肉及醃蘿蔔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒河粉",
+            "description": "牛肉片、河粉拌炒，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮炒泡麵",
+            "description": "泡麵拌炒海鮮，越式調味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉河粉",
+            "description": "越式河粉，搭配豬肉與熱湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮河粉",
+            "description": "扁平米粉搭配多樣海鮮，越式風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒泡麵",
+            "description": "蝦仁、泡麵拌炒，麵條Q彈，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮蕃茄麵",
+            "description": "越式蕃茄醬汁, 綜合海鮮與麵條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒泡麵",
+            "description": "牛肉、泡麵拌炒，麵條Q彈，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腳番茄麵",
+            "description": "越式番茄湯底，搭配豬腳及麵條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腳米粉",
+            "description": "米粉、豬腳及湯頭，越式風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腳河粉",
+            "description": "河粉搭配帶皮豬腳，膠質豐富，越式風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉米粉",
+            "description": "越式米粉搭配豬肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃海鮮粥",
+            "description": "米粥搭配多樣海鮮，越式風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉泡麵",
+            "description": "越式風味泡麵，搭配豬肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮泡麵",
+            "description": "綜合海鮮搭配泡麵，越式風味，麵條Q彈，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "越式風味飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "檸檬蜂蜜小紫蘇",
+            "description": "檸檬、蜂蜜搭配小紫蘇籽，酸甜均衡，口感Q彈。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬瓜茶",
+            "description": "甜度固定。限冰飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬綠茶",
+            "description": "綠茶搭配蜂蜜與檸檬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬",
+            "description": "蜂蜜與檸檬調製的飲品，酸甜清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "越式黑咖啡",
+            "description": "越式黑咖啡，不加奶，濃醇苦香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜茶",
+            "description": "甜度固定。限冰飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "越式綠茶",
+            "description": "以綠茶調製的越式飲品，清香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醃檸檬",
+            "description": "以醃製檸檬調製的越式飲品，散發檸檬香氣，清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜小紫蘇",
+            "description": "冬瓜茶搭配小紫蘇籽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜檸檬小紫蘇",
+            "description": "冬瓜茶搭配檸檬與小紫蘇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒飯",
+            "description": "白飯拌炒牛肉，經典家常風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒飯",
+            "description": "米飯、雞蛋拌炒，簡單經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯",
+            "description": "蝦仁、白飯拌炒，米粒分明，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮炒飯",
+            "description": "綜合海鮮與白飯拌炒，越式風味，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "越式排骨飯",
+            "description": "越南風味豬排，搭配白飯及醬汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉薑絲湯",
+            "description": "牛肉, 薑絲及薑香湯頭。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蜊湯",
+            "description": "含蛤蜊的清湯，湯味鮮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋花湯",
+            "description": "高湯搭配滑嫩蛋花。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸湯",
+            "description": "Q彈貢丸、清湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔥花蛋",
+            "description": "雞蛋拌蔥花，家常風味小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜炒白蛋",
+            "description": "苦瓜切片與白蛋拌炒，家常風味的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒高麗菜",
+            "description": "高麗菜快炒，脆嫩清甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔蛋",
+            "description": "雞蛋與九層塔，清香可口的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋",
+            "description": "香煎雞蛋一顆，簡單調味，家常風味的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜炒牛肉",
+            "description": "苦瓜片、牛肉拌炒，保留自然苦香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒洋蔥",
+            "description": "蛋與洋蔥快炒，蛋香與洋蔥香氣融合的家常小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒洋蔥",
+            "description": "牛肉片、洋蔥拌炒，家常風味的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

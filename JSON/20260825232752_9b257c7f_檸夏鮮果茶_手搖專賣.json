@@ -1,0 +1,636 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%AA%B8%E5%A4%8F%E9%AE%AE%E6%9E%9C%E8%8C%B6-%E6%89%8B%E6%90%96%E5%B0%88%E8%B3%A3/-CCLBSfjUFCegsV0xm6b3g",
+  "name": "檸夏鮮果茶 手搖專賣",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區光明路39號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1326294,
+    "longitude": 121.4996363
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 130
+  },
+  "servesCuisine": [
+    "Bubble Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酪梨牛奶",
+            "description": "700ml. \n本店使用麻豆或屏東新鮮酪梨加上萬丹純鮮奶製作 。新鮮現榨酪梨牛奶就是好濃好喝又營養！快來喝吧，過了10月就只能夠再等隔年6月了~\n可加購布丁會一起打。\n如果想吃布丁的口感麻煩請另外備註。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果優酪乳",
+            "description": "700ml.無咖啡因\n採用愛文芒果新鮮現榨及優酪乳製作而成。台灣愛文芒果真的很香甜，喜愛芒果的您還等什麼呢？錯過今年就要再盼明年了！",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火龍果優酪乳",
+            "description": "700ml.\n新鮮現榨火龍果及優酪乳製作而成。滿滿花青素及果肉纖維，搭配豐富優酪乳酸益菌，喝一杯就能給您水果膳食纖維和腸道的健康，客人喝過都很推薦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳橙綠茶",
+            "description": "茉莉綠茶與柳橙果汁完美交融，喝一口，兒茶素和維C同時擁有而且又解渴真心覺得很可以喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬愛玉",
+            "description": "採用中華甜愛玉和鮮榨檸檬汁，再加上手工熬煮蔗糖，檸檬汁和愛玉真的很適合在一起，這檸檬香味和冰涼愛玉誰也無法排斥這兩位主角，在一起在一起..…...…....讚！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑椹優酪乳",
+            "description": "700ml.（無咖啡因）\n手工熬煮桑椹搭配優酪乳，桑椹富含花青素，優酪乳兩者合一讓您喝到天然與健康！",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂檸檬汁",
+            "description": "700ml.\n新鮮現打芭樂加上新鮮檸檬汁，鮮榨芭樂檸檬汁的香甜濃郁口感營養價值豐富，多種維生素和維他命C給您補充蔬果營養均衡飲食",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香綠茶",
+            "description": "使用新鮮百香果（無法去籽），搭上茉莉綠茶後這口感很搭很NICE，花青素與維C讓人健康美麗再加分，快來喝一杯吧！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑椹檸檬汁",
+            "description": "700ml.（無咖啡因，甜度固定）\n手工熬煮桑椹搭配新鮮鮮榨檸檬汁，檸檬香與檸檬的酸，吸一口讓人欲罷不能，而且桑椹的滿滿花青素及各種維生素！喝果汁也可以很健康啊....",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果芝士奶蓋",
+            "description": "700ml.無咖啡因\n獨特香甜愛文芒果新鮮鮮榨，搭配本店厚實濃郁香醇芝士奶蓋，這口感滋味無語論比無可取代！真的很乖很好喝....喜歡的芒果的您不容錯過！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃啵啵烏龍",
+            "description": "清香的烏龍茶加入甜美的新鮮蜜桃，再搭配Q彈的寒天球，每一口都充滿了果香與茶香的交融，帶來清爽且充滿趣味的飲品享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍芝士奶蓋",
+            "description": "冰量固定\n採用台灣四季春茶做基茶，再蓋上本店獨特濃郁鹹香厚實的芝士奶蓋，這個口感真的好好喝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸夏奇異果",
+            "description": "700ml.(無咖啡因）\n新鮮現榨奇異果搭配蘆薈果肉、檸檬汁、多多，有滿滿維生素C ，果肉纖維，乳酸菌，這杯飲料真的很厲害啊！真的..…真心推薦",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "簡介",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "本店皆採用新鮮水果及熬煮特級白砂糖製作，讓您喝的健康無負擔",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "桂花烏龍",
+            "description": "清香撲鼻，烏龍茶的濃郁茶香與桂花的淡雅花香完美結合，每一口都帶來沁人心脾的清爽感，是一道雅致且回味無窮的茶飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳焙觀音",
+            "description": "以精選茶葉碳焙而成，帶有獨特的炭香和觀音茶的濃郁茶香，入口醇厚回甘，每一口都散發著深沉而獨特的韻味，是品茗愛好者的絕佳選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶芝士奶蓋",
+            "description": "醇厚的紅茶香氣與絲滑鮮奶製作的芝士奶蓋完美結合，茶底清爽甘甜，奶蓋濃郁香醇，每一口都帶來豐富的層次感和極致的口感享受，是一道不可錯過的美味飲品。(冰量固定)",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃啵啵烏龍",
+            "description": "清香的烏龍茶加入甜美的新鮮蜜桃，再搭配Q彈的寒天球，每一口都充滿了果香與茶香的交融，帶來清爽且充滿趣味的飲品享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西柚綠茶",
+            "description": "清新的綠茶融合了酸甜的新鮮葡萄柚，每一口都帶來清爽的茶味與西柚的果香，讓人感受到自然的清新與活力，是一道提神醒腦的美味飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "純茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "桂花烏龍",
+            "description": "清香撲鼻，烏龍茶的濃郁茶香與桂花的淡雅花香完美結合，每一口都帶來沁人心脾的清爽感，是一道雅致且回味無窮的茶飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "純天然大麥與紅茶熬煮而成，麥香茶香氣味芳香，完美復刻50年代北投傳統紅茶文化！\n#甜度選擇無糖紅茶的話，會使用伯爵紅茶替代喔#",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍X綠茶",
+            "description": "簡稱（無憂茶）\n四季春茶混茉莉綠茶，兩種茶湯混合後口感豐富很搭也不違和，北投特有飲品，一杯兩享受，清涼也解渴！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍青茶",
+            "description": "台灣特產四季春茶，茶湯圓潤色澤青微金黃，初入口茶味清香，中韻厚實，尾韻甘甜，果然很不錯好喝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紫蘇梅綠",
+            "description": "新鮮紫蘇葉和台灣青梅經過數月醃製入味，再和茉莉綠茶完美結合，這個奇妙組合喝一口就欲罷不能會讓人想一飲而盡，因為這樣可以吃到裡面的紫蘇梅子！",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉莉綠茶",
+            "description": "這茉莉綠茶每日現泡且不含防腐劑，除了冰涼解渴還能獲取綠茶的兒茶素，真心覺得可以！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "果茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "西柚綠茶",
+            "description": "清新的綠茶融合了酸甜的新鮮葡萄柚，每一口都帶來清爽的茶味與西柚的果香，讓人感受到自然的清新與活力，是一道提神醒腦的美味飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃啵啵烏龍",
+            "description": "清香的烏龍茶加入甜美的新鮮蜜桃，再搭配Q彈的寒天球，每一口都充滿了果香與茶香的交融，帶來清爽且充滿趣味的飲品享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬愛玉",
+            "description": "採用中華甜愛玉和鮮榨檸檬汁，再加上手工熬煮蔗糖，檸檬汁和愛玉真的很適合在一起，這檸檬香味和冰涼愛玉誰也無法排斥這兩位主角，在一起在一起..…...…....讚！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬紅茶",
+            "description": "店家自己鮮榨檸檬汁搭配古味紅茶，鮮榨檸檬的清香氣味與檸檬的酸，再和紅茶完美融合為一，喝一口忘不了也停不了，好好飲啊.....…...讚！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香綠茶",
+            "description": "使用新鮮百香果（無法去籽），搭上茉莉綠茶後這口感很搭很NICE，花青素與維C讓人健康美麗再加分，快來喝一杯吧！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳橙綠茶",
+            "description": "茉莉綠茶與柳橙果汁完美交融，喝一口，兒茶素和維C同時擁有而且又解渴真心覺得很可以喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橙柚綠",
+            "description": "茉莉綠茶再加上新鮮葡萄柚果肉和柳橙果汁，這口感很不錯耶！每吸一口都有果肉纖維在您的嘴裡碰撞融合，原來喝一杯檸夏茶飲也可以很健康！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜檸檬",
+            "description": "700cc甜度及冰量固定。\n熬煮冬瓜再加上店家自己鮮榨屏東檸檬汁，檸檬的香，檸檬的酸，冬瓜的清甜，充分完美結合！冰涼清香甜真的很好喝呢！",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶蓋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶芝士奶蓋",
+            "description": "醇厚的紅茶香氣與絲滑鮮奶製作的芝士奶蓋完美結合，茶底清爽甘甜，奶蓋濃郁香醇，每一口都帶來豐富的層次感和極致的口感享受，是一道不可錯過的美味飲品。(冰量固定)",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍芝士奶蓋",
+            "description": "冰量固定\n採用台灣四季春茶做基茶，再蓋上本店獨特濃郁鹹香厚實的芝士奶蓋，這個口感真的好好喝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶芝士奶蓋",
+            "description": "冰量固定。\n清香口感的茉莉綠茶澆淋蓋上濃醇萬丹鮮奶與鹹香芝士製作而成的奶蓋。飲啜一口奶蓋的厚實口感讓人欲罷不能難以忘懷",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果芝士奶蓋",
+            "description": "700ml.無咖啡因\n獨特香甜愛文芒果新鮮鮮榨，搭配本店厚實濃郁香醇芝士奶蓋，這口感滋味無語論比無可取代！真的很乖很好喝....喜歡的芒果的您不容錯過！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火龍果芝士奶蓋",
+            "description": "700ml.無咖啡\n新鮮紅火龍果現榨後澆淋蓋上濃醇萬丹鮮奶與鹹香芝士製作而成的奶蓋。飲啜一口奶蓋的厚實口感讓人欲罷不能難以忘懷",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑椹芝士奶蓋",
+            "description": "700ml（無咖啡因）\n手工熬煮桑椹搭再澆淋蓋上鮮奶與鹹香芝士製作的奶蓋，濃香芝士口感厚實綿密細緻，真的很好喝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓芝士奶蓋",
+            "description": "700ml.（無咖啡因）\n純天然草莓不添加果醬，現打草莓果汁後蓋上濃醇萬丹鮮奶與鹹香芝士製作而成的奶蓋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪梨牛奶奶蓋",
+            "description": "700ml. \n本店使用麻豆或屏東新鮮酪梨加上萬丹純鮮奶現打後蓋上濃醇鹹香芝士奶蓋，好喝到不要不要的！\n（可加購布丁會一起打，想要布丁口感需另外註明。）",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "現泡茶（可回沖）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "碳焙觀音",
+            "description": "以精選茶葉碳焙而成，帶有獨特的炭香和觀音茶的濃郁茶香，入口醇厚回甘，每一口都散發著深沉而獨特的韻味，是品茗愛好者的絕佳選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣金萱",
+            "description": "本店親自製作的現泡金萱茶包，喝過的客人都說讚！而且還可以再次回沖續泡，划算喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶茶/鮮奶茶/咖啡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "萬丹鮮奶茶",
+            "description": "使用萬丹純正鮮乳與本家古味紅茶，這奶味茶味口味獨特出眾，喜愛鮮奶茶飲絕不能錯過！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌奶茶",
+            "description": "使用進口韓國奶精粉,不含膽固醇及反式脂肪，搭配檸夏古味紅茶這奶味這口感真讚！不相信嗎？來一杯試過的都說讚都是說好好喝~",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "純果汁/優酪乳",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芒果優酪乳",
+            "description": "700ml.無咖啡因\n採用愛文芒果新鮮現榨及優酪乳製作而成。台灣愛文芒果真的很香甜，喜愛芒果的您還等什麼呢？錯過今年就要再盼明年了！",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火龍果優酪乳",
+            "description": "700ml.\n新鮮現榨火龍果及優酪乳製作而成。滿滿花青素及果肉纖維，搭配豐富優酪乳酸益菌，喝一杯就能給您水果膳食纖維和腸道的健康，客人喝過都很推薦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸夏奇異果",
+            "description": "700ml.(無咖啡因）\n新鮮現榨奇異果搭配蘆薈果肉、檸檬汁、多多，有滿滿維生素C ，果肉纖維，乳酸菌，這杯飲料真的很厲害啊！真的..…真心推薦",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑椹檸檬汁",
+            "description": "700ml.（無咖啡因，甜度固定）\n手工熬煮桑椹搭配新鮮鮮榨檸檬汁，檸檬香與檸檬的酸，吸一口讓人欲罷不能，而且桑椹的滿滿花青素及各種維生素！喝果汁也可以很健康啊....",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑椹優酪乳",
+            "description": "700ml.（無咖啡因）\n手工熬煮桑椹搭配優酪乳，桑椹富含花青素，優酪乳兩者合一讓您喝到天然與健康！",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪梨牛奶",
+            "description": "700ml. \n本店使用麻豆或屏東新鮮酪梨加上萬丹純鮮奶製作 。新鮮現榨酪梨牛奶就是好濃好喝又營養！快來喝吧，過了10月就只能夠再等隔年6月了~\n可加購布丁會一起打。\n如果想吃布丁的口感麻煩請另外備註。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂檸檬汁",
+            "description": "700ml.\n新鮮現打芭樂加上新鮮檸檬汁，鮮榨芭樂檸檬汁的香甜濃郁口感營養價值豐富，多種維生素和維他命C給您補充蔬果營養均衡飲食",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香芒芒",
+            "description": "700ml,無咖啡因\n新鮮愛文芒現榨果汁與新鮮百香果的碰撞交織的美味，健康維C豐富真的沒話說，喝一杯健康無負擔也得到滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸夏火龍果",
+            "description": "700ml.無咖啡因\n檸夏的招牌果汁\n使用新鮮檸檬、百香果、火龍果製作而成，這果汁真的很厲害耶！一杯3種享受，真的很健康很好喝！\n（新鮮百香果無法去籽）",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂多多",
+            "description": "700ml.\n新鮮燕巢芭樂現榨再加上LCA506多多~芭樂富含多種維生素，氣味鮮甜營養又美味，結合多多乳酸菌讓您腸道更好吸收喝一杯美美無負擔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

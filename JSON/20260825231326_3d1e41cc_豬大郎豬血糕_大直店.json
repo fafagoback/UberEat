@@ -1,0 +1,213 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%B1%AC%E5%A4%A7%E9%83%8E%E8%B1%AC%E8%A1%80%E7%B3%95-%E5%A4%A7%E7%9B%B4%E5%BA%97/VZG0Um1wQpep_ciopSsT_Q",
+  "name": "豬大郎豬血糕 大直店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Dazhi Street Lane 127 7",
+    "addressLocality": "Zhongshan District",
+    "addressRegion": "Taipei City",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0806945,
+    "longitude": 121.5466093
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 330
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Street Food"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "1 枝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬瓜",
+            "description": "700cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬汁",
+            "description": "內容物:檸檬",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蕉鮮奶",
+            "description": "500 毫升。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵鮮奶紅",
+            "description": "700cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵鮮奶綠",
+            "description": "700cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "1 枝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蕉鮮奶",
+            "description": "500 毫升。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬瓜",
+            "description": "700cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜茶",
+            "description": "700cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "內容物:水、紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶",
+            "description": "內容物: 綠茶葉、水",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "檸檬汁",
+            "description": "內容物:檸檬",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "台農鮮奶700cc",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵鮮奶紅",
+            "description": "700cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵鮮奶綠",
+            "description": "700cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

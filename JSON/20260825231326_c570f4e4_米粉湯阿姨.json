@@ -1,0 +1,248 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%B1%B3%E7%B2%89%E6%B9%AF%E9%98%BF%E5%A7%A8/SFBDA_4rUb--7ep8o_aOrg",
+  "name": "米粉湯阿姨",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Minquan Road 103",
+    "addressLocality": "Tamsui District",
+    "addressRegion": "New Taipei City",
+    "postalCode": "251",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1377549,
+    "longitude": 121.4602885
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 160
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Affordable Meals",
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉原產地為台灣",
+            "description": "菜單品項若含豬肉，其原產地皆為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯",
+            "description": "大碗 膠質滿滿!",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳爪",
+            "description": "滷製鳳爪，色澤紅亮，鹹香入味，Q彈帶嚼勁，膠質豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹蜆仔",
+            "description": "醬香鹹蜆仔，鹹香入味，少許辣椒點綴，海味滿滿，開胃小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆干及海帶",
+            "description": "豆干與海帶雙拼小菜，兼具紮實與Q彈口感，簡單耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑嫩干絲",
+            "description": "細切豆干絲，口感滑嫩，清爽順口的小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻豬頭皮",
+            "description": "豬頭皮口感Q彈帶勁，膠質豐富，帶馥郁煙燻香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "涼拌泡菜",
+            "description": "酸香脆口、清爽開胃的冷拌小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干小魚",
+            "description": "豆干搭配小魚的鹹香小菜，口感扎實有咬勁",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "涼拌木耳",
+            "description": "冰涼爽脆的木耳，口感Q彈，簡單調味凸顯原味，清爽不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋豆腐",
+            "description": "涼拌嫩豆腐配皮蛋，清爽滑順，經典小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "川燙綠葉蔬菜，清脆爽口，保留蔬菜原味",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "貢丸湯",
+            "description": "台式清湯配Q彈貢丸，口感扎實，湯頭清爽順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嘴邊肉湯",
+            "description": "甘甜中藥湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬雜湯",
+            "description": "綜合豬內臟湯，部位多樣、口感豐富，喜愛豬雜的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚丸湯",
+            "description": "Q彈鱈魚丸，搭配清爽湯頭，鮮味溫潤、順口不膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腸湯",
+            "description": "Q彈豬腸，配清爽湯頭，順口暖胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連湯",
+            "description": "甘甜中藥湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬心湯",
+            "description": "豬心口感脆嫩的熱湯，湯頭清爽不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

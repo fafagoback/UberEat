@@ -1,0 +1,728 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%A0%83%E5%88%BB%E9%96%93%E7%B6%A0%E8%B1%86%E6%B2%99%E7%89%9B%E5%A5%B6-%E8%8C%B6%E9%A3%B2%E5%B0%88%E8%B3%A3/7mVDYxV9XoqYgypWjwXtvw",
+  "name": "頃刻間（綠豆沙牛奶/茶飲專賣）",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "111台北市士林區小北街1號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0902104,
+    "longitude": 121.526889
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 600
+  },
+  "servesCuisine": [
+    "Drinks"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙牛奶",
+            "description": "*非冰沙；甜度冰塊固定哦*\n\n濃郁. 細緻. 綿密. 爽口.  \n一杯你絕對沒喝過的綠豆沙牛奶🤫",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭沙牛奶",
+            "description": "*非冰沙； 甜度冰塊固定，但可幫您做成熱飲哦*\n\n將一顆顆新鮮嚴選的特級芋頭🍠手把手用心的洗淨、削皮、切塊，最後高溫熬煮成的鬆軟芋泥，搭上鮮奶🥛與冰塊🧊 在果汁機裡打出超乎想像的細緻口感， 那濃厚芋香與香醇奶香的雙重夾擊，保證讓即便不是芋頭控的您也會大為震撼😱",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶旅人",
+            "description": "*無糖與一分糖都會略帶抹茶的甘苦哦*\n\n嚴選的高品質日本靜岡抹茶所帶出的甘甜回韻🍵 搭配光泉鮮奶的濃郁醇香🥛在杯中達出完美平衡，抹茶原始的清苦風味和鮮奶天然的香甜滋味相互交融，成就極選茶香與奶香於一身的『抹茶旅人』💚\n\n*抹茶久放後易沈澱，拿到飲料時幫我們搖一搖再喝哦，謝謝您*",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮榨柳丁綠",
+            "description": "幽然清香的【窨花．茉芽】+酸甜芬芳的鮮榨柳丁🍊",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳丁多多綠",
+            "description": "經典不敗的【純萃多多綠】+酸甜芬芳的鮮榨柳丁🍊",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可公主",
+            "description": "精選可可粉與純巧克力的完美結合🤎 濃郁誘人的可可香氣纏繞著光泉鮮奶的濃醇滋味，這杯是獻給『可可公主』的尊榮款待 👸🏾\n\n*無糖會有些許純巧克力的苦味與可可粉的甜味哦*",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅嶼厚乳",
+            "description": "茶味豐厚細緻的【熟捻．紅嶼】+ 濃醇香甜的“紐西蘭牛乳”",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪酪大奶怪",
+            "description": "香濃Q彈的【黑糖珍珠鮮奶】+ 質地滑順綿密的酪酪奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖珍珠大奶怪",
+            "description": "極致入味的『黑糖珍珠』 +『大波霸』帶勁的Q彈口感 + 香醇濃郁的『光泉鮮奶』🥛 最後再經由秘傳手炒黑糖漿的點綴🖤 \n【黑糖珍珠大奶怪】就此誕生🐮\n\n*甜度無糖即為不另加特製黑糖哦*",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪酪可可",
+            "description": "濃郁可口的【特調可可】+ 質地滑順綿密的酪酪奶蓋 🧀",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶",
+            "description": "香醇絲滑的【紅嶼奶茶】+ Q彈入味的“黑糖波霸珍珠”",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠厚乳",
+            "description": "濃醇香甜的【紅嶼厚乳】+ Q彈入味的“黑糖波霸珍珠”",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪酪抹茶",
+            "description": "甘甜回韻的【嚴選靜岡抹茶】+ 質地滑順綿密的酪酪奶蓋 🧀",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆奶蓋大奶怪",
+            "description": "香濃Q彈的【黑糖珍珠鮮奶】+ 全台獨創的綠豆奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪酪茉芽",
+            "description": "幽然清香的【窨花．茉芽】+質地滑順綿密的酪酪奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "誠意多多綠",
+            "description": "幽然清香的【窨花．茉芽】+經典不敗的養樂多",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉芽厚乳",
+            "description": "幽然清香的【純萃綠茶】+ 濃醇香甜的“紐西蘭牛乳”",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆奶蓋紅茶",
+            "description": "茶香豐厚細緻的【熟捻．紅嶼】+全台獨創的綠豆奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Offers",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "柳丁多多綠",
+            "description": "經典不敗的【純萃多多綠】+酸甜芬芳的鮮榨柳丁🍊",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙茉．烏龍綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅嶼．甜醋荔露",
+            "description": "*甜度固定*\n茶香豐厚細緻的【熟捻．紅嶼】 + 滋味清逸的荔枝果醋",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙烏．葡萄",
+            "description": "岩韻清香的【深焙．烏韻】+自家熬煮的新鮮葡萄+焙烏茶凍",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "⚠️注意事項⚠️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "本店外送平台飲品一律提供『大杯』容量 🧐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本店無純綠豆沙或芋頭沙，皆是有加牛奶的哦 🤗",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本店配料量（珍珠/茶凍/奶蓋）有限，如需訂購多杯數加料飲品，歡迎提前與我們聯繫(02-28818619)，感謝您🙏🏻",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "以防您是誤勾選到 “不用免洗餐具”，我們一律會為您的飲品附上吸管，若有不便，敬請見諒 🙇🏻",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【招牌】-奶昔口感/非冰沙",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙牛奶",
+            "description": "*非冰沙；甜度冰塊固定哦*\n\n濃郁. 細緻. 綿密. 爽口.  \n一杯你絕對沒喝過的綠豆沙牛奶🤫",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭沙牛奶",
+            "description": "*非冰沙； 甜度冰塊固定，但可幫您做成熱飲哦*\n\n將一顆顆新鮮嚴選的特級芋頭🍠手把手用心的洗淨、削皮、切塊，最後高溫熬煮成的鬆軟芋泥，搭上鮮奶🥛與冰塊🧊 在果汁機裡打出超乎想像的細緻口感， 那濃厚芋香與香醇奶香的雙重夾擊，保證讓即便不是芋頭控的您也會大為震撼😱",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【原葉】-極品原茶/零香精",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小時候紅茶",
+            "description": "*甜度固定*\n紅茶結合決明子所帶出的濃厚古早味茶香，再搭上砂糖所獨有的天然甜香，兩股香氣在口中完美交織",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "窨花．茉芽",
+            "description": "窨製工藝．花入茶骨（綠）",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熟捻．紅嶼",
+            "description": "揉捻熟成．錫蘭精品 (紅)",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "深焙．烏韻",
+            "description": "文火深焙．岩韻清香（烏）",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙茉．烏龍綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【厚乳】-使用紐西蘭牛乳/零奶精奶粉",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅嶼厚乳",
+            "description": "茶味豐厚細緻的【熟捻．紅嶼】+ 濃醇香甜的“紐西蘭牛乳”",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉芽厚乳",
+            "description": "幽然清香的【純萃綠茶】+ 濃醇香甜的“紐西蘭牛乳”",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠厚乳",
+            "description": "濃醇香甜的【紅嶼厚乳】+ Q彈入味的“黑糖波霸珍珠”",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "長大厚奶茶",
+            "description": "*甜度固定*\n\n古早味茶香與“紐西蘭牛乳”的濃厚乳香完美融合，再搭上純天然的砂糖香氣，濃而滑順，甜而不膩，這就是長大後該有的享受",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙烏厚乳",
+            "description": "岩韻清香的【深焙．烏韻】+ 濃醇香甜的“紐西蘭牛乳”",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【香醇】-奶精飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶",
+            "description": "香醇絲滑的【紅嶼奶茶】+ Q彈入味的“黑糖波霸珍珠”",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅嶼奶茶",
+            "description": "在茶味豐厚細緻的【熟捻．紅嶼】裡倒入香醇絲滑的「特製奶精」，茶香、奶香的完美交融",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉芽奶綠",
+            "description": "幽然清香的【窨花．茉芽】+ 香醇絲滑的“特製奶精”",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "深焙奶烏",
+            "description": "岩韻清香的【深焙．烏韻】+ 香醇絲滑的“特製奶精”",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【清爽】-自家鮮榨/天然果香",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "誠意多多綠",
+            "description": "幽然清香的【窨花．茉芽】+經典不敗的養樂多",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮榨柳丁綠",
+            "description": "幽然清香的【窨花．茉芽】+酸甜芬芳的鮮榨柳丁🍊",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳丁多多綠",
+            "description": "經典不敗的【純萃多多綠】+酸甜芬芳的鮮榨柳丁🍊",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙烏．多多",
+            "description": "岩韻清香的【深焙．烏韻】+經典不敗的養樂多",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙烏．葡萄",
+            "description": "岩韻清香的【深焙．烏韻】+自家熬煮的新鮮葡萄+焙烏茶凍",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅嶼．甜醋荔露",
+            "description": "*甜度固定*\n茶香豐厚細緻的【熟捻．紅嶼】 + 滋味清逸的荔枝果醋",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【濃郁】-使用光泉鮮奶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑糖珍珠大奶怪",
+            "description": "極致入味的『黑糖珍珠』 +『大波霸』帶勁的Q彈口感 + 香醇濃郁的『光泉鮮奶』🥛 最後再經由秘傳手炒黑糖漿的點綴🖤 \n【黑糖珍珠大奶怪】就此誕生🐮\n\n*甜度無糖即為不另加特製黑糖哦*",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶旅人",
+            "description": "*無糖與一分糖都會略帶抹茶的甘苦哦*\n\n嚴選的高品質日本靜岡抹茶所帶出的甘甜回韻🍵 搭配光泉鮮奶的濃郁醇香🥛在杯中達出完美平衡，抹茶原始的清苦風味和鮮奶天然的香甜滋味相互交融，成就極選茶香與奶香於一身的『抹茶旅人』💚\n\n*抹茶久放後易沈澱，拿到飲料時幫我們搖一搖再喝哦，謝謝您*",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可公主",
+            "description": "精選可可粉與純巧克力的完美結合🤎 濃郁誘人的可可香氣纏繞著光泉鮮奶的濃醇滋味，這杯是獻給『可可公主』的尊榮款待 👸🏾\n\n*無糖會有些許純巧克力的苦味與可可粉的甜味哦*",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【酪酪奶蓋】-乳酪+玫瑰鹽+鮮奶油 (鹹甜奶蓋)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酪酪紅茶",
+            "description": "茶香豐厚細緻的【熟捻．紅嶼】+質地滑順綿密的酪酪奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪酪茉芽",
+            "description": "幽然清香的【窨花．茉芽】+質地滑順綿密的酪酪奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪酪可可",
+            "description": "濃郁可口的【特調可可】+ 質地滑順綿密的酪酪奶蓋 🧀",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪酪抹茶",
+            "description": "甘甜回韻的【嚴選靜岡抹茶】+ 質地滑順綿密的酪酪奶蓋 🧀",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪酪大奶怪",
+            "description": "香濃Q彈的【黑糖珍珠鮮奶】+ 質地滑順綿密的酪酪奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪酪焙烏",
+            "description": "岩韻清香的【深焙．烏韻】+質地滑順綿密的酪酪奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【綠豆奶蓋】-綠豆+豆漿+鮮奶油 (甜奶蓋)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠豆奶蓋紅茶",
+            "description": "茶香豐厚細緻的【熟捻．紅嶼】+全台獨創的綠豆奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆奶蓋茉芽",
+            "description": "幽然清香的【窨花．茉芽】+ 全台獨創的綠豆奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆奶蓋可可",
+            "description": "濃郁可口的【特調可可】+  全台獨創的綠豆奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆奶蓋抹茶",
+            "description": "甘甜回韻的【嚴選靜岡抹茶】+ 全台獨創的綠豆奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆奶蓋大奶怪",
+            "description": "香濃Q彈的【黑糖珍珠鮮奶】+ 全台獨創的綠豆奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆奶蓋焙烏",
+            "description": "岩韻清香的【深焙．烏韻】+ 全台獨創的綠豆奶蓋",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

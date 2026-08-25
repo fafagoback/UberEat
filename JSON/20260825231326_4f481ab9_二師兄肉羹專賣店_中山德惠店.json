@@ -1,0 +1,887 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%BA%8C%E5%B8%AB%E5%85%84%E8%82%89%E7%BE%B9%E5%B0%88%E8%B3%A3%E5%BA%97-%E4%B8%AD%E5%B1%B1%E5%BE%B7%E6%83%A0%E5%BA%97/jtyr6wwDWjyBxDeGV3ufyg",
+  "name": "二師兄肉羹專賣店 中山德惠店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區中山北路三段49-5號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.06691,
+    "longitude": 121.52267
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 82
+  },
+  "servesCuisine": [
+    "Chinese",
+    "Taiwanese",
+    "Braised Pork Rice",
+    "Noodles"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆干+海帶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹冬粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自製高麗菜乾",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹粄條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水餃一份(十顆)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌 1 號餐-魯肉飯.肉羹湯.青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹米粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉羹粄條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉羹湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾油麵",
+            "description": "黃麵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紫菜貢丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉羹麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹粄條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹冬粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹米粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌 1 號餐-魯肉飯.肉羹湯.青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾粄條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紫菜湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "61.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "61.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精簡 4 號餐-魯肉飯.紫菜貢丸湯.青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌 1 號餐-魯肉飯.肉羹湯.青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿足 2 號餐-肉羹麵, 青菜, 豆干, 海帶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精簡 4 號餐-魯肉飯.紫菜貢丸湯.青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "羹麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉羹麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹粄條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹米粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉羹冬粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "雞肉羹麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞肉羹麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉羹粄條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉羹飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉羹米粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉羹冬粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "乾麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "乾油麵",
+            "description": "黃麵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾粄條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾冬粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾米粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶板條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻醬麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水餃一份(十顆)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "切仔麵",
+            "description": "黃麵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米粉湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粄條湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉湯麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "122.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸冬粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "122.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬粉湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉羹湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉羹湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紫菜貢丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紫菜湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肝連",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "61.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋豆腐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "61.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "61.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干+海帶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞捲",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "61.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胸肉絲",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自製高麗菜乾",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋1顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【UE優惠活動】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹粄條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹冬粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【優惠活動】雞肉羹米粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%BA%90%E8%BE%A3%E9%BA%BB%E8%BE%A3%E7%87%99/V_XVeBlPWTGMJnEZEnutWg",
+  "name": "源辣麻辣燙",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10491台北市中山區北安路528-1號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.07971,
+    "longitude": 121.54649
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 900
+  },
+  "servesCuisine": [
+    "Chinese",
+    "Hot Pot",
+    "Braised Dishes",
+    "Spicy Hot Pot",
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "注意事項⚠️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "所有餐點皆是葷食料理，且湯底均含牛、豬成份，飲食有特殊忌諱請勿點餐！感謝🙏",
+            "description": "本店全品項為葷食；湯底含牛、豬成分，無法客製為去牛/去豬/素食。若不食牛、豬或有宗教、過敏禁忌者，請勿下單，以免誤點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "8.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "夜貓族想吃宵夜嗎？但又怕鴨血臭豆腐售完，或是想吃的也售完？打烊前壓秒點餐搶不到嗎？善用「預約點餐」，雖然現場繁忙，老闆還是幫您保留想吃的餐點🥰",
+            "description": "預約點餐保留熱門品項；先鎖定鴨血、臭豆腐等指定品項。結帳時選取餐時間，現場繁忙亦照單備餐；數量有限，越早預約越穩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "8.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "⭐人氣精選 Popular Items⭐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "選擇眾多-按此點餐",
+            "description": "請選擇最少 4樣。\n您好，本店平台所販售產品均和門店份量相同，且一律開發票，請多善用載具統編，謝謝😊",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冷藏湯底3人份-小辣 （綜合）",
+            "description": "小辣，含鴨血，臭豆腐\n冷藏約7-10天\n\n如果需多包湯底請下預約單，每日數量有限",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品❤️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂1瓶",
+            "description": "330 毫升 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原萃綠茶玉露1瓶",
+            "description": "580ml無糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本氣家製豆  北海道濃厚豆乳（210ml）1瓶",
+            "description": "北海道大豆製成，口感綿密細緻，隨時補充能量😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LOTTE樂天 Milkis 優格風味碳酸飲1瓶",
+            "description": "250ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

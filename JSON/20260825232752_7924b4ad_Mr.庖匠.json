@@ -1,0 +1,1620 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/mr%E5%BA%96%E5%8C%A0/LoOvNAmPXbC5GbPSDMEj5w",
+  "name": "Mr.庖匠",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區福壽街31號(入口請走捷運橋下) Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0963488,
+    "longitude": 121.5253591
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 260
+  },
+  "servesCuisine": [
+    "Breakfast and Brunch"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "酥脆蛋餅系列~",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1原味蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "11肉排生菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "21芥末籽醬雞腿生菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2火腿蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3香煎培根蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4薯泥起司蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5雙起司蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "6鮪魚玉米蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "7培根歐姆蛋蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "8薯餅起司蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "9芥末籽醬生菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "10香煎肉排蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "12手工肉醬起司蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "13薯泥肉排蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "14香煎雞腿蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "15煙燻雞肉生菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "16薯泥德腸蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "17炸美式雞柳條蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "18薯餅肉排蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "19薯泥雞腿蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "20德國香腸佐肉醬蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "吐司系列~",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1花生醬吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2草莓醬吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3巧克力醬吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4歐姆蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "6花生蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "7火腿蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "8培根蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "9花生起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "10薯泥起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "11鮪魚玉米蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "12煙燻雞肉蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "13薯餅起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "14肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "15炸起司豬排蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "16花生肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "17起司肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "18薯泥肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "19薯餅肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "20香煎雞腿起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "121.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "21薯泥雞腿蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "沙拉系列~",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2薯泥歐姆蛋生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3煙燻雞肉生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4德腸歐姆蛋生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5炸美式雞柳條沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "6培根德腸沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "7嫩煎雞腿生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "點心系列~",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "2.玉米布丁酥x3",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3.歐式洋蔥圈x6",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4.炸甜不辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5.脆皮雞翅x1",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "8.酥炸雞塊x6",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "9.QQ地瓜芋泥球x12",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "10.美式脆薯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "11.起司肉醬蘿蔔糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "1.薯餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "6.酥炸蘿蔔糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "7.美式薯球x12",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "12.起司肉醬薯條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料系列~",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱鮮奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱鮮奶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "咖啡系列~",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冰美式咖啡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰拿鐵咖啡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱美式咖啡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱拿鐵咖啡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "義大利麵系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "2匈牙利蒜味辣椒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4德國香腸清炒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "1蒜香清炒義大利麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3蒜味培根清炒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5板煎雞腿排清炒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "酥脆蛋餅系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1原味蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2火腿蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3香煎培根蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4薯泥起司蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5雙起司蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "6鮪魚玉米蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "7培根歐姆蛋蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "8薯餅起司蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "9芥末籽醬生菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "10香煎肉排蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "11肉排生菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "12手工肉醬起司蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "13薯泥肉排蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "14香煎雞腿蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "15煙燻雞肉生菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "16薯泥德腸蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "17炸美式雞柳條蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "18.薯餅肉排蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "19薯泥雞腿蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "20德國香腸佐肉醬蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "21芥末籽醬雞腿生菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "吐司系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1花生醬吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2草莓醬吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3巧克力醬吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4歐姆蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "6花生蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "7火腿蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "8培根蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "9花生起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "10薯泥起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "11鮪魚玉米蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "12煙燻雞肉蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "13薯餅起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "14肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "15.炸起司豬排蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "16花生肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "17起司肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "18薯泥肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "19薯餅肉排蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "20香煎雞腿起司蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "121.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "21薯泥雞腿蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "沙拉系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2薯泥歐姆蛋生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3煙燻雞肉生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4德腸歐姆蛋生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5炸美式雞柳條沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "6培根德腸沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "7嫩煎雞腿生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "點心系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "2.玉米布丁酥x3",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3.歐式洋蔥圈x6",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4.炸甜不辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5.脆皮雞翅x1",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "10.美式脆薯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "11.起司肉醬蘿蔔糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "1.薯餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "6.酥炸蘿蔔糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "7.美式薯球x12",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "8.酥炸雞塊x6",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "9.QQ地瓜芋泥球x12",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "12.起司肉醬薯條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛奶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱鮮奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱鮮奶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "咖啡系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冰美式咖啡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰拿鐵咖啡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱美式咖啡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱拿鐵咖啡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

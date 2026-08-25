@@ -1,0 +1,848 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/coco%E9%83%BD%E5%8F%AF-%E5%8C%97%E6%8A%95%E4%B8%AD%E5%92%8C/kDPI6-YsWsytT89i--yiqQ",
+  "name": "CoCo都可 北投中和",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "臺北市北投區中和街280號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1402842,
+    "longitude": 121.5003818
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 240
+  },
+  "servesCuisine": [
+    "Bubble Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "百香雙響炮 Tropical Special (Passion Fruit Tea with Pearl and Coconut Jelly)",
+            "description": "大杯。冰飲。全糖總糖量最高值為 82 克, 總熱量最高值為 472 大卡, 咖啡因燈號為 75。招牌飲品, 嚴選百香果, 搭配高纖椰果及 Q 彈珍珠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃映烏龍 Peach Oolong Tea",
+            "description": "大杯。全糖總糖量最高值為 75 克, 總熱量最高值為 329 大卡, 咖啡因燈號為 91。有香甜蜜桃果香, 還有烏龍茶的沉穩回甘, 兩者融合得恰到好處清爽口感讓你一口接一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🔥奶茶三兄弟 3 Gems (Milk Tea with Pudding, Pearl and Grass Jelly)",
+            "description": "大杯。全糖總糖量最高值為 61 克, 總熱量最高值為 622 大卡。咖啡因燈號為 100。香濃奶茶搭配布丁, 珍珠及仙草, 一次就有 3 種口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥冬瓜露 Winter Melon Juice with Buckwheat",
+            "description": "大杯。全糖總糖量最高值為 53 克, 總熱量最高值為 216 大卡, 咖啡因燈號為 0。蕎麥米香混合純古法提煉的冬瓜露。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙 Mung Bean Slush",
+            "description": "大杯。冰飲。固定甜度及冰量。全糖總糖量最高值為 93 克, 總熱量最高值為 588 大卡, 咖啡因燈號為 0。綿密綠豆手工熬煮, 製成真材實料綠豆冰沙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果冰沙 Mango Slush",
+            "description": "大杯。冰飲。固定甜度及冰量。全糖總糖量最高值為 92 克, 總熱量最高值為 598 大卡, 咖啡因燈號為 0。香濃芒果冰沙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶 Bubble Tea",
+            "description": "大杯。全糖總糖量最高值為 51 克, 總熱量最高值為 722 大卡。咖啡因燈號為 160。Q 彈富口感的珍珠搭配香濃奶茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉角檸檬冬瓜 Winter Melon Lemon with Gem Boba",
+            "description": "大杯。冰飲。全糖總糖量最高值為 90 克, 總熱量最高值為 530 大卡, 咖啡因燈號為 0。粉角色登場, Q 彈粉角搭配清爽檸檬冬瓜, 迎接清爽春日美好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠鮮奶茶 Black Tea Latte with Pearl",
+            "description": "大杯。全糖總糖量最高值為 57 克, 總熱量最高值為 547 大卡, 咖啡因燈號為 137。Q 彈口感珍珠, 完美比例搭配香濃鮮奶與紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉角鮮奶茶 Balck Tea Latte with Gem Boba",
+            "description": "大杯。冷飲。全糖總糖量最高值為 83 克, 總熱量最高值為 601 大卡, 咖啡因燈號為 137。粉角色登場, 粉角加上順口鮮奶茶, 嚼對不無聊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香綠茶 Passion Fruit Green Tea",
+            "description": "大杯。冰飲。全糖總糖量最高值為 84 克, 總熱量最高值為 355 大卡, 咖啡因燈號為 110。酸甜百香搭配茉莉綠茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生椰職人拿鐵 Coconut Cafe Latte",
+            "description": "容量14oz(約420ml)。中杯。不另外加糖。全糖總糖量最高值為 7 克, 總熱量最高值為 135 大卡, 咖啡因燈號為 233。清甜椰乳 x 現磨咖啡的完美組合, 香醇又不膩口的輕乳感, 一喝就愛上。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙牛乳 Mung Bean Slush with Milk",
+            "description": "大杯。冰飲。固定甜度及冰量。全糖總糖量最高值為 77 克, 總熱量最高值為 555 大卡, 咖啡因燈號為 0。真材實料綠豆冰沙搭配牛乳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶養樂多 Green Tea Yakult",
+            "description": "大杯。冰飲。全糖總糖量最高值為 56 克, 總熱量最高值為 266 大卡, 咖啡因燈號為 75。香醇綠茶混搭經典養樂多。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚雙響炮 Grapefruit Tea with Pearl and Coconut Jelly",
+            "description": "大杯。冰飲。全糖總糖量最高值為 77 克, 總熱量最高值為 427 大卡, 咖啡因燈號為 47。超嚼雙料, Q 彈珍珠, 爽脆椰果搭配酸甜紅葡萄柚果肉與烏龍茶底，清爽酸甜一口接一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果綠茶 Mango Green Tea",
+            "description": "大杯。冰飲。全糖總糖量最高值為 63 克, 總熱量最高值為 331 大卡, 咖啡因燈號為 75。金黃芒果香搭配茉莉綠茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "布丁奶茶 Milk Tea with Pudding",
+            "description": "大杯。全糖總糖量最高值為 56 克, 總熱量最高值為 522 大卡。咖啡因燈號為 160。滑嫩的布丁加入香濃奶茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬瓜露 Winter Melon Juice with Lemon",
+            "description": "大杯。冰飲。全糖總糖量最高值為 68 克, 總熱量最高值為 290 大卡, 咖啡因燈號為 0。新鮮檸檬汁結合古早味冬瓜露。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "聯名保溫袋 Co-Branded Insulated Bag",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "柯南聯名保溫袋 2 杯袋 Detective Conan Insulated Bag",
+            "description": "柯南聯名保溫袋 2 杯袋。名偵探柯南 X CoCo 都可限定聯名視覺偵茶事務所 (圖案正反相同)​。",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柯南聯名保溫袋 4 杯袋 Detective Conan Insulated Bag",
+            "description": "柯南聯名保溫袋 4 杯袋。名偵探柯南名場面主題保溫袋, 一面是小蘭與新一清水寺經典場景, 另一面是柯南替灰原戴上眼鏡的名場面。",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "✨精選推薦 Selected Beverage",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃映烏龍 Peach Oolong Tea",
+            "description": "大杯。全糖總糖量最高值為 75 克, 總熱量最高值為 329 大卡, 咖啡因燈號為 91。有香甜蜜桃果香, 還有烏龍茶的沉穩回甘, 兩者融合得恰到好處清爽口感讓你一口接一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚雙響炮 Grapefruit Tea with Pearl and Coconut Jelly",
+            "description": "大杯。冰飲。全糖總糖量最高值為 77 克, 總熱量最高值為 427 大卡, 咖啡因燈號為 47。超嚼雙料, Q 彈珍珠, 爽脆椰果搭配酸甜紅葡萄柚果肉與烏龍茶底，清爽酸甜一口接一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉香凍奶綠 Jasmine Green Milk Tea with Jasmine Jelly",
+            "description": "大杯。冰飲。全糖總糖量最高值為 76 克, 總熱量最高值為 583 大卡, 咖啡因燈號為 165。清香自然茉香凍搭上滑順飽滿奶香綠, 層次口感 UP。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香雙響炮 Tropical Special (Passion Fruit Tea with Pearl and Coconut Jelly)",
+            "description": "大杯。冰飲。全糖總糖量最高值為 82 克, 總熱量最高值為 472 大卡, 咖啡因燈號為 75。招牌飲品, 嚴選百香果, 搭配高纖椰果及 Q 彈珍珠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季珍椰青 Spring Oolong Tea with Pearl and Coconut Jelly",
+            "description": "大杯。冰飲。全糖總糖量最高值為 47 克, 總熱量最高值為 273 大卡, 咖啡因燈號為 160。特選台灣四季春茶, 搭配高纖椰果及 Q 彈珍珠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "葡萄柚果粒茶 Grapefruit Green Tea",
+            "description": "大杯。全糖總糖量最高值為 80 克, 總熱量最高值為 341 大卡, 咖啡因燈號為 160。以酸甜紅葡萄柚果粒與輕揚茶湯調和而成的解膩特色果茶，喝得到果粒與茶韻，帶給人輕快好心情！　推薦微冰不另外加糖最怡人!",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日安大麥 Barley Tea",
+            "description": "大杯。固定冰量。全糖總糖量最高值為 30 克, 總熱量最高值為 121 大卡, 咖啡因燈號為 0。清爽麥香, 無糖無咖啡因最對味, 靜享午後好時光。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉角檸檬冬瓜 Winter Melon Lemon with Gem Boba",
+            "description": "大杯。冰飲。全糖總糖量最高值為 90 克, 總熱量最高值為 530 大卡, 咖啡因燈號為 0。粉角色登場, Q 彈粉角搭配清爽檸檬冬瓜, 迎接清爽春日美好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🐄濃醇牛乳 Milk",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "英式鮮奶茶 Black Tea Latte",
+            "description": "大杯。全糖總糖量最高值為 59 克, 總熱量最高值為 401 大卡, 咖啡因燈號為 156。完美比例搭配香濃鮮奶與紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠鮮奶茶 Black Tea Latte with Pearl",
+            "description": "大杯。全糖總糖量最高值為 57 克, 總熱量最高值為 547 大卡, 咖啡因燈號為 137。Q 彈口感珍珠, 完美比例搭配香濃鮮奶與紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉角鮮奶茶 Balck Tea Latte with Gem Boba",
+            "description": "大杯。冷飲。全糖總糖量最高值為 83 克, 總熱量最高值為 601 大卡, 咖啡因燈號為 137。粉角色登場, 粉角加上順口鮮奶茶, 嚼對不無聊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍃醇香茶品 Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高山紅茶 Black Tea",
+            "description": "大杯。全糖總糖量最高值為 33 克, 總熱量最高值為 141 大卡, 咖啡因燈號為 140。以手採的方式, 保持葉片的完整及品質穩定, 茶湯風味渾厚, 滋味濃郁芬芳, 呈現出立體及層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季春青茶 Spring Oolong Tea",
+            "description": "大杯。全糖總糖量最高值為 33 克, 總熱量最高值為 141 大卡, 咖啡因燈號為 260。特選台灣四季春茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉莉綠茶 Green Tea",
+            "description": "大杯。全糖總糖量最高值為 33 克, 總熱量最高值為 141 大卡。咖啡因燈號為 230。清新典雅的綠茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "２１ 歲輕烏龍 Light Oolong Tea",
+            "description": "大杯。全糖總糖量最高值為 41 克, 總熱量最高值為 177 大卡。咖啡因燈號為 260。不苦澀自醞香, 剛剛好的熟度, 精心研製 21 歲輕烏龍系列, 自在輕揚的茶湯, 少一分清香多一分焙香, 減一分青澀增一分熟韻, 如春光乍現, 如風華初露的 21 歲, 都可輕烏龍系列, 邀你一品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥四季春 Buckwheat Spring Oolong Tea",
+            "description": "大杯。全糖總糖量最高值為 33 克, 總熱量最高值為 185 大卡, 咖啡因燈號為 251。蕎麥穀香及台灣嚴選好茶。純粹好喝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🧋香濃奶茶 Rich Milk Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "阿薩姆奶茶 Assam Milk Tea",
+            "description": "大杯。全糖總糖量最高值為 46 克, 總熱量最高值為 584 大卡。咖啡因燈號為 200。香濃的紅茶搭配醇厚的奶香味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉香奶茶 Jasmine Milk Tea",
+            "description": "大杯。全糖總糖量最高值為 38 克, 總熱量最高值為 520 大卡。咖啡因燈號為 211。奶茶中飽含茉莉花香與綠茶香, 經典喝不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶 Bubble Tea",
+            "description": "大杯。全糖總糖量最高值為 51 克, 總熱量最高值為 722 大卡。咖啡因燈號為 160。Q 彈富口感的珍珠搭配香濃奶茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉角奶茶 Milk Tea with Gem Boba",
+            "description": "大杯。冷飲。全糖總糖量最高值為 80 克, 總熱量最高值為 749 大卡, 咖啡因燈號為 160。粉角色登場, 香醇奶茶與粉角的相遇。好喝滋味加成。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "布丁奶茶 Milk Tea with Pudding",
+            "description": "大杯。全糖總糖量最高值為 56 克, 總熱量最高值為 522 大卡。咖啡因燈號為 160。滑嫩的布丁加入香濃奶茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西谷米奶茶 Milk Tea with Sago",
+            "description": "大杯。全糖總糖量最高值為 74 克, 總熱量最高值為 705 大卡, 咖啡因燈號為 160。QQ的西谷米搭配香濃奶茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🔥奶茶三兄弟 3 Gems (Milk Tea with Pudding, Pearl and Grass Jelly)",
+            "description": "大杯。全糖總糖量最高值為 61 克, 總熱量最高值為 622 大卡。咖啡因燈號為 100。香濃奶茶搭配布丁, 珍珠及仙草, 一次就有 3 種口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍋‍🟩鮮調果茶 Fruit Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "檸檬紅茶 Lemon Black Tea",
+            "description": "大杯。冰飲。全糖總糖量最高值為 73 克, 總熱量最高值為 322 大卡, 咖啡因燈號為 131。酸甜檸檬搭配紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬綠茶 Lemon Green Tea",
+            "description": "大杯。冰飲。全糖總糖量最高值為 73 克, 總熱量最高值為 322 大卡, 咖啡因燈號為 125。酸甜檸檬搭配綠茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬青茶 Lemon Oolong Tea",
+            "description": "大杯。冰飲。全糖總糖量最高值為 73 克, 總熱量最高值為 322 大卡, 咖啡因燈號為 175。酸甜檸檬搭配青茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "２１ 歲輕檸烏龍 Lemon Light Oolong Tea",
+            "description": "大杯。全糖總糖量最高值為 82 克, 總熱量最高值為 359 大卡, 咖啡因燈號為 175。精心研製 21 歲輕烏龍系列。自在輕揚的茶湯加入新鮮檸檬的酸甜清香, 如春光乍現, 酸甜清爽的 21 歲。都可輕烏龍系列, 邀你一品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香綠茶 Passion Fruit Green Tea",
+            "description": "大杯。冰飲。全糖總糖量最高值為 84 克, 總熱量最高值為 355 大卡, 咖啡因燈號為 110。酸甜百香搭配茉莉綠茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果綠茶 Mango Green Tea",
+            "description": "大杯。冰飲。全糖總糖量最高值為 63 克, 總熱量最高值為 331 大卡, 咖啡因燈號為 75。金黃芒果香搭配茉莉綠茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬瓜露 Winter Melon Juice with Lemon",
+            "description": "大杯。冰飲。全糖總糖量最高值為 68 克, 總熱量最高值為 290 大卡, 咖啡因燈號為 0。新鮮檸檬汁結合古早味冬瓜露。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥冬瓜露 Winter Melon Juice with Buckwheat",
+            "description": "大杯。全糖總糖量最高值為 53 克, 總熱量最高值為 216 大卡, 咖啡因燈號為 0。蕎麥米香混合純古法提煉的冬瓜露。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜西谷米 Winter Melon Juice with Sago",
+            "description": "大杯。冰飲。固定甜度。全糖總糖量最高值為 88 克, 總熱量最高值為 476 大卡, 咖啡因燈號為 0。古早味釀造冬瓜露加上滑溜西谷米。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金桔檸檬 Lemon Juice with Kumquat",
+            "description": "大杯。全糖總糖量最高值為 55 克, 總熱量最高值為 247 大卡, 咖啡因燈號為 0。台灣本土金桔搭配新鮮檸檬汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒裡偷閒奇亞籽 Mango Green Tea with Chia Seeds",
+            "description": "大杯。全糖總糖量最高值為 75 克, 總熱量最高值為 396 大卡, 咖啡因燈號為 48。清香茉莉綠茶與芒果的酸甜果香, 搭配超級食物-奇亞籽, 大餐吃太多不消化, 忙碌導致食慾不振? 忙裡偷閒來杯富含超級食物的奇亞籽清爽解膩不卡卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜四季春 Winter Melon Juice with Spring Oolong Tea",
+            "description": "大杯。全糖總糖量最高值為 53 克, 總熱量最高值為 215 大卡, 咖啡因燈號為 233。清新吃瓜趣。清甜冬瓜及台灣四季春青茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶養樂多 Green Tea Yakult",
+            "description": "大杯。冰飲。全糖總糖量最高值為 56 克, 總熱量最高值為 266 大卡, 咖啡因燈號為 75。香醇綠茶混搭經典養樂多。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草蜜 Honey Tea with Grass Jelly",
+            "description": "大杯。冰飲。全糖總糖量最高值為 161 克, 總熱量最高值為 744 大卡, 咖啡因燈號為 0。盛夏消暑必備飲品。冰涼的仙草蜜配上滑順口感, 絕對是降火氣首選 (仙草及蜜茶本身即有甜味, 無糖選項為不另外加糖)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生椰楊枝甘露 Mango Grapefruit Sago with Coconut Milk",
+            "description": "大杯。全糖總糖量最高值為 78 克, 總熱量最高值為 457 大卡, 咖啡因燈號為 0。CoCo 楊枝甘露獨家配方, 芒果丁加上紅柚果粒, Q 彈西谷米, 搭配濃郁椰奶放膽享受, 要滿足不怕胖。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🧊冰沙 Slush",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙 Mung Bean Slush",
+            "description": "大杯。冰飲。固定甜度及冰量。全糖總糖量最高值為 93 克, 總熱量最高值為 588 大卡, 咖啡因燈號為 0。綿密綠豆手工熬煮, 製成真材實料綠豆冰沙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果冰沙 Mango Slush",
+            "description": "大杯。冰飲。固定甜度及冰量。全糖總糖量最高值為 92 克, 總熱量最高值為 598 大卡, 咖啡因燈號為 0。香濃芒果冰沙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙牛乳 Mung Bean Slush with Milk",
+            "description": "大杯。冰飲。固定甜度及冰量。全糖總糖量最高值為 77 克, 總熱量最高值為 555 大卡, 咖啡因燈號為 0。真材實料綠豆冰沙搭配牛乳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果沙牛乳 Mango Smoothie",
+            "description": "大杯。冰飲。固定甜度及冰量。全糖總糖量最高值為 76 克, 總熱量最高值為 564 大卡, 咖啡因燈號為 0。香濃芒果冰沙搭配牛乳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "☕嚴選咖啡 Selected Coffee",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "職人美式 Americano",
+            "description": "容量14oz(約420ml)。全糖總糖量最高值為 0.5 克, 總熱量最高值為 4 大卡, 咖啡因燈號為 233。職人嚴選新鮮現磨美式咖啡, 為美好一天揭開序幕的活力來源。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "職人拿鐵 Cafe Latte",
+            "description": "容量14oz(約420ml)。全糖總糖量最高值為 11 克, 總熱量最高值為 157 大卡, 咖啡因燈號為 233。職人嚴選新鮮現磨咖啡搭配香純鮮奶, 醇厚溫和品味生活的美好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠職人拿鐵 Caffe Latte with Pearl",
+            "description": "容量14oz(約420ml)。全糖總糖量最高值為 16 克, 總熱量最高值為 246 大卡, 咖啡因燈號為 124。Q彈珍珠與香醇拿鐵，最完美的相遇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉角職人拿鐵 Caffe Latte with Gem Boba",
+            "description": "容量14oz(約420ml)。全糖總糖量最高值為 30 克, 總熱量最高值為 284 大卡, 咖啡因燈號為 124。想不到吧!拿鐵加粉角就是超對味不無聊",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里手搗檸檬美式 Sicily Lemon Coffee",
+            "description": "大杯。全糖總糖量最高值為 54 克, 總熱量最高值為 253 大卡, 咖啡因燈號為 124。嚴選美式咖啡與手打檸檬, 打造酸香清爽的特色風味, 第一口就有驚喜感。酸中帶苦, 苦中回甘, 口感俐落, 層次分明, 喝得到提神也喝得出品味。這杯給你剛剛好的清醒感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚香檸美式 Grapefruit Lemon Coffee",
+            "description": "大杯。全糖總糖量最高值為 51 克, 總熱量最高值為 223 大卡, 咖啡因燈號為 124。美式與紅柚、檸檬的絕妙搭配, 入口酸甜, 果香滿滿。紅柚獨特的微苦尾韻, 讓整杯風味更有深度, 不只好喝, 更有記憶點。想來點不一樣的日常咖啡, 這杯讓你從第一口到最後一滴都很滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠黑糖拿鐵 Brown sugar coffee latte with pear",
+            "description": "容量14oz(約420ml)。糖度固定。全糖總糖量最高值為 38 克, 總熱量最高值為 342 大卡, 咖啡因燈號為 124。結合了黑糖的溫潤甜香與咖啡的醇厚再加上Q彈珍珠，苦甜濃郁越嚼越香，提供元氣又能帶來豐富的味覺層次!",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生椰職人拿鐵 Coconut Cafe Latte",
+            "description": "容量14oz(約420ml)。中杯。不另外加糖。全糖總糖量最高值為 7 克, 總熱量最高值為 135 大卡, 咖啡因燈號為 233。清甜椰乳 x 現磨咖啡的完美組合, 香醇又不膩口的輕乳感, 一喝就愛上。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉角生椰拿鐵 Coconut Cafe Latte with Gem Boba",
+            "description": "容量14oz(約420ml)。中杯。不另外加糖。全糖總糖量最高值為 25 克, 總熱量最高值為 256 大卡, 咖啡因燈號為 124。清甜椰乳 x 現磨咖啡的完美組合, 香醇又不膩口的輕乳感, 加上嚼感粉角好喝停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "塑膠袋 Plastic Bag",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "塑膠袋 Plastic Bag",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項 Notice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "四季春青茶: 台灣, 綠茶: 越南/台灣, 烏龍茶: 台灣/越南",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶: 台灣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "職人咖啡豆: 衣索比亞/普隆地/中國/巴西/印尼",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

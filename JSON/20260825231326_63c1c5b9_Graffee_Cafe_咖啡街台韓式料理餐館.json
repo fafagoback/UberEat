@@ -1,0 +1,666 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/graffee-cafe-%E5%92%96%E5%95%A1%E8%A1%97%E5%8F%B0%E9%9F%93%E5%BC%8F%E6%96%99%E7%90%86%E9%A4%90%E9%A4%A8/VnI0bsNqWDuOg59u2Gz37g",
+  "name": "Graffee Cafe 咖啡街台韓式料理餐館",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市內湖區內湖路一段91巷35弄1號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.087430944227737,
+    "longitude": 121.56273410885302
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 160
+  },
+  "servesCuisine": [
+    "Korean",
+    "Taiwanese",
+    "Coffee and Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉韓式部隊鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "365.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉韓式部隊鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【新品上市】豬肉韓式辣炒年糕Q拉麵 (單點)",
+            "description": "新品活動：單點餐品附贈韓國海苔絲 ; 精選韓國小麥年糕(Q彈口感不同米年糕)，加入韓國魚板及Q拉麵，私房調配韓式醬味辣炒，美味推出。",
+            "offers": {
+              "@type": "Offer",
+              "price": "360.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉辣起司鮮奶部隊鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "365.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉牛肉豆腐鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉韓式麻婆豆腐燴飯 (特餐)",
+            "description": "特餐：餐品含主餐點韓式麻婆豆腐，附白飯及精選鮮蔬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩牛肉嫩豆腐煲 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz; 特熬煲湯，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "460.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉韓式麻婆豆腐燴飯 (優惠套餐)",
+            "description": "優惠套餐：餐品含主餐點韓式麻婆豆腐，附白飯、精選鮮蔬、手作小菜x1、韓國海苔絲x1、及焦糖冬瓜茶12oz。",
+            "offers": {
+              "@type": "Offer",
+              "price": "495.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【新品上市】牛肉韓式辣炒年糕Q拉麵 (單點)",
+            "description": "新品活動：單點餐品附贈韓國海苔絲 ; 精選韓國小麥年糕(Q彈口感不同米年糕)，加入韓國魚板及Q拉麵，私房調配韓式醬味辣炒，美味推出。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式豬肉嫩豆腐煲 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉辣起司鮮奶部隊鍋 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 特熬煲湯制鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "465.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式牛肉嫩豆腐煲 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "355.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉韓式麻婆豆腐燴飯 (特餐)",
+            "description": "特餐：餐品含主餐點韓式麻婆豆腐，附白飯及精選鮮蔬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "375.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉嫩豆腐煲 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "355.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉韓式部隊鍋 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 特熬煲湯制鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "495.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式牛肉嫩豆腐煲 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "455.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精選餐點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉韓式麻婆豆腐燴飯 (優惠套餐)",
+            "description": "優惠套餐：餐品含主餐點韓式麻婆豆腐，附白飯、精選鮮蔬、手作小菜x1、韓國海苔絲x1、及焦糖冬瓜茶12oz。",
+            "offers": {
+              "@type": "Offer",
+              "price": "495.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉韓式麻婆豆腐燴飯 (優惠套餐)",
+            "description": "優惠套餐：餐品含主餐點韓式麻婆豆腐，附白飯、精選鮮蔬、手作小菜x1、韓國海苔絲x1、及焦糖冬瓜茶12oz。",
+            "offers": {
+              "@type": "Offer",
+              "price": "475.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉韓式麻婆豆腐燴飯 (特餐)",
+            "description": "特餐：餐品含主餐點韓式麻婆豆腐，附白飯及精選鮮蔬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉韓式麻婆豆腐燴飯 (特餐)",
+            "description": "特餐：餐品含主餐點韓式麻婆豆腐，附白飯及精選鮮蔬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "375.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國烤肉飯特餐",
+            "description": "醃製烤肉片加入鮮蔬鐵板快炒，搭配韓式小菜、配菜、荷包蛋及韓國海苔絲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "285.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣炒雞特餐",
+            "description": "醃製烤雞肉加入魚板鮮蔬韓式辣炒，搭配韓式小菜、配菜、荷包蛋及韓國海苔絲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "295.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "韓式嫩豆腐煲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韓式牛肉嫩豆腐煲 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "455.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式豬肉嫩豆腐煲 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式牛肉嫩豆腐煲 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "355.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式豬肉嫩豆腐煲 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "295.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "沙茶嫩豆腐煲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉嫩豆腐煲 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz; 特熬煲湯，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "455.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶豬肉嫩豆腐煲 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz; 特熬煲湯，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶豬肉嫩豆腐煲 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "295.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉嫩豆腐煲 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "355.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "咖哩嫩豆腐煲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咖哩豬肉嫩豆腐煲 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 特熬煲湯，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩牛肉嫩豆腐煲 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz; 特熬煲湯，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "460.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩豬肉嫩豆腐煲 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "295.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩牛肉嫩豆腐煲 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "360.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "韓式部隊鍋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉韓式部隊鍋 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 特熬煲湯制鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "495.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉韓式部隊鍋 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 特熬煲湯制鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "465.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉韓式部隊鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "365.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉韓式部隊鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "起司鮮奶部隊鍋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉辣起司鮮奶部隊鍋 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz; 特熬煲湯制鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "495.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉辣起司鮮奶部隊鍋 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 特熬煲湯制鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "465.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉辣起司鮮奶部隊鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "365.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉辣起司鮮奶部隊鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "韓式辣炒年糕Q拉麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【新品上市】牛肉韓式辣炒年糕Q拉麵 (單點)",
+            "description": "新品活動：單點餐品附贈韓國海苔絲 ; 精選韓國小麥年糕(Q彈口感不同米年糕)，加入韓國魚板及Q拉麵，私房調配韓式醬味辣炒，美味推出。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【新品上市】豬肉韓式辣炒年糕Q拉麵 (單點)",
+            "description": "新品活動：單點餐品附贈韓國海苔絲 ; 精選韓國小麥年糕(Q彈口感不同米年糕)，加入韓國魚板及Q拉麵，私房調配韓式醬味辣炒，美味推出。",
+            "offers": {
+              "@type": "Offer",
+              "price": "360.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【新品上市】豬肉韓式辣炒年糕Q拉麵 (優惠套餐)",
+            "description": "優惠套餐：附手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 精選韓國小麥年糕(Q彈口感不同米年糕)，加入韓國魚板及Q拉麵，私房調配韓式醬味辣炒，美味推出。",
+            "offers": {
+              "@type": "Offer",
+              "price": "460.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【新品上市】牛肉韓式辣炒年糕Q拉麵 (優惠套餐)",
+            "description": "優惠套餐：附手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 精選韓國小麥年糕(Q彈口感不同米年糕)，加入韓國魚板及Q拉麵，私房調配韓式醬味辣炒，美味推出。",
+            "offers": {
+              "@type": "Offer",
+              "price": "495.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "清燉豆腐鍋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "清燉牛肉豆腐鍋 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz ; 特熬煲湯，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉豬肉豆腐鍋 (優惠套餐)",
+            "description": "優惠套餐：附白飯、手作小菜x1、韓國海苔絲x1及焦糖冬瓜茶12oz; 特熬煲湯，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉豬肉豆腐鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉牛肉豆腐鍋 (特餐)",
+            "description": "特餐：附白飯及韓國海苔絲 ; 特熬煲湯製鍋，品湯用餐雙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "風味手作小菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手作小菜*1 (種類隨選)",
+            "description": "手作風味小菜，由廚房隨選搭配。",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精選特調飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "檸檬釀黑美式精品咖啡 (12oz-Double-限溫熱飲)",
+            "description": "養生檸檬釀飲系列：精選精品咖啡豆萃取加入養生檸檬釀果片冰搖沖調，咖啡中帶有獨特檸果香，口感層次豐富，黑咖啡界的新釀飲！«檸檬有茶理，養生有好飲。»",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【古法熬煮】焦糖冬瓜茶 (16oz/無咖啡因)",
+            "description": "冬瓜、焦糖、冰糖熬煮，果肉纖維正常，加入蜜釀檸檬露，檸香滋頤、降燥解暑。«檸檬有茶理，養生有好飲。»",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜焦糖咖啡 12oz (手熬冬瓜焦糖)",
+            "description": "由冬瓜、焦糖、冰糖熬煮，果肉纖維正常，加入精選精品咖啡沖調，正夏限定，抗竭消暑，咖啡特調新醒風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精選麵品 (韓國手打麵條)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉韓式炸醬麵 (優惠特餐/含小菜)",
+            "description": "(拌麵) 精選韓國手打麵條、鮮蔬及炸醬炒肉，搭配特製黑麵炒醬拌炒料理美味上市，此項優惠特餐包含2樣小菜及韓國海苔絲(附湯改海苔絲)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉韓式炸醬麵 (優惠特餐/含小菜)",
+            "description": "(拌麵) 精選韓國手打麵條，搭配特製黑麵炒醬拌炒料理美味上市，此項優惠特餐包含2樣小菜及附湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

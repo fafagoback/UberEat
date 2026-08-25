@@ -1,0 +1,1594 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B0%8F%E4%B8%B8%E5%AD%90%E7%BE%8E%E5%A5%BD%E9%A3%9F%E5%85%89/w117fYyhTEGk2S9W7-DhQg",
+  "name": "小丸子美好食光",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Renmei St 86",
+    "addressLocality": "Sanchong District",
+    "addressRegion": "New Taipei City",
+    "postalCode": "241",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0797614,
+    "longitude": 121.4860225
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 3.8,
+    "reviewCount": 180
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮鍋燒烏龍麵套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇鐵板麵套餐",
+            "description": "含里肌豬排及蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "丸瘋炸物拼盤",
+            "description": "老闆心情隨意配，保證物超所值！",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬炒泡麵",
+            "description": "XO醬拌炒泡麵，麵條Q彈入味，鹹香濃郁、層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬炒蘿蔔糕",
+            "description": "蘿蔔糕與XO醬拌炒，香氣十足、鹹香開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鍋燒麵套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮鍋燒意麵套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶海鮮鍋燒意麵套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜海鮮鍋燒烏龍麵套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮鍋燒雞絲麵套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶海鮮鍋燒烏龍麵套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜海鮮鍋燒意麵套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮鍋燒烏龍麵套餐",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶海鮮鍋燒雞絲麵套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜海鮮鍋燒粄條套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜海鮮鍋燒雞絲麵套餐",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮鍋燒粄條套餐",
+            "description": "海鮮風味鍋燒湯頭搭配滑Q粄條，熱呼呼暖胃的套餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶海鮮鍋燒粄條",
+            "description": "附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "沙茶套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉炒泡麵",
+            "description": "沙茶香濃，牛肉與Q彈泡麵拌炒，麵條吸收醬香，越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶豬肉炒泡麵",
+            "description": "沙茶香濃，豬肉與泡麵拌炒，台式鹹香風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶什錦炒泡麵",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶豬肉麵套餐",
+            "description": "含蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶蝦仁麵套餐",
+            "description": "含蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉炒烏龍",
+            "description": "附蛋、飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶豬肉炒烏龍",
+            "description": "沙茶香氣包裹烏龍麵與豬肉，拌炒均勻、醬香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶什錦炒烏龍",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒烏龍套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒烏龍套餐",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒烏龍",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒烏龍套餐",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒泡麵套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韓國炒泡麵套餐",
+            "description": "韓式風味炒泡麵套餐，麵條Q彈，醬香順口，簡單滿足一餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒泡麵套餐",
+            "description": "附單，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒泡麵套餐",
+            "description": "附單，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉炒泡麵套餐",
+            "description": "附單，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒泡麵套餐",
+            "description": "附單，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒粄條套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒粄條",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒粄條",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉炒粄條",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜炒粄條",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒粄條",
+            "description": "附蛋，飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鐵板麵套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "義大利肉醬鐵板麵套餐",
+            "description": "含里肌豬排及蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇鐵板麵套餐",
+            "description": "含里肌豬排及蛋。附飲品。\n\n飲料以店家現有的品項為主唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒鐵板麵套餐",
+            "description": "含里肌豬排及蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁鐵板麵套餐",
+            "description": "含里肌豬排及蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味肉燥鐵板麵套餐",
+            "description": "含里肌豬排及蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油培根鐵板麵套餐",
+            "description": "含里肌豬排及蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦海鮮鐵板麵",
+            "description": "含里肌豬排及蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁鐵板麵套餐",
+            "description": "含里肌豬排及蛋。附飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香香蛋餅",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋餅",
+            "description": "蛋餅包入鮪魚餡，蛋香與鮪魚香氣交融，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米蛋餅",
+            "description": "含醬油膏，若不加請告知唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋餅",
+            "description": "含醬油膏，若不加請告知唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙蛋蛋餅",
+            "description": "雙顆蛋量加倍，蛋餅更飽足，蛋香更濃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排蛋餅",
+            "description": "含醬油膏，若不加請告知唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚玉米蛋餅",
+            "description": "蛋香餅皮捲入鮪魚與玉米，口感柔軟、鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋餅",
+            "description": "含醬油膏，若不加請告知唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋餅",
+            "description": "含醬油膏，若不加請告知唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋餅",
+            "description": "蛋餅夾火腿，經典基本款。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜蛋餅",
+            "description": "含醬油膏，若不加請告知唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋餅",
+            "description": "含醬油膏，若不加請告知唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜蛋餅",
+            "description": "含醬油膏，若不加請告知唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥蛋餅",
+            "description": "含醬油膏，若不加請告知唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "抓抓蔥抓餅",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味蔥抓餅",
+            "description": "內含醬油膏，若不加請告知",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蔥抓餅",
+            "description": "香酥蔥抓餅夾培根，鹹香順口的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蔥抓餅",
+            "description": "內含醬油膏，若不加請告知",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米蔥抓餅",
+            "description": "內含醬油膏，若不加請告知",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蔥抓餅",
+            "description": "蔥香餅皮捲入鮪魚餡，口味經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚玉米蔥抓餅",
+            "description": "蔥抓餅夾入鮪魚與玉米粒，口感豐富、鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蔥抓餅",
+            "description": "蔥抓餅夾火腿，經典鹹香組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蔥抓餅",
+            "description": "內含醬油膏，若不加請告知",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排蔥抓餅",
+            "description": "內含醬油膏，若不加請告知",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蔥抓餅",
+            "description": "內含醬油膏，若不加請告知",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜蔥抓餅",
+            "description": "內含醬油膏，若不加請告知",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜蔥抓餅",
+            "description": "內含醬油膏，若不加請告知",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥蔥抓餅",
+            "description": "內含醬油膏，若不加請告知",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "玉米濃湯",
+            "description": "含胡椒粉，若不加請備註告知，謝謝",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷肉飯",
+            "description": "包含滷蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水餃(10顆)",
+            "description": "綜合口味，含醬油膏，若不加請告知，謝謝",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米散蛋",
+            "description": "玉米粒搭配散蛋，單純好味道，單點首選",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹湯圓",
+            "description": "糯米湯圓配鹹香清湯，Q彈順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕",
+            "description": "2片",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "法式單吐司（原味）",
+            "description": "單片法式吐司（原味），吐司沾蛋液香煎。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒲燒鯛魚",
+            "description": "2片",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒青菜",
+            "description": "家常快炒青菜，口感爽脆、清香順口，簡單好味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奶茶",
+            "description": "經典奶茶，茶香與奶香融合，順口好喝。冰/熱可選，甜度冰量可調，請於備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "冰量及甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶拿鐵",
+            "description": "冰量及甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜茶",
+            "description": "冰量及甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可樂",
+            "description": "冰量及甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可歐蕾",
+            "description": "瓶裝。冰量及甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可",
+            "description": "冰量及甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖啡",
+            "description": "經典香醇咖啡，簡單純粹的飲品選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯麵套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "溫州餛飩湯麵",
+            "description": "內含油蔥，若不加請備註告知\n\n套餐附贈紅茶/冬瓜茶擇一，請備註告知，若沒備註則無贈送唷！\n\n贈送的飲料以店家現貨為主喔！謝謝~",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶溫州餛飩湯麵",
+            "description": "沙茶湯底搭配溫州餛飩與麵條，濃郁順口的湯麵套餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜溫州餛飩湯麵",
+            "description": "酸香泡菜融入湯頭，配上溫州餛飩與麵條，暖胃順口的一碗湯麵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒飯系列套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒飯",
+            "description": "套餐附贈紅茶/冬瓜茶擇一，\n若無勾選則無贈送，\n若勾選品項缺貨則以店家現貨為主",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒飯",
+            "description": "套餐附贈紅茶/冬瓜茶擇一，\n若無勾選則無贈送，\n若勾選品項缺貨則以店家現貨為主",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯",
+            "description": "套餐附贈紅茶/冬瓜茶擇一，\n若無勾選則無贈送，\n若勾選品項缺貨則以店家現貨為主",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚炒飯",
+            "description": "以鮭魚拌炒米飯，呈現魚香與米香的家常風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排炒飯",
+            "description": "套餐附贈紅茶/冬瓜茶擇一，\n若無勾選則無贈送，\n若勾選品項缺貨則以店家現貨為主",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥雞排蛋炒飯",
+            "description": "蛋炒飯鋪上香酥雞排，酥香與米香同時滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米炒飯",
+            "description": "套餐附贈紅茶/冬瓜茶擇一，\n若無勾選則無贈送，\n若勾選品項缺貨則以店家現貨為主",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨門秘方排骨炒飯",
+            "description": "特製秘方醬香排骨與米飯同炒，肉香釋出、米粒分明，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶炒飯",
+            "description": "套餐附贈紅茶/冬瓜茶擇一，\n若無勾選則無贈送，\n若勾選品項缺貨則以店家現貨為主",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根炒飯的",
+            "description": "套餐附贈紅茶/冬瓜茶擇一，\n若無勾選則無贈送，\n若勾選品項缺貨則以店家現貨為主",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒲燒鯛魚蛋炒飯",
+            "description": "蒲燒鯛魚片拌入蛋炒飯，醬香甘鹹、米香蛋香交融，飽足順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒飯+無骨大雞腿",
+            "description": "蛋香炒飯搭配去骨大雞腿，鹹香順口，肉量實在、去骨好入口，飽足的一份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "厚片厚厚吃",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力厚片",
+            "description": "吐司厚片，均勻塗上巧克力醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤鮪魚厚片",
+            "description": "厚片吐司鋪上鮪魚，焗烤至表面金黃微脆，口感外脆內軟",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤火腿厚片",
+            "description": "厚片吐司鋪火腿，焗烤至表面金黃微酥，咬下鬆軟中帶層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤培根厚片",
+            "description": "厚片吐司鋪上培根，焗烤至金黃微酥，邊角帶脆、口感厚實，鹹香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生厚片",
+            "description": "會灑一些花生粉，若不加可以備註告知，謝謝～",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤玉米厚片",
+            "description": "厚片吐司鋪上玉米，焗烤至金黃，酥脆表層配上柔軟麵包口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤泡菜厚片",
+            "description": "厚片吐司鋪上泡菜，焗烤至金黃，香氣濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "好吃炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "無骨鹹酥雞",
+            "description": "去骨雞肉塊裹粉酥炸，金黃香酥，外酥內嫩，鹹香涮嘴，方便食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加超級好吃的無骨肉條",
+            "description": "加購無骨肉條，炸至金黃，無骨好入口，增添滿足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克雞塊",
+            "description": "5入",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸甜不辣",
+            "description": "外酥內Q的台式甜不辣，魚漿香氣十足，口感彈牙，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯條",
+            "description": "金黃酥脆的馬鈴薯條，外酥內鬆軟，越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大人小孩都愛炸湯圓",
+            "description": "外酥內Q的糯米圓，香糯順口，一口一顆的人氣點心",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "外酥內嫩豬血糕",
+            "description": "金黃酥脆的豬血糕，內裡軟Q彈牙，台式鹹香口感，越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋泥球",
+            "description": "5個",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "波波起司球",
+            "description": "5個",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞排套餐",
+            "description": "含飲品紅茶或冬瓜茶則ㄧ",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚條",
+            "description": "3個",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司棒",
+            "description": "3入",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥雞排",
+            "description": "金黃酥脆的雞排，外酥內嫩，口感多汁香嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "3入",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥雞翅",
+            "description": "3入",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "棒棒腿",
+            "description": "2 隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金圓薯餅",
+            "description": "5入",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金黃玉米筍",
+            "description": "炸至金黃的玉米筍，外酥內嫩，口感爽脆，涮嘴好吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金黃炸餃",
+            "description": "8個",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "燴飯套餐吃飽飽",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒牛肉燴飯",
+            "description": "套餐燴飯+蛋+一杯飲料，\n若未勾選飲料，則以店家隨機附送！",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩燴飯套餐",
+            "description": "套餐燴飯+蛋+一杯飲料，\n若未勾選飲料，則以店家隨機附送！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "乳酪餅",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力乳酪餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米起司乳酪餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煎蛋乳酪餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牽司起司乳酪餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚起司乳酪餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生乳酪餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

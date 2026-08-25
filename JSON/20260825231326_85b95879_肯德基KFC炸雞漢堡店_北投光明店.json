@@ -1,0 +1,1059 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%82%AF%E5%BE%B7%E5%9F%BAkfc%E7%82%B8%E9%9B%9E%E6%BC%A2%E5%A0%A1%E5%BA%97-%E5%8C%97%E6%8A%95%E5%85%89%E6%98%8E%E5%BA%97/lGVGNLE0TCOjrNEDC8s8lw",
+  "name": "肯德基KFC炸雞漢堡店 北投光明店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區光明路225號(新北投捷運站)",
+    "addressLocality": "Taipei",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1365434,
+    "longitude": 121.5042225
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 3000
+  },
+  "servesCuisine": [
+    "Fast Food",
+    "Fried Chicken",
+    "American",
+    "Burgers"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "【人氣精選】新上市",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豪享8塊炸雞桶",
+            "description": "【原價：799】8塊咔啦脆雞(桶)",
+            "offers": {
+              "@type": "Offer",
+              "price": "499.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆脆無骨雞腿霸2塊+熾熱紅韓式辣醬L餐",
+            "description": "【原價337】爆脆無骨雞腿霸x2+熾熱紅韓式辣醬x1香酥脆薯(小)x1+原味蛋撻x1+中杯飲料1杯｜肯德基攜手《新世紀福音戰士》，以人氣「爆脆無骨雞腿霸」為聯名主角，結合EVA限定「冷靜白醬」與「熾熱紅醬」，一款清爽、一款濃郁，更換上EVA限定聯名包裝，從美味到視覺全面進入EVA世界。\n「爆脆無骨雞腿霸」嚴選厚切去骨雞腿肉，經獨家工法現炸，外層金黃爆脆、肉質鮮嫩多汁；搭配清爽酸甜的「冷靜白醬（香檸優格醬）」與濃郁甜辣的「熾熱紅醬（韓式辣醬）」，雙重風味讓爆脆美味再升級。\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "236.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆脆無骨雞腿霸2塊+冷靜白香檸優格醬L餐",
+            "description": "【原價337】爆脆無骨雞腿霸x2+冷靜白香檸優格醬+香酥脆薯(小)x1+原味蛋撻x1+中杯飲料1杯｜肯德基攜手《新世紀福音戰士》，以人氣「爆脆無骨雞腿霸」為聯名主角，結合EVA限定「冷靜白醬」與「熾熱紅醬」，一款清爽、一款濃郁，更換上EVA限定聯名包裝，從美味到視覺全面進入EVA世界。\n「爆脆無骨雞腿霸」嚴選厚切去骨雞腿肉，經獨家工法現炸，外層金黃爆脆、肉質鮮嫩多汁；搭配清爽酸甜的「冷靜白醬（香檸優格醬）」與濃郁甜辣的「熾熱紅醬（韓式辣醬）」，雙重風味讓爆脆美味再升級。\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "236.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆脆無骨雞腿霸2塊+熾熱紅韓式辣醬XL餐",
+            "description": "【原價393】爆脆無骨雞腿霸x2+咔啦脆雞x1+熾熱紅韓式辣醬+香酥脆薯(大)x1+ 原味蛋撻x1+中杯飲料1杯｜肯德基攜手《新世紀福音戰士》，以人氣「爆脆無骨雞腿霸」為聯名主角，結合EVA限定「冷靜白醬」與「熾熱紅醬」，一款清爽、一款濃郁，更換上EVA限定聯名包裝，從美味到視覺全面進入EVA世界。\n「爆脆無骨雞腿霸」嚴選厚切去骨雞腿肉，經獨家工法現炸，外層金黃爆脆、肉質鮮嫩多汁；搭配清爽酸甜的「冷靜白醬（香檸優格醬）」與濃郁甜辣的「熾熱紅醬（韓式辣醬）」，雙重風味讓爆脆美味再升級。\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆脆無骨雞腿霸2塊+冷靜白香檸優格醬XL餐",
+            "description": "【原價393】爆脆無骨雞腿霸x2+咔啦脆雞x1+冷靜白香檸優格醬+香酥脆薯(大)x1+ 原味蛋撻x1+中杯飲料1杯｜肯德基攜手《新世紀福音戰士》，以人氣「爆脆無骨雞腿霸」為聯名主角，結合EVA限定「冷靜白醬」與「熾熱紅醬」，一款清爽、一款濃郁，更換上EVA限定聯名包裝，從美味到視覺全面進入EVA世界。\n「爆脆無骨雞腿霸」嚴選厚切去骨雞腿肉，經獨家工法現炸，外層金黃爆脆、肉質鮮嫩多汁；搭配清爽酸甜的「冷靜白醬（香檸優格醬）」與濃郁甜辣的「熾熱紅醬（韓式辣醬）」，雙重風味讓爆脆美味再升級。\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沾沾樂分享盒",
+            "description": "【原價753】爆脆無骨雞腿霸x6+香酥脆薯(大)+原味蛋撻x2+熾熱紅韓式辣醬+冷靜白香檸優格醬｜肯德基攜手《新世紀福音戰士》，以人氣「爆脆無骨雞腿霸」為聯名主角，結合EVA限定「冷靜白醬」與「熾熱紅醬」，一款清爽、一款濃郁，更換上EVA限定聯名包裝，從美味到視覺全面進入EVA世界。\n「爆脆無骨雞腿霸」嚴選厚切去骨雞腿肉，經獨家工法現炸，外層金黃爆脆、肉質鮮嫩多汁；搭配清爽酸甜的「冷靜白醬（香檸優格醬）」與濃郁甜辣的「熾熱紅醬（韓式辣醬）」，雙重風味讓爆脆美味再升級。",
+            "offers": {
+              "@type": "Offer",
+              "price": "527.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒花生蛋撻2顆 Two Green Pepper & Peanut Egg Tarts",
+            "description": "【原價234】青花椒花生蛋撻x2｜不被看好但超搭？肯德基青花椒從炸雞跨界甜點「青花椒花生蛋撻」，三大人氣美味首次合體。青花椒香麻脆雞 × 花生熔岩咔啦雞腿堡 × 原味蛋撻。頂層刷上香麻微辣的青花椒醬，一入口椒香立刻竄出！咬下香濃花生流心爆出，濃香與椒麻交織，巧妙中和辣度。從懷疑到上癮只需一口，別錯過這顆甜、麻、香、辣的限定新滋味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "164.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒花生蛋撻禮盒 Green Pepper & Peanut Egg Tart Box",
+            "description": "【原價627】青花椒花生蛋撻x6｜不被看好但超搭？肯德基青花椒從炸雞跨界甜點「青花椒花生蛋撻」，三大人氣美味首次合體。青花椒香麻脆雞 × 花生熔岩咔啦雞腿堡 × 原味蛋撻。頂層刷上香麻微辣的青花椒醬，一入口椒香立刻竄出！咬下香濃花生流心爆出，濃香與椒麻交織，巧妙中和辣度。從懷疑到上癮只需一口，別錯過這顆甜、麻、香、辣的限定新滋味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "439.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙色蛋撻禮盒( 原味+青花椒花生) Mix Egg Tart Box",
+            "description": "【原價588】青花椒花生蛋撻x3+原味蛋撻x3｜不被看好但超搭？肯德基青花椒從炸雞跨界甜點「青花椒花生蛋撻」，三大人氣美味首次合體。青花椒香麻脆雞 × 花生熔岩咔啦雞腿堡 × 原味蛋撻。頂層刷上香麻微辣的青花椒醬，一入口椒香立刻竄出！咬下香濃花生流心爆出，濃香與椒麻交織，巧妙中和辣度。從懷疑到上癮只需一口，別錯過這顆甜、麻、香、辣的限定新滋味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "412.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜風味紅茶",
+            "description": "蜂蜜風味紅茶1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大阪燒雙蝦咔啦海陸堡絕配餐",
+            "description": "【原價488】| 大阪燒雙蝦咔啦海陸堡x1、香酥脆薯(小)x1、原味蛋撻x1、中杯飲料1杯 |醬香大阪燒 × 酥脆炸蝦 × 咔啦雞腿排，肯德基嚴選道地日式元素，將關西經典「大阪燒」風味全面升級重現！兩隻厚實天婦羅海老炸蝦，搭配酥脆咔啦雞腿排，疊上特製大阪燒醬，海陸雙拼、醬香濃郁，鹹香交織、口口滿足，每一口都釋放濃厚日式風味！*炸蝦尾部帶有天然的蝦殼，請小心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "341.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大阪燒雙蝦咔啦海陸堡XL餐",
+            "description": "【原價562】| 大阪燒雙蝦咔啦海陸堡x1、 咔啦脆雞x1、香酥脆薯(大)x 1、原味蛋撻x1、中杯飲料1杯 |醬香大阪燒 × 酥脆炸蝦 × 咔啦雞腿排，肯德基嚴選道地日式元素，將關西經典「大阪燒」風味全面升級重現！兩隻厚實天婦羅海老炸蝦，搭配酥脆咔啦雞腿排，疊上特製大阪燒醬，海陸雙拼、醬香濃郁，鹹香交織、口口滿足，每一口都釋放濃厚日式風味！*炸蝦尾部帶有天然的蝦殼，請小心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "393.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【人氣推薦】優惠6折起！！",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋撻禮盒2盒86折",
+            "description": "【原價688】| 兩盒原味蛋撻禮盒",
+            "offers": {
+              "@type": "Offer",
+              "price": "591.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋撻鱈魚圈圈分享組6折",
+            "description": "【原價606】| 一盒蛋撻、大薯、鱈魚圈圈、兩杯飲料(中)",
+            "offers": {
+              "@type": "Offer",
+              "price": "366.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋撻蝦塊分享組67折",
+            "description": "【原價592】|一盒蛋撻、大薯、蝦塊、兩杯飲料(中)",
+            "offers": {
+              "@type": "Offer",
+              "price": "397.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚圈圈+雞塊點心組76折",
+            "description": "【原價262】| 鱈魚圈圈x2份、8塊雞塊(含糖醋醬x1)",
+            "offers": {
+              "@type": "Offer",
+              "price": "213.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦塊點心組77折",
+            "description": "【原價259】| 兩顆蛋撻、蝦塊x1份、4塊雞塊(含糖醋醬x1)",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋撻禮盒7折",
+            "description": "【原價419】原味蛋撻6顆 Original Egg Tart *6",
+            "offers": {
+              "@type": "Offer",
+              "price": "344.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "暖心時光套餐7折",
+            "description": "【原價205】含原味蛋撻2顆及經典熱奶茶(小)1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋蛋撻雙人下午茶7折",
+            "description": "【原價373】｜草莓起司冰淇淋大福2顆，原味蛋撻2顆，冰無糖茉莉綠茶(中)2杯。｜Strawberry Cheese Ice Cream Mochi*2 + Original Egg Tart*2 + Sugar Free Jasmine Tea(Middle)*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋撻禮盒點心套餐7折",
+            "description": "【原價492】含原味蛋撻 6 顆及經典熱奶茶(小)2杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "404.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "多人歡聚餐 Group Combo",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "歡享經典餐 Happy Sharing Bucket Combo",
+            "description": "含咔啦脆雞(中辣)6塊(炸雞恕不開放選擇部位)，香酥脆薯(中)1份，百事可樂1瓶(1.25公升)｜Hot&spicy Fried Chicken*6 + Mid Fries*1 + Coke(1.25L)*1",
+            "offers": {
+              "@type": "Offer",
+              "price": "519.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歡聚B餐-6塊雞 Party B Bucket Combo 6pcs",
+            "description": "【原價904】咔啦脆雞(中辣)6塊(炸雞恕不開放選擇部位)、雙色轉轉QQ球1份、4塊上校雞塊(含糖醋醬x1)、原味蛋撻2顆、百事可樂1瓶(1.25公升)",
+            "offers": {
+              "@type": "Offer",
+              "price": "633.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "XL超豪肯套餐 XL Combo",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "爆脆無骨雞腿霸 XL餐 Extra Crispy Strip XL Combo",
+            "description": "爆脆無骨雞腿霸2塊、咔啦脆雞1塊、香酥脆薯(大)1份、 原味蛋撻1顆、中杯飲品1杯 | 肯德基「爆脆無骨雞腿霸」，一吃就上癮！嚴選去骨雞腿肉厚切成條，外層裹上肯德基獨家爆脆黃金酥炸粉，現炸起鍋、酥香四溢。外皮金黃酥脆、卡滋作響，裡頭卻依然鮮嫩多汁，完美鎖住雞腿肉的肉汁精華。整塊無骨雞腿肉，大口咬下毫無負擔，一口接一口停不下來，越吃越爽、越吃越涮嘴。隨時想吃炸雞，就來一條最便利、最過癮的選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "319.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吮指雙雞XL套餐(中辣) 2PCS Chicken Super XL Combo",
+            "description": "【原價374】咔啦脆雞(中辣)2塊(炸雞恕不開放選擇部位)，香酥脆薯(大)1份，原味蛋撻1顆，上校雞塊4塊(含糖醋醬x1)及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Hot&spicy Fried Chicken*2 + Nugget*4 + Mid Fries*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "312.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿堡XL套餐(中辣) Zinger Super XL Combo",
+            "description": "【原價329】咔啦雞腿堡(中辣) 1 份，咔啦脆雞(中辣) 1 塊(炸雞恕不開放選擇部位)，香酥脆薯(大)1份，原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Zinger*1 + Hot&spicy Fried Chicken*1 + Fries (Large)*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "291.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義式香草紙包雞XL套餐 Italian Herb Foilicious  XL Combo",
+            "description": "【原價385】義式香草紙包雞1份、雞汁風味飯1份【供應至20:00，20:00之後視餐廳營運狀況供應雞汁風味飯或香酥脆薯中1份】、上校雞塊4塊(含糖醋醬x1)、原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Italian Herb Foilicious*1+ Rice*1+ Nugget*4+Original Egg Tart*1+ Drink(Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "317.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒香麻咔啦雞腿堡XL套餐(辣) Green Pepper Zinger XL Combo",
+            "description": "【原價345】青花椒香麻咔啦雞腿堡(辣)1份，咔啦脆雞(中辣)1塊(炸雞恕不開放選擇部位)，香酥脆薯(大)1份，原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Green Pepper Zinger*1 + Hot&spicy Fried Chicken*1 +Fries (Large)*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "302.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生熔岩咔啦雞腿堡XL套餐(中辣) Peanut Lava Zinger XL Combo",
+            "description": "含花生熔岩咔啦雞腿堡(中辣)1份，咔啦脆雞(中辣)1塊(炸雞恕不開放選擇部位)，香酥脆薯(大)1份，原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Peanut Lava Zinge*1 + Hot&spicy Fried Chicken*1 + Mid Fries*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "326.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒香麻脆雞XL套餐(辣) Green Pepper Fried Chicken XL Combo",
+            "description": "【原價：395】青花椒香麻脆雞(辣)2塊，香酥脆薯(大)1份，上校雞塊4塊(含糖醋醬x1)，原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】。｜Green Pepper Fried Chicken*2 + Nugget*4 + Fries (Large)*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "325.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "1+1 109元起",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿堡獨享餐 Zinger Super Value Combo",
+            "description": "【原價219】咔啦雞腿堡x1+百事可樂(小)*可替換成其他小杯飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吮指雙雞獨享餐  2PCS Chicken Super Value Combo",
+            "description": "【原價266】吮指雙雞+百事可樂(小) *可替換成其他小杯飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "186.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味脆雞堡(小)獨享餐 Original Crispy Chicken Burger Value Combo",
+            "description": "【原價156】原味脆雞堡(小)x1+百事可樂(小)*可替換成其他小杯飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生脆雞堡(小)獨享餐Peanut Crispy Chicken Burger Value Combo",
+            "description": "【原價172】花生脆雞堡(小)x1+百事可樂(小)*可替換成其他小杯飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式起司脆雞飯 Korean Sauce & Cheese Chicken Rice Combo",
+            "description": "【原價265】韓式起司脆雞飯x1+綠茶(中)x1 | 供應至20:00，20:00之後視各餐廳營運狀況供應。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "L絕配餐 Variety Combo",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿堡絕配餐(中辣) Zinger Super Variety Combo",
+            "description": "咔啦雞腿堡(中辣)1份，香酥脆薯(小)1份，原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Zinger*1 + Small Fries*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "237.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆脆無骨雞腿霸絕配餐 Extra Crispy Strip L Combo",
+            "description": "爆脆無骨雞腿霸2塊、香酥脆薯(小)1份、原味蛋撻1顆、中杯飲品1杯 | 肯德基「爆脆無骨雞腿霸」，一吃就上癮！嚴選去骨雞腿肉厚切成條，外層裹上肯德基獨家爆脆黃金酥炸粉，現炸起鍋、酥香四溢。外皮金黃酥脆、卡滋作響，裡頭卻依然鮮嫩多汁，完美鎖住雞腿肉的肉汁精華。整塊無骨雞腿肉，大口咬下毫無負擔，一口接一口停不下來，越吃越爽、越吃越涮嘴。隨時想吃炸雞，就來一條最便利、最過癮的選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "276.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吮指雙雞絕配餐(中辣) 2PCS Chicken Super Variety Combo",
+            "description": "咔啦脆雞(中辣)2塊(炸雞恕不開放選擇部位)，香酥脆薯(小)1份，原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Hot&spicy Fried Chicken*2 + Small Fries*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒香麻咔啦雞腿堡絕配餐(辣) Green Pepper Zinger Variety Combo",
+            "description": "青花椒咔啦雞腿堡(辣)1份，香酥脆薯(小)1份，原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Green Pepper Zinger*1 + Small Fries*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生熔岩咔啦雞腿堡絕配餐(中辣) Peanut Lava Zinger Variety Combo",
+            "description": "花生熔岩咔啦雞腿堡(中辣)1份，香酥脆薯(小)1份，原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Peanut Lava Zinger*1 + Small Fries*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒香麻脆雞絕配餐(辣) Green Pepper Fried Chicken Variety Combo",
+            "description": "青花椒香麻脆雞2塊(辣)，香酥脆薯(小)1份，原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】。｜Green Pepper Fried Chicken*2 + Small Fries*1 + Original Egg Tart*1 + Drink (Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "291.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義式香草紙包雞絕配餐 Italian Herb Foilicious Variety Combo",
+            "description": "義式香草紙包雞1份、雞汁風味飯1份【供應至20:00，20:00之後視餐廳營運狀況供應雞汁風味飯或香酥脆薯(中)1份】、原味蛋撻1顆及中杯飲料1杯【預設為百事可樂(中)，如需更換請點選下方】｜Italian Herb Foilicious*1+Rice*1+ Original Egg Tart*1+ Drink(Middle)*1/Default：Coke(M)",
+            "offers": {
+              "@type": "Offer",
+              "price": "291.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "雙人餐 Buddy Combo",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿堡雙人餐 Zinger Buddy Combo",
+            "description": "含咔啦雞腿堡(中辣)2份，香酥脆薯(中)1份，上校雞塊4塊(含糖醋醬x1)，雙色轉轉QQ球1份及中杯飲料2杯｜Zinger*2 + Mid Fries*1 + Nugget*4 + Sweet Potato QQ Ball*1 + Drink (Middle)*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "439.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒香麻咔啦雞腿堡雙人餐(辣) Green Pepper Zinger Buddy Combo",
+            "description": "含青花椒香麻咔啦雞腿堡(辣)1份，青花椒香麻脆雞(辣)2塊，香酥脆薯(中)1份，上校雞塊4塊(含糖醋醬x1)，雙色轉轉QQ 球1份及中杯飲料2杯｜Green Pepper Zinger*1 + Green Pepper Fried Chicken*2 + Mid Fries*1 + Nugget*4 + Sweet Potato QQ Ball*1 + Drink (Middle)*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "502.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒香麻脆雞雙人餐(辣) Green Pepper Fried Chicken Buddy Combo",
+            "description": "含青花椒香麻脆雞(辣)2塊，咔啦脆雞(中辣)2塊，香酥脆薯(中)1份，上校雞塊4塊(含糖醋醬x1)，原味蛋撻2顆及中杯飲料2杯。｜Green Pepper Fried Chicken*2 +  Hot&spicy Fried Chicken*2 + Mid Fries*1 + Nugget*4 + Original Egg Tart*2 + Drink(Middle)*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "507.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙人好食雞餐(義式香草紙包雞+咔啦脆雞)",
+            "description": "義式香草紙包雞1份、 咔啦脆雞2塊、香酥脆薯(中)1包、上校雞塊4塊 (含糖醋醬x1)、 原味蛋撻2顆 、中杯飲料2杯 (可換其他中杯: 七喜/檸檬紅茶/無糖茉莉綠茶)",
+            "offers": {
+              "@type": "Offer",
+              "price": "519.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【單點】漢堡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味脆雞堡(小) Chicken Fillet Egg Burger",
+            "description": "原味脆雞堡(小)1個",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生脆雞堡(小) Peanut Chicken Egg Burger",
+            "description": "花生脆雞堡(小)1個",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生熔岩咔啦雞腿堡 Peanut Lava Zinger",
+            "description": "花生熔岩咔啦雞腿堡1個",
+            "offers": {
+              "@type": "Offer",
+              "price": "201.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層咔啦雞腿堡 Zinger stacker burger",
+            "description": "雙層咔啦雞腿堡1個",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鹹點類 Snacks",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "上校雞塊【4塊】4 PCS Nuggets",
+            "description": "上校雞塊4塊(含糖醋醬x1)｜4 pieces of Nugget",
+            "offers": {
+              "@type": "Offer",
+              "price": "63.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥脆薯【大】Crispy Fried【Large】",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "上校雞塊【20塊】20 PCS Nuggets",
+            "description": "上校雞塊20塊(含糖醋醬x3)｜20 pieces of Nugget",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦爆脆雞 Extra Crispy Chicken",
+            "description": "肯德基『極緻酥脆系列 (Extra Crispy)』超酥脆的黃金外皮與多汁鮮嫩的肉質，採用肯德基全新獨特配方與獨家手工裹粉技術，打造如金黃鱗片般的超酥脆外皮、嚴選多汁鮮嫩雞肉，確保每一口都能聽到「喀滋」聲，極致酥脆、多層次鮮香，炸雞愛好者的酥脆首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞汁風味飯 Chicken Flavored Rice",
+            "description": "雞汁風味飯1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒雞塊 Green Pepper Nuggets(4pcs)",
+            "description": "青花椒雞塊 | 將KFC經典產品青花椒香麻咔啦脆雞、青花椒咔啦雞腿堡系列風味延伸製成盒裝沾醬，搭配雞塊沾一沾、淋一淋，享受由自己創造的美味瞬間。鮮麻香辣的濃郁風味，讓每一口都變得更過癮！",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金超蝦塊 Shrimp Nugget",
+            "description": "黃金超蝦塊3塊｜Shrimp Nugget*3pcs",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚圈圈 Fish donuts",
+            "description": "鱈魚圈圈3塊｜3 pieces of fish donuts",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥脆薯(小) Fries 【Small】",
+            "description": "香酥脆薯(小)1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥脆薯(中) Fries 【Middle】",
+            "description": "香酥脆薯(中)1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒薯條 Green Pepper Crispy Fries(M)",
+            "description": "青花椒薯條 | 將KFC經典產品青花椒香麻咔啦脆雞、青花椒咔啦雞腿堡系列風味延伸製成盒裝沾醬，搭配薯條沾一沾、淋一淋，享受由自己創造的美味瞬間。鮮麻香辣的濃郁風味，讓每一口都變得更過癮！",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦脆雞  1pc Fried Chicken",
+            "description": "咔啦脆雞1塊(炸雞恕不開放選擇部位)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒香麻脆雞 1pc  Green Pepper Fried Chicken",
+            "description": "青花椒香麻脆雞(炸雞恕不開放選擇部位) 1塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南洋酸甜點心盒",
+            "description": "南洋酸甜醬x1+點心盒A(小薯+四塊雞塊)",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "BBQ煙燻點心盒",
+            "description": "BBQ煙燻醬x1+點心盒A(小薯+四塊雞塊)",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蛋塔甜點 Sweets/Egg tart",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "草苺起司冰淇淋大福【1顆】Strawberry Cheese Ice Cream Mochi",
+            "description": "草苺起司冰淇淋大福1顆。｜Strawberry Cheese Ice Cream Mochi",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草苺起司冰淇淋大福禮盒 Strawberry Cheese Ice Cream Mochi Box",
+            "description": "含草苺起司冰淇淋大福 8 顆｜Strawberry Cheese Ice Cream Mochi*8",
+            "offers": {
+              "@type": "Offer",
+              "price": "531.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋撻1顆 Original Egg Tart",
+            "description": "原味蛋撻1顆 Original Egg Tart",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋撻2顆 Two Egg Tart",
+            "description": "原味蛋撻2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "133.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草苺起司冰淇淋大福【2顆】Strawberry Cheese Ice Cream Mochi*2",
+            "description": "草苺起司冰淇淋大福2顆 Strawberry Cheese Ice Cream Mochi*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "141.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙色轉轉QQ球 Sweet Potato QQ Ball",
+            "description": "雙色轉轉QQ球1份 Sweet Potato QQ Ball",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金黃比司吉",
+            "description": "比司吉x1(含蜂蜜糖球x1)｜日本獨家研製配方，新鮮烘烤出金黃酥脆的外皮、綿密鬆軟的口感，一口咬下奶香四溢，層層帶出麵粉與奶油的完美交織。不論單吃、還是淋上蜂蜜享用都很適合！體驗日本肯德基必吃點心，讓比司吉成為你的點心選擇吧！",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料 Beverage",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典冰奶茶 Iced Milk Tea",
+            "description": "茶葉產地：印尼/中國，總糖量最高值23.8g，總熱量最高值208大卡，總份量425g。",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰無糖茉莉綠茶【中】Sugar-Free Iced Green Tea【Middle】",
+            "description": "茶葉產地：越南/斯里蘭卡，總糖量最高值0g，總熱量最高值0.2大卡，總份量600g。",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "立頓檸檬風味紅茶【中】Lipton Lemon Iced Tea【Middle】",
+            "description": "總糖量最高值63g，總熱量最高值274大卡，總份量600g。茶葉產地：愛爾蘭。",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百事可樂【中】Coke【Middle】",
+            "description": "單杯中杯可樂總糖量最高值68g，總熱量最高值276大卡，總份量600g】",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "七喜【中】7.Up【Middle】",
+            "description": "單杯中杯七喜總糖量最高值68g，總熱量最高值283大卡，總份量600g。",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿薩姆無糖紅茶(小)",
+            "description": "阿薩姆無糖紅茶(小) 1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百事可樂【小】Coke【Small】",
+            "description": "百事可樂(小)1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "立頓檸檬風味紅茶【小】Lemon Ice Tea 【Small】",
+            "description": "立頓檸檬風味紅茶(小)1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖茉莉綠茶【小】Green Tea 【Small】",
+            "description": "無糖綠茶(小)1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "七喜【小】7.Up 【Small】",
+            "description": "七喜(小)1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿薩姆無糖紅茶(中)",
+            "description": "阿薩姆無糖紅茶(中) 1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "瓶裝百事可樂 Pepsi(1.25L)",
+            "description": "瓶裝百事可樂1瓶",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱紅茶  Hot Black Tea【330g】",
+            "description": "熱紅茶1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典熱奶茶【小】 Hot Milk Tea【200g】",
+            "description": "經典熱奶茶(小)1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典熱奶茶【中】 Hot Milk Tea【300g】",
+            "description": "經典熱奶茶(中)1杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "購物袋專區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "塑膠袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "4.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【請勿下單】注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1.菜單內容恕無法更換其他產品及提供客製化服務。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2.餐點圖片僅供參考、炸雞恕無法指定部位，餐點以實際供貨為主。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3.為響應環保，不提供免洗餐具、吸管、胡椒鹽、番茄醬包及紙巾。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【請勿下單】產品標示",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "上校雞塊、黃金超蝦塊、鱈魚圈圈",
+            "description": "【上校雞塊】為雞肉重組產品，僅供熟食。\n【黃金超蝦塊】為重組產品，僅供熟食。\n【鱈魚圈圈】為重組產品，僅供熟食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰飲",
+            "description": "1.總熱量、糖總量是以最高值為標示值。\n2.飲品之總咖啡因含量以顏色標示。\n(1)紅色：每杯咖啡因含量201毫克以上 (2)黃色：每杯咖啡因含量101~200毫克 (3)綠色：每杯咖啡因含量100毫克以下\n3.額外添加的糖為每1公克為4大卡。\n【無糖綠茶(中)】每一份量(公克)：600，總熱量最高值(大卡)：0.2，總糖量最高值(公克)：0，總咖啡因含量：綠色。茶葉產地：越南/斯里蘭卡。\n【無糖綠茶(小)】每一份量(公克)：425，總熱量最高值(大卡)：0.1，總糖量最高值(公克)：0，總咖啡因含量：綠色。茶葉產地：越南/斯里蘭卡。\n【經典冰奶茶】每一份量(公克)：425，總熱量最高值(大卡)：208，總糖量最高值(公克)：23.8，總咖啡因含量：綠色。茶葉產地：印尼/中國。\n【百事可樂(中)】每一份量(公克)：600，總熱量最高值(大卡)：276，總糖量最高值(公克)：68，總咖啡因含量：綠色。\n【百事可樂(小)】每一份量(公克)：425，總熱量最高值(大卡)：195，總糖量最高值(公克)：48，總咖啡因含量：綠色。\n【百事可樂(瓶)】每一份量(公克)：1250，總熱量最高值(大卡)：575，總糖量最高值(公克)：142，總咖啡因含量：紅色。\n【立頓檸檬風味紅茶(中)】每一份量(公克)：600，總熱量最高值(大卡)：156，總糖量最高值(公克)：38，總咖啡因含量：綠色。茶葉產地：愛爾蘭。\n【立頓檸檬風味紅茶(小)】每一份量(公克)：425，總熱量最高值(大卡)：111，總糖量最高值(公克)：27，總咖啡因含量：綠色。茶葉產地：愛爾蘭。\n【七喜(中)】每一份量(公克)：600，總熱量最高值(大卡)：283，總糖量最高值(公克)：68。\n【七喜(小)】每一份量(公克)：425，總熱量最高值(大卡)：200，總糖量最高值(公克)：48。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱飲",
+            "description": "1.總熱量、糖總量是以最高值為標示值。\n2.飲品之總咖啡因含量以顏色標示。\n(1)紅色：每杯咖啡因含量201毫克以上 (2)黃色：每杯咖啡因含量101~200毫克 (3)綠色：每杯咖啡因含量100毫克以下\n3.額外添加的糖為每1公克為4大卡。\n【經典熱奶茶】每一份量(公克)：200，總熱量最高值(大卡)：89，總糖量最高值(公克)：11.4，總咖啡因含量：綠色。茶葉產地：印尼/中國。\n【義式咖啡(小)】每一份量(公克)：195，總熱量最高值(大卡)：8，總糖量最高值(公克)：0，總咖啡因含量：黃色。咖啡豆產地：巴西/哥倫比亞。\n【義式咖啡(大)】每一份量(公克)：314，總熱量最高值(大卡)：13，總糖量最高值(公克)：0，總咖啡因含量：紅色。咖啡豆產地：巴西/哥倫比亞。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

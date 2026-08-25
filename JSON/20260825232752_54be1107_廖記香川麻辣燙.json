@@ -1,0 +1,1065 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%BB%96%E8%A8%98%E9%A6%99%E5%B7%9D%E9%BA%BB%E8%BE%A3%E7%87%99/RWLxbtkLQtK7T2O_MmK5cg",
+  "name": "廖記香川麻辣燙",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁愛街396號",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.081094,
+    "longitude": 121.490856
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 420
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Braised Dishes"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美國牛五花套餐",
+            "description": "含十種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血套餐",
+            "description": "含十種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅花豬套餐（丹麥）",
+            "description": "含十種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙牛套餐（牛肚 板腱牛）",
+            "description": "牛肚與低脂牛肉雙拼，配高麗菜、金針菇、花椰菜與綜合火鍋料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙豬套餐（梅花豬排骨酥）",
+            "description": "梅花豬肉片與排骨酥雙主角，搭配高麗菜、金針菇、綠花椰及多樣火鍋料，豐富又滿足的一碗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鴨血豆腐套餐",
+            "description": "含十種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿肉套餐",
+            "description": "包含10種配料",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "板腱牛套餐",
+            "description": "含十種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙牛套餐(牛五花牛肚)",
+            "description": "含十種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊五花套餐",
+            "description": "含十種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點蔬菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水蓮",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花菜",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "娃娃菜",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "絲瓜",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "木耳",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆芽",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃豆芽",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "秀珍菇",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "空心菜",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青江菜",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓮藕片",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "寬冬粉",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "刀削麵",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒意麵",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬粉",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國Q拉麵",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式年糕",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒸煮麵",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍麵",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大甲乾麵",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "王子麵寬麵",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點肉類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滷大腸",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊五花",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿肉",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "板腱牛",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅花豬",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腱肉",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鴨珍",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞屁股",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肚",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "排骨酥",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛五花",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "其他類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鴨血",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白蘿蔔",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豆皮",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生豆皮",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆腐",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘭花干",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老油條",
+            "description": "另外包不煮",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大黑干",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚板燒",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "竹輪",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小豆皮",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅蘿蔔",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋簽",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式香腸",
+            "description": "一份訂單只能選擇一種辣度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "火鍋料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚條*3",
+            "description": "鱈魚風味魚漿條，口感滑嫩。每份3條，適合火鍋搭配",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水晶餃*3",
+            "description": "Q彈透明外皮，滑口有嚼勁，入鍋久煮不易破。3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳥蛋*4",
+            "description": "鳥蛋（鵪鶉蛋）4顆，滑嫩帶彈性，適合火鍋加料",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸*3",
+            "description": "小條狀火鍋料，外皮Q彈、口感紮實，鹹香順口。份量：3條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "凍豆腐*3",
+            "description": "凍豆腐孔洞綿密，易吸湯汁、口感Q彈，每份3塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒟蒻小卷*4",
+            "description": "蒟蒻製成的小卷造型火鍋料，Q彈爽口，4個/份",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餃*2",
+            "description": "薄蛋皮包裹餡心的經典火鍋料，2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇貢丸*2",
+            "description": "拌入香菇丁的貢丸，Q彈有嚼勁，2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣貢丸*2",
+            "description": "麻辣風味貢丸，口感Q彈，呈現麻與辣香，每份2顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素腰花*3",
+            "description": "素食腰花造型火鍋料，適合加入各式湯底，3入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚包蛋*2",
+            "description": "魚漿外層包覆蛋心，口感Q彈滑嫩，火鍋配料，2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣*2",
+            "description": "甜不辣火鍋料，魚漿製作，Q彈有嚼勁。兩份",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚餃*2",
+            "description": "以魚漿製成的火鍋餃，口感Q彈，2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔花枝丸×2",
+            "description": "九層塔香氣花枝丸，2顆。Q彈口感，咀嚼飄香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍蝦沙拉*2",
+            "description": "龍蝦沙拉（2份），火鍋料選擇，適合搭配各式湯底享用",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金魚蛋*3",
+            "description": "兩個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司球*2",
+            "description": "起司球 2 顆，外層Q彈，內含香濃起司，入鍋加熱後一咬爆漿，增添奶香與口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小豆干*3",
+            "description": "小豆干3塊，口感扎實帶豆香，易吸湯汁，適合火鍋",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸*2",
+            "description": "貢丸2顆，豬肉製成，口感Q彈，適合火鍋或湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦球×3",
+            "description": "Q彈蝦球，海味十足，火鍋搭配首選，3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燕餃*2",
+            "description": "兩個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "北海貝*2",
+            "description": "貝味海鮮火鍋料，2個，適合火鍋涮煮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "37.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭*2",
+            "description": "兩份芋頭塊，鍋物經典配料，綿密鬆軟，吸附湯汁更入味",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三角油豆腐*3",
+            "description": "三角形油豆腐3塊，孔洞綿密、易吸湯汁，口感滑嫩，火鍋必備小料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "章魚丸×2",
+            "description": "每份2顆，咬得到章魚丁，Q彈有嚼勁的火鍋配料",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸*2",
+            "description": "花枝丸 2 顆，Q彈扎實，海味香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚豆腐×2",
+            "description": "經典火鍋配料，魚漿製成的豆腐塊，口感軟嫩帶彈性，易吸湯汁。份量：2塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻起燒×2",
+            "description": "麻糬包起司的火鍋料，外Q內軟，咬開微牽絲；份量2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味天婦羅片×2",
+            "description": "原味魚漿天婦羅片，口感Q彈，兩片份。下鍋迅速吸湯，增添鮮味與嚼勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹味棒*2",
+            "description": "魚漿製成蟹味棒2條，口感Q彈、風味溫和，為火鍋增添海味層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鴨肉貢丸*4",
+            "description": "鴨肉貢丸 4 顆，Q彈扎實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚卵卷*3",
+            "description": "魚漿外層包裹魚卵，啵啵彈牙、口感豐富，適合入鍋，3入",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,792 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%98%8B%E6%9E%9C%E9%9B%9E%E9%B9%BD%E9%85%A5%E9%9B%9E-%E6%96%B0%E5%8C%97%E4%B8%89%E9%87%8D%E5%BA%97/QFstZ9vwVCyersp2chImHg",
+  "name": "蘋果雞鹽酥雞 新北三重店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁愛街361號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0802062,
+    "longitude": 121.4918994
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 93
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "3 號套餐",
+            "description": "含魷魚, 鹹酥雞及甜不辣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞排",
+            "description": "不切。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹酥雞",
+            "description": "黃金酥脆的外皮, 鮮嫩多汁的肉質, 濃郁的香氣在口中噴發。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯條",
+            "description": "細。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "口感 Q 彈結實, 細緻軟嫩, 酥炸後更是帶出鮮甜多汁的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍",
+            "description": "外型小巧細緻, 易入口, 酥炸後更是爽脆可口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小黃瓜",
+            "description": "爽脆可口, 風味清新又解膩, 最佳的蔬菜選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "📍口味調整📍",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "配料",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣度",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "❤️‍🔥新品專區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雪之楊",
+            "description": "花枝燒。3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米布丁酥",
+            "description": "3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "墨魚黑輪",
+            "description": "2 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚豆腐",
+            "description": "3個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸蝦捲",
+            "description": "外皮金黃鬆脆, 內餡鮮甜彈牙, 咬下既能感受到滿口的鮮美口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山藥捲",
+            "description": "2 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻糬燒",
+            "description": "3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "干貝酥",
+            "description": "3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "旗魚黑輪",
+            "description": "1條",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬雞柳條",
+            "description": "2根",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干",
+            "description": "2片",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式魚板",
+            "description": "4片",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶黑輪片",
+            "description": "3片",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "✨人氣套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1 號套餐",
+            "description": "含鹹酥雞, 百頁豆腐, 手工黑輪及鱈魚板。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2 號套餐",
+            "description": "含鹹酥雞, 米血, 雞皮及蘿蔔糕。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3 號套餐",
+            "description": "含魷魚, 鹹酥雞及甜不辣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4 號套餐",
+            "description": "含粿粉三角骨, 雞皮, 豆包及魚板。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "👍招牌必點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香雞排",
+            "description": "不切。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹酥雞",
+            "description": "黃金酥脆的外皮, 鮮嫩多汁的肉質, 濃郁的香氣在口中噴發。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有粿粉三角骨",
+            "description": "酥脆與嚼勁的完美搭配, 直擊您的心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷魚",
+            "description": "炸得外皮酥脆, 肉質富有嚼勁, 鮮甜可口, 是必點的海鮮炸物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮",
+            "description": "吃起來就像餅乾一樣涮嘴, 加上胡椒粉的點綴, 真是絕配。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥一字骨",
+            "description": "一字骨位於肩膀跟翅膀中間\n肉質較為軟嫩，有彈性，\n肉帶有一點雞皮，肉比三角骨多，\n裡面骨頭只有一根！\n完全不同於我們的鹹酥雞和三角骨喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "二節翅（一隻）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍡串物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "外酥內嫩, 咬起來口感極佳, 一不留神就吃光光了。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胗",
+            "description": "吃起來爽脆有咬勁, 不只沒有腥味, 油炸過後的香氣更直逼腦門。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞屁股",
+            "description": "油脂豐富的雞屁股, 酥炸後香氣更顯迷人, 鮮美涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸",
+            "description": "多汁彈牙的口感而肉質香甜美味, 酥炸後更增添了香脆的口感層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "Q 脆彈牙的口感, 酥炸後的魚漿風味鮮甜, 唇齒留香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🥒蔬菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小黃瓜",
+            "description": "爽脆可口, 風味清新又解膩, 最佳的蔬菜選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍",
+            "description": "外型小巧細緻, 易入口, 酥炸後更是爽脆可口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "口感 Q 彈結實, 細緻軟嫩, 酥炸後更是帶出鮮甜多汁的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青椒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "櫛瓜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🧀小點心",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黃金豆腐",
+            "description": "半盒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小肉豆",
+            "description": "脆彈可口的精緻小點, 令人止不住一口接一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工黑輪",
+            "description": "酥脆中帶有魚漿的 Q 彈鮮甜, 略有嚼勁的口感令人上癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台中甜不辣",
+            "description": "口感外酥內軟, 尾韻富有魚漿的鮮甜香氣, 是炸物的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉香腸",
+            "description": "口感 Q 脆多汁, 每口都可品嚐迷人的鹹香風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式鱈魚板",
+            "description": "外皮微脆而內裡魚香鮮甜, 口感 Q 彈, 令人一口接一口停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯米腸",
+            "description": "喀滋。一口咬破腸衣後, 綿密口感伴隨糯米香氣, 實在好味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "銀絲捲",
+            "description": "2 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐",
+            "description": "外表膨鬆, 口感酥脆, 放入口中仔細品嚐, 滿滿的香氣在嘴裡綻放。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳葉魚",
+            "description": "1 條, 外皮炸至金黃酥脆, 咀嚼間魚蛋的粒粒口感填滿味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕",
+            "description": "集扎實與綿密於一身的炸物小點, 非它莫屬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗",
+            "description": "熱狗 1 份 3 根。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆包",
+            "description": "膨鬆的黃金外表, 又香又酥, 內層柔軟, 輕鬆吃一波。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血",
+            "description": "外皮酥脆略有嚼勁, 內裡綿密彈牙的口感, 必點的經典炸物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚板",
+            "description": "外皮微脆而內裡魚香鮮甜, 口感 Q 彈, 令人一口接一口停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃起司棒",
+            "description": "2 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餅皮",
+            "description": "炸過蛋餅皮口感如同洋芋片酥脆, 帶有特殊甜味特別的體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍟薯條控",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美國脆薯",
+            "description": "外皮黃金酥脆, 內裡紮實綿密, 令人無法抗拒的美妙小點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯條",
+            "description": "細。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅",
+            "description": "外表金黃酥脆, 咬下一口。細細品嚐馬鈴薯的細緻鬆軟。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "💜芋頭控",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手工芋籤粿",
+            "description": "鹹。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋條",
+            "description": "甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋黃麻糬芋丸",
+            "description": "2 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋餅",
+            "description": "3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

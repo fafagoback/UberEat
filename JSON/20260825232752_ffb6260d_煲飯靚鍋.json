@@ -1,0 +1,545 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%85%B2%E9%A3%AF%E9%9D%9A%E9%8D%8B/RSNCZYytSMisVY7nsWOQxA",
+  "name": "煲飯靚鍋",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區自強路五段30號",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0808062,
+    "longitude": 121.4929288
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 420
+  },
+  "servesCuisine": [
+    "Chinese",
+    "Hot Pot"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "老饕最愛港式雙拼煲仔飯",
+            "description": "豬肉、雞肉、原產地台灣\n牛肉原產地澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "港式經典臘味煲仔飯",
+            "description": "豬肉原產地台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "窩蛋牛肉煲仔飯",
+            "description": "牛肉原產地澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑嫩雞肉煲仔飯",
+            "description": "雞腿肉原產地台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "239.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香排骨煲仔飯",
+            "description": "豬排骨原產地台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "239.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣蓮藕",
+            "description": "蓮藕片，裹上麻辣醬汁，乾辣椒與芝麻增香，爽脆香麻帶勁，開胃小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨翅",
+            "description": "三隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "老饕最愛港式雙拼煲仔飯",
+            "description": "豬肉、雞肉、原產地台灣\n牛肉原產地澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香排骨煲仔飯",
+            "description": "豬排骨原產地台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "239.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "窩蛋牛肉煲仔飯",
+            "description": "牛肉原產地澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑嫩雞肉煲仔飯",
+            "description": "雞腿肉原產地台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "239.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "港式經典臘味煲仔飯",
+            "description": "豬肉原產地台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣鍋物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "川味麻辣雪花牛肉鍋",
+            "description": "附主食, 鴨血, 雞蛋及飲料。牛肉原產地美國",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川味麻辣豬肉鍋",
+            "description": "附主食, 鴨血, 雞蛋及飲料。豬肉原產地（台灣、荷蘭）",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨家麻辣泡菜豬肉鍋",
+            "description": "附主食, 鴨血, 雞蛋及飲料。豬肉原產地（台灣、荷蘭）",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨家麻辣蕃茄牛肉鍋",
+            "description": "附主食, 鴨血, 雞蛋及飲料。牛肉原產地美國",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典鍋物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酸白菜豬肉鍋",
+            "description": "附主食及飲料。豬肉原產地（台灣、荷蘭）",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸白菜牛肉鍋",
+            "description": "附主食及飲料。牛肉原產地美國",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式味噌牛肉鍋",
+            "description": "附主食, 雞蛋及飲料。牛肉原產地美國",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式味噌豬肉鍋",
+            "description": "附主食, 雞蛋及飲料。豬肉原產地（台灣、荷蘭）",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜牛肉鍋",
+            "description": "附雞蛋,主食, 韓國年糕及飲料。牛肉原產地美國",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜豬肉鍋",
+            "description": "附雞蛋,主食, 韓國年糕及飲料。豬肉原產地（台灣、荷蘭）",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義式蕃茄牛肉鍋",
+            "description": "附主食, 雞蛋及飲料。牛肉原產地美國",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "豚骨鍋物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豚骨牛肉鍋",
+            "description": "附主食、雞蛋及飲料。牛肉原產地美國",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豚骨羊肉鍋",
+            "description": "附主食、雞蛋及飲料。羊肉原產地澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豚骨豬肉鍋",
+            "description": "附主食、雞蛋及飲料。豬肉原產地（台灣、荷蘭）",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "柚子海鹽氣泡飲",
+            "description": "零卡0熱量",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水蜜桃烏龍氣泡飲",
+            "description": "零卡0熱量",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪碧",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣小品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨脆腸",
+            "description": "鴨脆腸切段，麻辣調味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣手工小四方",
+            "description": "手工小方豆腐，裹上麻辣醬汁，入口嫩滑，香麻帶勁，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣蓮藕",
+            "description": "蓮藕片，裹上麻辣醬汁，乾辣椒與芝麻增香，爽脆香麻帶勁，開胃小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣米血",
+            "description": "Q彈米血切塊，麻辣香氣濃郁，香麻帶勁，鹹香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨翅",
+            "description": "三隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣甜不辣",
+            "description": "厚切魚漿甜不辣，麻辣香氣濃郁，Q彈有嚼勁，香麻帶勁，鹹香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨舌",
+            "description": "每份3隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣百頁",
+            "description": "百頁豆腐，麻辣醬香入味，椒麻香帶勁，開胃小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣花干",
+            "description": "花干切塊，麻辣香氣濃郁，香麻帶勁，鹹香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨胗",
+            "description": "Q彈鴨胗，麻辣香氣濃郁，香麻帶勁，鹹香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣杏鮑菇",
+            "description": "厚切杏鮑菇，川味麻辣調味，Q彈多汁，椒麻香帶勁，開胃小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨腸",
+            "description": "鴨腸，麻辣調味，脆彈帶勁，開胃小品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豬耳朵",
+            "description": "Q彈爽脆豬耳片，川味麻辣調味，椒麻香帶勁，開胃小品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鳥蛋",
+            "description": "Q彈鳥蛋，麻辣香氣濃郁，香麻帶勁，鹹香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腸",
+            "description": "豆腸，麻辣香氣濃郁，香麻帶勁，口感紮實，鹹香涮嘴，開胃小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣海帶",
+            "description": "爽脆海帶，川味麻辣調味，椒麻香帶勁，開胃小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣酸菜",
+            "description": "爽脆酸菜，川味麻辣調味，小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

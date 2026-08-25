@@ -1,0 +1,490 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%B2%9D%E5%85%8B%E7%82%B8%E9%9B%9E-%E8%8A%9D%E5%B1%B1%E5%BA%97/fclXye1AViGa3aKXYw9oTg",
+  "name": "貝克炸雞 芝山店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區德行西路107號 Taipei 士林區 111 Taiwan",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1040193,
+    "longitude": 121.5210393
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 3.9,
+    "reviewCount": 15
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "阿媽的酸梅湯 Sour Plum Juice",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯球 Tater Tots",
+            "description": "金黃酥脆的薯球，外脆內鬆，馬鈴薯香氣足，適合分享的經典小點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點, 請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定唷😍",
+            "description": "滿意請給五星好評支持；如有餐點缺漏、溫度或配送問題，請透過訂單聊天室告知，我們會盡快協助處理，謝謝您的回饋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🔥人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黃金雞塊 Golden Chicken Thigh",
+            "description": "大腿塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無骨雞腿排 Boneless Chicken Thigh",
+            "description": "鮮嫩多汁的無骨雞腿肉，經過專業油炸，外酥裡嫩，美味可口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貝克 8 塊炸雞混搭桶 Signature Assorted Deep-Fried Chicken Bucket for 8 Pieces",
+            "description": "8塊炸雞桶，酥脆多汁，適合分享的美味選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "546.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貝克 10 塊炸雞混搭桶 Signature Assorted Deep-Fried Chicken Bucket for 10 Pieces",
+            "description": "10塊炸雞桶，酥脆多汁，適合分享的美味選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "676.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐 C Combo C",
+            "description": "含雞塊, 雞腿及雞翅。附飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "❤️貝克多汁香炸雞 Signature Deep-Fried Chicken",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "無骨雞腿排 Boneless Chicken Thigh",
+            "description": "鮮嫩多汁的無骨雞腿肉，經過專業油炸，外酥裡嫩，美味可口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金雞塊 Golden Chicken Thigh",
+            "description": "大腿塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮美雞翅 Chicken Wing",
+            "description": "金黃酥脆雞翅，外酥裡嫩，多汁可口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮嫩雞腿Chicken Drumstick",
+            "description": "經典炸雞腿，油炸至金黃酥脆，外酥內嫩、肉汁飽滿，單點必吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🥰貝克歡樂分享桶 Signature Sharing Bucket",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "貝克 8 塊炸雞混搭桶 Signature Assorted Deep-Fried Chicken Bucket for 8 Pieces",
+            "description": "8塊炸雞桶，酥脆多汁，適合分享的美味選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "546.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貝克 10 塊炸雞混搭桶 Signature Assorted Deep-Fried Chicken Bucket for 10 Pieces",
+            "description": "10塊炸雞桶，酥脆多汁，適合分享的美味選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "676.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貝克雙響餐 Signature Assorted Deep-Fried Chicken Meal",
+            "description": "含雞腿 2 塊, 雞塊 2 塊及雞翅 2 塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "374.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "😎套餐組和個人套餐組",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "套餐 A Combo A",
+            "description": "含雞塊及雞翅。附飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐 B Combo B",
+            "description": "含雞塊及雞腿。附飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐 C Combo C",
+            "description": "含雞塊, 雞腿及雞翅。附飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "✨貝克點心配餐 Signature Snack",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味銀絲卷 Original Silver Thread Roll",
+            "description": "3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙色地瓜球 Mixed Sweet Potato Balls",
+            "description": "雙色地瓜球，黃地瓜與紫地瓜交錯，外層微酥、口感Q彈，一口一顆，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣 Tempura",
+            "description": "魚漿製成的甜不辣，金黃香酥，內Q彈有嚼勁，單吃或配餐都適合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥圈 Onion Rings",
+            "description": "5 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "波霸脆薯 Crispy Fries",
+            "description": "厚切薯條，金黃酥脆，內鬆軟，撒上香草碎點綴，經典配餐選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金地瓜條 Golden Sweet Potato Sticks",
+            "description": "地瓜切條至金黃，外層微酥、內裡綿軟，自然香甜，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸 Cuttlefish Ball",
+            "description": "3 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克雞塊 Chicken Nuggets",
+            "description": "5 塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煉乳銀絲卷 Silver Thread Roll with Condensed Milk",
+            "description": "3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司條 Cheese Sticks",
+            "description": "3 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷米花 Popcorn Squid",
+            "description": "金黃酥脆的魷米花，一口一個，外酥內嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩胸丁 Diced Tender Chicken Breast",
+            "description": "去骨雞胸切塊，金黃酥脆，外酥內嫩，肉質嫩彈，涮嘴小點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅 Hash Brown",
+            "description": "金黃香脆薯餅，外酥內軟，綿密馬鈴薯口感，簡單滿足的經典點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "26.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "深海鱈魚條 Deep-Fried Squid Sticks",
+            "description": "3 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯球 Tater Tots",
+            "description": "金黃酥脆的薯球，外脆內鬆，馬鈴薯香氣足，適合分享的經典小點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小湯圓 Small Sticky Rice Ball",
+            "description": "糯米製成的小顆湯圓，Q彈軟糯，入口滑順，經典點心，輕鬆分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳葉魚 Shishamo",
+            "description": "日式柳葉魚，魚身細緻、香氣迷人，適合分享的開胃點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "阿媽的酸梅湯 Sour Plum Juice",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季春茶 Sihji Oolong Tea",
+            "description": "輕發酵四季春烏龍，清香花韻，茶湯清透，入口柔順、回甘不澀。",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱青茶 Jinxuan Light Oolong Tea",
+            "description": "清香順口的金萱青茶，帶淡雅花香與奶韻，茶感輕柔、回甘清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵觀音烏龍 Iron Guanyin Oolong Tea",
+            "description": "茶香厚實，焙香花香交織，口感醇順，清爽解膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珊瑚紅茶 Coral Black Tea",
+            "description": "經典紅茶，茶香醇和、口感順口，尾韻回甘，搭配餐點剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅子春茶",
+            "description": "梅子香氣融入春茶，茶感輕柔、入口順口，清爽解膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%B0%B4%E4%BA%91%E8%8C%B6%E5%A0%82%E9%98%BF%E9%87%8C%E5%B1%B1%E9%90%B5%E9%81%93%E7%B4%85%E8%8C%B6-%E5%A3%AB%E6%9E%97%E5%A4%A7%E5%8D%97%E5%BA%97/zU36elPqU0eQuneVb6R5-A",
+  "name": "水云茶堂阿里山鐵道紅茶 士林大南店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區大南路29號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0892174,
+    "longitude": 121.5255449
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 67
+  },
+  "servesCuisine": [
+    "Bubble Tea",
+    "Drinks",
+    "Coffee and Tea",
+    "Specialty Goods",
+    "Family Friendly",
+    "Street Food",
+    "Snacks"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🏆🥛 招牌奶茶 Signature Milk Tea",
+            "description": "經典奶茶，融合濃郁红茶與奶香，帶来絲滑口感與温暖享受。🏆🥛 招牌奶茶 Signature Milk Tea",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥛✨ 特濃鮮奶茶 Extra Rich Fresh Milk Tea",
+            "description": "特濃鮮奶茶，醇厚奶香與紅茶完美融合，帶來絲滑口感的極致享受。奶味更濃郁，茶香厚實，給你極致滑順口感。\nExtra creamy milk tea with bold tea aroma, silky smooth.\n濃厚なミルクが香る贅沢な味わい。\n진하고 부드러운 밀크티, 깊은 향미가 일품.",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥛🧋 珍珠鮮奶茶 Fresh Milk Bubble Tea",
+            "description": "使用鮮奶提升滑順口感，更香更順。\nMade with fresh milk for a smoother, richer taste.\nフレッシュミルク使用でより濃厚な味わい。\n신선한 우유로 더 부드럽고 고소한 풍미.",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥤✨ 珍珠奶茶 Bubble Milk Tea",
+            "description": "世界風靡的台灣驕傲，經典中的經典。\nTaiwan’s iconic drink — creamy, sweet & chewy pearls.\n世界中で愛される台湾の看板飲料。\n달콤하고 부드러운 밀크티에 쫄깃한 펄까지!",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "⭐🥛🧋 珍珠特濃鮮奶茶 Extra Rich Fresh Milk Bubble Tea",
+            "description": "茶味更厚、奶味更濃，珍奶控最愛神級口感。\nBolder tea, creamier milk — premium bubble tea experience.\nお茶とミルクの風味を最大限に引き出した贅沢な一杯。\n진하고 고급스러운 맛, 펄 덕분에 만족감 UP!",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍋🥤 冬瓜檸檬多多 Winter Melon Lemon Yakult",
+            "description": "甜度固定。冬瓜甜香融合檸檬酸香與多多乳酸，清爽解渴。\nSweet winter melon, tangy lemon, and Yakult for a refreshing drink.\n冬瓜の甘さとレモンの酸味、多多の酸味が爽やかに調和。\n달콤한 동과와 레몬, 야쿠르트의 상큼함이 어우러진 음료.",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "❄️🍋 凍檸茶 Iced Lemon Black Tea",
+            "description": "檸檬風味紅茶，清新爽口，完美解渴。\n 此為檸檬原汁, 建議甜度：1分糖以上\n酸爽清新、冰涼透心，港式茶飲代表。\nCrisp and refreshing lemon tea served ice-cold.\nレモンの酸味が爽快なアイスティー。\n상큼하고 시원하게 즐기는 레몬 홍차.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍈🥛 特濃冬瓜鮮奶 Extra Rich Winter Melon Milk",
+            "description": "特濃冬瓜鮮奶，甜度固定，濃郁冬瓜風味搭配鮮奶，清新爽口。濃郁奶香融合冬瓜甜味，口感醇厚順口。\nRich milk flavor perfectly blended with sweet winter melon.\n濃厚なミルクと冬瓜の甘みが口いっぱいに広がる。\n진한 우유와 달콤한 동과 향이 어우러진 부드러운 맛.",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🚂🥛 鐵道鮮奶茶 Railway Milk Tea",
+            "description": "🥛香濃鐵道鮮奶茶，融合紅茶與鮮奶的完美比例，帶來絲滑口感與濃郁茶香。濃醇奶香與厚實茶韻，復古風味一喝上癮。\nRich milk tea inspired by classic Taiwanese railway beverages.\n台湾鉄道風の濃厚ミルクティー。\n진한 우유와 홍차 향이 매력적인 복고풍 밀크티.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍋 冬瓜檸檬 Winter Melon Lemon Tea",
+            "description": "甜度固定。\n清新冬瓜檸檬，🍋檸香四溢，搭配清涼冬瓜，宛如夏日陽光☀️灑在心中，沁涼舒爽。冬瓜甜香融合檸檬酸爽，清新透心涼。\nSweet winter melon meets zesty lemon — bright and refreshing.\n冬瓜の甘さとレモンの酸味が爽やかに広がる一杯。\n달콤한 동과와 상큼한 레몬의 완벽한 조화.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥛🍈 冬瓜鮮奶 Winter Melon Fresh Milk",
+            "description": "冬瓜與鮮奶的清新結合，甜度固定，帶來自然的甘甜滋味。冬瓜天然甘香搭配鮮奶，溫潤順口，回味無窮。\nFresh milk mixed with naturally sweet winter melon, smooth and mellow.\n冬瓜の自然な甘さとフレッシュミルクの絶妙なハーモニー。\n동과의 자연스러운 달콤함과 신선한 우유가 부드럽게 어우러진 맛.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🧀🧋 珍珠冬瓜奶茶 Winter Melon Milk Tea with Pearls",
+            "description": "甜度固定!冬瓜甜香結合奶茶濃郁，溫潤耐喝。\nSweet winter melon blended with creamy milk tea.\n冬瓜の甘さがミルクティーにベストマッチ。\n달콤한 동과향이 은은하게 퍼지는 부드러운 맛.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🧃 養樂多紅茶 Yakult Black Tea",
+            "description": "❤️紅茶與養樂多的完美結合，帶來獨特的清新口感。紅茶遇上養樂多，酸甜順口，大人小孩都愛。\nBlack tea blended with Yakult for a delightful sweet-tangy flavor.\nヤクルトの甘酸っぱさが紅茶にマッチ。\n달콤 새콤한 맛으로 남녀노소 인기!",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍈🥛 冬瓜奶茶 Winter Melon Milk Tea",
+            "description": "甜度固定。冬瓜甜香與濃郁奶茶結合，溫潤香滑。\nCreamy milk tea blended with sweet winter melon flavor.\n冬瓜の甘さとミルクティーの滑らかさが絶妙。\n달콤한 동과와 밀크티의 부드럽고 고소한 맛.",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "喜歡這次餐飲？請給五星好評，您的鼓勵讓我們更好；若有問題，於訂單訊息留言，我們盡速處理。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "💛人氣精選💛",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🧊 紅茶冰 Iced Black Tea",
+            "description": "🥤清爽的紅茶冰，完美解暑，帶來清新茶香。嚴選茶葉冷沖，回甘順口，經典不敗。\nRefreshing cold-brewed black tea with a clean, smooth finish.\n厳選茶葉を使用した、すっきりとした後味のアイスティー。\n깔끔하고 진한 풍미의 아이스 홍차.",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍯 冬瓜茶 Winter Melon Tea",
+            "description": "甜度固定。清涼爽口的冬瓜茶🍹，每一口都帶來沁心的甘甜，像夏日午後的微風🌬️，沁人心脾。冬瓜香甜不膩，古早味清涼首選。\nSweet and refreshing Taiwanese winter melon tea.\n素朴な甘さが魅力の台湾伝統飲料。\n은은한 달콤함으로 시원하게 즐기는 전통 음료.",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍋 冬瓜檸檬 Winter Melon Lemon Tea",
+            "description": "甜度固定。\n清新冬瓜檸檬，🍋檸香四溢，搭配清涼冬瓜，宛如夏日陽光☀️灑在心中，沁涼舒爽。冬瓜甜香融合檸檬酸爽，清新透心涼。\nSweet winter melon meets zesty lemon — bright and refreshing.\n冬瓜の甘さとレモンの酸味が爽やかに広がる一杯。\n달콤한 동과와 상큼한 레몬의 완벽한 조화.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🧃 養樂多紅茶 Yakult Black Tea",
+            "description": "❤️紅茶與養樂多的完美結合，帶來獨特的清新口感。紅茶遇上養樂多，酸甜順口，大人小孩都愛。\nBlack tea blended with Yakult for a delightful sweet-tangy flavor.\nヤクルトの甘酸っぱさが紅茶にマッチ。\n달콤 새콤한 맛으로 남녀노소 인기!",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🚂🥛 鐵道鮮奶茶 Railway Milk Tea",
+            "description": "🥛香濃鐵道鮮奶茶，融合紅茶與鮮奶的完美比例，帶來絲滑口感與濃郁茶香。濃醇奶香與厚實茶韻，復古風味一喝上癮。\nRich milk tea inspired by classic Taiwanese railway beverages.\n台湾鉄道風の濃厚ミルクティー。\n진한 우유와 홍차 향이 매력적인 복고풍 밀크티.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找好茶🍵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🧊 紅茶冰 Iced Black Tea",
+            "description": "🥤清爽的紅茶冰，完美解暑，帶來清新茶香。嚴選茶葉冷沖，回甘順口，經典不敗。\nRefreshing cold-brewed black tea with a clean, smooth finish.\n厳選茶葉を使用した、すっきりとした後味のアイスティー。\n깔끔하고 진한 풍미의 아이스 홍차.",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🏆🥛 招牌奶茶 Signature Milk Tea",
+            "description": "經典奶茶，融合濃郁红茶與奶香，帶来絲滑口感與温暖享受。🏆🥛 招牌奶茶 Signature Milk Tea",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "❄️🍋 凍檸茶 Iced Lemon Black Tea",
+            "description": "檸檬風味紅茶，清新爽口，完美解渴。\n 此為檸檬原汁, 建議甜度：1分糖以上\n酸爽清新、冰涼透心，港式茶飲代表。\nCrisp and refreshing lemon tea served ice-cold.\nレモンの酸味が爽快なアイスティー。\n상큼하고 시원하게 즐기는 레몬 홍차.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🧃 養樂多紅茶 Yakult Black Tea",
+            "description": "❤️紅茶與養樂多的完美結合，帶來獨特的清新口感。紅茶遇上養樂多，酸甜順口，大人小孩都愛。\nBlack tea blended with Yakult for a delightful sweet-tangy flavor.\nヤクルトの甘酸っぱさが紅茶にマッチ。\n달콤 새콤한 맛으로 남녀노소 인기!",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "店長推薦👍",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🔴🧋 珍珠紅茶 Black Tea with Pearls",
+            "description": "Q彈珍珠搭配濃醇紅茶，越喝越上癮。\nChewy pearls add fun texture to classic black tea.\n紅茶にモチモチのタピオカをプラス。\n쫀득한 펄이 매력적인 홍차 음료.",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥤✨ 珍珠奶茶 Bubble Milk Tea",
+            "description": "世界風靡的台灣驕傲，經典中的經典。\nTaiwan’s iconic drink — creamy, sweet & chewy pearls.\n世界中で愛される台湾の看板飲料。\n달콤하고 부드러운 밀크티에 쫄깃한 펄까지!",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥛🧋 珍珠鮮奶茶 Fresh Milk Bubble Tea",
+            "description": "使用鮮奶提升滑順口感，更香更順。\nMade with fresh milk for a smoother, richer taste.\nフレッシュミルク使用でより濃厚な味わい。\n신선한 우유로 더 부드럽고 고소한 풍미.",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🧀🧋 珍珠冬瓜奶茶 Winter Melon Milk Tea with Pearls",
+            "description": "甜度固定!冬瓜甜香結合奶茶濃郁，溫潤耐喝。\nSweet winter melon blended with creamy milk tea.\n冬瓜の甘さがミルクティーにベストマッチ。\n달콤한 동과향이 은은하게 퍼지는 부드러운 맛.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🌰🥛 珍珠冬瓜鮮奶 Winter Melon Fresh Milk with Pearls",
+            "description": "甜度固定!冬瓜天然甘甜配上鮮奶Q彈珍珠，清爽好喝。\nFresh milk with natural sweetness from winter melon + pearls!\n冬瓜の優しい甘さとフレッシュミルクの組み合わせ。\n상큼 달콤, 펄까지 매력적인 조합.",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "⭐🥛🧋 珍珠特濃鮮奶茶 Extra Rich Fresh Milk Bubble Tea",
+            "description": "茶味更厚、奶味更濃，珍奶控最愛神級口感。\nBolder tea, creamier milk — premium bubble tea experience.\nお茶とミルクの風味を最大限に引き出した贅沢な一杯。\n진하고 고급스러운 맛, 펄 덕분에 만족감 UP!",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🧋🥛 珍珠特濃冬瓜鮮奶茶 Pearl Extra Rich Winter Melon Milk Tea",
+            "description": "甜度固定!香濃奶味搭配冬瓜甜香與Q彈珍珠，口感層次豐富。\nRich and creamy milk blended with sweet winter melon and chewy pearls.\n濃厚なミルクと冬瓜の甘さ、もちもちタピオカがアクセント。\n진한 우유와 달콤한 동과, 쫄깃한 펄이 조화로운 음료.",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找鮮奶🥛",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🚂🥛 鐵道鮮奶茶 Railway Milk Tea",
+            "description": "🥛香濃鐵道鮮奶茶，融合紅茶與鮮奶的完美比例，帶來絲滑口感與濃郁茶香。濃醇奶香與厚實茶韻，復古風味一喝上癮。\nRich milk tea inspired by classic Taiwanese railway beverages.\n台湾鉄道風の濃厚ミルクティー。\n진한 우유와 홍차 향이 매력적인 복고풍 밀크티.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥛✨ 特濃鮮奶茶 Extra Rich Fresh Milk Tea",
+            "description": "特濃鮮奶茶，醇厚奶香與紅茶完美融合，帶來絲滑口感的極致享受。奶味更濃郁，茶香厚實，給你極致滑順口感。\nExtra creamy milk tea with bold tea aroma, silky smooth.\n濃厚なミルクが香る贅沢な味わい。\n진하고 부드러운 밀크티, 깊은 향미가 일품.",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥛🍈 冬瓜鮮奶 Winter Melon Fresh Milk",
+            "description": "冬瓜與鮮奶的清新結合，甜度固定，帶來自然的甘甜滋味。冬瓜天然甘香搭配鮮奶，溫潤順口，回味無窮。\nFresh milk mixed with naturally sweet winter melon, smooth and mellow.\n冬瓜の自然な甘さとフレッシュミルクの絶妙なハーモニー。\n동과의 자연스러운 달콤함과 신선한 우유가 부드럽게 어우러진 맛.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍈🥛 特濃冬瓜鮮奶 Extra Rich Winter Melon Milk",
+            "description": "特濃冬瓜鮮奶，甜度固定，濃郁冬瓜風味搭配鮮奶，清新爽口。濃郁奶香融合冬瓜甜味，口感醇厚順口。\nRich milk flavor perfectly blended with sweet winter melon.\n濃厚なミルクと冬瓜の甘みが口いっぱいに広がる。\n진한 우유와 달콤한 동과 향이 어우러진 부드러운 맛.",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找冬瓜💚",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🍯 冬瓜茶 Winter Melon Tea",
+            "description": "甜度固定。清涼爽口的冬瓜茶🍹，每一口都帶來沁心的甘甜，像夏日午後的微風🌬️，沁人心脾。冬瓜香甜不膩，古早味清涼首選。\nSweet and refreshing Taiwanese winter melon tea.\n素朴な甘さが魅力の台湾伝統飲料。\n은은한 달콤함으로 시원하게 즐기는 전통 음료.",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍈🧊 冬瓜紅茶 Winter Melon Black Tea",
+            "description": "冬瓜香甜搭配紅茶的醇厚茶味，冰涼透心。\nSweet winter melon infused black tea, refreshing and smooth.\n冬瓜の甘さと紅茶の深みが絶妙にマッチ。\n달콤한 동과와 홍차의 조화, 시원하게 즐기는 음료.",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍈🥛 冬瓜奶茶 Winter Melon Milk Tea",
+            "description": "甜度固定。冬瓜甜香與濃郁奶茶結合，溫潤香滑。\nCreamy milk tea blended with sweet winter melon flavor.\n冬瓜の甘さとミルクティーの滑らかさが絶妙。\n달콤한 동과와 밀크티의 부드럽고 고소한 맛.",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍋 冬瓜檸檬 Winter Melon Lemon Tea",
+            "description": "甜度固定。\n清新冬瓜檸檬，🍋檸香四溢，搭配清涼冬瓜，宛如夏日陽光☀️灑在心中，沁涼舒爽。冬瓜甜香融合檸檬酸爽，清新透心涼。\nSweet winter melon meets zesty lemon — bright and refreshing.\n冬瓜の甘さとレモンの酸味が爽やかに広がる一杯。\n달콤한 동과와 상큼한 레몬의 완벽한 조화.",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍋🥤 冬瓜檸檬多多 Winter Melon Lemon Yakult",
+            "description": "甜度固定。冬瓜甜香融合檸檬酸香與多多乳酸，清爽解渴。\nSweet winter melon, tangy lemon, and Yakult for a refreshing drink.\n冬瓜の甘さとレモンの酸味、多多の酸味が爽やかに調和。\n달콤한 동과와 레몬, 야쿠르트의 상큼함이 어우러진 음료.",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

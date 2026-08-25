@@ -1,0 +1,592 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%BF%83%E7%82%B8%E5%8F%B0%E5%BC%8F%E7%82%B8%E7%89%A9%E7%AB%B9%E5%9C%8D%E6%B0%91%E6%97%8F%E5%BA%97/PeJ8Q8e6RUuWjYvlwKgUSw",
+  "name": "心炸台式炸物(竹圍民族店)",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Minzu Road 4",
+    "addressLocality": "Tamsui District",
+    "addressRegion": "New Taipei City",
+    "postalCode": "251",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.13691492135664,
+    "longitude": 121.46033633560239
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 1000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Fried Chicken",
+    "Sustainable Packaging"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "注意事項📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "調味選擇（若無選擇將以不辣出餐）",
+            "description": "一筆訂單僅能選擇一份調味，本店拒絕過度包裝，調味粉恕不另外包裝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "❤️😁給我們一點支持與鼓勵😁❤️",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "10.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選🌟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣(小份)",
+            "description": "人氣商品，老饕必點，甜不辣超會噴，老闆雙手都受傷，請多支持",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣(大份)",
+            "description": "人氣商品，老饕必點，甜不辣超會噴，老闆雙手都受傷，請多支持",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "NEW可口可樂聯名超值套餐💥",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞厚甲 B 餐",
+            "description": "💥人氣套餐💥\n含招牌無骨鹹酥雞, 甜不辣及薯條。含可口可樂250ML一瓶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞霸昏 A 餐",
+            "description": "🌟熱賣套餐🌟\n含香雞排及薯條。附可口可樂。雞排不提供剪切服務，請見諒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞匠讚 C 餐",
+            "description": "👍人氣套餐👍\n含招牌無骨鹹酥雞, 米血及薯條。附可口可樂。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典肉類🥩",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "熱銷人氣王~無骨鹹酥雞",
+            "description": "我們家鹹酥雞真的好吃，你可能覺得貴又少，但沒辦法，你懶你就是要付出代價，畢竟我也是要生活！",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超人氣~鮮嫩香雞排",
+            "description": "人氣招牌，不提供剪切服務，若有備註一律忽略，請見諒！\n一片只賺你不到15塊嫌貴拜託不要買！老闆也炸的很心酸！🥹",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心（串）",
+            "description": "獨特口味，一串不嫌少，兩串不夠飽",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞屁股（串）",
+            "description": "獨特滷汁，意猶未盡，會覺得吃不過癮就是了，一隻雞就一個屁股你何必為難一隻雞？",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮",
+            "description": "獨特醃料，份量不多，口味很好，有時候會買不到！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱銷人氣王~無骨鹹酥雞（大）",
+            "description": "我們家鹹酥雞真的好吃，你可能覺得貴又少，但沒辦法，你懶你就是要付出代價，畢竟我也是要生活！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克雞塊",
+            "description": "跟麥Ｘ勞87分像",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "海鮮類🦑",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "超人氣~深海魷魚",
+            "description": "老闆獨特醃製手法，Q彈好吃，份量不多，口味很好，常常會買不到！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳葉魚",
+            "description": "多汁爆卵，人氣必點，有時候買不到是因為蛋超多老闆留著自己吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "比普通人多一顆所以是三顆！超好吃比淡水老街賣的好吃，不好吃是因為冷掉吧",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚板",
+            "description": "就魚板，切的方方的蠻可愛",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蔬菜類🥦",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "香菇比較容易壞所以由杏鮑菇上戰場",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆",
+            "description": "最佳配角，美味必點，都是稱重，有時候因為比較粗或大看起來會比較少，絕對沒有少給你",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍",
+            "description": "玉米的小時候🌽\n秤重的，看起來比較少是因為大小關係，請見諒，沒有少給你因為放著也是壞掉！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花椰菜",
+            "description": "🥦冷凍的沒有毒🥦",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小黃瓜",
+            "description": "🥒整支都給你，有時候比較小支別介意，畢竟不是老闆種的🥒",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青椒",
+            "description": "🫑一整顆給你，有時候比較小請見諒，不是老闆種的🫑",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爽脆櫛瓜",
+            "description": "整條給你沒在客氣！外面一串才4個就多少錢了，你自己講～真的很好吃，常常會賣完買不到喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "暢銷點心類🍟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "五香豆乾",
+            "description": "老闆用心滷過，絕對不是外面白白硬硬的那種，我超討厭！所以我不賣！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕",
+            "description": "不知道為什麼我們的豬血糕真的賣的很好，以外酥內軟的頭銜擠進我們熱銷排行榜😁😁",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯米腸",
+            "description": "就一根，份量不可能多，有時大有時小",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭籤",
+            "description": "甜的不是鹹的，鹹的我還沒找到我喜歡的所以不想賣！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕",
+            "description": "港式蘿蔔糕，不是白白胖胖的，吃了會有種在香港的感覺！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐",
+            "description": "就是百頁豆腐，整個都是用油做的，可以上網看影片，偶爾吃就好",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸",
+            "description": "就是鑫鑫腸，不是猩猩腸~😁\n一份五個，我也覺得很少！但沒辦法我要付房租！",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豆腐",
+            "description": "就豆腐，雞蛋豆腐不好炸不想賣",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "地瓜條",
+            "description": "瓜瓜園的地瓜條，炸太黑請馬上反應，下次就看不到那位員工了",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大熱狗",
+            "description": "沒有裹粉，之前有賣沒人要買，現在不賣了才一直在問，但這個也很好吃啦",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生粉湯圓",
+            "description": "花好月圓！吃了會跟愛人團圓！老闆女朋友就是吃湯圓才跟我在一起的！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "地瓜ＱＱ球",
+            "description": "雙色的裡面有包餡，如果不是雙色代表老闆心情不好！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞城小肉豆",
+            "description": "經典南部人氣點心，南部人好像都知道，但我是北部人偏愛韓式熱狗",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加拿大薯餅",
+            "description": "就薯餅，麥當勞的還是最好吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "銀絲卷",
+            "description": "椒鹽口味，沒有煉乳！請不要備註！老闆一律選擇性失明！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥圈",
+            "description": "採用國產洋蔥獨特配方，🧅想吃現切洋蔥請繞過，真的沒時間跟你鬧！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣(大份)",
+            "description": "人氣商品，老饕必點，甜不辣超會噴，老闆雙手都受傷，請多支持",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣(小份)",
+            "description": "人氣商品，老饕必點，甜不辣超會噴，老闆雙手都受傷，請多支持",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品🧃",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂250ml",
+            "description": "經典原味，暢快好喝\n源自1886年的經典原味\n無可取代的暢快口感\n暢享美食，就要Coke!",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原萃日式無糖綠茶350ml🍵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%91%A9%E5%BE%B7%E5%B9%B4%E4%BB%A3-%E5%92%96%E5%95%A1%E9%A4%A8/cS8fYzWnVbexFekgfUJKBw",
+  "name": "摩德年代 咖啡館",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "中正路235巷29號",
+    "addressLocality": "士林區",
+    "addressRegion": "台北市",
+    "postalCode": "111011",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0945057,
+    "longitude": 121.52617
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 10
+  },
+  "servesCuisine": [
+    "Breakfast and Brunch"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "摩德塔（需冷凍保存）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小山園焙茶塔 KOYAMAEN HOJICHA TART",
+            "description": "製作過程無添加吉利丁，未食用請冷凍保存，食用時隨溫度不同會有不同口感變化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬塔 LEMON TART",
+            "description": "傳統且歷史久遠，並且已有多樣化演變的甜點。從名稱 Tarte au Citron 或許會直接聯想到甜點王國 法國，不過檸檬塔最早緣起和流行於地中海一帶，而法國的檸檬塔最早起源自南部城市-芒通 Menton, France 。\n\n芒通每年會舉辦檸檬節，其中檸檬塔始終是節慶的一大亮點。而由於檸檬塔的獨到好滋味，現在在法國的甜品店，咖啡廳或下午茶坊都可以看到它的身影。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香果塔 PASSION FRUIT TART",
+            "description": "製作過程無添加吉利丁，未食用請冷凍保存，食用時隨溫度不同會有不同口感變化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小山園抹茶塔 KOYAMAEN MATCHA",
+            "description": "製作過程無添加吉利丁，未食用請冷凍保存，食用時隨溫度不同會有不同口感變化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "伯爵茶塔 EARL GREY TEA TART",
+            "description": "製作過程無添加吉利丁，未食用請冷凍保存，食用時隨溫度不同會有不同口感變化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓塔 BLUE BERRY  TART",
+            "description": "製作過程無添加吉利丁，未食用請冷凍保存，食用時隨溫度不同會有不同口感變化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "旅人磅蛋糕（冷藏保存）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小山園抹茶磅蛋糕 KOYAMAEN MATCHA Pound Cake",
+            "description": "小山園抹茶製作的磅蛋糕，茶香馥郁，質地紮實，冷藏保存。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑巧克力磅蛋糕 74% Dark Chocolate Pound Cake",
+            "description": "74%黑巧克力製作的磅蛋糕，口感紮實、可可香濃，冷藏保存。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小山園焙茶磅蛋糕 KOYAMAEN HOJICHA Pound Cake",
+            "description": "小山園焙茶製作的磅蛋糕，茶香馥郁，冷藏保存。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典蛋糕",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巴斯克烤乳酪蛋糕",
+            "description": "冷藏保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩德經典配方提拉米蘇 Tiramisu",
+            "description": "製作過程無添加吉利丁，未食用請冷凍保存，食用時隨溫度不同會有不同口感變化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "輕食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "墨西哥辣雞肉薄餅Mexican Chicken Quesadilla",
+            "description": "含辣味雞肉、起司。墨西哥薄餅鹹香濃郁，輕食好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油乳酪燻鮭魚薄餅Cream Cheese & Salmon Quesadilla",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松露蘑菇起司薄餅Mushroom & Truffle  Quesadilla",
+            "description": "起司香濃，融合蘑菇與松露香氣的墨西哥薄餅。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "MODISM COFFEE 摩德義式咖啡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡 Long Black",
+            "description": "經典美式咖啡，冰飲特別的一層咖啡香綿密泡沫口感，是摩德咖啡一直以來深受喜愛的品項",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱卡布奇諾 Hot Cappuccino",
+            "description": "僅熱飲Hot only。\n卡布奇諾裡頭熱熱的厚奶泡在入口時，會不小心整杯咖啡一口喝完！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡 Cafe Latte",
+            "description": "原味無糖經典咖啡與鮮奶、想甜甜另可參考風味拿鐵喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "風味拿鐵 Flavor Café Latte",
+            "description": "手工熬煮各式風味果漿。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里冰咖啡 Sicily Lemon Iced Café",
+            "description": "固定微糖及固定冰量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小白咖啡 Flat White",
+            "description": "無糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "74% 鈕扣摩卡咖啡 74% Mocha Latte",
+            "description": "74%巧克力與咖啡融合成更厚實的可可、堅果奶香，無糖微苦，推薦給巧克力愛好者的提神飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖啡蘇打 Coffee&Soda",
+            "description": "僅冰飲 Ice only",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "AU LAIT 歐蕾",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "風味歐蕾 Flavour au Lait",
+            "description": "固定微糖及固定冰量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小山園焙茶歐蕾 Koyamaen Hojicha au Lait",
+            "description": "固定微糖及固定冰量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "74% 鈕扣可可歐蕾 74% Cocoa au Lait",
+            "description": "固定微糖及固定冰量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "TEA 摩德精選茶類飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "約克郡紅茶 Yorkshire Tea",
+            "description": "固定冰量。由阿薩姆及肯亞等地紅茶調和, 濃厚茶感又不失麥香甘甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "印度香料茶 Chai Tea",
+            "description": "固定冰量。印度傳統香料與花香的獨特茶湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "伯爵茶 Earl Grey Classic",
+            "description": "固定冰量。錫蘭茶調和佛手柑, 柑橘香氣的英式經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德國洋甘菊 Chamomile Tea",
+            "description": "固定冰量。清新的甘菊甜味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南非國寶茶 Rooibos Tea",
+            "description": "固定冰量。爽口的特有松葉木質香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉來源為台灣",
+            "description": "含豬肉餐點皆使用台灣產豬肉，屬食材來源標示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

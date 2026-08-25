@@ -1,0 +1,599 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/pistachill-cafe/a4Ptoen9XzWyMgXFCS_p4A",
+  "name": "Pistachill cafe",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區天玉里天母北路66號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1222,
+    "longitude": 121.52667
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 2
+  },
+  "servesCuisine": [
+    "Cafe",
+    "Sandwich",
+    "Pasta",
+    "Coffee and Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "咖啡因類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌拿鐵 Signature Latte",
+            "description": "以自家烘焙的「開心豆」為底——莊園混合豆、中烘焙，萃出圓潤飽滿的濃縮，融入香醇鮮乳。堅果與可可的香氣緩緩化開，濃而不澀，一口回甘。日常裡的一點講究。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡 Americano",
+            "description": "開心豆最坦率的一面。莊園混合豆、中烘焙，只加水稀釋，把堅果與可可的底蘊、那一點恰到好處的酸甜一次攤在你面前。熱的醇厚沉穩，冰的俐落乾淨。什麼都沒加，卻什麼都在。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖拿鐵 Caramel Latte",
+            "description": "在開心豆的濃縮與鮮乳之間，繞進一縷焦糖。甜香先探頭，堅果與可可的厚度在後頭穩穩接住，甜而不膩。甜度隨你調，今天想寵自己多一點也沒關係。",
+            "offers": {
+              "@type": "Offer",
+              "price": "219.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶拿鐵 Matcha Latte",
+            "description": "選用日本靜岡抹茶，細膩茶香裡藏著一分若隱若現的濃縮。鮮乳把草木的微苦揉得溫柔，尾韻悠悠回甘。讓人清醒，卻一點也不刺激。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果拿鐵 Hazelnut Latte",
+            "description": "開心豆本就藏著堅果尾韻，再以榛果順勢延展——香氣一層疊上一層，圓潤而飽滿。鮮乳輕輕收尾，暖得剛好。堅果控會懂的那種對味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "219.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "維也納咖啡 Vienna Coffee",
+            "description": "以開心豆濃縮打底，冠上一頂綿密甜甜的鮮奶油。先嚐上層的冰涼奶香，再讓底下的咖啡緩緩穿透——冷與熱、輕與厚，在同一杯裡交錯。別急著攪拌，讓它自己慢慢融。",
+            "offers": {
+              "@type": "Offer",
+              "price": "229.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可拿鐵 Cocoa Latte",
+            "description": "不是糖漿速成的甜。我們把可可粉揉進麥芽，再沉入一份濃縮——可可的醇、麥芽的香、咖啡的骨架，一層一層疊起來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義式濃縮 Espresso",
+            "description": "一小杯，開心豆的全部。中烘焙的堅果與可可在舌尖化開，油脂綿密，餘韻拉得很長。給真正懂的人——最短的一口，也最完整。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡布奇諾 Cappuccino",
+            "description": "濃縮、鮮乳、綿密奶泡，經典的三分天下。開心豆的中烘焙撐起厚實骨架，奶泡蓋頂，最後撒上一層肉桂——暖香先勾住鼻息。只能做熱的，因為這份綿密與熱氣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰滴咖啡 Cold Drip",
+            "description": "一滴一滴，耗上數小時的溫柔萃取。這支我們用中烘焙的醇厚，混一分淺焙的明亮——花果清香在前，堅果底蘊在後，層次像慢慢展開的一封信。冰鎮後純淨無比，尾韻乾淨得像什麼都沒發生過。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙茶拿鐵 Houjicha Latte",
+            "description": "日本靜岡焙茶，炭焙過的茶香格外深沉，帶著烘烤的煙韻與一絲焦糖甜。鮮乳把它裹得溫潤圓融，暖香在喉間久久不散。想要一杯不燥不苦、能真正鬆一口氣的茶拿鐵，它剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "開心果拿鐵 Pistachill Latte",
+            "description": "這是開心果的名片，也是我們最想被你記住的一杯。日本進口的濃郁開心果醬，打進鮮奶油裡凝成厚厚一層開心果奶蓋，覆在開心豆濃縮與鮮乳之上。第一口先嚐奶蓋的堅果香甜，再讓底下的咖啡緩緩湧上來——甜而不膩，尾韻是純正的開心果風味。冰的最對味。想認識我們，就從這一杯開始。",
+            "offers": {
+              "@type": "Offer",
+              "price": "219.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生椰冰美式 Coconut Iced Americano",
+            "description": "不加水，改用純椰子水稀釋濃縮。椰香清甜撞上開心豆的堅果尾韻，一口下去清爽又帶點南國的度假感——沒有奶、沒有糖，卻自帶回甘。悶熱的午後，這杯最解。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里檸檬咖啡 Sicilian Lemon Coffee",
+            "description": "濃縮、氣泡、新鮮檸檬，再一匙蜂蜜，搖成一杯會冒泡的咖啡。檸檬的酸香先在舌尖跳躍，開心豆的醇厚墊在底下穩住全場，蜂蜜收得溫柔。氣泡在喉間輕輕炸開，清爽得讓人想起地中海的陽光。喝過就忘不了的那種特別。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油冰滴 Cream Cold Drip",
+            "description": "在慢萃冰滴上鋪一層特調綿密奶蓋，再附一片焦糖餅乾。奶蓋的醇、冰滴的甘、餅乾的脆與焦香——照我們的吃法，一口咖啡一口餅乾，活脫脫是一場提拉米蘇的味覺重現。",
+            "offers": {
+              "@type": "Offer",
+              "price": "219.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚乳拿鐵 Thick Milk Latte",
+            "description": "以紐西蘭牛乳混入自家鮮乳，兩種乳香交疊，堆出更厚、更有層次的口感。開心豆的中烘焙濃縮沉在底下，被濃醇奶香溫柔裹住，入口滑順如絲。不必加糖，乳本身的甜就夠飽滿。偏愛「奶感再重一點」的你，會喜歡這杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巴拿馬 路易斯莊園 中焙 Panama Luis Estate",
+            "description": "巴拿馬的乾淨與甜，向來以優雅著稱。中烘焙收斂了鋒芒，留下蜂蜜與焦糖的甜、柑橘與淡淡花香在杯裡浮動，口感柔順細緻。一支挑不出缺點、耐喝又討喜的水洗豆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "衣索比亞 古吉 淺焙 Ethiopia Guji",
+            "description": "咖啡的原鄉，最迷人的花與果。淺焙鎖住古吉產區的招牌調性——茉莉花香先揚起，接著是藍莓、莓果與柑橘的酸甜，尾韻像一口清爽紅茶。喜歡明亮、有香氣的人，一喝就上癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "開心果 Blend 中焙 Pistachio House Blend",
+            "description": "這就是貫穿整份菜單的靈魂——開心豆本人。同一支中烘焙混合豆，這回不加奶、不加糖，純粹用手沖攤開它的全貌：堅果與可可的圓潤、恰到好處的酸甜、綿長餘韻。想真正認識我們用的豆子，喝這杯最誠實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巴西 帕西優莊園 半日曬 Brazil Fazenda (Pulped Natural)",
+            "description": "巴西的醇厚，加上半日曬工法的加乘，甜感更飽滿。杯中滿是黑巧克力、堅果與焦糖的香氣，酸度低、body 厚實，順口到不需要任何理由。最適合當作一天的開始，或想被溫柔包覆的午後。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肯亞 尼耶利 淺焙 Kenya Nyeri",
+            "description": "肯亞高地的經典力道。淺焙把尼耶利的個性放到最大——黑醋栗的酸甜最先炸開，接著是莓果與柑橘的多汁，酸質明亮又立體，餘韻悠長。風味濃烈、層次豐富，留給願意細細品味的人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "349.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "哥斯大黎加 聖洛倫索莊園 淺焙 Costa Rica San Lorenzo",
+            "description": "我們手沖裡最精緻的一支。哥斯大黎加的乾淨明亮，在淺焙下展露無遺——柑橘、紅糖與熱帶水果的甜香交織，酸度清亮如泉水，尾韻乾淨綿長。細膩、優雅，值得你為它慢下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "369.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "伯爵鮮奶茶 Fresh Milk Tea",
+            "description": "伯爵紅茶打底，點上一縷香草的甜香。奶感綿密厚實，茶香不被蓋過，兩者交纏出溫柔的層次。這份香草是它的靈魂，甜度可調，但別調到全無——留一點甜，才嚐得到那股獨有的芬芳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "瑰夏果乾茶 Cascara Tea",
+            "description": "不是咖啡，卻來自咖啡。我們取咖啡果實的外層果肉，剝殼後細細曬乾成茶——天然低咖啡因，喝不到半點咖啡味。入口是淡淡的果香與清甜，像玫瑰與蜜餞在杯裡輕輕舒展。想清爽、想放鬆，又不想被咖啡因打擾的時候，它最剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可歐蕾 Cocoa au Lait",
+            "description": "把可可粉揉進麥芽，再交給鮮乳慢慢化開——沒有濃縮，純粹是可可與奶的相擁。可可的醇、麥芽的香層層疊起，甜得溫柔，順得像一條絲絨。給不喝咖啡的你。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶歐蕾 Matcha au Lait",
+            "description": "日本靜岡抹茶，不加濃縮，只讓細膩茶香與鮮乳單純相遇。草木的清香在舌尖化開，微苦被奶香揉得溫潤，尾韻悠悠回甘。純粹的抹茶控，會愛上這份不被打擾的乾淨。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰奶 Thai Milk Tea",
+            "description": "南洋風情的濃烈奔放，甜得直接而痛快——這是我們調好的黃金比例，不必更動。頂上再蓋一層綿密奶蓋，把甜味輕輕中和，多添一分醇厚。一口甜香、一口醇奶蓋，反差裡藏著讓人上癮的平衡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "開心果草莓牛奶 Pistachio Strawberry Milk",
+            "description": "草莓醬、開心果奶蓋、鮮乳——聽起來像亂點鴛鴦譜，喝下去卻意外地和諧。草莓的酸甜先跳出來，開心果的堅果香在後頭穩穩接住，鮮乳把兩者揉成一片粉嫩的溫柔。別懷疑這組合，喝過的人都回頭。",
+            "offers": {
+              "@type": "Offer",
+              "price": "219.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜紅茶 Honey Black Tea",
+            "description": "伯爵紅茶的佛手柑香，配上一匙純蜂蜜。茶香清雅，蜜甜溫潤，冰的沁涼、熱的暖心，簡單卻耐喝。最日常的一杯，也最不會出錯的一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果紅茶 Apple Black Tea",
+            "description": "蘋果原汁調入伯爵紅茶，酸甜全來自水果本身，一克糖都沒多加。佛手柑的清香先揚起，蘋果的果酸緊接著回甘，尾韻清爽不黏膩。想喝點甜、又不想被糖膩住的時候，這杯最誠實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香氣泡飲 Passion Fruit Sparkling",
+            "description": "兩顆新鮮現切的百香果，配上一匙純蜂蜜，注入細緻氣泡。果肉的酸香在舌尖炸開，蜂蜜溫柔收尾，氣泡把整杯襯得清亮跳躍。真果肉、看得見的籽，喝的是實打實的新鮮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨冰茶 Pineapple Iced Tea",
+            "description": "鳳梨切丁，加冰糖慢慢熬成金黃果醬，再兌入伯爵紅茶。果香濃郁飽滿，甜中帶著熬煮出的微酸層次，冰鎮後格外沁涼。只做冰的——因為這份透心涼，本就是為夏天而生。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "話梅冰茶 Preserved Plum Iced Tea",
+            "description": "鹹香話梅、純蜂蜜，襯上茉莉香綠茶。梅子的鹹甜先勾住味蕾，茉莉的清香在後頭悠悠散開，一鹹一甜之間，喉韻格外解膩生津。只做冰的，暑氣一上來，這杯最對。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙茶歐蕾 Houjicha au Lait",
+            "description": "日本靜岡焙茶，不加濃縮，只讓炭焙的深沉茶香與鮮乳單純交融。烘烤的煙韻裡藏著一絲焦糖甜，被奶香揉得溫潤綿密，暖香久久不散。想要純粹、暖心的一杯茶歐蕾，它剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機伯爵紅茶 Organic Earl Grey Black Tea",
+            "description": "單純一杯好的伯爵。有機茶葉，佛手柑香清雅悠長，茶體乾淨不澀。冰的沁涼、熱的暖心，簡單卻最耐喝——回歸紅茶本身的優雅。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機茉香綠茶 Organic Jasmine Green Tea",
+            "description": "茉莉香綠茶，有機茶葉細細窨製。花香清揚，茶湯甘潤不苦，入喉是一片清爽的餘韻。最日常的一杯，也最見真章的一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮果汁 柳橙汁 Fresh Fruit Juice Orange Juice",
+            "description": "不是濃縮還原。滿滿一杯柳橙的酸甜與果香，喝得到纖維、喝得到陽光。什麼都沒加，因為好的果實，本來就不需要修飾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鹹食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉醬義大利麵 Spaghetti Bolognese",
+            "description": "道地的波隆那肉醬，慢火細燉，肉的厚實與番茄的酸甜在時間裡熬成濃稠。不是拆封加熱的調理包。醬汁裹住每一根麵條，濃郁而紮實。經典之所以是經典，從來沒有捷徑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "379.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青醬干貝義大利麵 Scallop Pasta with Pesto Sauce",
+            "description": "兩顆干貝，煎到表面焦香，裡頭仍鎖著飽滿的香氣。青醬濃郁而清爽，羅勒的香氣纏著麵條，鹹鮮與草本在口中來回交錯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "449.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松露蕈菇披薩 Truffle and Mushroom Pizza",
+            "description": "松露與蕈菇，餐桌上最奢侈的一縷土地氣息。松露的濃香在開盒瞬間就竄出來，蕈菇鮮甜厚實、帶著嚼勁，起司把兩者熔成綿密的一片。香氣先到，味覺才跟上。懂的人，聞一下就知道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻牛肉三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Pistachill 早午餐 Pistachill Brunch",
+            "description": "酪梨的綿密、鷹嘴豆的堅果口感、牛番茄飽滿的酸甜，配上炒得柔嫩的滑蛋與帶微酸麥香的酸種麵包——整盤無肉，蔬菜的鮮甜反而被襯得格外清楚。清爽、飽足，卻一點也不無聊。想對自己好一點的早晨，從這盤開始。",
+            "offers": {
+              "@type": "Offer",
+              "price": "449.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典早午餐 Classic Brunch",
+            "description": "該有的都在，而且每一樣都認真。煎得焦香的培根、飽滿多汁的德式香腸、柔嫩滑蛋，襯上酸種麵包，再配當日供應的薯條或薯格。沒有花招，就是把經典每一個細節都做到位。早晨的踏實，大概就是這個味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "499.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬陰功海鮮義大利麵 Tom Yum Seafood Pasta",
+            "description": "蝦、魚、扇貝、魷魚，四種海味齊聚一盤。冬陰功的酸辣先衝上舌尖，香茅與檸檬葉的南洋香氣在後頭緩緩綻開，海鮮的鮮甜被酸辣逼得更加分明。麵條吸飽湯汁，每一口都夠味。酸得開胃、辣得過癮——會讓人隔幾天又想起的那種味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "449.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自家燉製番茄濃湯+佛卡夏麵包 House-made rich tomato soup + focaccia bread",
+            "description": "番茄慢火燉到化開，濃稠得能掛在湯匙上——沒有濃縮包、沒有捷徑，是時間換來的甜。酸甜濃郁，暖意直達胃底。佛卡夏帶著橄欖油香，外脆內軟，撕一塊沾滿湯汁，是最療癒的吃法。（蕃茄湯偏濃）",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "莫扎瑞拉起司牛肉千層麵附綠葉沙拉 Mozzarella Beef Lasagna with Green Salad",
+            "description": "一層麵皮、一層肉醬、一層起司，層層堆疊後送進烤箱，讓莫扎瑞拉在高溫裡融成金黃。牛肉醬濃郁紮實，奶香把番茄的酸甜整個包住，一刀切下去，斷面是會牽絲的。旁邊附一份清爽綠葉沙拉。濃與清，各司其職。",
+            "offers": {
+              "@type": "Offer",
+              "price": "429.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帕瑪森起司牛肉丸附綠葉沙拉 Parmesan Beef Meatballs with Green Salad",
+            "description": "大廚親手做的牛肉丸，外層煎香、內裡多汁，浸在濃郁醬汁裡慢慢入味。最後刨上帕瑪森——鹹香的乳酪碎屑一落下，整盤的層次瞬間就立起來了。配一份綠葉沙拉，濃郁與清爽輪流上場。簡單的東西做到極致，最考功夫。",
+            "offers": {
+              "@type": "Offer",
+              "price": "429.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合綠葉沙拉 (素) Mixed Green Salad (Vegetarian)",
+            "description": "各式綠葉層層鋪開，清脆鮮嫩，帶著蔬菜本身的清甜。簡單，卻最不能將就——葉子夠不夠新鮮，一入口就見真章。配一份濃郁主餐解膩，或單獨當一頓輕食，都剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "甜點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香草可麗露 Vanilla Canelé",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒙布朗 Mont Blanc",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "堅果布朗尼",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白巧克力檸檬塔",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "千層蛋糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉桂捲 Cinnamon roll",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

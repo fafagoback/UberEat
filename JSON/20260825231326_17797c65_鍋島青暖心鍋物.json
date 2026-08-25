@@ -1,0 +1,530 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%8D%8B%E5%B3%B6%E9%9D%92%E6%9A%96%E5%BF%83%E9%8D%8B%E7%89%A9/oLormuT3Wey6DutbIymDKA",
+  "name": "鍋島青暖心鍋物",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區石牌路二段97巷8號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.11779,
+    "longitude": 121.51622
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "鍋物(Ubereats)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "丹麥梅花豬套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "安格斯雪花牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "435.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合魚片套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑安格斯霜降牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "時蔬盛宴 (純蔬菜套餐)",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精選嫩雞肉套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特選豬五花套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "435.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美味海蝦套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "435.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新嫩小羔羊套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "525.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "低脂健康牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "525.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑安格斯板腱牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澳洲 M9 和牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "840.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "頂級松阪豬套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "625.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現流海蛤套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿蛤蜊套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "526.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合海鮮套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鍋物(Ubereats)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "丹麥梅花豬套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "安格斯雪花牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "435.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合魚片套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑安格斯霜降牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "時蔬盛宴 (純蔬菜套餐)",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精選嫩雞肉套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特選豬五花套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "435.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美味海蝦套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "435.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新嫩小羔羊套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "525.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "低脂健康牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "525.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑安格斯板腱牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澳洲 M9 和牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "840.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "頂級松阪豬套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "625.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現流海蛤套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿蛤蜊套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "526.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合海鮮套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鍋物(Ubereats)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "丹麥梅花豬套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "安格斯雪花牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "435.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合魚片套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑安格斯霜降牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "時蔬盛宴 (純蔬菜套餐)",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精選嫩雞肉套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特選豬五花套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "435.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美味海蝦套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "435.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新嫩小羔羊套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "525.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "低脂健康牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "525.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑安格斯板腱牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澳洲 M9 和牛套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "840.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "頂級松阪豬套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "625.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現流海蛤套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿蛤蜊套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "526.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合海鮮套餐",
+            "description": "附白飯、菜盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

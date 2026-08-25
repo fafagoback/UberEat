@@ -1,0 +1,471 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%98%8E%E8%A8%98%E5%A4%A7%E5%A1%8A%E9%9B%9E%E6%8E%92-%E9%97%9C%E6%B8%A1%E5%BA%97/WmO8lEVMTnC_EkdlfwcD9A",
+  "name": "明記大塊雞排 關渡店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區關渡里知行路264號",
+    "addressLocality": "Taipei",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1211572,
+    "longitude": 121.4673868
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 1500
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Taiwanese Fried Chicken"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣推薦",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魷魚 Squid",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹酥雞塊 Taiwanese Deep-Fried Cubed Chicken",
+            "description": "有骨。",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大塊雞排 Chicken Chop",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "106.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯米椒 Sweet Chili",
+            "description": "甜椒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮薯條 French Fries",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞蛋豆腐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點 A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大塊雞排 Chicken Chop",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "106.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣 Tempura",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆 Green Bean",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕 Pig Blood Rice Cake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯米腸",
+            "description": "荷蘭豬腸衣",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "湯圓 Sticky Rice Ball",
+            "description": "花生粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘梅地瓜 Sweet Potato with Plum Powder",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆乾 Tofu Curd",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花椰菜 Broccoli",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸 Cuttlefish Ball",
+            "description": "4顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇 King Oyster Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "七里香 Chicken Buttock",
+            "description": "雞屁股。一串",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸豆皮",
+            "description": "一片",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇 Taiwan Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白薯條 White French Fries",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮 Chicken Skin",
+            "description": "一小串",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茄子 Eggplant",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐 Shutter Bean Curd",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽銀絲卷 Silver Thread Roll with Pepper Salt",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸 Mini Sausage",
+            "description": "雞肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式香腸 German Sausage",
+            "description": "國產豬肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳葉魚 Shishamo",
+            "description": "4條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗 Hot Dog",
+            "description": "雞肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三角薯餅 Triangle Hash Brown",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚板 Fish Patty",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸餛飩 Deep-Fried Wonton",
+            "description": "5顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥圈",
+            "description": "6個",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司條 Cheese Stick",
+            "description": "3條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蔥薯條 French Fries with Scallion",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮菇 Shimeji Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司薯球 French Fries with Cheese",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "餐點辣度調整",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不辣",
+            "description": "不辣",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味",
+            "description": "不加胡椒粉、胡椒鹽、辣粉、梅粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

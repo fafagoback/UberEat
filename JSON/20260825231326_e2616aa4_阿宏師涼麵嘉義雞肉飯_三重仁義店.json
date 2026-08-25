@@ -1,0 +1,620 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%98%BF%E5%AE%8F%E5%B8%AB%E6%B6%BC%E9%BA%B5%E5%98%89%E7%BE%A9%E9%9B%9E%E8%82%89%E9%A3%AF-%E4%B8%89%E9%87%8D%E4%BB%81%E7%BE%A9%E5%BA%97/o-Dj_UgxXeudXsEcFX2vlQ",
+  "name": "阿宏師涼麵嘉義雞肉飯 三重仁義店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁義街214號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.082453686006584,
+    "longitude": 121.49615747278678
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 53
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "飯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "嘉義雞肉飯",
+            "description": "老闆開店到現在還是每天吃三碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉燥飯",
+            "description": "台灣豬（瘦肉佔大部分，不油膩也不柴）",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞魯飯",
+            "description": "人氣王 台灣豬+台灣雞",
+            "offers": {
+              "@type": "Offer",
+              "price": "86.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉絲美味餐盒",
+            "description": "雞肉絲 + 滷蛋 + 油豆腐 + 筍絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯美味餐盒",
+            "description": "魯肉 + 滷蛋 + 油豆腐 + 筍絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "熱雞絲乾拌麵",
+            "description": "熱呼呼的麵加上雞肉絲 絕配",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿宏師涼麵（原味）",
+            "description": "濃厚的芝麻醬吃了好滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿宏師涼麵（辣味）",
+            "description": "芝麻醬小辣 濃厚的醬吃了好滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥乾麵麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞魯麵",
+            "description": "台灣豬+台灣雞",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻醬熱麵原味",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻醬熱麵辣味",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉絲+涼麵+芝麻醬包（原味）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉絲+涼麵+芝麻醬包（辣味）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉絲+涼麵+芝麻醬包（素食）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾泡麵2包+雞汁油",
+            "description": "好吃到爆 獨一無二的味道 \n可以每天來吃\n念念不忘",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞湯煮泡麵（牛肉肉多多）",
+            "description": "雞湯為湯底，肉多多",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞湯煮泡麵（豬肉肉多多）",
+            "description": "雞湯為湯底，肉多多",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "現煮粥類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "極品鮑魚粥",
+            "description": "吃過會愛上",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現煮牛肉粥（肉多多）",
+            "description": "巴拉圭牛",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現煮豬肉粥（肉多多）",
+            "description": "西台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "貢丸元氣雞湯",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "剝皮辣椒貢丸雞湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日夜熬煮雞高湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "人蔘貢丸雞湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鵝肉丸雞湯",
+            "description": "老闆娘大推",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚丸雞湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮑魚鮮味雞湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮑貢湯",
+            "description": "一顆鮑魚+1顆貢丸+雞湯",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冰飲料類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "宏茶冰（紅茶冰）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小青茶（無糖）",
+            "description": "無糖青茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👍涼拌雞掌",
+            "description": "老闆娘的最愛 再不吃要被她吃光了",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味福菜筍絲",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉絲",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞汁燙鮮蔬",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥拌鮮蔬",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻醬睡鮮蔬原味",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢菜（黃帝菜）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻醬睡鮮蔬辣味",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩滷油豆腐",
+            "description": "1份3個",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現煎秘汁荷包雙蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻醬原味小蒜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻醬辣味小蒜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻醬素食",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾貢丸2顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻豬耳朵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙水蓮+雞汁",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "⚠️注意事項⚠️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麵類皆有小黃瓜，無法客製化🙏",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "火鍋類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "東北酸白菜鍋【牛】",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東北酸白菜鍋【豬 】",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣泡菜鍋【豬】",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣泡菜鍋【牛】",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣泡菜鍋【牛】",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣泡菜鍋【豬】",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

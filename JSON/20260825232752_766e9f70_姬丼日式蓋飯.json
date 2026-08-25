@@ -1,0 +1,362 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A7%AC%E4%B8%BC%E6%97%A5%E5%BC%8F%E8%93%8B%E9%A3%AF/0uHjJtgPWbaO5qAM_ioETw",
+  "name": "姬丼日式蓋飯",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區新市街45號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1322927,
+    "longitude": 121.5021682
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 180
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酥炸豬排丼",
+            "description": "裹粉酥炸豬排，搭配洋蔥蛋花醬汁，鋪在白飯上",
+            "offers": {
+              "@type": "Offer",
+              "price": "158.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "親子丼",
+            "description": "用壽喜燒醬汁烹煮的雞腿肉塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司燒肉蛋麵   註：(醬汁在麵下面）",
+            "description": "用壽喜燒醬汁烹煮的燒肉片（非炭烤），搭配滑蛋與融化起司；醬汁在麵下面，拌勻更香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜牛肉丼",
+            "description": "註：(醬汁在白飯下面）",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣商品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雙拼丼   註：(醬汁在白飯下面）",
+            "description": "雙拼主菜蓋飯，兩種配料一次享用；醬汁在白飯下面，拌勻更對味",
+            "offers": {
+              "@type": "Offer",
+              "price": "233.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛丼",
+            "description": "用壽喜燒醬汁烹煮的牛肉片，非炭烤肉片",
+            "offers": {
+              "@type": "Offer",
+              "price": "158.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒肉丼",
+            "description": "用壽喜燒醬汁烹煮的豬肉片，非炭烤肉片",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕈菇蔬食丼   註：(醬汁在白飯下面）",
+            "description": "方便素。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泡菜系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬排丼   註：(醬汁在白飯下面）",
+            "description": "白飯上鋪豬排與泡菜的丼飯，醬汁在白飯下面",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬肉丼   註：(醬汁在白飯下面）",
+            "description": "泡菜與豬肉片鋪在白飯上，醬汁在飯底，建議拌勻食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜雞肉丼   註：(醬汁在白飯下面）",
+            "description": "泡菜與雞肉鋪於白飯上，醬汁置於白飯下層",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可樂餅(奶油布丁酥）（3個）",
+            "description": "外層酥脆、包奶油布丁餡的可樂餅，3入",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "干貝酥（3個）",
+            "description": "裹粉酥炸干貝，3個一份",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜",
+            "description": "醃漬小菜，口感爽脆，開胃解膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "53.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排",
+            "description": "單點豬排，為蓋飯增添肉香與飽足感",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒肉",
+            "description": "用壽喜燒醬汁烹煮，非炭烤肉片",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌湯",
+            "description": "以味噌調製的日式湯品，溫熱上桌",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕈菇",
+            "description": "用壽喜燒醬汁烹煮，三種菇類",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉",
+            "description": "用壽喜燒醬汁烹煮",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起士",
+            "description": "單點起司，為蓋飯增添乳香與層次",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉",
+            "description": "用壽喜燒醬汁烹煮，非炭烤肉片",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "烏龍麵類（湯的）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞腿蛋麵   註：(醬汁在麵下面）",
+            "description": "烏龍湯麵搭配雞腿與蛋，醬汁在麵底",
+            "offers": {
+              "@type": "Offer",
+              "price": "158.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒肉蛋麵   註：(醬汁在麵下面）",
+            "description": "湯烏龍麵，搭配燒肉與蛋；醬汁在麵下面",
+            "offers": {
+              "@type": "Offer",
+              "price": "158.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司雞腿蛋麵   註：(醬汁在麵下面）",
+            "description": "烏龍湯麵，搭配雞腿、起司與蛋；醬汁在麵下面",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排蛋麵   註：(醬汁在麵下面）",
+            "description": "豬排與蛋的湯烏龍麵，醬汁在麵下面",
+            "offers": {
+              "@type": "Offer",
+              "price": "158.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕈菇蛋麵   註：(醬汁在麵下面）",
+            "description": "蕈菇與蛋的烏龍麵，醬汁置於麵底",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司豬排蛋麵   註：(醬汁在麵下面）",
+            "description": "湯烏龍麵搭配豬排、起司與蛋，醬汁在麵下面",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司牛肉蛋麵   註：(醬汁在麵下面）",
+            "description": "起司、牛肉與蛋的麵食，醬汁在麵底，拌勻更對味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉蛋麵   註：(醬汁在麵下面）",
+            "description": "牛肉與蛋搭配的烏龍湯麵，醬汁在麵下面",
+            "offers": {
+              "@type": "Offer",
+              "price": "158.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蕈菇蛋麵   註：(醬汁在麵下面）",
+            "description": "烏龍麵搭配起司、蕈菇與蛋；醬汁在麵底。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

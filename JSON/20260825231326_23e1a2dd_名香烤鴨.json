@@ -1,0 +1,216 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%90%8D%E9%A6%99%E7%83%A4%E9%B4%A8/AQLZaj0IUWK6DsqU-yU7vQ",
+  "name": "名香烤鴨",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "林森北路371號",
+    "addressLocality": "台北市",
+    "addressRegion": "",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0582,
+    "longitude": 121.52565
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.2,
+    "reviewCount": 23
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "一鴨二吃半隻鴨  Half Duck Two Ways",
+            "description": "附贈 2 組餅蔥＋1包醬+一份青菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "650.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "半隻脆皮鴨肉包餅  Half Crispy Duck with Pancakes",
+            "description": "附贈 2 組餅蔥＋1包醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "620.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "一鴨二吃全隻鴨  Whole Duck Two Ways",
+            "description": "附贈 3組餅蔥＋2包醬+一份青菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "全隻脆皮鴨肉包餅  Whole Crispy Duck with Pancakes",
+            "description": "附贈 3  組餅蔥＋2包醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "半隻秘製全炒醬鴨  Half Duck Stir-Fried with Special Sauce",
+            "description": "附一份青菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "620.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選  Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "一鴨二吃全隻鴨  Whole Duck Two Ways",
+            "description": "附贈 3組餅蔥＋2包醬+一份青菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "一鴨二吃半隻鴨  Half Duck Two Ways",
+            "description": "附贈 2 組餅蔥＋1包醬+一份青菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "650.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "半隻脆皮鴨肉包餅  Half Crispy Duck with Pancakes",
+            "description": "附贈 2 組餅蔥＋1包醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "620.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "全隻脆皮鴨肉包餅  Whole Crispy Duck with Pancakes",
+            "description": "附贈 3  組餅蔥＋2包醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "半隻秘製全炒醬鴨  Half Duck Stir-Fried with Special Sauce",
+            "description": "附一份青菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "620.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "全隻秘製全炒醬鴨  Whole Duck Stir-Fried with Special Sauce",
+            "description": "附一份青菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "壹獨享餐  Solo Meal for One",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "脆皮鴨肉包餅  Crispy Duck Meat Wrap",
+            "description": "4 分之 1 隻鴨。\n附贈 1 組餅蔥醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "秘製炒醬鴨  Stir-Fried Duck with Secret Sauce",
+            "description": "4 分之 1 隻鴨。附一份青菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "一鴨二吃  One Duck Two Ways",
+            "description": "4 分之 1 隻鴨。附贈 1 組餅蔥醬。附一份青菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "陸單點  A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "一組餅蔥醬  Set of Wraps Scallions and Sauce",
+            "description": "餅、蔥段與醬各一份，單點補充用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沾醬  Dipping Sauce",
+            "description": "沾醬包",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

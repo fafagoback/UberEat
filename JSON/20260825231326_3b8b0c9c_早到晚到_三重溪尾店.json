@@ -1,0 +1,1946 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%97%A9%E5%88%B0%E6%99%9A%E5%88%B0-%E4%B8%89%E9%87%8D%E6%BA%AA%E5%B0%BE%E5%BA%97/1_5VTZf3X2y0SMyEb5aaBA",
+  "name": "早到晚到 三重溪尾店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區溪尾街260號",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0829371,
+    "longitude": 121.4875237
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 1500
+  },
+  "servesCuisine": [
+    "Breakfast and Brunch",
+    "Taiwanese",
+    "BOGO",
+    "Burgers",
+    "Sandwich"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)麻奶辛拉麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "178.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)香酥雞塊咖哩飯",
+            "description": "肉品來源:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "217.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)蔥爆沙茶炒泡麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)蔥燒牛肉味麵",
+            "description": "肉品原產地：巴拉圭牛肉 | 湯、麵會分開包裝，乾湯擇一",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)泡菜辛拉麵",
+            "description": "辣｜韓國農心辛辣麵、蛋、青菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)懷舊炸醬炒泡麵",
+            "description": "含蛋。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)古早味炒泡麵",
+            "description": "含蛋。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)古早味肉燥麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)泰式打拋豬肉飯",
+            "description": "肉品來源:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "186.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)麻辣雙皮蛋炒泡麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)塔香蛤蠣炒意麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "171.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)韓式泡菜鍋燒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "202.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)特製香酥雞",
+            "description": "肉品原產地：美國雞肉，餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB跳色厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)黑胡椒豬柳飯",
+            "description": "肉品來源:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "186.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)美國脆薯",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)薯泥起士蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【紅茶牛奶｜買一送一｜七月限定】ℹ️系統自動加入2杯，請勿刪除",
+            "description": "ℹ️自行刪除免費第二件者，恕不退費或補送。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U新品上市",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)黑松露起司牛肉堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "186.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)黑松露雞排堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "194.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)黑松露豬排堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "194.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B.B.Q辣味卡啦起司蛋白堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B.B.Q香煎雞腿起司堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B.B.Q牛肉起司堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B.B.Q薯餅起司蛋白堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B.B.Q辣味卡啦起司堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B.B.Q牛肉起司蛋白堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B.B.Q薯餅起司堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B.B.Q香煎雞腿起司蛋白堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)麻奶辛拉麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "178.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)原味鍋燒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "171.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)小肉豆",
+            "description": "豬肉原產地為台灣。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "62.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)蔥燒牛肉味麵",
+            "description": "肉品原產地：巴拉圭牛肉 | 湯、麵會分開包裝，乾湯擇一",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)古早味炒泡麵",
+            "description": "含蛋。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)手工鹽酥黑輪片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "店長推薦",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)法式牛奶起司鍋燒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)金湯鍋燒麵-酸辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "217.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)雙層牛肉起司堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "202.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)巧克力可可巧酥厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)紅茶牛奶",
+            "description": "700 毫升。冰飲。甜度及冰量固定。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)醬燒雞腿烤三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)霸王雞排吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)皮蛋肉鬆蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)巧克力HOT炸辣雞腿堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)肉蛋起司瀑布三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)QQ麻吉奶酥鬆餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)花雕濃香鍋燒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【活動專區】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【新客專屬｜奶茶套餐】ℹ️請手動加選套餐內下方的『免費主餐』",
+            "description": "買飲料享主餐優惠，請自行將主餐贈品加入購物車。ℹ️ 未加入主餐贈品者，恕不補送或退費；「無免費選項請勿下單」。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【招牌鍋燒｜烏龍茶套餐】ℹ️請手動加選套餐內下方的『免費主餐』",
+            "description": "買飲料享主餐優惠，請自行將主餐贈品加入購物車 ℹ️ 未加入主餐贈品者，恕不補送或退費。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【經典早餐｜奶茶套餐】ℹ️請手動加選套餐內下方的『免費主餐』",
+            "description": "買飲料享主餐優惠，請自行將主餐贈品加入購物車 ℹ️ 未加入主餐贈品者，恕不補送或退費。",
+            "offers": {
+              "@type": "Offer",
+              "price": "129.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【古早味炒麵｜奶茶套餐】ℹ️請手動加選套餐內下方的『免費主餐』",
+            "description": "買飲料享主餐優惠，請自行將主餐贈品加入購物車 ℹ️ 未加入主餐贈品者，恕不補送或退費。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【小資泡麵｜奶茶套餐】ℹ️請手動加選套餐內下方的『免費主餐』",
+            "description": "買飲料享主餐優惠，請自行將主餐贈品加入購物車 ℹ️ 未加入主餐贈品者，恕不補送或退費。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【下午茶小點｜奶茶套餐】ℹ️請手動加選套餐內下方的『免費主餐』",
+            "description": "買飲料享主餐優惠，請自行將主餐贈品加入購物車 ℹ️ 未加入主餐贈品者，恕不補送或退費。",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【紅茶牛奶｜買一送一｜七月限定】ℹ️系統自動加入2杯，請勿刪除",
+            "description": "ℹ️自行刪除免費第二件者，恕不退費或補送。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U不要做餓夢漢堡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)提高智商鮪魚蛋堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)卡茲薯餅蛋堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)特製雙層手感豬肉堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)巧克力不辣雞腿堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)巧克力HOT炸辣雞腿堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)祕汁燒肉堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)卡拉不辣堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "116.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)朱熹雙層燒肉堡",
+            "description": "豬肉原產地為加拿大。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)霸王雞排堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)HOT炸辣雞腿堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "116.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)雙層牛肉起司堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "202.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)手感豬肉蛋堡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)阿嬤養的炸豬排堡",
+            "description": "肉品原產地：巴拉圭",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U超嗨卡滋脆蛋餅",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)雙蛋原味蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)九層塔香蛋餅",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)起司蛋餅",
+            "description": "蛋餅配上鹹香的火腿，如同記憶中的味道讓您愛不釋手！(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)鮪魚蛋餅",
+            "description": "蛋餅皮搭配鮮美鮪魚，每口都吃得到美味營養。(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)皮蛋肉鬆蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)鍋邊蔬菜蛋餅",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)日式醬燒雞腿蛋餅",
+            "description": "肉品原產地：美國雞肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)薯泥起士蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)秘汁燒肉蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)椒麻鮪魚蛋餅(辣)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)椒麻燒肉蛋餅(辣)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)火腿蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)熱狗蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)韓式泡菜蛋餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)薯餅蛋餅",
+            "description": "豬肉原產地為台灣。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U來個白日夢吐司",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U新)巧克力蛋蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)草莓撲肉鬆吐司",
+            "description": "絲絲入口的肉鬆搭配吐司，呈現傳統美味的復刻。(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)火腿蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)薯泥肉鬆吐司",
+            "description": "豬肉原產地為台灣。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)日式醬燒雞腿吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)祕汁燒肉吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)霸王雞排吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)阿嬤養的炸豬排吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)洋芋燒肉吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UA肉鬆蛋吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U大滿足火烤三明治",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)薯餅蛋烤三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "116.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)深海鮪魚起司烤三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)手感豬肉蛋烤三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)燒肉混蛋烤三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)4盎司牛肉起司烤三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)醬燒雞腿烤三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U爆料乳酪系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)惦惦吃爆乳芋泥三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)惦惦吃爆乳薯泥三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)肉蛋起司瀑布三明治",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U發誓好吃法式吐司",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)假奶煉乳法式吐司",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)Double起司蛋法式吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "116.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)鮪魚法式吐司",
+            "description": "現烤吐司搭配鮮香鮪魚，令人百吃不膩的經典組合。(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)法式牽絲巧達乳酪吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)復刻肉鬆蛋法式吐司",
+            "description": "豬肉原產地為台灣。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U日有所思奶香厚片",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)自製奶酥醬厚片",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)自製花生醬厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)巧克力醬好吃",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB跳色厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)巧克力可可巧酥厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)草莓醬好吃",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)煉乳醬好吃",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)奶油醬好吃",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U夜有所夢小單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)小肉豆",
+            "description": "豬肉原產地為台灣。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "62.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)蔥蛋(兩顆)",
+            "description": "2 顆。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)熱狗淋蛋",
+            "description": "豬肉原產地為台灣。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "62.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)蘿蔔糕淋蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)特製燒肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)香酥蔥抓餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(辣)椒麻蔥抓餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)港式蘿蔔糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)活力蛋(2顆)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)九層塔蔥抓餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)蔥抓起司三重奏",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "116.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U夜有所夢小炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)薯餅(2塊)",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)卡拉不辣",
+            "description": "肉品原產地:美國餐點皆為現做.請多給一點時間",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)卡拉辣味",
+            "description": "肉品原產地:美國餐點皆為現做.請多給一點時間",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)煉乳炸銀絲卷",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)椒鹽炸銀絲卷",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)麥克雞塊",
+            "description": "5 入。肉品原產地：美國雞肉，餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)太飽波浪薯條",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)特製香酥雞",
+            "description": "肉品原產地：美國雞肉，餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)手工鹽酥黑輪片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)霸王雞排",
+            "description": "肉品原產地:台灣餐點皆為現做.請多給一點時間",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)阿嬤養的炸豬排",
+            "description": "肉品原產地:巴拉圭餐點皆為現做.請多給一點時間",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)美國脆薯",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)黑松露薯條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U怕你餓到含到公仔麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)古早味肉燥麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)蔥燒牛肉味麵",
+            "description": "肉品原產地：巴拉圭牛肉 | 湯、麵會分開包裝，乾湯擇一",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)古早味炒泡麵",
+            "description": "含蛋。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)懷舊炸醬炒泡麵",
+            "description": "含蛋。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)泡菜辛拉麵",
+            "description": "辣｜韓國農心辛辣麵、蛋、青菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)麻辣雙皮蛋炒泡麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)塔香蛤蠣炒意麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "171.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)麻奶辛拉麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "178.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)四川麻辣鴨血煲(湯.微辣.)",
+            "description": "餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)溫制輕酸辣烏龍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "121.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)蔥爆沙茶炒泡麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)泰式打拋豬炒泡麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "194.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U正港南味熱情鍋燒麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U新)原味鍋燒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "171.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)韓式泡菜鍋燒泡飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "202.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)原味鍋燒泡飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "171.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U新)韓式泡菜鍋燒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "202.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)麻奶鍋燒麵-辣(含起司.蛋)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "217.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)金湯鍋燒麵-酸辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "217.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)法式牛奶起司鍋燒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)花雕濃香鍋燒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)濟洲風味咖哩鍋燒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U咖哩飯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)香酥雞塊咖哩飯",
+            "description": "肉品來源:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "217.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)霸王雞排咖哩飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "233.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)厚切豬排咖哩飯",
+            "description": "肉品來源:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "233.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)黑胡椒豬柳飯",
+            "description": "肉品來源:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "186.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)泰式打拋豬肉飯",
+            "description": "肉品來源:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "186.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U晚到喝一杯茶飲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)清香烏龍茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)清香烏龍奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)清香烏龍奶蓋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)草莓蛋蜜奶",
+            "description": "700 毫升。冰飲。甜度及冰量固定。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)紅茶豆乳",
+            "description": "700 毫升。冰飲。甜度及冰量固定。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)紅茶牛奶",
+            "description": "700 毫升。冰飲。甜度及冰量固定。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)微糖豆漿",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "62.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)無糖豆漿",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "62.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)古早味紅茶",
+            "description": "700 毫升。冰飲。甜度及冰量固定。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)小時候奶茶",
+            "description": "700 毫升。冰飲。甜度及冰量固定。餐點皆為現做, 請多給一些時間。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)紅茶奶蓋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UA奶香紅烏龍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "67.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "(U)QQ麻吉鬆餅",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)QQ麻吉草莓鬆餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)QQ麻吉花生鬆餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)QQ麻吉奶酥鬆餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

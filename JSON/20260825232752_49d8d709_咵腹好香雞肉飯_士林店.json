@@ -1,0 +1,326 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%92%B5%E8%85%B9%E5%A5%BD%E9%A6%99%E9%9B%9E%E8%82%89%E9%A3%AF-%E5%A3%AB%E6%9E%97%E5%BA%97/UY2HjhltXISb3DWf-X6MEQ",
+  "name": "咵腹好香雞肉飯 士林店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區大南路50號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08936,
+    "longitude": 121.52493
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 2.6,
+    "reviewCount": 25
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Chicken",
+    "Exclusive to Eats"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巨人加量雙雞餐 Giant Double-Up Meal",
+            "description": "套餐內含： 1 份咵腹雞肉飯，飯內會再加 1 份單點雞肉， 1 份小份現炒青菜。\n\n雙倍雞肉補給力, 讓續航更有活力。\n\n※套餐內餐點為固定商品，恕無法更換為等值商品。\n※辣椒皆直接加入，如需另包請備註。\n※青菜以當日所購入為主，恕無法挑選。\n※因運送過程難免搖晃，圖片僅供參考。\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "逐日經典獨享餐 Classic Signature Exclusive Meal",
+            "description": "套餐內含： 1 份咵腹雞肉飯及荷包蛋，1 份小份現炒青菜及 1 碗每日湯品。\n\n1 份滿足逐日餐，補滿剛好的能量。\n\n※套餐內餐點為固定商品，恕無法更換為等值商品。\n※辣椒皆直接加入，如需另包請備註。\n※青菜以當日所購入為主，恕無法挑選。\n※因運送過程難免搖晃，圖片僅供參考。\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奔炒蔬菜 Stir-Fried Vegetable",
+            "description": "🥬熱炒蔬菜香氣十足，清甜爽口、補充每日纖維質好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單點桃木蔥油雞 A La Carte Cherrywood Smoked Chicken with Oil",
+            "description": "鮮嫩去骨雞腿肉，搭配古早味雞油醬油(鹹甜好滋味)\n※辣椒皆直接加入，如需另包請備註\n※因運送過程難免搖晃，圖片僅供參考\n※不提供去皮服務\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "追日荷包蛋 Over Egg",
+            "description": "🍳金黃香煎荷包蛋，外微酥、內層滑嫩。\n蛋香濃厚，每口都滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "朝日蔥香蛋 Egg with Scallion",
+            "description": "古早味香煎蔥蛋，蔥香濃郁超下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🌶️單點四舌椒麻雞 A La Carte Spicy Chicken",
+            "description": "椒麻帶勁鮮嫩去骨雞腿肉，搭配古早味雞油醬油(鹹甜好滋味)\n※辣椒皆直接加入，如需另包請備註\n※因運送過程難免搖晃，圖片僅供參考\n※不提供去皮服務\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "止渴暖湯 Warm Soup",
+            "description": "每日現煮熱湯，為餐點增添溫暖滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【⊗ 注意事項，請勿下單】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "圖片僅供參考",
+            "description": "出餐時咵腹將會以最好的品質製作餐點，並呈現給每位喜愛雞肉飯的客人，但運送過程中難免有許多不可抗之因素，導致顧客收取到餐點時可能會有移位或雞肉散開的可能，造成視覺上的不佳，還請客人見諒🙏🙏🙏。\n我們給予每份餐點的份量皆為固定，請顧客們放心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🐤 雞肉最佳賞味期",
+            "description": "咵腹雞肉為每日純手工製作，無添加任何防腐劑，建議購買後盡快食用完畢，以確保最佳餐點品質 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "☑ 食品安全",
+            "description": "店內辣椒🌶️、胡椒皆無🚫添加蘇丹紅請顧客安心食用❗️❗️",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "❗️發票資訊如需統編請於下單時設定，請勿標示於備註，謝謝❗️",
+            "description": "❗️發票資訊如需統編請於下單時設定，請勿標示於備註，謝謝❗️",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【咵腹逐日能量餐 Energy Meal】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "逐日經典獨享餐 Classic Signature Exclusive Meal",
+            "description": "套餐內含： 1 份咵腹雞肉飯及荷包蛋，1 份小份現炒青菜及 1 碗每日湯品。\n\n1 份滿足逐日餐，補滿剛好的能量。\n\n※套餐內餐點為固定商品，恕無法更換為等值商品。\n※辣椒皆直接加入，如需另包請備註。\n※青菜以當日所購入為主，恕無法挑選。\n※因運送過程難免搖晃，圖片僅供參考。\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巨人加量雙雞餐 Giant Double-Up Meal",
+            "description": "套餐內含： 1 份咵腹雞肉飯，飯內會再加 1 份單點雞肉， 1 份小份現炒青菜。\n\n雙倍雞肉補給力, 讓續航更有活力。\n\n※套餐內餐點為固定商品，恕無法更換為等值商品。\n※辣椒皆直接加入，如需另包請備註。\n※青菜以當日所購入為主，恕無法挑選。\n※因運送過程難免搖晃，圖片僅供參考。\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【來點蛋白質補能量 Protein】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "單點桃木蔥油雞 A La Carte Cherrywood Smoked Chicken with Oil",
+            "description": "鮮嫩去骨雞腿肉，搭配古早味雞油醬油(鹹甜好滋味)\n※辣椒皆直接加入，如需另包請備註\n※因運送過程難免搖晃，圖片僅供參考\n※不提供去皮服務\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🌶️單點四舌椒麻雞 A La Carte Spicy Chicken",
+            "description": "椒麻帶勁鮮嫩去骨雞腿肉，搭配古早味雞油醬油(鹹甜好滋味)\n※辣椒皆直接加入，如需另包請備註\n※因運送過程難免搖晃，圖片僅供參考\n※不提供去皮服務\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桃木蔥油雞肉飯 Cherrywood Smoked Chicken with Oil Rice",
+            "description": "鮮嫩去骨雞腿肉，搭配古早味雞油醬油(鹹甜好滋味)+香Q米飯，溫潤蔥香, 順口不膩。\n※辣椒皆直接加入，如需另包請備註\n※因運送過程難免搖晃，圖片僅供參考\n※不提供去皮服務\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🌶️四舌椒麻雞肉飯 Spicy Chicken Rice",
+            "description": "鮮嫩去骨雞腿肉，搭配古早味雞油醬油(鹹甜好滋味)+香Q米飯，椒麻帶勁, 香辣上癮。\n※辣椒皆直接加入，如需另包請備註\n※因運送過程難免搖晃，圖片僅供參考\n※不提供去皮服務\n※店內辣椒、胡椒 皆不含有蘇丹紅成分，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【加點配餐繼續上路 A La Carte】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奔炒蔬菜 Stir-Fried Vegetable",
+            "description": "🥬熱炒蔬菜香氣十足，清甜爽口、補充每日纖維質好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "朝日蔥香蛋 Egg with Scallion",
+            "description": "古早味香煎蔥蛋，蔥香濃郁超下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "追日荷包蛋 Over Egg",
+            "description": "🍳金黃香煎荷包蛋，外微酥、內層滑嫩。\n蛋香濃厚，每口都滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奔陽白米飯 Rice",
+            "description": "🍚香Q白米飯，鬆軟香Q、米香十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🔥 靈魂醬料加購",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "加點一份桃木蔥油醬",
+            "description": "溫潤蔥香，拌飯順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加點一份四舌椒麻醬🌶️",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【渴了就來喝個湯 Soup】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "止渴暖湯 Warm Soup",
+            "description": "每日現煮熱湯，為餐點增添溫暖滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%BA%BB%E6%B4%A5%E5%AE%B6%E9%BA%BB%E8%BE%A3%E5%B0%8F%E7%81%AB%E9%8D%8B/ewW7ouoTXgyVECALqRU4Zw",
+  "name": "麻津家麻辣小火鍋",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "龍形三街9巷10號",
+    "addressLocality": "八里區",
+    "addressRegion": "",
+    "postalCode": "249007",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.13169,
+    "longitude": 121.45089
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 28
+  },
+  "servesCuisine": [
+    "Chinese",
+    "Taiwanese",
+    "Spicy Hot Pot",
+    "Noodles"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣牛肉鍋",
+            "description": "附白飯及加贈肉片。不只是麻辣牛肉鍋，更是麻津家的經典招牌。除了鮮嫩牛肉，鍋內還包含招牌麻辣鴨血、麻辣臭豆腐、時令蔬菜及多種火鍋配料，附白飯。豐富配料搭配香麻順口的湯頭，一鍋就能滿足多重美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血臭豆腐煲",
+            "description": "附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣羊肉鍋",
+            "description": "附白飯及加贈肉片。鮮嫩羊肉搭配麻津家招牌麻辣湯底，並包含招牌麻辣鴨血、麻辣臭豆腐、時令蔬菜及多種火鍋配料，附白飯。香麻順口、暖胃滿足，一次享受多種經典美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣魚肉鍋",
+            "description": "附白飯及加贈魚片。鮮甜魚片搭配麻津家招牌麻辣湯底，鍋內包含招牌麻辣鴨血、麻辣臭豆腐、時令蔬菜及多種火鍋配料，附白飯。鮮香與麻辣完美結合，層次豐富、回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "309.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉鍋",
+            "description": "嚴選雪花牛肉，肉質軟嫩、油花均勻。**藥膳鍋可選養生或何首烏兩種湯底，每鍋皆使用一包真材實料藥材包現場熬製，不添加合成藥膳粉。**搭配新鮮蔬菜及多樣火鍋配料，附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣豬肉鍋",
+            "description": "附白飯及加贈肉片。以麻津家招牌麻辣湯底搭配梅花豬肉，鍋內還包含招牌麻辣鴨血、麻辣臭豆腐、時令蔬菜及多種火鍋配料，附白飯。層次豐富、香麻夠味，是許多客人喜愛的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚片鍋",
+            "description": "嚴選鮮嫩魚片，口感細緻鮮甜。**藥膳鍋可選養生或何首烏兩種湯底，每鍋皆使用一包真材實料藥材包現場熬製，不添加合成藥膳粉。**搭配新鮮蔬菜及多樣火鍋配料，附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉鍋",
+            "description": "精選羊肉片，肉香濃郁、口感鮮嫩。**藥膳鍋可選養生或何首烏兩種湯底，每鍋皆使用一包真材實料藥材包現場熬製，不添加合成藥膳粉。**搭配新鮮蔬菜及多樣火鍋配料，附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉鍋",
+            "description": "嚴選梅花豬肉，肉質鮮嫩、帶有自然甜味。**藥膳鍋可選養生或何首烏兩種湯底，每鍋皆使用一包真材實料藥材包現場熬製，不添加合成藥膳粉。**搭配新鮮蔬菜及多樣火鍋配料，附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣拌麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣拌麵",
+            "description": "特製麻辣醬搭配麵條、鴨血、臭豆腐及青菜，香麻夠味，深受喜愛。",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣湯餃",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣湯餃",
+            "description": "8 顆。手工餃子搭配麻津家招牌麻辣湯底，香麻順口，共 8 顆，不提供辣度調整。",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣鍋物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣牛肉鍋",
+            "description": "附白飯及加贈肉片。不只是麻辣牛肉鍋，更是麻津家的經典招牌。除了鮮嫩牛肉，鍋內還包含招牌麻辣鴨血、麻辣臭豆腐、時令蔬菜及多種火鍋配料，附白飯。豐富配料搭配香麻順口的湯頭，一鍋就能滿足多重美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣豬肉鍋",
+            "description": "附白飯及加贈肉片。以麻津家招牌麻辣湯底搭配梅花豬肉，鍋內還包含招牌麻辣鴨血、麻辣臭豆腐、時令蔬菜及多種火鍋配料，附白飯。層次豐富、香麻夠味，是許多客人喜愛的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣羊肉鍋",
+            "description": "附白飯及加贈肉片。鮮嫩羊肉搭配麻津家招牌麻辣湯底，並包含招牌麻辣鴨血、麻辣臭豆腐、時令蔬菜及多種火鍋配料，附白飯。香麻順口、暖胃滿足，一次享受多種經典美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣魚肉鍋",
+            "description": "附白飯及加贈魚片。鮮甜魚片搭配麻津家招牌麻辣湯底，鍋內包含招牌麻辣鴨血、麻辣臭豆腐、時令蔬菜及多種火鍋配料，附白飯。鮮香與麻辣完美結合，層次豐富、回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "309.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "藥膳鍋物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉鍋",
+            "description": "嚴選雪花牛肉，肉質軟嫩、油花均勻。**藥膳鍋可選養生或何首烏兩種湯底，每鍋皆使用一包真材實料藥材包現場熬製，不添加合成藥膳粉。**搭配新鮮蔬菜及多樣火鍋配料，附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉鍋",
+            "description": "嚴選梅花豬肉，肉質鮮嫩、帶有自然甜味。**藥膳鍋可選養生或何首烏兩種湯底，每鍋皆使用一包真材實料藥材包現場熬製，不添加合成藥膳粉。**搭配新鮮蔬菜及多樣火鍋配料，附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉鍋",
+            "description": "精選羊肉片，肉香濃郁、口感鮮嫩。**藥膳鍋可選養生或何首烏兩種湯底，每鍋皆使用一包真材實料藥材包現場熬製，不添加合成藥膳粉。**搭配新鮮蔬菜及多樣火鍋配料，附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚片鍋",
+            "description": "嚴選鮮嫩魚片，口感細緻鮮甜。**藥膳鍋可選養生或何首烏兩種湯底，每鍋皆使用一包真材實料藥材包現場熬製，不添加合成藥膳粉。**搭配新鮮蔬菜及多樣火鍋配料，附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣煲類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血臭豆腐煲",
+            "description": "附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血煲",
+            "description": "附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣臭豆腐煲",
+            "description": "附白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷藏包系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血",
+            "description": "700 克。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣臭豆腐",
+            "description": "700 克。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣醬",
+            "description": "麻津家特製麻辣醬，選用多種天然香料及藥材，由合作藥材商研磨調配而成。香氣濃郁、麻而不燥，適合拌麵、拌飯、火鍋及各式料理，讓簡單的一餐也能充滿幸福滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

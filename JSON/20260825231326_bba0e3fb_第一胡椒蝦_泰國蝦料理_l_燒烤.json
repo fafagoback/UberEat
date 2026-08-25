@@ -1,0 +1,674 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%AC%AC%E4%B8%80%E8%83%A1%E6%A4%92%E8%9D%A6-%E6%B3%B0%E5%9C%8B%E8%9D%A6%E6%96%99%E7%90%86-l-%E7%87%92%E7%83%A4/1meJGbE4VwujjcViYbL7zw",
+  "name": "第一胡椒蝦 泰國蝦料理 l 燒烤",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區碧華街347號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0850109,
+    "longitude": 121.4919031
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.2,
+    "reviewCount": 53
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Seafood",
+    "BBQ"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "下酒椒鹽蝦",
+            "description": "泰國蝦拌椒鹽與蔥蒜，香氣四溢、鹹香涮嘴，下酒必點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "開胃檸檬蝦",
+            "description": "泰國蝦淋上檸檬汁，拌蔥蒜與紅椒，酸香開胃、蝦肉彈嫩；下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌胡椒蝦",
+            "description": "招牌胡椒蝦，泰國蝦拌黑胡椒與香料，殼香入味、啃殼更過癮，下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒鳳螺",
+            "description": "下酒推薦首選🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬雞翅",
+            "description": "檸檬清香提味的雞翅，酸香開胃，下酒配飯都推薦（一份兩隻）",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤鮮甜白蝦",
+            "description": "一份五隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥大鮑魚",
+            "description": "一份四顆鮑魚",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆蛋特大母香魚",
+            "description": "一份一隻，狠大隻有蛋的母香魚～",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤風味蝦",
+            "description": "一份大約9-10隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "挪威鯖魚",
+            "description": "挪威薄鹽鯖魚，油脂恰到好處，下飯下酒一定要點！",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌蒜泥蝦",
+            "description": "泰國蝦鋪上蒜泥與蔥花，蒜香厚實、蝦肉Q彈，鹹香涮嘴；下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泰國蝦料理",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌胡椒蝦",
+            "description": "招牌胡椒蝦，泰國蝦拌黑胡椒與香料，殼香入味、啃殼更過癮，下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌蒜泥蝦",
+            "description": "泰國蝦鋪上蒜泥與蔥花，蒜香厚實、蝦肉Q彈，鹹香涮嘴；下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "開胃檸檬蝦",
+            "description": "泰國蝦淋上檸檬汁，拌蔥蒜與紅椒，酸香開胃、蝦肉彈嫩；下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油洋蔥蝦",
+            "description": "泰國蝦鋪滿洋蔥丁與奶油醬，蝦肉彈嫩、醬汁香濃；下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "下酒椒鹽蝦",
+            "description": "泰國蝦拌椒鹽與蔥蒜，香氣四溢、鹹香涮嘴，下酒必點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典湯品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "燒酒蝦",
+            "description": "濃郁的湯頭， 加上一份12兩的蝦（約十隻）鮮甜好喝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "1200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜蛤蠣湯",
+            "description": "蛤蠣湯頭清爽鮮甜，海味足、順口暖胃，經典湯品必點！",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "海鮮烤物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥大鮑魚",
+            "description": "一份四顆鮑魚",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒鳳螺",
+            "description": "下酒推薦首選🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤風味蝦",
+            "description": "一份大約9-10隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤吳郭魚",
+            "description": "限量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "挪威鯖魚",
+            "description": "挪威薄鹽鯖魚，油脂恰到好處，下飯下酒一定要點！",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆蛋特大母香魚",
+            "description": "一份一隻，狠大隻有蛋的母香魚～",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤鮮甜白蝦",
+            "description": "一份五隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚下巴",
+            "description": "一份兩片",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣絲瓜",
+            "description": "蛤蠣搭配絲瓜，清爽鮮香，海味滿滿；下飯下酒都推薦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤魷魚",
+            "description": "香噴噴醬烤魷魚🦑撒上芝麻、胡椒～真的很吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤奶油生食干貝",
+            "description": "3 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典菜品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣水煮嫩牛肉",
+            "description": "麻辣鮮香 好下飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮑魚風味沙拉",
+            "description": "好吃的鮑魚片，淋上美乃滋",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "吃肉飽飽",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醬烤嫩雞腿",
+            "description": "鮮甜多汁 吃肉首選",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤雞屁股",
+            "description": "醬烤七里香（雞屁股），醬香濃郁，油脂香Q不膩，越吃越涮嘴，下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典鹹豬肉",
+            "description": "鹹香夠味 超人氣第一名",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬雞翅",
+            "description": "檸檬清香提味的雞翅，酸香開胃，下酒配飯都推薦（一份兩隻）",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飛魚卵香腸",
+            "description": "畢畢剝剝的口感，你最愛海味～ （一份兩條）",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤雞心",
+            "description": "醬香入味的雞心，口感脆彈多汁，鹹香不膩，越吃越涮嘴。下酒、配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽松阪豬",
+            "description": "脆Q松阪豬切片拌椒鹽，口感彈牙、鹹香涮嘴，下酒配飯都推薦",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "夠味高粱酒香腸",
+            "description": "紹興酒香入味的香腸，鹹香夠味，下酒配飯都推薦（一份兩條）",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "墨魚香腸",
+            "description": "2 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮肥腸",
+            "description": "外酥內嫩的肥腸口感Q彈，越嚼越香，下酒配飯都推薦",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤雞皮",
+            "description": "烤到金黃酥脆的雞皮，油香四溢，脆中帶嫩，越吃越涮嘴；下酒配飯都推薦",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "均衡蔬菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醬烤櫛瓜",
+            "description": "醬香入味的櫛瓜切片，刷醬烤到香氣四溢，清脆多汁，解膩好搭配；下酒配飯都推薦",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤杏鮑菇",
+            "description": "醬香濃郁的杏鮑菇，烤到入味，香氣四溢，下酒配飯都推薦",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤香菇",
+            "description": "醬烤香菇，醬香逼人，烤到多汁入味，咬下噴香；下酒配飯都推薦",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤青椒",
+            "description": "醬烤青椒，醬香提味，烤出青椒清香與層次，下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油金針菇",
+            "description": "奶油香氣包覆金針菇，脆嫩好入口，下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤奶油玉米",
+            "description": "醬香入味的奶油玉米，烤至表面微焦，玉米多汁、奶油滑順，香氣四溢，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "綜合串燒",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆干",
+            "description": "醬烤豆干，刷醬入味，外層微焦香、內裡紮實，撒上白芝麻更香，下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣",
+            "description": "甜不辣串，刷醬入味現烤至表面微焦，口感Q彈、鹹香涮嘴，下酒配飯都推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "串燒豬血糕，Q彈有嚼勁，烤香迷人，下酒配飯都推薦",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生米腸",
+            "description": "糯米腸拌入花生顆粒，堅果香氣更迷人，串燒口感扎實有咬勁，下酒配飯都推薦（一份兩條）",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "來點炸物吧",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "銀絲卷",
+            "description": "請註明 椒鹽 或 煉乳\n\n（未註明一律椒鹽）\n一份五顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆薯",
+            "description": "金黃脆薯，外酥內鬆、薯香濃郁，涮嘴停不下來，下酒必點",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小朋友最愛麥克雞塊",
+            "description": "一份六個",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "千層香芋派",
+            "description": "香香酥酥的千層酥皮，包裹綿密香芋餡，外酥內綿，越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "來點麵麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥粄條",
+            "description": "特調醬汁蒸煮粄條，Q彈好吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥寬粉",
+            "description": "特調醬汁蒸煮寬粉，吸滿湯汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

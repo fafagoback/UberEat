@@ -1,0 +1,806 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%84%A6%E7%B3%96%E6%A5%93%E6%BC%A2%E6%96%B9%E4%B8%B2%E7%87%92%E7%84%A1%E7%83%9F%E6%92%92%E7%B2%89-%E5%A4%A7%E7%9B%B4%E5%BA%97/SfbEPKKDUuObxz60CqniXw",
+  "name": "焦糖楓漢方串燒無烟撒粉 大直店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區北安路476號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0796433,
+    "longitude": 121.54513
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 49
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "豬血糕",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥肉捲",
+            "description": "蔥肉捲",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒心豬五花",
+            "description": "椒心豬五花",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕃茄牛五花捲",
+            "description": "蕃茄牛五花捲",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豆包",
+            "description": "炸豆包",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞軟骨",
+            "description": "雞軟骨",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "雞心",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇",
+            "description": "香菇",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "櫛瓜",
+            "description": "櫛瓜",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茭白筍",
+            "description": "茭白筍",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤雞翅",
+            "description": "烤雞翅",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮肥腸",
+            "description": "脆皮肥腸",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞尾",
+            "description": "雞尾",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干",
+            "description": "豆干",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤中翅",
+            "description": "烤中翅",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "杏鮑菇",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛腹肉串",
+            "description": "牛腹肉串",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤麻糬",
+            "description": "烤麻糬",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮",
+            "description": "雞皮",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "私廚海鮮",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "廣島大生蠔一份2顆",
+            "description": "廣島大生蠔一份2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "北海道大干貝一份2顆",
+            "description": "北海道大干貝一份2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無敵大草蝦一份2支",
+            "description": "無敵大草蝦一份2支",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高級軟絲一份1支",
+            "description": "高級軟絲一份1支",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "挪威鯖魚一份1支",
+            "description": "挪威鯖魚一份1支",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "百事可樂",
+            "description": "百事可樂",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Treetop蘋果氣泡飲",
+            "description": "Treetop蘋果氣泡飲",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬紅茶(鋁箔包)",
+            "description": "檸檬紅茶(鋁箔包)",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "礦泉水",
+            "description": "礦泉水",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶一杯",
+            "description": "綠茶一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "海鮮專區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白蝦",
+            "description": "白蝦",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍珠",
+            "description": "龍珠",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿根廷烤魷魚(小)",
+            "description": "阿根廷烤魷魚(小)",
+            "offers": {
+              "@type": "Offer",
+              "price": "129.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鯛魚下巴（整隻）",
+            "description": "鯛魚下巴（整隻）",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明太子秋刀魚",
+            "description": "明太子秋刀魚",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "捲捲串區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔥肉捲",
+            "description": "蔥肉捲",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕃茄牛五花捲",
+            "description": "蕃茄牛五花捲",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "旺萊芝心捲",
+            "description": "旺萊芝心捲",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒心豬五花",
+            "description": "椒心豬五花",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "高檔肉區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "腿排肉串",
+            "description": "腿排肉串",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞軟骨",
+            "description": "雞軟骨",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛腹肉串",
+            "description": "牛腹肉串",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "霜降豬肉串",
+            "description": "霜降豬肉串",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊菲力串",
+            "description": "羊菲力串",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鹹酥肉類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞胗",
+            "description": "雞胗",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "雞心",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞尾",
+            "description": "雞尾",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮",
+            "description": "雞皮",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤雞翅",
+            "description": "烤雞翅",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤小雞腿",
+            "description": "烤小雞腿",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤中翅",
+            "description": "烤中翅",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蔬菜區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "茄子",
+            "description": "茄子",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青椒",
+            "description": "青椒",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆",
+            "description": "四季豆",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥",
+            "description": "洋蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花椰菜",
+            "description": "花椰菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇",
+            "description": "香菇",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茭白筍",
+            "description": "茭白筍",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "櫛瓜",
+            "description": "櫛瓜",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "杏鮑菇",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤珍珠玉米",
+            "description": "烤珍珠玉米",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "百搭小點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐",
+            "description": "百頁豆腐",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭籤",
+            "description": "芋頭籤",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "豬血糕",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓甜不辣",
+            "description": "圓甜不辣",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豆包",
+            "description": "炸豆包",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干",
+            "description": "豆干",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤麻糬",
+            "description": "烤麻糬",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮肥腸",
+            "description": "脆皮肥腸",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式帶骨香腸",
+            "description": "德式帶骨香腸",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮魚棒",
+            "description": "鮮魚棒",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香Q腸(新)",
+            "description": "香Q腸(新)",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式帶骨香腸(單點)",
+            "description": "德式帶骨香腸(單點)",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

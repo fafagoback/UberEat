@@ -1,0 +1,740 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%83%8F%E5%BC%84-%E5%A3%AB%E6%9E%97%E8%8A%9D%E5%B1%B1%E5%BA%97/dK5AXv4dT5OEIW829I92eg",
+  "name": "烏弄 士林芝山店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區福華路164巷11號",
+    "addressLocality": "Taipei",
+    "addressRegion": "",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1043766,
+    "longitude": 121.5229564
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 5000
+  },
+  "servesCuisine": [
+    "Bubble Tea",
+    "Drinks",
+    "Coffee and Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "春枝梅綠 Biluochun Green Tea with Plum",
+            "description": "古法釀製梅露加入碧綠清澈、鮮活爽口的碧螺春綠，微酸微甜。\n大杯 / 咖啡因 100mg 以下 糖量 73g 熱量 319kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大人的可可拿鐵 Brown Sugar Mixed Cocoa Latte",
+            "description": "使用帶點苦味的「法國歌劇可可」，與香醇鮮奶。\n大杯 / 咖啡因 100mg 以下 糖量 55g 熱量 432kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔗是冬片",
+            "description": "HPP 滅菌 100% 甘蔗原汁 (無添加糖) 搭配招牌冬片仔，建議甜度三分糖。喜歡清爽甜味茶香的您，也可以點無糖喔！\n\n擁有花香、奶油香與堅果香氣的名間鄉冬片仔遇上使用 HPP 冷高壓滅菌的甘蔗原汁，甘蔗的清甜先在舌尖化開，每一口都像是在鼻腔綻放的一場春季慶典。\n大杯 / 咖啡因 101-200mg 糖量 103g 熱量 457kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚粒金萱 Grapefruit Jinxuan Oolong Tea",
+            "description": "每日新鮮現榨！葡萄柚充滿活力的香氣，帶有酸甜滋味的果肉與果汁，搭配略帶焙火香氣，口感厚實、甘醇不澀的金萱烏龍，恰到好處。\n大杯 / 咖啡因 100mg 以下 糖量 105g 熱量 461kcal\n茶葉產地 / 100% 台灣\n建議三分糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金糖粿紅茶拿鐵",
+            "description": "紅玉的肉桂與薄荷香氣很清晰，鮮奶讓口感更顯柔順。金糖粿的糖香在尾韻中顯現，增添一些圓潤感，不遮蓋茶韻，反而讓奶香、茶韻與糖蜜焦香的層次更分明。\n大杯 / 咖啡因 201mg 以上 糖量 63g 熱量 489kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖鮮奶珍珠  Fresh Milk with Brown Sugar Pearl",
+            "description": "香醇鮮奶搭配香濃黑糖，加上 Q 彈的大珍珠，超享受。\n中杯 / 無咖啡因 糖量 59g 熱量 515kcal\n純鮮奶，不加水，甜度固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠紅茶拿鐵 Ruby Black Tea Latte with Pearl",
+            "description": "紅玉紅茶搭配香醇鮮奶，搭配 Q 彈的焦糖大珍珠。\n大杯 / 咖啡因 101至200mg 糖量 73g 熱量 613kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可脆片朵朵 Cheesy Cloud On Cocoa Chip Smoothie",
+            "description": "選擇法國歌劇純可可製作冰沙，保有可可豆特有的風味並能產生更加諧調的平衡口感，撒上可可脆片帶來更豐富的口感，上頭的濃郁淋醬是整塊乳脂起士及法國愛樂薇鮮奶油調製而成，濃、醇、香中帶著起士些許鹹味，綿密而細緻。\n大杯 / 咖啡因 100mg 以下 糖量 54g 熱量 665kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑莓紅玉",
+            "description": "帶有淡淡肉桂及薄荷香氣的紅玉紅茶，搭配無糖台灣桑椹原汁以及原味寒天。\n大杯 / 咖啡因 101-200mg 糖量 81g 熱量 359cal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑莓鮮奶(中杯)",
+            "description": "香醇鮮奶搭配搭配無糖台灣桑椹原汁以及原味寒天。\n中杯 / 無咖啡因 糖量 49g 熱量 283kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉霞紅茶拿鐵 Ruby Black Tea Latte",
+            "description": "從茶葉採收到烘焙手法完全為烏弄客製化製程，沖煮為加倍濃郁的紅玉紅茶，與香純清甜的鮮奶融合，茶味與奶香平衡。\n大杯 / 咖啡因 201mg 以上 糖量 69g 熱量 386kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮橙冬片仔 Orange with Winter Film",
+            "description": "柑橘香氣溫潤柔和的柳橙果汁，搭配甘甜醇厚的名間鄉冬片仔，清香雅緻。\n大杯 / 咖啡因 101至200mg 糖量 103g 熱量 438kcal\n建議三分糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不苦蕎麥鮮奶 Buckwheat Tea Mixed Milk",
+            "description": "嚴選台灣種植生產的韃靼蕎麥 (俗稱苦蕎)，苦蕎脫殼後，苦味不再，迎面而來的是淡淡蕎麥香氣，帶點麥芽的風味，與清甜的鮮奶融合，清爽宜人。\n苦蕎麥屬於低 GI 食物，能避免血糖波動上升的幅度太大，達到血糖控制的效果。\n*蕎麥茶不建議麩質過敏者及腎臟病患者飲用*\n大杯 / 無咖啡因 糖量 69g 熱量 386kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗冬露",
+            "description": "抱抱冬瓜露 × 甘蔗原汁\n以高溫煅燒貝殼蓋取代石灰的冬瓜濃露，在原本的香甜中交織著甘蔗原汁的清新，冬瓜特有的炭焙焦糖香在舌根迴盪，隨著甘蔗的清新入喉，化作一股甜而不膩的清爽感。\n大杯 / 無咖啡因 糖量 76g 熱量 340kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁凍紅茶拿鐵 Ruby Black Tea Latte with Almond Jelly",
+            "description": "紅玉紅茶搭配香醇鮮奶，搭配自家熬煮清香淡雅的杏仁凍。\n大杯 / 咖啡因 101至200mg 糖量 61g 熱量 397kcal\n茶葉產地 / 100% 台灣                                                                                                                                                                                                                           建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥冬露 Buckwheat Tea with Wintermelon",
+            "description": "採用台灣原產，來自花蓮玉里的苦蕎麥，焙炒後沒有苦味，帶有質樸的蕎麥原味搭配馥郁香甜的冬瓜露，冬瓜露不使用石灰，改以成本更高「貝殼鈣」製成，給您更安心美味的風味體驗。\n大杯 / 無咖啡因 糖量 64g 熱量 271kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱烏龍拿鐵 Jinxuan Oolong Tea Latte",
+            "description": "茶湯清香中略帶焙火香氣，喝起來較為厚實的金萱烏龍，淡雅茶香悠遊在清甜香醇的鮮奶中，茶香與奶香鮮明卻融合得完美。\n大杯 / 咖啡因 100mg 以下 糖量 69g 熱量 386kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "春枝梅綠 Biluochun Green Tea with Plum",
+            "description": "古法釀製梅露加入碧綠清澈、鮮活爽口的碧螺春綠，微酸微甜。\n大杯 / 咖啡因 100mg 以下 糖量 73g 熱量 319kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項 Note",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "＊因應環保署公告，不主動免費提供塑膠袋。請額外加購塑膠袋。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "＊若金額不符或無法製作，店家可能會調整金額。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "＊若有任何疑問，請聯繫平台線上客服。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "塑膠袋 Plastic Bag",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "塑膠提袋 Plastic Bag",
+            "description": "最多 6 杯裝 1 個袋子。",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "台灣原茶 Taiwan Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "名間鄉冬片仔 Winter Tea",
+            "description": "茶樹將暖冬誤以為春天已到，開始萌發新芽，由於冬季日照少、茶芽生長緩慢，茶葉品質優異，故茶湯清揚、甘甜醇厚、不易苦澀，為台灣特色茶之一。\n製程｜輕發酵、輕烘焙\n風味｜花香、奶油香、堅果\n大杯 / 咖啡因 101至200mg 糖量 59g 熱量 252kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碧螺春綠 Biluochun Green Tea",
+            "description": "碧螺春外觀新鮮碧綠，形狀細緊捲曲似螺旋，茶湯碧綠清澈、鮮活爽口。\n製程｜不發酵、輕烘焙\n風味｜海苔香、碗豆香\n大杯 / 咖啡因 100mg 以下 糖量 59g 熱量 252kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱烏龍 Jinxuan Oolong Tea",
+            "description": "機剪茶，茶湯清香中略帶焙火香氣，喝起來較為厚實，依舊甘醇不澀。\n製程｜中發酵、中烘焙\n風味｜焙米香、蜂蜜香\n大杯 / 咖啡因 101至200mg 糖量 59g 熱量 252kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手採阿里山金萱 Hand Picked Alishan Jinxuan Tea",
+            "description": "手採高山茶，一心二葉，茶湯清新雅緻，甘醇滑順，花香撲鼻並帶有奶糖香氣。\n製程｜輕發酵、輕烘焙\n風味｜蘭花、奶油香、茉莉花\n大杯 / 咖啡因 101至200mg 糖量 59g 熱量 252kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台茶十八號紅玉 Ruby Black Tea",
+            "description": "台茶 18 號，由茶業改良場以緬甸大葉種及台灣野生山茶育成，茶湯金紅鮮明，滋味濃醇鮮爽，帶有淡淡肉桂及薄荷香氣。\n製程｜全發酵、輕烘焙\n風味｜薄荷、肉桂、茘枝\n大杯 / 咖啡因 101至200mg 糖量 59g 熱量 252kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "原茶調飲 Original Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "杏仁凍冬片仔 Winter Tea with Almond Jelly",
+            "description": "茶湯清揚、甘甜醇厚、不易苦澀的冬片仔，搭配自家熬煮清香淡雅的杏仁凍。\n大杯 / 咖啡因 100mg 以下 糖量 53g 熱量 276kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養樂多綠茶 Biluochun Green Tea Mixed Yakult",
+            "description": "碧綠清澈、鮮活爽口的碧螺春·綠搭配略帶酸甜的養樂多。\n大杯 / 咖啡因 100mg 以下 糖量 89g 熱量 411kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬露冬片仔 Wintermelon Drink with Winter Film",
+            "description": "以高溫鍛燒取代石灰，文火慢熬的冬瓜露，香甜濃郁滋味搭配甘甜醇厚的名間鄉冬片仔，甜蜜中帶有清香雅緻滋味。\n大杯 / 咖啡因 101至200mg 糖量 64g 熱量 271kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "春枝梅綠 Biluochun Green Tea with Plum",
+            "description": "古法釀製梅露加入碧綠清澈、鮮活爽口的碧螺春綠，微酸微甜。\n大杯 / 咖啡因 100mg 以下 糖量 73g 熱量 319kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "水果調飲 Fruit Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "檸檬梅綠 Bi Luo Chun Green Tea with Lemon and Plum",
+            "description": "微微的酸甜以及檸檬皮香氣、清爽口感的檸檬汁，搭配清甜爽鮮的碧螺春綠茶。\n大杯 / 咖啡因 100mg 以下 糖量 95g 熱量 422kcal\n茶葉產地 / 100% 台灣\n建議三分糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔗是冬片",
+            "description": "HPP 滅菌 100% 甘蔗原汁 (無添加糖) 搭配招牌冬片仔，建議甜度三分糖。喜歡清爽甜味茶香的您，也可以點無糖喔！\n\n擁有花香、奶油香與堅果香氣的名間鄉冬片仔遇上使用 HPP 冷高壓滅菌的甘蔗原汁，甘蔗的清甜先在舌尖化開，每一口都像是在鼻腔綻放的一場春季慶典。\n大杯 / 咖啡因 101-200mg 糖量 103g 熱量 457kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔗是檸檬綠",
+            "description": "碧螺春 • 綠 × 檸檬汁 × 甘蔗原汁\n帶有豆香與海苔香氣的碧螺春綠茶，融合清爽的甘蔗原汁，並加入些許檸檬汁提味。檸檬的微酸帶出甘蔗的香氣，酸、甜、香層次分明的療癒口感。\n大杯 / 咖啡因 101-200mg 糖量 129g 熱量 577kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜魯",
+            "description": "甜度冰塊固定, 總糖量59克，總熱量257大卡。\n金萱烏龍與手採阿里山金萱交疊的茶香，與蜜桃香氣交錯在口腔舌尖，明明沒有酒精，卻有讓人微醺的風味，清爽中帶有茶韻與果香，是無論是獨飲放鬆或者與朋友歡聚共飲，都能夠清醒的享受這般療癒。\n\n茶葉產地  100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚香金萱 Grapefruit Juice Mixed Jinxuan Oolong Tea",
+            "description": "每日新鮮現榨！帶有酸甜滋味的葡萄柚果汁，搭配略帶焙火香氣，口感厚實、甘醇不澀的金萱烏龍，恰到好處。\n大杯 / 咖啡因 101至200mg 糖量 95g 熱量 415kcal\n茶葉產地 / 100% 台灣\n建議三分糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚粒金萱 Grapefruit Jinxuan Oolong Tea",
+            "description": "每日新鮮現榨！葡萄柚充滿活力的香氣，帶有酸甜滋味的果肉與果汁，搭配略帶焙火香氣，口感厚實、甘醇不澀的金萱烏龍，恰到好處。\n大杯 / 咖啡因 100mg 以下 糖量 105g 熱量 461kcal\n茶葉產地 / 100% 台灣\n建議三分糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮橙冬片仔 Orange with Winter Film",
+            "description": "柑橘香氣溫潤柔和的柳橙果汁，搭配甘甜醇厚的名間鄉冬片仔，清香雅緻。\n大杯 / 咖啡因 101至200mg 糖量 103g 熱量 438kcal\n建議三分糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑莓紅玉",
+            "description": "帶有淡淡肉桂及薄荷香氣的紅玉紅茶，搭配無糖台灣桑椹原汁以及原味寒天。\n大杯 / 咖啡因 101-200mg 糖量 81g 熱量 359cal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香醇鮮乳 Fresh Milk",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "珍珠紅茶拿鐵 Ruby Black Tea Latte with Pearl",
+            "description": "紅玉紅茶搭配香醇鮮奶，搭配 Q 彈的焦糖大珍珠。\n大杯 / 咖啡因 101至200mg 糖量 73g 熱量 613kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉霞紅茶拿鐵 Ruby Black Tea Latte",
+            "description": "從茶葉採收到烘焙手法完全為烏弄客製化製程，沖煮為加倍濃郁的紅玉紅茶，與香純清甜的鮮奶融合，茶味與奶香平衡。\n大杯 / 咖啡因 201mg 以上 糖量 69g 熱量 386kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁凍紅茶拿鐵 Ruby Black Tea Latte with Almond Jelly",
+            "description": "紅玉紅茶搭配香醇鮮奶，搭配自家熬煮清香淡雅的杏仁凍。\n大杯 / 咖啡因 101至200mg 糖量 61g 熱量 397kcal\n茶葉產地 / 100% 台灣                                                                                                                                                                                                                           建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱烏龍拿鐵 Jinxuan Oolong Tea Latte",
+            "description": "茶湯清香中略帶焙火香氣，喝起來較為厚實的金萱烏龍，淡雅茶香悠遊在清甜香醇的鮮奶中，茶香與奶香鮮明卻融合得完美。\n大杯 / 咖啡因 100mg 以下 糖量 69g 熱量 386kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰果紅茶拿鐵 Black Tea Latte with Coconut Jelly",
+            "description": "滋味濃醇鮮爽，帶有淡淡肉桂及薄荷香氣的紅玉紅茶加上香醇清甜的鮮奶融合，加上脆口椰果，滿足你的咀嚼慾望。\n大杯 / 咖啡因 101至200mg 糖量 66g 熱量 368kcal\n茶葉產地 / 100% 台灣                                                                                                                                                                                                                          建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金糖粿紅茶拿鐵",
+            "description": "紅玉的肉桂與薄荷香氣很清晰，鮮奶讓口感更顯柔順。金糖粿的糖香在尾韻中顯現，增添一些圓潤感，不遮蓋茶韻，反而讓奶香、茶韻與糖蜜焦香的層次更分明。\n大杯 / 咖啡因 201mg 以上 糖量 63g 熱量 489kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "不失眠 Without Caffeine",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "不苦蕎麥茶 Buckwheat Tea",
+            "description": "嚴選台灣種植生產的韃靼蕎麥 (俗稱苦蕎)，苦蕎脫殼後，苦味不再，迎面而來的是淡淡蕎麥香氣，帶點麥芽的風味，餘韻讓人難以忘懷。\n苦蕎麥屬於低 GI 食物，能避免血糖波動上升的幅度太大，達到血糖控制的效果。\n*蕎麥茶不建議麩質過敏者及腎臟病患者飲用*\n大杯 / 無咖啡因 糖量 59g 熱量 252kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥冬露 Buckwheat Tea with Wintermelon",
+            "description": "採用台灣原產，來自花蓮玉里的苦蕎麥，焙炒後沒有苦味，帶有質樸的蕎麥原味搭配馥郁香甜的冬瓜露，冬瓜露不使用石灰，改以成本更高「貝殼鈣」製成，給您更安心美味的風味體驗。\n大杯 / 無咖啡因 糖量 64g 熱量 271kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不苦蕎麥鮮奶 Buckwheat Tea Mixed Milk",
+            "description": "嚴選台灣種植生產的韃靼蕎麥 (俗稱苦蕎)，苦蕎脫殼後，苦味不再，迎面而來的是淡淡蕎麥香氣，帶點麥芽的風味，與清甜的鮮奶融合，清爽宜人。\n苦蕎麥屬於低 GI 食物，能避免血糖波動上升的幅度太大，達到血糖控制的效果。\n*蕎麥茶不建議麩質過敏者及腎臟病患者飲用*\n大杯 / 無咖啡因 糖量 69g 熱量 386kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金菊花茶 Chrysanthemum Tea",
+            "description": "嚴選台灣種植生產的台灣杭菊 2 號 (黃金菊)，一年一收，採全人工方式進行採收與製成，每 4 公斤的黃金菊才能製成 0.6 公斤的乾燥黃金菊，菊花可疏散風熱、平肝明目，清甜的菊花香氣，適合熱底人士，時常手腳冰冷的朋友建議酌量飲用。\n大杯 / 無咖啡因 糖量 59g 熱量 252kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菊花冬露 Wintermelon Drink Mixed Chrysanthemum Tea",
+            "description": "嚴選苗栗銅鑼生產的台灣杭菊，一年一收，採全人工方式進行採收與製成，每 4 公斤的黃金菊才能製成 0.6 公斤，相當珍貴；清新的菊花香氣，安神解暑，搭配馥郁香甜的冬瓜露，冬瓜露不使用石灰，改以成本更高的「貝殼鈣」製成，給您更安心美味的風味體驗。\n大杯 / 無咖啡因 糖量 64g 熱量 271kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抱抱冬瓜露 Wintermelon Drink",
+            "description": "以高溫鍛燒取代石灰，文火慢熬的冬瓜露，香甜濃郁滋味更加安心。\n大杯 / 無咖啡因 糖量 74g 熱量 310kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬露 Wintermelon Drink Mixed Lemon Juice",
+            "description": "微微的酸甜以及檸檬皮香氣、清爽口感的檸檬汁搭配甘甜醇厚的冬瓜露，清爽解膩。\n大杯 / 無咖啡因 糖量 74g 熱量 325kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗冬露",
+            "description": "抱抱冬瓜露 × 甘蔗原汁\n以高溫煅燒貝殼蓋取代石灰的冬瓜濃露，在原本的香甜中交織著甘蔗原汁的清新，冬瓜特有的炭焙焦糖香在舌根迴盪，隨著甘蔗的清新入喉，化作一股甜而不膩的清爽感。\n大杯 / 無咖啡因 糖量 76g 熱量 340kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖鮮奶珍珠  Fresh Milk with Brown Sugar Pearl",
+            "description": "香醇鮮奶搭配香濃黑糖，加上 Q 彈的大珍珠，超享受。\n中杯 / 無咖啡因 糖量 59g 熱量 515kcal\n純鮮奶，不加水，甜度固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑莓鮮奶(中杯)",
+            "description": "香醇鮮奶搭配搭配無糖台灣桑椹原汁以及原味寒天。\n中杯 / 無咖啡因 糖量 49g 熱量 283kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "朵朵與可可 Chessy cloud and cocoa",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可可脆片朵朵 Cheesy Cloud On Cocoa Chip Smoothie",
+            "description": "選擇法國歌劇純可可製作冰沙，保有可可豆特有的風味並能產生更加諧調的平衡口感，撒上可可脆片帶來更豐富的口感，上頭的濃郁淋醬是整塊乳脂起士及法國愛樂薇鮮奶油調製而成，濃、醇、香中帶著起士些許鹹味，綿密而細緻。\n大杯 / 咖啡因 100mg 以下 糖量 54g 熱量 665kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱烏龍朵朵 Cheesy Cloud On Jinxuan Oolong Tea",
+            "description": "茶湯清香中略帶焙火香氣的金萱烏龍，淋上使用愛樂微鮮奶油製成的鹹香奶蓋，濃郁奶香與淡雅的烏龍香氣融合，更加迷人。\n大杯 / 咖啡因 100mg 以下 糖量 46g 熱量 374kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅玉朵朵 Cheesy Cloud On Ruby Black Tea",
+            "description": "滋味濃醇鮮爽，帶有淡淡肉桂及薄荷香氣的紅玉紅茶，淋上使用愛樂微鮮奶油製成的鹹香奶蓋，濃郁奶香為紅玉紅茶增添了濃厚滑順的風味口感。\n大杯 / 咖啡因 100mg 以下 糖量 46g 熱量 374kcal\n茶葉產地 / 100% 台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大人的可可拿鐵 Brown Sugar Mixed Cocoa Latte",
+            "description": "使用帶點苦味的「法國歌劇可可」，與香醇鮮奶。\n大杯 / 咖啡因 100mg 以下 糖量 55g 熱量 432kcal",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "醇奶特調 Special Milk",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "珍珠醇奶茶 Ruby Black Milk Tea with Pearl",
+            "description": "紅玉紅茶搭配奶精粉所調製的奶茶，搭配 Q 彈的焦糖大珍珠。\n大杯 / 咖啡因 101至200mg 糖量 67g 熱量 729kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉霞醇奶茶 Ruby Black Milk Tea",
+            "description": "從茶葉採收到烘焙手法完全為烏弄客製化製程，沖煮為加倍濃郁的紅玉紅茶，搭配奶精粉所調製的奶茶。\n大杯 / 咖啡因 200mg 以上 糖量 65g 熱量 628kcall\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁凍醇奶茶 Ruby Black Milk Tea with Almond Jelly",
+            "description": "紅玉紅茶搭配奶精粉所調製的奶茶，搭配自家熬煮清香淡雅的杏仁凍。\n大杯 / 咖啡因 101至200mg 糖量 55g 熱量 514kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰果醇奶茶 Ruby Black Milk Tea with Coconut Jelly",
+            "description": "滋味濃醇鮮爽，帶有淡淡肉桂及薄荷香氣的紅玉紅茶與烏弄特調奶精粉所調製，加上脆口椰果，滿足你的咀嚼慾望。\n大杯 / 咖啡因 201mg 以上 糖量 63g 熱量 489kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金糖粿醇奶茶",
+            "description": "紅玉的肉桂與薄荷香氣很清晰，奶精讓口感更顯醇厚。金糖粿的糖香在尾韻中顯現，增添一些圓潤感，不遮蓋茶韻，反而讓奶香、茶韻與糖蜜焦香的層次更分明。\n大杯 / 咖啡因 201mg 以上 糖量 63g 熱量 489kcal\n茶葉產地 / 100% 台灣\n建議三分糖，微冰或去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

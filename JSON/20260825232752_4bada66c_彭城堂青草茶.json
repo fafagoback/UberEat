@@ -1,0 +1,166 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%BD%AD%E5%9F%8E%E5%A0%82%E9%9D%92%E8%8D%89%E8%8C%B6/tYsy3f-cVau8GvzVYr4Oug",
+  "name": "彭城堂青草茶",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "251, Sec 6, Yan Ping N. Rd.",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111068",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0891662,
+    "longitude": 121.5041063
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 64
+  },
+  "servesCuisine": [
+    "Coffee and Tea",
+    "Drinks",
+    "Healthy"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "青草茶Herbal Tea👑 (小)",
+            "description": "420ml \n冷飲。\n天然草本茶，清涼退火，甘甜微苦，口感清新舒爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "靈芝苦茶Ganoderma Bitter Tea(小)",
+            "description": "420ml \n冷飲，無糖。\n靈芝與多種草藥熬製，苦中帶甘，滋補強身。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸梅湯Sour Plum Drink(小)",
+            "description": "420ml \n冷飲，甜度固定。\n烏梅、陳皮調製，酸甜開胃，生津解渴，夏日消暑佳品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青苦茶Bitter Tea(小)",
+            "description": "420ml \n冷飲，無糖。\n精選苦茶葉，味道清苦回甘，清熱去濕，助消化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養肝茶Liver Recovering Tea👍(小)",
+            "description": "420ml \n冷飲，無糖。\n多種中藥材配方，溫和潤肝，健脾益氣，養生茶飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茅根茶(小)",
+            "description": "小杯。茅根茶，清涼退火，清香甘甜，生津解渴，口感清新。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🌟1000ml大份量🌟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "青草茶Herbal Tea👑(大)",
+            "description": "大杯1000ml\n冷飲。\n天然草本茶，清涼退火，甘甜微苦，口感清新舒爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "靈芝苦茶Ganoderma Bitter Tea(大)",
+            "description": "大杯1000ml\n冷飲，無糖。\n靈芝與多種草藥熬製，苦中帶甘，滋補強身。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸梅湯Sour Plum Drink(大)",
+            "description": "1000ml大杯\n冷飲，甜度固定。\n烏梅、陳皮調製，酸甜開胃，生津解渴，夏日消暑佳品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青苦茶Bitter Tea(大)",
+            "description": "1000ml大杯\n冷飲，無糖。\n精選苦茶葉，味道清苦回甘，清熱去濕，助消化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養肝茶Liver Recovering Tea(大)",
+            "description": "大杯1000ml\n冷飲。無糖。\n多種中藥材配方，溫和潤肝，健脾益氣，養生茶飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茅根茶(大)",
+            "description": "1000ml大杯\n冷飲。\n以茅根為基底的草本茶飲，清涼退火，生津解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

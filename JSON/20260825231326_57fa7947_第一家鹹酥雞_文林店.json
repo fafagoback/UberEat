@@ -1,0 +1,398 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%AC%AC%E4%B8%80%E5%AE%B6%E9%B9%B9%E9%85%A5%E9%9B%9E-%E6%96%87%E6%9E%97%E5%BA%97/ZtdYdKV7Wz2lKRdag4GhAA",
+  "name": "第一家鹹酥雞 文林店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區文林路116-2號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08808641920523,
+    "longitude": 121.52636673726968
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Taiwanese Fried Chicken",
+    "Chicken"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "宵夜救星, 罪惡感萬歲, 在家不用吹風淋雨, 熱騰騰的現炸美味一鍵送到家",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "無骨鹹酥雞",
+            "description": "外送必點的靈魂角色, 獨家酥脆外皮, 鎖住滿滿肉汁, 完美下酒菜首選。大口吃肉不用吐骨頭, 鮮嫩多汁, 外送界的人氣霸主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣",
+            "description": "外酥內軟, 蓬鬆度剛剛好, 經典不敗的炸物基本款。大口吃肉不用吐骨頭, 鮮嫩多汁, 外送界的人氣霸主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金柳葉魚",
+            "description": "口口爆卵的驚喜, 滿滿魚卵在嘴裡跳躍, 酥脆又營養。來自大海的鮮甜美味, 高溫油炸瞬間鎖住鮮味, 酥脆無法擋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "26.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "必點招牌熱門炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香酥雞皮",
+            "description": "卡滋卡滋超酥脆, 油脂香氣在嘴裡爆發, 比洋芋片還療癒。大口吃肉不用吐骨頭, 鮮嫩多汁, 外送界的人氣霸主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "七里香",
+            "description": "金黃酥脆, 滑嫩多汁, 香氣濃郁讓人欲罷不能。大口吃肉不用吐骨頭, 鮮嫩多汁, 外送界的人氣霸主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯條",
+            "description": "金黃綿密, 大朋友小朋友都無法抗拒的經典滋味。大口吃肉不用吐骨頭, 鮮嫩多汁, 外送界的人氣霸主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅心地瓜條",
+            "description": "選用優質紅心地瓜, 香甜綿密, 灑上甘梅粉更是絕配。大口吃肉不用吐骨頭, 鮮嫩多汁, 外送界的人氣霸主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生粉雙圓",
+            "description": "辦桌必吃的手路點心, Q 彈炸湯圓撒上香濃花生粉, 甜滋滋超幸福。大口吃肉不用吐骨頭, 鮮嫩多汁, 外送界的人氣霸主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找海鮮",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "深海魷魚",
+            "description": "來自大海的鮮甜美味, 高溫油炸瞬間鎖住鮮味, 酥脆無法擋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金魚蛋",
+            "description": "Q 彈有咬勁, 炸過後外皮微酥, 口感層次超豐富。來自大海的鮮甜美味, 高溫油炸瞬間鎖住鮮味, 酥脆無法擋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "爽口解膩找時蔬",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "咬下去會爆汁, 完美保留蔬菜精華, 多汁指數爆表。罪惡感退散, 炸過後依然保有蔬菜的清甜與多汁, 外送也要均衡一下。",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花椰菜",
+            "description": "完美吸附椒鹽香氣, 蔬菜清甜與鹹香的完美結合。罪惡感退散, 炸過後依然保有蔬菜的清甜與多汁, 外送也要均衡一下。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "豆製品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆干",
+            "description": "3 入。越嚼越香, 扎實有嚼勁, 最經典的台式小吃。平價卻驚艷的經典美味, 外層酥脆, 內裡各具特色。",
+            "offers": {
+              "@type": "Offer",
+              "price": "26.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥豆皮",
+            "description": "炸到如千層派般的極致酥脆, 層次豐富, 香氣四溢。平價卻驚艷的經典美味, 外層酥脆, 內裡各具特色。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞蛋豆腐",
+            "description": "1 盒。外皮金黃薄脆, 內裡如滑蛋般嫩口, 入口即化的極致美味。平價卻驚艷的經典美味, 外層酥脆, 內裡各具特色。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "下酒必備內臟及小點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "扎實多汁, 毫無腥味。老饕最愛, 獨特風味與絕佳口感, 下酒聊天絕對不能少了這一味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胗",
+            "description": "脆口有嚼勁, 越嚼越對味。老饕最愛, 獨特風味與絕佳口感, 下酒聊天絕對不能少了這一味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "七里香",
+            "description": "老饕最愛, 獨特風味與絕佳口感, 下酒聊天絕對不能少了這一味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典點心",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "外層酥脆, 內裡軟糯, 椒鹽味超對胃。各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "26.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小香腸",
+            "description": "各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸",
+            "description": "各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸",
+            "description": "各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁",
+            "description": "各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋籤",
+            "description": "各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "26.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋",
+            "description": "炸過後的皮蛋炸出新滋味, 獨特香氣超迷人。各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "⚡️限時活動⚡️買一送一",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【活動】甜不辣 (買一送一優惠請下單2的倍數才享優惠)",
+            "description": "買一送一優惠需下單2的倍數才享優惠，若只下單 1 份，將依照訂單數量只出餐 1 份唷！ \n外酥內軟, 蓬鬆度剛剛好, 經典不敗的炸物基本款。大口吃肉不用吐骨頭, 鮮嫩多汁, 外送界的人氣霸主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【活動】薯條 (買一送一優惠請下單2的倍數才享優惠)",
+            "description": "買一送一優惠需下單2的倍數才享優惠，若只下單 1 份，將依照訂單數量只出餐 1 份唷！ \n金黃綿密, 大朋友小朋友都無法抗拒的經典滋味。大口吃肉不用吐骨頭, 鮮嫩多汁, 外送界的人氣霸主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【活動】百頁 (買一送一優惠請下單2的倍數才享優惠)百",
+            "description": "買一送一優惠需下單2的倍數才享優惠，若只下單 1 份，將依照訂單數量只出餐 1 份唷！ \n各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【活動】鑫鑫腸 (買一送一優惠請下單2的倍數才享優惠)",
+            "description": "買一送一優惠需下單2的倍數才享優惠，若只下單 1 份，將依照訂單數量只出餐 1 份唷！ \n各式台式炸物精選, 大飽足, 大滿意, 想吃的通通都在這。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

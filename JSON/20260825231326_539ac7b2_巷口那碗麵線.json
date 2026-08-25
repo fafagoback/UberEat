@@ -1,0 +1,336 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B7%B7%E5%8F%A3%E9%82%A3%E7%A2%97%E9%BA%B5%E7%B7%9A/45EjU6DuWs-wp3GQak67Nw",
+  "name": "巷口那碗麵線",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "臺北市士林區大東路16之14(斜對面方攤車) Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.087665193346524,
+    "longitude": 121.52519757115795
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 8
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Noodles",
+    "Street Food",
+    "Snacks",
+    "Asian"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線🩶 Intestine Vermicelli🩶",
+            "description": "含大腸。滑順麵線，羹湯口感，搭配Q彈大腸切片，經典風味，暖胃滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾拌關東煮+湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口招牌🩷 Signature Vermicelli🩷",
+            "description": "全料豪華版。含小卷, 魚酥, 蚵仔, 大腸及蝦仁。小卷, 魚酥, 蚵仔, 大腸和蝦仁的豪華組合, 滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口雙霸🧡 Assorted Vermicelli🧡",
+            "description": "含小卷及魚酥。小卷搭配魚酥, 口感豐富, 讓您一口愛上。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔麵線🥣 Oyster Vermicelli🥣",
+            "description": "蚵仔搭配滑順麵線，濃稠湯頭順口，海味滿點，經典風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味麵線🍜 Original Vermicelli🍜",
+            "description": "經典原味麵線，僅麵線與湯頭的純粹組合，口感滑順，簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口經典💚 Classic Vermicelli💚",
+            "description": "含小卷及魚酥。小卷搭配魚酥, 經典風味, 滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口好料💛 Squid Vermicelli💛",
+            "description": "含小卷及魚酥。小卷搭配魚酥, 口感豐富, 風味獨特。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Free with NT$160 purchase",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "檸檬愛玉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢 Notice📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點, 請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定唷😍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選✨ Popular Items✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巷口招牌🩷 Signature Vermicelli🩷",
+            "description": "全料豪華版。含小卷, 魚酥, 蚵仔, 大腸及蝦仁。小卷, 魚酥, 蚵仔, 大腸和蝦仁的豪華組合, 滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚香酥麵線🍝 Deep-Fried Fish Crackers Vermicelli🍝",
+            "description": "香氣撲鼻的酥脆麵線, 搭配魚香風味, 帶來獨特的口感享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口經典💚 Classic Vermicelli💚",
+            "description": "含小卷及魚酥。小卷搭配魚酥, 經典風味, 滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口好料💛 Squid Vermicelli💛",
+            "description": "含小卷及魚酥。小卷搭配魚酥, 口感豐富, 風味獨特。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口雙霸🧡 Assorted Vermicelli🧡",
+            "description": "含小卷及魚酥。小卷搭配魚酥, 口感豐富, 讓您一口愛上。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾拌關東煮+湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬愛玉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "傳統系列⭐ Traditional⭐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巷口招牌🩷 Signature Vermicelli🩷",
+            "description": "全料豪華版。含小卷, 魚酥, 蚵仔, 大腸及蝦仁。小卷, 魚酥, 蚵仔, 大腸和蝦仁的豪華組合, 滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味麵線🍜 Original Vermicelli🍜",
+            "description": "經典原味麵線，僅麵線與湯頭的純粹組合，口感滑順，簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線🩶 Intestine Vermicelli🩶",
+            "description": "含大腸。滑順麵線，羹湯口感，搭配Q彈大腸切片，經典風味，暖胃滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔麵線🥣 Oyster Vermicelli🥣",
+            "description": "蚵仔搭配滑順麵線，濃稠湯頭順口，海味滿點，經典風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚香酥麵線🍝 Deep-Fried Fish Crackers Vermicelli🍝",
+            "description": "香氣撲鼻的酥脆麵線, 搭配魚香風味, 帶來獨特的口感享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口經典💚 Classic Vermicelli💚",
+            "description": "含小卷及魚酥。小卷搭配魚酥, 經典風味, 滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口好料💛 Squid Vermicelli💛",
+            "description": "含小卷及魚酥。小卷搭配魚酥, 口感豐富, 風味獨特。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巷口雙霸🧡 Assorted Vermicelli🧡",
+            "description": "含小卷及魚酥。小卷搭配魚酥, 口感豐富, 讓您一口愛上。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬愛玉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

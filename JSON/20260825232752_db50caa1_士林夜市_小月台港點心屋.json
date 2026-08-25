@@ -1,0 +1,144 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E5%B0%8F%E6%9C%88%E5%8F%B0%E6%B8%AF%E9%BB%9E%E5%BF%83%E5%B1%8B/RbZKEXTJVImqeLUIuc38_A",
+  "name": "士林夜市 小月台港點心屋",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區文林路101巷3號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0878034,
+    "longitude": 121.5255941
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 34
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "港式絲襪奶茶",
+            "description": "香濃順滑的港式奶茶，帶來獨特的絲滑口感，讓您回味無窮。（甜度冰塊固定比例）",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰火菠蘿油",
+            "description": "香甜酥脆的菠蘿包夾上滑嫩牛油，帶來冰火交融的獨特口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰火起司菠蘿油",
+            "description": "「首選」雙層美味~港式香脆菠蘿包夾著濃郁起司，冰冰鹹香奶油，交融的美味，超級好吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司菠蘿包",
+            "description": "外酥內軟的菠蘿包夾入濃郁起司片，帶來絕妙的口感享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榴槤菠蘿包",
+            "description": "經典港式菠蘿包夾入新鮮「純」榴槤(榴槤無添加、無再加工，完全保有榴槤獨特的濃濃香氣)",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃顆粒花生醬菠蘿包",
+            "description": "花生醬中再加入花生顆粒，以增加其口感的菠蘿包，外酥內軟，帶來滿口花生留香的口感享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃顆粒花生醬冰火菠蘿油",
+            "description": "冰冰的奶油與有碎花生粒的花生醬，雙重的組合，外酥內軟，帶來滿口絕佳的香氣口感享受",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "港式凍檸茶",
+            "description": "清爽的港式凍檸茶，帶來獨特的檸檬清香與茶香，讓您在炎熱的日子裡倍感清涼。（甜度冰塊固定比例）",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋紅茶",
+            "description": "紅茶與香草冰淇淋的完美結合，帶來清涼與香甜的雙重享受。（甜度冰塊固定比例）",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "錫蘭紅茶",
+            "description": "香醇的錫蘭紅茶，帶來獨特的風味和清新的口感，適合全天享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

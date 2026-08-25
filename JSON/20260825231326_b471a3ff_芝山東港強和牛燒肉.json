@@ -1,0 +1,418 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%8A%9D%E5%B1%B1%E6%9D%B1%E6%B8%AF%E5%BC%B7%E5%92%8C%E7%89%9B%E7%87%92%E8%82%89/4QGWUqMFWb2-oM9YXz3rZQ",
+  "name": "芝山東港強和牛燒肉",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區裕民四路5號 Taipei, 北投區 112",
+    "addressLocality": "台北市北投區裕",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1154199,
+    "longitude": 121.5159218
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 150
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醬燒牛肉弁當★",
+            "description": "牛肉來源:美國。 附味噌湯,可免費加飯。 使用美國choice冷藏翼板牛肉,簡單的炙燒搭配百年老店精製燒肉醬,襯托出原塊牛肉的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "照燒雞腿弁當★",
+            "description": "隨餐附味增湯。 選用帶骨整隻雞腿排，外層炸至金黃酥脆，肉質鮮嫩多汁。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬燒豬肉弁當★",
+            "description": "隨餐附味增湯。 選用優質梅花豬肉，特製醬汁炙燒，口感濃郁，醬香四溢。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬燒鮭魚弁當★",
+            "description": "隨餐附味增湯。 選用新鮮鮭魚，經特製醬汁燒煮，肉質軟嫩，滋味豐富，醬香濃郁，帶來滿足的味覺享受。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西班牙伊比利豬弁當★",
+            "description": "隨餐附味增湯。 使用豬肉界勞斯萊斯之稱，西班牙伊比利梅花豬，油脂像大理石紋班均勻的分佈，肉質相當乾淨。",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海陸雙響全餐弁當★",
+            "description": "隨餐附味噌湯。 牛肉來源:美國。 使用美國choice冷藏翼板牛肉,簡單的炙燒搭配百年老店精製燒肉醬,襯托出原塊牛肉的美味。 來自日本的頂級干貝，經過簡單炙燒，保留其鮮嫩多汁的口感，帶出海洋的天然甜味。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "540.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本A5和牛燒肉弁當★",
+            "description": "牛肉來源:日本。 隨餐附味增湯。 主食使用日本和牛搭配日本干貝及美味鮮蝦，採簡單炙燒，襯托原塊肉品的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "680.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式綠咖哩牛★",
+            "description": "香濃滑順的泰式綠咖哩，結合椰奶的柔和甜味與綠辣椒的獨特辛香，口感層次豐富。搭配您喜愛的主食，體驗正宗泰國風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本頂級干貝弁當★",
+            "description": "隨餐附味增湯。 選用來自日本的頂級干貝，經過簡單炙燒，保留其鮮嫩多汁的口感，帶出海洋的天然甜味。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "540.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓盒_醬燒牛肉便當",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "弁當",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醬燒牛肉弁當★",
+            "description": "牛肉來源:美國。 附味噌湯,可免費加飯。 使用美國choice冷藏翼板牛肉,簡單的炙燒搭配百年老店精製燒肉醬,襯托出原塊牛肉的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬燒豬肉弁當★",
+            "description": "隨餐附味增湯。 選用優質梅花豬肉，特製醬汁炙燒，口感濃郁，醬香四溢。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "照燒雞腿弁當★",
+            "description": "隨餐附味增湯。 選用帶骨整隻雞腿排，外層炸至金黃酥脆，肉質鮮嫩多汁。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬燒鮭魚弁當★",
+            "description": "隨餐附味增湯。 選用新鮮鮭魚，經特製醬汁燒煮，肉質軟嫩，滋味豐富，醬香濃郁，帶來滿足的味覺享受。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆蝦弁當★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西班牙伊比利豬弁當★",
+            "description": "隨餐附味增湯。 使用豬肉界勞斯萊斯之稱，西班牙伊比利梅花豬，油脂像大理石紋班均勻的分佈，肉質相當乾淨。",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本頂級干貝弁當★",
+            "description": "隨餐附味增湯。 選用來自日本的頂級干貝，經過簡單炙燒，保留其鮮嫩多汁的口感，帶出海洋的天然甜味。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "540.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海陸雙響全餐弁當★",
+            "description": "隨餐附味噌湯。 牛肉來源:美國。 使用美國choice冷藏翼板牛肉,簡單的炙燒搭配百年老店精製燒肉醬,襯托出原塊牛肉的美味。 來自日本的頂級干貝，經過簡單炙燒，保留其鮮嫩多汁的口感，帶出海洋的天然甜味。 豐富多樣的時令蔬菜，還有日式醃漬小菜，增添爽口的風味。 半顆白煮蛋，營養滿分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "540.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本A5和牛燒肉弁當★",
+            "description": "牛肉來源:日本。 隨餐附味增湯。 主食使用日本和牛搭配日本干貝及美味鮮蝦，採簡單炙燒，襯托原塊肉品的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "680.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泰式紅綠咖哩",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式綠咖哩牛★",
+            "description": "香濃滑順的泰式綠咖哩，結合椰奶的柔和甜味與綠辣椒的獨特辛香，口感層次豐富。搭配您喜愛的主食，體驗正宗泰國風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式綠咖哩豬★",
+            "description": "香濃滑順的泰式綠咖哩，結合椰奶的柔和甜味與綠辣椒的獨特辛香，口感層次豐富。搭配您喜愛的主食，體驗正宗泰國風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醬燒牛肉★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬燒豬肉★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "照燒雞腿★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆蝦★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本頂級干貝/顆★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜/份★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶/份★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水煮蛋/半顆★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "甜點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芋頭西米露★",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "圓盒弁當",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "圓盒_醬燒牛肉便當",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓盒_醬燒豬肉便當",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓盒_照燒雞腿便當",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓盒_醬燒鮭魚便當",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓盒_蔥爆蝦便當",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

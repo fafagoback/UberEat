@@ -1,0 +1,406 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%B4%85%E7%87%88%E7%B1%A0%E7%89%9B%E8%82%89%E9%BA%B5%E9%A3%9F%E9%A4%A8/0XuJktXrSsyFfHer7SSCAw",
+  "name": "紅燈籠牛肉麵食館",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Yongxing Road Section 1 52",
+    "addressLocality": "Beitou District",
+    "addressRegion": "Taipei City",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1395835,
+    "longitude": 121.5005728
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 500
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅燒半筋半肉麵",
+            "description": "牛腱與牛筋各半，Q彈麵條拌蔥花，浸在紅燒醬香湯頭中；肉嫩筋Q，口感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "湘辣老虎麵",
+            "description": "粗麵條搭配湘辣肉末與蔥花，香辣濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻醬麵",
+            "description": "香濃芝麻醬拌麵，麵條均勻掛醬，點綴蔥花與油蔥，香氣迷人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌紅燒牛排骨麵",
+            "description": "大塊牛排骨搭配Q彈麵條，紅燒湯頭香濃，蔥花增香，吃得到肉骨精華。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌紅燒牛四寶麵",
+            "description": "紅燒湯頭配麵條，集結牛四寶（含牛腱、牛筋、牛肚等），加蔥花，口感多層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛肉麵",
+            "description": "濃郁紅燒湯頭，牛肉軟嫩，麵條Q彈有嚼勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛湯餛飩麵",
+            "description": "一碗就能吃到餛飩與麵，牛湯底的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅油抄手",
+            "description": "抄手拌香辣紅油，口感滑嫩，鹹香開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥飯",
+            "description": "白飯淋上滷製豬肉燥，鹹香下飯，經典台式風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛肉湯麵",
+            "description": "醬香紅燒湯頭，牛肉塊與Q彈麵條，經典暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌餛飩乾麵",
+            "description": "Q彈細麵乾拌，配上飽滿餛飩，拌入醬汁，醬香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥乾麵",
+            "description": "經典台式乾拌麵，淋上醬香肉燥，拌勻即食，簡單卻耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "湘辣老虎抄手麵",
+            "description": "湘辣風味抄手配麵，辣勁鮮明、香氣足，越吃越開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅油抄手麵",
+            "description": "抄手與麵條拌入紅油，香辣開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛油乾拌麵",
+            "description": "乾拌麵以牛油均勻裹覆，散發濃郁油香，呈現簡單經典的拌麵風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌抄手",
+            "description": "經典抄手（餛飩），鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛油拌飯",
+            "description": "牛油拌入熱白飯，油香與米香相融，口感滑順、越吃越香",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "湘辣老虎飯",
+            "description": "湘式辣香拌飯，拌勻更下飯，香辣帶勁、開胃過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻醬抄手",
+            "description": "濃郁芝麻醬拌勻的抄手，醬香厚實、口感滑順",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛肚麵",
+            "description": "醬香紅燒湯頭，搭配彈韌牛肚與麵條，口感豐富、暖胃順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "擔仔湯麵",
+            "description": "清香湯頭配細麵，口感滑順，呈現經典擔仔風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白油抄手",
+            "description": "抄手拌白油醬，清香不辣，口感滑順",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "湘辣老虎抄手",
+            "description": "湘式辣味抄手（餛飩），辣勁帶香，重口味首選",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻醬抄手麵",
+            "description": "芝麻醬拌麵，搭配抄手，濃郁香氣與滑嫩口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白油抄手麵",
+            "description": "抄手配麵條，拌入白油醬汁，口感滑嫩、鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "湘辣老虎麵",
+            "description": "主打湘辣風味的麵食，辣度鮮明，適合嗜辣者。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "滷味",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌滷米血",
+            "description": "經典滷味，米血滷至軟Q，醬香入味，嚼勁十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆乾",
+            "description": "滷味豆乾，滷汁入味，口感紮實有嚼勁，散發豆香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶",
+            "description": "滷製海帶，口感Q韌，鹹香入味",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣",
+            "description": "台式魚漿甜不辣，口感Q彈厚實，滷汁入味",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘭花干",
+            "description": "蘭花干滷製入味，吸附滷汁。口感Q彈紮實，豆香清雅。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮",
+            "description": "滷製豬頭皮切片，口感Q彈帶勁，膠質豐富，鹹香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷牛肚切盤",
+            "description": "滷製入味的牛肚，切片裝盤，口感Q彈帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湘辣滷味",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "口水雞翅",
+            "description": "雞翅，拌入麻香辣醬。皮彈肉嫩，鹹香開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣拌牛肚",
+            "description": "滷製牛肚切片，拌入麻辣醬汁，口感爽脆、香麻帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

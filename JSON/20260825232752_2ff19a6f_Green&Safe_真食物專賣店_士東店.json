@@ -1,0 +1,531 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/green%26safe-%E7%9C%9F%E9%A3%9F%E7%89%A9%E5%B0%88%E8%B3%A3%E5%BA%97-%E5%A3%AB%E6%9D%B1%E5%BA%97/lzyQF0sTSqGbA6NaTDuc0w",
+  "name": "Green&Safe 真食物專賣店 士東店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區中山北路6段425號-1",
+    "addressLocality": "Taipei",
+    "addressRegion": "",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1139272,
+    "longitude": 121.5269352
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 1000
+  },
+  "servesCuisine": [
+    "Grocery",
+    "Beauty Supply",
+    "Personal Care",
+    "Hardware",
+    "Pharmacy",
+    "Baby"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "當季蔬菜 Seasonal Vegetable",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "有機胡蘿蔔(小)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機冷凍綠花椰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機洋蔥",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "96.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機黑木耳 Organic Black Fungus",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機葉菜 Organic Vegetable",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機青蔥",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機洋菇(中菇)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "安心乾薑 Ginger",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機活株陶立克 Doric Organic King Oyster Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機冷凍玉米塊",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "當季水產 Seasonal Seafood",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海水生態蝦仁 Shrimp",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖野生手摘海菜 Wild Penghu Seaweed",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海水生態龍膽石斑清肉 Grouper",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活凍透抽切片 Frozen Sliced Squid",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘇格蘭鮭魚魚排(中段)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "475.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘇格蘭鮭魚(中段)-輪切",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "600.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖鮮凍牡蠣(200g/包)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現撈野生魩仔魚(熟凍) Wild Whitebait",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "船凍透抽(小) Frozen Squid(Small)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現撈野生胭脂蝦仁",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓鱈魚排(犬牙南極魚)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1015.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖白秋蝦仁透抽片組 Penghu Shrimp and Sliced Squid",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "船凍透抽(大) Large Frozen Squid(Large)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "船凍柳葉魚",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖現撈野生土魠(小)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "600.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "當季水果 Seasonal Fruit",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冷凍有機栽種藍莓",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "510.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機紐西蘭富士蘋果(粒)#110",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機無籽紅葡萄",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "359.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰國樹熟金枕頭榴槤(冷凍)(2入組)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "830.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰國樹熟金枕頭榴槤(冷凍)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "449.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澳洲茂谷柑(約140g/粒)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冷凍貓山王榴槤(125g/盒)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "359.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蛋豆乳 Egg and Bean Curd",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "優質紅殼蛋 Healthy Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機豆腐 Organic Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機原味豆干 Organic Original Tofu Curd",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機嫩豆腐 Organic Soft Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機草本臭豆腐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松花皮蛋 Preserved Duck Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Arla 哈瓦第切片乾酪 Havarti",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機嫩豆花 Organic Tofu Pudding",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "陽光雙豆豆腐麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃豆天貝",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香滷豆干",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Arla 馬自拉切片乾酪 Mozzarella",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "福袋壽司皮 Bean Curd Bag",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熟鹹蛋 Cooked Salted Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機切達乾酪絲 Organic Shredded Cheddar Cheese",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "449.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

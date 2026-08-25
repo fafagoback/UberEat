@@ -1,0 +1,2924 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%A8%82%E7%BE%8E%E6%97%A9%E5%8D%88%E9%A4%90/WiqjYLmkVKmU6l2Y-jdLxg",
+  "name": "樂美早午餐",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁義街248號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08581,
+    "longitude": 121.49385
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Breakfast and Brunch",
+    "Traditional"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "里肌蛋餅 Egg Pancake Roll with Pork Loin",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋吐司 Egg Toast with Ham",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿漢堡 Crispy Chicken Drumstick Burger",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋總匯 Egg Club Sandwich with Ham",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "107.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋總匯 Egg Club Sandwich with Tuna",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排吐司 Toast with Pork Loin",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉蛋吐司 Egg Toast with Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋吐司 Egg Toast with Pork Floss",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "薯泥蛋吐司 Egg Toast with Mashed Potato",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金魚柳條 Golden Fish Fillet Stick",
+            "description": "4 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台式蘿蔔糕 Taiwanese Turnip Cake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥圈 Onion Ring",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯泥 Mashed Potato",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "漢堡 Burger",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜蛋漢堡 Egg Burger with Vegetable",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "62.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋漢堡 Egg Burger with Ham",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅蛋漢堡 Egg Burger with Hash Brown",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋漢堡 Egg Burger with Tuna",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞蛋漢堡 Egg Burger with Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炸豬排漢堡 Tonkatsu Burger",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿漢堡 Crispy Chicken Drumstick Burger",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮霸魚排漢堡 Fish Chop Burger",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "131.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "享福牛肉漢堡 Beef Burger",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層享福牛肉漢堡 Double Beef Burger",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋漢堡 Omelette Burger",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯泥蛋漢堡 Egg Burger with Mashed Potato",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋漢堡 Egg Burger with Pork Floss",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉蛋漢堡 Egg Burger with Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋漢堡 Egg Burger with Bacon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排漢堡 Pork Loin Burger",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩煎雞腿漢堡 Sauteed Chicken Drumstick Burger",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "竹炭堡 Charcoal Burger",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜蛋竹炭堡 Egg Charcoal Burger with Vegetable",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋竹炭堡 Omelette Charcoal Burger",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯泥蛋竹炭堡 Egg Charcoal Burger with Mashed Potato",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋竹炭堡 Egg Charcoal Burger with Pork Floss",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋竹炭堡 Egg Charcoal Burger with Ham",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉蛋竹炭堡 Egg Charcoal Burger with Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅蛋竹炭堡 Egg Charcoal Burger with Hash Brown",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋竹炭堡 Egg Charcoal Burger with Tuna",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋竹炭堡 Egg Charcoal Burger with Bacon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層享福牛肉竹炭堡 Charcoal Burger with Double Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "192.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞蛋竹炭堡 Egg Charcoal Burger with Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排竹炭堡 Charcoal Burger with Pork Loin",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炸豬排竹炭堡 Charcoal Burger with Tonkatsu",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩煎雞腿竹炭堡 Charcoal Burger with Sauteed Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿竹炭堡 Charcoal Burger with Crispy Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮霸魚排竹炭堡 Charcoal Burger with Fish Chop",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "享福牛肉竹炭堡 Charcoal Burger with Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "吐司 Toast",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋吐司 Omelette Toast",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯泥蛋吐司 Egg Toast with Mashed Potato",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋吐司 Egg Toast with Pork Floss",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋吐司 Egg Toast with Ham",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉蛋吐司 Egg Toast with Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅蛋吐司 Egg Toast with Hash Brown",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋吐司 Egg Toast with Tuna",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋吐司 Egg Toast with Bacon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排吐司 Toast with Pork Loin",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炸豬排吐司 Toast with Tonkatsu",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩煎雞腿吐司 Toast with Sauteed Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿吐司 Toast with Crispy Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮霸魚排吐司 Toast with Fish Chop",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "121.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "享福牛肉吐司 Toast with Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層享福牛肉吐司 Toast with Double Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜蛋吐司 Egg Toast with Vegetable",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞蛋吐司 Egg Toast with Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "乳酪餅 Cheese Pancake",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜蛋乳酪餅 Cheese Pancake with Egg and Vegetable",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋乳酪餅 Omelette Cheese Pancake",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯泥蛋乳酪餅 Cheese Pancake with Egg and Mashed Potato",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋乳酪餅 Cheese Pancake with Egg and Pork Floss",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋乳酪餅 Cheese Pancake with Egg and Ham",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉蛋乳酪餅 Cheese Pancake with Egg and Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅蛋乳酪餅 Cheese Pancake with Egg and Hash Brown",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋乳酪餅 Cheese Pancake with Egg and Tuna",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋乳酪餅 Cheese Pancake with Egg and Bacon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞蛋乳酪餅 Cheese Pancake with Egg and Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排乳酪餅 Cheese Pancake with Pork Loin",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炸豬排乳酪餅 Cheese Pancake with Tonkatsu",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩煎雞腿乳酪餅 Cheese Pancake with Sauteed Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿乳酪餅 Cheese Pancake with Crispy Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮霸魚排乳酪餅 Cheese Pancake with Fish Chop",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "享福牛肉乳酪餅 Cheese Pancake with Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層享福牛肉乳酪餅 Cheese Pancake with Double Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "192.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "捲餅 Pancake Roll",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "享福牛肉捲餅 Pancake Roll with Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜蛋捲餅 Pancake Roll with Egg and Vegetable",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋捲餅 Omelette Pancake Roll",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯泥蛋捲餅 Pancake Roll with Egg and Mashed Potato",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋捲餅 Pancake Roll with Egg and Pork Floss",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋捲餅 Pancake Roll with Egg and Ham",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉蛋捲餅 Pancake Roll with Egg and Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "111.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅蛋捲餅 Pancake Roll with Egg and Hash Brown",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "111.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋捲餅 Pancake Roll with Egg and Tuna",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "111.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋捲餅 Pancake Roll with Egg and Bacon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "111.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞蛋捲餅 Pancake Roll with Egg and Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "111.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排捲餅 Pancake Roll with Pork Loin",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炸豬排捲餅 Pancake Roll with Tonkatsu",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩煎雞腿捲餅 Pancake Roll with Sauteed Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿捲餅 Pancake Roll with Crispy Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮霸魚排捲餅 Pancake Roll with Fish Chop",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層享福牛肉捲餅 Pancake Roll with Double Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "202.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "總匯 Club Sandwich",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋總匯 Egg Club Sandwich with Ham",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "107.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉蛋總匯 Egg Club Sandwich with Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅蛋總匯 Egg Club Sandwich with Hash Brown",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋總匯 Egg Club Sandwich with Tuna",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞蛋總匯 Egg Club Sandwich with Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排總匯 Club Sandwich with Pork Loin",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "146.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮霸魚排總匯 Club Sandwich with Fish Chop",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋總匯 Egg Club Sandwich with Pork Floss",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "107.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋總匯 Egg Club Sandwich with Bacon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炸豬排總匯 Club Sandwich with Tonkatsu",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "172.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩煎雞腿總匯 Club Sandwich with Sauteed Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "159.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿總匯 Club Sandwich with Crispy Chicken Drumstick",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "159.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "享福牛肉總匯 Club Sandwich with Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "159.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層享福牛肉總匯 Club Sandwich with Double Beef",
+            "description": "含蛋及起司。",
+            "offers": {
+              "@type": "Offer",
+              "price": "211.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "歡樂兒童餐 Kid's Meal",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力烤土司兒童餐 Chocolate Toasted Toast Kid's Meal",
+            "description": "含烤土司, 薯條, 2 條熱狗及3 塊麥克雞塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓烤土司兒童餐 Strawberry Toasted Toast Kid's Meal",
+            "description": "含烤土司, 薯條, 2 條熱狗及3 塊麥克雞塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓烤土司兒童餐 Blueberry Toasted Toast Kid's Meal",
+            "description": "含烤土司, 薯條, 2 條熱狗及3 塊麥克雞塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蒜烤土司兒童餐 Garlic Toasted Toast Kid's Meal",
+            "description": "含烤土司, 薯條, 2 條熱狗及3 塊麥克雞塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生烤土司兒童餐 Peanut Toasted Toast Kid's Meal",
+            "description": "含烤土司, 薯條, 2 條熱狗及3 塊麥克雞塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油烤土司兒童餐 Butter Toasted Toast Kid's Meal",
+            "description": "含烤土司, 薯條, 2 條熱狗及3 塊麥克雞塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥烤土司兒童餐 Baked Butter Toasted Toast Kid's Meal",
+            "description": "含烤土司, 薯條, 2 條熱狗及3 塊麥克雞塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜烤土司兒童餐 Honey Toasted Toast Kid's Meal",
+            "description": "含烤土司, 薯條, 2 條熱狗及3 塊麥克雞塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "192.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蛋餅 Egg Pancake Roll",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋餅 Egg Pancake Roll with Pork Floss",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蔬蛋餅 Egg Pancake Roll with Vegetable",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔蛋餅 Egg Pancake Roll with Basil",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌蛋餅 Egg Pancake Roll with Pork Loin",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋餅 Original Egg Pancake Roll",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米蛋餅 Egg Pancake Roll with Corn",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋餅 Egg Pancake Roll with Tuna",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "62.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗蛋餅 Egg Pancake Roll with Hot Dog",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅蛋餅 Egg Pancake Roll with Hash Brown",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品 Beverages",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶 Black Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶 Milk Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶 Fresh Milk Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆漿 Soybean Milk",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆奶茶 Soybean Milk Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精品拿鐵 Premium Latte",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典美式 Classic Americano",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義大利濃縮 Italian Espresso",
+            "description": "僅限熱飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力調味乳 Chocolate-Flavored Milk",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓調味乳 Strawberry-Flavored Milk",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "果汁調味乳 Fruit Juice-Flavored Milk",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥芽調味乳 Malt-Flavored Milk",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "中式經典 Chinese Classics",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "煎餃 Pan-Fried Dumpling",
+            "description": "8 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台式蘿蔔糕 Taiwanese Turnip Cake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥抓餅 Scallion Pancake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "果酱 Jam",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力果酱薄片 Chocolate Jam Thin Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓果酱薄片 Strawberry Jam Thin Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓果酱薄片 Blueberry Jam Thin Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蒜果酱薄片 Garlic Thin Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生果酱薄片 Peanut Butter Thin Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油果酱薄片 Butter Thin Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥果酱薄片 Baked Butter Thin Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力果酱厚片 Chocolate Jam Thick Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓果酱厚片 Strawberry Jam Thick Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓果酱厚片 Blueberry Jam Thick Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蒜果酱厚片 Garlic Thick Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生果酱厚片 Peanut Butter Thick Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油果酱厚片 Butter Thick Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥果酱厚片 Baked Butter Thick Sliced Toast",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力果酱乳酪餅 Cheese Pancake with Chocolate Jam",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓果酱乳酪餅 Cheese Pancake with Strawberry Jam",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓果酱乳酪餅 Cheese Pancake with Blueberry Jam",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蒜果酱乳酪餅 Cheese Pancake with Garlic",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生果酱乳酪餅 Cheese Pancake with Peanut Butter",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油果酱乳酪餅 Cheese Pancake with Butter",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥果酱乳酪餅 Cheese Pancake with Baked Butter",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力果酱鬆餅 Waffle with Chocolate Jam",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓果酱鬆餅 Waffle with Strawberry Jam",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓果酱鬆餅 Waffle with Blueberry Jam",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蒜果酱鬆餅 Waffle with Garlic",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生果酱鬆餅 Waffle with Peanut Butter",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油果酱鬆餅 Waffle with Butter",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥果酱鬆餅 Waffle with Baked Butter",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜果酱鬆餅 Waffle with Honey",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鐵板麵 Hot Plate Noodles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒油麵 Black Pepper Oily Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇油麵 Mushroom Oily Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅醬油麵 Tomato Sauce Oily Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白醬油麵 Cream Sauce Oily Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青醬油麵 Pesto Sauce Oily Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩油麵 Curry Oily Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥燒油麵 Scallion Braised Oily Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "印尼辣炒油麵 Indonesian Spicy Stir-Fried Oily Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁油麵 Oily Noodles with Kung Pao Diced Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香打拋豬油麵 Oily Noodles with Thai Stir-Fried Basil Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥油麵 Oily Noodles with Minced Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶油麵 Oily Noodles with Shacha Sauce",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒烏龍麵 Black Pepper Udon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇烏龍麵 Mushroom Udon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅醬烏龍麵 Tomato Sauce Udon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白醬烏龍麵 Cream Sauce Udon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青醬烏龍麵 Pesto Sauce Udon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩烏龍麵 Curry Udon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥燒烏龍麵 Scallion Braised Udon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "印尼辣炒烏龍麵 Indonesian Spicy Stir-Fried Udon",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁烏龍麵 Udon with Kung Pao Diced Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香打拋豬烏龍麵 Udon with Thai Stir-Fried Basil Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥烏龍麵 Udon with Minced Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶烏龍麵 Udon with Shacha Sauce",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒意麵 Black Pepper Egg Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇意麵 Mushroom Egg Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅醬意麵 Tomato Sauce Egg Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白醬意麵 Cream Sauce Egg Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青醬意麵 Pesto Sauce Egg Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩意麵 Curry Egg Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥燒意麵 Scallion Braised Egg Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "印尼辣炒意麵 Indonesian Spicy Stir-Fried Egg Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁意麵 Egg Noodles with Kung Pao Diced Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香打拋豬意麵 Egg Noodles Thai Stir-Fried Basil Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥意麵 Egg Noodles with Minced Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶意麵 Egg Noodles with Shacha Sauce",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒泡麵 Black Pepper Instant Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇泡麵 Mushroom Instant Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅醬泡麵 Tomato Sauce Instant Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白醬泡麵 Cream Sauce Instant Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青醬泡麵 Pesto Sauce Instant Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩泡麵 Curry Instant Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥燒泡麵 Scallion Braised Instant Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "印尼辣炒泡麵 Indonesian Spicy Stir-Fried Instant Noodles",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁泡麵 Instant Noodles with Kung Pao Diced Chicken",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香打拋豬泡麵 Instant Noodles with Thai Stir-Fried Basil Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥泡麵 Instant Noodles with Minced Pork",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶泡麵 Instant Noodles with Shacha Sauce",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "焗烤 Gratin",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "焗烤紅醬日式炸豬排 Gratin Tonkatsu with Tomato Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤白醬日式炸豬排 Gratin Tonkatsu with Cream Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤青醬日式炸豬排 Gratin Tonkatsu with Pesto Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤沙嗲日式炸豬排 Gratin Tonkatsu with Satay Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤紅醬咔啦雞腿 Gratin Crispy Chicken Drumstick with Tomato Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤白醬咔啦雞腿 Gratin Crispy Chicken Drumstick with Cream Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤青醬咔啦雞腿 Gratin Crispy Chicken Drumstick with Pesto Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤沙嗲咔啦雞腿 Gratin Crispy Chicken Drumstick with Satay Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤紅醬鮮酥雞 Gratin Crispy Chicken with Tomato Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤白醬鮮酥雞 Gratin Crispy Chicken with Cream Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤青醬鮮酥雞 Gratin Crispy Chicken with Pesto Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤沙嗲鮮酥雞 Gratin Crispy Chicken with Satay Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤紅醬鮮霸魚排 Gratin Fish Chop with Tomato Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤白醬鮮霸魚排 Gratin Fish Chop with Cream Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤青醬鮮霸魚排 Gratin Fish Chop with Pesto Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗烤沙嗲鮮霸魚排 Gratin Fish Chop with Satay Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類 Rice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咖哩日式炸豬排飯 Tonkatsu Curry Rice",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩鮮酥雞塊飯 Crispy Chicken Thigh Curry Rice",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩黃金魚飯 Golden Fish Curry Rice",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩咔啦雞腿飯 Crispy Chicken Drumstick Curry Rice",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "酥炸拼盤 Deep-Fried Platter",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拼盤 A Platter A",
+            "description": "含薯條, 熱狗及洋蔥圈。送中杯紅茶。炸物可同價替換。",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拼盤 B Platter B",
+            "description": "含熱狗, 2 條魚柳條, 洋蔥圈及洋蔥圈。炸物可同價替換。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "美味食材  A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋 Omelette",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯泥 Mashed Potato",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯條 French Fries",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鬆餅 Waffle",
+            "description": "1 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗 Hot Dog",
+            "description": "3 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小肉豆 Small Chicken Ball",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥圈 Onion Ring",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮酥雞 Crispy Chicken",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅蛋塔 Hash Brown with Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿片 Ham Slices",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "23.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "漢堡肉 Burger Patty",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根片 Bacon Slices",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式香腸 German Sausage",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排 Pork Loin",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炸豬排 Tonkatsu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮霸魚排 Fish Chop",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "享福牛肉 Beef",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋 Over Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "26.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩煎雞腿 Sauteed Chicken Drumstick",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿 Crispy Chicken Drumstick",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金魚柳條 Golden Fish Fillet Stick",
+            "description": "4 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬雞柳條 Lemon Chicken Breast Finger",
+            "description": "4 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克雞塊 Chicken Nugget",
+            "description": "6 塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米濃湯 Corn Chowder",
+            "description": "冬季限定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "織蔬蛋白 Vegetables",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "生菜 Lettuce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃瓜片 Cucumber Slices",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米粒 Corn Kernel",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄 Tomato",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯泥 Mashed Potato",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水煮蛋 Hard Boiled Egg",
+            "description": "半顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手工披薩 Handmade Pizza",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "燻雞 Smoked Chicken Pizza",
+            "description": "5 吋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮 Seafood Pizza",
+            "description": "5 吋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "夏威夷 Hawaiian Pizza",
+            "description": "5 吋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "總匯 Assorted Pizza",
+            "description": "5 吋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

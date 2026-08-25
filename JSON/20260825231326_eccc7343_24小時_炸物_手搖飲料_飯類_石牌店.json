@@ -1,0 +1,556 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/24%E5%B0%8F%E6%99%82-%E7%82%B8%E7%89%A9-%E6%89%8B%E6%90%96%E9%A3%B2%E6%96%99-%E9%A3%AF%E9%A1%9E-%E7%9F%B3%E7%89%8C%E5%BA%97/1QXwoMUcWPywV3ZMud-nZQ",
+  "name": "24小時 炸物 手搖飲料 飯類 石牌店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區石牌路2段90巷17號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.117109,
+    "longitude": 121.5171341
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 3.9,
+    "reviewCount": 140
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Affordable Meals",
+    "Rice Dishes"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵原味 2 包+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無骨雞排 2 片",
+            "description": "兩片去骨雞排，金黃裹粉酥脆，肉質嫩口，份量滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛腩飯+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩牛肉飯+蛋+花椰菜",
+            "description": "咖哩牛肉鋪在白飯上，醬香滑口，配一顆荷包蛋與花椰菜，飽足又順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水餃",
+            "description": "經典水餃，Q彈外皮包裹飽滿內餡，淋上醬汁更對味",
+            "offers": {
+              "@type": "Offer",
+              "price": "131.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛腩飯+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵原味 2 包+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無骨雞排 2 片",
+            "description": "兩片去骨雞排，金黃裹粉酥脆，肉質嫩口，份量滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "147.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水餃",
+            "description": "經典水餃，Q彈外皮包裹飽滿內餡，淋上醬汁更對味",
+            "offers": {
+              "@type": "Offer",
+              "price": "131.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水蜜桃優格",
+            "description": "水蜜桃香氣與優格結合，口感滑順，展現乳酸風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "主廚特餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咖哩牛肉飯+蛋+花椰菜",
+            "description": "咖哩牛肉鋪在白飯上，醬香滑口，配一顆荷包蛋與花椰菜，飽足又順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯雞飯+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現炸豬排飯+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現炸雞排飯+蛋+花椰菜",
+            "description": "現炸雞排鋪在白飯上，附蛋與花椰菜，經典組合美味上桌",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒豬柳飯+蛋+花椰菜",
+            "description": "黑胡椒風味豬柳配米飯，附蛋與花椰菜，簡單均衡的主食選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉飯+蛋+花椰菜",
+            "description": "沙茶醬香羊肉配白飯，鹹香下飯；附蛋與花椰菜，飽足又順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精選麵食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁鐵板麵+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "131.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄雞丁鐵板麵+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "131.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉鐵板麵+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "131.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒鐵板麵+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "131.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵辣味2包+蛋+花椰菜",
+            "description": "含蔬菜及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "美味炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "薯餅2片",
+            "description": "金黃香酥薯餅2片，外酥內軟，綿密馬鈴薯香，適合加點或當小點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕2片",
+            "description": "蘿蔔糕2片，金黃酥香，外酥內嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯條",
+            "description": "金黃酥脆，外酥內軟，經典薯條口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸5顆",
+            "description": "金黃酥香花枝丸，外酥內Q、海味足，一份5顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥可雞塊6塊",
+            "description": "6塊雞塊，金黃酥脆，外酥內嫩，分享剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣5片",
+            "description": "以魚漿製成的甜不辣，切片酥炸，外酥內Q，5片份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞米花",
+            "description": "一口大小雞肉塊，外酥內嫩，鹹香涮嘴，輕鬆分享的經典炸物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精緻點心",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力厚片",
+            "description": "厚片吐司抹上香濃巧克力醬，口感鬆軟，一口甜香的經典點心",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥厚片",
+            "description": "厚片吐司抹上奶酥醬，奶香濃郁、口感鬆軟，經典小點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生厚片",
+            "description": "厚片吐司抹上花生醬，香濃順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蒜厚片",
+            "description": "厚片吐司抹上蒜香抹醬，烤至金黃，外酥內軟，蒜香濃郁",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特調冷飲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泡沫紅茶",
+            "description": "清香紅茶佐綿密泡沫，口感滑順、冰涼解渴",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉莉綠茶",
+            "description": "茉莉花香淡雅、綠茶清新，清爽順口，冰涼解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅子綠茶",
+            "description": "綠茶融合梅子香氣，清新順口的冰涼特調。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬紅茶",
+            "description": "檸檬酸香與紅茶茶韻交織，清爽解渴",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃紅茶",
+            "description": "紅茶基底融合蜜桃風味，茶香襯托果香，清爽順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖紅茶",
+            "description": "茶香純粹、清爽不膩，無加糖，冰飲更解渴",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜紅茶",
+            "description": "紅茶以蜂蜜調和，茶韻與蜜香相融，冰飲順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香紅茶",
+            "description": "紅茶融合百香果香氣，果韻與茶香平衡，清爽順口的冰涼特調",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳橙紅茶",
+            "description": "紅茶與柳橙調和，柑橘香氣與茶韻相融，清新順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優多綠茶",
+            "description": "綠茶與優多特調，茶香清新，乳酸香氣融合，清涼順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬多多",
+            "description": "檸檬汁與乳酸飲料調配的特調冷飲，清新酸香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬汁",
+            "description": "檸檬與蜂蜜調和成清爽冷飲，酸甜平衡，順口解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早冬瓜茶",
+            "description": "冰鎮冬瓜茶，冬瓜香氣甘醇，入口清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳橙汁",
+            "description": "冰涼柳橙汁，柑橘香氣清新，解渴順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜茶",
+            "description": "蜂蜜調和茶湯，茶香甜潤，冰涼順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可樂",
+            "description": "經典可樂，氣泡感十足，冰涼爽口，暢快解渴",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

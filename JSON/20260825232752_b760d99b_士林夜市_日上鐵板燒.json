@@ -1,0 +1,422 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E6%97%A5%E4%B8%8A%E9%90%B5%E6%9D%BF%E7%87%92/pcATyo6VXlOZBn0xxdRb-A",
+  "name": "士林夜市 日上鐵板燒",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區基河路101號25號攤 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0881067,
+    "longitude": 121.524142
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 50
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "注意事項✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點（以及口味），請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本餐廳使用肉品之原產地為台灣豬肉, 澳洲牛肉, 澳洲羊肉及台灣雞肉",
+            "description": "本店豬肉來源:台灣\n本店牛肉來源:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選🔥",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "胡麻豆腐",
+            "description": "香煎雞蛋豆腐搭配濃郁胡麻醬，口感滑嫩，風味獨特。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排套餐",
+            "description": "白飯 1 碗搭配時蔬和豆芽菜，附檸檬紅茶 1 杯，精選單人套餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋",
+            "description": "經典荷包蛋，簡單美味，適合任何時刻享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香雞丁套餐",
+            "description": "搭配高麗菜、豆芽菜，附 1 碗飯和檸檬紅茶 1 杯，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排+巴沙魚套餐",
+            "description": "沙朗牛排與巴沙魚套餐，附白飯 1 碗、時蔬、豆芽菜及檸檬紅茶 1 杯，經濟實惠的選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "470.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經濟組盒餐🍱",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排+巴沙魚套餐",
+            "description": "沙朗牛排與巴沙魚套餐，附白飯 1 碗、時蔬、豆芽菜及檸檬紅茶 1 杯，經濟實惠的選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "470.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香雞丁+巴沙魚",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "470.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排 + 經濟主餐任選",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "470.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香雞丁+經濟主餐任選",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "470.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排+魷魚蝦仁",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "470.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香雞丁+魷魚蝦仁",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "470.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巴沙魚+奶油杏鮑菇",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "460.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "獨享單人餐💫",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奶油杏鮑菇",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒牛肉餐",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶 1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排套餐",
+            "description": "白飯 1 碗搭配時蔬和豆芽菜，附檸檬紅茶 1 杯，精選單人套餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒豬肉餐",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶 1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒羊肉餐",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮炒香芹魷魚套餐",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶 1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巴沙魚套餐",
+            "description": "巴沙魚 2片。含白飯 1 碗, 時蔬, 豆芽菜。附飲料 1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香雞丁套餐",
+            "description": "搭配高麗菜、豆芽菜，附 1 碗飯和檸檬紅茶 1 杯，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮炒蝦仁套餐",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶 1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷魚蝦仁套餐",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶 1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬燒牛肉套餐",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬燒羊肉套餐",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶 1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬燒豬肉套餐",
+            "description": "含白飯 1 碗, 時蔬, 豆芽菜。附檸檬紅茶 1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點餐🥢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "胡麻豆腐",
+            "description": "香煎雞蛋豆腐搭配濃郁胡麻醬，口感滑嫩，風味獨特。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋",
+            "description": "經典荷包蛋，簡單美味，適合任何時刻享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆芽菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油金針菇",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

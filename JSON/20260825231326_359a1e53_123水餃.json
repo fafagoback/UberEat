@@ -1,0 +1,450 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/123%E6%B0%B4%E9%A4%83/3v8i249iQVSy3-yyy5Re_Q",
+  "name": "123水餃",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mingde Road 166",
+    "addressLocality": "Beitou District",
+    "addressRegion": "Taipei City",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.111054062982323,
+    "longitude": 121.52109108129527
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 250
+  },
+  "servesCuisine": [],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "干貝水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。以整顆珍珠干貝包入高麗菜豬肉內餡裡，干貝的鮮甜美味，搭配高麗菜的脆甜，再以特製的蘿蔔葉餃皮包裹，美味滿點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養生蘿蔔葉菜肉餛飩(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉，以黃金肥瘦比例調製使內餡不油膩，加上日本進口嫩蘿蔔葉，美味爽口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。以無毒養殖的白蝦整隻包入高麗菜豬肉內餡裡，海鮮的鮮甜直接入口，並用特製紅蘿蔔餃皮包裹，色香味俱全。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉高麗菜水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣文昌雞胸絞肉，配上高山脆甜高麗菜，適合想增肌減脂的健身族。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭黃豬肉水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。無毒種植韭黃混入台灣黑毛豬絞肉，軟滑香嫩又順口，是韭菜迷的另一個心頭好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦餛飩(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選選用台灣黑毛豬後腿絞肉和台灣無毒養殖白蝦打成泥混合，再包入一整隻白蝦仁，吃的到滿滿蝦子的大餛飩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "345.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米豬肉水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉，拌入嚴選雲林慧軒農場生產無毒甜玉米粒，是小朋友的最愛。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養生紅麴水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉，和日本進口嫩蘿蔔葉入餡，再以特製紅麴麵皮包裹，一試成主顧。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高雄9號鹽味毛豆",
+            "description": "嚴選來自高雄的9號毛豆，以簡單的調味，帶出毛豆的美味，不含黑胡椒，退冰即可食，當小零嘴方便又營養美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "水餃",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜豬肉水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉, 拌入大量高山脆甜高麗菜, 鮮甜入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋皮餛飩(冷凍)",
+            "description": "1 盒含 20 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉，以黃金肥瘦比例調製使內餡不油膩，配上加入蛋白製成的餛飩皮，不易軟爛，吃的到真材實料的小餛飩，煮湯或做抄手都美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。以無毒養殖的白蝦整隻包入高麗菜豬肉內餡裡，海鮮的鮮甜直接入口，並用特製紅蘿蔔餃皮包裹，色香味俱全。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜豬肉水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉，以黃金肥瘦比例調製使內餡不油膩, 加上職人種植韭菜, 美味爽口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "干貝水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。以整顆珍珠干貝包入高麗菜豬肉內餡裡，干貝的鮮甜美味，搭配高麗菜的脆甜，再以特製的蘿蔔葉餃皮包裹，美味滿點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭黃牛肉水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 美國。選用好市多的美國牛絞肉和香氣和緩無毒栽種韭黃，營養滿點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米豬肉水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉，拌入嚴選雲林慧軒農場生產無毒甜玉米粒，是小朋友的最愛。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素食水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。嚴選桃園復興鄉鈕扣菇，配上產地直送高山高麗菜及黑木耳，口感清爽無負擔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養生蘿蔔葉菜肉餛飩(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉，以黃金肥瘦比例調製使內餡不油膩，加上日本進口嫩蘿蔔葉，美味爽口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉高麗菜水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣文昌雞胸絞肉，配上高山脆甜高麗菜，適合想增肌減脂的健身族。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式煎餃(冷凍)",
+            "description": "1 袋含 30 顆。主原料來源於: 台灣。日本師傅來台研發秘製食譜製成的純日式口味，有別於鍋貼的鹹香好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "345.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養生紅麴水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉，和日本進口嫩蘿蔔葉入餡，再以特製紅麴麵皮包裹，一試成主顧。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭黃豬肉水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。無毒種植韭黃混入台灣黑毛豬絞肉，軟滑香嫩又順口，是韭菜迷的另一個心頭好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦餛飩(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選選用台灣黑毛豬後腿絞肉和台灣無毒養殖白蝦打成泥混合，再包入一整隻白蝦仁，吃的到滿滿蝦子的大餛飩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "345.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮑魚水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。特選鮑魚粒整粒入餡，搭配韭黃豬肉香嫩順口，豪華美味，在家就可以簡單吃到。",
+            "offers": {
+              "@type": "Offer",
+              "price": "715.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工牛肉丸(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 澳洲。以澳洲牛肉混合台灣豬油打出Q彈口感的牛肉丸，煮湯或清蒸皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥皮高麗菜豬肉水餃(冷凍)",
+            "description": "1 盒含 10 顆。主原料來源於: 台灣。選用台灣黑毛豬後腿肉，拌入大量高山脆甜高麗菜，並改以全麥粉製成外皮包裏，適合想減少澱粉攝取的你。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔葉植物肉小餛飩(冷凍)",
+            "description": "以大豆蛋白為基底的植物肉搭配清翠爽口的蘿蔔葉製成的小餛飩！軟嫩好入口，是長輩和素食者的好選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷凍食品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "濱江市場雞媽媽手作雞腿捲",
+            "description": "嚴選通過生鮮電宰認證的新鮮雞肉，將多汁的雞腿肉混搭上完美比例的天然香料粉，使用雞皮包裹雞腿肉餡製作而成。\n不用複雜的煮工，拆封煎熟後，立馬多了一道美味的主菜！不管大人小孩，一定會喜愛的多汁爆嫩手作雞腿捲！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高雄9號鹽味毛豆",
+            "description": "嚴選來自高雄的9號毛豆，以簡單的調味，帶出毛豆的美味，不含黑胡椒，退冰即可食，當小零嘴方便又營養美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(大)虱目魚肚",
+            "description": "含 1 片。主原料來源於: 台灣。來自台南學甲的無毒養殖虱目魚，與白蝦共生的生態養殖，讓虱目魚肥美，去刺的魚肚簡單料理即美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濱江市場雞媽媽濃純雞湯",
+            "description": "將新鮮雞肉與蔬菜精心熬煮，喝的到蔬菜的鮮甜與雞肉的香氣，方便退冰加熱即享濃厚滑順雞湯；不只可以單喝，還能將喜愛的麵食及水餃、餛飩加入高湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薄鹽鯖魚片",
+            "description": "1 片含 220 克。主原料來源於: 挪威。薄鹽的鯖魚片，簡單氣炸或乾煎或烤即美味，營養滿點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "浦燒鯛魚腹肉",
+            "description": "選用半海水養殖的台灣鯛，不易有土味！進口日本的浦燒醬汁，堅持三道炙燒工序，退凍後簡單加熱即可食用，方便又美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無毒特大蝦仁",
+            "description": "1 包含 300 克。主原料來源於: 台灣。來自台南學甲的無毒養殖白蝦，新鮮去殼後急速冷凍，保留蝦子的鮮甜美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "醬料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "123 水餃醬汁",
+            "description": "1 罐含 230 克。特調醬汁比例, 沾水餃或拌麵或白斬雞皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五仁孜然果油",
+            "description": "1 罐含 250 克。以6種堅果混合日本進口胡麻油搭配孜然製成，拌麵、拌肉皆美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "365.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辛福五仁辣麻果油",
+            "description": "1 罐含 250 克。以5種堅果混合日本進口胡麻油製成，拌麵、拌菜皆美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "365.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO干貝醬",
+            "description": "1 罐含 260 克。以原貝製成的XO醬，吃得到干貝粒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "760.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "全果蔬果汁",
+            "description": "1 瓶含 290 毫升。東勢農場結合高科技生物技術，以衛生安全的機器充填，不另外加糖，可以享受到純天然的美味果汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

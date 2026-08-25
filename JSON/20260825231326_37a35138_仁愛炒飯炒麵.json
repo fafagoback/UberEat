@@ -1,0 +1,658 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%BB%81%E6%84%9B%E7%82%92%E9%A3%AF%E7%82%92%E9%BA%B5/I1FMwSu2WZaVC7b8fUx4yQ",
+  "name": "仁愛炒飯炒麵",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁愛街508號之5 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0822479,
+    "longitude": 121.488092
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 130
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Noodles",
+    "Rice Dishes"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香腸炒飯",
+            "description": "香腸炒飯，搭配香腸和米飯，簡單美味，適合任何時候享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲蛋炒飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹豬肉炒飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒飯",
+            "description": "美味牛肉炒飯，搭配新鮮蔬菜，口感豐富，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮炒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒼蠅蛋炒飯",
+            "description": "韭菜、肉絲、蛋、豆鼓",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺司目魚肚湯",
+            "description": "鮮美無刺司目魚肚湯，清淡可口，適合喜愛海鮮的您。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生炒三鮮",
+            "description": "三款海鮮搭配洋蔥與蔥段生炒，海味鮮明、口感彈嫩，清爽下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉",
+            "description": "鮮嫩的羊肉配上濃鬱的沙嗲醬，是我們廣受歡迎的美味佳餚之一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹酥蝦",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙花枝",
+            "description": "鹹蛋黃拌炒花枝，金黃香沙，花枝Q彈，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🔥人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔥蛋",
+            "description": "嫩滑雞蛋搭配蔥香，簡單卻美味，適合任何時段享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒飯",
+            "description": "美味牛肉炒飯，搭配新鮮蔬菜，口感豐富，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香腸炒飯",
+            "description": "香腸炒飯，搭配香腸和米飯，簡單美味，適合任何時候享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺司目魚肚湯",
+            "description": "鮮美無刺司目魚肚湯，清淡可口，適合喜愛海鮮的您。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉",
+            "description": "鮮嫩的羊肉配上濃鬱的沙嗲醬，是我們廣受歡迎的美味佳餚之一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍚飯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉絲蛋炒飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹豬肉炒飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒼蠅蛋炒飯",
+            "description": "韭菜、肉絲、蛋、豆鼓",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯",
+            "description": "彈嫩蝦仁拌入香鬆米飯，海味鮮香、粒粒分明，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉燴飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉燴飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合燴飯",
+            "description": "魷魚、蝦仁、肉絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍜麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮炒麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵",
+            "description": "牛肉片與麵條大火快炒，醬香入味，麵條順口、肉片滑嫩，經典台式風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵",
+            "description": "羊肉片與麵條拌炒，肉嫩麵香，醬香入味，簡單卻美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮湯麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒麵",
+            "description": "肉絲拌入麵條快炒，醬香入味，鹹香順口，家常經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "💫快炒類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒青菜",
+            "description": "家常快炒青菜，清脆爽口、清香宜人，簡單卻美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆羊肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒沙茶螺肉",
+            "description": "沙茶醬快炒螺肉，拌入蔥段與洋蔥，醬香濃郁、螺肉彈嫩，香氣四溢、下飯開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒蒜苗鹹豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生炒三鮮",
+            "description": "三款海鮮搭配洋蔥與蔥段生炒，海味鮮明、口感彈嫩，清爽下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆鼓司目魚肚",
+            "description": "司目魚肚搭配豆鼓醬汁，拌入薑絲與蔥段，醬香濃郁、魚肚滑嫩，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹酥蝦",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芹菜花枝",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙花枝",
+            "description": "鹹蛋黃拌炒花枝，金黃香沙，花枝Q彈，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁烘蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋豆腐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒海瓜子",
+            "description": "海瓜子殼開釋出鮮味，肉質彈嫩，鹹香下飯，經典快炒海味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆炒香腸",
+            "description": "香腸切片大火快炒，肉香釋放，鹹香入味、香氣十足，經典下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒼蠅上樹",
+            "description": "有韭菜、蛋、豬肉絲、調味",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁滑蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生炒魷魚",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香蛤仔",
+            "description": "九層塔炒蛤仔",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金豆腐",
+            "description": "金沙豆腐，鹹蛋黃+整塊雞蛋豆腐料理",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🥣湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蛤仔湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜蛋花湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "司目魚丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲羊肉湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🥤飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂鋁罐裝330ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "😍粥",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "無刺司目魚肚魚粥",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1155 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%B5%B7%E6%97%BA%E8%A7%92%E7%86%B1%E7%82%92100/Mn0LQzoWSdC4ohgyqPl6Qw",
+  "name": "海旺角熱炒100",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Wenlin Road 676",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1012025,
+    "longitude": 121.5223298
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 5000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Stir​ Fried"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔酥",
+            "description": "熱炒人氣菜，酥炸蚵仔外酥內嫩，鹹香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁",
+            "description": "老闆極力推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙蛋豆腐",
+            "description": "滑嫩蛋豆腐拌入鹹蛋黃金沙，鹹香濃郁、口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干肉絲",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉",
+            "description": "老闆極力推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁",
+            "description": "老闆極力推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉",
+            "description": "老闆極力推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹酥龍珠",
+            "description": "經典鹹酥作法的魷魚嘴，撒上蒜酥與花生，拌入蔥段與辣椒，酥香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆乳炸雞翅",
+            "description": "老闆極力推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌牛肉鍋",
+            "description": "老闆極力推薦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "860.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣牛肉鍋",
+            "description": "麻辣湯頭搭配牛肉的鍋物，麻香與辣勁兼具，熱湯暖胃、越喝越過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "862.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷盤碳烤",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "四川口水雞",
+            "description": "川味經典冷盤，嫩雞淋麻辣紅油，花椒香麻，香氣濃郁，越吃越開胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "253.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥脆紅糟肉",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紹興醉雞",
+            "description": "以紹興酒醃製的冷盤雞肉，冰鎮入味，酒香馥郁、口感滑嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "253.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五味鹹豬肉",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白菜心拌豆干",
+            "description": "脆嫩白菜心與豆干拌合，口感一脆一韌，清爽的冷盤小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹蚋子",
+            "description": "台式鹹香冷盤小菜，口感爽口，開胃涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五味軟絲",
+            "description": "軟絲切片，佐五味醬，Q彈嫩口，清爽開胃的冷盤。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤牛小排",
+            "description": "碳烤牛小排，表面焦香，牛香飽滿",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風鱈魚肝",
+            "description": "綿滑油潤的鱈魚肝，佐和風調味，鹹香平衡、口感細嫩，清爽不膩，適合當作開胃冷盤。",
+            "offers": {
+              "@type": "Offer",
+              "price": "207.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拌洋蔥",
+            "description": "洋蔥薄片涼拌，清爽脆口，開胃小品",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "熱炒",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "金沙蛋豆腐",
+            "description": "滑嫩蛋豆腐拌入鹹蛋黃金沙，鹹香濃郁、口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糖醋里肌",
+            "description": "老闆極力推薦。台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨蝦球",
+            "description": "金黃酥脆蝦球，拌鳳梨與沙拉醬，清爽開胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干肉絲",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔酥",
+            "description": "熱炒人氣菜，酥炸蚵仔外酥內嫩，鹹香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒箭筍",
+            "description": "箭筍脆嫩爽口，清香四溢，炒出單純筍味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜鹹蛋",
+            "description": "苦瓜與鹹蛋快炒，鹹香包覆微苦，爽脆滑潤、層次分明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲大腸",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚香茄子",
+            "description": "茄子吸飽魚香醬汁，口感軟嫩，鹹香開胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆鼓鮮蚵",
+            "description": "豆鼓鹹香襯托鮮蚵海味，口感滑嫩，香氣十足，適合下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "地瓜葉皮蛋",
+            "description": "地瓜葉與皮蛋的經典搭配，口感滑嫩、有層次的家常菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉",
+            "description": "沙茶醬快炒羊肉，香氣濃郁，經典熱炒風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉",
+            "description": "蔥段爆香快炒牛肉片，蔥香濃郁",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香蛤蜊",
+            "description": "鮮嫩蛤蜊以九層塔提香，香氣四溢，凸顯海味與鮮味，熱炒人氣下酒菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥白肉",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老皮嫩肉",
+            "description": "經典熱炒豆腐，外酥內嫩、鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔炒蛋",
+            "description": "九層塔香氣融入金黃炒蛋，經典台式熱炒風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五更腸旺",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芹菜炒中卷",
+            "description": "脆口芹菜搭配Q彈中卷，拌炒出清爽口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "客家小炒",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕃茄炒蛋",
+            "description": "滑嫩炒蛋與蕃茄同炒，蛋香濃郁、汁多順口，家常經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾煎豬肝",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒蛋",
+            "description": "蝦仁與雞蛋香炒至金黃，蛋滑嫩、蝦仁爽口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻婆豆腐",
+            "description": "經典川味，嫩滑豆腐拌麻辣醬香，香麻帶勁、濃郁下飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糖醋魚片",
+            "description": "酸甜糖醋醬包裹魚片，魚肉嫩滑，醬香十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙中卷",
+            "description": "鹹蛋黃金沙包裹中卷，鹹香濃郁、口感Q彈",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蜊絲瓜",
+            "description": "絲瓜與蛤蜊的經典搭配，湯汁鮮美，口感柔嫩清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜脯煎蛋",
+            "description": "經典台式家常菜，蛋香與菜脯鹹香交融，外層金黃，內裡軟嫩，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮肥腸",
+            "description": "外脆內Q的肥腸，嚼勁十足，越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙白蝦",
+            "description": "川燙烹調，凸顯白蝦原味；口感Q彈、清爽不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "207.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸白菜炒肉絲",
+            "description": "酸白菜與豬肉絲快炒，酸香開胃、脆爽不膩，肉絲嫩口帶鹹香，是家常熱炒的人氣經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豆腐",
+            "description": "豆腐切塊酥炸至金黃，外酥內嫩，口感香脆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹酥蝦",
+            "description": "熱炒經典：小蝦酥炸至金黃，外酥內彈、鹹香涮嘴，連殼可食更過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香螺肉",
+            "description": "螺肉拌入九層塔，香氣四溢，口感彈牙",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "月亮蝦餅",
+            "description": "外酥內Q的月亮蝦餅，厚實飽滿、蝦香十足，切片分享剛剛好",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆羊肉",
+            "description": "羊肉與青蔥大火快炒，肉片滑嫩、蔥香濃郁，經典熱炒風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹酥杏鮑菇",
+            "description": "金黃酥炸杏鮑菇，撒上椒鹽提香，外酥內嫩、鮮香涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻雞",
+            "description": "雞肉淋上椒麻醬，花椒香氣四溢，麻香帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆酥鱈魚",
+            "description": "細嫩鱈魚配上台式香酥豆酥，酥脆與柔嫩交織，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "345.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保皮蛋",
+            "description": "宮保風味快炒，將Q彈皮蛋裹上濃郁醬香，椒香開胃，鹹香帶勁，熱炒必點",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣中卷",
+            "description": "Q彈中卷，麻辣香麻帶勁，口感鮮嫩，一口接一口",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清蒸鱈魚",
+            "description": "以清蒸呈現鱈魚原味，肉質細嫩滑口，口感清爽不油膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "345.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸白菜炒肉絲",
+            "description": "酸白菜拌炒豬肉絲，酸香脆口、肉絲嫩滑，鹹香開胃，配飯剛好",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹酥肥腸臭豆腐",
+            "description": "臭豆腐與肥腸炸得香酥，外脆內嫩，鹹香涮嘴，口感層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "207.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水煮牛肉",
+            "description": "川味水煮牛肉，牛肉片滑嫩入味，浸於紅油湯底，花椒香麻帶勁，搭配時蔬增添層次，是重口味的下飯首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣臭豆腐",
+            "description": "臭香濃郁，麻辣交織，重口味首選，開胃下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "207.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青椒肉絲",
+            "description": "青椒與豬肉絲大火快炒，青脆與嫩滑交織，鹹香順口，經典熱炒下飯首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "三杯鐵板及湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鐵板牛柳",
+            "description": "鐵板嗞嗞上桌的牛柳，口感嫩滑，香氣四溢",
+            "offers": {
+              "@type": "Offer",
+              "price": "207.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板豆腐",
+            "description": "鐵板滋滋作響上桌的豆腐，口感滑嫩、香氣四溢",
+            "offers": {
+              "@type": "Offer",
+              "price": "184.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯雞",
+            "description": "台式經典三杯雞，醬香濃郁，雞肉軟嫩入味",
+            "offers": {
+              "@type": "Offer",
+              "price": "184.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蜊湯",
+            "description": "清澈湯頭襯托蛤蜊鮮味，口感清爽順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯中卷",
+            "description": "彈嫩中卷裹上三杯醬香，鹹香濃郁，口口入味",
+            "offers": {
+              "@type": "Offer",
+              "price": "207.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯臭豆腐",
+            "description": "三杯風味料理，以臭豆腐拌入醬油、米酒與麻油收汁，醬香濃郁，搭配九層塔香氣，更添層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "184.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜肚片湯",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "207.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯豬血糕",
+            "description": "老闆極力推薦。台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "184.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板杏鮑菇",
+            "description": "高溫鐵板香煎杏鮑菇，口感Q彈多汁，菇香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "184.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山藥排骨鍋",
+            "description": "台灣豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "螃蟹海鮮鍋",
+            "description": "每鍋均有一隻一沙公或沙母",
+            "offers": {
+              "@type": "Offer",
+              "price": "850.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇雞鍋",
+            "description": "雞肉與香菇為主的暖湯鍋，湯頭清香、口感順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨苦瓜雞",
+            "description": "雞肉搭配苦瓜與鳳梨，清爽帶果香，苦後回甘，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "782.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜白肉鍋",
+            "description": "酸菜與白肉的經典火鍋，湯頭酸香開胃，白肉（豬五花）薄切滑嫩，暖身解膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "862.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "砂鍋魚頭",
+            "description": "經典砂鍋魚頭湯，湯頭醇厚，適合多人共享",
+            "offers": {
+              "@type": "Offer",
+              "price": "850.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茄腸煲",
+            "description": "茄子與豬大腸同鍋燜煮，茄子軟嫩、大腸帶勁，醬香濃郁，熱騰騰上桌",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣牛肉鍋",
+            "description": "麻辣湯頭牛肉鍋，麻香十足、辣度明顯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "862.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九尾雞腿鍋",
+            "description": "以雞腿為主的鍋物，熱湯暖胃，簡單滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "782.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米濃湯",
+            "description": "滑順濃稠、玉米香甜，順口暖胃的經典濃湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒飯麵及青菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "高麗菜，清爽調味，凸顯自然清甜與原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒空心菜",
+            "description": "經典家常青菜，空心菜炒至嫩脆，翠綠清香，口感爽口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒飯",
+            "description": "經典家常炒飯，粒粒分明、香氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "103.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒檳榔花",
+            "description": "檳榔花快炒，口感爽脆、清香不膩，簡單調味凸顯原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒麵",
+            "description": "多樣配料與麵條拌炒，Q彈順口，層次豐富、份量實在",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒水蓮",
+            "description": "快炒水蓮，清脆爽口、水分足，口感帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "地瓜葉",
+            "description": "清炒地瓜葉，脆嫩爽口，帶出自然甘味",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒麵",
+            "description": "Q彈麵條拌炒入味，醬香順口的經典炒麵",
+            "offers": {
+              "@type": "Offer",
+              "price": "103.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯",
+            "description": "蝦仁與米飯拌炒，米粒分明、蝦香誘人，口感爽口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒飯",
+            "description": "牛肉與米飯拌炒，香氣四溢，鹹香順口的經典熱炒風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦醬空心菜",
+            "description": "經典熱炒空心菜，拌入蝦醬鹹香四溢，口感爽脆、下飯首選",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒飯",
+            "description": "羊肉與米飯拌炒，香氣濃郁、鹹香入味",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒飯",
+            "description": "多樣配料與白飯快炒成盤，口感豐富、香氣足，飽足首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵",
+            "description": "熱炒經典：牛肉與麵條現炒，肉香醬香交融，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煉乳銀絲捲",
+            "description": "銀絲捲層次分明，口感鬆軟細緻，佐煉乳更添香甜",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵",
+            "description": "羊肉片與麵條拌炒，醬香入味，香氣誘人",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒麵",
+            "description": "蝦仁搭配麵條與蔬菜現炒，口感豐富，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味青芒果冰",
+            "description": "辦外燴桌時最後一到冰品",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "其他",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "白飯一碗，簡單飽足",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "采冠冷泡茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合火鍋料",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

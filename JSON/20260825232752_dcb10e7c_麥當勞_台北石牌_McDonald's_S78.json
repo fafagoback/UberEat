@@ -1,0 +1,1304 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%BA%A5%E7%95%B6%E5%8B%9E-%E5%8F%B0%E5%8C%97%E7%9F%B3%E7%89%8C-mcdonalds-s78/ub55akCsQIa0NlqEwvnQ4A",
+  "name": "麥當勞 台北石牌 McDonald's S78",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區石牌路2段126號",
+    "addressLocality": "Beitou District",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1179504,
+    "longitude": 121.5174933
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 35000
+  },
+  "servesCuisine": [
+    "American"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "熱門推薦 | Recommendation",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "套餐-蒜香雙牛堡 | Garlic Double Beef Burger Meal",
+            "description": "套餐含蒜香雙牛堡一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "232.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-蒜香辣鷄腿堡 | Garlic Spicy Chicken Burger Meal",
+            "description": "套餐含蒜香辣鷄腿堡一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "232.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日韓傳奇分享餐 (海味雙層揚蝦堡8/12起供應) | JP & KR Sharing Meal (Double Ebi Filet-O Burger start serving at 8/12)",
+            "description": "套餐含任選堡*2 (蒜香雙牛堡/海味雙層揚蝦堡)、20塊原味麥克鷄塊、1包大薯、38元冷飲*2 | Comes with 2 Burger(Garlic Double Beef/Double Ebi Filet-O), 20pcs McNuggets, 1 Large Fries and 2 $38 beverages.",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "我愛爸爸餐(蒜香堡(牛/鷄)+麥香鷄) | Garlic Burger(Double Beef/Spicy Chicken )+McChicken Special Meal",
+            "description": "套餐含蒜香堡(牛/鷄)*2、麥香鷄*2、四塊麥克鷄塊*2、大薯*2、NT$38 飲料*4。 | Comes with Garlic Burger(Double Beef/Spicy Chicken)*2,McChicken*2,4pcs Chicken McNuggets*2,Large Fries*2 and $38 beverage*4",
+            "offers": {
+              "@type": "Offer",
+              "price": "628.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "我愛爸爸餐(大麥克+勁辣鷄) | Big Mac+Spicy Chicken Filet Burger Special Meal",
+            "description": "套餐含大麥克*2、勁辣鷄腿堡*2、4塊麥克鷄塊*2、大薯*2、NT$38 飲料*4。 | Comes with Big Mac*2, Spicy Chicken Filet Burger*2 , 4pcs Chicken McNuggets*2, Large Fries*2 and $38 beverage*4",
+            "offers": {
+              "@type": "Offer",
+              "price": "628.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "我愛爸爸餐(20塊麥克鷄塊+麥脆鷄) | McNuggets(20pcs)+McCrispy(2pcs) Special Meal",
+            "description": "套餐含麥脆鷄*2 (原/辣，棒腿或大腿 部位恕不指定、更換)、20塊麥克鷄塊、2塊勁辣香鷄翅*2、大薯*2、NT$38 飲料*4。 | Comes with 2pcs Chicken McCrispy (Original/Spicy, Drumsticks & thighs are distributed randomly), 20pcs Chicken McNuggets, 4pcs Spicy Chicken Wings(2sets),Large Fries*2 and $38 beverages*4",
+            "offers": {
+              "@type": "Offer",
+              "price": "628.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "我愛爸爸餐(雙層牛+麥香鷄) | Double Cheese Burger + McChicken Special Meal",
+            "description": "套餐含雙層牛肉堡*2、麥香鷄*2、4塊麥克鷄塊*2、大薯*2、NT$38 飲料*4。 | Comes with Double Cheese Burger*2, McChicken*2, 4pcs Chicken McNuggets*2, Large Fries*2 and $38 beverage*4",
+            "offers": {
+              "@type": "Offer",
+              "price": "568.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香芋派雙享組 | Taro Pie x 2 set",
+            "description": "套餐含香芋派兩份。 | Comes with  Taro Pie*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香芋派甜心組 | Taro Pie +Drink Combo",
+            "description": "套餐含香芋派一份與 NT$38 飲料選擇。 | Comes with Taro Pie and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "84.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香芋派 | Taro Pie",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里金選美式咖啡(冰) | Select Blend Espresso Romano Americano(Iced)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "迷你麥盲盒餐 | Blind Box Special Meal",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "勁辣鷄腿堡迷你麥盲盒特餐 | Spicy Chicken Filet Burger Blind Box Meal",
+            "description": "套餐含勁辣鷄腿堡一份(中辣)、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with Spicy Chicken Filet Burger*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層牛肉吉事堡迷你麥盲盒特餐 | Double Cheese Burger Blind Box Meal",
+            "description": "套餐含雙層牛肉吉事堡一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with Double Cheese Burger*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "243.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥香鷄迷你麥盲盒特餐 | McChicken Blind Box Meal",
+            "description": "套餐含麥香鷄一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with McChicken*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "219.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克鷄塊(6塊)迷你麥盲盒特餐 | McNuggets - 6pcs Blind Box Meal",
+            "description": "套餐含麥克鷄塊(6塊)一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with McNuggets(6pcs)*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "231.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大麥克迷你麥盲盒特餐 | Big Mac Blind Box Meal",
+            "description": "套餐含大麥克一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with Big Mac*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥香魚迷你麥盲盒特餐 | Filet-O-Fish Blind Box Meal",
+            "description": "套餐含麥香魚一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with Filet-O-Fish*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "223.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味麥脆鷄腿(2塊)迷你麥盲盒特餐 | Chicken McCrispy (O) - 2pcs Blind Box Meal",
+            "description": "套餐含原味麥脆鷄腿(2塊)一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with Original Chicken McCrispy(2pcs)*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "297.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味麥脆鷄腿(2塊)迷你麥盲盒特餐 | Chicken McCrispy (S) - 2pcs Blind Box Meal",
+            "description": "套餐含辣味麥脆鷄腿(2塊)一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with Spicy Chicken McCrispy(2pcs)*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "297.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克鷄塊(10塊)迷你麥盲盒特餐 | McNuggets -10pcs Blind Box Meal",
+            "description": "套餐含麥克鷄塊(10塊)一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with McNuggets(10pcs)*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "272.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層四盎司牛肉堡迷你麥盲盒特餐 | Classic Double Angus Beef Burger Blind Box Meal",
+            "description": "套餐含雙層四盎司牛肉堡一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with Classic Double Angus Beef Burger*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "303.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味雙層四盎司牛肉堡迷你麥盲盒特餐 | Spicy Classic Double Angus Beef Burger Blind Box Meal",
+            "description": "套餐含辣味雙層四盎司牛肉堡一份、大薯一份、迷你麥盲盒一份與 NT$38 飲料選擇。 | Comes with Spicy Classic Double Angus Beef Burger*1, Large Fries*1,Blind Box*1 and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "303.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麥當勞分享餐 | Happy Sharing Meal",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "20塊麥克鷄塊分享餐 | 20pcs Chicken McNuggets Happy Sharing Meal",
+            "description": "套餐含20塊麥克鷄塊、1份大薯與2杯$38冷/熱飲。 | 20pcs Chicken McNuggets, 1 side order and 2 $38 beverages.",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味麥脆鷄腿分享餐 | Spicy Chicken McCrispy Happy Sharing Meal",
+            "description": "套餐含6塊辣味麥脆鷄腿 (棒腿或大腿 部位恕不指定、更換)、2份大薯與2杯$38冷/熱飲。 | 6pcs Spicy Chicken McCrispy (Drumsticks & thighs are distributed randomly), 2 side order and 2 $38 beverages.",
+            "offers": {
+              "@type": "Offer",
+              "price": "529.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鷄塊鷄腿(原味)分享餐 | Chicken McNuggets & Chicken McCrispy Happy Sharing Meal (Original)",
+            "description": "套餐含6塊原味麥脆鷄腿 (棒腿或大腿 部位恕不指定、更換)、10塊麥克鷄塊、2份大薯與2杯$38冷/熱飲。  | 6pcs Original Chicken McCrispy (Drumsticks & thighs are distributed randomly), 10pcs Chicken McNuggets, 2 side order and 2 $38 beverages.",
+            "offers": {
+              "@type": "Offer",
+              "price": "629.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "30塊麥克鷄塊分享餐 | 30pcs Chicken McNuggets Happy Sharing Meal",
+            "description": "套餐含30塊麥克鷄塊、1份大薯與2杯$38冷/熱飲。 | 30pcs Chicken McNuggets, 1 side order and 2 $38 beverages.",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味麥脆鷄腿分享餐 | Original Chicken McCrispy Happy Sharing Meal",
+            "description": "套餐含6塊原味麥脆鷄腿 (棒腿或大腿 部位恕不指定、更換)、2份大薯與2杯$38冷/熱飲。 | 6pcs Original Chicken McCrispy (Drumsticks & thighs are distributed randomly), 2 side order and 2 $38 beverages.",
+            "offers": {
+              "@type": "Offer",
+              "price": "529.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鷄塊鷄腿(辣味)分享餐 | Chicken McNuggets & Chicken McCrispy Happy Sharing Meal (Spicy)",
+            "description": "套餐含6塊辣味麥脆鷄腿 (棒腿或大腿 部位恕不指定、更換)、10塊麥克鷄塊、2份大薯與2杯$38冷/熱飲。 | 6pcs Spicy Chicken McCrispy (Drumsticks & thighs are distributed randomly), 10pcs Chicken McNuggets, 2 side order and 2 $38 beverages.",
+            "offers": {
+              "@type": "Offer",
+              "price": "629.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "勁辣香鷄翅分享餐 | Spicy Chicken Wings Happy Sharing Meal",
+            "description": "套餐含12塊勁辣香鷄翅 (6份)、1份大薯與2杯$38冷/熱飲。 | 12pcs Spicy Chicken Wings (6sets), 1 side order and 2 $38 beverages.",
+            "offers": {
+              "@type": "Offer",
+              "price": "339.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐 | Combo Meal",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "套餐-雙層牛肉吉事堡 | Double Cheeseburger Meal",
+            "description": "套餐含雙層牛肉吉事堡一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "174.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-麥香魚 | Filet-O-Fish Meal",
+            "description": "套餐含麥香魚一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "154.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-麥克鷄塊(6塊) | Chicken McNuggets (6pcs) Meal",
+            "description": "套餐含麥克鷄塊(6塊)一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "162.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-勁辣鷄腿堡 | Spicy Chicken Filet Burger Meal",
+            "description": "套餐含勁辣鷄腿堡一份 (中辣)、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-大麥克 | Big Mac Meal",
+            "description": "套餐含大麥克一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-麥香鷄 | McChicken Meal",
+            "description": "套餐含麥香鷄一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-辣味麥脆鷄腿 (2塊) | Spicy Chicken McCrispy (2pcs) Meal",
+            "description": "套餐含2塊辣味麥脆鷄腿 (棒腿或大腿 部位恕不指定、更換) 、配餐選擇與NT $38飲料選擇。 | Comes with Side choice and $38 beverage. (Drumsticks & thighs are distributed randomly)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-蕈菇安格斯牛肉堡 | Mushroom Angus Beef Burger Meal",
+            "description": "套餐含蕈菇安格斯牛肉堡一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "234.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-麥克鷄塊(10塊) | Chicken McNuggets (10pcs) Meal",
+            "description": "套餐含麥克鷄塊(10塊)一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "203.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-原味麥脆鷄腿 (2塊) | Original Chicken McCrispy (2pcs) Meal",
+            "description": "套餐含2塊原味麥脆鷄腿 (棒腿或大腿 部位恕不指定、更換) 、配餐選擇與NT $38飲料選擇 | Comes with Side choice and $38 beverage. (Drumsticks & thighs are distributed randomly)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-BLT 安格斯牛肉堡 | BLT Angus Beef Burger Meal",
+            "description": "套餐含BLT安格斯牛肉堡一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-雙層麥香鷄 | Double McChicken Meal",
+            "description": "套餐含雙層麥香鷄一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-辣味四盎司牛肉堡 | Spicy Angus Beef Burger Meal",
+            "description": "套餐含辣味四盎司牛肉堡一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "194.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-辣味雙層四盎司牛肉堡 | Double Spicy Angus Beef Burger Meal",
+            "description": "套餐含辣味雙層四盎司牛肉堡一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "234.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-四盎司牛肉堡 | Classic Angus Beef Burger Meal",
+            "description": "套餐含四盎司牛肉堡一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "194.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-雙層四盎司牛肉堡 | Double Classic Angus Beef Burger Meal",
+            "description": "套餐含雙層四盎司牛肉堡一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "234.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "套餐-雙層麥香魚 | Double Filet-O-Fish Meal",
+            "description": "套餐含雙層麥香魚一份、配餐選擇與 NT$38 飲料選擇。 | Comes with Side choice and $38 beverage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "194.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Happy Meal",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麥克鷄塊餐(4塊) Happy Meal | Happy Meal - Chicken McNuggets (4pcs)",
+            "description": "Happy Meal 含麥克鷄塊 (4塊) 一份、配餐選擇與飲料選擇，餐組金額為$89。如需讀本，需+$10(讀本主題以各餐廳實際供應為準) | $89 Happy Meal Comes with Side choice and beverage. Add $10 for Happy Meal reader.",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "漢堡餐 Happy Meal | Happy Meal - Hamburger",
+            "description": "Happy Meal 含漢堡一份、配餐選擇與飲料選擇，餐組金額為$89。如需讀本，需+$10(讀本主題以各餐廳實際供應為準) | $89 Happy Meal Comes with Side choice and beverage. Add $10 for Happy Meal reader.",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "陽光鱈魚堡餐 Happy Meal | Happy Meal - McFish",
+            "description": "Happy Meal 含陽光鱈魚堡一份、配餐選擇與飲料選擇，餐組金額為$89。如需讀本，需+$10(讀本主題以各餐廳實際供應為準) | $89 Happy Meal Comes with Side choice and beverage. Add $10 for Happy Meal reader.",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點 | A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蘋果派 | Apple Pie",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克鷄塊 (6塊) | Chicken McNuggets (6pcs)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味麥脆鷄腿(1塊) | Spicy McCrispy (1pc)",
+            "description": "棒腿或大腿 部位恕不指定、更換 | Drumsticks & thighs are distributed randomly",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味麥脆鷄腿(1塊) | Original McCrispy (1pc)",
+            "description": "棒腿或大腿 部位恕不指定、更換 | Drumsticks & thighs are distributed randomly",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克鷄塊 (10塊) | Chicken McNuggets (10pcs)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克鷄塊 (4塊) | Chicken McNuggets (4pcs)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "53.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料 | Beverage",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "玉米湯 (大) | Corn Soup (L)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂 (中) | Coca Cola (M)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬風味紅茶(冰) (中) | Lemon Flavored Black Tea(Iced) (M)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪碧 (中) | Sprite (M)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖綠茶(冰) (中) | Sugar-Free Green Tea(Iced) (M)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣鮮榨柳丁汁 | Taiwan Fresh Orange Juice",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖紅茶(冰) (中) | Sugar-Free Black Tea(Iced) (M)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典美式咖啡(冰) | Americano(Iced)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典那堤(冰) | Latte(Iced)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典美式咖啡(熱) | Americano(Hot)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Evian 礦泉水 | Evian Water",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶(熱) | Tea(Hot)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典那堤(熱) | Latte(Hot)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖奶茶(冰) | Caramel Milk Tea (Iced)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱蜂蜜奶茶 | Hot Honey Milk Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰蜂蜜奶茶 | Iced Honey Milk Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金選那堤(熱) | Select Blend Latte(Hot)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金選那堤(冰) | Select Blend Latte(Iced)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金選美式咖啡(熱) | Select Blend Americano(Hot)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金選美式咖啡(冰)(大) | Large Select Blend Americano(Iced)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金選美式咖啡(冰) | Select Blend Americano(Iced)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰蜂蜜紅茶 | Iced Honey Black Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "63.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂 Zero (中) | Coke Zero (M)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "2026甜心卡 | Dessert Card",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜心卡-葉小釵藍 | Dessert Card_Blue",
+            "description": "甜心卡優惠不適用於外送服務。 | Dessert Card offers are not applicable to delivery services.",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜心卡-一頁書棕 | Dessert Card_Brown",
+            "description": "甜心卡優惠不適用於外送服務。 | Dessert Card offers are not applicable to delivery services.",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜心卡-套卡 | Dessert Card_Set",
+            "description": "內含1套甜心卡，共3張 (每套含三款卡片各一) ；甜心卡優惠不適用於外送服務。 | Comes with 1 sets of dessert cards, totaling 3 cards (each set contains three different cards).Dessert Card offers are not applicable to delivery services.",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜心卡送禮套組 | Dessert Card Combo",
+            "description": "內含3套甜心卡，共9張 (每套含三款卡片各一) ；甜心卡優惠不適用於外送服務。 | Comes with 3 sets of dessert cards, totaling 9 cards (each set contains three different cards).Dessert Card offers are not applicable to delivery services.",
+            "offers": {
+              "@type": "Offer",
+              "price": "351.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "購物袋專區 | Bag",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "塑膠袋 | Plastic Bag",
+            "description": "如需塑膠袋，請點此處加購 | Click here to buy Plastic Bag",
+            "offers": {
+              "@type": "Offer",
+              "price": "3.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "為維護您餐點的完整性與食品安全性，如需塑膠袋及環保購物袋，請點此處加購",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥當勞隨身輕巧購物袋(大麥克款) | Foldable Reusable Bag (Big Mac)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥當勞隨身輕巧購物袋(薯條款) | Foldable Reusable Bag (Fries)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "客服訂單(請勿下訂)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "客服訂單 | (請勿下訂)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項(請勿下訂)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "7. 豬肉滿福堡, 豬肉蛋堡, 豬肉鬆餅系列其豬肉為混合成型，並以熟食供應",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2.商品恕不接受客製化服務。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "9. 陽光鱈魚堡，麥香魚系列為優質鱈魚肉片魚磚成型，並切片裹粉，熟食供應",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "8. 麥香鷄,麥克鷄塊系列產品其鷄肉為混合成型，並以熟食供應",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4. 本餐廳所使用之豬肉(皆不含萊克多巴胺)來自台灣.加拿大.丹麥，實際使用以食材外箱標示為主。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "1.若有任何疑問，請聯繫平台線上客服。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3.餐點圖片僅供參考。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5.本餐廳所使用之牛肉(皆不含萊克多巴胺)來自巴拉圭、澳洲、紐西蘭，實際使用以食材外箱標示為主。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "6. 含有咖啡因成分之現場調製飲料產品之總咖啡因含量為最高值",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "10.辣味四盎司牛肉堡、辣味雙層四盎司牛肉堡產品系列其牛肉為混合成型，並以熟食供應",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "11. 蒜香雙牛堡其牛肉為混合成型，並以熟食供應;海味揚蝦堡、海味雙層揚蝦堡其蝦排為混合成型，並以熟食供應",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "上開營養資訊，客製化商品除外",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "產品標示(請勿下訂)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典美式咖啡(冰/熱)*產品資訊",
+            "description": "咖啡原料來源之原產地: 巴西、哥倫比亞、宏都拉斯 。總熱量(大卡)：20/15.1，總糖量(公克)：0/0，總咖啡因含量最高值(毫克)：257/257",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖冰綠茶 M*產品資訊",
+            "description": "茶葉原料來源之原產地: 日本(靜岡縣)、印尼。總熱量(大卡)：0，總糖量(公克)：0，總咖啡因含量最高值(毫克)：84",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖奶茶(冰) *產品資訊",
+            "description": "茶葉原料來源之原產地: 印度。總熱量(大卡)：156.4，總糖量(公克)：28.5，總咖啡因含量最高值(毫克)：118",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜奶茶 (熱)*產品資訊",
+            "description": "茶葉原料來源之原產地:肯亞、印尼、斯里蘭卡。總熱量(大卡)：179，總糖量(公克)：28，總咖啡因含量最高值(毫克)：85",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰奶茶*產品資訊",
+            "description": "茶葉原料來源之原產地: 印度。總熱量(大卡)：212.7，總糖量(公克)：38，總咖啡因含量最高值(毫克)：124",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂 M*產品資訊",
+            "description": "總熱量(大卡)：210.6，總糖量(公克)：52.6，總咖啡因含量最高值(毫克)：64",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖冰紅茶 M*產品資訊",
+            "description": "茶葉原料來源之原產地: 印度。總熱量(大卡)：0，總糖量(公克)：0，總咖啡因含量最高值(毫克)：159",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬風味紅茶 M*產品資訊",
+            "description": "茶葉原料來源之原產地: 肯亞。總熱量(大卡)：163.9，總糖量(公克)：40.2，總咖啡因含量最高值(毫克)：21",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜紅茶(冰)*產品資訊",
+            "description": "茶葉原料來源之原產地: 印度。總熱量(大卡)：136.8，總糖量(公克)：30.7，總咖啡因含量最高值(毫克)：124",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱紅茶*產品資訊",
+            "description": "茶葉原料來源之原產地: 肯亞、印尼、斯里蘭卡。總熱量(大卡)：0，總糖量(公克)：0，總咖啡因含量最高值(毫克)：85",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典那堤(冰/熱)*產品資訊",
+            "description": "咖啡原料來源之原產地: 巴西、哥倫比亞、宏都拉斯 。總熱量(大卡)：117.3/123.7，總糖量(公克)：7.6/8.1，總咖啡因含量最高值(毫克)：257/245",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金選美式咖啡(冰/熱) *產品資訊",
+            "description": "咖啡原料來源之原產地:衣索比亞、坦尚尼亞 。中杯總熱量(大卡)：20/15.1，中杯總糖量(公克)：0/0，中杯總咖啡因含量最高值(毫克)：280/280。 大杯總熱量(大卡)：25.2, 大杯總糖量(公克)：0, 大杯總咖啡因含量最高值(毫克)：379.1",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪碧 M*產品資訊",
+            "description": "總熱量(大卡)：170.8，總糖量(公克)：42.7",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱奶茶*產品資訊",
+            "description": "茶葉原料來源之原產地: 肯亞、印尼、斯里蘭卡。總熱量(大卡)：75，總糖量(公克)：4.6，總咖啡因含量最高值(毫克)：85",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜奶茶 (冰)*產品資訊",
+            "description": "茶葉原料來源之原產地: 印度。總熱量(大卡)：215，總糖量(公克)：36，總咖啡因含量最高值(毫克)：124",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂 Zero  M*產品資訊",
+            "description": "總熱量(大卡)：0，總糖量(公克)：0，總咖啡因含量最高值(毫克)：64",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金選那堤(冰/熱) *產品資訊",
+            "description": "咖啡原料來源之原產地:衣索比亞、坦尚尼亞 。總熱量(大卡)：117.3/123.7，總糖量(公克)：7.6/8.1，總咖啡因含量最高值(毫克)：280/280",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里金選冰美式 *產品資訊",
+            "description": "咖啡原料來源之原產地:衣索比亞、坦尚尼亞 。總熱量(大卡)：112.6，總糖量(公克)：24.4，總咖啡因含量最高值(毫克)：379.1",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果可口可樂氣泡飲 *產品資訊",
+            "description": "總熱量(大卡)：373.4，總糖量(公克)：91.6，總咖啡因含量最高值(毫克)：64",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鬆餅奶油*產品資訊",
+            "description": "品名：鬆餅奶油 成分：乳脂、乳酸菌、食鹽，本產品含有牛奶製品，重量：10公克 原產地：丹麥，進口商：富華股份有限公司 地址：新北市汐止區新台五路一段79號19樓之11，電話：02 2698-9608 有效日期：日/月/年 (標示於包裝上)",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "戀奶精球(非乳(奶)為主)*產品資訊",
+            "description": "品名：戀奶精球(非乳(奶)為主) 成分：水、植物油(椰子油、棕櫚油)、乾酪素鈉、海藻糖、乳化劑(脂肪酸甘油酯、乳酸硬脂酸鈉、脂肪酸蔗糖酯)、乳粉、品質改良劑(磷酸氫二鈉)、蔗糖、卵磷脂、檸檬酸鈉、香料、粘稠劑(鹿角菜膠) 本產品含有牛奶、大豆製品，容量：10毫升，原產地：台灣 製造商：開元食品工業股份有限公司，地址：桃園市觀音區經建一路28號 電話：03-4838240，有效日期：西元年/月/日(標示於包裝上)",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

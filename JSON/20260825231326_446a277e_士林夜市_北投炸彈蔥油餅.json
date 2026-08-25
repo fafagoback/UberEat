@@ -1,0 +1,458 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E5%8C%97%E6%8A%95%E7%82%B8%E5%BD%88%E8%94%A5%E6%B2%B9%E9%A4%85/R4P99zEZWgui0plGyrEZHQ",
+  "name": "士林夜市 北投炸彈蔥油餅",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區基河路3號",
+    "addressLocality": "Taipei",
+    "addressRegion": "APAC",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0863499,
+    "longitude": 121.524905
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 320
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買一送一雙蛋蔥油餅",
+            "description": "香酥Q彈的蔥油餅加上雙顆雞蛋，蛋香與蔥香交織，層次更豐富、飽足感升級，熱騰騰一口下去外酥內軟，經典台味讓人一吃就上癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙蛋蔥油餅 Scallion Pancake with Double Egg",
+            "description": "金黃雙蛋包裹酥香蔥油餅，口感豐富層次足，濃濃蛋香與蔥香完美結合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買一送一德式香腸蔥油餅",
+            "description": "香酥Q彈的蔥油餅搭配新鮮的蔥和半熟蛋，再捲上一根鮮嫩多汁的德式香腸，有種置身墨西哥的感覺，簡直是絕配",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式香腸蔥油餅 German Sausage Scallion Pancake",
+            "description": "鹹香酥脆的蔥油餅夾入多汁德式香腸，異國風味與經典台味的完美碰撞。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-德式香腸蔥油餅加黑芝麻燕麥飲(套餐組合)",
+            "description": "鹹香酥脆的蔥油餅夾入多汁德式香腸，異國風味與經典台味的完美碰撞。\n\n冰涼飲用為消暑解渴聖品\n溫熱喝則可爽聲潤喉\n採用天然食材、遵循古法熬煮\nSGS檢驗證明\n（無添加防腐劑、無色素、無塑化劑）\n安心飲用",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙倍起司蔥油餅 Scallion Pancake with Double Cheese",
+            "description": "香酥Q彈的蔥油餅搭配新鮮的蔥和半熟蛋，再搭配雙倍融化牽絲的起司，一口接一口完全停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買一送一起司蔥油餅",
+            "description": "香酥Q彈的蔥油餅搭配新鮮的蔥和半熟蛋，再搭配融化牽絲的起司，一口接一口完全停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌原味蔥油餅 Signature Original Scallion Pancake",
+            "description": "外酥內軟的招牌蔥油餅，層層蔥香四溢，原味經典，簡單卻令人難忘的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買一送一原味蔥油餅",
+            "description": "香酥Q彈的蔥油餅搭配新鮮的蔥和半熟蛋，能吃到餅皮的香氣，還能享受爆漿的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一香濃豆漿",
+            "description": "香濃順口的豆漿，買一送一；豆香厚實、口感滑順，冰熱皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蔥油餅 Scallion Pancake with Cheese",
+            "description": "酥香蔥油餅夾入濃郁牽絲起司，鹹香升級，每口都是外脆內濃的絕妙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "愛酸寶天然酸梅湯",
+            "description": "冰涼飲用為消暑解渴聖品\n溫熱喝則可爽聲潤喉\n採用天然食材、遵循古法熬煮\nSGS檢驗證明\n（無添加防腐劑、無色素、無塑化劑）\n安心飲用",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一愛酸寶天然酸梅湯",
+            "description": "冰涼飲用為消暑解渴聖品\n溫熱喝則可爽聲潤喉\n採用天然食材、遵循古法熬煮\nSGS檢驗證明\n（無添加防腐劑、無色素、無塑化劑）\n安心飲用",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一無糖豆漿",
+            "description": "豆老爺。\n採用非基因改造黃豆",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一黑芝麻燕麥飲",
+            "description": "豆老爺食品",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一愛酸寶天然酸梅湯",
+            "description": "冰涼飲用為消暑解渴聖品\n溫熱喝則可爽聲潤喉\n採用天然食材、遵循古法熬煮\nSGS檢驗證明\n（無添加防腐劑、無色素、無塑化劑）\n安心飲用",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一無糖豆漿",
+            "description": "豆老爺。\n採用非基因改造黃豆",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一黑芝麻燕麥飲",
+            "description": "豆老爺食品",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。",
+            "description": "喜歡我們的餐點與口味嗎？請給我們五星好評！您的鼓勵是持續精進的動力；如有建議或問題，歡迎留言，我們會盡速回覆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌原味蔥油餅 Signature Original Scallion Pancake",
+            "description": "外酥內軟的招牌蔥油餅，層層蔥香四溢，原味經典，簡單卻令人難忘的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蔥油餅 Scallion Pancake with Cheese",
+            "description": "酥香蔥油餅夾入濃郁牽絲起司，鹹香升級，每口都是外脆內濃的絕妙享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙蛋蔥油餅 Scallion Pancake with Double Egg",
+            "description": "金黃雙蛋包裹酥香蔥油餅，口感豐富層次足，濃濃蛋香與蔥香完美結合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙倍起司蔥油餅 Scallion Pancake with Double Cheese",
+            "description": "香酥Q彈的蔥油餅搭配新鮮的蔥和半熟蛋，再搭配雙倍融化牽絲的起司，一口接一口完全停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式香腸蔥油餅 German Sausage Scallion Pancake",
+            "description": "鹹香酥脆的蔥油餅夾入多汁德式香腸，異國風味與經典台味的完美碰撞。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖豆漿",
+            "description": "豆老爺。\n採用非基因改造黃豆",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃豆漿",
+            "description": "豆老爺。\n採用非基因改造黃豆",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑芝麻燕麥",
+            "description": "豆老爺食品",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "愛酸寶天然酸梅湯",
+            "description": "冰涼飲用為消暑解渴聖品\n溫熱喝則可爽聲潤喉\n採用天然食材、遵循古法熬煮\nSGS檢驗證明\n（無添加防腐劑、無色素、無塑化劑）\n安心飲用",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "★活動專區★",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買一送一德式香腸蔥油餅",
+            "description": "香酥Q彈的蔥油餅搭配新鮮的蔥和半熟蛋，再捲上一根鮮嫩多汁的德式香腸，有種置身墨西哥的感覺，簡直是絕配",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買一送一起司蔥油餅",
+            "description": "香酥Q彈的蔥油餅搭配新鮮的蔥和半熟蛋，再搭配融化牽絲的起司，一口接一口完全停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買一送一雙蛋蔥油餅",
+            "description": "香酥Q彈的蔥油餅加上雙顆雞蛋，蛋香與蔥香交織，層次更豐富、飽足感升級，熱騰騰一口下去外酥內軟，經典台味讓人一吃就上癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買一送一原味蔥油餅",
+            "description": "香酥Q彈的蔥油餅搭配新鮮的蔥和半熟蛋，能吃到餅皮的香氣，還能享受爆漿的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買雙蛋蔥油餅送黑芝麻燕麥飲",
+            "description": "雙蛋蔥油餅飽足加倍，買就送黑芝麻燕麥飲。買一送一，下單請以偶數為單位。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優惠活動-買起司蔥油餅送香濃豆漿",
+            "description": "優惠活動：買起司蔥油餅送香濃豆漿，起司牽絲、餅香酥脆。買一送一，下單請以偶數為單位。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "∞長期活動∞",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一無糖豆漿",
+            "description": "豆老爺。\n採用非基因改造黃豆",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一黑芝麻燕麥飲",
+            "description": "豆老爺食品",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一愛酸寶天然酸梅湯",
+            "description": "冰涼飲用為消暑解渴聖品\n溫熱喝則可爽聲潤喉\n採用天然食材、遵循古法熬煮\nSGS檢驗證明\n（無添加防腐劑、無色素、無塑化劑）\n安心飲用",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-德式香腸蔥油餅加黑芝麻燕麥飲(套餐組合)",
+            "description": "鹹香酥脆的蔥油餅夾入多汁德式香腸，異國風味與經典台味的完美碰撞。\n\n冰涼飲用為消暑解渴聖品\n溫熱喝則可爽聲潤喉\n採用天然食材、遵循古法熬煮\nSGS檢驗證明\n（無添加防腐劑、無色素、無塑化劑）\n安心飲用",
+            "offers": {
+              "@type": "Offer",
+              "price": "137.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "活動-買一送一香濃豆漿",
+            "description": "香濃順口的豆漿，買一送一；豆香厚實、口感滑順，冰熱皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

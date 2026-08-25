@@ -1,0 +1,571 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%97%BA%E6%A2%A8%E6%9D%91%E6%B0%B4%E6%9E%9C%E5%B0%88%E8%B3%A3%E5%BA%97/tJ_Fzlo3QyScyRN7TXR10w",
+  "name": "旺梨村水果專賣店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "101, Sec 3, Tz Chiang Rd.",
+    "addressLocality": "Sanchong District",
+    "addressRegion": "New Taipei City",
+    "postalCode": "241068",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.07537,
+    "longitude": 121.48786
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.3,
+    "reviewCount": 1000
+  },
+  "servesCuisine": [
+    "Fruit",
+    "Juice and Smoothies"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "熱帶果王芒果切盤",
+            "description": "芒果擁有豐富的維他命A，能改善乾眼症、不僅能護眼，果肉中的膳食纖維也能有助於排便哦！\n⚠️但過敏者、腎臟病者和患有三高的族群，要少吃哦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "通體順暢紅肉火龍果切盤",
+            "description": "紅肉火龍果不僅能夠抗發炎，還能抗氧化，也是養顏美容的好夥伴（低熱量、高纖維）\n⚠️裡面擁有天然的甜菜紅眼素，所以當身體排泄紅紅的，是正常的喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "盛夏消暑西瓜切盤",
+            "description": "西瓜的6大好處：\n不僅能緩解肌肉痠痛、補充身體水分、改善心臟健康、防黃斑部病變、維持皮膚健康、還能改善消化哦！\n⚠️但西瓜偏寒性，體質弱、易累怕冷，腸胃虛寒者都要儘可能少量食用哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清涼爽口白肉火龍果切盤",
+            "description": "白肉的火龍果富含膳食纖維、能使腸道蠕動和治便秘～是擁有低熱量、高纖維的美果哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "天然礦泉水梨",
+            "description": "俗稱「百果之宗」的水梨，能夠滋潤肺胃、養陰生津還能清熱化痰～\n它還能「顧嗓子」哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜而不膩鳳梨切盤",
+            "description": "鳳梨酵素的好處～能夠抗發炎、防血栓、還能抑制癌細胞，好處多多～～\n⚠️糖尿病友，過敏體質者和急性胃潰瘍患者不宜多吃哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸甜回甘葡萄",
+            "description": "葡萄不管是葡萄皮、葡萄果肉、到葡萄籽，都是非常營養的水果，能夠抗氧化、抗衰老、和舒緩疲倦感哦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "純西瓜原汁",
+            "description": "清涼消暑的營養飲品～\n純果汁、無加糖、加水，讓你喝的健康又無負擔～\n\n一瓶600cc,皆未加防腐劑，請儘速飲用完畢哦\n⚠️親愛的客人，拿到的是冷凍的喔！為了外送到您的手上，果汁的纖維營養和品質是好的，所以需要等待10-15分鐘退冰，即可飲用哦！不需完全退冰、即可變成冰沙口感～",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "通體順暢紅肉火龍果切盤",
+            "description": "紅肉火龍果不僅能夠抗發炎，還能抗氧化，也是養顏美容的好夥伴（低熱量、高纖維）\n⚠️裡面擁有天然的甜菜紅眼素，所以當身體排泄紅紅的，是正常的喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "盛夏消暑西瓜切盤",
+            "description": "西瓜的6大好處：\n不僅能緩解肌肉痠痛、補充身體水分、改善心臟健康、防黃斑部病變、維持皮膚健康、還能改善消化哦！\n⚠️但西瓜偏寒性，體質弱、易累怕冷，腸胃虛寒者都要儘可能少量食用哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱帶果王芒果切盤",
+            "description": "芒果擁有豐富的維他命A，能改善乾眼症、不僅能護眼，果肉中的膳食纖維也能有助於排便哦！\n⚠️但過敏者、腎臟病者和患有三高的族群，要少吃哦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸甜回甘葡萄",
+            "description": "葡萄不管是葡萄皮、葡萄果肉、到葡萄籽，都是非常營養的水果，能夠抗氧化、抗衰老、和舒緩疲倦感哦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清涼爽口白肉火龍果切盤",
+            "description": "白肉的火龍果富含膳食纖維、能使腸道蠕動和治便秘～是擁有低熱量、高纖維的美果哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍍村友匯報室～",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "📣由於我們的水果切盤，沒有添加任何任何的「糖精」，所以水果會變顏色或者只有原本該有的甜度，一切皆為正常！！如有介意請勿下單、謝謝！",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "若有任何疑慮或是食品上的問題，都可即時撥打電話，有小幫手會幫您處理哦！😊",
+            "description": "小幫手即時支援，受理訂單異常、產品品質、過敏與保存等問題，專人快速處理，讓您安心選購。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "若在取得商品時，無法即時食用或飲用，請務必放置冷藏，以確保食品的品質哦！😊",
+            "description": "保存小叮嚀：未能即時食用或飲用，請儘速置於冰箱冷藏，並避免陽光直射與高溫；使用密封容器以防吸附異味；開封後盡早享用，勿反覆回溫。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "所有商品，我們都是很用心的製作和包裝，希望給予您們安心和放心食用哦😊",
+            "description": "服務承諾與公告專區：全品項用心備製、妥善包裝，讓您安心選購、放心食用。最新提醒與注意事項將於此更新。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "熱帶果王芒果切盤",
+            "description": "芒果擁有豐富的維他命A，能改善乾眼症、不僅能護眼，果肉中的膳食纖維也能有助於排便哦！\n⚠️但過敏者、腎臟病者和患有三高的族群，要少吃哦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "盛夏消暑西瓜切盤",
+            "description": "西瓜的6大好處：\n不僅能緩解肌肉痠痛、補充身體水分、改善心臟健康、防黃斑部病變、維持皮膚健康、還能改善消化哦！\n⚠️但西瓜偏寒性，體質弱、易累怕冷，腸胃虛寒者都要儘可能少量食用哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜而不膩鳳梨切盤",
+            "description": "鳳梨酵素的好處～能夠抗發炎、防血栓、還能抑制癌細胞，好處多多～～\n⚠️糖尿病友，過敏體質者和急性胃潰瘍患者不宜多吃哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "純西瓜原汁",
+            "description": "清涼消暑的營養飲品～\n純果汁、無加糖、加水，讓你喝的健康又無負擔～\n\n一瓶600cc,皆未加防腐劑，請儘速飲用完畢哦\n⚠️親愛的客人，拿到的是冷凍的喔！為了外送到您的手上，果汁的纖維營養和品質是好的，所以需要等待10-15分鐘退冰，即可飲用哦！不需完全退冰、即可變成冰沙口感～",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "水果切盤（未加甜味劑、漂白劑、變色屬正常）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "天然礦泉水梨",
+            "description": "俗稱「百果之宗」的水梨，能夠滋潤肺胃、養陰生津還能清熱化痰～\n它還能「顧嗓子」哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "通體順暢紅肉火龍果切盤",
+            "description": "紅肉火龍果不僅能夠抗發炎，還能抗氧化，也是養顏美容的好夥伴（低熱量、高纖維）\n⚠️裡面擁有天然的甜菜紅眼素，所以當身體排泄紅紅的，是正常的喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱帶果王芒果切盤",
+            "description": "芒果擁有豐富的維他命A，能改善乾眼症、不僅能護眼，果肉中的膳食纖維也能有助於排便哦！\n⚠️但過敏者、腎臟病者和患有三高的族群，要少吃哦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "盛夏消暑西瓜切盤",
+            "description": "西瓜的6大好處：\n不僅能緩解肌肉痠痛、補充身體水分、改善心臟健康、防黃斑部病變、維持皮膚健康、還能改善消化哦！\n⚠️但西瓜偏寒性，體質弱、易累怕冷，腸胃虛寒者都要儘可能少量食用哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜而不膩鳳梨切盤",
+            "description": "鳳梨酵素的好處～能夠抗發炎、防血栓、還能抑制癌細胞，好處多多～～\n⚠️糖尿病友，過敏體質者和急性胃潰瘍患者不宜多吃哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸甜回甘葡萄",
+            "description": "葡萄不管是葡萄皮、葡萄果肉、到葡萄籽，都是非常營養的水果，能夠抗氧化、抗衰老、和舒緩疲倦感哦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清涼爽口白肉火龍果切盤",
+            "description": "白肉的火龍果富含膳食纖維、能使腸道蠕動和治便秘～是擁有低熱量、高纖維的美果哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅通通蘋果🍎切盤（蜜蘋果，肉質紅色）",
+            "description": "一天一蘋果，醫生遠離我！\n蘋果不只能養顏美容、預防癌症、減肥、提高免疫力，蘋果的香氣還能「緩解焦慮」放鬆心情哦😊\n📣若有氧化現象，實屬正常！請放心使用～",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燕巢紅心芭樂",
+            "description": "一、祛斑美白，美容養顏，二、補血養血，強壯骨骼，三、醒酒解酒，保肝護肝。是一種營養價值非常豐富的水果，含有豐富的維生素、抗氧化素、胺基酸，老少皆宜",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅寶石櫻桃",
+            "description": "非常優秀的美果～不僅僅能夠增進心臟健康，還能預防癡呆症，更能夠有助於睡眠！適合所有人食用哦～要洗才能食用喔！\n\n🍒\n約7兩重！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "豐富鮮果類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "天然能量果「香蕉」",
+            "description": "香蕉🍌又被稱為「快樂食品」，不僅可以防止高血壓、治療憂鬱症、還能養顏美容哦～\n\n\n一袋5根入",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "埔里來的百香果",
+            "description": "素有「果汁之王」的百香果，不僅能夠控制血糖、還能安定神經！夏日果汁的好夥伴～\n皺皺的才香甜哦！10入一袋",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南非砂糖橘",
+            "description": "砂糖橘🍊～顧名思義是柑橘類的一種，擁有對消化、呼吸、心血管系統都有所功效外，還能抗發炎哦！\n⚠️重點是很甜～不宜多吃哦！\n\n4入一盒",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐西蘭黃金奇異果",
+            "description": "黃金奇異果擁有豐富的維他命C，且對人體吸收利用率高達94%，不僅能美白還能去水腫和預防癌症！\n⚠️建議食用方法：綠色和黃色兩者功效不同，一起食用，能產生更棒的好處哦！\n3顆入",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "「綠色」奇異果🥝",
+            "description": "綠色的奇異果擁有優良的膳食纖維，能夠有益腸胃道、豐富的維他命A能夠抗老化哦！\n⚠️建議食用方法：綠色和黃色奇異果一同食用，能發揮更大的效用哦！\n大顆2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "果汁系列(冷凍需等退冰）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "純西瓜原汁",
+            "description": "清涼消暑的營養飲品～\n純果汁、無加糖、加水，讓你喝的健康又無負擔～\n\n一瓶600cc,皆未加防腐劑，請儘速飲用完畢哦\n⚠️親愛的客人，拿到的是冷凍的喔！為了外送到您的手上，果汁的纖維營養和品質是好的，所以需要等待10-15分鐘退冰，即可飲用哦！不需完全退冰、即可變成冰沙口感～",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蕉火龍果汁",
+            "description": "濃郁的香蕉🍌尬上紅色火龍果，香氣撲鼻，新口味，果汁界的新寵兒、紫紅紫紅的漂亮顏色～格外的幸福感！\n\n一瓶600cc,皆未加防腐劑，請儘速飲用完畢哦\n⚠️親愛的客人，拿到的是冷凍的喔！為了外送到您的手上，果汁的纖維營養和品質是好的，所以需要等待10-15分鐘退冰，即可飲用哦！不需完全退冰、即可變成冰沙口感～\n請退冰後搖一搖飲用喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬🍋「原汁」喔！",
+            "description": "可以加入一點蜂蜜或是水來中和它的酸！\n怕酸的人，會更好入口哦！\n⚠️盡量避免空腹食用喔！\n\n一瓶600cc,皆未加防腐劑，請儘速飲用完畢哦\n⚠️親愛的客人，拿到的是冷凍的喔！為了外送到您的手上，果汁的纖維營養和品質是好的，所以需要等待10-15分鐘退冰，即可飲用哦！不需完全退冰、即可變成冰沙口感～",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅龍果純正原汁",
+            "description": "纖維多多、健康飲食～讓人無法抗拒美果原汁、保證無加糖、無加水、喝得到的好滋味！如果你也喜歡無添加的原味、請務必要品嚐這美好的飲品～😊\n📣可以搭配牛奶、多多，多重搭配、享用美味～\n\n一瓶600cc,皆未加防腐劑，請儘速飲用完畢哦\n⚠️親愛的客人，拿到的是冷凍的喔！為了外送到您的手上，果汁的纖維營養和品質是好的，所以需要等待10-15分鐘退冰，即可飲用哦！不需完全退冰、即可變成冰沙口感～",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白色火龍果原汁",
+            "description": "纖維多多、健康飲食～讓人無法抗拒美果原汁、保證無加糖、無加水、喝得到的好滋味！如果你也喜歡無添加的原味、請務必要品嚐這美好的飲品～😊\n📣可以搭配牛奶、多多，多重搭配、享用美味～\n\n一瓶600cc,皆未加防腐劑，請儘速飲用完畢哦\n⚠️親愛的客人，拿到的是冷凍的喔！為了外送到您的手上，果汁的纖維營養和品質是好的，所以需要等待10-15分鐘退冰，即可飲用哦！不需完全退冰、即可變成冰沙口感～\n沖冷水可加速退凍哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香果純原汁",
+            "description": "果汁之王的百香果，不僅能夠控制血糖、還能安定神經！夏日果汁的好夥伴～\n無任何添加～所以如果覺得太濃郁，可以自己搭配綠茶或者是些許開水飲用喔！\n\n一瓶600cc,皆未加防腐劑，請儘速飲用完畢哦\n⚠️親愛的客人，拿到的是冷凍的喔！為了外送到您的手上，果汁的纖維營養和品質是好的，所以需要等待10-15分鐘退冰，即可飲用哦！不需完全退冰、即可變成冰沙口感～",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱冷泡菁茶",
+            "description": "炎熱的天氣，喝點茶類解解渴，就是要來杯不澀又能解膩的飲品！\n\n\n瓶裝600cc，冷凍大約10分鐘退冰，即可飲用帶點碎冰的口感，真的透心涼啊！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "戀愛紅龍果牛奶",
+            "description": "纖維多多、健康飲食～讓人無法抗拒美果原汁、保證無加糖、無加水、搭配醇濃鮮奶！如果你也喜歡無添加的原味、請務必要品嚐這美好的飲品～😊\n\n一瓶600cc,皆未加防腐劑，請儘速飲用完畢哦\n⚠️親愛的客人，拿到的是冷凍的喔！為了外送到您的手上，果汁的纖維營養和品質是好的，所以需要等待10-15分鐘退冰，即可飲用哦！不需完全退冰、即可變成冰沙口感～",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "高CP值享受族",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "西瓜小果盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水梨小果盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅心芭樂小果盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果小果盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨小果盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

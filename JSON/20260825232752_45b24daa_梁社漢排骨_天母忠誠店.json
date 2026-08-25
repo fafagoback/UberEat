@@ -1,0 +1,756 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%A2%81%E7%A4%BE%E6%BC%A2%E6%8E%92%E9%AA%A8-%E5%A4%A9%E6%AF%8D%E5%BF%A0%E8%AA%A0%E5%BA%97/Pqt2aFHLVa6JtYXMy1TQSA",
+  "name": "梁社漢排骨 天母忠誠店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區忠誠路二段78號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.11244,
+    "longitude": 121.53073
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 35
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "新品上市 New Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞蛋豆腐 Egg Tofu with Pepper Salt",
+            "description": "外酥內嫩的雞蛋豆腐, 酥炸至金黃, 拌上特製椒鹽粉, 鹹香帶勁, 口感層次豐富。外層微酥, 內裡滑嫩, 一口咬下香氣立刻散開, 越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美國帶骨牛小排飯 American Bone-In Short Ribs Rice",
+            "description": "嚴選 USDA CHOICE 等級美國帶骨牛小排，大塊厚切、慢火燉煮入味，肉質軟嫩帶筋香，骨邊肉更添濃郁牛香。紅燒慢燉入味、醬香濃厚，配飯特別過癮，飽足升級，一份就滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "385.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "主廚秘製滷肉飯 Chef Special Braised Pork Rice",
+            "description": "以主廚特調滷汁慢火熬煮，每一口都帶著醬香與膠質的濃郁層次。熱騰騰白飯吸飽滷汁後更是香氣滿溢，搭配爽脆柚香蘿蔔，簡單卻最滿足。日常裡最實在的一碗家常味，讓人吃完還想再來一碗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老皮嫩肉 Deep-Fried Egg Tofu",
+            "description": "雞蛋豆腐外層油炸至酥香金黃, 鎖住內裡柔嫩多汁的口感。入口先酥再嫩, 香氣飽滿不油膩, 份量扎實, 搭配蔥花提味更是下飯, 是讓人一吃就記住的經典小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄牛三寶湯 Assorted Beef Soup with Tomato",
+            "description": "經過長時間燉煮的湯頭, 將番茄的鮮甜酸香與紅燒的醇厚完美融合, 香氣撲鼻, 酸香誘人。牛肋條軟嫩, 筋彈滑, 牛腱扎實入味, 每一塊都蘊含濃濃肉香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄牛三寶飯 Assorted Beef Rice with Tomato",
+            "description": "經過長時間燉煮的湯頭, 將番茄的鮮甜酸香與紅燒的醇厚完美融合, 香氣撲鼻, 酸香誘人。牛肋條軟嫩, 牛筋彈滑, 牛腱扎實入味, 每一塊都蘊含濃濃肉香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄牛三寶麵 Assorted Beef Noodles with Tomato",
+            "description": "經過長時間燉煮的湯頭, 將番茄的鮮甜酸香與紅燒的醇厚完美融合, 香氣撲鼻, 酸香誘人。牛肋條軟嫩, 牛筋彈滑, 牛腱扎實入味, 每一塊都蘊含濃濃肉香。搭配南僑讚岐烏龍麵的 Q 彈嚼勁, 吸飽湯汁精華, 讓人忍不住一口接一口，停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橙汁排骨冬粉飯 Bean Thread Noodles Rice with Pork Rib and Citrus",
+            "description": "主廚特製的酸甜橙汁醬清新酸甜, 緊緊包裹每塊排骨交織出迷人香氣, 搭配香 Q 台灣花東白米飯, 每一口都是溫暖好滋味, 讓人一口接一口停不下來, 簡單卻滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橙汁排骨 Citrus Pork Ribs",
+            "description": "主廚特製的酸甜橙汁醬清新酸甜, 緊緊包裹每塊排骨, 每一口都能嚐到果香與肉香相互交織的迷人香氣, 令人忍不住一口接一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "多人分享餐 Value Combo Set",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "兩人分享餐 Sharing Combo for Two",
+            "description": "玫瑰油雞腿飯, 炸雞腿飯或椒麻雞飯(+20元)擇一。含炸排骨飯, 黃金炸豆腐及味噌湯。附古早味特調紅茶 1 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "429.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三人分享餐 Sharing Combo for Three",
+            "description": "炸排骨飯或滷排骨飯擇一。玫瑰油雞腿飯, 炸雞腿飯或椒麻雞飯(+20元)擇一。含焢肉飯, 黃金炸豆腐, 燙青菜及味噌湯。附古早味特調紅茶 2 杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "629.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精選套餐 Combo Set",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞菲力排飯套餐 Chicken Fillet Rice with Pepper Salt Combo",
+            "description": "炸製至金黃酥脆的雞菲力排, 撒上特調椒鹽, 口感外脆內嫩, 鹹香適中。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻雞飯套餐 Spicy Chicken Rice Combo",
+            "description": "以花椒, 辣椒, 多款香料搭配味道清雅的藤椒油, 調製出的秘製醬汁, 搭配嚴選去骨雞腿, 佐以口感清爽高麗菜絲, 呈現出即爽麻又有獨特風味的椒麻雞。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸排骨飯套餐 Rice with Deep-Fried Pork Ribs Combo",
+            "description": "酥炸過後的粗獷造型, 裹上薄薄麵衣炸得金黃酥脆, 豪邁大口咬下, 肉感十足, 鮮嫩多汁, 吃過後念念不忘。本店使用之豬肉產品不含萊克多巴胺。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞腿飯套餐 Rice with Deep-Fried Chicken Drumstick Combo",
+            "description": "選用鮮嫩的雞腿肉, 裹上香脆的麵衣, 炸至金黃色, 外皮的酥脆和肉質的多汁鮮嫩組成絕妙口感, 份量滿點, 飽足感十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷排骨飯套餐 Rice with Braised Pork Ribs Combo",
+            "description": "滷排骨肉質口感柔軟適中, 厚切大塊, 經過特製滷汁的慢火熬煮, 滷製過程吸收了豐富的醬香氣, 每一口都充滿濃郁的風味。本店使用之豬肉產品不含萊克多巴胺。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞塊飯套餐 Chicken Thigh Rice with Pepper Salt Combo",
+            "description": "裹著酥脆外衣的特選無骨雞腿肉, 搭配上主廚特製椒鹽, 大人小孩都無法抵擋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "148.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸紅糟肉飯套餐 Rice with Deep-Fried Red Yeast Pork Combo",
+            "description": "最傳統的古早味紅糟肉, 肉質肥瘦得宜, 香酥不膩, 每一口都非常嫩口不柴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "祕醬雞菲力排麵套餐 Chicken Fillet Noodles with Special Sauce Combo",
+            "description": "細火滷製的雞菲力排, 吸附醬香, 肉質軟嫩。湯麵以大骨湯頭, 口感醇厚, 層次豐富, 溫和中帶出滷汁的深邃風味。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞菲力排麵套餐 Chicken Fillet Noodles with Pepper Salt Combo",
+            "description": "酥炸雞菲力排佐以特製椒鹽, 湯麵以大骨湯頭, 帶出雞肉與湯底的自然風味。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金塔塔鱈魚排麵套餐 Cod Fish Chop Noodles with Tartar Sauce Combo",
+            "description": "嚴選來自阿拉斯加的黃金塔塔鱈魚排, 金黃酥脆的鱈魚排, 一口咬下是香嫩細緻的口感, 搭配上酸甜塔塔醬與玫瑰鹽雙重饗宴, 搭配上口感 Q 彈的麵條, 飽足感十足。鱈魚排原料為重組肉, 熟食供應。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻雞麵套餐 Spicy Chicken Noodles Combo",
+            "description": "以花椒, 辣椒, 多款香料搭配味道清雅的藤椒油, 調製出的秘製醬汁, 搭配嚴選去骨雞腿, 佐以口感清爽高麗菜絲, 呈現出即爽麻又有獨特風味的椒麻雞。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸排骨麵套餐 Noodles with Deep-Fried Pork Ribs Combo",
+            "description": "酥炸過後的粗獷造型, 裹上薄薄麵衣炸得金黃酥脆, 豪邁大口咬下, 肉感十足, 鮮嫩多汁, 搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞腿麵套餐 Noodles with Deep-Fried Chicken Drumstick Combo",
+            "description": "選用鮮嫩的雞腿肉, 裹上香脆的麵衣, 炸至金黃色, 外酥內嫩, 每一口都能品嚐到外皮的酥脆和內裡的多汁鮮嫩, 份量滿點, 搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷排骨麵套餐 Noodles with Braised Pork Ribs Combo",
+            "description": "滷排骨肉質口感柔軟適中, 厚切大塊, 經過特製滷汁的慢火熬煮, 滷製過程吸收了豐富的醬香氣, 每一口都充滿濃郁的風味, 搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞塊麵套餐 Chicken Thigh Noodles with Pepper Salt Combo",
+            "description": "裹著酥脆外衣的特選無骨雞腿肉, 搭配上主廚特製椒鹽, 大人小孩都無法抵擋。搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "148.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸紅糟肉麵套餐 Noodles with Deep-Fried Red Yeast Pork Combo",
+            "description": "最傳統的古早味紅糟肉, 肉質肥瘦得宜, 香酥不膩, 每一口都非常嫩口不柴。搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣便當 Bento",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "祕醬雞菲力排飯 Chicken Fillet Rice with Special Sauce",
+            "description": "嚴選雞菲力排, 浸潤秘製滷汁, 經過慢火燉煮, 醬香入味, 口感細緻柔嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞菲力排飯 Chicken Fillet Rice with Pepper Salt",
+            "description": "炸製至金黃酥脆的雞菲力排, 撒上特調椒鹽, 口感外脆內嫩, 鹹香適中。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金塔塔鱈魚排飯 Cod Fish Chop Rice with Tartar Sauce",
+            "description": "嚴選來自阿拉斯加的黃金塔塔鱈魚排, 金黃酥脆的鱈魚排, 一口咬下是香嫩細緻的口感, 搭配上酸甜塔塔醬與玫瑰鹽雙重饗宴, 令人食慾滿滿。鱈魚排原料為重組肉, 熟食供應。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻雞飯 Spicy Chicken Rice",
+            "description": "以花椒, 辣椒, 多款香料搭配味道清雅的藤椒油, 調製出的秘製醬汁, 搭配嚴選去骨雞腿, 佐以口感清爽高麗菜絲, 呈現出即爽麻又有獨特風味的椒麻雞。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸排骨飯 Rice with Deep-Fried Pork Ribs",
+            "description": "酥炸過後的粗獷造型, 裹上薄薄麵衣炸得金黃酥脆, 豪邁大口咬下, 肉感十足, 鮮嫩多汁, 吃過後念念不忘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞腿飯 Rice with Deep-Fried Chicken Drumstick",
+            "description": "選用鮮嫩的雞腿肉, 裹上香脆的麵衣, 炸至金黃色, 外皮的酥脆和肉質的多汁鮮嫩組成絕妙口感, 份量滿點, 飽足感十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷排骨飯 Rice with Braised Pork Ribs",
+            "description": "滷排骨肉質口感柔軟適中, 厚切大塊, 經過特製滷汁的慢火熬煮, 滷製過程吸收了豐富的醬香氣, 每一口都充滿濃郁的風味。本店使用之豬肉產品不含萊克多巴胺。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞塊飯 Chicken Thigh Rice with Pepper Salt",
+            "description": "裹著酥脆外衣的特選無骨雞腿肉, 搭配上主廚特製椒鹽, 大人小孩都無法抵擋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸紅糟肉飯 Rice with Deep-Fried Red Yeast Pork",
+            "description": "最傳統的古早味紅糟肉, 肉質肥瘦得宜, 香酥不膩, 每一口都非常嫩口不柴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣麵點 Noodles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "祕醬雞菲力排麵 Chicken Fillet Noodles with Special Sauce",
+            "description": "細火滷製的雞菲力排, 吸附醬香, 肉質軟嫩。湯麵以大骨湯頭, 口感醇厚, 層次豐富, 溫和中帶出滷汁的深邃風味。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞菲力排麵 Chicken Fillet Noodles with Pepper Salt",
+            "description": "酥炸雞菲力排佐以特製椒鹽, 湯麵以大骨湯頭, 帶出雞肉與湯底的自然風味。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金塔塔鱈魚排麵 Cod Fish Chop Noodles",
+            "description": "嚴選來自阿拉斯加的黃金塔塔鱈魚排, 金黃酥脆的鱈魚排, 一口咬下是香嫩細緻的口感, 搭配上酸甜塔塔醬與玫瑰鹽雙重饗宴, 搭配上口感 Q 彈的麵條, 飽足感十足。鱈魚排原料為重組肉, 熟食供應。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻雞麵 Spicy Chicken Noodles",
+            "description": "以花椒、辣椒、多款香料搭配味道清雅的藤椒油，調製出的秘製醬汁，搭配嚴選去骨雞腿，佐以口感清爽高麗菜絲，呈現出即爽麻又有獨特風味的椒麻雞。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸排骨麵 Noodles with Deep-Fried Pork Ribs",
+            "description": "酥炸過後的粗獷造型, 裹上薄薄麵衣炸得金黃酥脆, 豪邁大口咬下, 肉感十足, 鮮嫩多汁, 搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞腿麵 Noodles with Deep-Fried Chicken Drumstick",
+            "description": "選用鮮嫩的雞腿肉, 裹上香脆的麵衣, 炸至金黃色, 外酥內嫩, 每一口都能品嚐到外皮的酥脆和內裡的多汁鮮嫩, 份量滿點, 搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷排骨麵 Noodles with Braised Pork Ribs",
+            "description": "滷排骨肉質口感柔軟適中, 厚切大塊, 經過特製滷汁的慢火熬煮, 滷製過程吸收了豐富的醬香氣, 每一口都充滿濃郁的風味, 搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞塊麵 Chicken Thigh Noodles with Pepper Salt",
+            "description": "裹著酥脆外衣的特選無骨雞腿肉, 搭配上主廚特製椒鹽, 大人小孩都無法抵擋。搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸紅糟肉麵 Noodles with Deep-Fried Red Yeast Pork",
+            "description": "最傳統的古早味紅糟肉, 肉質肥瘦得宜, 香酥不膩, 每一口都非常嫩口不柴。搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焢肉麵 Noodles with Soy-Stewed Pork",
+            "description": "熟悉的家常味, 油亮的控肉與白飯是最佳搭檔, 滷汁甜而不膩, 鹹, 讓人越吃越涮嘴, 食慾大開。搭配上口感 Q 彈的麵條, 飽足感十足。豬骨湯底 (不含萊克多巴胺) 。",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點 A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "祕醬雞菲力排 Chicken Fillet with Special Sauce",
+            "description": "每份含 3 條雞菲力排。嚴選雞菲力排, 浸潤秘製滷汁, 經過慢火燉煮, 醬香入味, 口感細緻柔嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞菲力排 Chicken Fillet with Pepper Salt",
+            "description": "每份含 3 條雞菲力排。雞菲力排酥炸至表面金黃, 口感外酥內嫩, 撒上特製椒鹽, 展現鹹香風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金塔塔鱈魚排 Cod Fish Chop with Tartar Sauce",
+            "description": "嚴選來自阿拉斯加的黃金塔塔鱈魚排, 金黃酥脆的鱈魚排, 一口咬下是香嫩細緻的口感, 搭配上酸甜塔塔醬與玫瑰鹽雙重饗宴, 令人食慾滿滿。鱈魚排原料為重組肉, 熟食供應。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻雞 Spicy Chicken",
+            "description": "以花椒, 辣椒, 多款香料搭配味道清雅的藤椒油, 調製出的秘製醬汁, 配嚴選去骨雞腿, 佐以口感清爽高麗菜絲, 呈現出即爽麻又有獨特風味的椒麻雞。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸排骨 Deep-Fried Pork Ribs",
+            "description": "酥炸過後的粗獷造型, 裹上薄薄麵衣炸得金黃酥脆, 豪邁大口咬下, 肉感十足, 鮮嫩多汁, 過後念念不忘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞腿 Deep-Fried Chicken Drumstick",
+            "description": "選用鮮嫩的雞腿肉, 裹上香脆的麵衣, 炸至金黃色, 外皮的酥脆和肉質的多汁鮮嫩組成絕妙口感, 份量滿點, 飽足感十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷排骨 Braised Pork Ribs",
+            "description": "滷排骨肉質口感柔軟適中, 厚切大塊, 經過特製滷汁的慢火熬煮, 滷製過程吸收了豐富的醬香氣, 每一口都充滿濃郁的風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞塊 Chicken Thigh with Pepper Salt",
+            "description": "裹著酥脆外衣的特選無骨雞腿肉, 搭配上主廚特製椒鹽, 大人小孩都無法抵擋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸紅糟肉 Deep-Fried Red Yeast Pork",
+            "description": "最傳統的古早味紅糟肉, 肉質肥瘦得宜, 香酥不膩, 每一口都非常嫩口不柴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜 Side Dishes",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋豆腐 Preserved Duck Egg with Tofu",
+            "description": "清爽可口的嫩豆腐與皮蛋結合, 佐以醬油膏及新鮮蔥花點綴視覺與口感的享受, 濃厚風味讓人直呼過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻皮蛋豆腐 Spicy Preserved Duck Egg with Tofu",
+            "description": "清爽可口的嫩豆腐與皮蛋結合, 佐以秘製椒麻醬汁及新鮮蔥花點綴視覺與口感的享受, 爽麻的風味讓人辣呼過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味燙青菜 Traditional Blanched Vegetable",
+            "description": "季節時蔬, 隨季節更換。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金炸豆腐 Golden Deep-Fried Tofu",
+            "description": "酥炸直至呈現金黃光澤, 食用前再淋上沾醬, 外酥內嫩的口感, 香酥美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "秋葵 Okra",
+            "description": "秋葵有浪漫別名「美人指」, 營養價值豐富, 冰鎮過後口感極佳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金泡菜 Golden Kimchi",
+            "description": "豆腐乳將蔬菜醃透入味, 呈現金黃亮脆的視覺盛宴。帶點微辣的調味, 更讓口感有了深度。小辣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻炸豆腐 Spicy Deep-Fried Tofu",
+            "description": "酥炸直至呈現金黃光澤, 淋上秘製椒麻沾醬, 綿密口感讓餘香久久不散。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚香蘿蔔 Pickled Radish with Citron Peel",
+            "description": "酸甜柚汁醃製的白蘿蔔, 清新爽口, 讓人想一口接著一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯 Rice",
+            "description": "梁社漢排骨嚴選米粒飽滿, 口感 Q 彈, 忍不住會想多吃一碗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品 Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "味噌湯 Miso Soup",
+            "description": "味噌湯湯頭鮮美濃郁, 加入豆腐, 海帶和蔥花, 風味豐富, 口感細膩, 搭配招牌炸排骨飯, 絕對是最佳組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品 Beverage",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "古早味特調紅茶 Traditional Black Tea",
+            "description": "嚴選印尼, 斯里蘭卡紅茶為基底, 運用特殊製程與不同的發酵程度, 讓茶葉吸取花香, 自然的蔗糖香搭配多層次香氣, 甜而不膩, 每口都獨特！",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜香檸檬茶 Lemon Tea with Honey",
+            "description": "香甜的蜂蜜與微酸合的檸檬, 加入茶香的甘甜, 口感多層次, 讓人不禁一口接一口地喝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%BC%8D%E5%B8%B8%E5%92%96%E5%95%A1-daily-coffee/LKceKpKlX5OHV76qKbMxYA",
+  "name": "伍常咖啡 DAILY COFFEE",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市大同區酒泉街29號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0705852,
+    "longitude": 121.5192191
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 71
+  },
+  "servesCuisine": [
+    "Coffee and Tea",
+    "Taiwanese",
+    "Desserts"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點（以及口味），請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "感謝您在平台點購！雖然平台成本較高，但我們對餐點品質的堅持絕不打折，只為讓您在上班期間、在家也能享有最好的美味。",
+            "description": "因平台成本，價格與門市可能不同；我們持續把關每份餐點品質。訂單與配送以平台時間為準，如有客製需求請於備註說明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "若有大量訂購或長期配合需求，歡迎加入我們的 LINE 官方帳號@075dzyzl，我們將提供更即時專人服務！",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡",
+            "description": "本身無糖。（如有買一送一活動時，請自行填選2杯）\n\n濃醇香的咖啡香，尾韻帶點茶感的回甘，伍常咖啡美式值得您一試。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花美式",
+            "description": "（如有買一送一活動時，請自行填選2杯）\n使蜂蜜與麥芽糖釀製的桂花蜜，甜度固定。\n本身甜度不會很甜。\n桂花清香清甜，搭配咖啡，就是清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式旺旺萊",
+            "description": "中杯12oz(360cc)，甜度固定，冷飲，雲林自家鳳梨熬煮天然鳳梨果醬，不在添加任何糖，天然鳳梨果香及甜味",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五十鈴濃抹茶拿鐵",
+            "description": "嚴選小山園五十鈴高等抹茶, 獨特的抹茶帶有海苔清香搭配小農鮮奶帶出濃郁, 喜歡抹茶的你, 一定要來 1 杯。本身無糖。冷飲建議微糖。（如需加糖請備註，需要微糖、半糖、全糖）",
+            "offers": {
+              "@type": "Offer",
+              "price": "380.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡",
+            "description": "咖啡與牛奶完美結合，絕不容錯過伍常的拿鐵咖啡。\n本身無糖。（如需加糖請備註需要微糖、半糖、全糖）",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Espresso 那些平常義式咖啡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "義式濃縮",
+            "description": "本身無糖。每包60ml\n包裝為隨身袋裝，蒸空密封。\n讓您在家、外出、旅遊，都可以享受到我們家好咖啡。五入分別是五包。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "伍常特調",
+            "description": "成分：咖啡、牛奶、鮮奶油、特製糖。甜度固定。\n店家超級人氣商品，喝了會上癮，會讓你朝思暮想",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖拿鐵",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花蜜拿鐵",
+            "description": "使蜂蜜與麥芽糖釀製的桂花蜜！伍常人氣拿鐵～",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉桂拿鐵",
+            "description": "本身無糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡布奇諾",
+            "description": "8 盎司。中杯。熱飲。本身無糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚瓣玫瑰美式",
+            "description": "甜度固定。嚴選 100%天然玫瑰花釀，以厚瓣玫瑰與蜂蜜細心釀製，加上時間沉澱花香，將花的柔情與咖啡的厚韻完美交織，釀成一抹純粹浪漫❤️‍🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚瓣玫瑰拿鐵",
+            "description": "甜度固定。嚴選 100%天然玫瑰花釀，以厚瓣玫瑰與蜂蜜細心釀製，加上時間沉澱花香，將花的柔情與咖啡的厚韻完美交織，釀成一抹純粹浪漫❤️‍🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Filter 來點氣常義式微氣泡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬西西笑",
+            "description": "伍常人氣飲品。冰塊及甜度皆固定。\n天然荔枝蜂蜜, 天然的蜜香搭配嚴選檸檬與氣泡水, 完美結合咖啡香氣,。中杯12oz(360cc)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式桂氣逼人",
+            "description": "甜度固定。喝完讓你氣場滿滿，天然親自釀造的桂花蜜，搭配氣泡水口感，極棒的",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "茶奶日常 MILK🥛",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "濃煮紅茶拿鐵",
+            "description": "奶茶愛好者必點，茶香、奶香集聚一身。\n本身無糖。（如需加糖請備註，需要微糖、半糖、全糖）",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手抄黑糖鮮奶",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鴛鴦紅茶拿鐵",
+            "description": "鴛鴦鮮奶茶。黃金比例的濃郁鮮奶茶配上伍常咖啡, 有著咖啡的香味和奶茶的濃滑, 就像遇見初戀。冷飲、熱飲皆可。甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "絲絨純可可鮮奶",
+            "description": "嚴選法國法芙娜可可及米歇爾柯兹 100% 純可可粉, 黃金比列純可可鮮奶, 絲絨口感帶來幸福感。本身無糖\n（如需加糖請備註，需要微糖、半糖、全糖）",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚瓣玫瑰x紅茶拿鐵",
+            "description": "甜度固定。嚴選 100%天然玫瑰花釀，以厚瓣玫瑰與蜂蜜細心釀製，加上時間沉澱花香，將花的柔情與紅茶拿鐵的厚韻完美交織，釀成一抹純粹浪漫❤️‍🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Tea 找茶日常台灣茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "野蜜檸檬紅茶",
+            "description": "冰飲。冰塊及甜度皆固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現泡金萱紅烏龍",
+            "description": "本身無糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "提袋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "一杯袋",
+            "description": "單杯飲料提袋，適合攜帶一杯飲品，外帶更便利。",
+            "offers": {
+              "@type": "Offer",
+              "price": "3.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四杯袋含杯架",
+            "description": "四杯提袋，內含杯架，便於手提與固定杯身，外帶多杯更方便。",
+            "offers": {
+              "@type": "Offer",
+              "price": "11.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2杯袋",
+            "description": "雙杯飲料提袋，適合攜帶兩杯飲品，外帶更便利。",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

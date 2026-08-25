@@ -1,0 +1,690 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%96%9D%E8%8C%B6%E5%90%83%E9%BA%B5/0Auba2R1XNG-HyVLcjWJ7w",
+  "name": "喝茶吃麵",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區富華街92-1號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08366,
+    "longitude": 121.49119
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 4
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Noodles",
+    "Bubble Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "維力炸醬麵 (乾)",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不倒翁起司風味拉麵 (乾)",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠醇乳茶",
+            "description": "嚴選台灣屏東崙頂牧場的牛奶 / Q彈的黑糖珍珠 / 紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "農心辛拉麵 (乾)",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不倒翁起司風味拉麵",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醇乳茶",
+            "description": "嚴選台灣屏東崙頂牧場的牛奶配上紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特調奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "農心辛拉麵",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不倒翁海鮮風味烏龍拉麵",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "維力素炸醬麵 (乾)",
+            "description": "蛋奶素 , 每份皆有半顆糖心蛋 + 一份食蔬 + 蒜碎 + 白芝麻 + 海苔碎 + 七味粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "統一麵蔥燒牛肉風味",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拉麵道日式豚骨風味",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層布丁奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "維力大乾麵地獄辣椒口味",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養樂多綠/青茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸湯烏龍茶",
+            "description": "酸梅湯遇上烏龍茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜檸檬",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "維力炸醬麵 (湯)",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "原茶系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠茶",
+            "description": "沒有茉莉花香，只有本身的茶香味",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咪塔紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿里山特等青茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金烏龍茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶茶系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "特調奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙層布丁奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特調系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "養樂多綠/青茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸湯烏龍茶",
+            "description": "酸梅湯遇上烏龍茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆梅綠茶",
+            "description": "吃的到有籽脆梅",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橙香綠茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冬瓜系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜綠茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜檸檬",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜醇乳",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養樂多冬瓜茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小農系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醇乳茶",
+            "description": "嚴選台灣屏東崙頂牧場的牛奶配上紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠醇乳茶",
+            "description": "嚴選台灣屏東崙頂牧場的牛奶 / Q彈的黑糖珍珠 / 紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖珍珠醇乳",
+            "description": "嚴選台灣屏東崙頂牧場的牛奶配上Q彈的黑糖珍珠",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "咖啡系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡",
+            "description": "選用宏都拉斯的咖啡豆",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵",
+            "description": "選用宏都拉斯的咖啡豆 / 屏東崙頂牧場的牛乳",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特調咖啡",
+            "description": "選用宏都拉斯的咖啡豆配上嚴選奶精",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "熱壓吐司系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "抹醬熱壓吐司",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙醬熱壓吐司",
+            "description": "就選兩種醬加在一起",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉蛋熱壓吐司",
+            "description": "荷包蛋 + 梅花肉片",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒泡麵系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "維力炸醬麵 (乾)",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "維力大乾麵地獄辣椒口味",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "農心辛拉麵 (乾)",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不倒翁起司風味拉麵 (乾)",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯泡麵系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拉麵道日式豚骨風味",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "維力炸醬麵 (湯)",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "統一麵蔥燒牛肉風味",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味味A排骨雞麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓寶人蔘雞湯麵",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不倒翁起司風味拉麵",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不倒翁海鮮風味烏龍拉麵",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "農心辛拉麵",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓寶龍蝦海鮮湯麵",
+            "description": "每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "142.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "素泡麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "維力素炸醬麵 (乾)",
+            "description": "蛋奶素 , 每份皆有半顆糖心蛋 + 一份食蔬 + 蒜碎 + 白芝麻 + 海苔碎 + 七味粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "維力素炸醬麵 (湯)",
+            "description": "蛋奶素 , 每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素飄香紅燒牛肉風味麵",
+            "description": "蛋奶素 , 每份皆有半顆糖心蛋 + 一份食蔬",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

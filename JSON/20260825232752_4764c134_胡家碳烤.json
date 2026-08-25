@@ -1,0 +1,517 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%83%A1%E5%AE%B6%E7%A2%B3%E7%83%A4/Ayy0omqwTgijxRvh16JAJg",
+  "name": "胡家碳烤",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區中央北路二段298號",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.138614,
+    "longitude": 121.4902567
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 2000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Exclusive to Eats"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁豬肉串 （活動）",
+            "description": "以2的倍數下單才會有折扣",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "本店使用豬肉原產地：台灣",
+            "description": "豬肉原產地為台灣，適用於所有含豬肉餐點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "888.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本店使用牛肉原產地：美國",
+            "description": "此為食材來源公告，適用於所有含牛肉餐點；如需更多資訊或有特殊需求，請於下單前詢問。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "目前單量比較多麻煩耐心等待 急單勿下",
+            "description": "連假期間單量較多，出餐時間延長，請耐心等候；急單請勿下單，感謝體諒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小店無幫忙分裝  團購訂單勿下單",
+            "description": "每筆訂單整份出餐，不提供分裝（分袋/分盒/分盤）；團購或大量訂單恕不受理，請勿下單，感謝體諒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東西現點現烤請耐心等待 急單勿下",
+            "description": "現點現烤需時，連假與尖峰時段單量多，出餐時間將延長；請耐心等候，恕不接受急單或催單，感謝體諒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆皮",
+            "description": "豆皮串，層層口感Q彈，邊緣微酥，刷上鹹香醬汁並灑芝麻，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤雞翅",
+            "description": "雞翅串烤，刷醬燒至金黃，表面微焦帶香、烤痕明顯，肉嫩帶汁，灑白芝麻。",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞膝軟骨（帶軟骨）",
+            "description": "炭烤雞膝軟骨，脆彈帶勁，邊緣微酥，灑上白芝麻，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆腐乳雞肉串",
+            "description": "豆腐乳提味雞肉串，鹹香濃郁，炭烤微焦帶香，越嚼越香",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆漿雞腿捲",
+            "description": "雞腿肉捲成一卷，咬下肉汁溢出，Q彈紮實，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁豬肉串 （活動）",
+            "description": "以2的倍數下單才會有折扣",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "七里香（大）",
+            "description": "雞屁股",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "孜然羊肉串",
+            "description": "羊肉切塊串烤，灑孜然增香，外層微焦、口感紮實，肉香四溢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤鹹豬肉串",
+            "description": "鹹豬肉切塊串烤，外層微焦帶炭香，肉質紮實有嚼勁",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤蜜汁豬肉串",
+            "description": "蜜汁豬肉串，外層微焦帶亮澤，甜香入味，肉質紮實帶嚼勁，炭香四溢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "團購訂單勿按 小店無法分裝",
+            "description": "下單提醒：不接受團購、拆單或分裝，每筆訂單僅整份出餐；需多人份請分別下單，避免影響出餐時程，敬請見諒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤櫛瓜.",
+            "description": "外緣微焦帶炭香，口感脆嫩多汁，清爽耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炭烤類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉串",
+            "description": "炭烤牛肉串，炭香與肉香兼具",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干",
+            "description": "炭烤豆干，外層微焦帶炭香，口感紮實，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "七里香",
+            "description": "炭烤七里香，外皮微酥、油脂香濃，碳香四溢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮",
+            "description": "炭烤雞皮，外酥內Q彈，油脂香脆帶炭香，越嚼越香",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐",
+            "description": "炭烤百頁豆腐，外緣微酥內Q彈，層層孔隙吸附醬香，炭香四溢，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米（整隻）",
+            "description": "整支玉米，炭火烤製，表面微焦帶炭香，散發自然玉米香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五香豆干",
+            "description": "炭烤五香豆干，表面微焦帶炭香，口感紮實有嚼勁，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸",
+            "description": "炭烤小香腸串，外皮微酥、口感紮實，炭香與油脂香並存，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "炭烤豬血糕，外酥內Q彈，米香濃、帶淡淡炭香，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣",
+            "description": "炭烤甜不辣，外酥內Q彈，淡淡炭香，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇",
+            "description": "炭烤香菇，烤出濃郁菇香與多汁口感，清爽耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米腸",
+            "description": "炭烤米腸，表面微焦帶炭香，糯米Q彈、越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青椒",
+            "description": "炭烤青椒，散發自然椒香與淡淡炭香",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉串",
+            "description": "炭烤雞肉串，外層微焦帶香，肉質嫩口多汁，炭香四溢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無骨雞腿肉串",
+            "description": "無骨雞腿肉串，外層微焦、碳香四溢，肉質嫩彈多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆烤大腸",
+            "description": "炭火烤至外酥脆、內Q彈，大腸油脂香與炭香交疊，咀嚼帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "炭烤雞心，Q彈脆口、碳香四溢，嚼勁滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "炭烤杏鮑菇，脆彈多汁，菇香濃郁，帶淡淡炭香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高粱香腸",
+            "description": "炭烤高粱香腸，帶高粱酒香，外皮微焦帶炭香，紮實有嚼勁",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉串",
+            "description": "炭烤豬肉串，外層微焦帶炭香，口感紮實有嚼勁，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新竹貢丸",
+            "description": "炭烤新竹貢丸，表面微焦帶炭香，Q彈紮實，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "炭烤花枝丸，外微酥內Q彈，淡淡炭香襯出海味，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉串",
+            "description": "炭烤羊肉串，肉質嫩彈多汁，碳香四溢，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥肥腸串",
+            "description": "肥腸切段串烤，外酥內Q彈，炭香與油脂香並存，咀嚼帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海貝麗",
+            "description": "炭烤貝肉，Q彈多汁，貝香與炭香相疊，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍蝦沙拉",
+            "description": "炭烤龍蝦拌沙拉，肉質彈嫩、淡淡炭香，清爽耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無骨雞腿肉串.",
+            "description": "無骨雞腿肉串，炭火烤至外層微焦帶炭香，肉質嫩彈多汁，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤櫛瓜.",
+            "description": "外緣微焦帶炭香，口感脆嫩多汁，清爽耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1717 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%AD%9A%E6%B1%A0%E8%B2%B3%E5%A3%B9-%E5%8F%B0%E5%8C%97%E5%A3%AB%E6%9E%97%E5%BA%97/iSxbi9tlSR6VcXFReuGEUQ",
+  "name": "魚池貳壹  台北士林店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 24號, Wenlin Road",
+    "addressLocality": "Shilin District",
+    "addressRegion": "",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0867486,
+    "longitude": 121.5254715
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 4000
+  },
+  "servesCuisine": [
+    "Drinks",
+    "Bubble Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬",
+            "description": "無咖啡因 總糖量 50 縂熱量 236",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬瓜",
+            "description": "調整甜度為額外加蔗糖 冬瓜本身甜度固定 總糖量 30 縂熱量 242",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂香橙",
+            "description": "限冰飲 總糖量 45 縂熱量 252",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉井芒果牛奶",
+            "description": "甜度冰量固定【冰沙不額外加蔗糖】\n\n總糖量 54\n縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗青茶",
+            "description": "限冰飲 總糖量 40 縂熱量 160",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作黑糖珍珠鮮奶茶",
+            "description": "L杯總糖量50克總熱量420卡\nXL杯總糖量55克總熱量470卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世白桃凍未條",
+            "description": "限冷飲 XL 660ml 自製茶凍+鮮奶茶香搭配奶蓋層次豐富 總糖量58 總熱量525",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作黃金珍珠鮮奶茶",
+            "description": "L杯總糖量45克總熱量420卡\nXL杯總糖量50克總熱量475卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養樂多綠茶",
+            "description": "限冰飲 總糖量 57 縂熱量 273",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝椰果奶茶",
+            "description": "限冷飲 XL 660ml 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂多酚",
+            "description": "限冰飲 總糖量 45 縂熱量 294",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南庄桂花烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱鮮奶茶",
+            "description": "L 杯 500ML 總糖量 45 縂熱量 248 \nXL 杯 660ML 總糖量 50 縂熱量 350",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "布丁鮮奶茶",
+            "description": "總糖量 50\n縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "南庄桂花烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白桃烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳培烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大葉蜜香紅茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬",
+            "description": "無咖啡因 總糖量 50 縂熱量 236",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓紅茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬瓜",
+            "description": "調整甜度為額外加蔗糖 冬瓜本身甜度固定 總糖量 30 縂熱量 242",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "楊桃甘露",
+            "description": "大杯 （660ml）\n總糖量 40\n縂熱量 180",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚池拾捌號紅茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚池青梅綠",
+            "description": "總糖量 57 縂熱量 273",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手作黃金珍珠鮮奶茶",
+            "description": "L杯總糖量45克總熱量420卡\nXL杯總糖量50克總熱量475卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香橙霸霸",
+            "description": "特大杯。冷飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶多酚",
+            "description": "特大杯。冷飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香鮮切水果綠茶",
+            "description": "百香鮮切水果綠茶 限冰飲 百香果無法去籽 總糖量70克 總熱量317卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜鳳梨青茶",
+            "description": "限冰飲 | 甜度固定 總糖量 60 縂熱量 274",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "招牌手作珍珠奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手作黑糖珍珠奶茶",
+            "description": "L杯總糖量45克總熱量420卡\nXL杯總糖量50克總熱量475卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作白玉珍珠奶茶",
+            "description": "L杯總糖量45克總熱量420卡\nXL杯總糖量50克總熱量475卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作紫薯珍珠奶茶",
+            "description": "L杯總糖量45克總熱量420卡\nXL杯總糖量50克總熱量475卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作水果珍珠奶茶",
+            "description": "L杯總糖量45克總熱量420卡\nXL杯總糖量50克總熱量475卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作火龍果珍珠奶茶",
+            "description": "L杯總糖量45克總熱量420卡\nXL杯總糖量50克總熱量475卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作黃金珍珠奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "招牌手作珍珠鮮奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手作黑糖珍珠鮮奶茶",
+            "description": "L杯總糖量50克總熱量420卡\nXL杯總糖量55克總熱量470卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作火龍果珍珠鮮奶茶",
+            "description": "L杯總糖量45克總熱量320卡\nXL杯總糖量50克總熱量420卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作紫薯珍珠鮮奶茶",
+            "description": "L杯總糖量45克總熱量320卡\nXL杯總糖量50克總熱量420卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作水果珍珠鮮奶茶",
+            "description": "L杯總糖量45克總熱量320卡\nXL杯總糖量50克總熱量420卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作白玉珍珠鮮奶茶",
+            "description": "L杯總糖量45克總熱量320卡\nXL杯總糖量50克總熱量420卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "現磨咖啡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "重乳拿鐵",
+            "description": "中杯（500ml）煉乳本身的甜味，不而外加糖。\n總糖量50克\n總熱量420卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠拿鐵",
+            "description": "中杯（500ml）不而外加糖。\n\n總糖量45克\n總熱量350卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡",
+            "description": "中杯（500ml）不而外加糖。\n總糖量0.2克\n總熱量18卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵",
+            "description": "總糖量39克\n總熱量273卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "台灣果園",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芭樂香橙",
+            "description": "限冰飲 總糖量 45 縂熱量 252",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗青茶",
+            "description": "限冰飲 總糖量 40 縂熱量 160",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉井芒果牛奶",
+            "description": "甜度冰量固定【冰沙不額外加蔗糖】\n\n總糖量 54\n縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "聖女番茄梅子綠",
+            "description": "冰量固定【冰沙】 總糖量 54 縂熱量 254",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂檸檬",
+            "description": "限冰飲 總糖量 48 縂熱量 230",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂多酚",
+            "description": "限冰飲 總糖量 45 縂熱量 294",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬",
+            "description": "無咖啡因 總糖量 50 縂熱量 236",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗牛奶",
+            "description": "無咖啡因 | 冰量固定 | 無法調整 總糖量 55 縂熱量 220",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮百香綠茶",
+            "description": "大杯 （660 ml）限冰飲 | 百香果無法去籽\n\n總糖量 55\n縂熱量 260",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬多多綠茶",
+            "description": "限冰飲\n\n總糖量 56\n縂熱量 274",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮檸檬紅茶",
+            "description": "大杯 （660 ml）冰飲限定 \n總糖量57克 熱量230卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮檸檬青茶",
+            "description": "大杯 （660 ml）冰飲限定 \n總糖量57克 熱量230卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮百香青茶",
+            "description": "大杯 （660 ml）限冰飲 | 百香果無法去籽\n\n總糖量 55\n縂熱量 260",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮檸檬綠茶",
+            "description": "大杯 （660 ml）冰飲限定 \n總糖量57克 熱量230卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮百香紅茶",
+            "description": "大杯 （660 ml）限冰飲 | 百香果無法去籽\n\n總糖量 55\n縂熱量 260",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜鳳梨紅茶",
+            "description": "限冰飲 | 甜度固定 總糖量 60 縂熱量 274",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香鮮切水果紅茶",
+            "description": "百香鮮切水果綠茶 限冰飲 百香果無法去籽 總糖量70克 總熱量317卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水蜜桃紅茶",
+            "description": "限冰飲 總糖量 57 縂熱量 276",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水蜜桃綠茶",
+            "description": "限冰飲 總糖量 57 縂熱量 276",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水蜜桃青茶",
+            "description": "限冰飲 總糖量 57 縂熱量 276",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗檸檬",
+            "description": "限冰飲 總糖量 55 縂熱量 220",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "純茶系",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魚池鮮奶茶",
+            "description": "L 杯 500ML 總糖量 45 縂熱量 248 \nXL 杯 660ML 總糖量 50 縂熱量 350",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季青茶",
+            "description": "L 杯 500ML 總糖量 33 縂熱量 132 \nXL 杯 660ML 總糖量 39 縂熱量 156",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚池拾捌紅茶",
+            "description": "L 杯 500ML 總糖量 33 縂熱量 132 \nXL 杯 660ML 總糖量 39 縂熱量 156",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚池貳壹紅茶",
+            "description": "L 杯 500ML 總糖量 33 縂熱量 132 \nXL 杯 660ML 總糖量 39 縂熱量 156",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚池奶茶",
+            "description": "L 杯 500ML 總糖量 45 縂熱量 248\nXL 杯 660ML 總糖量 50 縂熱量 432",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱茶",
+            "description": "L 杯 500ML 總糖量 33 縂熱量 132 \nXL 杯 660ML 總糖量 39 縂熱量 156",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉莉綠茶",
+            "description": "L 杯 500ML 總糖量 33 縂熱量 132 \nXL 杯 660ML 總糖量 39 縂熱量 156",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱鮮奶茶",
+            "description": "L 杯 500ML 總糖量 45 縂熱量 248 \nXL 杯 660ML 總糖量 50 縂熱量 350",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹿谷烏龍茶",
+            "description": "L 杯 500ML 總糖量 33 縂熱量 132 \nXL 杯 660ML 總糖量 39 縂熱量 156",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚池豆漿紅茶",
+            "description": "L 杯 500ML 總糖量 43 縂熱量 172 \nXL 杯 660ML 總糖量 49 縂熱量 196",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍綠茶",
+            "description": "L 杯 500ML 總糖量 33 縂熱量 132 \nXL 杯 660ML 總糖量 39 縂熱量 156",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱奶茶",
+            "description": "L 杯 500ML 總糖量 45 縂熱量 248\nXL 杯 660ML 總糖量 50 縂熱量 432",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚池豆漿烏龍茶",
+            "description": "L 杯 500ML 總糖量 43 縂熱量 172 \nXL 杯 660ML 總糖量 49 縂熱量 196",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥茶",
+            "description": "L 杯 500ML 總糖量 33 縂熱量 132 \nXL 杯 660ML 總糖量 39 縂熱量 156",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "台灣50年經典",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "關西仙草茶",
+            "description": "獨特香氣，解渴潤喉 總糖量 50 縂熱量 220",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白桃凍楊桃甘露",
+            "description": "總糖量 45 縂熱量 240",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "楊桃甘露",
+            "description": "大杯 （660ml）\n總糖量 40\n縂熱量 180",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養樂多綠茶",
+            "description": "限冰飲 總糖量 57 縂熱量 273",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "布丁鮮奶茶",
+            "description": "總糖量 50\n縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草凍鮮奶茶",
+            "description": "總糖量 50\n縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花凍魚池奶茶",
+            "description": "總糖量 50 縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬瓜",
+            "description": "調整甜度為額外加蔗糖 冬瓜本身甜度固定 總糖量 30 縂熱量 242",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "布丁奶茶",
+            "description": "總糖量 50 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "赤崁冬瓜露",
+            "description": "調整甜度為額外加蔗糖 冬瓜本身甜度固定 總糖量 55 縂熱量 233",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花凍楊桃甘露",
+            "description": "總糖量 45 縂熱量 240",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白桃凍魚池奶茶",
+            "description": "總糖量 50 縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草凍奶茶",
+            "description": "總糖量 50 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "楊桃凍綠茶",
+            "description": "總糖量 45 縂熱量 240",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱凍楊桃甘露",
+            "description": "總糖量 45 縂熱量 240",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱凍魚池奶茶",
+            "description": "總糖量 50 縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶香甘蔗",
+            "description": "限冰飲 | 本身帶有煉乳和甘蔗甜味 總糖量 60 縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶凍魚池奶茶",
+            "description": "總糖量 50 縂熱量 420",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶凍楊桃甘露",
+            "description": "總糖量 45 縂熱量 240",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚池咖啡醋",
+            "description": "XL 660ML  \n無糖、冰量固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚池青梅綠",
+            "description": "總糖量 57 縂熱量 273",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜綠茶",
+            "description": "調整甜度為額外加蔗糖 冬瓜本身甜度固定 總糖量 55 縂熱量 233",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜紅茶",
+            "description": "調整甜度為額外加蔗糖 冬瓜本身甜度固定 總糖量 55 縂熱量 233",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜青茶",
+            "description": "調整甜度為額外加蔗糖 冬瓜本身甜度固定 總糖量 55 縂熱量 233",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "台灣冷泡茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魚池拾捌號紅茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳培烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大葉蜜香紅茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓紅茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白桃烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南庄桂花烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南投四季春茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特級凍頂烏龍茶",
+            "description": "無糖、去冰 | 甜度冰塊固定無法調整 | 瓶裝 總糖量 0 縂熱量 0",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸鷄塊",
+            "description": "5塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "塑膠袋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "塑膠袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蓋世奶蓋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蓋世紅茶",
+            "description": "限冷飲 XL 660ml茶香搭配奶蓋層次豐富 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世綠茶",
+            "description": "限冷飲 XL 660ml茶香搭配奶蓋層次豐富 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世烏龍",
+            "description": "限冷飲 XL 660ml茶香搭配奶蓋層次豐富 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世金萱",
+            "description": "限冷飲 XL 660ml茶香搭配奶蓋層次豐富 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世桂花烏龍茶",
+            "description": "限冷飲 XL 660ml茶香搭配奶蓋層次豐富 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世白桃烏龍茶",
+            "description": "限冷飲 XL 660ml茶香搭配奶蓋層次豐富 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世青茶",
+            "description": "限冷飲 XL 660ml茶香搭配奶蓋層次豐富 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蓋世手作珍珠紅茶拿鐵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蓋世原味椰果紅玉拿鐵",
+            "description": "限冷飲 XL 660ml 椰果鮮奶茶香搭配奶蓋層次豐富 總糖量60 總熱量580",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世荔枝椰果紅玉拿鐵",
+            "description": "限冷飲 XL 660ml 椰果鮮奶茶香搭配奶蓋層次豐富 總糖量60 總熱量580",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世鳳梨椰果紅玉拿鐵",
+            "description": "限冷飲 XL 660ml 椰果鮮奶茶香搭配奶蓋層次豐富 總糖量60 總熱量580",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世手作黑糖珍珠紅玉拿鐵",
+            "description": "限冷飲 XL 660ml 珍珠鮮奶茶香搭配奶蓋層次豐富 總糖量60 總熱量580",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世手作火龍果珍珠紅玉拿鐵",
+            "description": "限冷飲 XL 660ml 珍珠鮮奶茶香搭配奶蓋層次豐富 總糖量60 總熱量580",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世手作紫薯珍珠紅玉拿鐵",
+            "description": "限冷飲 XL 660ml 珍珠鮮奶茶香搭配奶蓋層次豐富 總糖量60 總熱量580",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世芒果椰果紅玉拿鐵",
+            "description": "限冷飲 XL 660ml 椰果鮮奶茶香搭配奶蓋層次豐富 總糖量60 總熱量580",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世手作白玉珍珠紅玉拿鐵",
+            "description": "限冷飲 XL 660ml 珍珠鮮奶茶香搭配奶蓋層次豐富 總糖量60 總熱量580",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世手作黃金珍珠紅玉拿鐵",
+            "description": "限冷飲 XL 660ml 珍珠鮮奶茶香搭配奶蓋層次豐富 總糖量60 總熱量580",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "椰果奶茶/鮮奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芒果椰果鮮奶茶",
+            "description": "限冷飲 XL 660ml 總糖量55 總熱量475",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝椰果奶茶",
+            "description": "限冷飲 XL 660ml 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果椰果奶茶",
+            "description": "限冷飲 XL 660ml 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨椰果奶茶",
+            "description": "限冷飲 XL 660ml 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味椰果奶茶",
+            "description": "限冷飲 XL 660ml 總糖量50 總熱量420",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝椰果鮮奶茶",
+            "description": "限冷飲 XL 660ml 總糖量55 總熱量475",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味椰果鮮奶茶",
+            "description": "限冷飲 XL 660ml 總糖量55 總熱量475",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨椰果鮮奶茶",
+            "description": "限冷飲 XL 660ml 總糖量55 總熱量475",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蓋世凍未條",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蓋世綠茶凍未條",
+            "description": "限冷飲 XL 660ml 自製茶凍+鮮奶茶香搭配奶蓋層次豐富 總糖量58 總熱量525",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世白桃凍未條",
+            "description": "限冷飲 XL 660ml 自製茶凍+鮮奶茶香搭配奶蓋層次豐富 總糖量58 總熱量525",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世桂花凍未條",
+            "description": "限冷飲 XL 660ml 自製茶凍+鮮奶茶香搭配奶蓋層次豐富 總糖量58 總熱量525",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世金萱凍未條",
+            "description": "限冷飲 XL 660ml 自製茶凍+鮮奶茶香搭配奶蓋層次豐富 總糖量58 總熱量525",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世楊桃凍未條",
+            "description": "限冷飲 XL 660ml 自製茶凍+鮮奶茶香搭配奶蓋層次豐富 總糖量58 總熱量525",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓋世水蜜桃凍未條",
+            "description": "限冷飲 XL 660ml 自製茶凍+鮮奶茶香搭配奶蓋層次豐富 總糖量58 總熱量525",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冬季限定♨️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "桂圓紅棗茶",
+            "description": "限熱飲 | L杯【500ml】 無咖啡因 總糖量 57 縂熱量 254",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂圓紅棗鮮奶",
+            "description": "限熱飲 | L杯【500ml】 無咖啡因 總糖量 64 縂熱量 360",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手作珍珠鮮奶（無咖啡因）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手作黃金珍珠鮮奶**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作白玉珍珠鮮奶**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作黑糖珍珠鮮奶**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作火龍果珍珠鮮奶**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作紫薯珍珠鮮奶**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手作珍珠豆漿（無咖啡因）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手作黃金珍珠豆漿**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作白玉珍珠豆漿**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作黑糖珍珠豆漿**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作火龍果珍珠豆漿**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作紫薯珍珠豆漿**",
+            "description": "無咖啡因 L 杯 500ML 總糖量 50 縂熱量 420 XL杯 600ML 總糖量 55 縂熱量 475",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

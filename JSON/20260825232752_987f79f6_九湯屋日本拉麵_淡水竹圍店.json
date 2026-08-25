@@ -1,0 +1,567 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%B9%9D%E6%B9%AF%E5%B1%8B%E6%97%A5%E6%9C%AC%E6%8B%89%E9%BA%B5-%E6%B7%A1%E6%B0%B4%E7%AB%B9%E5%9C%8D%E5%BA%97/eQT3unXwQ-S48xP8HavV-Q",
+  "name": "九湯屋日本拉麵 淡水竹圍店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市淡水區民族路17巷1弄7號",
+    "addressLocality": "Taipei",
+    "addressRegion": "",
+    "postalCode": "251",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1375357,
+    "longitude": 121.4607512
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 1500
+  },
+  "servesCuisine": [
+    "Japanese",
+    "Ramen"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "東京豚骨拉麵 Tokyo Tonkotsu Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜拉麵 Korean Kimchi Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑蒜豚骨拉麵 Tonkotsu Ramen with Black Garlic",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式豚骨拉麵 Thai Tonkotsu Ramen with",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒙古白湯拉麵 Mongolian Broth Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "霸王海陸白湯拉麵 The Surf and Turf Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐点内含海带芽、叉烧肉（2片）、溏心蛋（半顆）、海苔（1片）、扇貝（2個）、淡菜（2個）、蝦子（2隻）",
+            "offers": {
+              "@type": "Offer",
+              "price": "380.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式豚骨拉麵（辛）Korean Tonkotsu (Spicy)Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韓式豚骨拉麵（辛）Korean Tonkotsu (Spicy)Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特極濃口豚骨叉燒拉麵 Rich Tonkotsu Ramen",
+            "description": "餐點內含海帶芽、叉燒肉（5片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "680.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式豚骨拉麵 Thai Tonkotsu Ramen with",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒙古白湯拉麵 Mongolian Broth Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特極黑蒜豚骨叉燒拉麵 Tonkotsu Ramen with Black Garlic",
+            "description": "餐點內含海帶芽、叉燒肉（5片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "680.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "東京豚骨拉麵 Tokyo Tonkotsu Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑蒜豚骨拉麵 Tonkotsu Ramen with Black Garlic",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "霸王海陸白湯拉麵 The Surf and Turf Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐点内含海带芽、叉烧肉（2片）、溏心蛋（半顆）、海苔（1片）、扇貝（2個）、淡菜（2個）、蝦子（2隻）",
+            "offers": {
+              "@type": "Offer",
+              "price": "380.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜拉麵 Korean Kimchi Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒙古白湯拉麵 Mongolian Broth Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式豚骨拉麵 Thai Tonkotsu Ramen with",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式豚骨拉麵（辛）Korean Tonkotsu (Spicy)Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "極霸海陸白湯拉麵",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐点内含海带芽、叉烧肉（2片）、溏心蛋（半顆）、海苔（1片）、扇貝（2個）、淡菜（2個）、蝦子（5隻）、大干貝（1顆）",
+            "offers": {
+              "@type": "Offer",
+              "price": "570.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特極黑蒜豚骨叉燒拉麵 Tonkotsu Ramen with Black Garlic",
+            "description": "餐點內含海帶芽、叉燒肉（5片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "680.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "日本風味 Japanese Ramen",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "札幌味噌拉麵 Sapporo Miso Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九州白湯拉麵 Kyushu Broth Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東京醬油拉麵 Tokyo Soy Sauce Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "地獄風味 Spicy Ramen",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "九州地獄拉麵 Kyushu Spicy Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點含牛油成分；內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東京煉獄拉麵 Tokyo Spicy Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點含牛油成分；內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "札幌魔獄拉麵 Sapporo Spicy Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點含牛油成分；內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "韓式風味 Korean Ramen",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韓式豚骨拉麵（辛）Korean Tonkotsu (Spicy)Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "釜山紅湯拉麵 Busan Red Soup Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點含牛油成分；內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "濃口風味 Rich Ramen",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "特極濃口豚骨叉燒拉麵 Rich Tonkotsu Ramen",
+            "description": "餐點內含海帶芽、叉燒肉（5片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "680.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑蒜豚骨拉麵 Tonkotsu Ramen with Black Garlic",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃口豚骨拉麵 Rich Tonkotsu Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃口白湯拉麵 Rich Broth Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐點內含海帶芽、叉燒肉（1片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特極黑蒜豚骨叉燒拉麵 Tonkotsu Ramen with Black Garlic",
+            "description": "餐點內含海帶芽、叉燒肉（5片）、溏心蛋（半顆）、海苔（1片）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "680.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點小菜 A La Carte Side Dish",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "椒麻鳳爪 Boneless Chicken Feet",
+            "description": "辣味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金海帶絲",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香青木瓜 Green Papaya with Passion Fruit",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻豬耳絲 Smoked Shredded Pork Ear",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻脆腸 Smoked Crispy Intestine",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油粉肝 Pork Liver with Sesame Oil",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚香蓮藕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜 Korean Kimchi",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式牛蒡絲 Japanese Shredded Burdock",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芥末杏鮑菇 King Oyster Mushroom with Mustard",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小魚花生 Stir-Fried Anchovies and Peanuts",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香麻豆干丁 Braised Diced Tofu Curd",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "海鮮系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "霸王海陸白湯拉麵 The Surf and Turf Ramen",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐点内含海带芽、叉烧肉（2片）、溏心蛋（半顆）、海苔（1片）、扇貝（2個）、淡菜（2個）、蝦子（2隻）",
+            "offers": {
+              "@type": "Offer",
+              "price": "380.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "極霸海陸白湯拉麵",
+            "description": "#遇缺蛋時將換叉燒肉#\n餐点内含海带芽、叉烧肉（2片）、溏心蛋（半顆）、海苔（1片）、扇貝（2個）、淡菜（2個）、蝦子（5隻）、大干貝（1顆）",
+            "offers": {
+              "@type": "Offer",
+              "price": "570.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

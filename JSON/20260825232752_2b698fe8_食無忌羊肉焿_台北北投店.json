@@ -1,0 +1,346 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%A3%9F%E7%84%A1%E5%BF%8C%E7%BE%8A%E8%82%89%E7%84%BF-%E5%8F%B0%E5%8C%97%E5%8C%97%E6%8A%95%E5%BA%97/Vm1qoqcWXuimFIRs26jeiQ",
+  "name": "食無忌羊肉焿 台北北投店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區清江路25巷36號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1316501,
+    "longitude": 121.5027409
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 47
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "焿麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "羊肉焿",
+            "description": "鮮嫩羊肉, 濃郁湯頭。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魷魚焿",
+            "description": "沙茶香濃, 魷魚 Q 彈。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯小",
+            "description": "經典滷肉, 鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯大",
+            "description": "經典滷肉, 鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚酥焿",
+            "description": "魚酥香脆, 湯頭濃厚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清焿",
+            "description": "清爽湯底, 滑順暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶乾麵",
+            "description": "沙茶濃香, 麵條彈牙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜辣醬乾麵",
+            "description": "甜辣交融, 層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉乾麵",
+            "description": "滷香四溢, 鹹香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬油乾麵",
+            "description": "古早醬香, 簡單美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉乾麵",
+            "description": "羊肉鮮嫩, 獨特香氣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉乾飯",
+            "description": "滿滿羊香, 搭配白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "焿湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "羊肉焿湯",
+            "description": "湯鮮味濃, 羊肉軟嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魷魚焿湯",
+            "description": "沙茶入味, 魷魚爽脆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚酥焿湯",
+            "description": "魚酥浸湯, 香濃夠味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清焿湯",
+            "description": "清甜高湯, 口感順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大腸",
+            "description": "滷製入味, Q 彈帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆皮",
+            "description": "1 片。滷製豆皮, 軟嫩多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷蛋",
+            "description": "1 顆。入味滷蛋, 黃金蛋香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連",
+            "description": "口感紮實, 鮮嫩爽口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮",
+            "description": "滑嫩彈牙, 鹹香美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬耳朵",
+            "description": "脆口嚼勁, 滷香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "營養均衡, 清爽健康。",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙魷魚",
+            "description": "鮮甜魷魚, Q 彈可口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉",
+            "description": "沙茶香濃, 羊肉嫩口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶",
+            "description": "1 條。滷香入味, 口感 Q 彈。",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干",
+            "description": "3 片。醬香滷透, 扎實口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素雞",
+            "description": "1 條。紮實素雞, 滷汁香濃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蘋果西打",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "63.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

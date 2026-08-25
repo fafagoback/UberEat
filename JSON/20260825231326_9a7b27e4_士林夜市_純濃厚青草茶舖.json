@@ -1,0 +1,481 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E7%B4%94%E6%BF%83%E5%8E%9A%E9%9D%92%E8%8D%89%E8%8C%B6%E8%88%96/p_11RWPXQo2-k1DfDbTZ-Q",
+  "name": "士林夜市 純濃厚青草茶舖",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Danan Road 44",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0892922,
+    "longitude": 121.525135
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 440
+  },
+  "servesCuisine": [
+    "Drinks",
+    "Coffee and Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "清涼降火青草茶（瓶裝）",
+            "description": "瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "真的會苦的苦茶（瓶裝）",
+            "description": "無糖，瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味紅茶（瓶裝）",
+            "description": "固定半糖，瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "哎呀好苦青草苦茶（瓶裝）",
+            "description": "瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "216.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明眼子枸杞茶（杯裝）",
+            "description": "杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "哎呀好苦青草苦茶（杯裝）",
+            "description": "杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味奶茶（杯裝）",
+            "description": "固定半糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青草奶茶（杯裝）",
+            "description": "杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "真的會苦的苦茶（杯裝）",
+            "description": "無糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶綠（杯裝）",
+            "description": "固定少糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "古早味奶茶（杯裝）",
+            "description": "固定半糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清涼降火青草茶（杯裝）",
+            "description": "半糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明眼子枸杞茶（杯裝）",
+            "description": "杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味紅茶（杯裝）",
+            "description": "杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "真的會苦的苦茶（杯裝）",
+            "description": "無糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉香綠茶（杯裝）",
+            "description": "微糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖青草茶（瓶裝）",
+            "description": "無糖，瓶裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "123.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "清涼降火青草茶（瓶裝）",
+            "description": "瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明眼子枸杞茶（杯裝）",
+            "description": "杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味奶茶（杯裝）",
+            "description": "固定半糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味紅茶（瓶裝）",
+            "description": "固定半糖，瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青草奶茶（杯裝）",
+            "description": "杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清涼降火青草茶（杯裝）",
+            "description": "半糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶綠（杯裝）",
+            "description": "固定少糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "真的會苦的苦茶（杯裝）",
+            "description": "無糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "真的會苦的苦茶（瓶裝）",
+            "description": "無糖，瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉香綠茶（杯裝）",
+            "description": "微糖，杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "哎呀好苦青草苦茶（瓶裝）",
+            "description": "瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "216.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味紅茶（杯裝）",
+            "description": "杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "哎呀好苦青草苦茶（杯裝）",
+            "description": "杯裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖青草茶（瓶裝）",
+            "description": "無糖，瓶裝。\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "123.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明眼子枸杞茶（瓶裝）",
+            "description": "瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味奶茶（瓶裝）",
+            "description": "瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "158.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多多綠茶-超濃多多（杯裝）",
+            "description": "杯裝，固定甜度半糖\n產品皆為天然製作，購買後如1小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多多綠茶-超濃多多（瓶裝）",
+            "description": "瓶裝，固定甜度半糖\n產品皆為天然製作，購買後如1小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青草奶茶（瓶裝）",
+            "description": "瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味奶綠（瓶裝）",
+            "description": "瓶裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "164.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明眼子枸杞奶茶（瓶裝）",
+            "description": "瓶裝（香醇可口）\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多多青草茶（杯裝）",
+            "description": "杯裝，固定甜度半糖\n產品皆為天然製作，購買後如1小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多多紅茶（瓶裝）",
+            "description": "瓶裝，固定甜度半糖\n產品皆為天然製作，購買後如1小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多多青草茶（瓶裝）",
+            "description": "瓶裝，固定甜度半糖\n產品皆為天然製作，購買後如1小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "158.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明眼子枸杞奶茶（杯裝）",
+            "description": "杯裝\n產品皆為天然製作，購買後如2小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多多紅茶（杯裝）",
+            "description": "杯裝，固定甜度半糖\n產品皆為天然製作，購買後如1小時未飲用完畢，請放至冰箱冷藏或冷凍保存",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

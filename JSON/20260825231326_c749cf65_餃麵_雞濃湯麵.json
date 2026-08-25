@@ -1,0 +1,222 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%A4%83%E9%BA%B5-%E9%9B%9E%E6%BF%83%E6%B9%AF%E9%BA%B5/9gKxZk5lUWqWyHCB5edQxA",
+  "name": "餃麵 雞濃湯麵",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "富貴街28號",
+    "addressLocality": "三重區",
+    "addressRegion": "",
+    "postalCode": "241083",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.09036,
+    "longitude": 121.4907
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 11
+  },
+  "servesCuisine": [
+    "Japanese",
+    "Asian",
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "限量煎餃",
+            "description": "金黃脆底的煎餃，外酥內嫩、多汁，附沾醬。限量供應。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味雞白湯麵",
+            "description": "附一顆蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮蛤蜊雞白湯",
+            "description": "附一顆蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "495.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "舒肥叉燒雞白湯麵",
+            "description": "附一顆蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "417.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "雞白湯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "輕花椒雞白湯麵",
+            "description": "附一顆蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑汁雞白湯麵",
+            "description": "附一顆蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜味雞白湯麵",
+            "description": "附一顆蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬祖老酒雞白湯麵",
+            "description": "附一顆蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辛味增雞白湯麵",
+            "description": "附一顆蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特濃雞白湯麵",
+            "description": "附一顆蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松露雞白湯拉麵",
+            "description": "濃厚滑順的雞白湯，融入松露香氣，搭配拉麵，風味馥郁",
+            "offers": {
+              "@type": "Offer",
+              "price": "470.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辛辣",
+            "description": "請備注大辣、中辣、小辣、",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "溏心蛋",
+            "description": "蛋白嫩彈，蛋黃半熟流心，口感滑順、蛋香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沖繩風味海葡萄",
+            "description": "沖繩特色海葡萄，脆彈爆珠口感，海味清新",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冷麻婆豆腐",
+            "description": "冰鎮上桌的麻婆風味豆腐，口感滑嫩，醬香飽滿帶椒麻香氣，清爽又開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "舒肥大雞腿",
+            "description": "舒肥低溫烹調整隻大雞腿，口感軟嫩多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "舒肥雞",
+            "description": "低溫烹調雞肉，口感軟嫩多汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

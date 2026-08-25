@@ -1,0 +1,443 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B2%90%E9%98%9C%E4%B8%B2%E7%87%92/bFaFjZSpRBiMnv8OhDES4g",
+  "name": "岐阜串燒",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 9號, Alley 19, Lane 8, Tianmu East Road",
+    "addressLocality": "Shilin District",
+    "addressRegion": "",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1176045,
+    "longitude": 121.5325386
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 900
+  },
+  "servesCuisine": [
+    "Japanese",
+    "Family Friendly"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤雞腿（二本）",
+            "description": "鹽烤雞腿肉串，突出原味鹹香，一份二本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "串燒拼盤(鹽烤）",
+            "description": "鹽烤綜合串燒：雞翅、雞肉、雞內臟、小魚串；保留原味與鹽香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒肉丼飯",
+            "description": "（牛）（豬）麻煩備註肉類 謝謝",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炒烏龍",
+            "description": "炒烏龍麵拌醬汁與蔬菜，上鋪柴魚片與太陽蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤魷魚定食",
+            "description": "以醬汁燒烤的魷魚切片，撒白芝麻，配檸檬角；附香菇、溏心蛋、泡菜、生菜與蔥花。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鯖魚定食",
+            "description": "鯖魚片配檸檬角，附香菇、溏心蛋、泡菜、生菜與蔥花",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐揚雞飯",
+            "description": "唐揚雞配白飯，附香菇、溏心蛋、泡菜、生菜與蔥花",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "野菜拼盤",
+            "description": "多款蔬菜串組合，含杏鮑菇、山藥、香菇、櫛瓜與洋蔥。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸二節翅（六本）",
+            "description": "酥炸二節雞翅，外皮金黃酥脆；每份六本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸魷魚",
+            "description": "酥炸魷魚，金黃酥脆，口感彈牙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚定食",
+            "description": "虱目魚片配檸檬角，附香菇、溏心蛋、泡菜、生菜與蔥花",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "串燒拼盤(鹽烤）",
+            "description": "鹽烤綜合串燒：雞翅、雞肉、雞內臟、小魚串；保留原味與鹽香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒肉丼飯",
+            "description": "（牛）（豬）麻煩備註肉類 謝謝",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炒烏龍",
+            "description": "炒烏龍麵拌醬汁與蔬菜，上鋪柴魚片與太陽蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "野菜拼盤",
+            "description": "多款蔬菜串組合，含杏鮑菇、山藥、香菇、櫛瓜與洋蔥。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤魷魚定食",
+            "description": "以醬汁燒烤的魷魚切片，撒白芝麻，配檸檬角；附香菇、溏心蛋、泡菜、生菜與蔥花。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸魷魚",
+            "description": "酥炸魷魚，金黃酥脆，口感彈牙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐揚雞飯",
+            "description": "唐揚雞配白飯，附香菇、溏心蛋、泡菜、生菜與蔥花",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸二節翅（六本）",
+            "description": "酥炸二節雞翅，外皮金黃酥脆；每份六本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鯖魚定食",
+            "description": "鯖魚片配檸檬角，附香菇、溏心蛋、泡菜、生菜與蔥花",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚定食",
+            "description": "虱目魚片配檸檬角，附香菇、溏心蛋、泡菜、生菜與蔥花",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛蒡天婦羅定食",
+            "description": "牛蒡切條裹漿酥炸為天婦羅，爽脆口感；以此為主的定食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛蒡天婦羅",
+            "description": "牛蒡天婦羅，裹漿酥炸，爽脆帶嚼勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "串燒",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤雞腿（二本）",
+            "description": "鹽烤雞腿肉串，突出原味鹹香，一份二本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤牛肋串（二本）",
+            "description": "簡單鹽烤帶出牛肋原味，肉香飽滿、口感帶嚼勁。每份二本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤櫛瓜（二本）",
+            "description": "櫛瓜以鹽輕灑烤製，清爽鹹香，帶出蔬菜原味；每份二本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤雞心（二本）",
+            "description": "鹽烤雞心，突出原味鹹香，口感帶嚼勁；每份二本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤牛肋條（二本）",
+            "description": "以醬汁燒烤的牛肋條，表面上色帶醬香；每份二本",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤喜相逢（六本）",
+            "description": "鹽烤喜相逢，保留原味與鹽香，六本一份",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽三層豬 二本",
+            "description": "豬五花部位的串燒，以椒鹽調味，二本（兩串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤玉米筍（五本）",
+            "description": "鹽烤玉米筍，保留原味與鹽香，每份五本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬烤雞腿（二本）",
+            "description": "雞腿肉穿串，醬汁燒烤，每份二本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤馬鈴薯（三片）",
+            "description": "鹽烤馬鈴薯，保留原味與鹽香；每份三片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸雞軟骨",
+            "description": "酥炸雞軟骨，口感脆彈，鹹香可口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐揚雞",
+            "description": "雞肉裹粉酥炸，外酥內嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "下酒菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "毛豆",
+            "description": "簡單調味，清爽鹹香，保留豆香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芥末杏鮑菇",
+            "description": "杏鮑菇以芥末調味，脆嫩清爽，帶出菇香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜",
+            "description": "韓式泡菜，酸香脆口，開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

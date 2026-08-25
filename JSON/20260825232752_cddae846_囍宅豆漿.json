@@ -1,0 +1,288 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%9B%8D%E5%AE%85%E8%B1%86%E6%BC%BF/jBdGcPOCT2C8ep9Bz0nDrw",
+  "name": "囍宅豆漿",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shezheng Road 48",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0888351,
+    "longitude": 121.5103421
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 2000
+  },
+  "servesCuisine": [
+    "Breakfast and Brunch",
+    "Soy Milk",
+    "Affordable Meals"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "飯糰",
+            "description": "口感Q彈，適合當作快速午餐或小點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥抓餅及蛋",
+            "description": "香氣四溢的蔥抓餅搭配口感鮮嫩的蛋，是一道經典的台灣早餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餅",
+            "description": "蛋餅是台灣的經典早餐，口感鬆軟且綿密，是許多人喜愛的早餐選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅及蛋",
+            "description": "熱騰騰的燒餅搭配蛋，是一道經典的早餐選擇。燒餅外脆內軟，蛋則是煎得剛好的狀態，口感十分美妙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味軟Q蛋餅",
+            "description": "口感綿密的軟Q蛋餅，以傳統方式製作，搭配豐富的餡料，讓您品嚐到古早味的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋貼",
+            "description": "1 份 5 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "飯糰",
+            "description": "口感Q彈，適合當作快速午餐或小點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥抓餅及蛋",
+            "description": "香氣四溢的蔥抓餅搭配口感鮮嫩的蛋，是一道經典的台灣早餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餅",
+            "description": "蛋餅是台灣的經典早餐，口感鬆軟且綿密，是許多人喜愛的早餐選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋貼",
+            "description": "1 份 5 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅及蛋",
+            "description": "熱騰騰的燒餅搭配蛋，是一道經典的早餐選擇。燒餅外脆內軟，蛋則是煎得剛好的狀態，口感十分美妙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味軟Q蛋餅",
+            "description": "口感綿密的軟Q蛋餅，以傳統方式製作，搭配豐富的餡料，讓您品嚐到古早味的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉包",
+            "description": "餡料豐富的肉包，外皮鬆軟，內裡鮮美。適合當早餐或下午茶點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖饅頭",
+            "description": "這款黑糖饅頭，外皮鬆軟，內裡鬆軟甜美，口感綿密，黑糖香氣十足，是一款經典的台灣早餐小吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕",
+            "description": "1 份 2 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花蛋",
+            "description": "蔥花蛋是一道簡單卻美味的菜餚，蛋煎得剛好，蛋黃微微流出，再撒上些許蔥花，讓整道菜增添些許香氣和口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋",
+            "description": "荷包蛋簡單又美味的選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白饅頭",
+            "description": "白色的饅頭，蓬鬆柔軟，口感細膩，適合搭配各種醬料或湯品食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜包",
+            "description": "口感QQ的外皮和鮮嫩的內餡相輔相成。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆漿",
+            "description": "新鮮豆漿，口感濃郁，喝起來清爽滑順，是早餐的好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米漿",
+            "description": "米漿是一種以米為主要原料製成的飲品，口感清爽，帶有淡淡的米香味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶",
+            "description": "口感滑順，帶有淡淡的茶香和微甜的味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "紅茶是一種飲料，由茶葉泡製而成，帶有淡淡的茶香和濃郁的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

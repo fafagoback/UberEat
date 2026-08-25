@@ -1,0 +1,818 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%85%83%E6%A6%86%E7%89%A7%E5%A0%B4-%E5%8F%B0%E5%8C%97%E5%A4%A9%E6%AF%8D%E5%BA%97/7-As_nXuTfOUaqXWhQCBUQ",
+  "name": "元榆牧場 台北天母店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 31, Shidong Road",
+    "addressLocality": "Shilin District",
+    "addressRegion": "",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1119556,
+    "longitude": 121.5272798
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 700
+  },
+  "servesCuisine": [
+    "Grocery",
+    "Retail",
+    "Specialty Foods",
+    "Gift Store",
+    "meat",
+    "Chicken",
+    "Healthy"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "無毒生鮮土雞(冷凍)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】母雞腿去骨 (220g )",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "371.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】生鮮雞絞肉 1包 (200g±3%)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "236.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】母雞 切塊大包裝 (750g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "579.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】生鮮雞腳(6入) (300g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "203.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】生鮮翅小腿(5-8入)(300g±3%)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "216.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】公雞腿去骨 (280g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】生鮮里肌胸(300g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】公雞 全雞不切 (2000g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1214.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】雞骨架 (500g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】生鮮二節翅(6入)(300g±3%)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】母雞腿切塊 (280g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "338.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】生鮮雞胸(300g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】公雞 切塊大包裝 (950g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "635.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】生鮮雞佛 (300g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "486.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】生鮮雞松阪 (300g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "在地有機/無毒蔬果、農產品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "[太平洋] 黑蒜頭仁 1包 (60g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[文誠] 荔枝花蜜 1瓶 (700g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1080.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[力新]有機鴻喜菇 120-150g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "101.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[嘉田] 有機芭蕉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[力新]有機秋葵（150g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[樂咖農庄] 無毒芭樂(400~450g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[力新]有機絲瓜(S)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[碧綠] 蜜蘋果(500g/包)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[糧食]台塑包心白菜泡菜桶（600g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[信利] 有機帶殼紅鬚玉米筍 (300g)/包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[握沃] 原味毛豆莢400g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[信利] 有機空心菜（250g）/包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "53.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[糧食]台塑高麗菜泡菜桶（600g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[力新]有機高冷高麗菜(XS)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "196.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[握沃] 鹽味毛豆莢400g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "堅果/零食/小點心",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "[甜河谷] 安心枸杞 (150g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "338.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[水流莊] 羊奶饅頭 原味",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[高仰三] 禾果海苔 (75g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "213.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[甜河谷] 安心紅棗 (200g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "243.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[水流莊] 羊乳片 1瓶 (96g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "358.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[高仰三] 有機岩燒海苔 (25g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "201.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[水流莊] 羊奶饅頭 綜合",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[翌集] 歐納丘藍莓乾(60g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "162.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[翌集] 米森乳酸菌咬咬牛奶優格 (10g*5)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "385.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[甜河谷] SAA安心蓮子 (200g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "404.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[豆之味] 有機嫩豆花(小",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[翌集] 東和芝麻五穀夾心酥（176g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[翌集] 歐納丘天然加州去籽黑棗乾210g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "257.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[鮮乳坊] 鮮乳饅頭 (315g/包，9顆)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[翌集] 有機牛奶藜麥餅 (20g)5入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "196.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷凍紅肉品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬] 排骨丁 (300g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "263.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬]黃金比例絞肉（精裝)(180G)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬] 豬腳圈 (600g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "304.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬] 香滷腱肉 (300g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬]菲力豬排（精裝)(180G)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬]胛心薄片（精裝)(180G)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬]黃金比例肉絲（精裝)(180G)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬]五花薄切肉片（精裝）(180G)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬]帶皮五花肉條（550g）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "608.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬] 胛心薄片 (200g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬] 雪花肉片(250g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬] 黃金比例絞肉 (200g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬] 軟骨丁 (200g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】[究好豬] 梅花肉片 (200g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "243.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【冷凍】元榆 美國板腱牛火鍋片(150g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "初雞健康餐盒",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "[人山艸] 仙草茶 1瓶 (600ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[陳稼莊] 桑椹果汁 (300ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[杉好] 原味仙草茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[杉好] 冰糖仙草茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[陳稼莊] 百香果果汁 (有糖) (300ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[陳稼莊] 土芭樂汁 (300ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[陳稼莊] 桑椹醋汁 (300ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[杉好] 洛神花茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[VDS] 胡蘿蔔綜合蔬果汁(利樂包)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[陳稼莊] 檸檬醋 (無糖) (250ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[陳稼莊] 桑椹醋原汁(無糖) (250ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[陳稼莊] 桑椹醋原汁(有糖) (250ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[陳稼莊] 百香果醋(無糖) (250ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "405.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[翌集] 奧納芮有機蘋果汁(295ml)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[陳稼莊] 冬瓜磚 (400g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

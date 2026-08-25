@@ -1,0 +1,422 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A4%A7%E7%8B%97%E9%BA%B5%E7%B7%9A-%E7%9F%B3%E7%89%8C%E5%BA%97/PYB9hOtEXxq-0Ir_MIqmEg",
+  "name": "大狗麵線 石牌店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區石牌路二段62號",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1163408,
+    "longitude": 121.5158845
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 3000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Chinese",
+    "Noodles"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣【大】",
+            "description": "如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉圓",
+            "description": "如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣【小】",
+            "description": "如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線【大】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味豬血糕",
+            "description": "如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線【小】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清麵線【大】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超值雙人套餐",
+            "description": "大腸麵線(大)+甜不辣(大)+豬血糕+肉圓+貢丸湯",
+            "offers": {
+              "@type": "Offer",
+              "price": "305.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜水",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清麵線 【小】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Save on Select Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "超值雙人套餐",
+            "description": "大腸麵線(大)+甜不辣(大)+豬血糕+肉圓+貢丸湯",
+            "offers": {
+              "@type": "Offer",
+              "price": "305.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "超值雙人套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "超值雙人套餐",
+            "description": "大腸麵線(大)+甜不辣(大)+豬血糕+肉圓+貢丸湯",
+            "offers": {
+              "@type": "Offer",
+              "price": "305.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線【小】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣【小】",
+            "description": "如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉圓",
+            "description": "如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味豬血糕",
+            "description": "如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔魚丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣【大】",
+            "description": "如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線【大】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清麵線【大】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵線",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線【小】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清麵線 【小】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線【大】",
+            "description": "麵線內含油蔥酥，並沒有蒜頭酥喔！如加辣，我們辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "特製辣椒醬",
+            "description": "本辣椒醬為天然發酵製成，有酸氣純屬正常，請安心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔貢丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔魚丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "私房奶茶",
+            "description": "甜度及冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清香烏龍冷泡茶",
+            "description": "甜度及冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰鎮酸梅湯",
+            "description": "甜度及冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "錫蘭紅茶",
+            "description": "甜度及冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜水",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

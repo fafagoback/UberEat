@@ -1,0 +1,386 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82-%E5%AD%AB%E8%91%A3%E8%97%A5%E7%87%89%E6%8E%92%E9%AA%A8/ylQAAJxaV02Q-wUMV38lAg",
+  "name": "寧夏夜市 孫董藥燉排骨",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "臺北市大同區寧夏路58號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.05668,
+    "longitude": 121.51532
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 100
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "藥燉排骨湯",
+            "description": "大塊帶骨排骨浸潤藥膳湯頭，香氣溫和、肉質軟嫩；一碗暖胃，啃骨最過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔煎",
+            "description": "蚵仔、蛋與蔬菜拌粉漿煎成，淋上紅醬，Q嫩滑香，海味豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香腸炒飯",
+            "description": "台式香腸切片與米飯拌炒，點綴蔥花，鹹香下飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞腿",
+            "description": "麻油湯頭香濃，帶骨雞腿與薑片，肉質軟嫩、湯香醇厚",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金蝦餅",
+            "description": "金黃酥脆的蝦餅，外酥內彈，咬下滿滿蝦香；厚實飽口，適合分享的小點，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁煎",
+            "description": "煎香蝦仁，彈嫩口感，海味鮮香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝煎",
+            "description": "花枝塊拌蛋漿煎成，Q彈有嚼勁",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋煎",
+            "description": "雞蛋煎製的經典小吃，蛋香濃郁，口感柔嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋炒飯",
+            "description": "經典家常炒飯，蝦仁與蛋均勻拌炒，口口有料、簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯小",
+            "description": "小碗白飯澆上滷豬肉與滷汁，鹹香入味、口口下飯，經典台式魯肉飯的小份量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯大",
+            "description": "大份量滷肉飯，白飯鋪上滷肉與滷汁，鹹香夠味、飽足感十足",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "單點白飯，一碗基本主食，適合搭配各式菜餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "油蔥乾麵線",
+            "description": "古早味乾拌麵線，拌入油蔥，麵條滑順，鹹香耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾麵",
+            "description": "乾拌麵條，麵條Q彈帶勁，醬香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣乾麵",
+            "description": "無湯乾拌麵，拌入麻辣醬汁，香麻帶辣、涮嘴過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉湯麵線",
+            "description": "藥膳湯頭融入麵線，草本清香與麵香相互襯托，湯頭溫潤順口，輕鬆暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油湯麵線",
+            "description": "麻油香氣的湯麵線，湯頭清香，麵線細緻滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛肉麵",
+            "description": "經典紅燒湯頭，牛肉塊配Q彈麵條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣牛肉麵",
+            "description": "花椒與辣椒交織的麻辣湯頭，配牛肉與麵條，麻香帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞肉麵線",
+            "description": "麻油香氣撲鼻，嫩滑雞肉配Q彈麵線，風味醇厚、順口不膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞腿麵線",
+            "description": "香濃麻油搭配雞腿與麵線，風味協調、滑順好入口",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞肉",
+            "description": "麻油香濃的雞湯，雞肉塊與薑片相佐，湯頭順口暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉排骨麵線",
+            "description": "藥膳湯頭燉煮排骨，搭配細麵線，湯香麵滑",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉羊肉湯",
+            "description": "以中藥材慢燉的羊肉湯，湯頭溫潤帶藥香，羊肉軟嫩好入口，熱騰騰上桌。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔湯",
+            "description": "蚵仔清湯，湯頭清爽，海味鮮香，暖口順喉",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇貢丸湯",
+            "description": "香菇與貢丸的熱湯，香氣怡人，口感扎實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜蛋花湯",
+            "description": "清湯與青菜、蛋花的經典組合，滑順清香，暖胃不負擔",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅油抄手鮮肉",
+            "description": "鮮肉抄手，拌入香辣紅油醬，皮薄餡香，入口滑嫩，後勁帶辣更過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "汆燙青菜，輕拌調味，清爽不油膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸蝦捲",
+            "description": "酥脆外皮包裹蝦餡，外脆內嫩，蝦香滿溢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋豆腐",
+            "description": "滑嫩豆腐佐皮蛋，淋上醬汁，清爽開胃的涼拌小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸花枝丸",
+            "description": "金黃酥脆的花枝丸，外酥內Q彈，咬下釋放海味鮮香，一口一顆，輕鬆分享",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥鮮蚵",
+            "description": "滑嫩鮮蚵拌蒜泥，蒜香提味，清爽開胃的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

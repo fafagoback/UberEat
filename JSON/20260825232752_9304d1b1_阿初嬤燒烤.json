@@ -1,0 +1,413 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%98%BF%E5%88%9D%E5%AC%A4%E7%87%92%E7%83%A4/FBOALLOtV8K7yiaU5VkOxg",
+  "name": "阿初嬤燒烤",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "241新北市三重區溪尾街166號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0803488,
+    "longitude": 121.4889125
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "BBQ"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "我們豬血糕有驚喜挑選過 我最愛豬血糕了",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣",
+            "description": "餐點怎麼能少了 甜不辣小姐呢",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆乾",
+            "description": "一份餐點都要來一個靈魂人物 豆乾先生！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇🍄",
+            "description": "具有增強免疫力, 降血糖, 養顏美容  增強食欲等保健功效",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "分段串起的雞心，彈實帶勁、越嚼越香；一串剛剛好，內臟控必點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞屁股",
+            "description": "膠質豐富，串起一口一顆，外層微焦油香、內裡Q彈，越嚼越香的人氣首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞翅",
+            "description": "人氣必點雞翅，香氣誘人，越啃越涮嘴！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮2串",
+            "description": "雞皮超好吃！必點吧",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腳三隻",
+            "description": "膠質豐富、Q彈帶勁的雞腳，越啃越香！\n（有剪指甲唷！）",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豆包",
+            "description": "炸豆包是豆製品 每天都要補充蛋白質😂",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿",
+            "description": "人氣單點，雞腿部位肉感紮實，經典不敗",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點, 請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選🔥",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "我們豬血糕有驚喜挑選過 我最愛豬血糕了",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆乾",
+            "description": "一份餐點都要來一個靈魂人物 豆乾先生！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣",
+            "description": "餐點怎麼能少了 甜不辣小姐呢",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇🍄",
+            "description": "具有增強免疫力, 降血糖, 養顏美容  增強食欲等保健功效",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豆包",
+            "description": "炸豆包是豆製品 每天都要補充蛋白質😂",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞屁股",
+            "description": "膠質豐富，串起一口一顆，外層微焦油香、內裡Q彈，越嚼越香的人氣首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "分段串起的雞心，彈實帶勁、越嚼越香；一串剛剛好，內臟控必點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮2串",
+            "description": "雞皮超好吃！必點吧",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞翅",
+            "description": "人氣必點雞翅，香氣誘人，越啃越涮嘴！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯米腸",
+            "description": "外Q內糯、米香飽滿的糯米腸，Q彈紮實、越嚼越香，人氣必點",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉串",
+            "description": "豬肉塊串起的經典小點，一串剛剛好，隨手加點不負擔",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞腳三隻",
+            "description": "膠質豐富、Q彈帶勁的雞腳，越啃越香！\n（有剪指甲唷！）",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸",
+            "description": "肥嘟嘟星星腸人手一串",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸",
+            "description": "經典貢丸，豬肉香氣滿滿，Q彈爽口，越嚼越香，一口一顆更滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚丸",
+            "description": "以鱈魚製成的Q彈魚丸，鮮香順口，一口一顆好滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆腸",
+            "description": "豆製品做成的豆腸，口感紮實帶Q，豆香滿滿，輕鬆補充蛋白質！",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "杏鮑菇，口感扎實帶彈，咬下飽滿多汁，淡雅菇香，簡單就好吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞脖子",
+            "description": "帶骨雞脖子，啃勁與膠質兼具，越嚼越香，一口接一口停不下來",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿",
+            "description": "人氣單點，雞腿部位肉感紮實，經典不敗",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "Q彈鮮香的花枝丸，海味滿滿，一口一顆涮嘴停不下來",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯米腸",
+            "description": "外Q內糯、米香飽滿的糯米腸，Q彈紮實、越嚼越香，人氣必點",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉串",
+            "description": "豬肉塊串起的經典小點，一串剛剛好，隨手加點不負擔",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "✨純火烤 無油炸✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "純火烤 無油炸",
+            "description": "全程純火烤、絕不油炸，強調原味與香氣；外層微焦香、口感爽口，簡單純粹就好吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

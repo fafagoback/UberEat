@@ -1,0 +1,141 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%97%A5%E5%AE%89%E6%B3%95%E5%BC%8F%E5%90%90%E5%8F%B8%E7%94%9C%E9%BB%9E%E5%B0%88%E9%96%80%E5%BA%97/jji2oZZ7UeeeN2ibyDjDMA",
+  "name": "日安法式吐司甜點專門店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "臺北市士林區基河路101號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08806,
+    "longitude": 121.52419
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Bakery",
+    "Fruit",
+    "Drinks",
+    "Comfort Food",
+    "Snacks",
+    "Coffee and Tea",
+    "Bubble Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "法式吐司香蕉巧克力  French Toast with Banana and Chocolate",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖香蕉  Caramel Banana",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "法式吐司濃郁花生醬  French Toast with Rich Peanut Butter",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "111.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "法式吐司奶油蜂蜜煉乳  French Butter Toast with Honey and Condensed Milk",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "111.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "法式吐司松露明太子  French Toast with Truffle and Cod Roe",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料  Drinks",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "柳橙鮮果綠  Fresh Orange Green Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "純蜂蜜檸檬水  Pure Honey Lemonade",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶  Fresh Milk Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多多綠  Yakult Green Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

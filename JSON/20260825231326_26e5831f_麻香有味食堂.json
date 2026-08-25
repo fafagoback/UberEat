@@ -1,0 +1,610 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%BA%BB%E9%A6%99%E6%9C%89%E5%91%B3%E9%A3%9F%E5%A0%82/J4GNN6shWw6mmCVG0muqyA",
+  "name": "麻香有味食堂",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區慈愛街58號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0794125,
+    "longitude": 121.4867543
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 79
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韭菜水餃",
+            "description": "韭菜餡水餃，10顆，餃子不可或缺的口味，適合全日享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "😋顧客最愛 | 麻辣綜合湯",
+            "description": "內含鴨血x3 豆腐x3、時蔬及金針菇。\n不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜水餃",
+            "description": "高麗菜餡水餃，10顆，特殊調味，適合全日享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥肉水餃",
+            "description": "蔥肉餡水餃，10顆，蔥香美味，適合全日享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 麻辣綜合煲",
+            "description": "含鴨血x3 豆腐x3 梅花豬、時蔬、金針菇、火鍋料、豆皮 不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腐煲",
+            "description": "含豆腐x6 梅花豬、時蔬、金針菇、火鍋料、豆皮 不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血湯",
+            "description": "內含鴨血x6、時蔬及金針菇。\n不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工大蛋餃",
+            "description": "手工煎的蛋餃 留有蛋香又大顆 一份2 個。\n選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血煲",
+            "description": "含鴨血x4  梅花豬、時蔬、金針菇、火鍋料、豆皮 不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮粥",
+            "description": "新鮮海鮮搭配白粥，帶來鮮美滋味，讓您一飽口福。內含蛤蠣、蝦子、小卷、淡水魚丸、小貢丸、雞蛋、魚板、青菜，餐點內容物不得更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工芋頭丸",
+            "description": "吃得到芋頭角的手工芋頭丸 2 顆。\n選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好好吃肉燥飯",
+            "description": "香噴噴滷汁，搭配滿滿肉燥，必吃的經典美食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腐湯",
+            "description": "內含豆腐x6、時蔬及金針菇。\n不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "😋顧客最愛 | 高麗菜",
+            "description": "選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 海鮮麵",
+            "description": "新鮮海鮮搭配麵條，帶來鮮美滋味，讓您一飽口福。內含蛤蠣、蝦子、小卷、淡水魚丸、小貢丸、雞蛋、魚板、青菜，餐點內容物不得更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點（以及口味），請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選🔥",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 私房椒麻麵",
+            "description": "獨門配方，溫潤順口，絕對讓您味迴九霄，喜歡層次辣的您絕不能錯過。(台灣本產豬肉使用)",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 香噴噴牛滷飯",
+            "description": "香噴噴牛滷飯，牛肉滷製入味，搭配香米飯，滿足味蕾的美味選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 玉米水餃",
+            "description": "玉米餡水餃，10顆，口感鮮甜，適合全日享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 海鮮麵",
+            "description": "新鮮海鮮搭配麵條，帶來鮮美滋味，讓您一飽口福。內含蛤蠣、蝦子、小卷、淡水魚丸、小貢丸、雞蛋、魚板、青菜，餐點內容物不得更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 麻辣綜合煲",
+            "description": "含鴨血x3 豆腐x3 梅花豬、時蔬、金針菇、火鍋料、豆皮 不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "簡單吃麻辣🌶️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "😋顧客最愛 | 麻辣綜合湯",
+            "description": "內含鴨血x3 豆腐x3、時蔬及金針菇。\n不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血湯",
+            "description": "內含鴨血x6、時蔬及金針菇。\n不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腐湯",
+            "description": "內含豆腐x6、時蔬及金針菇。\n不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "豐盛吃麻辣♨️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 麻辣綜合煲",
+            "description": "含鴨血x3 豆腐x3 梅花豬、時蔬、金針菇、火鍋料、豆皮 不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血煲",
+            "description": "含鴨血x4  梅花豬、時蔬、金針菇、火鍋料、豆皮 不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腐煲",
+            "description": "含豆腐x6 梅花豬、時蔬、金針菇、火鍋料、豆皮 不含主食 需另外加點",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "加菜區☘️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "😋顧客最愛 | 大豆皮",
+            "description": "選購後請備注要加在哪份餐點 謝謝☺️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "😋顧客最愛 | 高麗菜",
+            "description": "選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金魚蛋",
+            "description": "4顆\n選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅花豬",
+            "description": "選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工芋頭丸",
+            "description": "吃得到芋頭角的手工芋頭丸 2 顆。\n選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛五花",
+            "description": "選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工大蛋餃",
+            "description": "手工煎的蛋餃 留有蛋香又大顆 一份2 個。\n選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵白菜",
+            "description": "選購後請備注要加在哪份餐點 謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "吃飽飽主食類🥢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 私房椒麻麵",
+            "description": "獨門配方，溫潤順口，絕對讓您味迴九霄，喜歡層次辣的您絕不能錯過。(台灣本產豬肉使用)",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 香噴噴牛滷飯",
+            "description": "香噴噴牛滷飯，牛肉滷製入味，搭配香米飯，滿足味蕾的美味選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 海鮮麵",
+            "description": "新鮮海鮮搭配麵條，帶來鮮美滋味，讓您一飽口福。內含蛤蠣、蝦子、小卷、淡水魚丸、小貢丸、雞蛋、魚板、青菜，餐點內容物不得更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好好吃肉燥飯",
+            "description": "香噴噴滷汁，搭配滿滿肉燥，必吃的經典美食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典肉燥麵",
+            "description": "簡單樸實的美味，不知道吃什麼的時候就選這道！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜水餃",
+            "description": "高麗菜餡水餃，10顆，特殊調味，適合全日享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜水餃",
+            "description": "韭菜餡水餃，10顆，餃子不可或缺的口味，適合全日享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥肉水餃",
+            "description": "蔥肉餡水餃，10顆，蔥香美味，適合全日享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮粥",
+            "description": "新鮮海鮮搭配白粥，帶來鮮美滋味，讓您一飽口福。內含蛤蠣、蝦子、小卷、淡水魚丸、小貢丸、雞蛋、魚板、青菜，餐點內容物不得更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍店長推薦 | 玉米水餃",
+            "description": "玉米餡水餃，10顆，口感鮮甜，適合全日享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚粥",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "私房炸醬麵",
+            "description": "歷經二次48小時熟成的炸醬，炒上國產黑毛豬絞肉，每一口都是滿足的肉香&醬香。(台灣本產豬肉使用)",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃香牛滷香拌麵",
+            "description": "以招牌牛滷飯滷汁為基底，牛油香氣層層堆疊，熱拌瞬間香氣四溢。麵條吸附滿滿滷汁，鹹香順口、不膩不燥，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉排骨湯麵",
+            "description": "清燉大骨湯頭搭配慢滷排骨，湯清不膩、肉嫩入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "🍚",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "暖胃湯品🥣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "貢丸蛋花湯",
+            "description": "以清甜大骨高湯為基底，加入彈嫩小貢丸，湯滾後緩緩淋入蛋液，形成細緻蛋花。口感清爽不油膩，貢丸鮮香、蛋花滑順，溫潤順口，是老少皆宜、四季都合適的經典湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜蛤蠣湯",
+            "description": "嚴選新鮮蛤蠣，湯頭清爽甘甜，保留海味鮮香，口感清澈不油膩，是簡單卻耐喝的鮮美湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

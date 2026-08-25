@@ -1,0 +1,387 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%8E%8A%E5%AE%B6%E7%8F%AD%E8%90%AC%E8%8F%AF%E9%BA%BB%E6%B2%B9%E9%9B%9E-%E5%A4%A9%E6%AF%8D%E5%BA%97/1HLAUlVmRUi8IG_F2m_Uyw",
+  "name": "莊家班萬華麻油雞 天母店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "155",
+    "addressLocality": "",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1081368,
+    "longitude": 121.529841
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 5000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Street Food"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻油腰只套餐 Sesame Oil Pork Kidney Combo",
+            "description": "250 公克。含麻油腰只及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典麻油雞套餐 Classic Sesame Oil Chicken Combo",
+            "description": "220 公克。含麻油雞, 麻油麵線及燙青菜。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞 Sesame Oil Chicken",
+            "description": "220 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "人氣麻油綜合套餐 Assorted Meat with Sesame Oil Combo",
+            "description": "480 公克。含麻油綜合及麻油麵線。原產地: 台灣。綜合內容物: 腰只, 豬心, 豬肝, 豬肚, 豬里肌及雞胗。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油里肌套餐 Sesame Oil Pork Loin Combo",
+            "description": "160 公克。含麻油豬里肌及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油綜合 Assorted Sesame Oil Meat",
+            "description": "480 公克。綜合內容物: 腰只, 豬心, 豬肝, 豬肚, 豬里肌及雞胗。綜合內容物, 恕無法更換。外送餐點為熟食出餐。肉品原產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油里肌 Sesame Oil Pork Loin",
+            "description": "160 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油腰只 Sesame Oil Pork Kidney",
+            "description": "250 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞珍套餐 Sesame Oil Chicken Gizzard Combo",
+            "description": "200 公克。含麻油雞胗及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油豬肝 Sesame Oil Pork Liver",
+            "description": "200 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油豬肝套餐 Sesame Oil Pork Liver Combo",
+            "description": "200 公克。含麻油豬肝及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞胗 Sesame Oil Chicken Gizzard",
+            "description": "200 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻油腰只套餐 Sesame Oil Pork Kidney Combo",
+            "description": "250 公克。含麻油腰只及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油乾麵線 Sesame Oil Dried Vermicelli",
+            "description": "230 公克。外送餐點為熟食出餐。肉品原產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典麻油雞套餐 Classic Sesame Oil Chicken Combo",
+            "description": "220 公克。含麻油雞, 麻油麵線及燙青菜。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "人氣麻油綜合套餐 Assorted Meat with Sesame Oil Combo",
+            "description": "480 公克。含麻油綜合及麻油麵線。原產地: 台灣。綜合內容物: 腰只, 豬心, 豬肝, 豬肚, 豬里肌及雞胗。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜 Blanched Vegetable",
+            "description": "200 公克。含麻油高麗菜。外送餐點為熟食出餐。肉品原產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "暖心飽胃超值套餐 Super Value Combo",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞珍套餐 Sesame Oil Chicken Gizzard Combo",
+            "description": "200 公克。含麻油雞胗及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油豬肝套餐 Sesame Oil Pork Liver Combo",
+            "description": "200 公克。含麻油豬肝及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油里肌套餐 Sesame Oil Pork Loin Combo",
+            "description": "160 公克。含麻油豬里肌及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油豬肚套餐 Sesame Oil Pork Tripe Combo",
+            "description": "160 公克。含麻油豬肚及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油豬心套餐 Sesame Oil Pork Heart Combo",
+            "description": "200 公克。含麻油豬心及麻油麵線。原產地: 台灣。套餐內容, 恕無法更換。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點 A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞胇 Sesame Oil Chicken Testicles",
+            "description": "150 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "650.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油綜合 Assorted Sesame Oil Meat",
+            "description": "480 公克。綜合內容物: 腰只, 豬心, 豬肝, 豬肚, 豬里肌及雞胗。綜合內容物, 恕無法更換。外送餐點為熟食出餐。肉品原產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油腰只 Sesame Oil Pork Kidney",
+            "description": "250 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油里肌 Sesame Oil Pork Loin",
+            "description": "160 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油豬肚 Sesame Oil Pork Tripe",
+            "description": "160 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油豬心 Sesame Oil Pork Heart",
+            "description": "200 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞 Sesame Oil Chicken",
+            "description": "220 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油雞胗 Sesame Oil Chicken Gizzard",
+            "description": "200 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油豬肝 Sesame Oil Pork Liver",
+            "description": "200 公克。原產地: 台灣。外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油飯 Rice with Sesame Oil",
+            "description": "外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯 Rice",
+            "description": "外送餐點為熟食出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

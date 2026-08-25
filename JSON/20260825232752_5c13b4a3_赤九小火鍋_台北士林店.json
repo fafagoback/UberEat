@@ -1,0 +1,700 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%B5%A4%E4%B9%9D%E5%B0%8F%E7%81%AB%E9%8D%8B-%E5%8F%B0%E5%8C%97%E5%A3%AB%E6%9E%97%E5%BA%97/h52iBKmJUPWzUQWxrDfAqQ",
+  "name": "赤九小火鍋 台北士林店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7, Shi Dong Rd.",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111028",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1118756,
+    "longitude": 121.5266419
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 3.5,
+    "reviewCount": 100
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉品原產地為美國豬肉, 牛肉及雞肉。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單點自由配（要先選擇湯頭才能選單點）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小火鍋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泡菜牛肉鍋",
+            "description": "套餐包1包 （高麗菜 鵝白菜 金針菇 木耳 玉米筍 紅蘿蔔） 韓國Q拉麵1包 泡菜100克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜雞肉鍋",
+            "description": "套餐包1包 （高麗菜 鵝白菜 金針菇 木耳 玉米筍 紅蘿蔔） 韓國Q拉麵1包 泡菜100克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬肉鍋",
+            "description": "套餐包1包 （高麗菜 鵝白菜 金針菇 木耳 玉米筍 紅蘿蔔） 韓國Q拉麵1包 泡菜100克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜櫻桃鴨鍋",
+            "description": "套餐包1包 （高麗菜 鵝白菜 金針菇 木耳 玉米筍 紅蘿蔔） 韓國Q拉麵1包 泡菜100克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "234.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜無骨牛小排鍋",
+            "description": "套餐包1包 （高麗菜 鵝白菜 金針菇 木耳 玉米筍 紅蘿蔔） 韓國Q拉麵1包 泡菜100克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "258.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜牛肉輕食鍋",
+            "description": "烏龍麵100克 泡菜75克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜雞肉輕食鍋",
+            "description": "烏龍麵100克 泡菜75克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬肉輕食鍋",
+            "description": "烏龍麵100克 泡菜75克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜櫻桃鴨輕食鍋",
+            "description": "烏龍麵100克 泡菜75克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜無骨牛小排輕食鍋",
+            "description": "烏龍麵100克 泡菜75克 韓式年糕 韓式魚板各2個 玉米筍1個 櫻花蝦卵1個",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小資牛肉鍋",
+            "description": "高麗菜85克 鵝白菜70克 陽春麵100克 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小資豬肉鍋",
+            "description": "高麗菜85克 鵝白菜70克 陽春麵100克 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小資雞肉鍋",
+            "description": "高麗菜85克 鵝白菜70克 陽春麵100克 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "132.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小資櫻桃鴨鍋",
+            "description": "高麗菜85克 鵝白菜70克 陽春麵100克 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小資無骨牛小排鍋",
+            "description": "高麗菜85克 鵝白菜70克 陽春麵100克 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "櫻桃鴨鍋物",
+            "description": "蒸煮麵1包 高麗菜100克 蟹味棒 魚餃 燕餃 甜不辣 鑫鑫腸 黃金魚蛋 玉米筍 各1個 金針菇35克 豬血糕 百頁豆腐 各半個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無骨牛小排鍋物",
+            "description": "蒸煮麵1包 高麗菜100克 蟹味棒 魚餃 燕餃 甜不辣 鑫鑫腸 黃金魚蛋 玉米筍 各1個 金針菇35克 豬血糕 百頁豆腐 各半個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "246.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉鍋物",
+            "description": "蒸煮麵1包 高麗菜100克 蟹味棒 魚餃 燕餃 甜不辣 鑫鑫腸 黃金魚蛋 玉米筍 各1個 金針菇35克 豬血糕 百頁豆腐 各半個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉鍋物",
+            "description": "蒸煮麵1包 高麗菜100克 蟹味棒 魚餃 燕餃 甜不辣 鑫鑫腸 黃金魚蛋 玉米筍 各1個 金針菇35克 豬血糕 百頁豆腐 各半個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉鍋物",
+            "description": "蒸煮麵1包 高麗菜100克 蟹味棒 魚餃 燕餃 甜不辣 鑫鑫腸 黃金魚蛋 玉米筍 各1個 金針菇35克 豬血糕 百頁豆腐 各半個 主食1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "216.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "關東煮",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "乾拌麵",
+            "description": "高麗菜50克 陽春麵2包（200克）",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅油抄手(乾的)",
+            "description": "內含餛飩6顆 小白菜少許 蔥少許 微辣",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "貢丸湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆腐湯",
+            "description": "豆腐 湯品1份",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "餛飩湯",
+            "description": "內含蔥少許、5顆餛飩",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "餛飩湯",
+            "description": "5顆餛飩+ 蔥少許",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "滷味",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滷鴨翅",
+            "description": "滷味鴨翅 醬香入味 口感帶勁",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞翅",
+            "description": "滷味雞翅",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "水餃",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "湯餃(韮菜)（12顆）",
+            "description": "12 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "湯餃(高麗菜)（12顆）",
+            "description": "12 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾拌餃(韮菜)（12顆）",
+            "description": "12 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾拌餃(高麗菜)（12顆）",
+            "description": "12 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜水餃（12顆）",
+            "description": "12 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韮菜水餃（12顆）",
+            "description": "12 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅油抄手(乾的)",
+            "description": "餛飩6顆 小白菜少許 蔥少許 微辣",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烏梅汁",
+            "description": "甜度冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜茶",
+            "description": "甜度冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紫蘇梅汁",
+            "description": "甜度冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱烏龍",
+            "description": "無糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸甜不辣",
+            "description": "5 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸花枝丸",
+            "description": "2 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸貢丸",
+            "description": "2 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸百頁豆腐",
+            "description": "1 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸糯米腸",
+            "description": "1 根。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸米血糕",
+            "description": "1 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸芋籤",
+            "description": "1 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸滷小豆干",
+            "description": "3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸滷大豆干",
+            "description": "1 塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸生豆包",
+            "description": "1 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸玉米筍",
+            "description": "5 根。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸香菇",
+            "description": "45 公克。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸杏鮑菇",
+            "description": "45 公克。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸金針菇",
+            "description": "70 公克。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸龍蝦沙拉",
+            "description": "3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸年糕",
+            "description": "10 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸鑫鑫腸",
+            "description": "5 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸三角油豆腐【3個】",
+            "description": "3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸水晶餃【2個】",
+            "description": "2 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸高麗菜餃子【5個】",
+            "description": "5 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

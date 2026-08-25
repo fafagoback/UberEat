@@ -1,0 +1,723 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%B8%96%E7%95%8C%E8%B1%86%E6%BC%BF%E5%A4%A7%E7%8E%8B-%E6%B0%91%E6%97%8F%E5%BA%97/rxvfszHJRkmWTGP8iwWCAw",
+  "name": "世界豆漿大王 民族店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 292",
+    "addressLocality": "",
+    "addressRegion": "Taipei City",
+    "postalCode": "103",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.068643,
+    "longitude": 121.511293
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 10000
+  },
+  "servesCuisine": [
+    "Breakfast and Brunch",
+    "Soy Milk"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉餡餅",
+            "description": "老師傅手擀麵皮，煎到微酥，包裹鮮甜豬肉！ 皮薄餡厚，餡心滋潤軟滑、味道甜而不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹飯糰加蔥蛋",
+            "description": "油條鹹香酥脆+鮮香旗魚鬆+蔥蛋 超高CP值！紮實的飽足感！",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小籠煎包(8顆)(平台)",
+            "description": "爆漿肉汁與焦脆的麵皮，帶給你多層次的口感（一籠8顆）",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅油條加蔥蛋",
+            "description": "燒餅薄酥多層次，蔥花蛋加上油條香，口感酥脆滑嫩。  ※油條為現炸品項，配送過程酥脆程度可能會產生變化，請協助留意，謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕加蔥蛋",
+            "description": "煎到外酥內軟，當早餐或點心都適合！加蛋美味更加分！",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔絲餅加蔥蛋",
+            "description": "外皮酥脆厚實，內層蘿蔔絲的清甜，口感滑嫩。襯托出了蛋餅鮮甜的味道！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餅夾油條",
+            "description": "鬆軟蛋餅配上酥脆油條，衝突的味覺，給您滿滿的味覺饗宴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋餅",
+            "description": "蛋香四溢的餅皮， 搭配濃郁起司，香醇不膩口！",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選蜂蜜紅茶(冰有糖)",
+            "description": "(冰與甜度黃金比例，恕無法調整) 鮮豔橙紅的醇香紅茶搭配芳香馥郁的嚴選小農蜂蜜，清雅回甘，清爽解膩最佳首選！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹豆漿加蛋［香醇焦香豆漿］",
+            "description": "(須加辣請特別註明) 滿滿的蝦米、油條、蔥花、榨菜，加點醋，成為寒冬夜裡的小確幸！  *豆漿古早焦香味濃厚，如擔心喝不習慣，歡迎選購其他無豆漿的品項",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕",
+            "description": "煎到外酥內軟，當早餐或點心都適合！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣嚴選鮮肉小籠包",
+            "description": "爆漿肉汁與撲鼻的餡香，輕透的麵皮包裹鮮嫩的肉餡，難以忘懷的好味道（一籠8顆）",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅加蔥蛋加酸菜",
+            "description": "剛烤好的燒餅，滿布的酸菜與花生粉及剛煎好的蔥花蛋，這可是眷村才有的限定版 ！ (內含花生粉)",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥抓餅加蛋",
+            "description": "內含豬油 (肉品原產地 : 國產) Q彈蓬鬆的麵皮，夾雜青蔥的鮮甜和蛋香，香酥又有層次，越吃越唰嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅加蔥蛋",
+            "description": "充滿嚼勁與Q度的餅皮！ 加上煎蛋的蔥香！ 早餐、點心、宵夜的最佳選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜盒加蛋",
+            "description": "薄薄的麵皮烤至金黃，包著滿滿的韭菜內餡，愛韭人士絕不能錯過！加上蛋更是美味濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜盒",
+            "description": "薄薄的麵皮烤至金黃，包著滿滿的韭菜內餡，愛韭人士絕不能錯過！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹飯糰",
+            "description": "嚴選旗魚鬆，包覆在健康不回鍋的油條中，外層是彈性十足的糯米飯，一生懸命的手工飯糰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚鬆蛋餅",
+            "description": "內含魚鬆 (原產地 : 台灣) 蛋香四溢的餅皮，搭配香酥鮮美的魚鬆，多層次的口感，讓人胃口激增！",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉餡餅",
+            "description": "老師傅手擀麵皮，煎到微酥，包裹鮮甜豬肉！ 皮薄餡厚，餡心滋潤軟滑、味道甜而不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選蜂蜜紅茶(冰有糖)",
+            "description": "(冰與甜度黃金比例，恕無法調整) 鮮豔橙紅的醇香紅茶搭配芳香馥郁的嚴選小農蜂蜜，清雅回甘，清爽解膩最佳首選！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "豆漿/米漿/飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冰豆漿(冰有糖)［香醇焦香豆漿］",
+            "description": "世界豆漿大王特色──焦香豆漿！香濃滑順的口感，焦香濃郁不膩口！ (嚴選非基改黃豆，堅持不添加化學材料！) (豆漿古早焦香味濃厚，如擔心喝不習慣，歡迎選購其他無豆漿的品項)",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰清漿(冰無糖)［香醇焦香豆漿］",
+            "description": "香濃滑順的口感，焦香濃郁不膩口。 嚴選非基改黃豆，堅持不添加化學料！",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選蜂蜜紅茶(冰有糖)",
+            "description": "(冰與甜度黃金比例，恕無法調整) 鮮豔橙紅的醇香紅茶搭配芳香馥郁的嚴選小農蜂蜜，清雅回甘，清爽解膩最佳首選！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰米漿 (冰有糖)",
+            "description": "濃厚香醇的花生米漿，甜甜的滋味，濃濃的米香口齒留香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱豆漿(熱有糖)［香醇焦香豆漿］",
+            "description": "堅持每天手作熬煮！熱焦香豆漿，香濃滑順的口感，焦香濃郁不膩口！ 嚴選非基改黃豆，堅持不添加化學材料！ (豆漿古早焦香味濃厚，如擔心喝不習慣，歡迎選購其他無豆漿的品項)",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱清漿(熱無糖)［香醇焦香豆漿］",
+            "description": "香濃滑順的口感，焦香濃郁不膩口。 無糖健康的現磨豆漿，古早味的炭香豆漿給您滿滿活力。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰奶茶（冰有糖）",
+            "description": "香醇奶味，透露紅茶清香",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鹹豆漿加蛋［香醇焦香豆漿］",
+            "description": "(須加辣請特別註明) 滿滿的蝦米、油條、蔥花、榨菜，加點醋，成為寒冬夜裡的小確幸！  *豆漿古早焦香味濃厚，如擔心喝不習慣，歡迎選購其他無豆漿的品項",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹豆漿［香醇焦香豆漿］",
+            "description": "(須加辣請特別註明) 滿滿的蝦米、油條、蔥花、榨菜，加點醋，成為寒冬夜裡的小確幸！搭配蛋香更能襯托豆香  *豆漿古早焦香味濃厚，如擔心喝不習慣，歡迎選購其他無豆漿的品項",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "饅頭及包子類 Bun",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑糖饅頭加蔥蛋",
+            "description": "饅頭鬆軟有嚼勁，煎至恰到好處的蔥蛋！綿密不濕軟",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美味鮮肉包",
+            "description": "爆汁鮮肉包加上青脆的四季豆，美味又鮮甜。而且我們是使用台灣特選後腿豬肉哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工高麗菜包",
+            "description": "就算不是「僧」也都想吃！ 菜料鮮甜沒有多餘的油膩，內餡高麗菜、選自南投特選香菇、紅蘿蔔的結合，質嫩爽口，口感飽滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖饅頭加蔥蛋夾酸菜",
+            "description": "饅頭鬆軟有嚼勁，煎至恰到好處的蔥蛋！綿密不濕軟，搭配酸菜的爽脆讓人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "燒餅類 Sesame Flat Bread",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "燒餅加蔥蛋",
+            "description": "充滿嚼勁與Q度的餅皮！ 加上煎蛋的蔥香！ 早餐、點心、宵夜的最佳選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅油條",
+            "description": "時間和均勻度的完美掌握！ 酥香恰到好處的燒餅 再加上油條超對味！  ※油條為現炸品項，配送過程酥脆程度可能會產生變化，請協助留意，謝謝您。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅油條加蔥蛋",
+            "description": "燒餅薄酥多層次，蔥花蛋加上油條香，口感酥脆滑嫩。  ※油條為現炸品項，配送過程酥脆程度可能會產生變化，請協助留意，謝謝您",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅加蔥蛋加酸菜",
+            "description": "剛烤好的燒餅，滿布的酸菜與花生粉及剛煎好的蔥花蛋，這可是眷村才有的限定版 ！ (內含花生粉)",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅油條夾酸菜",
+            "description": "剛烤好的燒餅、炸好的油條，滿布的酸菜與花生粉，這可是眷村才有的限定版 ！ (內含花生粉)  ※油條為現炸品項，配送過程酥脆程度可能會產生變化，請協助留意，謝謝您。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "酥餅類 Pastry",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芝麻甜餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生甜餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯糰類 Rice Ball",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鹹飯糰加蔥蛋",
+            "description": "油條鹹香酥脆+鮮香旗魚鬆+蔥蛋 超高CP值！紮實的飽足感！",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹飯糰",
+            "description": "嚴選旗魚鬆，包覆在健康不回鍋的油條中，外層是彈性十足的糯米飯，一生懸命的手工飯糰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜飯糰",
+            "description": "白砂糖包覆在健康不回鍋的油條中，外層是彈性十足的糯米飯，一生懸命的手工飯糰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素飯糰",
+            "description": "海苔素鬆包覆在健康油條中，外層是彈性十足的糯米飯，一生懸命的手工飯糰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蛋餅類 Egg Pancake Roll",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋餅",
+            "description": "蛋香四溢的餅皮， 搭配濃郁起司，香醇不膩口！",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔絲餅加蔥蛋",
+            "description": "外皮酥脆厚實，內層蘿蔔絲的清甜，口感滑嫩。襯托出了蛋餅鮮甜的味道！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餅夾油條",
+            "description": "鬆軟蛋餅配上酥脆油條，衝突的味覺，給您滿滿的味覺饗宴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋餅",
+            "description": "肉品原產地 : 國產豬 蛋香四溢的餅皮，搭配充滿嚼勁的培根和濃郁的起司，中西式碰撞出的味覺饗宴，令人食指大動！",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排蛋餅",
+            "description": "肉品原產地 : 國產豬 蛋香四溢的餅皮，包裹著香酥豬排，每一口都是大大的滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚鬆蛋餅",
+            "description": "內含魚鬆 (原產地 : 台灣) 蛋香四溢的餅皮，搭配香酥鮮美的魚鬆，多層次的口感，讓人胃口激增！",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蒸點及煎餅類 Steamed Snacks and Pan-Fried Pancake",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小籠煎包(8顆)(平台)",
+            "description": "爆漿肉汁與焦脆的麵皮，帶給你多層次的口感（一籠8顆）",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉餡餅",
+            "description": "老師傅手擀麵皮，煎到微酥，包裹鮮甜豬肉！ 皮薄餡厚，餡心滋潤軟滑、味道甜而不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜盒",
+            "description": "薄薄的麵皮烤至金黃，包著滿滿的韭菜內餡，愛韭人士絕不能錯過！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔絲餅",
+            "description": "外皮酥脆厚實，內層蘿蔔絲的清甜，口感滑嫩。 蘿蔔不僅有大量的維生素和膳食纖維，更是消積下氣的能手！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕",
+            "description": "煎到外酥內軟，當早餐或點心都適合！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕加蔥蛋",
+            "description": "煎到外酥內軟，當早餐或點心都適合！加蛋美味更加分！",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥抓餅加蛋",
+            "description": "內含豬油 (肉品原產地 : 國產) Q彈蓬鬆的麵皮，夾雜青蔥的鮮甜和蛋香，香酥又有層次，越吃越唰嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣嚴選鮮肉小籠包",
+            "description": "爆漿肉汁與撲鼻的餡香，輕透的麵皮包裹鮮嫩的肉餡，難以忘懷的好味道（一籠8顆）",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花蛋",
+            "description": "濃郁的雞蛋撞擊鮮蔥，吃下一口滿嘴油香，配上醬油更是鹹香四溢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋",
+            "description": "每日新鮮直送的新鮮雞蛋，給您活力滿滿的蛋白質，半熟的荷包蛋給您濃郁的蛋香。(若需全熟請特別註明)",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜盒加蛋",
+            "description": "薄薄的麵皮烤至金黃，包著滿滿的韭菜內餡，愛韭人士絕不能錯過！加上蛋更是美味濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥抓餅",
+            "description": "內含豬油 (肉品原產地 : 國產) Q彈蓬鬆的麵皮，夾雜青蔥的鮮甜，香酥又有層次，越吃越唰嘴！",
+            "offers": {
+              "@type": "Offer",
+              "price": "63.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

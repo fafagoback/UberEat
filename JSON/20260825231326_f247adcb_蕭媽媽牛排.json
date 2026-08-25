@@ -1,0 +1,523 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%95%AD%E5%AA%BD%E5%AA%BD%E7%89%9B%E6%8E%92/JZl0QBLhV_e2hnoFJNi56A",
+  "name": "蕭媽媽牛排",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區慈愛街67號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0794093,
+    "longitude": 121.486744
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 27
+  },
+  "servesCuisine": [
+    "American",
+    "Steak",
+    "Cheesesteak",
+    "Street Food",
+    "Taiwanese",
+    "Comfort Food",
+    "Soul Food",
+    "Kebab"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢 Notice📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點, 請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選❤️ Popular Items❤️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醬煮鐵板麵😋 Hot Plate Noodles with Sauce😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬+豬+豬 三拼套餐😍 Pork Loin Chop Meal😍",
+            "description": "含 3 個里肌豬排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "554.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛+牛+牛 三拼套餐😍 Sirloin Steak Meal😍",
+            "description": "含 3 個沙朗牛排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "708.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞+雞+雞 三拼套餐😍 Chicken Thigh Chop Meal😍",
+            "description": "含 3 個雞腿排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "708.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "扁鱈·蝦·魷三拼海鮮😍 Halibut Chop Meal😍",
+            "description": "含 1 個扁鱈排, 1 個鮮蝦排及 1 個魷魚排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "831.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "骰子牛+美股牛小排+菲力牛排 三拼套餐🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "一份排餐🩷 1 Portion Steak Meal🩷",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排套餐😋 Pork Loin Chop Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "247.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "扁鱈排套餐😋 Halibut Chop Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "278.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排套餐😋 Sirloin Steak Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "308.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿排套餐😋 Chicken Thigh Chop Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "308.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅花豬排套餐😋 Pork Blade Shoulder Chop Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "324.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊小排套餐😋 Lamb Short Rib Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "385.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦排套餐😋 Shrimp Chop Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷魚排套餐😋 Squid Chop Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美骨小牛排 1 片套餐😋 Bone-In Short Rib 1 Sliced Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚排套餐😋 Salmon Chop Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "447.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "骰子牛肋排套餐😋 Diced Beef Back Rib Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "462.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菲力牛排套餐😋 Steak Fillet Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "554.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美骨小牛排 2 片套餐😋 Bone-In Short Rib 2 Sliced Combo😋",
+            "description": "每份餐點均單人套餐, 餐點本身有蛋, 麵, 濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "631.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "雙拼排餐🧡 Mixed Chop Meals🧡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排及雞腿排餐🥰 Pork Loin Chop and Chicken Thigh Chop Meal🥰",
+            "description": "含 1 個里肌豬排及 1 個雞腿排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "462.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排及里肌豬排餐🥰 Sirloin Steak and Pork Loin Chop Meal🥰",
+            "description": "含 1 個沙朗牛排及 1 個里肌豬排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "477.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排及扁鱈餐🥰 Sirloin Steak and Halibut Meal🥰",
+            "description": "含 1 個沙朗牛排，1 個扁鱈排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "477.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛+沙朗牛 雙拼套餐🥰 Assorted  Sirloin Steak Meal🥰",
+            "description": "含 1 個沙朗牛排，搭配 1 份第二主菜的雙拼組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "508.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排及雞腿排餐🥰 Sirloin Steak and Chicken Thigh Chop Meal🥰",
+            "description": "含 1 個沙朗牛排及 1 個雞腿排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "508.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅花豬排及沙朗牛排餐🥰 Pork Blade Shoulder Chop and Sirloin Steak Meal🥰",
+            "description": "含 1 個梅花豬排及 1 個沙朗牛排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "524.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排及鮮蝦餐🥰 Sirloin Steak and Shrimp Chop Meal🥰",
+            "description": "含 1 個沙朗牛排及 1 個鮮蝦排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "585.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排及魷魚餐🥰 Sirloin Steak and Squid Meal🥰",
+            "description": "含 1 個沙朗牛排及 1 個魷魚排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "585.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排及羊小排餐🥰 Sirloin Steak and Lamb Short Rib Meal🥰",
+            "description": "含 1 個沙朗牛排及 1 個羊小排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "585.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排及鮮蝦餐🥰 Pork Loin Chop and Shrimp Meal🥰",
+            "description": "含里肌豬排與鮮蝦，海陸雙拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "585.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排及魷魚餐🥰 Pork Loin Chop and Squid Meal🥰",
+            "description": "含 1 個里肌豬排及 1 個魷魚排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "585.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排及羊小排餐🥰 Pork Loin Chop and Lamb Short Rib Meal🥰",
+            "description": "含 1 個里肌豬排及 1 個羊小排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "585.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿排及鮮蝦餐🥰 Chicken Thigh Chop and Shrimp Meal🥰",
+            "description": "含 1 個雞腿排及 1 份鮮蝦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "585.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿排及魷魚餐🥰 Chicken Thigh Chop and Squid Meal🥰",
+            "description": "含 1 個雞腿排及 1 個魷魚排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "585.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅花豬排及鮮蝦餐🥰 Pork Blade Shoulder Chop and Shrimp Meal🥰",
+            "description": "含 1 個梅花豬排及 1 份鮮蝦。",
+            "offers": {
+              "@type": "Offer",
+              "price": "600.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅花豬排及魷魚餐🥰 Pork Blade Shoulder Chop and Squid Meal🥰",
+            "description": "含 1 個梅花豬排, 1 個魷魚排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "600.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅花豬排及羊小排餐🥰 Pork Blade Shoulder Chop and Lamb Short Rib Meal🥰",
+            "description": "含 1 個梅花豬排，1 個羊小排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "600.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排及骰子牛餐🥰 Sirloin Steak and Diced Beef Meal🥰",
+            "description": "含 1 個沙朗牛排及 1 份骰子牛。",
+            "offers": {
+              "@type": "Offer",
+              "price": "662.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛排及鮭魚餐🥰 Sirloin Steak and Salmon Meal🥰",
+            "description": "含 1 個沙朗牛排及 1 個鮭魚排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "662.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿排及骰子牛餐🥰 Chicken Thigh Chop and Diced Beef Meal🥰",
+            "description": "含 1 個雞腿排及 1 份骰子牛。",
+            "offers": {
+              "@type": "Offer",
+              "price": "662.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿排及鮭魚餐🥰 Chicken Thigh Chop and Salmon Meal🥰",
+            "description": "含 1 個雞腿排及 1 個鮭魚排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "662.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帶骨牛小排及骰子牛餐🥰 Bone-In Short Rib and Diced Beef Meal🥰",
+            "description": "含 1 個帶骨牛小排及 1 份骰子牛。",
+            "offers": {
+              "@type": "Offer",
+              "price": "739.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帶骨牛小排及鮭魚餐🥰 Bone-In Short Rib and Salmon Meal🥰",
+            "description": "含 1 個帶骨牛小排及 1 個鮭魚排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "739.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "骰子牛+骰子牛 雙拼套餐🥰 Assorted Diced Beef Meal🥰",
+            "description": "含1份骰子牛，搭配1份第二主菜的雙拼組合。每份餐點為單人套餐，附蛋、麵、濃湯及紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "816.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "骰子牛及鮭魚餐🥰 Diced Beef and Salmon Meal🥰",
+            "description": "雙拼組合，含 1 份骰子牛及 1 份鮭魚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "816.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菲力牛排+菲力牛排 雙拼排餐🥰 Assorted Steak Fillet Meal🥰",
+            "description": "含 1 個菲力牛排與另一款牛排，雙拼組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1000.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

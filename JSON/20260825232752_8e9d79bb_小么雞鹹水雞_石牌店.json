@@ -1,0 +1,478 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B0%8F%E4%B9%88%E9%9B%9E%E9%B9%B9%E6%B0%B4%E9%9B%9E-%E7%9F%B3%E7%89%8C%E5%BA%97/DWpUDagHUDa_d702J6h7_Q",
+  "name": "小么雞鹹水雞 石牌店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區裕民一路24號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1167456,
+    "longitude": 121.5167732
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 450
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小資族套餐",
+            "description": "(隨機鹹水胸肉或鹹水腿肉)\n雞肉+自選4份小菜+隨機1份小菜\n(套餐組合如遇到品項缺少，店家可選配其它菜色替代)",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "很過癮套餐",
+            "description": "半隻雞(胸翅腿)+自選5份小菜+隨機1份小菜\n(套餐組合如遇品項缺少, 店家可選配其它菜色替代。)",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小黃瓜 gherkin",
+            "description": "小黃瓜切段，香滷風味，脆口清爽的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹水雞 salt water chicken",
+            "description": "半隻(胸翅腿)，含脆筍",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "舒肥嫩雞胸（小份）",
+            "description": "香嫩健康高蛋白",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻雞 smoked chicken",
+            "description": "半隻(胸翅腿)，含脆筍",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞冠 Cockscomb",
+            "description": "香滷雞冠，Q彈帶脆，膠質豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬鈴薯 potato",
+            "description": "馬鈴薯切塊，香滷風味，口感綿密。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋 preserved egg",
+            "description": "切半皮蛋，琥珀膠質Q彈、口感滑嫩",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬耳朵 pig ear",
+            "description": "香滷豬耳切片，脆Q有嚼勁，膠質豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Offers",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞冠 Cockscomb",
+            "description": "香滷雞冠，Q彈帶脆，膠質豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬鈴薯 potato",
+            "description": "馬鈴薯切塊，香滷風味，口感綿密。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小黃瓜 gherkin",
+            "description": "小黃瓜切段，香滷風味，脆口清爽的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆筍 Crispy bamboo shoots",
+            "description": "香滷竹筍切條，脆口清爽，鹹香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "調味區 Seasoning area",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "調味區 Seasoning area",
+            "description": "無備註調整皆以正常調味出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Picks",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "很過癮套餐",
+            "description": "半隻雞(胸翅腿)+自選5份小菜+隨機1份小菜\n(套餐組合如遇品項缺少, 店家可選配其它菜色替代。)",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小資族套餐",
+            "description": "(隨機鹹水胸肉或鹹水腿肉)\n雞肉+自選4份小菜+隨機1份小菜\n(套餐組合如遇到品項缺少，店家可選配其它菜色替代)",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "美味雞肉 delicious chicken",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鹹水雞 salt water chicken",
+            "description": "半隻(胸翅腿)，含脆筍",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻雞 smoked chicken",
+            "description": "半隻(胸翅腿)，含脆筍",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "舒肥嫩雞胸（小份）",
+            "description": "香嫩健康高蛋白",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮蔬香滷小菜 Side dishes",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣 Sweet or not spicy",
+            "description": "香滷甜不辣切片，魚漿Q彈有嚼勁，鹹香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐 Hundred Pages Tofu",
+            "description": "切片百頁豆腐，香滷入味，口感Q彈滑嫩，鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕 Rice blood cake",
+            "description": "香滷米血糕切片，Q彈有嚼勁，鹹香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生豆皮 Raw bean curd",
+            "description": "片狀豆皮，豆香淡雅，口感Q彈帶韌，清爽小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸 Xinxinchang",
+            "description": "小巧一口香腸，口感脆彈，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬耳朵 pig ear",
+            "description": "香滷豬耳切片，脆Q有嚼勁，膠質豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胗 Chicken gizzards",
+            "description": "香滷雞胗，脆彈有嚼勁，鹹香入味，佐餐小菜首選",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞冠 Cockscomb",
+            "description": "香滷雞冠，Q彈帶脆，膠質豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花椰菜 brocoli",
+            "description": "青花椰菜切朵，口感爽脆，簡單調味的清爽小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶芽 kelp sprouts",
+            "description": "脆口海帶芽，海味清爽，開胃解膩的小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍 Corn shoots",
+            "description": "香滷玉米筍，脆口清爽，鹹香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小黃瓜 gherkin",
+            "description": "小黃瓜切段，香滷風味，脆口清爽的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅蘿蔔 carrot",
+            "description": "紅蘿蔔切塊，爽口開胃的小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜 Momordica charantia",
+            "description": "苦瓜切片，微苦脆口，清爽解膩的小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬鈴薯 potato",
+            "description": "馬鈴薯切塊，香滷風味，口感綿密。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜豆 sweet beans",
+            "description": "脆甜爽口的甜豆，簡單調味，保留清脆口感，當作解膩小菜剛剛好",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓮藕片 lotus root slices",
+            "description": "蓮藕片，脆口清爽，香滷風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "木耳 fungus",
+            "description": "黑木耳，口感爽脆滑嫩，清爽解膩的小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆筍 Crispy bamboo shoots",
+            "description": "香滷竹筍切條，脆口清爽，鹹香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋 preserved egg",
+            "description": "切半皮蛋，琥珀膠質Q彈、口感滑嫩",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞卵 Chicken eggs",
+            "description": "香滷雞卵，金黃圓潤，蛋香順口的經典小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

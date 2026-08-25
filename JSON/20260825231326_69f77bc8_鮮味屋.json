@@ -1,0 +1,272 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%AE%AE%E5%91%B3%E5%B1%8B/IGHkjjNaS7GyYpdxLWCnlQ",
+  "name": "鮮味屋",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Zhiyuan 2nd Road Lane 113 18",
+    "addressLocality": "Beitou District",
+    "addressRegion": "Taipei City",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1171582,
+    "longitude": 121.5115009
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 470
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "本店豬肉來源: 台灣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本店牛肉來源: 台灣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "便當",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "無刺魚肚飯",
+            "description": "無刺魚肚飯：魚肚無刺，飯香滿溢！",
+            "offers": {
+              "@type": "Offer",
+              "price": "184.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類【肉品原產地：台灣豬肉】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咖哩牛腩燴飯",
+            "description": "咖哩濃香，牛腩入味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "177.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒牛柳燴飯",
+            "description": "胡椒濃郁，牛柳嫩滑！",
+            "offers": {
+              "@type": "Offer",
+              "price": "177.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚炒飯",
+            "description": "鮮嫩鮭魚，炒飯香濃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "152.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯",
+            "description": "Q彈蝦仁，炒飯好滋味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒飯",
+            "description": "肉絲炒飯：肉絲滑嫩，米香誘人！",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜圃炒飯",
+            "description": "菜圃脆香，炒飯經典！",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿炒飯",
+            "description": "鹹香火腿，炒飯滿分！",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵類【肉品原產地：台灣豬肉】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒麵",
+            "description": "什錦好料，麵香四溢！",
+            "offers": {
+              "@type": "Offer",
+              "price": "177.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒麵",
+            "description": "彈嫩蝦仁，麵條Q彈！",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒麵",
+            "description": "滑嫩肉絲，麵香迷人！",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦煮麵",
+            "description": "什錦好料，煮麵超棒！",
+            "offers": {
+              "@type": "Offer",
+              "price": "184.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮粥",
+            "description": "海鮮豐富，粥香暖心！",
+            "offers": {
+              "@type": "Offer",
+              "price": "184.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺魚肚粥",
+            "description": "魚肚無刺，粥滑濃郁！",
+            "offers": {
+              "@type": "Offer",
+              "price": "184.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯【肉品原產地：台灣豬肉】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣湯",
+            "description": "鮮美蛤蠣，湯香濃郁！",
+            "offers": {
+              "@type": "Offer",
+              "price": "92.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋花湯",
+            "description": "蛋花滑嫩，湯暖人心！",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸湯",
+            "description": "Q彈貢丸，湯頭清甜！",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺魚肚湯",
+            "description": "魚肚無刺，湯鮮美味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米粉湯",
+            "description": "米粉Q彈，湯頭鮮香！",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

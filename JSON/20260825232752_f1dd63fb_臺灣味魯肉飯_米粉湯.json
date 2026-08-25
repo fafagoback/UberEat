@@ -1,0 +1,501 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%87%BA%E7%81%A3%E5%91%B3%E9%AD%AF%E8%82%89%E9%A3%AF-%E7%B1%B3%E7%B2%89%E6%B9%AF/rYClxMCmSDyLHc3qwZSzHA",
+  "name": "臺灣味魯肉飯 米粉湯",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hualing Street 37",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0838139,
+    "longitude": 121.5193577
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 470
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Noodles"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "川燙嘴邊肉",
+            "description": "※豬肉產地：臺灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "96.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嘴邊肉便當",
+            "description": "內含魯肉飯，嘴邊肉，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒肉便當",
+            "description": "內含魯肉飯，紅糟燒肉，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "油豆腐蘿蔔湯",
+            "description": "※內含豬大骨湯，油豆腐，蘿蔔，少許芹菜珠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙三層肉",
+            "description": "※豬肉產地：臺灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "96.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯雞蛋",
+            "description": "經典魯味小菜，雞蛋以魯汁上色入味，蛋白Q彈、蛋黃香濃，切半更好入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大魯肉飯",
+            "description": "※豬肉產地：臺灣。※大、小火燉燜煮4小時，魯肉入口即化，試看看。",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大米粉湯",
+            "description": "※內含粗米粉，豬大骨湯（大火燉煮4.5小時），少許芹菜珠，少許紅葱頭。",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙肝連肉",
+            "description": "※豬肉產地：臺灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "96.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "※青菜會因季節變換有所調整及店內供需有所變化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連肉便當",
+            "description": "內含魯肉飯，肝連肉，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯蛋蘿蔔湯",
+            "description": "※內含豬大骨湯，魯雞蛋，蘿蔔，少許芹菜珠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉A餐",
+            "description": "內含大魯肉飯、大米粉湯、燙青菜、魯雞蛋一顆。※豬肉產地：臺灣。※份量固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜蘿蔔湯",
+            "description": "※內含豬大骨湯，店當日青菜，蘿蔔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三層肉便當",
+            "description": "內含魯肉飯，三層肉，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "士林大香腸便當",
+            "description": "內含魯肉飯，香腸切片，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "白飯一碗，口感飽滿、粒粒分明，簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【店家公告Notice📣】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "過年期間(除夕到初六)部份品項調漲10至20元。",
+            "description": "過年期間照常營業時間都一樣。過年期間（除夕到初六）部份品項調漲10至20元。《現場內用，外帶價格不變》【可以接受再下單】",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "臺灣味魯肉飯 米粉湯絕不使用含有萊克多巴胺等瘦肉精等冷凍豬肉品。",
+            "description": "本店皆使用臺灣國產溫體豬，有政府核發「綠底白字，金色臺灣豬」鐳射標章。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【人氣精選】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅燒肉便當",
+            "description": "內含魯肉飯，紅糟燒肉，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嘴邊肉便當",
+            "description": "內含魯肉飯，嘴邊肉，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "士林大香腸便當",
+            "description": "內含魯肉飯，香腸切片，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三層肉便當",
+            "description": "內含魯肉飯，三層肉，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連肉便當",
+            "description": "內含魯肉飯，肝連肉，燙青菜，油豆腐，魯筍絲，魯蘿蔔。※豬肉產地：臺灣。※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三寶魯肉便當",
+            "description": "內含魯肉飯，紅燒肉，蒜泥白肉，嘴邊肉，燙青菜，油豆腐，魯筍絲，魯蘿蔔。\n\n※豬肉產地：臺灣。\n※配菜固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【主食類】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大米粉湯",
+            "description": "※內含粗米粉，豬大骨湯（大火燉煮4.5小時），少許芹菜珠，少許紅葱頭。",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大魯肉飯",
+            "description": "※豬肉產地：臺灣。※大、小火燉燜煮4小時，魯肉入口即化，試看看。",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "白飯一碗，口感飽滿、粒粒分明，簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【湯類】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "油豆腐蘿蔔湯",
+            "description": "※內含豬大骨湯，油豆腐，蘿蔔，少許芹菜珠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯蛋蘿蔔湯",
+            "description": "※內含豬大骨湯，魯雞蛋，蘿蔔，少許芹菜珠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜蘿蔔湯",
+            "description": "※內含豬大骨湯，店當日青菜，蘿蔔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩豆腐魚肚湯（虱目魚整片無刺）",
+            "description": "※內含豬大骨湯，中華or大漢嫩豆腐，整片虱目魚肚(無刺)，少許葱花，香油，米酒，薑絲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【小菜類】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "川燙嘴邊肉",
+            "description": "※豬肉產地：臺灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "96.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "※青菜會因季節變換有所調整及店內供需有所變化。",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯雞蛋",
+            "description": "經典魯味小菜，雞蛋以魯汁上色入味，蛋白Q彈、蛋黃香濃，切半更好入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙肝連肉",
+            "description": "※豬肉產地：臺灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "96.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙三層肉",
+            "description": "※豬肉產地：臺灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "96.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【單點類】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "臺灣味蒜頭小辣椒包",
+            "description": "用乾淨餐具取用。需低溫保存(冷藏、冷凍)。辣椒產地：臺灣小辣椒和店家自製。",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "臺灣味辣椒泥包",
+            "description": "用乾淨餐具取用。需低溫保存(冷藏、冷凍)。辣椒產地：臺灣小辣椒和店家自製。",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "臺灣味辣椒泥(250g)",
+            "description": "臺灣味辣椒泥（250g)$208.00用乾淨餐具取用。需低溫保存(冷藏、冷凍)。辣椒產地：臺灣小辣椒和店家自製。",
+            "offers": {
+              "@type": "Offer",
+              "price": "288.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "臺灣味蒜頭小辣椒(250g)",
+            "description": "用乾淨餐具取用。需低溫保存(冷藏、冷凍)。辣椒產地：臺灣小辣椒和店家自製。",
+            "offers": {
+              "@type": "Offer",
+              "price": "288.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【套餐類】",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魯肉A餐",
+            "description": "內含大魯肉飯、大米粉湯、燙青菜、魯雞蛋一顆。※豬肉產地：臺灣。※份量固定無法增加或更換其它品項。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

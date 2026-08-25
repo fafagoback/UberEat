@@ -1,0 +1,410 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9B%B2%E7%A5%A5%E9%BA%B5%E9%A3%9F/fChXpxoaWkG92gXBczT-9g",
+  "name": "雲祥麵食",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市大同區大龍街85巷2號",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0664392,
+    "longitude": 121.5160433
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 190
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Noodles",
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬腸冬粉",
+            "description": "清湯冬粉配切段豬腸，佐薑絲與油蔥酥，口感豐富、暖胃順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "103.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾麵",
+            "description": "黃麵拌肉燥與油蔥酥，配豆芽與青蔥，乾拌順口耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞滷飯",
+            "description": "熱白飯上鋪雞肉絲，配滷肉燥與油蔥酥，鹹香雙拼，一碗滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸麵",
+            "description": "清湯麵條，配切片貢丸、豆芽與韭菜，佐肉燥與油蔥酥，層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜",
+            "description": "青菜一份，清爽可口，呈現蔬菜原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嘴邊肉",
+            "description": "切片豬嘴邊肉，配薑絲與醬汁，口感帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉肝",
+            "description": "粉肝切片，口感嫩滑，搭配薑絲與醬汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉腸",
+            "description": "軟Q粉腸切段上桌，豬腸灌製成型，口感彈嫩、綿密，附沾醬更添風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三色蛋",
+            "description": "皮蛋、鹹蛋與雞蛋蒸製合一，切片上桌，口感滑嫩，搭醬汁更添風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腸湯",
+            "description": "清澈湯頭盛裝豬腸切段，搭配薑絲提味，爽口不膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "貢丸麵",
+            "description": "清湯麵條，配切片貢丸、豆芽與韭菜，佐肉燥與油蔥酥，層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾麵",
+            "description": "黃麵拌肉燥與油蔥酥，配豆芽與青蔥，乾拌順口耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞滷飯",
+            "description": "熱白飯上鋪雞肉絲，配滷肉燥與油蔥酥，鹹香雙拼，一碗滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腸湯",
+            "description": "清澈湯頭盛裝豬腸切段，搭配薑絲提味，爽口不膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嘴邊肉",
+            "description": "切片豬嘴邊肉，配薑絲與醬汁，口感帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "湯麵",
+            "description": "熱湯與麵條的經典組合，簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腸冬粉",
+            "description": "清湯冬粉配切段豬腸，佐薑絲與油蔥酥，口感豐富、暖胃順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "103.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞肉飯",
+            "description": "白飯搭配雞肉，樸實耐吃的一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥飯",
+            "description": "台式經典肉燥，鹹香滷汁與豬絞肉鋪在熱白飯上，簡單卻最下飯的一碗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "貢丸湯",
+            "description": "清爽湯頭、Q彈貢丸，口感扎實、順口暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜湯",
+            "description": "嫩口青菜入湯，清爽暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小肚湯",
+            "description": "豬肚切片入清湯，口感脆彈，湯頭清香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕湯",
+            "description": "豬血糕入湯，口感軟Q，暖胃順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "粉肝",
+            "description": "粉肝切片，口感嫩滑，搭配薑絲與醬汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三色蛋",
+            "description": "皮蛋、鹹蛋與雞蛋蒸製合一，切片上桌，口感滑嫩，搭醬汁更添風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜",
+            "description": "青菜一份，清爽可口，呈現蔬菜原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉腸",
+            "description": "軟Q粉腸切段上桌，豬腸灌製成型，口感彈嫩、綿密，附沾醬更添風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干",
+            "description": "口感紮實、豆香濃的豆干小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶",
+            "description": "口感帶嚼勁的海帶，海味十足",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮",
+            "description": "豬頭皮切片，口感Q彈脆口，油脂香而不膩，適合當作開胃小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝蓮",
+            "description": "取自豬隻肝連部位，台式小吃常見，口感紮實、有嚼勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸",
+            "description": "大腸，Q彈有嚼勁的經典單點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生腸頭",
+            "description": "豬腸頭切片，口感彈脆有嚼勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬皮",
+            "description": "豬皮富含膠質，口感軟Q有彈性。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

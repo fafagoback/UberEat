@@ -1,0 +1,1578 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%8E%89%E6%B4%A5%E5%92%96%E5%95%A1-%E5%8F%B0%E5%8C%97%E9%8C%A6%E5%B7%9E%E5%BA%97/GhjSA_0PQ4Wkb6GheXPNjQ",
+  "name": "玉津咖啡 台北錦州店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jinzhou Street 32",
+    "addressLocality": "Zhongshan District",
+    "addressRegion": "Taipei City",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0602193,
+    "longitude": 121.5249374
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 2000
+  },
+  "servesCuisine": [
+    "Bubble Tea",
+    "Coffee and Tea",
+    "Desserts"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡L",
+            "description": "冰：總糖量30克、總熱量355大卡、咖啡因總含量201mg以上 | 熱：總糖量0克、總熱量264大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡L",
+            "description": "冰：總糖量30克、 總熱量190大卡、咖啡因總含量201mg以上｜熱：總糖量30克、總熱量190大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司牛肉捲",
+            "description": "總糖量4.2公克，總熱量342大卡\n巴拉圭肉品來源\n使用紐澳草飼牛肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生椰拿鐵M(冰)",
+            "description": "總糖10公克、總熱量358大卡、咖啡因總含量101-200mg\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡M",
+            "description": "冰：總糖量20克、總熱量259大卡、咖啡因總含量201mg以上 \n熱：總糖量0克、總熱量198大卡、咖啡因總含量201mg以上",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶拿鐵L(冰)",
+            "description": "總糖量45公克，總熱量417大卡，咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西瓜好喝椰M(冰)",
+            "description": "總糖5公克、總熱量168大卡、咖啡因總含量100mg以下\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰椰芒芒",
+            "description": "總糖35公克、總熱量431大卡、咖啡因總含量100mg以下\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司雞肉捲",
+            "description": "總糖量3.8公克，總熱量341大卡\n台灣肉品來源\n本品內餡含豬肉（火腿）",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡M(冰)",
+            "description": "總糖量30克、總熱量184.54大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青檸生乳酪",
+            "description": "總糖量13.7公克，總熱量264大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋糕",
+            "description": "總糖量15.5公克，總熱量351大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "軟法燻雞",
+            "description": "總糖量5.1公克，總熱量366.3大卡\n台灣肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶好喝椰M(冰)",
+            "description": "總糖10公克、總熱量253大卡、咖啡因總含量201mg以上\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿杯橙橙L(冰)",
+            "description": "總糖量70克、總熱量550大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "重拿鐵咖啡L",
+            "description": "冰：總糖量30克、總熱量355大卡、咖啡因總含量201mg以上 | 熱：總糖量0克、總熱量264大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可頌燻雞",
+            "description": "總糖量5.2公克，總熱量302.2大卡\n台灣肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香草拿鐵L",
+            "description": "冰：總糖量15公克 總熱量304大卡 咖啡因總含量101-200mg｜熱：總糖量15公克 總熱量403大卡 咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩卡咖啡L",
+            "description": "冰：總糖量0克、總熱量252大卡、咖啡因總含量201mg以上 | 熱：總糖量0克、總熱量351大卡、咖啡因總含量201mg以上",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖瑪奇朵L",
+            "description": "&nbsp;冰：總糖量10克、總熱量285大卡、咖啡因總含量101-200mg | 熱：總糖量10克、總熱量417大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "《注意事項》",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "加購二杯不織布提袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加購六杯不織布提袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加購四吋蛋糕不織布袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加購二杯架",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "3.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加購四杯架",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "6.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加購六杯架",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "9.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加購二杯紙袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "8.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-新式飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "生椰拿鐵M(冰)",
+            "description": "總糖10公克、總熱量358大卡、咖啡因總含量101-200mg\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰椰芒芒",
+            "description": "總糖35公克、總熱量431大卡、咖啡因總含量100mg以下\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "重生椰拿鐵M(熱)",
+            "description": "總糖10公克、總熱量302大卡、咖啡因總含量101-200mg\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "重生椰拿鐵M(冰)",
+            "description": "總糖10公克、總熱量221大卡、咖啡因總含量101-200mg\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生椰拿鐵M(熱)",
+            "description": "總糖10公克、總熱量302大卡、咖啡因總含量101-200mg\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶好喝椰L(冰)",
+            "description": "總糖10公克、總熱量221大卡、咖啡因總含量101-200mg\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶好喝椰L(熱)",
+            "description": "總糖10公克、總熱量262大卡、咖啡因總含量20mg以上\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶好喝椰M(熱)",
+            "description": "總糖10公克、總熱量293大卡、咖啡因總含量201mg以上\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶好喝椰M(冰)",
+            "description": "總糖10公克、總熱量253大卡、咖啡因總含量201mg以上\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰好喝椰L(冰)",
+            "description": "總糖0公克、總熱量253大卡、咖啡因總含量100mg以下\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰好喝椰L(熱)",
+            "description": "總糖0公克、總熱量253大卡、咖啡因總含量100mg以下\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶好喝椰L(冰)",
+            "description": "總糖20公克、總熱量240大卡、咖啡因總含量100mg以下\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶好喝椰L(熱)",
+            "description": "總糖20公克、總熱量240大卡、咖啡因總含量101-200mg\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝冰茶L(冰)",
+            "description": "總糖10公克、總熱量145大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝美式(冰)",
+            "description": "總糖0公克、總熱量115大卡、咖啡因總含量201mg以上",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西瓜好喝椰M(冰)",
+            "description": "總糖5公克、總熱量168大卡、咖啡因總含量100mg以下\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西瓜生椰拿鐵M(冰)",
+            "description": "總糖5公克、總熱量258大卡、咖啡因總含量100mg以下\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩卡生椰拿鐵M(冰)",
+            "description": "總糖0公克、總熱量199大卡、咖啡因總含量101-200mg\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩卡生椰拿鐵M(熱)",
+            "description": "總糖0公克、總熱量280大卡、咖啡因總含量101-200mg\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰椰莓莓L(冰)",
+            "description": "總糖量30克、總熱量217.74大卡、咖啡因總含量100mg以下\n含堅果類(椰子)過敏原",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡M(冰)",
+            "description": "總糖量30克、總熱量184.54大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-咖啡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡L",
+            "description": "冰：總糖量30克、 總熱量190大卡、咖啡因總含量201mg以上｜熱：總糖量30克、總熱量190大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡L",
+            "description": "冰：總糖量30克、總熱量355大卡、咖啡因總含量201mg以上 | 熱：總糖量0克、總熱量264大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡M",
+            "description": "冰：總糖量20克、總熱量259大卡、咖啡因總含量201mg以上 \n熱：總糖量0克、總熱量198大卡、咖啡因總含量201mg以上",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燕麥拿鐵L",
+            "description": "冰：總糖量30克、總熱量330大卡、咖啡因總含量101-200mg | 熱：總糖量0克、總熱量223大卡、咖啡因總含量101-200mg |",
+            "offers": {
+              "@type": "Offer",
+              "price": "118.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡M",
+            "description": "冰：總糖量25克、 總熱量159大卡、咖啡因總含量201mg以上｜熱：總糖量25克、總熱量159大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "津典咖啡M",
+            "description": "冰：總糖量35克、總熱量356大卡、咖啡因總含量201mg以上 | 熱：總糖量25克、總熱量293大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖瑪奇朵M",
+            "description": "冰：總糖量5克、總熱量200大卡、咖啡因總含量101-200mg | 熱：總糖量5克、總熱量299大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖瑪奇朵L",
+            "description": "&nbsp;冰：總糖量10克、總熱量285大卡、咖啡因總含量101-200mg | 熱：總糖量10克、總熱量417大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩卡咖啡L",
+            "description": "冰：總糖量0克、總熱量252大卡、咖啡因總含量201mg以上 | 熱：總糖量0克、總熱量351大卡、咖啡因總含量201mg以上",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "重拿鐵咖啡M",
+            "description": "冰：總糖量259克、總熱量20大卡、咖啡因總含量201mg以上 | 熱：總糖量0克、總熱量198大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果拿鐵L",
+            "description": "冰：總糖量15克、總熱量302大卡、咖啡因總含量101-200mg | 熱：總糖量15克、總熱量401大卡、咖啡因總含量101-200mg |",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "津典咖啡L",
+            "description": "冰：總糖量30克、總熱量351大卡、咖啡因總含量201mg以上 | 熱：總糖量30克、總熱量351大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "重拿鐵咖啡L",
+            "description": "冰：總糖量30克、總熱量355大卡、咖啡因總含量201mg以上 | 熱：總糖量0克、總熱量264大卡、咖啡因總含量201mg以上&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燕麥拿鐵M",
+            "description": "冰：總糖量20克、總熱量238大卡、咖啡因總含量101-200mg | 熱：總糖量0克、總熱量168大卡、咖啡因總含量101-200mg |",
+            "offers": {
+              "@type": "Offer",
+              "price": "103.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡布奇諾L",
+            "description": "冰：總糖量30克、總熱量390大卡、咖啡因總含量101-200mg | 熱：總糖量0克、總熱量231大卡、咖啡因總含量101-200mg |",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩卡咖啡M",
+            "description": "冰：總糖量0克、總熱量189大卡、咖啡因總含量101-200mg | 熱：總糖量0克、總熱量255大卡、咖啡因總含量101-200mg&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香草拿鐵L",
+            "description": "冰：總糖量15公克 總熱量304大卡 咖啡因總含量101-200mg｜熱：總糖量15公克 總熱量403大卡 咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香草拿鐵M",
+            "description": "冰：總糖量10公克 總熱量225大卡 咖啡因總含量101-200mg｜熱：總糖量10公克 總熱量291大卡 咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果拿鐵M",
+            "description": "冰：總糖量10克、總熱量224大卡、咖啡因總含量101-200mg | 熱：總糖量10克、總熱量290大卡、咖啡因總含量101-200mg |",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡布奇諾M",
+            "description": "冰：總糖量20克、總熱量226大卡、咖啡因總含量101-200mg | 熱：總糖量0克、總熱量165大卡、咖啡因總含量101-200mg |",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-純濃奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶拿鐵L(冰)",
+            "description": "總糖量45公克，總熱量417大卡，咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶L(冰)",
+            "description": "總糖量40克、總熱量735大卡、咖啡因總含量100mg以下&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力拿鐵M",
+            "description": "冰：總糖量0克、總熱量306大卡、咖啡因總含量100mg以下 | 熱：總糖量0克、總熱量339大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋圓奶茶L(冰)",
+            "description": "總糖量40克、總熱量692大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶拿鐵L(熱)",
+            "description": "總糖量55克，總熱量514大卡，咖啡因總含量201mg以上",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰泰拿鐵L(冰)",
+            "description": "總糖量30克、總熱量509大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰泰奶茶L(冰)",
+            "description": "總糖量30克、總熱量523大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋圓奶茶L(熱)",
+            "description": "總糖量50克、總熱量756大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶L(熱)",
+            "description": "總糖量50克、總熱量799大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰泰奶茶L(熱)",
+            "description": "總糖量25克、總熱量492大卡、咖啡因總含量100mg以下&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰泰拿鐵L(熱)",
+            "description": "總糖量25克、總熱量477大卡、咖啡因總含量100mg以下&nbsp;",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東方紅奶茶L(冰)",
+            "description": "總糖量45克、總熱量581大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東方紅奶茶L(熱)",
+            "description": "總糖量55克、總熱量644大卡、咖啡因總含量201mg以上",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-滿杯水果家族",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滿杯橙橙L(冰)",
+            "description": "總糖量70克、總熱量550大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿杯水果茶L(冰)",
+            "description": "總糖70公克、總熱量560大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橙橙百香L(冰)",
+            "description": "總糖量70公克、總熱量557大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿杯紅柚L(冰)",
+            "description": "總糖量70克、總熱量566大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬L(冰)",
+            "description": "人氣商品\n總糖量0克、總熱量224大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金桔檸檬L(冰)",
+            "description": "總糖量70公克、總熱量466大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿杯水果茶L(熱)",
+            "description": "總糖量90克、總熱量698大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金桔檸檬L(熱)",
+            "description": "總糖量90公克、總熱量601大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿杯橙橙L(熱)",
+            "description": "總糖量50克、總熱量425大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿杯紅柚L(熱)",
+            "description": "總糖量50克、總熱量441大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橙橙百香L(熱)",
+            "description": "總糖量50克、總熱量430大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-茗茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "四季春L",
+            "description": "大冰：總糖量30公克、總熱量190大卡、咖啡因總含量101-200mg | 大熱：總糖量30公克、總熱量190大卡、咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠妍L",
+            "description": "大冰：總糖量30公克、總熱量190大卡\n咖啡因總含量100mg以下 \n大熱：總糖量30公克、總熱量190大卡 \n咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東方紅茶后L",
+            "description": "大冰：總糖量30公克、總熱量190大卡、咖啡因總含量101-200mg | 大熱：總糖量30公克、總熱量190大卡、咖啡因總含量201mg以上",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-芝芝水果茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芝芝芒芒",
+            "description": "總糖量30公克、總熱量435大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝芝火龍果",
+            "description": "總糖量30公克、總熱量411大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝芝莓莓",
+            "description": "總糖量30公克、總熱量407大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-啵啵家族",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力啵啵冰",
+            "description": "總糖量15克、總熱量677大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奧利奧啵啵冰",
+            "description": "總糖量25克、總熱量680大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香草啵啵冰",
+            "description": "總糖量20克，總熱量566大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶啵啵冰",
+            "description": "總糖量25克、總熱量584大卡、咖啡因總含量100mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩卡啵啵冰",
+            "description": "總糖量15克，總熱量644大卡，咖啡因總含量101-200mg",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-蛋糕",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芒芒雲朵大福",
+            "description": "總糖量2.7公克，總熱量274.9大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋糕",
+            "description": "總糖量15.5公克，總熱量351大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典微醺提拉米蘇",
+            "description": "總糖量14.1公克，總熱量262大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "津典柔霜波士頓",
+            "description": "總糖量3.1公克，總熱量103大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃純可可波士頓",
+            "description": "總糖量8.5公克，總熱量113大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特濃巧克力",
+            "description": "總糖量14.7公克，總熱量291大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑森林",
+            "description": "總糖量11.9公克，總熱量149大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青檸生乳酪",
+            "description": "總糖量13.7公克，總熱量264大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巴斯克",
+            "description": "總糖量19.8公克，總熱量310大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-整膜蛋糕",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "漢堡包(四吋)",
+            "description": "總糖量59.1公克，總熱量999大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "OREO巧巧(四吋)",
+            "description": "總糖量54.8公克，總熱量1041大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "森林物語(六吋)",
+            "description": "總糖量59.6公克，總熱量1177大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "660.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "夏日芒芒(四吋)",
+            "description": "總糖量54.1公克，總熱量865.4大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "420.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃純可可波士頓(六吋)",
+            "description": "總糖量68.3公克，總熱量1379.6大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "460.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "津典柔霜波士頓(六吋)",
+            "description": "總糖量49.5公克，總熱量963大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "445.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "莓好生乳(六吋)",
+            "description": "總糖量78.1公克，總熱量1808大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "690.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典微醺提拉米蘇(六吋)",
+            "description": "總糖量66.8公克，總熱量1246大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑森林(六吋)",
+            "description": "總糖量86.1公克，總熱量1069大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力狂想曲(六吋)",
+            "description": "總糖量89.8公克，總熱量1322.9大卡\n(附蠟燭、餐盤1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "1200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-麵包",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "起司牛肉捲",
+            "description": "總糖量4.2公克，總熱量342大卡\n巴拉圭肉品來源\n使用紐澳草飼牛肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司雞肉捲",
+            "description": "總糖量3.8公克，總熱量341大卡\n台灣肉品來源\n本品內餡含豬肉（火腿）",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胚芽葡萄餐包(2入)",
+            "description": "總糖量5.2公克，總熱量98.3大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味可頌",
+            "description": "總糖量3.9公克，總熱量203.9大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司軟法",
+            "description": "總糖量4公克，總熱量268大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮法國麵包",
+            "description": "總糖量2.15公克，總熱量252大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帕里尼",
+            "description": "總糖量2公克，總熱量249大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味貝果",
+            "description": "總糖量3.8公克，總熱量262.3大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可風味貝果",
+            "description": "總糖量13.1公克，總熱量389.7大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "軟法牛肉",
+            "description": "總糖量4公克，總熱量366.2大卡\n巴拉圭肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "軟法燻雞",
+            "description": "總糖量5.1公克，總熱量366.3大卡\n台灣肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可頌牛肉",
+            "description": "總糖量4.1公克，總熱量302.1大卡\n巴拉圭肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可頌燻雞",
+            "description": "總糖量5.2公克，總熱量302.2大卡\n台灣肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帕里尼牛肉",
+            "description": "總糖量2.6公克，總熱量346.9大卡\n巴拉圭肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帕里尼燻雞",
+            "description": "總糖量3.7公克，總熱量347大卡\n台灣肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮法國牛肉",
+            "description": "總糖量2.4公克，總熱量350.2大卡\n巴拉圭肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮法國燻雞",
+            "description": "總糖量3.5公克，總熱量350.3大卡\n台灣肉品來源",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-加購商品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "日式蛋捲-單支",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "13.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式蛋捲6入/包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濾掛咖啡-單包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濾掛咖啡10入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "U-芝芝茗茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芝芝綠妍",
+            "description": "冰：總糖量30克、總熱量312大卡、咖啡因總含量100mg以下 | 熱：總糖量30克、總熱量312大卡、咖啡因總含量200mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝芝四季春",
+            "description": "冰：總糖量30克、總熱量312大卡、咖啡因總含量100mg以下 | 熱：總糖量30克、總熱量312大卡、咖啡因總含量200mg以下",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝芝東方紅",
+            "description": "冰：總糖量30克、總熱量312大卡、咖啡因總含量200mg以下 | 熱：總糖量30克、總熱量312大卡、咖啡因總含量200mg以上",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

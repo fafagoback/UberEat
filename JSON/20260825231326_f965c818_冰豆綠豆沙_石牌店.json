@@ -1,0 +1,320 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%86%B0%E8%B1%86%E7%B6%A0%E8%B1%86%E6%B2%99-%E7%9F%B3%E7%89%8C%E5%BA%97/vGU8yg7IV9ihV7vfMkJNXg",
+  "name": "冰豆綠豆沙 石牌店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區裕民一路22號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1167474,
+    "longitude": 121.5167607
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 73
+  },
+  "servesCuisine": [
+    "Bubble Tea",
+    "Desserts",
+    "Coffee and Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙牛奶",
+            "description": "甜度固定, 人氣推薦💯奶味濃醇不膩, 以黃金比例調配而成的綠豆牛奶冰沙, 好好喝喔~",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生冰沙🥜",
+            "description": "甜度固定, 用料超實在 一口喝下就能感到濃郁的花生冰沙, 幸福滿點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭沙牛奶",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭冰沙",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力冰沙🍫",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力奶沙🍫",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生尬可可",
+            "description": "甜度固定, 一次給你雙重享受, 選擇困難也不怕。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生沙牛奶🥜",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點以及口味, 請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "滿意請給五星評價, 您的評分與評論能幫助我們持續優化口味與服務, 若有建議也歡迎留言, 感謝支持。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "⭐人氣精選⭐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠豆冰沙",
+            "description": "甜度固定, 人氣推薦💯綠豆沙細緻又綿密, 清甜香醇又順口, 沁涼消暑的夏日聖品！。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生尬可可",
+            "description": "甜度固定, 一次給你雙重享受, 選擇困難也不怕。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力奶沙🍫",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生沙牛奶🥜",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果沙牛奶🥭",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "招牌冰沙🥤",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠豆冰沙",
+            "description": "甜度固定, 人氣推薦💯綠豆沙細緻又綿密, 清甜香醇又順口, 沁涼消暑的夏日聖品！。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生冰沙🥜",
+            "description": "甜度固定, 用料超實在 一口喝下就能感到濃郁的花生冰沙, 幸福滿點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果冰沙🥭",
+            "description": "甜度固定, 每到夏天, 我要喝芒果~~人見人愛的芒果, 夏天94愛這味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力冰沙🍫",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭冰沙",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "牛奶冰沙🥛",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙牛奶",
+            "description": "甜度固定, 人氣推薦💯奶味濃醇不膩, 以黃金比例調配而成的綠豆牛奶冰沙, 好好喝喔~",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力奶沙🍫",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭沙牛奶",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生沙牛奶🥜",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果沙牛奶🥭",
+            "description": "甜度固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "尬出新滋味🫶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "花生尬可可",
+            "description": "甜度固定, 一次給你雙重享受, 選擇困難也不怕。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

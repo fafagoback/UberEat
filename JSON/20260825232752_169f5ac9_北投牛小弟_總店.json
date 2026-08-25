@@ -1,0 +1,276 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%8C%97%E6%8A%95%E7%89%9B%E5%B0%8F%E5%BC%9F-%E7%B8%BD%E5%BA%97/4eoA3JA2RG-Zows7UG8hzw",
+  "name": "北投牛小弟 總店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 30, Qingjiang Road",
+    "addressLocality": "Beitou District",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1312378,
+    "longitude": 121.5018724
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 2000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Steak",
+    "Group Friendly"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "特製沙朗牛排",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃湯+麵包4片",
+            "description": "熱騰騰濃湯一碗，灑上黑胡椒，搭配麵包4片，簡單暖胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製雞腿排",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製梅花豬排",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精緻排餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美國菲力牛排",
+            "description": "附飲料\n肉質細膩，細緻，入口多汁軟嫩",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美國比臉大20盎司牛排",
+            "description": "附飲料，玉米濃湯一杯，香蒜吐司麵包2片\n熱狗2條",
+            "offers": {
+              "@type": "Offer",
+              "price": "630.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙拼沙朗牛加牛",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "340.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙拼牛加雞",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "8盎司紐約客牛排",
+            "description": "附飲料。\n紐約客本身油花分佈均勻且爽口, 吃的到紐約客獨特的香氣, 同時感受肉汁的甜味, 讓您大口吃完後, 回味無窮的紐約客牛排。",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板麵",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙拼牛加豬",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙拼豬加雞",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚排（2片）",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香煎海大蝦（3隻）",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "380.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮總匯",
+            "description": "附飲料，玉米濃湯，香蒜吐司麵包2片\n海大蝦2隻，干貝2顆，冰島鱈魚一片，\n深海大魷魚一隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "630.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海陸總匯",
+            "description": "附飲料，玉米濃湯，香蒜吐司麵包2片\n含沙朗牛排, 深海大魷魚, 干貝2個, 冰島鱈魚排及鐵板麵。想要有肉有海鮮,不需猶豫不決, 這一盤通通有。",
+            "offers": {
+              "@type": "Offer",
+              "price": "630.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美國帶骨牛小排（三片）",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "420.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大魷魚",
+            "description": "附飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚排（2片）",
+            "description": "肉質細嫩、油脂豐潤，魚香飽滿，讓人回味",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋一顆",
+            "description": "經典荷包蛋一顆，蛋香純粹，補充蛋白質的簡單選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和牛漢堡排",
+            "description": "帶有和牛油脂豐富獨特香氣\n喜愛漢堡肉口感的你不要錯過",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙拼雞+雞",
+            "description": "雙份雞肉主餐的雙拼組合，份量加倍，適合加量或分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙拼豬+豬",
+            "description": "兩款豬肉主菜組成的雙拼排餐，想一次吃到兩種豬肉的好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

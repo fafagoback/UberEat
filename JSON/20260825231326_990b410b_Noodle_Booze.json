@@ -1,0 +1,144 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/noodle-booze/3k51keLqU8e1VjqaT8SE1Q",
+  "name": "Noodle Booze",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市大同區昌吉街124號 Taipei, 大同區 103",
+    "addressLocality": "台北市大同區",
+    "addressRegion": "",
+    "postalCode": "103",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.065840450214953,
+    "longitude": 121.51435478239802
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Rice Dishes",
+    "Noodles",
+    "Fried Foods",
+    "Meal Kit"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白酒蛤蠣麵（辣）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "339.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆豉鮮蚵麵（辣）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "339.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜油野菇麵（辣）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "309.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松露野菇燉飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "339.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鄉村肉醬麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "319.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香醋野菇麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "309.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "339.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "套餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物小點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤蒜薄餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

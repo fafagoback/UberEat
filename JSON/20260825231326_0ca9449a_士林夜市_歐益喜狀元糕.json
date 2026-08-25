@@ -1,0 +1,304 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E6%AD%90%E7%9B%8A%E5%96%9C%E7%8B%80%E5%85%83%E7%B3%95/QWH-H4UHWAOeC1BSs5QUWw",
+  "name": "士林夜市 歐益喜狀元糕",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "大東路15號",
+    "addressLocality": "士林區",
+    "addressRegion": "",
+    "postalCode": "111040",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08842945235621,
+    "longitude": 121.52504437300402
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 78
+  },
+  "servesCuisine": [
+    "Desserts"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "花生芝麻各3顆",
+            "description": "6 入。花生及芝麻口味各 3 入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生6顆",
+            "description": "6 入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻6顆",
+            "description": "6 入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生芝麻椰子各2顆",
+            "description": "6 入。花生, 芝麻及椰子口味各 2 入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力狀元糕",
+            "description": "米香糕體，包入巧克力內餡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生芝麻黑糖各2顆",
+            "description": "6 入。花生、芝麻、黑糖口味各 2 入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕃茄起司肉醬4顆",
+            "description": "4 入。單一口味：蕃茄、起司與肉醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅蔥肉燥6顆",
+            "description": "4 入。紅蔥肉燥餡狀元糕，鹹香口味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "餐點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "椰子狀元糕",
+            "description": "6 入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖狀元糕",
+            "description": "黑糖口味，米製糕體，口感鬆軟。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚鬆海苔",
+            "description": "魚鬆、海苔口味狀元糕。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微甜仙草茶大瓶",
+            "description": "仙草茶，微甜口感，大瓶裝，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰無糖麥茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁6顆",
+            "description": "6 入。杏仁口味狀元糕，堅果香氣，口感鬆軟。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅豆6顆",
+            "description": "6 入。紅豆口味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖麻糬狀元糕",
+            "description": "黑糖口味狀元糕，麻糬夾心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍蝦沙拉",
+            "description": "海鮮冷盤，以龍蝦為主。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖仙草茶大瓶",
+            "description": "大瓶裝無糖仙草茶。無加糖配方。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖仙草茶小瓶",
+            "description": "小瓶裝無糖仙草茶，無加糖配方，口感清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微甜仙草茶小瓶",
+            "description": "仙草茶，微甜口感，小瓶裝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥4顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "oreo6顆",
+            "description": "4 入。OREO 口味狀元糕。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰無糖麥茶",
+            "description": "麥香淡雅，口感清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式涼拌青木瓜",
+            "description": "純檸檬製作，搭配新鮮當季蕃茄黃瓜酸甜爽脆開胃\n遠赴泰國拜師學藝 ， 將正宗泰式青木瓜給鄉親品嘗",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁青木瓜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞絲青木瓜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

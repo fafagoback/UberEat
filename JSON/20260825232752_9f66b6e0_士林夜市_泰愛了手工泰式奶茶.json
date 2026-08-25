@@ -1,0 +1,875 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E6%B3%B0%E6%84%9B%E4%BA%86%E6%89%8B%E5%B7%A5%E6%B3%B0%E5%BC%8F%E5%A5%B6%E8%8C%B6/AxrDuNm6W7uuRiVWO1MidQ",
+  "name": "士林夜市 泰愛了手工泰式奶茶",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區大南路84號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0893861,
+    "longitude": 121.524452
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 86
+  },
+  "servesCuisine": [
+    "Bubble Tea",
+    "Juice and Smoothies",
+    "Drinks",
+    "Comfort Food",
+    "Fruit",
+    "Coffee and Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶茶(雙杯優惠 Buy 1 get 1）",
+            "description": "經典泰式奶茶，泰式紅茶搭配奶香，茶色橙澄、冰涼滑順。雙杯優惠更划算；飲品本身偏甜，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃椰子奶（雙杯優惠 Buy 1 Get 1）",
+            "description": "椰香濃郁的椰子奶，奶感滑順、冰涼順口，散發南洋風味；買一送一，與朋友一起享用更實惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶綠(雙杯優惠 Buy 1 get 1）",
+            "description": "泰式綠茶融合奶香，茶韻清新、口感順滑，冰涼好喝。雙杯優惠：同品項買一送一。飲品本身偏甜，建議甜度可減一層。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式抹茶生椰",
+            "description": "泰式抹茶融入生椰香氣，口感絲滑順口，茶香與椰香交織，清新不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式拿鐵紅茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "泰式紅茶調和香醇奶香，茶奶層次順口濃郁。雙杯優惠：買一送一；甜度偏高，建議可減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓椰奶(冬季)",
+            "description": "椰奶基底融合草莓果香，口感絲滑順口，椰香與莓香交織，冬季限定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬紅茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "以泰式紅茶調製，加入檸檬帶出清新酸韻，冰涼順口、茶香明亮。雙杯優惠，買一送一，分享更超值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬綠茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "檸香清爽襯托綠茶茶韻，冰涼順口、解渴不膩；雙杯優惠，分享更划算。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝶豆花鮮奶",
+            "description": "最少半糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式椰香綠奶茶",
+            "description": "以泰式綠茶為基底，融入椰香與奶香，口感滑順，清新茶韻中帶濃郁椰味，冰涼好喝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式椰香奶茶",
+            "description": "以泰式紅茶為基底，融合椰奶，帶出濃郁椰香與清雅茶韻，口感絲滑、冰涼順口，南洋風味滿滿。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式雲朵抹茶",
+            "description": "泰式抹茶調製的冰飲，茶香與奶香相融，頂層覆蓋綿滑雲朵奶霜，口感香醇順口，每一口都清新柔和！",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "G7生椰咖啡",
+            "description": "越南咖啡本身是使用煉乳調配，因此會較甜，建議選擇減少一層甜度。\n☕濃郁咖啡香氣中帶有淡淡椰子香甜🥥，每一口都是醇厚咖啡與熱帶風味的奇妙碰撞，香醇順滑，提神又滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "波羅蜜椰奶",
+            "description": "泰式.波羅蜜.椰奶.西米露",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式特調冰可可",
+            "description": "選用濃郁可可粉 🍫 調製，搭配泰式風味特調，每一口都是濃醇巧克力與微甜奶香的完美融合，🧊冰涼順口，讓人一試成主顧！✨",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式拿鐵綠茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "泰式綠茶與奶香交融，漸層迷人，冰涼順口、茶韻清新。冰塊固定；本品甜度偏高，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👑蝶豆花蜂蜜檸檬蘇打SODA🐝🍋",
+            "description": "冰塊固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃椰子奶🥥🥛",
+            "description": "冰塊固定\n椰香濃郁的熱帶風味🥥，絲滑順口，每一口都是椰奶的香甜，清爽不膩，✨充滿南洋風情，喝完彷彿置身椰林海灘！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清爽椰子汁🥥",
+            "description": "甜度冰塊固定。660cc杯的",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火山石🌋巧克力熔岩（kitkat巧克力碎片）",
+            "description": "產品本身較甜，建議選擇減少一層甜度。\n🍫每一口都是香濃可可的爆發，酥脆與滑順交織，巧克力控的天堂級飲品🗯️！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶茶(雙杯優惠 Buy 1 get 1）",
+            "description": "經典泰式奶茶，泰式紅茶搭配奶香，茶色橙澄、冰涼滑順。雙杯優惠更划算；飲品本身偏甜，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式拿鐵綠茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "泰式綠茶與奶香交融，漸層迷人，冰涼順口、茶韻清新。冰塊固定；本品甜度偏高，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬紅茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "以泰式紅茶調製，加入檸檬帶出清新酸韻，冰涼順口、茶香明亮。雙杯優惠，買一送一，分享更超值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式拿鐵紅茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "泰式紅茶調和香醇奶香，茶奶層次順口濃郁。雙杯優惠：買一送一；甜度偏高，建議可減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬綠茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "檸香清爽襯托綠茶茶韻，冰涼順口、解渴不膩；雙杯優惠，分享更划算。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶綠(雙杯優惠 Buy 1 get 1）",
+            "description": "泰式綠茶融合奶香，茶韻清新、口感順滑，冰涼好喝。雙杯優惠：同品項買一送一。飲品本身偏甜，建議甜度可減一層。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃椰子奶（雙杯優惠 Buy 1 Get 1）",
+            "description": "椰香濃郁的椰子奶，奶感滑順、冰涼順口，散發南洋風味；買一送一，與朋友一起享用更實惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "超值組合｜雙杯優惠 Buy 1 Get 1",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶茶(雙杯優惠 Buy 1 get 1）",
+            "description": "經典泰式奶茶，泰式紅茶搭配奶香，茶色橙澄、冰涼滑順。雙杯優惠更划算；飲品本身偏甜，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶綠(雙杯優惠 Buy 1 get 1）",
+            "description": "泰式綠茶融合奶香，茶韻清新、口感順滑，冰涼好喝。雙杯優惠：同品項買一送一。飲品本身偏甜，建議甜度可減一層。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃椰子奶（雙杯優惠 Buy 1 Get 1）",
+            "description": "椰香濃郁的椰子奶，奶感滑順、冰涼順口，散發南洋風味；買一送一，與朋友一起享用更實惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式拿鐵紅茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "泰式紅茶調和香醇奶香，茶奶層次順口濃郁。雙杯優惠：買一送一；甜度偏高，建議可減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式拿鐵綠茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "泰式綠茶與奶香交融，漸層迷人，冰涼順口、茶韻清新。冰塊固定；本品甜度偏高，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬紅茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "以泰式紅茶調製，加入檸檬帶出清新酸韻，冰涼順口、茶香明亮。雙杯優惠，買一送一，分享更超值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬綠茶（雙杯優惠 Buy 1 Get 1）",
+            "description": "檸香清爽襯托綠茶茶韻，冰涼順口、解渴不膩；雙杯優惠，分享更划算。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🧡人氣精選🧡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👑手工泰式奶茶",
+            "description": "選泰式紅茶 🍂 慢煮萃取，搭配濃醇奶香，口感絲滑濃郁，🧡每一口都帶有獨特茶香與甜美奶韻，讓人一喝就愛上！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👑手工泰式綠奶茶",
+            "description": "🥤 泰式綠茶 🍵 搭配香醇奶香，茶湯醇厚，帶有天然清新茶香，細膩又順口，💚每一口都是甜中帶茶韻的獨特享受，讓人喝完回味無窮！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃椰子奶🥥🥛",
+            "description": "冰塊固定\n椰香濃郁的熱帶風味🥥，絲滑順口，每一口都是椰奶的香甜，清爽不膩，✨充滿南洋風情，喝完彷彿置身椰林海灘！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式特調冰可可",
+            "description": "選用濃郁可可粉 🍫 調製，搭配泰式風味特調，每一口都是濃醇巧克力與微甜奶香的完美融合，🧊冰涼順口，讓人一試成主顧！✨",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "頂級摩卡咖啡拿鐵",
+            "description": "越南咖啡本身是使用煉乳調配，因此會較甜，建議選擇減少一層甜度。\n☕入口先感受到咖啡的深邃濃香，隨後是絲滑奶香與甜蜜巧克力風味的層次交織，香氣馥郁，醇厚不膩，讓人喝完回味無窮✨！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "G7生椰咖啡",
+            "description": "越南咖啡本身是使用煉乳調配，因此會較甜，建議選擇減少一層甜度。\n☕濃郁咖啡香氣中帶有淡淡椰子香甜🥥，每一口都是醇厚咖啡與熱帶風味的奇妙碰撞，香醇順滑，提神又滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火山石🌋巧克力熔岩（kitkat巧克力碎片）",
+            "description": "產品本身較甜，建議選擇減少一層甜度。\n🍫每一口都是香濃可可的爆發，酥脆與滑順交織，巧克力控的天堂級飲品🗯️！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "波羅蜜椰奶",
+            "description": "泰式.波羅蜜.椰奶.西米露",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泰式傳統系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式拿鐵綠茶",
+            "description": "泰式綠茶與奶香交融，翠綠漸層清新，冰涼順口，茶韻馥郁、口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式拿鐵紅茶",
+            "description": "泰式紅茶基底融入香醇奶香，冰鎮呈現迷人漸層，口感濃郁順滑，茶韻與奶香均衡。飲品偏甜，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍓草莓粉紅凍奶",
+            "description": "冰塊固定。餐品本身比較甜，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👑手工泰式奶茶",
+            "description": "選泰式紅茶 🍂 慢煮萃取，搭配濃醇奶香，口感絲滑濃郁，🧡每一口都帶有獨特茶香與甜美奶韻，讓人一喝就愛上！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👑手工泰式綠奶茶",
+            "description": "🥤 泰式綠茶 🍵 搭配香醇奶香，茶湯醇厚，帶有天然清新茶香，細膩又順口，💚每一口都是甜中帶茶韻的獨特享受，讓人喝完回味無窮！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工泰式奶香泰奶",
+            "description": "手工調製泰式紅茶融合奶香，橘亮冰鎮茶湯，口感絲滑、茶韻明顯，經典泰奶風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工泰式奶香綠奶",
+            "description": "手作調配的泰式綠茶與奶香融合，茶韻清新、口感滑順，展現經典泰式綠奶風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬紅茶",
+            "description": "泰式紅茶基底加入檸檬，酸香清新，冰涼順口，茶韻明亮，清爽解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬綠茶",
+            "description": "泰式風味綠茶融入檸檬清新酸香，茶韻透亮、冰涼順口，清新解膩，喝完回味無窮！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泰式抹茶系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式抹茶拿鐵",
+            "description": "泰式風味抹茶與奶香層層融合，冰涼順口，茶韻清新、口感滑順，帶來抹茶濃郁卻不苦澀的平衡風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式雲朵抹茶",
+            "description": "泰式抹茶調製的冰飲，茶香與奶香相融，頂層覆蓋綿滑雲朵奶霜，口感香醇順口，每一口都清新柔和！",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式抹茶生椰",
+            "description": "泰式抹茶融入生椰香氣，口感絲滑順口，茶香與椰香交織，清新不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "椰子奶系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "清爽椰子汁🥥",
+            "description": "甜度冰塊固定。660cc杯的",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃椰子奶🥥🥛",
+            "description": "冰塊固定\n椰香濃郁的熱帶風味🥥，絲滑順口，每一口都是椰奶的香甜，清爽不膩，✨充滿南洋風情，喝完彷彿置身椰林海灘！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式椰香奶茶",
+            "description": "以泰式紅茶為基底，融合椰奶，帶出濃郁椰香與清雅茶韻，口感絲滑、冰涼順口，南洋風味滿滿。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式椰香綠奶茶",
+            "description": "以泰式綠茶為基底，融入椰香與奶香，口感滑順，清新茶韻中帶濃郁椰味，冰涼好喝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓椰奶(冬季)",
+            "description": "椰奶基底融合草莓果香，口感絲滑順口，椰香與莓香交織，冬季限定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "波羅蜜椰奶",
+            "description": "泰式.波羅蜜.椰奶.西米露",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "越南🇻🇳咖啡系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味G7咖啡",
+            "description": "越南咖啡本身是使用煉乳調配，因此會較甜，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "G7咖啡拿鐵",
+            "description": "越南咖啡本身是使用煉乳調配，因此會較甜，建議選擇減少一層甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "G7生椰咖啡",
+            "description": "越南咖啡本身是使用煉乳調配，因此會較甜，建議選擇減少一層甜度。\n☕濃郁咖啡香氣中帶有淡淡椰子香甜🥥，每一口都是醇厚咖啡與熱帶風味的奇妙碰撞，香醇順滑，提神又滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "頂級摩卡咖啡拿鐵",
+            "description": "越南咖啡本身是使用煉乳調配，因此會較甜，建議選擇減少一層甜度。\n☕入口先感受到咖啡的深邃濃香，隨後是絲滑奶香與甜蜜巧克力風味的層次交織，香氣馥郁，醇厚不膩，讓人喝完回味無窮✨！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泰愛了特調可可系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式特調冰可可",
+            "description": "選用濃郁可可粉 🍫 調製，搭配泰式風味特調，每一口都是濃醇巧克力與微甜奶香的完美融合，🧊冰涼順口，讓人一試成主顧！✨",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式椰香可可",
+            "description": "泰式風味濃醇可可，融入椰香，冰涼順口，層次分明，巧克力香氣與椰子芳韻交織，喝起來滑順不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火山石🌋巧克力熔岩（kitkat巧克力碎片）",
+            "description": "產品本身較甜，建議選擇減少一層甜度。\n🍫每一口都是香濃可可的爆發，酥脆與滑順交織，巧克力控的天堂級飲品🗯️！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蝶豆花系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蝶豆花鮮奶",
+            "description": "最少半糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👑蝶豆花蜂蜜檸檬蘇打SODA🐝🍋",
+            "description": "冰塊固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蘇打系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "水蜜桃蘇打🍑",
+            "description": "水蜜桃果香融合氣泡蘇打，冰涼爽口、氣泡輕盈，清新解膩的氣泡飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓檸檬蘇打🍓🍋",
+            "description": "冰塊固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香果蘇打",
+            "description": "明亮百香果香結合飽滿氣泡，入口清爽帶微酸，冰涼順口、輕盈解膩！",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果蘇打",
+            "description": "芒果風味氣泡飲，氣泡輕盈、果香明亮，清新順口，一口就愛上！",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泰愛了特調系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👑芋香鮮奶",
+            "description": "芋頭香氣與鮮奶細緻交融，冰涼順口、口感滑順，呈現濃厚芋韻與柔和奶香的層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手提袋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "一杯袋",
+            "description": "飲料單杯提袋，適用一杯飲品，外帶好拿，攜帶便利。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "二杯/4杯袋",
+            "description": "可裝2或4杯飲品的外帶手提袋，拿取方便、攜帶輕鬆，適合分享與聚會使用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

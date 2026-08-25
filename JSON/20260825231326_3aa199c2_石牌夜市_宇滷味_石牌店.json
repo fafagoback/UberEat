@@ -1,0 +1,1123 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%9F%B3%E7%89%8C%E5%A4%9C%E5%B8%82-%E5%AE%87%E6%BB%B7%E5%91%B3-%E7%9F%B3%E7%89%8C%E5%BA%97/7q2AnLLRSiCkEUQU0Rl-NA",
+  "name": "石牌夜市 宇滷味 石牌店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "112台灣台北市北投區裕民一路11號",
+    "addressLocality": "北投區",
+    "addressRegion": "台北市",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1165998,
+    "longitude": 121.516679
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 1500
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Braised Dishes"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "E餐🥬蚵白菜1份+豆芽菜+雞絲麵1份+北海貝1顆 +麻吉燒1顆+香菇貢丸1顆",
+            "description": "E餐蔬菜麵食組合：含蚵白菜、豆芽菜與雞絲麵，搭配北海貝、麻吉燒、香菇貢丸各1顆；一次滿足菜、麵與多元配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B餐🥬青江菜1份+豆芽菜+蒸煮麵1份+豬血糕1份+蟹棒1條",
+            "description": "B餐組合：青江菜1份、豆芽菜、蒸煮麵1份、豬血糕1份、蟹棒1條；蔬菜與麵食一次到位的超值選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "A餐🥬高麗菜1份+豆芽菜+韓國拉麵1份+甜不辣1片+魚包蛋1顆",
+            "description": "A餐：高麗菜1份、豆芽菜、韓國拉麵1份、甜不辣1片、魚包蛋1顆；蔬菜與麵食一次到位的超值組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "C餐🥬金針菇1份+豆芽菜+刀削麵1份+黑輪1條+貢丸1顆",
+            "description": "C餐：金針菇1份、豆芽菜、刀削麵1份、黑輪1條、貢丸1顆；蔬菜、麵與丸類一次到位的超值組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "D餐🥬大陸妹1份+豆芽菜+寬冬粉1份+魚餃1顆+龍蝦沙拉1顆+鑫鑫腸1顆+蟹蛋1顆",
+            "description": "D餐：大陸妹1份、豆芽菜、寬冬粉1份，魚餃、龍蝦沙拉、鑫鑫腸、蟹蛋各1顆。青菜、丸餃、冬粉一次到位的超值組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🙏請先點選口味調整區🙏（必填）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "口味調整區",
+            "description": "必填口味調整，請在此勾選或備註個人口味需求；若無特別需求，選一般即可",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "活動套餐組",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "A餐🥬高麗菜1份+豆芽菜+韓國拉麵1份+甜不辣1片+魚包蛋1顆",
+            "description": "A餐：高麗菜1份、豆芽菜、韓國拉麵1份、甜不辣1片、魚包蛋1顆；蔬菜與麵食一次到位的超值組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B餐🥬青江菜1份+豆芽菜+蒸煮麵1份+豬血糕1份+蟹棒1條",
+            "description": "B餐組合：青江菜1份、豆芽菜、蒸煮麵1份、豬血糕1份、蟹棒1條；蔬菜與麵食一次到位的超值選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "C餐🥬金針菇1份+豆芽菜+刀削麵1份+黑輪1條+貢丸1顆",
+            "description": "C餐：金針菇1份、豆芽菜、刀削麵1份、黑輪1條、貢丸1顆；蔬菜、麵與丸類一次到位的超值組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "D餐🥬大陸妹1份+豆芽菜+寬冬粉1份+魚餃1顆+龍蝦沙拉1顆+鑫鑫腸1顆+蟹蛋1顆",
+            "description": "D餐：大陸妹1份、豆芽菜、寬冬粉1份，魚餃、龍蝦沙拉、鑫鑫腸、蟹蛋各1顆。青菜、丸餃、冬粉一次到位的超值組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "E餐🥬蚵白菜1份+豆芽菜+雞絲麵1份+北海貝1顆 +麻吉燒1顆+香菇貢丸1顆",
+            "description": "E餐蔬菜麵食組合：含蚵白菜、豆芽菜與雞絲麵，搭配北海貝、麻吉燒、香菇貢丸各1顆；一次滿足菜、麵與多元配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "超值組合餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "❤️幸福牛肉特餐❤️牛肉片1份+ 白菜(蚵丫白) 1份+貢丸3顆+凍豆腐1份+王子麵1包+細冬粉1包",
+            "description": "牛肉片、白菜（蚵仔白）、貢丸3顆、凍豆腐、王子麵1包、細冬粉1包，肉菜麵一次到位的超值組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "❤️幸福豬肉特餐❤️豬肉片1份+青江菜1份+鑫鑫腸4顆+豬血糕1份+王子麵1包+細冬粉1包",
+            "description": "豬肉片1份、青江菜1份、鑫鑫腸4顆、豬血糕1份，附王子麵1包與細冬粉1包；豐富配料，一次滿足肉、菜與麵食需求。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菇菇餐🍄金針菇1份+香菇1份+杏鮑菇1份+香菇貢丸2顆+細冬粉1份",
+            "description": "三菇組合一次滿足：金針菇、香菇、杏鮑菇各1份，搭配香菇貢丸2顆與細冬粉1份。菇香濃郁，細冬粉滑Q易吸湯汁，口感層次更豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜多多🥬 A餐❤️ 大陸妹1份+青江菜1份+小玉米1份",
+            "description": "A餐蔬菜組合：大陸妹1份、青江菜1份、小玉米1份；想多吃蔬菜的超值選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "嘴邊肉（產地：台灣）",
+            "description": "1份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬大腸（產地：台灣）",
+            "description": "1份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆腸",
+            "description": "豬脆腸切段，脆口彈牙，越嚼越香",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腸",
+            "description": "切段雞腸，蔥花點綴，Q彈有嚼勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬皮（產地：台灣）",
+            "description": "台灣產豬皮，口感Q彈，富含膠質。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "火鍋類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆皮",
+            "description": "片狀豆皮，適合火鍋涮煮，吸湯入味，軟嫩",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大溪豆干",
+            "description": "大溪豆干，厚片紮實，耐煮不易散，吸湯入味，適合火鍋",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆包",
+            "description": "方片豆包，豆香淡雅，入鍋易吸湯汁，適合火鍋",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕（產地：台灣）",
+            "description": "台灣產豬血糕，火鍋配料，口感紮實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐",
+            "description": "切片豆製品，孔洞綿密，吸湯入味，久煮不散，適合火鍋",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇貢丸",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚餃",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚包蛋",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素雞",
+            "description": "豆皮捲壓製的素食豆製品，口感紮實帶彈性，適合火鍋涮煮",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆腸",
+            "description": "豆皮捲製切段，層次分明，耐煮不易散，吸湯入味，適合火鍋",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹棒",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯米腸",
+            "description": "糯米灌製的米腸，口感軟Q帶米香，適合火鍋煮食",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起士魚豆腐",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鴨肉丸",
+            "description": "每份4顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍蝦沙拉",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻吉燒",
+            "description": "每份3顆，花生，吉士，芝麻，可在備註選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式年糕",
+            "description": "韓式年糕切段，Q彈嚼勁，適合火鍋加料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚丸",
+            "description": "每份4顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燕餃",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花干",
+            "description": "豆製品切條，適合火鍋，耐煮不易散，吸湯入味",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸",
+            "description": "每份5顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九晨塔花枝丸",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四角油豆腐",
+            "description": "方形油豆腐，孔隙綿密，吸湯飽滿，適合火鍋，久煮不易散",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚豆腐",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "北海貝",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹蛋",
+            "description": "每份4顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭糕",
+            "description": "芋頭製成的長方片狀糕體，適合火鍋加料，可直接下鍋煮食",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德國香腸",
+            "description": "每份1條",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金球",
+            "description": "每份4顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚燒",
+            "description": "鱈魚漿壓製長方魚板，Q彈耐煮，適合火鍋，可切片下鍋",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚板",
+            "description": "魚漿製成的長方片魚板，Q彈，適合火鍋，吸湯入味",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香魚捲",
+            "description": "魚漿製成的中空魚捲，Q彈有嚼勁，吸湯入味，適合火鍋",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮湯包",
+            "description": "每份3顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大龍蝦棒",
+            "description": "每份1條",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑輪燒",
+            "description": "每份1顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工凍豆腐",
+            "description": "孔洞綿密、吸湯入味、久煮不散，火鍋必備",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蔬菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "高麗菜，清脆易熟，吸湯入味，適合火鍋或滷味加菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白蘿蔔",
+            "description": "白蘿蔔切片，口感柔軟，易吸湯汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水蓮",
+            "description": "水蓮，梗細脆彈，爽口",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花椰菜(青花菜)",
+            "description": "青花菜切成小朵，清爽好入口",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "金針菇，細長脆口，易吸湯汁，涮煮快速，適合火鍋加料",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大陸妹",
+            "description": "蘿蔓生菜（大陸妹），葉梗厚實，口感清脆",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "空心菜",
+            "description": "切段空心菜，蔬菜類單點",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇",
+            "description": "香菇切片，菇香濃郁，吸湯入味，耐煮不易散，適合火鍋加料",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "絲瓜",
+            "description": "絲瓜切塊，口感柔嫩，清爽多汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "木耳",
+            "description": "木耳，爽脆Q彈，膳食纖維豐富，清爽解膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍",
+            "description": "玉米筍，脆口，適合火鍋涮煮",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白菜(蚵ㄚ白)",
+            "description": "白菜（蚵仔白），葉嫩梗脆，口感清爽",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青江菜",
+            "description": "青江菜，梗脆葉嫩，口感清爽，適合火鍋加菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆",
+            "description": "切段四季豆，蔥花點綴",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "每份3支，整支杏鮑菇，肉厚紮實、菇香清雅；可備註切片或對切。",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥",
+            "description": "薄切洋蔥片，脆口清香",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "秀珍菇",
+            "description": "口感嫩脆，菇香清雅，爽口好搭",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅蘿蔔",
+            "description": "紅蘿蔔切段1份，蔬菜配料，適合與各式滷味搭配。",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜",
+            "description": "表皮多疙瘩，瓜肉厚實，脆口帶苦味",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小黃瓜",
+            "description": "小黃瓜，整條，口感清脆，清爽解膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青椒",
+            "description": "青椒，果肉厚實，口感清脆，適合火鍋加料",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆芽菜",
+            "description": "豆芽菜，芽體細長，脆嫩爽口，清爽解膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒸煮麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "寬冬粉",
+            "description": "扁寬型冬粉條，適合湯品或滷味搭配。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "細冬粉",
+            "description": "細版冬粉，絲細滑Q，易吸附湯汁與醬香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國拉麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒意麵",
+            "description": "意麵麵餅，適合鍋燒湯麵，易吸湯汁，口感Q彈",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宇龍麵",
+            "description": "粗圓麵條，Q彈口感，蔥花點綴，清爽原味",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粿仔條",
+            "description": "米製粿仔條，清湯，蔥花點綴",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞絲麵",
+            "description": "細麵條，口感滑順，易吸附湯汁與醬香",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "刀削麵",
+            "description": "寬厚麵片，Q彈帶勁，易吸附湯汁與醬香",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "寬王子麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "媽媽拉麵",
+            "description": "拉麵型麵條，Q彈帶勁，易吸湯汁與醬香，適合與滷味搭配。",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "肉類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉片（產地：西班牙）",
+            "description": "西班牙產薄切豬肉片，捲片裝盛，方便烹調與搭配",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鴨血",
+            "description": "滑嫩鴨血切塊，浸於醬香湯汁，撒上蔥花，口感柔軟順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮（產地：台灣）",
+            "description": "台灣產豬頭皮，切片，Q彈、膠質豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉片（產地：巴拉圭）",
+            "description": "薄切卷狀牛肉片，產地巴拉圭",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胗",
+            "description": "雞胗1份，Q彈有嚼勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "小顆一口，緊實Q彈，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿",
+            "description": "每份1支帶骨雞腿，含雞皮與腿肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞翅膀",
+            "description": "帶骨雞翅，含翅根與翅中，小巧好啃",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉腸（產地：台灣）",
+            "description": "1份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "任選類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "任選5樣",
+            "description": "任選5樣滷味，可在備註填寫品項名稱",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "任選3樣",
+            "description": "自選三樣滷味，請在備註填寫品項名稱",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,643 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A9%B7%E6%84%9B%E6%89%8B%E5%89%B5/1lgkw822XfK_UQPp8xeZvw",
+  "name": "婷愛手創",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2 F.",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08204,
+    "longitude": 121.48428
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 22
+  },
+  "servesCuisine": [
+    "Flowers",
+    "Grocery",
+    "Retail",
+    "florist",
+    "Indoor Plants & Gifts",
+    "Gift Store"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "浪漫花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1314玫瑰香皂花束",
+            "description": "花束主體為14支香皂玫瑰花而成，配花則由花藝師隨機搭配。（皆附花束提袋）\n尺寸約36*30*30/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "780.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "向日葵浪漫香皂花束",
+            "description": "花束主體由七支混色的向日葵香皂花，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：34*40*20/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單支向日葵香皂花（紫）",
+            "description": "花束主體由一支向日葵香皂花而成，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：10*40*8/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酷樂米香皂花束（LED燈）",
+            "description": "卡通娃娃+香皂花+Led燈（皆附花束提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醒獅永生燈圈擺飾",
+            "description": "內容有：永生花+索拉花；燈圈有3段色調（黃、暖、白光）外包裝皆由禮盒包裝，外盒尺寸約：27*18公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "980.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "向日葵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "毛根盆栽/盆",
+            "description": "盆栽內容向日葵為主花。(商品皆附贈提袋)\n*若有客製化需求.疑問請加入店家Line詢問:   ID:kt0938376701",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "母親節花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "藍韻時光",
+            "description": "優雅沈穩\n花束主花2朵炫彩白索拉花，其餘配花、包裝紙顏色則由花藝師隨機搭配。（花束皆附提袋）是尺寸約：20*30/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "七夕花禮7折起",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1314玫瑰香皂花束",
+            "description": "花束主體為14支香皂玫瑰花而成，配花則由花藝師隨機搭配。（皆附花束提袋）\n尺寸約36*30*30/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "780.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酷樂米香皂花束（LED燈）",
+            "description": "卡通娃娃+香皂花+Led燈（皆附花束提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "卡通",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美樂香皂花束（LED燈）",
+            "description": "卡通娃娃+香皂花+Led燈（皆附花束提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酷樂米香皂花束（LED燈）",
+            "description": "卡通娃娃+香皂花+Led燈（皆附花束提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "謝師花禮7折起",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "單支向日葵香皂花（黃）",
+            "description": "花束主體由一支向日葵香皂花而成，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：10*40*8/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "康乃馨花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "乾燥永生花康乃馨(單支花漾燈)/束",
+            "description": "花束內容1朵大康乃馨為主花，其他配花、包裝顏色皆由花藝師搭配為主。(商品皆附贈提袋)\n*若有客製化需求.疑問請加入店家Line詢問:   ID:kt0938376701",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "向日葵花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "乾燥永生花向日葵(單支花漾燈)/束",
+            "description": "花束內容1朵向日葵為主花，其他配花、包裝顏色皆由花藝師搭配調配為主。(商品皆附贈提袋)\n*若有客製化需求.疑問請加入店家Line詢問:   ID:kt0938376701",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "畢業季向日葵花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "乾燥永生花畢業熊 1 朵向日葵",
+            "description": "花束內容1朵向日葵與1支畢業熊為主花，其他配花皆由花藝師搭配為主，也可許願喜愛顏色包裝紙；盡量滿足客戶喜好。(商品皆附贈提袋)\n*若有客製化需求.疑問請加入店家Line詢問:   ID:kt0938376701",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "七夕花禮7折起",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "莓好時光",
+            "description": "優雅沈穩 花束主花2朵炫彩白索拉花，其餘配花、則由花藝師隨機搭配。（花束皆附提袋）是尺寸約：20*30/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "謝師花禮7折起",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "莓好時光",
+            "description": "優雅沈穩 花束主花2朵炫彩白索拉花，其餘配花、則由花藝師隨機搭配。（花束皆附提袋）是尺寸約：20*30/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "情人節花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "藍韻時光",
+            "description": "優雅沈穩\n花束主花2朵炫彩白索拉花，其餘配花、包裝紙顏色則由花藝師隨機搭配。（花束皆附提袋）是尺寸約：20*30/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "感恩教師花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "畢業熊向日葵花束（粉綠）",
+            "description": "花束內容1朵向日葵與1支畢業熊為主花(商品皆附贈提袋)尺寸約：20*33/公分 *若有客製化需求.疑問請加入店家Line詢問: ID:kt0938376701",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "畢業熊向日葵花束（粉）",
+            "description": "花束內容1朵向日葵與1支畢業熊為主花(商品皆附贈提袋)尺寸約：20*33/公分 *若有客製化需求.疑問請加入店家Line詢問: ID:kt0938376701",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍韻時光",
+            "description": "優雅沈穩\n花束主花2朵炫彩白索拉花，其餘配花、包裝紙顏色則由花藝師隨機搭配。（花束皆附提袋）是尺寸約：20*30/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "永生乾燥花",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "向日葵浪漫香皂花束",
+            "description": "花束主體由七支混色的向日葵香皂花，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：34*40*20/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單支向日葵香皂花（紫）",
+            "description": "花束主體由一支向日葵香皂花而成，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：10*40*8/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "索拉花",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "向日葵浪漫香皂花束",
+            "description": "花束主體由七支混色的向日葵香皂花，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：34*40*20/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "謝師花禮7折起",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "向日葵浪漫香皂花束",
+            "description": "花束主體由七支混色的向日葵香皂花，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：34*40*20/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單支向日葵香皂花（紫）",
+            "description": "花束主體由一支向日葵香皂花而成，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：10*40*8/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香皂花",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "向日葵浪漫香皂花束",
+            "description": "花束主體由七支混色的向日葵香皂花，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：34*40*20/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單支向日葵香皂花（紫）",
+            "description": "花束主體由一支向日葵香皂花而成，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：10*40*8/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單支向日葵香皂花（黃）",
+            "description": "花束主體由一支向日葵香皂花而成，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：10*40*8/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "畢業花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "單支向日葵香皂花（黃）",
+            "description": "花束主體由一支向日葵香皂花而成，其餘配花與包裝皆由花藝師隨機搭配。（花束皆附花袋）尺寸約：10*40*8/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "畢業熊向日葵花束（粉）",
+            "description": "花束內容1朵向日葵與1支畢業熊為主花(商品皆附贈提袋)尺寸約：20*33/公分 *若有客製化需求.疑問請加入店家Line詢問: ID:kt0938376701",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍韻時光",
+            "description": "優雅沈穩\n花束主花2朵炫彩白索拉花，其餘配花、包裝紙顏色則由花藝師隨機搭配。（花束皆附提袋）是尺寸約：20*30/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "畢業花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "畢業熊向日葵花束（粉綠）",
+            "description": "花束內容1朵向日葵與1支畢業熊為主花(商品皆附贈提袋)尺寸約：20*33/公分 *若有客製化需求.疑問請加入店家Line詢問: ID:kt0938376701",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "過年吉祥物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醒獅永生燈圈擺飾",
+            "description": "內容有：永生花+索拉花；燈圈有3段色調（黃、暖、白光）外包裝皆由禮盒包裝，外盒尺寸約：27*18公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "980.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "萬聖節/黏土",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "萬聖節仿真多肉盆栽/個",
+            "description": "節慶掛飾配件皆由花藝師搭配為主。(商品皆附贈提袋)\n*若有客製化需求.疑問請加入店家Line詢問:   ID:kt0938376701",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "開運擺飾",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醒獅永生燈圈擺飾",
+            "description": "內容有：永生花+索拉花；燈圈有3段色調（黃、暖、白光）外包裝皆由禮盒包裝，外盒尺寸約：27*18公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "980.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "新年花禮",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "藍耀福運花桶",
+            "description": "🧧✨ 紅金藍配色＋可愛招財貓，一整年好運跟著來！\n搭配金元寶、炮竹、好彩頭、鳳梨、金葉與藍色花材點綴，喜氣又大器，象徵 招財進寶、福運滿滿、大吉大利。\n\n✔ 過年居家佈置\n✔ 店面櫃檯招福擺飾\n✔ 送禮體面又討喜\n\n🎉 婷愛手創｜限量手作\n＊尺寸約：寬30*長20*高40/公分\n＊配件依花藝師隨機搭配（成品皆附花束提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "1080.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金聚福運花桶",
+            "description": "金元寶＋招財貓＋炮竹，滿滿開運元素一次到位！\n搭配金色扇面與紅色花材，整體喜氣又大器，\n象徵 招財進寶、福到滿滿、好運整年跟著來。\n✔ 春節居家佈置必備\n✔ 店面櫃檯開運招福\n✔ 過年送禮超體面\n\n🎉 婷愛手創｜限量手作款\n尺寸約：寬30*長20*高46/公分\n成品皆有花藝師隨機搭配（成品皆附花藝提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "1080.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "聖誕節交換禮物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "聖誕小雪人花束",
+            "description": "❄️🎄 聖誕小雪人花束 🎄❄️\n小巧又療癒的聖誕花束，裡面有雪人娃娃、松果、棉花與聖誕小禮盒，滿滿節日氛圍～\n送朋友、交換禮物、佈置都超可愛！\n\n📌 尺寸約：寬34*長30*高40/公分\n📌 風格：聖誕限定綠＋紅色系\n📌 特點：不凋謝、擺著就是聖誕氣氛感\n＊配件皆由花藝師隨機搭配。（花束皆附提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "聖誕老人花束",
+            "description": "🎅🎄 聖誕老人小花束｜限定手作款 🎄🎅\n充滿節慶感的聖誕老人花束，搭配松果、棉花、小花圈與金色葉材，整束華麗又溫馨✨\n交換禮物、送朋友、佈置家裡都超應景！\n\n📌 聖誕紅綠主色系\n📌 可愛聖誕老人＋迷你花圈\n📌 不凋花材搭配金色點綴\n📌 尺寸約：寬30*長20*高50/公分\n配件皆由花藝師隨機搭配。（花束皆附提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "聖誕馴鹿花束",
+            "description": "🎄✨ 聖誕馴鹿小花束 ✨🎄\n可愛的馴鹿、松果、棉花與小禮物點綴，滿滿節慶氛圍！\n交換禮物、送朋友、佈置空間都超適合💕\n\n📌 聖誕限定紅綠配色\n📌 不凋花材＋可愛小裝飾\n📌 尺寸約：寬50*長20*高50/公分\n＊配件由花藝師隨機搭配。（花束皆附提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "聖誕花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "聖誕小雪人花束",
+            "description": "❄️🎄 聖誕小雪人花束 🎄❄️\n小巧又療癒的聖誕花束，裡面有雪人娃娃、松果、棉花與聖誕小禮盒，滿滿節日氛圍～\n送朋友、交換禮物、佈置都超可愛！\n\n📌 尺寸約：寬34*長30*高40/公分\n📌 風格：聖誕限定綠＋紅色系\n📌 特點：不凋謝、擺著就是聖誕氣氛感\n＊配件皆由花藝師隨機搭配。（花束皆附提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "聖誕老人花束",
+            "description": "🎅🎄 聖誕老人小花束｜限定手作款 🎄🎅\n充滿節慶感的聖誕老人花束，搭配松果、棉花、小花圈與金色葉材，整束華麗又溫馨✨\n交換禮物、送朋友、佈置家裡都超應景！\n\n📌 聖誕紅綠主色系\n📌 可愛聖誕老人＋迷你花圈\n📌 不凋花材搭配金色點綴\n📌 尺寸約：寬30*長20*高50/公分\n配件皆由花藝師隨機搭配。（花束皆附提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "聖誕馴鹿花束",
+            "description": "🎄✨ 聖誕馴鹿小花束 ✨🎄\n可愛的馴鹿、松果、棉花與小禮物點綴，滿滿節慶氛圍！\n交換禮物、送朋友、佈置空間都超適合💕\n\n📌 聖誕限定紅綠配色\n📌 不凋花材＋可愛小裝飾\n📌 尺寸約：寬50*長20*高50/公分\n＊配件由花藝師隨機搭配。（花束皆附提袋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香皂花束",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1314玫瑰香皂花束",
+            "description": "花束主體為14支香皂玫瑰花而成，配花則由花藝師隨機搭配。（皆附花束提袋）\n尺寸約36*30*30/公分",
+            "offers": {
+              "@type": "Offer",
+              "price": "780.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

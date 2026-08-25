@@ -1,0 +1,764 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/sofydog-%E8%98%87%E8%8F%B2%E7%8B%97%E5%AF%B5%E7%89%A9%E7%B2%BE%E5%93%81-%E5%A4%A9%E6%AF%8D%E5%BA%97/hpHd9D1_VKWQNl-rZauW9Q",
+  "name": "SofyDOG 蘇菲狗寵物精品 天母店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4 Section 2, Zhongcheng Road",
+    "addressLocality": "Taipei",
+    "addressRegion": "APAC",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1086324,
+    "longitude": 121.5301158
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Grocery",
+    "Retail",
+    "Pet Supplies"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "清潔美容",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 狗用滋養保濕沐浴露 500ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "775.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 乾洗潤膚慕斯 150ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 牙齒護理 薄荷潔齒怪零食組",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 牙齒護理 雙效牙膏 60g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 寵物淚痕清潔液 300ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1040.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 狗用深層清潔沐浴露 500ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "775.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 貓用補水保濕潤膚乳 40ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "585.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 牙齒護理 粉紅潔齒怪零食組",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 貓用貓薄荷沐浴露 300ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 貓用無香沐浴露 300ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 牙齒護理 粉紅色潔齒怪",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 100%天然純棉片 80片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 溫泉療癒SPA沐浴鹽 30g x 10包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 牙齒護理 天然酵素貓咪護齒潔牙水250ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 肌本呵護 敏感護膚乳液 20g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "615.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "居家用品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 調色盤 天空藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "520.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 九重葛 橘",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 UFO迷宮 藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 可摺疊矽膠旅行碗 海軍藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 風車 藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "520.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 九重葛 粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 渦輪 橘",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 可摺疊矽膠旅行碗 嬰兒粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 迷宮風扇 綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 UFO迷宮 綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Trending products",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 小鮮肉狗狗鮮食餐 鮮活草原鹿 150克",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 小鮮肉狗狗鮮食餐 鮮嫩雞鴨雙寶 150克 x 7件組",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1015.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 小鮮肉狗狗鮮食餐 草原鮮牛肉 150克 x 7件組",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1015.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 小鮮肉狗狗鮮食餐 低脂鮮嫩雞 150克 x 7件組",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1015.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 雞鮪南瓜 貓咪無穀主食罐 90gx12罐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 雞肉起司 貓咪無穀主食罐 90gx12罐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 雞肉蟹絲 貓咪無穀主食罐 90g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮魚無穀天然糧 小型犬配方 12磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2870.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 高肉量無穀 海洋鮭鱈 全貓配方 3磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 雞肉起司 貓咪無穀主食罐 90g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義士大廚 貓咪肉絲主食罐-鯖魚鯛魚 70g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 貓咪主食餐包 豐醬無穀雙魚 老貓/體控貓 71g x 12包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "630.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 鮪魚蟹絲 貓咪無穀主食罐 90g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 低致敏無穀 鹿肉 全齡犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1440.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 MIX 雞肉鹿肉 狗狗無穀飼料+凍乾 2kg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "890.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "狗狗罐罐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 關節保健-燉肉無穀鮮雞 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ZIWI巔峰 鮮肉狗主食罐 鹿肉 390g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "331.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 狗狗主食餐包 品燉牛肉炊飯 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 免疫保健-嫩絲無穀雞鮭 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ZIWI巔峰 鮮肉狗主食罐 鯖魚羊肉 390g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "263.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 綜合口味 79gx12 包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "630.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 狗狗主食餐包 嫩絲無穀雞肉 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 狗狗主食餐包 品燉雞肉炊飯 79G",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 腸胃保健-品燉雞羊+糙米 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 狗狗主食餐包 品燉牛肉炊飯 79g x 6包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "335.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 鮮食利樂狗餐包 豐醬系列 無穀鴨354g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ZIWI巔峰 鮮肉狗主食罐 羊肉 390g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "263.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 狗狗主食餐包 綜合口味 79g x 12包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "630.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 關節保健-燉肉無穀鮮雞 79gx6包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "335.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 狗狗主食餐包 品燉牛肉炊飯 79g x 24包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Best sellers",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 腸胃保健-品燉雞羊+糙米 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 貓咪主食餐包 豐醬無穀雙魚 老貓/體控貓 71g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 舒緩情緒-品燉無穀鮮肉 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 小型成犬配方 6磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1680.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 狗狗主食餐包 嫩絲無穀雞肉 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義士大廚 貓咪肉絲主食罐-鯖魚紅薯 70g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 免疫保健-嫩絲無穀雞鮭 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 火雞立方 凍乾零食 30g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ZIWI巔峰 鮮肉狗主食罐 鹿肉 390g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "331.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 皮膚保健 狗狗嫩丁機能零食 30g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 黑水虻無穀成犬糧3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 主子好心情肉泥條 雞肉蔓越莓 15gx4條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 小型幼犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 關節保健 雞肉無穀成貓糧 8磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 高肉量無穀 四種肉 全貓配方 3磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1270.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

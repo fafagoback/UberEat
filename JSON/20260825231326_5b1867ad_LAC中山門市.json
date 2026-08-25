@@ -1,0 +1,598 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/lac%E4%B8%AD%E5%B1%B1%E9%96%80%E5%B8%82/nL4BZj_TVWOGMbZJfKd4Xg",
+  "name": "LAC中山門市",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區中山北路二段81號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.058419,
+    "longitude": 121.5231456
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Personal Care",
+    "Pharmacy",
+    "Convenience",
+    "Retail",
+    "Beauty Supply",
+    "Hardware",
+    "Electronics"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Health and wellness essentials",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "LAC 鋅30食品錠100錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 活力女綜合食品錠90錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 喜纖姿飲品-草莓口味 2g X 30包/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 兒童益生菌果凍-桃子口味 30入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 維生素D 800膠囊食品60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "710.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘胺酸鎂膠囊食品60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 男性複方精胺酸食品錠90錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 夜安眠粉末-橘子口味30包/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "窈美孅粉末食品15入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "629.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你三強魚油1000膠囊食品120顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2025.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 兒童益護力果凍-荔枝口味 30入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1070.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 活力男綜合食品錠90錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 蔓越莓 & D-甘露糖膠囊食品60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 精胺酸粉末飲品",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1070.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 益淨暢乳酸菌顆粒 50包/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1070.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Almost anything, delivered",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "LAC 男性複方精胺酸食品錠90錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 夜安眠粉末-橘子口味30包/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "窈美孅粉末食品15入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "629.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你三強魚油1000膠囊食品120顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2025.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 兒童益護力果凍-荔枝口味 30入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1070.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 活力男綜合食品錠90錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 鋅30食品錠100錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 活力女綜合食品錠90錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 喜纖姿飲品-草莓口味 2g X 30包/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 兒童益生菌果凍-桃子口味 30入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 維生素D 800膠囊食品60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "710.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘胺酸鎂膠囊食品60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 蔓越莓 & D-甘露糖膠囊食品60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 精胺酸粉末飲品",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1070.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 益淨暢乳酸菌顆粒 50包/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1070.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "專科調養",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "LAC 蔓越莓 & D-甘露糖膠囊食品60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 松樹皮菁華食品錠 50錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 葉黃素30+枸杞軟膠囊60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 蔓越莓膠囊食品100顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "980.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滋森法飲品15入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1080.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 夜安眠粉末-橘子口味30包/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1215.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "兒童保健",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "LAC 兒童亮晶晶果凍-百香果口味 30入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1070.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Lac 利維喜 兒童綜合果凍-莓果口味 30入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 兒童鈣高高果凍-葡萄口味 30入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 兒童益生菌果凍-桃子口味 30入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 兒童益護力果凍-荔枝口味 30入/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1070.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "基礎養護",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "LAC 鋅30食品錠100錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘胺酸鎂膠囊食品60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 維生素D 800膠囊食品60顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "710.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC鐵18膠囊食品 90顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "760.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優鎂鈣Plus 3.3gx60包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1790.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 鎂250食品錠90錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC三效C1000食品錠90錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LAC 葉酸800食品錠100錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "女性複方蔓越莓粉末20包/盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "945.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B群50食品錠100錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "945.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三效C500食品錠90錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B群100食品錠100錠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

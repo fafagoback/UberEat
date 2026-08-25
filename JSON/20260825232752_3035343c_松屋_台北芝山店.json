@@ -1,0 +1,1951 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%9D%BE%E5%B1%8B-%E5%8F%B0%E5%8C%97%E8%8A%9D%E5%B1%B1%E5%BA%97/4vfzFkE2S2qk9ih5SPReHg",
+  "name": "松屋 台北芝山店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 120, Fuhua Road",
+    "addressLocality": "Shilin District",
+    "addressRegion": "",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.102523,
+    "longitude": 121.5229111
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 10000
+  },
+  "servesCuisine": [
+    "Japanese",
+    "Japanese set items"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "厚切炸豬排定食",
+            "description": "豬排140g。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "296.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切黃金豬排蓋飯套餐",
+            "description": "豬排140g佐滑嫩金黃蛋液",
+            "offers": {
+              "@type": "Offer",
+              "price": "292.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排定食",
+            "description": "豬排70g。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "216.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切味噌豬排定食",
+            "description": "豬排140g。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "305.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排炸蝦雙拼定食",
+            "description": "豬排70g+炸蝦1條。附白飯、味噌湯、高麗菜絲、塔塔醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金豬排蓋飯套餐",
+            "description": "豬排70g佐滑嫩金黃蛋液",
+            "offers": {
+              "@type": "Offer",
+              "price": "212.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "松乃家注意事項 Notice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【肉品來源】豬排：台灣 / 唐揚雞：美國 / 雞里肌：台灣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排番茄咖哩套餐",
+            "description": "期間限定商品。　豬排70g。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "239.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切炸豬排番茄咖哩套餐",
+            "description": "期間限定商品。　豬排140g。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "319.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海老大蝦(2尾)定食",
+            "description": "期間限定商品。\n附白飯、味噌湯、高麗菜絲、塔塔醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排&海老(1尾)定食",
+            "description": "期間限定商品。\n附白飯、味噌湯、高麗菜絲、塔塔醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "309.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排&海老(2尾)定食",
+            "description": "期間限定商品。\n附白飯、味噌湯、高麗菜絲、塔塔醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "379.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切豬排&海老(1尾)定食",
+            "description": "期間限定商品。\n附白飯、味噌湯、高麗菜絲、塔塔醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "389.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切豬排&海老(2尾)定食",
+            "description": "期間限定商品。\n附白飯、味噌湯、高麗菜絲、塔塔醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "459.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "松乃家定食 Set Meal",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "本格唐揚炸雞定食",
+            "description": "唐揚炸雞5塊。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排定食",
+            "description": "豬排70g。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "216.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切炸豬排定食",
+            "description": "豬排140g。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "296.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌豬排定食",
+            "description": "豬排70g。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切味噌豬排定食",
+            "description": "豬排140g。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "305.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩炸雞里肌定食",
+            "description": "炸雞里肌2條。附白飯、味噌湯、高麗菜絲、塔塔醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌雞里肌定食",
+            "description": "炸雞里肌2條。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "松乃家雙拼定食 Assorted Set Meal",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬排唐揚雞雙拼定食",
+            "description": "豬排70g+唐揚炸雞2塊。附白飯、味噌湯、高麗菜絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排炸蝦雙拼定食",
+            "description": "豬排70g+炸蝦1條。附白飯、味噌湯、高麗菜絲、塔塔醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排雞里肌雙拼定食",
+            "description": "炸豬排70g+炸雞里肌1條。附白飯、味噌湯、高麗菜絲、塔塔醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排鱈魚排雙拼定食",
+            "description": "期間限定商品。\n豬排70g+鱈魚排。附白飯、味噌湯、高麗菜絲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "262.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "松乃家蓋飯 Donburi",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "親子唐揚雞肉蓋飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "212.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金豬排蓋飯套餐",
+            "description": "豬排70g佐滑嫩金黃蛋液",
+            "offers": {
+              "@type": "Offer",
+              "price": "212.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切黃金豬排蓋飯套餐",
+            "description": "豬排140g佐滑嫩金黃蛋液",
+            "offers": {
+              "@type": "Offer",
+              "price": "292.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌豬排蓋飯套餐",
+            "description": "豬排70g",
+            "offers": {
+              "@type": "Offer",
+              "price": "212.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "親子雞里肌蓋飯套餐",
+            "description": "炸雞里肌2條佐滑嫩金黃蛋液",
+            "offers": {
+              "@type": "Offer",
+              "price": "212.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金牛肉蓋飯套餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "212.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金炸蝦蓋飯套餐",
+            "description": "炸蝦3條佐滑嫩金黃蛋液",
+            "offers": {
+              "@type": "Offer",
+              "price": "212.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風炸豬排牛肉蓋飯套餐",
+            "description": "豬排70g佐松屋經典牛煮肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "272.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "松乃家咖哩 Curry",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排番茄咖哩套餐",
+            "description": "期間限定商品。　豬排70g。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "239.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切炸豬排番茄咖哩套餐",
+            "description": "期間限定商品。　豬排140g。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "319.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本格唐揚炸雞經典咖哩",
+            "description": "唐揚炸雞3塊。辣度：🌶️🌶️\n※咖哩醬內含牛肉萃取物、豬肉萃取物等成分",
+            "offers": {
+              "@type": "Offer",
+              "price": "192.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排經典咖哩套餐",
+            "description": "豬排70g。辣度：🌶️🌶️\n※咖哩醬內含牛肉萃取物、豬肉萃取物等成分",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切炸豬排經典咖哩套餐",
+            "description": "豬排140g。辣度：🌶️🌶️\n※咖哩醬內含牛肉萃取物、豬肉萃取物等成分",
+            "offers": {
+              "@type": "Offer",
+              "price": "302.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩炸雞里肌經典咖哩套餐",
+            "description": "炸雞里肌2條。辣度：🌶️🌶️\n※咖哩醬內含牛肉萃取物、豬肉萃取物等成分",
+            "offers": {
+              "@type": "Offer",
+              "price": "222.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "松乃家單品 A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海老大蝦(1尾)",
+            "description": "期間限定商品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本格唐揚炸雞(2個)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本格唐揚炸雞(5個)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "178.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排",
+            "description": "豬排70g",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切炸豬排",
+            "description": "豬排140g",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩炸雞里肌(2條)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩炸雞里肌(3條)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸蝦(一尾)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜絲",
+            "description": "附特製沙拉醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔塔醬",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔥鹽香煎雞腿肉米飯套餐(附溏心蛋)",
+            "description": "蔥鹽香煎雞腿肉米飯套餐，附溏心蛋。\n需選購兩份始享有買一送一優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉大盛牛肉飯(附味噌湯)",
+            "description": "肉大盛牛肉飯，附味噌湯。\n需選購兩份始享有買一送一優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製醬漢堡排煎蛋米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。\n漢堡排使用牛絞肉製成，部分含有韌勁的牛筋，請安心使用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典雙倍雞肉咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "233.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製醬漢堡排米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。\n漢堡排使用牛絞肉製成，部分含有韌勁的牛筋，請安心使用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松屋溏心蛋&牛皿",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛燒肉米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛燒肉W定食套餐",
+            "description": "定食附餐：白飯、味噌湯、生菜沙拉或湯青菜任選一。\n主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "305.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中份(肉增)蒲燒豬燒肉蓋飯(附味噌湯)",
+            "description": "期間限定肉增量(9/8　10:00為止）。\n中份肉增量蒲燒豬燒肉蓋飯，附味噌湯。\n需選購兩份始享有買一送一優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中份牛肉飯套餐 Medium Beef Rice Combo",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "118.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)大份蔥香鹽豬燒肉蓋飯套餐",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁牛燒肉米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬蒜雞雙拼牛肉飯套餐",
+            "description": "期間限定商品。\n主餐及選購加價$25元(起)配餐。\n請珍惜食物。\n附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "178.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可爾必思(Uber活動)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松屋溏心蛋(Uber活動)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中份(肉增)蒲燒豬燒肉蓋飯(附味噌湯)",
+            "description": "期間限定肉增量(9/8　10:00為止）。\n中份肉增量蒲燒豬燒肉蓋飯，附味噌湯。\n需選購兩份始享有買一送一優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合生菜沙拉(Uber活動)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉大盛牛肉飯(附味噌湯)",
+            "description": "肉大盛牛肉飯，附味噌湯。\n需選購兩份始享有買一送一優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項 Notice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "買一送一活動期間，需要點選兩份才享有買一送一優惠。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【肉品來源】豬肉：台灣、奧地利、加拿大／雞肉：美國",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【肉品來源】牛肉片：美國／漢堡排牛肉：紐西蘭&澳洲",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【肉品來源】魚排：中國（組合肉，僅供熟食）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無法提供客製化餐點，無提供客製化服務，敬請見諒。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋番茄咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋番茄雞肉咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄雞肉咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃厚起司番茄咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥鹽香煎雞腿肉米飯套餐(附溏心蛋)",
+            "description": "蔥鹽香煎雞腿肉米飯套餐，附溏心蛋。\n需選購兩份始享有買一送一優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉大盛牛肉飯(附味噌湯)",
+            "description": "肉大盛牛肉飯，附味噌湯。\n需選購兩份始享有買一送一優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中份(肉增)蒲燒豬燒肉蓋飯(附味噌湯)",
+            "description": "期間限定肉增量(9/8　10:00為止）。\n中份肉增量蒲燒豬燒肉蓋飯，附味噌湯。\n需選購兩份始享有買一送一優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "牛肉飯類 Beef Rice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "中份牛肉飯套餐 Medium Beef Rice Combo",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "118.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特盛牛肉飯套餐 Extra Large Beef Rice Combo",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你牛肉飯套餐 Mini Beef Rice Combo",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中份蔥香半熟蛋牛肉飯套餐",
+            "description": "🌶️\n主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大份蔥香半熟蛋牛肉飯套餐",
+            "description": "🌶️\n主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬蒜雞雙拼牛肉飯套餐",
+            "description": "期間限定商品。\n主餐及選購加價$25元(起)配餐。\n請珍惜食物。\n附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "178.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大份牛肉飯套餐 Large Beef Rice Combo",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "151.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你蔥香半熟蛋牛肉飯套餐",
+            "description": "🌶️\n主餐及選購加價 35 元起配餐。請珍惜食物。如需加點白飯可至「單點類」選購。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中份起司玉米蛋牛肉飯套餐",
+            "description": "「滑蛋非全熟，熟度無法調整。」\n期間限定商品。主餐及選購加價$35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特盛蔥香半熟蛋牛肉飯套餐",
+            "description": "🌶️\n主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "233.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特盛起司玉米蛋牛肉飯套餐",
+            "description": "「滑蛋非全熟，熟度無法調整。」\n期間限定商品。主餐及選購加價$35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "233.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大份起司玉米蛋牛肉飯套餐",
+            "description": "「滑蛋非全熟，熟度無法調整。」\n期間限定商品。主餐及選購加價$35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你起司玉米蛋牛肉飯套餐",
+            "description": "「滑蛋非全熟，熟度無法調整。」\n期間限定商品。主餐及選購加價$35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉大盛牛肉飯套餐",
+            "description": "大份的肉量，中碗的飯量\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "141.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉大盛蔥香半熟蛋牛肉飯套餐",
+            "description": "大份的肉量，中碗的飯量\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉大盛起司玉米蛋牛肉飯套餐",
+            "description": "大份的肉量，中碗的飯量\n※滑蛋非全熟，熟度無法調整。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中份濃厚起司牛肉飯套餐",
+            "description": "主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉大盛濃厚起司牛肉飯套餐",
+            "description": "主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你濃厚起司牛肉飯套餐",
+            "description": "主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大份濃厚起司牛肉飯套餐",
+            "description": "主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特盛濃厚起司牛肉飯套餐",
+            "description": "主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "233.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "咖哩類 Curry",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋番茄咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐姆蛋番茄雞肉咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄雞肉咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃厚起司番茄咖哩套餐",
+            "description": "期間限定商品。\n※咖哩醬內含魚類萃取物等成分。\n主餐及選購加價35元(起)配餐。請珍惜食物。附提袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典雙倍雞肉咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "233.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典雞肉咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "193.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典漢堡排咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。\n漢堡排使用牛絞肉製成，部分含有韌勁的牛筋，請安心使用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典咖哩牛肉飯套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典可樂餅咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "163.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典鱈魚排咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典香腸蛋咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松屋經典咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃厚起司漢堡排咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "243.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃厚起司經典咖哩套餐",
+            "description": "咖哩辣度中辣，無法調整辣度。主餐及選購加價35元(起)配餐。請珍惜食物。附提袋及筷子，珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蓋飯類 Donburi",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "中份泡菜蜜汁牛燒蓋飯套餐",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大份泡菜蜜汁牛燒蓋飯套餐",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑蛋鮮蔬雞肉蓋飯套餐",
+            "description": "主餐及選購加價35元(起)配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬燒牛肉蓋飯套餐",
+            "description": "主餐及選購加價35元(起)配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)中份蔥香鹽豬燒肉蓋飯套餐",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)大份蔥香鹽豬燒肉蓋飯套餐",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)中份蒲燒豬燒肉蓋飯套餐",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)大份蒲燒豬燒肉蓋飯套餐",
+            "description": "主餐及選購加價 35 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "米飯套餐 Rice Set",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "特製醬漢堡排煎蛋米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。\n漢堡排使用牛絞肉製成，部分含有韌勁的牛筋，請安心使用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製醬漢堡排米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。\n漢堡排使用牛絞肉製成，部分含有韌勁的牛筋，請安心使用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁牛燒肉米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁牛燒肉W米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "285.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑蛋鮮蔬雞肉米飯套餐",
+            "description": "期間限定商品。\n主餐及選購加價40元(起)配餐。請珍惜食物。附提袋及筷子。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛燒肉米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)豬燒肉米飯套餐",
+            "description": "期間限定肉增量25%! \n附餐：白飯、味噌湯。\n※使用豬五花肉，油質豐富肥美，口感軟嫩\n主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)蔥香鹽豬燒肉米飯套餐",
+            "description": "期間限定肉增量25%! \n附餐：白飯、味噌湯。\n※使用豬五花肉，油質豐富肥美，口感軟嫩\n主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥鹽香煎雞腿肉米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛燒肉W米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)豬燒肉W米飯套餐",
+            "description": "期間限定肉增量25%! \n附餐：白飯、味噌湯。\n※使用豬五花肉，油質豐富肥美，口感軟嫩\n主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)蔥香鹽豬燒肉W米飯套餐",
+            "description": "期間限定肉增量25%! \n附餐：白飯、味噌湯。\n※使用豬五花肉，油質豐富肥美，口感軟嫩\n主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "285.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥鹽香煎雞腿肉W米飯套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "295.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "定食 Set Meal",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滑蛋鮮蔬雞肉定食套餐",
+            "description": "定食附餐：白飯、味噌湯、生菜沙拉或燙青菜任選一。\n主餐及選購加價40元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛燒肉定食套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁牛燒肉定食套餐",
+            "description": "主餐及選購加價40元(起)配餐。\n定食附餐：白飯、味噌湯。生菜沙拉或湯青菜任選一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)豬燒肉定食套餐",
+            "description": "期間限定肉增量25%! \n定食附餐：白飯、味噌湯。生菜沙拉或燙青菜任選一。\n※使用豬五花肉，油質豐富肥美，口感軟嫩\n主餐及選購加價 40 元起配餐。請珍惜食物。\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)蔥香鹽豬燒肉定食套餐",
+            "description": "期間限定肉增量25%! \n定食附餐：白飯、味噌湯。生菜沙拉或燙青菜任選一。\n※使用豬五花肉，油質豐富肥美，口感軟嫩\n主餐及選購加價 40 元起配餐。請珍惜食物。\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥鹽香煎雞腿肉定食套餐",
+            "description": "主餐及選購加價40元(起)配餐。\n套餐附：白飯、味噌湯。生菜沙拉或湯青菜任選一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製醬漢堡排定食套餐",
+            "description": "主餐及選購加價40元(起)配餐。\n套餐附：白飯、味噌湯。生菜沙拉或湯青菜任選一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製醬漢堡排煎蛋定食套餐",
+            "description": "主餐及選購加價40元(起)配餐。\n套餐附：白飯、味噌湯。生菜沙拉或湯青菜任選一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛燒肉W定食套餐",
+            "description": "定食附餐：白飯、味噌湯、生菜沙拉或湯青菜任選一。\n主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "305.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁牛燒肉W定食套餐",
+            "description": "定食附餐：白飯、味噌湯、生菜沙拉或湯青菜任選一。\n主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "315.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)豬燒肉W定食套餐",
+            "description": "期間限定肉增量25%! \n定食附餐：白飯、味噌湯。生菜沙拉或燙青菜任選一。\n※使用豬五花肉，油質豐富肥美，口感軟嫩\n主餐及選購加價 40 元起配餐。請珍惜食物。\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "295.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)蔥香鹽豬燒肉W定食套餐",
+            "description": "期間限定肉增量25%! \n定食附餐：白飯、味噌湯。生菜沙拉或燙青菜任選一。\n※使用豬五花肉，油質豐富肥美，口感軟嫩\n主餐及選購加價 40 元起配餐。請珍惜食物。\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "315.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥鹽香煎雞腿肉W定食套餐",
+            "description": "附白飯,味噌湯。主餐及選購加價 40 元起配餐。請珍惜食物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "325.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點類 A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "半熟蛋 Over Medium Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製醬漢堡排煎蛋",
+            "description": "漢堡排使用牛絞肉製成，部分含有韌勁的牛筋，請安心使用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合生菜沙拉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製醬漢堡排",
+            "description": "漢堡排使用牛絞肉製成，部分含有韌勁的牛筋，請安心使用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛皿 Beef",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁牛燒肉 Roasted Beef with Honey",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩可樂餅",
+            "description": "不含牛肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯(中碗)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸鱈魚排",
+            "description": "魚排：中國（組合肉，僅供熟食）",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯( 迷你碗)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂 Coke",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "蔬菜品項隨季節變換",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可爾必思(Uber活動)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金薯條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃厚豚汁",
+            "description": "豬肉片與多種蔬菜煮製成的道地日式豚汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌湯 Miso Soup",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豪華泡菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松屋溏心蛋&牛皿",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松屋溏心蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑蛋鮮蔬雞肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)豬燒肉",
+            "description": "\"期間限定肉增量25%! \n※使用豬五花肉，油質豐富肥美，口感軟嫩\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(肉增)蔥香鹽豬燒肉",
+            "description": "\"期間限定肉增量25%! \n※使用豬五花肉，油質豐富肥美，口感軟嫩\"",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛燒肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥鹽香煎雞腿肉",
+            "description": "期間限定商品",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可爾必思",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋煮風味麥茶(無糖)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果汁",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡麻秋葵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式香鬆",
+            "description": "海苔口味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松屋溏心蛋(Uber活動)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合生菜沙拉(Uber活動)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

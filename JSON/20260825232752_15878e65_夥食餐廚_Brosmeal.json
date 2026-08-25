@@ -1,0 +1,191 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A4%A5%E9%A3%9F%E9%A4%90%E5%BB%9A-brosmeal/nWILQQBRVt6ZA12FVdnQZg",
+  "name": "夥食餐廚 Brosmeal",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市淡水區民族路21號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.136874003252046,
+    "longitude": 121.46064628928686
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 17
+  },
+  "servesCuisine": [
+    "Healthy",
+    "Bento"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "餐盒",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "-經典大雞胸餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "236.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-脆皮雞腿排餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "276.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-嫩煎鴨胸餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-挪威鯖魚餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-舒肥鮭魚餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "540.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-嫩煎舒肥里肌餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-素食餐盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "-香煎鯛魚排餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-三杯塔香魷魚餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "-經典大雞胸",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-脆皮雞腿排",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-香煎挪威鯖魚",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-香煎舒肥鮭魚",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "-嫩煎舒肥里肌",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

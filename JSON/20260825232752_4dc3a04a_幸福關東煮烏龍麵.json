@@ -1,0 +1,498 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B9%B8%E7%A6%8F%E9%97%9C%E6%9D%B1%E7%85%AE%E7%83%8F%E9%BE%8D%E9%BA%B5/ooyBoLadTriRXWiAMRqPVg",
+  "name": "幸福關東煮烏龍麵",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 97, Huarong Street",
+    "addressLocality": "Shilin District",
+    "addressRegion": "",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0972642,
+    "longitude": 121.5232128
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 1500
+  },
+  "servesCuisine": [
+    "Japanese",
+    "Oden",
+    "Group Friendly"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "特選牛肉烏龍麵",
+            "description": "麵體Q彈有勁, 天然柴魚湯頭及不含味精。含蔥, 香菇, 牛肉, 蛋, 青菜及麵。湯麵一律分開。特殊要求請註明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特選豬肉烏龍麵",
+            "description": "麵體Q彈有勁, 天然柴魚湯頭及不含味精。含蔥, 香菇, 豬肉, 蛋, 青菜及麵。湯麵一律分開。特殊要求請註明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆皮青蔬烏龍麵",
+            "description": "麵體Q彈有勁, 天然柴魚湯頭及不含味精。含蔥, 香菇, 豆皮, 蛋, 青菜, 金針菇, 菜頭及麵。湯麵一律分開。特殊要求請註明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜牛肉烏龍麵",
+            "description": "麵體Q彈有勁, 天然柴魚湯頭及不含味精。含蔥, 香菇, 泡菜, 牛肉, 蛋, 青菜及麵。湯麵一律分開。特殊要求請註明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "讚岐烏龍麵系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜豬肉烏龍麵",
+            "description": "麵體Q彈有勁, 天然柴魚湯頭及不含味精。含蔥, 香菇, 泡菜, 肉類, 蛋, 青菜及麵。湯麵一律分開。特殊要求請註明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "關東煮系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "日式蘿蔔煮",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚豆腐",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香嫩油豆腐",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爽脆黃金魚丸",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海味蟹肉棒",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑豬肉貢丸",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香 Q 黑輪",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑嫩鴨血",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭貢丸",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Q 彈蒟蒻",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香 Q 豬血糕",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "非基改豆包",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本起士燒",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓形甜不辣",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚子豆皮包",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "干貝丸",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特級花枝丸",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛蒡天婦羅",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "竹輪",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚卵海鮮棒",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆漿魚子球",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔花枝",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬粉",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海味 QQ 魚丸",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒意麵",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "油蔥手工豬肉丸",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。\n豬肉原產地：台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "QQ 珍珠腸",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞絲麵",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮脆花枝棒",
+            "description": "如果有點多種關東煮品項, 都是放在一起, 如要分開請到多人分享自由搭配分開放點餐。如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "清湯輕燙的青菜，口感脆嫩，清爽不油膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高山娃娃菜",
+            "description": "吸附關東煮柴魚湯香，口感嫩脆、清爽好入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇",
+            "description": "關東煮香菇，吸飽天然柴魚湯頭，口感滑嫩，菇香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "細嫩脆口的金針菇，易吸湯汁，為關東煮增添清爽口感與層次",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香炒牛肉片",
+            "description": "薄切牛肉片，熱鍋快炒，香味四溢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香炒豬肉片",
+            "description": "豬肉切片香炒，突出肉香，口味純粹。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜",
+            "description": "經典韓式泡菜，酸香脆口、清爽開胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "多人分享自由搭配",
+            "description": "如有其他需求請備註告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

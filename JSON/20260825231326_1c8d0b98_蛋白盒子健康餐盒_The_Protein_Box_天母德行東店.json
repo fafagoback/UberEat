@@ -1,0 +1,456 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%9B%8B%E7%99%BD%E7%9B%92%E5%AD%90%E5%81%A5%E5%BA%B7%E9%A4%90%E7%9B%92-the-protein-box-%E5%A4%A9%E6%AF%8D%E5%BE%B7%E8%A1%8C%E6%9D%B1%E5%BA%97/crnHp1jlVvmRhsTs_as_Mw",
+  "name": "蛋白盒子健康餐盒 The Protein Box 天母德行東店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區德行東路216號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.108994846705418,
+    "longitude": 121.53228556602049
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 4
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "溫馨提醒｜Important Notice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【溫馨提醒】",
+            "description": "※ 本店菜色可能含有少許蔥、薑、蒜，恕無法提供全素餐盒。\n\n※ 部分菜色會使用鰹魚粉調味，魚類食品過敏者請特別留意。\n\n※ 新鮮雞胸、豬肉煮熟後，若仍有些微粉紅或紅色部分，多為「肌紅蛋白」造成，屬正常現象，請安心食用。\n\n※ 雞肉、豬肉若出現黑點，多為電宰過程中微血管破裂造成，屬正常現象，請安心食用。\n\n※ 豆漿需冷藏保存，建議冷藏溫度為 3°C 以下，開封後請盡快飲用，請勿隔餐食用。\n\n※ 地瓜富含多酚，加熱後氧化變黑為自然現象，請安心食用。\n\n※ 雞肉系列皆為人工去骨，仍有小機率殘留碎骨，食用時請留意。\n\n※ 魚類主食餐盒皆有魚刺，食用時請小心。\n\n※ 餐點、醬料及肉品醃製過程可能含有料理米酒或味醂，經充分加熱烹調後，仍可能含有微量酒精成分；孕婦、兒童及對酒精敏感者，請自行評估後食用。\n\n※ 詳細餐點資訊可至蛋白盒子官網查詢確認。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "買一送一（購物車數量需為雙數）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U_活動)菲力豬排餐盒",
+            "description": "‼️提醒：買一送一商品請以「2的倍數」加入購物車。\n若購買數量為單數，系統將不會顯示優惠。送出訂單前，請再次確認商品數量及結帳金額。\n\n選用優質大里肌，肉質鮮嫩細緻，保留自然肉香。\n高蛋白、低脂肪，蛋白質含量約 22g，是雞胸之外的新選擇！\n肉品原產地：加拿大",
+            "offers": {
+              "@type": "Offer",
+              "price": "340.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U_活動)單點香煎雞胸",
+            "description": "‼️提醒：買一送一商品請以「2的倍數」加入購物車。\n\n購買1組：購物車數量需為2\n購買2組：購物車數量需為4\n\n送出訂單前，請再次確認商品數量及結帳金額。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U_活動)紐奧良雞腿排餐盒",
+            "description": "‼️提醒：買一送一商品請以「2的倍數」加入購物車。\n若購買數量為單數，系統將不會顯示優惠。送出訂單前，請再次確認商品數量及結帳金額。\n\n紐奧良獨特風味香料，搭配去骨鮮嫩雞腿排。鹹香微辣\n肉品原產地：美國\n\n溫馨提醒：雞肉系列皆為人工去骨，小機率會有碎骨，請小心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "295.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U_活動)復刻紅茶豆漿",
+            "description": "‼️提醒：買一送一商品請以「2的倍數」加入購物車。\n若購買數量為單數，系統將不會顯示優惠。送出訂單前，請再次確認商品數量及結帳金額。\n\n復古紅茶加濃醇豆漿，微甜仍健康。500毫升｜固定微糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "平台限定",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(U)(單)香煎雞胸",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)(單)檸檬雞腿排",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(U)(單)青花菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香煎雞胸系列｜Pan-Seared Chicken Breast",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香煎黑胡椒雞胸餐盒",
+            "description": "招牌商品，鮮嫩多汁\n黑胡椒風味，經典耐吃\n肉品原產地：台灣\n\n溫馨提醒：雞肉系列皆為人工去骨，小機率會有碎骨，請小心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香煎蒙特婁雞胸餐盒",
+            "description": "少油香煎，雞胸最美味調理方式 \n搭配蒙特婁風味灑粉，鹹香有層次\n肉品原產地：台灣\n\n溫馨提醒：雞肉系列皆為人工去骨，小機率會有碎骨，請小心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香煎海苔雞胸餐盒",
+            "description": "少油香煎，搭配海苔灑粉意外對味\n肉品原產地：台灣\n\n溫馨提醒：雞肉系列皆為人工去骨，小機率會有碎骨，請小心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四川麻辣雞胸餐盒",
+            "description": "雞胸搭配獨家道地四川辣醬，撒上一些花生碎片\n口味層次豐富，辛香小辣\n過敏原：花生（請斟酌）\n肉品原產地：台灣\n\n溫馨提醒：雞肉系列皆為人工去骨，小機率會有碎骨，請小心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青蔥海鹽雞胸餐盒",
+            "description": "蔥控必吃！滑嫩雞胸肉搭配獨家港式蔥薑醬，極為爽口\n肉品原產地：台灣\n\n溫馨提醒：雞肉系列皆為人工去骨，小機率會有碎骨，請小心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "雞腿系列｜Chicken Thigh Meals",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "檸檬雞腿排餐盒",
+            "description": "香煎原塊去骨雞腿排，搭配清香檸檬，是一款迷人輕盈的雞肉料理\n肉品原產地：美國\n\n溫馨提醒：雞肉系列皆為人工去骨，小機率會有碎骨，請小心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐奧良雞腿排餐盒",
+            "description": "紐奧良獨特風味香料，搭配去骨鮮嫩雞腿排。鹹香微辣。\n肉品原產地：美國。\n\n溫馨提醒：雞肉系列皆為人工去骨，小機率會有碎骨，請小心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精選蛋白系列｜Pork, Beef & Seafood Meals",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "打拋豬餐盒",
+            "description": "嚴選國產豬絞肉，濃濃南洋香氣\n鹹香小辣很帶勁，香而不膩又爽口\n泰下飯 泰好吃了!!\n肉品原產地：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "173.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "正韓泡菜豬餐盒",
+            "description": "嚴選豬肉搭配清脆多汁的泡菜，拌入正宗韓式辣醬，香辣微酸更有層次，開胃不膩口！\n肉品原產地：丹麥/加拿大",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菲力豬排餐盒",
+            "description": "選用優質大里肌，肉質鮮嫩細緻，保留自然肉香。\n高蛋白、低脂肪，蛋白質含量約 22g，是雞胸之外的新選擇！\n肉品原產地：加拿大",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "壽喜牛五花餐盒",
+            "description": "PRIME等級牛五花搭配獨家比例壽喜醬汁，加上洋蔥絲、蔥花、七味粉提味，被健康餐耽誤的牛丼\n肉品原產地：美國",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "私房滷牛腱餐盒",
+            "description": "選用牛肉低脂部位，加上媽媽私房滷汁慢滷秘製，肉質細緻、軟Q帶嚼勁，搭配蔥花更添香氣層次\n肉品原產地：澳洲/紐西蘭/美國/巴拉圭",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒肉店漢堡排餐盒",
+            "description": "100%純牛肉，扎實多汁的漢堡排\n搭配獨門秘製濃郁燒肉醬，口感絕配\n肉品原產地：澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "減鹽味噌烤鱸魚餐盒",
+            "description": "天然的黃豆味噌，搭配獨門減鹽配方醃製\n鱸魚高溫烘烤金黃酥脆、鮮嫩多汁，香氣濃郁、低脂美味！\n肉品原產地：台灣\n\n溫馨提醒：魚類餐盒皆有魚刺，請小心食用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薄鹽烤鮭魚餐盒",
+            "description": "富含DHA、EPA、omega-3與鋅，營養滿分！\n鹽烤調味、黑胡椒提香，魚肉鮮嫩彈牙、油脂均勻\n肉品原產地：智利",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胸肉及飲料(原價115，加購套餐價95，激省20元!)",
+            "description": "請勿單點，僅可跟餐盒一起加購",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蔬食系列（五辛蛋奶素）｜Vegetarian Meals",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "無肉餐盒",
+            "description": "五辛蛋奶素，滿滿蔬菜組合，補充一餐所需之各種營養\n\n溫馨提醒：菜色有加入少許蔥、薑、蒜，恕無法提供全素餐盒",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素排骨餐盒",
+            "description": "(五辛蛋奶素)鹹香入味的素排骨，口感厚實，蛋白質含量媲美肉類，輕鬆補足飽足感\n過敏原：本產品含大豆、小麥(麩質)、蛋及其製品",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "健康加點｜Healthy Add-ons",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(單點)黑米飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(單點)整顆水煮蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(單點)蒸地瓜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(單點)玉米筍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品與湯品｜Drinks & Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冷泡茶",
+            "description": "嚴選天仁茗茶茶葉，冷泡不澀口。500毫升。無糖限定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白豆漿",
+            "description": "非基因改造黃豆，濃醇順口高蛋白。360毫升。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "復刻紅茶豆漿",
+            "description": "復古紅茶加濃醇豆漿，微甜仍健康。500毫升｜固定微糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "復刻紅茶拿鐵",
+            "description": "復古紅茶加光泉鮮奶，黃金比例。500毫升｜固定微糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒烏骨雞湯",
+            "description": "120Kcal、12.5克蛋白質\n黑羽烏骨雞，低脂高蛋白，搭配胡椒的溫熱香氣——補而不膩、溫潤順口，最適合注重健康的你。\n肉品原產地：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑芝麻堅果",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑芝麻堅果紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

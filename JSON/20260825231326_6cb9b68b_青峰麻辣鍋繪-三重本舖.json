@@ -1,0 +1,118 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9D%92%E5%B3%B0%E9%BA%BB%E8%BE%A3%E9%8D%8B%E7%B9%AA-%E4%B8%89%E9%87%8D%E6%9C%AC%E8%88%96/vGYzljwjUHG4019u0B7Otw",
+  "name": "青峰麻辣鍋繪-三重本舖",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁政街119-3號1樓 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.07882,
+    "longitude": 121.49176
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣牛肉鍋繪",
+            "description": "內含高麗菜、香菇、金針菇、蝦子、蛤蠣、火鍋料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豬肉鍋繪",
+            "description": "內含高麗菜、香菇、金針菇、蝦子、蛤蠣、火鍋料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鯛魚鍋繪",
+            "description": "內含高麗菜、香菇、金針菇、蝦子、蛤蠣、火鍋料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣海鮮鍋繪",
+            "description": "內含高麗菜、香菇、金針菇、蝦子、蛤蠣、火鍋料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "白米飯，口感鬆軟、粒粒分明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可樂",
+            "description": "氣泡豐富的可樂飲品，清爽解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪碧",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水果汁",
+            "description": "以水果製成的無酒精飲品",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

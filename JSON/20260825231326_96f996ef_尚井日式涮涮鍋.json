@@ -1,0 +1,212 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B0%9A%E4%BA%95%E6%97%A5%E5%BC%8F%E6%B6%AE%E6%B6%AE%E9%8D%8B/uRF1GpoHQYC1s45CRstW2Q",
+  "name": "尚井日式涮涮鍋",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tianmu West Road Lane 41 12",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.119411,
+    "longitude": 121.527561
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 700
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典肉品鍋",
+            "description": "嚴選肉品搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。(牛肉來源為美國。豬肉來源為本地豬)。『生食出餐亦有代煮服務』",
+            "offers": {
+              "@type": "Offer",
+              "price": "340.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超值雙拼肉肉鍋",
+            "description": "自由選擇兩款嚴選肉品搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。(牛肉來源為美國。豬肉來源為本地豬)。『生食出餐亦有代煮服務』",
+            "offers": {
+              "@type": "Offer",
+              "price": "430.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海陸自由配",
+            "description": "自由選擇嚴選肉品及每日配送海產 搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。『生食出餐』。",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌海鮮鍋物",
+            "description": "招牌海鮮內含七樣精選當日配送海產(鯛魚 蛤蠣 鮑魚 花枝 鮮草蝦 鮮蚵 干貝)搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。『生食出餐亦有代煮服務』。",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海味雙鮮鍋物",
+            "description": "自由選擇兩款每日配送海產 搭搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。『生食出餐亦有代煮服務』",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精選梅花豬肉片",
+            "description": "俗稱的肩胛肉，肥瘦各半，油花分佈均勻，肉質十分鮮嫩，切成肉片煮火鍋是絕佳的烹調方式，更是本店熱賣商品之一哦！！（生食出餐，若搭配本店鍋物套餐選擇熟食出餐，可一併提供代煮服務）",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "精選梅花豬肉片",
+            "description": "俗稱的肩胛肉，肥瘦各半，油花分佈均勻，肉質十分鮮嫩，切成肉片煮火鍋是絕佳的烹調方式，更是本店熱賣商品之一哦！！（生食出餐，若搭配本店鍋物套餐選擇熟食出餐，可一併提供代煮服務）",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精選鍋物（提供代煮服務）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典肉品鍋",
+            "description": "嚴選肉品搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。(牛肉來源為美國。豬肉來源為本地豬)。『生食出餐亦有代煮服務』",
+            "offers": {
+              "@type": "Offer",
+              "price": "340.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超值雙拼肉肉鍋",
+            "description": "自由選擇兩款嚴選肉品搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。(牛肉來源為美國。豬肉來源為本地豬)。『生食出餐亦有代煮服務』",
+            "offers": {
+              "@type": "Offer",
+              "price": "430.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海陸自由配",
+            "description": "自由選擇嚴選肉品及每日配送海產 搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。『生食出餐』。",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海味雙鮮鍋物",
+            "description": "自由選擇兩款每日配送海產 搭搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。『生食出餐亦有代煮服務』",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌海鮮鍋物",
+            "description": "招牌海鮮內含七樣精選當日配送海產(鯛魚 蛤蠣 鮑魚 花枝 鮮草蝦 鮮蚵 干貝)搭配新鮮食蔬加火鍋料共16品的菜盤與  六種每日現熬高湯任選不加價 附餐四種任選 。『生食出餐亦有代煮服務』。",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "【限量商品專區 】（不定時推出的強打限定商品！）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "精選梅花豬肉片",
+            "description": "俗稱的肩胛肉，肥瘦各半，油花分佈均勻，肉質十分鮮嫩，切成肉片煮火鍋是絕佳的烹調方式，更是本店熱賣商品之一哦！！（生食出餐，若搭配本店鍋物套餐選擇熟食出餐，可一併提供代煮服務）",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工花枝漿",
+            "description": "是捕撈澎湖當地新鮮的花枝，刀功切丁後冰入冷凍使其稍有硬度，接著調味均勻攪拌成泥，口感Q彈且吃的到花枝粒，味道極鮮，好吃的不得了！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "五星評論刷起來",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "親愛的顧客非常感激您的支持與愛護，如果能給我們五星評論對我們有極大的幫助唷❤️再次回購的顧客我們也都會再您的餐點內額外加料或贈送一份甜點～再次感激您的支持❤️",
+            "description": "感謝回饋活動：留下五星評論給我們鼓勵；下次回購即享加贈加料或甜點一份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

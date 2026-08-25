@@ -1,0 +1,649 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%AA%B8%E6%AA%AC%E8%BC%95%E6%99%82%E5%85%89-%E8%8C%B6%E9%A3%B2-%E9%BB%9E%E5%BF%83/scHcdwG5VaWgl6nIYgOnWg",
+  "name": "檸檬輕時光 茶飲 點心",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區基河路101號B1美食地下街39號攤 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08806,
+    "longitude": 121.52419
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Bubble Tea",
+    "Drinks",
+    "Coffee and Tea",
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "🌟好喝請多給老闆五星好評🌟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 🏅Popular Items🏅",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👍爆打冰鮮檸檬水 Hand Pounded Iced Fresh Lemonade",
+            "description": "現打檸檬香氣十足，酸甜沁涼超解渴，夏天必喝首選🍋大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍爆打檸檬茶綠 Hand Pounded Lemon Green Tea",
+            "description": "清新綠茶融合鮮榨檸檬，茶香果香交織超順口🍋🍵大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍爆打檸檬茶紅 Hand Pounded Lemon Black Tea",
+            "description": "紅茶醇厚搭配檸檬酸香，酸甜回甘讓人一喝上癮🍋🧡大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍葡萄氣泡飲 Grape Sparkling Drink",
+            "description": "葡萄果香搭配沁涼氣泡，酸甜爽快、喝出滿滿幸福感🍇大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍珍珠奶茶 Bubble Milk Tea",
+            "description": "Q彈珍珠搭配香濃奶茶，經典不敗的療癒好滋味🧋🖤",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "爆打檸檬系列🍋 Hand Pounded Lemon🍋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👍爆打冰鮮檸檬水 Hand Pounded Iced Fresh Lemonade",
+            "description": "現打檸檬香氣十足，酸甜沁涼超解渴，夏天必喝首選🍋大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍爆打檸檬茶綠 Hand Pounded Lemon Green Tea",
+            "description": "清新綠茶融合鮮榨檸檬，茶香果香交織超順口🍋🍵大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍爆打檸檬茶紅 Hand Pounded Lemon Black Tea",
+            "description": "紅茶醇厚搭配檸檬酸香，酸甜回甘讓人一喝上癮🍋🧡大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓爆打檸檬茶綠 Strawberry Hand Pounded Lemon Green Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓爆打檸檬茶紅 Strawberry Hand Pounded Lemon Black Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香爆打檸檬茶綠 Passion Fruit Hand Pounded Lemon Green Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香爆打檸檬茶紅 Passion Fruit Hand Pounded Lemon Black Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果爆打檸檬茶綠 Mango Hand Pounded Lemon Green Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果爆打檸檬茶紅 Mango Hand Pounded Lemon Black Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃爆打檸檬茶綠 Peach Hand Pounded Lemon Green Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "葡萄爆打檸檬茶綠 Grape Hand Pounded Lemon Green Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "葡萄爆打檸檬茶紅 Grape Hand Pounded Lemon Black Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃爆打檸檬茶紅 Peach Hand Pounded Lemon Black Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "氣泡飲系列🍹 Sparkling Drink🍹",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "藍甘寧檬氣泡飲 Blue Curacao Lemon Sparkling Drink",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "👍葡萄氣泡飲 Grape Sparkling Drink",
+            "description": "葡萄果香搭配沁涼氣泡，酸甜爽快、喝出滿滿幸福感🍇大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白桃氣泡飲 White Peach Sparkling Drink",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果氣泡飲 Mango Sparkling Drink",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香氣泡飲 Passion Fruit Sparkling Drink",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金魚氣泡水 Goldfish Sparkling Water",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓氣泡飲 Strawberry Sparkling Drink",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮奶系列與奶精系列🧋 Fresh Milk and Creamer🧋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👍珍珠奶茶 Bubble Milk Tea",
+            "description": "Q彈珍珠搭配香濃奶茶，經典不敗的療癒好滋味🧋🖤",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌奶茶 Signature Milk Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃郁鮮奶茶 Rich Fresh Milk Tea",
+            "description": "烏龍。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃郁鮮奶茶紅 Rich Fresh Milk Black Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃郁鮮奶茶綠 Rich Fresh Milk Green Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖珍珠鮮奶 Brown Sugar Tapioca Fresh Milk",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃可可鮮奶 Rich Cocoa Fresh Milk",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜鮮奶綠 Honey Fresh Milk Green Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓珍珠鮮奶茶 Strawberry Tapioca Fresh Milk Tea",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "紅茶系列🫖 Black Tea🫖",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典紅茶 Classic Black Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠紅茶 Tapioca Black Tea",
+            "description": "Ｑ 彈咬勁的珍珠, 配上經典紅茶, 簡單又美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃紅茶 Peach Black Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜紅茶 Honey Black Tea",
+            "description": "嚴選茶葉製作, 口感柔順甘醇, 散發馥郁蜜香。(此描述僅供參考)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "烏龍茶系列 🍂Oolong Tea🍂",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "清焙烏龍茶 Light Roast Oolong Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸香烏龍 Lemon Oolong",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜香烏龍 Honey Oolong",
+            "description": "美妙茶香加上香甜蜜香, 帶來 1 種極具誘惑力的風味。(此描述僅供參考)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白桃烏龍 White Peach Oolong",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "綠茶系列🍵 Green Tea🍵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "茉莉綠茶 Jasmine Green Tea",
+            "description": "帶有淡淡茉莉花香的綠茶, 茶感清新淡雅的茶品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香綠茶 Passion Fruit Green Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍綠茶 Oolong Green Tea",
+            "description": "茶湯入喉回甘綿延, 是令人沉迷的茶品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多多綠 Yakult Green Tea",
+            "description": "多多與綠茶彼此相輔相成, 清爽又甜而不膩的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌奶綠 Signature Milk Green Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜桃翡翠 Peach Green Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香多多綠 Passion Fruit Yakult Green Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "古早味系列✨ Traditional✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "古早冬瓜茶 Traditional White Gourd Drink",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮檸冬瓜 Fresh Lemon with White Gourd Drink",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草粉圓冰飲 Grass Jelly and Tapioca Iced Drink",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬愛玉粉圓冰飲 Lemon Aiyu Jelly and Tapioca Ball Iced Drink",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖綜合冰飲 Brown Sugar Mixed Iced Drink",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬蘆薈 Honey Lemon Aloe Vera",
+            "description": "大杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

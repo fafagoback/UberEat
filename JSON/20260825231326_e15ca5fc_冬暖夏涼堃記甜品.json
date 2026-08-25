@@ -1,0 +1,135 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%86%AC%E6%9A%96%E5%A4%8F%E6%B6%BC%E5%A0%83%E8%A8%98%E7%94%9C%E5%93%81/Jd64Ly8iRBGdpl394D_y5w",
+  "name": "冬暖夏涼堃記甜品",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 50, Jiuquan Street",
+    "addressLocality": "Datong District",
+    "addressRegion": "",
+    "postalCode": "103",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0718962,
+    "longitude": 121.5164482
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 500
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Tofu Pudding"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "杏仁油條",
+            "description": "純天然養生南北杏磨煮不含人工香精淡淡杏仁香習慣人工嗆味勿點",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁奶露",
+            "description": "純天然養生南北杏磨煮不含人工香精淡淡杏仁香習慣人工嗆味勿點,含二種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冰豆花",
+            "description": "含二種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "刨冰",
+            "description": "含四種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰養生杏仁豆花",
+            "description": "純天然養生南北杏磨煮不含人工香精淡淡杏仁香習慣人工嗆味勿點",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰養生杏仁茶",
+            "description": "純天然養生南北杏磨煮不含人工香精淡淡杏仁香習慣人工嗆味勿點",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草奶露",
+            "description": "含二種配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁茶豆花",
+            "description": "純天然養生南北杏磨煮不含人工香精淡淡杏仁香習慣人工嗆味勿點",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁茶",
+            "description": "純天然養生南北杏磨煮不含人工香精淡淡杏仁香習慣人工嗆味勿點",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

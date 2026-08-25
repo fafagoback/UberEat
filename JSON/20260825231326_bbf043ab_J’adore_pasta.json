@@ -1,0 +1,158 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/jadore-pasta/QravAu59V56DPRkk7VS0vA",
+  "name": "J’adore pasta",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "後港街177號",
+    "addressLocality": "士林區",
+    "addressRegion": "台北市",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.087792,
+    "longitude": 121.520986
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.3,
+    "reviewCount": 20
+  },
+  "servesCuisine": [
+    "Italian",
+    "Noodles",
+    "Asian"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Pasta",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蒜辣蝦仁野菜細扁麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "365.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉奶油野菇細扁麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "365.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橘醬櫛瓜蝦仁細扁麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "415.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清炒番茄羅勒時蔬細扁麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "365.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松露雞肉奶油野菇細扁麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "475.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清炒小蕃茄海鮮細扁麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清炒蒜辣塔香海鮮細扁麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "475.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Drinks",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "餐點配料僅辣度可做調整，無法更換或添加其他配料。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "sides",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "帶皮細脆薯佐松露美乃滋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

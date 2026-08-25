@@ -1,0 +1,311 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%84%9B%E7%98%8B%E7%89%9B%E6%8E%92-%E7%8F%BE%E7%85%8E%E9%A4%90%E7%9B%92/W740_osBVDuo6R2PDVI4-w",
+  "name": "愛瘋牛排 現煎餐盒",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "臺北市士林區光華路26巷1-1號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.13733,
+    "longitude": 121.54206
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 15
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Steak"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點（以及口味），請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選🔥",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香煎豬排飯",
+            "description": "香煎豬排飯，香煎豬排搭配米飯，口感豐富，滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鯖魚飯",
+            "description": "新鮮鯖魚搭配香米飯，簡單而美味，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤雞腿飯",
+            "description": "香米飯配上烤雞腿，簡單而美味，讓您享受滿滿的美食樂趣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "182.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛肉飯",
+            "description": "嫩滑沙朗牛肉搭配香米飯，滿足您對美味的渴望。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "主食💫",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香煎豬排飯",
+            "description": "香煎豬排飯，香煎豬排搭配米飯，口感豐富，滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鯖魚飯",
+            "description": "新鮮鯖魚搭配香米飯，簡單而美味，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤雞腿飯",
+            "description": "香米飯配上烤雞腿，簡單而美味，讓您享受滿滿的美食樂趣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "182.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛肉飯",
+            "description": "嫩滑沙朗牛肉搭配香米飯，滿足您對美味的渴望。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板麵",
+            "description": "經典鐵板麵，麵條Q彈順口，簡單而美味，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥白肉飯",
+            "description": "嫩滑白肉片佐蒜泥，搭配香米飯，蒜香迷人，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸蝦捲飯",
+            "description": "金黃炸蝦捲搭配香米飯，外酥內鮮，滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛小排飯",
+            "description": "牛小排搭配香米飯，口感豐富，滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熊厚炸豬排飯",
+            "description": "酥脆厚切炸豬排，搭配香米飯，口感豐富，滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水煮牛肉飯",
+            "description": "滑嫩川味水煮牛肉，搭配米飯，香辣過癮，滿足您的味蕾",
+            "offers": {
+              "@type": "Offer",
+              "price": "208.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥白肉及烤雞腿飯",
+            "description": "蒜泥白肉搭配烤雞腿與白飯，雙主菜一次滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香煎豬排及烤雞腿飯",
+            "description": "香煎豬排與烤雞腿雙主菜，搭配米飯，口感豐富，滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香煎豬排及鯖魚飯",
+            "description": "香煎豬排與鯖魚搭配米飯，雙主菜一次滿足，口感豐富更有飽足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鯖魚及烤雞腿飯",
+            "description": "鯖魚與烤雞腿雙主菜，搭配米飯，簡單而美味，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "273.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛及烤雞飯",
+            "description": "沙朗牛肉與烤雞搭配香米飯，雙主菜一次滿足，口感豐富，飽足美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "286.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛小排及烤雞飯",
+            "description": "牛小排與烤雞雙主菜，搭配香米飯，口感豐富，滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "286.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛小排及鯖魚飯",
+            "description": "牛小排與鯖魚搭配香米飯，口感豐富，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "286.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛及鯖魚飯",
+            "description": "沙朗牛肉與鯖魚配米飯，雙主菜簡單而美味，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "286.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛小排及沙朗牛飯",
+            "description": "牛小排與沙朗雙拼，搭配香米飯，口感豐富，滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛小排及牛小排飯",
+            "description": "經典牛小排，可單點或搭配香米飯，口感豐富，滿足味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙朗牛及沙朗牛飯",
+            "description": "嫩滑沙朗牛肉，可選單點或搭配香米飯，簡單而美味，滿足您的味蕾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

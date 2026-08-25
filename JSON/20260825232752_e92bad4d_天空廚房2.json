@@ -1,0 +1,262 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A4%A9%E7%A9%BA%E5%BB%9A%E6%88%BF2/Nq24je9nWlyh6X8Crqfa5A",
+  "name": "天空廚房2",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區知行路260巷48號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.12084,
+    "longitude": 121.468984
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 52
+  },
+  "servesCuisine": [
+    "Italian"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣義大利麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮義大利麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦焗烤飯套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦義大利麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮焗烤飯套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "360.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦焗烤飯套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣義大利麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮義大利麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦義大利麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "義大利麵套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚義大利麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "焗烤套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮焗烤飯套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "360.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮焗烤通心麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "360.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚焗烤飯套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚焗烤通心麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝焗烤通心麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝焗烤飯套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦焗烤通心麵套餐",
+            "description": "含法國香蒜麵包。附濃湯及冰紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點小食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "玉米濃湯",
+            "description": "濃郁滑順的玉米濃湯，暖胃小食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "法國香蒜麵包",
+            "description": "法國麵包片，蒜香濃郁，外酥內軟。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰紅茶",
+            "description": "冰鎮紅茶，茶香順口，清涼解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

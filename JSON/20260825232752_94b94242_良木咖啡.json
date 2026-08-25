@@ -1,0 +1,272 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%89%AF%E6%9C%A8%E5%92%96%E5%95%A1/Bmw07txwXu6O74cDZv6pig",
+  "name": "良木咖啡",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區中正路236巷4號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.09673539949345,
+    "longitude": 121.52519765960652
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 8
+  },
+  "servesCuisine": [
+    "Coffee and Tea",
+    "Taiwanese",
+    "Cafe",
+    "Drinks",
+    "Street Food"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "當日精選手沖咖啡 Daily Selected Handmade Coffee",
+            "description": "送到你手上可能也涼掉了，不比現場好喝QQ\n內用也差不多貴，所以還是建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！\n🧊冰沖+30",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰拿鐵 Iced Latte",
+            "description": "中焙配方經典耐喝，但送到你手上冰塊融化，就沒那麼好喝QQ\n內用180還更冰更好喝，建議大家來現場享用喔！\n另外現場外帶咖啡自備杯具，環保折價50元！",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜點咖啡1+1 Dessert and Coffee 1+1",
+            "description": "因為甜點真的很讚而且常常賣完，所以我想留給內用，外送就只好綁定銷售啦！\n\n（現場外帶甜點也是沒問題的喔！）\n（也有官網販售整模蛋糕喔！）",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "髒髒 Dirty Coffee",
+            "description": "比拿鐵的咖啡香更濃的奶咖就對了，但送到你手上就沒有漸層了QQ\n內用也這麼貴，所以還是建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！\n💡限冰飲",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰美式咖啡 Iced Americano",
+            "description": "中焙配方經典耐喝！\n內用也差不多貴，所以還是建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱卡布 Hot Cappuccino",
+            "description": "老派厚奶泡卡布，但外送到你手上可能也消泡了QQ\n內用170，建議大家來現場享用喔！\n另外現場外帶咖啡自備杯具，環保折價50元！\n☕️限熱飲",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱拿鐵 Hot Latte",
+            "description": "中焙配方經典耐喝，但送到你手上拉花就花掉了，不要太期待好看QQ\n內用180更滑順好喝，建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱美式咖啡 Hot Americano",
+            "description": "中焙配方經典耐喝！\n內用也差不多貴，所以還是建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "📢顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "✨人氣精選 Popular Items✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "髒髒 Dirty Coffee",
+            "description": "比拿鐵的咖啡香更濃的奶咖就對了，但送到你手上就沒有漸層了QQ\n內用也這麼貴，所以還是建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！\n💡限冰飲",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新鮮冰滴 Iced Drip Coffee",
+            "description": "唯二外送比內用便宜的品項，畢竟這也是唯二現場喝跟外帶喝風味差異最小的飲品。\n另外現場外帶咖啡自備杯具，環保折價50元！\n💡限冰飲",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰滴歐蕾 Iced Drip Au Lait",
+            "description": "唯二外送比內用便宜的品項，畢竟這也是唯二現場喝跟外帶喝風味差異最小的飲品。\n另外現場外帶咖啡自備杯具，環保折價50元！\n💡限冰飲",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🫰🏻經典 Classic🫰🏻",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冰美式咖啡 Iced Americano",
+            "description": "中焙配方經典耐喝！\n內用也差不多貴，所以還是建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱美式咖啡 Hot Americano",
+            "description": "中焙配方經典耐喝！\n內用也差不多貴，所以還是建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰拿鐵 Iced Latte",
+            "description": "中焙配方經典耐喝，但送到你手上冰塊融化，就沒那麼好喝QQ\n內用180還更冰更好喝，建議大家來現場享用喔！\n另外現場外帶咖啡自備杯具，環保折價50元！",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱拿鐵 Hot Latte",
+            "description": "中焙配方經典耐喝，但送到你手上拉花就花掉了，不要太期待好看QQ\n內用180更滑順好喝，建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱卡布 Hot Cappuccino",
+            "description": "老派厚奶泡卡布，但外送到你手上可能也消泡了QQ\n內用170，建議大家來現場享用喔！\n另外現場外帶咖啡自備杯具，環保折價50元！\n☕️限熱飲",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "👍手沖咖啡 Handmade Coffee👍",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "當日精選手沖咖啡 Daily Selected Handmade Coffee",
+            "description": "送到你手上可能也涼掉了，不比現場好喝QQ\n內用也差不多貴，所以還是建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！\n🧊冰沖+30",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "當日精選冷萃咖啡 Daily Selected Cold Brew Coffee",
+            "description": "少數內用外送喝起來品質一致的飲品，每天少量製作，恕不指定產區。\n內用也這麼貴，所以還是建議大家來現場喝喔！\n另外現場外帶咖啡自備杯具，環保折價50元！\n💡限冰飲",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "😋甜點 Dessert😋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜點咖啡1+1 Dessert and Coffee 1+1",
+            "description": "因為甜點真的很讚而且常常賣完，所以我想留給內用，外送就只好綁定銷售啦！\n\n（現場外帶甜點也是沒問題的喔！）\n（也有官網販售整模蛋糕喔！）",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

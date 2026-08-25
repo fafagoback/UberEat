@@ -1,0 +1,1234 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%8E%9F%E5%BD%A2-%E6%9D%B1%E6%96%B9%E8%8C%B6%E9%A3%B2-pur-sweets/QPuLIFyEXD6JOkneFQ0FVQ",
+  "name": "原形 東方茶飲 pûr Sweets",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區自強街71號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1106521,
+    "longitude": 121.5143074
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 64
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Drinks",
+    "Breakfast and Brunch"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "純水果飲(三)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "果香鳳蘋+百香果",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂蘋果+百香果",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂蘋果+鮮檸檬",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火龍玫果+蔓越莓汁",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火龍玫果+鮮檸檬",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香芒蘋果+百香果",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香芒蘋果+鮮檸檬",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑椹紅棗+鮮檸檬",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑椹紅棗",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青檸洛神",
+            "description": "純水果飲是以果乾與香草沖出的基底，另外加上鮮水果，無茶的成分，無果醬與香精，飲品本身即有3-5分的甜味，建議無糖正常冰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "品茶系列(三)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "菊麥茶(無咖啡因)",
+            "description": "新鮮的大麥，搭配臺灣原生種小油菊，清香且無咖啡因，適合想喝茶卻只喝無咖因茶品的朋友",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小菊烏龍",
+            "description": "採用臺灣小油菊花搭配四季春茶，清新優雅且細膩的茶感，小編超推!",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝貴紅",
+            "description": "荔枝果薰香而成，無糖不甜，可依照自己的喜好做甜冰調整",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰釀紅烏龍",
+            "description": "有人稱之為國宴茶，熟果香感較重，不澀不苦香氣重",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香檳紅茶",
+            "description": "來自印度產區的大吉嶺紅茶，我們採用的是最高等級的紅茶葉(S.F.T.G.F.O.P.)，跟臺灣紅茶價格有得比，具檸檬調、木質調、香檳感，這支茶會稍微苦喔~",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花茉綠",
+            "description": "採用臺灣桂花入茉莉花茶，沒有人再跟你加香精的，就是純花入茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍眼花四季春",
+            "description": "每年的龍眼花產量就這樣，臺灣手工採得，還要過濾掉雜質，只能說原物料很貴，且珍惜。有淡淡的龍眼蜜香氣，無糖的不是加蜂蜜，是花入茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "養身系列(三)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "養氣茶(僅供溫熱飲、無糖)",
+            "description": "東洋蔘、麥冬、紅棗片、黃耆、枸杞 (高血壓、癌症等特殊疾病患者請勿選用此款)，500ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "元氣三寶茶(僅供溫熱飲、無糖)",
+            "description": "黃耆、枸杞、紅棗",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "舒視茶(僅供溫熱飲、無糖)",
+            "description": "手炒決明子、臺灣菊花、甘草、枸杞",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "靜心茶(僅供溫熱飲、無糖)",
+            "description": "真正的浮小麥、紅棗、甘草",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅寶紅藜(僅供溫熱飲、無糖)",
+            "description": "臺灣帶殼紅藜、枸杞、紅棗、甜菊",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山苦瓜複方(僅供溫熱飲、無糖)",
+            "description": "臺灣山地門山苦瓜片、枸杞、綠茶葉、七葉膽",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "福圓紅棗(僅供溫熱飲、無糖)",
+            "description": "喝我們家的福圓紅棗再加糖，就太不上到了，就是要喝食材的原味! 臺灣柴燒龍眼乾、枸杞、紅棗、甜菊",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮奶系列(三)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "花漾鮮奶茶(僅供冷飲)",
+            "description": "花果香較重的鮮奶茶，甜感+正常冰是黃金比例，喝起來是清爽不膩，漫步花叢的感覺",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍眼木鮮奶茶",
+            "description": "巧克力香、蜂蜜香鮮奶茶(茶基底是無糖的，提味+正常冰是黃金比例)",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖脆脆鮮奶茶",
+            "description": "喜歡濃郁焦糖香的朋友，會喜歡的一款鮮奶茶，焦糖脆脆是我們自己手工作的椪糖，苦苦甜甜，建議提味+正常冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特調(三)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "熱帶水果茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "果香檸檬紅茶",
+            "description": "荔枝貴紅+新鮮檸檬汁+新鮮檸檬片。提味+正常冰口味偏酸一些，清涼好喝",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花梅子綠(無糖、正常冰)",
+            "description": "甜味來自於脆梅汁的甜味，無另外加糖，搭上桂花茉綠茶，清爽解渴",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡(僅供冷飲)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手作點心(三)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "復刻版原味比司吉",
+            "description": "這個比司吉是自己做的，不是批發的，有淡淡的奶油蜂蜜以及果酒的香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作奶油芋頭比司吉夾心",
+            "description": "比司吉及芋頭都是自己做的，沒有再跟人家批發的。闆娘她自己手工搗的芋頭，叫她用機器她不要，她說少了人間煙火氣息",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作奶油芋頭紫米糕",
+            "description": "採用大甲芋頭、天然奶油、蔗糖，沒別的其他物料，你要防腐劑、番薯粉都沒有。闆娘手工搗的芋頭，有顆粒，整體來說不是很甜，真材實料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養身酒糟蛋",
+            "description": "吃起來是淡淡的酒香，不是濃郁的酒味，清爽不膩，且蛋黃很嫩不老，老闆娘自己研發的，搭配上紅棗與枸杞等食材，浸漬一個晚上，冰冰的當早餐吃不錯喔!",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶蓋芋球",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奶油芋頭紫米",
+            "description": "闆娘親搗芋泥，有稍許顆粒，搭上紫米絕搭! (吃熱的) 成分簡單，卻很好吃，僅使用大甲芋頭、天然奶油(非人造)、蔗糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶拿鐵",
+            "description": "採用靜岡抹茶粉，加入純鮮奶，其自然甜降低抹茶的澀感，無糖也濃郁好喝(建議甜度為提味)",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤蜂蜜優格起司厚片",
+            "description": "健康清爽，蜂蜜優格墊底，起司鋪層多一份起司香",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自製濃郁奶酥厚片",
+            "description": "自製奶酥醬(無椰子味)，不甜，奶香味重",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬鈴薯蛋沙拉厚片(蛋奶素)",
+            "description": "香噴噴的奶油烤的厚片滋滋作響，再放入鮮做的冰馬鈴薯蘋果蛋沙拉，撒上一層胡椒增添風味，夏季的好滋味",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司優格燻雞厚片(鹹)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香檸草莓奶油厚片",
+            "description": "甜酸的草莓果醬，佐香氣十足的奶油，再撒上些許檸檬皮，層次感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦香吐司佐奶蓋醬",
+            "description": "吐司邊抹上一層奶油，反覆烤，烤到像餅乾一樣，佐(動物鮮奶油)打得鹹奶蓋醬，好一道有特色的下午茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋泥比司吉",
+            "description": "手工製作的比司吉，鹹鹹甜甜，搭配上闆娘親搗的大甲芋頭泥，超彭派!(芋頭泥內僅含天然奶油、蔗糖、大甲芋頭)",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "桂花茉綠",
+            "description": "頂級毛尖白毫綠茶葉，採用特選茉莉花薰香做基底茶。 搭配真材實料臺灣桂花沖出之茶品。 （茶湯無甜味，不含桂花釀）",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小菊烏龍",
+            "description": "原形東方茶飲-特色茶。臺灣原生種小油菊、果香。(基底茶不甜)",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍眼花四季春",
+            "description": "原形東方茶飲-特色茶。臺灣頂級手採龍眼花與四季春茶的協奏曲，茶中帶龍眼蜜香。 (基底茶不甜)",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自製濃郁奶酥厚片",
+            "description": "自製奶酥醬(無椰子味)，不甜，奶香味重",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂蘋果+百香果",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "品茶系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "抹茶拿鐵",
+            "description": "採用靜岡抹茶粉，加入純鮮奶，其自然甜降低抹茶的澀感，無糖也濃郁好喝(建議甜度為提味)",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菊麥茶",
+            "description": "無咖啡因茶品，不怕睡不著，採用新鮮大麥與臺灣原生種小油菊沖泡而成，整體上更有層次!",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝貴紅",
+            "description": "紅茶茶葉經薰香帶有荔枝果香(基底茶不甜) L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香檳紅(大吉嶺)",
+            "description": "麝香葡萄, 檸檬調果香及木質香調。(基底茶不甜) 茶感較重。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱帶水果茶",
+            "description": "荔枝紅茶為基底，加入新鮮水果調配，提味+正常冰為黃金比例",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰釀紅烏龍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍眼木鮮奶茶",
+            "description": "舌尖上淡淡的巧克力香，500c.c./杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花漾鮮奶茶",
+            "description": "成年人的鮮奶茶，花果茶感較重，甜感+正常冰為黃金比例，500c.c./杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖脆脆鮮奶茶",
+            "description": "手工製作的焦糖脆餅，讓鮮奶茶增添一股焦糖香的濃郁。黃金比例為提味+正常冰，500c.c./杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花梅子綠茶",
+            "description": "桂花茉綠搭上小農自釀脆梅汁，夏日清爽好喝!(有含話梅，建議2小時內飲畢，避免口味變化)",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "果香檸檬紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝梅子紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "臺灣高山烏龍(比賽級)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥綠茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "佛手蜜香紅",
+            "description": "頂級臺灣蜜香紅茶帶一抹佛手清香",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "純水果飲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "果香鳳蘋+百香果",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭樂蘋果+鮮檸檬",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火龍玫果+蔓梅汁",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火龍玫果+鮮檸檬",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香芒蘋果+百香果",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香芒蘋果+鮮檸檬",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑葚紅棗",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桑葚紅棗+鮮檸檬",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青檸洛神",
+            "description": "採用原形 東方茶飲自製的水果茶包 沖出的水果基底(不含香精、人工合成糖、防腐劑)，另外添加新鮮水果(非果醬)， 不含茶葉（無咖啡因），基底本身帶天然甜。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "養身茶系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅寶紅藜",
+            "description": "原形 東方茶飲 特色飲品 臺灣紅藜, 枸杞, 紅棗及甜菊。 不含茶葉，無咖啡因， 含茶包，可自行回沖，僅供熱飲。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養氣茶",
+            "description": "東洋蔘, 麥冬, 紅棗片, 黃耆及枸杞 不含茶葉，無咖啡因， 含茶包，可自行回沖，僅供熱飲。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "元氣三寶",
+            "description": "黃耆, 枸杞及紅棗。 不含茶葉，無咖啡因， 含茶包，可自行回沖，僅供熱飲。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "舒視茶",
+            "description": "決明子, 杭菊, 甘草及枸杞。 不含茶葉，無咖啡因， 含茶包，可自行回沖，僅供熱飲。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山苦瓜複方",
+            "description": "原形 東方茶飲 特色飲品 台灣山苦瓜片, 枸杞, 綠茶葉及七葉膽。 含茶包，可自行回沖，僅供熱飲。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "福圓紅棗",
+            "description": "含龍眼乾 (桂圓), 枸杞, 紅棗及甜菊。 非糖塊式茶包，純天然果乾茶包， 不含茶葉，無咖啡因， 含茶包，可自行回沖，僅供熱飲。 L杯 (500c.c.)",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手沖咖啡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "哥斯大黎加 卡內特莊園 莫札特",
+            "description": "不苦，酸度為 3 星。 葡萄乾蜜處理。淺中焙。 風味: 莓果, 甜白酒及玫瑰。 僅供熱飲(濃口270ml、淡口320ml)",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "波利維亞 的的喀喀湖(熱、冰飲)",
+            "description": "酸度為 1 星、苦度為 4 星。 淺中焙、水洗。 風味: 紳士們的最愛, 焦糖及木質調。 僅供熱飲(濃口270ml、淡口320ml)",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "依索匹亞.水果怪獸(熱、冰飲)",
+            "description": "水果厭氧日曬.淺焙。威士忌與萊姆酒香，焦糖香。(濃口270ml、淡口320ml)",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡(僅供冰飲)",
+            "description": "冰咖啡，黃金比為提味，500c.c. (非氣泡水)",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手沖拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰國 清萊 橙花",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冷萃桂茉黑咖啡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "茶點&烤厚片",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "比司吉（原味）U",
+            "description": "鹹中帶點甜，當早餐剛好! 若無點選加熱服務，為保持品質一律冷凍品出貨(夏季置室溫20分後即可食用) 若非當日食畢，請包鮮膜包覆進冷凍庫中保存。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工香蒜厚片",
+            "description": "新鮮的手工香蒜奶油抹醬，塗抹在厚片上，烤的香香脆脆",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米鮪魚厚片",
+            "description": "內用客的最愛，沒有甚麼技術，好的食材，就是好吃!",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果巧克力脆脆厚片",
+            "description": "用滑順的奶油打底，抹上一層厚厚的巧克力，撒上巧克力豆，巧克力的交響曲",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手作起司青蔥燻雞厚片",
+            "description": "(推) 鮮切青蔥，自拌為抹醬，加上一層起司絲與燻雞",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬鈴薯蛋沙拉厚片(蛋奶素)",
+            "description": "香噴噴的奶油烤的厚片滋滋作響，再放入鮮做的冰馬鈴薯蘋果蛋沙拉，撒上一層胡椒增添風味，夏季的好滋味",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香檸草莓奶油厚片",
+            "description": "甜酸的草莓果醬，佐香氣十足的奶油，再撒上些許檸檬皮，層次感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤蜂蜜優格起司厚片",
+            "description": "健康清爽，蜂蜜優格墊底，起司鋪層多一份起司香",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司優格燻雞厚片(鹹)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油芋頭紫米",
+            "description": "闆娘親搗芋泥，有稍許顆粒，搭上紫米絕搭! (吃熱的) 成分簡單，卻很好吃，僅使用大甲芋頭、天然奶油(非人造)、蔗糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋泥比司吉",
+            "description": "手工製作的比司吉，鹹鹹甜甜，搭配上闆娘親搗的大甲芋頭泥，超彭派!(芋頭泥內僅含天然奶油、蔗糖、大甲芋頭)",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養身酒糟蛋",
+            "description": "不愛吃蛋的人都說好吃，嫩嫩的蛋，用糟滷調汁搭上枸杞等其他食材醃泡一天才可販售，吃起來清爽有淡淡的酒香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油芋泥厚片",
+            "description": "老麵吐司上刮上天然奶油入烤箱，烤的香噴噴，再搭上闆娘親搗的冰心芋頭泥。(僅採大甲芋頭、天然奶油、蔗糖製作)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶蓋芋球",
+            "description": "不是中央廚房，是闆娘親搗的奶油芋泥，僅採用大甲芋頭、天然奶油、蔗糖，成分天然簡單，卻很好吃，再淋上現打的奶蓋醬(動物性鮮奶油製作)，鹹甜鹹甜，下午茶好享受!",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦香吐司佐奶蓋醬",
+            "description": "吐司邊抹上一層奶油，反覆烤，烤到像餅乾一樣，佐(動物鮮奶油)打得鹹奶蓋醬，好一道有特色的下午茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生奶油厚片",
+            "description": "厚厚一層顆粒花生，加上滑順奶油，烤的噗滋響",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰心奶油紅豆泥佐奶蓋",
+            "description": "夏季限定，手搗紅豆泥(萬丹紅豆選用，有顆粒)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰心奶油紅豆泥厚片",
+            "description": "夏季限定，手搗紅豆泥(萬丹紅豆選用，有顆粒)",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "超值套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "超值選(3款茶+茶點)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超值選(咖啡+茶點x2)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "其他加購",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "單杯提袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5/6杯提袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4杯提袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2/3杯提袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

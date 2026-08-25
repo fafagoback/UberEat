@@ -1,0 +1,211 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%8B%82%E9%87%8E%E9%9F%93%E5%BC%8F%E7%82%B8%E9%9B%9E/gLC96dHITLmurO3qV6k0EA",
+  "name": "狂野韓式炸雞",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shipai Road Section 2 Lane 68 26",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1163338,
+    "longitude": 121.5168898
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 3000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Fried Chicken"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "無骨雞塊單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甘醬洋釀 無骨雞塊",
+            "description": "無骨雞塊內仍可能含有軟骨或些許碎骨，請小心食用！\n\n每份 8 塊無骨雞塊。無提供半半口味。\n韓國水梨烤肉醬均勻裹在炸雞外皮上，醬汁無法另外放",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "激辛洋釀 無骨雞塊",
+            "description": "無骨雞塊內仍可能含有軟骨或些許碎骨，請小心食用！\n\n餐點口味升級，辣度中辣！\n每份 8 塊無骨雞塊。無提供半半口味。\n中辣韓式辣醬均勻裹在炸雞外皮上，醬汁無法另外放，醬內含花生醬成分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芥末塔塔 無骨雞塊",
+            "description": "無骨雞塊內仍可能含有軟骨或些許碎骨，請小心食用！\n\n每份 8 塊無骨雞塊。無提供半半口味。\n醬內含黃芥末、美乃滋、洋蔥、酸黃瓜，已混合調製無法分離。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶香起司 無骨雞塊",
+            "description": "無骨雞塊內仍可能含有軟骨或些許碎骨，請小心食用！\n\n餐點口味升級，增加奶香味更順口更好吃！\n每份 8 塊無骨雞塊。無提供半半口味。\n酥脆炸雞淋上混合奶香味調料的切達起司醬並撒上起司粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮原味 無骨雞塊",
+            "description": "無骨雞塊內仍可能含有軟骨或些許碎骨，請小心食用！\n\n每份8塊無骨雞塊,無提供椒鹽或辣粉,並無提供半半口味\n無提供胡椒鹽或辣粉，最純粹的原味炸雞。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻香蒜 無骨雞塊",
+            "description": "無骨雞塊內仍可能含有軟骨或些許碎骨，請小心食用！\n\n餐點口味升級，增加花椒香味及麻度！\n每份 8 塊無骨雞塊。無提供半半口味。\n微辣台式椒麻醬均勻裹在炸雞外皮上，醬汁無法另外放，含花生碎。",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嗆辣山葵 無骨雞塊",
+            "description": "無骨雞塊內仍可能含有軟骨或些許碎骨，請小心食用！\n\n每份 8 塊無骨雞塊。無提供半半口味。\n醬內含美乃滋，已混合調製無法分離。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典小物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣洋釀炸年糕",
+            "description": "炸年糕,非炒類。\n微辣，醬內含花生醬成分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金脆薯",
+            "description": "附塔塔醬、山葵醬、番茄醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生煉乳炸年糕",
+            "description": "炸年糕,非炒類。\n煉乳及花生碎無提供另外裝",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶香起司脆薯",
+            "description": "餐點口味升級，增加奶香味更順口更好吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂",
+            "description": "250 毫升。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂家庭號",
+            "description": "1250 毫升。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原萃無糖綠茶",
+            "description": "350 毫升。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國水梨汁",
+            "description": "238 毫升。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國葡萄汁",
+            "description": "238 毫升。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

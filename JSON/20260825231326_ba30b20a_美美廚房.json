@@ -1,0 +1,192 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%BE%8E%E7%BE%8E%E5%BB%9A%E6%88%BF/s7MIu8zrWZCGAk5fieUp6w",
+  "name": "美美廚房",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "北安路608巷2弄17號3樓",
+    "addressLocality": "中山區",
+    "addressRegion": "Taipei City",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08144,
+    "longitude": 121.54893
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 19
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Rice Dishes",
+    "Bento"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "✨歡迎光臨 美美廚房✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "您的回饋是我們前進的動力！若本次餐點合您口味，歡迎於餐後留下評分與留言；每一則意見都會被看見，用於持續優化出餐與服務。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "每日嚴選食材，精心烹調料理，現做現煮，讓身體無負擔品嚐獨家純正傳統風味🥰。",
+            "description": "全日供應，現點現做；依當日食材推出推薦菜色，走家常路線，清爽順口，吃得安心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "10.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "📍肉品產地來源：牛肉-美國/豬肉-台灣/雞肉-台灣",
+            "description": "牛、豬、雞肉品皆設有產地標示，資訊公開透明，隨菜單定期更新，讓您安心選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "10.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🌟餐盒 Meal Box🌟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "青椒肉絲餐盒 Pork Strips with Green Pepper Meal Box",
+            "description": "含青椒炒肉絲, 蛋料理, 兩種時蔬及白飯。\n青椒炒得脆香爽口🌶️搭配嫩炒肉絲，鹹香入味超下飯！",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽玉米炒雞柳餐盒 Stir-Fried Chicken Finger with Corn and Pepper Salt Meal Box",
+            "description": "含椒鹽玉米炒雞柳, 蛋料理, 兩種時蔬及白飯。\n雞柳酥嫩香氣十足🌽搭配玉米甜脆，椒鹽提香超涮嘴！",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒蛋餐盒",
+            "description": "精選蝦仁炒蛋，搭配兩款現炒時蔬，是你最好的選擇！因為抽35%我真的要撐不下去，我也不想讓客人吃到一咪咪的主菜量蔬菜量。所以讓我漲個二十元！不然真的完全做一個賠一個！",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無水蕃茄燉牛肋 Stewed Short Rib with Tomato",
+            "description": "淨重500g±5%（2-4人份）\n需要前一天預訂",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香煎雞腿排",
+            "description": "香煎雞腿排，無調味的香煎雞腿排，會搭配少許的日本無敵綜合黑胡椒粉！這一款胡椒粉，不論搭配什麼都非常的有畫龍點睛的作用絕對會讓無調味的香煎雞腿腿排大大的加分！但因為想讓大家吃到原味食物！我只會灑兩塊！因為抽35%我真的要撐不下去，我也不想讓客人吃到一咪咪的主菜量蔬菜量。所以讓我漲個二十元！不然真的完全做一個賠一個！",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本油蔥麵線附一顆荷包蛋還有些許的青菜",
+            "description": "日本油蔥麵線附一顆荷包蛋還有些許的青菜\n日本麵線加上自己做的油蔥酥\n這個餐盒絕對會飽\n麵線的量是足夠的\n搭配上一顆荷包蛋以及時蔬\n就是健康美味又好吃\n因為抽35%我真的要撐不下去，我也不想讓客人吃到一咪咪的主菜量蔬菜量。所以讓我漲個二十元！不然真的完全做一個賠一個！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點 A La Carte😋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麵線 Vermicelli",
+            "description": "採用日本麵線以及自己親手做的油蔥酥！\n油蔥自己清洗自己炸！\n你絕對不能錯過的美食！\n完完全全的跟台灣的麵線不一樣！\n非常的健康又美味可口❤️❤️❤️",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美國甜扁桃仁手工杏仁脆片",
+            "description": "美國甜扁桃仁手工杏仁脆片+法國無鹽奶油+新鮮現打蛋白+砂糖。一包袋裝淨重90公克$150元。訂了之後才會開始製作！所以可以假如我的fb社團「杜拜開心果巧克力Q球」",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒蛋餐盒",
+            "description": "精選蝦仁炒蛋，搭配兩款現炒時蔬，是你最好的選擇！因為抽35%我真的要撐不下去，我也不想讓客人吃到一咪咪的主菜量蔬菜量。所以讓我漲個二十元！不然真的完全做一個賠一個！",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杜拜開心果巧克力Q餅禮盒一盒六入",
+            "description": "採新鮮預約後之後才會開始製作，\n目前需要等待時間是一週後，\n純手工製作的內餡，\n純開心果醬的杜拜開心果醬+純巧克力麻糬Q餅！\n絕對有別於世面上所販售的！\n不甜不膩，紮實的材料！\n做完會先急速冷凍保存，\n收到後一定要等常溫後食用，最為美味！\n可以假如我的fb社團「杜拜開心果巧克力Q球」才會有團購價喔一盒600！謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "800.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯 Rice",
+            "description": "來至花蓮的優質米",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

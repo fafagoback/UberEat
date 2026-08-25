@@ -1,0 +1,455 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9B%99%E5%9F%8E%E8%A1%97%E5%A4%9C%E5%B8%82-%E9%98%BF%E5%AF%8C%E6%B5%B7%E9%AE%AE%E7%B2%A5/NJ0WfgpdR52E8575Yec-ng",
+  "name": "雙城街夜市 阿富海鮮粥",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shuangcheng Street 14",
+    "addressLocality": "Zhongshan District",
+    "addressRegion": "Taipei City",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.064869733410323,
+    "longitude": 121.52426866606409
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 3000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Exclusive to Eats"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮粥",
+            "description": "含高麗菜、韭菜、芹菜、油蔥、胡椒、蝦仁、蚵仔、花枝、鯛魚片、豬肉絲、鱈魚丸\n沒有豬肝!!!!\n沒有豬肝!!!!\n沒有豬肝!!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸三鮮",
+            "description": "含蝦仁、蚵仔、花枝",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒腰只",
+            "description": "麻油:含腰只、薑片、米酒\n清炒:含腰只、薑片、米酒、蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "355.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮湯",
+            "description": "含韭菜、芹菜、胡椒、蝦仁、蚵仔、花枝、鯛魚片、豬肉絲、鱈魚丸",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒豬心",
+            "description": "麻油:含豬心、薑片、米酒\n清炒:含豬心、薑片、米酒、蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒赤肉",
+            "description": "麻油:含豬肉片、薑片、米酒\n清炒:含豬肉片、薑片、米酒、蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒雙腰",
+            "description": "含腰只、雞胇、薑片、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "660.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "請先看清楚每一個品項的配料!!!!!!!!!!!!!!!本店\"不提供\"額外加料服務，請見諒!",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "。",
+            "description": "配料固定（無法客製），不提供額外加料服務，敬請見諒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮粥",
+            "description": "含高麗菜、韭菜、芹菜、油蔥、胡椒、蝦仁、蚵仔、花枝、鯛魚片、豬肉絲、鱈魚丸\n沒有豬肝!!!!\n沒有豬肝!!!!\n沒有豬肝!!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸三鮮",
+            "description": "含蝦仁、蚵仔、花枝",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒赤肉",
+            "description": "麻油:含豬肉片、薑片、米酒\n清炒:含豬肉片、薑片、米酒、蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒腰只",
+            "description": "麻油:含腰只、薑片、米酒\n清炒:含腰只、薑片、米酒、蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "355.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒雙腰",
+            "description": "含腰只、雞胇、薑片、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "660.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "招牌主食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮粥",
+            "description": "含高麗菜、韭菜、芹菜、油蔥、胡椒、蝦仁、蚵仔、花枝、鯛魚片、豬肉絲、鱈魚丸\n沒有豬肝!!!!\n沒有豬肝!!!!\n沒有豬肝!!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉炒麵",
+            "description": "配料固定（含蔥、肉燥、少許豆芽菜），無法客製!!!!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲蛋炒飯",
+            "description": "配料固定（蔥、蛋、肉絲、胡椒），無法客製!\n配料固定（蔥、蛋、肉絲、胡椒），無法客製!\n配料固定（蔥、蛋、肉絲、胡椒），無法客製!",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉炒米粉",
+            "description": "配料固定（含蔥、肉燥、少許豆芽菜），無法客製!!!!!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮炒麵",
+            "description": "麻油:含韭菜、薑片、蝦仁、蚵仔、花枝\n清炒:含韭菜、薑片、蔥、蝦仁、蚵仔、花枝",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮湯麵",
+            "description": "含韭菜、芹菜、油蔥、胡椒、蝦仁、蚵仔、花枝、鯛魚片、豬肉絲、鱈魚丸\n沒有豬肝!!!!\n沒有豬肝!!!!\n沒有豬肝!!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚粥",
+            "description": "含芹菜、胡椒、油蔥、米酒、薑絲、無刺虱目魚肚",
+            "offers": {
+              "@type": "Offer",
+              "price": "277.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炒赤肉",
+            "description": "麻油:含豬肉片、薑片、米酒\n清炒:含豬肉片、薑片、米酒、蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒雙腰",
+            "description": "含腰只、雞胇、薑片、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "660.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒腰只",
+            "description": "麻油:含腰只、薑片、米酒\n清炒:含腰只、薑片、米酒、蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "355.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒豬心",
+            "description": "麻油:含豬心、薑片、米酒\n清炒:含豬心、薑片、米酒、蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒豬肝",
+            "description": "麻油:含豬肝、薑片、米酒\n清炒:含豬肝、薑片、米酒、蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒雞胇",
+            "description": "含雞胇、薑片、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "460.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮湯",
+            "description": "含韭菜、芹菜、胡椒、蝦仁、蚵仔、花枝、鯛魚片、豬肉絲、鱈魚丸",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "赤肉湯",
+            "description": "麻油:含薑絲、豬肉片、米酒\n清湯:含薑絲、蔥、豬肉片、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肝湯",
+            "description": "清湯：含薑絲、蔥、豬肝、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚湯",
+            "description": "含芹菜、胡椒、米酒、薑絲、無刺虱目魚肚",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "腰只湯",
+            "description": "麻油:含薑絲、腰只、米酒\n清湯:含薑絲、蔥、腰只、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙腰湯",
+            "description": "麻油:含薑絲、腰只、雞胇、米酒\n清湯:含薑絲、蔥、腰只、雞胇、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "460.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胇湯",
+            "description": "麻油：含薑絲、雞胇、米酒\n清湯：含薑絲、蔥、雞胇、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "460.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬心湯",
+            "description": "麻油：含薑絲、豬心、米酒\n清湯：含薑絲、蔥、豬心、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮魚湯（鯛魚片）",
+            "description": "含薑絲、蔥、鯛魚片、米酒",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸三鮮",
+            "description": "含蝦仁、蚵仔、花枝",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸肉片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸虱目魚",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

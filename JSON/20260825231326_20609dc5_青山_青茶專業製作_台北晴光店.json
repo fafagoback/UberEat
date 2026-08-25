@@ -1,0 +1,737 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9D%92%E5%B1%B1-%E9%9D%92%E8%8C%B6%E5%B0%88%E6%A5%AD%E8%A3%BD%E4%BD%9C-%E5%8F%B0%E5%8C%97%E6%99%B4%E5%85%89%E5%BA%97/fBMo29LYWimBCdi648RNvg",
+  "name": "青山 青茶專業製作 台北晴光店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區雙城街15-2號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0643,
+    "longitude": 121.52447
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 11
+  },
+  "servesCuisine": [
+    "Bubble Tea",
+    "Drinks",
+    "Coffee and Tea",
+    "Juice and Smoothies"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "水蜜桃夏青 Summer Tea with Peach",
+            "description": "帶有東方美人蜜香的夏青為襯底, 與清新軟嫩水蜜桃果肉結合的夢幻甜香。\n大杯: 總糖量 64 克, 總熱量 278 大卡, 每杯咖啡因總量 100 毫克以下。\n中杯: 總糖量 50 克, 總熱量 216 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "天蟬那堤 House Blend Tea Latte",
+            "description": "獨特蜜香茶感鮮明, 香濃的鮮乳與茶葉的味道交融。\n大杯: 總糖量 54 克, 總熱量 297 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 224 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "輕蘋香茶 Apple Green Tea",
+            "description": "蘋果微甜滋味與綠茶香完美融合。\n大杯: 總糖量 54 克, 總熱量 185 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41克, 熱量為 166 大卡, 咖啡因為 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水梨春青 Asian Pear Spring Tea",
+            "description": "輕甜水梨汁與幽雅花香悄然綻放, 回甘的餘韻輕柔甘甜。\n大杯: 總糖量 69 克, 總熱量 309 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 52 克, 總熱量 234 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白甘蔗春青 White Sugarcane Spring Tea",
+            "description": "白甘蔗原汁天然清甜結合春青梔子花香。 \n大杯: 總糖量 54 克, 總熱量 286 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 215 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橘子春青 Orange Spring Tea",
+            "description": "飽滿多汁的橘子醇厚橘香鮮明爽口, 入口花香繚繞不斷。\n大杯: 總糖量 69 克, 總熱量 296 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 52 克, 總熱量 224 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬青 Winter Tea",
+            "description": "口感: 輕。來自台灣 1300 公尺至 1600 公尺高海拔茶園, 青心烏龍香氣多元, 入口青草般的清新。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳丁綠水 Orange Green Tea",
+            "description": "蘊含柳丁酸甜與茶香回甘, 內含柳丁果肉。\n大杯: 總糖量 78 克, 總熱量 296 大卡, 每杯咖啡因總量 100 毫克以下。\n中杯: 總糖量 58 克, 總熱量 220 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚綠水 Grapefruit Green Tea",
+            "description": "入口感受葡萄柚果粒及經典葡萄柚綠茶風味。\n大杯: 總糖量 54 克, 總熱量 198 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 149 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽奶蓋春青 Spring Tea with Sea Salt Milk Foam",
+            "description": "春青的梔子花香與奶蓋的鹹甜口感。奶蓋固定少冰。\n大杯: 總糖量 54 克, 總熱量 311 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 254 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥那堤 Buckwheat Tea Latte",
+            "description": "清新穀香與鮮乳奶香, 整體韻味溫柔清新。\n大杯: 總糖量 54 克, 總熱量 297 大卡, 無咖啡因。\n中杯: 總糖量 41 克, 總熱量 224 大卡, 無咖啡因。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山峰奶茶 House Blend Milk Tea",
+            "description": "紮實茶韻中獨特的焦糖蜜香。\n大杯: 總糖量 54 克, 總熱量 408 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 279 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀珍珠天蟬那堤 Tea Latte with Golden Boba",
+            "description": "蜜香紅茶底味醇厚與鮮乳奶香交織, 搭配淡淡焦糖味。\n大杯: 總糖量 40 克, 總熱量 473 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 32 克, 總熱量 332 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青茶凍天蟬那堤 House Blend Tea Latte with Oolong Tea Jelly",
+            "description": "濃郁醇厚的天蟬那堤搭配花香青茶茶凍。\n大杯: 總糖量 40 克, 總熱量 273 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 32 克, 總熱量 198 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀珍珠奶茶 Golden Boba Milk Tea",
+            "description": "琥珀色的晶透珍珠與山峰奶茶完美結合, 奶香焦甜的層次感。\n大杯: 總糖量 40 克, 總熱量 524 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 32 克, 總熱量 381 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥奶蓋玄米茶 Genmaicha with Buckwheat Milk Foam",
+            "description": "蕎麥奶蓋獨有堅果風味與桂花玄公尺茶焦香交融。奶蓋固定少冰。\n大杯: 總糖量 54 克, 總熱量 305 大卡, 無咖啡因。\n中杯: 總糖量 41 克, 總熱量 247 大卡, 無咖啡因。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽奶蓋紅茶 Black Tea with Sea Salt Milk Foam",
+            "description": "蜜香紅茶搭配鹹甜奶蓋, 香氣充足且綿密。奶蓋固定少冰。\n大杯: 總糖量 54 克, 總熱量 311 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 254 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝春青 (含茶凍) Lychee Spring Tea",
+            "description": "含茶凍。荔枝原汁加上茶凍, 搭配梔子花香氣的春青。\n大杯: 總糖量 64 克, 總熱量 344 大卡, 每杯咖啡因總量 100 毫克以下。\n中杯: 總糖量 49 克, 總熱量 234 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香檸綠水 Lemon Green Tea",
+            "description": "清新綠茶搭配香檸酸苦, 回甘不絕。\n大杯: 總糖量 102 克, 總熱量 325 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 76 克, 總熱量 242 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項 Notice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "如需吸管, 請於結帳前勾選索取餐具及吸管。如無勾選索取, 響應環保本店將不提供吸管。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶蓋配料只提供少冰。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜燕、凍飲、粉粿、不可提供熱飲。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "青茶｜四季為名‧四種韻味  House special Oolong Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "春青 Spring Tea",
+            "description": "口感: 輕。帶有淡淡的梔子花香入口清爽甘甜。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "夏青 Summer Tea",
+            "description": "口感: 重。獨特的蜜香與果香堆疊, 口感稍濃重多層次。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "秋青 Autumn Tea",
+            "description": "口感: 中。海拔 1200 公尺至 1500 公尺手採極品金萱, 茶湯清甜奶香甘甜。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 印尼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬青 Winter Tea",
+            "description": "口感: 輕。來自台灣 1300 公尺至 1600 公尺高海拔茶園, 青心烏龍香氣多元, 入口青草般的清新。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "無咖啡因 Non-caffeine",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "西穀蕎麥茶 Buckwheat Tea",
+            "description": "經烘焙的蕎麥粒散發出柔和的公尺香, 味道溫潤。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 無咖啡因。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 無咖啡因。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "北風桂花玄米茶 Osmanthus Genmaicha",
+            "description": "新鮮桂花乾燥後結合玄公尺調和, 香氣清新迷人清爽。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 無咖啡因。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 無咖啡因。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手作特調 Creative Mix",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "青山綠水 Spring Tea & Green Tea Mix",
+            "description": "以春青的前調散發梔子花的韻味, 後調由綠水帶出茉莉香氣。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥冬露 Winter Melon Buckwheat Tea",
+            "description": "蕎麥穀香搭配冬瓜露甘甜清爽。限大杯。\n大杯: 總糖量 41 克, 總熱量 161 大卡, 無咖啡因。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "春青冬露 Winter Melon Spring Tea",
+            "description": "梔子花香與冬瓜露的古早清甜。限大杯。\n大杯: 總糖量 41 克, 總熱量 161 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多多綠水 Yakult Green Tea",
+            "description": "乳酸的酸甜與淡雅的茶香相互融合, 清甜微酸。限大杯。\n大杯: 總糖量 54 克, 總熱量 309 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "加料特調 Topping Series",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "杏仁凍春青 Spring Tea with Almond Jelly",
+            "description": "春青搭配滑嫩杏仁凍, 茶香清新, 口感柔滑。\n大杯: 總糖量 40 克, 總熱量 220 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 32 克, 總熱量 163 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青茶婚貴奶茶 Milk Tea with Oolong Hun Kue",
+            "description": "奶茶的香濃與 Q 彈綿密的茶香粉粿, 口感極致滿足。\n大杯: 總糖量 40 克, 總熱量 347 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 32 克, 總熱量 262 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀珍珠奶茶 Golden Boba Milk Tea",
+            "description": "琥珀色的晶透珍珠與山峰奶茶完美結合, 奶香焦甜的層次感。\n大杯: 總糖量 40 克, 總熱量 524 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 32 克, 總熱量 381 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥珍珠奶茶 Buckwheat Boba Milk Tea",
+            "description": "富有蕎麥香氣的 Q 彈珍珠, 濃郁的穀香融入熟悉的奶茶香中。\n大杯: 總糖量 40 克, 總熱量 524 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 32 克, 總熱量 381 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青茶凍天蟬那堤 House Blend Tea Latte with Oolong Tea Jelly",
+            "description": "濃郁醇厚的天蟬那堤搭配花香青茶茶凍。\n大杯: 總糖量 40 克, 總熱量 273 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 32 克, 總熱量 198 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀珍珠天蟬那堤 Tea Latte with Golden Boba",
+            "description": "蜜香紅茶底味醇厚與鮮乳奶香交織, 搭配淡淡焦糖味。\n大杯: 總糖量 40 克, 總熱量 473 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 32 克, 總熱量 332 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥珍珠夏青那堤 Summer Tea Latte with Buckwheat Boba",
+            "description": "蕎麥珍珠與富有蜜香滋味的夏青那堤。\n大杯: 總糖量 40 克, 總熱量 473 大卡, 每杯咖啡因總量 100 毫克以下。\n中杯: 總糖量 32 克, 總熱量 332 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "綠茶·紅茶 Pure Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綠水 House Green tea",
+            "description": "入口清爽回甘, 尾韻透出茉莉芳香的綠茶香氣。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "天蟬紅茶 House Black tea",
+            "description": "韻味帶有蜜香的青心大冇紅茶, 茶感紮實且濃郁。\n大杯: 總糖量 54 克, 總熱量 165 大卡, 每杯咖啡因總量 100 毫克以下。\n中杯: 總糖量 41 克, 總熱量 125 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶蓋特調 Milk Foam",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥奶蓋綠水 Green Tea with Buckwheat Milk Foam",
+            "description": "香濃奶蓋添加研磨炒焙蕎麥粉, 搭配清爽綠茶。奶蓋固定少冰。 \n大杯: 總糖量 54 克, 總熱量 305 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 247 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥奶蓋玄米茶 Genmaicha with Buckwheat Milk Foam",
+            "description": "蕎麥奶蓋獨有堅果風味與桂花玄公尺茶焦香交融。奶蓋固定少冰。\n大杯: 總糖量 54 克, 總熱量 305 大卡, 無咖啡因。\n中杯: 總糖量 41 克, 總熱量 247 大卡, 無咖啡因。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽奶蓋春青 Spring Tea with Sea Salt Milk Foam",
+            "description": "春青的梔子花香與奶蓋的鹹甜口感。奶蓋固定少冰。\n大杯: 總糖量 54 克, 總熱量 311 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 254 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽奶蓋紅茶 Black Tea with Sea Salt Milk Foam",
+            "description": "蜜香紅茶搭配鹹甜奶蓋, 香氣充足且綿密。奶蓋固定少冰。\n大杯: 總糖量 54 克, 總熱量 311 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 254 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽奶蓋輕蘋香茶 Apple Green Tea with Sea Salt Milk Foam",
+            "description": "蘋果綠的爽口酸甜與海鹽奶蓋的綿密鹹味交織。奶蓋固定少冰。\n大杯: 總糖量 54 克, 總熱量 242 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 193 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶茶·鮮奶茶 Milk Tea/Tea Latte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "山峰奶茶 House Blend Milk Tea",
+            "description": "紮實茶韻中獨特的焦糖蜜香。\n大杯: 總糖量 54 克, 總熱量 408 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 279 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "夏青那堤 Summer Tea Latte",
+            "description": "輕微焙火的木質香氣青茶, 搭配鮮乳。\n大杯: 總糖量 54 克, 總熱量 297 大卡, 每杯咖啡因總量 100 毫克以下。\n中杯: 總糖量 41 克, 總熱量 224 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥那堤 Buckwheat Tea Latte",
+            "description": "清新穀香與鮮乳奶香, 整體韻味溫柔清新。\n大杯: 總糖量 54 克, 總熱量 297 大卡, 無咖啡因。\n中杯: 總糖量 41 克, 總熱量 224 大卡, 無咖啡因。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "天蟬那堤 House Blend Tea Latte",
+            "description": "獨特蜜香茶感鮮明, 香濃的鮮乳與茶葉的味道交融。\n大杯: 總糖量 54 克, 總熱量 297 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 224 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "燕麥奶 Oat Milk",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "天蟬燕麥奶 Black Tea with Oat Milk",
+            "description": "天蟬紅茶葉深邃香氣搭配燕麥奶樸實風味。\n大杯: 總糖量 54 克, 總熱量 289 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 218 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "夏青燕麥奶 Summer Tea with Oat Milk",
+            "description": "獨特蜜香茶感香氣搭配燕麥奶樸實風味。\n大杯: 總糖量 54 克, 總熱量 289 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 218 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥燕麥奶 Buckwheat Tea with Oat Milk",
+            "description": "蕎麥的清新穀香搭配燕麥奶樸實風味。\n大杯: 總糖量 54 克, 總熱量 289 大卡, 無咖啡因。\n中杯: 總糖量 41 克, 總熱量 218 大卡, 無咖啡因。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮果特調 Fruit Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白甘蔗春青 White Sugarcane Spring Tea",
+            "description": "白甘蔗原汁天然清甜結合春青梔子花香。 \n大杯: 總糖量 54 克, 總熱量 286 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 215 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香檸綠水 Lemon Green Tea",
+            "description": "清新綠茶搭配香檸酸苦, 回甘不絕。\n大杯: 總糖量 102 克, 總熱量 325 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 76 克, 總熱量 242 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳丁綠水 Orange Green Tea",
+            "description": "蘊含柳丁酸甜與茶香回甘, 內含柳丁果肉。\n大杯: 總糖量 78 克, 總熱量 296 大卡, 每杯咖啡因總量 100 毫克以下。\n中杯: 總糖量 58 克, 總熱量 220 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚綠水 Grapefruit Green Tea",
+            "description": "入口感受葡萄柚果粒及經典葡萄柚綠茶風味。\n大杯: 總糖量 54 克, 總熱量 198 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41 克, 總熱量 149 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "輕蘋香茶 Apple Green Tea",
+            "description": "蘋果微甜滋味與綠茶香完美融合。\n大杯: 總糖量 54 克, 總熱量 185 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 41克, 熱量為 166 大卡, 咖啡因為 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝春青 (含茶凍) Lychee Spring Tea",
+            "description": "含茶凍。荔枝原汁加上茶凍, 搭配梔子花香氣的春青。\n大杯: 總糖量 64 克, 總熱量 344 大卡, 每杯咖啡因總量 100 毫克以下。\n中杯: 總糖量 49 克, 總熱量 234 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水梨春青 Asian Pear Spring Tea",
+            "description": "輕甜水梨汁與幽雅花香悄然綻放, 回甘的餘韻輕柔甘甜。\n大杯: 總糖量 69 克, 總熱量 309 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 52 克, 總熱量 234 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橘子春青 Orange Spring Tea",
+            "description": "飽滿多汁的橘子醇厚橘香鮮明爽口, 入口花香繚繞不斷。\n大杯: 總糖量 69 克, 總熱量 296 大卡, 每杯咖啡因總量 101 至 200 毫克。\n中杯: 總糖量 52 克, 總熱量 224 大卡, 每杯咖啡因總量 101 至 200 毫克。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "期間限定 Limited time",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "水蜜桃夏青 Summer Tea with Peach",
+            "description": "帶有東方美人蜜香的夏青為襯底, 與清新軟嫩水蜜桃果肉結合的夢幻甜香。\n大杯: 總糖量 64 克, 總熱量 278 大卡, 每杯咖啡因總量 100 毫克以下。\n中杯: 總糖量 50 克, 總熱量 216 大卡, 每杯咖啡因總量 100 毫克以下。\n糖量, 熱量及咖啡因含量皆以最高值標示。\n產地: 台灣, 越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塑膠袋 Plastic Bag",
+            "description": "因應環保署公告, 不主動免費提供塑膠袋。請額外加購塑膠袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

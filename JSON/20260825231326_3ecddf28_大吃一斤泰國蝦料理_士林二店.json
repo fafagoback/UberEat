@@ -1,0 +1,336 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A4%A7%E5%90%83%E4%B8%80%E6%96%A4%E6%B3%B0%E5%9C%8B%E8%9D%A6%E6%96%99%E7%90%86-%E5%A3%AB%E6%9E%97%E4%BA%8C%E5%BA%97/iSCU6vtqUsSKAq2FOjrj7Q",
+  "name": "大吃一斤泰國蝦料理 士林二店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區大南路132號",
+    "addressLocality": "Taipei",
+    "addressRegion": "APAC",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.089658409534238,
+    "longitude": 121.52254910681214
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 4
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Stir​ Fried",
+    "Rice Dishes",
+    "Meal Kit",
+    "Seafood"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤蝦👍 Grilled Shrimp👍",
+            "description": "一份((約12-14隻)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油蒜頭蝦😋 Shrimp with Cream Sauce and Garlic😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒蝦👍 Pepper Shrimp👍",
+            "description": "一份((約12-14隻)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬蝦😋 Lemon Shrimp😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜蓉鮑魚👍",
+            "description": "一份，份量5顆\n圖片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽焗吳郭魚👍 Salt-Baked Snapper👍",
+            "description": "整尾鹽焗吳郭魚。外皮微焦鹹香，魚肉細嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油蝦😋 Sesame Oil Shrimp😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒鳳螺👍 Pepper Snails👍",
+            "description": "一份鳳螺，胡椒調味，帶殼上桌。",
+            "offers": {
+              "@type": "Offer",
+              "price": "380.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣蝦😋 Signature Hot and Spicy Shrimp😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢 Notice📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點（以及口味），請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 💯Popular Items💯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "胡椒鳳螺👍 Pepper Snails👍",
+            "description": "一份鳳螺，胡椒調味，帶殼上桌。",
+            "offers": {
+              "@type": "Offer",
+              "price": "380.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽焗吳郭魚👍 Salt-Baked Snapper👍",
+            "description": "整尾鹽焗吳郭魚。外皮微焦鹹香，魚肉細嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤蝦👍 Grilled Shrimp👍",
+            "description": "一份((約12-14隻)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒蝦👍 Pepper Shrimp👍",
+            "description": "一份((約12-14隻)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜蓉鮑魚👍",
+            "description": "一份，份量5顆\n圖片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤大香腸👍",
+            "description": "大香腸是台灣最知名的夜市小吃。\n經典的台式香腸，口感紮實，搭配新鮮蒜頭是最熟悉的在地美味",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤肥腸👍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泰國蝦料理 🦐Thai Prawn Dishes🦐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌麻辣蝦😋 Signature Hot and Spicy Shrimp😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油蒜頭蝦😋 Shrimp with Cream Sauce and Garlic😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油蝦😋 Sesame Oil Shrimp😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬蝦😋 Lemon Shrimp😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒鳳螺😋 Pepper Snails😋",
+            "description": "保証大顆20顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤蝦😋 Grilled Shrimp😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒蝦😋 Pepper Shrimp😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙蝦(附芥末醬油包)😋 Blanched Shrimp (with Mustard Soy Sauce Packet)😋",
+            "description": "一份.保証足12兩（大小不一定.約9支至11支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷盤系列 ❄️Cold Dishes Series❄️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "關廟涼筍💖",
+            "description": "特別選用關廟涼筍，口感清脆，天然清甜回甘，簡單極致美味，是炎炎夏日的低卡消暑聖品",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚蛋沙拉💖",
+            "description": "是一道經典中的冷盤開胃菜。\n口感外酥內軟，搭配香甜滑順的台式美乃滋，達到完美的平衡",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

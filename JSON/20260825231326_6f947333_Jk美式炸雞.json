@@ -1,0 +1,522 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/jk%E7%BE%8E%E5%BC%8F%E7%82%B8%E9%9B%9E/KoPdAFdPWpmGEcxbubIVmg",
+  "name": "Jk美式炸雞",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "德行西路107號",
+    "addressLocality": "士林區",
+    "addressRegion": "台北市",
+    "postalCode": "111079",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.10418,
+    "longitude": 121.52098
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Burgers",
+    "American",
+    "Sandwiches"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢 Notice📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點, 請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定唷😍",
+            "description": "滿意請留下五星評價；若有餐點缺漏、溫度或品質問題，請於收到當下透過平台訊息聯繫，我們會即時協助處理，謝謝支持。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選✨ Popular Items✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雙色地瓜球👍 Assorted Sweet Potato Balls👍",
+            "description": "香甜雙色地瓜球, 外酥內軟, 帶來獨特的口感享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥圈👍 Onion Rings👍",
+            "description": "5 個。香脆洋蔥圈, 外酥內嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無骨雞腿排👍 Boneless Chicken Thigh👍",
+            "description": "多汁無骨雞腿排, 精選調味, 口感鮮嫩, 讓您回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "JK  10 塊炸雞混搭桶👍 JK 10 Pieces Deep-Fried Chicken Mix and Match Bucket 👍",
+            "description": "（公司、家庭）派對🎉聚餐首選🎉",
+            "offers": {
+              "@type": "Offer",
+              "price": "611.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點😍 A La Carte😍",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮美雞翅🍗 Chicken Wing🍗",
+            "description": "金黃酥脆雞翅，外酥內嫩，口口多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吮指雞腿🍗 Chicken Drumstick🍗",
+            "description": "金黃香脆雞腿，外酥內嫩，肉質多汁，吮指回味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "63.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金雞塊🍗 Golden Chicken Thigh🍗",
+            "description": "金黃酥脆雞塊, 外酥內嫩, 越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "63.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥脆雞排🍗 Crispy Chicken Chop🍗",
+            "description": "特製醃料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "102.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐類🍱 Combo🍱",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "A 餐🍱 Combo A🍱",
+            "description": "含雞塊及雞翅。附 1 種點心及 1 種飲料。飲料甜度及冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "182.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B 餐🍱 Combo B🍱",
+            "description": "含雞塊及雞腿。附 1 種點心及 1 種飲料。飲料甜度及冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "C 餐🍱 Combo C🍱",
+            "description": "含雞塊, 雞翅及雞腿。附 1 種點心及 1 種飲料。飲料甜度及冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "236.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "JK 雙享餐🍱 JK Sharing Meal for Two🍱",
+            "description": "含雞腿 2 塊, 雞塊 2 塊及雞翅 2 塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "325.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "JK 8 塊炸雞混搭桶🍱 JK 8 Pieces Deep-Fried Chicken Mix and Match Bucket🍱",
+            "description": "8塊混搭部位炸雞，外酥內嫩，桶裝分享首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "496.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "JK 10 塊炸雞混搭桶🍱 JK 10 Pieces Deep-Fried Chicken Mix and Match Bucket🍱",
+            "description": "10塊炸雞混搭桶，部位隨機搭配，外酥內嫩，桶裝分享，派對聚餐首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "611.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "D 餐🍱 Combo D🍱",
+            "description": "含 2 種點心。附 1 種大瓶飲料。飲料甜度及冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "E 餐🍱 Combo E🍱",
+            "description": "含 3 種點心。附 1 種大瓶飲料。飲料甜度及冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "203.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "風味翅🤎 Flavored Chicken Wings🤎",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "JK 韓式風味烤肉醬翅🤎 JK Chicken Wing with Korean Flavored Barbecue Sauce🤎",
+            "description": "半份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "JK 鹹蛋風味醬翅🤎 JK Chicken Wing with Salty Yolk🤎",
+            "description": "半份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "JK 蜂蜜芥末風味醬翅🤎 JK Chicken Wing with Honey Mustard🤎",
+            "description": "半份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "JK 元氣塔塔風味醬翅🤎 JK Chicken Wing with Tartar Sauce🤎",
+            "description": "半份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "153.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "點心類💗 Snacks💗",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣🥖 Tempura🥖",
+            "description": "台式甜不辣, 魚漿製成, 金黃酥香, 外酥內Q。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "波霸脆薯🍟 Crispy Fries🍟",
+            "description": "厚切大薯條，金黃酥脆，外酥內軟，口感紮實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "深海鱈魚條🍟 Cod Fish Sticks🍟",
+            "description": "3 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸🟡 Cuttlefish Ball🟡",
+            "description": "3顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煉乳銀絲捲🌯 Silver Thread Roll with Condensed Milk🌯",
+            "description": "金黃銀絲捲，外酥內軟，淋上煉乳，香甜不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克雞塊🫓 Chicken Nugget🫓",
+            "description": "5 塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味銀絲捲🌯 Original Silver Thread Roll🌯",
+            "description": "層層麵絲的原味銀絲捲，麵香足、口感鬆軟，簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷米花😻 Popcorn Squid😻",
+            "description": "一口大小魷魚塊, 金黃酥脆, 外酥內Q彈, 香氣十足, 共享點心首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司條🧀 Cheese Stick🧀",
+            "description": "4條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司薯球🟡 Cheese Tater Tots🟡",
+            "description": "5顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬鈴薯球🟡 Tater Tots🟡",
+            "description": "金黃香脆馬鈴薯球, 外酥內綿, 一口大小。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料類🥤 Drinks🥤",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可樂 200 毫升🥤 Coke 200 ML🥤",
+            "description": "甜度固定。冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪碧 200 毫升🥤 Sprite 200 ML🥤",
+            "description": "甜度固定。冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬茶200毫升🥤 Lemon Tea 200 ML🥤",
+            "description": "250 毫升。甜度固定。冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可樂 1250 毫升🥤 Coke 1250 ML🥤",
+            "description": "甜度固定。冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪碧 1250 毫升🥤 Sprite 1250 ML🥤",
+            "description": "甜度固定。冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果蘇打🥤 Apple Soda🥤",
+            "description": "1250 毫升。甜度固定。冰量固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原萃無糖綠茶1250毫升🥤 Sugar-Free Green Tea 1250 ML🥤",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "醬包類🍶 Sauce Pack🍶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣醬🍶 Thai Sour and Spicy Sauce🍶",
+            "description": "泰式風味酸辣沾醬，酸香與辣勁平衡，開胃提味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式歐霸烤肉醬🍶 Korean Barbecue Sauce🍶",
+            "description": "韓式風味烤肉醬，醬包一份，可作沾醬或拌醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜芥末醬🍶 Honey Mustard Sauce🍶",
+            "description": "蜂蜜與芥末調和成金黃醬汁，甜香均衡，質地濃滑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "元氣塔塔醬🍶 Tartar Sauce🍶",
+            "description": "經典塔塔醬，質地濃滑、風味清新，適合搭配炸物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金鹹蛋黃醬🍶 Golden Salty Yolk🍶",
+            "description": "金黃濃稠、鹹香滑順的鹹蛋黃醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

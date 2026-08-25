@@ -1,0 +1,116 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9B%99%E5%9F%8E%E8%A1%97%E5%A4%9C%E5%B8%82-%E6%99%B4%E5%85%89%E8%87%AD%E8%B1%86%E8%85%90/XAlVbhroW-GtyKMLdmXYOg",
+  "name": "雙城街夜市 晴光臭豆腐",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shuang Cheng St. 17-2",
+    "addressLocality": "Zhongshan District",
+    "addressRegion": "Taipei City",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0645988,
+    "longitude": 121.5242932
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 700
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Street Food",
+    "Stinky Tofu"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "臭豆腐",
+            "description": "酥炸臭豆腐，外酥內嫩，搭配台式泡菜與醬汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合及臭豆腐套餐",
+            "description": "內含麻辣臭豆腐、鴨血、酥炸臭豆腐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血湯及臭豆腐套餐",
+            "description": "豬血湯一碗，搭配炸臭豆腐一份，鋪台式泡菜，附沾醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合套餐",
+            "description": "內含麻辣臭豆腐、鴨血。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血湯",
+            "description": "滑嫩豬血、蔥段與清爽湯底",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腐",
+            "description": "滑嫩豆腐、椒麻香濃，麻中帶辣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血",
+            "description": "滑嫩鴨血、椒麻香濃，麻中帶辣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

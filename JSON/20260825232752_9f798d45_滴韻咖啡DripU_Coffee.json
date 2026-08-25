@@ -1,0 +1,630 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%BB%B4%E9%9F%BB%E5%92%96%E5%95%A1dripu-coffee/jnspOznBUxqSAmL3tBbkbw",
+  "name": "滴韻咖啡DripU Coffee",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區北安路621巷17號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.082994,
+    "longitude": 121.547998
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Coffee and Tea",
+    "Cafe",
+    "Drinks",
+    "Desserts"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典美式 Classic Americano",
+            "description": "無糖。不提供糖包以及加糖服務。\n可依據喜好選擇咖啡豆：\n。果酸清爽感：中淺焙（初韻配方）\n。可可苦韻感：中深焙（薇薇特南果）\n\nSugar-free. Sugar bags and sugaring services are not provided.\n\nYou can choose coffee beans according to your preferences:\n. Medium-Light roasting (First Note Blend)\n. Medium-Dark roasting ( Huehuetenango )",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典拿鐵 Classic Latte",
+            "description": "無糖。不額外提供加糖與糖包服務。\n\n鮮奶與咖啡融合，突顯咖啡濃郁堅果香氣。\nSugar-free. No additional sugar and sugar package services are provided.\nThe combination of fresh milk and coffee highlights the rich nutty aroma of coffee.",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青雲拿鐵 [抹茶] Matcha Latte",
+            "description": "使用福岡八女抹茶，濃郁微苦的抹茶，搭配少許台灣在地小農頂級龍眼蜜，層次豐富融合！\nUsing Fukuoka Yame Matcha, rich and slightly bitter matcha, with a little Taiwan's local small farmer's top longan honey, rich layers of integration!",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火岩拿鐵 [焙茶] Hojicha Latte",
+            "description": "使用台灣焙茶，炭焙香味微弱苦感，搭配少許台灣在地小農頂級龍眼蜜，提升焙茶香氣與甜味，融合咖啡更佳濃郁！\nUsing Taiwan Hojicha , the charcoal roasting fragrance is weak and bitter, with a little Taiwan's local small farmer's top longan honey, to improve the aroma and sweetness of roasted tea, and combine coffee to make it richer!",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果肉桂拿鐵  Cinnamon Latte with Apple",
+            "description": "{ 人氣NO.4 }\n吃的到香甜蘋果果肉，與肉桂絕妙的組合，就像是用喝蘋果派！！『會附粗吸管搭配享用』。\n{ TOP.4 }\nThe wonderful combination of sweet apple pulp and cinnamon is like drinking apple pie!! It will be accompanied by a thick straw to enjoy.",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑泡美式  Cola Americano",
+            "description": "{ 限冰飲 }\n快樂水(可樂)搭配咖啡，適合在午後享受特別的味覺體驗！\n{ Only Ice }\nHappy water (Coca Cola) with coffee is suitable for enjoying a special taste experience in the afternoon!",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖脆脆拿鐵  Caramel Crunch Latte",
+            "description": "手工自製香脆椪糖，是一款融合香甜焦糖與濃郁咖啡, 享受生活苦中帶甜的樂趣。\nHandmade crispy candy is a combination of sweet caramel and rich coffee, and you can enjoy the bittersweet joy of life.",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金麥蜂釀美式  Honey with Hop Americano",
+            "description": "{ 人氣NO.1 } 清爽蜜香中藏著淡淡麥香，綿密泡沫搭配自製椪糖，是一款清爽香甜的咖啡特調！！\n{ TOP 1 } There is a faint wheat fragrance hidden in the refreshing honey fragrance, and the dense foam is matched with self-made sugar, which is a refreshing and sweet coffee special!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馥列白  Flat White",
+            "description": "{ 限熱飲 }\n馥列白相較於拿鐵奶泡在更薄，咖啡味會較香濃！\n{ Only Hot }\nFlat White with light milk foam, and the coffee flavor will be stronger than the Latte!",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡  Sicilian Coffee",
+            "description": "{ 限冰飲 }\n夏天喝最舒適的咖啡！嚴選黃檸檬，獨特香氣搭配台灣在地小農頂級龍眼蜜 ; 黃金比例調配，不酸苦！不甜膩！\n\n{ Only Ice Drinks }\nDrink the most comfortable coffee in summer! Strictly selected yellow lemon, unique aroma with Taiwan's local small farmer's top longan honey; golden ratio mix, not sour and bitter!",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "流沙美式 Quicksand Americano",
+            "description": "經過蒸氣打發後，口感較溫潤絲滑。\nAfter being steamed and aerated, the texture becomes smoother and more velvety.",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可摩卡咖啡 Caffe Mocha",
+            "description": "{ 推薦給可可愛好者 }\n濃郁可可香，每一口都能享受到濃郁的咖啡與可可的味覺饗宴！！\n{ Recommended for cocoa lovers }\nRich cocoa fragrance, every bite can enjoy the taste feast of rich coffee and cocoa!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖伯爵拿鐵  Earl Grey Latte with Brown Sugar",
+            "description": "{ 人氣NO.2 }\n醇香的伯爵茶與香濃的牛奶和香甜的紅糖完美融合, 帶來令人愉悅, 香氣四溢的拿鐵體驗。\n{ TOP. 2 }\nThe mellow Earl Grey tea blends perfectly with fragrant milk and sweet brown sugar, bringing a pleasant, fragrant latte experience.",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選🎉 Popular Items🎉",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "青梅紫蘇國寶茶 Rooibos Tea with Greengage and Perilla",
+            "description": "{ 無咖啡因 } 清爽的南非路易波士茶, 混合酸甜的青梅和芳香的紫蘇葉, 帶來獨特的風味體驗。\n{Caffeine-free}Refreshing South African Louis Bos tea, mixed with sweet and sour green plums and aromatic perilla leaves, brings a unique flavor experience.",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "流沙美式 Quicksand Americano",
+            "description": "經過蒸氣打發後，口感較溫潤絲滑。\nAfter being steamed and aerated, the texture becomes smoother and more velvety.",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金麥蜂釀美式  Honey with Hop Americano",
+            "description": "{ 人氣NO.1 } 清爽蜜香中藏著淡淡麥香，綿密泡沫搭配自製椪糖，是一款清爽香甜的咖啡特調！！\n{ TOP 1 } There is a faint wheat fragrance hidden in the refreshing honey fragrance, and the dense foam is matched with self-made sugar, which is a refreshing and sweet coffee special!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖伯爵拿鐵  Earl Grey Latte with Brown Sugar",
+            "description": "{ 人氣NO.2 }\n醇香的伯爵茶與香濃的牛奶和香甜的紅糖完美融合, 帶來令人愉悅, 香氣四溢的拿鐵體驗。\n{ TOP. 2 }\nThe mellow Earl Grey tea blends perfectly with fragrant milk and sweet brown sugar, bringing a pleasant, fragrant latte experience.",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖脆脆拿鐵  Caramel Crunch Latte",
+            "description": "手工自製香脆椪糖，是一款融合香甜焦糖與濃郁咖啡, 享受生活苦中帶甜的樂趣。\nHandmade crispy candy is a combination of sweet caramel and rich coffee, and you can enjoy the bittersweet joy of life.",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典咖啡系列 Classic Coffee",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典美式 Classic Americano",
+            "description": "無糖。不提供糖包以及加糖服務。\n可依據喜好選擇咖啡豆：\n。果酸清爽感：中淺焙（初韻配方）\n。可可苦韻感：中深焙（薇薇特南果）\n\nSugar-free. Sugar bags and sugaring services are not provided.\n\nYou can choose coffee beans according to your preferences:\n. Medium-Light roasting (First Note Blend)\n. Medium-Dark roasting ( Huehuetenango )",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典拿鐵 Classic Latte",
+            "description": "無糖。不額外提供加糖與糖包服務。\n\n鮮奶與咖啡融合，突顯咖啡濃郁堅果香氣。\nSugar-free. No additional sugar and sugar package services are provided.\nThe combination of fresh milk and coffee highlights the rich nutty aroma of coffee.",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡布奇諾  Cappuccino",
+            "description": "{ 限熱飲 }\n卡布的厚奶泡，讓奶香味與咖啡交織出更濃厚香醇的味覺體驗！\n\n{ Limited to hot drinks }\nCappuccino thick milk foam makes the milk fragrance and coffee intertwine to have a richer and more mellow taste experience!",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馥列白  Flat White",
+            "description": "{ 限熱飲 }\n馥列白相較於拿鐵奶泡在更薄，咖啡味會較香濃！\n{ Only Hot }\nFlat White with light milk foam, and the coffee flavor will be stronger than the Latte!",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "流沙美式 Quicksand Americano",
+            "description": "經過蒸氣打發後，口感較溫潤絲滑。\nAfter being steamed and aerated, the texture becomes smoother and more velvety.",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特調咖啡系列 House Special Coffee",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "柚香美式  Grapefruit Americano",
+            "description": "推薦給喜歡酸甜感咖啡的人！清爽解暑！\n可以吃的到柚子口感，所以『會附粗吸管搭配享用』。\nRecommended for people who like sweet and sour coffee! Refreshing and Cooling!\nYou can eat the taste of grapefruit, so 'you can enjoy it with a thick straw'.",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑泡美式  Cola Americano",
+            "description": "{ 限冰飲 }\n快樂水(可樂)搭配咖啡，適合在午後享受特別的味覺體驗！\n{ Only Ice }\nHappy water (Coca Cola) with coffee is suitable for enjoying a special taste experience in the afternoon!",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡  Sicilian Coffee",
+            "description": "{ 限冰飲 }\n夏天喝最舒適的咖啡！嚴選黃檸檬，獨特香氣搭配台灣在地小農頂級龍眼蜜 ; 黃金比例調配，不酸苦！不甜膩！\n\n{ Only Ice Drinks }\nDrink the most comfortable coffee in summer! Strictly selected yellow lemon, unique aroma with Taiwan's local small farmer's top longan honey; golden ratio mix, not sour and bitter!",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金麥蜂釀美式  Honey with Hop Americano",
+            "description": "{ 人氣NO.1 } 清爽蜜香中藏著淡淡麥香，綿密泡沫搭配自製椪糖，是一款清爽香甜的咖啡特調！！\n{ TOP 1 } There is a faint wheat fragrance hidden in the refreshing honey fragrance, and the dense foam is matched with self-made sugar, which is a refreshing and sweet coffee special!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特調拿鐵系列  House Special Latte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可可摩卡咖啡 Caffe Mocha",
+            "description": "{ 推薦給可可愛好者 }\n濃郁可可香，每一口都能享受到濃郁的咖啡與可可的味覺饗宴！！\n{ Recommended for cocoa lovers }\nRich cocoa fragrance, every bite can enjoy the taste feast of rich coffee and cocoa!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果肉桂拿鐵  Cinnamon Latte with Apple",
+            "description": "{ 人氣NO.4 }\n吃的到香甜蘋果果肉，與肉桂絕妙的組合，就像是用喝蘋果派！！『會附粗吸管搭配享用』。\n{ TOP.4 }\nThe wonderful combination of sweet apple pulp and cinnamon is like drinking apple pie!! It will be accompanied by a thick straw to enjoy.",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖伯爵拿鐵  Earl Grey Latte with Brown Sugar",
+            "description": "{ 人氣NO.2 }\n醇香的伯爵茶與香濃的牛奶和香甜的紅糖完美融合, 帶來令人愉悅, 香氣四溢的拿鐵體驗。\n{ TOP. 2 }\nThe mellow Earl Grey tea blends perfectly with fragrant milk and sweet brown sugar, bringing a pleasant, fragrant latte experience.",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖脆脆拿鐵  Caramel Crunch Latte",
+            "description": "手工自製香脆椪糖，是一款融合香甜焦糖與濃郁咖啡, 享受生活苦中帶甜的樂趣。\nHandmade crispy candy is a combination of sweet caramel and rich coffee, and you can enjoy the bittersweet joy of life.",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青雲拿鐵 [抹茶] Matcha Latte",
+            "description": "使用福岡八女抹茶，濃郁微苦的抹茶，搭配少許台灣在地小農頂級龍眼蜜，層次豐富融合！\nUsing Fukuoka Yame Matcha, rich and slightly bitter matcha, with a little Taiwan's local small farmer's top longan honey, rich layers of integration!",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火岩拿鐵 [焙茶] Hojicha Latte",
+            "description": "使用台灣焙茶，炭焙香味微弱苦感，搭配少許台灣在地小農頂級龍眼蜜，提升焙茶香氣與甜味，融合咖啡更佳濃郁！\nUsing Taiwan Hojicha , the charcoal roasting fragrance is weak and bitter, with a little Taiwan's local small farmer's top longan honey, to improve the aroma and sweetness of roasted tea, and combine coffee to make it richer!",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典手沖系列  Classic Handmade",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "哥倫比亞 娜玲瓏 花境 藝妓 / 水洗 / 淺焙（茉莉花 / 薰衣草 / 百香果 / 水蜜桃 / 檸檬草）",
+            "description": "Origin : Colombia Washed Nariño Floral Station Geisha\nVariety : Light\nProcess : Washed\nFlavor Notes : Jasmine / Lavender / Passion Fruit / Peach",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "瓜地馬拉 薇薇特南果 / 水洗 / 中深焙（堅果, 黑巧克力, 牛奶糖及微弱煙燻味）",
+            "description": "Huehuetenango Guatemala / Washed / Medium-Dark\n\nFlavor Notes : Nuts, dark chocolate, caramel, subtle smokiness.",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "初韻配方 / 中淺焙 （ 柳橙、烏龍茶、牛奶巧克力、平衡柔順）",
+            "description": "產區：巴布雅 / 宏都拉斯 / 衣索比亞\n\nOrigin : Papua / Honduras / Ethiopia\nFlavor Notes : Orange, oolong tea, milk chocolate",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "衣索比亞  西達摩 桃子甜心/桃可可 G1 / 日曬 / 中淺焙（水蜜桃 / 可爾必思 / 橙花 ）",
+            "description": "Origin : Ethiopia Sidama Twakok G1\nProcess : Natural\nRoast : Medium-Light\nFlavor Notes : Peach / Calpis / Orange Blossom",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "哥倫比亞 金迪歐 熱帶水果/ 酒香日曬處理 / 淺焙（百香果 / 鳳梨 / 芒果 / 蘭姆酒尾韻）",
+            "description": "Origin : Colombia Quindio Tropical\nVariety : Light\nProcess : Winey Natural\nFlavor Notes : Passion Fruit / Pineapple / Mango",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "衣索比亞 古吉 塔莎亞/紫風鈴 G1 / 日曬 / 淺焙（藍莓果醬 / 葡萄軟糖 / 水蜜桃 / 佛手柑香氣)",
+            "description": "Origin : Ethiopia Guji Dasaya G1\nVariety : Light\nProcess : Natural\nFlavor Notes : Blueberry Jam / Grape Gummy / Peach / Bergamot",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍵茶及鮮奶茶  Tea and Fresh Milk Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "青梅紫蘇國寶茶 Rooibos Tea with Greengage and Perilla",
+            "description": "{ 無咖啡因 } 清爽的南非路易波士茶, 混合酸甜的青梅和芳香的紫蘇葉, 帶來獨特的風味體驗。\n{Caffeine-free}Refreshing South African Louis Bos tea, mixed with sweet and sour green plums and aromatic perilla leaves, brings a unique flavor experience.",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洛神蘋果肉桂茶 Cinnamon Tea with Apple and Roselle",
+            "description": "{ 無咖啡因 }\n洛神與蘋果醬帶著酸甜的果肉口感，與肉桂溫潤的香氣結合，舒緩溫暖療癒！『會附粗吸管享用』\n{ Caffeine-free }\nRoselle and apple sauce have a sweet and sour fleshy taste, combined with the warm aroma of cinnamon, soothing, warm and healing! It will be served with a thick straw to enjoy'",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金麥蜂釀綠茶  Honey with Hop Green Tea",
+            "description": "清爽蜜香中藏著淡淡麥香，冰的喝起來像啤酒的綠茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "英式皇家伯爵茶  England Royal Earl Grey Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金麥蜂釀鮮奶綠 Honey with Hop Green Milk Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皇家伯爵鮮奶茶 Royal Earl Grey Fresh Milk Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國柚子茶 Korean Yuzu Tea",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬飲 Honey Lemon Drink",
+            "description": "{ 消暑冰飲NO.1 }\n嚴選黃檸檬，與台灣在地小農頂級龍眼蜜，清爽消暑！黃金比例讓人愛不釋手。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🥛歐蕾系列  Au Lait",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蘋果歐蕾 Apple Au Lait",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜歐蕾 Honey Au Lait",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沖繩黑糖歐蕾 Okinawa Brown Sugar Au Lait",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶歐蕾 Matcha Au Lait",
+            "description": "『無咖啡的抹茶歐蕾，需要咖啡請選擇青雲拿鐵。』\n使用福岡八女抹茶，濃郁微苦的抹茶，搭配少許台灣在地小農頂級龍眼蜜！\n[Matcha Au Lait without coffee, if you need coffee, please choose Matcha Latte.]\n\nUsing Fukuoka Yame Matcha, rich and slightly bitter matcha, with a little Taiwan's local small farmer's top longan honey, rich layers of integration!",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙茶歐蕾  Hojicha Au Lait",
+            "description": "『無咖啡的焙茶歐蕾，需要咖啡請選擇「火岩拿鐵」。』\n使用台灣焙茶，炭焙香味微弱苦感，搭配少許台灣在地小農頂級龍眼蜜，提升焙茶香氣與甜味，融合咖啡更佳濃郁！\n[Hojicha Au Lait without coffee, please choose \"Hojicha Latte\" if you need coffee.'\n\nUsing Taiwan Hojicha , the charcoal roasting fragrance is weak and bitter, with a little Taiwan's local small farmer's top longan honey, to improve the aroma and sweetness of roasted tea, and combine coffee to make it richer!",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可歐蕾 Cocoa Au Lait",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍰每日限量手作甜點 Handmade Dessert",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "迷你布朗尼 Brownie",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

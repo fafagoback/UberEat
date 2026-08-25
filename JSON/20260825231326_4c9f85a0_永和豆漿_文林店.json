@@ -1,0 +1,689 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%B0%B8%E5%92%8C%E8%B1%86%E6%BC%BF-%E6%96%87%E6%9E%97%E5%BA%97/3B8CWm98R_WmzP22Ndi4OA",
+  "name": "永和豆漿 文林店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "文林路526號",
+    "addressLocality": "士林區",
+    "addressRegion": "台北市",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.09719,
+    "longitude": 121.52412
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 10000
+  },
+  "servesCuisine": [
+    "Breakfast and Brunch",
+    "Soy Milk"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味菜脯飯糰    Dried Radish Onigiri",
+            "description": "肉鬆，原味菜脯，油條 Floss, preserved radish, fried bread sticks\n可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋餅 Original Egg Pancake Roll",
+            "description": "可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味菜脯飯糰 Spicy Preserved Radish Onigiri",
+            "description": "肉鬆，辣味菜脯，油條\nFloss, spicy preserved radish, fried bread stick\n可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖豆漿 Sugar-Free Soy Milk",
+            "description": "本店使用非基改黃豆，當日製作，安心首選。\n500ml\nUsing non-GMO soybeans, on the same day.",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米蛋餅 Egg Pancake with Corn",
+            "description": "可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餅包油條 Egg Pancake Roll with Bread Stick",
+            "description": "可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆漿 Soy Milk",
+            "description": "本店使用非基改黃豆，當日製作，安心首選。\n500ml\nUsing non-GMO soybeans, on the same day.",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋餅 Egg Pancake with Tuna",
+            "description": "使用自製鮪魚醬(內有鮪魚、洋蔥、沙拉醬、黑胡椒粉、黃芥茉醬)\n可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米漿 Rice and Peanut Milk",
+            "description": "甜度固定\n成份有花生\n500ml\nfixed sweetness\ningredients include peanuts",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇醬鐵板麵 Mushroom Sauce Teppanyaki Noodles",
+            "description": "附荷包蛋 Add a poached egg",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒鐵板麵 Black Pepper Teppanyaki Noodles",
+            "description": "口味：微辣，附荷包蛋 .Taste: Spicy.Add a poached egg",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕 Radish Cake",
+            "description": "港式風味蘿蔔糕",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶豆漿(冰)   Black Tea & Soy Milk(Ice)",
+            "description": "紅茶+豆漿(冰)   Black Tea & Soy Milk(Ice)",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁鐵板麵 Kung Pao Chicken Teppanyaki Noodles",
+            "description": "口味：微辣，附荷包蛋一顆 \nAdd a poached egg.Taste: Spicy",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工大韭菜盒 Pan-fried Leek Dumpling",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋貼 Pan-Fried Dumpling",
+            "description": "一份5個",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥香紅茶(冰) Wheat Black Tea(Ice)",
+            "description": "甜度固定 Fixed Sweetness\n500ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆漿 Soy Milk",
+            "description": "本店使用非基改黃豆，當日製作，安心首選。\n500ml\nUsing non-GMO soybeans, on the same day.",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌鹹豆漿(熱) Signature Salty Soy Milk(Hot)",
+            "description": "內容物：內含配料有芥頭菜、蔥花、蝦皮、海苔素鬆、香油。\n提供素食。\nContents: mustard greens, green onion, dried shrimps, seaweed and pine, sesame oil.\nVegetarian available.",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣肉醬蘿蔔糕 Radish Cake with Chili Con carne",
+            "description": "口味：小辣",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小籠湯包 Pork Soup Bun",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋煎蘿蔔糕 Radish Cake Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品 Drinks 現磨現做",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "無糖豆漿 Sugar-Free Soy Milk",
+            "description": "本店使用非基改黃豆，當日製作，安心首選。\n500ml\nUsing non-GMO soybeans, on the same day.",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆漿 Soy Milk",
+            "description": "本店使用非基改黃豆，當日製作，安心首選。\n500ml\nUsing non-GMO soybeans, on the same day.",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶豆漿(冰)   Black Tea & Soy Milk(Ice)",
+            "description": "紅茶+豆漿(冰)   Black Tea & Soy Milk(Ice)",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米漿 Rice and Peanut Milk",
+            "description": "甜度固定\n成份有花生\n500ml\nfixed sweetness\ningredients include peanuts",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥香紅茶(冰) Wheat Black Tea(Ice)",
+            "description": "甜度固定 Fixed Sweetness\n500ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌鹹豆漿(熱) Signature Salty Soy Milk(Hot)",
+            "description": "內容物：內含配料有芥頭菜、蔥花、蝦皮、海苔素鬆、香油。\n提供素食。\nContents: mustard greens, green onion, dried shrimps, seaweed and pine, sesame oil.\nVegetarian available.",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "混合漿(熱) Assorted Milk(Hot)",
+            "description": "熱清漿+熱米漿\nSoy Milk & Rice-Peanut Milk (Hot)\n500ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯糰 Onigiri (可加德腸/豬排 /燻雞/培根/蔥蛋/起司)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味菜脯飯糰    Dried Radish Onigiri",
+            "description": "肉鬆，原味菜脯，油條 Floss, preserved radish, fried bread sticks\n可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味菜脯飯糰 Spicy Preserved Radish Onigiri",
+            "description": "肉鬆，辣味菜脯，油條\nFloss, spicy preserved radish, fried bread stick\n可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜味飯糰(花生粉) Sweet Onigiri (Peanut Powder)",
+            "description": "花生粉、油條 Peanut Flour, Fried Bread Stick\n可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素食飯糰 Vegetarian Onigiri",
+            "description": "素肉鬆，原味菜脯，油條\nvegetarian floss, preserved radish, fried bread sticks\n可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蛋餅 Egg Pancake Roll (可加肉鬆/燻雞/培根/起司)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋餅 Original Egg Pancake Roll",
+            "description": "可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米蛋餅 Egg Pancake with Corn",
+            "description": "可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餅包油條 Egg Pancake Roll with Bread Stick",
+            "description": "可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋餅 Egg Pancake with Tuna",
+            "description": "使用自製鮪魚醬(內有鮪魚、洋蔥、沙拉醬、黑胡椒粉、黃芥茉醬)\n可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "饅頭 Bun (可加豬排/蔥蛋/肉鬆/燻雞/培根/起司)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑糖饅頭 Brown Sugar Bun",
+            "description": "可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白饅頭 Plain Bun",
+            "description": "可加配料 can be added",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蘿蔔糕 Radish Cake",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕 Radish Cake",
+            "description": "港式風味蘿蔔糕",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋煎蘿蔔糕 Radish Cake Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣肉醬蘿蔔糕 Radish Cake with Chili Con carne",
+            "description": "口味：小辣",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小食 Snacks",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典油條 Bread Stick",
+            "description": "酥酥脆脆的炸油條，富有韌勁口感、越嚼越香。(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工大韭菜盒 Pan-fried Leek Dumpling",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋貼 Pan-Fried Dumpling",
+            "description": "一份5個",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小籠湯包 Pork Soup Bun",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋 Over Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花蛋 Scallion Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油素什錦油飯",
+            "description": "古早味全素麻油飯，素食阿嬤的私房料理，比葷菜還好吃，嚴選黑麻油、慢煸老薑，加上香菇絲、木耳絲、素肉絲、新鮮毛豆、枸杞，早齋的好選擇.",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鐵板麵 Teppanyaki Noodles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇醬鐵板麵 Mushroom Sauce Teppanyaki Noodles",
+            "description": "附荷包蛋 Add a poached egg",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒鐵板麵 Black Pepper Teppanyaki Noodles",
+            "description": "口味：微辣，附荷包蛋 .Taste: Spicy.Add a poached egg",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香辣肉醬鐵板麵  Spicy Meat Sauce Teppanyaki Noodles",
+            "description": "口味：小辣，內有附一顆蛋\nTaste: Spicy.Add a poached egg",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁鐵板麵 Kung Pao Chicken Teppanyaki Noodles",
+            "description": "口味：微辣，附荷包蛋一顆 \nAdd a poached egg.Taste: Spicy",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "糕餅 Crispy Pancake 純手工",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咖哩鹹酥餅 Crispy Pancake with Curry",
+            "description": "非素食\nnon vegetarian",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生甜酥餅 Crispy Pancake with Peanut",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻甜酥餅 Crispy Pancake with Sesame",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "活動專區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蛋煎蘿蔔糕 Radish Cake Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【活動品項】豆漿",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【活動品項】無糖豆漿",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

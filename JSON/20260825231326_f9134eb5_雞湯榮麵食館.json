@@ -1,0 +1,237 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9B%9E%E6%B9%AF%E6%A6%AE%E9%BA%B5%E9%A3%9F%E9%A4%A8/UXrD2OuTX--JVypr_WFgPA",
+  "name": "雞湯榮麵食館",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jin Zhou St. 14",
+    "addressLocality": "Zhongshan District",
+    "addressRegion": "Taipei City",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0602732,
+    "longitude": 121.5238202
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 4000
+  },
+  "servesCuisine": [
+    "Chinese",
+    "Exclusive to Eats"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "雞湯麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "老火百菇雞湯麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老火雪菜鱸魚雞湯麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加麵（一份）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "26.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞油飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "點心",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "剝皮辣椒大燒賣(3顆)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "146.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹黃大燒賣(3顆)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁大燒賣(3顆)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙拼大燒賣(蟹黃蝦仁各2顆)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "162.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香煎有機荷包蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "31.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸豆腐佐私房腐乳醬",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香拌醋溜小黃瓜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香拌醋溜黑木耳",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞油蒜拌高麗菜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻豬頭皮拌蒜苗",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "私房酥炸雞翅(4支)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "162.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三絲炸春捲佐私房腐乳醬(4捲)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣雞胗",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "86.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

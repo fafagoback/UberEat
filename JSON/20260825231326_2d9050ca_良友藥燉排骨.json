@@ -1,0 +1,259 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%89%AF%E5%8F%8B%E8%97%A5%E7%87%89%E6%8E%92%E9%AA%A8/WaDW44KgReKEGuBGch4D0g",
+  "name": "良友藥燉排骨",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 45, Section 3, Yanping North Road",
+    "addressLocality": "Datong District",
+    "addressRegion": "",
+    "postalCode": "103",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.06497077544427,
+    "longitude": 121.51116326732075
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 2000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Soup"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滷肉飯",
+            "description": "肥瘦相間豬肉丁與滷汁拌煮入味，香醇鹹香，淋在熱白飯，簡單卻耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉排骨",
+            "description": "多種藥材燉煮的深色湯頭，藥膳香氣濃厚；帶骨豬排骨軟嫩入味，喝湯啃肉一次滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "枸杞土虱",
+            "description": "枸杞與土虱魚塊入湯，深色湯頭，魚肉厚實，枸杞點綴更添香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焢肉便當",
+            "description": "厚切焢肉鋪在白飯上，肥瘦相間、軟嫩入味，配家常滷菜，簡單卻滿足的台式便當。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉湯河粉",
+            "description": "清香牛肉湯頭配滑順河粉，放上嫩切牛肉片、蔥花與洋蔥絲，口感清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞魯飯",
+            "description": "白飯鋪上雞肉絲與滷肉，淋滷汁，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "燙青菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "地瓜葉",
+            "description": "清燙地瓜葉，清爽可口",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滷菜頭",
+            "description": "白蘿蔔滷製，軟嫩入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷筍絲",
+            "description": "筍絲滷製入味，清脆不柴，鹹香爽口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙豬皮",
+            "description": "汆燙豬皮，口感Q彈，膠質豐富，呈現原味香與彈性",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精緻餐點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻油麵線",
+            "description": "台式經典麵點，麵線吸飽麻油香，醇厚香氣、滑順好入口",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連肉",
+            "description": "精選豬肝連，口感脆Q、嫩中帶勁，肉香鮮明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷豬腳",
+            "description": "皮Q彈、肉軟嫩，膠質豐富，滷香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉湯",
+            "description": "香醇湯頭，牛肉軟嫩，順口好喝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉湯河粉",
+            "description": "雞湯為底的河粉，搭配雞肉，簡單純粹的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "涼拌牛肉",
+            "description": "冷盤牛肉，口感爽口不油膩，突出牛肉香氣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉乾河粉",
+            "description": "雞肉拌Q彈河粉，乾拌醬香，口感順滑",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉乾河粉",
+            "description": "河粉、牛肉片，乾拌無湯，醬香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "便當",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬腳便當",
+            "description": "豬腳主菜便當，帶皮膠質豐富，口感Q彈",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,3150 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%BE%97%E6%84%8F%E9%80%9F%E9%A3%9F%E5%BA%97/rSH0v6BsRmy6uvyJNONCZA",
+  "name": "得意速食店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 86, Renmei Street",
+    "addressLocality": "Sanchong District",
+    "addressRegion": "",
+    "postalCode": "241",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0797722,
+    "longitude": 121.4860185
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 900
+  },
+  "servesCuisine": [
+    "American"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "新品上架",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞塊+薯條+熱狗+大飲紅茶",
+            "description": "三樣炸物一次到位：雞塊外酥內嫩、薯條金黃酥脆、熱狗口感紮實。附大杯飲品紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛角可頌+大飲（紅茶/奶茶）任選一種",
+            "description": "大杯飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "華納姿堡+棒棒薯+大飲（紅茶/奶茶）任選一種",
+            "description": "麵包夾厚蛋、火腿與洋蔥，附棒棒薯；大杯紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好吃到不行的滷肉飯(大)",
+            "description": "大份滷肉飯，白飯淋上滷至入味的豬肉與滷汁，肥瘦相間，拌著吃更香，更飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "棒棒腿×2",
+            "description": "雙支棒棒腿，雞小腿部位，適合加點或分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚蛋炒飯",
+            "description": "鮭魚、雞蛋與白飯拌炒，經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉蛋炒飯",
+            "description": "米飯、牛肉、蛋，拌炒成經典家常風味炒飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司棒",
+            "description": "金黃酥脆外皮，內層香濃起司，咬下牽絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超級大雞排+大飲（紅茶/奶茶）任選一種",
+            "description": "超大雞排一份，配大杯飲品（紅茶或奶茶）二選一，份量十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司芋泥球（3顆）",
+            "description": "酥炸金黃的芋泥球，內餡結合綿密芋泥與起司的香濃口感；外酥內軟，適合分享。每份3顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒泡麵",
+            "description": "Q彈泡麵與蝦仁拌炒，海味與麵香交融，香氣迷人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煎餃 10顆",
+            "description": "香煎至金黃，外皮微酥、口感飽滿",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "偽韓式炸雞",
+            "description": "致敬韓式風味的脆皮炸雞，外酥內嫩，香酥多汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水餃",
+            "description": "單點水餃，中式經典風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜起司蛋餅",
+            "description": "酸香泡菜搭配濃郁起司，包入蛋香餅皮，口感層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拔絲起司球",
+            "description": "金黃酥脆外皮，濃郁起司一咬牽絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒意麵",
+            "description": "經典鍋燒意麵，熱湯搭配彈牙麵體，暖胃飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬蛋炒飯",
+            "description": "米飯與雞蛋拌炒，加入XO醬提味，醬香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒油麵",
+            "description": "台式油麵拌入彈嫩蝦仁，炒出醬香鹹鮮；麵條Q彈順口，不油不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒泡麵",
+            "description": "多樣配料與泡麵一同拌炒，經典台式什錦口味",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩麵",
+            "description": "香濃咖哩醬拌麵，順口耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶鍋燒烏龍麵",
+            "description": "沙茶湯頭香濃，Q彈烏龍麵，經典鍋燒風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煎餃+大飲（紅茶/奶茶）任選一種",
+            "description": "金黃香酥煎餃，外酥內嫩；搭配大杯飲品（紅茶或奶茶任選）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒烏龍麵",
+            "description": "多樣配料拌炒的烏龍麵，口感層次豐富，香氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜鍋燒烏龍麵",
+            "description": "泡菜湯頭的鍋燒烏龍麵，Q彈麵體，酸香開胃，暖胃順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉炒鍋燒意麵+大飲（紅茶/奶茶）任選一種",
+            "description": "豬肉炒鍋燒意麵，麵條吸附醬香，順口耐吃；附大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉躁烏龍麵",
+            "description": "Q彈烏龍麵拌入香濃肉燥，麵條滑順帶勁，每口都是醬香與飽足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶豬排炒飯",
+            "description": "沙茶醬香炒飯，搭配豬排，滿滿台式鹹香",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋炒飯",
+            "description": "蝦仁、炒蛋與白飯拌炒，鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬水餃",
+            "description": "水餃佐XO醬，醬香濃郁，層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溫暖身心靈的鮮肉鹹湯圓湯（5顆）",
+            "description": "Q彈糯米湯圓包鮮肉餡，熱湯暖胃，鹹香順口；每份5顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷米花＋薯條＋小肉豆+大飲",
+            "description": "炸物三拼，含魷米花、薯條、小肉豆，附大杯飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超級大雞排+可樂",
+            "description": "超級大雞排一份，金黃酥脆、外酥內嫩；搭配可樂一杯，氣泡爽口，份量十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶鍋燒意麵",
+            "description": "沙茶湯頭、Q彈意麵，鹹香順口、暖胃滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞米花＋薯條＋小肉豆+大飲",
+            "description": "經典炸物組合：雞米花、薯條與小肉豆，附大杯飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬排蔥抓餅",
+            "description": "蔥抓餅包裹豬排與泡菜，餅香襯托泡菜脆口，層次豐富，吃起來更有滿足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋炒飯",
+            "description": "火腿丁、炒蛋與米飯拌炒，鹹香經典",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式雞塊蛋脆皮堡+薯條+飲料",
+            "description": "脆皮堡夾美式雞塊與雞蛋，口感酥脆有層次；搭配薯條與飲料，經典套餐，一餐剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋炒飯",
+            "description": "培根、蛋拌炒白飯，鹹香可口，經典炒飯之選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜鍋燒意麵",
+            "description": "酸香泡菜湯頭，搭配鍋燒意麵的熱湯麵",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒烏龍麵",
+            "description": "彈牙烏龍麵融合黑胡椒香氣，椒香馥郁、口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒烏龍麵",
+            "description": "熱湯烏龍麵，麵條Q彈、口感滑順，暖胃飽足的經典選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙醬烏龍麵(黑胡椒+蘑菇)",
+            "description": "烏龍麵拌黑胡椒醬與蘑菇醬，胡椒香溢、蘑菇醇厚，口感彈牙，醬香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒烏龍麵",
+            "description": "Q彈烏龍麵搭配蝦仁香炒，麵香與海味相融，口感滿足、鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬排吐司",
+            "description": "酸香泡菜與豬排的組合，夾入吐司，層次豐富、開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉躁水餃",
+            "description": "水餃淋上台式肉燥，鹹香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦排蛋頭堡",
+            "description": "脆皮堡夾蝦排與蛋，咬下酥脆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒油麵",
+            "description": "多樣配料與蔬菜拌炒油麵，層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬肉炒油麵",
+            "description": "泡菜、豬肉與油麵拌炒，酸香提味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬排炒飯",
+            "description": "泡菜拌炒米飯，搭配豬排；爽脆口感與飽足感一次滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜蔥抓餅",
+            "description": "蔥抓餅夾入泡菜，酸香爽脆，蔥香層次更突出",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞蛋炒飯",
+            "description": "香燻雞肉與雞蛋拌炒白飯，凸顯燻香與米香的簡單組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬排蛋頭堡",
+            "description": "脆皮堡夾豬排、泡菜與蛋，口感豐富、份量滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬烏龍麵",
+            "description": "Q彈烏龍麵拌入香濃XO醬，鹹香帶海味，層次豐富、越吃越順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "偽韓式烏龍麵",
+            "description": "韓式靈感調味的烏龍麵，麵條Q彈，醬香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇烏龍麵",
+            "description": "Q彈烏龍麵搭配蘑菇，麵香與菇香相融，口感滑順、簡單耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒飯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "好吃到不行的滷肉飯(大)",
+            "description": "大份滷肉飯，白飯淋上滷至入味的豬肉與滷汁，肥瘦相間，拌著吃更香，更飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚蛋炒飯",
+            "description": "鮭魚、雞蛋與白飯拌炒，經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉蛋炒飯",
+            "description": "米飯、牛肉、蛋，拌炒成經典家常風味炒飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬蛋炒飯",
+            "description": "米飯與雞蛋拌炒，加入XO醬提味，醬香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋炒飯",
+            "description": "蝦仁、炒蛋與白飯拌炒，鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋炒飯",
+            "description": "培根、蛋拌炒白飯，鹹香可口，經典炒飯之選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋炒飯",
+            "description": "火腿丁、炒蛋與米飯拌炒，鹹香經典",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶豬排炒飯",
+            "description": "沙茶醬香炒飯，搭配豬排，滿滿台式鹹香",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬排炒飯",
+            "description": "泡菜拌炒米飯，搭配豬排；爽脆口感與飽足感一次滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞蛋炒飯",
+            "description": "香燻雞肉與雞蛋拌炒白飯，凸顯燻香與米香的簡單組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "馬克帕尼尼系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "薯餅起司馬克帕尼尼",
+            "description": "薯餅與起司的經典組合，夾入熱壓帕尼尼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿起司馬克帕尼尼",
+            "description": "酥脆咔啦雞腿排配上香濃起司，夾入帕尼尼麵包，口感豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚起司馬克帕尼尼",
+            "description": "經典鮪魚配起司夾入帕尼尼麵包，鹹香合拍，一口滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿起司馬克帕尼尼",
+            "description": "火腿與起司夾入馬克帕尼尼，熱壓至起司融化，鹹香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞起司馬克帕尼尼",
+            "description": "燻雞搭配起司，夾入帕尼尼麵包；外層微脆，內裡柔軟。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞塊起司馬克帕尼尼",
+            "description": "帕尼尼麵包夾入雞塊與起司，經典搭配",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根起司馬克帕尼尼",
+            "description": "帕尼尼麵包夾培根與起司，濃郁鹹香的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "西式燒餅類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬排蛋西式燒餅",
+            "description": "豬排配蛋，夾入西式燒餅，鹹香經典的飽足組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋西式燒餅",
+            "description": "酥香西式燒餅，夾入火腿與蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋西式燒餅",
+            "description": "層層餅香的西式燒餅，夾入起司與蛋，口感豐富、起司香濃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞塊蛋西式燒餅",
+            "description": "西式燒餅內夾雞塊與蛋，鹹口味三明治式組合，方便享用",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦蛋西式燒餅",
+            "description": "西式燒餅夾蛋，咔啦脆口與蛋香的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋西式燒",
+            "description": "培根與蛋夾入西式燒餅，經典鹹香組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅蛋西式燒餅",
+            "description": "西式燒餅夾薯餅與蛋，層次麵香，口感豐富、飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚排蛋西式燒餅",
+            "description": "西式燒餅夾入魚排與蛋，口感豐富，飽足耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餅西式燒餅",
+            "description": "西式燒餅夾蛋餅，麵香與蛋香交疊，口感有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "英國堡系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力英國堡",
+            "description": "英式麵包夾入巧克力抹醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚起司英國堡",
+            "description": "鮪魚與起司，夾入英國堡，經典搭配",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米起司英國堡",
+            "description": "英式瑪芬麵包，夾入玉米粒與起司的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根起司英國堡",
+            "description": "英式瑪芬麵包夾入培根與起司，鹹香滿點的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式香腸起司英國堡",
+            "description": "英式麵包夾德式香腸與起司，經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿起司英國堡",
+            "description": "英式麵包夾入火腿與起司，簡單經典的鹹香組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓英國堡",
+            "description": "英國堡夾入草莓風味，麵包香軟、果香清新。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排起司英國堡",
+            "description": "英國堡麵包夾豬排與起司，經典鹹香組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香英國堡",
+            "description": "英式麵包堡，蒜香風味突出，香氣誘人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生英國堡",
+            "description": "英國堡夾香濃花生醬，簡單醇香的經典風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥英國堡",
+            "description": "英國堡夾奶酥抹醬，奶香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "華納滋堡系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力華納滋堡",
+            "description": "可可香與麵包香交織，華納滋麵包鬆軟順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦蛋華納滋堡",
+            "description": "華納滋麵包、咔啦風味、雞蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生華納滋堡",
+            "description": "華納滋堡搭配花生醬，堅果香氣飽滿。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞塊華納滋堡",
+            "description": "金黃酥脆雞塊夾入華納滋堡，外酥內嫩，簡單滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥華納滋堡",
+            "description": "華納滋麵包夾入香滑奶酥內餡，奶香滿溢，一口滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根起司華納滋堡",
+            "description": "華納滋麵包夾培根與起司，口感鬆軟微酥，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓華納滋堡",
+            "description": "華納滋堡體，夾入草莓風味夾心，入口滿溢果香",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排起司華納滋堡",
+            "description": "華納滋麵包夾豬排與起司，口感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋華納滋堡",
+            "description": "華納滋麵包、火腿與蛋的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香華納滋堡",
+            "description": "濃郁蒜香點綴的華納滋堡，香氣四溢、鹹香耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "丹麥堡系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咔啦丹麥堡",
+            "description": "丹麥麵包漢堡，咔啦酥脆口感，層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力丹麥堡",
+            "description": "丹麥堡麵包搭配巧克力風味，口感酥鬆、層次分明",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿起司丹麥堡",
+            "description": "丹麥堡夾火腿與起司，麵包層次鬆軟，起司香濃、火腿鹹香，簡單經典的滿足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜味丹麥堡",
+            "description": "以丹麥麵包製成的漢堡，蒜香風味突出，口感蓬鬆、層次分明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排起司丹麥堡",
+            "description": "丹麥麵包夾豬排與起司，口感層次豐富，鹹香可口",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚起司丹麥堡",
+            "description": "酥香丹麥堡夾鮪魚與起司，鬆軟可口、起司香濃",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根起司丹麥堡",
+            "description": "丹麥麵包夾培根與起司，酥香口感，鹹香滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生丹麥堡",
+            "description": "丹麥麵包夾花生醬，濃郁花生香、鬆軟口感，簡單滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓起司丹麥堡",
+            "description": "丹麥堡夾入草莓與起司，簡單美味的組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥丹麥堡",
+            "description": "丹麥麵包夾濃郁奶酥，層次鬆香、奶香滿溢",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蔬蛋丹麥堡",
+            "description": "丹麥麵包夾入雞蛋與蔬菜，清爽不膩、層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "波羅堡系列類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力波蘿堡",
+            "description": "酥皮波蘿麵包夾入巧克力，外酥內軟的簡單組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生起司波蘿堡",
+            "description": "波蘿麵包夾花生醬與起司",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司豬排波蘿堡",
+            "description": "菠蘿麵包夾豬排與起司，簡單滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅波蘿堡",
+            "description": "格紋波蘿麵包夾入薯餅，簡單經典的組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥波蘿堡",
+            "description": "波蘿麵包夾入奶酥醬，奶香滑順、口感酥軟",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜味波蘿堡",
+            "description": "波蘿麵包結合蒜香風味的漢堡，香氣迷人",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓起司波蘿堡",
+            "description": "香酥菠蘿麵包夾入草莓與起司，口感層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿起司波蘿堡",
+            "description": "波蘿麵包外酥內軟，夾入火腿與起司，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦波蘿堡",
+            "description": "波蘿麵包夾入咔啦脆感內餡，甜香酥皮配鹹香層次，咬下鬆軟帶脆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚排波蘿堡",
+            "description": "波蘿麵包香甜微酥，夾入香嫩魚排，甜鹹交織、口感更有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "脆皮堡系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美式咔啦蛋脆皮堡",
+            "description": "美式風味脆皮堡，夾入雞蛋，咔啦酥脆口感，層次更豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式花生醬培根蛋脆皮堡",
+            "description": "美式風味脆皮堡，夾入花生醬、培根與蛋，堅果香襯托肉香，口感酥脆、飽足又過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式薯餅蛋脆皮堡",
+            "description": "脆皮堡夾入美式薯餅與蛋，酥脆口感，飽足組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式豬排脆皮堡",
+            "description": "鬆軟麵包夾入脆皮豬排，美式風味，外酥內嫩、口感紮實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦排蛋頭堡",
+            "description": "脆皮堡夾蝦排與蛋，咬下酥脆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式雞塊蛋脆皮堡",
+            "description": "脆皮麵包夾入美式雞塊與蛋，酥脆與柔軟的對比口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式魚排脆皮堡",
+            "description": "漢堡麵包夾美式風味脆皮魚排與醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬排蛋頭堡",
+            "description": "脆皮堡夾豬排、泡菜與蛋，口感豐富、份量滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鐵板麵套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵+里肌豬排+蛋+大飲（紅茶/奶茶）任選一種",
+            "description": "飽足組合：炒泡麵香氣誘人、麵條Q彈，搭配里肌豬排與雞蛋。含大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義大利肉醬鐵板麵+里肌豬排+蛋+大飲（紅茶/奶茶）任選一種",
+            "description": "飽足組合：義大利肉醬鐵板麵，醬香濃郁；配里肌豬排與雞蛋。附大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬炒鐵板麵+大飲（紅茶/奶茶）任選一種",
+            "description": "XO醬炒鐵板麵，醬香濃郁；附大杯紅茶或奶茶擇一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒鐵板麵+里肌豬排+蛋+大飲（紅茶/奶茶）任選一種",
+            "description": "黑胡椒醬香鐵板麵，麵條Q彈；搭配里肌豬排與蛋，飽足實在。附大杯紅茶或奶茶擇一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇鐵板麵+里肌豬排+蛋+大飲（紅茶/奶茶）任選一種",
+            "description": "蘑菇鐵板麵麵條滑Q、菇香順口，搭配里肌豬排與蛋，飽足滿點；附大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉炒泡麵+大飲（紅茶/奶茶）任選一種",
+            "description": "豬肉炒泡麵，麵條Q彈、豬肉鹹香，炒香順口；附大杯飲品：紅茶或奶茶任選一種。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁鐵板麵+蛋+大飲（紅茶/奶茶）任選一種",
+            "description": "飽足組合：宮保雞丁配鐵板麵，醬香濃郁、麵條Q彈；附蛋與大杯飲品，紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味肉燥鐵板麵+里肌豬排+蛋+大飲（紅茶/奶茶）任選一種",
+            "description": "古早味肉燥醬香的鐵板麵，麵條Q彈；搭配里肌豬排與蛋。含大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉炒鍋燒意麵+大飲（紅茶/奶茶）任選一種",
+            "description": "豬肉炒鍋燒意麵，麵條吸附醬香，順口耐吃；附大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬鐵板麵+里肌豬排+蛋+大飲（紅茶/奶茶）任選一種",
+            "description": "奶油白醬鐵板麵，醬香濃滑；配里肌豬排與蛋，飽足順口。附大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩麵",
+            "description": "香濃咖哩醬拌麵，順口耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒油麵",
+            "description": "台式油麵拌入彈嫩蝦仁，炒出醬香鹹鮮；麵條Q彈順口，不油不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "可頌餅套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋可頌餅+飲料",
+            "description": "方形可頌餅夾蛋與肉鬆，表面撒芝麻增香，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉蛋可頌餅+飲料",
+            "description": "可頌餅夾牛肉與蛋，鹹香滿足，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋可頌餅+飲料",
+            "description": "可頌餅夾鮪魚與蛋，外酥內軟，口感層次豐富，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞塊蛋可頌餅+飲料",
+            "description": "層層酥香的可頌餅，夾入雞塊與蛋；套餐附一杯飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞可頌餅+飲料",
+            "description": "酥脆可頌餅夾入燻雞，外層香酥、層次鬆軟，可見芝麻點綴。套餐含飲料一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司豬肉可頌餅+飲料",
+            "description": "酥香可頌餅夾豬肉與起司，外脆內軟，芝麻增添香氣。附飲料一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋可頌餅+飲料",
+            "description": "方形可頌餅層酥撒芝麻，夾培根與蛋，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿可頌餅+飲料",
+            "description": "方形可頌餅層層蓬鬆，表面撒芝麻，夾入火腿，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生可頌餅+飲料",
+            "description": "層次酥香的花生可頌餅，搭配一杯飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力可頌餅+飲料",
+            "description": "層次分明的巧克力風味可頌餅，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓可頌餅+飲料",
+            "description": "可頌餅帶酥香層次，草莓風味點綴；附飲品一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "厚片套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "花生厚片+飲料",
+            "description": "厚片吐司塗滿花生醬，烤至酥香，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥厚片+飲料",
+            "description": "金黃酥香的奶酥厚片，外酥內軟，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓起司厚片+飲料",
+            "description": "厚片吐司抹上草莓果醬，鋪上起司片，套餐附飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓厚片+飲料",
+            "description": "草莓果醬厚片吐司，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙色厚片+飲料 口味請備註，沒備註是巧可力+花生",
+            "description": "雙色厚片吐司，兩款抹醬一次擁有，附飲料一杯。口味請備註，未備註則為巧克力與花生。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力厚片+飲料",
+            "description": "巧克力厚片吐司，附飲料一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奶茶",
+            "description": "若沒備註 會出餐冰的",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶",
+            "description": "茶湯與鮮奶調和，口感順滑，奶香與茶韻均衡",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鴛鴦奶茶",
+            "description": "咖啡與奶茶混合的港式經典，比例協調，香醇順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶拿鐵",
+            "description": "經典紅茶搭配鮮奶，口感滑順",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中杯熱可可",
+            "description": "可可香氣濃郁、口感滑順的熱飲，中杯容量，暖心暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡(中)",
+            "description": "中杯黑咖啡，香氣濃郁、入口清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大杯熱可可",
+            "description": "大杯熱可可，濃郁可可香，口感滑順，暖身解寒",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌咖啡",
+            "description": "經典風味咖啡，香醇濃郁，順口耐喝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "經典紅茶，茶香順口，清新解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米濃湯",
+            "description": "濃郁玉米香，口感滑順、暖胃好喝的濃湯",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可樂",
+            "description": "250ML",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡",
+            "description": "牛奶",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "其他單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔥抓餅（加蛋）",
+            "description": "外酥內軟的蔥抓餅，蔥香濃郁，加入雞蛋更滑嫩、更有飽足感",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋",
+            "description": "雞蛋單點（1 顆），可作加購配料",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煎餃+大飲（紅茶/奶茶）任選一種",
+            "description": "金黃香酥煎餃，外酥內嫩；搭配大杯飲品（紅茶或奶茶任選）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷蛋",
+            "description": "經典滷蛋，滷香入味，外層彈嫩、蛋黃綿密。",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜蔥抓餅",
+            "description": "蔥抓餅夾入泡菜，酸香爽脆，蔥香層次更突出",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬排蔥抓餅",
+            "description": "蔥抓餅包裹豬排與泡菜，餅香襯托泡菜脆口，層次豐富，吃起來更有滿足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司",
+            "description": "起司一份，增添奶香與滑順口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蛋餅類套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "人氣組合：鮪魚蛋餅，附大杯紅茶或奶茶擇一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "玉米粒入餡蛋餅，口感香軟；搭配大杯飲品，紅茶或奶茶擇一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "鹹香火腿蛋餅，餅皮軟Q、蛋香順口；搭配大杯飲品：紅茶或奶茶擇一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "起司香濃的蛋餅，搭配大杯飲品（紅茶或奶茶二選一）",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "河粉蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "河粉蛋餅口感軟Q、蛋香順口，附大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "里肌豬排蛋餅，蛋香與肉香相融，飽足滿分；附大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排河粉蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "軟Q河粉蛋餅夾里肌豬排，肉香與蛋香相融；搭配大杯飲品（紅茶或奶茶擇一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "經典組合：培根蛋餅，鹹香與蛋香相融；附大杯飲品，紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿河粉蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "河粉蛋餅軟Q，夾入鹹香火腿，蛋香順口；附大杯飲品：紅茶或奶茶擇一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "經典肉鬆蛋餅，鬆香肉鬆與蛋香相融；附大杯飲品，紅茶或奶茶任選一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞河粉蛋餅+大飲（紅茶/奶茶）任選一種",
+            "description": "燻雞河粉蛋餅，燻香與蛋香相融。套餐含大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "墨西哥捲餅類套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "墨西哥咔啦雞腿捲餅+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "薄餅捲入咔啦雞腿肉，墨西哥風味；附大杯飲品，紅茶、奶茶或咖啡任選一種。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "墨西哥德式香腸捲餅+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "墨西哥捲餅包入德式香腸，方便好食。搭配大杯飲品，紅茶/奶茶/咖啡任選一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "墨西哥燻雞捲餅+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "薄餅捲入燻雞，墨西哥風味；搭配大杯飲品（紅茶／奶茶／咖啡擇一），簡單滿足一餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "墨西哥熱狗捲餅+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "墨西哥捲餅包入熱狗，方便好食；附大杯飲品（紅茶／奶茶／咖啡任選一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "漢堡類套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿堡（原味）+大飲（紅茶/奶茶）任選一種",
+            "description": "原味咔啦雞腿堡，雞腿排金黃酥脆、外酥內嫩；搭配大杯飲品（紅茶或奶茶擇一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉漢堡+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "經典組合：豬肉漢堡，附大杯飲品（紅茶／奶茶／咖啡任選一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙囍堡（漢堡肉+香雞）+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "雙主角漢堡：漢堡肉排與香雞一次擁有，兩種口感更過癮。含大杯飲品（紅茶／奶茶／咖啡任選其一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "陀螺堡（里肌豬排夾蛋）+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "飽足組合：陀螺堡夾里肌豬排與雞蛋，雙重口感更過癮。搭配大杯飲品（紅茶／奶茶／咖啡任選一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排堡+大飲（紅茶/奶茶）任選一種",
+            "description": "里肌豬排堡主餐，搭配大杯飲品（紅茶／奶茶任選），簡單滿足一餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚堡+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "鱈魚堡，外酥內嫩、魚肉細緻；搭配大杯飲品（紅茶／奶茶／咖啡擇一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式雞塊蛋脆皮堡+薯條+飲料",
+            "description": "脆皮堡夾美式雞塊與雞蛋，口感酥脆有層次；搭配薯條與飲料，經典套餐，一餐剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦排堡+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "鬆軟麵包夾入彈牙蝦排，海味鮮香；搭配大杯飲品（紅茶／奶茶／咖啡任選一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉堡+大飲（紅茶/奶茶）任選一種",
+            "description": "經典牛肉堡套餐，搭配大杯飲品（紅茶或奶茶任選），簡單滿足一餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞堡+大飲（紅茶/奶茶）任選一種",
+            "description": "人氣組合：香雞堡口感鹹香、飽足；附大杯飲品（紅茶／奶茶任選一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞堡+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "燻香雞肉漢堡，搭配大杯飲品（紅茶／奶茶／咖啡擇一），經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根堡+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "經典組合：培根堡，培根鹹香加分；附大杯飲品（紅茶／奶茶／咖啡任選一種）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚堡+大飲（紅茶/奶茶/咖啡）任選一種",
+            "description": "人氣組合：鮪魚風味漢堡，含大杯飲品（紅茶／奶茶／咖啡任選其一），主食飲料一次到位。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿起司波蘿堡+大杯飲料",
+            "description": "酥香波蘿麵包夾火腿與起司，口感外脆內軟；附大杯飲料，簡單飽足的漢堡套餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "烤吐司類套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋吐司+大飲（紅茶/奶茶）任選一種",
+            "description": "烤吐司夾火腿與雞蛋，口感酥香；附大杯飲料，紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "里肌豬排蛋吐司+大飲（紅茶/奶茶）任選一種",
+            "description": "烤吐司夾入里肌豬排與雞蛋，麵包微酥、蛋香順口；含大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔啦雞腿蛋吐司+大飲（紅茶/奶茶）任選一種",
+            "description": "咔啦雞腿與蛋的烤吐司，口感酥香、蛋香順口。附大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力土司+飲料",
+            "description": "巧克力醬烤吐司，附飲料一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋吐司+大飲（紅茶/奶茶）任選一種",
+            "description": "烤吐司夾入鮪魚與蛋，吐司微酥、蛋香順口；附大杯飲品：紅茶或奶茶擇一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋吐司+大飲（紅茶/奶茶）任選一種",
+            "description": "烤吐司夾入培根與雞蛋，口感酥香、鹹香順口；附大杯飲品，紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞蛋吐司+大飲（紅茶/奶茶）任選一種",
+            "description": "燻雞與蛋的烤吐司套餐，含大杯飲品：紅茶或奶茶二選一",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙色土司+飲料 (沒備註口味就是巧克力+花生)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋吐司+大飲（紅茶/奶茶）任選一種",
+            "description": "烤吐司夾肉鬆與蛋，附大杯紅茶或奶茶擇一",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋吐司+大飲（紅茶/奶茶）任選一種",
+            "description": "起司蛋烤吐司，外酥內軟、起司香濃；搭配大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蒜土司+飲料",
+            "description": "蒜香濃郁的香蒜土司，搭配飲料一杯，經典組合簡單滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓土司+飲料",
+            "description": "草莓醬烤土司，酥香可口；附飲料一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生土司+飲料",
+            "description": "花生醬烤吐司，附飲料一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米蛋吐司+大飲（紅茶/奶茶）任選一種",
+            "description": "飽足組合：玉米粒與雞蛋夾入烤吐司，酥香順口；附大杯飲品：紅茶或奶茶任選一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒 湯 麵 類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒意麵",
+            "description": "台式鍋燒湯麵，意麵Q彈、湯頭順口，暖胃首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒泡麵",
+            "description": "Q彈泡麵與蝦仁拌炒，海味與麵香交融，香氣迷人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞絲麵",
+            "description": "台式雞絲麵，麵條細緻滑順，風味樸實耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒意麵",
+            "description": "經典鍋燒意麵，熱湯搭配彈牙麵體，暖胃飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒泡麵",
+            "description": "多樣配料與泡麵一同拌炒，經典台式什錦口味",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶鍋燒烏龍麵",
+            "description": "沙茶湯頭香濃，Q彈烏龍麵，經典鍋燒風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒油麵",
+            "description": "台式油麵拌入彈嫩蝦仁，炒出醬香鹹鮮；麵條Q彈順口，不油不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶鍋燒意麵",
+            "description": "沙茶湯頭、Q彈意麵，鹹香順口、暖胃滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩麵",
+            "description": "香濃咖哩醬拌麵，順口耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉躁烏龍麵",
+            "description": "Q彈烏龍麵拌入香濃肉燥，麵條滑順帶勁，每口都是醬香與飽足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒烏龍麵",
+            "description": "多樣配料拌炒的烏龍麵，口感層次豐富，香氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜鍋燒意麵",
+            "description": "酸香泡菜湯頭，搭配鍋燒意麵的熱湯麵",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜鍋燒烏龍麵",
+            "description": "泡菜湯頭的鍋燒烏龍麵，Q彈麵體，酸香開胃，暖胃順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙醬烏龍麵(黑胡椒+蘑菇)",
+            "description": "烏龍麵拌黑胡椒醬與蘑菇醬，胡椒香溢、蘑菇醇厚，口感彈牙，醬香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬肉炒油麵",
+            "description": "泡菜、豬肉與油麵拌炒，酸香提味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒烏龍麵",
+            "description": "彈牙烏龍麵融合黑胡椒香氣，椒香馥郁、口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬烏龍麵",
+            "description": "Q彈烏龍麵拌入香濃XO醬，鹹香帶海味，層次豐富、越吃越順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒油麵",
+            "description": "多樣配料與蔬菜拌炒油麵，層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒烏龍麵",
+            "description": "熱湯烏龍麵，麵條Q彈、口感滑順，暖胃飽足的經典選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒烏龍麵",
+            "description": "Q彈烏龍麵搭配蝦仁香炒，麵香與海味相融，口感滿足、鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇烏龍麵",
+            "description": "Q彈烏龍麵搭配蘑菇，麵香與菇香相融，口感滑順、簡單耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "偽韓式烏龍麵",
+            "description": "韓式靈感調味的烏龍麵，麵條Q彈，醬香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "嚐鮮類套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "乳酪燒餅+大飲（紅茶/奶茶）任選一種",
+            "description": "乳酪燒餅口感酥香、奶香濃郁；搭配大杯飲品，紅茶或奶茶擇一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可頌堡（里肌豬排夾蛋）+大飲（紅茶/奶茶）任選一種",
+            "description": "酥香可頌堡夾里肌豬排與蛋，肉蛋雙重滿足；附大杯飲品：紅茶或奶茶任選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "薯餅",
+            "description": "金黃酥脆薯餅，外酥內軟，馬鈴薯香氣足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗（五條）",
+            "description": "金黃酥脆的熱狗，五條裝，外層脆口、內裡紮實，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆薯",
+            "description": "金黃酥脆的馬鈴薯條，外酥內軟，經典口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克雞塊（五個）",
+            "description": "五個一份的雞塊，炸至金黃酥脆，外酥內嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞米花",
+            "description": "金黃酥脆的一口雞肉塊，外酥內嫩，適合分享或當點心",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗球",
+            "description": "一份5個",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小肉豆",
+            "description": "一口大小的豆狀肉點，酥炸金黃，外酥內彈，越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚條",
+            "description": "炸鱈魚條，外酥內嫩，魚肉細緻、口感清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司棒",
+            "description": "金黃酥脆外皮，內層香濃起司，咬下牽絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "偽韓式炸雞",
+            "description": "致敬韓式風味的脆皮炸雞，外酥內嫩，香酥多汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德國香腸",
+            "description": "德國香腸，炸製香酥，外皮脆口、肉感紮實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷米花",
+            "description": "一口大小魷魚塊，金黃酥脆，外酥內Q",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉圈",
+            "description": "金黃酥脆雞肉圈，外酥內嫩，一口尺寸，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司芋泥球（3顆）",
+            "description": "酥炸金黃的芋泥球，內餡結合綿密芋泥與起司的香濃口感；外酥內軟，適合分享。每份3顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥圈",
+            "description": "酥炸洋蔥圈，外酥內嫩，金黃香脆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拔絲起司球",
+            "description": "金黃酥脆外皮，濃郁起司一咬牽絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "金黃酥炸花枝丸，外酥內Q彈，海味香濃，越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮地瓜",
+            "description": "金黃酥脆的地瓜，外脆內綿，咬下滿是自然香甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽酥雞",
+            "description": "台式經典鹽酥雞，金黃酥脆，一口大小雞塊，鹹香涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物拼盤",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚棒+洋蔥圈+薯條+大飲（紅茶/奶茶/可樂）任選一種",
+            "description": "鱈魚棒、洋蔥圈、薯條三拼，一次享受三種點心，搭配大飲一杯（紅茶/奶茶/可樂任選）",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥克雞塊+玉米可樂餅+脆薯+熱狗+洋蔥圈+可樂×2",
+            "description": "一次集滿五款人氣炸物：雞塊外酥內嫩、玉米可樂餅綿軟帶玉米香、脆薯外酥內軟、熱狗口感紮實、洋蔥圈金黃香脆；附可樂兩杯，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬雞柳條+雞肉圈+熱狗+大飲（紅茶/奶茶/咖啡/可樂）任選一種",
+            "description": "檸檬雞柳條、雞肉圈、熱狗的炸物拼盤，附大杯飲品（紅茶／奶茶／咖啡／可樂四選一）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉圈+玉米可樂餅+熱狗+大飲（紅茶/奶茶/咖啡/可樂）任選一種",
+            "description": "三樣人氣炸物一次到位：雞肉圈、玉米可樂餅、熱狗，搭配大杯飲品（紅茶／奶茶／咖啡／可樂）任選一款。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "乳酪餅",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力乳酪餅",
+            "description": "可可香氣與乳酪交融，口感綿滑濃郁",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥乳酪餅",
+            "description": "餅皮夾入奶酥與起司，奶香濃郁、口感滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油乳酪餅",
+            "description": "濃醇奶油乳酪餡，包裹於香軟餅皮，滑順可口",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓乳酪餅",
+            "description": "香濃滑順乳酪餅，融入草莓果香",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗乳酪餅",
+            "description": "薄餅夾起司與熱狗切片，鹹香順口的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生乳酪餅",
+            "description": "花生與乳酪內餡的餅，香濃順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "焗烤厚片",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚焗烤厚片",
+            "description": "厚片吐司鋪上鮪魚餡與起司，焗烤至金黃香濃",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根焗烤厚片",
+            "description": "厚片吐司鋪培根，焗烤至金黃微酥，外酥內軟",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米焗烤厚片",
+            "description": "厚片吐司鋪上玉米，焗烤至金黃香氣四溢，口感滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司焗烤厚片",
+            "description": "厚片吐司鋪滿起司，焗烤至表面金黃微脆、內裡柔軟，起司香濃牽絲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿焗烤厚片",
+            "description": "厚片吐司鋪上火腿，焗烤至金黃，外酥內軟，鹹香滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞焗烤厚片",
+            "description": "厚片吐司鋪上燻雞與起司，焗烤至金黃牽絲，口感飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "超級大雞排+大飲（紅茶/奶茶）任選一種",
+            "description": "超大雞排一份，配大杯飲品（紅茶或奶茶）二選一，份量十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超級大雞排+可樂",
+            "description": "超級大雞排一份，金黃酥脆、外酥內嫩；搭配可樂一杯，氣泡爽口，份量十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷米花＋薯條＋小肉豆+大飲",
+            "description": "炸物三拼，含魷米花、薯條、小肉豆，附大杯飲料",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司棒+紅脆薯(微辣)+小肉豆+飲料",
+            "description": "酥脆起司棒、微辣紅脆薯與小肉豆組合，搭配一杯飲料，鹹香涮嘴的一份炸物套餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞米花＋薯條＋小肉豆+大飲",
+            "description": "經典炸物組合：雞米花、薯條與小肉豆，附大杯飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞球＋薯條＋小肉豆",
+            "description": "人氣炸物套餐，雞球外酥內嫩；薯條金黃酥脆；小肉豆一口尺寸，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "吐司單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬排吐司",
+            "description": "酸香泡菜與豬排的組合，夾入吐司，層次豐富、開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蛋餅單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泡菜起司蛋餅",
+            "description": "酸香泡菜搭配濃郁起司，包入蛋香餅皮，口感層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "水餃單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "水餃",
+            "description": "單點水餃，中式經典風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煎餃 10顆",
+            "description": "香煎至金黃，外皮微酥、口感飽滿",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溫暖身心靈的鮮肉鹹湯圓湯（5顆）",
+            "description": "Q彈糯米湯圓包鮮肉餡，熱湯暖胃，鹹香順口；每份5顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬水餃",
+            "description": "水餃佐XO醬，醬香濃郁，層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉躁水餃",
+            "description": "水餃淋上台式肉燥，鹹香入味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

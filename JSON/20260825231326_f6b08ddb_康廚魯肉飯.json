@@ -1,0 +1,245 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%BA%B7%E5%BB%9A%E9%AD%AF%E8%82%89%E9%A3%AF/2lIMZPieRiSXzPc1Jg6wSQ",
+  "name": "康廚魯肉飯",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 239, Section 1, Neihu Road",
+    "addressLocality": "Neihu District",
+    "addressRegion": "",
+    "postalCode": "114",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0826617,
+    "longitude": 121.5653983
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 700
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Braised Pork Rice"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸排骨",
+            "description": "本店使用臺灣原產地豬肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "涼拌蠔油川耳",
+            "description": "爽脆彈牙川耳拌入蠔油，醬香迷人；以辣椒、香菜點綴，清爽開胃的涼拌小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚皮湯",
+            "description": "虱目魚皮入湯，奶白湯頭清香，口感滑Q、清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚肉粥",
+            "description": "綿滑白粥配虱目魚肉與蔥花，米湯順口、魚肉嫩口，清爽暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "排骨便當",
+            "description": "白飯搭配排骨與當日配菜，飽足的經典便當",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "涼拌小菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "涼拌蠔油川耳",
+            "description": "爽脆彈牙川耳拌入蠔油，醬香迷人；以辣椒、香菜點綴，清爽開胃的涼拌小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "油炸類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸排骨",
+            "description": "本店使用臺灣原產地豬肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚皮湯",
+            "description": "虱目魚皮入湯，奶白湯頭清香，口感滑Q、清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱸魚蛤蜊清湯",
+            "description": "鱸魚與蛤蜊的清澈湯頭，點綴枸杞，魚肉細嫩、海味鮮甜，暖胃順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱸魚蛤蜊味噌湯",
+            "description": "鱸魚片與蛤蜊的味噌湯，薑絲提香，湯頭清爽順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "粥品類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚肉粥",
+            "description": "綿滑白粥配虱目魚肉與蔥花，米湯順口、魚肉嫩口，清爽暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮粥",
+            "description": "蝦、蛤蜊與米粥交融，配香菇、金針菇與蔥花，口感溫潤，海味清香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚皮粥",
+            "description": "虱目魚皮與白粥同煮，魚皮彈嫩帶膠質，湯色乳白，撒上蔥花，清爽暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺鱸魚粥",
+            "description": "去刺鱸魚入米粥，細嫩滑順，暖胃清爽",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉燥飯",
+            "description": "瘦肉/本店使用臺灣原產地豬肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "熱白飯一碗，口感鬆軟、粒粒分明",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "便當類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "排骨便當",
+            "description": "白飯搭配排骨與當日配菜，飽足的經典便當",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

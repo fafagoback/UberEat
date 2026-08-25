@@ -1,0 +1,1173 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/cama-cafe-%E5%92%8C%E7%A2%A9%E7%AB%8B%E5%BE%B7%E5%BA%97/CGAlCWMFQOC_BpHVc8wETg",
+  "name": "cama café 和碩立德店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區立德路150號",
+    "addressLocality": "Taipei",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1275834,
+    "longitude": 121.4721932
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 380
+  },
+  "servesCuisine": [
+    "Drinks",
+    "Coffee and Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "CAMA金獎拿鐵 CAMA Latte",
+            "description": "【冰飲冰量固定】香醇的濃縮咖啡注入新鮮牛奶, cama NO.1 的熱銷飲品\n(含牛奶飲品調整冰塊不會滿杯)\n\nL(熱) 總熱量(kcal)(最高值):238.0 總糖量(g):16.5 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):172.0 總糖量(g):12.5 咖啡因(mg):311.7(紅標)\nXL(熱) 總熱量(kcal)(最高值):280.0 總糖量(g):19.6 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):213.0 總糖量(g):15.4 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "CAMA金獎美式 CAMA Americano",
+            "description": "【冰飲冰量固定】帶著堅果烤焙香氣與黑巧克力的後韻, 伴有細緻果酸風味的厚實口感。\nL(冰/熱) 總熱量(kcal)(最高值):22.0 總糖量(g):0.2(最高) 咖啡因(mg):311.7(紅標)\nXL(冰/熱) 總熱量(kcal)(最高值):30.0 總糖量(g):0.2(最高) 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖瑪琪朵 Caramel Macchiato",
+            "description": "【冰飲冰量固定】香甜的焦糖醬化在咖啡與綿密奶泡中, 誘人的甜蜜滋味\n（含牛奶類飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):347.73 總糖量(g):39.07 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):275.02 總糖量(g):33.79 咖啡因(mg):311.7(紅標)\nXL(熱) 總熱量(kcal)(最高值):375.6 總糖量(g):42.8 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):335.92 總糖量(g):39.96 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖拿鐵 Brown Sugar Latte",
+            "description": "【冰飲冰量固定】榛果/黑糖/蜂蜜/海鹽焦糖/香草\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):322.28 總糖量(g):33.63 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):269.4 總糖量(g):29.79 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):331.77 總糖量(g):36.13 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩卡咖啡 Coffee Mocha",
+            "description": "【糖量固定，冰飲冰量固定】，巧克力本身有甜度\n（含牛奶類飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):307.0 總糖量(g):31.2 咖啡因(mg):331(紅標)\nL(冰) 總熱量(kcal)(最高值):281.0 總糖量(g):39.3 咖啡因(mg):331(紅標)\nXL(熱) 總熱量(kcal)(最高值):396.0 總糖量(g):39.4 咖啡因(mg):438(紅標)\nXL(冰) 總熱量(kcal)(最高值):343.0 總糖量(g):35.6 咖啡因(mg):438(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可歐蕾 Chocolate Milk",
+            "description": "【冰飲冰量固定】鮮奶沖泡香醇巧克力\n（冰塊甜度固定，只有小碎冰而已）\n\nL(熱) 總熱量(kcal)(最高值):256.0 總糖量(g):27.8 咖啡因(mg):100以下(綠標)\nL(冰) 總熱量(kcal)(最高值):256.0 總糖量(g):27.8 咖啡因(mg):100以下(綠標)\nXL(熱) 總熱量(kcal)(最高值):371.0 總糖量(g):39.0 咖啡因(mg):100以下(綠標)\nXL(冰) 總熱量(kcal)(最高值):371.0 總糖量(g):39.0 咖啡因(mg):100以下(綠標)\n\n原料產地:法國",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜風味拿鐵 Honey Latte",
+            "description": "【冰飲冰量固定】榛果/黑糖/蜂蜜/海鹽焦糖/香草\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):278.0 總糖量(g):25.8 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):225.0 總糖量(g):22.0 咖啡因(mg):311.7(紅標)\nXL(熱) 總熱量(kcal)(最高值):330.0 總糖量(g):30.6 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):277.0 總糖量(g):26.8 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微韻輕拿鐵 Light Latte",
+            "description": "【冰飲冰量固定】口感更為清爽的拿鐵，以較輕盈的濃縮咖啡比例，搭配淡麗爽口的鮮奶。\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):232.0 總糖量(g):16.5 咖啡因(mg):207.8(紅標)\nL(冰) 總熱量(kcal)(最高值):172.0 總糖量(g):12.5 咖啡因(mg):207.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):282.0 總糖量(g):20.1 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):213.0 總糖量(g):15.4 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙冠莊園精品美式 Premium Americano",
+            "description": "【冰飲冰量固定】熱帶水果風味與莓果尾韻的疊加，香氣濃烈甜感爆發。\nL(冰/熱) 總熱量(kcal)(最高值):22.0 總糖量(g):0.2(最高) 咖啡因(mg):262.8(紅標)\nXL(冰/熱) 總熱量(kcal)(最高值):30.0 總糖量(g):0.2(最高) 咖啡因(mg):350.4(紅標)\n\n原料產地:哥倫比亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶歐蕾 Matcha Milk",
+            "description": "【冰飲冰量固定】搭配日本直輸抹茶, 一口嚐盡春回大地的清爽與滋養\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):296.0 總糖量(g):25.1 咖啡因(mg):100以下(綠標)\nL(冰) 總熱量(kcal)(最高值):210.0總糖量(g):20.8 咖啡因(mg):100以下(綠標)\nXL(熱) 總熱量(kcal)(最高值):285.0 總糖量(g):37.8 咖啡因(mg):101~2OO(黃標)\nXL(冰) 總熱量(kcal)(最高值):325.13 總糖量(g):36.9 咖啡因(mg):101~2OO(黃標)\n\n原料產地:靜岡、鹿兒島",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶拿鐵 Matcha Coffee Latte",
+            "description": "【冰飲冰量固定】Coffee or tea 抹茶, 咖啡迸出的絕妙香氣, 最佳的拿鐵新選擇\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(冰) 總熱量(kcal)(最高值):284.0 總糖量(g):24.6 咖啡因(mg):216(紅標)\nL(熱) 總熱量(kcal)(最高值):207.0 總糖量(g):19.3 咖啡因(mg):216(紅標)\nXL(熱) 總熱量(kcal)(最高值):338.0 總糖量(g):30.4 咖啡因(mg):318(紅標)\nXL(冰) 總熱量(kcal)(最高值):274.0 總糖量(g):25.9 咖啡因(mg):422(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞\n\n抹茶粉:靜岡、鹿兒島",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽焦糖拿鐵 Salted Caramel Latte",
+            "description": "【冰飲冰量固定】榛果/黑糖/蜂蜜/海鹽焦糖/香草\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):329.24 總糖量(g):36.37 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):276.36 總糖量(g):32.56 咖啡因(mg):311.7(紅標)\nXL(熱) 總熱量(kcal)(最高值):353.3 總糖量(g):40.2 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):340.12 總糖量(g):39.45 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡布奇諾 Cappuccino",
+            "description": "【冰飲冰量固定】比拿鐵咖啡再濃郁一些，給喜歡咖啡味重一點的您。\n\nL(熱) 總熱量(kcal)(最高值):334.57 總糖量(g):34.27 咖啡因(mg):415.6(紅標)\nL(冰) 總熱量(kcal)(最高值):261.86 總糖量(g):28.99 咖啡因(mg):415.6(紅標)\nXL(熱) 總熱量(kcal)(最高值):397.8 總糖量(g):40.7 咖啡因(mg):519.5(紅標)\nXL(冰) 總熱量(kcal)(最高值):325.08 總糖量(g):35.46 咖啡因(mg):519.5(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日曬莊園緋紅香 Natural Estate Scarlet Aroma",
+            "description": "【冰飲冰量固定】明亮莓果與甜桃交織，蜜桃乾甜感圓潤，尾韻帶紅花與紅茶香氣，層次細緻。\nM(冰/熱) 總熱量(kcal)(最高值):12 總糖量(g):0.2(最高) 咖啡因(mg):243.1(紅標)\n原料產地:衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山茶花輕拿鐵 Camellia Light Latte",
+            "description": "【冰飲冰量固定】入口輕盈滑順伴著山茶花香，淡淡乳香飄，香氣馥郁平衡，甜而不膩的口感讓人一喝就愛上。\nL(熱) 總熱量(kcal)(最高值):309.56 總糖量(g):33.5 咖啡因(mg):207.8(紅標)\nL(冰) 總熱量(kcal)(最高值):256.66 總糖量(g):29.66 咖啡因(mg):207.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):371.0 總糖量(g):39.8 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):318.08 總糖量(g):35.97 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精品冷萃-百蜜花園 Sweet Blossom Cold Brew",
+            "description": "【冰飲冰量固定】低溫浸泡12小時萃取，清爽回甘\nL(冰) 總熱量(kcal)(最高值):21.0 總糖量(g):0.2(最高) 咖啡因(mg):193(紅標)\nXL(冰) 總熱量(kcal)(最高值):29 總糖量(g):0.2(最高) 咖啡因(mg):244(紅標)\n\n原料產地:哥斯大黎加、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡",
+            "description": "全台期盼的酸甜回歸！檸檬清香與精品咖啡沁涼交織，激發春天最清爽的活力。\nL(冰) 總熱量(kcal)(最高值):118.35 總糖量(g):22.64(最高) 咖啡因(mg):207.8(紅標)\nXL(冰) 總熱量(kcal)(最高值):165.96 總糖量(g):29.67(最高) 咖啡因(mg):311.7(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金曼巴 Golden Mandheling & Brazil Blend",
+            "description": "【冰飲冰量固定】IIAC國際評鑑金獎/中焙\n黃金曼特寧與巴西豆黃金比例, 擁有核果調性的烤花生與桂圓香氣, 濃稠奶油太妃糖韻味, 熟成蜜柑與紅棗酸香。\nL(冰/熱) 總熱量(kcal)(最高值):16 總糖量(g):0.2(最高) 咖啡因(mg):350.2(紅標)\n原料產地:印尼、巴西",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藝伎花序 Floral Geisha",
+            "description": "【冰飲冰量固定】白花香氣細緻乾淨，甜橙與蜂蜜交織出柔和甜感，小紅莓點綴清爽果酸，整體清新優雅，尾韻乾淨明亮，是經典水洗藝伎的平衡之作。\n\nM(冰/熱) 總熱量(kcal)(最高值):12 總糖量(g):0.2(最高) 咖啡因(mg):315(紅標)\n\n原料產地:衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "本店每筆訂單可加購餐點塑膠提袋費 2 元, 因應環保署公告, 店家不得免費提供購物用環保袋。此處僅為注意事項說明, 非加購區, 煩請協助於下方提袋加購區進行加購, 謝謝。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "餐點圖片僅供參考",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣暢銷 Best Seller",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雙冠莊園精品美式 Premium Americano",
+            "description": "【冰飲冰量固定】熱帶水果風味與莓果尾韻的疊加，香氣濃烈甜感爆發。\nL(冰/熱) 總熱量(kcal)(最高值):22.0 總糖量(g):0.2(最高) 咖啡因(mg):262.8(紅標)\nXL(冰/熱) 總熱量(kcal)(最高值):30.0 總糖量(g):0.2(最高) 咖啡因(mg):350.4(紅標)\n\n原料產地:哥倫比亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙冠莊園精品拿鐵  Premium Latte",
+            "description": "【冰飲冰量固定】第四代超醇萃工藝 UipEt4/COE冠軍莊園豆。精品咖啡豆遇上濃醇鮮奶，CAMA金獎拿鐵再升級。\nL(熱) 總熱量(kcal)(最高值):311.0 總糖量(g):30.7 咖啡因(mg):262.8(紅標)\nL(冰) 總熱量(kcal)(最高值):273.7 總糖量(g):30.4 咖啡因(mg):262.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):376.6 總糖量(g):39.8 咖啡因(mg):350.4(紅標)\nXL(冰) 總熱量(kcal)(最高值):350.1 總糖量(g):37.9 咖啡因(mg):350.4(紅標)\n\n原料產地:哥倫比亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微韻輕美式 Light Americano",
+            "description": "【冰飲冰量固定】口感更為清爽的黑咖啡，使用較輕盈的濃縮咖啡比例。\nL(冰/熱) 總熱量(kcal)(最高值):16.0 總糖量(g):0.2(最高) 咖啡因(mg):207.8(紅標)\nXL(冰/熱) 總熱量(kcal)(最高值):22 總糖量(g):0.2(最高) 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "莓果女伶 Berry Ballerina",
+            "description": "【冰飲冰量固定】清新果汁感風味，水蜜桃、綜合莓果、百香果和鳳梨的明亮果香，乳酸飲料的酸甜氣息。\nL(冰/熱) 總熱量(kcal)(最高值):16 總糖量(g):0.2(最高) 咖啡因(mg):335.7(紅標)\n\n原料產地:衣索比亞、哥倫比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典燕麥拿鐵 OATLY Oat Milk Latte",
+            "description": "【冰飲冰量固定】使用OATLY燕麥奶，咖啡搭配堅果及燕麥韻味\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):304.63 總糖量(g):28.49 咖啡因(mg):207.8(紅標)\nL(冰) 總熱量(kcal)(最高值):255.03 總糖量(g):26.01 咖啡因(mg):207.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):365.4 總糖量(g):33.9 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):315.79 總糖量(g):31.46 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山茶花輕拿鐵 Camellia Light Latte",
+            "description": "【冰飲冰量固定】入口輕盈滑順伴著山茶花香，淡淡乳香飄，香氣馥郁平衡，甜而不膩的口感讓人一喝就愛上。\nL(熱) 總熱量(kcal)(最高值):309.56 總糖量(g):33.5 咖啡因(mg):207.8(紅標)\nL(冰) 總熱量(kcal)(最高值):256.66 總糖量(g):29.66 咖啡因(mg):207.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):371.0 總糖量(g):39.8 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):318.08 總糖量(g):35.97 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖啡凍飲 鮮奶紅茶 Black Tea w/ Coffee Jelly & Fresh Milk",
+            "description": "【限冰飲，冰量固定】咀嚼控的最愛，咖啡果凍Q彈口感，擄獲許多忠實顧客的心。\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(冰) 總熱量(kcal)(最高值):230.35 總糖量(g):39.91 咖啡因(mg):101~2OO(黃標)\nXL(冰) 總熱量(kcal)(最高值):290.65 總糖量(g):49.47 咖啡因(mg):101~2OO(黃標)\n\n原料產地:越南、肯亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "莓果茶 Berries Tea",
+            "description": "【冰飲冰量固定】新鮮綜合莓果熬煮成醬，適合午茶時段來杯酸甜感的飲品，冷熱皆宜的一款水果系飲品。\nL(冰/熱) 總熱量(kcal)(最高值):164.0 總糖量(g):50.2 咖啡因(mg):101~2OO(黃標)\n\n原料產地:越南",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙倍濃金獎美式",
+            "description": "選用IIAC金獎豆，雙倍濃度喚醒春日體能，是您運動前最強大的能量補給！\nL(冰) 總熱量(kcal)(最高值):30 總糖量(g):0.2(最高) 咖啡因(mg):415.6(紅標)\nL(熱) 總熱量(kcal)(最高值):30 總糖量(g):0.2(最高) 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):37.5 總糖量(g):0.2(最高) 咖啡因(mg):519.5(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙倍濃金獎拿鐵",
+            "description": "金獎咖啡與濃郁乳香的完美拉鋸，雙倍濃厚口感，讓您的運動生活更具層次。\nL(冰) 總熱量(kcal)(最高值):201.86 總糖量(g):12.68(最高) 咖啡因(mg):415.6(紅標)\nL(熱) 總熱量(kcal)(最高值):241.52 總糖量(g):15.56(最高) 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):124.73 總糖量(g):22.35(最高) 咖啡因(mg):519.5(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡",
+            "description": "全台期盼的酸甜回歸！檸檬清香與精品咖啡沁涼交織，激發春天最清爽的活力。\nL(冰) 總熱量(kcal)(最高值):118.35 總糖量(g):22.64(最高) 咖啡因(mg):207.8(紅標)\nXL(冰) 總熱量(kcal)(最高值):165.96 總糖量(g):29.67(最高) 咖啡因(mg):311.7(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽西西里",
+            "description": "經典西西里咖啡結合細緻海鹽，檸檬的清新果香與咖啡醇厚相互襯托，酸、甜、鹹三種風味平衡交織，打造清爽且富有層次的夏日風味。\nL(冰) 總熱量(kcal)(最高值):118.3 總糖量(g):22.64(最高) 咖啡因(mg):207.8(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "盛夏草莓精品手沖",
+            "description": "手沖後散發新鮮草莓果醬香氣，入口可感受滑順無鹽奶油般的質地，伴隨小葉紅茶尾韻，甜感飽滿且餘韻悠長。\nL(冰) 總熱量(kcal)(最高值):16  總糖量(g):0.2(最高) 咖啡因(mg):237.1(紅標)\n原料產地:泰國",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "盛夏蜜桃精品手沖",
+            "description": "熱沖時先綻放柔和蜜桃香氣，接著帶出細緻蔗糖甜感與粉玫瑰花香，整體口感輕盈優雅，如夏日午後的一杯水果花茶。\nL(冰) 總熱量(kcal)(最高值):16  總糖量(g):0.2(最高) 咖啡因(mg):227.8(紅標)\n原料產地:泰國",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "黑咖 Black Coffee",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雙冠莊園精品美式 Premium Americano",
+            "description": "【冰飲冰量固定】熱帶水果風味與莓果尾韻的疊加，香氣濃烈甜感爆發。\nL(冰/熱) 總熱量(kcal)(最高值):22 總糖量(g):0.2(最高) 咖啡因(mg):262.8(紅標)\nXL(冰/熱) 總熱量(kcal)(最高值):30 總糖量(g):0.2(最高) 咖啡因(mg):350.4(紅標)\n\n原料產地:哥倫比亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "CAMA金獎美式 CAMA Americano",
+            "description": "【冰飲冰量固定】帶著堅果烤焙香氣與黑巧克力的後韻, 伴有細緻果酸風味的厚實口感。\nL(冰/熱) 總熱量(kcal)(最高值):22.0 總糖量(g):0.2(最高) 咖啡因(mg):311.7(紅標)\nXL(冰/熱) 總熱量(kcal)(最高值):30.0 總糖量(g):0.2(最高) 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微韻輕美式 Light Americano",
+            "description": "【冰飲冰量固定】口感更為清爽的拿鐵，以較輕盈的濃縮咖啡比例。\nL(冰/熱) 總熱量(kcal)(最高值):16 總糖量(g):0.2(最高) 咖啡因(mg):207.8(紅標)\nXL(冰/熱) 總熱量(kcal)(最高值):22 總糖量(g):0.2(最高) 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精品冷萃-花香耶加雪菲 Floral Yirgacheffe Cold Brew",
+            "description": "【冰飲冰量固定】低溫浸泡12小時萃取，清爽回甘\nL(冰) 總熱量(kcal)(最高值):21 總糖量(g):0.2(最高) 咖啡因(mg):216.14(紅標)\nXL(冰) 總熱量(kcal)(最高值):29 總糖量(g):0.2(最高) 咖啡因(mg):273.71(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精品冷萃-百蜜花園 Sweet Blossom Cold Brew",
+            "description": "【冰飲冰量固定】低溫浸泡12小時萃取，清爽回甘\nL(冰) 總熱量(kcal)(最高值):21.0 總糖量(g):0.2(最高) 咖啡因(mg):193(紅標)\nXL(冰) 總熱量(kcal)(最高值):29 總糖量(g):0.2(最高) 咖啡因(mg):244(紅標)\n\n原料產地:哥斯大黎加、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙倍濃金獎美式",
+            "description": "選用IIAC金獎豆，雙倍濃度喚醒春日體能，是您運動前最強大的能量補給！\nL(冰) 總熱量(kcal)(最高值):30 總糖量(g):0.2(最高) 咖啡因(mg):415.6(紅標)\nL(熱) 總熱量(kcal)(最高值):30 總糖量(g):0.2(最高) 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):37.5 總糖量(g):0.2(最高) 咖啡因(mg):519.5(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡",
+            "description": "全台期盼的酸甜回歸！檸檬清香與精品咖啡沁涼交織，激發春天最清爽的活力。\nL(冰) 總熱量(kcal)(最高值):118.35 總糖量(g):22.64(最高) 咖啡因(mg):207.8(紅標)\nXL(冰) 總熱量(kcal)(最高值):165.96 總糖量(g):29.67(最高) 咖啡因(mg):311.7(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽西西里",
+            "description": "經典西西里咖啡結合細緻海鹽，檸檬的清新果香與咖啡醇厚相互襯托，酸、甜、鹹三種風味平衡交織，打造清爽且富有層次的夏日風味。\nL(冰) 總熱量(kcal)(最高值):118.3 總糖量(g):22.64(最高) 咖啡因(mg):207.8(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶咖 Milk Coffee",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雙冠莊園精品拿鐵 Premium Latte",
+            "description": "【冰飲冰量固定】第四代超醇萃工藝 UipEt4/COE冠軍莊園豆。精品咖啡豆遇上濃醇鮮奶，CAMA金獎拿鐵再升級。\nL(熱) 總熱量(kcal)(最高值):311 總糖量(g):30.68 咖啡因(mg):262.8(紅標)\nL(冰) 總熱量(kcal)(最高值):273.69 總糖量(g):30.43 咖啡因(mg):262.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):376.6 總糖量(g):39.8 咖啡因(mg):350.4(紅標)\nXL(冰) 總熱量(kcal)(最高值):350.13 總糖量(g):37.86 咖啡因(mg):350.4(紅標)\n\n原料產地:哥倫比亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "CAMA金獎拿鐵 CAMA Latte",
+            "description": "【冰飲冰量固定】香醇的濃縮咖啡注入新鮮牛奶, cama NO.1 的熱銷飲品\n(含牛奶飲品調整冰塊不會滿杯)\n\nL(熱) 總熱量(kcal)(最高值):238.0 總糖量(g):16.5 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):172.0 總糖量(g):12.5 咖啡因(mg):311.7(紅標)\nXL(熱) 總熱量(kcal)(最高值):280.0 總糖量(g):19.6 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):213.0 總糖量(g):15.4 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微韻輕拿鐵 Light Latte",
+            "description": "【冰飲冰量固定】口感更為清爽的拿鐵，以較輕盈的濃縮咖啡比例，搭配淡麗爽口的鮮奶。\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):232.0 總糖量(g):16.5 咖啡因(mg):207.8(紅標)\nL(冰) 總熱量(kcal)(最高值):172.0 總糖量(g):12.5 咖啡因(mg):207.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):282.0 總糖量(g):20.1 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):213.0 總糖量(g):15.4 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典燕麥拿鐵 OATLY Oat Milk Latte",
+            "description": "【冰飲冰量固定】使用OATLY燕麥奶，咖啡搭配堅果及燕麥韻味\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):304.63 總糖量(g):28.49 咖啡因(mg):207.8(紅標)\nL(冰) 總熱量(kcal)(最高值):255.03 總糖量(g):26.01 咖啡因(mg):207.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):365.4 總糖量(g):33.9 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):315.79 總糖量(g):31.46 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微韻輕燕麥拿鐵 OATSIDE Oat Milk Latte",
+            "description": "【冰飲冰量固定】使用OATSIDE燕麥奶，100%澳洲高品質燕麥，完整的燕麥顆粒萃取，搭配咖啡更能提升堅果及麥香層次，打造出恰到好處的濃郁度，形成絕佳平衡。\n（飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):304.63 總糖量(g):27.47 咖啡因(mg):207.8(紅標)\nL(冰) 總熱量(kcal)(最高值):255.03 總糖量(g):25.23 咖啡因(mg):207.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):365.4 總糖量(g):32.7 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):315.79 總糖量(g):30.5 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡布奇諾 Cappuccino",
+            "description": "【冰飲冰量固定】比拿鐵咖啡再濃郁一些，給喜歡咖啡味重一點的您。\n\nL(熱) 總熱量(kcal)(最高值):334.57 總糖量(g):34.27 咖啡因(mg):415.6(紅標)\nL(冰) 總熱量(kcal)(最高值):261.86 總糖量(g):28.99 咖啡因(mg):415.6(紅標)\nXL(熱) 總熱量(kcal)(最高值):397.8 總糖量(g):40.7 咖啡因(mg):519.5(紅標)\nXL(冰) 總熱量(kcal)(最高值):325.08 總糖量(g):35.46 咖啡因(mg):519.5(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽焦糖拿鐵 Salted Caramel Latte",
+            "description": "【冰飲冰量固定】榛果/黑糖/蜂蜜/海鹽焦糖/香草\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):329.24 總糖量(g):36.37 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):276.36 總糖量(g):32.56 咖啡因(mg):311.7(紅標)\nXL(熱) 總熱量(kcal)(最高值):353.3 總糖量(g):40.2 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):340.12 總糖量(g):39.45 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜風味拿鐵 Honey Latte",
+            "description": "【冰飲冰量固定】榛果/黑糖/蜂蜜/海鹽焦糖/香草\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):278.0 總糖量(g):25.8 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):225.0 總糖量(g):22.0 咖啡因(mg):311.7(紅標)\nXL(熱) 總熱量(kcal)(最高值):330.0 總糖量(g):30.6 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):277.0 總糖量(g):26.8 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖拿鐵 Brown Sugar Latte",
+            "description": "【冰飲冰量固定】榛果/黑糖/蜂蜜/海鹽焦糖/香草\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):322.28 總糖量(g):33.63 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):269.4 總糖量(g):29.79 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):331.77 總糖量(g):36.13 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山茶花輕拿鐵 Camellia Light Latte",
+            "description": "【冰飲冰量固定】入口輕盈滑順伴著山茶花香，淡淡乳香飄，香氣馥郁平衡，甜而不膩的口感讓人一喝就愛上。\nL(熱) 總熱量(kcal)(最高值):309.56 總糖量(g):33.5 咖啡因(mg):207.8(紅標)\nL(冰) 總熱量(kcal)(最高值):256.66 總糖量(g):29.66 咖啡因(mg):207.8(紅標)\nXL(熱) 總熱量(kcal)(最高值):371.0 總糖量(g):39.8 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):318.08 總糖量(g):35.97 咖啡因(mg):311.7(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖瑪琪朵 Caramel Macchiato",
+            "description": "【冰飲冰量固定】香甜的焦糖醬化在咖啡與綿密奶泡中, 誘人的甜蜜滋味\n（含牛奶類飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):347.73 總糖量(g):39.07 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):275.02 總糖量(g):33.79 咖啡因(mg):311.7(紅標)\nXL(熱) 總熱量(kcal)(最高值):375.6 總糖量(g):42.8 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):335.92 總糖量(g):39.96 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香草拿鐵 Vanilla Latte",
+            "description": "【冰飲冰量固定】榛果/黑糖/蜂蜜/海鹽焦糖/香草\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):279.0 總糖量(g):27.1 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):226.0 總糖量(g):23.3 咖啡因(mg):311.7(紅標)\nXL(熱) 總熱量(kcal)(最高值):331.0 總糖量(g):32.2 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):279.0 總糖量(g):28.4 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果拿鐵 Hazelnut Latte",
+            "description": "【冰飲冰量固定】榛果/黑糖/蜂蜜/海鹽焦糖/香草\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):326.74 總糖量(g):35.82 咖啡因(mg):311.7(紅標)\nL(冰) 總熱量(kcal)(最高值):273.86 總糖量(g):31.98 咖啡因(mg):311.7(紅標)\nXL(冰) 總熱量(kcal)(最高值):337.12 總糖量(g):38.76 咖啡因(mg):415.6(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩卡咖啡 Coffee Mocha",
+            "description": "【糖量固定，冰飲冰量固定】，巧克力本身有甜度\n（含牛奶類飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):307.0 總糖量(g):31.2 咖啡因(mg):331(紅標)\nL(冰) 總熱量(kcal)(最高值):281.0 總糖量(g):39.3 咖啡因(mg):331(紅標)\nXL(熱) 總熱量(kcal)(最高值):396.0 總糖量(g):39.4 咖啡因(mg):438(紅標)\nXL(冰) 總熱量(kcal)(最高值):343.0 總糖量(g):35.6 咖啡因(mg):438(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶拿鐵 Matcha Coffee Latte",
+            "description": "【冰飲冰量固定】Coffee or tea 抹茶, 咖啡迸出的絕妙香氣, 最佳的拿鐵新選擇\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(冰) 總熱量(kcal)(最高值):284.0 總糖量(g):24.6 咖啡因(mg):216(紅標)\nL(熱) 總熱量(kcal)(最高值):207.0 總糖量(g):19.3 咖啡因(mg):216(紅標)\nXL(熱) 總熱量(kcal)(最高值):338.0 總糖量(g):30.4 咖啡因(mg):318(紅標)\nXL(冰) 總熱量(kcal)(最高值):274.0 總糖量(g):25.9 咖啡因(mg):422(紅標)\n\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞\n\n抹茶粉:靜岡、鹿兒島",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙倍濃金獎拿鐵",
+            "description": "金獎咖啡與濃郁乳香的完美拉鋸，雙倍濃厚口感，讓您的運動生活更具層次。\nL(冰) 總熱量(kcal)(最高值):201.86 總糖量(g):12.68(最高) 咖啡因(mg):415.6(紅標)\nL(熱) 總熱量(kcal)(最高值):241.52 總糖量(g):15.56(最高) 咖啡因(mg):415.6(紅標)\nXL(冰) 總熱量(kcal)(最高值):124.73 總糖量(g):22.35(最高) 咖啡因(mg):519.5(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖啡凍飲拿鐵 Coffee Jelly Latte",
+            "description": "【冰飲冰量固定】咖啡凍搭配 cama 經典熱賣拿鐵咖啡, 是每日第二杯咖啡的新選擇\n(含牛奶飲品調整冰塊不會滿杯)\nL(冰) 總熱量(kcal)(最高值):291.23 總糖量(g):43.75 咖啡因(mg):154.06(黃標)\nXL(冰) 總熱量(kcal)(最高值):372.75 總糖量(g):54.27 咖啡因(mg):270.5(紅標)\n原料產地:哥倫比亞、巴西、尼加拉瓜、坦尚尼亞、衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精品手沖 Drip",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "莓果女伶 Berry Ballerina",
+            "description": "【冰飲冰量固定】清新果汁感風味，水蜜桃、綜合莓果、百香果和鳳梨的明亮果香，乳酸飲料的酸甜氣息。\nL(冰/熱) 總熱量(kcal)(最高值):16 總糖量(g):0.2(最高) 咖啡因(mg):335.7(紅標)\n\n原料產地:衣索比亞、哥倫比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "耶加雪菲 Yirgacheffe",
+            "description": "【冰飲冰量固定】特選水洗/淺焙\n夾帶小白花香氣, 檸檬與蘋果酸感, 和微微的香橙柑橘甜度。\nL(冰/熱) 總熱量(kcal)(最高值):16 總糖量(g):0.2(最高) 咖啡因(mg):283.4(紅標)\n原料產地:衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "果樹女神 Pomona",
+            "description": "【冰飲冰量固定】COFFEE REVIEW國際評鑑92分/淺焙\n莓果與熱帶水果香氣, 玫瑰, 杏仁及甜桔。\nL(冰/熱) 總熱量(kcal)(最高值):16 總糖量(g):0.2(最高) 咖啡因(mg):297(紅標)\n原料產地:衣索比亞、哥倫比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金曼巴 Golden Mandheling & Brazil Blend",
+            "description": "【冰飲冰量固定】IIAC國際評鑑金獎/中焙\n黃金曼特寧與巴西豆黃金比例, 擁有核果調性的烤花生與桂圓香氣, 濃稠奶油太妃糖韻味, 熟成蜜柑與紅棗酸香。\nL(冰/熱) 總熱量(kcal)(最高值):16 總糖量(g):0.2(最高) 咖啡因(mg):350.2(紅標)\n原料產地:印尼、巴西",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力王子 Chocolate Prince",
+            "description": "【冰飲冰量固定】手沖黑咖啡。\nIIAC國際評鑑金獎/中焙，帶有黑巧克力、焦糖甜香。\nL(冰/熱) 總熱量(kcal)(最高值):16 總糖量(g):0.2(最高) 咖啡因(mg):344.1(紅標)\n原料產地:瓜地馬拉",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金曼特寧 Golden Mandheling",
+            "description": "【冰飲冰量固定】頂級 AA A/深焙\n產地特有的自然蔭乾法手工篩選嚴謹製作, 頂級曼特寧獨有的濃郁香氣,含龍眼蜜及黑巧克力甜感包覆。\nL(冰/熱) 總熱量(kcal)(最高值):16 總糖量(g):0.2(最高) 咖啡因(mg):365.2(紅標)\n原料產地:印尼",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日曬莊園緋紅香 Natural Estate Scarlet Aroma",
+            "description": "【冰飲冰量固定】明亮莓果與甜桃交織，蜜桃乾甜感圓潤，尾韻帶紅花與紅茶香氣，層次細緻。\nM(冰/熱) 總熱量(kcal)(最高值):12 總糖量(g):0.2(最高) 咖啡因(mg):243.1(紅標)\n原料產地:衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藝伎花序 Floral Geisha",
+            "description": "【冰飲冰量固定】白花香氣細緻乾淨，甜橙與蜂蜜交織出柔和甜感，小紅莓點綴清爽果酸，整體清新優雅，尾韻乾淨明亮，是經典水洗藝伎的平衡之作。\n\nM(冰/熱) 總熱量(kcal)(最高值):12 總糖量(g):0.2(最高) 咖啡因(mg):315(紅標)\n\n原料產地:衣索比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "非洲微醺酒香 African Aroma Blend",
+            "description": "【冰飲冰量固定】以日本清酒與梅酒的微醺果感為核心，完美融合了清新柑橘酸度與蜂蜜花香的優雅餘韻。\nM(冰/熱) 總熱量(kcal)(最高值):12 總糖量(g):0.2(最高) 咖啡因(mg):219(紅標)\n原料產地:馬拉威、坦尚尼亞、哥倫比亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "盛夏草莓精品手沖",
+            "description": "手沖後散發新鮮草莓果醬香氣，入口可感受滑順無鹽奶油般的質地，伴隨小葉紅茶尾韻，甜感飽滿且餘韻悠長。\nL(冰) 總熱量(kcal)(最高值):16  總糖量(g):0.2(最高) 咖啡因(mg):237.1(紅標)\n原料產地:泰國",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "盛夏蜜桃精品手沖",
+            "description": "熱沖時先綻放柔和蜜桃香氣，接著帶出細緻蔗糖甜感與粉玫瑰花香，整體口感輕盈優雅，如夏日午後的一杯水果花茶。\nL(冰) 總熱量(kcal)(最高值):16  總糖量(g):0.2(最高) 咖啡因(mg):227.8(紅標)\n原料產地:泰國",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "純茶、奶茶 Others",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "熟香紅茶 Black Tea",
+            "description": "【冰飲冰量固定】茶湯飽滿紅橙色，入口後有著麥芽、烤麵包香、龍眼殼香\n\nL(冰/熱) 總熱量(kcal)(最高值):77.83 總糖量(g):17.95 咖啡因(mg):101~2OO(黃標)\nXL(冰/熱) 總熱量(kcal)(最高值):93.39 總糖量(g):21.54 咖啡因(mg):101~2OO(黃標)\n\n原料產地:越南、肯亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶 熟香紅茶 Black Tea w/ Fresh Milk",
+            "description": "【冰飲冰量固定】選用斯里蘭卡高山錫蘭紅茶, 佐以優質鮮奶, 是最經典的奶茶選擇\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):121.0 總糖量(g):21.2 咖啡因(mg):101~2OO(黃標)\nL(冰) 總熱量(kcal)(最高值):94.0 總糖量(g):22.3 咖啡因(mg):101~2OO(黃標)\nXL(熱) 總熱量(kcal)(最高值):160.0 總糖量(g):27.1 咖啡因(mg):101~2OO(黃標)\nXL(冰) 總熱量(kcal)(最高值):119.0 總糖量(g):27.2 咖啡因(mg):101~2OO(黃標)\n\n原料產地:越南、肯亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖啡凍飲 鮮奶紅茶 Black Tea w/ Coffee Jelly & Fresh Milk",
+            "description": "【限冰飲，冰量固定】咀嚼控的最愛，咖啡果凍Q彈口感，擄獲許多忠實顧客的心。\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(冰) 總熱量(kcal)(最高值):230.35 總糖量(g):39.91 咖啡因(mg):101~2OO(黃標)\nXL(冰) 總熱量(kcal)(最高值):290.65 總糖量(g):49.47 咖啡因(mg):101~2OO(黃標)\n\n原料產地:越南、肯亞",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "莓果茶 Berries Tea",
+            "description": "【冰飲冰量固定】新鮮綜合莓果熬煮成醬，適合午茶時段來杯酸甜感的飲品，冷熱皆宜的一款水果系飲品。\nL(冰/熱) 總熱量(kcal)(最高值):164.0 總糖量(g):50.2 咖啡因(mg):101~2OO(黃標)\n\n原料產地:越南",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花草茶 無咖啡因 Herbal Tea",
+            "description": "【冰飲冰量固定】內含玫瑰、洋甘菊、薄荷，微涼清爽回甘\n\nL(冰/熱) 總熱量(kcal)(最高值):0.3 總糖量(g):0 咖啡因(mg):0\nXL(冰/熱) 總熱量(kcal)(最高值):0.5 總糖量(g):0 咖啡因(mg):0\n\n原料產地:泰國、德國、巴拉圭",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果風味國寶茶 無咖啡因 Mango Flavored Rooibos Tea",
+            "description": "【冰飲冰量固定】大杯。無咖啡因。南非特產的國寶茶, 有別於綠茶或紅茶的香氣, 添加芒果風味夏日感十足。\nL(冰/熱) 總熱量(kcal)(最高值):77.83 總糖量(g):17.95 咖啡因(mg):0\n\n原料產地:南非、德國、中國、台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶歐蕾 Matcha Milk",
+            "description": "【冰飲冰量固定】搭配日本直輸抹茶, 一口嚐盡春回大地的清爽與滋養\n（含牛奶飲品調整冰塊不會滿杯）\n\nL(熱) 總熱量(kcal)(最高值):296.0 總糖量(g):25.1 咖啡因(mg):100以下(綠標)\nL(冰) 總熱量(kcal)(最高值):210.0總糖量(g):20.8 咖啡因(mg):100以下(綠標)\nXL(熱) 總熱量(kcal)(最高值):285.0 總糖量(g):37.8 咖啡因(mg):101~2OO(黃標)\nXL(冰) 總熱量(kcal)(最高值):325.13 總糖量(g):36.9 咖啡因(mg):101~2OO(黃標)\n\n原料產地:靜岡、鹿兒島",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可歐蕾 Chocolate Milk",
+            "description": "【冰飲冰量固定】鮮奶沖泡香醇巧克力\n（冰塊甜度固定，只有小碎冰而已）\n\nL(熱) 總熱量(kcal)(最高值):256.0 總糖量(g):27.8 咖啡因(mg):100以下(綠標)\nL(冰) 總熱量(kcal)(最高值):256.0 總糖量(g):27.8 咖啡因(mg):100以下(綠標)\nXL(熱) 總熱量(kcal)(最高值):371.0 總糖量(g):39.0 咖啡因(mg):100以下(綠標)\nXL(冰) 總熱量(kcal)(最高值):371.0 總糖量(g):39.0 咖啡因(mg):100以下(綠標)\n\n原料產地:法國",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮做餐食 Sandwich & Bread",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔓越莓貝果 Cranberry Bagel(Vegetarian)",
+            "description": "麥香中搭配蔓越莓果乾，酸甜交織，口感層次豐富不膩口。蛋奶素可食。\n熱量：301.1大卡；過敏原資訊：含有麩質穀製品、牛奶類及其製品。\n建議2小時內食用完畢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司乳酪貝果 Cheese Bagel(Vegetarian)",
+            "description": "濃郁的起司香搭配貝果麥香，完美融合口感層次豐富、香氣四溢。蛋奶素可食。\n熱量：291.0大卡；過敏原資訊：含有麩質穀製品、牛奶類及其製品。\n建議2小時內食用完畢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典原味貝果 Classic Original Bagel(Vegetarian)",
+            "description": "原味貝果外韌內Q，自然小麥香。蛋奶素可食。\n熱量：281.8大卡；過敏原資訊：含有麩質穀製品、牛奶類及其製品。\n建議2小時內食用完畢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓奶油抹醬 Blueberry jam&Butter Flavor Spread (Vegetarian)",
+            "description": "濃郁藍莓果醬，結合馥郁的奶油風味醬。果香的酸甜平衡了奶油的厚實，整體口感溫潤、甜而不膩。蛋奶素可食。\n熱量：53.6大卡；過敏原資訊：含有蛋、牛奶、大豆成分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙色巧克力抹醬 Black Chocolate & White Chocolate Spread (Vegetarian)",
+            "description": "醇厚的黑巧克力醬，結合濃郁絲滑的白巧克力醬。黑白雙色帶來雙重可可的層次。蛋奶素可食。\n熱量：63.8大卡；過敏原資訊：含有牛奶、大豆成分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生醇巧抹醬 Peanut & Chocolate Spread (Vegetarian)",
+            "description": "絲滑的可可搭配濃郁堅果香氣的花生醬，花生的鹹香與巧克力的香甜完美揉合。蛋奶素可食。\n熱量：65.0大卡；過敏原資訊：含有花生、牛奶及大豆成分。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "現烘咖啡豆&濾掛咖啡 Freshly Roasted Beans & Drip Bag Coffee",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "義式咖啡豆-半磅 House Blend",
+            "description": "均衡厚實的堅果香氣，黑巧克力、鲜切雪松與迷迭香芳香，伴隨細緻果香餘韻。加入鮮奶調配可感受焦糖香醇回甘。適合中深焙濃縮咖啡愛好者。",
+            "offers": {
+              "@type": "Offer",
+              "price": "475.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金曼特寧-半磅 Golden Mandheling",
+            "description": "產地特有的自然蔭乾法手工篩選嚴謹製作，頂級曼特寧獨有的濃郁香氣，細緻的豐富口感。入口龍眼蜜的香氣，被濃郁黑巧克力甜感包覆，集優雅的口感與醇厚尾韻於一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "625.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力王子-半磅 Chocolate Prince",
+            "description": "黑巧克力綿密深遂的口感，馥郁焦糖甜香。微苦的甜味，轉化成綿延不斷回甘的餘韻，充滿變化就像一個風度翩翩的王子般，令人回味再三。",
+            "offers": {
+              "@type": "Offer",
+              "price": "575.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "耶加雪菲-半磅 Yirgacheffe",
+            "description": "獨特的萊姆、清寧柔和的果酸香氣，融入清爽明亮的柑橘、蜂蜜甜感，小白花香韻清新，口感乾淨明亮，為極具個性的精品咖啡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "575.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "果樹女神-半磅 Pomona",
+            "description": "POMONA是希臘神話中為了美好滋味守護著果樹耕種的女神，清新莓果與熱帶水果香氣悠然綻放，蘋果酒、玫瑰、杏仁、甜桔的愉悅甜感。一飲入口是具層次感且愉悅的乾柔甜味，令人沉醉不已。",
+            "offers": {
+              "@type": "Offer",
+              "price": "575.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "莓果女伶-半磅 Berry Ballerina",
+            "description": "清新果汁感風味，水蜜桃、綜合莓果、百香果和鳳梨的明亮果香，養樂多的酸甜氣息。",
+            "offers": {
+              "@type": "Offer",
+              "price": "775.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙冠莊園精品咖啡豆-半磅 Double Crown Estate Premium",
+            "description": "COE冠軍莊園 X WSC世界冠軍監修。珍稀橘波旁，熱帶水果風味與莓果尾韻，香氣濃烈甜感爆發。",
+            "offers": {
+              "@type": "Offer",
+              "price": "775.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義式8入/盒 Drip Bag Coffee-House Blend (8 Bags/Box)",
+            "description": "堅果烤焙香氣、口感均衡厚實，黑巧克力後韻，伴有細緻果酸風味\t產地：中南美洲、非洲\t主要處理法：水洗\t亞洲唯一榮獲2017 義大利 IIAC 咖啡評鑑金獎\t榮獲美國 Coffee Review 咖啡評鑑91分高分",
+            "offers": {
+              "@type": "Offer",
+              "price": "345.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金曼巴8入/盒  Drip Bag Coffee-Golden Mandheling & Brazil Blend (8 Bags/Box)",
+            "description": "黄金曼特寧與巴西豆黄金比例的味覺進化，更加豐沛的層次感，擁有核果調性的烤花生與桂圓香氣，濃稠奶油太妃糖韻味，熟成蜜柑與紅棗酸香細緻餘韻。",
+            "offers": {
+              "@type": "Offer",
+              "price": "385.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花香耶加雪菲8入/盒 Drip Bag Coffee-Floral Yirgacheffe (8 Bags/Box)",
+            "description": "雞蛋花香、蜜桃、香檳葡萄、蘋果優雅酸香\t產地：衣索比亞\t主要處理法：日曬\t烘焙度：淺焙\t榮獲 2018 澳洲AICA咖啡評鑑銅獎(Pour Over/Single Origin)\t陽光醇味熟成，優雅的淡發酵香氣餘韻持久",
+            "offers": {
+              "@type": "Offer",
+              "price": "425.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "耶加雪菲8入/盒 Drip Bag Coffee-Yirgacheffe (8 Bags/Box)",
+            "description": "小白花香氣、檸檬與蘋果酸感、香橙柑橘的清新甜度。\t產地：衣索比亞\t主要處理法：水洗\t衣索比亞西南部Sidamo產區，咖啡豆屬於中小顆粒\t生豆顏色略呈黃綠色，豆型漂亮完整，在東非精品咖啡中具有代表性",
+            "offers": {
+              "@type": "Offer",
+              "price": "385.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "果樹女神8入/盒 Drip Bag Coffee-Pomona (8 Bags/Box)",
+            "description": "豐富熱帶水果氣息、藍莓、黑醋栗酸甜、杏仁奶質的喉韻\t產地：衣索比亞、瓜地馬拉\t主要處理法：日曬\t榮獲2015美國Coffee Review 92分高分\tPomona是羅馬神話中，為美好滋味守護果樹耕種的果樹女神",
+            "offers": {
+              "@type": "Offer",
+              "price": "385.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力王子8入/盒  Drip Bag Coffee-Chocolate Prince (8 Bags/Box)",
+            "description": "香醇原味可可豆香、黑醋栗、仙楂、豐富油脂果仁\t產地：瓜地馬拉\t主要處理法：水洗\t榮獲 2018 義大利IIAC咖啡評鑑金獎(Filter)\t充滿變化的複雜性就像一個風度翩翩的王子般，令人回味再三",
+            "offers": {
+              "@type": "Offer",
+              "price": "385.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "曼巴8入/盒 Drip Bag Coffee-Mandheling & Brazil Blend (8 Bags/Box)",
+            "description": "烤花生與榛果香氣、細緻草本風味、平衡的柔順感，淡淡酒香。\t產地：印尼、巴西\t主要處理法：半水洗\t結合曼特寧與巴西喜拉朵兩種高級阿拉比卡豆，適合各式沖煮法\t散發出自然甘甜的清香，是介於厚重與柔和之間的最佳咖啡選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "385.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【畢卡索】浸泡式花香耶加雪菲8入/盒 Drip Bag Coffee-Floral Yirgacheffe (8 Bags/Box)",
+            "description": "畢卡索知名畫作夢進行藝術家聯名浸泡式咖啡。雞蛋花香、蜜桃、香檳葡萄、蘋果優雅酸香\t產地：衣索比亞\t主要處理法：日曬\t烘焙度：淺焙\t榮獲 2018 澳洲AICA咖啡評鑑銅獎(Pour Over/Single Origin)\t陽光醇味熟成，優雅的淡發酵香氣餘韻持久",
+            "offers": {
+              "@type": "Offer",
+              "price": "475.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濾掛金獎咖啡8入/盒",
+            "description": "CAMA 經典中的經典,榮獲義大利 IIAC 金獎認證,厚實巧克力與堅果香氣,讓您隨手沖出精品級的義式儀式感！",
+            "offers": {
+              "@type": "Offer",
+              "price": "475.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日曬莊園緋紅香-半磅 Natural Estate Scarlet Aroma",
+            "description": "明亮莓果與甜桃交織，蜜桃乾甜感圓潤，尾韻帶紅花與紅茶香氣，層次細緻。",
+            "offers": {
+              "@type": "Offer",
+              "price": "975.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藝伎花序-半磅 Floral Geisha",
+            "description": "白花香氣細緻乾淨，甜橙與蜂蜜交織出柔和甜感，小紅莓點綴清爽果酸，整體清新優雅，尾韻乾淨明亮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1025.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "非洲微醺酒香 半磅 African Aroma Blend",
+            "description": "以日本清酒與梅酒的微醺果感為核心，完美融合了清新柑橘酸度與蜂蜜花香的優雅餘韻。",
+            "offers": {
+              "@type": "Offer",
+              "price": "975.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "加購提袋 Add Plastic Bag",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "一杯袋 1-Drink Bag (Plastic)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "二杯袋 2-Drink Bag (Plastic)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四杯袋 4-Drink Bag (Plastic)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "八杯袋 8-Drink Bag (Plastic)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "3.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

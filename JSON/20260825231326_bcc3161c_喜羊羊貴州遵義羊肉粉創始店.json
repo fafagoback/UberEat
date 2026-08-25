@@ -1,0 +1,190 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%96%9C%E7%BE%8A%E7%BE%8A%E8%B2%B4%E5%B7%9E%E9%81%B5%E7%BE%A9%E7%BE%8A%E8%82%89%E7%B2%89%E5%89%B5%E5%A7%8B%E5%BA%97/VJfayI5mWBShqd-h9BurqQ",
+  "name": "喜羊羊貴州遵義羊肉粉創始店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "TW新北市新北市蘆洲區民族路109",
+    "addressLocality": "蘆洲區",
+    "addressRegion": "新北市",
+    "postalCode": "247002",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0868042,
+    "longitude": 121.4799065
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 35
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Chinese",
+    "Asian"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "😎😎訂餐前必看😎😎",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "📌完成訂單後給五星好評，下次訂購時備註「上次給過五星好評」，立刻免費增量33%肉肉‼️",
+            "description": "怎麼拿到加量：本次完成訂單後留五星好評；下次下單備註「上次給過五星好評」，肉量免費加33%。加量只適用於下次，當次不加（務必備註）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "📌訂單如有任何問題請來電📞0967296297，老闆很nice的一定讓您🈵意為止！",
+            "description": "訂餐前必看：有任何訂單問題請致電0967296297，我們將盡速協助處理。此為公告，非餐點喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "㊙️Uber eats ㊙️專屬套餐！",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "‼️小胃口餐‼️",
+            "description": "麵/粉減半！菜加量！適合正在控制飲食的你（或是吃不多的你！）——老闆本人沒有在飲控所以不會點…❌",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🉑個人剛剛好餐🉑",
+            "description": "麵/粉原份量！肉肉加量33%！適合忙了一天想填飽肚子的你——老闆本人食量太大所以會點另一個…❌",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🆘個人霸王份量餐🆘",
+            "description": "麵/粉兩倍‼️菜加量‼️肉肉也加量50%適合根本沒在管只想吃爆的你‼️——老闆本人都吃這個…",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "❗️人氣精選❗️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "羊排麵/粉",
+            "description": "燉煮到骨肉分離的羊排肉搭配Q彈的麵條（或Q彈的埔里水粉），以及熬煮入味的湯頭（不喝實在可惜！），不管是晚餐還是宵夜都要來一碗吧！（老闆自己也愛！）",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉麵/粉",
+            "description": "毫無羊騷味的羊肉片搭配Q彈的麵條（或Q彈的埔里水粉），以及熬煮入味的湯頭（不喝實在可惜！），不管是晚餐還是宵夜都要來一碗吧！（老闆自己也愛！）",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🫕暖胃湯品🫕",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "羊肉湯",
+            "description": "毫無羊騷味的羊肉片配上相當入味的湯頭，你不愛算我輸！",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊排湯",
+            "description": "燉煮到軟爛（骨肉分離）的羊排肉，再配上本店熬煮入味的湯頭，老闆每天都來一碗，還不跟上！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "來點青菜🥬",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "不一樣的金針菇😋",
+            "description": "用濃郁的湯頭去燙的金針菇，吸飽湯汁！味道絕對不一樣！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "其他🍜🍜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "湯麵/粉",
+            "description": "就湯跟麵（或粉）。 你確定？",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超入味清湯",
+            "description": "就很入味的湯 沒了",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

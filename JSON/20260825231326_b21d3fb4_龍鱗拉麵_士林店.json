@@ -1,0 +1,366 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%BE%8D%E9%B1%97%E6%8B%89%E9%BA%B5-%E5%A3%AB%E6%9E%97%E5%BA%97/foGZl2LTWHKKvsLEzDL1ew",
+  "name": "龍鱗拉麵 士林店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區文林路132號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.088642696768837,
+    "longitude": 121.52648782446506
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 46
+  },
+  "servesCuisine": [
+    "Japanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Offers",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麥茶",
+            "description": "罐裝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飽足套餐",
+            "description": "含麥茶及 1 份小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豚骨拉麵",
+            "description": "豚骨湯底+香料豬兩片+煙燻雞胸肉兩片+雞腿肉一塊+一顆溏心蛋+海苔兩片+筍干+蔥+洋蔥+蔥白絲。\n每碗拉麵300cc。\n需要加清湯、辣粉可以備注。",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞白湯",
+            "description": "雞白湯+黑胡椒豬一片+煙燻雞胸肉兩片+雞腿肉一塊+海苔一片+蘿蔔絲+洋蔥。\n每碗拉麵300cc。\n需要加清湯、辣粉可以備注。",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飽足套餐",
+            "description": "含麥茶及 1 份小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "翠椒豚骨",
+            "description": "豚骨搭配青花椒麻辣湯頭、黑胡椒豬2 、雞腿、1蛋、海苔、蔥白絲、翠玉娃娃菜。\n每碗拉麵300cc。\n需要加清湯、辣粉可以備注。",
+            "offers": {
+              "@type": "Offer",
+              "price": "410.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "拉麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "翠椒豚骨",
+            "description": "豚骨搭配青花椒麻辣湯頭、黑胡椒豬2 、雞腿、1蛋、海苔、蔥白絲、翠玉娃娃菜。\n每碗拉麵300cc。\n需要加清湯、辣粉可以備注。",
+            "offers": {
+              "@type": "Offer",
+              "price": "410.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞白湯",
+            "description": "雞白湯+黑胡椒豬一片+煙燻雞胸肉兩片+雞腿肉一塊+海苔一片+蘿蔔絲+洋蔥。\n每碗拉麵300cc。\n需要加清湯、辣粉可以備注。",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豚骨拉麵",
+            "description": "豚骨湯底+香料豬兩片+煙燻雞胸肉兩片+雞腿肉一塊+一顆溏心蛋+海苔兩片+筍干+蔥+洋蔥+蔥白絲。\n每碗拉麵300cc。\n需要加清湯、辣粉可以備注。",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泡菜不泡湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔的柚惑",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飽足套餐",
+            "description": "含麥茶及 1 份小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麥茶",
+            "description": "罐裝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飽足套餐",
+            "description": "含麥茶及 1 份小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "煙燻雞胸肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香料豬",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溏心蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "筍干",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海苔",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麥茶",
+            "description": "罐裝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排飯",
+            "description": "有附飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "加購湯頭",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拉麵原湯",
+            "description": "雞白湯、牛肝菌X秋刀魚醬油清湯、豚骨、雞煮干湯。\n留言備注湯頭\n需要免費加清湯可以備注。\n湯300cc。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸餛飩（五顆）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐揚雞（三塊）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸牡蠣 （兩顆）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

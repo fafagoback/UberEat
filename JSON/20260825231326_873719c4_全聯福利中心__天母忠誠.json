@@ -1,0 +1,813 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%85%A8%E8%81%AF%E7%A6%8F%E5%88%A9%E4%B8%AD%E5%BF%83-%E5%A4%A9%E6%AF%8D%E5%BF%A0%E8%AA%A0/qujna7XOVKGFKQeN28FEVA",
+  "name": "全聯福利中心  天母忠誠",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區忠誠路二段188號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.116468279975976,
+    "longitude": 121.53364463214366
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 45
+  },
+  "servesCuisine": [
+    "Supermarket",
+    "Grocery"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "酥脆點心",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "口卡辣姆久歡樂分享包-勁辣唐辛子95g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "旺旺仙貝米果112g(2枚x20袋)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有田海苔小卷80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金牛角美國玉米點心玉米原味60g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦味先-原味80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "22.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "益科 好麗友好多魚餅乾-海苔口味90g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "樂事洋芋片-美國經典原味59.5g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "旺旺小小酥香蔥雞汁口味(米果)180g(60gx3入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "62.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "旺旺仙貝-雪月-甜味(米果)145g(24枚)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "樂事九州岩燒海苔味洋芋片85g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "湖池屋口卡辣姆久洋芋片-勁辣唐辛子52g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什麼丸意兒-雞汁風味50gx3入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡迪那９５℃薯條經典原味16gx5入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "62.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "華元波的多洋芋片-蚵仔煎口味34g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "16.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "星太郎點心餅-大雞汁82g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "餅乾類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "義美小泡芙-牛奶65g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Kid-O日清三明治餅乾(奶油口味)136g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義美小泡芙-草莓65g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "喜年來原味蛋捲經濟包204g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乖乖玉米棒-玉米濃湯105g(7gx15入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "孔雀捲心餅-雞蛋布丁63g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PRETZ蕃茄野菜棒110g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LOTTE蛋黃派23gx10入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優龍ACE Pack原味蘇打餅乾149g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡賀黑糖沙琪瑪500g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義美小泡芙-巧克力65g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "掬水軒迷你口糧棒50g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "10.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑熊五糧糙米銘果350g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "喜年來芝麻蛋捲經濟包204g(4支x3包入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LOTTE巧克力派28gx12包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "臉部療癒發光必備",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "凡士林肌亮水潤精華凝乳-暗沉乾燥肌適用300ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肌研極潤保濕化粧水170ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "396.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "露得清超能亮修護安瓶面膜5片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪芙蘭滋養霜-大號淨重120g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "77.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肌研極潤保濕化粧水清爽型170ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "396.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "森田藥粧三重玻尿酸極保濕精華面膜4入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "森田藥粧沁涼絲瓜水160ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "專科極輕透保濕特潤面膜7片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "279.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "妮維雅男士水活保濕精華凝露150ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肌研極潤保濕乳液140ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "396.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐蕾滋潤保濕乳液(無添加香精)150毫升",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "229.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐蕾多效防曬日霜-無香料配方SPF 15++50克",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "520.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐蕾滋潤保濕乳液(一般型)150毫升",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "229.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐蕾多元修護晚霜50克",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "520.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐蕾多元修護霜-無香料配方50克",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "520.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "水果類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紐西蘭陽光金圓頭奇異果＃５２ 約102g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美國宇宙脆蘋果＃６４ 約250g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕉滴滴 約600g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南投蕉６００ｇ 約600g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酪梨（粒） 約350g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐西蘭富士蘋果＃１２０ 約135g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "16.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐西蘭陽光金奇異果（大）３入 3入/約390g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣（白肉）火龍果 約380g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "祕魯優選藍莓 約125g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐西蘭富士蘋果（袋） 約700g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐西蘭富士蘋果＃９０ 約180g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澳洲砂糖橘（袋） 約480g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐西蘭陽光金圓頭奇異果＃２５ 約130g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐西蘭富士蘋果（盒） 約600g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國麝香葡萄 約450g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "369.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "棉紙製品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "舒潔棉柔舒適抽取衛生紙110抽*12包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘇菲超熟睡衛生棉-細緻棉柔35cm8片*3包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿意寶寶瞬潔乾爽輕巧褲XL38片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "339.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘇菲艾柔吸水淨爽女性用輕微漏尿棉墊-15cc輕薄少量型19cm*22片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "舒潔Viva摺疊家用紙巾150抽*2包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘇菲瞬吸加長超薄護墊-天然無香17.5cm28片x2入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好奇純水濕巾皮克斯限定-加蓋款加厚型70抽",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "來復易防漏安心復健褲M16片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "289.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "舒潔食安級耐用廚房紙巾-大小隨意撕108組*6卷",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘇菲彈力貼身超薄夜用潔翼衛生棉28cm10片*4包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "136.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台糖75%酒精擦隨身包10抽",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "來復易柔適安心紙尿片30片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五月花厚棒四層抽取式衛生紙90抽*10包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘇菲彈力貼身超薄日用潔翼衛生棉23cm12片*4包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "136.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿意寶寶活潑寶寶巧薄紙尿褲-L44+2片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "271.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,943 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%BA%94%E4%BA%8C-burger-%26-bistro/ogblEcmKRTqzFC-upR3EGg",
+  "name": "五二 Burger & Bistro",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6, Lane 14, Sec 7, Zhong Shan N. Rd.",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111039",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1187943,
+    "longitude": 121.5315164
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 1000
+  },
+  "servesCuisine": [
+    "American",
+    "Burgers"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "起司雞肉薄餅套餐Chicken Quesadilla combo",
+            "description": "香煎墨西哥餅皮，內餡加入市場鮮送溫體雞胸肉與起司，撒上特調香料粉，讓人止不嘴一口接一口！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製燻牛肉三明治套餐 Black pepper beef sandwich combo",
+            "description": "精挑細選黑胡椒牛肉片、美生菜、番茄，搭上店家私房醬！！超美味...",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "凱薩雞肉捲餅套餐 Caesar Chicken Burrito",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帶皮火腿三明治 Ham sandwich combo",
+            "description": "非早餐店使用火腿，選用好品質的台灣豬，製成的帶皮火腿唷！！再加上特製醬汁，口感豐富！實在好吃！！喜歡味覺衝擊，加花生醬與起司，風味獨特！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製椒鹽雞翅",
+            "description": "特調調料 好滋味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司鮪魚蘋果三明治套餐 Tuna sandwich with Apple",
+            "description": "鮪魚拌酸黃瓜沙拉、美生菜、蘋果、起司片",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牽絲起司薄餅Cheese Quesadilla combo",
+            "description": "喜歡起司的一定要點，再加上闆闆特調香料，風味更上一層！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆漿地瓜球 Sweet potato balls",
+            "description": "熱熱吃，小心燙口！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸雞柳條 Chicken Basket",
+            "description": "(市場鮮送雞肉)\n4個酥炸雞柳條及特製薯條。\n4 golden deep-fried chicken strips and homemade fries.",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奶油巧克力厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜奶油 Honey butter toast",
+            "description": "甜蜜蜜，再加杯飲品，來一份下午茶吧！！點厚片點飲料享折扣唷！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五二紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酥炸雞柳條 Chicken Basket",
+            "description": "(市場鮮送雞肉)\n4個酥炸雞柳條及特製薯條。\n4 golden deep-fried chicken strips and homemade fries.",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水牛城辣雞翅 Buffalo Wings",
+            "description": "8隻。經典水牛城辣味醬。\n8 pieces. Homemade buffalo wings sauce with chicken wings.",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "HoneyBBQ 雞翅 HoneyBBQ Wings",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "捲餅、薄餅 Burrito and Quesadilla",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "起司雞肉薄餅套餐Chicken Quesadilla combo",
+            "description": "香煎墨西哥餅皮，內餡加入市場鮮送溫體雞胸肉與起司，撒上特調香料粉，讓人止不嘴一口接一口！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牽絲起司薄餅Cheese Quesadilla combo",
+            "description": "喜歡起司的一定要點，再加上闆闆特調香料，風味更上一層！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "凱薩雞肉捲餅套餐 Caesar Chicken Burrito",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "BBQ辣雞起司薄餅 BBQ spicy chicken Quesadilla combo",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味雞肉捲餅套餐 Spicy Chicken Burrito",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "墨西哥辣牛起司薄餅套餐 Spicy beef Quesadilla combo",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果火腿捲餅套餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿番茄起司薄餅套餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生鮪魚起司薄餅套餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "三明治套餐 Sandwich combo",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "特製燻牛肉三明治套餐 Black pepper beef sandwich combo",
+            "description": "精挑細選黑胡椒牛肉片、美生菜、番茄，搭上店家私房醬！！超美味...",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司鮪魚蘋果三明治套餐 Tuna sandwich with Apple",
+            "description": "鮪魚拌酸黃瓜沙拉、美生菜、蘋果、起司片",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帶皮火腿三明治 Ham sandwich combo",
+            "description": "非早餐店使用火腿，選用好品質的台灣豬，製成的帶皮火腿唷！！再加上特製醬汁，口感豐富！實在好吃！！喜歡味覺衝擊，加花生醬與起司，風味獨特！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果火腿起司三明治 Harvest Ham sandwich",
+            "description": "cheese \\Ham \\Apple，最簡單的最美味！！清爽一夏！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "板煎香料雞肉三明治套餐 Chicken sandwich combo",
+            "description": "市場鮮送溫體雞肉，撒上特製香料，鐵板上嫩煎。非常好吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生醬火腿三明治 ham sandwich with peanut butter combo",
+            "description": "味覺衝擊，一定要點花生醬再加上起司片，那風味獨特，喜歡甜鹹交錯的人一定喜歡！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咔滋雞肉三明治套餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "BBQ炸魚三明治套餐",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物、小點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酥炸小熱狗（3支）",
+            "description": "小時候去合作社時的最愛！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆漿地瓜球 Sweet potato balls",
+            "description": "熱熱吃，小心燙口！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水牛城辣雞翅 Buffalo Wings",
+            "description": "8隻。經典水牛城辣味醬。\n8 pieces. Homemade buffalo wings sauce with chicken wings.",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製椒鹽雞翅",
+            "description": "特調調料 好滋味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司沾醬薯條 French Fries with cheese sauce",
+            "description": "手切薯條及起司醬。\nCrispy french fries and cheese sauce.",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞塊 (6個) Nuggets",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚條 (6) Fish stick",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司乳酪條 （6條）Cheese Stick",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸洋蔥圈 Onion rings",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸東炸西 Greedy platter",
+            "description": "2翅2腿、薯條、雞塊、洋蔥圈、鱈魚條",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞塊（10個）Nuggets",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五二特製雞翅 52 Wings",
+            "description": "8隻。特製煙燻臘味醬料。\n8 pieces. Chef's special sweet and tangy wings.",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "HoneyBBQ 雞翅 HoneyBBQ Wings",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米片莎莎醬 Pimento salsa deep",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "深海魷魚塊",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮奶厚厚厚片吐司 Toast",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手工自製奶酥吐司 Milky filling toast",
+            "description": "使用法國奶油、紐西蘭全脂奶粉、台灣糖粉製作！\n口味：原味、巧克力、抹茶！\n厚片皆有下午茶套餐，加點飲料享折扣唷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜奶油 Honey butter toast",
+            "description": "甜蜜蜜，再加杯飲品，來一份下午茶吧！！點厚片點飲料享折扣唷！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤花生 Peanut butter",
+            "description": "濃濃烤花生，再加杯飲品，來一份下午茶吧！！點厚片點飲料享折扣唷！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油煉乳厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焗鮪魚厚片",
+            "description": "特製鮪魚沙拉、起司絲",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油巧克力厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司巧克力厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司煉乳厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜起司厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖肉桂厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料 Drink",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "水果氣泡飲 Fruit sparkling water",
+            "description": "當季水果，自家熬煮！！輕飲一夏，涼快！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水果茶",
+            "description": "自家熬煮水果醬，加入茶飲特調！！！好喝...",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶 Milk tea",
+            "description": "印度／越南錫蘭紅茶、鮮乳",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可樂 Coke",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五二紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "七喜 7.Up",
+            "description": "罐裝、附冰塊！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本沖繩黑糖牛奶 Brown sugar milk tea",
+            "description": "實實在在日本進口的沖繩黑糖，搭上牛奶，甜而不膩！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄汁 Tomato Juice",
+            "description": "罐裝、附冰塊！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖鮮奶茶 Caramel milk tea",
+            "description": "越南／印度錫蘭紅茶、鮮乳，滿滿焦糖香！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本宇治抹茶牛奶 Match milk tea",
+            "description": "日本宇治抹茶、鮮乳",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨汁 Pineapple Juice",
+            "description": "罐裝、附冰塊！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "法芙娜巧克力牛奶 Chocolate milk tea",
+            "description": "法芙娜頂級可可粉、鮮乳",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "通寧水 Tonic Water",
+            "description": "罐裝、附冰塊！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅牛 Red Bull",
+            "description": "罐裝、附冰塊！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘇打水 Soda water",
+            "description": "罐裝、附冰塊！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶綠（甜度固定）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五二綠茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔓越梅紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香柚綠茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百香柚綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果鮮奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "咖啡 Coffee",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "義式冰拿鐵",
+            "description": "豆性偏酸，加上牛奶順口！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果冰拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰美式",
+            "description": "咖啡豆性偏酸，順口！",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖冰拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "義大利麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "茄汁香腸野菇義大利麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油野菇厚切培根麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典肉醬麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

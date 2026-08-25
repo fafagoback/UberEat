@@ -1,0 +1,496 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%9B%9B%E5%AD%A3%E9%A6%99%E6%8E%92%E9%AA%A8%E9%85%A5-%E4%B8%89%E9%87%8D%E4%B8%89%E5%92%8C%E5%BA%97/loWlgVRCV_C4sv3hzCSk3g",
+  "name": "四季香排骨酥 三重三和店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6, Sec 4, San He Rd.",
+    "addressLocality": "Sanchong District",
+    "addressRegion": "New Taipei City",
+    "postalCode": "241066",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0738416,
+    "longitude": 121.4916121
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 350
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "四季香排骨酥中份",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用* 外皮酥脆，香氣十足，每一口都讓人感受到滋味濃郁美味。(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季香香酥無骨肉條中份",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季香香酥無骨肉條大份",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季香排骨酥大份",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用* 外皮酥脆，香氣十足，每一口都讓人感受到滋味濃郁美味。(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季香香酥無骨肉條特大份",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季香排骨酥特大份",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用* 外皮酥脆，香氣十足，每一口都讓人感受到滋味濃郁美味。(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季香香酥無骨雞肉塊中份",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季香香酥無骨雞肉塊大份",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季香香酥無骨雞肉塊特大份",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸甜不辣",
+            "description": "「此為買一送一餐點，請以2的倍數下單」\n\n口感外酥內軟，尾韻富有魚漿的鮮甜香氣，不容錯過！(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘梅地瓜條",
+            "description": "「此為買一送一餐點，請以2的倍數下單」\n外層酥脆內層Q軟，灑上經典梅子粉，嘴饞時的療癒點心。(此描述僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽地瓜條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥土魠魚5條",
+            "description": "「此為買一送一餐點，請以2的倍數下單」\n\n超好吃的 酥炸土魠魚排 外酥內嫩 新鮮土魠魚做的魚排 1份5條",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥二節雞翅[6支]",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "月亮蝦餅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新鮮好吃酥炸柳葉魚(5條) tranguy",
+            "description": "酥炸柳葉魚5條/份",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特大  香酥大雞排",
+            "description": "外酥內嫩",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特別推薦上市  天婦羅炸蝦5支",
+            "description": "「此為買一送一餐點，請以2的倍數下單」",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖酥炸花枝丸5粒 hoachu",
+            "description": "Q脆彈牙的口感，酥炸後的魚漿風味鮮甜，唇齒留香～（此描述僅供參考）",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工新竹貢丸5顆 cungoan",
+            "description": "多汁彈牙的口感肉質鮮甜美味，酥炸後更增加香脆的口感。（此描述僅供參考）",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新品  香酥炸雞皮",
+            "description": "香酥脆口～嘴饞最佳小炸物～好吃到停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥米血糕1份切10小塊 bixuecao",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金黃玉米筍 ymixuan",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸雞蛋豆腐1盒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸湯圓",
+            "description": "國民小吃（花好月圓）像徵吃甜甜、圓圓滿滿好兆頭，外酥內軟、一口接著一口停不下來",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金脆薯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "家庭分享餐A(豬肉)(點餐請先看商品描述)",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用* 無骨肉條1份 香酥二節翅1份6支 排骨酥1份 地瓜條1份 香酥甜不辣1份 薯條1份 飲料2杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "家庭分享套餐B(雞肉)(點餐請先看商品描述)",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用* 香酥無骨雞肉塊1份 香酥二節翅1份/6支 排骨酥1份 地瓜條1份 香酥甜不辣1份 薯條1份 飲料*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超級炸物拼盤C(點餐請先看商品描述)",
+            "description": "香酥無骨雞肉塊小份+薯條1份+香酥甜不辣1份+甘梅地瓜條1份+飲料*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超值炸物拼盤D (點餐請先看商品描述)",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用* 香酥無骨豬肉條小份 薯條1份 香酥甜不辣1份 甘梅地瓜條1份 飲料*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好友分享包E(點餐請先看商品描述)",
+            "description": "無骨肉條小份 無骨雞肉塊1份 薯條1份 飲料2罐",
+            "offers": {
+              "@type": "Offer",
+              "price": "285.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好友分享包F(點餐請先看商品描述)",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用* 無骨香酥肉條1份 香酥二節翅1份6支 薯條1份 飲料2罐",
+            "offers": {
+              "@type": "Offer",
+              "price": "285.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好友分享分享G(點餐請先看商品描述)",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用* 無骨肉條小份、排骨酥小份、薯條1份、飲料2罐",
+            "offers": {
+              "@type": "Offer",
+              "price": "285.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好友分享包J(點餐請先看商品描述)",
+            "description": "香酥無骨雞肉塊1份 香酥二節翅1份6支 薯條1份 飲料*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "285.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好友分享包K(點餐請先看商品描述)",
+            "description": "*肉品些含有肌紅素,即便是全熟的肉也會呈現粉紅色 所有餐點出餐都會確保食物有沒有熟透 請您安心食用* 香酥無骨雞肉塊小份 排骨酥小份 薯條1份 飲料*2",
+            "offers": {
+              "@type": "Offer",
+              "price": "285.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞排  3支二節翅 套餐H(點餐請先看商品描述)",
+            "description": "（1）特大炸雞排1片（2）3支二節翅  （3）飲料1瓶",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞排套餐 P",
+            "description": "香酥大雞排1份、香酥土魠魚5條、飲料1瓶",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "四季香紅茶A（有糖）＋",
+            "description": "注意喔！單一甜度喔！少糖  少糖 少糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季香茉香綠茶B（無糖）－",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超人氣 四季香厚奶茶E（有糖）＋",
+            "description": "注意喔～單一甜度～少糖 少糖 少糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "（台南）真材實料 古早味冬瓜茶F（濃）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "餐具",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "要餐具",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不要餐具",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

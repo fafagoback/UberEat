@@ -1,0 +1,1407 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%81%AB%E5%B0%91%E7%88%BA%E7%82%92%E9%A3%AF%E7%82%92%E9%BA%B5/BcLI-DAiQfWGtCdVXA4wEQ",
+  "name": "火少爺炒飯炒麵",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 14, Nong'an Street",
+    "addressLocality": "Zhongshan District",
+    "addressRegion": "",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0648013,
+    "longitude": 121.5243539
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 250
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Rice Dishes"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "日式蝦卵炒飯  Japanese fried rice with shrimp eggs",
+            "description": "エビの卵入りチャーハン\n食材:洋蔥丁.三椒丁.蝦卵.蔥\nIngredients: diced onion, diced pepper, shrimp eggs, spring onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬蝦仁炒飯   X.O Sauce with Shrimp Fried Rice",
+            "description": "エビとXOソースのチャーハン\n食材::XO干貝醬{不辣}.蛋.洋蔥丁.蝦仁.蔥花.三椒丁\nIngredients:XO Scallop Sauce.egg.onion.Shrimp.spring onion.Sanjiao",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}泰式打拋豬炒飯  Thai Cusine Pork Chop Suey Fried Rice",
+            "description": "タイ風豚ロースチャーハン\n食材:洋蔥.辣椒.蒜碎.薑絲.絞肉.三椒丁.九成塔.番茄\nIngredients: onion, chili, minced garlic, shredded ginger, ground meat, diced pepper, jiucheng tower, tomato\n豬肉產地:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三鮮炒飯 Three Fresh Fried Rice",
+            "description": "3つの新鮮なチャーハン\n食材:蝦仁.花枝.蟹肉棒.洋蔥.蔥段.紅K\nIngredients: Shrimp. Flower sticks. Crab sticks. Onions. Scallions. Red K",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉/豬肉/羊肉/雞肉炒飯 Fried Onion with (Beef / Pork / Lamb / Chicken)Rice",
+            "description": "牛肉/豚肉/子羊/鶏肉の炒め玉ねぎ\n食材:洋蔥絲.蔥段.蒜片.辣椒.牛肉/豬肉/羊肉/雞肉\nIngredients: shredded onion, spring onion, garlic slice, chili, beef/pork/lamb/chicken\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選  Popular Picks",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉/豬肉/羊肉/雞肉炒飯 Barbecue Sauce Fried (Beef / Pork / Lamb / Chicken)Rice",
+            "description": "サンドティービーフ/ポーク/ラム/チキンチャーハン\n食材:洋蔥絲.蔥段:蒜片.辣椒.(牛肉.羊肉.豬肉.雞肉)擇1.空心菜\nIngredients: shredded onion, onion segment: sliced ​​garlic, chilli, (beef, lamb, pork, chicken), select 1. convolvulus",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}辣三鮮炒飯 {Original}Spicy Seafood Fried Rice",
+            "description": "辛い三仙チャーハン\n食材:洋蔥絲.蔥段.蒜片.辣椒.紅k.蝦仁.花枝 .蟹肉.\nIngredients: shredded onion, onion segment, garlic slice, chili pepper, red k. shrimp, flowering branch, crab meat.",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青椒玉米牛肉炒飯 Green Pepper/Corn with Beef Fried Rice",
+            "description": "青唐辛子コーンビーフチャーハン\n食材:洋蔥丁.玉米粒.牛肉..三椒丁\nIngredients: Diced onion. Corn kernels. Beef: Three peppers\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦泡椒炒飯  Assorted Pickled Pepper Fried Rice",
+            "description": "胡椒チャーハンの盛り合わせ\n材料:洋蔥.墨西哥辣椒.三椒丁.火腿丁.雞肉丁.蝦仁\nIngredients: onion. jalapeno peppers. diced three peppers. diced ham. diced chicken. shrimp\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "北海明太子炒飯   Beihai Mentaiko Fried Rice",
+            "description": "北海明太子チャーハン\n材料:洋蔥.蔥花.三椒丁.肉絲.明太子\nIngredients: onion, green onion, three diced peppers, shredded pork, mentaiko\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "午晚餐炒飯類   Lunch and dinner fried rice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蕃茄炒飯  Tomato Fried Rice",
+            "description": "トマトチャーハン\n食材: 蕃茄醬.洋蔥丁.雞肉.蝦仁.火腿丁.三椒丁\nIngredients: Tomato sauce, diced onion, chicken, shrimp, ham, diced pepper\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}金沙黃金炒飯  {Original} Golden Fried Rice",
+            "description": "ゴールデンサンドライス\n食材: 鹹蛋黃4顆.肉絲.火腿丁.洋蔥丁.三椒丁\nIngredients: 4 salted egg yolks, shredded pork, diced ham, diced onion, diced pepper\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素)時蔬炒飯   (Vegetarian) Fried Rice with Vegetables",
+            "description": "（ベジタリアン）野菜チャーハン\n食材:紅蘿片.香菇片.玉米.高麗菜.三椒丁.(可選要不要加蛋)\nIngredients: red dill slices, shiitake mushroom slices, corn, cabbage, three diced peppers (optional)",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉/豬肉/羊肉/雞肉炒飯 Fried Onion with (Beef / Pork / Lamb / Chicken)Rice",
+            "description": "牛肉/豚肉/子羊/鶏肉の炒め玉ねぎ\n食材:洋蔥絲.蔥段.蒜片.辣椒.牛肉/豬肉/羊肉/雞肉\nIngredients: shredded onion, spring onion, garlic slice, chili, beef/pork/lamb/chicken\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三鮮炒飯 Three Fresh Fried Rice",
+            "description": "3つの新鮮なチャーハン\n食材:蝦仁.花枝.蟹肉棒.洋蔥.蔥段.紅K\nIngredients: Shrimp. Flower sticks. Crab sticks. Onions. Scallions. Red K",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "真多香腸炒飯 Sausage Fried Rice with Garlic Flavor",
+            "description": "ガーリックソーセージチャーハン\n食材:蔥.香腸..蒜片.洋蔥\nIngredients: sausage.onion.garlic.spring onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜苗臘肉炒飯  Garlic Sprout Bacon Fried Rice",
+            "description": "ガーリックベーコン入りチャーハン\n食材:洋蔥.蔥.辣椒.蒜片.臘肉.蒜苗\nIngredients: Onion, Onion, Chili, Garlic Slices, Bacon, Garlic Seedling\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "A1美國牛小排炒飯  AI Sirloin Steak Fried Rice",
+            "description": "A1サーロインステーキチャーハン\n食材:洋蔥丁.辣椒.蒜片，美國牛小排(choice).蔥\nIngredients: diced onion, chili, garlic slice sirloin steak (choice), green onion\n牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯  Shrimp Fried Rice",
+            "description": "エビチャーハン\n食材:蝦仁.洋蔥.蔥\nIngredients: Shrimp, onion, spring onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲蛋炒飯 Green Onion Fried Rice",
+            "description": "ねぎと卵のチャーハン\n食材:洋蔥.豬肉.蔥花.蛋\nIngredients: Onion, Pork, Onion, Egg\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "夏威夷鳳梨炒飯  Hawaiian Pineapple Fried Rice",
+            "description": "ハワイアンパイナップルチャーハン\n食材:洋蔥丁.火腿丁.蝦仁.雞丁.3椒丁（鳳梨丁）肉鬆\nIngredients: diced onion, diced ham, shrimp, diced chicken, 3 pepper diced (pineapple diced) pork floss\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式蝦卵炒飯  Japanese fried rice with shrimp eggs",
+            "description": "エビの卵入りチャーハン\n食材:洋蔥丁.三椒丁.蝦卵.蔥\nIngredients: diced onion, diced pepper, shrimp eggs, spring onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}東北酸白菜牛肉炒飯  Sour cabbage beef fried rice",
+            "description": "北東サワーキャベツビーフチャーハン\n食材:洋蔥絲.蔥段.紅K.酸白菜.辣椒.牛肉\n這炒飯建議:小辣\nIngredients: shredded onion, spring onion, red K. sour cabbage, chilli, beef\n豬肉產地:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜炒飯  Korean Kimchi Fired Rice",
+            "description": "韓国キムチチャーハン\n食材:泡菜.洋蔥丁.火腿丁.雞胸肉.蝦仁.泡菜醬.泡菜.三椒丁\nIngredients: Kimchi, diced onion, diced ham, chicken breast, shrimp, kimchi sauce, kimchi, diced pepper\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}黑胡椒蒜味鹹豬肉炒飯  Black Pepper Garlic Pork Fried Rice",
+            "description": "ブラックペッパーガーリックポークチャーハン \n食材:洋蔥.蔥..辣椒.鹹豬肉.蒜\nIngredients: Onion, Onion, Chili, Salted Pork, Garlic\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花燻鮭炒飯 Fried Rice With Scallion And Smoked Salmon",
+            "description": "ネギとスモークサーモンのチャーハン\n食材:蔥花.鮭魚碎.洋蔥.蛋\nIngredients: chopped green onion, salmon chopped, onion, egg",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松阪豬炒飯  Matsusaka Pork Fried Rice",
+            "description": "松阪豚チャーハン\n食材:洋蔥絲.蔥段.薑絲.辣椒.紅K片.松阪豬片\nIngredients: shredded onion, spring onion, shredded ginger, chili, red K slice, Matsusaka pork slice\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}豆鼓菜脯牛肉/豬肉/羊肉/雞肉炒飯 Bean Drum Dried (Beef / Pork / Lamb / Chicken) Fried Rice",
+            "description": "豆ドラム干しビーフ/ポーク/ラム/チキンチャーハン\n食材:豬肉.雞肉.牛肉.洋蔥丁.豆鼓.菜脯.蔥花\nIngredients: pork, chicken, beef, diced onion, bean drum, preserved vegetables, spring onion\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花牛肉炒飯  Beef Fried Rice",
+            "description": "ねぎ牛チャーハン\n食材:洋蔥丁.牛肉.蔥\nIngredients: Diced onion. Beef. Shallot\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬蝦仁炒飯   X.O Sauce with Shrimp Fried Rice",
+            "description": "エビとXOソースのチャーハン\n食材::XO干貝醬{不辣}.蛋.洋蔥丁.蝦仁.蔥花.三椒丁\nIngredients:XO Scallop Sauce.egg.onion.Shrimp.spring onion.Sanjiao",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根高麗炒飯   Bacon & Cabbage Fried Rice",
+            "description": "ベーコン韓国チャーハン\n食材:洋蔥.蛋.培根.高麗.蒜片.蔥\nIngredients: onion, egg, bacon, Korean, garlic slice, spring onion\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}泰式打拋豬炒飯  Thai Cusine Pork Chop Suey Fried Rice",
+            "description": "タイ風豚ロースチャーハン\n食材:洋蔥.辣椒.蒜碎.薑絲.絞肉.三椒丁.九成塔.番茄\nIngredients: onion, chili, minced garlic, shredded ginger, ground meat, diced pepper, jiucheng tower, tomato\n豬肉產地:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}米其林黃金泡菜肉絲蝦卵炒飯   Michelin Fried Rice with Shredded Shrimps and Eggs",
+            "description": "シュリンプエビと卵のミシュラン炒飯\n食材:洋蔥.豬肉.黃金泡菜.蔥.蝦卵\nIngredients: Onion, Pork, Golden Kimchi, Onion, Shrimp Eggs\n豬肉產地:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒙特羅咖哩炒飯   Montero Curry Fried Rice",
+            "description": "モンテロカレーチャーハン\n食材:洋蔥.雞肉.蝦仁.火腿.葡萄乾.三椒丁. 椰子粉\nIngredients: onion, chicken, shrimp, ham, raisins, diced pepper, coconut flour",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}墨西哥醺雞肉炒飯 {Original} Mexico Smoky Chicken Fried Rice",
+            "description": "メキシカンチキンチャーハン\n食料:墨西哥辣椒丁.煙燻雞肉..洋蔥丁.三椒丁\nFoodstuff: diced chili, smoked chicken, diced onion, diced pepper",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬蟹肉炒飯   X.O Sauce with Crab Fried Rice",
+            "description": "XOソースの蟹肉入りチャーハン\n產品內容:XO干貝醬{不辣}.蟹肉棒.洋蔥.蔥花.三椒丁\nProduct content: XO scallop sauce {not spicy}. Crab sticks, onions, spring onions, three peppers",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜爆中卷炒飯  Neritic Squid Fried Rice",
+            "description": "ガーリックチャーハン\n食材:洋蔥.辣椒.中卷.蒜碎.蔥\nIngredients: onion, chili, medium roll, minced garlic, shallot",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "干貝炒飯 Scallop Fried Rice",
+            "description": "ホタテのチャーハン\n食材:洋蔥.干貝.蔥\nIngredients: onion, scallop, spring onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹魚雞肉炒飯 Salted Fish and Chicken Fried Rice",
+            "description": "魚の塩漬けとチキンチャーハン\n食材:雞肉.鹹魚.洋蔥丁.辣椒.三椒丁.\nIngredients: Chicken, salted fish, diced onion, chili, diced pepper.",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}海鋒炒飯  Seasoning Dried Fish Fried Rice",
+            "description": "海豊チャーハン\n食材:洋蔥丁.肉絲.蒜片.香腸.辣椒.小魚乾\nIngredients: diced onion, shredded pork, sliced ​​garlic, sausage, chilli, dried fish\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}吻仔魚中卷炒飯  Whitebait w/Neritic Squid Fried Rice",
+            "description": "魚のチャーハン炒め\n食材:洋蔥.吻仔魚.中卷.蛋.薑.三椒丁.蛋\nIngredients: onion, kissfish, middle roll, egg, ginger, diced pepper, egg",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌什錦炒飯 Assorted Fried Rice",
+            "description": "特製チャーハンの詰め合わせ\n食材:雞胸肉.蝦仁.火腿丁.洋蔥丁.3椒丁\nIngredients: Chicken breast, shrimp, ham, diced onion, 3 pepper\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花燻雞炒飯  Scallion Smoked Chicken Fried Rice",
+            "description": "ねぎ燻製チキンチャーハン\n材料:蔥花.煙燻雞肉.洋蔥\nIngredients: chopped green onion, smoked chicken, onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝炒飯  Flowering Fried Rice",
+            "description": "開花チャーハン\n食材:材料:洋蔥.花枝.蔥\nIngredients: Ingredients: onion, flowering branch, spring onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "時蔬吻仔魚炒飯  Fried Rice with Fresh Fish",
+            "description": "魚のから揚げ\n食材:紅蘿片.香菇片.玉米.高麗菜..三椒丁.吻仔魚\nIngredients: red dill slices, shiitake mushroom slices, corn, cabbage, three peppers, koi",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆吻仔魚炒飯  Fried Rice with Pork Floss",
+            "description": "ポークフロスのチャーハン\n食材:洋蔥丁.吻仔魚.蔥.肉鬆\nIngredients: Diced onion. Kiss fish. Shallot. Meat floss",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁炒飯  Kung Pao Chicken Fried Rice",
+            "description": "洋蔥.青蔥.乾辣椒.花生.雞肉丁.紅蘿蔔",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金泡菜什錦炒飯 Golden Kimchi Assorted Fried Rice",
+            "description": "洋蔥.火腿.蝦仁雞肉丁.青紅黃椒",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "京醬肉絲炒飯 Fried rice with shredded pork in Beijing sauce",
+            "description": "洋蔥.青蔥.紅蘿蔔.豬肉絲.蒜苗.黑白芝麻",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花飛魚卵炒飯  Fried rice with chopped green onion and flying fish eggs",
+            "description": "洋蔥.青蔥.飛魚卵",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美國骰子牛炒飯(牛里肌) American Dice Beef Fried Rice (Beef Tenderloin)",
+            "description": "美國牛(牛里肌).重約80克.洋蔥.青蔥.蒜片.牛油",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "回鍋肉炒飯 Twice-cooked pork fried rice",
+            "description": "五花肉.洋蔥.青蔥.紅蘿蔔.蒜片.高麗菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘭嶼飛魚卵炒飯 Lanyu Flying Fish Roe Fried Rice",
+            "description": "洋蔥.魚肉.青蔥.飛魚卵.青紅黃椒",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香玉米絞肉炒飯 Garlic Corn Minced Fried Rice",
+            "description": "蒜碎.洋蔥青蔥.絞肉.玉米",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆乳五花炒飯 Soy milk and pork belly fried rice",
+            "description": "五花肉.洋蔥.青蔥.紅蘿蔔.高麗菜.蒜片",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿炒飯  Ham fried rice",
+            "description": "洋蔥.青蔥.火腿",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠巨人玉米火腿炒飯 Green Giant Corn and Ham Fried Rice",
+            "description": "玉米.火腿.洋蔥.青蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新疆孜然羊肉炒飯",
+            "description": "洋蔥絲.蔥段.蒜頭.紅K.羊肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒麵類  Fried noodles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉/羊肉/豬肉/雞肉/炒麵 Barbecue Sauce Fried(Beef/Pork/Lamb/chicken)Noodle",
+            "description": "サンドティービーフ/ラム/ポーク/チキン/焼きそば\n食材:洋蔥絲.蔥段:蒜片.辣椒.(牛肉.羊肉.豬肉.雞肉.擇1.)空心菜\nIngredients: Shredded onion. Onion segment: Garlic slices. Chili. (Beef. Lamb. Pork. Chicken. Choice 1.) Convolvulus\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉/豬肉/羊肉/雞肉炒麵   Sautéed Beef/Pork/Lamb/Chicken Fried Noodle",
+            "description": "牛肉/豚肉/子羊肉/鶏肉のから揚げ\n食材:洋蔥絲.蔥段.蒜片.辣椒.牛肉/豬肉/羊肉/雞肉\nIngredients: shredded onion, spring onion, garlic slice, chili, beef/pork/lamb/chicken\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "港式海鮮蠔油炒麵  Hong Kong Style Seafood Fried Noodles with Oyster Sauce",
+            "description": "香港スタイルのシーフード焼きそば、オイスターソース添え\n食材:蔥段.洋蔥絲.白蝦2隻.蛤蜊2顆.花枝片4片紅蘿蔔片.香菇片.小白菜.魚板\nIngredients: green onion, shredded onion, 2 white shrimps, 2 clams, 4 flowering slices, carrot slices, shiitake mushroom slices, small cabbage, fish plate",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香蛤蠣炒麵  Basil Fried w/Clam Noodle",
+            "description": "タチョウ焼きそば\n食材:.蔥段.洋蔥絲.薑.蒜.辣椒.蛤蜊.紅蘿蔔片.九層塔.粗油麵 \nIngredients: Onion segment, Shredded onion, Ginger, Garlic, Chili, Clam, Carrot slice, Nine-story pagoda, Crude oil noodle",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒麵  Pork Chop Suey Fried Noodle",
+            "description": "細切り豚肉の焼きそば\n食材材:洋蔥.肉絲.蔥段.紅蘿蔔.小白菜.粗油麵\nIngredients: Onion, Shredded Pork, Onion, Carrot, Chinese Cabbage, Crude Oil Noodle\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "港式蠔油蝦仁炒麵   Hong Kong-style fried noodles with shrimp and oyster sauce",
+            "description": "香港スタイルの焼きそば、エビとオイスターソース\n食材:蔥段.洋蔥絲.蝦仁.魚板.紅蘿蔔片.香菇片.小白菜.蠔油\nIngredients: Onion segment. Shredded onion. Shrimps. Fish plate. Carrot slices. Mushroom slices. Chinese cabbage. Oyster sauce",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬蝦仁炒麵 X.O Sauce Fried w/Shrimp Noodle",
+            "description": "エビとXOソースの焼きそば\n食材:XO干貝醬{不辣}.蝦仁.洋蔥.蔥段.紅K.魚板.杏胞菇.小白菜\nIngredients :XO Scallop Sauce.onion.spring onion.Shrimp.carrot.Chinese Cabbage.Fish plate.Pleurotus eryngii",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦炒麵 Assorted Fried Noodle",
+            "description": "焼きそば盛り合わせ\n食材:洋蔥絲.蔥段.蛤蜊.肉絲.紅蘿蔔片.香菇片.魚板.白蝦.花枝.小白菜\nIngredients: shredded onion, sliced ​​onion, clam, shredded pork, sliced ​​carrot, sliced ​​mushroom, fish plate, white shrimp, flowering branch, small cabbage\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕃茄什錦炒麵  Tomato Fried Noodles",
+            "description": "トマト焼きそば\n食材: 洋蔥絲.蔥段.蛤蜊.肉絲.紅蘿蔔片.香菇片.魚板.白蝦1隻.花枝.九成塔.番茄\nIngredients: Shredded onion, Onion section, Clam, Shredded pork, Carrot slice, Mushroom slice, Fish plate, White shrimp, Flowering branch, Jiucheng tower, Tomato\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素時蔬炒麵  Vegetable Fried Noodle",
+            "description": "ベジタリアン麺\n食材:紅蘿片.香菇片.玉米.高麗菜.三椒丁.\nIngredients: red dill slices, shiitake mushroom slices, corn, cabbage, three peppers",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "XO醬蟹肉炒麵 X.O Sauce Fried w/Crab meat Noodle",
+            "description": "XOソースの蟹肉入り焼きそば\n產品內容:XO干貝醬{不辣}.蝦仁.洋蔥.蔥段.小白菜.紅K.魚板.小白菜.杏鮑菇\nProduct content: XO scallop sauce {not spicy}. Shrimp. Onion. Onion segment. Chinese cabbage. Red K. Fish plate. Chinese cabbage. Pleurotus eryngii",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{原創}米其林黃金泡菜炒麵  Michelin Golden Kimchi Fried Noodle",
+            "description": "ミシュランゴールデンキムチ焼きそば\n食材:黃金泡菜.洋蔥絲.蔥段.蛤蜊.肉絲.紅蘿蔔片.香菇片.魚板.白蝦.花枝.小白菜\nIngredients: Golden kimchi, shredded onion, spring onion, clams, shredded pork, sliced ​​carrots, sliced ​​mushrooms, fish plate, white shrimp, flowering branch, small cabbage\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩什錦炒麵  Assorted Curry Fried Noodle",
+            "description": "カレー焼きそば\n食材:洋蔥絲.蔥段.蛤蜊.肉絲.紅蘿蔔片.香菇片.魚板.白蝦.花枝.小白菜\nIngredients: shredded onion, sliced ​​onion, clam, shredded pork, sliced ​​carrot, sliced ​​mushroom, fish plate, white shrimp, flowering branch, small cabbage\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式沙嗲什錦炒麵  Thai Fried Noodle with Barbecue Sauce",
+            "description": "タイのサテ盛り合わせ焼きそば\n食材:洋蔥絲.蔥段.白蝦.肉絲.花枝.魚板. 紅蘿蔔片.香菇片.蛤蠣（九成塔.番茄）小白菜.粗油麵\nIngredients: shredded onion, sliced ​​onion, white shrimp, shredded pork, flowering branch, fish plate, sliced ​​carrot, sliced ​​mushroom, sliced ​​clams (nine percent tower, tomato), Chinese cabbage.\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜什錦炒麵  Assorted Fried Noodles with Korean Kimchi",
+            "description": "韓国キムチ焼きそば盛り合わせ\n食材:白蝦.花枝.蛤蜊.肉絲.紅K.杏苞菇.韓式泡菜.韓式辣醬.洋蔥.蔥段.小白菜\n豬肉絲產地:台灣\nIngredients: white shrimps, flower sticks, clams, shredded pork, red K, apricot mushrooms, Korean kimchi, Korean spicy sauce, onions, green onions, cabbage\nPork Shredded Origin: Taiwan",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式什錦炒烏龍 Japanese stir-fried oolong",
+            "description": "白蝦.花枝.蛤蜊.肉絲.紅K.杏苞菇.洋蔥.蔥段.小白菜..烏龍麵.雞蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "回鍋肉炒麵 Twice-cooked pork fried noodles",
+            "description": "五花肉.洋蔥.青蔥.紅蘿蔔.高麗菜.蒜片",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "燴飯類   Risotto",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉/豬肉/羊肉/雞肉燴飯  Barbecue Sauce Stewed(Beef / Pork / Lamb / Chicken)Rice",
+            "description": "サンドティービーフ/ポーク/ラム/チキンリゾット\n食材:洋蔥絲.蔥段:蒜片.辣椒..牛肉/豬肉/羊肉/雞肉.空心菜\nIngredients: shredded onion, onion segment: sliced ​​garlic, chilli: beef/pork/mutton/chicken, water spinach\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑蛋絲瓜蛤蜊燴飯  Risotto with Loofah and Clams",
+            "description": "滑蛋絲瓜蛤蜊燴飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉/豬肉/羊肉/雞肉 燴飯 Stir-fried Beef/Pork/Lamb/Chicken with Scallions Risotto",
+            "description": "牛肉/豚肉/子羊肉/鶏肉のネギ炒め\n食材:蔥段.洋蔥.蒜片.牛肉/豬肉 /羊肉/雞肉\n豬肉產地:台灣   牛肉產地:澳洲\nIngredients: Scallion, Onion, Garlic, Beef/Pork/Lamb/Chicken\nPork origin: Taiwan Beef origin: Australia",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "港式蠔油什錦燴飯   Hong Kong-style risotto with oyster sauce",
+            "description": "香港風オイスターソースのリゾット\n食材:蔥段.洋蔥絲.白蝦.蛤蜊.肉絲.紅蘿蔔片.香菇片.魚板.蠔油.小白菜\nIngredients: onion, shredded onion, white shrimp, clam, shredded meat, sliced ​​carrot, sliced ​​mushroom, sliced ​​fish, oyster sauce, small cabbage\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "港式蠔油海鮮燴飯  Hong Kong Style Seafood Risotto with Oyster Sauce",
+            "description": "香港スタイルのシーフードリゾット、オイスターソース\n食材:蔥段.洋蔥絲.白蝦.蛤蜊.花枝片.紅蘿蔔片.香菇片.小白菜.魚板\nIngredients: onion, shredded onion, white shrimp, clams, flower slices, carrot slices, mushroom slices, small cabbage, fish plate",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香蛤蠣燴飯  Basil Fried w/Clam Stewed Rice",
+            "description": "タチャウダーリゾット\n食材:.蔥段.洋蔥絲.薑.蒜.辣椒.蛤蜊.紅蘿蔔片.九層塔.\nIngredients: Onion segment, Shredded onion, Ginger, Garlic, Chili, Clam, Carrot slice, Nine-story tower.",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑蛋蝦仁燴飯  Shrimp Risotto",
+            "description": "エビのリゾット\n食材:洋蔥絲.蔥段.魚板.紅蘿蔔片.香菇片.蝦仁.蛋\nIngredients: shredded onion, onion segment, fish plate, sliced ​​carrot, sliced ​​mushroom, shrimp, egg",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒牛肉/豬肉/羊肉/雞肉燴飯 Black Pepper (Beef/Pork/Lamb/Chicken) Risotto",
+            "description": "ブラックペッパービーフ/ポーク/ラム/チキンリゾット\n食材:洋蔥.蔥.蒜.辣椒.三椒丁.牛肉/豬肉/羊肉/雞肉\nIngredients: onion, onion, garlic, chilli, diced pepper, beef/pork/mutton/chicken\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "港式蠔油蝦仁燴飯  Hong Kong Style Shrimp Risotto with Oyster Sauce",
+            "description": "香港風エビのリゾットオイスターソース添え\n食材:蔥段.洋蔥絲.蝦仁.紅蘿蔔片.香菇片.魚板.蠔油.小白菜\nIngredients: onion, shredded onion, shrimp, carrot slices, mushroom slices, fish plate, oyster sauce, Chinese cabbage",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式沙嗲什錦燴飯  Thai Satay Mixed Risotto",
+            "description": "タイサタイミックスリゾット\n食材:洋蔥絲.蔥段.白蝦.肉絲.花枝.魚板. 紅蘿蔔片.香菇片.蛤蠣（九成塔.番茄）小白菜.粗油麵\nIngredients: shredded onion, sliced ​​onion, white shrimp, shredded pork, flowering branch, fish plate, sliced ​​carrot, sliced ​​mushroom, sliced ​​clams (nine percent tower, tomato), Chinese cabbage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "快炒類   Quick-fry",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔥花蛋   Green onion egg",
+            "description": "ねぎ卵\n 食材:蛋.蔥\nIngredients: Egg, spring onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒時蔬  Fried vegetables",
+            "description": "野菜炒め\n可選:高麗/菠菜.小白\n\nCabbage. Water spinach. Xiaobai",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔塔醬鳳梨蝦球 Pineapple Prawns with Tata Sauce",
+            "description": "パイナップル海老とタタソース\\\n食材:大蝦仁.鳳梨.塔塔醬.高麗菜\nIngredients: Prawn, Pineapple, Tartare, Cabbage",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸杏鮑菇 佐塔塔醬  Fried Pleurotus eryngii Zotata",
+            "description": "揚げヒラタケ",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香烘蛋  Tasty Baked Egg",
+            "description": "おいしい焼き卵\n食材:蛋.九層塔\nIngredients: egg. Nine-story tower",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吻仔魚烘蛋 Kiss fish Baked eggs",
+            "description": "焼き魚とキス\n食材:吻仔魚.蛋.蔥\nIngredients: Kiss fish, egg, spring onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西式炒蛋  Western-style scrambled eggs",
+            "description": "洋風スクランブルエッグ\n食材:蛋.鮮奶油.洋蔥.\nIngredients: Egg. Fresh cream. Onion. Ham\n可選食材:\n蝦仁.花枝.干貝.火腿.培根. (選1樣)\n(炒蛋熟度8~9分熟)",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙白蝦  Sichuan Hot White Shrimp",
+            "description": "川ホットホワイトシュリンプ\n食材:薑.蔥.白蝦12隻 \nIngredients: ginger, green onion, 12 white shrimps",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式蝦卵烘蛋 Scrambled eggs with shrimp eggs",
+            "description": "エビの卵\n食材:蛋.鮮奶油.蝦卵\nIngredients: Eggs, fresh cream, shrimp eggs",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香蛤蠣   Tamarind Clams",
+            "description": "タマリンドアサリ\n.食材:.蔥段.洋蔥絲.薑.蒜.辣椒.蛤蜊.紅蘿蔔片.九層塔\nIngredients: Onion segment, Shredded onion, Ginger, Garlic, Chili, Clam, Carrot slice, Nine-story pagoda",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲炒絲瓜  Stir-fried loofah with shredded ginger",
+            "description": "薑絲炒絲瓜",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉/豬肉/ 羊肉/雞肉.    Shacha Beef/Pork/Lamb/Chicken. Spinach",
+            "description": "シャチャビーフ/ポーク/ラム/チキンほうれん草\n食材:沙茶.洋蔥.蔥段.蒜片.辣椒.牛肉/豬肉/ 羊肉/雞肉.\nIngredients: Sand tea. Onion. Onion. Garlic slices. Chili. Beef/Pork/ Lamb/Chicken. Spinach",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生炒花枝  Fried Fried Flower Branch",
+            "description": "揚げ花の枝\n食材:花枝.洋蔥.蔥段.蒜片.辣椒.紅蘿蔔.高麗菜\nIngredients: Flowering branch. Onion. Onion segment. Garlic slice. Chili. Carrot. Cabbage",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吻仔魚烘蛋 Kiss larvae bake eggs",
+            "description": "キス幼虫は卵を焼く\n食材:吻仔魚.蔥花.蛋4顆\nIngredients: kiss larvae, chopped green onion, 4 eggs",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "絲瓜炒蛤蜊  Fried clams with loofah",
+            "description": "絲瓜炒蛤蜊",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉/豬肉/羊肉/雞肉    Beef/Pork/Lamb/Chicken",
+            "description": "蔥爆牛肉/豬肉/羊肉/雞肉\n食材:洋蔥.蔥段.蒜.辣椒.牛肉/豬肉/羊肉/雞肉\nIngredients: onion, green onion, garlic, chili, beef/pork/lamb/chicken\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉/豬肉 /羊肉/雞肉  Stir-fried Beef/Pork/Lamb/Chicken",
+            "description": "牛肉/豚肉/子羊肉/鶏肉の炒め物\n食材:蔥段.洋蔥.蒜片.牛肉/豬肉 /羊肉/雞肉\n豬肉產地:台灣   牛肉產地:澳洲\nIngredients: Scallion, Onion, Garlic, Beef/Pork/Lamb/Chicken\nPork origin: Taiwan Beef origin: Australia",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米烘蛋",
+            "description": "玉米.牛奶.蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明太子歐姆蛋   Mentaiko Omelet",
+            "description": "明太子鮮奶油.蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明太子烘蛋 Mentaiko baked eggs",
+            "description": "明太子 蛋.蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西芹炒花枝  Stir-fried celery branches",
+            "description": "西芹.洋蔥.青蔥.紅蘿蔔.蒜片.花枝",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飛魚卵歐姆蛋 Flying fish roe omelet",
+            "description": "飛魚卵 .鮮奶油.蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒豆芽 Fried bean sprouts",
+            "description": "豆芽.蒜頭.紅蘿蔔.青蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根炒高麗菜 Sautéed Cabbage with Bacon",
+            "description": "培根.蒜片.紅蘿蔔.高麗菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸白菜炒牛肉 Stir-fried beef with pickled cabbage",
+            "description": "酸白菜.洋蔥.青蔥.紅蘿蔔.牛肉",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁烘蛋 Shrimp Baked Egg",
+            "description": "蝦仁.蛋.青蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒牛肉洋蔥炒豆芽 Stir-fried Bean Sprouts with Black Pepper Beef and Onions",
+            "description": "黑胡椒.洋蔥.牛肉.豆芽.青蔥.牛奶.蒜片.紅蘿蔔",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美國黑胡椒骰子牛  American Black Pepper Dice Beef",
+            "description": "美國牛肉切成骰子塊快炒，黑胡椒香氣突出，風味濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒豬肉洋蔥炒豆芽  Stir-fried bean sprouts with black pepper pork and onions",
+            "description": "洋蔥.青蔥.紅蘿蔔.豬肉.牛奶.豆芽.黑胡椒",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥肉絲炒豆芽  Stir-fried bean sprouts with onions and shredded pork",
+            "description": "食材:豆芽.洋蔥.豬肉絲。爽脆口感，清爽下飯的家常快炒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜苗炒香腸/五花肉/臘肉 Stir-fried sausage/pork belly/bacon with garlic sprouts",
+            "description": "洋蔥.青蔥.蒜苗.蒜片.紅蘿蔔.(香腸.五花肉.臘肉)三選一",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新疆孜然炒羊肉",
+            "description": "洋蔥絲.蔥段.紅K.蒜片",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酥魚",
+            "description": "食材:魚塊.泰式風味醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式烘蛋",
+            "description": "泰式風味蛋料理，蛋香濃郁的烘蛋，小炒上桌",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯麵類  Noodle soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮湯麵  Seafood Noodle Soup",
+            "description": "シーフードヌードルスープ\n食材:洋蔥.蔥段.蛤蜊..紅蘿蔔片.香菇片.魚板.白蝦.花枝.小白菜.\nIngredients: onion, onion segment, clam, carrot slice, mushroom slice, fish plate, white shrimp, flowering branch, small cabbage.",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "什錦湯麵 Assorted Noodle Soup",
+            "description": "麺の盛り合わせ\n食材:洋蔥絲.蔥段.蛤蜊..肉絲.紅蘿蔔片.菇片.魚板.白蝦.花枝.小白菜.粗油麵\nIngredients: shredded onion, onion segment, clam, shredded meat, carrot slice, mushroom slice, fish plate, white shrimp, flowering branch, Chinese cabbage, crude oil noodle\n豬肉產地:台灣   牛肉產地:澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣湯麵  Clam Noodle Soup",
+            "description": "クラムヌードルスープ\n食材:蔥段.洋蔥.蛤蜊.紅蘿蔔片.香菇片.小白菜.魚板\nIngredients: Onion segment. Onion. Clam. Carrot slices. Mushroom slices. Chinese cabbage. Fish plate",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類   Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蛤蜊湯  Clam soup",
+            "description": "あさりのスープ\n食材:薑.蛤蜊.蔥\nIngredients: Ginger, Clam, Shallot",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "剝皮辣椒雞湯 Peeled Chili Chicken Soup",
+            "description": "皮をむいたチリチキンスープ\n食材:剝皮辣椒.老薑.脆瓜.三節翅.蔥 \nIngredients: Peeled chili, old ginger, crispy melon, chicken breast, green onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "人蔘紅棗枸杞雞湯  Chicken Soup with Ginseng, Red Dates and Wolfberry",
+            "description": "ジンセン、レッドデイツ、ウルフベリーのチキンスープ\n食材:人蔘.紅棗.枸杞.當歸.三節翅\n成分：ジンセン、レッドデート、ウルフベリー、アンジェリカ、チキンブレスト",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋花湯   Egg Flower Soup",
+            "description": "卵の花スープ\n食材:蛋.小白菜.蔥\nIngredients: Egg, Chinese cabbage, spring onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "絲瓜蛤蜊湯  Loofah Clam Soup",
+            "description": "絲瓜蛤蜊湯",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蜊雞湯  Clam Chicken Soup",
+            "description": "クラムチキンスープ",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紫菜蛋花湯 Egg Seaweed Soup",
+            "description": "食材:紫菜.蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜魚片湯(鯛魚)  Pickled cabbage and fish fillet soup (snapper)",
+            "description": "酸菜.薑絲.鯛魚片.青蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸白菜五花肉片湯 Pickled cabbage and pork belly soup",
+            "description": "酸白菜.蒜片.薑絲.辣椒.高麗菜.五花肉片.青蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "健康炸  日式天婦羅",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "基隆牛蒡天婦羅（4片）",
+            "description": "基隆風味牛蒡天婦羅（4片），牛蒡清香、口感彈實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

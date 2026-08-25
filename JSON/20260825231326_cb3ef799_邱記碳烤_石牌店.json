@@ -1,0 +1,596 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%82%B1%E8%A8%98%E7%A2%B3%E7%83%A4-%E7%9F%B3%E7%89%8C%E5%BA%97/t2PmdRVeV4SFdLG_7w9h1w",
+  "name": "邱記碳烤 石牌店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區裕民一路5號 Taipei",
+    "addressLocality": "北投區",
+    "addressRegion": "台北市",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1166481,
+    "longitude": 121.5165323
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 600
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "碳烤牛肋條串【1支】",
+            "description": "碳烤牛肋條串，肉質鮮嫩多汁，經過炭火燒烤後，表面金黃酥脆，充滿烤肉的香氣，咬下一口即能感受到牛肉的鮮甜和炭火烤製的獨特風味，讓人回味無窮，原牛用真空按摩技術使牛筋吃起來更好入口。(肉類來源地為澳洲)(一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞腿肉串【1支】",
+            "description": "碳烤雞腿肉串，肉質鮮嫩飽滿，外皮烤至金黃酥脆，每一口都充滿了香氣和鮮美的雞肉味道。經過炭火烤製，保留了雞肉的多汁，讓人回味無窮，絕對是美味的享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤七里香【1支】",
+            "description": "碳烤七里香，肉質鮮嫩多汁，表皮經炭火烤燒，香氣撲鼻。一口咬下，肉汁四溢，口感香脆外皮與鮮美內餡完美結合，入口即化，回味無窮。絕佳的烤肉享受，讓人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雪花豬肉串【1支】",
+            "description": "碳烤雪花豬肉串，豬肉細膩多汁，入口即化的口感，搭配炭火烤製的獨特香氣，讓人垂涎欲滴。外皮烤至金黃酥脆，內裡鮮嫩多汁，每一口都是香氣四溢的美味享受。(肉類來源地為加拿大。非重組肉及注脂肉)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤米腸【1支】",
+            "description": "碳烤米腸，外脆內軟，一口咬下酥脆的外皮迎接著濃郁的米香味，內裡餡料飽滿，口感豐富。燒烤過程中，香氣四溢，讓人垂涎欲滴。每一口都帶來滿滿的滿足感，是炭烤美食中的經典之選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤貢丸【1支】",
+            "description": "碳烤新竹貢丸是一道經過炭火烤烘的美食，外皮焦香酥脆，內裡彈牙鮮嫩。每一口都帶著炭烤的香氣，口感豐富，入口即化。搭配特製胡椒或辣椒粉，風味獨特，令人回味無窮。(肉類來源地為台灣新竹)（一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤豆包【1支】",
+            "description": "碳烤豆包是一道香氣誘人的美食，豆包經過炭火烤烘，外層焦香酥脆，內裡豆香濃郁。每一口都帶著炭烤的香氣，口感鬆脆，入口即化。搭配鹽醬或麻醬，美味十足，讓人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤香腸【1支】",
+            "description": "碳烤香腸是一道外皮烤得酥脆，內裡肉汁豐富的美食。經過炭火燒烤，香氣四溢，香腸的風味更加突出。每一口咬下去都能感受到肉質的鮮嫩，搭配上特製醬料或芥末，香氣與辛香交織，讓人回味無窮。(肉類來源地為台灣)",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤肥腸串【1支】",
+            "description": "碳烤肥腸串，肥腸經過炭火烤製後，外皮酥脆、內裡嫩滑。每一口咬下，肥腸的香氣濃郁，油脂的香甜與炭烤的獨特風味交融，令人欲罷不能。炭烤的獨特燒烤香氣讓人食指大動，是烤肉愛好者的最愛之一。(肉類來源地為西班牙。非重組肉及注脂肉)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤黃金雞腿【1支】",
+            "description": "碳烤黃金雞腿，表皮金黃酥脆，內裡多汁鮮嫩，肉質鮮美醇厚。經過炭火烤製，散發出濃郁的香氣，一口咬下即刻爆汁，香氣四溢，回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤爆漿雞腿捲【1支】",
+            "description": "碳烤爆漿雞腿捲，外酥內嫩，肉質鮮嫩多汁，一口咬下滋味豐富。烤製過程中，香氣四溢，口感層次分明，濃厚的雞肉香與酥脆口感交融，給人滿足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤筍絲培根捲【1支】",
+            "description": "碳烤筍絲培根捲，精選嫩筍絲綿密可口，搭配著香脆培根，卷成美味的一團。烤至外皮金黃酥脆，口感層次豐富，一口咬下，香氣四溢，筍絲的清甜與培根的鹹香完美結合，讓人愛不釋手。(肉類來源地為加拿大。非重組肉及注脂肉)",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤中節翅【1支】",
+            "description": "中節雞翅以炭火慢烤，表皮金黃微酥，內裡鮮嫩多汁，入口滿是迷人炭香。（一支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤腿排【1支】",
+            "description": "碳烤腿排，外酥內嫩，經過炭火烤製，表面烤出金黃酥脆的外皮，內裡肉質鮮嫩多汁。一口咬下，肉汁四溢，香氣撲鼻，口感豐富濃郁，讓人愛不釋手，是烤肉中的經典美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤煙燻脆腸【1支】",
+            "description": "碳烤煙燻脆腸，外酥內嫩，獨特的煙燻香氣與脆口的口感相得益彰。每一口咬下，濃郁的肉香與微微的煙燻味道迸發出來，讓人回味無窮。外皮烤至金黃酥脆，內裡的腸仍然保持著彈性，是碳烤料理中令人驚艷的一款。(肉類來源地為台灣)",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤甜不辣【1支】",
+            "description": "碳烤甜不辣以新鮮的甜不辣配料，經過炭火烤烘而成，外皮酥脆，內裡鮮甜多汁。每一口都帶著炭烤的香氣，口感香脆而有嚼勁。搭配特製醬汁，酸甜開胃，絕對是美味的烤物選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞心【1支】",
+            "description": "碳烤雞心，外酥內嫩，燒烤出的香氣令人垂涎欲滴。一口咬下，肉質鮮美多汁，入口即化，帶來濃郁的雞肉香味，令人回味無窮。每一口都是香酥的享受，是絕佳的小吃選擇。(一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞皮【1支】",
+            "description": "碳烤雞皮，外脆內嫩，滋味絕佳。炭火烤燒出的香氣，讓雞皮香酥可口，一口咬下，香氣四溢，帶來滿滿的滿足感。每一口都是香脆多汁，是絕佳的下酒菜，讓人欲罷不能。（一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "碳烤甜不辣【1支】",
+            "description": "碳烤甜不辣以新鮮的甜不辣配料，經過炭火烤烘而成，外皮酥脆，內裡鮮甜多汁。每一口都帶著炭烤的香氣，口感香脆而有嚼勁。搭配特製醬汁，酸甜開胃，絕對是美味的烤物選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞皮【1支】",
+            "description": "碳烤雞皮，外脆內嫩，滋味絕佳。炭火烤燒出的香氣，讓雞皮香酥可口，一口咬下，香氣四溢，帶來滿滿的滿足感。每一口都是香脆多汁，是絕佳的下酒菜，讓人欲罷不能。（一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞心【1支】",
+            "description": "碳烤雞心，外酥內嫩，燒烤出的香氣令人垂涎欲滴。一口咬下，肉質鮮美多汁，入口即化，帶來濃郁的雞肉香味，令人回味無窮。每一口都是香酥的享受，是絕佳的小吃選擇。(一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤爆漿雞腿捲【1支】",
+            "description": "碳烤爆漿雞腿捲，外酥內嫩，肉質鮮嫩多汁，一口咬下滋味豐富。烤製過程中，香氣四溢，口感層次分明，濃厚的雞肉香與酥脆口感交融，給人滿足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞腿肉串【1支】",
+            "description": "碳烤雞腿肉串，肉質鮮嫩飽滿，外皮烤至金黃酥脆，每一口都充滿了香氣和鮮美的雞肉味道。經過炭火烤製，保留了雞肉的多汁，讓人回味無窮，絕對是美味的享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "碳烤系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "碳烤手工米血【1支】",
+            "description": "碳烤手工米血是一道獨特的台灣美食，米血經過炭火燒烤，外皮微焦帶有炭香，內裡Q彈滑嫩，搭配醬料和香料調味，口感豐富。每一口都散發著濃厚的炭烤香氣和獨特的米血風味，是夜市小吃中令人回味無窮的美味佳餚。（一塊）",
+            "offers": {
+              "@type": "Offer",
+              "price": "17.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤五香豆干【1支】",
+            "description": "碳烤五香豆干是一道香氣撲鼻的美食，豆干經過炭火烤烘，表面金黃酥脆，內裡保持著豆干的嫩滑口感。淋上五香調味，口感豐富多層，帶有炭烤的獨特風味，每一口都充滿著濃郁的香氣和香脆的口感，讓人回味無窮。（一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "17.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤熱狗【1支】",
+            "description": "碳烤熱狗是一道美味的炭烤小吃，熱狗香氣四溢，經過炭火燒烤後，外皮金黃酥脆，內裡的香腸鮮嫩多汁。每一口都帶有炭烤的獨特風味，配上醬汁和芥末醬，更顯美味可口。(肉類來源地為加拿大。非重組肉及注脂肉)（一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "17.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞腱【1支】",
+            "description": "碳烤雞腱是一道結合嫩滑雞腱肉和炭烤香氣的美味料理。肉質鮮嫩多汁，經過炭火的燒烤，表面呈現金黃酥脆的外皮，內裡保持著濕潤的口感。搭配獨特的調味醬汁，每一口都散發出迷人的香氣，讓人回味無窮。（一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "17.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤百頁豆腐【1支】",
+            "description": "碳烤百頁豆腐是一道結合了豆腐的細膩口感和炭烤的香氣的美味料理。豆腐經過炭火的燒烤後，外皮呈現金黃酥脆，內裡仍保持著豆腐的柔軟。（一片）",
+            "offers": {
+              "@type": "Offer",
+              "price": "17.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞翅膀【1支】",
+            "description": "碳烤雞翅膀是一道美味的炭烤料理，外皮烤得香脆，內裡肉質鮮嫩多汁。每一口都散發著炭火烤焦的香氣，搭配上獨特的醬汁，入口酥脆多汁，讓人回味無窮。(一隻)",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤棒棒腿【1支】",
+            "description": "碳烤棒棒腿是經典的烤肉料理，肉質鮮嫩多汁，外皮烤得香脆。每一口都充滿著炭火烤焦的香氣，肉質彈牙可口。搭配上特製醬汁，風味獨特，讓人回味無窮。是烤肉愛好者必嚐的美味選擇。(一隻)",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤甜不辣【1支】",
+            "description": "碳烤甜不辣以新鮮的甜不辣配料，經過炭火烤烘而成，外皮酥脆，內裡鮮甜多汁。每一口都帶著炭烤的香氣，口感香脆而有嚼勁。搭配特製醬汁，酸甜開胃，絕對是美味的烤物選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤豆包【1支】",
+            "description": "碳烤豆包是一道香氣誘人的美食，豆包經過炭火烤烘，外層焦香酥脆，內裡豆香濃郁。每一口都帶著炭烤的香氣，口感鬆脆，入口即化。搭配鹽醬或麻醬，美味十足，讓人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤貢丸【1支】",
+            "description": "碳烤新竹貢丸是一道經過炭火烤烘的美食，外皮焦香酥脆，內裡彈牙鮮嫩。每一口都帶著炭烤的香氣，口感豐富，入口即化。搭配特製胡椒或辣椒粉，風味獨特，令人回味無窮。(肉類來源地為台灣新竹)（一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤香腸【1支】",
+            "description": "碳烤香腸是一道外皮烤得酥脆，內裡肉汁豐富的美食。經過炭火燒烤，香氣四溢，香腸的風味更加突出。每一口咬下去都能感受到肉質的鮮嫩，搭配上特製醬料或芥末，香氣與辛香交織，讓人回味無窮。(肉類來源地為台灣)",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞皮【1支】",
+            "description": "碳烤雞皮，外脆內嫩，滋味絕佳。炭火烤燒出的香氣，讓雞皮香酥可口，一口咬下，香氣四溢，帶來滿滿的滿足感。每一口都是香脆多汁，是絕佳的下酒菜，讓人欲罷不能。（一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞心【1支】",
+            "description": "碳烤雞心，外酥內嫩，燒烤出的香氣令人垂涎欲滴。一口咬下，肉質鮮美多汁，入口即化，帶來濃郁的雞肉香味，令人回味無窮。每一口都是香酥的享受，是絕佳的小吃選擇。(一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤米腸【1支】",
+            "description": "碳烤米腸，外脆內軟，一口咬下酥脆的外皮迎接著濃郁的米香味，內裡餡料飽滿，口感豐富。燒烤過程中，香氣四溢，讓人垂涎欲滴。每一口都帶來滿滿的滿足感，是炭烤美食中的經典之選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤煙燻脆腸【1支】",
+            "description": "碳烤煙燻脆腸，外酥內嫩，獨特的煙燻香氣與脆口的口感相得益彰。每一口咬下，濃郁的肉香與微微的煙燻味道迸發出來，讓人回味無窮。外皮烤至金黃酥脆，內裡的腸仍然保持著彈性，是碳烤料理中令人驚艷的一款。(肉類來源地為台灣)",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤筍絲培根捲【1支】",
+            "description": "碳烤筍絲培根捲，精選嫩筍絲綿密可口，搭配著香脆培根，卷成美味的一團。烤至外皮金黃酥脆，口感層次豐富，一口咬下，香氣四溢，筍絲的清甜與培根的鹹香完美結合，讓人愛不釋手。(肉類來源地為加拿大。非重組肉及注脂肉)",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤七里香【1支】",
+            "description": "碳烤七里香，肉質鮮嫩多汁，表皮經炭火烤燒，香氣撲鼻。一口咬下，肉汁四溢，口感香脆外皮與鮮美內餡完美結合，入口即化，回味無窮。絕佳的烤肉享受，讓人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤腿排【1支】",
+            "description": "碳烤腿排，外酥內嫩，經過炭火烤製，表面烤出金黃酥脆的外皮，內裡肉質鮮嫩多汁。一口咬下，肉汁四溢，香氣撲鼻，口感豐富濃郁，讓人愛不釋手，是烤肉中的經典美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤爆漿雞腿捲【1支】",
+            "description": "碳烤爆漿雞腿捲，外酥內嫩，肉質鮮嫩多汁，一口咬下滋味豐富。烤製過程中，香氣四溢，口感層次分明，濃厚的雞肉香與酥脆口感交融，給人滿足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤黃金雞腿【1支】",
+            "description": "碳烤黃金雞腿，表皮金黃酥脆，內裡多汁鮮嫩，肉質鮮美醇厚。經過炭火烤製，散發出濃郁的香氣，一口咬下即刻爆汁，香氣四溢，回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞腿肉串【1支】",
+            "description": "碳烤雞腿肉串，肉質鮮嫩飽滿，外皮烤至金黃酥脆，每一口都充滿了香氣和鮮美的雞肉味道。經過炭火烤製，保留了雞肉的多汁，讓人回味無窮，絕對是美味的享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雪花豬肉串【1支】",
+            "description": "碳烤雪花豬肉串，豬肉細膩多汁，入口即化的口感，搭配炭火烤製的獨特香氣，讓人垂涎欲滴。外皮烤至金黃酥脆，內裡鮮嫩多汁，每一口都是香氣四溢的美味享受。(肉類來源地為加拿大。非重組肉及注脂肉)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤燻培鳳梨【1支】",
+            "description": "碳烤燻培鳳梨，鳳梨的甜蜜與炭烤的香氣完美結合，口感酥脆多汁。經過炭火烤製後，鳳梨的天然甜味更加凸顯，散發出誘人的香氣，入口即化的滋味讓人回味無窮。(肉類來源地為加拿大。非重組肉及注脂肉)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤肥腸串【1支】",
+            "description": "碳烤肥腸串，肥腸經過炭火烤製後，外皮酥脆、內裡嫩滑。每一口咬下，肥腸的香氣濃郁，油脂的香甜與炭烤的獨特風味交融，令人欲罷不能。炭烤的獨特燒烤香氣讓人食指大動，是烤肉愛好者的最愛之一。(肉類來源地為西班牙。非重組肉及注脂肉)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤牛肋條串【1支】",
+            "description": "碳烤牛肋條串，肉質鮮嫩多汁，經過炭火燒烤後，表面金黃酥脆，充滿烤肉的香氣，咬下一口即能感受到牛肉的鮮甜和炭火烤製的獨特風味，讓人回味無窮，原牛用真空按摩技術使牛筋吃起來更好入口。(肉類來源地為澳洲)(一串）",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤中節翅【1支】",
+            "description": "中節雞翅以炭火慢烤，表皮金黃微酥，內裡鮮嫩多汁，入口滿是迷人炭香。（一支）",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "口味選擇",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "不胡椒",
+            "description": "不加胡椒粉調味，保留原味，適合不吃胡椒者。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加辣 (小辣)",
+            "description": "小辣選擇，微微辣感，提升香氣不搶味，怕辣也能接受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬汁",
+            "description": "酸香清新，提味解膩，帶出明亮的檸檬香氣與爽口層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加辣（中辣）",
+            "description": "將餐點調整為中辣，辣度適中、香辣帶勁，提升風味層次，不過嗆，適合喜歡明顯辣感的客人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加辣（大辣）",
+            "description": "將辣度調整為大辣，辣勁強烈、後勁十足，適合重口味與嗜辣者。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

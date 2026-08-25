@@ -1,0 +1,535 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%BE%A4%E5%92%96%E5%95%A1-%E7%9F%B3%E7%89%8C%E5%BA%97/nxiv2goZQWOv76kRytAZ8w",
+  "name": "群咖啡 石牌店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 126, Ziqiang Street",
+    "addressLocality": "Beitou District",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1108829,
+    "longitude": 121.5159394
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 500
+  },
+  "servesCuisine": [
+    "Drinks",
+    "Coffee and Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡",
+            "description": "義式濃縮加入牛奶與冰塊，層次分明，口感順滑、比例均衡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力鬆餅",
+            "description": "圓形格紋鬆餅，四等分，淋上巧克力醬，簡單經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "衣索比亞 西達摩 桃子甜心 日曬",
+            "description": "風味：檸檬、水蜜桃、荔枝、紅茶\n不做加糖, 僅熱飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金曼特寧 三次手選",
+            "description": "風味：草本、奶油、巧克力、楓糖，口感厚實\n不做加糖, 僅熱飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有蘋果的蘋果派",
+            "description": "層層酥皮夾入蘋果餡的派切片，表面撒上糖粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超好喝的泡沫奶茶",
+            "description": "風味：奶香、綿密泡沫，口感滑順\n奶精粉奶茶永遠最讚啦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可牛奶",
+            "description": "可可粉本身有甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡",
+            "description": "咖啡搭配檸檬片，明亮柑橘香氣提亮苦韻，口感清爽俐落。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶牛奶",
+            "description": "抹茶與牛奶調和，茶香與奶香均衡，口感順滑。無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡",
+            "description": "義式濃縮加入牛奶與冰塊，層次分明，口感順滑、比例均衡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生厚片",
+            "description": "厚切吐司抹上花生醬，烤至外層微酥、內軟，花生香濃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡",
+            "description": "濃縮咖啡加水調和的經典黑咖啡，口感清爽俐落，保留咖啡香與層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶牛奶",
+            "description": "抹茶與牛奶調和，茶香與奶香均衡，口感順滑。無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典咖啡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "西西里咖啡",
+            "description": "咖啡搭配檸檬片，明亮柑橘香氣提亮苦韻，口感清爽俐落。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡",
+            "description": "濃縮咖啡加水調和的經典黑咖啡，口感清爽俐落，保留咖啡香與層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵咖啡",
+            "description": "義式濃縮加入牛奶與冰塊，層次分明，口感順滑、比例均衡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡布奇諾",
+            "description": "僅熱飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "群咖啡特調",
+            "description": "僅冷飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "風味拿鐵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鹽焦糖拿鐵",
+            "description": "只加果露不另外加糖。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果拿鐵",
+            "description": "只加果露不另外加糖。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香草拿鐵",
+            "description": "只加果露不另外加糖。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖拿鐵",
+            "description": "只加果露不另外加糖。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑巧克力拿鐵",
+            "description": "只加果露不另外加糖。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經選手沖單品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "哥斯大黎加 布蘭卡 托雷斯莊園 百香蜜處理",
+            "description": "風味：鳳梨、百香果、紅莓、李子、紅糖甜味，酸度柔和，尾韻乾淨綿長\n處理法：百香蜜處理\n焙度：中淺烘焙\n不做加糖, 僅熱飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金曼特寧 三次手選",
+            "description": "風味：草本、奶油、巧克力、楓糖，口感厚實\n不做加糖, 僅熱飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巴拿馬 翡翠莊園 鑽石山 日曬",
+            "description": "風味：柳橙汁、蜜柑、楓糖、黃色水果，細緻度佳，尾韻綿長\n不做加糖, 僅熱飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "衣索比亞 西達摩 桃子甜心 日曬",
+            "description": "風味：檸檬、水蜜桃、荔枝、紅茶\n不做加糖, 僅熱飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰滴咖啡",
+            "description": "不做加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "曼巴咖啡（曼特寧+巴西）",
+            "description": "風味：碳香、香草、焦糖\n焙度：中深烘焙\n不做加糖, 僅熱飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰滴分享瓶",
+            "description": "低溫慢滴萃取的瓶裝冰滴咖啡，冷飲，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "無咖啡因飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "超好喝的泡沫奶茶",
+            "description": "風味：奶香、綿密泡沫，口感滑順\n奶精粉奶茶永遠最讚啦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可牛奶",
+            "description": "可可粉本身有甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶牛奶",
+            "description": "抹茶與牛奶調和，茶香與奶香均衡，口感順滑。無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金歲月",
+            "description": "酸酸甜甜的洛神花茶\n甜度固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有機冷薄荷茶",
+            "description": "風味：清涼、草本、薄荷香。無咖啡因，僅冷飲。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果香茶",
+            "description": "酸酸甜甜的熱帶水果乾茶，固定甜度。\n內含洛神花，孕婦不宜大量飲用",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜柚子茶",
+            "description": "風味：柚香、蜂蜜、柑橘，口感清新",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山竹馬黛茶",
+            "description": "山竹果香結合馬黛的草本調性，無咖啡因，口感清新。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不好喝的鮮奶茶",
+            "description": "這是就是鮮奶茶！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "點心在這裡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力鬆餅",
+            "description": "圓形格紋鬆餅，四等分，淋上巧克力醬，簡單經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "有蘋果的蘋果派",
+            "description": "層層酥皮夾入蘋果餡的派切片，表面撒上糖粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力厚片",
+            "description": "厚切吐司，抹上濃郁巧克力醬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油厚片",
+            "description": "厚切吐司抹上奶油，烤香可口，外酥內軟",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥厚片",
+            "description": "厚片吐司搭配奶酥抹醬，奶香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜鬆餅",
+            "description": "格子鬆餅，附蜂蜜淋醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蒜厚片",
+            "description": "厚片吐司塗上蒜香抹醬，表面金黃微酥，外酥內軟。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

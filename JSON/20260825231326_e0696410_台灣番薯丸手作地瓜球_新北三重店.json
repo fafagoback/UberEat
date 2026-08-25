@@ -1,0 +1,388 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%8F%B0%E7%81%A3%E7%95%AA%E8%96%AF%E4%B8%B8%E6%89%8B%E4%BD%9C%E5%9C%B0%E7%93%9C%E7%90%83-%E6%96%B0%E5%8C%97%E4%B8%89%E9%87%8D%E5%BA%97/SFcEgkveUdC3DOOyD4pXMQ",
+  "name": "台灣番薯丸手作地瓜球 新北三重店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區溪尾街198號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0810201,
+    "longitude": 121.4882515
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 150
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Snacks",
+    "Desserts",
+    "Chinese",
+    "Desserts"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味地瓜球",
+            "description": "經典原味地瓜球，外酥內Q、蓬鬆彈牙，咬下滿是地瓜香與自然甜，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅子地瓜球",
+            "description": "Q彈地瓜球撒上梅子口味粉，清新梅香、酸甜順口，一口接一口的人氣首選",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【臺灣尚勇】黑糖地瓜球",
+            "description": "選用濃郁的臺灣黑糖口味粉搭配地瓜球，每口甜蜜感中都藏著對這片土地的熱愛與驕傲💗獻給每位為生活打拚，尚勇的你！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力地瓜球",
+            "description": "Q彈地瓜球均勻裹上巧克力口味粉，可可香與地瓜香甜交織，一口一顆涮嘴停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蔥雞汁地瓜球",
+            "description": "Q彈地瓜球拌入香蔥雞汁口味粉，帶出蔥香與雞汁風味的鹹香層次，期間限定，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓牛奶地瓜球",
+            "description": "期間限定草莓牛奶風味地瓜球，草莓香與奶香交融，齒頰留香、越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙倍幸福組",
+            "description": "2小包，皆為原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司地瓜球",
+            "description": "Q彈地瓜球裹上起司口味粉，起司香與地瓜香相融，越嚼越香，一口一顆超涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海苔地瓜球",
+            "description": "撒上海苔粉的Q彈地瓜球，海苔香與地瓜香交織，外微脆內軟Q，鹹香不膩，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "團聚歡樂組",
+            "description": "4小包，皆為原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生地瓜球",
+            "description": "地瓜球裹上花生口味粉，外酥內Q，花生香氣濃郁，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "☄️☄️☄️☄️☄️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "★口味粉均額外包裝請留意底部☆",
+            "description": "口味粉皆另行分裝，請於包裝底部取用；開吃前依喜好撒上，更能掌握濃淡與風味層次，輕鬆客製，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "★口味粉依照訂單提供，不接受客製化服務。☆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "期間限定",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香蔥雞汁地瓜球",
+            "description": "Q彈地瓜球拌入香蔥雞汁口味粉，帶出蔥香與雞汁風味的鹹香層次，期間限定，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單人套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小包地瓜球套餐",
+            "description": "飲料任選",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大包地瓜球套餐",
+            "description": "飲料任選",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味地瓜球",
+            "description": "經典原味地瓜球，外酥內Q、蓬鬆彈牙，咬下滿是地瓜香與自然甜，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力地瓜球",
+            "description": "Q彈地瓜球均勻裹上巧克力口味粉，可可香與地瓜香甜交織，一口一顆涮嘴停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅子地瓜球",
+            "description": "Q彈地瓜球撒上梅子口味粉，清新梅香、酸甜順口，一口接一口的人氣首選",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海苔地瓜球",
+            "description": "撒上海苔粉的Q彈地瓜球，海苔香與地瓜香交織，外微脆內軟Q，鹹香不膩，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司地瓜球",
+            "description": "Q彈地瓜球裹上起司口味粉，起司香與地瓜香相融，越嚼越香，一口一顆超涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【臺灣尚勇】黑糖地瓜球",
+            "description": "選用濃郁的臺灣黑糖口味粉搭配地瓜球，每口甜蜜感中都藏著對這片土地的熱愛與驕傲💗獻給每位為生活打拚，尚勇的你！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生地瓜球",
+            "description": "地瓜球裹上花生口味粉，外酥內Q，花生香氣濃郁，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓牛奶地瓜球",
+            "description": "期間限定草莓牛奶風味地瓜球，草莓香與奶香交融，齒頰留香、越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂",
+            "description": "350ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪碧",
+            "description": "350ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可口可樂Zero",
+            "description": "350ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原萃-日式綠茶",
+            "description": "350ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原萃-烏龍茶",
+            "description": "350ml",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "多人多包",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雙倍幸福組",
+            "description": "2小包，皆為原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "團聚歡樂組",
+            "description": "4小包，皆為原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,768 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B0%8F%E5%90%9B%E5%84%AA%E8%B3%AA%E8%94%AC%E6%9E%9C%E5%BA%97/cVBC4pyxVe6dPtXlPDJAeA",
+  "name": "小君優質蔬果店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁政街199-2號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0804494,
+    "longitude": 121.4906853
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 33
+  },
+  "servesCuisine": [
+    "Healthy"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冷凍好吃榴槤 Monthong Durian",
+            "description": "金枕榴槤冷凍果肉，果瓣大、肉厚綿密，金黃飽滿，方便分次取用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超甜綠肉哈密瓜",
+            "description": "超香綿密綠肉哈密瓜！",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "當季綜合水果切盒",
+            "description": "水果好吃隨機配給當季好吃三種水果\n圖片參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本小蜜柑",
+            "description": "日本小蜜柑，果皮橙亮、小巧好剝，口感多汁；實測甜度約16-17度，冰鎮更清爽，日常點心或果盤皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "325.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "正散養土雞蛋兩台斤一箱",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "325.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果禮盒。超好吃",
+            "description": "紐西蘭水蜜桃蘋果。脆甜好吃。淡淡的水蜜桃香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "799.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精品蘋果六粒裝小禮盒",
+            "description": "優選日本蘋果。精心包裝。禮盒高檔大氣！",
+            "offers": {
+              "@type": "Offer",
+              "price": "880.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特選火龍果 Selected Dragon Fruit",
+            "description": "火龍果常見有白肉及紅肉2種，營養含維生素B2、B3、C、纖維素、葡萄糖及鐵、鎂、鉀等，紅肉的是甜菜紅素含量最多的食物，有降血壓、抗氧化、消火氣及改善便秘等功效。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "進口脆甜綠無籽葡萄",
+            "description": "非常脆甜",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆甜好吃大水梨",
+            "description": "水梨好處多！\n1.利尿消腫： 當攝取太多鈉時，吃些富含鉀的水梨有助於排出多餘水分，減緩水腫。 2.消暑保水： 一顆水梨裡有高達90％是水分，不僅解渴，還能保持皮膚水潤，讓你感覺更清爽。 3.幫助排便： 水梨含有山梨糖醇，可以讓便便變軟，促進腸胃蠕動，預防便秘，保持腸道健康。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅肉西瓜切盒",
+            "description": "吃西瓜的好處\n1. 補充身體水份 西瓜不但脂肪含量少，而且其水份含量更高達90％以上，除了能夠幫助身體補充水份之外，亦可以帶來飽腹感。\n2. 降低中風機會 ...\n3. 去水腫降血壓 ...\n4. 緩解肌肉酸痛 ...\n5. 預防皮膚老化 ...",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣芭樂 Taiwan Guava",
+            "description": "芭樂的好處\n中醫認為芭樂可主治急性腸胃炎、痢疾、小兒腹瀉、急慢咽喉炎、痔瘡疼痛、傷口久不收口、止血、止癢、燒燙傷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超好吃鳳梨 Champion Pineapple",
+            "description": "鳳梨的好處\n鳳梨可能具護心效果。 抗發炎：鳳梨酵素具抗發炎功效，可能可以抑制某些腫瘤的生長，還可緩解骨關節炎患者的疼痛。 助消化：鳳梨酵素可分解蛋白質，幫助消化肉類；大量的膳食纖維也能促進排便。 有利健身減重：運動後吃鳳梨可幫助肌肉修復，縮短痠痛時間，鳳梨酵素可能也具燃脂功效。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本麝香葡萄",
+            "description": "日本長野須高產麝香葡萄，綠玉般圓潤飽滿，成串大顆；可直接食用或入果盤點綴，冰鎮更順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1188000.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐津蜜橘禮盒裝",
+            "description": "日本唐津小蜜橘一公斤 禮盒裝",
+            "offers": {
+              "@type": "Offer",
+              "price": "1280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本水蜜桃🍑",
+            "description": "2顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "1200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溫室翠妞美濃瓜",
+            "description": "清脆瓜香濃郁。連皮可吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好吃進口小橘子",
+            "description": "酸甜爽口。很好吃😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好吃櫻桃禮盒",
+            "description": "果粒深紅亮澤，顆顆帶梗整齊擺放；精緻禮盒包裝，送禮體面，自用分享皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "980.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超甜綠肉哈密瓜",
+            "description": "超香綿密綠肉哈密瓜！",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "進口脆甜綠無籽葡萄",
+            "description": "非常脆甜",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙色火龍果切盒",
+            "description": "紅肉與白肉火龍果切塊，去皮盒裝，方便即食與分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐西蘭有機桶裝小萍果",
+            "description": "不上蠟可連皮吃，爽脆的口感、果肉結實細緻、脆甜好吃，隨時隨地就能補充健康能量，最好吃的小蘋果！ 有機進口可連皮吃.",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "進口水蜜桃禮盒",
+            "description": "進口水蜜桃6入禮盒，單顆網套防護，果色紅潤、外盒大方，送禮體面，自用也方便分食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本精品小蜜柑",
+            "description": "日本小蜜柑，果形小巧、皮薄易剝，果肉細緻多汁；含維生素C。盒裝好攜帶，適合點心、果盤或便當配水果。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精品蘋果六粒裝小禮盒",
+            "description": "優選日本蘋果。精心包裝。禮盒高檔大氣！",
+            "offers": {
+              "@type": "Offer",
+              "price": "880.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本小蜜柑",
+            "description": "日本小蜜柑，果皮橙亮、小巧好剝，口感多汁；實測甜度約16-17度，冰鎮更清爽，日常點心或果盤皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "325.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超好吃進口肚臍丁現切",
+            "description": "進口肚臍丁（臍橙現切 果肉細緻多汁，易剝好入口。富含維生素C與膳食纖維，適合鮮食或打果汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現剥好吃榴槤",
+            "description": "現剝去殼榴槤果肉，單瓣份量保鮮包裝，開封即食；香氣濃郁、口感細滑，方便解饞與分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現切雙色火龍果。好吃",
+            "description": "現切紅白雙色火龍果切塊，一盒即食。紅白交織、籽香脆口，含維生素C與膳食纖維，清爽少負擔，方便分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精緻大水梨禮盒",
+            "description": "大顆水梨精裝禮盒，內含整齊分裝的大果，保護套與禮盒包裝體面大方；清脆多汁，冰鎮更爽口，中秋送禮、團購分享皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1680.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆甜好吃。藍莓 Import Blueberry",
+            "description": "藍莓富含豐富的花青素，因此具有很強的抗氧化、抗發炎能力，根據研究，藍莓中花青素對抗自由基的能力比維生素E強50倍，比維生素C強20倍，因此被譽為「森林裡的藍寶石」。 藍莓還有護眼、保護心血管、抗老、防失智等功效，更曾被美國糖尿病協會譽為對抗糖尿病的「抗氧化超級水果」",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "當季綜合水果切盒",
+            "description": "水果好吃隨機配給當季好吃三種水果\n圖片參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超甜肚臍町",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橘肉哈密瓜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點 A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜蜜蜜百香果 Passion Fruit",
+            "description": "百香果功效 百香果有「果汁之王」美稱，它的金黃色澤來源是「類黃酮」，有很好的消炎作用，能改善過敏、牙周炎，百香果還含有豐富的維生素B、C、葉酸、多酚類，能保養血管、暢通血液、提高鐵的吸收，改善貧血、防止動脈硬化，更有抗老、抗癌的效果！ 壓力：泛酸能幫助維持血糖平衡與能量供應，香酚則有舒緩壓力焦慮、幫助放鬆與助眠等好處。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆甜好吃。藍莓 Import Blueberry",
+            "description": "藍莓富含豐富的花青素，因此具有很強的抗氧化、抗發炎能力，根據研究，藍莓中花青素對抗自由基的能力比維生素E強50倍，比維生素C強20倍，因此被譽為「森林裡的藍寶石」。 藍莓還有護眼、保護心血管、抗老、防失智等功效，更曾被美國糖尿病協會譽為對抗糖尿病的「抗氧化超級水果」",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特選火龍果 Selected Dragon Fruit",
+            "description": "火龍果常見有白肉及紅肉2種，營養含維生素B2、B3、C、纖維素、葡萄糖及鐵、鎂、鉀等，紅肉的是甜菜紅素含量最多的食物，有降血壓、抗氧化、消火氣及改善便秘等功效。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣葡萄 Taiwan Grape",
+            "description": "台灣葡萄，果粒飽滿多汁，富含花青素、維生素C與鉀，清爽好入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好吃芭蕉 Hardy Banana",
+            "description": "短粗厚實的芭蕉品種，果皮淡青至米黃，成熟後香氣更足。富含鉀與膳食纖維，適合日常補充能量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冷凍好吃榴槤 Monthong Durian",
+            "description": "金枕榴槤冷凍果肉，果瓣大、肉厚綿密，金黃飽滿，方便分次取用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好吃現切大蘋果",
+            "description": "現切去皮大蘋果切塊，厚實清爽、好入口，方便分享的單點水果。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精品名牌班別白肉火龍果",
+            "description": "精品名牌班別",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溫室翠妞美濃瓜",
+            "description": "清脆瓜香濃郁。連皮可吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "進口脆甜綠無籽葡萄",
+            "description": "非常脆甜",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "進口超好吃 恐龍蛋3顆",
+            "description": "進口恐龍蛋（李杏Pluot），李子與杏桃的雜交品種，果皮帶天然果粉、果肉細緻多汁；3顆裝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本小蜜柑5/6顆裝",
+            "description": "日本小蜜柑，皮薄易剝、果肉細緻多汁；5-6顆盒裝，隨手解饞或分享剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現切雙色火龍果",
+            "description": "現切雙色火龍果，白、紅兩種果肉一次滿足；黑籽點點、口感細緻，方便即食，輕鬆分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本空運紫葡萄",
+            "description": "長野紫葡萄是長野縣的原創品種。果皮呈深紫色，甜度非常高，果粒大，果皮沒有澀味，有豐富的果汁和香氣，因為皮很薄，所以連皮也可以吃，黑葡萄皮含有多酚類花青素等物質，對身體有益，因此建議連皮食用哦!",
+            "offers": {
+              "@type": "Offer",
+              "price": "1380.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精緻禮盒",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "超級好好吃恐龍蛋禮盒",
+            "description": "恐龍蛋水果禮盒，青綠斑紋外皮，顆顆獨立網套保護與精緻禮盒包裝，節慶送禮體面，適合中秋團圓分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "999.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "正宗日本空運 雙色麝香葡萄禮盒",
+            "description": "日本空運進口，黑、綠雙色麝香葡萄禮盒。顆粒飽滿、包裝精緻，節慶送禮體面，親友共享剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "2280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣溫室阿魯斯綠肉哈密瓜禮盒",
+            "description": "台灣溫室栽培的阿魯斯品種綠肉哈密瓜，單顆精緻禮盒裝，中秋節送禮體面大方",
+            "offers": {
+              "@type": "Offer",
+              "price": "1080.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本麝香葡萄單串禮盒裝重量600公克上下",
+            "description": "日本麝香葡萄單串禮盒，約600公克；果粒大且飽滿多汁，青綠討喜。精緻包裝，節慶送禮體面，自用冰鎮後更清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果禮盒。超好吃",
+            "description": "紐西蘭水蜜桃蘋果。脆甜好吃。淡淡的水蜜桃香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "799.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精緻大水梨禮盒",
+            "description": "大顆水梨精裝禮盒，內含整齊分裝的大果，保護套與禮盒包裝體面大方；清脆多汁，冰鎮更爽口，中秋送禮、團購分享皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1680.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐津蜜橘禮盒裝",
+            "description": "日本唐津小蜜橘一公斤 禮盒裝",
+            "offers": {
+              "@type": "Offer",
+              "price": "1280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好吃櫻桃禮盒",
+            "description": "果粒深紅亮澤，顆顆帶梗整齊擺放；精緻禮盒包裝，送禮體面，自用分享皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "980.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "零食點心",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "正散養土雞蛋兩台斤一箱",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "325.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "現切新鮮好吃水果",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "好吃現切大蘋果",
+            "description": "現切去皮大蘋果切塊，厚實清爽、好入口，方便分享的單點水果。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅肉西瓜切盒",
+            "description": "吃西瓜的好處\n1. 補充身體水份 西瓜不但脂肪含量少，而且其水份含量更高達90％以上，除了能夠幫助身體補充水份之外，亦可以帶來飽腹感。\n2. 降低中風機會 ...\n3. 去水腫降血壓 ...\n4. 緩解肌肉酸痛 ...\n5. 預防皮膚老化 ...",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣芭樂 Taiwan Guava",
+            "description": "芭樂的好處\n中醫認為芭樂可主治急性腸胃炎、痢疾、小兒腹瀉、急慢咽喉炎、痔瘡疼痛、傷口久不收口、止血、止癢、燒燙傷！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超好吃鳳梨 Champion Pineapple",
+            "description": "鳳梨的好處\n鳳梨可能具護心效果。 抗發炎：鳳梨酵素具抗發炎功效，可能可以抑制某些腫瘤的生長，還可緩解骨關節炎患者的疼痛。 助消化：鳳梨酵素可分解蛋白質，幫助消化肉類；大量的膳食纖維也能促進排便。 有利健身減重：運動後吃鳳梨可幫助肌肉修復，縮短痠痛時間，鳳梨酵素可能也具燃脂功效。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣紅肉木瓜",
+            "description": "木瓜含有蛋白酶、木瓜酶，可以促進蛋白質分解和吸收，幫助消化。 木瓜的纖維和水分含量也很高，這都有助於預防便秘，維持消化道健康。 保護眼睛：木瓜中所含的抗氧化劑葉黃素、玉米黃素，能保護眼睛健康，預防老年性黃斑部病變；還有維生素C、維生素E等營養素，也可以保護眼睛。2023年7月6日",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆甜好吃大水梨",
+            "description": "水梨好處多！\n1.利尿消腫： 當攝取太多鈉時，吃些富含鉀的水梨有助於排出多餘水分，減緩水腫。 2.消暑保水： 一顆水梨裡有高達90％是水分，不僅解渴，還能保持皮膚水潤，讓你感覺更清爽。 3.幫助排便： 水梨含有山梨糖醇，可以讓便便變軟，促進腸胃蠕動，預防便秘，保持腸道健康。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃肉西瓜",
+            "description": "現切黃肉西瓜切塊，含水量高、口感清爽，淡雅果香，解渴消暑，盒裝方便分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特選火龍果 Selected Dragon Fruit",
+            "description": "火龍果常見有白肉及紅肉2種，營養含維生素B2、B3、C、纖維素、葡萄糖及鐵、鎂、鉀等，紅肉的是甜菜紅素含量最多的食物，有降血壓、抗氧化、消火氣及改善便秘等功效。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "精品名牌班別白肉火龍果",
+            "description": "精品名牌班別",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現切雙色火龍果。好吃",
+            "description": "現切紅白雙色火龍果切塊，一盒即食。紅白交織、籽香脆口，含維生素C與膳食纖維，清爽少負擔，方便分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超甜綠肉哈密瓜",
+            "description": "超香綿密綠肉哈密瓜！",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "當季綜合水果切盒",
+            "description": "水果好吃隨機配給當季好吃三種水果\n圖片參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

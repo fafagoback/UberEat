@@ -1,0 +1,368 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%AF%A7%E5%A4%8F%E5%A4%9C%E5%B8%82-%E6%9D%B1%E7%9F%B3%E9%AE%AE%E8%9A%B5/Svpf709BWGuvHJkT8vu6ow",
+  "name": "寧夏夜市 東石鮮蚵",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "103台北市大同區寧夏路66號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.05683,
+    "longitude": 121.51541
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 1000
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞蛋蚵仔煎 Pan-Fried Egg with Oyster",
+            "description": "香煎雞蛋鋪上蚵仔，蛋邊微酥、內裡滑嫩，淋上醬汁，經典台式蚵仔煎。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺虱目魚肚粥 Boneless Milk Fish Belly Congee",
+            "description": "滑嫩無刺虱目魚肚鋪上薑絲，配米粥與蔥花、香菇片，口味清爽、好入口",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒意麵 Crispy Fried Noodles",
+            "description": "意麵入鍋燒湯頭，配蝦、蚵仔、蛤蜊、豬肉片與青菜，覆以半熟蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮑魚海產粥 Seafood Congee with Abalone",
+            "description": "海產粥加入鮑魚片、蝦、蛤蜊、花枝與蚵仔，米香柔滑，青蔥點綴，口感豐富、每口都是海味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺虱目魚肚湯 Boneless Milk Fish Belly Soup",
+            "description": "整片去刺虱目魚肚，薑絲清湯提味，口感滑嫩、湯頭清爽暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "煎類 Pan-Fried Food",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綜合煎 Assorted Pan-Fried Food",
+            "description": "多種食材組合的綜合煎，一次品嚐多重口感與咬勁，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺虱目魚肚煎 Pan-Fried Boneless Milk Fish Belly",
+            "description": "外皮煎至金黃酥香，魚肚油脂豐富、口感滑嫩；無刺更好入口，品嚐虱目魚原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞蛋蝦仁煎 Pan-Fried Egg with Shrimp",
+            "description": "雞蛋與蝦仁一同香煎，蛋香滑嫩，蝦仁彈口，鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒類 Stir-Fried Food",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綜合炒飯 Assorted Stir-Fried Rice",
+            "description": "多樣配料拌炒入飯，香氣四溢、口感豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋炒飯 Shrimp Stir-Fried Rice with Egg",
+            "description": "彈嫩蝦仁配上滑蛋，米飯炒至粒粒分明，海味與蛋香交織的經典炒飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔蛋炒飯 Oyster Stir-Fried Rice with Egg",
+            "description": "蚵仔與蛋拌炒米飯，海味與蛋香交融，口口有料",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒青菜 Stir-Fried Vegetable",
+            "description": "青菜炒製，口感清爽脆嫩，簡單好吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒花枝 Stir-Fried Cuttlefish",
+            "description": "花枝翻炒，Q彈爽口，鹹香涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒鮮蚵 Stir-Fried Oyster",
+            "description": "鮮蚵快炒，保留海味原香的經典熱炒",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒腰只 Stir-Fried Pork Kidney",
+            "description": "豬腰快炒，脆嫩帶勁，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒赤肉 Stir-Fried Pork Starch",
+            "description": "赤肉切條急火快炒，口感嫩滑，簡單調味凸顯豬肉本香，經典家常下飯菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類 Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔湯 Oyster Soup",
+            "description": "蚵仔入湯，海味鮮香、口感順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤仔湯 Clam Soup",
+            "description": "清澈湯頭襯托蛤仔原味，海味鮮香、順口清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝湯 Cuttlefish Soup",
+            "description": "Q彈花枝搭配清爽湯頭，海味順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "腰只湯 Pork Kidney Soup",
+            "description": "清湯搭配腰子切片，口感脆嫩，風味純淨。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "赤肉湯 Pork Starch Soup",
+            "description": "台式赤肉勾芡湯，湯頭滑順、好入口",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油腰只湯 Pork Kidney Soup with Sesame Oil",
+            "description": "豬腰切片入湯，散發麻油香；口感脆嫩，湯頭清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油赤肉湯 Pork Starch Soup with Sesame Oil",
+            "description": "麻油赤肉湯，赤肉薄裹粉，口感滑嫩，湯頭清爽帶麻油香",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮑魚海產湯 Seafood Soup with Abalone",
+            "description": "以鮑魚為主角的海產湯，結合多種海味，湯頭鮮香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "粥類 Congee",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔粥 Oyster Congee",
+            "description": "米粥搭配蚵仔，米香與海味相融，順口好吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤仔粥 Clam Congee",
+            "description": "米粥搭配蛤仔，口感柔和、好入口",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝粥 Cuttlefish Congee",
+            "description": "米香綿滑的白粥，拌入花枝片，口感彈牙、鮮香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜 Side Dish",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "燙鮮蝦 Blanched Shirmp",
+            "description": "簡單汆燙呈現原味，蝦肉Q彈，清爽開胃的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯虱目魚頭 Braised Boneless Milk Fish Head",
+            "description": "滷製去刺虱目魚頭，滷汁入味，方便食用，適合當小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯虱目魚肚 Braised Boneless Milk Fish Belly",
+            "description": "去刺虱目魚肚滷製入味，口感滑嫩、膠質豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

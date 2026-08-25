@@ -1,0 +1,613 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A4%A9%E6%AF%8D%E5%8C%97%E6%B8%AF%E8%82%89%E7%84%BF%E5%BA%97/cIlEKfFSSbStO-NedeJOwg",
+  "name": "天母北港肉焿店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "111台灣台北市士林區天母西路3-11號",
+    "addressLocality": "士林區",
+    "addressRegion": "台北市",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1185543,
+    "longitude": 121.529141
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 600
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Soup"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶香菇肉焿麵",
+            "description": "沙茶香氣羹湯，香菇與肉焿料豐，搭配麵條",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾意麵",
+            "description": "意麵乾拌，鋪上肉羹與當天青菜，拌勻更順口。固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "便當",
+            "description": "特選花東玉里米、招牌肉羹、當天青菜、豆干、豆皮",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魷魚焿米粉",
+            "description": "沙茶提味的魷魚羹湯，配米粉與蔬菜，湯體濃稠，米粉吸附湯汁更帶勁",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶綜合羹麵",
+            "description": "沙茶羹麵，肉羹、魷魚、花枝、魚酥四種混合；固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯",
+            "description": "白飯淋上滷肉醬汁，醬香濃郁，經典台式下飯選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香菇類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶香菇肉焿湯",
+            "description": "沙茶風味羹湯，加入香菇與肉羹，呈現濃稠口感與沙茶香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶香菇肉焿飯",
+            "description": "白飯，淋上沙茶香菇肉焿；湯汁足，拌飯更入味",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶香菇肉焿米粉",
+            "description": "沙茶與香菇拌入肉焿湯，搭配米粉，口感滑順。固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶香菇肉焿粄條",
+            "description": "粄條配肉焿與香菇，加入沙茶提味的羹湯",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶香菇肉焿冬粉",
+            "description": "沙茶香菇肉羹搭配冬粉，湯頭帶沙茶香；內含肉羹與香菇。固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "魚酥類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魚酥焿米粉",
+            "description": "沙茶羹湯搭米粉，鋪上酥香魚酥，含蛋花與少許香菜。固定配料，無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魚酥焿麵",
+            "description": "沙茶提味的焿湯配麵條，加入魚酥，湯頭濃滑，口感酥脆與滑順並存。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魚酥焿湯",
+            "description": "沙茶風味焿湯，加入魚酥增添香氣與口感，湯體滑順好入口",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魚酥焿飯",
+            "description": "沙茶風味的魚酥焿淋飯，焿湯滑順，魚酥酥香增添層次，暖胃飽足。固定配料，無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魚酥焿粄條",
+            "description": "沙茶風味焿湯，魚酥搭配粄條，湯稠順口。固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魚酥焿冬粉",
+            "description": "沙茶風味的魚酥羹，配冬粉，滑順湯頭中帶酥香口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "魷魚類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魷魚焿麵",
+            "description": "Q彈魷魚片配勾芡羹湯與麵條，加入沙茶醬提味，搭配蒜酥與香菜，滑順暖口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魷魚焿湯",
+            "description": "沙茶調味的魷魚焿湯，湯頭濃稠，固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魷魚焿粄條",
+            "description": "沙茶魷魚焿湯搭配粄條，湯頭帶沙茶香，滑順飽足。固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魷魚焿飯",
+            "description": "白飯淋上沙茶魷魚焿，羹湯濃滑，魷魚Q彈帶海味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶魷魚焿冬粉",
+            "description": "沙茶焿湯，魷魚Q彈，搭配冬粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "花枝類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶花枝焿麵",
+            "description": "沙茶風味花枝焿配麵條，含花枝塊與香菜。固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶花枝焿湯",
+            "description": "沙茶調味花枝切片，勾芡湯底。固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶花枝焿米粉",
+            "description": "以沙茶提味的花枝焿湯，配米粉更飽足。固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶花枝焿飯",
+            "description": "以沙茶調味的花枝焿，淋在白飯上，勾芡滑口、海味鮮香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶花枝焿粄條",
+            "description": "花枝焿配粄條，沙茶風味，湯頭濃稠。固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶花枝焿冬粉",
+            "description": "花枝焿搭配冬粉，沙茶提味，湯頭濃滑順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "清湯粄條",
+            "description": "清湯、Q彈粄條，搭配青菜與蔥花",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "切仔冬粉",
+            "description": "使用冬粉的切仔湯麵，固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "切仔麵",
+            "description": "切仔風味湯麵，經典台式口味",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "切仔米粉",
+            "description": "切仔風味米粉湯，清湯順口，細米粉吸附湯汁，口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "其他",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "乾粄條",
+            "description": "乾拌粄條，淋上醬汁，配當天青菜與蔥花",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶雞絲麵",
+            "description": "雞絲麵、熱湯與沙茶醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾冬粉",
+            "description": "乾拌冬粉，無湯，調味拌食",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾油麵",
+            "description": "乾拌油麵，拌勻醬汁與油香，麵條Q彈",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾米粉",
+            "description": "細米粉乾拌，均勻裹上醬汁，無湯的經典吃法",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魚丸湯",
+            "description": "特選鱈魚丸 Q彈好吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜湯",
+            "description": "清爽青菜湯，當天青菜為主（高麗菜或鵝白菜），恕無法指定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚丸青菜湯",
+            "description": "魚丸與當天青菜的清湯。青菜依當日供應，恕無法指定",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "當天青菜為主(高麗菜或鵝白菜)恕無法指定",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合小菜",
+            "description": "含豆干, 豆腐及海帶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋豆腐",
+            "description": "精選嫩豆腐加上特調醬汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙魷魚",
+            "description": "川燙魷魚加上特調醬汁和沙茶 (無芥末)",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "油豆腐",
+            "description": "金黃多孔的油炸豆腐塊，口感蓬鬆",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶",
+            "description": "海味清香、帶Q勁的海帶，小菜單點",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干",
+            "description": "豆製小菜，口感紮實，有嚼勁",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "綜合羹類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶綜合羹米粉",
+            "description": "有肉羹、魷魚、花枝、魚酥，四種混合\n固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶綜合羹湯",
+            "description": "肉羹、魷魚、花枝、魚酥等固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶綜合羹冬粉",
+            "description": "有肉羹、魷魚、花枝、魚酥，四種混合\n固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶綜合羹粄條",
+            "description": "有肉羹、魷魚、花枝、魚酥，四種混合\n固定配料無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶綜合羹飯",
+            "description": "有肉羹、魷魚、花枝、魚酥，四種混合，\n固定配料，無法更換",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

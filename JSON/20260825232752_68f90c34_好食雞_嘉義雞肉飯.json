@@ -1,0 +1,666 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A5%BD%E9%A3%9F%E9%9B%9E-%E5%98%89%E7%BE%A9%E9%9B%9E%E8%82%89%E9%A3%AF/F0paOBcMUh-2Ez5-RZh-9w",
+  "name": "好食雞 嘉義雞肉飯",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區三和路四段296號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0775661,
+    "longitude": 121.4847976
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 200
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞肉飯 Chicken Rice",
+            "description": "嫩滑雞肉鋪滿白飯，搭配濃郁醬汁，簡單卻美味 🍚🐔",
+            "offers": {
+              "@type": "Offer",
+              "price": "53.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞魯飯 Braised Pork Rice with Chicken",
+            "description": "含雞肉及魯肉。雞肉與滷汁完美結合，鹹香濃郁，家常滋味 🍛🐓",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉絲涼麵 Cold Noodles with Shredded Chicken",
+            "description": "清爽涼麵配嫩雞絲與小黃瓜絲，拌上香濃醬汁，口感清新解膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞汁燙鮮蔬 Blanched Vegetable with Chicken Sauce",
+            "description": "燙青菜淋上雞汁，口感清脆，鹹香順口，簡單好吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞魯飯便當 Braised Pork Rice with Chicken Combo",
+            "description": "白飯上鋪嫩雞與魯肉，滷汁香濃，鹹香下飯，家常滋味，雙重滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉飯便當 Chicken Rice Combo",
+            "description": "嫩雞肉鋪滿白飯，淋上醬汁的便當組合，簡單卻美味",
+            "offers": {
+              "@type": "Offer",
+              "price": "122.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱雞魯湯麵",
+            "description": "熱湯麵鋪上嫩雞絲與魯肉，配滷蛋與青菜，家常鹹香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌蛋花湯 Egg Drop Soup with Miso",
+            "description": "濃郁味噌湯底，搭配滑嫩蛋花，香醇暖心 🍵🥚",
+            "offers": {
+              "@type": "Offer",
+              "price": "53.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜水餃 Chive Dumplings",
+            "description": "8 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱雞魯乾拌麵 Hot Tossed Noodles with Braised Pork and Chicken",
+            "description": "熱拌細麵拌入滷汁，鋪上嫩雞絲與魯肉，配青菜與滷蛋，層次豐富，鹹香家常。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞肉飯 Chicken Rice",
+            "description": "嫩滑雞肉鋪滿白飯，搭配濃郁醬汁，簡單卻美味 🍚🐔",
+            "offers": {
+              "@type": "Offer",
+              "price": "53.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞魯飯 Braised Pork Rice with Chicken",
+            "description": "含雞肉及魯肉。雞肉與滷汁完美結合，鹹香濃郁，家常滋味 🍛🐓",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌蛋花湯 Egg Drop Soup with Miso",
+            "description": "濃郁味噌湯底，搭配滑嫩蛋花，香醇暖心 🍵🥚",
+            "offers": {
+              "@type": "Offer",
+              "price": "53.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味黃金泡菜及雞肉絲涼麵 Original Cold Noodles with Golden Kimchi and Shredded Chicken",
+            "description": "清爽涼麵搭配酸甜黃金泡菜與嫩雞絲，口感清新解膩 🥗🐔",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類 Rice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯",
+            "description": "古早魯香甜",
+            "offers": {
+              "@type": "Offer",
+              "price": "53.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "便當",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞肉飯便當 Chicken Rice Combo",
+            "description": "嫩雞肉鋪滿白飯，淋上醬汁的便當組合，簡單卻美味",
+            "offers": {
+              "@type": "Offer",
+              "price": "122.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞魯飯便當 Braised Pork Rice with Chicken Combo",
+            "description": "白飯上鋪嫩雞與魯肉，滷汁香濃，鹹香下飯，家常滋味，雙重滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "127.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯便當",
+            "description": "魯肉飯便當便當滷香濃",
+            "offers": {
+              "@type": "Offer",
+              "price": "122.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品 Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "貢丸雞高湯 Chicken Soup with Meatball",
+            "description": "清爽雞高湯，搭配貢丸與蘿蔔、紅蘿蔔丁，暖胃順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味雞高湯 Original Chicken Soup",
+            "description": "清爽雞湯，雞香純粹，順口暖胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚丸雞高湯 Chicken Soup with Milk Fish Balls",
+            "description": "雞高湯為底，搭配虱目魚丸，湯頭清香不膩，魚丸紮實彈嫩，暖胃順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合丸雞高湯 Chicken Soup with Assorted Ball",
+            "description": "香醇雞高湯，搭配綜合丸子，口感豐富，暖胃順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味味噌湯 Original Miso Soup",
+            "description": "經典日式味噌湯，原味呈現味噌香氣，香醇順口，暖心開胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸味噌湯 Miso Soup with Meatball",
+            "description": "醇厚味噌湯底，搭配Q彈貢丸，鹹香順口、暖心暖胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸味噌蛋花湯",
+            "description": "濃郁味噌湯底，配上Q彈貢丸與滑嫩蛋花，香醇暖心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香魚皮味噌湯",
+            "description": "濃郁味噌湯底，搭配滑嫩魚皮，香醇暖心",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵類 Noodles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞肉絲涼麵 Cold Noodles with Shredded Chicken",
+            "description": "清爽涼麵配嫩雞絲與小黃瓜絲，拌上香濃醬汁，口感清新解膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱雞魯乾拌麵 Hot Tossed Noodles with Braised Pork and Chicken",
+            "description": "熱拌細麵拌入滷汁，鋪上嫩雞絲與魯肉，配青菜與滷蛋，層次豐富，鹹香家常。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱雞魯湯麵",
+            "description": "熱湯麵鋪上嫩雞絲與魯肉，配滷蛋與青菜，家常鹹香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好食涼麵 Cold Noodles",
+            "description": "冰鎮Q彈麵條，拌入順口醬汁，清爽開胃、解膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味黃金泡菜涼麵 Original Cold Noodles with Golden Kimchi",
+            "description": "清爽涼麵配原味黃金泡菜，麵條冰涼滑順，泡菜脆口開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱雞絲乾拌麵 Hot Tossed Noodles with Shredded Chicken",
+            "description": "熱拌乾麵鋪上雞絲，麵條Q彈，醬香順口，拌勻每一口都滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱肉燥乾拌麵 Hot Tossed Noodles with Minced Pork",
+            "description": "熱騰騰的乾拌麵，拌入鹹香肉燥，麵條Q彈、醬香濃郁，簡單卻耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞絲湯麵【熱】",
+            "description": "熱騰騰雞絲搭配麵條，湯頭清香，暖心順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥湯麵【熱】",
+            "description": "熱騰騰湯麵淋上鹹香肉燥，麵條順口、湯暖胃，台式家常滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱麻醬乾拌麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱麻醬肉燥乾拌麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜類 Side Dish",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞汁燙鮮蔬 Blanched Vegetable with Chicken Sauce",
+            "description": "燙青菜淋上雞汁，口感清脆，鹹香順口，簡單好吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋 Over Egg",
+            "description": "經典荷包蛋，蛋香濃郁、口感滑順，簡單好吃的家常小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷蛋 Braised Egg",
+            "description": "經典滷蛋，滷香入味，蛋白Q彈、蛋黃綿密，簡單卻美味",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溏心蛋 Coddled Egg",
+            "description": "流心蛋黃綿密，蛋白Q彈滑嫩，簡單卻耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "53.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "油豆腐 Oily Tofu",
+            "description": "多孔軟嫩的油豆腐，易吸湯汁，豆香醇厚，清爽不膩的經典小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "土豆 Potato",
+            "description": "馬鈴薯小菜，口感綿密，清爽耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "47.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味雞胗 Spicy Chicken Gizzard",
+            "description": "脆彈雞胗，香辣夠味，涮嘴開胃的小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬耳朵 Pork Ear",
+            "description": "豬耳，口感脆Q彈牙，膠質豐富，爽口開胃的經典小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味豬耳朵 Spicy Pork Ear",
+            "description": "爽脆Q彈的豬耳片，辣香帶勁、鹹香涮嘴，開胃小菜首選",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金泡菜 Golden Kimchi",
+            "description": "酸甜爽脆的台式黃金泡菜，口感清新，開胃解膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥拌鮮蔬 Vegetable Mixed with Minced Pork",
+            "description": "爽脆鮮蔬拌上滷香肉燥，鹹香開胃、清爽不膩的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉絲",
+            "description": "細切雞肉絲，口感嫩滑清爽，簡單調味更顯雞香，輕盈不負擔的小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "水餃類 Dumplings",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韭菜水餃 Chive Dumplings",
+            "description": "8 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜水餃 Cabbage Dumplings",
+            "description": "8 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米水餃 Corn Dumplings",
+            "description": "8 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "76.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料類 Beverage",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "無糖豆漿 Sugar-Free Soybean Milk",
+            "description": "無糖配方，保留純粹豆香，清爽順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微糖豆漿 Quarter Sugar Soybean Milk",
+            "description": "豆漿糖度約1/4，微甜不膩，豆香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微糖黑豆漿 Quarter Sugar Black Soybean Milk",
+            "description": "黑豆豆香明顯的豆漿，微糖調整，口感滑順，低甜不膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣蜜香紅茶",
+            "description": "茶香醇厚，入口順、回韻清爽的紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台灣四季春青茶【無糖】",
+            "description": "無糖青茶，茶香清雅順口，清爽解渴",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味冬瓜茶",
+            "description": "冬瓜香氣清甜，口感清爽順口，解渴不膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

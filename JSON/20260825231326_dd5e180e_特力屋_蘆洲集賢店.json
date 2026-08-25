@@ -1,0 +1,753 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%89%B9%E5%8A%9B%E5%B1%8B-%E8%98%86%E6%B4%B2%E9%9B%86%E8%B3%A2%E5%BA%97/T5rUa0m2UViTLuVj5zX9ow",
+  "name": "特力屋 蘆洲集賢店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市蘆洲區集賢路401號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08173,
+    "longitude": 121.4802671
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 14
+  },
+  "servesCuisine": [
+    "Hardware",
+    "Grocery"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "外宿不將就！輕鬆佈置聰明省",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "BRAVAT 萊斯不鏽鋼三段式蓮蓬頭軟管組 - 1.5m",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 極吸水雪尼爾踏墊 - 60x40cm, 蔚藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "億光 65W快充器",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "699.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Osram Led 12.5W 節標燈泡 - 自然光",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "THOMSON 乾濕兩用手持無線吸塵器",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 極吸水雪尼爾踏墊 - 60x40cm, 太空灰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特力屋 蜂巢一開5插Pd快充延長線20W - 1.8m",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "599.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飛利浦 品繹調光調色遙控吸頂燈 30W 雅緻版",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可折疊收納籃L 淺綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 極吸水雪尼爾踏墊 - 60x40cm, 松柏綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "BLACK+DECKER 12V Max鋰電起子機13件組 LD12SP",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1099.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Philips飛利浦 新安規6開6座延長線白色Chp3465wa/96 - 1.8米",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "799.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特力屋 典雅20W LED吸頂燈 白光",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "990.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特力屋 Eva巧拼防護地墊 - 淺灰色 (8 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "575.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 極吸水雪尼爾踏墊 - 60x40cm, 深海藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "一般商品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "rubber anne 軟式珪藻土超薄快乾吸水地墊 - 58x38cm, 深邃藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "歐司朗 LED 12.5W 節標燈泡 白光",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "KEYWAY KM密封整理箱26L KM-1067",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "499.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛頭牌 新小牛雪平鍋18Cm",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拋棄式水垢清潔布捲裝 - 19.5x19cm (25 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特力屋 金星T8 5W Led燈管 - 1呎, 白光",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Osram Led 12.5W 節標燈泡 - 自然光",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "BRAVAT 萊斯不鏽鋼三段式蓮蓬頭軟管組 - 1.5m",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "THOMSON 乾濕兩用手持無線吸塵器",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "艾克思 加厚毛氈保護墊方 - 28x42mm (6 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "GINII 基尼家居 北歐多功能控水石紋花盆3色組",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 去汙魔術海綿擦 (5 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "億光 65W快充器",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "699.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "kinyo FG-55W 6段式迷你勁速筋膜槍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "699.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三合一檯面龍頭拆卸套筒",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "清潔用具",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 去汙魔術海綿擦 (5 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 細緻餐具好握海綿菜瓜布 (3 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "極細目竹炭濾水網100入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 手握式除水神器 - 20cm",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 酒精抗菌溼巾80抽",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Home Zone 多用途海綿菜瓜布 (4 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拋棄式水垢清潔布捲裝 - 19.5x19cm (25 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "優的生活大師 巧二嫂桌掃組C9975-6",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "威拂 立體除塵紙補充包16片 (2 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Trending products",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "特力屋 電氣絕緣膠帶 - 19mmx9m, 黑, 紅, 白",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "多益得 貼紙剋星檸檬除膠清潔劑Cb220 (210 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "BRAVAT 除氯三段式蓮蓬頭一機一芯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1090.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Savlon沙威隆 天然茶樹精油抗菌潔淨洗手乳 (250 mL)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3M思高 77特級萬能噴膠 (745 mL)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "567.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "AMPABAC 可調式手鋸附2片鋸片 - 12\"",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "82.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "克潮靈 環保型除濕桶 - 玫瑰香 (350 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛頭牌 新小牛雪平鍋18Cm",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "COCODOR 經典擴香 - 蜜梨小蒼蘭 (200 mL)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "219.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海力士刷2吋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特力屋 6L米亞搖蓋垃圾桶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "木柄補坏 - 4吋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3M百利 無痕雙層刮刀 - 19.5x26cm (82 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "113.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3M思高 超強力雙面膠帶防水用V1807n - 18mmx1.5m",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "187.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3M無痕 防水膠條18061C - 大型 (4 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Best sellers",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "3M百利 超淨替換式馬桶刷補充包小蘇打配方 (10 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特力屋 迷你高級短毛滾輪組 - 4吋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Mitsuei美淨易 浴室黴菌清潔劑",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "129.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "遮蔽膠帶 - 18mmx35m, 米色",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "muRata村田 鋰電池Cr2032卡裝",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3M無痕 高承重掛鉤系列17010-Gca - 中型",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "rubber anne 軟式珪藻土超薄快乾吸水地墊 - 58x38cm, 深邃藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "HANDS FAMILY巧手家族 可調式蓮蓬頭固定座鍍鉻",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "GINII 基尼家居 北歐多功能控水石紋花盆3色組",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3M 圓型傢俱防滑墊 - 25mm, 黑色 (9 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "專業多功能中性矽利康 - 白色",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海力士刷 - 4吋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特力屋 金星T8 5W Led燈管 - 1呎, 白光",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "627黑尖尾木螺絲#6x1\"",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "隨拉隨停捲尺 - 3mx16mm",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

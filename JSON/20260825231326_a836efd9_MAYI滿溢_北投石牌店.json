@@ -1,0 +1,494 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/mayi%E6%BB%BF%E6%BA%A2-%E5%8C%97%E6%8A%95%E7%9F%B3%E7%89%8C%E5%BA%97/kHHNUl0oVS-gnmrlX4gFBQ",
+  "name": "MAYI滿溢 北投石牌店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sec 1, Shi Pai Rd. 132",
+    "addressLocality": "Beitou District",
+    "addressRegion": "Taipei City",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.11402000001263,
+    "longitude": 121.51265571379419
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 110
+  },
+  "servesCuisine": [
+    "Drinks"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "原萃經典",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "UB.炭焙高山烏龍(L)",
+            "description": "大杯炭焙高山烏龍，茶湯清亮，焙火香濃、茶韻厚實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.琥珀烏龍綠茶(L)",
+            "description": "烏龍與綠茶調和的琥珀色茶飲，大杯容量，茶香清雅，口感清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.滿溢原萃綠茶(L)",
+            "description": "大杯原萃綠茶，純粹茶香、口感清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.滿溢醇香紅茶(L)",
+            "description": "經典紅茶，茶香飽滿、口感圓潤，L杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.經典伯爵紅茶(L)",
+            "description": "L 大杯伯爵紅茶，佛手柑香氣典雅，茶韻清新。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "果漾輕飲(糖冰固定)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "UB.百香鳳梨綠凍飲",
+            "description": "百香果與鳳梨果肉相融，搭配Q彈鳳梨凍，果香滿溢、口感清爽有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.檸檬綠茶(L)",
+            "description": "綠茶加入檸檬，酸香清爽；L杯，糖冰固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.檸檬紅茶(L)",
+            "description": "大杯檸檬紅茶，檸檬香氣與紅茶相融，口感清爽，糖冰固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UE.蜜香檸檬(L)",
+            "description": "大杯蜜香風味檸檬飲，清新順口，糖冰固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "醇香風味奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "UB.滿溢布丁奶茶",
+            "description": "濃醇奶茶加入滑嫩布丁，冰涼順口；每口都吸得到布丁塊，奶香與茶香交織的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.滿溢珍珠奶茶",
+            "description": "香醇奶茶搭配滿滿珍珠，嚼感充足，經典一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.仙草凍奶茶(L)",
+            "description": "大杯奶茶加入仙草凍，滑嫩Q彈，茶奶交融、嚼感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.滿溢雙Q奶茶",
+            "description": "醇香奶茶基底，搭配兩款Q彈配料，口感更豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.滿溢奶茶",
+            "description": "醇香茶韻與奶香相融，口感滑順、風味圓潤的經典奶茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.滿溢紅茶拿鐵",
+            "description": "經典紅茶與牛奶完美融合，茶香柔和、口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.金選奶茶",
+            "description": "茶奶比例得宜，口感順滑、醇厚的經典奶茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.金選拿鐵",
+            "description": "奶香濃郁、茶韻平衡的拿鐵系奶茶，口感順滑、醇而不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.金選珍珠奶茶",
+            "description": "經典醇香奶茶配上Q彈珍珠，每口兼具滑順與咀嚼的雙重口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.金選雙Q奶茶",
+            "description": "醇香奶茶搭配雙重Q彈配料，茶奶平衡、口感層次更豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.炭焙烏龍奶茶",
+            "description": "炭焙烏龍茶香厚實，與奶香交融，茶感鮮明、口感順滑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.炭焙烏龍拿鐵",
+            "description": "炭焙烏龍茶與鮮奶調和，焙香濃郁，茶奶平衡，口感順滑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.滿溢奶綠",
+            "description": "經典奶綠，綠茶基底交織奶香，茶韻清爽、口感順滑",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.滿溢綠茶拿鐵",
+            "description": "以綠茶為基底，加入醇厚奶香調和，茶韻清新、口感順滑，呈現柔和平衡的綠茶拿鐵風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.伯爵奶茶",
+            "description": "以伯爵紅茶為基底，融合奶香，散發佛手柑柑橘氣息，口感順滑、茶奶比例協調",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.伯爵紅茶拿鐵(L)",
+            "description": "伯爵紅茶與牛奶調和，帶淡雅佛手柑香，茶奶均衡、口感順滑。大杯份量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.可可遇見你",
+            "description": "可可與奶茶交織的濃醇風味，口感順滑、香氣迷人",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.爵士雙Q泰奶",
+            "description": "泰式奶茶基底，搭配雙重Q彈配料，醇香滑順，口感更有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.手沖泰式奶茶",
+            "description": "手沖呈現泰式奶茶的厚實茶韻與柔順奶香，入口圓潤、層次分明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "黑糖/薑汁系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "UB.手炒黑糖珍珠拿鐵(M)",
+            "description": "手炒黑糖裹煮的Q彈珍珠，搭配奶香濃醇的拿鐵，中杯經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.手沖黑糖拿鐵(L)",
+            "description": "大杯手沖咖啡與牛奶融合黑糖風味，香醇順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.黑糖奶茶(L)",
+            "description": "大杯黑糖奶茶，黑糖香與茶韻交織，奶香滑順",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.暖薑撞奶(M)(熱)",
+            "description": "薑汁與牛奶交融，帶薑香的熱飲，中杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.黑糖薑母茶(M)(熱)",
+            "description": "黑糖醇厚融合薑母香氣，中杯熱飲，溫暖順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UE.黑糖薑汁拿鐵(M)",
+            "description": "黑糖薑汁與牛奶調和的拿鐵，中杯（M）。薑香襯托奶香，口感順滑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蜜香特調(糖冰固定)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "UB.蜜香紅茶(L)",
+            "description": "大杯蜜香風味紅茶，甜度與冰量固定的特調口味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.蜜香綠茶(L)",
+            "description": "蜜香風味與綠茶茶韻的經典搭配，大杯，糖冰固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.蜜香烏龍(L)",
+            "description": "大杯蜜香烏龍，散發蜂蜜般香氣與烏龍茶韻；糖冰固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.金選蜜香奶茶",
+            "description": "金選蜜香奶茶，甜度與冰量固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.蜜香紅茶拿鐵",
+            "description": "以蜜香紅茶為基底，加入鮮奶調製，茶香細緻、奶香柔和，口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "氣泡飲/多多系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "UB.綠茶多多(L)",
+            "description": "綠茶融合多多的乳酸香氣，茶香順口不膩，大杯份量更暢快。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "UB.檸檬多多(L)",
+            "description": "大杯檸檬多多氣泡飲，檸檬與乳酸飲調和，清新酸香、氣泡暢快。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "加購塑膠袋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "塑膠袋",
+            "description": "外帶裝袋用塑膠袋，讓攜帶更便利",
+            "offers": {
+              "@type": "Offer",
+              "price": "1.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

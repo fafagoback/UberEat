@@ -1,0 +1,301 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%85%92%E5%8A%A0%E8%8F%9C%E6%B5%B7%E9%AE%AE%E7%86%B1%E7%82%92%E5%BA%97/I1XNdPT6RK6ItO8EJIF1Jw",
+  "name": "酒加菜海鮮熱炒店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Section 2, Zhongyang North Road",
+    "addressLocality": "Beitou District",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1371831,
+    "longitude": 121.4949796
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 500
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Stir​ Fried"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "5更腸旺 Duck Blood Jelly and Pig Intestine",
+            "description": "鴨血與大腸的經典組合，搭配蔥段與蒜頭，湯汁濃郁，鴨血滑嫩、大腸帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨蝦球 Deep-Fried Shrimps with Pineapple",
+            "description": "金黃酥炸的蝦球，搭配鳳梨塊並淋上沙拉醬的經典台式組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酒香醉雞腿 Drunken Chicken Drumstick with Wine",
+            "description": "冰鎮醉雞腿，酒香入味，切片上桌，皮Q肉嫩，清爽開胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合生魚片 Assorted Sashimi",
+            "description": "綜合生魚片：鮭魚、鮪魚、白身魚、章魚與蝦，鋪冰上桌，附蘿蔔絲與山葵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤魚下巴 Grilled Fish Chin",
+            "description": "3片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚肉味噌湯",
+            "description": "味噌湯底搭配魚肉塊，魚香與味噌香交融，湯頭醇厚、鹹香順口，暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷盤類 Cold Dish",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "5味軟絲 Five Taste Squid",
+            "description": "軟絲切片，佐五味醬，冷盤上桌",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "法式洋蔥 French Onion",
+            "description": "法式風味洋蔥冷盤，呈現洋蔥香氣與口感，適合開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "熱炒類 Stir-Fried Food",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白飯 Rice",
+            "description": "熱白飯，鬆軟可口",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "空心菜牛肉 Water Spinach with Beef",
+            "description": "空心菜與牛肉大火快炒，菜梗爽脆、牛肉滑嫩，經典熱炒首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒豆腐 Braised Tofu",
+            "description": "滑嫩豆腐紅燒入味，醬香濃郁，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "空心菜羊肉 Water Spinach with Lamb",
+            "description": "空心菜與羊肉熱炒，蔬菜清脆、肉片嫩口，口感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽排骨 Pork Rib Rice with Pepper Salt",
+            "description": "帶骨豬排骨拌入椒鹽，外酥內嫩，鹹香夠味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒高麗菜 Stir-Fried Cabbage",
+            "description": "高麗菜大火快炒，口感爽脆，帶出自然清甜與菜香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒蔥蛋 Stir-Fried Egg with Scallion",
+            "description": "經典熱炒蔥蛋，蔥香四溢，蛋嫩滑順，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥白肉 Sliced Boiled Pork with Garlic Sauce",
+            "description": "薄切水煮豬肉淋蒜泥醬，肉質軟嫩、蒜香濃郁，經典冷盤",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁 Kung Pao Diced Chicken",
+            "description": "雞丁、花生與乾辣椒快炒，香辣醬香，下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "開陽白菜 Chinese Leaves",
+            "description": "白菜搭配蝦米快炒，鹹香提鮮，爽脆可口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹蛋苦瓜 Bitter Gourd with Salted Egg",
+            "description": "苦瓜與鹹蛋黃快炒，金黃蛋沙均勻包裹，鹹香濃郁、微苦清爽，口感滑脆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻香雞翅 Spicy Chicken Wing",
+            "description": "椒麻香氣撲鼻的雞翅，麻與辛香層次分明，啃勁十足，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬雞腿 Thai Lemon Chicken Drumstick",
+            "description": "雞腿肉熱炒，融合泰式檸檬風味，酸香清爽、開胃不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芹香軟絲 Parsley Squid",
+            "description": "芹香襯托的熱炒軟絲，Q彈爽口，海味清新",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽酥蝦 Taiwanese Deep-Fried Shrimp",
+            "description": "酥炸蝦，撒上椒鹽，外酥內彈，鹹香涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "塔香沙魚條 Shark Fish Stick with Basil",
+            "description": "沙魚條與九層塔快炒，塔香撲鼻，魚肉鮮香，口感紮實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹蛋美人腿 Stir-fried Water Bamboo with Salted Egg",
+            "description": "茭白筍與鹹蛋快炒，筍身爽脆、鹹香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

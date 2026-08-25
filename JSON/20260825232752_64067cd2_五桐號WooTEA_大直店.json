@@ -1,0 +1,828 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%BA%94%E6%A1%90%E8%99%9Fwootea-%E5%A4%A7%E7%9B%B4%E5%BA%97/y899hQYAQEWDiky0c27zng",
+  "name": "五桐號WooTEA 大直店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Dazhi Street 53",
+    "addressLocality": "Zhongshan District",
+    "addressRegion": "Taipei City",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08324,
+    "longitude": 121.5464038
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 3000
+  },
+  "servesCuisine": [
+    "Bubble Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麝香葡萄粉粿烏龍 Muscat Oolong Tea with Osmanthus Jelly",
+            "description": "限冷飲｜以麝香葡萄的清甜果香作為主角，搭配焙香回甘的烏龍茶底，展現果香與茶韻的平衡交織。底層加入帶有淡雅桂花香氣的Q彈粉粿，增添口感與層次變化，使整體風味更為立體、細膩且耐喝。大杯（約660ml）：總熱量338.7大卡，總糖量71.1g。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓優格蜜桃雪泥 Blueberry Yogurt Peach Smoothie",
+            "description": "限冷飲｜完美比例｜甜度、冰量固定。藍莓果香揉合滑順希臘優格，堆疊蜜桃果粒的清甜口感，打成沁涼綿密的雪泥狀冰沙。入口先是藍莓微酸果韻，接著帶出蜜桃香甜與優格乳香，酸甜清爽、層次輕盈。大杯（約660ml）：總熱量327.5大卡，總糖量58g。本品咖啡因總含量0毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓茉莉厚奶 Blueberry Jasmine Creamer Tea",
+            "description": "限冷飲｜入口先感受到茉莉香氣緩緩綻放，尾韻透出綠茶的清爽回甘。融合藍莓果香與滑順奶感後，酸甜莓果與茶韻交織，讓整體風味更加柔和輕盈。大杯（約660ml）：總熱量405.6大卡，總糖量42.6g。本品咖啡因總含量101-200毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花梨青 Osmanthus Pear Turquoise Tea",
+            "description": "限冷飲｜建議「微糖微冰」。以清香回甘的青茶為基底，揉合品種水梨自然釋放的清甜梨香。入口即可感受到如現切水梨般的多汁果甜與爽脆香氣，隨後帶出桂花糖釀淡雅細緻的花香，花果香氣層次分明卻不搶味，風味清新不膩，尾韻回甘留香。大杯(約660ml)：總熱量201.2大卡，總糖量46.4克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅心芭樂烏龍 Red Guava Oolong Tea",
+            "description": "限冷飲。巧妙融合梅子、檸檬與紅心芭樂汁，交織出明亮果香與酸甜層次，最後以帶有焙火香氣的烏龍茶韻收尾，平衡前段風味，層次分明。大杯(約660ml)：總熱量276.3大卡，總糖量59.2克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "最完美手沖泰奶 Authentic Thai Milk Tea",
+            "description": "【熱銷冠軍】完美比例 | 甜度、冰量固定。選用泰國正宗茶葉，茶濃不澀，搭配完美比例煉乳奶水，頂層再以經典的鮮奶奶霜華麗上蓋，雙倍奶香，口感滑順！大杯 （約660ml）：總熱量499.2大卡，總糖量36.7克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為泰國。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玄米蕎麥拿鐵 Buckwheat Milk Tea",
+            "description": "【無咖啡因】融合蕎麥的淡雅堅果香與濃郁奶香，風味溫潤平衡、不過於厚重，帶來舒適順口的口感。大杯（約660ml）：總熱量285.2大卡，總糖量52.5克。總熱量、總糖量及咖啡因含量皆以最高值標示。本品咖啡因總含量0毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅心芭樂綠茶 Red Guava Green Tea",
+            "description": "限冷飲。以梅子醬、檸檬汁與紅心芭樂汁交織出清爽果香，搭配茉莉綠茶作為基底，酸甜平衡、口感清爽順口，層次豐富又耐喝。大杯（約660ml）：總熱量294.8大卡，總糖量62.1克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山形蜜桃凍飲 Yamagata Peach Tea with Green Tea Jelly",
+            "description": "限冷飲。選用香氣濃郁的日本山形水蜜桃，將獨特的甜美果香與綠茶凍的Ｑ嫩口感結合，搭配烏龍茶的綿長茶韻，創造出一款層次分明的茶飲。大杯（約660ml）：總熱量318.7大卡，總糖量71.3克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵觀音奶茶 Tieguanyin Milk Tea",
+            "description": "【招牌推薦】台灣在地茶廠調配出的專屬茶葉，醇厚回甘、帶有焙火香氣的迷人茶韻，與奶香交融創造豐富的多層次味道。大杯（約660ml）：總熱量416.1大卡，總糖量45.2克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠手沖泰奶 Bubble with Authentic Thai Milk Tea",
+            "description": "【人氣推薦】完美比例 | 甜度、冰量固定。正宗泰奶遇上台式蜜漬珍珠，經典白玉珍珠，不添加焦糖色素，粒粒透明有彈性，軟中帶Ｑ越嚼越香！大杯（約660ml）：總熱量490.5大卡, 總糖量46.4克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為泰國。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠濃煮拿鐵 Quality Mellow Black Milk Tea with Bubble",
+            "description": "嚴選錫蘭紅茶為基底，搭配滑順香醇的鮮奶，呈現柔和濃郁的拿鐵風味，再加入 Q 彈珍珠，口感層次豐富。大杯（約660ml）：總熱量441.1大卡，總糖量58.7克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁凍五桐茶 Wootea with Almond jelly",
+            "description": "【回購No.1】限冷飲｜完美比例｜甜度、冰量固定。綿密爽口的杏仁凍以絕佳比例調配在經典五桐茶中，清新的茶韻與杏仁香氣完美結合。大杯（約660ml）：總熱量192大卡，總糖量36克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀烤拿鐵 Roasted Milk Tea",
+            "description": "高溫短時間煎烤茶葉，釋放出深層焙炒香氣，與奶香細膩交融，風味中帶有焦糖與堅果的溫潤香氣。加入濃郁鮮乳後，口感更加柔滑順口，整體呈現溫厚、平衡又不甜膩的成熟系烤奶風味。大杯(約660ml)：總熱量376.8大卡，總糖量65.3克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南、日本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老鹽梅子 Plum Turquoise Tea",
+            "description": "限冷飲。選用青茶作為基底，清新淡雅的茶香與梅子的酸甜交織出豐富的層次感，再加上適量的老鹽，為飲品增添一絲鹹香，提升了整體的口感。大杯（約660ml）：總熱量300.1大卡，總糖量68.1克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "島嶼鳳梨水梨青 Formosa Pineapple Pear Turquoise Tea",
+            "description": "限冷飲｜以金鑽鳳梨台農 17 號為主角，融合清甜水梨與清香青茶。選用在地食材製作，從台灣水果的鮮甜層次，到茶葉回甘尾韻，承載著台灣獨有的風味記憶。鳳梨象徵熱情飽滿的陽光氣息，水梨則帶來細緻爽朗的平衡口感，入口酸甜輕盈。大杯（約660ml）：總熱量234.2大卡，總糖量54.4g。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麝香葡萄柚子冰沙 Muscat Yuzu Smoothie",
+            "description": "限冷飲｜完美比例｜甜度、冰量固定。主打清爽果感路線，以香氣馥郁的麝香葡萄結合韓國柚子醬的清新微酸，並融入錫蘭紅茶提升整體香氣層次，製成沁涼冰沙。搭配每日手作的滑嫩綠茶凍，呈現輕盈清爽的初夏滋味。大杯（約660ml）：總熱量378.1大卡，總糖量82.7g。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶 Tapioca & Black Tea with Creamer",
+            "description": "大杯（約660ml）：總熱量558.4大卡，總糖量54.8克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃煮拿鐵 Quality Mellow Black Tea with Milk",
+            "description": "大杯（約660ml）：總熱量324.6大卡，總糖量52.8克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵觀音拿鐵 Tieguanyin Latte",
+            "description": "大杯（約660ml）：總熱量322.3大卡，總糖量52.8克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Free with NT$200 purchase",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典五桐茶 Wootea",
+            "description": "【招牌推薦】限冷飲｜完美比例｜甜度、冰量固定，使用獨家秘制五種茶葉沖煮的「五桐茶」，醇厚回甘、帶有焙火香氣的迷人茶韻。大杯（約 660 ml）：總熱量 74.7 大卡，總糖量 16.7 克。本品咖啡因總含量101-200毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "季節限定 SEASON",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "藍莓優格蜜桃雪泥 Blueberry Yogurt Peach Smoothie",
+            "description": "限冷飲｜完美比例｜甜度、冰量固定。藍莓果香揉合滑順希臘優格，堆疊蜜桃果粒的清甜口感，打成沁涼綿密的雪泥狀冰沙。入口先是藍莓微酸果韻，接著帶出蜜桃香甜與優格乳香，酸甜清爽、層次輕盈。大杯（約660ml）：總熱量327.5大卡，總糖量58g。本品咖啡因總含量0毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓茉莉厚奶 Blueberry Jasmine Creamer Tea",
+            "description": "限冷飲｜入口先感受到茉莉香氣緩緩綻放，尾韻透出綠茶的清爽回甘。融合藍莓果香與滑順奶感後，酸甜莓果與茶韻交織，讓整體風味更加柔和輕盈。大杯（約660ml）：總熱量405.6大卡，總糖量42.6g。本品咖啡因總含量101-200毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "島嶼鳳梨水梨青 Formosa Pineapple Pear Turquoise Tea",
+            "description": "限冷飲｜以金鑽鳳梨台農 17 號為主角，融合清甜水梨與清香青茶。選用在地食材製作，從台灣水果的鮮甜層次，到茶葉回甘尾韻，承載著台灣獨有的風味記憶。鳳梨象徵熱情飽滿的陽光氣息，水梨則帶來細緻爽朗的平衡口感，入口酸甜輕盈。大杯（約660ml）：總熱量234.2大卡，總糖量54.4g。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "島嶼鳳梨桂花青 Formosa Pineapple Osmanthus Turquoise Tea",
+            "description": "限冷飲｜嚴選台灣金鑽鳳梨台農 17 號，搭配淡雅桂花香與青茶茶韻，將台灣經典果香與茶文化揉合。選用在地食材製作，從水果、花香到茶底，層層堆疊出台灣島嶼特有的溫潤與細緻。入口先感受到鳳梨明亮飽滿的果甜，隨後桂花香氣緩緩綻放口中，尾韻帶上青茶清雅回甘。大杯（約660ml）：總熱量257.8大卡，總糖量59.1g。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麝香葡萄粉粿烏龍 Muscat Oolong Tea with Osmanthus Jelly",
+            "description": "限冷飲｜以麝香葡萄的清甜果香作為主角，搭配焙香回甘的烏龍茶底，展現果香與茶韻的平衡交織。底層加入帶有淡雅桂花香氣的Q彈粉粿，增添口感與層次變化，使整體風味更為立體、細膩且耐喝。大杯（約660ml）：總熱量338.7大卡，總糖量71.1g。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麝香葡萄柚子冰沙 Muscat Yuzu Smoothie",
+            "description": "限冷飲｜完美比例｜甜度、冰量固定。主打清爽果感路線，以香氣馥郁的麝香葡萄結合韓國柚子醬的清新微酸，並融入錫蘭紅茶提升整體香氣層次，製成沁涼冰沙。搭配每日手作的滑嫩綠茶凍，呈現輕盈清爽的初夏滋味。大杯（約660ml）：總熱量378.1大卡，總糖量82.7g。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "醇茶 PURE TEA",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "杏仁凍五桐茶 Wootea with Almond jelly",
+            "description": "【回購No.1】限冷飲｜完美比例｜甜度、冰量固定。綿密爽口的杏仁凍以絕佳比例調配在經典五桐茶中，清新的茶韻與杏仁香氣完美結合。大杯（約660ml）：總熱量192大卡，總糖量36克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典五桐茶 Wootea",
+            "description": "【招牌推薦】限冷飲｜完美比例｜甜度、冰量固定，使用獨家秘制五種茶葉沖煮的「五桐茶」，醇厚回甘、帶有焙火香氣的迷人茶韻。大杯（約 660 ml）：總熱量 74.7 大卡，總糖量 16.7 克。本品咖啡因總含量101-200毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "一把青茶 Turquoise Tea",
+            "description": "大杯（約660ml）：總熱量171.7大卡，總糖量39.5克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老實人紅茶 Black Tea",
+            "description": "大杯（約660ml）：總熱量173.4大卡，總糖量39.5克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為印度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清香烏龍 Oolong Tea",
+            "description": "大杯（約660ml）：總熱量173.4大卡，總糖量39.5克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南、台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉莉香片Green Tea",
+            "description": "大杯（約660ml）：總熱量175.1大卡，總糖量39.5克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玄米蕎麥 Buckwheat Tea",
+            "description": "【無咖啡因】融合玄米、決明子、大麥與蕎麥等多種穀物，口感溫潤香甜、順口不膩。大杯（約660ml）：總熱量23.6大卡，總糖量4.6克。總熱量、總糖量及咖啡因含量皆以最高值標示。本品咖啡因總含量0毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "農摘 FRUIT TEA",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "桂花烏龍凍飲 Osmanthus Oolong Tea with green tea jelly",
+            "description": "【人氣推薦】限冷飲｜中焙烏龍茶製成金黃茶湯，配搭醇茶手工製作的 Q 彈茶凍，以淡雅清香的桂花蜜點綴，喝起來清甜不膩。大杯（約660ml）：總熱量334.1大卡，總糖量76克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚香荔枝凍飲 Yuja Lychee Turquoise Tea with Green Tea Jelly",
+            "description": "限冷飲。選用韓國蜂蜜柚子醬，融合柚子的清新果香與蜂蜜的自然甜韻，再點綴淡雅荔枝香氣，搭配青茶與 Q 彈綠茶凍，清爽順口、層次細緻。大杯（約660ml）：總熱量277.4大卡，總糖量64克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山形蜜桃凍飲 Yamagata Peach Tea with Green Tea Jelly",
+            "description": "限冷飲。選用香氣濃郁的日本山形水蜜桃，將獨特的甜美果香與綠茶凍的Ｑ嫩口感結合，搭配烏龍茶的綿長茶韻，創造出一款層次分明的茶飲。大杯（約660ml）：總熱量318.7大卡，總糖量71.3克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅柚青茶凍飲 Grapefruit Turquoise Tea with Green Tea Jelly",
+            "description": "限冷飲。以清爽青茶為基底，搭配自然酸甜的葡萄柚風味，果香清新、微苦回甘，風味平衡順口。大杯（約660ml）：總熱量277.3大卡，總糖量65.7克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青檸青茶Lemon Gardenia Tea",
+            "description": "【清涼消暑】限冷飲｜茶葉適度發酵，甘醇順口，茶韻深邃，再添加整顆鮮搾、富有檸檬皮表面精油香氣的鮮榨檸檬原汁，讓清雅茶香的風味更有層次！大杯（約660ml）：總熱量316.6大卡，總糖量72.1克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花梨青 Osmanthus Pear Turquoise Tea",
+            "description": "限冷飲｜建議「微糖微冰」。以清香回甘的青茶為基底，揉合品種水梨自然釋放的清甜梨香。入口即可感受到如現切水梨般的多汁果甜與爽脆香氣，隨後帶出桂花糖釀淡雅細緻的花香，花果香氣層次分明卻不搶味，風味清新不膩，尾韻回甘留香。大杯(約660ml)：總熱量201.2大卡，總糖量46.4克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹梨青茶 Salted Pear Turquoise Tea",
+            "description": "限冷飲｜建議「微糖微冰」。入口先感受到老鹽帶來的溫潤鹹香，隨後是品種水梨本身的清甜多汁與自然梨香在口中綻放。尾段加入一抹梅子的細緻果酸，讓鹹、甘、酸層層堆疊，風味清爽不膩。以清香回甘的青茶作為茶底，收尾回甘生津、層次細膩。大杯(約660ml)：總熱量212大卡，總糖量49.8克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅心芭樂綠茶 Red Guava Green Tea",
+            "description": "限冷飲。以梅子醬、檸檬汁與紅心芭樂汁交織出清爽果香，搭配茉莉綠茶作為基底，酸甜平衡、口感清爽順口，層次豐富又耐喝。大杯（約660ml）：總熱量294.8大卡，總糖量62.1克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅心芭樂烏龍 Red Guava Oolong Tea",
+            "description": "限冷飲。巧妙融合梅子、檸檬與紅心芭樂汁，交織出明亮果香與酸甜層次，最後以帶有焙火香氣的烏龍茶韻收尾，平衡前段風味，層次分明。大杯(約660ml)：總熱量276.3大卡，總糖量59.2克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "古早味 TRADITIONAL",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "粉粿青檸冬瓜 Lemon Winter Melon Tea with Brown Sugar Jelly",
+            "description": "【沁涼古早味】限冷飲｜傳統經典點心黑糖粉粿，軟中帶 Q，大大滿足咀嚼控！嚴選冬瓜經洗滌、去皮、切塊，遵循古法製成的黑糖冬瓜磚，精心熬煮後冬瓜香氣四溢，再添加鮮榨檸檬原汁，酸甜超解膩！大杯（約660ml）：總熱量311.3大卡，總糖量74 克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "農榨青檸冬瓜 Lemon Winter Melon Tea",
+            "description": "【酸甜清爽】限冷飲｜解膩首選！嚴選冬瓜經洗滌、去皮、切塊，遵循古法製成的黑糖冬瓜磚，精心熬煮後冬瓜香氣四溢，再添加鮮榨檸檬原汁，沁涼超爽口！大杯（約660ml）：總熱量253.5大卡，總糖量59.5克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老鹽梅子 Plum Turquoise Tea",
+            "description": "限冷飲。選用青茶作為基底，清新淡雅的茶香與梅子的酸甜交織出豐富的層次感，再加上適量的老鹽，為飲品增添一絲鹹香，提升了整體的口感。大杯（約660ml）：總熱量300.1大卡，總糖量68.1克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青梅烏龍凍飲 Greengage Oolong Drink",
+            "description": "限冷飲。將傳統茶飲融入創新風味，嚴選清香金萱烏龍，搭配酸甜梅子醬。大口一吸，暑氣瞬間消散，滑嫩綠茶凍清爽回甘。大杯（約660ml）：總熱量390.1 大卡，糖量90.3克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶茶 MILK TEA",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶 Tapioca & Black Tea with Creamer",
+            "description": "大杯（約660ml）：總熱量558.4大卡，總糖量54.8克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉莉奶綠 Green Tea with Creamer",
+            "description": "大杯（約660ml）：總熱量420.1大卡，總糖量45.2克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃煮奶茶 Quality Mellow Milk Tea",
+            "description": "【大人系奶茶】不能錯過的濃茶厚奶！特選頂級錫蘭紅茶為基底，尾韻豐潤細緻、揉合醇濃奶香，堆疊出豐富層次感。屬於耐喝系、茶感重的奶茶，讓人回味無窮，喝過就愛上。大杯（約660ml）：總熱量467.1 大卡，總糖量46.3克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶凍濃煮奶茶 Quality Mellow Black Creamer Tea with Green Tea Jelly",
+            "description": "嚴選頂級錫蘭紅茶為基底，茶韻濃厚、尾韻細緻，融合醇香奶味並搭配 Q 彈手作綠茶凍，層次豐富。大杯（約660ml）：總熱量464大卡，總糖量60.2克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀烤奶 Roasted Creamer Tea",
+            "description": "建議甜度「半糖」。將煎烤過的茶葉與奶香的細膩味道完美結合，以焙炒香氣為底，蔓延出焦糖香與堅果香氣，茶與奶交織出溫潤細膩的口感，營造迷人風味層次。大杯(約660ml)：總熱量446.4大卡，總糖量57.1克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南、日本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵觀音奶茶 Tieguanyin Milk Tea",
+            "description": "【招牌推薦】台灣在地茶廠調配出的專屬茶葉，醇厚回甘、帶有焙火香氣的迷人茶韻，與奶香交融創造豐富的多層次味道。大杯（約660ml）：總熱量416.1大卡，總糖量45.2克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "最完美手沖泰奶 Authentic Thai Milk Tea",
+            "description": "【熱銷冠軍】完美比例 | 甜度、冰量固定。選用泰國正宗茶葉，茶濃不澀，搭配完美比例煉乳奶水，頂層再以經典的鮮奶奶霜華麗上蓋，雙倍奶香，口感滑順！大杯 （約660ml）：總熱量499.2大卡，總糖量36.7克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為泰國。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠手沖泰奶 Bubble with Authentic Thai Milk Tea",
+            "description": "【人氣推薦】完美比例 | 甜度、冰量固定。正宗泰奶遇上台式蜜漬珍珠，經典白玉珍珠，不添加焦糖色素，粒粒透明有彈性，軟中帶Ｑ越嚼越香！大杯（約660ml）：總熱量490.5大卡, 總糖量46.4克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為泰國。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玄米蕎麥奶茶 Buckwheat Creamer Tea",
+            "description": "【無咖啡因】將蕎麥的淡雅堅果香融入濃郁奶茶之中，風味溫潤舒適，不甜膩、順口耐喝。大杯（約660ml）：總熱量348.6大卡，總糖量46.9克。本品咖啡因總含量0毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮奶 PURE MILK",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "濃煮拿鐵 Quality Mellow Black Tea with Milk",
+            "description": "大杯（約660ml）：總熱量324.6大卡，總糖量52.8克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉莉綠茶拿鐵 Green Tea with Milk",
+            "description": "大杯（約660ml）：總熱量323大卡，總糖量52.8 克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶凍濃煮拿鐵 Quality Mellow Black Milk Tea with Green Tea Jelly",
+            "description": "特選頂級錫蘭紅茶為基底，尾韻豐潤細緻，揉合醇濃鮮奶，搭配 Q 嫩口感的綠茶凍，堆疊出豐富層次感，屬於耐喝系、茶感重的鮮奶茶。大杯（約660ml）：總熱量346.7大卡，總糖量64克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵觀音拿鐵 Tieguanyin Latte",
+            "description": "大杯（約660ml）：總熱量322.3大卡，總糖量52.8克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玄米蕎麥拿鐵 Buckwheat Milk Tea",
+            "description": "【無咖啡因】融合蕎麥的淡雅堅果香與濃郁奶香，風味溫潤平衡、不過於厚重，帶來舒適順口的口感。大杯（約660ml）：總熱量285.2大卡，總糖量52.5克。總熱量、總糖量及咖啡因含量皆以最高值標示。本品咖啡因總含量0毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀烤拿鐵 Roasted Milk Tea",
+            "description": "高溫短時間煎烤茶葉，釋放出深層焙炒香氣，與奶香細膩交融，風味中帶有焦糖與堅果的溫潤香氣。加入濃郁鮮乳後，口感更加柔滑順口，整體呈現溫厚、平衡又不甜膩的成熟系烤奶風味。大杯(約660ml)：總熱量376.8大卡，總糖量65.3克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南、日本。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠濃煮拿鐵 Quality Mellow Black Milk Tea with Bubble",
+            "description": "嚴選錫蘭紅茶為基底，搭配滑順香醇的鮮奶，呈現柔和濃郁的拿鐵風味，再加入 Q 彈珍珠，口感層次豐富。大杯（約660ml）：總熱量441.1大卡，總糖量58.7克。本品咖啡因總含量101-200毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶霜 CHEESE TEA",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "五桐奶霜 Wootea with Cream",
+            "description": "【招牌推薦】限冷飲｜完美比例｜甜度、冰量固定。以五桐茶為基底，加上厚厚一層口感綿密輕盈的香醇奶霜，每口都能感受到奶霜與茶香交織的美好滋味。大杯（約660ml）：總熱量189.2大卡，總糖量15.4克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣、越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍奶霜 Oolong Tea with Cream",
+            "description": "【人氣推薦】限冷飲。以茶香馥郁的烏龍茶為基底，喝起來不僅清爽又回甘，最上層還有特調奶霜，口感更加滑順。大杯（約660ml）：總熱量 303.2大卡，總糖量41.9克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老實人奶霜紅茶 Black Tea with Cream",
+            "description": "限冷飲。大杯（約660ml）：總熱量303.4大卡，總糖量41.9克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為印度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉莉奶霜 Green Tea with Cream",
+            "description": "限冷飲。大杯（約660ml）：總熱量304.6大卡，總糖量41.9克。本品咖啡因總含量100毫克以下。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。茶葉產地為越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥奶霜 Buckwheat with Cream",
+            "description": "【無咖啡因】將烘焙蕎麥的淡雅堅果香融入細緻奶霜之中，口感醇厚卻不膩口，每一口都能感受到蕎麥的樸實香氣與奶霜的柔滑平衡。大杯(約660ml)：總熱量320.3大卡，總糖量46克。本品咖啡因總含量0毫克。咖啡因每日攝取限量300毫克。孩童及孕哺婦請斟酌食用。總熱量、總糖量皆以最高值標示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "加購塑膠袋 PLASTIC BAG",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "一杯袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "二杯袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四杯袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "六杯袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項 NOTICE",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "凍類均以「天然海藻萃取」凝固製成。「杏仁凍」為蛋奶素，其餘凍類純素者皆可食用。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

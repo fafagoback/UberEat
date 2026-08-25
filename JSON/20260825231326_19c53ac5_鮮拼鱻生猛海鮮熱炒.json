@@ -1,0 +1,1452 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%AE%AE%E6%8B%BC%E9%B1%BB%E7%94%9F%E7%8C%9B%E6%B5%B7%E9%AE%AE%E7%86%B1%E7%82%92/uZxdYXYcV5ay1oRsDWKpVQ",
+  "name": "鮮拼鱻生猛海鮮熱炒",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市蘆洲區復興路179號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.089404,
+    "longitude": 121.4789441
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 150
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Stir​ Fried",
+    "Seafood"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Save on Select Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "三杯中卷",
+            "description": "三杯中卷是台灣經典熱炒，特色是中卷Q彈、醬汁鹹香夠味，融合麻油、醬油、米酒的「三杯」基底，搭配爆香的薑、蒜、辣椒與九層塔，香氣四溢，非常下飯下酒，烹調關鍵在於中卷快炒、九層塔最後加入，避免過老。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "客家小炒",
+            "description": "客家小炒是經典客家菜，特色是鹹、香、油，主要食材有五花肉、豆乾、魷魚、芹菜和蔥等，將這些乾料和肉類煸炒至香氣四溢，口感豐富，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "204.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糖醋排骨",
+            "description": "糖醋排骨是一道色澤紅亮、酸甜可口、肉質鮮嫩的名菜，結合糖醋汁等調料，經過油炸糖醋汁燜煮收汁等步驟製成，冷熱皆宜，口感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉",
+            "description": "蔥爆牛肉是一道經典台式熱炒，特色是大蔥的辛香與牛肉的滑嫩完美結合，透過大火快炒，以蔥白爆香、醬油蠔油提味，再與滑嫩的牛肉和蔥綠快速拌炒，色香味俱全，口感層次豐富，是增進食慾的開胃菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板豆腐",
+            "description": "鐵板豆腐是一道香氣濃郁、色香味俱全的家常鐵板料理，與洋蔥、等蔬菜，在燒熱的鐵板上快速拌炒，利用奶油和黑胡椒營造出滋滋作響的聲音，達到外脆內嫩、醬香四溢的口感，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "204.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工月亮蝦餅",
+            "description": "月亮蝦餅是台灣泰式料理中常見的點心，外觀圓盤如月，特色是金黃酥脆的外皮與飽滿、鮮甜、Q彈的蝦肉內餡，通常使用春捲皮包覆蝦泥，油炸至金黃，搭配酸甜泰式醬汁，口感層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮肥腸",
+            "description": "脆皮肥腸是一種外皮炸得金黃酥脆、內裡軟嫩多汁的特色美食，通常是將經過中藥滷製的大腸頭，塞入甜脆的青蔥或其他配料後，再油炸、燒烤或香煎，口感層次豐富，香氣十足，是宵夜或下酒菜的絕佳選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋地瓜葉",
+            "description": "「皮蛋地瓜葉」是一道經典的台式熱炒家常菜。皮蛋特有的濃郁香氣能中和地瓜葉的草腥味，增加口感的層次與滑順度",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥牛五花",
+            "description": "蒜泥牛五花是一道結合了香嫩牛五花肉片與濃郁蒜蓉醬的料理，特色是肥瘦相間的肉質在烹煮後口感軟嫩、Q彈帶汁，搭配醬油、醋等調味，讓蒜香和肉汁完美融合，帶來鹹香夠味、下飯或搭配麵食的絕佳風味，常以涼拌或香煎方式呈現。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板牛肉",
+            "description": "鐵板牛肉是一道香氣濃郁、色香味俱全的家常鐵板料理，特色是將醃漬入味的牛肉與洋蔥、等蔬菜，在燒熱的鐵板上快速拌炒，利用奶油和黑胡椒營造出滋滋作響的聲音，達到外脆內嫩、醬香四溢的口感，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸無刺魚柳",
+            "description": "酥炸無刺魚柳（通常是虱目魚柳）的描述是：魚肉鮮嫩多汁、沒有魚刺，外皮裹著地瓜粉或酥炸粉炸至金黃酥脆，口感類似鹽酥雞，香氣十足，是大人小孩都愛的美食，適合當零嘴、下酒菜，通常會撒上胡椒鹽、辣椒或九層塔增添風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑蛋蝦仁",
+            "description": "滑蛋蝦仁是一道家常菜，特色是Q彈鮮甜的蝦仁與金黃軟嫩、入口即化的滑蛋完美結合，口感層次豐富，味道鮮香清爽，通常搭配飯菜，做法關鍵在於蛋液的「滑」度，需快速翻炒讓蛋呈現嫩而不老、如奶油般滑順的質地。",
+            "offers": {
+              "@type": "Offer",
+              "price": "204.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆豆芽菜",
+            "description": "蔥爆豆芽菜是一道台式料理風格的經典家常快炒，特色在於火候控制以保持清脆口感，並透過醬香與蔥香提味",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙蛋豆腐",
+            "description": "金沙蛋豆腐是一道香氣濃郁、口感豐富的家常菜，特色是將外酥內嫩的雞蛋豆腐，裹上用鹹蛋黃炒製而成的「金沙醬」，呈現金黃色澤，鹹香開胃，超級下飯，是熱門的台式料理。",
+            "offers": {
+              "@type": "Offer",
+              "price": "204.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽排骨",
+            "description": "椒鹽排骨是一道香酥開胃的台式/中式料理，特色是外酥內嫩、鹹香夠味，透過先醃後炸再快炒收尾，將軟嫩的豬排骨裹上薄粉炸至金黃酥脆，最後與爆香的蒜末、辣椒、蔥花和胡椒鹽拌炒均勻，口感層次豐富，是絕佳的下酒菜或配飯佳餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔酥",
+            "description": "是台灣經典小吃，以新鮮蚵仔裹上地瓜粉或太白粉等粉漿，經油炸至金黃酥脆，內裡保持軟嫩多汁，充滿蚵仔的鮮甜與海味，常搭配九層塔、胡椒鹽一起享用，口感層次豐富，是熱炒店和夜市常見的美味下酒菜/下飯菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉",
+            "description": "沙茶牛肉是一道經典中式熱炒，特色是濃郁的沙茶醬香、軟嫩滑口的牛肉，通常搭配空心菜等蔬菜大火快炒，醬汁濃稠下飯，熱炒店的招牌菜色。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯中卷",
+            "description": "三杯中卷是台灣經典熱炒，特色是中卷Q彈、醬汁鹹香夠味，融合麻油、醬油、米酒的「三杯」基底，搭配爆香的薑、蒜、辣椒與九層塔，香氣四溢，非常下飯下酒，烹調關鍵在於中卷快炒、九層塔最後加入，避免過老。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙櫛瓜",
+            "description": "金沙節瓜（櫛瓜）是一道利用鹹蛋黃的鹹香「金沙」來包裹清爽節瓜的家常菜，做法通常是先將節瓜煎或炒至半熟，再將鹹蛋黃炒出泡沫，最後加入節瓜翻炒均勻，使其裹上金沙即可，簡單快速又美味",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "#消費滿1千元  即送3碗白飯",
+            "description": "單筆消費滿1000元，招待白飯3碗，點菜更下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "#消費滿2千元  即送6碗白飯",
+            "description": "滿額優惠：單筆消費滿2,000元，加贈白飯6碗，聚餐更超值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "主廚推薦",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥九孔鮑",
+            "description": "蒜泥九孔鮑魚是一道結合了鮑魚和「蒜泥」的經典料理，特色是將新鮮Q彈的九孔鮑肉，搭配蒜末、醬油、蔥花等調味，通常以清蒸方式料理，讓蒜香與海鮮的鮮甜完美融合，口感層次豐富，鮮美開胃，是宴客或家常菜中常見的美味佳餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌嗆蝦",
+            "description": "招牌嗆蝦通常是將新鮮白蝦以米酒跟鹽巴下鍋再佐以薑絲與青蔥收乾湯汁，特色是鮮香濃郁、蝦肉Q彈鮮甜，是海邊漁民常見吃法",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛五花",
+            "description": "蔥爆牛五花是一道香氣濃郁、口感滑嫩的經典熱炒菜，以牛五花肉片為主料，搭配大量蔥段、辛香料大火快炒而成，特色是蔥香四溢、牛肉軟嫩不柴，通常會先將牛肉半熟盛起，再爆香蔥白與其他香料，最後與牛肉、蔥綠快速拌炒收汁，非常下飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工月亮蝦餅",
+            "description": "月亮蝦餅是台灣泰式料理中常見的點心，外觀圓盤如月，特色是金黃酥脆的外皮與飽滿、鮮甜、Q彈的蝦肉內餡，通常使用春捲皮包覆蝦泥，油炸至金黃，搭配酸甜泰式醬汁，口感層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "干貝四季豆",
+            "description": "干貝四季豆是一道清爽美味的家常菜，主要做法是將處理好的蝦仁和去絲切段的四季豆，用蒜末爆香後一起快炒，可依喜好加入米酒、鹽、胡椒等調味，並可先將四季豆川燙或與蝦仁分開炒熟，口感清脆鮮美，是一道快速上菜的料理選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥牛五花",
+            "description": "蒜泥牛五花是一道結合了香嫩牛五花肉片與濃郁蒜蓉醬的料理，特色是肥瘦相間的肉質在烹煮後口感軟嫩、Q彈帶汁，搭配醬油、醋等調味，讓蒜香和肉汁完美融合，帶來鹹香夠味、下飯或搭配麵食的絕佳風味，常以涼拌或香煎方式呈現。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑爆小卷",
+            "description": "「薑爆小卷」是一道香氣濃郁、口感鮮嫩彈牙的台式熱炒，特色是將新鮮小卷與大量薑絲、蔥段大火快炒，薑味與海味鮮甜完美融合，醬汁鹹香下飯，是經典的下酒菜或配飯良品，成品通常帶有酥香微焦的鍋氣，一口咬下鮮甜多汁，薑香在口中迴盪。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆嫩肩牛",
+            "description": "蔥爆嫩肩牛是一道香氣濃郁、口感滑嫩的經典熱炒菜，以嫩肩牛肉片為主料，搭配大量蔥段、辛香料大火快炒而成，特色是蔥香四溢、牛肉軟嫩不柴，通常會先將牛肉半熟盛起，再爆香蔥白與其他香料，最後與牛肉、蔥綠快速拌炒收汁，非常下飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油胡椒蝦",
+            "description": "奶油胡椒蝦是一道香氣濃郁、做法簡單的蝦料理，主要利用奶油、大蒜、黑胡椒與新鮮蝦白蝦一起快炒，常加入米酒去腥增香，並可搭配洋蔥、蔥花、辣椒等辛香料，成品鮮美下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "335.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季花枝",
+            "description": "花枝搭配四季豆，Q彈與脆嫩的雙重口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅糟梅花肉",
+            "description": "紅糟梅花豬肉是以帶有漂亮油花、口感鮮嫩的豬梅花肉，用紅麴發酵的紅糟醬醃製後，經油炸方式料理而成的傳統美食，特色是色澤紅潤、酒香與肉香融合、味道鹹甜帶有淡淡酒香，肉質軟嫩不柴，是經典的下飯菜或宴客佳餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酒蒸蛤仔",
+            "description": "酒蒸蛤蜊是一道簡單卻極鮮美的料理，湯汁鮮甜甘醇，以蛤蜊本身的鮮味為主體，搭配清酒（或米酒）、蒜末、薑絲，有時會加入奶油、辣椒和蔥花，透過蒸煮將所有精華鎖在湯汁與肥美蛤蜊中，一口吃下鮮味四溢，湯汁清澈甘甜，是下飯或下酒的絕佳選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拚鱻白斬雞",
+            "description": "白斬雞（白切雞）是一道以簡單水煮或蒸煮方式烹調的華人雞肉料理，特色是皮爽肉滑、肉質鮮嫩有彈性，最大程度保留雞肉的原汁原味，通常搭配蔥薑醬、醬油蒜頭醬等佐料，是廣東及台灣客家菜中的經典菜餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "590.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "橙汁排骨",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "酥炸類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽杏鮑菇",
+            "description": "椒鹽杏鮑菇是一道香氣濃郁、口感豐富的台式家常菜，主要特色是將杏鮑菇切塊後，先乾炒至香氣釋出、水分收乾，再與蒜末、辣椒、蔥爆香，最後撒上椒鹽和蔥花調味，吃起來鹹香酥脆，帶有菇類的鮮甜味，是一款非常適合下飯或當下酒菜的美味料理。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮肥腸",
+            "description": "脆皮肥腸是一種外皮炸得金黃酥脆、內裡軟嫩多汁的特色美食，通常是將經過中藥滷製的大腸頭，塞入甜脆的青蔥或其他配料後，再油炸、燒烤或香煎，口感層次豐富，香氣十足，是宵夜或下酒菜的絕佳選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨蝦球",
+            "description": "鳳梨蝦球是一道經典的台式宴客菜，特色是金黃酥脆的炸蝦球、香甜多汁的鳳梨，搭配酸甜濃郁的美乃滋醬，口感層次豐富，風味融合了海鮮的鮮美與水果的清爽，酸甜開胃，大人小孩都喜歡，是熱炒店或年節餐桌上常見的喜慶菜餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽中卷",
+            "description": "椒鹽中卷是一道熱炒經典菜，特色是將中卷炸至金黃酥脆，再與蒜末、蔥花、辣椒等辛香料大火快炒，最後灑上胡椒鹽調味，口感香脆，鹹香帶辣，是極受歡迎的下酒菜，搭配啤酒白飯都非常美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽龍珠",
+            "description": "椒鹽龍珠是一道經典台式熱炒菜，主要食材是炸得金黃酥脆的魷魚嘴（龍珠），外酥內Q，搭配蒜、辣椒、蔥等爆香辛料，以及胡椒鹽一起大火快炒，口感豐富，香辣夠味，非常下酒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌蛋豆腐",
+            "description": "招牌蛋豆腐是一道著名豆腐料理，其特色是外皮炸得金黃酥脆、微皺，內部卻保持滑嫩多汁、軟嫩如肉的口感，淋上特製的醬汁後，風味絕佳，是一道能滿足口腹之慾的家常菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金炸豆腐",
+            "description": "黃金炸豆腐是一種外表金黃酥脆、內裡軟嫩多汁的豆腐料理，通常將豆腐經過油炸至金黃色，再淋上特製蒜泥醬，是常見的台式小吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式椒麻雞",
+            "description": "泰式椒麻雞是台灣泰式餐廳常見的開胃菜，以去骨雞腿肉裹粉酥炸，外皮酥脆，內部多汁，淋上酸、甜、辣、的特製醬汁，搭配爽脆洋蔥絲，風味濃郁，在台灣演變出的特色美食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季肥腸",
+            "description": "酥炸肥腸與四季豆拌香蒜椒鹽，外酥內嫩，鹹香涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽排骨",
+            "description": "椒鹽排骨是一道香酥開胃的台式/中式料理，特色是外酥內嫩、鹹香夠味，透過先醃後炸再快炒收尾，將軟嫩的豬排骨裹上薄粉炸至金黃酥脆，最後與爆香的蒜末、辣椒、蔥花和胡椒鹽拌炒均勻，口感層次豐富，是絕佳的下酒菜或配飯佳餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽雞腿丁",
+            "description": "椒鹽雞腿丁是一道香酥開胃的台式/中式料理，特色是外酥內嫩、鹹香夠味，透過先醃後炸再快炒收尾，將軟嫩的雞腿丁裹上薄粉炸至金黃酥脆，最後與爆香的蒜末、辣椒、蔥花和胡椒鹽拌炒均勻，口感層次豐富，是絕佳的下酒菜或配飯佳餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽酥蝦",
+            "description": "鹹酥蝦（鹽酥蝦）是一道經典台式香酥料理，特色是將新鮮白蝦帶殼油炸至金黃酥脆，鎖住蝦肉的鮮甜多汁，再與蒜酥、蔥花、辣椒及胡椒鹽大火快炒或拌炒，香氣四溢，外酥內嫩，鹹香夠味，是極佳的下酒菜或下飯菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸無刺魚柳",
+            "description": "酥炸無刺魚柳（通常是虱目魚柳）的描述是：魚肉鮮嫩多汁、沒有魚刺，外皮裹著地瓜粉或酥炸粉炸至金黃酥脆，口感類似鹽酥雞，香氣十足，是大人小孩都愛的美食，適合當零嘴、下酒菜，通常會撒上胡椒鹽、辣椒或九層塔增添風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸花枝丸",
+            "description": "金黃酥脆的花枝丸，外酥內彈，咀嚼帶勁，海味香濃，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥紅糟魚柳",
+            "description": "酥炸紅糟魚柳 沒有魚刺，外皮裹著地瓜粉或酥炸粉炸至金黃酥脆，口感類似鹽酥雞，香氣十足，是大人小孩都愛的美食，適合當零嘴、下酒菜，通常會撒上胡椒鹽、辣椒或九層塔增添風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽櫛瓜",
+            "description": "櫛瓜切片裹粉酥炸至金黃，拌上椒鹽提味，外酥內嫩、清爽不油膩，鹹香涮嘴，是熱炒經典的下酒下飯菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "熱炒類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滑蛋蝦仁",
+            "description": "滑蛋蝦仁是一道家常菜，特色是Q彈鮮甜的蝦仁與金黃軟嫩、入口即化的滑蛋完美結合，口感層次豐富，味道鮮香清爽，通常搭配飯菜，做法關鍵在於蛋液的「滑」度，需快速翻炒讓蛋呈現嫩而不老、如奶油般滑順的質地。",
+            "offers": {
+              "@type": "Offer",
+              "price": "204.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙蛋豆腐",
+            "description": "金沙蛋豆腐是一道香氣濃郁、口感豐富的家常菜，特色是將外酥內嫩的雞蛋豆腐，裹上用鹹蛋黃炒製而成的「金沙醬」，呈現金黃色澤，鹹香開胃，超級下飯，是熱門的台式料理。",
+            "offers": {
+              "@type": "Offer",
+              "price": "204.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "客家小炒",
+            "description": "客家小炒是經典客家菜，特色是鹹、香、油，主要食材有五花肉、豆乾、魷魚、芹菜和蔥等，將這些乾料和肉類煸炒至香氣四溢，口感豐富，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "204.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆牛肉",
+            "description": "蔥爆牛肉是一道經典台式熱炒，特色是大蔥的辛香與牛肉的滑嫩完美結合，透過大火快炒，以蔥白爆香、醬油蠔油提味，再與滑嫩的牛肉和蔥綠快速拌炒，色香味俱全，口感層次豐富，是增進食慾的開胃菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞腿丁",
+            "description": "宮保雞丁是一道經典川菜，特色是使用雞腿肉或雞胸肉切丁，搭配乾辣椒、花椒、蔥段、蒜片和炸花生，以「糊辣荔枝味」（酸甜微辣）為主要風味，口感麻辣鮮香，雞肉滑嫩，花生酥脆，是一道非常下飯的料理。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滑蛋牛肉",
+            "description": "滑蛋牛肉是一道以嫩滑牛肉片與滑順蛋液為主角的中式家常菜，特色在於牛肉軟嫩、蛋液香濃不老口感豐富，搭配白飯食用，能享受蛋與肉鮮美融合的極致滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香中卷",
+            "description": "蒜香蜜汁中卷是一道結合了中卷Q彈口感與蒜香、甜味醬汁的料理，特色是將處理好的中卷裹炸過，再以蒜末、醬油、味醂、冰糖等調製的濃稠蜜汁拌炒，最終香氣四溢，鹹甜適中，帶有迷人蒜香，常灑上白芝麻增添風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香煎豬肝",
+            "description": "香煎豬肝是一道色澤誘人、口感「外酥內嫩、滑嫩甘甜」的台菜，重點在於徹底去筋膜、用清水洗淨血水，並用太白粉輕裹，再大火快炸、快速與醬汁（醬油、糖、米酒等）拌炒收汁，需精準掌握火候與時間，才能避免乾柴，達到醬香濃郁、入口即化的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒海瓜子",
+            "description": "炒海瓜子是一道香氣四溢、鮮味十足的家常熱炒，主要特色是利用蒜、薑、九層塔爆香，搭配米酒或啤酒嗆鍋，大火快炒至開殼，再加入醬油、醬油膏或烏醋等調味，最後撒上九層塔收汁，成品湯汁鮮美，是非常受歡迎的下飯或下酒菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜炒鹹豬肉",
+            "description": "炒鹹豬肉是一道客家經典料理，特色是將鹹香夠味的鹹豬肉切片，搭配蒜苗、洋蔥、辣椒等辛香料一起大火快炒，逼出豬肉本身的油脂與鹹香，再融合蒜苗的清脆、洋蔥的甜味，最後淋上米酒、烏醋或醬油提味，成品鹹香下飯，肥肉Q彈、瘦肉不柴，口感層次豐富，通常吃起來帶有獨特的酒香和蒜香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒蛤仔",
+            "description": "炒蛤蜊是一道香氣四溢、鮮味十足的家常熱炒，主要特色是利用蒜、薑、九層塔爆香，搭配米酒或啤酒嗆鍋，大火快炒新鮮蛤蜊至開殼，再加入醬油、醬油膏或烏醋等調味，最後撒上九層塔收汁，成品湯汁鮮美，蛤蜊肉Q彈，是非常受歡迎的下飯或下酒菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉",
+            "description": "沙茶羊肉是一道經典中式熱炒，特色是濃郁的沙茶醬香、軟嫩滑口的羊肉，通常搭配空心菜等蔬菜大火快炒，醬汁濃稠下飯，熱炒店的招牌菜色。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糖醋排骨",
+            "description": "糖醋排骨是一道色澤紅亮、酸甜可口、肉質鮮嫩的名菜，結合糖醋汁等調料，經過油炸糖醋汁燜煮收汁等步驟製成，冷熱皆宜，口感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白灼蝦",
+            "description": "川燙白蝦的描述重點在於 「快速」、「準確掌握熟度」，讓蝦身呈現漂亮的 大 C 狀（或彎曲）、外殼轉為橘紅色，肉質 Q 彈，並避免過熟出現浮沫，以鎖住鮮甜海味與彈性，通常水滾後下蝦，變色即可撈起或短暫燜煮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙中卷",
+            "description": "金沙中卷是一道經典熱炒海鮮，特色是將裹粉炸至金黃酥脆的中卷，與用鹹蛋黃炒成的「金沙」醬料完美結合，口感外酥內嫩，鹹香濃郁，海味十足，常加入蒜末、蔥花增添層次，是一道非常下飯的美味料理。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五更腸旺",
+            "description": "五更腸旺是台灣一道經典的台式川菜，主要特色是香辣夠味、酸爽下飯，由豬大腸（腸）和鴨血/豬血（旺）為主料，搭配豆瓣醬、酸菜、蔥、薑、蒜等辛香料小火慢燉，口感豐富，有肥嫩的腸、滑嫩的血與爽口的酸菜，是熱炒店的招牌菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲大腸",
+            "description": "薑絲大腸是經典的客家菜，特色是酸香夠味、大腸Q彈有嚼勁，主要以薑絲、豬大腸和醋（白醋、烏醋或醋精）為主要調味，大火快炒而成，風味開胃下飯，是許多人記憶中的客家味。最後加入酸菜、辣椒、蒜頭快炒，湯汁拌飯也極美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙杏鮑菇",
+            "description": "金沙杏鮑菇是一道利用鹹蛋黃製作的料理，特色是將杏鮑菇先炸過裹上「金沙」（炒至起泡的鹹蛋黃），形成鹹香、沙沙口感，搭配杏鮑菇Q彈多汁的肉質，風味十足，超級下飯，外觀金黃誘人，是經典的家常菜或台式熱炒菜色。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥白肉",
+            "description": "蒜泥白肉是一道以水煮帶皮豬五花肉切片，淋上蒜泥醬汁的川味經典冷盤，特色是蒜香濃郁、肥而不膩、口感層次豐富，瘦肉Q彈、肥肉軟化，搭配醬汁鹹香開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥鮮蚵",
+            "description": "蒜泥鮮蚵是一道台灣經典小吃，特色是將新鮮肥美的蚵仔用滾水燙熟，再淋上由大量蒜泥、醬油膏、香油、醋等調製而成的鹹香夠味醬汁，最後撒上蔥花或香菜，整體味道鮮、香、滑、Q彈。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹黃豆腐煲",
+            "description": "蟹黃豆腐煲是一道色澤金黃、口感豐富、鮮香下飯的中式家常菜，主要特色是利用紅蘿蔔泥、鹹蛋黃、甚至南瓜泥模擬出蟹黃的橘黃色澤與鮮美滋味，搭配滑嫩的雞蛋豆腐，再加入蝦仁、蛤仔、中卷、鮮蚵等增加層次，最後勾芡成濃稠醬汁，熱騰騰地盛在砂鍋中，風味濃郁，老少咸宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆羊肉",
+            "description": "蔥爆羊肉是一道經典台式熱炒，特色是大蔥的辛香與羊肉的滑嫩完美結合，透過大火快炒，以蔥白爆香、醬油蠔油提味，再與滑嫩的羊肉和蔥綠快速拌炒，色香味俱全，口感層次豐富，是增進食慾的開胃菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒螺肉",
+            "description": "炒螺肉是台灣熱炒店常見的下酒菜，主要特色是使用經過處理的非洲大蝸牛肉，口感Q彈有嚼勁，常以大火快炒，加入醬油、米酒、蔥薑蒜、辣椒，最後以九層塔提香，風味鹹香夠味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保皮蛋",
+            "description": "宮保皮蛋是一道經典的熱炒菜，特色是將蒸熟或煮熟的皮蛋裹粉炸至外酥內嫩，再以乾辣椒、花椒、蒜末等爆香，搭配酸甜微辣、鹹香濃郁的「宮保」醬汁快速翻炒，最後加入花生增添香脆口感，整體風味豐富，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥鮮蝦",
+            "description": "蒜泥白蝦是一道結合了白蝦和「蒜泥」的經典料理，特色是將新鮮Q彈的白蝦，搭配蒜末、醬油、蔥花等調味，通常以清蒸方式料理，讓蒜香與海鮮的鮮甜完美融合，口感層次豐富，鮮美開胃，是宴客或家常菜中常見的美味佳餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿嬤的蛋",
+            "description": "「阿嬤的蛋」充滿懷舊與家常溫情的手作蛋料理，以滑炒出嫩蛋後淋上古早味紅蔥醬汁，強調用簡單食材、古早味醬汁，做出柔軟滑嫩香氣十足的阿嬤煎蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糖醋雞腿丁",
+            "description": "糖醋雞腿丁是一道經典台式料理，特色是肉質鮮嫩多汁的去骨雞腿肉，裹上酸甜開胃的糖醋醬汁，通常會搭配洋蔥、鳳梨等增加色彩與風味，口感層次豐富，酸甜不膩，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糖醋魚柳",
+            "description": "糖醋魚柳是一道經典台式料理，特色是肉質鮮嫩多汁的魚柳，裹上酸甜開胃的糖醋醬汁，通常會搭配洋蔥、鳳梨等增加色彩與風味，口感層次豐富，酸甜不膩，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆芽牛肉",
+            "description": "豆芽炒牛肉是一道簡單美味的家常菜，特色是牛肉鮮嫩、豆芽爽脆，通常大火快炒，結合蒜、薑和醬油、蠔油、胡椒等調味，風味鮮香下飯，可加入洋蔥或辣椒增添層次，是一道快速又營養的料理。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "三杯及鐵板",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鐵板牛肉",
+            "description": "鐵板牛肉是一道香氣濃郁、色香味俱全的家常鐵板料理，特色是將醃漬入味的牛肉與洋蔥、等蔬菜，在燒熱的鐵板上快速拌炒，利用奶油和黑胡椒營造出滋滋作響的聲音，達到外脆內嫩、醬香四溢的口感，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "224.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯雞",
+            "description": "三杯雞腿是一道經典台菜，特色是使用雞腿肉，以麻油、醬油、米酒（或糖）這「三杯」為基底調味，經煸炒、燜煮後，加入薑、蒜、九層塔和辣椒，醬香濃郁、麻油和酒香四溢，口感Q彈鮮嫩，非常下飯，湯汁鹹甜開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯中卷",
+            "description": "三杯中卷是一道結合了麻油、醬油、米酒及九層塔香氣的台灣熱炒菜，特色是中卷口感Q彈有嚼勁，裹滿鹹香帶甜的醬汁，風味濃郁，是下飯又下酒的佳品。料理重點在於煸香薑蒜、快炒中卷、最後以九層塔提味收汁，通常不加水，利用食材本身水分和醬汁煮出美味，呈現金黃油亮色澤。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板豆腐",
+            "description": "鐵板豆腐是一道香氣濃郁、色香味俱全的家常鐵板料理，與洋蔥、等蔬菜，在燒熱的鐵板上快速拌炒，利用奶油和黑胡椒營造出滋滋作響的聲音，達到外脆內嫩、醬香四溢的口感，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "204.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板三鮮",
+            "description": "鐵板三鮮是一道香氣濃郁、色香味俱全的家常鐵板料理，特色是將蝦仁、中卷、鮮蚵與洋蔥、等蔬菜，在燒熱的鐵板上快速拌炒，利用奶油和黑胡椒營造出滋滋作響的聲音，達到外脆內嫩、醬香四溢的口感，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯皮蛋",
+            "description": "三杯皮蛋是一道經典台菜，以麻油、醬油、米酒（或糖）這「三杯」為基底調味，經煸炒、燜煮後，加入薑、蒜、九層塔和辣椒，醬香濃郁、麻油和酒香四溢，口感Q彈鮮嫩，非常下飯，湯汁鹹甜開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板嫩肩牛",
+            "description": "鐵板嫩煎牛是一道香氣濃郁、色香味俱全的家常鐵板料理，特色是將醃漬入味的牛肉與洋蔥、等蔬菜，在燒熱的鐵板上快速拌炒，利用奶油和黑胡椒營造出滋滋作響的聲音，達到外脆內嫩、醬香四溢的口感，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板鮮蚵",
+            "description": "鐵板鮮蚵是一道香氣濃郁、色香味俱全的家常鐵板料理，特色是將鮮蚵與洋蔥、等蔬菜，在燒熱的鐵板上快速拌炒，利用奶油和黑胡椒營造出滋滋作響的聲音，達到外脆內嫩、醬香四溢的口感，非常下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板鮮干貝",
+            "description": "鐵板帆立貝，熱盤上桌，海味馥郁、口感嫩滑",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒飯及炒麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒飯",
+            "description": "肉絲蛋炒飯是一道經典家常菜，特色是粒粒分明的米飯、香嫩的肉絲與金黃炒蛋完美結合，通常會加入蔥花增添香氣，透過醬油、鹽等調味，炒出乾爽不油膩、香氣四溢的美味口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒飯",
+            "description": "牛肉蛋炒飯是一道經典家常菜，特色是粒粒分明的米飯、香嫩的牛肉與金黃炒蛋完美結合，通常會加入蔥花與沙茶增添香氣，透過醬油、鹽等調味，炒出乾爽不油膩、香氣四溢的美味口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯",
+            "description": "蝦仁蛋炒飯是一道經典家常菜，特色是粒粒分明的米飯、Q彈蝦仁與金黃炒蛋完美結合，通常會加入蔥花增添香氣，透過醬油、鹽等調味，炒出乾爽不油膩、香氣四溢的美味口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒飯",
+            "description": "羊肉蛋炒飯是一道經典家常菜，特色是粒粒分明的米飯、香嫩的羊肉與金黃炒蛋完美結合，通常會加入蔥花與沙茶增添香氣，透過醬油、鹽等調味，炒出乾爽不油膩、香氣四溢的美味口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒麵",
+            "description": "肉絲炒麵是經典中式麵食，特色是滑嫩肉絲、Q彈麵條與醬香濃郁的醬汁結合，常搭配高麗菜、紅蘿蔔、蔥等豐富配料，透過大火快炒的烹調方式，鑊氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒麵",
+            "description": "蝦仁炒麵是經典中式麵食，特色是Q彈蝦仁、Q彈麵條與醬香濃郁的醬汁結合，常搭配高麗菜、紅蘿蔔、蔥等豐富配料，透過大火快炒的烹調方式，鑊氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵",
+            "description": "牛肉炒麵是經典中式麵食，特色是滑嫩牛肉、Q彈麵條與醬香濃郁的沙茶醬汁結合，常搭配高麗菜、紅蘿蔔、蔥等豐富配料，透過大火快炒的烹調方式，鑊氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵",
+            "description": "羊肉炒麵是經典中式麵食，特色是滑嫩羊肉、Q彈麵條與醬香濃郁的沙茶醬汁結合，常搭配高麗菜、紅蘿蔔、蔥等豐富配料，透過大火快炒的烹調方式，鑊氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷盤及烤物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤秋刀魚3尾",
+            "description": "烤秋刀魚以其外皮焦脆、魚肉細嫩、油脂豐富和獨特微苦的內臟聞名，通常是鹽烤方式，搭配檸檬汁，香氣十足，是日本料理中經典的家常美味，能品嚐到秋刀魚的天然鮮美與海味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冷筍沙拉",
+            "description": "冷筍沙拉是一道清爽的夏日冷盤，以新鮮綠竹筍帶殼水煮或蒸熟後冰鎮，再剝殼切塊，搭配美乃滋或醬油膏等醬料食用，主打鮮甜、脆口、冰涼的口感，是解熱消暑的經典美食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤魚下巴3片",
+            "description": "烤魚下巴的特色是肉質鮮嫩、油脂豐厚、口感Q彈、膠原蛋白豐富，通常取自魚鰓蓋下方至胸鰭的部位，經過簡單調味，用火烤至外皮金黃微焦，內部鮮美多汁，是受歡迎的下酒菜或家常料理。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚卵沙拉",
+            "description": "魚卵沙拉是將處理過的魚卵蒸熟後再煎炸至酥香切片，再搭配美乃滋和其他配料如小黃瓜絲、洋蔥、口感綿密，風味鮮甜濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五味九孔鮑",
+            "description": "五味鮑魚是一道台式經典冷盤，以彈牙Q彈的鮑魚搭配酸甜鹹鮮、帶點微辣的「五味醬」為醬料由醬油膏、醋、番茄醬、糖、蔥、薑、蒜、辣椒等調製而成，口感層次豐富，是宴客或下酒菜的熱門選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤鹹豬肉",
+            "description": "烤鹹豬肉是客家傳統美食，以帶皮五花肉用鹽、蒜末、黑胡椒、五香粉等醃漬入味後烘烤，成品外皮微酥、肉質鹹香軟嫩、肥瘦相間，帶有獨特的蒜香與燒烤香氣。食用時通常切片，搭配薑醋醬汁，非常下飯下酒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大海蝦沙拉",
+            "description": "大海蝦沙拉是將鮮甜肥美的大海蝦煮熟去殼，搭配新鮮生菜、洋蔥，淋上香濃的美乃滋，形成口感彈牙、風味鮮甜的開胃菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚刺身",
+            "description": "新鮮的鮭魚刺身，精美地擺放在一起，搭配蘿蔔絲、日式和風醬油、芥末，體驗最豐富的鮮美。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合刺身",
+            "description": "綜合刺身是將多種不同種類、新鮮的生魚片或海鮮切片，精美地擺放在一起的日式料理拼盤，通常包含鮭魚、旗魚、紅甘，以不同的顏色、口感，搭配蘿蔔絲、日式和風醬油、芥末，提供一次滿足多種海味，體驗最豐富的鮮美。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤挪威鯖魚",
+            "description": "烤挪威鯖魚的特色是肉質肥厚、油脂豐富、口感細嫩多汁、香氣十足，因生長在寒冷純淨海域，儲存大量脂肪，簡單鹽烤或乾煎就香氣逼人，外皮微酥、魚肉鮮甜不乾柴，富含Omega-3脂肪酸，適合全家享用，擠點檸檬汁更清爽開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五味冰卷",
+            "description": "五味冰卷是台灣經典台菜冷盤，以新鮮魷魚 經川燙、急速冷凍製成，口感Q彈、鮮甜爽脆，退冰後切片，搭配由醬油膏、醋、薑末、蒜末、番茄醬等調製的五味醬食用，清爽開胃，是一道簡單快速又美味的佳餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風鱈魚肝",
+            "description": "和風鱈魚肝是一道經典日式涼拌菜，特色是口感軟嫩綿密、入口即化，風味濃郁，常搭配冰鎮洋蔥絲跟小黃瓜絲，淋上帶有酸甜與微辣的和風醬，整體清爽開胃，營養豐富（富含維生素與Omega-3），能中和鱈魚肝的豐厚油脂，是居酒屋與家庭料理中的熱門前菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紐澳良雞翅",
+            "description": "烤紐澳良雞翅是一種結合了美式風味與辛香料的烤雞翅，特色是色澤金黃誘人，外皮可能帶點焦糖色，口感外酥內嫩多汁，並帶有鮮甜與香辣交織的風味，主要來自匈牙利紅椒、胡椒、蒜、洋蔥等香料，整體鹹香開胃，讓人吮指回味，非常適合聚餐、派對或宵夜點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式刺蝦刺身",
+            "description": "新鮮的日式刺蝦，精美地擺放在一起，搭配蘿蔔絲、日式和風醬油、芥末，體驗最豐富的鮮美。",
+            "offers": {
+              "@type": "Offer",
+              "price": "395.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤櫛瓜",
+            "description": "烤櫛瓜（Zucchini）口感鮮嫩多汁、帶有清甜原味，經過烘烤後外層略帶焦香，內部軟糯，是一種健康低脂的美味料理，做法是切片、鹽、胡椒、蒜粉或香料調味後等增加風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "火鍋及湯品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "胡椒豬肚雞湯",
+            "description": "胡椒豬肚雞湯是一道源自廣東客家的粵式暖胃湯品，以白胡椒的辛香為基底，搭配鮮嫩雞肉與彈牙豬肚，經長時間細火慢燉，湯頭濃郁鮮美，帶有層次豐富的胡椒香氣，融合中藥材如枸杞、紅棗，具有健脾胃、暖身驅寒、開胃助消化的滋補功效，尤其適合秋冬季節或病後補養，是從裡到外暖和身體的美味佳餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "950.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜肚片湯",
+            "description": "酸菜肚片湯是一道經典台菜，主要以處理好的豬肚和酸菜為主料，搭配薑絲、米酒、白醋、鹽、胡椒等調味，燉煮出酸香開胃、鹹鮮下飯的湯品，有時會加入香油、蔥花提香，做法關鍵在於徹底清洗去腥和控制酸菜的酸度",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨苦瓜雞鍋",
+            "description": "鳳梨苦瓜雞湯是一道經典的台灣家常湯品，特色是將鳳梨的鮮甜與苦瓜的甘苦完美結合，搭配雞肉的鮮嫩，形成酸甜回甘、清爽不膩的滋味，兼具消暑解渴、開胃與養生功效，即使怕苦的人也能輕鬆享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "950.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮筍蛤蜊雞鍋",
+            "description": "海鮮火鍋是一種以新鮮海產為主料的鍋物，特色是湯頭鮮美、食材多元，透過昆布高湯燉煮，能品嚐到蝦、魚、蛤蜊、鮮蚵、魷魚，高麗菜與綜合蔬菜來自海洋的自然甜味最後甚至能將精華煮成鮮味十足的海鮮粥。",
+            "offers": {
+              "@type": "Offer",
+              "price": "950.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "砂鍋魚頭鍋",
+            "description": "砂鍋魚頭是一道結合炸魚頭與豐富火鍋料的湯鍋料理，特色是使用濃郁湯底，加入高麗菜、豆腐、豆皮等海鮮與蔬菜燉煮，再用特製沙茶醬提味，湯頭鮮美、配料豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1050.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蜊蒜頭雞鍋",
+            "description": "蒜頭蛤蜊雞湯是一道溫補鮮甜的台式湯品，特色在於大蒜的濃郁香氣與蛤蜊的自然鮮味，結合雞肉的甘甜，煮成湯頭清澈帶乳白，喝起來清甜不膩、暖心暖胃，有助於增強抵抗力，是家常菜和冬季進補的佳選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "950.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤仔湯",
+            "description": "蛤蜊湯是台灣經典家常湯品，以薑絲和米酒襯托蛤蜊本身清甜的海洋鮮味，湯頭清澈、味道鮮美，富含蛋白質，低熱量，是冬季暖胃的理想選擇，烹調關鍵在於蛤蜊吐沙要確實，煮的時間要短，讓肉質鮮嫩不老，口感豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔湯",
+            "description": "蚵仔湯 (Oyster Soup) 是一道台灣常見的鮮美湯品，主要以新鮮蚵仔（牡蠣）為主料，搭配薑絲、蔥花、米酒等簡單調味料煮成，湯頭清甜，蚵仔滑嫩，做法快速，常見變化有加入絲瓜、豆腐或酸菜，並以香油、九層塔提味",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式味噌湯",
+            "description": "日式味噌湯（味噌汁）是日本代表性湯品，以日式高湯（昆布、柴魚）為基底，加入味噌、豆腐、蛤仔、蔥花 、蛋花等食材製成，風味清爽、層次豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶芽吻仔魚湯",
+            "description": "海菜吻仔魚湯是一道快速簡單的湯品，主要做法是將洗淨的海菜與吻仔魚放入滾水或高湯中煮滾，加入薑絲、蔥花調味，起鍋前淋上香油，加入蛋花，成品鮮美、營養豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "剝皮辣椒雞湯",
+            "description": "剝皮辣椒與雞肉熬成清爽湯頭，椒香襯托雞湯鮮美，順口暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "950.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "青菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "炒高麗菜要清脆鮮甜的秘訣是：熱鍋冷油爆香蒜末，放入洗淨瀝乾的高麗菜，再快速翻炒和沿鍋邊嗆入少量水，利用高溫將水分蒸發，最後用鹽調味，大火快炒",
+            "offers": {
+              "@type": "Offer",
+              "price": "136.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "空心菜",
+            "description": "炒空心菜的關鍵是「大火快炒」和「先炒梗後炒葉」，用熱鍋熱油將蒜末/辣椒爆香，先炒菜梗至稍軟再放入菜葉快速翻炒",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒水蓮",
+            "description": "炒水蓮是台灣常見的家常菜，關鍵在於大火快炒與「泡水」保脆，下鍋與蒜末、爆香快炒，短短一分鐘內起鍋，口感就會爽脆不軟爛，且能避免土味，非常下飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蜊絲瓜",
+            "description": "蛤蜊絲瓜是一道鮮美的台灣家常菜，做法是將吐好沙的蛤蜊與去皮切塊的絲瓜，用薑絲爆香後，一起放入鍋中燜煮，直到絲瓜軟化、蛤蜊開口，利用蛤蜊的天然鮮甜和絲瓜的水分，簡單調味，即可鮮甜上桌",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹蛋苦瓜",
+            "description": "鹹蛋苦瓜是一道經典家常菜，先將蛋黃炒出香氣與細泡，再加入汆燙處理過的苦瓜一同翻炒，最後加入、糖、蒜末等調味，利用糖襯托出苦瓜的甘甜與鹹蛋的鹹香，達到去苦回甘、層次豐富的美味口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "地瓜葉",
+            "description": "炒地瓜葉最常見的蒜炒，要炒得清脆翠綠的秘訣是：挑掉老梗、洗淨後，熱鍋爆香蒜頭，大火快炒，起鍋前加少許水或米酒，快速拌炒並蓋鍋悶一下，迅速起鍋",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋地瓜葉",
+            "description": "「皮蛋地瓜葉」是一道經典的台式熱炒家常菜。皮蛋特有的濃郁香氣能中和地瓜葉的草腥味，增加口感的層次與滑順度",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆豆芽菜",
+            "description": "蔥爆豆芽菜是一道台式料理風格的經典家常快炒，特色在於火候控制以保持清脆口感，並透過醬香與蔥香提味",
+            "offers": {
+              "@type": "Offer",
+              "price": "112.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "現撈鮮魚",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅燒鮮魚",
+            "description": "紅燒鮮魚是一道經典台菜，做法核心是將魚煎至金黃後，加入蔥薑蒜及醬油、米酒、糖等調味料，加水小火慢燒至入味、湯汁濃稠即可上桌",
+            "offers": {
+              "@type": "Offer",
+              "price": "420.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糖醋鮮魚",
+            "description": "糖醋鮮魚是一道經典中式料理，做法通常是將新鮮魚處理、裹粉後油炸至金黃酥脆，再淋上由糖、醋、番茄醬等調配出的酸甜醬汁，並加入洋蔥、、蔥薑蒜等配料快炒，使魚外酥內嫩、醬汁濃郁開胃，是許多家庭宴客的美味菜餚",
+            "offers": {
+              "@type": "Offer",
+              "price": "420.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "白飯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "白米飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

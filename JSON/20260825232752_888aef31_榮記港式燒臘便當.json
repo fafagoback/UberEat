@@ -1,0 +1,198 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%A6%AE%E8%A8%98%E6%B8%AF%E5%BC%8F%E7%87%92%E8%87%98%E4%BE%BF%E7%95%B6/qBn9ObeIX3qiQzQfkN0_Hg",
+  "name": "榮記港式燒臘便當",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "112臺北市北投區尊賢里尊賢街242巷2號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.116826521140204,
+    "longitude": 121.50744938880895
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 13
+  },
+  "servesCuisine": [
+    "Bento",
+    "Braised Pork Rice",
+    "Rice-bowls"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "三寶飯",
+            "description": "集結烤鴨、油雞、叉燒三大經典!一次滿足港式燒臘靈魂美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "叉燒飯",
+            "description": "道地蜜汁炙烤香氣!肉質軟嫩帶勁,甜鹹交織的經典港式古早味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "至尊五寶飯",
+            "description": "奢華尊榮頂級享受!五種招牌燒臘華麗鋪滿,肉山級極致滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮燒肉飯",
+            "description": "喀吱作響的極致脆皮!層層肥瘦相間,鹹香爆汁、香氣四溢超下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榮記招牌飯",
+            "description": "鎮店靈魂主廚特製!",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "便當",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "脆皮烤鴨飯",
+            "description": "金黃香脆鴨皮裹著豐潤油脂,鮮嫩多汁不乾柴,經典港式必吃首選!",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玫瑰油雞飯",
+            "description": "嚴選嫩雞浸潤特製玫瑰豉油,皮滑肉嫩、金黃多汁,香氣醇厚迷人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香腸飯",
+            "description": "特製港式香腸,口感紮實爆汁,油脂香氣與獨門香料完美融合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "港式臘味飯",
+            "description": "道地臘腸,越咀嚼越香濃,油脂滲入米飯讓人欲罷順手!",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玫瑰雞腿飯",
+            "description": "整隻特大鮮嫩雞腿!玫瑰豉油香氣深入骨髓,肉質細緻極致滑嫩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁雞腿飯",
+            "description": "大雞腿裹上特製濃郁蜜汁,炙烤出漂亮琥珀色澤,甜鹹交織超邪惡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鴨腿飯",
+            "description": "老饕私房限量夢幻品項!鴨腿外皮金黃香脆、肉質緊實多汁爆香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "雙拼便當",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "自選雙拼便當",
+            "description": "雙拼口味 一次享受 豪爽吃 !",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

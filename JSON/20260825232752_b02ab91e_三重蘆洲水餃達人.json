@@ -1,0 +1,794 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%B8%89%E9%87%8D%E8%98%86%E6%B4%B2%E6%B0%B4%E9%A4%83%E9%81%94%E4%BA%BA/B1VotcjMQV-xAa8-t5LHWw",
+  "name": "三重蘆洲水餃達人",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區五華街71巷92號1樓",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0839301,
+    "longitude": 121.4942632
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 2000
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "干貝豬肉大水餃(Scallop Dumpling)",
+            "description": "6 顆 1 份。\n天然養生、健康美味的手工大水餃、高級食材、無味精、無添加化學香料。(Natural health，healthy and delicious hand dumplings Senioring) 溫體豬肉，麵粉，高湯，花生油，鹽，糖 ，蔥，薑，麵粉，干貝(Leek, warm pork, flour, broth, peanut oil, salt, sugar, onion，Scallop)\n本店「不使用」萊克多巴胺肉品\n豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉酸辣湯(Lamb Hot and Sour Soup)",
+            "description": "功效\n\n暖中驅寒，溫補氣血\n\n羊肉\n\n溫中健脾\n\n益氣補虛\n\n羊肉味甘，性溫，入脾、腎經，能夠溫中健脾，益氣，養血，補虛。《日用本草》：治腰膝羸弱，壯筋骨，厚腸胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔手工大水餃(Sweet Basil Dumpling)",
+            "description": "6個一份.\n據靈草妙藥記述，九層塔葉具有消炎止痛之效也可治胃痙攣、風濕症或老年人腰酸背痛具行血、益氣，無病可養生，風味絕佳。\n九層塔：這名字由來據傳，是在古時候有一皇帝出巡，適逢洪水被困於一座年久荒廢的九層塔中，在缺乏食物下便摘取塔上屋簷生長的青草充饑，發覺到該植物風味絕佳，便命隨從取種帶回宮中栽種，而將此生長於九層塔上的青草命名為「九層塔」。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌大水餃(Signature dumplings)",
+            "description": "6 顆 1 份。\n天然養生、健康美味的手工大水餃、高級食材、無味精、無添加化學香料。(Natural health，healthy and delicious hand dumplings Senioring) 溫體豬肉，麵粉，高湯，花生油，鹽，糖 ，蔥，薑，麵粉(Leek, warm pork, flour, broth, peanut oil, salt, sugar, onion)\n本店「不使用」萊克多巴胺肉品\n豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌餛飩酸辣湯(Dumplings in Soup)",
+            "description": "6個餛飩一份",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁豬肉大水餃(Shrimp Dumpling)",
+            "description": "6 顆 1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌酸辣[湯餃](Dumplings in Soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞塊",
+            "description": "6個雞塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米豬肉大水餃(corn Dumpling)",
+            "description": "6 顆 1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連酸辣湯(Liver Link Hot and Sour Soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義大利麵",
+            "description": "經典番茄肉醬義大利麵，絞肉與彩椒、洋蔥丁入味，醬香裹麵順口，迷迭香點綴更添香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "干貝豬肉水餃(Scallop Dumpling)(一盒/20個)",
+            "description": "天然養生、健康美味的手工大水餃、高級食材、無味精、無添加化學香料。(Natural health，healthy and delicious hand dumplings Senioring) 溫體豬肉，麵粉，高湯，花生油，鹽，糖 ，蔥，薑，麵粉，干貝(Leek, warm pork, flour, broth, peanut oil, salt, sugar, onion，Scallop)\n豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜豬肉酸辣[湯餃](Dumplings in Soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜豬肉酸辣[湯餃](Dumplings in Soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "照燒肉醬麵",
+            "description": "日式照燒風味肉醬拌麵，麵條吸附醬汁，鹹甜交織、醬香濃郁，一口接一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "仙草鮮奶茶(Xiancao Fresh Milk Tea)",
+            "description": "加入清新馥郁的手工仙草凍，增添軟嫩、圓順且綿密的口感(Add fresh and fragrant hand-made grass jelly to add a soft, smooth and creamy taste)\n\n保護心血管：仙草所含膳食纖維為水溶性纖維，可與膽酸結合排除體外，並促使人體將膽固醇轉化為膽酸，降低血中膽固醇濃度。此外，水溶性纖維還能減少腸胃的膽固醇及脂肪吸收量，進而降低血脂、膽固醇，降低罹患心血管疾病的風險。\n(Cardiovascular Protection: The dietary fiber in grass jelly is water-soluble fiber, which can bind with bile acids and be excreted from the body. It also promotes the conversion of cholesterol into bile acids, lowering blood cholesterol levels. Furthermore, water-soluble fiber reduces the absorption of cholesterol and fat in the intestines, thereby lowering blood lipids and cholesterol, and reducing the risk of cardiovascular disease.)\n預防痛風：若飲食含有過高普林，容易使血液中尿酸過高，導致痛風；有研究指出，仙草的萃取物能抑制黃普林氧化酶，抑制尿酸生成，具有預防痛風與相關尿酸併發症的潛在功效。\n保護心血管：仙草所含膳食纖維為水溶性纖維，可與膽酸結合排除體外，並促使人體將膽固醇轉化為膽酸，降低血中膽固醇濃度。此外，水溶性纖維還能減少腸胃的膽固醇及脂肪吸收量，進而降低血脂、膽固醇，降低罹患心血管疾病的風險。\n預防痛風：若飲食含有過高普林，容易使血液中尿酸過高，導致痛風；有研究指出，仙草的萃取物能抑制黃普林氧化酶，抑制尿酸生成，具有預防痛風與相關尿酸併發症的潛在功效。\n促進排便：仙草含有一種稱為「多醣膠質」的膳食纖維並且富含水分，能有效幫助排便，預防腸道疾病與便祕。\n控管熱量：未加糖的仙草所含熱量及糖分極低，且所含水溶性纖維能幫助穩定血糖，適量食用對體重並不會造成負擔，調味部分以代糖取代，也能夠做為糖尿病患者的甜品。\n優秀的抗氧化劑：近年來實驗指出，仙草富含酚酸、黃酮類化合物、熊果酸、齊墩果酸（Oleanolic acid）等三萜類化合物，皆具抗氧化效益，能有效對抗體內自由基，減緩人體老化，並具抗發炎、調節免疫功能、抗癌等功效。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶(black tea)",
+            "description": "經典紅茶，茶湯琥珀透亮，茶香馥郁，入口清爽回甘，解膩耐喝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷豬皮(Marinated Pig Skin)",
+            "description": "補充天然的膠原蛋白,喜愛很柔軟一點的點就對了,入口即化的口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "品牌故事",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "2026年端午節肉粽 三重蘆州水餃達人 爆漿手工大水餃(加line_ID(bill0937)下單自取)送鮮奶茶或是打手機電話0937146860",
+            "description": "『水餃達人』嚴選每日溫體豬肉，採用北港現榨花生油，同時不斷地注入深深的母愛，透過媽媽的雙手包水餃，讓新鮮食材充分的融合為一體，就像是母親用盡一生心力，一直無怨無悔的付出與呵護，只希望看著小孩平安慢慢長大，找到屬於自己的甜蜜幸福一樣！\n顆顆飽滿真材實料的好味道!不用出門想宅在家也可以輕鬆享用到囉!!用料扎實飽滿的內餡，鮮甜多汁，給你大大的滿足!抗漲必備美食，冰箱隨時儲備，不管正餐消夜都能來一盤水餃快速上桌!",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "干貝豬肉大水餃(Scallop Dumpling)",
+            "description": "6 顆 1 份。\n天然養生、健康美味的手工大水餃、高級食材、無味精、無添加化學香料。(Natural health，healthy and delicious hand dumplings Senioring) 溫體豬肉，麵粉，高湯，花生油，鹽，糖 ，蔥，薑，麵粉，干貝(Leek, warm pork, flour, broth, peanut oil, salt, sugar, onion，Scallop)\n本店「不使用」萊克多巴胺肉品\n豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁豬肉大水餃(Shrimp Dumpling)",
+            "description": "6 顆 1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "初戀之飲",
+            "description": "養樂多加雪碧酸酸甜甜十分可口，就是初戀的味道",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連酸辣湯(Liver Link Hot and Sour Soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "爆漿手工大水餃類(dumplings)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁豬肉大水餃(Shrimp Dumpling)",
+            "description": "6 顆 1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔手工大水餃(Sweet Basil Dumpling)",
+            "description": "6個一份.\n據靈草妙藥記述，九層塔葉具有消炎止痛之效也可治胃痙攣、風濕症或老年人腰酸背痛具行血、益氣，無病可養生，風味絕佳。\n九層塔：這名字由來據傳，是在古時候有一皇帝出巡，適逢洪水被困於一座年久荒廢的九層塔中，在缺乏食物下便摘取塔上屋簷生長的青草充饑，發覺到該植物風味絕佳，便命隨從取種帶回宮中栽種，而將此生長於九層塔上的青草命名為「九層塔」。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米豬肉大水餃(corn Dumpling)",
+            "description": "6 顆 1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌大水餃(Signature dumplings)",
+            "description": "6 顆 1 份。\n天然養生、健康美味的手工大水餃、高級食材、無味精、無添加化學香料。(Natural health，healthy and delicious hand dumplings Senioring) 溫體豬肉，麵粉，高湯，花生油，鹽，糖 ，蔥，薑，麵粉(Leek, warm pork, flour, broth, peanut oil, salt, sugar, onion)\n本店「不使用」萊克多巴胺肉品\n豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜豬肉大水餃(Cabbage Dumpling)",
+            "description": "6 顆 1 份。\n天然養生、健康美味的手工大水餃、高級食材、無味精、無添加化學香料。(Natural health，healthy and delicious hand dumplings Senioring) 溫體豬肉，麵粉，高湯，花生油，鹽，糖 ，蔥，薑，麵粉，高麗菜(Leek, warm pork, flour, broth, peanut oil, salt, sugar, onion，Cabbage)\n本店「不使用」萊克多巴胺肉品\n豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜豬肉大水餃(Leek Pork Dumpling)",
+            "description": "6 顆 1 份。\n天然養生、健康美味的手工大水餃、高級食材、無味精、無添加化學香料。(Natural health，healthy and delicious hand dumplings Senioring) 溫體豬肉，麵粉，高湯，花生油，鹽，糖 ，蔥，薑，麵粉，韭菜(Leek, warm pork, flour, broth, peanut oil, salt, sugar, onion，Chives)\n本店「不使用」萊克多巴胺肉品\n豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "酸辣湯餃類(Dumplings in Soup)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜豬肉酸辣[湯餃](Dumplings in Soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "干貝豬肉[湯餃](Dumplings in Soup)",
+            "description": "天然養生、健康美味的手工大水餃、高級食材、無味精、無添加化學香料。(Natural health，healthy and delicious hand dumplings Senioring) 溫體豬肉，麵粉，高湯，花生油，鹽，糖 ，蔥，薑，麵粉，干貝(Leek, warm pork, flour, broth, peanut oil, salt, sugar, onion，Scallop)\n豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜豬肉酸辣[湯餃](Dumplings in Soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌酸辣[湯餃](Dumplings in Soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料類(Beverages)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶(black tea)",
+            "description": "經典紅茶，茶湯琥珀透亮，茶香馥郁，入口清爽回甘，解膩耐喝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "初戀之飲",
+            "description": "養樂多加雪碧酸酸甜甜十分可口，就是初戀的味道",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶(Fresh milk tea)",
+            "description": "茶湯與鮮奶交融，香醇順口、溫潤不膩，滑順好入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草鮮奶茶(Xiancao Fresh Milk Tea)",
+            "description": "加入清新馥郁的手工仙草凍，增添軟嫩、圓順且綿密的口感(Add fresh and fragrant hand-made grass jelly to add a soft, smooth and creamy taste)\n\n保護心血管：仙草所含膳食纖維為水溶性纖維，可與膽酸結合排除體外，並促使人體將膽固醇轉化為膽酸，降低血中膽固醇濃度。此外，水溶性纖維還能減少腸胃的膽固醇及脂肪吸收量，進而降低血脂、膽固醇，降低罹患心血管疾病的風險。\n(Cardiovascular Protection: The dietary fiber in grass jelly is water-soluble fiber, which can bind with bile acids and be excreted from the body. It also promotes the conversion of cholesterol into bile acids, lowering blood cholesterol levels. Furthermore, water-soluble fiber reduces the absorption of cholesterol and fat in the intestines, thereby lowering blood lipids and cholesterol, and reducing the risk of cardiovascular disease.)\n預防痛風：若飲食含有過高普林，容易使血液中尿酸過高，導致痛風；有研究指出，仙草的萃取物能抑制黃普林氧化酶，抑制尿酸生成，具有預防痛風與相關尿酸併發症的潛在功效。\n保護心血管：仙草所含膳食纖維為水溶性纖維，可與膽酸結合排除體外，並促使人體將膽固醇轉化為膽酸，降低血中膽固醇濃度。此外，水溶性纖維還能減少腸胃的膽固醇及脂肪吸收量，進而降低血脂、膽固醇，降低罹患心血管疾病的風險。\n預防痛風：若飲食含有過高普林，容易使血液中尿酸過高，導致痛風；有研究指出，仙草的萃取物能抑制黃普林氧化酶，抑制尿酸生成，具有預防痛風與相關尿酸併發症的潛在功效。\n促進排便：仙草含有一種稱為「多醣膠質」的膳食纖維並且富含水分，能有效幫助排便，預防腸道疾病與便祕。\n控管熱量：未加糖的仙草所含熱量及糖分極低，且所含水溶性纖維能幫助穩定血糖，適量食用對體重並不會造成負擔，調味部分以代糖取代，也能夠做為糖尿病患者的甜品。\n優秀的抗氧化劑：近年來實驗指出，仙草富含酚酸、黃酮類化合物、熊果酸、齊墩果酸（Oleanolic acid）等三萜類化合物，皆具抗氧化效益，能有效對抗體內自由基，減緩人體老化，並具抗發炎、調節免疫功能、抗癌等功效。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶(Milk tea)",
+            "description": "茶香與奶香交融，口感順滑不膩，一口圓潤、喉間留香的經典奶茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高山茶(無糖)",
+            "description": "台灣在地嚴選香醇甘韻的高山茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "約翰雪碧",
+            "description": "WOW~~真的透心涼，氣泡有如千軍萬馬般的想直奔我喉嚨，我擋都檔不住這班的誘惑\n.不安煩躁的心安靜了下來嘴中淡淡的威士忌香氣也出現了",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養樂多紅茶",
+            "description": "養樂多紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "生鮮(Fresh)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "干貝豬肉水餃(Scallop Dumpling)(一盒/20個)",
+            "description": "天然養生、健康美味的手工大水餃、高級食材、無味精、無添加化學香料。(Natural health，healthy and delicious hand dumplings Senioring) 溫體豬肉，麵粉，高湯，花生油，鹽，糖 ，蔥，薑，麵粉，干貝(Leek, warm pork, flour, broth, peanut oil, salt, sugar, onion，Scallop)\n豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冷凍干貝",
+            "description": "重量:1公斤+-5%\n產地:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "600.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肝連(Liver joint)",
+            "description": "顧名思義就是與豬肝相連的一塊肉(As the name suggests, it is a piece of meat connected to the liver)",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬利(Zhu Li)",
+            "description": "舌頭的「舌」字與做生意「蝕本」的「蝕」字同音，不吉利，為商人忌諱，在兩廣地區，豬舌叫豬利。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溏心蛋",
+            "description": "冰火山營養美味溏心蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜(花椰菜)依當季時菜為主",
+            "description": "青菜(花椰菜)依當季時菜為主",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞塊",
+            "description": "6個雞塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大份雞塊",
+            "description": "12個雞塊",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "酸辣湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味酸辣湯(Hot and sour soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肝連酸辣湯(Liver Link Hot and Sour Soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌餛飩酸辣湯(Dumplings in Soup)",
+            "description": "6個餛飩一份",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉酸辣湯(Lamb Hot and Sour Soup)",
+            "description": "功效\n\n暖中驅寒，溫補氣血\n\n羊肉\n\n溫中健脾\n\n益氣補虛\n\n羊肉味甘，性溫，入脾、腎經，能夠溫中健脾，益氣，養血，補虛。《日用本草》：治腰膝羸弱，壯筋骨，厚腸胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣湯(Hot and sour soup)",
+            "description": "豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷魚酸辣湯",
+            "description": "魷魚酸辣湯",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚丸酸辣湯",
+            "description": "鱈魚丸酸辣湯(10個)",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒鐵板麵",
+            "description": "黑胡椒鐵板麵",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇鐵板麵",
+            "description": "蘑菇鐵板麵",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義大利麵",
+            "description": "經典番茄肉醬義大利麵，絞肉與彩椒、洋蔥丁入味，醬香裹麵順口，迷迭香點綴更添香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "照燒肉醬麵",
+            "description": "日式照燒風味肉醬拌麵，麵條吸附醬汁，鹹甜交織、醬香濃郁，一口接一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國肉醬麵",
+            "description": "韓式肉醬拌麵，濃郁醬香裹住麵條，佐泡菜、青豆莢與小黃瓜絲點綴，口感層次更豐富",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油培根白醬麵",
+            "description": "奶香濃郁的白醬拌Q彈義大利麵，加入培根片與玉米粒，口感滑順、鹹香不膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣湯(Hot and sour soup)+((麵))",
+            "description": "酸辣湯(Hot and sour soup)+麵",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麵",
+            "description": "ㄧ份麵",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "滷味",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滷豬皮(Marinated Pig Skin)",
+            "description": "補充天然的膠原蛋白,喜愛很柔軟一點的點就對了,入口即化的口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷豆干",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷甜不辣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷海帶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷味綜合盤",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

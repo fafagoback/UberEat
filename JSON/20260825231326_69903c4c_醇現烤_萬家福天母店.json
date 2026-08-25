@@ -1,0 +1,202 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%86%87%E7%8F%BE%E7%83%A4-%E8%90%AC%E5%AE%B6%E7%A6%8F%E5%A4%A9%E6%AF%8D%E5%BA%97/2l5rfj_YW6Sq-U8YynWEbQ",
+  "name": "醇現烤 萬家福天母店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區德行西路47號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1053498,
+    "longitude": 121.5225084
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 14
+  },
+  "servesCuisine": [
+    "Desserts"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "醇現烤系列-大大的",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醇現烤原味蛋糕(大大的)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醇現烤巧克力蛋糕(大大的)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醇現烤起司蛋糕(大大的)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "243.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "菠蘿系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "菠蘿巧克力蛋糕（剛剛好）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "216.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菠蘿奶酥蛋糕（剛剛好）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "216.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菠蘿起司奶酥蛋糕（大大的）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "346.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菠蘿蛋塔（4入）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "211.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "醇乳酪系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "北海道醇乳酪",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "雙醇乳酪系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味雙醇乳酪蛋糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "389.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力雙醇乳酪蛋糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "389.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶雙醇乳酪蛋糕",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "389.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "醇現烤系列-剛剛好",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醇現烤原味蛋糕（剛剛好））",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醇現烤起司蛋糕（剛剛好））",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "162.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醇現烤巧克力蛋糕（剛剛好））",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

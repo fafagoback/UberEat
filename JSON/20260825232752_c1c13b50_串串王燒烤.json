@@ -1,0 +1,414 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%B8%B2%E4%B8%B2%E7%8E%8B%E7%87%92%E7%83%A4/EItYZGA0XjazYJHF75wUKw",
+  "name": "串串王燒烤",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市淡水區民生路113巷1弄62號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.138641,
+    "longitude": 121.4619921
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 3.8,
+    "reviewCount": 32
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Traditional",
+    "Japanese Skewer food",
+    "Yakitori",
+    "Fast Food"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "注意事項📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "口味調整",
+            "description": "口味可客製，請於下單備註：鹽度與胡椒可增減，可做清淡、正常或重口味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點（以及口味），請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "感謝支持！若您滿意餐點，歡迎於平台給予五星評價並分享感想；如有建議或問題，請透過訊息或訂單備註告知，我們將盡速處理，您的回饋是我們進步的動力。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣串",
+            "description": "經典日式甜不辣串，搭配豐富醬料，口感鮮美，適合任何時刻享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蔥雞腿肉串",
+            "description": "香蔥雞腿肉串，鮮嫩多汁，搭配香蔥，帶來獨特風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湃烤鮮蝦",
+            "description": "烤鮮蝦，鐵板上烤製，鮮嫩多汁，帶來獨特的海鮮風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "老闆心情好💫",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "老闆隨便烤",
+            "description": "隨機肉串 4 個及點心或蔬菜 2 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老闆澎湃烤",
+            "description": "隨機肉串 7 個及點心或蔬菜 3 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "肉串類⭐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香蔥雞腿肉串",
+            "description": "香蔥雞腿肉串，鮮嫩多汁，搭配香蔥，帶來獨特風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味香腸",
+            "description": "古早味香腸成串上桌，口感緊實彈Q，肉香濃郁、鹹香耐吃，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆漿雞腿卷",
+            "description": "雞腿肉捲成串，口感嫩彈多汁，一口爆漿的滿足感，愛吃肉的您不容錯過。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金豬五花",
+            "description": "豬五花烤至金黃，油脂香氣十足，口感軟嫩，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮嫩牛肉串",
+            "description": "牛肉切塊串成，口感嫩滑帶嚼勁，牛香濃郁，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿軟骨肉串",
+            "description": "雞腿軟骨與腿肉交錯串成，脆彈帶勁與嫩口相襯，越嚼越香，口感層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥七里香串",
+            "description": "七里香（雞屁股）串，外皮香酥，油脂香氣四溢，口感外酥內嫩、鹹香耐吃，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金雞皮串",
+            "description": "金黃酥脆雞皮串，脆口不膩，油香滿溢，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豪大雞心串",
+            "description": "豪大雞心串，口感脆彈，烤香迷人，份量十足，越嚼越香",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澳洲羔羊串",
+            "description": "澳洲羔羊切塊串成，肉質細嫩、羊香溫潤，口感多汁，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "孜然肉串類🌟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "新疆牛肉串",
+            "description": "以孜然提味的牛肉串，孜然香氣濃郁，肉香飽滿，口感紮實帶勁，展現新疆風味，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新疆香蔥雞腿肉串",
+            "description": "雞腿肉鮮嫩多汁，搭配香蔥與孜然，香氣濃郁，展現新疆風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新疆雞腿軟骨肉串",
+            "description": "雞腿軟骨與腿肉交錯串成，孜然香氣濃郁，脆彈與嫩口並存，展現新疆風味，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新疆七里香串",
+            "description": "雞尾七里香串，撒上孜然提味，油脂香濃，烤至焦香微脆，入口滑嫩，越嚼越香，展現新疆風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新疆雞皮串",
+            "description": "雞皮串烤至金黃酥脆，搭配孜然提味，油香脆口不膩，展現新疆風味，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新疆豬五花",
+            "description": "厚切豬五花肉串，撒上孜然增添香氣，油花豐潤、入口嫩滑，展現新疆風味的濃郁層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新疆雞心串",
+            "description": "新疆風味雞心串，孜然香氣濃郁，口感彈嫩，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新疆羔羊串",
+            "description": "羔羊肉串，孜然提香，口感嫩彈，羊香純正，展現新疆風味的濃郁層次，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "點心類☄️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣串",
+            "description": "經典日式甜不辣串，搭配豐富醬料，口感鮮美，適合任何時刻享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五香豆干串",
+            "description": "以五香調味的豆干串，豆香濃郁，口感緊實，鹹香入味，越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕串",
+            "description": "口感Q彈紮實，米香濃郁，越嚼越香，適合作為輕食點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯米腸串",
+            "description": "米香飽滿的糯米腸串，口感Q彈紮實，越嚼越香，適合解饞小點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥脆豆皮串",
+            "description": "豆皮串口感酥脆，層次分明，帶淡淡豆香，清爽耐吃，適合當作輕食點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特殊類☘️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鄉村班甲",
+            "description": "獨家創意小點，香氣濃郁，口感層次分明，越嚼越香，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "孜然羊肩排",
+            "description": "以孜然提味的羊肩排，香氣濃郁，肉質厚實帶嚼勁，適合喜愛香料風味的您。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鐵板類🥘",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "澎湃烤鮮蝦",
+            "description": "烤鮮蝦，鐵板上烤製，鮮嫩多汁，帶來獨特的海鮮風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

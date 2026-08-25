@@ -1,0 +1,230 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%99%B3%E7%92%81%E8%A8%98%E9%8A%85%E9%91%BC%E7%81%A3%E7%89%9B%E9%9B%9C-%E6%99%B4%E5%85%89%E5%BA%97/rgojGQSVVlKbTIp0ivNf7g",
+  "name": "陳璁記銅鑼灣牛雜 晴光店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "臺北市中山區雙城街12號 Taipei, 中山區 10491",
+    "addressLocality": "臺北市中山",
+    "addressRegion": "",
+    "postalCode": "10491",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.064802119364867,
+    "longitude": 121.52431374019844
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 35
+  },
+  "servesCuisine": [
+    "Cantonese",
+    "Beef Noodles",
+    "Dim Sum"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肚雙拼套餐  皺肚X草肚",
+            "description": "牛肚營養豐富且屬於高蛋白、低脂肪、低熱量的健康食材，非常適合作為增肌減脂或病後滋補的食物。並富含蛋白質、鐵、鋅、鈣及維生素 B 群等營養素，有助於補氣養血、強健脾胃。\n\n台灣獨創・港式牛雜！\n裡面有麵+牛肉丸+香菇+蘿蔔\n配上五小時慢火熬煮濃郁高湯 。\n一碗下去，暖到心裡",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "當日青菜",
+            "description": "來點青菜均衡一下🥬",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔湯",
+            "description": "嚴選白蘿蔔慢火燉煮，清甜入味、軟嫩多汁，暖心又暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "經典首選,簡單卻最對味.",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉丸(兩顆)",
+            "description": "嚴選牛肉製成,口感紮實彈牙",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Offers",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔湯",
+            "description": "嚴選白蘿蔔慢火燉煮，清甜入味、軟嫩多汁，暖心又暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "當日青菜",
+            "description": "來點青菜均衡一下🥬",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "品牌故事📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "陳聰記｜台灣獨創 港式牛雜",
+            "description": "一碗牛雜，不只是牛雜。\n\n我們嚴選 多種牛肚,搭配牛肉、牛筋等部位 配上 白蘿蔔與香菇，\n每日慢火熬煮，讓湯頭濃郁卻不油膩。\n\n每一口都吃得到不同層次的口感，\n希望讓第一次吃牛雜的人，也能愛上牛雜。\n\n真材實料、現點現裝，每一碗都是我們的堅持。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "每日新鮮備料，各部位限量供應。牛雜富含蛋白質、鐵及維生素B12，適合增減脂、長輩，牙口不好好入口。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好評送優惠！ 若您滿意收到的餐點, 請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定唷！",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點專區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉丸(兩顆)",
+            "description": "嚴選牛肉製成,口感紮實彈牙",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "當日青菜",
+            "description": "來點青菜均衡一下🥬",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "寬冬粉",
+            "description": "滑順Q彈\n吸附濃郁高湯精華!",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "經典首選,簡單卻最對味.",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔湯",
+            "description": "嚴選白蘿蔔慢火燉煮，清甜入味、軟嫩多汁，暖心又暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肚雙拼套餐  皺肚X草肚",
+            "description": "牛肚營養豐富且屬於高蛋白、低脂肪、低熱量的健康食材，非常適合作為增肌減脂或病後滋補的食物。並富含蛋白質、鐵、鋅、鈣及維生素 B 群等營養素，有助於補氣養血、強健脾胃。\n\n台灣獨創・港式牛雜！\n裡面有麵+牛肉丸+香菇+蘿蔔\n配上五小時慢火熬煮濃郁高湯 。\n一碗下去，暖到心裡",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%9E%97%E8%A8%98%E6%B5%B7%E9%AE%AE%E9%BA%B5%E9%A3%9F%E6%96%99%E7%90%86/4fxTp1FeUH2xknFozfvnKg",
+  "name": "林記海鮮麵食料理",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Neihu Road Section 1 239",
+    "addressLocality": "Neihu District",
+    "addressRegion": "Taipei City",
+    "postalCode": "114",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0826718,
+    "longitude": 121.5654173
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 220
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚皮烏龍麵",
+            "description": "Q彈烏龍麵配上虱目魚皮，清湯佐蔥花；魚皮軟Q帶膠質，麵條滑順好入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "台灣人口味便當",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酥炸雞腿便當",
+            "description": "四菜一主菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "烏龍麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚肉烏龍麵",
+            "description": "麵條Q彈，虱目魚肉細嫩，鮮香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸品類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸排骨",
+            "description": "金黃酥脆的炸排骨，外酥內嫩、肉香十足，咬下滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香煎魚品類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "煎挪威鯖魚",
+            "description": "香煎挪威鯖魚，表皮金黃微酥，肉質細嫩、油脂豐厚，魚香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "滷品小菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白菜滷",
+            "description": "以白菜為主的台式家常小菜，滷至軟嫩入味，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷筍絲",
+            "description": "細切竹筍滷製，保留脆口，鹹香開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

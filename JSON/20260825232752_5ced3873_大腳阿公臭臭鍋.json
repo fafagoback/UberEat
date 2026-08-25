@@ -1,0 +1,257 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A4%A7%E8%85%B3%E9%98%BF%E5%85%AC%E8%87%AD%E8%87%AD%E9%8D%8B/I3_qgm3fQjWrm9UqfFyy6w",
+  "name": "大腳阿公臭臭鍋",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區裕民一路40巷7號1樓",
+    "addressLocality": "Taipei",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1163306,
+    "longitude": 121.5179005
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 2000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Hot Pot"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大腸臭臭鍋 Intestine Stinky Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮豆腐鍋 Seafood and Tofu Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中國麻辣鍋 Chinese Hot and Spicy Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "跑山羊肉鍋 Lamb Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜鍋 Korean Kimchi Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鍋類 Pot",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "味噌鮮魚鍋 Miso Fish Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式部隊鍋 Korean Budae Jjigae",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素食臭臭鍋 Vegetarian Stinky Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貴妃鮮魚鍋 Fish Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式壽喜燒鍋 Japanese Sukiyaki Pot",
+            "description": "日式醬香湯底，濃郁順口的經典壽喜燒鍋",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣鍋 Thai Sour and Spicy Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩香香鍋 Curry Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙波素食鍋 Vegetarian Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜年糕鍋 Kimchi and Rice Cake Pot",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "砂鍋麵 Casserole Pot with Noodles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮砂鍋麵 Seafood Casserole Pot with Noodles",
+            "description": "海味豐富的砂鍋湯麵，海鮮與麵條一鍋上桌，湯香暖口、麵條吸湯順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌砂鍋麵 Miso Casserole Pot with Noodles",
+            "description": "濃郁味噌湯底，砂鍋熱煮，麵條彈牙，湯香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜砂鍋麵 Kimchi Casserole Pot with Noodles",
+            "description": "泡菜風味湯頭搭配麵條，砂鍋熱騰騰上桌，酸香開胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩砂鍋麵 Curry Casserole Pot with Noodles",
+            "description": "香濃咖哩湯頭搭配麵條，濃郁順口的砂鍋麵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鴨血臭豆腐 Braised Duck Blood Jelly and Stinky Tofu",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅燒鴨血臭豆腐 Braised Duck Blood Jelly and Stinky Tofu",
+            "description": "紅燒湯底，鴨血滑嫩、臭豆腐入味，醬香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒臭豆腐 Braised Stinky Tofu",
+            "description": "紅燒滷汁入味的臭豆腐，豆香與發酵香交織，口感柔嫩、醬香厚實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

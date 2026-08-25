@@ -1,0 +1,1268 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/99%E6%BC%A2%E5%A0%A1%E6%97%A9%E5%8D%88%E9%A4%90-%7C%E6%8A%93%E9%A4%85%7C%E9%90%B5%E6%9D%BF%E9%BA%B5/PLMm0VEfUhiRHDNXTAyaAw",
+  "name": "99漢堡早午餐 |抓餅|鐵板麵",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區永平街80巷39號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0914362,
+    "longitude": 121.5063181
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 100
+  },
+  "servesCuisine": [
+    "Breakfast and Brunch"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "全品項滿百送大杯紅茶/不適用買一送一活動",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "厚切鮮嫩雞漢堡",
+            "description": "厚切鮮嫩雞漢堡🍔：外酥內嫩的厚切雞肉與香軟麵包，每一口都是雞肉的多汁與麵包的鬆軟完美結合，濃郁又飽滿的美味享受！",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鐵板麵豬排蛋",
+            "description": "鐵板麵豬排蛋🍳🍖🍜：嫩滑多汁的豬排搭配香氣四溢的鐵板麵，再加上煎得恰到好處的蛋，每一口都是豐富的口感層次，香濃鹹香，讓你享受滿滿的經典美味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根起司蔥抓餅",
+            "description": "培根起司蔥抓餅🥓🧀：酥脆的蔥抓餅包裹著香鹹的培根與濃郁的起司，外層金黃酥脆，內裡香濃拉絲，每一口都是鹹香與奶香的絕妙融合！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三星蔥仔餅",
+            "description": "5 粒。外皮酥脆的三星蔥仔餅，內餡滿滿的鮮甜三星蔥，每一口都能感受到蔥的濃郁香氣與餅皮的酥脆口感，是讓人難以忘懷的經典美味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤火腿可頌",
+            "description": "烤火腿可頌🥐🍖：酥脆的可頌包裹著鹹香的烤火腿，外層金黃酥脆，內裡鬆軟鮮嫩，每一口都是可頌的層次感與火腿的鹹香完美結合，讓你享受美味滿足的早午餐選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "吐司系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤煎蛋吐司",
+            "description": "金黃酥香的烤吐司夾入煎蛋，外酥內軟，蛋香濃郁，簡單耐吃的經典選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤火腿吐司",
+            "description": "金黃烤至微脆的吐司，夾入鹹香火腿，外酥內軟，一口滿足經典的早午餐風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤鮪魚吐司",
+            "description": "金黃烤吐司夾鮪魚餡，外脆內軟、鹹香不膩，簡單卻滿足的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤培根吐司",
+            "description": "金黃酥香的烤吐司夾入培根，外酥內軟，鹹香滿溢，經典而耐吃的選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤豬排吐司",
+            "description": "金黃烤吐司夾入烤豬排，外酥內軟、肉香濃郁，鹹香不膩，簡單卻滿足的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤總匯三明治",
+            "description": "含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤起司吐司",
+            "description": "香烤吐司夾入濃郁起司，外層金黃酥脆、內裡鬆軟，咬下滿滿奶香與牽絲口感，簡單經典的鹹香美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤肉鬆吐司",
+            "description": "吐司烤至金黃微酥，鋪上香鹹肉鬆，外酥內軟，簡單經典的鹹香口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蛋餅系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋餅",
+            "description": "餅皮Q彈，蛋香滑順，口感簡單純粹，耐吃不膩的經典原味蛋餅。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油蛋餅",
+            "description": "餅皮Q彈微酥，夾入奶油，蛋香與奶香交織，口感滑順不膩，簡單卻耐吃的經典蛋餅。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋餅",
+            "description": "經典台式蛋餅，包入鹹香火腿與滑嫩蛋，餅皮Q彈帶嚼勁，簡單耐吃的人氣選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米蛋餅",
+            "description": "飽滿玉米粒均勻拌入蛋層，咬下帶顆粒口感與濃郁蛋香，簡單好吃的經典蛋餅。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蛋餅",
+            "description": "經典台式蛋餅夾入香濃起司，餅皮微酥、內裡柔軟，蛋香與奶香交織，熱騰騰一口咬下滿滿牽絲與鹹香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海苔蛋餅",
+            "description": "海苔與蛋香完美結合，餅皮Q彈帶微酥，入口海味鹹香不膩，簡單卻耐吃的一款經典蛋餅。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗蛋餅",
+            "description": "餅皮Q彈的蛋餅包入熱狗切片，蛋香與肉香交織，口感飽滿、鹹香順口，簡單卻耐吃的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋餅",
+            "description": "鹹香培根配上滑嫩蛋，包裹在軟Q餅皮中，口感層次分明，經典又耐吃的蛋餅選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋餅",
+            "description": "餅皮Q彈微酥，夾入綿密鮪魚餡，蛋香與鮮香交織，鹹香不膩，簡單卻耐吃的經典蛋餅。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋餅",
+            "description": "肉鬆鋪滿於蛋餅中，蛋香與肉鬆香相融，口感柔軟、鹹香順口，經典台式風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "漢堡肉蛋餅",
+            "description": "蛋香餅皮夾入漢堡肉，鹹香飽滿；一口咬下，扎實口感與肉香同步釋放。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排蛋餅",
+            "description": "香軟帶Q的蛋餅包入豬排，肉香與蛋香交融，口感層次豐富，飽足感十足的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "烤醬吐司系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "草莓烤吐司",
+            "description": "吐司烤至金黃微酥，抹上草莓醬，外酥內軟、果香滿滿，簡單順口的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油烤吐司",
+            "description": "金黃酥香的烤吐司，塗上奶油，外酥內軟、奶香迷人，簡單經典的美味選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煉乳烤吐司",
+            "description": "吐司烤至金黃微酥，淋上香濃煉乳，口感輕脆鬆軟、奶香迷人，簡單卻讓人回味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生烤吐司",
+            "description": "吐司烤至金黃酥香，抹上綿滑花生醬，外酥內軟、花生香氣滿滿，簡單卻耐吃的經典風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰香烤吐司",
+            "description": "金黃烤吐司抹上濃郁椰香醬，外脆內軟，入口香氣滿滿，簡單卻耐吃的經典風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力烤吐司",
+            "description": "香烤吐司抹上滑順巧克力醬，外酥內軟，散發濃郁可可香，每一口都簡單滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙抹醬烤吐司",
+            "description": "香烤吐司抹上金沙風味抹醬，外酥內軟、鹹香濃郁，每一口都帶著滑順醬香，簡單卻耐吃的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "烤厚片吐司系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "草莓厚片",
+            "description": "厚片吐司烤至金黃，均勻塗上草莓醬，外脆內軟、果香滿滿，簡單順口的點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生厚片",
+            "description": "厚切吐司抹上香濃花生醬，現烤至邊緣微酥、內裡鬆軟，每一口都是花生香氣與厚片口感的滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥厚片",
+            "description": "厚切吐司抹上香濃奶酥，烤至金黃，外酥內軟、奶香滿溢，簡單卻滿足的經典厚片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油厚片",
+            "description": "烤至金黃的厚切吐司抹上奶油，外酥內鬆軟，奶香濃郁，簡單經典的早午餐選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煉乳厚片",
+            "description": "厚片吐司烤至金黃微酥，淋上香濃煉乳，外酥內軟、奶香滿溢，簡單卻讓人回味的經典點心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰香厚片",
+            "description": "金黃烤至微酥的厚片吐司，塗上椰香抹醬，外脆內軟，香氣滿滿，簡單卻耐吃的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力厚片",
+            "description": "厚片吐司烤至金黃微酥，抹上香濃巧克力醬，外層微脆、內裡鬆軟，每一口都是巧克力的濃醇與吐司的蓬鬆口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙抹醬厚片",
+            "description": "厚片吐司烤至金黃，抹上金沙風味抹醬，外酥內軟、鹹香濃郁，每一口都滑順滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓及煉乳厚片",
+            "description": "厚片吐司烤至金黃微酥，塗上草莓醬並淋上煉乳，外酥內軟，果香與奶香交織，簡單卻耐吃的甜點風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "漢堡系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "漢堡",
+            "description": "鬆軟漢堡麵包夾上肉排，每一口都是樸實飽足的經典滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚漢堡",
+            "description": "鬆軟漢堡麵包夾入鮪魚餡，口感飽滿、鹹香順口，簡單卻耐吃的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根漢堡",
+            "description": "鬆軟漢堡麵包夾入培根，口感飽滿、鹹香順口，簡單卻耐吃的經典風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞漢堡",
+            "description": "香嫩雞肉排夾入鬆軟漢堡麵包，口感飽滿，簡單耐吃的經典選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排漢堡",
+            "description": "厚實豬排搭配鬆軟漢堡麵包，鹹香滿足的經典組合，一口咬下飽足有感！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞肉絲漢堡",
+            "description": "燻香雞肉絲夾於香軟麵包，口感纖細、鹹香順口，每一口都是燻香與麵包的絕妙結合，簡單卻耐吃的經典漢堡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚漢堡",
+            "description": "漢堡麵包夾鱈魚排，魚肉細緻鮮美，清爽順口，簡單卻耐吃的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡啦鷄腿漢堡",
+            "description": "使用無油炸方式氣炸鍋製作，餐點所需的製作時間為25分鐘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "馬芬系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬排馬芬",
+            "description": "鬆軟馬芬夾入豬排，口感飽滿、鹹香順口，簡單卻耐吃的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋馬芬",
+            "description": "經典馬芬麵包，口感鬆軟帶嚼勁，圓潤紮實，適合全天享用的輕食選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚馬芬",
+            "description": "鬆軟馬芬夾入鮪魚餡，口感飽滿，鹹香順口，簡單卻耐吃的經典早午餐選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根馬芬",
+            "description": "英式馬芬夾入香鹹培根，麵包鬆軟、口感飽滿，經典鹹香組合，簡單卻耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香雞馬芬",
+            "description": "鬆軟馬芬夾入香雞肉排，口感飽滿，鹹香順口，經典耐吃的早午餐選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞肉絲馬芬",
+            "description": "鬆軟馬芬夾入燻香雞肉絲，鹹香順口，經典簡單的好味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚馬芬",
+            "description": "香軟馬芬堡夾鱈魚排，魚肉細緻鮮美，每一口都清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切鮮嫩雞馬芬",
+            "description": "鬆軟馬芬夾入厚切雞肉，口感飽滿、嫩口帶咬勁，每一口都是麵包香氣與雞肉的扎實滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "卡啦雞腿馬芬",
+            "description": "使用無油炸方式氣炸鍋製作，餐點所需的製作時間為25分鐘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "抓餅系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "九層塔抓餅",
+            "description": "層次分明的抓餅融入九層塔香氣，外層微酥、內裡Q韌，每一口都帶著清新的塔香與麵香，簡單卻耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥抓餅",
+            "description": "外層金黃酥脆，內裡柔軟多層次，滿滿蔥香的蔥抓餅，每一口都香氣四溢、越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥肉餅",
+            "description": "層次分明的餅皮帶蔥香，結合鹹香肉味，外酥內軟，越咬越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "地瓜餅",
+            "description": "酥香抓餅包入綿密地瓜餡，外層金黃微酥、內裡自然甘甜，簡單卻耐吃的經典口味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "披薩系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "總匯披薩",
+            "description": "綜合風味披薩，起司香濃，鋪上玉米、青豆、胡蘿蔔丁與肉丁，口感豐富，每口都吃得到滿滿配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "夏威夷披薩",
+            "description": "鳳梨與火腿鋪滿，起司香濃牽絲，點綴玉米增添口感，金黃微脆、料足滿滿的經典夏威夷披薩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "法式吐司系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "法式吐司",
+            "description": "吐司浸蛋液香煎至金黃，外層微酥、內裡鬆軟，蛋香與麵香交織，簡單卻耐吃的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根法式吐司",
+            "description": "金黃鬆軟的法式吐司夾上培根，外酥內軟、鹹香滿溢，每一口都是蛋香與培根的絕妙平衡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排法式吐司",
+            "description": "外層金黃、內裡鬆軟的法式吐司夾入豬排，蛋香與肉香交織，鹹香飽足的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚法式吐司",
+            "description": "金黃香煎的法式吐司夾入鮪魚餡，外層金黃、口感鬆軟，蛋香與鹹香交融，輕鬆滿足一餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生法式吐司",
+            "description": "吐司浸蛋液煎至金黃，抹上濃郁花生醬，外香內軟，花生香氣滿滿",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆法式吐司",
+            "description": "蛋香柔軟的法式吐司，搭配蓬鬆肉鬆，外層金黃、內裡鬆軟，每一口都是濃郁麵香與鹹香肉鬆的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓法式吐司",
+            "description": "鬆軟的法式吐司搭配草莓，外層金黃、內裡柔軟，每一口都是麵香與草莓果香的交織，清爽滿足的全天候美味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煉乳法式吐司",
+            "description": "金黃鬆軟的法式吐司，淋上香濃煉乳，蛋香與奶香交織，外香內軟，簡單卻讓人回味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "乳酪吐司",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚乳酪吐司",
+            "description": "吐司夾鮪魚餡與乳酪，鹹香濃郁，口感飽滿，一口咬下奶香與鮪魚香交織，簡單卻耐吃的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生乳酪吐司",
+            "description": "吐司夾上花生醬與乳酪，堅果香與奶香交融，濃郁順口的經典組合，一口滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乳酪吐司",
+            "description": "濃郁乳酪夾心吐司，溫熱拉絲、奶香鹹香恰到好處，簡單卻耐吃的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根乳酪吐司",
+            "description": "吐司夾入培根與乳酪，鹹香與奶香相互交融，每一口都是經典的濃郁口感，輕鬆滿足早午餐的美味選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排乳酪吐司",
+            "description": "厚實豬排搭配濃郁乳酪，夾入鬆軟吐司，鹹香順口、口感飽滿，一口咬下超滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆乳酪吐司",
+            "description": "鬆軟吐司夾入肉鬆與濃郁乳酪，鹹香交織、口感蓬鬆，簡單卻滿足的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓乳酪吐司",
+            "description": "金黃烤吐司夾入乳酪與草莓，外酥內軟、奶香與果香交織，簡單卻滿足的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煉乳乳酪吐司",
+            "description": "吐司上鋪乳酪，淋上香甜煉乳，奶香滿溢，一口滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "中式及西式餐點系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "煎餃",
+            "description": "8 粒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕",
+            "description": "2 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅龍麥克雞塊",
+            "description": "5 個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗",
+            "description": "3 條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅",
+            "description": "2 片。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "可頌系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤培根可頌",
+            "description": "酥香可頌夾入鹹香烤培根與滑嫩炒蛋，外酥內軟、層次豐富，一口滿足早午餐的美味需求。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤煎蛋可頌",
+            "description": "可頌烤至金黃酥香，夾入煎蛋，外酥內軟、蛋香濃郁，簡單卻耐吃的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤鮪魚可頌",
+            "description": "可頌烤至金黃酥香，夾入紮實鮪魚餡，外酥內軟、鹹香滿口，簡單卻耐吃的早午餐好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤豬排可頌",
+            "description": "酥香可頌夾入烤豬排，外層金黃酥脆、內裡鬆軟，咬下先是可頌的層次，接著是豬排的厚實鹹香，簡單卻滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤燻雞肉絲可頌",
+            "description": "外酥內軟的可頌夾入烤燻雞肉絲，煙燻鹹香、層次豐富，口口滿足的早午餐好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤厚切鮮嫩雞可頌",
+            "description": "香酥可頌夾入烤製厚切雞肉，外層金黃酥脆、內裡鬆軟，雞肉鮮嫩厚實，每一口都滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤卡拉雞腿可頌",
+            "description": "使用無油炸方式氣炸鍋製作，餐點所需的製作時間為25分鐘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "西式燒餅系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤燻雞肉絲西式煎餅",
+            "description": "芝麻香酥餅皮夾入烤燻雞肉絲與爽脆生菜，外層金黃微酥、口感清爽不油膩，簡單卻滿足的早午餐選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤煎蛋西式燒餅",
+            "description": "西式燒餅烤至金黃微酥，夾入煎蛋，外酥內軟、蛋香濃郁，簡單卻耐吃的經典選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤火腿西式煎餅",
+            "description": "金黃香煎的西式煎餅夾入烤火腿，外層微酥、內裡柔軟，鹹香順口，簡單卻耐吃的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤培根西式煎餅",
+            "description": "烤培根的鹹香結合鬆軟西式煎餅，一口咬下麵香與肉香交疊，簡單卻滿足的經典鹹口選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤鮪魚西式煎餅",
+            "description": "外層金黃微酥、內裡鬆軟的餅皮，夾入烤鮪魚餡，鹹香順口，簡單卻耐吃的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤豬排西式煎餅",
+            "description": "金黃微酥的西式煎餅夾入烤豬排，外層微酥、內裡柔軟，咬下先是餅香，接著是豬排的厚實鹹香，簡單卻飽足的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤厚切鮮嫩雞西式煎餅",
+            "description": "外層金黃微酥、內裡柔軟的西式煎餅，搭配烤厚切雞肉，鮮嫩厚實，鹹香滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤卡啦雞腿西式煎餅",
+            "description": "使用無油炸方式氣炸鍋製作，餐點所需的製作時間為25分鐘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鐵板意大利麵及炒麵系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉醬意大利麵",
+            "description": "鐵板麵條Q彈，裹上濃郁肉醬，鹹香順口，熱騰騰上桌，飽足感十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中式宮保雞丁炒麵",
+            "description": "宮保風味雞丁與麵條拌炒，醬香緊裹每一口，雞丁嫩口、麵條Q彈，鹹香有層次，適合想要來份夠味炒麵的你。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中式三杯雞丁炒麵",
+            "description": "台式三杯風味醬香入麵，雞丁鮮嫩多汁，麵條Q彈有嚼勁，鹹香濃郁，一口接一口的滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "經典紅茶，茶香醇厚，口感清爽順口，解渴耐喝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶",
+            "description": "茶香與奶香平衡交融，口感滑順、香醇耐喝的經典飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特調奶茶",
+            "description": "特調比例的奶茶，茶香與奶香恰到好處，口感順滑不膩，香醇耐喝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特調咖啡",
+            "description": "特調比例的咖啡，香氣均衡、口感順滑，香醇耐喝的經典飲品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養樂多鮮奶茶",
+            "description": "養樂多與鮮奶調和的乳酸風味飲品，奶香溫潤、口感順滑，清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑咖啡",
+            "description": "純黑咖啡，無糖無奶，保留咖啡原香，口感順口，早晨提神的簡單選擇！",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無糖豆漿",
+            "description": "無加糖豆漿，保留純粹豆香，口感滑順不膩，清爽不甜，喜歡原味的好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薏仁燕麥",
+            "description": "中杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑芝麻燕麥",
+            "description": "中杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁漿",
+            "description": "中杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美祿",
+            "description": "中杯。鋁箔裝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

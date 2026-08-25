@@ -1,0 +1,172 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%94%98%E5%96%AE%E3%84%9F%E5%8F%B0%E7%81%A3%E5%91%B3-%E5%86%B0%E6%B2%99%E5%B0%88%E8%B3%A3/BC78CKpUUP2Yxlh1G-dKrA",
+  "name": "甘單ㄟ台灣味 冰沙專賣",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區自強路五段30號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0807569,
+    "longitude": 121.4929563
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 16
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Juice and Smoothies",
+    "Ice Cream and Frozen Yogurt"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🔥人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑金紅茶",
+            "description": "濃郁黑金紅茶，帶來獨特風味，讓您享受台灣味的魅力。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑金紅茶鮮奶",
+            "description": "紅茶與鮮奶的完美結合，帶來濃郁香氣與絲滑口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆冰沙",
+            "description": "清涼綠豆冰沙，帶來天然豆香與清爽口感，完美消暑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆冰沙牛奶",
+            "description": "清涼綠豆冰沙牛奶，融合綠豆的天然甜味，帶來清爽的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生冰沙牛奶",
+            "description": "花生冰沙牛奶，香濃花生與冰沙牛奶的完美結合，帶來清涼的口感享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "👍單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑金紅茶",
+            "description": "濃郁黑金紅茶，帶來獨特風味，讓您享受台灣味的魅力。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑金紅茶鮮奶",
+            "description": "紅茶與鮮奶的完美結合，帶來濃郁香氣與絲滑口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆冰沙",
+            "description": "清涼綠豆冰沙，帶來天然豆香與清爽口感，完美消暑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆冰沙牛奶",
+            "description": "清涼綠豆冰沙牛奶，融合綠豆的天然甜味，帶來清爽的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生冰沙",
+            "description": "濃郁花生香氣，帶來綿密清爽的冰沙口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生冰沙牛奶",
+            "description": "花生冰沙牛奶，香濃花生與冰沙牛奶的完美結合，帶來清涼的口感享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

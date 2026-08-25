@@ -1,0 +1,651 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A4%A7%E6%A8%B9%E8%97%A5%E5%B1%80-%E5%A3%AB%E6%9E%97%E5%A4%A9%E6%AF%8D%E5%BA%97/y9DzXqfPUVq49g-DjQhIGQ",
+  "name": "大樹藥局 士林天母店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區天母西路26號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1184212,
+    "longitude": 121.5268125
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 140
+  },
+  "servesCuisine": [
+    "Personal Care",
+    "Pharmacy",
+    "Baby",
+    "Retail",
+    "Beauty Supply",
+    "Hardware"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "炫父心意馬上點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Sunlife 森萊富 維他命C1000發泡錠 - 檸檬口味 (20 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝初 8倍細高鈣黑芝麻粉 (380 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Redoxon 力度伸 維他命C+D+鋅發泡錠 - 柳橙口味 (15 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "349.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Sentosa三多 好入睡植物性膠囊 (30 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "495.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Sunlife 森萊富 鋅+C+E發泡錠 - 水蜜桃口味 (20 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "178.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "森萊富 維他命C發泡錠 - 檸檬口味 (20 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Sentosa三多 維他命C+E Plus口含錠 - 柳橙 (60 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Redoxon 力度伸 維他命C+D+鋅發泡錠 - 柳橙口味 (30 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "649.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "船井生醫 3C葉黃素凍果凍三兄妹 - 美莓",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Sentosa三多 零熱量代糖 (600 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果樹 德國維生素C+鋅+紫錐菊發泡錠 (20 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "321.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醫之方 B群釋緩雙層錠 (70 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "娘家 益生菌 (6 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "219.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "善存 三效順暢益生菌膠囊 (60 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "799.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "赫里萊比 維生素C500口含錠 (100 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "一般商品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "ibobomi 嬰兒米餅 - 蘋果味 (30 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獅王趣淨 敏弱肌專用洗手慕斯 - 溫和皂香 (450 mL)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "182.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "立得清 酒精擦濕巾90抽 (470 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ibobomi 嬰兒米餅 - 藍莓味 (30 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獅王 細潔兒童專業護理牙刷",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獅王趣淨 洗手慕斯 - 清爽柑橘 (250 mL)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Sunlife 森萊富 維他命C1000發泡錠 - 檸檬口味 (20 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Luminarc Lumina棉柔珍珠紋洗臉巾大胖包70抽 - 200x200mm (200 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ibobomi 嬰兒米餅 - 菠菜味 (30 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獅王趣淨 洗手慕斯 - 清新果香 (250 mL)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "立得清 抗菌抗病毒濕巾10抽 (2 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿意寶寶 極上呵護輕巧褲 - 中性, L (36 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "曼秀雷敦 強效防蚊乳液 (70 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "242.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柔仕 纖柔款乾濕兩用紗布毛巾 (80 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獅王 細潔兒童專業護理牙刷",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "嬰幼兒專區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滿意寶寶 極上呵護輕巧褲 - 中性, L (36 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "399.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Meiji 明治 成長配方樂樂Q貝 - 1-3歲 (5 入 x 20)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "530.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "知母時 餵藥器 | 1 入 #159451",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獅王 細潔兒童專業護理牙刷",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿意寶寶 極上呵護嬰兒輕巧褲 - 中性, XL (32 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "429.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Simba 小獅王辛巴 Edi超純水嬰兒柔濕巾組合包 - 15x20cm (90 入 x 3)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ibobomi 嬰兒米餅 - 蘋果味 (30 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ibobomi 嬰兒米餅 - 藍莓味 (30 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柔仕 纖柔款乾濕兩用紗布毛巾 (80 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獅王 細潔兒童專業護理牙刷",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滿意寶寶 瞬潔乾爽輕巧褲 - 中性, XXL (26 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "369.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "維維樂 R3幼兒活力平衡飲品 - 柚子口味 (350 mL)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "知母時CHIBOJI 吸鼻器",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "439.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獅王 細潔兒童專業護理牙刷",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ibobomi 嬰兒米餅 - 菠菜味 (30 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "醫療常備",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鈺弘 滅菌紗布墊 (10 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "18.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "佑合 滅菌沖洗棉棒 - 6吋 (6 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "6.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "善維健康 善鼻洗鼻鹽 (60 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "華俐 洗鼻器 (350 mL)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "340.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3M Nexcare 通氣膠帶無台經濟包 - 半吋x914公分, 白色 (4 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "佑合 滅菌口腔棉棒 - 6吋 (10 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "4.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鈺弘 紗布墊",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "8.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Mycare邁康 超靜音耳塞 - 綠 (2 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3M Nexcare 無台通氣膠帶經濟包 - 1吋x914cm, 白色 (2 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "佑合 滅菌小棉棒 - 3吋 (10 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "4.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "曼秀雷敦 Acnes小痘痘抗菌痘痘貼 (35 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "佑合 滅菌Ent棉棒 - 6吋 (10 入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "4.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美德 疤痕修護凝膠 - 小 (20 g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "POLYXAL玻麗舒 疤痕護理凝膠舒緩組",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1700.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

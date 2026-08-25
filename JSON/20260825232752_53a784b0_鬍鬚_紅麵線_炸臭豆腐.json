@@ -1,0 +1,371 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%AC%8D%E9%AC%9A-%E7%B4%85%E9%BA%B5%E7%B7%9A-%E7%82%B8%E8%87%AD%E8%B1%86%E8%85%90/DhfaIB94SxuEobBgnLEwNw",
+  "name": "鬍鬚 紅麵線 炸臭豆腐",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 29號, Yumin 1st Road",
+    "addressLocality": "Beitou District",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1166274,
+    "longitude": 121.5172986
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 6000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Stinky Tofu",
+    "Exclusive to Eats",
+    "Group Friendly"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣綜合",
+            "description": "含豆腐及鴨血。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸臭豆腐",
+            "description": "外酥內嫩的炸臭豆腐，切成小塊方便入口，帶著迷人臭香，淋上少許醬汁更對味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腐",
+            "description": "香麻帶勁的麻辣湯頭，豆腐滑嫩吸汁，配金針菇與青辣椒，暖胃過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合麵線",
+            "description": "大腸+蚵仔\n大腸原產地：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血",
+            "description": "香麻帶勁的麻辣湯頭，鴨血滑嫩，配蔥花與金針菇，暖胃過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥蚵",
+            "description": "滑嫩蚵仔淋上蒜泥醬，拌入蔥花與綠葉菜，蒜香四溢、海味滿滿",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸",
+            "description": "大腸原產地：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔麵線",
+            "description": "經典台式蚵仔麵線，細麵線配蚵仔，勾芡湯頭滑順，撒上香菜提味，口感暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養生紅麴炸臭豆腐",
+            "description": "紅麴入味的炸臭豆腐，色澤紅潤，外酥內嫩，帶有發酵豆香與淡淡麴香，口感紮實有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸臭豆腐",
+            "description": "外酥內嫩的炸臭豆腐，切成小塊方便入口，帶著迷人臭香，淋上少許醬汁更對味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣綜合",
+            "description": "含豆腐及鴨血。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅麵線",
+            "description": "大腸麵線。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔麵線",
+            "description": "經典台式蚵仔麵線，細麵線配蚵仔，勾芡湯頭滑順，撒上香菜提味，口感暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥蚵",
+            "description": "滑嫩蚵仔淋上蒜泥醬，拌入蔥花與綠葉菜，蒜香四溢、海味滿滿",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養生紅麴炸臭豆腐",
+            "description": "紅麴入味的炸臭豆腐，色澤紅潤，外酥內嫩，帶有發酵豆香與淡淡麴香，口感紮實有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腐",
+            "description": "香麻帶勁的麻辣湯頭，豆腐滑嫩吸汁，配金針菇與青辣椒，暖胃過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣泡麵",
+            "description": "小辣",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血",
+            "description": "香麻帶勁的麻辣湯頭，鴨血滑嫩，配蔥花與金針菇，暖胃過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣冬粉",
+            "description": "小辣",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "自製原味黃金泡菜",
+            "description": "原味台式黃金泡菜，醃漬入味，爽脆酸香、清爽開胃",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "涼拌川耳",
+            "description": "川耳脆Q爽口，涼拌清爽，開胃佐餐的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合麵線",
+            "description": "大腸+蚵仔\n大腸原產地：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸",
+            "description": "大腸原產地：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自製辣味黃金泡菜",
+            "description": "自製黃金泡菜，口感爽脆、辣香開胃，清爽不膩的單點小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自製黃金泡菜(罐裝)",
+            "description": "提供原味及辣味做選擇唷～\n此商品為罐裝(1斤)",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "臭豆腐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸臭豆腐",
+            "description": "外酥內嫩的炸臭豆腐，切成小塊方便入口，帶著迷人臭香，淋上少許醬汁更對味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養生紅麴炸臭豆腐",
+            "description": "紅麴入味的炸臭豆腐，色澤紅潤，外酥內嫩，帶有發酵豆香與淡淡麴香，口感紮實有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵線",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅麵線",
+            "description": "大腸麵線。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合麵線",
+            "description": "大腸+蚵仔\n大腸原產地：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔麵線",
+            "description": "經典台式蚵仔麵線，細麵線配蚵仔，勾芡湯頭滑順，撒上香菜提味，口感暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

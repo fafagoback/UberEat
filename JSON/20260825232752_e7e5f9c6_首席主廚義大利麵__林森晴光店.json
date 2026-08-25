@@ -1,0 +1,1434 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%A6%96%E5%B8%AD%E4%B8%BB%E5%BB%9A%E7%BE%A9%E5%A4%A7%E5%88%A9%E9%BA%B5-%E6%9E%97%E6%A3%AE%E6%99%B4%E5%85%89%E5%BA%97/ImRnUC-zVa26hNjBLUCdNw",
+  "name": "首席主廚義大利麵  林森晴光店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Linsen North Road 584",
+    "addressLocality": "Zhongshan District",
+    "addressRegion": "Taipei City",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0653183,
+    "longitude": 121.5258045
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.2,
+    "reviewCount": 250
+  },
+  "servesCuisine": [
+    "Italian"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉來源為台灣",
+            "description": "所有含豬料理均使用台灣豬肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉來源為澳洲",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美粒果蘋果汁",
+            "description": "美粒果蘋果汁\n微冰有糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "袋子",
+            "description": "若需袋子，請加購此項，用於外帶裝袋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "野菇雞肉蕃茄紅醬鍋",
+            "description": "酸甜可口\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "野菇雞肉奶油白醬鍋",
+            "description": "香甜可口\n附白飯1碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "野菇雞奶油川辣醬鍋",
+            "description": "奶油川辣醬為基底的義式湯麵，搭配雞肉與野菇，湯底濃郁、辣香協調，口感滑順不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "野菇雞肉奶油青醬鍋",
+            "description": "奶油青醬湯底，搭配雞肉與野菇，湯底濃郁、麵條滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦奶油白醬鍋",
+            "description": "奶油白醬湯底，義式湯麵搭配鮮蝦，奶香濃郁、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合海鮮奶油白醬鍋",
+            "description": "奶油白醬湯底的義式湯麵，拌入綜合海鮮；湯汁香濃順口，麵條吸附醬香，海味層次豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合海鮮紅醬鍋",
+            "description": "酸甜可口\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "野菇雞肉泰式酸辣醬鍋",
+            "description": "泰式酸辣湯底義式湯麵，搭配雞肉與野菇，酸辣開胃。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式臭豆腐鍋",
+            "description": "義式湯麵為底，結合泰式調味與臭豆腐，湯頭豆香突出、層次分明。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶皮蛋鍋",
+            "description": "以沙茶為基底的湯頭，搭配皮蛋與義式湯麵，湯頭香濃，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義式牛奶鍋",
+            "description": "附白飯跟蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛奶起士鍋",
+            "description": "附白飯跟蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣鍋",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義式番茄鍋",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義式青醬鍋",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮菇素鍋",
+            "description": "附白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒雪花牛肉鍋",
+            "description": "拌入雪花牛肉片，凸顯麵香與肉香，口感清爽、鮮甜不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬綜合海鮮鍋",
+            "description": "濃郁奶香白醬拌入綜合海鮮，口感滑順、海味豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬豬肉鍋",
+            "description": "羅勒青醬搭配豬肉，口感清爽、香草與肉香交融。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬田園野菇豬肉鍋",
+            "description": "搭配綜合野菇與田園蔬菜，番茄香濃。\n豬肉附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "醬汁部分不含洋蔥跟蒜 是新鮮現打的醬汁 非一般市面上的罐醬汁",
+            "description": "新鮮現打醬汁，不含洋蔥、蒜，非市售罐裝，適合忌蔥蒜者。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "所有醬都是新鮮手工製作  素食的醬不含洋蔥跟蒜  非市面上的罐頭醬",
+            "description": "全醬皆為新鮮手作，拒絕市售罐頭；素食醬不含洋蔥、大蒜，適合忌蔥蒜者安心選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飛想茶檸檬紅茶",
+            "description": "這個是給滿300送檸檬紅茶點餐用\n有糖微冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美粒果蘋果汁",
+            "description": "微糖微冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合海鮮紅醬鍋",
+            "description": "酸甜可口\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "249.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "番茄紅醬",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬嫩雞肉片鍋",
+            "description": "番茄紅醬，搭配嫩雞肉。番茄香濃。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬綜合海鮮鍋",
+            "description": "番茄紅醬，拌入綜合海鮮，口感滑順、海味豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬鯛魚鍋",
+            "description": "番茄紅醬，搭配鯛魚，口感滑順、海味豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬田園野菇豬肉鍋",
+            "description": "番茄紅醬義式，拌入多種野菇，豬肉醬香與菇香交融，、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬羊肉鍋",
+            "description": "番茄紅醬，搭配羊肉、口感滑順，番茄酸\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬牛肉鍋",
+            "description": "番茄紅醬，牛肉，口感滑順、\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬雪花牛肉鍋",
+            "description": "番茄紅醬，搭配雪花牛肉，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬雪花豬肉鍋",
+            "description": "番茄紅醬，搭配雪花豬肉。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬中卷鍋",
+            "description": "番茄紅醬，搭配中卷、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬海陸總匯鍋",
+            "description": "米飯吸飽番茄紅醬，搭配綜合海鮮與肉品、口感飽滿。",
+            "offers": {
+              "@type": "Offer",
+              "price": "268.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄紅醬三陸鍋",
+            "description": "番茄紅醬，結合三款肉品，口感滑順、米心微彈。\n牛，豬，雞\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶油白醬",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬綜合海鮮鍋",
+            "description": "濃郁奶香白醬包，拌入綜合海鮮，口感滑順、海味豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬嫩雞肉鍋",
+            "description": "嫩雞肉，奶油白醬香濃，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬羊肉鍋",
+            "description": "奶香白醬，拌入煙燻培根、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬雪花牛肉鍋",
+            "description": "濃郁奶油白醬，搭配雪花牛肉，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬海陸總匯鍋",
+            "description": "濃郁奶香白醬結合綜合海鮮與肉品，口感滑順\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬鯛魚鍋",
+            "description": "濃郁奶香白醬搭配鯛魚與綜合海鮮，、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬田園野菇鍋",
+            "description": "奶油白醬，拌入綜合野菇，\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬牛肉鍋",
+            "description": "奶油白醬，搭配牛肉，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬雪花豬肉鍋",
+            "description": "濃郁奶香白醬包，搭配雪花豬肉，口感滑順、\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬香蒜中卷燉飯",
+            "description": "奶香白醬為基底的義式燉飯，搭配蒜香中卷，米心微彈、口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "218.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油白醬三陸總匯鍋",
+            "description": "濃郁奶香白醬，拌入三款肉品，、口感滑順，層次豐富。\n牛，豬，雞\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "268.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "羅勒青醬",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬嫩雞肉鍋",
+            "description": "羅勒青醬，搭配嫩雞肉，口感滑順，清香不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬田園野菇豬肉鍋",
+            "description": "羅勒青醬義式豬肉，搭配田園野菇口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬雪花牛肉鍋",
+            "description": "羅勒青醬，搭配雪花牛肉、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "239.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬中卷鍋",
+            "description": "羅勒青醬，搭配中卷.口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬三陸總鍋",
+            "description": "羅勒青醬，搭配三款肉品、口感滑順\n牛＇豬＇雞\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬羊肉鍋",
+            "description": "羅勒青醬為基底的，搭配羊肉口感滑順、附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬海陸總匯鍋",
+            "description": "羅勒青醬香氣，結合海鮮與肉品，口感滑順\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "258.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬牛肉鍋",
+            "description": "羅勒青醬為基底，搭配牛肉羅勒香氣，口感滑順\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬綜合海鮮鍋",
+            "description": "羅勒青醬為基底的，搭配綜合海鮮，口感滑順、海味豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬雪花豬肉鍋",
+            "description": "羅勒青醬香氣，搭配雪花豬肉，口感滑順、\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅勒青醬鯛魚鍋",
+            "description": "羅勒青醬為基底，搭配鯛魚、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮甜清炒",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒嫩雞肉片鍋",
+            "description": "搭配清炒嫩雞，風味清爽不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒雪花牛肉鍋",
+            "description": "清炒路線，搭配雪花牛肉，牛香，口感清爽，鮮甜不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒田園野菇豬肉鍋",
+            "description": "綜合野菇，清炒路線，凸顯菇香、口感滑順，風味清爽、自然甘甜。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒綜合海鮮鍋",
+            "description": "拌入綜合海鮮口感清爽，海味豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒中卷鍋",
+            "description": "清炒路線，中卷，口感滑順，海味鮮甜不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒海陸總匯鍋",
+            "description": "海陸總匯配料，清炒路線，口感清爽，凸顯食材鮮甜。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "268.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒羊肉鍋",
+            "description": "清炒路線，口感清爽，鮮甜不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒牛肉鍋",
+            "description": "清炒路線的，搭配牛肉，口感清爽、風味鮮甜不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒雪花豬肉鍋",
+            "description": "搭配雪花豬肉，清炒路線，清爽鮮甜不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒鯛魚鍋",
+            "description": "搭配鯛魚，清炒路線凸顯與海味、口感滑順，清爽不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜清炒三陸總匯鍋",
+            "description": "搭配多種食材口感清爽、帶出鮮甜。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泰式酸辣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣嫩雞肉鍋",
+            "description": "泰式酸辣風味搭配嫩雞肉、酸香清爽。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣綜合海鮮鍋",
+            "description": "泰式酸辣，拌入綜合海鮮、口感滑順，酸辣開胃。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣田園野菇豬肉鍋",
+            "description": "以泰式酸辣為搭配多種野菇，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸羊肉鍋",
+            "description": "泰式酸辣風味，酸辣清爽不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣牛肉鍋",
+            "description": "泰式酸辣醬，牛肉、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣雪花牛肉鍋",
+            "description": "泰式酸辣醬，搭配雪花牛肉、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣雪花豬肉鍋",
+            "description": "泰式酸辣基底，搭配雪花豬肉，酸辣醬汁，口感滑順。附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣中卷鍋",
+            "description": "泰式酸辣醬，搭配中卷，酸香開胃、米心微彈。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣海陸總匯鍋",
+            "description": "泰式酸辣醬為，酸辣醬香，搭配綜合海鮮與肉類，層次鮮明、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣鯛魚鍋",
+            "description": "泰式酸辣為基底的，搭配鯛魚，口感滑順、酸香開胃。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式酸辣三陸總匯鍋",
+            "description": "泰式酸辣為基底，搭配三款肉類，口感滑順\n牛，豬，雞\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "258.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "粉紅醬",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬嫩雞肉鍋",
+            "description": "番茄與奶油調和的粉紅醬義式燉飯，搭配嫩雞＇口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬田園野菇豬肉鍋",
+            "description": "番茄奶油粉紅醬，搭配綜合野菇豬肉，口感滑順、\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬羊肉鍋",
+            "description": "番茄奶油粉紅醬，口感滑順、\n羊肉\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬牛肉鍋",
+            "description": "番茄奶油粉紅醬，搭配牛肉，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬綜合海鮮鍋",
+            "description": "粉紅醬拌入綜合海鮮，口感滑順、海味豐富。\n附一碗白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬雪花牛肉鍋",
+            "description": "吸飽粉紅醬，搭配雪花牛肉，口感滑順。\n附一碗白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬雪花豬肉鍋",
+            "description": "吸飽番茄奶油粉紅醬，搭配雪花豬肉。\n附一碗白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬中卷鍋",
+            "description": "番茄奶油粉紅醬，搭配中卷，口感滑順、\n附一碗白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬海陸總匯鍋",
+            "description": "番茄與奶油調和的粉紅醬為基底的，結合海陸總匯、口感滑順。\n附一碗白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "268.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬鯛魚鍋",
+            "description": "粉紅醬包覆拌入鯛魚，口感滑順、海味豐富。\n附一碗白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉紅醬三陸總匯鍋",
+            "description": "番茄奶油粉紅醬，搭配多種肉類總匯，，口感滑順、\n牛豬雞\n附一碗白飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "韓式泡菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜田園野菇鍋",
+            "description": "以韓式泡菜，拌入綜合野菇，口感綿潤，酸香開胃。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜羊肉鍋",
+            "description": "以韓式泡菜，搭配煙燻培根，泡菜香與煙燻風味，口感綿滑，層次豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜嫩雞肉鍋",
+            "description": "以韓式泡菜為基底的搭配嫩雞肉、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜牛肉鍋",
+            "description": "韓式泡菜，，泡菜酸香，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜綜合海鮮鍋",
+            "description": "以韓式泡菜為基底的拌入綜合海鮮，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜雪花牛肉鍋",
+            "description": "以泡菜為基底的，搭配雪花牛肉，吸收酸香，\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜雪花豬肉鍋",
+            "description": "以韓式泡菜為基底的，搭配雪花豬肉，吸收酸香，口感滑順、\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜中卷鍋",
+            "description": "以泡菜為基底，中卷，酸香不膩。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜海陸總匯鍋",
+            "description": "泡菜為基底的，搭配海鮮與肉類，泡菜香氣，、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜鯛魚鍋",
+            "description": "以韓式泡菜為基底搭配鯛魚，酸香與海味，口感滑順、飽滿。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜三陸鍋",
+            "description": "韓式泡菜風味，搭配三陸總匯配料，口感滑順\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "258.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "健康南瓜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "南瓜田園野菇鍋",
+            "description": "南瓜為基底的，拌入多種野菇，南瓜與菇香，口感滑順\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜煙燻培根鍋",
+            "description": "南瓜為基底煙燻培根，南瓜醬香與煙燻香，口感滑順\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜嫩雞肉鍋",
+            "description": "南瓜醬，搭配嫩雞肉，口感滑順、\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜德國香腸鍋",
+            "description": "南瓜醬搭配德國香腸，、口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜綜合海鮮鍋",
+            "description": "南瓜醬香結合多種海鮮，口感滑順\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜雪花牛肉鍋",
+            "description": "南瓜，搭配雪花牛肉，南瓜香氣，口感飽滿。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜雪花豬肉鍋",
+            "description": "南瓜醬香，搭配雪花豬肉，口感滑順\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜中卷鍋",
+            "description": "南瓜為基底的，與中卷，南瓜香氣與海味，口感滑順、\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜海陸總匯鍋",
+            "description": "南瓜醬，結合海鮮，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "258.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜鯛魚鍋",
+            "description": "南瓜醬為基底的搭配鯛魚南瓜與海味，口感滑順、\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜三陸總匯鍋",
+            "description": "南瓜為基底的，結合三陸總匯，南瓜香氣，口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "269.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "濃郁咖哩",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咖哩田園野菇鍋",
+            "description": "以咖哩為基底的搭配田園野菇，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩煙燻培根鍋",
+            "description": "濃郁咖哩醬，搭配煙燻培根，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩嫩雞肉鍋",
+            "description": "咖哩醬，搭配嫩雞肉，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩德國香腸鍋",
+            "description": "濃郁咖哩為基底搭配德國香腸，咖哩香氣，口感滑順\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩綜合海鮮鍋",
+            "description": "濃郁咖哩醬搭配綜合海鮮，口感滑順、海味豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩雪花牛肉鍋",
+            "description": "咖哩醬，搭配雪花牛肉。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩雪花豬肉鍋",
+            "description": "濃郁咖哩醬搭配雪花豬肉，口感滑順、\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩中卷鍋",
+            "description": "咖哩搭配中卷，咖哩醬香，中卷彈牙。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩海陸總匯鍋",
+            "description": "咖哩為基底，結合海鮮與肉類，口感滑順。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "248.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩鯛魚鍋",
+            "description": "咖哩醬搭配鯛魚，口感滑順、海味豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩三陸鍋",
+            "description": "咖哩醬，搭配總匯配料，口感綿滑，層次豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "238.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "健康素食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "素田園野菇鍋",
+            "description": "多種野菇、菇香濃郁，口感綿滑，適合素食者。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素煙燻培根鍋",
+            "description": "素煙燻培根，凸顯煙燻香、口感滑順。適合素食者。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素雞肉鍋",
+            "description": "搭配素雞肉，適合素食者\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素火腿鍋",
+            "description": "素火腿丁，口感綿滑，層次豐富。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素鮮蝦仁鍋",
+            "description": "拌入素蝦仁，口感滑順，適合素食者。\n附白飯一碗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

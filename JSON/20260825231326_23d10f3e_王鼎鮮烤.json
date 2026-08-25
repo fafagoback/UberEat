@@ -1,0 +1,256 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%8E%8B%E9%BC%8E%E9%AE%AE%E7%83%A4/nHkf2w3nXqaMqqWbOdmI_A",
+  "name": "王鼎鮮烤",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市蘆洲區中興街130巷1號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0892949042964,
+    "longitude": 121.48281034660697
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "爆汁香腸 1 條 1 Sausage",
+            "description": "王鼎香腸肥瘦剛剛好 多汁帶肉品的甜味 讚啦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌胡椒魚",
+            "description": "新鮮現烤烹飪過程需等待40分",
+            "offers": {
+              "@type": "Offer",
+              "price": "487.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹豬肉 Salted Pork",
+            "description": "鹹香不膩, 越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "378.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻香蒜味魚 Spicy Garlic Fish",
+            "description": "香氣十足, 開胃下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "487.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌花雕桶仔雞 Signature Hwa-Diau Barrel Chicken",
+            "description": "花雕入味, 肉質鮮嫩多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1071.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "銷魂酒香桶仔雞 Barrel Chicken with Wine",
+            "description": "酒香滲透, 香醇夠味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1071.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香鹽烤魚",
+            "description": "新鮮現烤烹飪過程需等待40分",
+            "offers": {
+              "@type": "Offer",
+              "price": "487.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜鹽烤魚 Salt-Grilled Fish",
+            "description": "簡單調味, 吃出鮮甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "487.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "爆汁香腸 1 條 1 Sausage",
+            "description": "王鼎香腸肥瘦剛剛好 多汁帶肉品的甜味 讚啦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌胡椒魚",
+            "description": "新鮮現烤烹飪過程需等待40分",
+            "offers": {
+              "@type": "Offer",
+              "price": "487.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮甜鹽烤魚 Salt-Grilled Fish",
+            "description": "簡單調味, 吃出鮮甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "487.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻香蒜味魚 Spicy Garlic Fish",
+            "description": "香氣十足, 開胃下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "487.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆汁香腸 1 條 1 Sausage",
+            "description": "王鼎香腸肥瘦剛剛好 多汁帶肉品的甜味 讚啦～",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香鹽烤魚",
+            "description": "新鮮現烤烹飪過程需等待40分",
+            "offers": {
+              "@type": "Offer",
+              "price": "487.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點 A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌胡椒魚 Signature Pepper Fish",
+            "description": "鹹香入味, 越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "477.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹豬肉 Salted Pork",
+            "description": "鹹香不膩, 越嚼越香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "378.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌花雕桶仔雞 Signature Hwa-Diau Barrel Chicken",
+            "description": "花雕入味, 肉質鮮嫩多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1071.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "銷魂酒香桶仔雞 Barrel Chicken with Wine",
+            "description": "酒香滲透, 香醇夠味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "1071.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

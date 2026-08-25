@@ -1,0 +1,181 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%9E%97%E9%98%BF%E5%A8%98%E9%BA%B5%E7%B7%9A/T0WyqbP3WAqP5w21HDgPnw",
+  "name": "林阿娘麵線",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "大龍街271號",
+    "addressLocality": "大同區",
+    "addressRegion": "Taipei City",
+    "postalCode": "103039",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.07182,
+    "longitude": 121.51594
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 63
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Street Food"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綜合傳統甜不辣",
+            "description": "香氣撲鼻，口感彈牙有嚼勁，搭配特製甜醬，甜中帶鹹，讓人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合麵線",
+            "description": "豐富配料包括大腸、蚵仔和肉羹，湯頭鮮美濃郁，麵線滑順細膩，每一口都充滿著多層次的風味，是道滿足味蕾的經典台式小吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線",
+            "description": "滑順細麵線浸潤鮮美湯頭，搭配Q彈大腸與香菜點綴，口感豐富、暖胃順口，一碗就滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸肉羹麵線",
+            "description": "香濃的湯頭配上滑順的麵線，加入彈牙的大腸和鮮嫩的肉丁，風味絕佳，讓人一口接一口，回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸蚵仔麵線",
+            "description": "滑嫩的麵線搭配鮮美的蚵仔和彈牙的大腸，湯頭濃郁，口感豐富，帶來每一口都令人難忘的絕佳享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綜合傳統甜不辣",
+            "description": "香氣撲鼻，口感彈牙有嚼勁，搭配特製甜醬，甜中帶鹹，讓人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清麵線(買一送一優惠)",
+            "description": "口感滑順，湯頭清香鮮美，搭配簡單的配料，輕盈爽口，是一道令人放鬆的簡單美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵線",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綜合麵線",
+            "description": "豐富配料包括大腸、蚵仔和肉羹，湯頭鮮美濃郁，麵線滑順細膩，每一口都充滿著多層次的風味，是道滿足味蕾的經典台式小吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸蚵仔麵線",
+            "description": "滑嫩的麵線搭配鮮美的蚵仔和彈牙的大腸，湯頭濃郁，口感豐富，帶來每一口都令人難忘的絕佳享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸麵線",
+            "description": "滑順細麵線浸潤鮮美湯頭，搭配Q彈大腸與香菜點綴，口感豐富、暖胃順口，一碗就滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸肉羹麵線",
+            "description": "香濃的湯頭配上滑順的麵線，加入彈牙的大腸和鮮嫩的肉丁，風味絕佳，讓人一口接一口，回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清麵線",
+            "description": "口感滑順，湯頭清香鮮美，搭配簡單的配料，輕盈爽口，是一道令人放鬆的簡單美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔麵線",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

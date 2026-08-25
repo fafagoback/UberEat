@@ -1,0 +1,446 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/zets-kuki-%E6%BE%A4%E7%89%B9%E9%A4%85%E4%B9%BE%E5%8C%88%E7%89%99%E5%88%A9%E7%85%99%E5%9B%AA%E6%8D%B2%E5%A3%AB%E6%9E%97%E5%BA%97/C5Tn_WMJVYW33Np4h3e0yA",
+  "name": "Zet’s Kuki 澤特餅乾匈牙利煙囪捲士林店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區大南路47號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08927,
+    "longitude": 121.52497
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 34
+  },
+  "servesCuisine": [
+    "Desserts"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "慶新店開幕🔸煙囪捲任選 3 顆送 1 顆｜Buy 3 Get 1 Free",
+            "description": "🔺折扣後的價格約為三送一的金額，些微誤差敬請見諒🙏\n🔺可選擇四顆煙囪捲，其中一顆老闆請客。",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.40",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "OREO宇宙冰淇淋奶昔｜OREO Galaxy Milk Shake",
+            "description": "純鮮奶不加水，搭配香濃的香草霜淇淋，每一口都冰涼滑順，奶香滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓轟炸冰淇淋奶昔｜Strawberry Boom Milk Shake",
+            "description": "純鮮奶不加水，搭配香濃的香草霜淇淋，每一口都冰涼滑順，奶香滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓森林冰淇淋奶昔｜Blueberry Forest Milk Shake",
+            "description": "純鮮奶不加水，搭配香濃的香草霜淇淋，每一口都冰涼滑順，奶香滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "外層 Oreo 粒｜Outside with Oreo Powder",
+            "description": "🔸喜歡巧克力的口味但不想要可可粉的甜度，選OREO試試看～有OREO餅乾獨特的口味！\n🔸甜度：🟡🟡⚪️⚪️⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖狂響曲冰淇淋奶昔｜Caramel Symphony Milk Shake",
+            "description": "＊含少許花生粉＊純鮮奶不加水，搭配香濃的香草霜淇淋，每一口都冰涼滑順，奶香滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "升級版開心果樂園｜Pistachio Paradise 2.0",
+            "description": "🔸貼心提醒，老闆手工製作的醬只有少許的糖沒有其他添加物或香精，所以是開心果天然的「鹹甜口感」唷！\n🔸升級版大幅提升開心果醬的高級質地，外層是開心果粒，內層是開心果醬。\n🔸尺寸大顆約16公分，小顆約8公分，不管之前你有沒有吃過都值得試試看！💚",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "外層杏仁粒｜Outside with Almond",
+            "description": "🔸吃得到杏仁脆脆的口感！杏仁也是不太甜的最佳選擇之一。\n🔸甜度：🟡⚪️⚪️⚪️⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹香口味🌟法式奶香蒜蓉｜Salty—Garlic Butter",
+            "description": "🔸內外層已固定口味。\n🔸不是螞蟻人也沒關係，台灣人超愛的濃郁大蒜抹醬搭配煙囪卷也無敵好吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸甜風味🩷外層草莓粒｜Outside with Strawberry Powder",
+            "description": "🔸喜歡酸甜口感的你選草莓就對了～\n🔸甜度：🟡🟡🟡⚪️⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Save on Select Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "慶新店開幕🔸煙囪捲任選 3 顆送 1 顆｜Buy 3 Get 1 Free",
+            "description": "🔺折扣後的價格約為三送一的金額，些微誤差敬請見諒🙏\n🔺可選擇四顆煙囪捲，其中一顆老闆請客。",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.40",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "📢老闆大聲公📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "若您滿意本次餐點與服務，請留下五星評價；每則回饋我們都會閱讀，用於優化餐點與流程，也能幫助其他顧客參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙囪捲是來自中歐匈牙利的傳統甜點，老闆是道地匈牙利人，他從匈牙利飛來台灣分享他最喜歡的美食，他將手工麵糰捲在木棍上，裹上奶油和糖，慢慢烘烤至金黃酥脆。外層脆甜、內層鬆軟，常搭配肉桂、巧克力等口味，是歐洲街頭最受歡迎的經典點心之一。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典煙囪捲可以再免費多選擇一款內層醬料，第一次吃怕太甜也可以選擇不加或是少醬！",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🔺限時優惠｜Limited Discount🔺",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "慶新店開幕🔸煙囪捲任選 3 顆送 1 顆｜Buy 3 Get 1 Free",
+            "description": "🔺折扣後的價格約為三送一的金額，些微誤差敬請見諒🙏\n🔺可選擇四顆煙囪捲，其中一顆老闆請客。",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.40",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🔺優惠套餐｜Combo Meal🔺",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "煙囪捲和奶昔套餐｜Kuki and Milk Shake Combo Meal",
+            "description": "🔸可用折扣的價格選擇一顆煙囪捲及一杯奶昔。\n🔸匈牙利煙囪捲搭配濃滑奶昔，一口甜點一口飲品，滿足感加倍。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🌟人氣推薦｜Recommendations🌟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典招牌🧡外層肉桂粉｜Outside with Cinnamon Powder",
+            "description": "🔸肉桂甜甜辣辣的口味最迷人！匈牙利最道地的口味就是裹上滿滿的肉桂，肉桂迷不可錯過😍 \n🔸甜度：🟡🟡🟡⚪️⚪️\n🔸圖片是肉桂+花生醬的搭配🏆",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "人氣推薦🤎外層巧克力粉｜Outside with Chocolate Powder",
+            "description": "🔸可可粉甜蜜的滋味會帶點微微的苦，完美～\n🔸甜度：🟡🟡🟡🟡⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱門推薦💛外層蜂蜜醬｜Outside with Honey Sauce",
+            "description": "🔸超級推薦！蜂蜜會讓煙囪捲外皮更加酥脆！私心推薦蜂蜜+可可很好吃喔！\n🔸甜度：🟡🟡🟡🟡⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹香口味🌟法式奶香蒜蓉｜Salty—Garlic Butter",
+            "description": "🔸內外層已固定口味。\n🔸不是螞蟻人也沒關係，台灣人超愛的濃郁大蒜抹醬搭配煙囪卷也無敵好吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸甜風味🩷外層草莓粒｜Outside with Strawberry Powder",
+            "description": "🔸喜歡酸甜口感的你選草莓就對了～\n🔸甜度：🟡🟡🟡⚪️⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "升級版開心果樂園｜Pistachio Paradise 2.0",
+            "description": "🔸貼心提醒，老闆手工製作的醬只有少許的糖沒有其他添加物或香精，所以是開心果天然的「鹹甜口感」唷！\n🔸升級版大幅提升開心果醬的高級質地，外層是開心果粒，內層是開心果醬。\n🔸尺寸大顆約16公分，小顆約8公分，不管之前你有沒有吃過都值得試試看！💚",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🧡經典煙囪捲｜Chimney Cake🧡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "外層花生粉｜Outside with Peanuts Powder",
+            "description": "🔸匈牙利煙囪捲加上台灣傳統花生粉超香的！不太甜，怕太甜的可以試試看～\n🔸甜度：🟡⚪️⚪️⚪️⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "外層杏仁粒｜Outside with Almond",
+            "description": "🔸吃得到杏仁脆脆的口感！杏仁也是不太甜的最佳選擇之一。\n🔸甜度：🟡⚪️⚪️⚪️⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "外層 Oreo 粒｜Outside with Oreo Powder",
+            "description": "🔸喜歡巧克力的口味但不想要可可粉的甜度，選OREO試試看～有OREO餅乾獨特的口味！\n🔸甜度：🟡🟡⚪️⚪️⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱門推薦💛外層蜂蜜醬｜Outside with Honey Sauce",
+            "description": "🔸超級推薦！蜂蜜會讓煙囪捲外皮更加酥脆！私心推薦蜂蜜+可可很好吃喔！\n🔸甜度：🟡🟡🟡🟡⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "人氣推薦🤎外層巧克力粉｜Outside with Chocolate Powder",
+            "description": "🔸可可粉甜蜜的滋味會帶點微微的苦，完美～\n🔸甜度：🟡🟡🟡🟡⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典招牌🧡外層肉桂粉｜Outside with Cinnamon Powder",
+            "description": "🔸肉桂甜甜辣辣的口味最迷人！匈牙利最道地的口味就是裹上滿滿的肉桂，肉桂迷不可錯過😍 \n🔸甜度：🟡🟡🟡⚪️⚪️\n🔸圖片是肉桂+花生醬的搭配🏆",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸甜風味🩷外層草莓粒｜Outside with Strawberry Powder",
+            "description": "🔸喜歡酸甜口感的你選草莓就對了～\n🔸甜度：🟡🟡🟡⚪️⚪️",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹香口味🌟法式奶香蒜蓉｜Salty—Garlic Butter",
+            "description": "🔸內外層已固定口味。\n🔸不是螞蟻人也沒關係，台灣人超愛的濃郁大蒜抹醬搭配煙囪卷也無敵好吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🧡特製煙囪捲｜Special Flavors🧡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "升級版開心果樂園｜Pistachio Paradise 2.0",
+            "description": "🔸貼心提醒，老闆手工製作的醬只有少許的糖沒有其他添加物或香精，所以是開心果天然的「鹹甜口感」唷！\n🔸升級版大幅提升開心果醬的高級質地，外層是開心果粒，內層是開心果醬。\n🔸尺寸大顆約16公分，小顆約8公分，不管之前你有沒有吃過都值得試試看！💚",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巨大匈牙利｜Huge Hungary",
+            "description": "巨大匈牙利是跟匈牙利當地一模一樣的大小及口味！約25公分長度的煙囪卷，外層裹滿香濃獨家肉桂粉，酥脆外皮鬆軟內層，每一口都充滿濃郁的肉桂香氣，經典又滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍦純奶霜淇淋奶昔｜Ice Cream Milk Shake🍦",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "OREO宇宙冰淇淋奶昔｜OREO Galaxy Milk Shake",
+            "description": "純鮮奶不加水，搭配香濃的香草霜淇淋，每一口都冰涼滑順，奶香滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓森林冰淇淋奶昔｜Blueberry Forest Milk Shake",
+            "description": "純鮮奶不加水，搭配香濃的香草霜淇淋，每一口都冰涼滑順，奶香滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓轟炸冰淇淋奶昔｜Strawberry Boom Milk Shake",
+            "description": "純鮮奶不加水，搭配香濃的香草霜淇淋，每一口都冰涼滑順，奶香滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖狂響曲冰淇淋奶昔｜Caramel Symphony Milk Shake",
+            "description": "＊含少許花生粉＊純鮮奶不加水，搭配香濃的香草霜淇淋，每一口都冰涼滑順，奶香滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

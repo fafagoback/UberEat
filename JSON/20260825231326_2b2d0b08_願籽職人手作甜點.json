@@ -1,0 +1,456 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%A1%98%E7%B1%BD%E8%81%B7%E4%BA%BA%E6%89%8B%E4%BD%9C%E7%94%9C%E9%BB%9E/P_f2kUIqXdSZCCrtKFH80A",
+  "name": "願籽職人手作甜點",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區大同街203-2號",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1376,
+    "longitude": 121.4991
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 17
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Snacks",
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "西班牙巴斯克乳酪蛋糕",
+            "description": "外層烤至金黃微焦，內心柔滑細膩，口感濃郁豐富。每一口都能感受到乳酪的濃郁香氣與蛋糕的細膩綿密，是一款不可錯過的經典甜品（小四吋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑森林櫻桃巧克力蛋糕",
+            "description": "層層疊疊的巧克力蛋糕與濃郁巧克力醬，搭配鮮甜多汁的櫻桃，每一口都帶來豐富的口感和濃郁的巧克力香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 全系列（8入）",
+            "description": "香草卡式達、檸檬生乳、京都抹茶、提拉米蘇、70.5%巧克力、天天開心（開心果）、季節限定（2款），以上8款口味各1顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "990.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 原味-無內餡（4入）",
+            "description": "原味甜甜圈（4入1盒）\n無內餡",
+            "offers": {
+              "@type": "Offer",
+              "price": "340.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 檸檬生乳（4入）",
+            "description": "酸V酸V 輕爽不甜膩 檸檬生乳4入一盒",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 精選（4入）",
+            "description": "香草卡式達、檸檬生乳、提拉米蘇、70.5%巧克力\n以上四款口味各1顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 提拉米蘇（4入）",
+            "description": "提拉米蘇4入一盒",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 京都抹茶 （4入）",
+            "description": "京都抹茶4入一盒",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Dodo donut",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 精選（4入）",
+            "description": "香草卡式達、檸檬生乳、提拉米蘇、70.5%巧克力\n以上四款口味各1顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 全系列（8入）",
+            "description": "香草卡式達、檸檬生乳、京都抹茶、提拉米蘇、70.5%巧克力、天天開心（開心果）、季節限定（2款），以上8款口味各1顆",
+            "offers": {
+              "@type": "Offer",
+              "price": "990.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 原味-無內餡（4入）",
+            "description": "原味甜甜圈（4入1盒）\n無內餡",
+            "offers": {
+              "@type": "Offer",
+              "price": "340.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 香草卡式達（4入）",
+            "description": "Dodo熱銷品項-香草卡式達4入（上層裝飾為檸檬馬林糖）依季節不同更換裝飾",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 檸檬生乳（4入）",
+            "description": "酸V酸V 輕爽不甜膩 檸檬生乳4入一盒",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 提拉米蘇（4入）",
+            "description": "提拉米蘇4入一盒",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 京都抹茶 （4入）",
+            "description": "京都抹茶4入一盒",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 70.5%巧克力（4入）",
+            "description": "70.5%巧克力（4入1盒）",
+            "offers": {
+              "@type": "Offer",
+              "price": "560.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "DoDo 天天開心（4入）",
+            "description": "天天開心-開心果（4入一盒）",
+            "offers": {
+              "@type": "Offer",
+              "price": "570.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "願籽手工可麗露",
+            "description": "外層酥脆金黃，內心柔軟濕潤，香氣四溢。每一口都能感受到濃郁的香草及酒香，是一道兼具口感和風味的精緻甜點（每份1顆）",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西班牙巴斯克乳酪蛋糕",
+            "description": "外層烤至金黃微焦，內心柔滑細膩，口感濃郁豐富。每一口都能感受到乳酪的濃郁香氣與蛋糕的細膩綿密，是一款不可錯過的經典甜品（小四吋）",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑森林櫻桃巧克力蛋糕",
+            "description": "層層疊疊的巧克力蛋糕與濃郁巧克力醬，搭配鮮甜多汁的櫻桃，每一口都帶來豐富的口感和濃郁的巧克力香氣",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "願籽甜點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "願籽法式水果布丁",
+            "description": "中央是法式焦糖布丁，口感滑嫩；周圍鋪上芒果片與莓果點綴，果香與焦糖香交織，層次分明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "院子布里歐核桃肉桂捲",
+            "description": "柔軟布里歐麵包體搭配香而不膩口的肉桂糖餡（約100克）",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬奶霜雲朵蛋糕",
+            "description": "柔軟的蛋糕體搭配檸檬奶油及蛋奶餡，酸V酸V一口接著一口停不下來（7吋切6）",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "濃郁咖啡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬美式",
+            "description": "限冷飲。甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖拿鐵",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖瑪奇朵",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "靜岡抹茶拿鐵",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "摩卡黑巧拿鐵",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "哞哞牛奶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蜜香鮮奶茶",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖鮮奶茶",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖鮮奶茶",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可牛奶",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶牛奶",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚香可可牛奶",
+            "description": "甜度及冰塊固定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蠟燭",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "單一蠟燭（無選色）",
+            "description": "單一蠟燭（無選色）",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "愛心蠟燭（無選色）",
+            "description": "愛心蠟燭（無選色）",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

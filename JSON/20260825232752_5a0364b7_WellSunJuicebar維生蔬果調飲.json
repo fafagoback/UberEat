@@ -1,0 +1,300 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/wellsunjuicebar%E7%B6%AD%E7%94%9F%E8%94%AC%E6%9E%9C%E8%AA%BF%E9%A3%B2/eOobZ9rDRZ-o5i9ybDh1-A",
+  "name": "WellSunJuicebar維生蔬果調飲",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區新市街30號中繼市場",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1331133,
+    "longitude": 121.5023639
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 800
+  },
+  "servesCuisine": [
+    "Drinks",
+    "Juice and Smoothies",
+    "Sustainable Packaging"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "No.10 全方位-效能蔬果汁 Complete Package/500cc",
+            "description": "如同每一位現場老客人所說(一次給了所有的滿足)\n真心建議，一定要喝喝看這杯，加入大量綠色蔬菜用了含有葉綠素牧草汁和甘蔗汁中和所有的味道\n一喝就會像一 見鍾情一樣\n無加水加任何色素，不在額外加糖純為甘蔗甜，正常冰及去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.1 抗氧化-雙莓優格Antioxidant /500cc",
+            "description": "雙莓-藍莓+蔓越莓，藍莓是新鮮水果中含抗氧化劑量最高的，富含的花青素和維他命C都使得藍莓具有超強抗氧化力，可以中和影響人體健康和老化的自由基，而蔓越莓也含有豐富的維他命A、C、E，以及初花色也具有非常好之抗氧化、抗菌及淨化效果。\n兩種莓果混和配上助消化的優若乳與基底甘蔗汁完美搭配，絕對是愛美的妳善待自己的最好選擇。\n無加水加色素，不在另外加糖純甘蔗汁的甜，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.5 顧明目-紅蘿蔔蘋果優格飲 Eyesight/500cc",
+            "description": "胡蘿蔔汁中含有的營養物質對眼睛有宜，其中β-胡蘿蔔素就是失明的一個重要原因，維生素A的缺乏也是導致眼乾症的一個重要唷\n這時候榨汁時我們再加上一顆蘋果一些當季鳳梨一起榨,蘋果帶有甜味和獨特的果香與鳳梨特有的酸甜,可中和胡蘿蔔中的青澀口味,改善其口味\n讓我們一起愛上的美妙的組合吧\n無加水加色素，不在另外加糖，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "D.I.Y JUICE",
+            "description": "選擇您想要的健康，保證您喝的健康安心。好不好喝....請謹慎選擇口味 :)\n任選三種蔬果+任選一種基底汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "◾️注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "因響應環保，不主動提供餐具及紙袋，若需要餐具請點選。若需要紙袋，可加購。感謝您的配合!",
+            "description": "環保紙袋，可於此處加購，謝謝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "10.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加入官方Line:@843hnvsu和IG:wellsun_juicebar，了解更多活動優惠跟組合呦",
+            "description": "加入方式：LINE搜尋@843hnvsu，IG搜尋wellsun_juicebar。優先收到活動開跑提醒、限時優惠與週末限定組合公告。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "WellSun蔬果飲所有飲品餐點、食材皆為天然、無人工添加物(ex.味精、人工色素、甜味劑、防腐劑)等有害物質且飲品不另外加冰塊，所有甜份皆來自食材本身之糖份。",
+            "description": "全品項堅持天然配方：不額外加糖、不另加冰塊；不含味精、人工色素、人工甜味劑與防腐劑。甜味皆來自食材本身。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "因水果牛奶原物料等製品不停上漲，因堅持用小農鮮奶製作優格(都是限量），故部分品項上漲，謝謝大家支持",
+            "description": "價格與供應公告：因水果與牛奶等原物料上漲，部分品項將上調；我們持續使用小農鮮奶製作優格。優格每日限量，售完為止，造成不便敬請見諒，感謝支持。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "100%健康蔬果飲 系列 Absolute fruit and veg Juice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "No.16 綠拿鐵-綠洲之葉 Oasis Green Latte/500cc",
+            "description": "「綠拿鐵」主要食材是綠色蔬菜，呈現半奶昔狀態因此以「拿鐵」做命名\n我們特別嚴選進口添加了Organic Greens super powdered 是經過USDA Organic認證的有機超級綠粉\n內涵超過38種超級纖維跟18種維他命，讓您一瓶就快速攝取大量蔬菜，含有大量的纖維，讓這一瓶彷彿帶您進入了如綠洲般的蔬果體驗\n綠拿鐵食材透過果汁機或調理機充分攪拌後，更容易消化、吸收，使身體攝取足夠的纖維質及全營養，增強消化功能，排除囤積體內的廢物及毒素，幫助提升健康力、擁有好氣色，進而達成更佳的體態。\nWelsun的綠拿鐵公式：蔬菜＋水果＋水＋堅果，(考量到東方人體質比較寒，我們將綠拿鐵中加入堅果，散掉寒性、平衡生冷寒涼)",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.7 護健康-五行蔬果汁 Health Protection/500cc",
+            "description": "口感清爽自然，富含蔬果的健康元素，給您有如綠巨人般的滿滿活力。不同比例的新鮮蔬果，調節您在繁忙生活中的飲食，補充蔬果纖維，減輕身體負擔，體內環保好輕鬆。\n無加水加色素，不在另外加糖純甘蔗汁的甜，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.8 抗壓力-綠色綜合蔬果汁 Anti-Stress/500cc",
+            "description": "由甘蔗汁與含極豐富的纖維素、木質素、可溶性纖維的牧草汁當作基底，加入酸酸甜甜的鳳梨，另有具鎮靜功效的蘆薈與提高免疫機能的石蓮花，綜合的補充綠汁能量。\n喝起來，感覺一整個周末的壓力與煩躁都得到消除了\n無加水加色素，不在另外加糖純甘蔗汁的甜，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.2 清肝火-石蓮蔬果汁Liver Cleansing/500cc",
+            "description": "透過鳳梨+金桔調味，現榨甘蔗汁做基底，有機石蓮花具有平肝、涼血功效、降血糖、排尿酸、去尿毒，促進新陳代謝、養顏美容之功能。\n每日一杯善待肝苦人\n無加水加色素，不在另外加糖純甘蔗汁的甜，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.10 全方位-效能蔬果汁 Complete Package/500cc",
+            "description": "如同每一位現場老客人所說(一次給了所有的滿足)\n真心建議，一定要喝喝看這杯，加入大量綠色蔬菜用了含有葉綠素牧草汁和甘蔗汁中和所有的味道\n一喝就會像一 見鍾情一樣\n無加水加任何色素，不在額外加糖純為甘蔗甜，正常冰及去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.3 解咳疏風寒-蘆薈蔬果汁 Dry Cough/500cc",
+            "description": "蘆薈有許多強大多酚搭配其他的成分，更能有效抵抗有害細菌，避免感染，另外金桔可以有效化痰、酒醉口渴、消化不良、幫助食慾不振症狀，再用甘蔗汁跟牧草汁綜合起來，酸酸甜甜一口接一口\n對咳嗽說掰掰\n無加水加色素，不在另外加糖純甘蔗汁的甜，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "堅果優格奶 系列 Absolute Fruit with Nuts & Plain Yogurt",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "No.13 飽足感-堅果莓優格飲 Satiety Center/500cc",
+            "description": "療癒系食物讓你越吃越年輕\n我們要越來越愛自己，把一天該補充的營養都補充的，莓好滋味優格奶昔，酸甜輕盈好心情，高纖低卡無「腹」擔唷\n無加水加色素，不在另外加糖純甘蔗汁的甜，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.14 擺脫憂鬱-肉桂香蕉堅果奶 Get rid of Gloomy/500cc",
+            "description": "忙碌了一整天，肉桂香蕉堅果奶它可是大腦血管的補給聖品唷，可以讓您好好放鬆的一杯好物，\n香蕉含有豐富的膳食纖維，能讓飽足感持續更久維持好心情，並使醣類消化更為緩慢，同時香蕉還含有豐富的鉀，1根大約就能滿足每天所需的12％，能幫助預防高血壓、腎結石，同時還有助於降低血壓，能幫助減少腦中風的風險。而且在容易流汗的夏天，香蕉還有補充電解質的作用，能幫助預防中暑。\n肉桂能活化微血管，還能鞏固血管組織肉桂能活化微血管唷\n無加水加色素，不在另外加糖，正常冰即去冰\n讓我們跟一整天的憂鬱說掰，尋找我們自己的快樂星球",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "NO.15 愉悅感-搖滾蕉堅果奶Banana  Rock Cocoa /500cc",
+            "description": "濃郁無糖黑可可粉加上冷凍香蕉，撒入堅果，在燕麥奶的絲滑中搖滾翻攪。衝擊您的口感，讓您每天搖滾起來~~",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手工優格蔬果飲 系列 Absolute fruit & veg Juice with Plain Yogurt",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "No.6 補血養顏-甜菜根優格飲 Blood Supplement/500cc",
+            "description": "甜菜根營養豐富，「甜菜紅素」（Betacyanin），這種植化素，根據研究實驗發現，具有很好的抗氧化、抗自由基能力，有助養顏美容、保護心血管健康、長期飲用更可預防慢性發炎，並且也是女性朋友補血的聖品，更能讓您滿面紅潤。\n搭配鳳梨與基底啤酒酵母菌，鮮打發出自然的甜味，搭配手工優格，真的是很好的補血養顏利器唷",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.1 抗氧化-雙莓優格Antioxidant /500cc",
+            "description": "雙莓-藍莓+蔓越莓，藍莓是新鮮水果中含抗氧化劑量最高的，富含的花青素和維他命C都使得藍莓具有超強抗氧化力，可以中和影響人體健康和老化的自由基，而蔓越莓也含有豐富的維他命A、C、E，以及初花色也具有非常好之抗氧化、抗菌及淨化效果。\n兩種莓果混和配上助消化的優若乳與基底甘蔗汁完美搭配，絕對是愛美的妳善待自己的最好選擇。\n無加水加色素，不在另外加糖純甘蔗汁的甜，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.4 健脾胃-山藥紫高麗優格飲 Stomachic/500cc",
+            "description": "山藥有著高分子的黏液蛋白，對人體的消化器官有保護作用，可減緩胃酸分泌，長期飲用對於預防胃潰瘍和十二指腸潰瘍的發生有幫助。另外紫高麗防衰老、抗氧化、含有某種「潰瘍癒合因子」，對潰瘍有著很好的治療作用，研究指出能加速創面癒合，是胃潰瘍患者的有效食品又可增進食慾，促進消化預防便秘。也是糖尿病和肥胖患者的理想食物。\n搭配手工優格絕對是健脾胃的天然飲品\n無加水加色素，不在另外加糖，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.5 顧明目-紅蘿蔔蘋果優格飲 Eyesight/500cc",
+            "description": "胡蘿蔔汁中含有的營養物質對眼睛有宜，其中β-胡蘿蔔素就是失明的一個重要原因，維生素A的缺乏也是導致眼乾症的一個重要唷\n這時候榨汁時我們再加上一顆蘋果一些當季鳳梨一起榨,蘋果帶有甜味和獨特的果香與鳳梨特有的酸甜,可中和胡蘿蔔中的青澀口味,改善其口味\n讓我們一起愛上的美妙的組合吧\n無加水加色素，不在另外加糖，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "黃金甘蔗系列 Golden Sugarcane juice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "No.12 黃金翡翠-甘蔗金桔檸檬純汁 Golden Jadeite/500cc",
+            "description": "夏天正式來臨啦，大熱天的大家都喜歡喝果汁，特別是蔗榨汁隨處可見，但金桔檸檬和甘蔗一起榨汁在這是不常見，台灣檸檬酸酸的口感中和甘蔗甜膩感，給愛酸得大家一起嘗鮮",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "No.11 黃金水-甘蔗純汁 Golden Drink Sugarcane Juice/500cc",
+            "description": "甘蔗是水果中唯一的莖用水果，也是水果中含纖維(包括非膳食纖維)最多的一種水果。甘蔗含糖量高，漿汁甜美，被稱為「糖水倉庫」，帶來甜蜜的享受，並提供相當多的熱量和營養。\n無加水加色素，不在另外加糖純甘蔗汁的甜，正常冰即去冰",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

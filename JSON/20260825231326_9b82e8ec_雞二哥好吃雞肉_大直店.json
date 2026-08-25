@@ -1,0 +1,74 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9B%9E%E4%BA%8C%E5%93%A5%E5%A5%BD%E5%90%83%E9%9B%9E%E8%82%89-%E5%A4%A7%E7%9B%B4%E5%BA%97/MMHUT8iaUrKbhA8h3j79GQ",
+  "name": "雞二哥好吃雞肉 大直店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區北安路458巷41弄3號A 13攤 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.078642414302404,
+    "longitude": 121.54528715022394
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 2
+  },
+  "servesCuisine": [
+    "Fast Food"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒蒜香毛豆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "前菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綜合雞腳（6支一份）",
+            "description": "含有豐富膠質的大雞腳，數量有限，賣完為止！（老綁一個人比較忙，沒時間剪指甲！鼻要嫌棄喔）",
+            "offers": {
+              "@type": "Offer",
+              "price": "88.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒蒜香毛豆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

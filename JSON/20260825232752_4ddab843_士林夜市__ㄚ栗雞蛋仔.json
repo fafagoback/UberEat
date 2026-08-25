@@ -1,0 +1,154 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E3%84%9A%E6%A0%97%E9%9B%9E%E8%9B%8B%E4%BB%94/NVcLOm1cUwa-fZQ5WSaXBg",
+  "name": "士林夜市  ㄚ栗雞蛋仔",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區大西路6號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0898432,
+    "longitude": 121.5240687
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 88
+  },
+  "servesCuisine": [
+    "Desserts"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奶香北海道起司",
+            "description": "外皮酥脆金黃，內裡鬆軟，融合了北海道濃郁的起司風味，鹹甜交融。每一顆雞蛋仔咬下去都有香濃的起司餡料，口感豐富且層次分明，令人欲罷不能。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宇治抹茶",
+            "description": "外皮酥脆金黃，內裡柔軟，抹茶的清香與微苦味融合，帶來獨特的風味，讓每一口都充滿了濃郁的抹茶香氣，令人陶醉的美味享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃情巧克力",
+            "description": "外皮酥脆金黃，內裡柔軟且充滿濃厚巧克力風味，巧克力香氣四溢，每一口都是甜蜜的巧克力享受，帶來濃郁的美味體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "軟糯黑糖麻吉",
+            "description": "外皮酥脆，內裡包裹著Q彈的麻糬，搭配香甜濃郁的黑糖風味，每一口都能享受到麻糬的嚼勁與黑糖的香氣，口感層次豐富，甜而不膩，絕對是令人上癮的甜品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙鹹蛋黃",
+            "description": "外皮酥脆金黃，內裡融合了鹹蛋黃的濃郁香氣，每一口都帶有沙沙的鹹蛋黃口感，鹹香濃郁，與雞蛋仔的鬆軟完美結合，呈現出獨特的鹹甜風味，令人驚豔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司三重奏",
+            "description": "外皮酥脆金黃，內裡鬆軟，融合了北海道濃郁的起司加上起司片跟帕瑪幓風味每一顆雞蛋仔咬下去都有香濃的起司餡料，口感豐富且層次分明，令人欲罷不能。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "雞蛋仔系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典原味",
+            "description": "外皮酥脆金黃，內裡柔軟蓬鬆，雞蛋的香氣濃郁，每一口都是經典的甜美滋味，令人懷舊的美味小吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "戀戀香甜草莓",
+            "description": "外皮酥脆金黃，內裡柔軟，草莓的甜美與香氣充滿每一口，搭配微微酸味，讓人感受到新鮮草莓的濃郁風味，是一道令人愉悅的甜美小吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香醇黑芝麻",
+            "description": "外皮酥脆金黃，內裡柔軟，黑芝麻的濃郁香氣與微妙的苦味交織，帶來健康又美味的風味，每一口都充滿了黑芝麻的天然香甜與營養。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可口蔓越莓",
+            "description": "外皮酥脆金黃，內裡鬆軟，蔓越莓的酸甜果香在雞蛋仔中綻放，清爽不膩，口感層次分明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃郁花生",
+            "description": "外皮酥脆金黃，內裡鬆軟，花生的濃郁堅果香在口中綻放，每一口都充滿香醇與厚實風味，甜而不膩，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

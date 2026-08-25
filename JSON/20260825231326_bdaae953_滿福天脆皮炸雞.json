@@ -1,0 +1,194 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%BB%BF%E7%A6%8F%E5%A4%A9%E8%84%86%E7%9A%AE%E7%82%B8%E9%9B%9E/gseSYoRlU7qR4A90xqYKgQ",
+  "name": "滿福天脆皮炸雞",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市大同區延平北路三段71-1號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.066484963350838,
+    "longitude": 121.51115484455737
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Taiwanese Fried Chicken",
+    "Fried Chicken",
+    "Street Food",
+    "Fast Food"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "旗魚黑輪  Marlin Fish Cake",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "腿排 3 支  Thigh Steaks 3 pieces",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿 3 隻  Chicken Drumsticks 3 pieces",
+            "description": "脆皮雞腿-好吃喔!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽酥雞  Salt and Pepper Chicken",
+            "description": "1 份。脆皮鹽酥雞-好吃喔!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿  Chicken Drumstick",
+            "description": "1 支。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞翅 1 支  Chicken Wing 1 piece",
+            "description": "脆皮雞翅-好吃喔!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿 3 隻  Chicken Drumsticks 3 pieces",
+            "description": "脆皮雞腿-好吃喔!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽酥雞  Salt and Pepper Chicken",
+            "description": "1 份。脆皮鹽酥雞-好吃喔!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "腿排 1 支  Thigh Steak 1 piece",
+            "description": "脆皮腿排-好吃喔!!!",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點  À La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞翅 5 支  Chicken Wings 5 pieces",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "腿排 3 支  Thigh Steaks 3 pieces",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿  Chicken Drumstick",
+            "description": "1 支。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "旗魚黑輪  Marlin Fish Cake",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸  Cuttlefish Ball",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

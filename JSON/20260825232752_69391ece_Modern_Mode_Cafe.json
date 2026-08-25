@@ -1,0 +1,243 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/modern-mode-cafe/JTNN57nmX6aoP71fDQyVeQ",
+  "name": "Modern Mode Cafe",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市大同區迪化街一段278號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.06101,
+    "longitude": 121.5092146
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 7
+  },
+  "servesCuisine": [
+    "Coffee and Tea",
+    "Desserts",
+    "Chocolate",
+    "Snacks",
+    "Drinks",
+    "Cakes"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "✨人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味巧克力 Original Chocolate",
+            "description": "100% 純法國可可牛奶與澎軟綿花糖, 冰的是自製鮮奶油。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "咖啡類 Cafe",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奶泡咖啡 Foam Coffee",
+            "description": "雙份濃縮咖啡加上濃厚的奶泡",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖啡歐雷 Caoffee Au Lait",
+            "description": "100 毫升的黑咖啡與溫順小農醇牛奶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑咖啡 Americano",
+            "description": "如果不想喝那麼濃又不想喝美式那麼淡\n225 毫升。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "牛奶類 Milk",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "焦糖牛奶 Caramel Au Lait",
+            "description": "自製焦糖牛奶打上香醇小農牛奶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "栗子泥牛奶 Milk with Mashed Chestnut",
+            "description": "法國栗子泥打上香醇小農牛奶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "巧克力 Chocolate",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉桂巧克力 Chocolate Cinnamon",
+            "description": "100% 純法國可可牛奶與肉桂香料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力加濃縮咖啡 Chocolate Expresso",
+            "description": "100% 純法國可可牛奶與單份濃縮咖啡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "栗子泥巧克力 Chocolate with Mashed Chestnut",
+            "description": "100% 純法國可可牛奶與法國栗子泥。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "茶類 Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Phénix 鳳凰",
+            "description": "沈著的波本香草與焦糖香氣，加上充滿榛果與蜂蜜口感的紅茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "非洲模里西斯香草茶 Ile Maurice",
+            "description": "來自法國瑪黑茶，無茶鹼極細葉片, 香草, 柑橘和野莓。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱帶花園 Surabaya",
+            "description": "來自法國瑪黑茶，無咖啡因灌木紅茶, 錦葵花, 香草香氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠色馬可波羅 Vert Marco Polo",
+            "description": "來自法國瑪黑茶，薰香綠茶, 西藏神秘果與自然花香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Sakura 春之櫻",
+            "description": "靈感來自春天的日本，山茶花與綻放的櫻花氣息。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "普羅旺斯伯爵 Earl Grey French Blue",
+            "description": "法國頂級紅茶混合佛手柑與自然薰衣草, 口感溫順, 高雅且精緻",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "印度香料奶茶 Masala Tea",
+            "description": "熱飲。含金德納格爾茶葉與荳蔻, 肉桂, 丁香及薑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "食物類 Food",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "提拉米蘇 Tiramisu",
+            "description": "義式經典甜點。馬斯卡彭起司慕斯與咖啡浸泡手指餅層層堆疊，表面撒上可可粉，綿滑帶咖啡香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

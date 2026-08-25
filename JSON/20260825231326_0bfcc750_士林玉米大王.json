@@ -1,0 +1,133 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E7%8E%89%E7%B1%B3%E5%A4%A7%E7%8E%8B/ZB6TitHjXj6zZzzx1ugZ8g",
+  "name": "士林玉米大王",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區大南路83-1號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.089313139212926,
+    "longitude": 121.52438526003287
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 3
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Japanese BBQ",
+    "Arepa",
+    "Local Specialities"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "🏆人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤玉米 Grilled Corn",
+            "description": "1 支。經典原味, 純粹感動。嚴選飽滿鮮甜玉米, 刷上獨家祖傳特調醬汁, 經由慢火層層翻烤, 深度入味。咬下的每一口都是醇厚醬香與玉米 Q 彈多汁的完美結合。不辣的首選, 大人小孩都吃到舔指回味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微辣烤玉米 Less Spicy Grilled Corn",
+            "description": "1 支。微辣提味, 越吃越涮嘴。懂吃的老饕最愛。一點點的微辣, 不但沒有掩蓋玉米的鮮甜, 反而神奇地勾引出特製醬汁的甘醇。微麻微辣在舌尖跳躍, 香氣層次瞬間升級, 保證讓你一口接一口, 根本停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤玉米及玻璃罐可樂套餐 Grilled Corn with Glass Bottle of Coke",
+            "description": "含 1 支烤玉米及飲品。台式宵夜傳奇。冰火交融極致爽快。剛出爐, 熱騰騰, 醬香濃郁的現烤玉米, 配上冰鎮到骨子裡的經典玻璃罐可樂。一口濃郁炙烤, 一口強烈氣泡, 瞬間沖刷口中的溫熱, 解膩又過癮。這就是深夜裡最無敵的療癒神組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🌽招牌烤玉米 Grilled Corn",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤玉米 Grilled Corn",
+            "description": "1 支。經典原味, 純粹感動。嚴選飽滿鮮甜玉米, 刷上獨家祖傳特調醬汁, 經由慢火層層翻烤, 深度入味。咬下的每一口都是醇厚醬香與玉米 Q 彈多汁的完美結合。不辣的首選, 大人小孩都吃到舔指回味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微辣烤玉米 Less Spicy Grilled Corn",
+            "description": "1 支。微辣提味, 越吃越涮嘴。懂吃的老饕最愛。一點點的微辣, 不但沒有掩蓋玉米的鮮甜, 反而神奇地勾引出特製醬汁的甘醇。微麻微辣在舌尖跳躍, 香氣層次瞬間升級, 保證讓你一口接一口, 根本停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中辣烤玉米 Medium Spicy Grilled Corn",
+            "description": "1 支。勁辣過癮, 嗜辣老饕必點。無辣不歡的你絕不能錯過!特製香辣粉與高溫炙烤的濃郁醬汁深度融合, 隨著熱氣散發出濃烈辛香。辣口不辣心, 爽快感直衝鼻腔, 與玉米的甜美撞擊出最狂野的滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍱吃飽套餐 Combo",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤玉米及玻璃罐可樂套餐 Grilled Corn with Glass Bottle of Coke",
+            "description": "含 1 支烤玉米及飲品。台式宵夜傳奇。冰火交融極致爽快。剛出爐, 熱騰騰, 醬香濃郁的現烤玉米, 配上冰鎮到骨子裡的經典玻璃罐可樂。一口濃郁炙烤, 一口強烈氣泡, 瞬間沖刷口中的溫熱, 解膩又過癮。這就是深夜裡最無敵的療癒神組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤玉米及玻璃罐雪碧套餐 Grilled Corn with Glass Bottle of Sprite",
+            "description": "含 1 支烤玉米及飲品。黃金爽口配。清爽解膩 NO 1。重口味烤玉米的完美救星。當濃郁鹹香的烤玉米, 遇上帶著清新檸檬香氣的冰涼玻璃罐雪碧, 微甜清爽的氣泡在口中炸裂, 完美平衡了醬汁的厚重, 讓美味度再翻倍, 怎麼吃都不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

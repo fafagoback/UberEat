@@ -1,0 +1,538 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%87%91%E5%90%89%E5%88%A9%E5%AF%B5%E7%89%A9%E7%B2%BE%E5%93%81%E5%A4%A9%E6%AF%8D%E5%BA%97/CUHRWvYgWXCwSrnt9ibMfw",
+  "name": "金吉利寵物精品(天母店)",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "臺北市士林區中山北路6段174號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1074,
+    "longitude": 121.52517
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Pet Supplies",
+    "Grocery",
+    "Retail"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "尿布墊&禮貌帶&生理褲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "IRIS-FMT485平面狗便盆(顏色隨機)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "718.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嬌聯禮貌帶男用S 46入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "836.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ALT 【粉安心】生理尿褲( M_13入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "375.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ALT 【粉安心】生理尿褲( XL_11入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "375.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ALT 【粉安心】禮貌帶( L_8入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "322.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ALT 【粉安心】禮貌帶( XS_12入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "322.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ALT 【粉安心】生理尿褲( S_18入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "375.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ALT 【粉安心】禮貌帶( M_9入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "322.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ALT 【粉安心】生理尿褲( L_12入)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "375.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嬌聯禮貌帶男用M 42入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "836.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "貓零食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "日本藍小魚乾100g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "201.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "HULUCAT卡滋化毛潔牙餅60g-牛肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自然小貓 超級食物配方 鮪魚佐奇亞籽肉泥12gX4入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自然小貓天然鮪魚20g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自然小貓 超級食物配方-雞肉、雞肝佐亞麻籽肉泥12gX4入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自然小貓天然野鯖魚30g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "驕傲貓蔓越莓鱈魚貓掌凍乾棒棒糖 12入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "288.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本藍海鮮蟹肉絲60g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "288.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "HULUCAT卡滋化毛潔牙餅60g-鮪魚",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "自然小貓 超級食物配方 鮪魚、鮭魚佐藍莓肉泥12gX4入",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本藍海鮮蟹肉絲200g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "723.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "HULUCAT卡滋化毛潔牙餅60g-雞肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "HULUCAT卡滋化毛潔牙餅60g-海鮮",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "長崎丁香魚乾40g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "貓罐頭",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "法麗 全照護主食罐 雞肉佐南瓜慕斯80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "63.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "CIAO旨定罐（11歲高齡貓 鮪魚白肉）M-41 80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "亨利口袋滴雞精主食貓罐-雞肉鱸魚80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原燒貓罐80g(除毛球)雞+鮪+鮮蝦",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "FHNW 皇家饗宴主食濕糧-多元口感SFW 85G",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金貓罐-白身鮪魚+魚丸+吻仔魚80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "亨利口袋滴雞精主食貓罐-美味雞肉80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Dr.Wish貓罐-鮪+果寡糖85g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "亨利口袋滴雞精主食貓罐-雞肉鮭魚80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Dr.Wish貓罐-雞+鮪+牛磺酸85g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "凱特美廚-嫩雞佐南瓜-90g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "84.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特級銀貓餐罐-鮪魚+蟹肉80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "FCNW 皇家亮毛成貓HS33W 85G",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "CIAO旨定罐（11歲高齡貓 鰹魚白肉）M-42 80g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "FCNW 皇家泌尿道保健成貓UC33W 85G",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "狗零食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "PV超美味小饅頭-香濃牛奶250g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新狗明星香焙雞胸切條-140g 358774",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "GOODIES耐嚼型潔牙棒-培根風味(2支包)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "聖萊西-黃金系列-軟嫩雞肉圓片160g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "AM濃郁牛奶小饅頭350g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香饌-雞肉鱈魚捲 200g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "GOODIES耐嚼型潔牙棒-雞肉風味(2支包)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "汪洽普狗狗凍乾零食-鮭魚100g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "502.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "AM補鈣起司小饅頭350g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

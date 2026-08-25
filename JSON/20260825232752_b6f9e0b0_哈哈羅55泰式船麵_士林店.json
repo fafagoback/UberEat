@@ -1,0 +1,430 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%93%88%E5%93%88%E7%BE%8555%E6%B3%B0%E5%BC%8F%E8%88%B9%E9%BA%B5-%E5%A3%AB%E6%9E%97%E5%BA%97/lm-QLJciV-qQvuWLbajEEA",
+  "name": "哈哈羅55泰式船麵 士林店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "臺北市士林區承德路四段243號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.088890264171255,
+    "longitude": 121.52183291532846
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 38
+  },
+  "servesCuisine": [
+    "Thai",
+    "Tom Yum",
+    "Northern Thai"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "一人套餐Set Meal for One",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣豬肉細粉 Sour and Spicy Soup Rice Noodles with Pork",
+            "description": "道地泰式酸辣湯頭開胃過癮，完美結合香料芬芳與Q彈麵條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣豬肉粿條 Sour and Spicy Flat Rice Noodles with Pork",
+            "description": "道地泰式酸辣湯頭開胃過癮，完美結合香料芬芳與Q彈麵條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉瀑布細粉 Thai Soup Rice Noodles with Pork",
+            "description": "加入香料豬血熬製的濃郁黑湯，口感醇厚深沉，是老饕必點的經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞翅 Deep-Fried Chicken Wing",
+            "description": "外皮金黃酥脆、肉質鮮嫩多汁，醃漬入味的香氣讓人忍不住一支接一支。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清湯豬肉細粉 Soup Rice Noodles with Pork",
+            "description": "清甜的大骨高湯搭配滑嫩豬肉與彈牙粉麵，呈現最純粹的泰式家鄉味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉瀑布粿條 Thai Soup Flat Rice Noodles",
+            "description": "加入香料豬血熬製的濃郁黑湯，口感醇厚深沉，是老饕必點的經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸春捲 Deep-Fried Spring Roll",
+            "description": "薄脆外皮包裹豐富鹹香內餡，沾上醬汁，每一口都是滿足的卡滋聲",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清湯豬肉粿條 Soup Flat Rice Noodles with Pork",
+            "description": "清甜的大骨高湯搭配滑嫩豬肉與彈牙粉麵，呈現最純粹的泰式家鄉味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶茶 Thai Milk Tea",
+            "description": "400ml濃郁茶香與煉乳交織成誘人的橘紅色調，口感香甜絲滑，最經典的泰味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式香香豬 Thai Pork",
+            "description": "特調香料醃製豬肉炸至外酥內Q，扎實的肉感是搭配主食的最佳良伴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式粉紅奶 Thai Pink Milk",
+            "description": "400ml充滿少女心的夢幻色澤，帶有獨特的紅糖水香氣與乳香，甜蜜迷人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "【請勿下單】飲料比例固定，無法調整冰量、甜度",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【請勿下單】麵、湯比例固定，無法調整辣度及增加湯量",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【請勿下單】麵、湯一律分開裝，無法裝一起，以防灑出",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【請勿下單】主食配料如有售完部分，會更換等值或超值的配料",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "【請勿下單】如餐點有遇到任何狀況，請洽臉書粉專反應",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "一人套餐Set Meal for One",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "275.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "主食 Main Course",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "清湯豬肉粿條 Soup Flat Rice Noodles with Pork",
+            "description": "清甜的大骨高湯搭配滑嫩豬肉與彈牙粉麵，呈現最純粹的泰式家鄉味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣豬肉粿條 Sour and Spicy Flat Rice Noodles with Pork",
+            "description": "道地泰式酸辣湯頭開胃過癮，完美結合香料芬芳與Q彈麵條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉瀑布粿條 Thai Soup Flat Rice Noodles",
+            "description": "加入香料豬血熬製的濃郁黑湯，口感醇厚深沉，是老饕必點的經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清湯豬肉細粉 Soup Rice Noodles with Pork",
+            "description": "清甜的大骨高湯搭配滑嫩豬肉與彈牙粉麵，呈現最純粹的泰式家鄉味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣豬肉細粉 Sour and Spicy Soup Rice Noodles with Pork",
+            "description": "道地泰式酸辣湯頭開胃過癮，完美結合香料芬芳與Q彈麵條。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉瀑布細粉 Thai Soup Rice Noodles with Pork",
+            "description": "加入香料豬血熬製的濃郁黑湯，口感醇厚深沉，是老饕必點的經典。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物 Fried food",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式香香豬 Thai Pork",
+            "description": "特調香料醃製豬肉炸至外酥內Q，扎實的肉感是搭配主食的最佳良伴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸春捲 Deep-Fried Spring Roll",
+            "description": "薄脆外皮包裹豐富鹹香內餡，沾上醬汁，每一口都是滿足的卡滋聲",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豬皮 Deep-Fried Pork",
+            "description": "金黃酥香不油膩，無論單吃當零嘴或泡入湯麵吸收湯汁，口感層次分明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞翅 Deep-Fried Chicken Wing",
+            "description": "外皮金黃酥脆、肉質鮮嫩多汁，醃漬入味的香氣讓人忍不住一支接一支。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品 Beverage",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "可樂 Coke",
+            "description": "冰涼爽口的經典氣泡飲品，絕對是搭配熱騰騰炸物與湯麵的最佳拍檔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式檸檬茶 Thai Honey Lemon Tea",
+            "description": "400ml酸爽檸檬遇上獨特泰式茶香，沁涼解膩，是炎炎夏日的救贖。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶茶 Thai Milk Tea",
+            "description": "400ml濃郁茶香與煉乳交織成誘人的橘紅色調，口感香甜絲滑，最經典的泰味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式粉紅奶 Thai Pink Milk",
+            "description": "400ml充滿少女心的夢幻色澤，帶有獨特的紅糖水香氣與乳香，甜蜜迷人。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶綠 Thai Milk Green Tea",
+            "description": "400ml清新茉莉茶香結合醇厚鮮乳，比起泰奶更增添了一抹優雅的芬芳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式豆奶 Thai Soybean Milk",
+            "description": "泰國國民品牌豆奶，口感濃郁滑順且帶有微甜豆香，營養又解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰子汁 Coconut Juice",
+            "description": "天然清甜的椰肉香氣，清涼降火，彷彿瞬間置身泰國海島度假。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羅望子汁 Tamarind Juice",
+            "description": "獨特的酸甜風味帶有淡淡果香，口感清爽且生津止渴，極具異國風情。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

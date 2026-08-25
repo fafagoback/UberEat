@@ -1,0 +1,559 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E5%86%A0%E5%A4%A7%E8%85%B8%E5%8C%85%E5%B0%8F%E8%85%B8/FUelMBUnTkypYzWmT6pxDw",
+  "name": "士林夜市 冠大腸包小腸",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Da Nan Rd. 45",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.089292,
+    "longitude": 121.5251357
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 1000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Street Food"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌蔥蒜大腸包小腸 Garlic",
+            "description": "台味經典大腸包小腸：糯米腸夾入台式香腸，鋪上蔥花與蒜末，香氣飽滿、層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味醬油大腸包小腸 Soy Sauce",
+            "description": "糯米腸包台式香腸，刷上原味醬油，經典鹹香組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌蔥蒜大腸包小腸+有糖古早味紅茶套餐",
+            "description": "招牌蔥蒜大腸包小腸配上一杯老闆娘親自煮古早味紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨家辣泡菜大腸包小腸 Exclusive Kimchi",
+            "description": "糯米腸包台式香腸，鋪上獨家辣泡菜，酸辣爽脆，鹹香對味",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味大腸包小腸 Spicy",
+            "description": "外層糯米腸夾入台式香腸，鋪上辣椒與蒜酥，Q彈與脆香同時入口，鹹香帶辣更過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒大腸包小腸 Black Pepper",
+            "description": "糯米腸夾入台式香腸，中央鋪滿黑胡椒，米香與肉香一口到位，口感飽滿有嚼勁，呈現經典大腸包小腸層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味醬油大腸包小腸+古早味有糖紅茶套餐",
+            "description": "招牌蔥蒜大腸包小腸配上一杯老闆娘親自煮古早味紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨家泡菜大腸包小腸+古早味紅茶套餐",
+            "description": "招牌蔥蒜大腸包小腸配上一杯老闆娘親自煮古早味紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌蔥蒜大腸包小腸 Garlic",
+            "description": "台味經典大腸包小腸：糯米腸夾入台式香腸，鋪上蔥花與蒜末，香氣飽滿、層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味大腸包小腸 Spicy",
+            "description": "外層糯米腸夾入台式香腸，鋪上辣椒與蒜酥，Q彈與脆香同時入口，鹹香帶辣更過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨家辣泡菜大腸包小腸 Exclusive Kimchi",
+            "description": "糯米腸包台式香腸，鋪上獨家辣泡菜，酸辣爽脆，鹹香對味",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味醬油大腸包小腸 Soy Sauce",
+            "description": "糯米腸包台式香腸，刷上原味醬油，經典鹹香組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒大腸包小腸 Black Pepper",
+            "description": "糯米腸夾入台式香腸，中央鋪滿黑胡椒，米香與肉香一口到位，口感飽滿有嚼勁，呈現經典大腸包小腸層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味醬油大腸包小腸+古早味有糖紅茶套餐",
+            "description": "招牌蔥蒜大腸包小腸配上一杯老闆娘親自煮古早味紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨家泡菜大腸包小腸+古早味紅茶套餐",
+            "description": "招牌蔥蒜大腸包小腸配上一杯老闆娘親自煮古早味紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁大腸包小腸 Honey",
+            "description": "糯米腸包香腸，蜜汁風味，經典台式小吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔大腸包小腸 Basil",
+            "description": "糯米腸包台式香腸，搭配九層塔增添清香",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶大腸包小腸 BBQ Satay",
+            "description": "糯米腸夾台式香腸，佐沙茶醬，經典夜市風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "妹子找碴（茶）",
+            "description": "古早味酸梅冰改良～老闆娘獨家特調！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖仙草茶700cc",
+            "description": "手工加入黑糖現調的黑糖仙草茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點米腸",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌蔥蒜米腸 Garlic",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁米腸 Honey",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨家辣泡菜米腸 Exclusive Kimchi",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔米腸 Basil",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶米腸 BBQ Satay",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味醬油米腸 Soy Sauce",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味米腸 Spicy",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒米腸 Black Pepper",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點香腸",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味香腸 Soy Sauce",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌蔥蒜香腸 Garlic",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨家辣泡菜香腸 Exclusive Kimchi",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔香腸 Basil",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味香腸 Spicy",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶香腸 BBQ Satay",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒香腸 Black Pepper",
+            "description": "1 份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味醬油大腸包小腸+古早味有糖紅茶套餐",
+            "description": "招牌蔥蒜大腸包小腸配上一杯老闆娘親自煮古早味紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌蔥蒜大腸包小腸+有糖古早味紅茶套餐",
+            "description": "招牌蔥蒜大腸包小腸配上一杯老闆娘親自煮古早味紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "獨家泡菜大腸包小腸+古早味紅茶套餐",
+            "description": "招牌蔥蒜大腸包小腸配上一杯老闆娘親自煮古早味紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "古早味有糖紅茶700cc",
+            "description": "老闆娘親自煮的紅茶～好喝唷～",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味無糖紅茶700cc",
+            "description": "老闆娘親自煮的紅茶～好喝唷～",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛奶尬紅茶700cc",
+            "description": "闆娘親自現煮古早味紅茶搭牛奶，好喝喔～",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草凍奶茶",
+            "description": "闆娘親自調配的比例，好喝喔～",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "妹子找碴（茶）",
+            "description": "古早味酸梅冰改良～老闆娘獨家特調！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖仙草茶700cc",
+            "description": "手工加入黑糖現調的黑糖仙草茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜茶.700cc",
+            "description": "此商品為老闆娘每天現煮的古早味冬瓜茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青檸冬瓜700cc",
+            "description": "老闆娘現煮的古早味冬瓜茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青檸紅茶700cc",
+            "description": "此品項為老闆娘自己現主的古早味紅茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛奶尬冬瓜茶700cc",
+            "description": "此品項為老闆娘當天現煮古早味冬瓜茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

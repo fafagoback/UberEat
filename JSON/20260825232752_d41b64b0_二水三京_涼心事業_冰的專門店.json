@@ -1,0 +1,1277 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%BA%8C%E6%B0%B4%E4%B8%89%E4%BA%AC-%E6%B6%BC%E5%BF%83%E4%BA%8B%E6%A5%AD-%E5%86%B0%E7%9A%84%E5%B0%88%E9%96%80%E5%BA%97/ECgxEoqeWueBBVEJhgeOMg",
+  "name": "二水三京 涼心事業 冰的專門店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市大同區酒泉街66號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0718929,
+    "longitude": 121.5154967
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 4000
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Exclusive to Eats"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "·自選仙草冰(4項自選料)",
+            "description": "🍨特製仙草冰沙，仙草味甘淡，性偏涼⛄，炎熱夏天🌞想吃清爽的冰品，不能錯過這一碗。(任搭任選❤️四種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "二水涼粽",
+            "description": "這粽感覺，與眾不同 你何須減重，你需要的是鹼粽 搭配綠豆紅豆，傳統好滋味，給你無負擔的清涼體 鹼粽1顆/紅豆/綠豆/手炒冰/豐年果糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選蔗糖(4項自選料)",
+            "description": "清冰加上特製💪🏽古法手炒蔗糖💪🏽，夏天必吃聖品🌞 (任搭任選❤️四種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選豆花(2項自選料)",
+            "description": "採用非基改黃豆製成豆花，軟嫩滑順，搭配特製古法手炒蔗糖及一球蔗糖冰沙，增添口感。(任搭任選❤二種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選豆漿豆花(選2種料)",
+            "description": "使用高蛋白質非基改豆漿，而外加一球（手炒蔗糖冰沙）增添口感，豆漿可選（有糖）或（無糖）。(任搭任選❤二總配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "關西珍珠仙草凍",
+            "description": "🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為2的倍數， 否則系統無法套用優惠。🚨🔔〈優惠商品〉不接受備註及換料\n\n淋上濃郁奶油球，搭配慢火熬煮珍珠，口感Q彈順口滑順，消暑⛄解熱就靠它💮",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋情故粽",
+            "description": "粽夏夜，芋您團圓 粽葉等到了糯米，而我還再等你團圓，芋頭冰沙配上鹼粽， 加上花生粉與湯圓珍珠的傳統交織 鹼粽1顆/芋頭冰沙/珍珠/湯圓/花生粉/手炒冰/豐年果糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀雙料凍(紅豆、芋圓)",
+            "description": "關西仙草凍加上古法凍菜,順感搭配每日現新鮮食材,今夏消暑解熱靠它\n(配料:仙草凍、菜燕凍、紅豆、芋圓)\n🚨🔔滿額贈商品，請務必在購物車中將商品數量加入，否則系統無法套用優惠。\n🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為 2 件， 否則系統無法套用優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選芋頭(4項自選料)",
+            "description": "特製芋頭冰沙，綿密芋頭加糖打出的冰沙，即使變成冰沙，依然吃的到芋頭顆粒。(任搭任選❤四種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰雲豆花",
+            "description": "濃醇椰奶融合細緻豆花與豆香，入口滑嫩如雲，\n再加上珍珠與西米露雙Q配料，層層堆疊出香、嫩、彈的多重口感。\n每一勺都是椰香與豆香交織的溫柔甜味。\n一碗剛剛好的療癒，就是屬於莎莎亞的經典甜品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香濃奶酪",
+            "description": "🍮濃醇香、純手工、完全不添加一滴水的製造過程，🍯交織出前所未見的甜蜜新滋味，五種口味任選。🚨🔔〈優惠商品〉不接受備註及換料，想吃自己喜歡的配料請選〈下方加料〉\n🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為 2 件， 否則系統無法套用優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火烤布丁牛奶冰(布丁、玉米片、煉、黑糖)",
+            "description": "小朋友的最愛，統一布丁加上手工熬煮黑糖，灑上脆片，淋上煉乳",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿嬤的麵茶冰(麵、芋圓、紅、珍、綠)",
+            "description": "來自南部的麵茶，搭配珍珠、紅豆、綠豆、芋圓，麵茶香氣，配料口感，完美比例",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選仙草凍(2選自選料)",
+            "description": "消暑⛄解熱就靠它💮。(任搭任選❤️二種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選綠豆(4項自選料)",
+            "description": "特製綠豆冰沙，使用👍台灣本土綠豆製成冰沙，👍口感帶有細緻豆香，沁涼透心。⛄ (任搭任選❤️四總配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙牛奶",
+            "description": "綿密的綠豆沙充斥著豆香與🥛濃醇牛乳結合，一口接一口消暑又退火🔥🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭紅豆牛奶冰(芋頭、紅、煉、芋泥)",
+            "description": "芋泥加上芋頭球，配上紅豆，淋上煉乳，❤相思好味道",
+            "offers": {
+              "@type": "Offer",
+              "price": "134.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老饕綠豆菜燕",
+            "description": "🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為2的倍數， 否則系統無法套用優惠。🚨🔔〈優惠商品〉不接受備註及換料\n冬瓜茶加洋菜粉製成的古早味甜點🍯，比果凍🍮更多了脆脆的口感。🚨🔔〈優惠商品〉不接受備註及換料，想吃自己喜歡的配料請選〈下方加料〉",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "季節限定",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "翠蘆綠茶",
+            "description": "清甜蘆筍汁揉合回甘綠茶香氣，\n加入爽脆蘆薈果粒，口口清新、層層有感。\n茶香淡雅、草本甘甜、Q彈滑順，\n解膩解渴剛剛好，是屬於津津的清爽代表作。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰雪芋露",
+            "description": "嚴選香濃椰奶，揉合綿密芋頭冰沙，\n搭配Q彈西米露，層層堆疊出濃郁卻清爽的南洋甜品口感。\n一口椰香、一口芋泥、一口滑順QQ，\n每一吸都是療癒享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "翠蘆豆花",
+            "description": "以清甜蘆筍汁為底，融合綠茶回甘與檸檬微酸香氣，\n搭配滑嫩豆花與雙Q配料，\n口感清爽、輕盈不膩，每一口都沁涼舒暢。\n是一碗可以大口吃完的清爽系甜品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椰雲豆花",
+            "description": "濃醇椰奶融合細緻豆花與豆香，入口滑嫩如雲，\n再加上珍珠與西米露雙Q配料，層層堆疊出香、嫩、彈的多重口感。\n每一勺都是椰香與豆香交織的溫柔甜味。\n一碗剛剛好的療癒，就是屬於莎莎亞的經典甜品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "端午節限量餐點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "二水涼粽",
+            "description": "這粽感覺，與眾不同 你何須減重，你需要的是鹼粽 搭配綠豆紅豆，傳統好滋味，給你無負擔的清涼體 鹼粽1顆/紅豆/綠豆/手炒冰/豐年果糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋情故粽",
+            "description": "粽夏夜，芋您團圓 粽葉等到了糯米，而我還再等你團圓，芋頭冰沙配上鹼粽， 加上花生粉與湯圓珍珠的傳統交織 鹼粽1顆/芋頭冰沙/珍珠/湯圓/花生粉/手炒冰/豐年果糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "📣品牌介紹📣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🍭小朋友才做選擇，我兩個都要🍭 二料/二水，創意點餐，自由搭配料創造屬於自己的風格甜品/飲品。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "⛄冰品 甜品 古早味 好童年 復刻回憶 每日現煮，💪🏽古法手炒熬製蔗糖💪🏽，💯非基因改造",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "💖涼心事業，冰的專門店💖 良心事業，真材實料，💯本店使用台灣在地小農，在地食材。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "📣二水 「冰」經過中文字體拆解後，即是「二水」，也是本品牌想帶給大家的味覺，視覺的全新體驗。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為 2 件， 否則系統無法套用優惠。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "傳統冰品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌蔗糖(綠豆、芋圓、芋頭球、珍珠)",
+            "description": "清冰加上特製💪🏽古法手炒蔗糖💪🏽，夏天必吃聖品🌞（配料：珍珠、綠豆、芋圓、芋頭球） \n🚨 🔔〈招牌系列〉不接受備註換料，想吃自己喜歡的配料請選〈自選系列〉",
+            "offers": {
+              "@type": "Offer",
+              "price": "84.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選蔗糖(4項自選料)",
+            "description": "清冰加上特製💪🏽古法手炒蔗糖💪🏽，夏天必吃聖品🌞 (任搭任選❤️四種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌仙草冰(綠豆、芋圓、芋頭球、珍)",
+            "description": "🍨特製仙草冰沙，仙草味甘淡，性偏涼⛄，炎熱夏天🌞想吃清爽的冰品，不能錯過這一碗。（配料：珍珠、綠豆、芋圓、芋頭球） \n🚨🔔〈招牌系列〉不接受備註換料，想吃自己喜歡的配料請選〈自選系列〉",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選仙草冰(4項自選料)",
+            "description": "🍨特製仙草冰沙，仙草味甘淡，性偏涼⛄，炎熱夏天🌞想吃清爽的冰品，不能錯過這一碗。(任搭任選❤️四種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌芋頭(紅豆、芋圓、芋頭球、珍珠)",
+            "description": "🍧特製芋頭冰沙，綿密芋頭加糖打出的冰沙，😁即使變成冰沙，依然吃的到芋頭顆粒。（配料：珍珠、紅豆、芋圓、芋頭） \n🚨🔔〈招牌系列〉不接受備註換料，想吃自己喜歡的配料請選〈自選系列〉",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選芋頭(4項自選料)",
+            "description": "特製芋頭冰沙，綿密芋頭加糖打出的冰沙，即使變成冰沙，依然吃的到芋頭顆粒。(任搭任選❤四種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌綠豆(綠豆、芋圓、芋頭球、珍珠)",
+            "description": "特製綠豆冰沙，使用👍台灣本土綠豆製成冰沙，👍口感帶有細緻豆香，沁涼透心⛄。（配料：珍珠、綠豆、芋圓、芋頭）🚨🔔〈招牌系列〉不接受備註換料，想吃自己喜歡的配料請選〈自選系列〉",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選綠豆(4項自選料)",
+            "description": "特製綠豆冰沙，使用👍台灣本土綠豆製成冰沙，👍口感帶有細緻豆香，沁涼透心。⛄ (任搭任選❤️四總配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手作豆花系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌豆花(紅豆、珍珠)",
+            "description": "✨採用非基改黃豆製成豆花✨，軟嫩滑順，搭配特製💪🏽古法手炒蔗糖💪🏽及一球蔗糖冰沙，增添口感。（配料：（珍珠、紅豆）🚨🔔〈招牌系列〉不接受備註換料，想吃自己喜歡的配料請選〈自選系列〉",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選豆花(2項自選料)",
+            "description": "採用非基改黃豆製成豆花，軟嫩滑順，搭配特製古法手炒蔗糖及一球蔗糖冰沙，增添口感。(任搭任選❤二種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌豆漿豆花(紅豆.珍珠)",
+            "description": "使用高蛋白質非基改豆漿，而外加一樣(手炒蔗糖冰沙)增添口感，豆漿可選(有糖)或(無糖)。配料固定為:珍珠、紅豆🚨🔔〈招牌系列〉不接受備註換料，想吃自己喜歡的配料請選〈自選系列〉\n本產品只能做冰品，無法更改為熱品",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選豆漿豆花(選2種料)",
+            "description": "使用高蛋白質非基改豆漿，而外加一球（手炒蔗糖冰沙）增添口感，豆漿可選（有糖）或（無糖）。(任搭任選❤二總配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "心凍了",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "奶油嫩仙草凍",
+            "description": "搭配濃郁奶油球，吃出滑順口感，消暑⛄解熱就靠它💮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "關西珍珠仙草凍",
+            "description": "🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為2的倍數， 否則系統無法套用優惠。🚨🔔〈優惠商品〉不接受備註及換料\n\n淋上濃郁奶油球，搭配慢火熬煮珍珠，口感Q彈順口滑順，消暑⛄解熱就靠它💮",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌仙草凍(紅豆、芋圓)",
+            "description": "消暑⛄解熱就靠它💮。（配料：紅豆、芋圓）🚨🔔〈招牌系列〉不接受備註換料，想吃自己喜歡的配料請選〈自選系列〉",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選仙草凍(2選自選料)",
+            "description": "消暑⛄解熱就靠它💮。(任搭任選❤️二種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌菜燕(綠豆、芋圓)",
+            "description": "冬瓜茶加洋菜粉製成的古早味甜點🍯，比果凍🍮更多了脆脆的口感。（配料：綠豆、芋圓)🚨🔔〈招牌系列〉不接受備註換料，想吃自己喜歡的配料請選〈自選系列〉",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·自選菜燕(選2樣料)",
+            "description": "冬瓜茶加洋菜粉製成的古早味甜點🍯，比果凍🍮更多了脆脆的口感。(任搭任選❤️二種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味菜燕",
+            "description": "冬瓜茶加洋菜粉製成的古早味甜點🍯，比果凍🍮更多了脆脆的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老饕綠豆菜燕",
+            "description": "🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為2的倍數， 否則系統無法套用優惠。🚨🔔〈優惠商品〉不接受備註及換料\n冬瓜茶加洋菜粉製成的古早味甜點🍯，比果凍🍮更多了脆脆的口感。🚨🔔〈優惠商品〉不接受備註及換料，想吃自己喜歡的配料請選〈下方加料〉",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "琥珀雙料凍(紅豆、芋圓)",
+            "description": "關西仙草凍加上古法凍菜,順感搭配每日現新鮮食材,今夏消暑解熱靠它\n(配料:仙草凍、菜燕凍、紅豆、芋圓)\n🚨🔔滿額贈商品，請務必在購物車中將商品數量加入，否則系統無法套用優惠。\n🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為 2 件， 否則系統無法套用優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "復刻回憶冰品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "阿雅的剉冰(紅、大紅、芋頭)",
+            "description": "耳熟能詳的剉冰進行曲，紅豆、大紅豆、芋頭，點這碗讓您一次滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿公的粉粿冰(西、綠、紅、粉、珍)",
+            "description": "記憶中的阿公的超Q粉粿，搭配珍珠、紅豆、綠豆、西米露，保證驚艷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿嬤的麵茶冰(麵、芋圓、紅、珍、綠)",
+            "description": "來自南部的麵茶，搭配珍珠、紅豆、綠豆、芋圓，麵茶香氣，配料口感，完美比例",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火烤布丁牛奶冰(布丁、玉米片、煉、黑糖)",
+            "description": "小朋友的最愛，統一布丁加上手工熬煮黑糖，灑上脆片，淋上煉乳",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭紅豆牛奶冰(芋頭、紅、煉、芋泥)",
+            "description": "芋泥加上芋頭球，配上紅豆，淋上煉乳，❤相思好味道",
+            "offers": {
+              "@type": "Offer",
+              "price": "134.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生什麼事(花粉、硬花、芋泥、湯圓)",
+            "description": "有事沒事都要來碗花生什麼是，芋泥桃園湯圓加上硬花生，灑上花生粉的，什麼事都OK。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻開門(芝麻、紅、湯圓、珍)",
+            "description": "研磨芝麻粉，搭配珍珠、紅豆、湯圓，養生也要來點甜",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老饕菜燕冰(菜、芋圓、紅、綠、大紅)",
+            "description": "古早味菜燕，搭配芋圓、紅豆、綠豆、大紅豆，老饕都懂點",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "回憶小時候(跳、饅、珍、小芋、湯)",
+            "description": "長大後的世界太辛苦，來點小時候的滋味，珍珠、小芋圓、湯圓，灑上跳跳糖、小饅頭，讓您回到小時候偷吃零食的時光",
+            "offers": {
+              "@type": "Offer",
+              "price": "129.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "芋頭飲品系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芋頭牛奶",
+            "description": "💯滑順芋頭泥加上滿滿乳香 每一口皆是大滿足，🥛身為芋頭控必點❗️❗️",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·二料芋頭牛奶(選2種料)",
+            "description": "🥛芋頭牛奶多變化，❤️配料自由搭配創造屬於自己的飲品😘😘",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭奶綠",
+            "description": "滑順芋頭泥遇上綠茶獨特茶香 及🥛濃純牛乳完美搭配，不由得想再來一杯😋😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍想芋見泥(芋泥、珍、紅、西、小芋)",
+            "description": "|固定甜度|芋頭控的最愛！一年四季，我們都在二水町芋泥相遇(配料:小芋圓．紅豆．芋頭泥．珍珠．西米露)",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭鮮奶露露",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "芋頭冰沙系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芋頭冰沙",
+            "description": "來了~來了~芋頭控的愛❤大甲芋頭製成的冰沙，炎熱夏天就該來一杯",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·二料芋頭冰沙(選2種料)",
+            "description": "❤️能自選兩樣料創造屬於自己愛的芋頭冰沙❤️",
+            "offers": {
+              "@type": "Offer",
+              "price": "84.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭冰沙牛奶",
+            "description": "大甲芋頭製成✨的冰沙加入濃純牛乳，口感綿密略帶冰晶口感\n滿滿的芋頭及牛乳香(芋頭控不要猶豫選這杯吧)",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭沙西米露",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "懷舊綠豆沙系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "懷舊綠豆沙",
+            "description": "細細一品皆是豆香，綿密的🍨冰沙帶點冰晶口感一杯經典之作讓你回憶美好時光",
+            "offers": {
+              "@type": "Offer",
+              "price": "84.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·二料綠豆沙(選2種料)",
+            "description": "❤️能自選兩樣料創造屬於自己懷舊滋味😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙牛奶",
+            "description": "綿密的綠豆沙充斥著豆香與🥛濃醇牛乳結合，一口接一口消暑又退火🔥🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典茗茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "二水茶",
+            "description": "☕喝慣單一的茶品了嗎🥤，大膽嘗試 嚐出讓自己驚豔的茶品⭐️⭐️（選兩種茶）",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選紅茶",
+            "description": "💯精挑細選之☕魚池紅茶🥤，入口後飽滿爽醇、喉韻甜潤甚是迷人",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃粹綠茶",
+            "description": "🍵濃郁可口香氣十足🥤味道相對清甜不苦澀，入口後茶湯香氣依然在鼻息間徘徊😌😌",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特選青茶",
+            "description": "✨口感甘醇甜美，香氣清逸優雅✨ 入口滑順不苦澀不膩口",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金磚冬瓜茶",
+            "description": "🍯使用冬瓜熬製煮成的冬瓜茶 ⛄冰涼退火、消暑解渴 📣為台灣代表性古早飲品之一",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶香系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "熟成奶茶",
+            "description": "💯嚴選紅茶遇上二水町奶精粉 魚池紅茶茶香濃郁、香氣十足",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熟成奶綠",
+            "description": "🍵濃粹綠茶遇上二水町奶精粉 綠茶味盡在口中漫延卻帶有些許奶香🥤",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶",
+            "description": "🍯慢火熬煮珍珠口感Q彈嚼勁🔥🔥 \n想要找口感、找奶香、找紅茶香 \n🍵點它就對了三種要求一次滿足💓💓",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶綠",
+            "description": "🍯慢火熬煮珍珠口感Q彈嚼勁🔥🔥 \n想要找口感、找奶香、找紅茶香 \n🍵點它就對了三種要求一次滿足💓💓",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·二料奶茶(選2種料)",
+            "description": "💓配料自由選、💓 每一口都是驚奇😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "84.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·二料奶綠(選2種料)",
+            "description": "💓配料自由選、💓 每一口都是驚奇😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "84.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮奶系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶紅茶",
+            "description": "採用🥛福樂鮮奶與魚池紅茶製成鮮奶茶，乳香蔓延在舌尖😋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶綠茶",
+            "description": "採用🥛福樂鮮奶與有著🍵茉莉花清新的綠茶製成鮮奶綠，👍香濃綿密的鮮奶泡中不失茶的茶香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠鮮奶茶",
+            "description": "採用福樂鮮奶與魚池紅茶製成鮮奶茶，搭配黑糖珍珠，⭐️濃醇香每一口都是驚喜⭐️。",
+            "offers": {
+              "@type": "Offer",
+              "price": "84.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠鮮奶綠",
+            "description": "採用🥛福樂鮮奶與有著🍵茉莉花清新的綠茶製成鮮奶綠，👍搭配黑糖珍珠，是你更加健康的新選擇，美味無負擔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "84.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·二料鮮奶茶(選2種料)",
+            "description": "👍想要濃醇香選☕紅茶(任搭任選❤️二種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "·二料鮮奶綠(選2種料)",
+            "description": "👍想要來點清新選🍵綠茶(任搭任選❤️二種配料)",
+            "offers": {
+              "@type": "Offer",
+              "price": "94.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮果系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮粹檸檬汁",
+            "description": "✨想補充維他命C嗎，來上一杯✨！",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜檸檬",
+            "description": "✨手工熬煮🍯冬瓜搭配新鮮檸檬原汁✨，挑逗味蕾，❤️激盪出甜中帶酸的奇妙口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮柳橙綠茶",
+            "description": "👏現榨柳橙入茶，滿滿維他命C，😊跟你初戀一樣😍酸甜又帶點小清新🍵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "復刻回憶飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "仙草甘茶",
+            "description": "仙草汁+冬瓜茶。仙草味甘淡，⛄性偏涼，💮炎熱夏天來一杯清涼一下。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆漿紅茶",
+            "description": "✨二水町特調豆漿與紅茶的完美碰撞✨，喝了一杯接一杯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜戀仙草凍飲",
+            "description": "🎉仙草汁+仙草凍+冬瓜茶。仙草味甘淡，⛄性偏涼，💮加上自家熬煮仙草凍，增添口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜戀菜燕凍飲",
+            "description": "🍯仙草甘茶+菜燕，降火解熱的同時還能吃的脆脆的菜燕😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜燕綠茶",
+            "description": "❤️經典茗茶+老饕菜燕❤️\n🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為 2 的倍數， 否則系統無法套用優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜燕青茶",
+            "description": "❤️經典茗茶+老饕菜燕❤️\n🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為2的倍數， 否則系統無法套用優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜燕冬瓜",
+            "description": "❤️經典茗茶+老饕菜燕❤️\n🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為 2的倍數， 否則系統無法套用優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "復刻奶香麵茶",
+            "description": "😚古早味麵茶粉遇見奶茶，傳統小點心的新詮釋😍",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "濃脆菜燕奶茶",
+            "description": "🎉香脆菜燕撞上熟成奶茶，😋口口都喝得到奶香甜❤️",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "絲滑仙草凍奶茶",
+            "description": "✨絲滑柔順的仙草凍搭配熟成奶茶，💯就像是喝到雲朵的口感✨",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "QQ 粉角奶茶",
+            "description": "📣📣是QQ還是粉角？ 是QQ也是粉角📣📣。 這杯奶茶最適合喜歡口感的你。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "戀戀仙草凍綠茶",
+            "description": "🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為2的倍數， 否則系統無法套用優惠。🚨🔔〈優惠商品〉不接受備註及換料\n仙草凍搭配濃郁可口香氣十足味道相對清甜不苦澀，入口後茶湯香氣依然在鼻息間徘徊。仙草味甘淡，性偏涼，加上自家熬煮仙草凍，增添口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "戀戀仙草凍青茶",
+            "description": "🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為2的倍數， 否則系統無法套用優惠。🚨🔔〈優惠商品〉不接受備註及換料\n仙草凍搭配濃郁可口香氣十足味道相對清甜不苦澀，入口後茶湯香氣依然在鼻息間徘徊。仙草味甘淡，性偏涼，加上自家熬煮仙草凍，增添口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "戀戀仙草凍冬瓜",
+            "description": "🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為2的倍數， 否則系統無法套用優惠。🚨🔔〈優惠商品〉不接受備註及換料\n仙草凍搭配濃郁可口香氣十足味道相對清甜不苦澀，入口後茶湯香氣依然在鼻息間徘徊。仙草味甘淡，性偏涼，加上自家熬煮仙草凍，增添口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶酪系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香濃奶酪",
+            "description": "🍮濃醇香、純手工、完全不添加一滴水的製造過程，🍯交織出前所未見的甜蜜新滋味，五種口味任選。🚨🔔〈優惠商品〉不接受備註及換料，想吃自己喜歡的配料請選〈下方加料〉\n🚨🔔 選購買一送一活動時，請務必在購物車中將商品數量選擇為 2 件， 否則系統無法套用優惠。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "二水人氣超值套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "古早味分享套餐",
+            "description": "原味菜燕/仙草凍任選5入",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "台味經典套餐",
+            "description": "芋情故粽/特選青茶",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "❤️訂餐溫馨提醒❤️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🚨🔔本店備餐時間約10~20分鐘，視點餐內容數量前後調整。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🚨🔔本店餐點皆為現點現做，短時間內訂單爆量，為了不影響餐點品質及現場客人，請耐心等待。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🚨🔔本店產品均為每日當天現煮，為了確保餐點品質，收到產品請盡快食用完畢。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🚨🔔冰品收到餐點會融化是正常現象唷! 歡迎來店用餐，享受最高品質的餐點。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🚨🔔感謝您的訂購，祝您用餐愉快。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

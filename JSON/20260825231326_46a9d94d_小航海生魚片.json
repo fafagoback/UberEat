@@ -1,0 +1,632 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B0%8F%E8%88%AA%E6%B5%B7%E7%94%9F%E9%AD%9A%E7%89%87/1f6vwYxyX52FnB5tiDah3A",
+  "name": "小航海生魚片",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區文林路110號",
+    "addressLocality": "Taipei City",
+    "addressRegion": "",
+    "postalCode": "110",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.088185245116204,
+    "longitude": 121.52632025782994
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 3.7,
+    "reviewCount": 130
+  },
+  "servesCuisine": [
+    "Sushi",
+    "Seafood",
+    "Japanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "限量鮭魚肚😍 Limited Salmon Belly😍",
+            "description": "鮭魚油脂含量最高部分，肉質也最肥嫩的精華部位，口感滑順多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加拿大甜蝦 12隻💥 Sweet Shrimp💥",
+            "description": "加拿大寒帶海域深海冷水蝦，深約300~1000公尺，生長極為緩慢，能吃到10公分的甜蝦，通常已經7~8歲了。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合生魚片💖 Assorted Sashimi💖",
+            "description": "綜合生魚片，好吃通通有。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤紅甘下巴(等待25分)",
+            "description": "高級經濟魚種，其下巴運動量大，具有肉質極度緊實彈牙、油脂極其豐厚的雙重特色，老饕將其視為整條魚中最精華的部位。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本松葉蟹膏奶油球",
+            "description": "日本產地直送，鮮美甘甜的蟹膏與奶油完美融合，一口咬下湧出爆漿的濃郁蟹膏奶香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙當季透抽（約150G）",
+            "description": "當季的手釣透抽，用最簡單的川燙方式，其口感可以用「鮮、脆、嫩、Q」四個字來形容，老闆親自手釣，現流透抽讓你驚艷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "北海道大甘貝🌸 Jumbo Scallops🌸",
+            "description": "北海道生食級大顆干貝，肉厚飽滿、口感柔嫩，非常鮮甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤鮭魚頭＋下巴（等待25分）",
+            "description": "法羅鮭魚頭+下巴，豐富油質，外皮酥脆，內層多汁，限量供應。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特殊夢幻魚種（金鮸魚）",
+            "description": "俗諺說「有錢吃鮸，沒錢免吃」，說明了鮸魚的高昂價值與美味。肉質極為肥嫩且脂香清新不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式鮮魚燒麵",
+            "description": "日本空運燒麵條，Ｑ彈特別，配上新鮮炙燒生魚片5片（隨機現流品項），保證特別回味，釣友們的最愛。",
+            "offers": {
+              "@type": "Offer",
+              "price": "308.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本牛奶生蠔🌸Japanese Oysters🌸",
+            "description": "日本兵庫縣生蠔，鄰近森林豐富的產地，河水養分極多。這裡的生蠔肉質潔白如玉，口感就像絲滑的優格。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "限量紅甘肚😍 limited amberjack belly😍",
+            "description": "老闆親釣大紅甘肚，限量供應",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜脆花枝 3片🔸 Cuttlefish🔸",
+            "description": "生食等級花枝片，3片份，Q彈脆口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特殊夢幻魚（日本空運青甘）",
+            "description": "日料店頂級刺身食材，肉質細緻，油酯豐富，入口即化的極致口感聞名。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮崎星鰻冷麵",
+            "description": "日本空運冷麵與特殊日式醬汁，配上炙燒星鰻，天氣熱涼爽必備主食，絕無僅有，小航海限定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特殊夢幻魚種（澎湖海鱺）",
+            "description": "澎湖因得天獨厚的天然海域與寒暖流交會，水質乾淨無污染，油脂豐富，脆度極佳，老饕常形容其口感類似松阪豬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚卵白飯🌸 Rice with Salmon Roe🌸",
+            "description": "白飯鋪上鮭魚卵，鮭魚生魚片，甜蝦，美味組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點, 請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選💯特殊魚專區💯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "特殊夢幻魚（日本空運青甘）",
+            "description": "日料店頂級刺身食材，肉質細緻，油酯豐富，入口即化的極致口感聞名。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特殊夢幻魚種（澎湖海鱺）",
+            "description": "澎湖因得天獨厚的天然海域與寒暖流交會，水質乾淨無污染，油脂豐富，脆度極佳，老饕常形容其口感類似松阪豬。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特殊夢幻魚種（金鮸魚）",
+            "description": "俗諺說「有錢吃鮸，沒錢免吃」，說明了鮸魚的高昂價值與美味。肉質極為肥嫩且脂香清新不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超級夢幻魚（紅油旗）",
+            "description": "紅油旗非常的稀少，在東港大型漁船的夢幻捕捉魚種，捕捉量非常稀少，口感上油酯奶香味完全也完全不輸黑鮪魚，感謝東港友船情意販售於小航海。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "生魚片區🎏 Sashimi🎏",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小航海招牌紅甘⭐ Signature Greater Amberjack⭐",
+            "description": "老闆親釣，釣獲後立即放血海水冰，極致的要求新鮮品質，口感Ｑ彈細緻，清香鮮甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "法羅鮭魚SSF🪻 SSF Salmon🪻",
+            "description": "產自丹麥法羅群島北的純淨海域，活動空間廣大，油脂豐富且鮮甜有彈性，被譽為鮭魚界中的ＬＶ。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東港鮪魚🌻 Donggang Tuna🌻",
+            "description": "東港船長嚴選大型鮪魚，肉質緊實味道鮮美，ＹＴ搜尋：Go Travel愛七桃，觀看新鮮分切流程。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東港旗魚✨ Donggang Marlin✨",
+            "description": "東港船家嚴選旗魚，種類包含黑皮旗魚，白皮旗魚。因經過黑潮洋流，肉質鮮美。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金鯡魚🥳 Golden Herring🥳",
+            "description": "Made in TAIWAN，口感上鯡魚肉細致肥美，魚卵則脆彈有嚼勁，粒粒分明，清爽鮮脆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "限量鮭魚肚😍 Limited Salmon Belly😍",
+            "description": "鮭魚油脂含量最高部分，肉質也最肥嫩的精華部位，口感滑順多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合生魚片💖 Assorted Sashimi💖",
+            "description": "綜合生魚片，好吃通通有。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "限量紅甘肚😍 limited amberjack belly😍",
+            "description": "老闆親釣大紅甘肚，限量供應",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "生食級 😍",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "日本牛奶生蠔🌸Japanese Oysters🌸",
+            "description": "日本兵庫縣生蠔，鄰近森林豐富的產地，河水養分極多。這裡的生蠔肉質潔白如玉，口感就像絲滑的優格。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿根廷大紅蝦💕 Langostinos💕",
+            "description": "阿根廷南部純淨深海的頂級野生海蝦，肉質鮮甜細嫩、帶有極高甜度。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜脆花枝 3片🔸 Cuttlefish🔸",
+            "description": "生食等級花枝片，3片份，Q彈脆口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加拿大甜蝦 12隻💥 Sweet Shrimp💥",
+            "description": "加拿大寒帶海域深海冷水蝦，深約300~1000公尺，生長極為緩慢，能吃到10公分的甜蝦，通常已經7~8歲了。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "北海道大甘貝🌸 Jumbo Scallops🌸",
+            "description": "北海道生食級大顆干貝，肉厚飽滿、口感柔嫩，非常鮮甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "主食區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海魚味噌湯🤎 Miso Soup🤎",
+            "description": "不含味精，海魚味增湯，每日魚種隨機，釣到什麼煮什麼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮭魚卵白飯🌸 Rice with Salmon Roe🌸",
+            "description": "白飯鋪上鮭魚卵，鮭魚生魚片，甜蝦，美味組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式鮮魚燒麵",
+            "description": "日本空運燒麵條，Ｑ彈特別，配上新鮮炙燒生魚片5片（隨機現流品項），保證特別回味，釣友們的最愛。",
+            "offers": {
+              "@type": "Offer",
+              "price": "308.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮崎星鰻冷麵",
+            "description": "日本空運冷麵與特殊日式醬汁，配上炙燒星鰻，天氣熱涼爽必備主食，絕無僅有，小航海限定。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯🌾 Rice🌾",
+            "description": "單點白飯，非醋飯，適合搭配各式料理。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "熟食區🍢 Cooked Food🍢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "川燙當季透抽（約150G）",
+            "description": "當季的手釣透抽，用最簡單的川燙方式，其口感可以用「鮮、脆、嫩、Q」四個字來形容，老闆親自手釣，現流透抽讓你驚艷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "基隆牛蒡天婦羅",
+            "description": "基隆最具代表性的在地特色美食之一。它與一般甜不辣最大的不同，在於使用高比例的純鯊魚漿並大手筆揉入大量新鮮牛蒡絲，經高溫油炸後金黃酥脆，內餡充滿濃郁魚香與牛蒡的清甜爽脆，極具咬勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌炸海魚塊🌿 Signature Deep-Fried Cubed Sea Fish🌿",
+            "description": "一口大小海魚塊酥炸至金黃，外酥內嫩，香氣四溢，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸龍珠💥 Deep-Fried Squid Mouth💥",
+            "description": "酥炸魷魚嘴，外酥內Q，咬勁十足，越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日本松葉蟹膏奶油球",
+            "description": "日本產地直送，鮮美甘甜的蟹膏與奶油完美融合，一口咬下湧出爆漿的濃郁蟹膏奶香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東港炸花枝丸 （7顆）🔸 Deep-Fried Hairtail🔸",
+            "description": "來自東港的花枝丸，酥炸過後香味四溢，彈牙口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸手釣透抽💕 Deep-Fried Squid💕",
+            "description": "現流船釣透抽，酥炸過後超甜，超好吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "廣島炸牡蠣（5顆）🔸Deep-Fried oysters🔸",
+            "description": "外酥內嫩廣島炸牡蠣，鮮甜多汁，一口大滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸蝦天婦羅（4隻） 💗Fried shrimp💗",
+            "description": "金黃酥脆，鮮甜好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳳梨蝦球😍 Pineapple Shrimp Balls😍",
+            "description": "Q彈蝦球搭配鳳梨塊，酸甜清爽、越吃越涮嘴，聚餐分享首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙野生藍鑽白蝦",
+            "description": "該海域長年高溫少雨、鹽度極高且無汙染，加上極為寬廣的低密度養殖環境，造就其肉質Q彈扎實、鮮甜且無腥味的獨特口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切炸白帶魚",
+            "description": "厚切白帶魚具有肉質細嫩甘甜，厚切吃起來就是爽快。2片一份",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鹽烤區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烤鮭魚頭＋下巴（等待25分）",
+            "description": "法羅鮭魚頭+下巴，豐富油質，外皮酥脆，內層多汁，限量供應。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤紅甘下巴(等待25分)",
+            "description": "高級經濟魚種，其下巴運動量大，具有肉質極度緊實彈牙、油脂極其豐厚的雙重特色，老饕將其視為整條魚中最精華的部位。",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤午仔魚（需等待25分）",
+            "description": "鹽烤午仔魚是將這種肉質細緻、油脂豐富的頂級魚種，透過最簡單的鹽烤手法，逼出天然魚油與鮮甜，呈現外酥內嫩的極緻美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "430.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

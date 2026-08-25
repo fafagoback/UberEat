@@ -1,0 +1,105 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%91%B3%E9%A6%A8%E9%BD%8B-%E7%B4%A0%E9%A3%9F/k-RZxLBYXhKEqXUH5Y8X5A",
+  "name": "味馨齋 素食",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tian Mu W. Rd. 3號-9",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1185696,
+    "longitude": 121.529141
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 900
+  },
+  "servesCuisine": [
+    "Vegetarian",
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大份麵線羹",
+            "description": "大份量台式麵線羹，濃稠湯底與細麵線，配上酥香配料與青蔬點綴，口感滑順、暖胃飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小份素香油飯",
+            "description": "小份素香油飯，醬香恰到好處，米粒Q彈油潤、口感扎實，份量輕巧，素食也能滿足經典台式油飯風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小份藥膳養生湯",
+            "description": "小碗份量的藥膳湯，紅棗、枸杞與豆製品入湯，湯色清亮、藥香馥郁，口感清爽不膩，溫潤好入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大份素香油飯",
+            "description": "大份量素香油飯，糯米香Q、鹹香順口，適合分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小份麵線羹",
+            "description": "小份台式麵線羹，濃稠暖口，麵線滑順好入口",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大份藥膳養生湯",
+            "description": "藥膳風味湯品，大份量更過癮，湯韻清香、口感順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

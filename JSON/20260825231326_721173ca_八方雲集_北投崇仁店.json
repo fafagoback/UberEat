@@ -1,0 +1,986 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%85%AB%E6%96%B9%E9%9B%B2%E9%9B%86-%E5%8C%97%E6%8A%95%E5%B4%87%E4%BB%81%E5%BA%97/jxLpAUUHWaGf9diPHJoMBg",
+  "name": "八方雲集 北投崇仁店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區崇仁路一段71號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.12659,
+    "longitude": 121.50152
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 130
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌鍋貼 Signature Pan-Fried Dumplings",
+            "description": "1 份 10 顆。清脆高麗菜, 特選肉品, 包入新鮮製作的麵皮中, 形成黃金比例的招牌鍋貼, 肉餡飽滿鮮甜, 加上紮實酥脆的外皮, 展現無可挑剔的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣味鍋貼 Korean Spicy Pan-Fried Dumplings",
+            "description": "1 份 10 顆。小辣。韓式辣味內餡由高麗菜與特選豬肉, 雞肉結合, 並採用特調的韓式辣椒粉, 藏在新鮮製作的麵皮下形成艷紅的視覺饗宴, 香辣後勁讓人食慾大開。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌水餃 Signature Dumplings",
+            "description": "1 份 10 顆。產地契作的新鮮高麗菜, 與特選肉品的完美調和, 再以黃金比例手工包製完成, 這就是八方雲集自豪的招牌水餃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米水餃 Corn Dumplings",
+            "description": "1 份 10 顆。飽滿多汁的非基改玉米顆粒, 搭配特選肉品, 咬下後湯汁與肉餡的美妙組合, 伴隨著香甜帶有口感的滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米鍋貼 Pan-Fried Corn Dumplings",
+            "description": "1 份 10 顆。香甜帶有口感且粒粒飽滿的非基改玉米顆粒, 搭配特選肉品, 讓自然甜味結合肉汁甘醇, 在鍋貼餅皮下成就另一番特別滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜鍋貼 Pan-Fried Chive Dumplings",
+            "description": "1 份 10 顆。老饕最鍾情的新鮮韭菜, 結合特選肉品, 包裹在具富嚼勁的外皮之中, 展現翠綠豐厚, 溫而不嗆的香氣, 添增出有層次的清新香氣, 嚐來滋味獨到。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋豆腐 Tofu with Century Egg",
+            "description": "滑順嫩豆腐搭上 Q 彈皮蛋, 清爽中帶出皮蛋的獨特滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原塊花枝魚丸湯 Cuttlefish Ball Soup",
+            "description": "嚴選新鮮花枝與魚漿製成, 保留原塊口感, Q 彈中帶有鮮甜海味。搭配清香芹菜與細緻紫菜點綴, 湯頭清爽甘甜, 每一口都是來自海洋的純粹風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠餛飩湯 Pork Wonton Soup",
+            "description": "小巧透亮的珍珠餛飩, 內藏著特製豬肉內餡, 伴以油蔥, 蔥花點綴的甘味高湯, 是搭配主餐的輕巧好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛肉麵 Braised Beef Noodle Soup",
+            "description": "湯與麵將分開包裝。紅燒牛肉麵 - 深厚韻味。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅油珍珠抄手 Pork Wonton in Chili Oil",
+            "description": "1 份 8 顆小顆。小辣。使用薄皮包製的珍珠餛飩, 在清燙過後呈現白淨的透亮感, 佐以大量蔥花, 淋上帶著些許辣度的紅油, 就是一碗開胃的珍珠紅油抄手。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣味水餃 Korean Spicy Dumplings",
+            "description": "1 份 10 顆。選用韓式辣椒粉調製出完美比例, 讓高麗菜與特選肉品呈現鮮紅艷麗的視覺效果, 咬一口盡是滿滿嗆辣帶勁的香氣, 鮮香胃開, 垂涎三尺。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜水餃 Chive Dumplings",
+            "description": "1 份 10 顆。新鮮韭菜, 老饕最愛, 溫而不嗆的口味結合了特選肉品, 躲藏在具富嚼勁的外皮之中, 醞透出另一番清新香氣, 嚐來很是滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味乾麵 Traditional Dried Noodles",
+            "description": "沒有多餘的配料, 僅以新鮮麵條為底, 配上蔥花, 豆芽, 淋上油蔥與醬油, 伴隨而來的就是最懷念的古早味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紹辣乾麵 Spicy Dried Noodles",
+            "description": "小辣。獨門川味風, 微辣中帶著椒麻口感 , 麻而不燥, 辣而不嗆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紹辣珍珠餛飩乾麵 Spicy Pork Wonton Dried Noodles",
+            "description": "Q 彈粗麵拌入獨門紹辣醬汁, 讓醬汁與肉沫香氣充分扒附麵體, 入口鹹香濃郁, 微辣中帶有椒麻尾韻, 搭配精緻珍珠餛飩, 與紹辣醬香交織出豐富層次, 越拌越香, 越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌乾麵 Special Dried Noodles",
+            "description": "香濃滑順的獨門微辣醬汁, 澆上現煮的新鮮麵條。豐富多層次的特調滋味, 微辣口感讓您每口都無比滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味排骨 Traditional Pork Ribs",
+            "description": "嚴選帶骨排骨, 精心醃漬後炸製, 將肉汁與風味緊緊鎖住, 柔嫩中帶點咬勁, 每一口都是熟悉的古早味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉牛肉麵 Stewed Beef Noodle Soup",
+            "description": "湯與麵將分開包裝。清燉牛肉麵 - 醇郁清透。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "新品上市 New Product",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紹辣珍珠餛飩乾麵 Spicy Pork Wonton Dried Noodles",
+            "description": "Q 彈粗麵拌入獨門紹辣醬汁, 讓醬汁與肉沫香氣充分扒附麵體, 入口鹹香濃郁, 微辣中帶有椒麻尾韻, 搭配精緻珍珠餛飩, 與紹辣醬香交織出豐富層次, 越拌越香, 越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋豆腐 Tofu with Century Egg",
+            "description": "滑順嫩豆腐搭上 Q 彈皮蛋, 清爽中帶出皮蛋的獨特滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味排骨 Traditional Pork Ribs",
+            "description": "嚴選帶骨排骨, 精心醃漬後炸製, 將肉汁與風味緊緊鎖住, 柔嫩中帶點咬勁, 每一口都是熟悉的古早味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "金牌牛肉系列產品 Classic Beef Products",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛肉麵 Braised Beef Noodle Soup",
+            "description": "湯與麵將分開包裝。紅燒牛肉麵 - 深厚韻味。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉牛肉麵 Stewed Beef Noodle Soup",
+            "description": "湯與麵將分開包裝。清燉牛肉麵 - 醇郁清透。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣牛肉麵 Spicy Beef Noodle Soup",
+            "description": "湯與麵將分開包裝。麻辣牛肉麵 - 川味麻香。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金牌紅燒牛肉冬粉 Braised Beef Cellophane Noodle Soup",
+            "description": "湯與冬粉將分開包裝。紅燒牛肉冬粉 - 深厚韻味。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金牌清燉牛肉冬粉 Stewed Beef Cellophane Noodle Soup",
+            "description": "湯與冬粉將分開包裝。清燉牛肉冬粉 - 醇郁清透。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金牌麻辣牛肉冬粉 Spicy Beef Cellophane Noodle Soup",
+            "description": "湯與冬粉將分開包裝。麻辣牛肉冬粉 - 川味麻香。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛肉湯 Braised Beef Soup",
+            "description": "紅燒牛肉湯 - 深厚韻味。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉牛肉湯 Stewed Beef Soup",
+            "description": "清燉牛肉湯 - 醇郁清透。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣牛肉湯 Hot and Spicy Beef Soup",
+            "description": "麻辣牛肉湯 - 川味麻香。金牌牛肉系列所蘊含的精髓來自八方雲集第一位研發主廚於創立初期即傾心研發, 帶您穿越 25 年的經典風味之旅。感受來自時間沈澱的美好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛湯餃 Cabbage and Pork Dumplings with Braised Beef Soup",
+            "description": "含 8 顆招牌水餃。經典招牌水餃一起墜入深厚韻味紅燒牛湯頭, 滿滿飽足感。使用牛肉湯底, 餐點未含牛肉原料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣牛湯餃 Cabbage and Pork Dumplings with Spicy Beef Soup",
+            "description": "含 8 顆招牌水餃。經典招牌水餃一起墜入川味麻香麻辣牛湯頭, 滿滿飽足感。使用牛肉湯底, 餐點未含牛肉原料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛湯珍珠餛飩 Mini Pork Wontons with Braised Beef Soup",
+            "description": "含 10 顆小顆餛飩。皮薄餡多, 爽口滑嫩, 彷彿珍珠般的柔順, 倘佯在紅燒牛湯裡, 每一口都在嘴裡迸發迷人好滋味。使用牛肉湯底, 餐點未含牛肉原料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣牛湯珍珠餛飩 Mini Pork Wontons with Spicy Beef Soup",
+            "description": "含 10 顆小顆餛飩。麻辣。皮薄餡多, 爽口滑嫩, 彷彿珍珠般的柔順, 倘佯在麻辣牛湯裡, 每一口都在嘴裡迸發迷人好滋味。使用牛肉湯底, 餐點未含牛肉原料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅燒牛湯菜肉大餛飩 Vegetable and Pork Wontons with Braised Beef Soup",
+            "description": "含 6 顆大顆餛飩。蘿蔔葉製作而成翠綠飽滿內餡, 結合紅燒牛湯頭, 在口腔中佈滿動人的鮮美清爽。使用牛肉湯底, 餐點未含牛肉原料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣牛湯菜肉大餛飩 Vegetable and Pork Wontons with Spicy Beef Soup",
+            "description": "含 6 顆大顆餛飩。麻辣。 蘿蔔葉製作而成翠綠飽滿內餡, 結合麻辣牛湯頭, 在口腔中佈滿動人的鮮美清爽。使用牛肉湯底, 餐點未含牛肉原料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌鍋貼 Signature Pan-Fried Dumplings",
+            "description": "1 份 10 顆。清脆高麗菜, 特選肉品, 包入新鮮製作的麵皮中, 形成黃金比例的招牌鍋貼, 肉餡飽滿鮮甜, 加上紮實酥脆的外皮, 展現無可挑剔的美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣味鍋貼 Korean Spicy Pan-Fried Dumplings",
+            "description": "1 份 10 顆。小辣。韓式辣味內餡由高麗菜與特選豬肉, 雞肉結合, 並採用特調的韓式辣椒粉, 藏在新鮮製作的麵皮下形成艷紅的視覺饗宴, 香辣後勁讓人食慾大開。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅油菜肉大抄手 Vegetable and Pork Wonton in Chili Oil",
+            "description": "1 份 6 顆大顆。小辣。將外表翠綠, 內餡飽滿的菜肉餛飩過水川燙, 再以帶點辛辣的紅油醬點綴, 即成一碗開胃的菜肉紅油抄手。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風菜肉大抄手 Japanese Vegetable and Pork Wonton",
+            "description": "1 份 6 顆大顆。將外表翠綠, 內餡飽滿的菜肉餛飩過水川燙, 淋上甘醇的和風醬, 引出菜肉餡的香甜餘繞於口中。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鍋貼 Pan-Fried Dumplings",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "韭菜鍋貼 Pan-Fried Chive Dumplings",
+            "description": "1 份 10 顆。老饕最鍾情的新鮮韭菜, 結合特選肉品, 包裹在具富嚼勁的外皮之中, 展現翠綠豐厚, 溫而不嗆的香氣, 添增出有層次的清新香氣, 嚐來滋味獨到。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩鍋貼 Pan-Fried Curry Dumplings",
+            "description": "1 份 10 顆。精選獨特咖哩醬料展現豐富氣味層次, 包裹於金黃色外皮中, 醞透出一股南洋氣息, 咬下一口滿滿咖哩香氣, 頓時鮮香胃開, 垂涎三尺。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米鍋貼 Pan-Fried Corn Dumplings",
+            "description": "1 份 10 顆。香甜帶有口感且粒粒飽滿的非基改玉米顆粒, 搭配特選肉品, 讓自然甜味結合肉汁甘醇, 在鍋貼餅皮下成就另一番特別滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新蔬食鍋貼 Vegetables Pan-Fried Dumplings",
+            "description": "1 份 10 顆。採用全蔬食製作絞肉與高麗菜混合調味成餡, 包進特製鍋貼餃皮中, 只需煎至金黃酥脆, 即可在嘴裡綻放清爽口感, 是素食消費者不可錯過的特別滋味。植物肉 (植物蛋白)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品 Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "玉米濃湯 Corn Chowder",
+            "description": "將蘑菇, 胡蘿蔔切丁, 拌入玉米醬中細細熬製而成, 綿密的甜味是大人小孩都難以抗拒的湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原塊花枝魚丸湯 Cuttlefish Ball Soup",
+            "description": "嚴選新鮮花枝與魚漿製成, 保留原塊口感, Q 彈中帶有鮮甜海味。搭配清香芹菜與細緻紫菜點綴, 湯頭清爽甘甜, 每一口都是來自海洋的純粹風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔湯 White Radish Soup",
+            "description": "用文火慢燉蘿蔔, 帶出食材最清甜的原味。上桌時點綴些許香菜, 慢慢感受甘味在口中化開的過程。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠餛飩湯 Pork Wonton Soup",
+            "description": "小巧透亮的珍珠餛飩, 內藏著特製豬肉內餡, 伴以油蔥, 蔥花點綴的甘味高湯, 是搭配主餐的輕巧好選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜肉大餛飩湯 Vegetable and Pork Wonton Soup",
+            "description": "薄透的麵皮包覆以豬肉和新鮮蔬菜精製而成的餡料, 飽滿扎實的口感, 和著紫菜帶來的鮮味, 靜靜撫平了品嚐者的胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品 Beverage",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "白豆漿 White Soybean Milk",
+            "description": "精選非基因改造黃豆磨製而成, 溫順柔醇, 是搭配餐點的好夥伴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白豆漿 (無加糖) Sugar-Free White Soybean Milk",
+            "description": "精選非基因改造黃豆磨製而成, 是搭配餐點的好夥伴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑豆漿 Black Soybean Milk",
+            "description": "黑豆磨製而成, 是搭配餐點的好夥伴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "真傳特調紅茶 Signature Special Black Tea",
+            "description": "嚴選印尼, 斯里蘭卡紅茶為基底, 運用特殊製程與不同的發酵程度, 讓茶葉吸取花香, 自然的蔗糖香搭配多層次香氣, 甜而不膩, 每口都獨特。",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜 Side Dishes",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滷蛋 Braised Egg",
+            "description": "滷到褐色的香滷蛋, 吃來香氣濃郁, 口感 Q 彈。",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金豆腐 Golden Tofu",
+            "description": "用高湯煨煮入味的黃金豆腐, 呈現金黃光澤, 食用前淋上特製沾醬, 綿密口感讓餘香久久不散。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燉蘿蔔 Stewed White Radish",
+            "description": "文火慢燉的蘿蔔, 充滿淡雅清香, 和著特製沾醬的甜辣滋味, 讓口感變得更加溫醇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜 Blanched Vegetables",
+            "description": "特選當日新鮮蔬菜, 淋上古早味油蔥, 香氣四溢的味道背後, 是充滿高價值的營養素。燙青菜隨機出餐。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮 Pork Scalp",
+            "description": "切成薄片的豬頭皮經由滷製調味, 佐以蒜苗及辣椒點綴視覺與口感的享受, 濃厚風味讓人直呼過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "涼拌豆腐 Cold Tofu",
+            "description": "滑順營養嫩豆腐搭配特調醬汁, 清爽獨特好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薄鹽毛豆 Salted Edamame",
+            "description": "夏季最適合吃的低鹽清涼爽口小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風秋葵 Japanese Okra",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "水餃 Dumplings",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌水餃 Signature Dumplings",
+            "description": "1 份 10 顆。產地契作的新鮮高麗菜, 與特選肉品的完美調和, 再以黃金比例手工包製完成, 這就是八方雲集自豪的招牌水餃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜水餃 Chive Dumplings",
+            "description": "1 份 10 顆。新鮮韭菜, 老饕最愛, 溫而不嗆的口味結合了特選肉品, 躲藏在具富嚼勁的外皮之中, 醞透出另一番清新香氣, 嚐來很是滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣味水餃 Korean Spicy Dumplings",
+            "description": "1 份 10 顆。選用韓式辣椒粉調製出完美比例, 讓高麗菜與特選肉品呈現鮮紅艷麗的視覺效果, 咬一口盡是滿滿嗆辣帶勁的香氣, 鮮香胃開, 垂涎三尺。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩水餃 Curry Dumplings",
+            "description": "1 份 10 顆。精選咖哩獨特醬料, 讓內餡口感更加豐富, 咖哩的氣味亦讓味蕾品嚐不同層次的感受, 一口咬下唇齒留香, 為之動容。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米水餃 Corn Dumplings",
+            "description": "1 份 10 顆。飽滿多汁的非基改玉米顆粒, 搭配特選肉品, 咬下後湯汁與肉餡的美妙組合, 伴隨著香甜帶有口感的滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "93.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新蔬食水餃 Vegetables Dumplings",
+            "description": "1 份 10 顆。採用全蔬食製絞肉與高麗菜混合調味成餡, 包進 Ｑ 彈的特製餃皮中, 清爽的口感伴隨有嚼勁的外皮, 專為素食消費者精心呈現的美味佳餚。植物肉 (植物蛋白)。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯餃 Dumplings in Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "玉米湯餃 Dumpling in Corn Soup",
+            "description": "含 8 顆招牌水餃。雪白的水餃浮於金黃濃湯間, 像是朵朵白雲引人食指大動, 咬下的湯汁融入湯中, 更添增玉米濃湯的香甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "乾麵 Dried Noodles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "古早味乾麵 Traditional Dried Noodles",
+            "description": "沒有多餘的配料, 僅以新鮮麵條為底, 配上蔥花, 豆芽, 淋上油蔥與醬油, 伴隨而來的就是最懷念的古早味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻醬乾麵 Sesame Sauce Dried Noodles",
+            "description": "在現撈起鍋的新鮮麵條上, 點綴些許豆芽與蔥花, 再澆上香濃滑順的麻醬, 讓芝麻的香氣與麵條混合產生陣陣香氣, 成了無法抗拒的好味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌乾麵 Special Dried Noodles",
+            "description": "香濃滑順的獨門微辣醬汁, 澆上現煮的新鮮麵條。豐富多層次的特調滋味, 微辣口感讓您每口都無比滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紹辣乾麵 Spicy Dried Noodles",
+            "description": "小辣。獨門川味風, 微辣中帶著椒麻口感 , 麻而不燥, 辣而不嗆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯麵 Soup Noodles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "古早味湯麵 Traditional Soup Noodles",
+            "description": "湯與麵將分開包裝。沒有多餘的裝飾, 僅以高湯搭配些許蔥花, 芹菜, 油蔥, 就是最懷念的古早味乾麵。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠餛飩湯麵 Pork Wonton Soup Noodles",
+            "description": "湯與麵將分開包裝。小巧透亮的珍珠餛飩, 搭上白淨麵條, 佐以最簡潔的蔥花, 油蔥與芹菜, 最後淋上甘味高湯, 因為簡單, 所以不簡單。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜肉大餛飩湯麵 Vegetable and Pork Wonton Soup Noodles",
+            "description": "湯與麵將分開包裝。翠綠薄透的菜肉餛飩, 搭上滑順麵條, 佐以新鮮蔬菜帶出湯頭甜美, 讓每口都無比滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紹辣珍珠餛飩湯麵 Spicy Pork Wonton Soup Noodles",
+            "description": "湯與麵將分開包裝。小辣。小巧透亮的珍珠餛飩, 白淨麵條, 搭上獨門川味湯頭, 辣, 香, 濃, 尾韻帶著微麻口感, 豐富多層次, 每口都無比滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "108.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紹辣菜肉大餛飩湯麵 Spicy Vegetable and Pork Wonton Soup Noodles",
+            "description": "湯與麵將分開包裝。小辣。翠綠薄透的菜肉餛飩, 滑順麵條, 搭上獨門川味湯頭, 辣, 香, 濃, 尾韻帶著微麻口感, 豐富多層次, 每口都無比滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梁師傅排骨麵 Chef's Braised Pork Rib Noodle Soup",
+            "description": "湯與麵將分開包裝。梁師傅排骨麵 - 經典台灣風味。香菜和芹菜的清香交織, 油蔥的香酥平衡提味, 蘿蔔吸滿湯汁又軟又甜, 再搭配厚實多汁的滷排骨, 簡單卻令人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "抄手 Wonton",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅油珍珠抄手 Pork Wonton in Chili Oil",
+            "description": "1 份 8 顆小顆。小辣。使用薄皮包製的珍珠餛飩, 在清燙過後呈現白淨的透亮感, 佐以大量蔥花, 淋上帶著些許辣度的紅油, 就是一碗開胃的珍珠紅油抄手。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風珍珠抄手 Japanese Pork Wonton",
+            "description": "1 份 8 顆小顆。使用薄皮包製的珍珠餛飩, 在清燙過後呈現白淨的透亮感, 佐以大量蔥花, 淋上甘醇的和風醬, 帶出清爽明亮的口感滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷凍食品 Frozen Food",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌生鮮水餃 Signature Uncooked Dumplings",
+            "description": "20 粒裝。盒單粒包裝出貨, 半小時內進冷凍, 最佳賞味期 2 週。清脆高麗菜與特選豬肉結合成鮮美肉餡, 用新鮮製作的麵皮佐以手工包製成元寶型水餃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜生鮮水餃 Uncooked Chive Dumplings",
+            "description": "20 粒裝。盒單粒包裝出貨, 半小時內進冷凍, 最佳賞味期 2 週。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式辣味生鮮水餃 Uncooked Korean Spicy Dumplings",
+            "description": "20 粒裝。盒單粒包裝出貨, 半小時內進冷凍, 最佳賞味期 2 週。選用韓式辣椒粉調製出完美比例, 讓高麗菜與特選肉品呈現鮮紅艷麗的視覺效果。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米生鮮水餃 Uncooked Corn Dumplings",
+            "description": "20 粒裝。單盒 20 包裝出貨, 半小時進冷凍, 最佳賞味期間 2 週。飽滿多汁的非基改玉米顆粒, 搭配特選肉品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新蔬食生鮮水餃 Uncooked Vegetables Dumplings",
+            "description": "20 粒裝。盒單粒包裝出貨, 半小時內進冷凍, 最佳賞味期 2 週。採用植物蛋白與高麗菜混合調味成餡, 包進 Ｑ 彈的特製餃皮中, 專為素食消費者精心呈現。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩生鮮水餃 Uncooked Curry Dumplings",
+            "description": "20 粒裝。咖哩香料蘊含豐富的氣味層次, 和著麵皮的香, 造就了多元口感變化, 是不可錯過的人氣商品之一。半小時內進冷凍, 最佳賞味期 2 週。",
+            "offers": {
+              "@type": "Offer",
+              "price": "165.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

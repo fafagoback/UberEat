@@ -1,0 +1,299 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%9B%86%E7%A9%BA%E9%96%93-flower-%26-plant-studio/M5u9qR6zXEeoCGxZHjIQyg",
+  "name": "盆空間 Flower & Plant Studio",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區中山北路七段52號2樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.12056,
+    "longitude": 121.53133
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 2
+  },
+  "servesCuisine": [
+    "Grocery",
+    "Flowers",
+    "Retail",
+    "florist",
+    "Indoor Plants & Gifts",
+    "Gift Store"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "好禮愛媽咪7折起",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "圓葉椒草 水泥盆",
+            "description": "開運招財熱銷植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火鶴 Ecopots 盆",
+            "description": "開運招財熱銷植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "699.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "哈尼虎尾蘭 水泥盆",
+            "description": "室內空氣淨化植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "長壽花 Ecopots 盆",
+            "description": "懶人照顧植栽首選，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "699.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "室內植栽",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "珊瑚大戟 水泥盆",
+            "description": "懶人照顧植栽首選，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "599.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "裂葉福祿桐 水泥盆",
+            "description": "開運招財熱銷植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嬰兒淚 水泥盆",
+            "description": "寵物友善好顧植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "哈尼虎尾蘭 水泥盆",
+            "description": "室內空氣淨化植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吊蘭 水泥盆",
+            "description": "室內空氣淨化植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黛粉葉 水泥盆",
+            "description": "懶人照顧植栽首選，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "星光燦爛黛粉葉 Ecopots 盆",
+            "description": "懶人照顧植栽首選，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "659.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬拉巴栗 水泥盆",
+            "description": "開運招財熱銷植栽，口徑4.5吋盆栽，\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "山蘇 水泥盆",
+            "description": "寵物友善好顧植栽，口徑4.5吋盆栽，\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "長壽花 Ecopots 盆",
+            "description": "懶人照顧植栽首選，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "699.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火鶴 Ecopots 盆",
+            "description": "開運招財熱銷植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "699.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金葛 Ecopots 盆",
+            "description": "室內空氣淨化植栽，口徑4.5吋盆栽\n\n如部分植株缺貨會以其他寵物友善植栽替代，照片皆為真實範本植栽拍攝，每個盆栽皆為活株，每個盆栽都會因時間、季節、環境而長得不太一樣，實際收到的植物可能會與照片略有差異，不可能每一葉都完美無瑕唷",
+            "offers": {
+              "@type": "Offer",
+              "price": "699.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "兔腳蕨 Ecopots 盆",
+            "description": "熱銷寵物友善植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "699.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龜背芋 Ecopots 盆",
+            "description": "室內空氣淨化植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "799.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "星點藤 Ecopots 盆",
+            "description": "懶人照顧植栽首選，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "799.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓葉椒草 水泥盆",
+            "description": "開運招財熱銷植栽，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鵝掌藤 水泥盆",
+            "description": "懶人照顧植栽首選，口徑4.5吋盆栽\n\n小提醒： 照片皆為真實範本植栽拍攝，每個盆栽皆為活株，植物難免會有些許葉傷，出貨時會盡量挑選完美，但無法確保葉片零瑕疵， 可以接受再下單喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "539.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "1% Protect+ 甲殼素土壤防蟲粉（20包 / 盒）",
+            "description": "商品特色\n專治地下病蟲害｜精準打擊介殼蟲、線蟲、蟲卵與染病土壤\n物理性驅蟲｜ 甲殼素 x 食品級矽藻土，喚醒植物防禦力，干擾蟲蟲發育\n長效防護｜防病蟲害 x 活化土壤，打造對害蟲不喜歡的環境\n安心無毒｜非化學農藥 x 天然成分，童寵友善，室內放心用\n簡單易用｜每月一次，輕鬆澆水啟動保護罩\n\n商品規格\n產地：台灣\n成分：甲殼素、幾丁聚醣、食品級矽藻土、天然酵素群、二氧化矽\n規格：3g/包 x 20包\n重量：95g\n品名：1% Protect+ 甲殼素土壤防蟲粉\n保存方式：未開封保存期限3年，開封後應儲存於陰涼處\n製造廠商：永綠生物科技股份有限公司",
+            "offers": {
+              "@type": "Offer",
+              "price": "780.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "1% Protect+ 甲殼素植物驅蟲噴霧 300 ml",
+            "description": "商品特色\n精準驅逐蟲害｜一罐解決介殼蟲、紅蜘蛛、蚜蟲、蟲卵等常見害蟲\n物理性驅蟲｜ 甲殼素 x 食品級矽藻土，喚醒植物防禦力，干擾蟲蟲發育\n薄霧好吸收｜ 細緻驅蟲水霧 x RO逆滲透小分子團水，快速滲入害蟲表皮。\n速效外用｜快速形成植物防護膜，打造對害蟲不喜歡的環境\n安心無毒｜非化學農藥 x 天然成分，童寵友善，室內放心用\n即噴即用｜免稀釋調配，每週1次輕鬆防護，2天1次蟲害驅除\n\n產地：台灣\n成分：甲殼素\n尺寸：300ml\n重量：450g\n品名：1% Simple+植物營養液\n免登記植保字號：植保製字第01246號\n保存方式：未開封保存期限3年，開封後應儲存於陰涼處\n製造廠商：永綠生物科技股份有限公司",
+            "offers": {
+              "@type": "Offer",
+              "price": "488.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "1%植物保養噴霧 300 ml",
+            "description": "商品特色\n精準營養補給｜ 大型褐藻萃取精華，促進葉片光合作用，讓植物葉片光滑亮澤。\n即拿即用高效保養｜ 免稀釋配方，直接噴灑葉面，一週兩次，簡單高效完成日常保養。\n超細薄霧快速吸收｜ 美妝等級高壓噴頭，細緻薄霧，營養均勻覆蓋葉片吸收。\n天然植萃安全可靠｜ 環境友善，童寵友好，都市家庭居家使用安心無憂。\n\n商品規格\n產地：台灣\n成分：大型褐藻萃取物\n尺寸：300ml\n重量：437g\n品名：1% Simple+植物營養液\n免登記植保字號：植保製字第01097號\n保存方式：未開封保存期限3年，開封後應儲存於陰涼處",
+            "offers": {
+              "@type": "Offer",
+              "price": "488.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "1%植物營養精華 60 ml",
+            "description": "商品特色\n精準營養補給｜ 採用植物細胞活化技術，1:800高濃縮配方， 促進植物生長與根系發展。\n簡單易用｜ 一週一次，輕鬆搭配澆灌，降低養護門檻。\n14天有感｜ 數據驗證與用戶見證，快速有效的植物健康改善。\n多功能解決方案｜ 一瓶多用，適用於室內盆栽、水培與扦插等多種需求。\n\n產地：台灣\n成分：海帶萃取物、紫根萃取物、腐植土抽取物、棕櫚酸維他命A\n尺寸：60ml\n重量：165g\n品名：植物關鍵Grow+植物營養精華\n登記成分：全氮(1.1%)、水溶性磷酐(0.4%)、水溶性氧化鉀(0.6%)\n登記字號：肥製(複)字第1155001號\n肥料品目：家庭園藝用複合肥料 6-03\n保存方式：未開封保存期限3年，開封後應儲存於陰涼處\n天然植萃配方｜環境友善，室內室外皆可使用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "688.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

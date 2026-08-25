@@ -1,0 +1,917 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%8B%80%E5%85%83%E6%BB%B7%E5%91%B3/bEQkjpxVT3KI9b7rkA8BiQ",
+  "name": "狀元滷味",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 246, Zunxian Street",
+    "addressLocality": "Beitou District",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.116823931030716,
+    "longitude": 121.50726502005115
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 1500
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Braised Dishes"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粄條",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新竹貢丸",
+            "description": "1串。\n肉品原產地：臺灣豬肉\n……………………………………………………\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五香小豆干",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆包",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕",
+            "description": "肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓片甜不辣",
+            "description": "2入。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒸煮麵",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "寬冬粉",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍蝦沙拉",
+            "description": "2入。\n原產地：臺灣\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉片",
+            "description": "肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大豆皮",
+            "description": "原產地：臺灣\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "辣度選項及注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "請點我…（必選辣度）選項及注意事項",
+            "description": "獨特醬汁。忠於原味。無（提供）及（添加）蔥, 薑, 蒜, 胡椒, 香油.香菜及酸菜。\n…………………………………………………\n如需紙碗跟酸菜請另外加購，請跳出在最後面的選項…謝謝！\n…………………………………………………\n一張訂單只能選擇一個辣度, 備註2種辣度以上擇以另外包自行加, 謝謝！\n……………………………………………………\n餐點〔〔無法均分〕〕，因種類很多，重量及顆數會不同，所以無法均分，如要分的話請點2份，請在備註上寫明什麼品項要分開包，不便之處敬請原諒！",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "竹輪",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹味棒",
+            "description": "2入。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦球",
+            "description": "1串。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉片",
+            "description": "肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大溪黑豆干",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鴨血",
+            "description": "每日限量, 賣完為止。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "好吃的單點小品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海帶串",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工甜不辣",
+            "description": "1入。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新竹貢丸",
+            "description": "1串。\n肉品原產地：臺灣豬肉\n……………………………………………………\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑輪",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花干",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆包",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚板",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳥蛋",
+            "description": "4入。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五香小豆干",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "圓片甜不辣",
+            "description": "2入。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "細條甜不辣",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "必點火鍋料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "2入",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大豆皮",
+            "description": "原產地：臺灣\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水晶餃",
+            "description": "2入。\n肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚包蛋",
+            "description": "2入。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鱈魚丸",
+            "description": "1串。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金魚丸",
+            "description": "1串。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸",
+            "description": "1串。\n肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕",
+            "description": "肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚餃",
+            "description": "1串。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "北海貝",
+            "description": "2入。\n原產地：臺灣\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚卵捲",
+            "description": "1串。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三角豆腐",
+            "description": "2入。\n原產地：臺灣\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司燒",
+            "description": "2入。\n原產地：臺灣\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍蝦沙拉",
+            "description": "2入。\n原產地：臺灣\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚豆腐",
+            "description": "2入",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒟蒻絲",
+            "description": "4入。\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋粿條",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "狀元糯米腸",
+            "description": "原產地：臺灣\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐",
+            "description": "原產地：臺灣\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "多吃點青菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠花椰菜",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑木耳",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "絲瓜",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大陸妹",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓮藕片",
+            "description": "藕片口感爽脆，咬感清晰，清爽解膩的蔬菜配料。1份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "補充點肉類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬皮",
+            "description": "肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鴨腸",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "涼拌鴨脆腸",
+            "description": "該品項有點微辣\n結單前請看注意事項內容",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腱子",
+            "description": "肉品原產地：巴拉圭豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬大腸",
+            "description": "肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬耳朵",
+            "description": "肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮",
+            "description": "肉品原產地：臺灣豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞翅",
+            "description": "1入\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大鴨胗",
+            "description": "結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心",
+            "description": "3入\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頰肉（嘴邊肉）",
+            "description": "肉品原產地：美國豬肉\n結單前請看注意事項內容及選擇辣度選項，勾選辣度在注意事項裡面，沒勾選一律都不辣出單哦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "國民美食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "讚岐烏龍麵",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "寬冬粉",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "細冬粉",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒸煮麵",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒意麵",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粄條",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "關廟QQ麵",
+            "description": "口感類似小條的陽春麵\n麵類一律都會跟食材分開\n包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國Q拉麵",
+            "description": "麵類一律都會跟食材分開包。\n點2包以上請備註如何包，沒備註的以店家包裝為主哦，請見諒…謝謝！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "紙碗酸菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紙碗",
+            "description": "沒有蓋子，無法直接裝碗，\n如有用蓋子，外送容易溢出，請見諒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "特製酸菜",
+            "description": "50克。",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

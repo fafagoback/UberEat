@@ -1,0 +1,246 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%AB%98%E5%BB%9A%E5%8F%B0%E8%8F%9C%E6%96%99%E7%90%86%E9%A3%AF/P0Fg32ZeX5OiL3iM9Wj3cQ",
+  "name": "高廚台菜料理飯",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區富華街120號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0840475,
+    "longitude": 121.491812
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 340
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "餐廳介紹 Restaurant Introdution",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🌟曾任欣葉餐廳米其林一星主廚，親自操刀，獨家熱炒便當和單點熱炒，現點現炒，保證每一口都驚艷你的味蕾！",
+            "description": "米其林一星主廚坐鎮，主打獨家熱炒便當與單點，現點現炒、鍋氣十足；真功夫炒出香氣與口感，口口驚豔，吃過就想再回來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🇹🇼 現宰台灣溫體黑豬肉，肉質鮮嫩多汁，口感極致！",
+            "description": "嚴選台灣溫體黑豬，現宰直上，保留純正肉香與細緻彈嫩；一口多汁、口感飽滿，是講究台味的好肉首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🇦🇺 精選澳洲進口羊肉，鮮美無比，讓你一嚐就難忘！",
+            "description": "嚴選澳洲進口羊肉，肉香清雅不羶，軟嫩多汁、口感飽滿；純粹好肉味，羊迷必點，一吃就愛上。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🦐 嚴選新鮮蝦仁，Q彈鮮甜，瞬間征服你的味蕾！",
+            "description": "以嚴選蝦仁為招牌，彈牙鮮甜、蝦香飽滿；咬下即釋放鮮味，順口不膩，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌炒米粉 Stir-Fried Rice Noodles",
+            "description": "要炒出色香味俱全的米粉，真的是要真功夫，吃了主廚的炒米粉，喔，怎麼那麼好吃又香，保證會再回購，難以忘懷。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶炒羊肉 Stir-Fried Lamb with Shacha Sauce",
+            "description": "頂級澳洲羊，搭上上選沙茶醬，加上主廚多年功夫，煮出只有〔高廚台菜料理飯〕獨門口味，鮮嫩好吃，搭配（白飯），真是絕配。",
+            "offers": {
+              "@type": "Offer",
+              "price": "306.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋Sunny-side-up egg",
+            "description": "就是荷包蛋，來一個，營養加分",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類 Rice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒飯 Stir-Fried Rice with Pork Strips",
+            "description": "主廚的任何炒飯，只能說不吃會後悔，不是一般炒飯，用心，用情，真滋味才能炒出如此香氣逼人的炒飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯 Rice",
+            "description": "粒粒分明、香Q順口的白飯，襯托菜色的最佳配角，百搭好吃，一口接一口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋Sunny-side-up egg",
+            "description": "就是荷包蛋，來一個，營養加分",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜脯肉絲炒飯 Stir-Fried Rice with Pork Strips and Dried Radish",
+            "description": "主廚的任何炒飯，只能說不吃會後悔，加上獨門菜脯，不是一般炒飯，用心，用情，真滋味才能炒出如此香氣逼人的炒飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "159.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯",
+            "description": "主廚的任何炒飯，只能說不吃會後悔，加上鮮蝦，不是一般炒飯，用心，用情，真滋味才能炒出如此香氣逼人的炒飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌炒米粉 Stir-Fried Rice Noodles",
+            "description": "大火快炒米粉，根根分明、鍋氣十足，口感Q彈不油膩，越吃越涮嘴，招牌人氣首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點炒類 A La Carte Stir-Fried Food",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸紅糟里肌肉 Deep-Fried Red Yeast Pork Loin",
+            "description": "單",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁 （大）Kung Pao Diced Chicken",
+            "description": "單。專選溫體軟嫩雞胸，加上主廚的真功夫和上等醬汁，搭配出宮保的香氣，吃了一口接一口",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糖醋蝦仁 （大）Sweet and Sour Shirmp",
+            "description": "單。主廚特調上等糖醋醬汁，加上鮮蝦的Q彈和蝦味，融合出絕佳口感，真是難忘的佳餚。",
+            "offers": {
+              "@type": "Offer",
+              "price": "417.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糖醋排骨 （大）Sweet and Sour Pork Ribs",
+            "description": "高成本上等糖醋醬汁，遇到排骨，真的是真愛，就像牛郎遇到織女，會讓你愛到肉與骨頭都要吃一吃吸一吸，連醬汁都要舔一舔，尤其是女生的最愛，吃過你就懂",
+            "offers": {
+              "@type": "Offer",
+              "price": "389.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香煎豬肝 Pan-Fried Pork Liver",
+            "description": "主廚在煎豬肝已達到爐火純青的地步，粉嫩的豬肝，純青的刀功，了得的煮法，吃起來像牛排一樣好吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "264.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒青菜 Stir-Fried Vegetable",
+            "description": "清脆鮮嫩的炒青菜🥬，大火烹調炒製，保持原味與營養。",
+            "offers": {
+              "@type": "Offer",
+              "price": "139.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

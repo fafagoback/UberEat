@@ -1,0 +1,933 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A4%9A%E5%96%9D%E9%BB%9E-drink-more/2QGX3dAjQ5qEQmoMB4lo6w",
+  "name": "多喝點 Drink More",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 282, Zunxian Street",
+    "addressLocality": "Beitou District",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1178769,
+    "longitude": 121.506838
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 3000
+  },
+  "servesCuisine": [
+    "Drinks",
+    "Bubble Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "新品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芒果抹茶雪酪",
+            "description": "L｜固定甜度 | 冰沙感",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西瓜抹茶雪酪",
+            "description": "L｜固定甜度 | 冰沙感",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Oreo奶昔",
+            "description": "L｜固定甜度 | 固定冰量",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果奶昔",
+            "description": "L｜固定甜度 | 固定冰量",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Oreo布丁鮮奶",
+            "description": "L｜固定甜度 | 濃郁奶香中混合巧克力餅乾碎，帶有酥脆口感，搭配兩個統一布丁與Oreo完美融合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪藏布丁鮮奶",
+            "description": "L｜固定甜度 | 香草冰淇淋搭配兩個統一布丁與鮮奶，打造濃郁又清爽的甜品系飲品，如雪藏般綿密滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "原萃茶香",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "熟成紅茶",
+            "description": "L | 總糖量42公克 | 總熱量175大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高山青茶",
+            "description": "L | 總糖量42公克 | 總熱量175大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱玉露",
+            "description": "L | 總糖量40公克 | 總熱量170大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹿谷四季春",
+            "description": "L | 總糖量40公克 | 總熱量170大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉香綠茶",
+            "description": "L | 總糖量42公克 | 總熱量175大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "國寶普洱",
+            "description": "L | 總糖量42公克 | 總熱量175大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炭焙烏龍",
+            "description": "L | 總糖量42公克 | 總熱量175大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜香貴妃",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶奶特",
+            "description": "L| 總糖量48公克 | 總熱量320大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜普洱奶特",
+            "description": "L｜總糖量45公克 | 總熱量306大卡 | 本飲品只加蜂蜜，不另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "OREO奶特",
+            "description": "L | 總糖量48公克 | 總熱量320大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍奶特",
+            "description": "L| 總糖量48公克 | 總熱量320大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶奶特",
+            "description": "L| 總糖量48公克 | 總熱量320大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶奶特",
+            "description": "L | 總糖量48公克 | 總熱量323大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "普洱奶特",
+            "description": "L| 總糖量48公克 | 總熱量320大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱奶特",
+            "description": "L| 總糖量48公克 | 總熱量320大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貴妃奶特",
+            "description": "L | 總糖量48公克 | 總熱量320大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青茶奶特",
+            "description": "L| 總糖量48公克 | 總熱量320大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香醇奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶",
+            "description": "L | 總糖量48公克 | 總熱量650大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌奶茶",
+            "description": "L | 總糖量45公克｜總熱量530大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典奶綠",
+            "description": "L | 總糖量45公克｜總熱量530大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖奶茶",
+            "description": "L | 總糖量48公克 | 總熱量595大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍奶茶",
+            "description": "L | 總糖量45公克｜總熱量530大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果奶茶",
+            "description": "L | 總糖量48公克 | 總熱量595大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典奶青",
+            "description": "L | 總糖量45公克｜總熱量530大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "埔里甘蔗",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗青茶",
+            "description": "L｜總糖量68公克 | 總熱量288大卡 | 本飲品只加甘蔗汁已有基本甜度，不需另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗柳橙",
+            "description": "L｜總糖量72公克 | 總熱量310大卡 | 本飲品只加甘蔗汁已有基本甜度，不需另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗檸檬",
+            "description": "L｜總糖量70公克 | 總熱量302大卡 | 本飲品只加甘蔗汁已有基本甜度，不需另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗綠茶",
+            "description": "L｜總糖量68公克 | 總熱量288大卡 | 本飲品只加甘蔗汁已有基本甜度，不需另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "府城冬瓜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "府城冬瓜茶",
+            "description": "L｜總糖量78公克 | 總熱量320大卡 | 本飲品為冬瓜糖磚熬煮已有基本甜度，不另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜青茶",
+            "description": "L｜總糖量52公克 | 總熱量215大卡 | 本飲品為冬瓜糖磚熬煮已有基本甜度，不另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜檸檬",
+            "description": "L｜總糖量67公克 | 總熱量310大卡 | 本飲品為冬瓜糖磚熬煮已有基本甜度，不另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜鮮奶",
+            "description": "L ｜總糖量68公克 | 總熱量380大卡 | 本飲品為冬瓜糖磚熬煮已有基本甜度，不另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜烏龍",
+            "description": "L｜總糖量52公克 | 總熱量215大卡 | 本飲品為冬瓜糖磚熬煮已有基本甜度，不另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小農鮮奶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手炒黑糖珍珠鮮奶",
+            "description": "L｜總糖量48公克 | 總熱量370大卡 | 本飲品只加黑糖已有基本甜度",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古法仙草奶凍",
+            "description": "L｜總糖量38公克 | 總熱量202大卡 | 本飲品仙草已有基本甜度",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖布丁鮮奶",
+            "description": "L｜固定甜度 | 兩個統一布丁的濃厚焦糖香氣，融合滑順鮮奶，甜而不膩，復刻童年回憶中的味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮榨水果",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "農榨柳橙綠",
+            "description": "L | 總糖量50公克 | 總熱量346大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青檸芭樂",
+            "description": "L | 總糖量70公克 | 總熱量300大卡  | 紅心芭樂| 本飲品只加蜂蜜已有基本甜度",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芭柳甘露",
+            "description": "L｜總糖量71公克 | 總熱量320大卡 | 農榨柳橙汁配上現打的紅心芭樂汁｜本飲品只加蜂蜜已有基本甜度",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金桔檸檬",
+            "description": "L | 總糖量48公克 | 總熱量217大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬翡翠綠",
+            "description": "L | 總糖量48公克 | 總熱量217大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "純果百香綠",
+            "description": "L | 總糖量52公克 | 總熱量360大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香橙百香綠",
+            "description": "L | 總糖量50公克 | 總熱量346大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特調飲品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "多多綠",
+            "description": "L | 總糖量65公克 | 總熱量310大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜蘆薈",
+            "description": "L｜總糖量49公克 | 總熱量282大卡 | 本飲品只加蜂蜜已有基本甜度",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜檸檬",
+            "description": "L｜總糖量45公克 | 總熱量278大卡 | 本飲品只加蜂蜜已有基本甜度",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿華田歐蕾",
+            "description": "L | 總糖量50公克 | 總熱量420大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋紅茶",
+            "description": "L | 總糖量50公克 | 總熱量287大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆梅綠",
+            "description": "L | 總糖量85公克 | 總熱量360大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "法芙娜可可歐蕾",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚香青茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚香紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆漿紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香草奶昔",
+            "description": "L｜固定甜度 | 固定冰量",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "泰式奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰泰奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰泰冰淇淋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "芝士厚奶霜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶厚奶霜",
+            "description": "L | 總糖量48公克 | 總熱量420大卡| 可換茶底",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烏龍厚奶霜",
+            "description": "L | 總糖量48公克 | 總熱量420大卡| 可換茶底",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶厚奶霜",
+            "description": "L | 總糖量50公克 | 總熱量445大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜厚奶霜",
+            "description": "L | 總糖量82公克 | 總熱量352大卡｜本飲品為冬瓜糖磚熬煮已有基本甜度，不另加糖",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠茶厚奶霜",
+            "description": "L | 總糖量48公克 | 總熱量420大卡| 可換茶底",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青茶厚奶霜",
+            "description": "L | 總糖量48公克 | 總熱量420大卡| 可換茶底",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "研磨咖啡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵",
+            "description": "M | 總糖量20公克 | 總熱量128大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "美式咖啡",
+            "description": "M | 總糖量18公克 | 總熱量25大卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "榛果拿鐵",
+            "description": "M | 總糖量23公克 | 總熱量132大卡｜甜度為榛果甜",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖拿鐵",
+            "description": "M | 總糖量23公克 | 總熱量132大卡｜甜度為焦糖甜",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冬季熱飲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "桂圓紅棗茶",
+            "description": "M | 總糖量55公克 | 總熱量258大卡 | 甜度固定 | 限溫熱",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式香柚茶",
+            "description": "M | 總糖量40公克 | 總熱量185大卡 | 甜度固定 | 限溫熱",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂圓奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "西瓜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "西瓜汁",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西瓜冰沙",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西瓜雪沙",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西瓜厚奶霜",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "其他",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "塑膠袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%99%BD%E5%AE%B6%E5%8D%81%E5%85%A8%E8%97%A5%E7%87%89%E6%8E%92%E9%AA%A8-%E5%A4%A7%E6%A9%8B%E9%A0%AD%E5%BA%97/hIQuNWvmUlK9y3R0q3u9Lw",
+  "name": "白家十全藥燉排骨 大橋頭店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市大同區延平北路三段70號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0655926,
+    "longitude": 121.5109659
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 300
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "十全肋排湯",
+            "description": "十種養生中藥材熬煮湯頭濃郁鲜甜 四季補\n肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全羊小排湯",
+            "description": "十種養生中藥材熬煮湯頭濃郁鲜甜 四季補",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "汆燙時蔬，簡單調味，保留翠綠與脆口，清爽不油膩的家常小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉山藥排骨湯",
+            "description": "［非藥燉湯頭］懷念媽媽的味道\n肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷白菜",
+            "description": "經典家常小菜，大白菜滷至軟透，拌入木耳與紅蘿蔔絲，清香入味、暖胃下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌香拌麵線",
+            "description": "小心！食用後會上癮！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全排骨湯",
+            "description": "十種養生中藥材熬煮湯頭濃郁鲜甜 四季補\n肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "筍絲",
+            "description": "爽脆筍絲，口感清爽不膩，簡單調味的佐餐小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全清湯",
+            "description": "（無排骨 ）十種養生中藥材熬煮湯頭濃郁鲜甜  四季補",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全羊排麵線",
+            "description": "十全藥膳湯頭燉煮，羊排帶骨厚實，搭配溫熱麵線，點綴枸杞與薑絲；十種養生中藥材熬出濃郁鮮甜，暖胃四季補。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全排骨麵線",
+            "description": "肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "148.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全土虱湯（下巴）",
+            "description": "十全藥膳湯頭熬煮，選用土虱下巴部位，口感滑嫩，湯頭濃郁鮮甜，四季皆宜的溫補選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "十全排骨湯",
+            "description": "十種養生中藥材熬煮湯頭濃郁鲜甜 四季補\n肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全肋排湯",
+            "description": "十種養生中藥材熬煮湯頭濃郁鲜甜 四季補\n肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "養生湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "十全排骨湯",
+            "description": "十種養生中藥材熬煮湯頭濃郁鲜甜 四季補\n肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全肋排湯",
+            "description": "十種養生中藥材熬煮湯頭濃郁鲜甜 四季補\n肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全羊小排湯",
+            "description": "十種養生中藥材熬煮湯頭濃郁鲜甜 四季補",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "清燉山藥排骨湯",
+            "description": "［非藥燉湯頭］懷念媽媽的味道\n肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全土虱湯（下巴）",
+            "description": "十全藥膳湯頭熬煮，選用土虱下巴部位，口感滑嫩，湯頭濃郁鮮甜，四季皆宜的溫補選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全清湯",
+            "description": "（無排骨 ）十種養生中藥材熬煮湯頭濃郁鲜甜  四季補",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵線/飯類/便當",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冠軍滷肉飯",
+            "description": "減肥失敗的\"元凶\",但還是非吃不可\n本店使用豬肉原產地（國）：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌香拌麵線",
+            "description": "小心！食用後會上癮！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全排骨麵線",
+            "description": "肉品原產地:國產豬",
+            "offers": {
+              "@type": "Offer",
+              "price": "148.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全羊排麵線",
+            "description": "十全藥膳湯頭燉煮，羊排帶骨厚實，搭配溫熱麵線，點綴枸杞與薑絲；十種養生中藥材熬出濃郁鮮甜，暖胃四季補。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "白米飯一碗，作為主食百搭各式菜餚",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "各式小菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "汆燙時蔬，簡單調味，保留翠綠與脆口，清爽不油膩的家常小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷白菜",
+            "description": "經典家常小菜，大白菜滷至軟透，拌入木耳與紅蘿蔔絲，清香入味、暖胃下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "筍絲",
+            "description": "爽脆筍絲，口感清爽不膩，簡單調味的佐餐小菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷豆腐",
+            "description": "方塊豆腐滷至上色入味，佐蔥花與滷汁，鹹香滑嫩，一口接一口",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷蛋",
+            "description": "經典滷蛋，滷汁上色入味，蛋白Q彈、蛋黃綿密香濃，鹹香耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "活動專區",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "kingshot x 足球明星球卡",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

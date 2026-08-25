@@ -1,0 +1,562 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%B9%AF%E6%AD%A3%E7%87%89%E5%93%81%E5%B1%8B/VypZ9NhSUsKdv-jv3D9rpQ",
+  "name": "湯正燉品屋",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區文林路101巷22號",
+    "addressLocality": "台北市",
+    "addressRegion": "",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08789,
+    "longitude": 121.5256
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 190
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "絲瓜鮮肉湯包",
+            "description": "絲瓜清甜配鮮肉多汁，清爽不膩、鮮香滿溢的必點湯包。\n\n請注意:此為買一送一商品,數量默認為【2】我們才會出兩分給您,若您將數量改為1,即表示您只需要1份唷！(選2份商品為1份價格,活動商品大膽選雙數！不能改成1再來申訴唷！)",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{特別活動} 香菇雞湯麵線 買一送一",
+            "description": "請注意:此為買一送一商品,數量默認為【2】我們才會出兩分給您,若您將數量改為1,即表示您只需要1份唷！(選2份商品為1份價格,活動商品大膽選雙數！不能改成1再來申訴唷！)",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單人套餐",
+            "description": "單人套餐 ，經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣小籠湯包",
+            "description": "麻辣香氣四溢，鹹香帶勁、湯汁爆滿，嗜辣者必吃。\n\n請注意:此為買一送一商品,數量默認為【2】我們才會出兩分給您,若您將數量改為1,即表示您只需要1份唷！(選2份商品為1份價格,活動商品大膽選雙數！不能改成1再來申訴唷！)",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇雞腿湯麵線",
+            "description": "濃郁香菇香氣，搭配嫩雞腿與細緻麵線。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉排骨湯麵線",
+            "description": "藥膳湯頭甘醇，排骨鮮嫩，麵線滑順暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜頭雞湯麵線",
+            "description": "蒜香濃郁清甜，雞腿鮮嫩，麵線滑順暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工招牌鮮肉湯包",
+            "description": "手工現包小籠湯包",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "十全藥燉雞腿麵線",
+            "description": "十全藥膳慢火燉煮，雞腿鮮嫩，麵線滑順暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥膳清湯麵線",
+            "description": "藥膳甘醇回甘，麵線滑順，暖胃無負擔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜頭雞湯",
+            "description": "嚴選蒜頭慢火燉煮，湯清味鮮，甘甜不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "剝皮辣椒雞湯",
+            "description": "微辣回甘暖胃，香辣不嗆、雞肉鮮嫩，越喝越上癮的開胃好湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜排骨湯",
+            "description": "清熱解膩又甘甜，苦瓜與排骨久燉入味，清爽降火必點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇雞湯",
+            "description": "嚴選香菇慢燉嫩雞，補氣暖胃、清爽不膩，冷熱皆宜的元氣湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "補氣人蔘雞湯",
+            "description": "嚴選人蔘與鮮嫩雞腿慢燉，補氣養身、提升元氣，暖胃滋補的頂級湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "{特別活動} 香菇雞湯麵線 買一送一",
+            "description": "請注意:此為買一送一商品,數量默認為【2】我們才會出兩分給您,若您將數量改為1,即表示您只需要1份唷！(選2份商品為1份價格,活動商品大膽選雙數！不能改成1再來申訴唷！)",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{特別活動} 蒜頭雞湯麵線 買一送一",
+            "description": "請注意:此為買一送一商品,數量默認為【2】我們才會出兩分給您,若您將數量改為1,即表示您只需要1份唷！(選2份商品為1份價格,活動商品大膽選雙數！不能改成1再來申訴唷！)",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點（以及口味），請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "若您用餐滿意，歡迎於餐後在平台留下五星評價；如有建議或問題，請於評價留言告知，我們會持續精進。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本店使用國產豬肉🐖",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "本店使用六兩雞腿",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選🔥",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香菇雞湯",
+            "description": "嚴選香菇慢燉嫩雞，補氣暖胃、清爽不膩，冷熱皆宜的元氣湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜排骨湯",
+            "description": "清熱解膩又甘甜，苦瓜與排骨久燉入味，清爽降火必點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工招牌鮮肉湯包",
+            "description": "手工現包小籠湯包",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "補氣人蔘雞湯",
+            "description": "嚴選人蔘與鮮嫩雞腿慢燉，補氣養身、提升元氣，暖胃滋補的頂級湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{特別活動} 香菇雞湯麵線 買一送一",
+            "description": "請注意:此為買一送一商品,數量默認為【2】我們才會出兩分給您,若您將數量改為1,即表示您只需要1份唷！(選2份商品為1份價格,活動商品大膽選雙數！不能改成1再來申訴唷！)",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單人套餐",
+            "description": "單人套餐 ，經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "{特別活動} 蒜頭雞湯麵線 買一送一",
+            "description": "請注意:此為買一送一商品,數量默認為【2】我們才會出兩分給您,若您將數量改為1,即表示您只需要1份唷！(選2份商品為1份價格,活動商品大膽選雙數！不能改成1再來申訴唷！)",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小籠湯包💫",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手工招牌鮮肉湯包",
+            "description": "手工現包小籠湯包",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "絲瓜鮮肉湯包",
+            "description": "絲瓜清甜配鮮肉多汁，清爽不膩、鮮香滿溢的必點湯包。\n\n請注意:此為買一送一商品,數量默認為【2】我們才會出兩分給您,若您將數量改為1,即表示您只需要1份唷！(選2份商品為1份價格,活動商品大膽選雙數！不能改成1再來申訴唷！)",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣小籠湯包",
+            "description": "麻辣香氣四溢，鹹香帶勁、湯汁爆滿，嗜辣者必吃。\n\n請注意:此為買一送一商品,數量默認為【2】我們才會出兩分給您,若您將數量改為1,即表示您只需要1份唷！(選2份商品為1份價格,活動商品大膽選雙數！不能改成1再來申訴唷！)",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "養身雞湯燉品🐥",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香菇雞湯",
+            "description": "嚴選香菇慢燉嫩雞，補氣暖胃、清爽不膩，冷熱皆宜的元氣湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "補氣人蔘雞湯",
+            "description": "嚴選人蔘與鮮嫩雞腿慢燉，補氣養身、提升元氣，暖胃滋補的頂級湯品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜頭雞湯",
+            "description": "嚴選蒜頭慢火燉煮，湯清味鮮，甘甜不膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "剝皮辣椒雞湯",
+            "description": "微辣回甘暖胃，香辣不嗆、雞肉鮮嫩，越喝越上癮的開胃好湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "排骨湯燉品🍲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜排骨湯",
+            "description": "清熱解膩又甘甜，苦瓜與排骨久燉入味，清爽降火必點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "主食🍚",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "經典滷肉飯",
+            "description": "滷汁香濃不膩，肥瘦均勻、入口即化，經典台味最耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "經典香拌麵線",
+            "description": "特製醬香拌勻，麵線滑順Q彈，香氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "粒粒飽滿香Q，搭配湯品與主食最對味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜☘️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滷白菜",
+            "description": "白菜軟嫩多汁，滷香暖胃、清甜爽口，百搭配菜首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜",
+            "description": "嚴選當季時蔬，鮮甜脆嫩，健康無負擔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品+麵線一次滿足(本店使用白麵線) 湯與麵線分開裝",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "十全藥燉雞腿麵線",
+            "description": "十全藥膳慢火燉煮，雞腿鮮嫩，麵線滑順暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "剝皮辣椒雞湯麵線",
+            "description": "剝皮辣椒甘甜微辣，雞腿鮮嫩，湯頭回甘暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜頭雞湯麵線",
+            "description": "蒜香濃郁清甜，雞腿鮮嫩，麵線滑順暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "補氣人蔘雞湯麵線",
+            "description": "濃郁人蔘香氣，雞腿多汁，麵線吸附湯香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇雞腿湯麵線",
+            "description": "濃郁香菇香氣，搭配嫩雞腿與細緻麵線。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉排骨湯麵線",
+            "description": "藥膳湯頭甘醇，排骨鮮嫩，麵線滑順暖胃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥膳清湯麵線",
+            "description": "藥膳甘醇回甘，麵線滑順，暖胃無負擔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

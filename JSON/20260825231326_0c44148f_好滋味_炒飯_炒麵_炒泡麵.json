@@ -1,0 +1,726 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A5%BD%E6%BB%8B%E5%91%B3-%E7%82%92%E9%A3%AF-%E7%82%92%E9%BA%B5-%E7%82%92%E6%B3%A1%E9%BA%B5/lzQRaDdTWdabGNCzt1T3cw",
+  "name": "好滋味 炒飯 炒麵 炒泡麵",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "中和街292巷2號",
+    "addressLocality": "北投區",
+    "addressRegion": "台北市",
+    "postalCode": "112011",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1407814,
+    "longitude": 121.5004024
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4,
+    "reviewCount": 95
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "🍽炒泡麵.🥛隨機 (紅茶.奶茶.冬瓜茶)(中)👍",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵海陸大餐(大杯)",
+            "description": "脆皮雞排或菲力雞(隨機) 荷包蛋 蝦子",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵+菲力雞x2(大杯)",
+            "description": "蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵 +里肌肉",
+            "description": "荷包蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵+脆皮雞排",
+            "description": "蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵+ 西西裡腿排(大杯)",
+            "description": "蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵+檸檬雞柳(4)",
+            "description": "蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵+維力炸醬麵+菲力雞(大杯)",
+            "description": "蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒泡麵",
+            "description": "蝦仁與泡麵拌炒，海味與麵香相融，順口耐吃。隨機附中杯飲：紅茶/奶茶/冬瓜茶；選湯則無飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉(片)炒泡麵",
+            "description": "羊肉片與泡麵拌炒，麵條Q彈、肉香四溢，經典鹹香好味。附中杯隨機飲品（紅茶／奶茶／冬瓜茶）；若改選湯品則不附飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉(片)炒泡麵",
+            "description": "牛肉片與泡麵大火快炒，醬香迷人，麵條Q彈。",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉(片)炒泡麵",
+            "description": "豬肉炒泡麵，豬香與麵條拌炒出鹹香滋味，麵條Q彈順口。附中杯隨機飲品：紅茶／奶茶／冬瓜茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鲷魚十炒泡麵(大杯)",
+            "description": "鯛魚煎香搭配炒泡麵，麵條Q彈、鹹香順口，大杯份量更滿足。下單本類加贈中杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）；選湯品則無飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵 +惡魔腿排(.(煎.辣)大杯",
+            "description": "經典鹹香炒泡麵，搭配惡魔腿排，可選煎/辣。附大杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬肉炒泡麵(大杯)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵+卡啦雞",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🎆人氣精選訂即送👍[紅茶. 奶茶.冬瓜茶] 1杯(中) 隨機喔 😀",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泡菜炒飯",
+            "description": "香辣韓式泡菜炒飯，獨特風味，令人垂涎。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜炒麵",
+            "description": "香辣泡菜與炒麵完美結合，帶來獨特的風味享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵+維力炸醬麵+菲力雞(大杯)",
+            "description": "蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鲷魚十炒泡麵(大杯)",
+            "description": "鯛魚煎香搭配炒泡麵，麵條Q彈、鹹香順口，大杯份量更滿足。下單本類加贈中杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）；選湯品則無飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵 +惡魔腿排(.(煎.辣)大杯",
+            "description": "經典鹹香炒泡麵，搭配惡魔腿排，可選煎/辣。附大杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞炒飯",
+            "description": "燻雞與米飯大火快炒，燻香與米香交融，鹹香順口、粒粒分明。下單本類加贈中杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬肉炒泡麵(大杯)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵+卡啦雞",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒飯類.訂即送😼[紅茶. 奶茶.冬瓜茶]🧋 1 杯(中) 隨機喔",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒飯",
+            "description": "羊肉與米飯大火快炒，肉香融合米香，香氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉炒飯",
+            "description": "豬肉與米飯大火快炒，肉香融合米香，香氣十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯",
+            "description": "彈嫩蝦仁拌香炒米飯，海味香氣，經典人氣款",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式香腸炒飯",
+            "description": "德式香腸切片拌炒白飯，肉香濃郁、鹹香順口，簡單經典的好味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜炒飯",
+            "description": "里肌肉一片",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞炒飯",
+            "description": "燻雞與米飯大火快炒，燻香與米香交融，鹹香順口、粒粒分明。下單本類加贈中杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒飯",
+            "description": "牛肉與米飯大火快炒，肉香融入米香，口感豐富、鹹香下飯。下單本類加贈中杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒麵類.訂即送🤔[紅茶. 奶茶.冬瓜茶] 1杯(中) 隨機喔😀",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵",
+            "description": "嫩牛肉片與麵條拌炒，醬香迷人，麵條Q彈，搭配青蔬口感豐富，料多實在。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵",
+            "description": "羊肉片與麵條熱炒，麵條Q彈、肉香四溢，經典鹹香風味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉炒麵",
+            "description": "經典家常風味，豬肉片與麵條拌炒，醬香迷人、麵條Q彈，肉片嫩滑，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒麵",
+            "description": "彈嫩蝦仁與麵條大火快炒，醬香鹹香、海味飽滿，口感豐富。下單本類加贈中杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）；選湯品則無飲料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鐵板麵類訂即送😋（紅茶. 奶茶.冬瓜茶）1杯(中) 隨機喔 😃😙",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁鐵板麵",
+            "description": "內含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三杯雞丁鐵板麵",
+            "description": "內含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "打拋豬鐵板麵",
+            "description": "內含蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒鐵板麵",
+            "description": "肉及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇鐵板麵",
+            "description": "肉及蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉燥鐵板麵",
+            "description": "肉及蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "薑絲牛肉湯清湯",
+            "description": "清湯襯托薑絲香氣與牛肉鮮味，清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲羊肉湯",
+            "description": "薑絲與羊肉的絕妙搭配，薑香提鮮，湯頭清香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲豬肉湯",
+            "description": "薑絲與豬肉片的清湯，薑香提味，清爽順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "餛飩湯",
+            "description": "經典湯品，餛飩配清湯，滑嫩順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紫菜蛋花湯",
+            "description": "經典家常湯品，紫菜與滑順蛋花，清香順口、暖胃不負擔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵 +惡魔腿排(.(煎.辣)大杯",
+            "description": "經典鹹香炒泡麵，搭配惡魔腿排，可選煎/辣。附大杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "水餃類.訂即送😀（紅茶 .奶茶.冬瓜茶 )1杯(中) 隨機喔😀",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜水餃",
+            "description": "12 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜水餃",
+            "description": "12 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大鍋貼(8)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炒高麗菜",
+            "description": "高麗菜炒至爽脆，清香可口，簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥爆牛肉",
+            "description": "嫩牛肉搭配蔥段大火快炒，洋蔥香濃郁，肉質滑嫩，鹹香下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花蛋",
+            "description": "蔥花拌蛋香煎至金黃，蔥香濃郁、滑嫩順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔蛋",
+            "description": "塔香與蛋香交融，口感滑嫩，簡單耐吃的小菜。\n只有買一送一才可換喔",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆羊肉",
+            "description": "青蔥大火快炒羊肉，蔥香濃郁、肉片嫩滑，簡單卻耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "菜脯蛋",
+            "description": "菜脯脆口搭配蛋香，金黃可口的台式家常小菜，簡單好味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜豬肉炒泡麵(大杯)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "500CC",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶",
+            "description": "500cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜鮮奶茶500cc",
+            "description": "冬瓜茶香結合濃醇鮮奶，甘甜順口，500cc剛剛好",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶",
+            "description": "500cc",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬紅茶",
+            "description": "現壓檸檬",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬冬瓜茶",
+            "description": "現壓檸檬",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒泡麵 +惡魔腿排(.(煎.辣)大杯",
+            "description": "經典鹹香炒泡麵，搭配惡魔腿排，可選煎/辣。附大杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燻雞炒飯",
+            "description": "燻雞與米飯大火快炒，燻香與米香交融，鹹香順口、粒粒分明。下單本類加贈中杯飲品一杯（紅茶/奶茶/冬瓜茶隨機）。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

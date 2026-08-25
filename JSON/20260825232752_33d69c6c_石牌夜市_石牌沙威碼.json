@@ -1,0 +1,79 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%9F%B3%E7%89%8C%E5%A4%9C%E5%B8%82-%E7%9F%B3%E7%89%8C%E6%B2%99%E5%A8%81%E7%A2%BC/-oUB-buiQ8KJZLcNgbzofw",
+  "name": "石牌夜市 石牌沙威碼",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Yumin 1st Road 28",
+    "addressLocality": "Beitou District",
+    "addressRegion": "Taipei City",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1167253,
+    "longitude": 121.5169127
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 500
+  },
+  "servesCuisine": [
+    "Mediterranean",
+    "Chicken"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味沙威碼",
+            "description": "鬆軟麵包、香嫩肉片、洋蔥與生菜，淋上番茄醬與美乃滋，經典原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司沙威碼",
+            "description": "鬆軟麵包夾沙威瑪肉、高麗菜絲與起司片，淋上醬料，口感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芥末沙威碼",
+            "description": "鬆軟麵包夾肉片、洋蔥與高麗菜，搭配芥末醬，口感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味沙威碼",
+            "description": "麵包夾肉片與高麗菜絲，淋上辣醬與香料粉，辛香帶勁",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

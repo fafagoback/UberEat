@@ -1,0 +1,71 @@
+{
+  "snapshot_date": "2026-08-25",
+  "recorded_at": "2026-08-25 23:22:18",
+  "benchmark_address": "台北市士林區中山北路七段81巷",
+  "coordinates": {
+    "latitude": 25.1220568,
+    "longitude": 121.5298302
+  },
+  "total_discovered": 536,
+  "total_crawled": 5,
+  "success_count": 5,
+  "fail_count": 0,
+  "elapsed_seconds": 8.55,
+  "stores": [
+    {
+      "status": "SUCCESS",
+      "store_name": "麥當勞 台北石牌 McDonald's S78",
+      "store_id": "dcb10e7c62893ac945db7928dceb76de",
+      "store_url": "https://www.ubereats.com/tw/store/%E9%BA%A5%E7%95%B6%E5%8B%9E-%E5%8F%B0%E5%8C%97%E7%9F%B3%E7%89%8C-mcdonalds-s78/ub55akCsQIa0NlqEwvnQ4A",
+      "total_items": 120,
+      "rating": 4.9,
+      "review_count": 35000,
+      "file_path": "C:\\Users\\ET\\我的雲端硬碟\\作品\\UberEat\\JSON\\20260825232218_dcb10e7c_麥當勞_台北石牌_McDonald's_S78.json",
+      "filename": "20260825232218_dcb10e7c_麥當勞_台北石牌_McDonald's_S78.json"
+    },
+    {
+      "status": "SUCCESS",
+      "store_name": "胖老爹美式炸雞 天母店",
+      "store_id": "0bc1a2a442c3e13954c2b4f76fb8ba8d",
+      "store_url": "https://www.ubereats.com/tw/store/%E8%83%96%E8%80%81%E7%88%B9%E7%BE%8E%E5%BC%8F%E7%82%B8%E9%9B%9E-%E5%A4%A9%E6%AF%8D%E5%BA%97/0eLDKx9VS9aAwUbLmhDqrg",
+      "total_items": 67,
+      "rating": 4.8,
+      "review_count": 2000,
+      "file_path": "C:\\Users\\ET\\我的雲端硬碟\\作品\\UberEat\\JSON\\20260825232218_0bc1a2a4_胖老爹美式炸雞_天母店.json",
+      "filename": "20260825232218_0bc1a2a4_胖老爹美式炸雞_天母店.json"
+    },
+    {
+      "status": "SUCCESS",
+      "store_name": "肯德基KFC炸雞漢堡店 北投光明店",
+      "store_id": "85b958793c65f4665737aa76e85897f7",
+      "store_url": "https://www.ubereats.com/tw/store/%E8%82%AF%E5%BE%B7%E5%9F%BAkfc%E7%82%B8%E9%9B%9E%E6%BC%A2%E5%A0%A1%E5%BA%97-%E5%8C%97%E6%8A%95%E5%85%89%E6%98%8E%E5%BA%97/lGVGNLE0TCOjrNEDC8s8lw",
+      "total_items": 114,
+      "rating": 4.8,
+      "review_count": 3000,
+      "file_path": "C:\\Users\\ET\\我的雲端硬碟\\作品\\UberEat\\JSON\\20260825232218_85b95879_肯德基KFC炸雞漢堡店_北投光明店.json",
+      "filename": "20260825232218_85b95879_肯德基KFC炸雞漢堡店_北投光明店.json"
+    },
+    {
+      "status": "SUCCESS",
+      "store_name": "Burger o'clock",
+      "store_id": "e76df982c2a98ee4cf20801a65b1c4df",
+      "store_url": "https://www.ubereats.com/tw/store/burger-oclock/N3XkkaJGRDCjAt-GaT6iXQ",
+      "total_items": 77,
+      "rating": 4.9,
+      "review_count": 7000,
+      "file_path": "C:\\Users\\ET\\我的雲端硬碟\\作品\\UberEat\\JSON\\20260825232218_e76df982_Burger_o'clock.json",
+      "filename": "20260825232218_e76df982_Burger_o'clock.json"
+    },
+    {
+      "status": "SUCCESS",
+      "store_name": "台灣鹽酥雞 大直總店",
+      "store_id": "7e7abd39f01f383ef85e7736be18d57c",
+      "store_url": "https://www.ubereats.com/tw/store/%E5%8F%B0%E7%81%A3%E9%B9%BD%E9%85%A5%E9%9B%9E-%E5%A4%A7%E7%9B%B4%E7%B8%BD%E5%BA%97/CeO3JJoVSKObnwrdlOpIzA",
+      "total_items": 135,
+      "rating": 4.8,
+      "review_count": 45000,
+      "file_path": "C:\\Users\\ET\\我的雲端硬碟\\作品\\UberEat\\JSON\\20260825232218_7e7abd39_台灣鹽酥雞_大直總店.json",
+      "filename": "20260825232218_7e7abd39_台灣鹽酥雞_大直總店.json"
+    }
+  ]
+}

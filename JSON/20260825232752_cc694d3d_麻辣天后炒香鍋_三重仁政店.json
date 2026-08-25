@@ -1,0 +1,338 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%BA%BB%E8%BE%A3%E5%A4%A9%E5%90%8E%E7%82%92%E9%A6%99%E9%8D%8B-%E4%B8%89%E9%87%8D%E4%BB%81%E6%94%BF%E5%BA%97/Lle9C1sHUo2qqbcCFiZcjQ",
+  "name": "麻辣天后炒香鍋 三重仁政店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁政街182號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.079557,
+    "longitude": 121.490957
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 10
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣霜降牛炒香鍋  Mala Beef Flank Stir-Fry Pot",
+            "description": "獨家十三香麻辣醬炒製香鍋, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不辣的蒜香霜降牛炒香鍋  Non-spicy Garlic Marbled Beef Stir-Fried Pot",
+            "description": "不辣為口味較淡的選項, 若您吃辣則建議選擇麻辣口味完全不辣的較適合小孩或是長輩，蒜味特製醬汁炒製，含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。內容物固定恕不接受特殊指示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣泡椒霜降牛炒香鍋  Sour and Spicy Pickled Chili Beef Flank Stir-Fry Pot",
+            "description": "固定小辣。獨家老甕酸香泡椒炒製, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豬五花炒香鍋  Mala Pork Belly Stir-Fry Pot",
+            "description": "(台灣豬)獨家十三香麻辣醬炒製香鍋, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不辣的蒜味醬香豬五花炒香鍋  Non-spicy Garlic Soy Sauce Pork Belly Stir-Fried Pot",
+            "description": "(台灣豬)此不辣為口味較淡的選項, 若您吃辣則建議選擇麻辣口味完全不辣的較適合小孩或是長輩, 蒜味特製醬汁炒製，含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。內容物固定恕不接受特殊指示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣黃金嫩雞炒香鍋  Mala Golden Tender Chicken Stir-Fry Pot",
+            "description": "獨家十三香麻辣醬炒製香鍋, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不辣的蒜味醬香黃金嫩雞炒香鍋  Non-spicy Garlic Soy Sauce Golden Tender Chicken Stir-Fried Pot",
+            "description": "此不辣為口味較淡的選項, 若您吃辣則建議選擇麻辣口味完全不辣的較適合小孩或是長輩, 蒜味特製醬汁炒製，含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。內容物固定恕不接受特殊指示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣泡椒豬五花炒香鍋  Hot and Sour Pickled Pepper Pork Belly Stir-Fry Pot",
+            "description": "(台灣豬)固定小辣。獨家老甕酸香泡椒炒製, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣泡椒黃金嫩雞炒香鍋  Hot and Sour Pickled Pepper Golden Tender Chicken Stir-Fry Pot",
+            "description": "固定小辣。獨家老甕酸香泡椒炒製, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選  Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣霜降牛炒香鍋  Mala Beef Flank Stir-Fry Pot",
+            "description": "獨家十三香麻辣醬炒製香鍋, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豬五花炒香鍋  Mala Pork Belly Stir-Fry Pot",
+            "description": "(台灣豬)獨家十三香麻辣醬炒製香鍋, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣泡椒霜降牛炒香鍋  Sour and Spicy Pickled Chili Beef Flank Stir-Fry Pot",
+            "description": "固定小辣。獨家老甕酸香泡椒炒製, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣黃金嫩雞炒香鍋  Mala Golden Tender Chicken Stir-Fry Pot",
+            "description": "獨家十三香麻辣醬炒製香鍋, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣天后香鍋拌醬  Mala Empress Fragrant Pot Mixing Sauce",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣椒香炒香鍋  Spicy and Fragrant Stir-fried Dry Pot",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣霜降牛炒香鍋  Mala Beef Flank Stir-Fry Pot",
+            "description": "獨家十三香麻辣醬炒製香鍋, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豬五花炒香鍋  Mala Pork Belly Stir-Fry Pot",
+            "description": "(台灣豬)獨家十三香麻辣醬炒製香鍋, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣黃金嫩雞炒香鍋  Mala Golden Tender Chicken Stir-Fry Pot",
+            "description": "獨家十三香麻辣醬炒製香鍋, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "酸辣泡椒炒香鍋  Hot and Sour Pickled Pepper Stir-fry Pot",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "酸辣泡椒霜降牛炒香鍋  Sour and Spicy Pickled Chili Beef Flank Stir-Fry Pot",
+            "description": "固定小辣。獨家老甕酸香泡椒炒製, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣泡椒豬五花炒香鍋  Hot and Sour Pickled Pepper Pork Belly Stir-Fry Pot",
+            "description": "(台灣豬)固定小辣。獨家老甕酸香泡椒炒製, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸辣泡椒黃金嫩雞炒香鍋  Hot and Sour Pickled Pepper Golden Tender Chicken Stir-Fry Pot",
+            "description": "固定小辣。獨家老甕酸香泡椒炒製, 含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。配料固定恕不更改。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蒜味醬香炒香鍋  Garlic Soy Sauce Stir-fried Pot",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "不辣的蒜香霜降牛炒香鍋  Non-spicy Garlic Marbled Beef Stir-Fried Pot",
+            "description": "不辣為口味較淡的選項, 若您吃辣則建議選擇麻辣口味完全不辣的較適合小孩或是長輩，蒜味特製醬汁炒製，含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。內容物固定恕不接受特殊指示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不辣的蒜味醬香豬五花炒香鍋  Non-spicy Garlic Soy Sauce Pork Belly Stir-Fried Pot",
+            "description": "(台灣豬)此不辣為口味較淡的選項, 若您吃辣則建議選擇麻辣口味完全不辣的較適合小孩或是長輩, 蒜味特製醬汁炒製，含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。內容物固定恕不接受特殊指示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "不辣的蒜味醬香黃金嫩雞炒香鍋  Non-spicy Garlic Soy Sauce Golden Tender Chicken Stir-Fried Pot",
+            "description": "此不辣為口味較淡的選項, 若您吃辣則建議選擇麻辣口味完全不辣的較適合小孩或是長輩, 蒜味特製醬汁炒製，含肉品, 主食, 高麗菜, 綠色時蔬及六種嚴選配料。內容物固定恕不接受特殊指示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Sev專用(請勿點選)  For Sev use only (Please do not select)",
+            "description": "客服專用請勿點選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "天然冷泡茶  Natural Cold Brew Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "天然梅汁(台南梅嶺產)  Natural Plum Juice (from Tainan Meiling)",
+            "description": "台南梅嶺純天然釀造梅汁",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂花烏龍(100%台灣茶)  Osmanthus Oolong (100% Taiwan Tea)",
+            "description": "烘培烏龍茶解膩與淡雅桂花香完美融合",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高山青茶(100%台灣茶)  High Mountain Green Tea (100% Taiwan Tea)",
+            "description": "輕烘培生茶，解膩回甘",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

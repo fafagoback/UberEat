@@ -1,0 +1,570 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B2%A1%E5%B1%B1%E7%82%92%E7%BE%8A%E8%82%89-%E4%B8%89%E9%87%8D%E8%87%AA%E5%BC%B7%E5%BA%97/eUA7KH0WVaGWwD71KA0TOw",
+  "name": "岡山炒羊肉 三重自強店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區自強五路35號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0812908,
+    "longitude": 121.4937024
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆炒牛肉",
+            "description": "大把蔥段與薄切牛肉大火快炒，蔥香四溢、肉質嫩滑，風味濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵",
+            "description": "Q彈麵條拌入羊肉片與青蔬，熱炒出醬香，帶汁滑口、口感夠味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帶皮羊肉湯",
+            "description": "帶皮羊肉切塊、薑絲清湯，口感Q彈帶膠質。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲炒羊肉",
+            "description": "薑絲與羊肉片同炒，拌青蔥與醬汁，薑香提味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒飯",
+            "description": "羊肉片、蛋、青蔥拌炒米飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒羊肉",
+            "description": "嫩切羊肉與滑蛋快炒，加入蔥段，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芥藍炒羊肉",
+            "description": "芥藍與切片羊肉香炒入味，保留清爽菜香與肉香，醬汁滑口，口感層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶心空炒牛肉",
+            "description": "沙茶醬香拌炒牛肉與空心菜，菜梗爽脆、醬香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵",
+            "description": "黃麵拌炒牛肉片與青菜，醬汁均勻裹麵，口感Q彈",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炒蔥蛋",
+            "description": "雞蛋搭配青蔥拌炒成金黃蔥蛋，口感蓬鬆柔嫩，簡單鹹香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "159.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炒青菜（高麗菜 空心菜 芥藍菜）",
+            "description": "可選高麗菜、空心菜或芥藍菜，呈現菜梗爽脆、葉片柔嫩的口感，清香耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "採用優質米粒精心烹煮，粒粒分明飽滿富有彈性，香軟可口的白飯，是搭配任何菜餚的完美選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "牛肉湯",
+            "description": "薄切牛肉配薑絲的清湯，湯頭清亮順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "159.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "帶皮羊肉湯",
+            "description": "帶皮羊肉切塊、薑絲清湯，口感Q彈帶膠質。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "當歸羊肉湯",
+            "description": "當歸香氣濃郁的藥膳湯，加入薄切羊肉片與薑絲，湯頭溫潤順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "169.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "牛肉",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "沙茶芥藍菜炒牛肉",
+            "description": "沙茶醬炒牛肉搭配芥藍，醬香濃郁、蔬菜脆口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶心空炒牛肉",
+            "description": "沙茶醬香拌炒牛肉與空心菜，菜梗爽脆、醬香濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲炒牛肉",
+            "description": "薑絲與嫩牛肉拌炒，蔥段提香，醬汁滑口下飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜炒牛肉",
+            "description": "酸菜與牛肉片熱炒，酸香清爽、鹹香開胃；酸菜爽脆、牛肉嫩滑，口感俐落。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆炒牛肉",
+            "description": "大把蔥段與薄切牛肉大火快炒，蔥香四溢、肉質嫩滑，風味濃郁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒牛肉",
+            "description": "牛肉片與雞蛋拌炒，蔥段提香，口感嫩滑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙牛肉",
+            "description": "燙牛肉片，口感軟嫩，附薑絲與沾醬",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣炒牛肉🥵🥵",
+            "description": "牛肉拌炒出麻與辣的香氣，口味帶勁，涮嘴過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "265.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "羊肉",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣炒羊肉",
+            "description": "很辣很辣🥵🥵🥵🥵",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙羊肉",
+            "description": "羊肉汆燙至熟，口感嫩滑，保留原味肉香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油炒羊肉",
+            "description": "麻油拌炒羊肉片，搭配薑絲提味，肉片軟嫩，湯汁香醇、特別下飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒羊肉",
+            "description": "嫩切羊肉與滑蛋快炒，加入蔥段，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲炒羊肉",
+            "description": "薑絲與羊肉片同炒，拌青蔥與醬汁，薑香提味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜炒羊肉",
+            "description": "酸菜與羊肉片拌炒，酸香爽脆，肉片嫩口，鹹香下飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆羊肉",
+            "description": "大量青蔥快炒羊肉片，蔥香濃郁、肉質軟嫩，鹹香涮嘴，熱炒必點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶空心菜炒羊肉",
+            "description": "鮮嫩空心菜與嫩羊肉快炒，香氣十足。羊肉鮮美多汁，空心菜爽脆，搭配獨特香料與醬汁，風味層次豐富，是下飯的絕佳選擇。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芥藍炒羊肉",
+            "description": "芥藍與切片羊肉香炒入味，保留清爽菜香與肉香，醬汁滑口，口感層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "298.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "豬肉",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣炒豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芥藍炒豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "空心菜炒豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻油炒豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜炒豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薑絲炒豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥爆炒豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥炒豬肉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒飯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "三蛋炒飯",
+            "description": "三種蛋拌炒白飯，加入蔥花與高麗菜，層次更豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒飯",
+            "description": "米飯、蝦仁、蛋與蔥花拌炒的經典炒飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香腸炒飯",
+            "description": "香腸丁、蛋與蔥花拌炒米飯，香氣十足的家常風味",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉炒飯",
+            "description": "豬肉片、蛋與青蔥拌炒的家常炒飯，米粒乾爽帶醬香，口感飽滿",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒飯",
+            "description": "羊肉片、蛋、青蔥拌炒米飯",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒飯",
+            "description": "牛肉片與蛋、蔥拌炒的米飯，醬香入味，口感粒粒分明。",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炒麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵",
+            "description": "Q彈麵條拌入羊肉片與青蔬，熱炒出醬香，帶汁滑口、口感夠味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "189.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵",
+            "description": "黃麵拌炒牛肉片與青菜，醬汁均勻裹麵，口感Q彈",
+            "offers": {
+              "@type": "Offer",
+              "price": "179.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

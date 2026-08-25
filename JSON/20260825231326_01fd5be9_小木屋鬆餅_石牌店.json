@@ -1,0 +1,842 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B0%8F%E6%9C%A8%E5%B1%8B%E9%AC%86%E9%A4%85-%E7%9F%B3%E7%89%8C%E5%BA%97/Z-lElnO8TRip4RDaREtxmQ",
+  "name": "小木屋鬆餅 石牌店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 140, Section 1, Shipai Road",
+    "addressLocality": "Beitou District",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1141914,
+    "longitude": 121.5128146
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 9000
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Pastry",
+    "Group Friendly"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞腿蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "葡萄奶酥鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考，葡萄乾烤在餅皮裡面呦~",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香草卡士達鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蕉巧克力卡士達鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "莊園琥珀鮮乳茶",
+            "description": "總糖量61.2克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n紅茶茶葉產地：肯亞、印尼",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚沙拉蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌杏鮑菇",
+            "description": "照片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味咔啦雞蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶紅豆鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好吃鹹酥雞",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椪糖脆脆卡士達鬆餅 Honeycomb Toffee with Custard",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅起司蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可黑奶油鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟、可可鮮奶油融化，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙香觀音鮮乳茶",
+            "description": "總糖量61.2克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n烏龍茶茶葉產地：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒麻炸雞蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "英式塔塔炸魚蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蕉可可黑奶油鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟、可可鮮奶油融化，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "格雷伯爵鮮乳茶",
+            "description": "總糖量61.2克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n紅茶茶葉產地：印度、印尼",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥雞球",
+            "description": "照片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物點心 Fried Snacks",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "美式脆薯",
+            "description": "照片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸魚條",
+            "description": "照片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香酥雞球",
+            "description": "照片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙色地瓜球",
+            "description": "照片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "半月帶皮薯塊",
+            "description": "照片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞塊",
+            "description": "照片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌杏鮑菇",
+            "description": "照片僅供參考",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好吃鹹酥雞",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找甜的鬆餅 Sweet Flavor Waffles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香緹鮮奶油鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟、鮮奶油融化，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藍莓果醬鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦糖肉桂鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓奶酥鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香草卡士達鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可可黑奶油鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟、可可鮮奶油融化，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椪糖脆脆鮮奶油鬆餅 Honeycomb Toffee with Cream",
+            "description": "為避免餅皮悶熱受潮濕軟、鮮奶油融化，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "抹茶紅豆鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椪糖脆脆卡士達鬆餅 Honeycomb Toffee with Custard",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蕉可可黑奶油鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟、可可鮮奶油融化，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蕉巧克力卡士達鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找鹹的鬆餅 Salty Flavor Waffles",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "金蒜奶油鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚沙拉蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薯餅起司蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "碳烤雞腿蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "英式塔塔炸魚蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炸豬排蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味咔啦雞蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒麻炸雞蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松露炸雞蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松露炸豬排蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金薯碳烤雞腿蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "國王的鬆餅 King's Flavor",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "葡萄奶酥鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考，葡萄乾烤在餅皮裡面呦~",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙倍起司玉米蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考，玉米烤在餅皮裡面呦~",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司牛堡蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考，牛肉(漢堡肉)烤在餅皮裡面呦~",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花椒麻牛堡蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考，牛肉(漢堡肉)烤在餅皮裡面呦~\n牛肉產地：美國、巴拉圭、紐西蘭、澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生牛肉堡蔬菜鬆餅",
+            "description": "為避免餅皮悶熱受潮濕軟，外送會以常溫鬆餅製作。\n照片僅供參考，牛肉(漢堡肉)烤在餅皮裡面呦~\n牛肉產地：美國、巴拉圭、紐西蘭、澳洲",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "純粹好茶 Selected Tea",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "莊園琥珀紅茶",
+            "description": "總糖量57.6克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n紅茶茶葉產地：肯亞、印尼",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沁香四季春茶",
+            "description": "總糖量57.6克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n茶葉產地：台灣、越南",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "格雷伯爵紅茶",
+            "description": "總糖量57.6克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n紅茶茶葉產地：印度、印尼",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皇家太妃紅茶",
+            "description": "總糖量57.6克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n紅茶茶葉產地：印尼、印度、斯里蘭卡",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貴妃荔香綠茶",
+            "description": "總糖量57.6克，總熱量254.4大卡，咖啡因總含量介於101~200mg\n茶葉產地：台灣、越南",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白桃香馥烏龍",
+            "description": "總糖量57.6克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n烏龍茶茶葉產地：台灣、越南",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金香桂花烏龍",
+            "description": "總糖量57.6克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n烏龍茶茶葉產地：台灣、越南",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯香國寶玉露",
+            "description": "總糖量57.6克，總熱量244.8大卡，無咖啡因",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "春梅果茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬四季春茶",
+            "description": "照片僅供參考\n總糖量57.6克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n茶葉產地：台灣、越南",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "黑密冬瓜露",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑蜜冬瓜露",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬黑蜜冬瓜露",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "春梅冬瓜露",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑蜜冬瓜鮮奶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "乳香世家鮮乳茶 Fresh Milk",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "莊園琥珀鮮乳茶",
+            "description": "總糖量61.2克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n紅茶茶葉產地：肯亞、印尼",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "格雷伯爵鮮乳茶",
+            "description": "總糖量61.2克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n紅茶茶葉產地：印度、印尼",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沁桃烏龍鮮乳茶",
+            "description": "總糖量61.2克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n烏龍茶茶葉產地：越南、印尼、台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焙香觀音鮮乳茶",
+            "description": "總糖量61.2克，總熱量244.8大卡，咖啡因總含量介於101~200mg\n烏龍茶茶葉產地：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椪糖脆脆鮮乳茶 Honeycomb Toffee Fresh Milk Tea",
+            "description": "總糖量55.9公克，總熱量329.4大卡，咖啡因總含量介於101~200mg 紅茶茶葉產地：肯亞、印尼",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

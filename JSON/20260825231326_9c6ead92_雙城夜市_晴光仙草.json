@@ -1,0 +1,201 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9B%99%E5%9F%8E%E5%A4%9C%E5%B8%82-%E6%99%B4%E5%85%89%E4%BB%99%E8%8D%89/xCn-sWR0R32C9LazTBuRCA",
+  "name": "雙城夜市 晴光仙草",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "雙城美食一條街夜市夜班28號",
+    "addressLocality": "Zhongshan District",
+    "addressRegion": "",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0647989,
+    "longitude": 121.5243947
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.2,
+    "reviewCount": 240
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Tofu Pudding"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綜合仙草凍",
+            "description": "滑嫩仙草凍，搭配珍珠、芋圓、地瓜圓、薏仁、湯圓與芋頭，多重口感一次滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草冰",
+            "description": "杯裝冰鎮仙草凍飲，滑嫩順口，清爽解渴",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙草冰鮮奶",
+            "description": "鮮奶搭配仙草凍與冰塊，口感滑順、清涼爽口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手抄黑糖珍珠仙草鮮奶",
+            "description": "鮮奶基底，加入黑糖珍珠與手抄仙草，口感Q彈滑順、層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "傳統豆花",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紫米仙草凍鮮奶",
+            "description": "仙草凍、紫米與鮮奶，滑嫩口感，穀香奶香交融，順口有層次",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖仙草凍",
+            "description": "滑嫩仙草凍，黑糖甜香、入口順滑",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖仙草凍鮮奶",
+            "description": "滑嫩仙草凍，配鮮奶與黑糖，口感順滑、層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠仙草",
+            "description": "Q彈珍珠搭配滑嫩仙草凍，層次口感，一次享受咀嚼與爽滑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆仙草",
+            "description": "滑嫩仙草搭配綿密綠豆，清爽順口的經典組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紫米仙草",
+            "description": "滑嫩仙草搭配紫米，Q彈與綿密口感一次滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薏仁仙草",
+            "description": "滑嫩仙草凍，配薏仁顆粒，口感清爽有層次",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅豆仙草",
+            "description": "滑嫩仙草搭配綿密紅豆，口感對比明顯，順口不膩",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "夏季限定冰品",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "新鮮芒果冰",
+            "description": "夏季限定剉冰，鋪上新鮮芒果塊，冰涼清爽",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味剉冰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

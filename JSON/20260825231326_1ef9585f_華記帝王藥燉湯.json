@@ -1,0 +1,562 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%8F%AF%E8%A8%98%E5%B8%9D%E7%8E%8B%E8%97%A5%E7%87%89%E6%B9%AF/zO5wV3X7VSyGE4SpluNi-w",
+  "name": "華記帝王藥燉湯",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市蘆洲區中興街5號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.086904335111576,
+    "longitude": 121.48021194774557
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4,
+    "reviewCount": 64
+  },
+  "servesCuisine": [
+    "Chinese",
+    "Taiwanese",
+    "Chicken"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "帝王藥燉湯 Herbal Soup",
+            "description": "濃郁藥材湯底，帶骨肉塊燉至入味，醇香回甘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干 Tofu Curd",
+            "description": "豆干切塊，滷香濃郁，口感紮實，鹹香順口，作為開胃小菜很適合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉飯套餐 Chicken Rice Combo",
+            "description": "含小雞肉飯, 藥燉貢丸清湯, 燙青菜及滷蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金雙翅便當",
+            "description": "雙支金黃雞翅配飯，附青花椰、豆干、高麗菜與半顆蛋，份量飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜 Blanched Vegetable",
+            "description": "燙青花椰菜，保留清脆口感與蔬菜原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "10 兩黃金雞腿 10 Taels Golden Chicken Thigh",
+            "description": "金黃雞腿切盤，十兩份量，外皮金黃，腿肉厚實，切片方便分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溏心蛋",
+            "description": "蛋白Q彈，蛋黃溏心軟嫩，入口滑順，簡單卻耐吃的經典小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉肝 Powdered Liver",
+            "description": "切片粉肝，口感柔嫩綿密，搭配薑絲，清香順口的經典小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉貢丸清湯 Herbal Meatball Soup",
+            "description": "含貢丸 2 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "油雞翅",
+            "description": "油雞翅切盤，皮彈油亮、肉質滑嫩，骨香帶勁，作為小菜爽口耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉土雞佛湯",
+            "description": "藥材湯底燉煮，土雞佛滑嫩，加入蒜頭與薑絲，湯清味醇，暖胃回甘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "325.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "銷魂雞肉飯小份 Small Chicken Rice",
+            "description": "熱白飯鋪上雞絲的小份雞肉飯，份量剛好，一口銷魂。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮 Pork Scalp",
+            "description": "切片豬頭皮，膠質豐富、Q彈帶脆，越嚼越香，作為小菜剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "筍絲 Shredded Bamboo Shoot",
+            "description": "竹筍切絲呈現自然脆度，清香順口，清爽解膩的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻土雞切盤 Smoked Free Range Chicken Platter",
+            "description": "煙燻土雞切盤，風味獨特，享受煙燻香氣與土雞的自然美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "銷魂雞肉飯大份 Large Chicken Rice",
+            "description": "大份雞肉飯，滿滿的雞肉和米飯，讓您一口銷魂，人氣推薦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢Notice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "餐點與口味滿意，歡迎給予五星好評；若有問題，請於訂單訊息聯繫，我們會盡速協助。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🔥人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "銷魂雞肉飯大份 Large Chicken Rice",
+            "description": "大份雞肉飯，滿滿的雞肉和米飯，讓您一口銷魂，人氣推薦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻土雞切盤 Smoked Free Range Chicken Platter",
+            "description": "煙燻土雞切盤，風味獨特，享受煙燻香氣與土雞的自然美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞油飯 Chicken Glutinous Oil Rice",
+            "description": "美味的糯米飯配雞肉，帶來濃郁芳香的體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹水土雞切盤 Salted Free Range Chicken Platter",
+            "description": "嫩鹹放養雞，經過專業切片，帶來美味正宗的味覺體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉羊肉片湯 Herbal Sliced Lamb Soup",
+            "description": "濃鬱的藥材湯底搭配鮮嫩的羊肉片，帶來舒適芳香的湯體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🥣湯類 Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "帝王藥燉湯 Herbal Soup",
+            "description": "濃郁藥材湯底，帶骨肉塊燉至入味，醇香回甘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉羊肉片湯 Herbal Sliced Lamb Soup",
+            "description": "濃鬱的藥材湯底搭配鮮嫩的羊肉片，帶來舒適芳香的湯體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉貢丸清湯 Herbal Meatball Soup",
+            "description": "含貢丸 2 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥燉土雞佛湯",
+            "description": "藥材湯底燉煮，土雞佛滑嫩，加入蒜頭與薑絲，湯清味醇，暖胃回甘。",
+            "offers": {
+              "@type": "Offer",
+              "price": "325.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "😋小菜類 Side Dish",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "筍絲 Shredded Bamboo Shoot",
+            "description": "竹筍切絲呈現自然脆度，清香順口，清爽解膩的小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜 Blanched Vegetable",
+            "description": "燙青花椰菜，保留清脆口感與蔬菜原味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷蛋 Braised Egg",
+            "description": "經典滷蛋，滷香入味，蛋白Q彈、蛋黃綿密，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "10 兩黃金雞腿 10 Taels Golden Chicken Thigh",
+            "description": "金黃雞腿切盤，十兩份量，外皮金黃，腿肉厚實，切片方便分享。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干 Tofu Curd",
+            "description": "豆干切塊，滷香濃郁，口感紮實，鹹香順口，作為開胃小菜很適合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮 Pork Scalp",
+            "description": "切片豬頭皮，膠質豐富、Q彈帶脆，越嚼越香，作為小菜剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉肝 Powdered Liver",
+            "description": "切片粉肝，口感柔嫩綿密，搭配薑絲，清香順口的經典小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "油雞翅",
+            "description": "油雞翅切盤，皮彈油亮、肉質滑嫩，骨香帶勁，作為小菜爽口耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溏心蛋",
+            "description": "蛋白Q彈，蛋黃溏心軟嫩，入口滑順，簡單卻耐吃的經典小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "👍銷魂雞肉飯 Chicken Rice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "銷魂雞肉飯小份 Small Chicken Rice",
+            "description": "熱白飯鋪上雞絲的小份雞肉飯，份量剛好，一口銷魂。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "銷魂雞肉飯大份 Large Chicken Rice",
+            "description": "大份雞肉飯，滿滿的雞肉和米飯，讓您一口銷魂，人氣推薦！",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞油飯 Chicken Glutinous Oil Rice",
+            "description": "美味的糯米飯配雞肉，帶來濃郁芳香的體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉飯套餐 Chicken Rice Combo",
+            "description": "含小雞肉飯, 藥燉貢丸清湯, 燙青菜及滷蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金雙翅便當",
+            "description": "雙支金黃雞翅配飯，附青花椰、豆干、高麗菜與半顆蛋，份量飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞肉飯便當 Chicken Rice Bento",
+            "description": "雞肉鋪飯，鹹香順口，簡單耐吃的一口銷魂便當。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯 Rice",
+            "description": "粒粒分明、香Q順口的白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "15.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🥰土雞切盤 Free Range Chicken Platter",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鹹水土雞切盤 Salted Free Range Chicken Platter",
+            "description": "嫩鹹放養雞，經過專業切片，帶來美味正宗的味覺體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻土雞切盤 Smoked Free Range Chicken Platter",
+            "description": "煙燻土雞切盤，風味獨特，享受煙燻香氣與土雞的自然美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雪碧245ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "43.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥香奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "22.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥香紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "22.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥香綠茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "22.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

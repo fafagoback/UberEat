@@ -1,0 +1,215 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%98%BF%E5%BE%B7%E6%B3%B0%E5%BC%8F%E7%85%8E%E9%A4%85%E4%B8%A8%E5%A3%AB%E6%9E%97%E5%BF%85%E5%96%9D%E6%B3%B0%E5%A5%B6%E6%8E%A8%E8%96%A6/bcWhnhdMVbW9yHeub-TGmw",
+  "name": "阿德泰式煎餅丨士林必喝泰奶推薦",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "臺北市士林區大東路11之3號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0870475,
+    "longitude": 121.5253874
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 17
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Fast Food",
+    "Thai",
+    "Snacks",
+    "Kids Friendly",
+    "Family Friendly",
+    "Taiwanese",
+    "Asian",
+    "Bubble Tea",
+    "Local Specialities"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點, 請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選✨ Popular Items✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶茶 (中杯)🥤",
+            "description": "泰式紅茶與奶香交融，茶韻飽滿、口感順滑；中杯份量，日常解渴剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍌 香蕉煉乳煎餅💛 Banana Condensed Milk Pancake💛",
+            "description": "現煎台灣香蕉厚片，裹Q彈煎餅皮淋煉乳奶香濃郁，咬下香蕉軟糯奶甜拉絲！街頭熱賣創意甜點，熱騰騰配咖啡，早餐宵夜雙絕幸福。\nFreshly griddled Taiwan banana slices in chewy pancake wrap, drizzled rich condensed milk—bite soft banana milky sweet strings! Street hit creative dessert, hot with coffee—breakfast midnight double bliss.\n台湾バナナ厚スライス現煎Q弾皮練乳濃郁、噛柔バナナ乳甘拉糸！街頭熱売創作スイーツ、熱々コーヒー朝夜双絶幸福。\n대만 바나나 두꺼운 슬라이스 직화 Q탄 껍질 연유 진한—한입 부드러운 바나나 우유 단 끌림! 거리 히트 크리에이티브 디저트, 뜨끈 커피 아침 밤 듀얼 행복.",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍯 香蕉蜂蜜煎餅🤎 Banana Honey Pancake🤎",
+            "description": "香蕉現煎蜂蜜緩淋，金黃煎餅香脆內軟，蜂蜜自然甜香滲透每寸！健康天然版，熱食蜂蜜拉絲視覺，養生甜點控首選。\nBanana griddled honey slow-drizzle, golden crispy-soft pancake, natural honey sweet permeates every inch! Healthy natural take, hot honey strings visual—wellness sweet lover top pick.\nバナナ現煎蜜緩淋、金煎香カリ柔、天然蜜甘染み渡！健康ナチュラル、熱蜜拉糸視覚養生甘党No.1。\n바나나 직화 꿀 천천 뿌림, 황금 바삭 부드러운 팬케이크, 천연 꿀 단 침투! 건강 내추럴, 뜨끈 꿀 실 끌기 비주얼—웰니스 단것 1위.",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍫 香蕉巧克力煎餅🤎 Banana Chocolate Pancake🤎",
+            "description": "香蕉巧克力醬煎餅，熱融苦甜巧克力裹香蕉軟Q，咬勁融化層次天堂！巧克力控夢幻，熱騰騰拉絲分享，下午茶升級王。\nBanana chocolate sauce pancake, hot melted bittersweet chocolate wraps soft-chewy banana—bite melt layers heaven! Chocoholic dream, hot stringy shareable, tea time upgrade king.\nバナナチョコソース煎、熱溶苦甘チョコ柔Qバナナ包、噛溶層天国！チョコ中毒夢、熱拉糸シェア下午茶王。\n바나나 초코 소스 팬케이크, 뜨거운 쓴단 초코 부드러운 Q 바나나 감싸—한입 녹아 층 천국! 초코 중독 꿈, 뜨끈 끌림 공유 티타임 업 킹.",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香蕉煎餅系列❤️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🍌 香蕉煉乳煎餅💛 Banana Condensed Milk Pancake💛",
+            "description": "現煎台灣香蕉厚片，裹Q彈煎餅皮淋煉乳奶香濃郁，咬下香蕉軟糯奶甜拉絲！街頭熱賣創意甜點，熱騰騰配咖啡，早餐宵夜雙絕幸福。\nFreshly griddled Taiwan banana slices in chewy pancake wrap, drizzled rich condensed milk—bite soft banana milky sweet strings! Street hit creative dessert, hot with coffee—breakfast midnight double bliss.\n台湾バナナ厚スライス現煎Q弾皮練乳濃郁、噛柔バナナ乳甘拉糸！街頭熱売創作スイーツ、熱々コーヒー朝夜双絶幸福。\n대만 바나나 두꺼운 슬라이스 직화 Q탄 껍질 연유 진한—한입 부드러운 바나나 우유 단 끌림! 거리 히트 크리에이티브 디저트, 뜨끈 커피 아침 밤 듀얼 행복.",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍯 香蕉蜂蜜煎餅🤎 Banana Honey Pancake🤎",
+            "description": "香蕉現煎蜂蜜緩淋，金黃煎餅香脆內軟，蜂蜜自然甜香滲透每寸！健康天然版，熱食蜂蜜拉絲視覺，養生甜點控首選。\nBanana griddled honey slow-drizzle, golden crispy-soft pancake, natural honey sweet permeates every inch! Healthy natural take, hot honey strings visual—wellness sweet lover top pick.\nバナナ現煎蜜緩淋、金煎香カリ柔、天然蜜甘染み渡！健康ナチュラル、熱蜜拉糸視覚養生甘党No.1。\n바나나 직화 꿀 천천 뿌림, 황금 바삭 부드러운 팬케이크, 천연 꿀 단 침투! 건강 내추럴, 뜨끈 꿀 실 끌기 비주얼—웰니스 단것 1위.",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍫 香蕉巧克力煎餅🤎 Banana Chocolate Pancake🤎",
+            "description": "香蕉巧克力醬煎餅，熱融苦甜巧克力裹香蕉軟Q，咬勁融化層次天堂！巧克力控夢幻，熱騰騰拉絲分享，下午茶升級王。\nBanana chocolate sauce pancake, hot melted bittersweet chocolate wraps soft-chewy banana—bite melt layers heaven! Chocoholic dream, hot stringy shareable, tea time upgrade king.\nバナナチョコソース煎、熱溶苦甘チョコ柔Qバナナ包、噛溶層天国！チョコ中毒夢、熱拉糸シェア下午茶王。\n바나나 초코 소스 팬케이크, 뜨거운 쓴단 초코 부드러운 Q 바나나 감싸—한입 녹아 층 천국! 초코 중독 꿈, 뜨끈 끌림 공유 티타임 업 킹.",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥛 煉乳煎餅 (無香蕉)🥛 Condensed Milk Pancake (No Banana)🥛",
+            "description": "純煉乳煎餅Q彈金黃，奶香濃郁緩淋拉絲，簡單卻極致奶甜滿足！經典無負擔版，熱食早餐首選，純粹奶味天堂。\nPure condensed milk chewy golden pancake, rich milky drizzle strings—simple ultimate milky sweet satisfaction! Classic no-burden take, hot breakfast top—pure milk heaven.\n純練乳Q金煎、乳香濃緩拉糸シンプル極乳甘満足！定番無負担、熱朝食No.1純乳天国。\n순 연유 Q탄 황금 팬케이크, 진한 우유 뿌림 실—심플 극치 우유 단 만족! 클래식 무담당, 뜨끈 아침 1위—순수 우유 천국.",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🐝 蜂蜜煎餅 (無香蕉)🌟 Honey Pancake (No Banana)🌟",
+            "description": "蜂蜜純煎餅金黃香脆，天然蜜汁滲透Q彈每口，健康無負擔甜蜜！養生版熱食拉絲，純粹蜂香最愛。\nPure honey golden crispy pancake, natural honey soaks chewy bites—healthy no-burden sweet! Wellness hot strings, pure honey fave.\n蜜純金煎香カリ、天然蜜染Q弾健康無負担甘！養生熱拉糸純蜂最愛。\n순 꿀 황금 바삭 팬케이크, 천연 꿀 스며 Q탄—건강 무담당 단! 웰니스 핫 실, 순수 꿀 최애.",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🎂 巧克力煎餅 (無香蕉)🎂 Chocolate Pancake (No Banana)🎂",
+            "description": "純巧克力醬煎餅，熱融苦甜濃郁，Q彈餅皮吸滿巧香層次！巧克力純粹版，熱食拉絲下午茶，甜點控必搶。\nPure chocolate sauce pancake, hot melted rich bittersweet, chewy skin soaks cocoa layers! Choc purity take, hot strings tea time—dessert must-grab.\n純チョコソース煎熱溶苦甘濃、Q皮吸巧層！チョコ純粋熱拉糸下午茶甘党必。\n순 초코 소스 팬케이크, 뜨거운 녹아 진한 쓴단, Q 껍질 코코아 층 흠뻑! 초코 순수 핫 실 티타임—디저트 필수.",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥛牛奶煎餅🥛 Milk Pancake🥛",
+            "description": "現煎鮮奶餅皮，奶香綿密熱氣騰騰，簡單純奶甜美無添加！早餐輕食王道，熱食鬆軟滿足感爆棚。\nFresh milk griddled soft pancake, dense milky hot steam—simple pure milk sweet no additives! Breakfast light king, hot fluffy satisfaction overload.\n現煎生乳皮乳密熱気、シンプル純乳甘無添加！朝食軽王道熱鬆満足爆。\n직화 생우유 껍질 우유 농밀 증기—심플 순 우유 단 무첨가! 아침 라이트 왕도, 뜨끈 푹신 만족 오버로드.",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🥤 香蕉牛奶煎餅🥤 Banana Milk Pancake🥤",
+            "description": "香蕉鮮奶煎餅，奶香滑順裹香蕉Q彈，熱煎自然甜美層次！清新奶香版，配水果優格升級，輕食甜點新寵。\nBanana fresh milk pancake, smooth milky wraps chewy banana, hot griddle natural sweet layers! Fresh milk take, fruit yogurt upgrade—light sweet new fave.\nバナナ生乳煎、乳滑Qバナナ包熱煎自然甘層！清新乳香、水果ヨーグルトUP軽食甘新宠。\n바나나 생우유 팬케이크, 미끄러운 우유 Q탄 바나나 감싸, 직화 천연 단 층! 상큼 우유 버전, 과일 요거트 업—라이트 스위트 신흥.",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🍯 蜂蜜香蕉煎餅🤎 Honey Banana Pancake🤎",
+            "description": "台灣香蕉厚片現煎蜂蜜緩淋，金黃Q彈餅皮吸滿天然蜜香，咬下香蕉軟糯蜂蜜拉絲甜美極致！街頭健康甜點，熱騰騰配優格，早餐活力滿分幸福。\nTaiwan thick banana slices griddled honey slow-drizzle, golden chewy pancake soaks natural honey—bite soft banana honey strings ultimate sweet! Street healthy dessert, hot with yogurt—breakfast energy joy overload.\n台湾バナナ厚現煎蜜緩、金Q皮天然蜜吸、噛柔バナナ蜜拉極甘！街頭健康スイーツ、熱々ヨーグルト朝活力幸福満。\n대만 두꺼운 바나나 직화 꿀 천천, 황금 Q탄 껍질 천연 꿀 스며—한입 부드러운 바나나 꿀 실 극단! 거리 건강 디저트, 뜨끈 요거트 아침 에너지 행복 오버.",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料🥤",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "泰式奶茶 (中杯)🥤",
+            "description": "泰式紅茶與奶香交融，茶韻飽滿、口感順滑；中杯份量，日常解渴剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "72.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

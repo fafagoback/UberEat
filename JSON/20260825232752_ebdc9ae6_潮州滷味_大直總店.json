@@ -1,0 +1,1172 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%BD%AE%E5%B7%9E%E6%BB%B7%E5%91%B3-%E5%A4%A7%E7%9B%B4%E7%B8%BD%E5%BA%97/lDVHRHiOVH28400lCll-ag",
+  "name": "潮州滷味 大直總店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區北安路595巷20弄1號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0820602,
+    "longitude": 121.5477172
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 230
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Traditional",
+    "Braised Dishes",
+    "Fast Food",
+    "Street Food"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "嘴邊肉",
+            "description": "Pork Cheek",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛五花",
+            "description": "Beef Flake",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "Enoki Mushroom",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮香菇",
+            "description": "Taiwan Mushroom",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬五花",
+            "description": "Pork Belly",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花干",
+            "description": "Marinated Bean Curd",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "Pig Blood Rice Cake",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "啾C嫩鴨血",
+            "description": "Tender Duck Blood Jelly",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚包蛋/2個",
+            "description": "Fish Ball with Egg Stuffing (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏包菇",
+            "description": "King Oyster Mushroom",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白蘿蔔",
+            "description": "White Radish",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍",
+            "description": "Baby Corn",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒸煮麵",
+            "description": "Steamed Noodles",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬粉",
+            "description": "Bean Thread Noodles",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁",
+            "description": "Shutter Bean Curd",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大陸妹",
+            "description": "Fushan Lettuce",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣/3片",
+            "description": "Tempura (3 Pieces",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "嘴邊肉",
+            "description": "Pork Cheek",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬腱肉",
+            "description": "Pork Shank",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小豆干/3塊",
+            "description": "Small Tofu Curd (3 Pieces)\n沒吃過我們家的小豆干，別說吃過潮州滷味\n吃完會回不去其他家，想好再點",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "青菜低加拉 Vegetable",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "Cabbage",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花椰菜",
+            "description": "Broccoli",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "娃娃菜",
+            "description": "Baby Chinese Cabbage",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大陸妹",
+            "description": "Fushan Lettuce",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鵝白菜",
+            "description": "Chinese Cabbage",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青江菜",
+            "description": "Bok Choy",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛番茄",
+            "description": "Beefsteak Tomato",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆",
+            "description": "Green Bean",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍",
+            "description": "Baby Corn",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡蘿蔔",
+            "description": "Carrot",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白蘿蔔",
+            "description": "White Radish",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "絲瓜",
+            "description": "Sponge Gourd",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜",
+            "description": "Bitter Gourd",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水蓮",
+            "description": "white water snowflake",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥",
+            "description": "Onion",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶/2條",
+            "description": "Kelp (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "滿滿的蛋白質 Protein",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "大豆皮",
+            "description": "Large Bean Curd Sheet",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花干",
+            "description": "Marinated Bean Curd",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁",
+            "description": "Shutter Bean Curd",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素雞",
+            "description": "Tofu Curd Roll",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生豆皮",
+            "description": "Raw Bean Curd Sheet",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷蛋",
+            "description": "Braised Egg",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小豆干/3塊",
+            "description": "Small Tofu Curd (3 Pieces)\n沒吃過我們家的小豆干，別說吃過潮州滷味\n吃完會回不去其他家，想好再點",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "愛肉專區 Meat",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肝連肉",
+            "description": "Hanging Tender",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬五花",
+            "description": "Pork Belly",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛五花",
+            "description": "Beef Flake",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬舌頭",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸頭",
+            "description": "Pork Intestine",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬頭皮",
+            "description": "Pork Scalp",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬耳朵",
+            "description": "Pork Ear",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬皮",
+            "description": "Pork Skin",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞翅",
+            "description": "Chicken Wing",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心/2個",
+            "description": "Chicken Heart (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胗/2個",
+            "description": "Chicken Gizzard (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞屁股/2個",
+            "description": "Chicken Buttock (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腸",
+            "description": "Chicken Intestine",
+            "offers": {
+              "@type": "Offer",
+              "price": "41.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胸肉",
+            "description": "Chicken Breast",
+            "offers": {
+              "@type": "Offer",
+              "price": "87.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬心",
+            "description": "Pork Heart",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "澱粉人專區 Flour",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "烏龍麵",
+            "description": "Udon",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鍋燒意麵",
+            "description": "Crispy Fried Noodles",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "客家板條",
+            "description": "Hakka Rice Noodles",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒸煮麵",
+            "description": "Steamed Noodles",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞絲麵",
+            "description": "Chinese Capellini",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬粉",
+            "description": "Bean Thread Noodles",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "Instant Noodles",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式年糕/6條",
+            "description": "Korean Rice Cake（6 stick）",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "好菇專區 Mushroom",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "Enoki Mushroom",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏包菇",
+            "description": "King Oyster Mushroom",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮香菇",
+            "description": "Taiwan Mushroom",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川耳",
+            "description": "Fungus",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "特色火鍋料 Special Hot Pot Ingredients",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣/3片",
+            "description": "Tempura (3 Pieces",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "啾C嫩鴨血",
+            "description": "Tender Duck Blood Jelly",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇貢丸/2個",
+            "description": "Mushroom Meatball (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "九層塔花枝丸",
+            "description": "Basil Cuttlefish Ball",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泡菜貢丸",
+            "description": "Kimchi Meatball",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生麻糬",
+            "description": "Peanut Mochi",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻麻糬",
+            "description": "Sesame Mochi",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司麻糬",
+            "description": "Cheese Mochi",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭貢丸/2個",
+            "description": "Taro Meatball (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "火鍋料類 Hot Pot Ingredients",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魚包蛋/2個",
+            "description": "Fish Ball with Egg Stuffing (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚豆腐",
+            "description": "Fish Tofu",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹肉棒",
+            "description": "Crab Sticks",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餃/2個",
+            "description": "Egg Dumplings  (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味貢丸",
+            "description": "Original Meatball",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝丸",
+            "description": "Cuttlefish Ball",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑輪",
+            "description": "Oden",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金球",
+            "description": "Golden Sweet Potato Ball",
+            "offers": {
+              "@type": "Offer",
+              "price": "10.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸",
+            "description": "Mini Sausage",
+            "offers": {
+              "@type": "Offer",
+              "price": "10.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚餃",
+            "description": "Fish Dumpling",
+            "offers": {
+              "@type": "Offer",
+              "price": "10.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燕餃",
+            "description": "Pork Dumpling",
+            "offers": {
+              "@type": "Offer",
+              "price": "10.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍蝦沙拉/2個",
+            "description": "Lobster Salad (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "凍豆腐/2個",
+            "description": "Frozen Tofu (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "14.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍蝦球/2個",
+            "description": "Lobster ball (2 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "34.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水晶餃",
+            "description": "Crystal Dumpling",
+            "offers": {
+              "@type": "Offer",
+              "price": "11.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬血糕",
+            "description": "Pig Blood Rice Cake",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭簽",
+            "description": "Taro Cake",
+            "offers": {
+              "@type": "Offer",
+              "price": "27.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素腰花/3個",
+            "description": "Vegan Gluten Kidneys (3 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "21.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒟蒻絲/3個",
+            "description": "Shredded Konjac (3 Pieces)",
+            "offers": {
+              "@type": "Offer",
+              "price": "18.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "「請勿點選」調味介紹  Notice",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "※滷味皆會添加蔥花、酸菜、花生粒，如果不需要的麻煩備註。「這邊請勿下單」",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "999.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "※ 辣椒為古法煉製紅油辣椒，但出餐都不會有辣，需要的麻煩備註（大辣>中辣>小辣>微辣>點辣>）。「這邊請勿下單」",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "999.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "※ 湯頭是中藥高湯不加味精，可以喝，但出餐為濕濕的偏乾，若需加湯的麻煩備註。「這邊請勿下單」",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "999.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "辣度 （若有備註，可以打在這裡）Spicy Level",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小辣",
+            "description": "Mild Spicy",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大辣",
+            "description": "Extra Spicy",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中辣",
+            "description": "Medium Spicy",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "微辣",
+            "description": "Less Spicy",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "點辣",
+            "description": "spicy oil",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "潮州滷味辣椒罐",
+            "description": "Chaozhou Chilli Canned\n讓郎客也可以在家享用到潮州滷味自製辣椒\n我們開賣啦～\n由多種中藥煉製紅油製成，純手工製作\n溫和的辣度，讓您吃的時候不失食物原味\n又可以享受香氣與辣度，適合所有料理唷\n沾、炒、煮、炸，都別有一番滋味呢\n一罐170克(淨重)。\n因不填加防腐劑，所以每罐都有真空處理，開封後請務必冷藏。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

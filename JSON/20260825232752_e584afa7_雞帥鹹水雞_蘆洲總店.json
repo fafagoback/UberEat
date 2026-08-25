@@ -1,0 +1,752 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9B%9E%E5%B8%A5%E9%B9%B9%E6%B0%B4%E9%9B%9E-%E8%98%86%E6%B4%B2%E7%B8%BD%E5%BA%97/SdzC7GDpVTi_4TMV98VYUw",
+  "name": "雞帥鹹水雞 蘆洲總店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市蘆洲區民族路156號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0862884,
+    "longitude": 121.4795527
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 100
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "📢顧客訂購須知",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定唷😍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "每日新鮮製作，嚴選食材講究衛生，低油低鹽吃得安心，鹹香開胃越吃越涮嘴😋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "注意事項(重要的事在此說明)",
+            "description": "1、單點請先點選單點口味調整，如未選擇一律正常口味\n2、本店調味沒有蔥、薑、香菜、辣椒粉不需特別備註，本店只有胡椒、蒜泥、雞高湯、香油、生辣椒\n3、生辣椒偏辣，想吃辣但不常吃請點選微微辣或微辣，中辣以上真的很辣\n4、本餐廳使用肉品之原產地：國產雞肉，國產豬肉\n5、如果商品有任何問題可以撥打0903151167 老闆會盡可能幫您解決",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "👑人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "A餐 雞腿+5樣菜 Combo A",
+            "description": "含大雞腿+5樣菜。\n鮮嫩雞腿以鹽水低溫浸煮入味，外皮微Q、肉質細緻多汁，搭配5樣豐富配菜，鹹香平衡層次十足 🍗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "B餐 雞胸+5樣菜 Combo B",
+            "description": "含大雞胸+5樣菜。\n大塊雞胸肉經鹽滷浸漬後保有濕潤口感，肉香清爽不柴，結合5樣配菜清爽又飽足，是輕盈系首選 🥗",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "D餐 半雞+5樣菜 Combo D",
+            "description": "含超大半雞+5樣菜 \n沒雞腿時會是2片大雞胸+雞翅+5樣菜\n\n2.3個人吃剛剛好",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "E餐 全雞+7樣菜 Combo E",
+            "description": "含超大全雞+7樣菜。\n整隻鮮雞慢火滷透再冰鎮保鮮，肉質軟嫩濃郁、皮滑肉香，佐7樣繽紛配菜，豪華滿足一餐抵兩餐 🐔",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "C餐 8樣菜 Combo C",
+            "description": "含8樣菜。\n每日嚴選8樣新鮮配菜，汆燙後再以鹽水調味，保留蔬菜原始鮮甜，層層堆疊色香味兼具的繽紛口感 🥦",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "G餐 雞翅2支+5樣菜Combo G",
+            "description": "含雞翅2支+5樣菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "H餐 煙燻雞腿+5樣菜Combo H",
+            "description": "含煙燻大雞腿+5樣菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "J餐 煙燻半雞+5樣菜Combo J",
+            "description": "含煙燻超大半雞+5樣菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "✨套餐 Combo",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "I餐 煙燻雞胸+5樣菜Combo I",
+            "description": "含煙燻大雞胸+5樣菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "L餐 煙燻全雞+7樣菜Combo L",
+            "description": "含煙燻超大全雞+7樣菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "F餐 全雞x2+10樣菜 Combo F",
+            "description": "含超大全雞x2+10樣菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "850.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🐔肉類 Meat",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "超大全雞 Large Whole Chicken",
+            "description": "含超大半雞x2",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "超大半雞 Large Half Chicken",
+            "description": "含超大半雞x1",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大雞腿 Large Chicken Drumstick",
+            "description": "含大雞腿x1",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大雞胸 Large Chicken Breast",
+            "description": "含大雞胸x1",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞翅(2支) Two Chicken Wings",
+            "description": "雞翅2支",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞翅(4支) Four Chicken Wings",
+            "description": "含雞翅4支",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻大雞腿 Smoked Large Chicken Drumstick",
+            "description": "含煙燻大雞腿x1",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻大雞胸 Smoked Large Chicken Breast",
+            "description": "含煙燻大雞胸x1",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻超大半雞 Smoked Large Half Chicken",
+            "description": "含煙燻超大半雞x1",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻雞翅(2支) Two Smoked Chicken Wings",
+            "description": "含煙燻雞翅2支",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煙燻超大全雞 Smoked Large Whole Chicken",
+            "description": "含煙燻超大半雞x2",
+            "offers": {
+              "@type": "Offer",
+              "price": "340.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🌟單點 A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞帥鹹水雞歡樂送活動點此選項隨機加送一樣菜",
+            "description": "點此選項隨機加送一樣菜\n\n套餐選項或點此選項擇一就好",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "單點口味調整(單點拜託請選這選項)",
+            "description": "單點調味如果沒有放套餐\n請選這個選項\n這邊會給你選鹹度,辣度",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "隨機內臟（隨機2樣） Chicken Organ",
+            "description": "含內臟2樣",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞生腸 Chicken Intestine",
+            "description": "雞生腸(生蛋的腸)",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞卵(5顆) Egg",
+            "description": "雞卵(5顆)黃色的蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮 Chicken Skin",
+            "description": "雞皮 Chicken Skin",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞脖子(4條) Chicken Neck",
+            "description": "雞脖子(4條)帶皮",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞冠(4片) Cockscomb",
+            "description": "雞冠(4片)",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胗(5個) Chicken Gizzard",
+            "description": "雞胗(5個)",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心(6顆) Chicken Heart",
+            "description": "雞心(6顆)",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞屁股(5顆) Chicken  Buttock",
+            "description": "雞屁股(5顆)",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "百頁豆腐 Shutter Bean Curd",
+            "description": "百頁豆腐",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕 Pig Blood Rice Cake",
+            "description": "米血糕(豬血糕)\n產地:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸(6顆) Mini Sausage",
+            "description": "鑫鑫腸(6顆)\n產地:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸(2顆)  Meatball",
+            "description": "貢丸2顆\n產地:台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干(3片)  Tofu Curd",
+            "description": "小香干3片",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣(3片)  Fish Cake Tempura",
+            "description": "甜不辣片3片",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚豆包(豆皮)Bean Curd Sheets",
+            "description": "厚的生豆包",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素腰花(4個)  Vegan Gluten Kidneys",
+            "description": "素腰花4個(蒟蒻)",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鳥蛋(6顆)  Quail Egg",
+            "description": "滷鳥蛋6顆自己滷的主打之一",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋 century egg",
+            "description": "皮蛋(鴨蛋)",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大白菜 Nappa Cabbage",
+            "description": "大白菜(娃娃菜)(山東白)",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青花菜 Broccoli",
+            "description": "綠色花椰菜(西蘭花)",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅蘿蔔 Carrot",
+            "description": "紅蘿蔔",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白蘿蔔 White Radish",
+            "description": "白蘿蔔",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小黃瓜 Cucumber",
+            "description": "小黃瓜(生)",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "節瓜 Wax Gourd",
+            "description": "節瓜(生)",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "苦瓜 Bitter Gourd",
+            "description": "苦瓜(綠)(山)綠的最多",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "地瓜 Sweet Potato",
+            "description": "地瓜(黃)(紅)(紫)都有可能",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬鈴薯 Potato",
+            "description": "馬鈴薯",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍鬚菜  Gracilar",
+            "description": "龍鬚菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇 King Oyster Mushroom",
+            "description": "杏包菇",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇 Enoki Mushroom",
+            "description": "金針菇",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍 Baby Corn",
+            "description": "玉米筍",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "筍片 Sliced Bamboo Shoot",
+            "description": "筍片(煮熟的)本店主打之一",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑木耳 Black Fungus",
+            "description": "黑木耳",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆 Green beans",
+            "description": "四季豆",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥 Onion",
+            "description": "洋蔥(殺青過)(生)",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蓮藕 Lotus Root",
+            "description": "蓮藕",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海帶芽 Kelp Sprout",
+            "description": "海帶芽(生)本店主打之一",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "西洋芹 Celery",
+            "description": "西洋芹(生)",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青椒 Green Pepper",
+            "description": "青椒(大同阿)(生)",
+            "offers": {
+              "@type": "Offer",
+              "price": "32.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜椒 Sweet Pepper",
+            "description": "紅黃甜椒(生)",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "老闆幫你配1樣菜（隨機）",
+            "description": "老闆幫你選一樣菜\n可以告知不吃什麼",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

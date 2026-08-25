@@ -1,0 +1,590 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%8F%8A%E6%9D%89%E6%89%8B%E4%BD%9C%E5%9D%8A/GND9gLOLVkyCeEqTG4LoPQ",
+  "name": "珊杉手作坊",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區吉利街369巷31弄10號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.11852,
+    "longitude": 121.51177
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 100
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Desserts",
+    "Cakes"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蛋塔",
+            "description": "現烤蛋塔需等候20分鐘。每份8 入。\n🥧酥脆的塔皮包裹著香滑的蛋奶餡，香甜迷人，每一口都是幸福的享受🍮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "提拉米蘇",
+            "description": "🍰入口即化細膩綿密 甜而不膩加上咖啡的香味回味無窮，無酒，冷凍出貨，請稍微解凍後享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力慕斯",
+            "description": "入口細膩絲滑，充滿濃郁的巧克力味，甜度適中，不過分甜膩，令人吃了還想再吃。冷藏出貨，冷凍後有冰淇淋口感😍。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你布朗尼",
+            "description": "嚴選可可製作，口感濃厚，濕潤綿密、香氣十足，深色可可的沉穩風味，在柔軟濕潤的口感中層層展開，低調卻耐人尋味，每一口都是巧克力控無法抗拒的享受，一份6入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "布朗尼餅乾",
+            "description": "🍪人氣商品外層烤出微酥的薄殼，濃郁的可可氣息在齒間慢慢化開，餅乾的邊緣帶著微微焦香，不過分甜膩的人氣商品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "152.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油厚蛋",
+            "description": "奶油厚蛋外層金黃柔軟，切開來能看到細緻的層次。略帶甜味與雞蛋奶油香完美融合，一口咬下鬆嫩多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓提拉米蘇",
+            "description": "草莓提拉米蘇無酒，大人小孩都適合的點心，入口即化，甜而不膩香甜草莓，搭配咖啡香以及巧克力香味，每一口都香氣撲鼻。冷凍出貨，一盒約200ml。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鬆軟巧克力餅乾",
+            "description": "外酥內鬆軟的巧克力軟餅乾，厚實的餅身散發濃郁微焦奶油及黑糖香氣，巧克力豆半融不融，經過調製每一口都甜而不膩，禮盒6入出貨。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧豆餅乾",
+            "description": "🧈手工餅乾滿滿奶香味，含有巧克力豆。香甜酥脆一定要試試。現改為方形餅乾形狀。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪花酥",
+            "description": "🌸烘烤過的腰果和酥脆餅乾，搭配香甜果乾，不黏牙也不會太甜的人氣商品。每份20塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Offers",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "草莓提拉米蘇",
+            "description": "草莓提拉米蘇無酒，大人小孩都適合的點心，入口即化，甜而不膩香甜草莓，搭配咖啡香以及巧克力香味，每一口都香氣撲鼻。冷凍出貨，一盒約200ml。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鬆軟巧克力餅乾",
+            "description": "外酥內鬆軟的巧克力軟餅乾，厚實的餅身散發濃郁微焦奶油及黑糖香氣，巧克力豆半融不融，經過調製每一口都甜而不膩，禮盒6入出貨。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "提拉米蘇",
+            "description": "🍰入口即化細膩綿密 甜而不膩加上咖啡的香味回味無窮，無酒，冷凍出貨，請稍微解凍後享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油厚蛋",
+            "description": "奶油厚蛋外層金黃柔軟，切開來能看到細緻的層次。略帶甜味與雞蛋奶油香完美融合，一口咬下鬆嫩多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你布朗尼",
+            "description": "嚴選可可製作，口感濃厚，濕潤綿密、香氣十足，深色可可的沉穩風味，在柔軟濕潤的口感中層層展開，低調卻耐人尋味，每一口都是巧克力控無法抗拒的享受，一份6入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "布朗尼餅乾",
+            "description": "🍪人氣商品外層烤出微酥的薄殼，濃郁的可可氣息在齒間慢慢化開，餅乾的邊緣帶著微微焦香，不過分甜膩的人氣商品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "152.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋塔",
+            "description": "現烤蛋塔需等候20分鐘。每份8 入。\n🥧酥脆的塔皮包裹著香滑的蛋奶餡，香甜迷人，每一口都是幸福的享受🍮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪花酥",
+            "description": "🌸烘烤過的腰果和酥脆餅乾，搭配香甜果乾，不黏牙也不會太甜的人氣商品。每份20塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力慕斯",
+            "description": "入口細膩絲滑，充滿濃郁的巧克力味，甜度適中，不過分甜膩，令人吃了還想再吃。冷藏出貨，冷凍後有冰淇淋口感😍。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珊杉配",
+            "description": "不知道點甚麼就試試這個，隨機蛋糕一份加點心一份，物超所值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合餅乾禮盒",
+            "description": "4種人氣餅乾綜合，分別包裝入方形牛皮紙盒，多種口味送禮心意滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "❤️感謝顧客的鼓勵支持，隨商品附贈的小點心，希望得到您填寫回饋和星星哦！訂購數量較多商品時，請使用結帳頁面的預訂功能哦！提早預訂皆附贈小包點心🍪",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "折扣優惠卷",
+            "description": "結帳時選用此折扣券即可折抵金額，實際優惠依系統顯示。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🎉回饋折扣商品！！",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "提拉米蘇",
+            "description": "🍰入口即化細膩綿密 甜而不膩加上咖啡的香味回味無窮，無酒，冷凍出貨，請稍微解凍後享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓提拉米蘇",
+            "description": "草莓提拉米蘇無酒，大人小孩都適合的點心，入口即化，甜而不膩香甜草莓，搭配咖啡香以及巧克力香味，每一口都香氣撲鼻。冷凍出貨，一盒約200ml。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "限定新年提拉米蘇4入",
+            "description": "限定4入新年特別組合提拉米蘇🍰入口即化細膩綿密 甜而不膩加上咖啡的香味回味無窮，無酒，冷凍出貨，請稍微解凍後享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🫐莓果系列🍓",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "珊杉手坊，莓好時光優格杯",
+            "description": "珊杉手坊 莓好時光優格杯\n夏天，就用一杯繽紛的莓果優格，為生活增添滿滿活力。\n珊杉手坊嚴選桑葚、藍莓、蔓越莓，新鮮現打成果香濃郁的莓果果泥，搭配香醇滑順的優格，酸甜平衡、口感細緻，每一口都散發天然水果的清新風味。\n再鋪上新鮮奇異果、香蕉片，撒上腰果、杏仁片、巧克力燕麥片與奶香酥脆片，結合水果的鮮甜、堅果的香醇與穀物的酥脆，打造豐富又滿足的層次口感。\n集結天然水果、優格與堅果穀物的幸福滋味。\n清爽、香濃、層次豐富，是早餐、下午茶或運動後補充能量的最佳選擇。優格於最下層，請攪拌，莓果杯出貨後請儘速食用完畢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "✨人氣精選✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雪花酥",
+            "description": "🌸烘烤過的腰果和酥脆餅乾，搭配香甜果乾，不黏牙也不會太甜的人氣商品。每份20塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "提拉米蘇",
+            "description": "🍰入口即化細膩綿密 甜而不膩加上咖啡的香味回味無窮，無酒，冷凍出貨，請稍微解凍後享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓提拉米蘇",
+            "description": "草莓提拉米蘇無酒，大人小孩都適合的點心，入口即化，甜而不膩香甜草莓，搭配咖啡香以及巧克力香味，每一口都香氣撲鼻。冷凍出貨，一盒約200ml。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "布朗尼餅乾",
+            "description": "🍪人氣商品外層烤出微酥的薄殼，濃郁的可可氣息在齒間慢慢化開，餅乾的邊緣帶著微微焦香，不過分甜膩的人氣商品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "152.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🎂盒裝蛋糕",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "提拉米蘇",
+            "description": "🍰入口即化細膩綿密 甜而不膩加上咖啡的香味回味無窮，無酒，冷凍出貨，請稍微解凍後享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力慕斯",
+            "description": "入口細膩絲滑，充滿濃郁的巧克力味，甜度適中，不過分甜膩，令人吃了還想再吃。冷藏出貨，冷凍後有冰淇淋口感😍。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "草莓提拉米蘇",
+            "description": "草莓提拉米蘇無酒，大人小孩都適合的點心，入口即化，甜而不膩香甜草莓，搭配咖啡香以及巧克力香味，每一口都香氣撲鼻。冷凍出貨，一盒約200ml。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珊杉配",
+            "description": "不知道點甚麼就試試這個，隨機蛋糕一份加點心一份，物超所值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍪酥脆餅乾",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧豆餅乾",
+            "description": "🧈手工餅乾滿滿奶香味，含有巧克力豆。香甜酥脆一定要試試。現改為方形餅乾形狀。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "布朗尼餅乾",
+            "description": "🍪人氣商品外層烤出微酥的薄殼，濃郁的可可氣息在齒間慢慢化開，餅乾的邊緣帶著微微焦香，不過分甜膩的人氣商品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "152.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雪花酥",
+            "description": "🌸烘烤過的腰果和酥脆餅乾，搭配香甜果乾，不黏牙也不會太甜的人氣商品。每份20塊。",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鬆軟巧克力餅乾",
+            "description": "外酥內鬆軟的巧克力軟餅乾，厚實的餅身散發濃郁微焦奶油及黑糖香氣，巧克力豆半融不融，經過調製每一口都甜而不膩，禮盒6入出貨。",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏仁薄餅",
+            "description": "烘烤過的杏仁片混合薄片餅乾香氣十足！一片接一片停不下來，下午茶聚會推薦餅乾。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合餅乾禮盒",
+            "description": "4種人氣餅乾綜合，分別包裝入方形牛皮紙盒，多種口味送禮心意滿滿！",
+            "offers": {
+              "@type": "Offer",
+              "price": "175.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍛餐點輕食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咖哩豬肉飯",
+            "description": "咖哩濃郁特殊香味加入軟嫩豬肉塊熬煮，搭配香甜蔬菜馬鈴薯和雞蛋，滿足的一餐！附贈一杯麥茶。\n豬肉產地來源：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶酥厚片",
+            "description": "新鮮現烤需等候15分鐘。真材實料的奶酥，使用好的奶油香氣自然更加濃郁！塗抹厚厚一層再烤的微焦香。單份三角袋裝，兩份紙盒裝。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋塔",
+            "description": "現烤蛋塔需等候20分鐘。每份8 入。\n🥧酥脆的塔皮包裹著香滑的蛋奶餡，香甜迷人，每一口都是幸福的享受🍮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "176.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油厚蛋",
+            "description": "奶油厚蛋外層金黃柔軟，切開來能看到細緻的層次。略帶甜味與雞蛋奶油香完美融合，一口咬下鬆嫩多汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你布朗尼",
+            "description": "嚴選可可製作，口感濃厚，濕潤綿密、香氣十足，深色可可的沉穩風味，在柔軟濕潤的口感中層層展開，低調卻耐人尋味，每一口都是巧克力控無法抗拒的享受，一份6入。",
+            "offers": {
+              "@type": "Offer",
+              "price": "144.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍵瓶裝飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "抹茶牛奶",
+            "description": "層次豐富的抹茶，加上香醇牛奶。350ml。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶",
+            "description": "含香醇牛奶。350ml。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拿鐵",
+            "description": "濃郁咖啡及香醇牛奶。350ml。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "本店豬肉來源：台灣",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

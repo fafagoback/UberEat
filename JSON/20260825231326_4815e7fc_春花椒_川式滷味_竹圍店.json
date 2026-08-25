@@ -1,0 +1,284 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%98%A5%E8%8A%B1%E6%A4%92-%E5%B7%9D%E5%BC%8F%E6%BB%B7%E5%91%B3-%E7%AB%B9%E5%9C%8D%E5%BA%97/Xxm2lXBMX3CTVaSm0cW6BA",
+  "name": "春花椒 川式滷味 竹圍店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "251新北市淡水區民族路96號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1355503,
+    "longitude": 121.4625768
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 3.8,
+    "reviewCount": 50
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "川式椒麻牛五花辣乾麵",
+            "description": "🥩香麻的椒味與柔嫩的牛五花完美搭配，讓舌尖感受四川風情🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藤椒麻辣口味",
+            "description": "以藤椒為主的麻辣底料，清新椒麻、辛香馥郁，讓滷味更帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣臭豆腐寬粉",
+            "description": "🌶️麻辣湯頭裡醇香的臭豆腐與滑嫩寬粉，刺激味蕾令人沉醉🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藥膳口味",
+            "description": "草本藥香清雅，湯頭溫潤順口、尾韻回甘，讓滷味更有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒麻皮蛋大乾麵",
+            "description": "🍜皮蛋的醇香與椒麻的刺激感相遇，為您帶來獨特的美味體驗🌶️",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血寬粉",
+            "description": "🍲鴨血的滑嫩與麻辣湯底交融，讓人每一口都感到暖心麻香✨",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川式椒麻雞麵",
+            "description": "🍗麻辣椒香襯托著嫩滑雞肉，為您打造一場辛香四溢的味蕾盛宴🌶️",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "顧客訂購須知📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點(以及口味)，請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "滿意本次餐點與服務嗎？歡迎給我們五星好評，您的回饋是我們進步的動力。若有任何問題或建議，請透過聊天告知，我們會立即協助。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "😋滷味底料選擇😋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "藥膳口味",
+            "description": "草本藥香清雅，湯頭溫潤順口、尾韻回甘，讓滷味更有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "29.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "藤椒麻辣口味",
+            "description": "以藤椒為主的麻辣底料，清新椒麻、辛香馥郁，讓滷味更帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🧡麻辣臭豆腐鴨血🧡",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣臭豆腐寬粉",
+            "description": "🌶️麻辣湯頭裡醇香的臭豆腐與滑嫩寬粉，刺激味蕾令人沉醉🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血寬粉",
+            "description": "🍲鴨血的滑嫩與麻辣湯底交融，讓人每一口都感到暖心麻香✨",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍝乾麵類🍝",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "椒麻皮蛋大乾麵",
+            "description": "🍜皮蛋的醇香與椒麻的刺激感相遇，為您帶來獨特的美味體驗🌶️",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川式椒麻雞麵",
+            "description": "🍗麻辣椒香襯托著嫩滑雞肉，為您打造一場辛香四溢的味蕾盛宴🌶️",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川式椒麻牛五花辣乾麵",
+            "description": "🥩香麻的椒味與柔嫩的牛五花完美搭配，讓舌尖感受四川風情🔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "199.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "😋單點區😋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "米飯",
+            "description": "Q香紫米飯，口感飽滿微黏，穀香清雅。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "寬冬粉",
+            "description": "寬版冬粉，Q彈滑順，入口清爽，易吸附湯汁與醬汁，吃來更有存在感",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🥛飲料🥛",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芭樂青檸380ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麥茶380ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶380ml",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "38.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

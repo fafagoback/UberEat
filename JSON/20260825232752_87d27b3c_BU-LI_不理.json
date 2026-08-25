@@ -1,0 +1,587 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/bu-li-%E4%B8%8D%E7%90%86/YMEe-8kNUfC_ecMvuQWAgg",
+  "name": "BU-LI 不理",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區石牌路二段68巷2號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1164201,
+    "longitude": 121.5162534
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 78
+  },
+  "servesCuisine": [
+    "Chinese",
+    "Cantonese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "瑞士雞腿排飯",
+            "description": "無骨雞腿排、焦邊蛋、蔬菜、瑞士汁源於香港，是一種以甜味為主的醬汁，常用於烹調香港地道菜式。 雖然名為「瑞士」，但它與瑞士並沒有直接關係，而是因為一次語言上的誤會而得名。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩午餐肉飯",
+            "description": "椰漿蛋咖喱、特色紅油 （手炒咖哩，風味濃厚，大約 3分辣）",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白汁雞皇飯",
+            "description": "雞腿肉塊、焦邊蛋、蔬菜（隨餐附紅茶一杯） 白汁雞皇飯主要由濃郁的白汁、嫩滑的雞肉、菇類、紅蘿蔔、和鬆軟的白飯組成。 白汁雞皇飯是一道美味、營養、老少咸宜的料理，擁有濃郁的奶香、嫩滑的口感和豐富的營養價值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩德式香腸飯",
+            "description": "椰漿蛋咖喱、特色紅油 （手炒咖哩，風味濃厚，大約 3分辣）",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬蝦仁螺旋義大利麵",
+            "description": "蛋沙拉、優格、鮪魚、蟹肉棒、洋蔥、水果丁（清爽營養冷食料理,兼具飽足感與輕盈口感適合夏天享用）",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩香煎雞腿排飯",
+            "description": "椰漿蛋咖喱、特色紅油 （手炒咖哩，風味濃厚，大約 3分辣）",
+            "offers": {
+              "@type": "Offer",
+              "price": "360.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茄湯德式香腸",
+            "description": "港式風味，蕃茄湯口味偏酸風味濃厚，帶有經典茶餐廳特色",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩松阪豬飯",
+            "description": "椰漿蛋咖喱、特色紅油 （手炒咖哩，風味濃厚，大約 3分辣）",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味薯條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茄湯午餐肉",
+            "description": "港式風味，蕃茄湯口味偏酸風味濃厚，帶有經典茶餐廳特色",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茄湯檸檬蝦仁",
+            "description": "港式風味，蕃茄湯口味偏酸風味濃厚，帶有經典茶餐廳特色",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "咖哩沒有蟹（手炒椰漿咖喱）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "咖哩德式香腸飯",
+            "description": "椰漿蛋咖喱、特色紅油 （手炒咖哩，風味濃厚，大約 3分辣）",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩午餐肉飯",
+            "description": "椰漿蛋咖喱、特色紅油 （手炒咖哩，風味濃厚，大約 3分辣）",
+            "offers": {
+              "@type": "Offer",
+              "price": "290.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩香煎雞腿排飯",
+            "description": "椰漿蛋咖喱、特色紅油 （手炒咖哩，風味濃厚，大約 3分辣）",
+            "offers": {
+              "@type": "Offer",
+              "price": "360.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩松阪豬飯",
+            "description": "椰漿蛋咖喱、特色紅油 （手炒咖哩，風味濃厚，大約 3分辣）",
+            "offers": {
+              "@type": "Offer",
+              "price": "390.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩檸檬蝦仁飯",
+            "description": "椰漿蛋咖喱、特色紅油 （手炒咖哩，風味濃厚，大約 3分辣）",
+            "offers": {
+              "@type": "Offer",
+              "price": "370.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "港式蕃茄湯麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "茄湯德式香腸",
+            "description": "港式風味，蕃茄湯口味偏酸風味濃厚，帶有經典茶餐廳特色",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茄湯午餐肉",
+            "description": "港式風味，蕃茄湯口味偏酸風味濃厚，帶有經典茶餐廳特色",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茄湯香煎雞腿排",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茄湯檸檬蝦仁",
+            "description": "港式風味，蕃茄湯口味偏酸風味濃厚，帶有經典茶餐廳特色",
+            "offers": {
+              "@type": "Offer",
+              "price": "320.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬菜(蛋奶素)",
+            "description": "港式風味，蕃茄湯口味偏酸風味濃厚，帶有經典茶餐廳特色",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷拌義大利麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "德式香腸螺旋義大利麵",
+            "description": "蛋沙拉、優格、鮪魚、蟹肉棒、洋蔥、水果丁（清爽營養冷食料理,兼具飽足感與輕盈口感適合夏天享用）",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬蝦仁螺旋義大利麵",
+            "description": "蛋沙拉、優格、鮪魚、蟹肉棒、洋蔥、水果丁（清爽營養冷食料理,兼具飽足感與輕盈口感適合夏天享用）",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味螺旋義大利麵",
+            "description": "蛋沙拉、優格、鮪魚、蟹肉棒、洋蔥、水果丁（清爽營養冷食料理,兼具飽足感與輕盈口感適合夏天享用）",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "迷你版",
+            "description": "蛋沙拉、優格、鮪魚、蟹肉棒、洋蔥、水果丁（清爽營養冷食料理,兼具飽足感與輕盈口感適合夏天享用）",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "優惠特餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "瑞士雞腿排飯",
+            "description": "無骨雞腿排、焦邊蛋、蔬菜、瑞士汁源於香港，是一種以甜味為主的醬汁，常用於烹調香港地道菜式。 雖然名為「瑞士」，但它與瑞士並沒有直接關係，而是因為一次語言上的誤會而得名。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白汁雞皇飯",
+            "description": "雞腿肉塊、焦邊蛋、蔬菜（隨餐附紅茶一杯） 白汁雞皇飯主要由濃郁的白汁、嫩滑的雞肉、菇類、紅蘿蔔、和鬆軟的白飯組成。 白汁雞皇飯是一道美味、營養、老少咸宜的料理，擁有濃郁的奶香、嫩滑的口感和豐富的營養價值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "215.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "厚片",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炙燒起司德式香腸厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炙燒起司午餐肉厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘋果蝦仁厚片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "可樂",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "莓果牛奶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "國寶茶（無糖）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香港維他菊花茶（鋁箔包）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚子紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "檸檬可樂",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "維他港式奶茶(鋁箔包)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆漿紅茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香港維他朱古力(鋁箔包)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小吃",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味薯條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "港式羅宋湯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "德式香腸 2條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "午餐肉1份",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿排一片",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "松板豬一份",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁7隻",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "焦邊半熟蛋一顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

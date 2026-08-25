@@ -1,0 +1,1747 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/50%E5%B5%90-%E5%A5%87%E5%B2%A9%E5%BA%97/lzTzvwLJWa2ayGueP0Kb6w",
+  "name": "50嵐 奇岩店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區崇仁路一段70號",
+    "addressLocality": "Taipei",
+    "addressRegion": "",
+    "postalCode": "112",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1266152,
+    "longitude": 121.5014875
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 1500
+  },
+  "servesCuisine": [
+    "Bubble Tea",
+    "Drinks",
+    "Coffee and Tea",
+    "Juice and Smoothies"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "找好茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "中●阿薩姆紅茶",
+            "description": "中杯:總熱量119大卡,總糖量28克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量170大卡,總糖量40克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●阿薩姆紅茶",
+            "description": "中杯:總熱量119大卡,總糖量28克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量170大卡,總糖量40克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●茉莉綠茶",
+            "description": "中杯:總熱量119大卡,總糖量28克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量170大卡,總糖量40克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●茉莉綠茶",
+            "description": "中杯:總熱量119大卡,總糖量28克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量170大卡,總糖量40克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●四季春青茶",
+            "description": "中杯:總熱量119大卡,總糖量28克,咖啡因總含量為100毫克以下。 大杯:總熱量170大卡,總糖量40克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●四季春青茶",
+            "description": "中杯:總熱量119大卡,總糖量28克,咖啡因總含量為100毫克以下。 大杯:總熱量170大卡,總糖量40克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●黃金烏龍",
+            "description": "中杯:總熱量119大卡,總糖量28克,咖啡因總含量為100毫克以下。 大杯:總熱量170大卡,總糖量40克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●黃金烏龍",
+            "description": "中杯:總熱量119大卡,總糖量28克,咖啡因總含量為100毫克以下。 大杯:總熱量170大卡,總糖量40克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●檸檬綠",
+            "description": "中杯:總熱量154大卡,總糖量34克,咖啡因總含量為100毫克以下。 大杯:總熱量217大卡,總糖量48克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●檸檬綠",
+            "description": "中杯:總熱量154大卡,總糖量34克,咖啡因總含量為100毫克以下。 大杯:總熱量217大卡,總糖量48克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●檸檬紅",
+            "description": "中杯:總熱量154大卡,總糖量34克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量217大卡,總糖量48克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●檸檬紅",
+            "description": "中杯:總熱量154大卡,總糖量34克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量217大卡,總糖量48克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●梅の綠",
+            "description": "中杯:總熱量276大卡,總糖量65克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量395大卡,總糖量93克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●梅の綠",
+            "description": "中杯:總熱量276大卡,總糖量65克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量395大卡,總糖量93克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●8冰綠",
+            "description": "中杯:總熱量186大卡,總糖量42克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量291大卡,總糖量66克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●8冰綠",
+            "description": "中杯:總熱量186大卡,總糖量42克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量291大卡,總糖量66克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●桔子綠",
+            "description": "中杯:總熱量154大卡,總糖量34克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量217大卡,總糖量48克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●桔子綠",
+            "description": "中杯:總熱量154大卡,總糖量34克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量217大卡,總糖量48克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●養樂多綠",
+            "description": "中杯:總熱量230大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量318大卡,總糖量73克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●養樂多綠",
+            "description": "中杯:總熱量230大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量318大卡,總糖量73克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●鮮柚綠",
+            "description": "中杯:總熱量158大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量226大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●鮮柚綠",
+            "description": "中杯:總熱量158大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量226大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●旺來紅",
+            "description": "中杯:總熱量228大卡,總糖量52克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量326大卡,總糖量75克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●旺來紅",
+            "description": "中杯:總熱量228大卡,總糖量52克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量326大卡,總糖量75克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●旺來綠",
+            "description": "中杯:總熱量228大卡,總糖量52克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量326大卡,總糖量75克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●旺來綠",
+            "description": "中杯:總熱量228大卡,總糖量52克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量326大卡,總糖量75克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●旺來青",
+            "description": "中杯:總熱量228大卡,總糖量52克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量326大卡,總糖量75克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●旺來青",
+            "description": "中杯:總熱量228大卡,總糖量52克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量326大卡,總糖量75克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●柚子紅",
+            "description": "中杯:總熱量214大卡,總糖量37克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量301大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●柚子紅",
+            "description": "中杯:總熱量214大卡,總糖量37克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量301大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●柚子綠",
+            "description": "中杯:總熱量214大卡,總糖量37克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量301大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●柚子綠",
+            "description": "中杯:總熱量214大卡,總糖量37克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量301大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●柚子青",
+            "description": "中杯:總熱量214大卡,總糖量37克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量301大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●柚子青",
+            "description": "中杯:總熱量214大卡,總糖量37克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量301大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●柚子烏龍",
+            "description": "中杯:總熱量214大卡,總糖量37克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量301大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●柚子烏龍",
+            "description": "中杯:總熱量214大卡,總糖量37克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量301大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶紅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶紅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶青",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶青",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶烏龍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶烏龍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "中●奶茶",
+            "description": "中杯:總熱量372大卡,總糖量32克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量532大卡,總糖量46克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●奶茶",
+            "description": "中杯:總熱量372大卡,總糖量32克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量532大卡,總糖量46克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●奶綠",
+            "description": "中杯:總熱量372大卡,總糖量32克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量532大卡,總糖量46克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●奶綠",
+            "description": "中杯:總熱量372大卡,總糖量32克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量532大卡,總糖量46克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●紅茶瑪奇朵",
+            "description": "中杯:總熱量452大卡,總糖量42克,咖啡因總含量為100毫克以下。 大杯:總熱量636大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●紅茶瑪奇朵",
+            "description": "中杯:總熱量452大卡,總糖量42克,咖啡因總含量為100毫克以下。 大杯:總熱量636大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●綠茶瑪奇朵",
+            "description": "中杯:總熱量452大卡,總糖量42克,咖啡因總含量為100毫克以下。 大杯:總熱量636大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●綠茶瑪奇朵",
+            "description": "中杯:總熱量452大卡,總糖量42克,咖啡因總含量為100毫克以下。 大杯:總熱量636大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●四季瑪奇朵",
+            "description": "中杯:總熱量452大卡,總糖量42克,咖啡因總含量為100毫克以下。 大杯:總熱量636大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●四季瑪奇朵",
+            "description": "中杯:總熱量452大卡,總糖量42克,咖啡因總含量為100毫克以下。 大杯:總熱量636大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●烏龍瑪奇朵",
+            "description": "中杯:總熱量452大卡,總糖量42克,咖啡因總含量為100毫克以下。 大杯:總熱量636大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●烏龍瑪奇朵",
+            "description": "中杯:總熱量452大卡,總糖量42克,咖啡因總含量為100毫克以下。 大杯:總熱量636大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●四季奶青",
+            "description": "中杯:總熱量372大卡,總糖量32克,咖啡因總含量為100毫克以下。 大杯:總熱量532大卡,總糖量46克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●四季奶青",
+            "description": "中杯:總熱量372大卡,總糖量32克,咖啡因總含量為100毫克以下。 大杯:總熱量532大卡,總糖量46克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●黃金烏龍奶",
+            "description": "中杯:總熱量330大卡,總糖量31克,咖啡因總含量為100毫克以下。 大杯:總熱量472大卡,總糖量45克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●黃金烏龍奶",
+            "description": "中杯:總熱量330大卡,總糖量31克,咖啡因總含量為100毫克以下。 大杯:總熱量472大卡,總糖量45克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●阿華田",
+            "description": "中杯:總熱量359大卡,總糖量33克,咖啡因總含量為100毫克以下。 大杯:總熱量512大卡,總糖量47克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●阿華田",
+            "description": "中杯:總熱量359大卡,總糖量33克,咖啡因總含量為100毫克以下。 大杯:總熱量512大卡,總糖量47克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶奶綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶奶綠",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶奶茶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶四季奶青",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶四季奶青",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶黃金烏龍奶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶黃金烏龍奶",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●四季奶青瑪奇朵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●四季奶青瑪奇朵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找口感",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "中●四季春珍波椰",
+            "description": "中杯:總熱量288大卡,總糖量46克,咖啡因總含量為100毫克以下。 大杯:總熱量413大卡,總糖量65克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●四季春珍波椰",
+            "description": "中杯:總熱量288大卡,總糖量46克,咖啡因總含量為100毫克以下。 大杯:總熱量413大卡,總糖量65克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●珍珠奶茶",
+            "description": "中杯:總熱量472大卡,總糖量38克,咖啡因總含量為100毫克以下。 大杯:總熱量668大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●珍珠奶茶",
+            "description": "中杯:總熱量472大卡,總糖量38克,咖啡因總含量為100毫克以下。 大杯:總熱量668大卡,總糖量53克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●波霸奶茶",
+            "description": "中杯:總熱量480大卡,總糖量37克,咖啡因總含量為100毫克以下。 大杯:總熱量678大卡,總糖量52克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●波霸奶茶",
+            "description": "中杯:總熱量480大卡,總糖量37克,咖啡因總含量為100毫克以下。 大杯:總熱量678大卡,總糖量52克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●布丁紅",
+            "description": "中杯:總熱量195大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量339大卡,總糖量60克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●布丁紅",
+            "description": "中杯:總熱量195大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量339大卡,總糖量60克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●布丁綠",
+            "description": "中杯:總熱量195大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量339大卡,總糖量60克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●布丁綠",
+            "description": "中杯:總熱量195大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量339大卡,總糖量60克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●布丁青",
+            "description": "中杯:總熱量195大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量339大卡,總糖量60克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●布丁青",
+            "description": "中杯:總熱量195大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量339大卡,總糖量60克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●布丁黃金烏龍",
+            "description": "中杯:總熱量195大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量339大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●布丁黃金烏龍",
+            "description": "中杯:總熱量195大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量339大卡,總糖量60克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●布丁奶茶",
+            "description": "中杯:總熱量376大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量592大卡,總糖量64克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●布丁奶茶",
+            "description": "中杯:總熱量376大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量592大卡,總糖量64克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●布丁奶綠",
+            "description": "中杯:總熱量376大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量592大卡,總糖量64克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●布丁奶綠",
+            "description": "中杯:總熱量376大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量592大卡,總糖量64克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●布丁奶青",
+            "description": "中杯:總熱量376大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量592大卡,總糖量64克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●布丁奶青",
+            "description": "中杯:總熱量376大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量592大卡,總糖量64克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●布丁烏龍奶茶",
+            "description": "中杯:總熱量346大卡,總糖量38克,咖啡因總含量為100毫克以下。 大杯:總熱量550大卡,總糖量63克,咖啡因總含量為100毫克以下。。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●布丁烏龍奶茶",
+            "description": "中杯:總熱量346大卡,總糖量38克,咖啡因總含量為100毫克以下。 大杯:總熱量550大卡,總糖量63克,咖啡因總含量為100毫克以下。。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "紅茶拿鐵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "中●紅茶拿鐵",
+            "description": "中杯:總熱量235大卡,總糖量36克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量334大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●紅茶拿鐵",
+            "description": "中杯:總熱量235大卡,總糖量36克,咖啡因總含量介於101毫克至200毫克。 大杯:總熱量334大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●綠茶拿鐵",
+            "description": "中杯:總熱量235大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量334大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●綠茶拿鐵",
+            "description": "中杯:總熱量235大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量334大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●黃金烏龍拿鐵",
+            "description": "中杯:總熱量235大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量334大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●黃金烏龍拿鐵",
+            "description": "中杯:總熱量235大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量334大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●阿華田拿鐵",
+            "description": "中杯:總熱量301大卡,總糖量38克,咖啡因總含量為100毫克以下。 大杯:總熱量428大卡,總糖量54克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●阿華田拿鐵",
+            "description": "中杯:總熱量301大卡,總糖量38克,咖啡因總含量為100毫克以下。 大杯:總熱量428大卡,總糖量54克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●珍珠鮮奶",
+            "description": "中杯:總熱量463大卡,總糖量46克。 大杯:總熱量657大卡,總糖量65.1克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●珍珠鮮奶",
+            "description": "中杯:總熱量463大卡,總糖量46克。 大杯:總熱量657大卡,總糖量65.1克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●波霸鮮奶",
+            "description": "中杯:總熱量463大卡,總糖量46克。 大杯:總熱量657大卡,總糖量65.1克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●波霸鮮奶",
+            "description": "中杯:總熱量463大卡,總糖量46克。 大杯:總熱量657大卡,總糖量65.1克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●重焙烏龍拿鐵",
+            "description": "中杯:總熱量235大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量334大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●重焙烏龍拿鐵",
+            "description": "中杯:總熱量235大卡,總糖量36克,咖啡因總含量為100毫克以下。 大杯:總熱量334大卡,總糖量51克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶綠茶拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶綠茶拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶紅茶拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶紅茶拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶四季拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶四季拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶黃金烏龍拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶黃金烏龍拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●麵茶重焙烏龍拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●麵茶重焙烏龍拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●冰淇淋麵茶綠茶拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●冰淇淋麵茶綠茶拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●冰淇淋麵茶四季拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●冰淇淋麵茶四季拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●冰淇淋麵茶紅茶拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●冰淇淋麵茶紅茶拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●冰淇淋麵茶黃金烏龍拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●冰淇淋麵茶黃金烏龍拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●冰淇淋麵茶重焙烏龍拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●冰淇淋麵茶重焙烏龍拿鐵",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找新鮮",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "中●8冰茶",
+            "description": "中杯:總熱量187大卡,總糖量43克。 大杯:總熱量291大卡,總糖量67克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●8冰茶",
+            "description": "中杯:總熱量187大卡,總糖量43克。 大杯:總熱量291大卡,總糖量67克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●檸檬養樂多",
+            "description": "中杯:總熱量357大卡,總糖量77克。 大杯:總熱量490大卡,總糖量106克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●檸檬養樂多",
+            "description": "中杯:總熱量357大卡,總糖量77克。 大杯:總熱量490大卡,總糖量106克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●檸檬汁",
+            "description": "中杯:總熱量161大卡,總糖量34克。 大杯:總熱量228大卡,總糖量48克。 以上數據為正常冰正常甜之熱量及糖量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●檸檬汁",
+            "description": "中杯:總熱量161大卡,總糖量34克。 大杯:總熱量228大卡,總糖量48克。 以上數據為正常冰正常甜之熱量及糖量。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●金桔檸檬",
+            "description": "中杯:總熱量161大卡,總糖量34克。 大杯:總熱量228大卡,總糖量48克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●金桔檸檬",
+            "description": "中杯:總熱量161大卡,總糖量34克。 大杯:總熱量228大卡,總糖量48克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●檸檬梅汁",
+            "description": "中杯:總熱量239大卡,總糖量55克。 大杯:總熱量338大卡,總糖量77克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●檸檬梅汁",
+            "description": "中杯:總熱量239大卡,總糖量55克。 大杯:總熱量338大卡,總糖量77克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●柚子茶",
+            "description": "中杯:總熱量214大卡,總糖量37克。 大杯:總熱量301大卡,總糖量53克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●柚子茶",
+            "description": "中杯:總熱量214大卡,總糖量37克。 大杯:總熱量301大卡,總糖量53克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●鮮柚汁",
+            "description": "中杯:總熱量158大卡,總糖量36克。 大杯:總熱量226大卡,總糖量51克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●鮮柚汁",
+            "description": "中杯:總熱量158大卡,總糖量36克。 大杯:總熱量226大卡,總糖量51克。 以上數據為正常冰正常甜之熱量及糖量。 本產品無咖啡因。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "找冰淇淋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "中●芒果紅",
+            "description": "中杯:總熱量185大卡,總糖量41克,咖啡因總含量為100毫克以下。 大杯:總熱量319大卡,總糖量70克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●芒果紅",
+            "description": "中杯:總熱量185大卡,總糖量41克,咖啡因總含量為100毫克以下。 大杯:總熱量319大卡,總糖量70克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●芒果綠",
+            "description": "中杯:總熱量185大卡,總糖量41克,咖啡因總含量為100毫克以下。 大杯:總熱量319大卡,總糖量70克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●芒果綠",
+            "description": "中杯:總熱量185大卡,總糖量41克,咖啡因總含量為100毫克以下。 大杯:總熱量319大卡,總糖量70克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●芒果青",
+            "description": "中杯:總熱量185大卡,總糖量41克,咖啡因總含量為100毫克以下。 大杯:總熱量319大卡,總糖量70克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●芒果青",
+            "description": "中杯:總熱量185大卡,總糖量41克,咖啡因總含量為100毫克以下。 大杯:總熱量319大卡,總糖量70克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●芒果烏龍",
+            "description": "中杯:總熱量185大卡,總糖量41克,咖啡因總含量為100毫克以下。 大杯:總熱量319大卡,總糖量70克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●芒果烏龍",
+            "description": "中杯:總熱量185大卡,總糖量41克,咖啡因總含量為100毫克以下。 大杯:總熱量319大卡,總糖量70克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●荔枝紅",
+            "description": "中杯:總熱量178大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量304大卡,總糖量66克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●荔枝紅",
+            "description": "中杯:總熱量178大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量304大卡,總糖量66克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●荔枝綠",
+            "description": "中杯:總熱量178大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量304大卡,總糖量66克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●荔枝綠",
+            "description": "中杯:總熱量178大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量304大卡,總糖量66克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●荔枝青",
+            "description": "中杯:總熱量178大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量304大卡,總糖量66克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●荔枝青",
+            "description": "中杯:總熱量178大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量304大卡,總糖量66克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●荔枝烏龍",
+            "description": "中杯:總熱量178大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量304大卡,總糖量66克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●荔枝烏龍",
+            "description": "中杯:總熱量178大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量304大卡,總糖量66克,咖啡因總含量為100毫克以下。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●冰淇淋紅茶",
+            "description": "中杯:總熱量244大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量436大卡,總糖量67克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●冰淇淋紅茶",
+            "description": "中杯:總熱量244大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量436大卡,總糖量67克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 紅茶茶葉產地:斯里蘭卡。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●冰淇淋綠茶",
+            "description": "中杯:總熱量244大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量436大卡,總糖量67克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●冰淇淋綠茶",
+            "description": "中杯:總熱量244大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量436大卡,總糖量67克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 綠茶茶葉產地:越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●冰淇淋青茶",
+            "description": "中杯:總熱量244大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量436大卡,總糖量67克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●冰淇淋青茶",
+            "description": "中杯:總熱量244大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量436大卡,總糖量67克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 青茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "中●冰淇淋烏龍茶",
+            "description": "中杯:總熱量244大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量436大卡,總糖量67克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大●冰淇淋烏龍茶",
+            "description": "中杯:總熱量244大卡,總糖量39克,咖啡因總含量為100毫克以下。 大杯:總熱量436大卡,總糖量67克,咖啡因總含量介於101毫克至200毫克。 以上數據為正常冰正常甜之熱量及糖量。 烏龍茶茶葉產地:台灣越南。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "提袋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "4或6號袋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

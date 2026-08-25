@@ -1,0 +1,388 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E8%B3%B4%E7%A6%8F%E4%B8%B2%E4%B8%B2%E7%87%92%E9%9B%9E%E8%9B%8B%E7%B3%95/vSA6bxGJVT6hpMKirsMkkA",
+  "name": "賴福串串燒雞蛋糕 ",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區裕民一路28號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1165923,
+    "longitude": 121.5169089
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 220
+  },
+  "servesCuisine": [
+    "Desserts"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "OREO 餅乾串串燒",
+            "description": "使用迷你OREO餅乾，富含香甜內餡，香草、巧克力口味混搭，兩種一次滿足！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆漿巧克力串串燒",
+            "description": "使用高級牛奶巧克力，熱騰騰出爐入口即化，建議10分鐘內享用為最佳口感！\n\n麵糊使用新鮮雞蛋、鮮乳、麵粉、砂糖，製成天然不加水，不添加香料、乳化劑、防腐劑。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖麻糬串串燒",
+            "description": "濃濃黑糖香味，口感Q彈的黑糖麻糬。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋泥相芋串串燒",
+            "description": "使用來自大甲的芋頭，獨家比例不甜不膩，製成綿密濃郁的純芋泥，美味更有層次！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂冠小湯圓串串燒",
+            "description": "小孩子才做選擇，採用桂冠花生芝麻小湯圓混搭，讓想吃濃郁芝麻與金黃色花生流沙的Ｑ彈口感，猜不到一串七顆，每吃一口都是驚喜！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拉絲起司串串燒",
+            "description": "使用科克蘭長期熟成切達乾酪，濃郁香氣、拉絲口感，建議10分鐘內享用！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙肉鬆串串燒",
+            "description": "濃郁的鹹蛋黃口感，搭配綿綿肉鬆，有種古早味蛋黃酥的感覺！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力原味淋醬",
+            "description": "免費添加滿天星\n\n麵糊使用新鮮雞蛋、鮮乳、麵粉、砂糖，製成天然不加水，不添加香料、乳化劑、防腐劑。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜原味淋醬",
+            "description": "免費添加滿天星\n\n麵糊使用新鮮雞蛋、鮮乳、麵粉、砂糖，製成天然不加水，不添加香料、乳化劑、防腐劑。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐組合",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "賴福螞蟻🐜三本柱",
+            "description": "爆漿巧克力+OREO+黑糖麻糬",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "賴福歐拉歐拉歐拉",
+            "description": "Oreo串串燒雞蛋糕 x 3",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "賴福屬糬糬",
+            "description": "黑糖麻糬串串燒雞蛋糕 x 3",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "甜甜的串串燒",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮奶原味串串燒",
+            "description": "統一鮮奶原味雞蛋糕製成，不添加任何化學物與內餡，不甜不膩，口感扎實，最適合幼童食用。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "葡萄乾串串燒",
+            "description": "使用來自美國加州的全果粒葡萄乾，手工採摘並經陽光晾曬，不使用任何添加劑的純天然甜味。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "桂冠小湯圓串串燒",
+            "description": "小孩子才做選擇，採用桂冠花生芝麻小湯圓混搭，讓想吃濃郁芝麻與金黃色花生流沙的Ｑ彈口感，猜不到一串七顆，每吃一口都是驚喜！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋泥相芋串串燒",
+            "description": "使用來自大甲的芋頭，獨家比例不甜不膩，製成綿密濃郁的純芋泥，美味更有層次！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆漿巧克力串串燒",
+            "description": "使用高級牛奶巧克力，熱騰騰出爐入口即化，建議10分鐘內享用為最佳口感！\n\n麵糊使用新鮮雞蛋、鮮乳、麵粉、砂糖，製成天然不加水，不添加香料、乳化劑、防腐劑。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "OREO 餅乾串串燒",
+            "description": "使用迷你OREO餅乾，富含香甜內餡，香草、巧克力口味混搭，兩種一次滿足！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖麻糬串串燒",
+            "description": "濃濃黑糖香味，口感Q彈的黑糖麻糬。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔓越莓串串燒",
+            "description": "採用新鮮蔓越莓全果粒，堅持低溫慢慢烘焙而成，保留原味營養、無添加防腐劑＆人工色素，新鮮健康安全美味。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鹹鹹的串串燒",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拉絲起司串串燒",
+            "description": "使用科克蘭長期熟成切達乾酪，濃郁香氣、拉絲口感，建議10分鐘內享用！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金沙肉鬆串串燒",
+            "description": "濃郁的鹹蛋黃口感，搭配綿綿肉鬆，有種古早味蛋黃酥的感覺！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "啾啾熱狗串串燒",
+            "description": "大小朋友都喜愛的小點心，與串串燒雞蛋糕搭配，滿足您想吃點肉肉的心願！\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "串串燒雞蛋糕特色",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "串串燒雞蛋糕一串七顆",
+            "description": "一串有七顆，依據不同內餡，大約4cm左右，老闆每日更新烙印圖案，幼童最愛的艾莎、奧特曼、史努比、小小兵、多拉Ａ夢。。。等，超療癒下午茶。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選麵粉，特調比例，每日新鮮現打麵糊",
+            "description": "麵糊使用新鮮雞蛋、100%統一鮮乳、麵粉、砂糖，製成純天然不加水，不添加香料、乳化劑、防腐劑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "外酥內軟，口感扎實，真材實料",
+            "description": "老闆放內餡絕不手軟，來現場購買的顧客親眼見證，絕對讓您物超所值。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選牛皮紙袋包裝，使用台灣嚴選桂竹籤",
+            "description": "使用長型牛皮紙袋與竹籤，為保持外酥內軟口感儘量避免悶住，最佳賞味時間為出爐後10分鐘，但因外送需要裝入塑膠提袋中，加上外送時間與距離稍微影響口感，建議趁熱吃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現點現做，外送因素不可控，請耐心等候",
+            "description": "所有餐點皆為現點現做，我們一定盡速將熱騰騰的餐點準備好，但外送因素不可控經常需要等待，還請您體諒！如不喜歡吃到冷掉的串串燒雞蛋糕，歡迎來店細細品嚐！",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "下午茶、早餐、點心、生日分享餐首選",
+            "description": "可使用保鮮盒、保鮮袋封裝起來，避免雞蛋糕接觸空氣，冷藏約保存3天，冷凍約保存7天。加熱可使用電鍋、烤箱、微波爐、氣炸鍋，加熱前在雞蛋糕上需要噴點水，電鍋只需乾蒸即可。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "原味淋醬",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "巧克力原味淋醬",
+            "description": "免費添加滿天星\n\n麵糊使用新鮮雞蛋、鮮乳、麵粉、砂糖，製成天然不加水，不添加香料、乳化劑、防腐劑。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜂蜜原味淋醬",
+            "description": "免費添加滿天星\n\n麵糊使用新鮮雞蛋、鮮乳、麵粉、砂糖，製成天然不加水，不添加香料、乳化劑、防腐劑。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "煉乳原味淋醬",
+            "description": "免費添加滿天星\n\n麵糊使用新鮮雞蛋、鮮乳、麵粉、砂糖，製成天然不加水，不添加香料、乳化劑、防腐劑。\n\n食品業登錄字號為：A-202260276-00000-4",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

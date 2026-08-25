@@ -1,0 +1,658 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/sofydog-%E8%98%87%E8%8F%B2%E7%8B%97%E5%AF%B5%E7%89%A9%E7%B2%BE%E5%93%81-%E5%A4%A9%E6%AF%8D%E5%BA%97/hpHd9D1_VKWQNl-rZauW9Q",
+  "name": "SofyDOG 蘇菲狗寵物精品 天母店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4 Section 2, Zhongcheng Road",
+    "addressLocality": "Taipei",
+    "addressRegion": "APAC",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1086324,
+    "longitude": 121.5301158
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": null,
+    "reviewCount": null
+  },
+  "servesCuisine": [
+    "Grocery",
+    "Retail",
+    "Pet Supplies"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "狗狗飼料",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 小型成犬配方 6磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1680.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 小型成犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 小型幼犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 低致敏無穀 鴨肉 全齡犬配方 6磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1600.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 MIX 雞肉牛肉 狗狗無穀飼料+凍乾 300g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 高湯天然糧 鮭魚小型成犬配方 100g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 高湯天然糧 鮭魚小型成犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 低致敏無穀 鹿肉 全齡犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1440.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 低致敏無穀 羊肉 全齡犬配方 6磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1600.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 高湯牛肉成犬配方 100g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "99.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetKind野胃 放牧鹿 天然鮮草肚無穀狗糧 6磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 黑水虻無穀成犬糧3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 小型老犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 幼母犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 成犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "貓咪零食",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 骰子鮭魚 寵物手作零食 50g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 鮭魚立方 凍乾零食 30g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "KIWIPET天然零食 冷凍乾燥 鹿肉餅 50g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 主子好心情肉泥條 雙魚木鱉果 15gx4條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 雞肉脆片 寵物手作零食 100g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 亞麻籽雞肉餅 寵物手作零食 100g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 凍乾 鮮草羊肚 200g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "KIWIPET天然零食 冷凍乾燥 羊肉餅 50g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 主子好心情肉泥條 鮪魚南瓜 15gx4條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 鴨氣管 寵物手作零食 50g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 主子好心情肉泥條 雞肉蔓越莓 15gx4條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "KIWIPET天然零食 冷凍乾燥 沙丁牛肉球 50g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "VE凍乾 犬貓零食 牛肚 2.3oz(65g)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "620.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 皮膚保健 貓咪嫩丁機能零食 30gx3包",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "285.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 雞胸肉片 寵物手作零食 100g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "狗狗玩具",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 幾何藏食彈跳玩具 經典啃咬系列 綠寶石",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 調色盤 天空藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "520.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 爪爪星球口水舔食墊 寶寶藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 幾何藏食彈跳玩具 百變趣彈系列 紅X",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 九重葛 橘",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 九重葛 粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "490.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 幾何藏食彈跳玩具 百變趣彈系列 藍星核",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 UFO迷宮 藍",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 爪爪星球口水舔食墊 寶寶粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 幾何藏食彈跳玩具 經典啃咬系列 紅星炫",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Breezytail 牙齒護理 薄荷潔齒怪零食組",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 爪爪星球口水舔食墊 夕陽橘",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "180.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 幾何藏食彈跳玩具 紓壓柔咬系列 藍雙翼",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 幾何藏食彈跳玩具 經典啃咬系列 橘旋風",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "PetDreamHouse 旋轉益智慢食碗 渦輪 橘",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "550.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Best sellers",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 腸胃保健-品燉雞羊+糙米 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 貓咪主食餐包 豐醬無穀雙魚 老貓/體控貓 71g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 免疫保健-嫩絲無穀雞鮭 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 狗狗補給餐包 舒緩情緒-品燉無穀鮮肉 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 狗狗主食餐包 嫩絲無穀雞肉 79g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義士大廚 貓咪肉絲主食罐-鯖魚紅薯 70g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 小型成犬配方 6磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1680.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 火雞立方 凍乾零食 30g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ZIWI巔峰 鮮肉狗主食罐 鹿肉 390g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "331.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 皮膚保健 狗狗嫩丁機能零食 30g",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 黑水虻無穀成犬糧3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hyperr超躍 主子好心情肉泥條 雞肉蔓越莓 15gx4條",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "now 鮮肉無穀天然糧 小型幼犬配方 3.5磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 關節保健 雞肉無穀成貓糧 8磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "2270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "go! 高肉量無穀 四種肉 全貓配方 3磅",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1270.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

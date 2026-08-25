@@ -1,0 +1,228 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%99%B4%E5%85%89%E5%95%86%E5%9C%88-%E5%90%83%E8%82%89%E8%82%89-%E7%82%AD%E7%83%A4%E7%89%9B%E6%8E%92%E5%B0%88%E9%96%80%E5%BA%97/2RqkaWbPUHiahuX4x4NBHQ",
+  "name": "晴光商圈 吃肉肉 炭烤牛排專門店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區農安街14號（雙城夜市 夜05攤位）",
+    "addressLocality": "Taipei",
+    "addressRegion": "APACX",
+    "postalCode": "10491",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0648129,
+    "longitude": 121.5243526
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 2000
+  },
+  "servesCuisine": [
+    "Steak",
+    "American",
+    "Western"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "1號：頂級穀飼嫩肩牛排",
+            "description": "嫩肩牛排是牛的肩部又叫「平鐵牛排」，是一塊CP值最高的牛排，中間那條筋就是明顯特徵，因為口感扎實中帶點軟嫩所以叫「嫩肩牛排」，料理熟度為5分不要超過7分最適合，想要大口吃肉又不想瘦了荷包，選這塊就對了。",
+            "offers": {
+              "@type": "Offer",
+              "price": "377.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "2號：頂級穀飼肩胛小菲力牛排",
+            "description": "美國Prime頂級肩胛小菲力是由上肩胛肉精修出來的部位，珍稀美物一整頭牛只取7～13盎司重，口感極為軟嫩多汁，料理熟度建議3到5分，任何熟度都有不一樣風味，價格也比菲力親民，是你會一吃再吃呦",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4號：頂級穀飼牛小排",
+            "description": "牛小排是台灣人買牛排時最常選擇的牛排，肉質滑嫩帶筋，建議料理熟度是7分到全熟，牛小排尤其是烤過之後，肉筋會變的非常酥脆香氣十足，是其他部位難有的口感，多汁又酥脆風味絕佳，下次絕對要買份牛小排來試試。",
+            "offers": {
+              "@type": "Offer",
+              "price": "640.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3號：頂級穀飼翼板牛排",
+            "description": "翼板牛排是在取自牛的肩胛部位，油脂含量在肩胛部裡面算是比較均勻、軟嫩，口感類似牛小排，但沒有牛小排這麼油，料理熟度為5分不要超過7分最適合，如果想有點油又不太油的牛排翼板是最佳選擇，保證一吃就成老主顧。",
+            "offers": {
+              "@type": "Offer",
+              "price": "540.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "全部來一點",
+            "description": "你還不知道要選哪塊牛排好嗎？那就全部來一點囉！五種牛排一次滿足，14oz讓你大口吃肉消滅你選擇障礙的煩惱",
+            "offers": {
+              "@type": "Offer",
+              "price": "1010.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5號：日本宮崎A5和牛翼板牛排",
+            "description": "誰說要花大把鈔票才能吃的到和牛，『吃肉肉嚴選』用夜市的價格就能享受到極致奢華，和牛的特色在於肉質軟嫩、口感多汁且滋味細膩醇厚，而此滋味的關鍵是肥瘦相間的肉質，有看過和牛肉品的人就知道，每一塊和牛上，白色脂肪總是如雪花般佈滿在紅色精肉中，入口後肥而不膩的脂肪就會在舌頭上化開。和牛脂肪熔點極低，建議料理熟度3-5分熟，軟嫩口感與豐甜肉質，今晚我們一起成為饕客吧。",
+            "offers": {
+              "@type": "Offer",
+              "price": "970.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "狗狗肉（無調味毛孩專用）",
+            "description": "不是狗肉，是「給狗狗吃的肉」啦🐶🤣  \n使用牛排修邊肉現烤，無調味、無鹽巴，毛小孩聞到直接失控！  \n主人吃牛排，狗狗也要有儀式感～",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "2號：頂級穀飼肩胛小菲力牛排",
+            "description": "美國Prime頂級肩胛小菲力是由上肩胛肉精修出來的部位，珍稀美物一整頭牛只取7～13盎司重，口感極為軟嫩多汁，料理熟度建議3到5分，任何熟度都有不一樣風味，價格也比菲力親民，是你會一吃再吃呦",
+            "offers": {
+              "@type": "Offer",
+              "price": "500.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "4號：頂級穀飼牛小排",
+            "description": "牛小排是台灣人買牛排時最常選擇的牛排，肉質滑嫩帶筋，建議料理熟度是7分到全熟，牛小排尤其是烤過之後，肉筋會變的非常酥脆香氣十足，是其他部位難有的口感，多汁又酥脆風味絕佳，下次絕對要買份牛小排來試試。",
+            "offers": {
+              "@type": "Offer",
+              "price": "640.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "5號：日本宮崎A5和牛翼板牛排",
+            "description": "誰說要花大把鈔票才能吃的到和牛，『吃肉肉嚴選』用夜市的價格就能享受到極致奢華，和牛的特色在於肉質軟嫩、口感多汁且滋味細膩醇厚，而此滋味的關鍵是肥瘦相間的肉質，有看過和牛肉品的人就知道，每一塊和牛上，白色脂肪總是如雪花般佈滿在紅色精肉中，入口後肥而不膩的脂肪就會在舌頭上化開。和牛脂肪熔點極低，建議料理熟度3-5分熟，軟嫩口感與豐甜肉質，今晚我們一起成為饕客吧。",
+            "offers": {
+              "@type": "Offer",
+              "price": "970.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "3號：頂級穀飼翼板牛排",
+            "description": "翼板牛排是在取自牛的肩胛部位，油脂含量在肩胛部裡面算是比較均勻、軟嫩，口感類似牛小排，但沒有牛小排這麼油，料理熟度為5分不要超過7分最適合，如果想有點油又不太油的牛排翼板是最佳選擇，保證一吃就成老主顧。",
+            "offers": {
+              "@type": "Offer",
+              "price": "540.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "1號：頂級穀飼嫩肩牛排",
+            "description": "嫩肩牛排是牛的肩部又叫「平鐵牛排」，是一塊CP值最高的牛排，中間那條筋就是明顯特徵，因為口感扎實中帶點軟嫩所以叫「嫩肩牛排」，料理熟度為5分不要超過7分最適合，想要大口吃肉又不想瘦了荷包，選這塊就對了。",
+            "offers": {
+              "@type": "Offer",
+              "price": "377.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "狗狗肉（無調味毛孩專用）",
+            "description": "不是狗肉，是「給狗狗吃的肉」啦🐶🤣  \n使用牛排修邊肉現烤，無調味、無鹽巴，毛小孩聞到直接失控！  \n主人吃牛排，狗狗也要有儀式感～",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "全品項皆附「鮮切蒜片」及「玫瑰鹽」，若要取消請提前告知。",
+            "description": "本品項隨餐提供三款佐味：鮮切蒜片與玫瑰鹽；蒜片辛香脆口、玫瑰鹽提鮮，搭配牛排更顯層次。若不需，請於點餐時告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "牛排類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "全部來一點",
+            "description": "你還不知道要選哪塊牛排好嗎？那就全部來一點囉！五種牛排一次滿足，14oz讓你大口吃肉消滅你選擇障礙的煩惱",
+            "offers": {
+              "@type": "Offer",
+              "price": "1010.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "全品項皆附「鮮切蒜片」及「玫瑰鹽」，若要取消請提前告知。",
+            "description": "本品項隨餐提供三款佐味：鮮切蒜片與玫瑰鹽；蒜片辛香脆口、玫瑰鹽提鮮，搭配牛排更顯層次。若不需，請於點餐時告知。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐加點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香香飯套餐",
+            "description": "內容物含：香香飯+秘製醬汁+溫泉蛋+日本香鬆+飲料二選一（可樂、零卡可樂）",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

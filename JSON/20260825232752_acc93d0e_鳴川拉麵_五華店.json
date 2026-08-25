@@ -1,0 +1,904 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%B3%B4%E5%B7%9D%E6%8B%89%E9%BA%B5-%E4%BA%94%E8%8F%AF%E5%BA%97/yictljeZTISVH5eZ3bOhFQ",
+  "name": "鳴川拉麵 五華店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Wuhua Street 137",
+    "addressLocality": "Sanchong District",
+    "addressRegion": "New Taipei City",
+    "postalCode": "241",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.084578,
+    "longitude": 121.490967
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 1500
+  },
+  "servesCuisine": [
+    "Japanese",
+    "Ramen",
+    "Taiwanese",
+    "BOGO",
+    "Rice Dishes",
+    "Bowls",
+    "Noodles"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "男湯豚骨博多拉麵",
+            "description": "含濃郁豚湯湯底。豬肉來源為台灣。\n本店招牌最多人點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "《活動優惠》味噌叉燒拉麵",
+            "description": "❖Miso Chashu Ramen\n❖濃郁醇厚的味噌湯底，搭配Q彈勁道的麵條，炙烤叉燒與豐富配料，帶來暖心又滿足的經典風味！\n❖豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "359.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火山熔岩豚骨叉燒拉麵",
+            "description": "豬肉來源為台灣。兩片叉燒半顆溫泉蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香豚骨叉燒拉麵",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥冷麵",
+            "description": "含 99% 蕎麥製成麵條及道地日式醬汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油玉米拉麵",
+            "description": "叉燒肉一片",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豚骨手打烏龍麵",
+            "description": "濃醇豚骨湯頭配手打烏龍麵，口感Q彈；佐兩片叉燒、半顆溫泉蛋、玉米、筍乾、海苔、青蔥與海帶芽，暖胃又滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風醬油叉燒拉麵",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "讚歧烏龍冷麵",
+            "description": "含讚歧烏龍及柴魚高湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火山蒜香叉燒拉麵",
+            "description": "店長推~重口味",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐揚炸雞咖哩飯",
+            "description": "唐揚雞塊配濃郁日式咖哩與白飯，附半顆溏心蛋、花椰菜與玉米筍，灑黑芝麻點綴，份量滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味增叉燒拉麵",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排咖哩飯",
+            "description": "濃郁日式咖哩醬搭配香Q白飯，配上酥脆豬排，附青花椰、玉米筍與半顆溏心蛋，份量十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排丼飯",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切炸豬排",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味噌叉燒拉麵",
+            "description": "濃郁辣味噌湯頭，Q彈拉麵鋪上兩片叉燒、半顆溏心蛋，配玉米、海帶芽、筍乾與蔥花，點綴辣油與辣醬，香辣順口。豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉丼飯",
+            "description": "香嫩牛肉片與洋蔥滑蛋鋪滿白飯，配玉米、青花椰與紅蘿蔔，暖心飽足的日式丼飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞軟骨",
+            "description": "只有好吃必點",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐揚炸雞",
+            "description": "日式唐揚雞塊，外酥內嫩、肉汁飽滿，香氣四溢，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "118.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "《活動優惠》辣味噌叉燒拉麵",
+            "description": "❖Spicy Miso Chashu Ramen\n❖濃郁辣味噌湯頭配Q彈麵條，鋪滿厚切炙烤叉燒，每一口都是溫暖香辣的極致享受！\n❖豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "409.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "《活動優惠》味噌叉燒拉麵",
+            "description": "❖Miso Chashu Ramen\n❖濃郁醇厚的味噌湯底，搭配Q彈勁道的麵條，炙烤叉燒與豐富配料，帶來暖心又滿足的經典風味！\n❖豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "359.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Uber Eats X 北海道炙燒拉麵 (百元折扣套餐)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Uber Eats X 男子漢雙人套餐",
+            "description": "含豚骨博多拉麵 (雙倍叉燒), 炸豬排丼飯, 炸干貝酥 3 個及炸蝦 3 個及味噌湯、秋葵一份。可免費加飯加麵 1 次, 請新增於備註欄。豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "580.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "日式拉麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "加麵(拉麵)",
+            "description": "Q彈拉麵麵條加量一份，讓湯麵更飽足；此項為加麵，不含湯與配料。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火山蒜香叉燒拉麵",
+            "description": "店長推~重口味",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味增叉燒拉麵",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香豚骨叉燒拉麵",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風醬油叉燒拉麵",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶油玉米拉麵",
+            "description": "叉燒肉一片",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜拉麵",
+            "description": "叉燒肉一片",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "男湯豚骨博多拉麵",
+            "description": "含濃郁豚湯湯底。豬肉來源為台灣。\n本店招牌最多人點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火山熔岩豚骨叉燒拉麵",
+            "description": "豬肉來源為台灣。兩片叉燒半顆溫泉蛋",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣味噌叉燒拉麵",
+            "description": "濃郁辣味噌湯頭，Q彈拉麵鋪上兩片叉燒、半顆溏心蛋，配玉米、海帶芽、筍乾與蔥花，點綴辣油與辣醬，香辣順口。豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "《活動優惠》味噌叉燒拉麵",
+            "description": "❖Miso Chashu Ramen\n❖濃郁醇厚的味噌湯底，搭配Q彈勁道的麵條，炙烤叉燒與豐富配料，帶來暖心又滿足的經典風味！\n❖豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "359.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "《活動優惠》辣味噌叉燒拉麵",
+            "description": "❖Spicy Miso Chashu Ramen\n❖濃郁辣味噌湯頭配Q彈麵條，鋪滿厚切炙烤叉燒，每一口都是溫暖香辣的極致享受！\n❖豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "409.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手打烏龍麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "火山赤豚手打烏龍麵",
+            "description": "手打烏龍麵浸於紅潤豚湯，配叉燒、半顆溏心蛋、玉米、海帶芽與菇類，麵條Q彈、湯頭香濃，色澤熱烈如火山。",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豚骨手打烏龍麵",
+            "description": "濃醇豚骨湯頭配手打烏龍麵，口感Q彈；佐兩片叉燒、半顆溫泉蛋、玉米、筍乾、海苔、青蔥與海帶芽，暖胃又滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "245.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "加麵(手打麵)",
+            "description": "加點一份手打烏龍麵，麵量升級，吃得更滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜香豚骨手打烏龍麵",
+            "description": "濃郁蒜香豚骨湯頭，搭配Q彈手打烏龍麵，配上叉燒、半熟蛋、玉米、青蔥、海帶、筍乾與海苔，口感層次豐富、暖胃滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "255.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "日式冷麵及乾拌麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "讚歧烏龍冷麵",
+            "description": "含讚歧烏龍及柴魚高湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌乾拌麵",
+            "description": "含紅味噌及白味噌。",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蕎麥冷麵",
+            "description": "含 99% 蕎麥製成麵條及道地日式醬汁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "日式丼飯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排丼飯",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海陸雙響丼飯",
+            "description": "大推~~",
+            "offers": {
+              "@type": "Offer",
+              "price": "270.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉丼飯",
+            "description": "含雞肉片及洋蔥滑蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸蝦丼飯",
+            "description": "酥脆炸蝦鋪在白飯上，搭配玉米、花椰菜與時蔬點綴，口感豐富、份量滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉丼飯",
+            "description": "香嫩牛肉片與洋蔥滑蛋鋪滿白飯，配玉米、青花椰與紅蘿蔔，暖心飽足的日式丼飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "205.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐揚炸雞丼飯",
+            "description": "唐揚炸雞鋪在白飯上，外酥內嫩；配有玉米、紅蘿蔔、花椰菜等配菜，份量實在，一碗滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸牡蠣丼飯",
+            "description": "日式風味酥炸牡蠣鋪在香Q白飯上，搭配玉米、綠花椰與小番茄，口感豐富的一碗丼飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "225.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豪華海陸丼飯",
+            "description": "牛肉+竹筴魚+炸蝦3隻",
+            "offers": {
+              "@type": "Offer",
+              "price": "310.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸竹夾魚丼飯",
+            "description": "金黃酥炸魚排鋪在熱白飯上，搭配玉米、胡蘿蔔與花椰菜等配菜，外脆內嫩，飽足又順口的日式丼飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炙烤鯖魚丼",
+            "description": "含炙烤挪威深海鯖魚及丼飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "280.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "咖哩系列",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬排咖哩飯",
+            "description": "濃郁日式咖哩醬搭配香Q白飯，配上酥脆豬排，附青花椰、玉米筍與半顆溏心蛋，份量十足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芙蓉炸蝦咖哩飯",
+            "description": "金黃酥脆炸蝦三尾，配香濃咖哩與白飯，附花椰菜、玉米筍與半顆溏心蛋，口感豐富更涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "235.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐揚炸雞咖哩飯",
+            "description": "唐揚雞塊配濃郁日式咖哩與白飯，附半顆溏心蛋、花椰菜與玉米筍，灑黑芝麻點綴，份量滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精選炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "金錢蝦餅",
+            "description": "真材實料👍",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式炸豆腐",
+            "description": "外酥內嫩的豆腐方塊，炸至金黃，淋上日式醬汁，口感層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "干貝酥",
+            "description": "干貝裹粉炸至金黃，外酥內嫩，海味香濃，一口滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "廣島炸牡犡",
+            "description": "廣島風味炸牡蠣，金黃酥脆、外酥內嫩，咬下鮮香多汁，海味滿點。",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金脆薯",
+            "description": "金黃酥脆薯條，外脆內鬆、口口酥香，經典解饞小點！",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸竹夾魚(2隻)",
+            "description": "金黃酥脆的竹夾魚2隻，外脆內嫩，魚香飽滿，一口接一口的經典炸物。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸雞軟骨",
+            "description": "只有好吃必點",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸蝦 2隻Deep-Fried Shrimp",
+            "description": "金黃酥脆的炸蝦，外酥內彈，份量2隻。",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸豬排",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芙蓉炸蝦",
+            "description": "金黃酥脆的芙蓉炸蝦，薄脆麵衣包裹整尾蝦，外酥內嫩、蝦肉Q彈，口感清爽不膩！",
+            "offers": {
+              "@type": "Offer",
+              "price": "98.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "南瓜可樂餅",
+            "description": "外皮金黃酥脆，內餡綿密細滑，南瓜香氣滿溢！",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "唐揚炸雞",
+            "description": "日式唐揚雞塊，外酥內嫩、肉汁飽滿，香氣四溢，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "118.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "厚切炸豬排",
+            "description": "豬肉來源為台灣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "日式烤雞翅2隻",
+            "description": "五香醃製，酥脆香的雞翅，買一送一專屬",
+            "offers": {
+              "@type": "Offer",
+              "price": "128.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤雞翅(4隻)",
+            "description": "炙烤雞翅4隻，外皮焦香、肉質嫩口，份量適中，鹹香耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "烤雞翅(三隻)",
+            "description": "三隻香烤雞翅，外皮金黃，鹹香涮嘴，適合分享！",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "精選炙烤",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鹽烤鯖魚",
+            "description": "鹽烤至表皮金黃酥香、魚肉細嫩，簡單鹽味帶出鯖魚油脂香；擠上檸檬更清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炎烤魷魚",
+            "description": "炙燒魷魚切片，表面帶微焦香，口感Q彈有嚼勁，醬香濃郁、海味滿滿，越吃越涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "各式小菜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "花椰菜",
+            "description": "花椰菜小朵，撒上香脆碎屑，清爽可口的開胃小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "溫泉蛋",
+            "description": "蛋白嫩滑、蛋黃溏心，口感柔潤迷人！",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "鬆軟香Q的白米飯，一碗剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙倍叉燒",
+            "description": "雙倍份量的豬肉叉燒，兩大片，油香滿溢、軟嫩好入口",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓式泡菜",
+            "description": "經典韓式發酵白菜，酸香脆口，清爽開胃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "毛豆",
+            "description": "帶莢毛豆，清爽開胃的小菜，等餐解嘴饞！",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風秋葵",
+            "description": "秋葵搭配日式和風醬汁，口感清爽，簡單好吃的開胃小菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

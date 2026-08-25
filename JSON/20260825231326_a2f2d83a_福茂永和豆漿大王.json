@@ -1,0 +1,742 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%A6%8F%E8%8C%82%E6%B0%B8%E5%92%8C%E8%B1%86%E6%BC%BF%E5%A4%A7%E7%8E%8B/pnf7zK3lVQidXjrAQoLAKw",
+  "name": "福茂永和豆漿大王",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁愛街518號 New Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0821897,
+    "longitude": 121.4870542
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 150
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Asian",
+    "Breakfast and Brunch"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "麵類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黑胡椒鐵板麵（含蛋跟豬排）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘑菇鐵板麵（含蛋跟豬排）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "義大利肉醬鐵板麵（含蛋跟豬排）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "宮保雞丁鐵板麵（含蛋跟豬排）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲料類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆漿",
+            "description": "黃豆香氣醇厚，口感滑順的經典豆漿",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米漿",
+            "description": "台式傳統米飲，米香濃郁、口感滑順",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶茶",
+            "description": "經典奶茶，茶香與奶香相融，口感順滑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹豆漿",
+            "description": "濃香豆漿加入油條與蔥花，口感滑順、鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "63.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹹豆漿加蛋",
+            "description": "豆漿加入蛋，配油條塊與蔥花，口感滑順、鹹香",
+            "offers": {
+              "@type": "Offer",
+              "price": "86.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜豆漿加蛋",
+            "description": "甜豆漿加入一顆雞蛋，口感更滑順，豆香甜潤",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "紅茶",
+            "description": "經典紅茶，茶香清爽、順口解膩。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯糰類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "飯糰",
+            "description": "台式飯糰，Q彈糯米裹入肉鬆內餡，鹹香順口、口感紮實。",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素飯糰",
+            "description": "白糯米緊實包裹素食餡，切開可見豐富層次，吃來有咬勁與飽足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "56.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海苔飯糰",
+            "description": "糯米飯糰，外層海苔包覆，內含肉鬆，簡單順口、飽足實在。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飯糰加荷包蛋",
+            "description": "糯米飯糰包入一顆荷包蛋，口感柔軟、飽足耐餓",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "飯糰加蔥蛋",
+            "description": "米飯糰包入蔥蛋與肉鬆，層次豐富、鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿飯糰加蛋",
+            "description": "Q彈糯米包裹火腿與蛋皮，配上鬆香肉鬆，層次分明、口感飽滿的一手飯糰。",
+            "offers": {
+              "@type": "Offer",
+              "price": "102.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排飯糰加蛋",
+            "description": "糯米飯糰包入豬排與蛋，口感紮實，飽足感十足",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海苔飯糰加蛋",
+            "description": "白飯捏製的飯糰，外層海苔包覆，內加蛋。",
+            "offers": {
+              "@type": "Offer",
+              "price": "102.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "燒餅油條類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "燒餅",
+            "description": "金黃芝麻燒餅，外酥內軟、層次分明，芝麻香濃",
+            "offers": {
+              "@type": "Offer",
+              "price": "26.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "油條",
+            "description": "金黃酥脆、外酥內鬆，空心層次分明的傳統油條，口感輕巧香酥。",
+            "offers": {
+              "@type": "Offer",
+              "price": "26.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅油條",
+            "description": "芝麻燒餅夾入金黃油條，外層香酥、內裡鬆軟，口感對比明顯的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "52.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅夾荷包蛋",
+            "description": "芝麻燒餅夾入荷包蛋，酥香與蛋香一口滿足，經典台式組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅夾蔥蛋",
+            "description": "酥脆多層的燒餅，夾入香嫩蔥蛋，外酥內軟，鹹香耐吃",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燒餅夾豬排蛋",
+            "description": "酥香燒餅夾入豬排與蛋，外脆內軟，鹹香飽足的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "92.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮肉湯包",
+            "description": "8 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工甜酥餅",
+            "description": "手工製作的甜酥餅，外層金黃酥脆、內裡鬆香，甜度適中；表面點綴芝麻，更添香氣。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荷包蛋",
+            "description": "荷包蛋，蛋黃完整、口感順口，簡單經典的單點選擇",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥花蛋",
+            "description": "雞蛋打勻拌入蔥花，薄煎至金黃，蛋香中帶蔥香，簡單鹹香的家常一品。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜煎餃",
+            "description": "5 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜煎餃",
+            "description": "5 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜盒",
+            "description": "金黃餅皮，包入韭菜、雞蛋與冬粉，餡料飽滿，外層微酥、口感清爽。",
+            "offers": {
+              "@type": "Offer",
+              "price": "64.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "港式蘿蔔糕",
+            "description": "切塊港式蘿蔔糕，金黃微焦，外酥內嫩，清香好入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔥抓餅",
+            "description": "層層酥香的蔥抓餅，餅皮蓬鬆帶Q，蔥香四溢。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜盒加蛋",
+            "description": "韭菜餡飽滿，外皮酥香，加蛋更有層次與飽足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "97.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大熱狗",
+            "description": "加大尺寸熱狗，單點份量更實在。",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排",
+            "description": "豬排，鹹香順口、口感紮實，單點供應",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根",
+            "description": "豬肉培根片，鹹香順口，單點供應",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蛋餅類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味蛋餅",
+            "description": "經典原味蛋餅，餅皮柔軟帶彈性，包入滑嫩雞蛋，口感清爽、蛋香滿滿，適合喜歡樸實風味的你。",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米蛋餅",
+            "description": "薄餅夾入玉米與滑蛋，香軟順口，甜香玉米粒增添層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿蛋餅",
+            "description": "餅皮包裹煎蛋與火腿，捲切成片，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆蛋餅",
+            "description": "蛋餅包入肉鬆，蛋香與鬆綿口感交織，鹹香順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起士蛋餅",
+            "description": "起司與蛋香交融的蛋餅，餅皮包捲切段，口感柔軟、鹹香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚蛋餅",
+            "description": "飽滿鮪魚餡與蛋香餅皮相襯，口感柔嫩帶Q，鹹香不膩，切段方便享用。",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排蛋餅",
+            "description": "蛋餅捲入豬排與蛋，餅皮帶勁，肉香與蛋香一次到位。",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根蛋餅",
+            "description": "薄Q餅皮包捲煎蛋與培根，點綴蔥花，鹹香滿口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餅夾油條",
+            "description": "台式早餐經典，蛋香餅皮捲入油條，柔軟與酥脆一次滿足，咀嚼豐富有層次。",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "熱狗蛋餅（大熱狗）",
+            "description": "台式蛋餅皮裹入大熱狗與蛋香，切段易入口，軟Q帶勁。",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "河粉類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "河粉煎",
+            "description": "薄河粉煎成捲，包入雞蛋與蔥花，外層Q彈、內裡滑香，簡單順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米河粉煎",
+            "description": "河粉片捲入玉米與蛋，香煎後切段，口感滑Q，玉米粒增添層次",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "火腿河粉煎",
+            "description": "Q彈河粉搭配火腿香煎，軟滑中帶Q，鹹香涮嘴",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉鬆河粉煎",
+            "description": "河粉煎香包入肉鬆，外層微酥、內層軟Q，米香與鬆香相互融合，簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起士河粉煎",
+            "description": "Q彈河粉加入起司煎至微金黃，外軟內牽絲，香濃滑順的口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮪魚河粉煎",
+            "description": "河粉煎香包入鮪魚餡，口感柔滑、鹹香涮嘴，切段方便食用",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬排河粉煎",
+            "description": "薄河粉煎成捲，包入切片豬排與蛋，點綴蔥花，切段上桌。",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根河粉煎",
+            "description": "河粉煎成薄片，包入培根與蛋，切段上桌，口感軟Q、鹹香滿足",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "饅頭包子類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豆沙包",
+            "description": "外皮鬆軟的蒸包，內餡為細緻紅豆沙。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬來糕",
+            "description": "蒸製鬆軟的傳統馬來糕，口感綿密，帶淡淡蛋香，適合當早餐或點心",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶皇包",
+            "description": "外皮鬆軟的蒸包，內餡為香濃奶皇餡，口感綿滑、甜香順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋泥包",
+            "description": "外皮鬆軟的蒸包，包入綿密芋泥，芋香淡雅、口感順口",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "各式饅頭",
+            "description": "多款中式蒸饅頭，口味多樣，簡單耐吃、飽足實在",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "饅頭加荷包蛋",
+            "description": "饅頭配荷包蛋，蛋香與麵香的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "饅頭加蔥蛋",
+            "description": "饅頭夾蔥香蛋，簡單飽足的經典組合",
+            "offers": {
+              "@type": "Offer",
+              "price": "58.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮肉包",
+            "description": "外皮鬆軟，包入豬肉餡，鹹香順口的經典台式包子",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "素菜包",
+            "description": "蒸製素菜包，鬆軟麵皮包裹蔬菜餡，簡單耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "33.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "叉燒包",
+            "description": "鬆軟包子皮包入叉燒豬肉餡，醬香鹹香，經典港式點心",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

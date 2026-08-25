@@ -1,0 +1,134 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%81%A5%E6%9D%91%E6%B0%B4%E9%A4%83-%E9%8C%A6%E5%B7%9E%E5%BA%97/Jf2ICmvIVfuuUwNpZEbNbA",
+  "name": "健村水餃 錦州店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區錦州街32號2樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.06015,
+    "longitude": 121.52496
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 3.6,
+    "reviewCount": 10
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "剝皮辣椒豬肉冷凍水餃 Berkshire Pork with Peeled Chili Pepper Dumplings (Frozen-Pack, 24 Dumplings Per Pack)",
+            "description": "26 克 1 顆。24 顆 1 盒。全台唯一獲獎 ITQI 國際風味評鑑獎章的餃子在建村。使用家傳秘方釀造技術, 無法仿造的手工限量剝皮辣椒, 辛辣甜香適口性極佳。嗜辛者越吃越過癮, 越吃越開胃。一口咬下去餡汁流淌, 鮮甜豬肉香氣在舌尖蔓延。",
+            "offers": {
+              "@type": "Offer",
+              "price": "316.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆冷凍水餃 Berkshire Pork with Green Beans Dumplings (Frozen-Pack, 24 Dumplings Per Pack)",
+            "description": "26 克 1 顆。24 顆 1 盒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "288.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋白菜干貝豬肉冷凍水餃 Berkshire Pork with Cabbage and Scallops Dumplings (Frozen-Pack, 24 Dumplings Per Pack)",
+            "description": "26 克 1 顆。24 顆 1 盒。嚴選梨山高麗菜, 低溫保存鎖住甜脆, 搭配生食級干貝, 肉質飽滿彈牙, 絲絲鮮甜海味相襯出家傳調料。黃金配比黑豚肉內餡的極高層次。老手藝遇上新風味, 碰出舌尖浪漫, 彷彿是八珍玉食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "330.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米豬肉冷凍水餃 Berkshire Pork with Corn Dumplings (Frozen-Pack, 24 Dumplings Per Pack)",
+            "description": "26 克 1 顆。24 顆 1 盒。非基改黃金玉米, 香甜軟糯, 粒粒飽滿, 清爽香甜越吃越開胃。小孩最愛的銷冠。指定每日凌晨鮮送溫體豬, 特別選用台灣在地飼養黑毛豬後腿肉, 獨家秘方配比, 打造香糯且值滿分的餃子。",
+            "offers": {
+              "@type": "Offer",
+              "price": "252.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜豬肉冷凍水餃 Berkshire Pork with Garlic Chives Dumplings (Frozen-Pack, 24 Dumplings Per Pack)",
+            "description": "26 克 1 顆。24 顆 1 盒。特選產地限定有機韭菜, 富含充分營養價值。一口咬下去獨家配方立刻爆汁, 古法萃取芝麻油配上黑豚肉香甜氣直衝腦門, 讓你越吃越想吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "252.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菜冷凍水餃 Berkshire Pork with Coriander Dumplings (Frozen-Pack, 24 Dumplings Per Pack)",
+            "description": "26 克 1 顆。24 顆 1 盒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "288.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜豬肉冷凍水餃 Berkshire Pork with Cabbage Dumplings (Frozen-Pack, 24 Dumplings Per Pack)",
+            "description": "26 克 1 顆。24 顆 1 盒。特選在地有機甜, 脆, 鮮甜比例高麗菜, 搭配每日凌晨鮮送溫體豬, 堅持選用台灣黑毛豬後腿肉, 黃金完美肥瘦比例。皮包餡多, 多汁美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "252.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冷凍健村水餃 Signature Dumpling (Frozen-Pack)",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "拌辣辣黑豚冷凍水餃 Berkshire Pork with Dried Radish Chili Dumplings (Frozen-Pack, 24 Dumplings Per Pack)",
+            "description": "26 克 1 顆。24 顆 1 盒。2023 年度新品熱銷敲碗聯名善品脆口辣的味夠味, 超涮嘴。嚴選珍珠菜脯, 採用特選在地農產雲林蒜頭, 屏東朝天椒, 搭配建村嚴選每日凌晨鮮送問題黑毛豬後腿肉。黃金肥瘦比例, 皮薄餡多, 口感扎實有尾韻。顆顆飽滿, 色香俱全, 越吃越開胃的經典聯名。",
+            "offers": {
+              "@type": "Offer",
+              "price": "276.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁芹菜豬肉冷凍水餃 Berkshire Pork with Celery and Shrimp Dumplings (Frozen-Pack, 24 Dumplings Per Pack)",
+            "description": "26 克 1 顆。24 顆 1 盒。扎實蝦仁選用在乾淨水域放養的草蝦, 劍蝦, 鮮甜好比現撈, 一口一隻大蝦仁, 搭配有機芹菜提升營養價值, 家傳黃金比例肉餡比, 鮮香甘甜, 多吃不膩, 口感昇華, 味蕾經驗, 一次愛上。",
+            "offers": {
+              "@type": "Offer",
+              "price": "316.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

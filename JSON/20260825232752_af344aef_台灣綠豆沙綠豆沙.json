@@ -1,0 +1,356 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%8F%B0%E7%81%A3%E7%B6%A0%E8%B1%86%E6%B2%99%E7%B6%A0%E8%B1%86%E6%B2%99/EFhmLpbwWhe4APmlb-tTZQ",
+  "name": "台灣綠豆沙綠豆沙",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區基河路117號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.08828,
+    "longitude": 121.52388
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 5
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Juice and Smoothies",
+    "Drinks",
+    "Bubble Tea",
+    "Ice Cream"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "原味蔥油餅 Original Flavor Scallion Pancake",
+            "description": "原味就是不加任何調味粉唷 !可以吃出餅的香氣及外酥內Q的迷人口感！口味清淡者選它！",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胡椒蔥油餅 Pepper Scallion Pancake",
+            "description": "口感酥脆，蔥香四溢，搭配胡椒鹽調味，招牌口味必選！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅子蔥油餅 Plum Scallion Pancake",
+            "description": "口感酥脆，搭配了梅子的鹹酸甜與蔥的清香，味道獨特，人氣口味第一名！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生牛奶冰沙 Peanut Milk Smoothie",
+            "description": "香濃花生搭配牛奶，打成綿密冰沙，花生香氣飽滿，奶香順口，清涼消暑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芥末椒鹽蔥油餅 Wasabi Pepper and Salt Scallion Pancake",
+            "description": "口感酥脆，融合了芥末椒鹽的鹹香與蔥的清香，搭配健康食材和低脂油，味道獨特，清新美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蔥油餅 Cheese Scallion Pancake",
+            "description": "特調起司粉 奶香味十足 小孩最愛！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生冰沙 Peanut Smoothie",
+            "description": "香濃花生香氣，綿密冰沙口感，冰涼順口、清爽解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海苔蔥油餅 Seaweed Scallion Pancake",
+            "description": "口感酥脆，搭配了海苔的香氣和蔥的清香，美味又健康，給人一份清新的味覺享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣粉蔥油餅 Spicy Powder Scallion Pancake",
+            "description": "口感酥脆，搭配了辣椒粉的微辣（會另加少許椒鹽提香）與蔥的清香，風味獨特，大人口味必選！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "半張梅子蔥油餅+大杯芒果冰沙 Half Plum Scallion Pancake with Large Mango Smoothie",
+            "description": "大杯芒果冰沙，綿細冰感、芒果香氣滿滿；半張梅子蔥油餅，口感酥脆，梅子的鹹酸甜與蔥香交織，清爽解膩的超值組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "半張胡椒蔥油餅+小杯綠豆沙",
+            "description": "雙品項一次滿足：半張胡椒配上綠豆沙，口感酥脆、蔥香四溢；胡椒鹹香，份量剛好，優惠首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩蔥油餅 Curry Scallion Pancake",
+            "description": "口感酥脆，融合了咖哩的香料風味與蔥的清香，帶來一種獨特的美味體驗，讓人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "📣本店介紹📣 Notice📣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🍴 傳統與創新的結合 🍴低糖健康無負擔",
+            "description": "我們秉持著對傳統台灣小吃的尊重與熱愛，同時不斷尋求創新，不斷嘗試新的口味和配料。從最經典的原味蔥油餅到獨特的創意口味，我們的蔥油餅滿足了不同顧客的口味需求，讓每一位顧客都能找到自己喜愛的味道。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🌿 新鮮蔬果，健康衛生🌿",
+            "description": "我們堅持選用新鮮、優質的食材，並採用健康方式，讓您在品嚐美味的同時也能享受到健康。每一塊蔥油餅都是經過嚴格挑選和精心製作，保證讓您飲得安心、喝得開心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冰涼解暑冰沙系列 Cool and Refreshing Smoothie Series",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "芒果冰沙 Mango Smoothie",
+            "description": "口感綿密，芒果香氣滿溢的冰沙，冰涼解渴、消暑首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生冰沙 Peanut Smoothie",
+            "description": "香濃花生香氣，綿密冰沙口感，冰涼順口、清爽解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "66.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綠豆沙牛奶 Mung Bean Smoothie with Milk",
+            "description": "綠豆與牛奶打成細緻冰沙，口感綿密、冰涼順口，豆香與奶香交融。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芒果牛奶冰沙 Mango Milk Smoothie",
+            "description": "芒果與牛奶的綿密冰沙，果香與奶香交融，口感滑順、冰涼解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花生牛奶冰沙 Peanut Milk Smoothie",
+            "description": "香濃花生搭配牛奶，打成綿密冰沙，花生香氣飽滿，奶香順口，清涼消暑。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "何佳佳蔥油餅 Scallion Pancake",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "胡椒蔥油餅 Pepper Scallion Pancake",
+            "description": "口感酥脆，蔥香四溢，搭配胡椒鹽調味，招牌口味必選！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芥末椒鹽蔥油餅 Wasabi Pepper and Salt Scallion Pancake",
+            "description": "口感酥脆，融合了芥末椒鹽的鹹香與蔥的清香，搭配健康食材和低脂油，味道獨特，清新美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海苔蔥油餅 Seaweed Scallion Pancake",
+            "description": "口感酥脆，搭配了海苔的香氣和蔥的清香，美味又健康，給人一份清新的味覺享受。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辣粉蔥油餅 Spicy Powder Scallion Pancake",
+            "description": "口感酥脆，搭配了辣椒粉的微辣（會另加少許椒鹽提香）與蔥的清香，風味獨特，大人口味必選！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "起司蔥油餅 Cheese Scallion Pancake",
+            "description": "特調起司粉 奶香味十足 小孩最愛！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味蔥油餅 Original Flavor Scallion Pancake",
+            "description": "原味就是不加任何調味粉唷 !可以吃出餅的香氣及外酥內Q的迷人口感！口味清淡者選它！",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "咖哩蔥油餅 Curry Scallion Pancake",
+            "description": "口感酥脆，融合了咖哩的香料風味與蔥的清香，帶來一種獨特的美味體驗，讓人回味無窮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梅子蔥油餅 Plum Scallion Pancake",
+            "description": "口感酥脆，搭配了梅子的鹹酸甜與蔥的清香，味道獨特，人氣口味第一名！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "活動優惠專區 Special Offer Zone",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "半張胡椒蔥油餅+小杯綠豆沙",
+            "description": "雙品項一次滿足：半張胡椒配上綠豆沙，口感酥脆、蔥香四溢；胡椒鹹香，份量剛好，優惠首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "半張梅子蔥油餅+大杯芒果冰沙 Half Plum Scallion Pancake with Large Mango Smoothie",
+            "description": "大杯芒果冰沙，綿細冰感、芒果香氣滿滿；半張梅子蔥油餅，口感酥脆，梅子的鹹酸甜與蔥香交織，清爽解膩的超值組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "155.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

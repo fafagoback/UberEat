@@ -1,0 +1,191 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/baires-%E9%98%BF%E6%A0%B9%E5%BB%B7%E6%89%8B%E5%B7%A5%E5%86%B0%E6%B7%87%E6%B7%8B/9SYQ4mHfT4u-BHDCMhKqEg",
+  "name": "Baires 阿根廷手工冰淇淋",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區中山北路6段460號",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1145722,
+    "longitude": 121.5276067
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.9,
+    "reviewCount": 140
+  },
+  "servesCuisine": [
+    "Desserts",
+    "Ice Cream and Frozen Yogurt"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋２桶 Two pints",
+            "description": "品脫裝手工冰淇淋兩桶，外帶分享剛剛好",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水果冰沙 Fruit Smoothie",
+            "description": "綿密冰涼的水果冰沙，果香十足、口感滑順，清爽解渴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋３桶  Three Pints",
+            "description": "三桶品脫裝冰淇淋組合，適合家庭或聚會分享",
+            "offers": {
+              "@type": "Offer",
+              "price": "1000.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "手工冰淇淋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋２桶 Two pints",
+            "description": "品脫裝手工冰淇淋兩桶，外帶分享剛剛好",
+            "offers": {
+              "@type": "Offer",
+              "price": "700.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋３桶  Three Pints",
+            "description": "三桶品脫裝冰淇淋組合，適合家庭或聚會分享",
+            "offers": {
+              "@type": "Offer",
+              "price": "1000.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋１桶  One Pint",
+            "description": "一品脫手工冰淇淋，約473毫升，適合分享或在家慢慢享用",
+            "offers": {
+              "@type": "Offer",
+              "price": "400.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五杯單球冰淇淋 Five single scoop of ice cream",
+            "description": "共五杯，一杯一球的冰淇淋組合，方便分享或分次享用",
+            "offers": {
+              "@type": "Offer",
+              "price": "750.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "奶昔 Milkshake",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "花生巧克力奶昔 Peanut Butter Chocolate Milkshake.",
+            "description": "花生醬與巧克力交融，口感濃郁綿滑的奶昔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薄荷巧克力奶昔 Mint Oreo Milkshake.",
+            "description": "清爽薄荷與巧克力風味奶昔，拌入Oreo餅乾碎，冰涼順口，增添顆粒口感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬茲卡彭起司佐野莓奶昔 Mascarpone Cheese W/ Berries Milkshake.",
+            "description": "馬茲卡彭起司與野莓調製的奶昔，口感綿密滑順，奶香與果香相融。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "巧克力餅乾奶昔 Cookies & Cream Milkshake.",
+            "description": "綿密奶昔拌入巧克力餅乾碎，口感滑順帶顆粒",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香蕉巧克力奶昔 Banana Chocolate Milkshake.",
+            "description": "香蕉與巧克力交織的綿密奶昔，風味濃厚、口感順滑",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鹽焦糖奶昔 Salted Caramel Milkshake.",
+            "description": "鹹甜交融的焦糖風味，海鹽提味，奶香濃郁、口感滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大溪地香草奶昔 Tahiti Vanilla Milkshake",
+            "description": "大溪地香草風味奶昔，香氣馥郁，口感綿密滑順。",
+            "offers": {
+              "@type": "Offer",
+              "price": "300.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

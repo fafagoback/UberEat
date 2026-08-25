@@ -1,0 +1,318 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%9B%85%E7%B6%BA%E3%81%AE%E5%BA%97/ZzQXOpSbWQiPHcFL71qQMQ",
+  "name": "雅綺の店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區仁愛街445巷67號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.083556,
+    "longitude": 121.4916419
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 45
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魚酥焿 Squid with Thicken Soup",
+            "description": "湯頭鮮美清甜，辣味微微襯托海鮮鮮香，口感濃郁，回味無窮。🦑🍲🌶️",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔煎 Oyster Omelette",
+            "description": "外脆內嫩，蚵仔鮮美多汁，蛋香濃郁，搭配特製醬汁，微酸微甜，口感豐富層次感十足。🦪🍳🥢",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔乾麵 Dried Noodles with Oyster",
+            "description": "麵條韌性十足，蚵仔鮮嫩多汁，搭配醬汁鹹香，微辣提味，口感清爽又帶有海鮮的鮮香。🦪🍜🌶️",
+            "offers": {
+              "@type": "Offer",
+              "price": "126.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾拌羊肉 Tossed Lamb",
+            "description": "肉質嫩滑，香氣四溢，微辣醬汁提味，搭配香料略帶麻香，口感豐富、回味悠長。🍖🌶️🌿",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大碗肉燥飯 Large Bowl Minced Pork Rice",
+            "description": "肉燥醇厚香濃，飯粒鬆軟吸滿湯汁，鹹香適中，搭配一點蒜香，口感豐富令人滿足。🍚🍖🧄",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "魷魚焿 Squid with Thicken Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魚酥焿麵 Squid with Thicken Soup Noodles",
+            "description": "湯頭濃滑帶厚度，Q彈麵條吸附湯汁，魷魚脆彈、魚酥香酥點綴，海味鮮香、層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚酥焿米粉 Squid with Thicken Soup Rice Noodles",
+            "description": "濃稠滑順的焿湯，拌入鮮嫩魷魚與香酥魚酥，米粉細滑易吸湯，海味鹹香、口感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚酥焿冬粉 Squid with Thicken Soup Bean Thread Noodles",
+            "description": "濃滑焿湯配Q彈冬粉，佐酥脆魚酥，口感一柔一脆、層次分明，鮮香順口、暖胃滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚酥焿飯 Squid with Rice in Thicken Soup",
+            "description": "濃稠滑口的焿湯淋在白飯上，魚酥帶出酥香與層次，飯粒吸滿湯汁，鹹香適中、飽足順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "羊肉焿 Lamb with Thicken Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "羊肉焿 Lamb with Thicken Soup",
+            "description": "濃稠焿湯包裹軟嫩羊肉，口感順滑，暖胃滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉焿麵 Lamb with Thicken Soup Noodles",
+            "description": "麵條Q彈，羊肉軟嫩，羹湯濃稠滑順，口感豐富、暖胃滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "126.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉焿米粉 Lamb with Thicken Soup Rice Noodles",
+            "description": "濃稠焿湯包裹米粉，配上羊肉，入口滑順，暖胃滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "126.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉焿冬粉 Lamb with Thicken Soup Bean Thread Noodles",
+            "description": "勾芡湯頭濃郁滑口，羊肉嫩香，冬粉Q彈吸飽湯汁，鹹香順口、暖胃飽足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "126.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉焿飯 Lamb Starch with Thicken Soup Rice",
+            "description": "濃稠羊肉焿湯淋在白飯上，勾芡滑順、鹹香適中，飯粒吸滿湯汁，暖胃又滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "126.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "蚵仔湯 Oyster Soup",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔湯 Oyster Soup",
+            "description": "口感滑嫩，海味十足，湯頭清爽鮮美，喝起來順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔湯麵 Oyster Soup Noodles",
+            "description": "蚵仔鮮嫩，湯頭清爽帶海味，配上Q彈麵條，滑順好入口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "126.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔湯米粉 Oyster Soup Rice Noodles",
+            "description": "湯頭清鮮帶海味，鹹香適中；蚵仔軟嫩，米粉細滑易吸湯，口感清爽又有飽足感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "126.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔湯冬粉 Oyster Soup Bean Thread Noodles",
+            "description": "湯頭鮮香清爽，蚵仔嫩滑，冬粉滑Q吸湯，口感豐富、回味悠長。",
+            "offers": {
+              "@type": "Offer",
+              "price": "126.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單品 A La Carte",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "羊肉乾麵 Dried Noodles with Lamb",
+            "description": "乾拌麵條配上羊肉片，拌醬提味，佐香菇與青菜；麵條Q彈、羊肉軟嫩，口感層次豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "126.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小碗肉燥飯 Small Bowl Minced Pork Rice",
+            "description": "小碗白飯淋上醇香肉燥，鹹香入味，米飯吸收湯汁、口口濕潤，拌一拌更香，份量剛好解饞。",
+            "offers": {
+              "@type": "Offer",
+              "price": "42.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯 Rice",
+            "description": "飯粒鬆軟溫熱，米香淡雅，簡單純粹的一碗白飯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "24.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁煎 Shrimp Omelette",
+            "description": "香煎蛋香四溢，包裹蝦仁，口感滑嫩，海味鮮美，經典耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "114.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋蛋煎 Omelette",
+            "description": "蛋香濃郁，口感滑嫩，煎出單純好味，經典耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "乾油麵 Dried Oily Noodles",
+            "description": "乾拌油麵，麵條Q彈，油香襯出麵香，滑順耐吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "54.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "本店招牌 Signature",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "乾拌蚵仔 Tossed Oyster",
+            "description": "蚵仔滑嫩多汁，乾拌醬香均勻裹覆，鹹香提味，清爽不膩，凸顯海味層次，招牌人氣之選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%8E%89%E7%9F%A5%E9%AB%98%E8%8F%AF-33%E5%B9%B4%E7%9F%A5%E9%AB%98%E9%A3%AF/OvbPNButTM-CnUsIgM6VSg",
+  "name": "玉知高華 33年知高飯",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新北市三重區溪尾街206號",
+    "addressLocality": "NEW TAIPEI",
+    "addressRegion": "",
+    "postalCode": "241",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0812469,
+    "longitude": 121.4882258
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 6000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Rice Dishes",
+    "Exclusive to Eats"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "知高飯",
+            "description": "知高飯，口感Q彈，配上豐富的配料和醬汁，讓你一口接一口地享受美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小高麗菜",
+            "description": "清爽脆口的小高麗菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯豬腳",
+            "description": "醬汁滷製的豬腳，肉質鮮嫩多汁，口感酥脆，是台灣傳統美食之一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大魯肉飯",
+            "description": "滷肉醬汁淋在白飯上，是一道台灣經典的美食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆鼓吳郭魚",
+            "description": "豆鼓炒香，吳郭魚搭配，口感鮮美。",
+            "offers": {
+              "@type": "Offer",
+              "price": "154.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯大腸",
+            "description": "滷過的豬大腸，切成小塊，加上醬油、糖、五香粉、蔥等調味料燉煮而成。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "知高飯",
+            "description": "知高飯，口感Q彈，配上豐富的配料和醬汁，讓你一口接一口地享受美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大魯肉飯",
+            "description": "滷肉醬汁淋在白飯上，是一道台灣經典的美食。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯豬腳",
+            "description": "醬汁滷製的豬腳，肉質鮮嫩多汁，口感酥脆，是台灣傳統美食之一。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯大腸",
+            "description": "滷過的豬大腸，切成小塊，加上醬油、糖、五香粉、蔥等調味料燉煮而成。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆鼓吳郭魚",
+            "description": "豆鼓炒香，吳郭魚搭配，口感鮮美。",
+            "offers": {
+              "@type": "Offer",
+              "price": "154.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞腿飯",
+            "description": "嫩滑多汁的烤雞腿搭配香氣四溢的白飯，配上清爽的小菜，讓你一口接一口的享受美味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "185.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大腸蓋飯",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "吳郭魚飯",
+            "description": "用鮮美吳郭魚煮出的飯，口感軟嫩，美味又健康。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "味噌湯",
+            "description": "豆腐、海帶、味噌熬煮而成的湯。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小菜類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "小高麗菜",
+            "description": "清爽脆口的小高麗菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯白豆腐",
+            "description": "魯白豆腐，軟嫩豆腐配上醬汁燉煮，入口即化，口感鮮美。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷蛋",
+            "description": "滷過的蛋，口感鮮美，適合當作小點心或配菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "油豆腐",
+            "description": "香脆油豆腐，外皮酥脆，內裡軟嫩，口感豐富。",
+            "offers": {
+              "@type": "Offer",
+              "price": "35.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "漬白玉蘿蔔",
+            "description": "酸甜爽口的漬白玉蘿蔔，適合當做開胃小菜或配菜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯雞腿",
+            "description": "軟嫩的雞腿肉，淋上香氣四溢的醬汁，口感豐富，香嫩可口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯蹄膀",
+            "description": "豬蹄膀經過燉煮後，加入醬油、糖、香料等調味料，讓肉質入味，口感香濃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜",
+            "description": "酸爽開胃的酸菜，配上米飯或麵食，味道絕佳。",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

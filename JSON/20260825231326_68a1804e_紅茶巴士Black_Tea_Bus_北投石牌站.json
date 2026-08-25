@@ -1,0 +1,664 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E7%B4%85%E8%8C%B6%E5%B7%B4%E5%A3%ABblack-tea-bus-%E5%8C%97%E6%8A%95%E7%9F%B3%E7%89%8C%E7%AB%99/5G-ci79tW5u8WaWmk5lnmg",
+  "name": "紅茶巴士Black Tea Bus 北投石牌站",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區立農街二段271號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.118854,
+    "longitude": 121.51498
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 320
+  },
+  "servesCuisine": [
+    "Bubble Tea"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮柳橙綠",
+            "description": "酸酸甜甜的柳橙搭配二次薰花的綠茶，帶給你再度戀愛的感覺，這是種不能讓元配知道的情懷(壞笑)",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉角紅茶牛奶",
+            "description": "小時候的回憶，轉角間與黑糖粉角的碰撞，香醇的口感在味蕾中綻放。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗青茶",
+            "description": "清甜甘蔗加入冬片青茶，香醇蔗香特有茶香，融合為一，如此清爽的美味。（無糖就有甘蔗本身清香甜）",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養樂多綠",
+            "description": "茉香綠茶結合經典養樂多，茶香與乳酸香氣層層堆疊。入口清新順口，尾韻帶著淡雅花香，酸甜平衡不膩口，是陪伴炎炎夏日的經典首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿嬤豆漿紅茶",
+            "description": "特濃無糖豆漿，搭配招牌巴士紅茶，冷熱皆可，濃厚豆香，甘醇茶韻，懷舊好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝冰紅",
+            "description": "完美熟成荔枝冰紅，使用玉荷包熬製而成窯烤荔枝醬，加入荔枝椰果，口感加倍，完熟果實，清爽酸甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝金萱雙Q",
+            "description": "想不到吧~窯烤荔枝醬與荔枝椰果，雙重搭配再加上Q彈粉角，夏日清爽刷嘴就他了",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩仙草牛奶",
+            "description": "手工熬煮嫩仙草,Q彈滑順X療癒奶香,交織出溫潤層次,微甜不膩,剛剛好的清爽。讓心情，也一起chill一下。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠仙草冬瓜茶",
+            "description": "咀嚼控集合！珍珠Ｑ、仙草嫩，搭配冬瓜茶的甘甜。雙料來襲，給你停不下來的療癒感！#含果肉#甜度固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌巴士那堤",
+            "description": "茶與奶的融合，厭倦一成不變的你，替味蕾創造衝撞，找到屬於自己的感受",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖粉角奶茶",
+            "description": "QQ粉角與黑糖香氣融合，搭配奶茶就是最完美的組合，咀嚼控的首選非它莫屬！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "英式伯爵那堤",
+            "description": "聽說網紅都愛這味！英式伯爵受夠了，就是要跟香那堤再一起",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶",
+            "description": "我現在就想吃點東西，而那個東西，就是珍珠，然後一定要配上奶茶才口以",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖粉角奶綠",
+            "description": "Q彈口感搭配黑糖香氣，與茉香奶綠恰到好處的相輔，撼動嗅味覺。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋巴士紅茶",
+            "description": "艷陽天首選，當冰淇淋搭上巴士紅茶，會怎麼發展，就讓我們看下去",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "復刻紅茶那堤",
+            "description": "不同世代的結合，古早味 MIX 香那堤！我用復刻帶出新享受，毫無違和，一切融洽",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋復刻紅茶",
+            "description": "1＋1＞2！古早味紅茶尬一下冰淇淋，舊時尚v.s新潮流",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋伯爵茶",
+            "description": "獨特個性的伯爵遇上柔順中帶點刺激的冰淇淋，omg的~我不會說",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌巴士奶茶",
+            "description": "都說是招牌了，雖然是奶精，但紅茶的香味尬上奶精的香醇，只溶你口，絕無二心",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "輕烏龍那堤",
+            "description": "採用梨山冬片為基底茶，入口清香、尾韻回甘，層次輕盈不厚重。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "原味茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌巴士紅茶",
+            "description": "BTB 主打茶飲，將阿薩姆與錫蘭茶葉比例融合，口感平順、清爽且不帶負擔，是您日常解膩的首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "復刻古早味紅茶",
+            "description": "古早味麥香紅茶，小時候的回憶及味道，沒有童年沒關係，有茶喝就夠了",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金麥茶",
+            "description": "採用焦香大麥，湯色澄黃透亮，香醇爽口，濃濃的麥香，堪稱麥茶界的yyds",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茉香綠茶",
+            "description": "歷經兩次薰花提出的濃厚香氣，香醇回甘，品茶的你絕不能錯過",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "英式伯爵紅茶",
+            "description": "西方流行茶品之一，清爽、大膽的茶味，想替壓抑許久的內心找出口嗎?選我就對了",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高山金萱青茶",
+            "description": "香氣幽雅而飄逸，獨特的花香與特有的〝奶香〞，耐人尋味",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胭脂紅茶",
+            "description": "一抹迷人蜜桃香氣，基底搭配錫蘭紅茶，讓你一口接著一口，口齒留香，愛不釋手",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "梨山冬片青茶",
+            "description": "嚴選梨山高海拔冬季嫩採茶菁，茶湯清透蜜綠，入口滑順不澀，回甘細緻，冷熱皆宜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味冬瓜茶",
+            "description": "純粹的冬瓜清甜，入喉回甘，是解膩消暑的黃金單品。#含果肉 #甜度固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "香那堤",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌巴士那堤",
+            "description": "茶與奶的融合，厭倦一成不變的你，替味蕾創造衝撞，找到屬於自己的感受",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "復刻紅茶那堤",
+            "description": "不同世代的結合，古早味 MIX 香那堤！我用復刻帶出新享受，毫無違和，一切融洽",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "英式伯爵那堤",
+            "description": "聽說網紅都愛這味！英式伯爵受夠了，就是要跟香那堤再一起",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "胭脂那堤",
+            "description": "一抹迷人蜜桃香氣，基底搭配錫蘭紅茶以及鮮奶，讓你一口接著一口，口齒留香，奶香四溢，愛不釋手",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "粉角紅茶牛奶",
+            "description": "小時候的回憶，轉角間與黑糖粉角的碰撞，香醇的口感在味蕾中綻放。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嫩仙草牛奶",
+            "description": "手工熬煮嫩仙草,Q彈滑順X療癒奶香,交織出溫潤層次,微甜不膩,剛剛好的清爽。讓心情，也一起chill一下。",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬瓜那堤",
+            "description": "不需茶葉的點綴，僅僅是冬瓜與牛奶的純粹相遇。如絲絨般的滑順，給焦躁的午後一份溫潤的慰藉。#含果肉#甜度固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "輕烏龍那堤",
+            "description": "採用梨山冬片為基底茶，入口清香、尾韻回甘，層次輕盈不厚重。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "厚奶茶",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "招牌巴士奶茶",
+            "description": "都說是招牌了，雖然是奶精，但紅茶的香味尬上奶精的香醇，只溶你口，絕無二心",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠奶茶",
+            "description": "我現在就想吃點東西，而那個東西，就是珍珠，然後一定要配上奶茶才口以",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豪華巴士奶茶",
+            "description": "豪華配料搭配厚奶茶，珍珠、蒟蒻、椰果，三種願望！一次滿足。(配料固定無法調整)",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "阿嬤豆漿紅茶",
+            "description": "特濃無糖豆漿，搭配招牌巴士紅茶，冷熱皆可，濃厚豆香，甘醇茶韻，懷舊好滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖粉角奶綠",
+            "description": "Q彈口感搭配黑糖香氣，與茉香奶綠恰到好處的相輔，撼動嗅味覺。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑糖粉角奶茶",
+            "description": "QQ粉角與黑糖香氣融合，搭配奶茶就是最完美的組合，咀嚼控的首選非它莫屬！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌巴士奶綠",
+            "description": "清新的茉莉花綠茶，與奶精的調和，在口中迸發出濃厚回甘茶香",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "冰淇淋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋巴士紅茶",
+            "description": "艷陽天首選，當冰淇淋搭上巴士紅茶，會怎麼發展，就讓我們看下去",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋復刻紅茶",
+            "description": "1＋1＞2！古早味紅茶尬一下冰淇淋，舊時尚v.s新潮流",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冰淇淋伯爵茶",
+            "description": "獨特個性的伯爵遇上柔順中帶點刺激的冰淇淋，omg的~我不會說",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "經典特調",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "荔枝冰紅",
+            "description": "完美熟成荔枝冰紅，使用玉荷包熬製而成窯烤荔枝醬，加入荔枝椰果，口感加倍，完熟果實，清爽酸甜。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝冰綠",
+            "description": "荔枝果醬搭配茉香綠茶，入口散發荔枝果香與清新茶韻，再加入Q彈椰果增添咀嚼口感，清爽不甜膩，每一口都充滿夏日沁涼滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮柳橙綠",
+            "description": "酸酸甜甜的柳橙搭配二次薰花的綠茶，帶給你再度戀愛的感覺，這是種不能讓元配知道的情懷(壞笑)",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甘蔗青茶",
+            "description": "清甜甘蔗加入冬片青茶，香醇蔗香特有茶香，融合為一，如此清爽的美味。（無糖就有甘蔗本身清香甜）",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "荔枝金萱雙Q",
+            "description": "想不到吧~窯烤荔枝醬與荔枝椰果，雙重搭配再加上Q彈粉角，夏日清爽刷嘴就他了",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "珍珠仙草冬瓜茶",
+            "description": "咀嚼控集合！珍珠Ｑ、仙草嫩，搭配冬瓜茶的甘甜。雙料來襲，給你停不下來的療癒感！#含果肉#甜度固定",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養樂多綠",
+            "description": "茉香綠茶結合經典養樂多，茶香與乳酸香氣層層堆疊。入口清新順口，尾韻帶著淡雅花香，酸甜平衡不膩口，是陪伴炎炎夏日的經典首選。",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚見紅韻",
+            "description": "柚子醬搭配招牌巴士紅茶，柚香甜潤、紅茶茶韻鮮明，果香襯托茶香，風味飽滿不膩口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柚見梨山",
+            "description": "柚子醬搭配梨山冬片，香甜柚香融合甘醇茶韻，入口順口不膩，尾韻甘甜回香。",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金萱雙Q",
+            "description": "獨特金萱奶香配上鳳梨椰果&黑糖粉角，一次性滿足兩種口感",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "袋袋新潮",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "BTB編織袋",
+            "description": "BTB品牌六杯裝環保袋，耐用編織材質製成，質地輕盈、結構穩定，兼顧實用性與美感。",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "袋袋新潮",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "1.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

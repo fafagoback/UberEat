@@ -1,0 +1,120 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%B7%B1%E5%9D%91%E8%84%86%E7%9A%AE%E8%87%AD%E8%B1%86%E8%85%90-%E5%9F%BA%E6%B2%B3%E5%BA%97/Pr1DtGpTUPaTKp3mOgsgJg",
+  "name": "深坑脆皮臭豆腐 基河店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區基河路125號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0883286,
+    "longitude": 121.5238061
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 14
+  },
+  "servesCuisine": [
+    "Taiwanese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "✨顧客訂購須知✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "若您滿意收到的餐點（以及口味），請不吝給予我們五星好評。每一個五星的讚譽都是對我們努力的最好肯定🥰",
+            "description": "若滿意餐點與服務，歡迎在平台給予五星評價並留下建議；我們將持續優化、認真回覆每則留言，提供更穩定的用餐體驗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "💫人氣精選💫",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "加泡菜",
+            "description": "1 份。\n ✨口感爽脆，每一口都帶有清新香氣，替主食增添豐富層次🥬，吃起來更加過癮！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小腸豬血湯",
+            "description": "Q彈小腸與細緻豬血在湯頭中慢慢熬煮🐷，每一口都是濃郁鮮香，口感層次豐富，喝完暖胃又滿足🍲！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮臭豆腐",
+            "description": "🔥外皮炸得金黃香酥，內裡綿密細嫩，每一口都是酥脆與軟嫩的完美結合，口感層次豐富，讓人一試成主顧🥢！",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "☄️招牌單點☄️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "加泡菜",
+            "description": "1 份。\n ✨口感爽脆，每一口都帶有清新香氣，替主食增添豐富層次🥬，吃起來更加過癮！",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小腸豬血湯",
+            "description": "Q彈小腸與細緻豬血在湯頭中慢慢熬煮🐷，每一口都是濃郁鮮香，口感層次豐富，喝完暖胃又滿足🍲！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮臭豆腐",
+            "description": "🔥外皮炸得金黃香酥，內裡綿密細嫩，每一口都是酥脆與軟嫩的完美結合，口感層次豐富，讓人一試成主顧🥢！",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

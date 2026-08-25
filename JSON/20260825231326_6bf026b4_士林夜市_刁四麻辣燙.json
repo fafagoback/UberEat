@@ -1,0 +1,269 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E5%88%81%E5%9B%9B%E9%BA%BB%E8%BE%A3%E7%87%99/4RpBEuItWLGv_YZXM4OrlQ",
+  "name": "士林夜市 刁四麻辣燙",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市士林區小東街21號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0892114,
+    "longitude": 121.5262036
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 310
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Hot Pot",
+    "Chinese",
+    "Kids Friendly",
+    "Family Friendly",
+    "Specialty Goods",
+    "Local Specialities",
+    "Noodles"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮辣味 套餐",
+            "description": "口味: （小麻小辣）（內有加麻醬、花生粉、牛油）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮湯味 套餐",
+            "description": "口味:（不辣）（內有加麻醬和花生粉）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙女餐",
+            "description": "今日時蔬+新鮮菇類（2項）\n木耳（2片）+玉米筍（2根）\n板豆腐（3塊）+蒟蒻絲（3個）",
+            "offers": {
+              "@type": "Offer",
+              "price": "258.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "成都冒菜 套餐",
+            "description": "口味: （中辣）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄湯 套餐",
+            "description": "口味: （不辣）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮藤椒 套餐",
+            "description": "口味:（小麻）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜湯 套餐",
+            "description": "口味: （微酸微辣）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "\"活動限定\"麻辣豆腐",
+            "description": "活動限定！麻辣豆腐熱滾滾，新品登場；麻香帶勁、豆腐嫩口入味，香辣涮嘴，錯過不再。",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "\"活動限定\" 麻辣鴨血",
+            "description": "活動限定！Q彈嫩滑的麻辣鴨血，麻香帶勁、入口順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "刁四麻辣燙",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮湯味 套餐",
+            "description": "口味:（不辣）（內有加麻醬和花生粉）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮辣味 套餐",
+            "description": "口味: （小麻小辣）（內有加麻醬、花生粉、牛油）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮藤椒 套餐",
+            "description": "口味:（小麻）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "成都冒菜 套餐",
+            "description": "口味: （中辣）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "番茄湯 套餐",
+            "description": "口味: （不辣）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酸菜湯 套餐",
+            "description": "口味: （微酸微辣）\n精選火鍋料+新鮮蔬菜+主食\n主食部分可以選擇.\n冬粉，王子麵，米飯，烏龍麵\n(圖片供參考使用，時蔬因季節性做調整，鍋物內容物皆不可客製化調整喔，感謝!)",
+            "offers": {
+              "@type": "Offer",
+              "price": "228.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "仙女餐",
+            "description": "今日時蔬+新鮮菇類（2項）\n木耳（2片）+玉米筍（2根）\n板豆腐（3塊）+蒟蒻絲（3個）",
+            "offers": {
+              "@type": "Offer",
+              "price": "258.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣香鍋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣香鍋套餐",
+            "description": "香鍋底料含花生、蓮藕、腐竹、馬鈴薯及各項秘密調味；內容含肉品，季節時蔬，丸子、主食等等",
+            "offers": {
+              "@type": "Offer",
+              "price": "368.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "新品上市",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血豆腐",
+            "description": "刁四麻辣鴨血豆腐，新品開賣！\n熱滾滾的麻辣鴨血豆腐新上市，香辣入魂、Q嫩噴香，等你來品嚐！",
+            "offers": {
+              "@type": "Offer",
+              "price": "168.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "\"活動限定\" 麻辣鴨血",
+            "description": "活動限定！Q彈嫩滑的麻辣鴨血，麻香帶勁、入口順口。",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "\"活動限定\"麻辣豆腐",
+            "description": "活動限定！麻辣豆腐熱滾滾，新品登場；麻香帶勁、豆腐嫩口入味，香辣涮嘴，錯過不再。",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

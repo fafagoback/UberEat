@@ -1,0 +1,59 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%A3%AB%E6%9E%97%E5%A4%9C%E5%B8%82-%E6%97%A5%E6%9C%AC%E5%89%AA%E5%88%80%E5%BC%8F%E8%84%86%E7%9A%AE%E9%9B%9E%E8%9B%8B%E7%B3%95/LSHiHFkqQCaepeYgQxDd5g",
+  "name": "士林夜市  日本剪刀式脆皮雞蛋糕",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Da Dong Rd. 11-3",
+    "addressLocality": "Shilin District",
+    "addressRegion": "Taipei City",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.086815,
+    "longitude": 121.5253475
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 300
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Pastry"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞蛋糕",
+            "description": "一份7個。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大份雞蛋糕(8個)",
+            "description": "8個裝雞蛋糕，口感鬆軟、蛋香迷人，份量加大，適合分享",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

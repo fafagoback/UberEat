@@ -1,0 +1,772 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%BB%BF%E7%A6%8F%E5%AF%B6%E8%85%B8%E7%B2%89/NjeYOPPCXGuPHLazY5zspQ",
+  "name": "滿福寶腸粉",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區裕民二路20號1樓前面 石牌商城 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.116024,
+    "longitude": 121.516961
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.3,
+    "reviewCount": 12
+  },
+  "servesCuisine": [
+    "Cantonese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "顧客請留意 此品項✨ 不適用預約訂單✨  \n(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東石鮮蚵腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "顧客請留意 此品項✨ 不適用預約訂單✨  \n(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉鮮蝦招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "234.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚子燒賣",
+            "description": "3 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現剝鮮蝦腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現剝鮮蝦腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "顧客請留意 此品項✨ 不適用預約訂單✨  \n(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水晶蝦餃皇",
+            "description": "3 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉和鮮蝦及鮮蚵腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合港式點心",
+            "description": "4 種。",
+            "offers": {
+              "@type": "Offer",
+              "price": "514.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖小卷腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉鮮蝦招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "182.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "錦繡魚翅餃",
+            "description": "3 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖小卷腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "247.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦鮮蚵招牌腸粉",
+            "description": "牛肉鮮蝦招牌腸粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "221.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉和鮮蚵及玉米豪華腸粉",
+            "description": "牛肉和鮮蝦及玉米豪華腸粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "273.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東石鮮蚵腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Buy 1, get 1 free",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "東石鮮蚵腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "顧客請留意 此品項✨ 不適用預約訂單✨  \n(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖小卷腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現剝鮮蝦腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "顧客請留意 此品項✨ 不適用預約訂單✨  \n(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "顧客請留意 此品項✨ 不適用預約訂單✨  \n(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "點餐須知",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "滿福寶鮮作腸粉，每日純米現磨、不使用預拌粉、現點現蒸，使用現剝鮮蝦、東石鮮蚵及季節限定澎湖小卷等，堅持新鮮食材與現做品質，讓您吃得安心、吃得滿足。 份量實在、配料豐富，一份就能吃得飽，很適合作為早、午晚當正餐或健康宵夜。因餐點皆為現點現做，敬請耐心等候，謝謝您的支持。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉鮮蝦招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "182.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉和鮮蝦及玉米豪華腸粉",
+            "description": "3 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "221.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉和鮮蚵及玉米豪華腸粉",
+            "description": "牛肉和鮮蝦及玉米豪華腸粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "273.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合港式點心",
+            "description": "4 種。",
+            "offers": {
+              "@type": "Offer",
+              "price": "514.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦鮮蚵及小卷豪華腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "384.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "腸粉類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雙蛋腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "91.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國泡菜腸粉(微辣)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉腸粉",
+            "description": "豬肉+玉米招牌腸粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "臘腸腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現剝鮮蝦腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "東石鮮蚵腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖小卷腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "247.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉和鮮蝦及鮮蚵腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦和鮮蚵及小卷腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "384.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "原味腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "78.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻醬腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "招牌腸粉類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉玉米招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉泡菜招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉鮮蝦招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "182.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉鮮蝦招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "234.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦鮮蚵招牌腸粉",
+            "description": "牛肉鮮蝦招牌腸粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "221.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉鮮蚵招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "182.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉玉米招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉及豬肉招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "195.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉鮮蚵招牌腸粉",
+            "description": "2 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "234.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "豪華腸粉類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "豬肉和鮮蝦及玉米豪華腸粉",
+            "description": "3 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "221.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉鮮蚵及玉米豪華腸粉",
+            "description": "3 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "221.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉和鮮蚵及玉米豪華腸粉",
+            "description": "牛肉和鮮蝦及玉米豪華腸粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "273.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉和鮮蝦及鮮蚵豪華腸粉",
+            "description": "3 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "312.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦鮮蚵及小卷豪華腸粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "384.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉和鮮蝦及玉米豪華腸粉",
+            "description": "3 拼。",
+            "offers": {
+              "@type": "Offer",
+              "price": "273.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "港式點心類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "綜合港式點心",
+            "description": "4 種。",
+            "offers": {
+              "@type": "Offer",
+              "price": "514.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹黃燒賣",
+            "description": "3 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "錦繡魚翅餃",
+            "description": "3 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "117.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚子燒賣",
+            "description": "3 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "143.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水晶蝦餃皇",
+            "description": "3 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蜜汁叉燒包",
+            "description": "2 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "104.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "湯包",
+            "description": "8 顆。",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "飲品及湯包類",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黃金豆漿",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "薏仁漿",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芝麻糊",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "39.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "✨活動專區✨",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "東石鮮蚵腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "顧客請留意 此品項✨ 不適用預約訂單✨  \n(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "現剝鮮蝦腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "顧客請留意 此品項✨ 不適用預約訂單✨  \n(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "209.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "顧客請留意 此品項✨ 不適用預約訂單✨  \n(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "149.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "澎湖小卷腸粉 (活動品項)注意!! ✨ 請偶數下單✨此品項(8/14 ~ 8/28) 有買一送一",
+            "description": "(8/14 ~ 8/28) ✨有✨ 出現活動標記才有提供優惠)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)\n✨ 請偶數下單✨( 每單限購 購物車總數:6)",
+            "offers": {
+              "@type": "Offer",
+              "price": "329.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

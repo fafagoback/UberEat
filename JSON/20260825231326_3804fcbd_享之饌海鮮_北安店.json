@@ -1,0 +1,704 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E4%BA%AB%E4%B9%8B%E9%A5%8C%E6%B5%B7%E9%AE%AE-%E5%8C%97%E5%AE%89%E5%BA%97/XMm529uZXc-yxaPiaWu-Zg",
+  "name": "享之饌海鮮 北安店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市中山區北安路595巷6號1樓 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0821195,
+    "longitude": 121.548122
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 130
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Noodles",
+    "Braised Pork Rice"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮麵 Noodles with Seafood",
+            "description": "海味滿載的海鮮，內有蝦子、蛤蜊、魷魚、虱目魚柳、新鮮蚵仔、虱目魚丸，每一口都是鮮香，超滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔煎 Oyster Omelette",
+            "description": "蚵仔鮮嫩多汁，搭配酥脆外皮，每一口都是鹹香滋味的完美演繹。一碟在手，幸福感滿溢！😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦魯肉飯 Braised Pork Rice with Shrimp",
+            "description": "鮮蝦跳躍，魯肉飄香，一碗在手，幸福感爆表！🍚米飯吸滿肉汁，每一口都是滿滿的滿足與笑容。😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸魷魚 Deep-Fried Squid",
+            "description": "🦑外酥內嫩，金黃誘人，一口咬下，酥脆聲響伴隨海洋的味道，令人忍不住一再回味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "痛風海鮮粥 Seafood Congee",
+            "description": "🦐海鮮滿載，每一口都是奢華的痛快！粥滑如絲，海味豐富，讓你笑著迎接每一次的痛風浪潮！",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項 Note 📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "👍如果喜歡我們的餐點，餐後也請不吝給我們五星好評！每一個讚譽都會給我們更多信心，帶給大家美味的餐點喔！",
+            "description": "請在用餐後於平台留下星等與評論，幫助我們持續優化口味、份量與出餐效率；您的回饋是前進的動力，感謝支持。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "⚠️本店為維護餐點品質，皆為現點現做，感謝您的耐心等候，美食盡快為您獻上。",
+            "description": "為維護品質，餐點皆為現點現做，依序出餐；尖峰時段等候時間可能延長，敬請耐心等候，造成不便敬請見諒。",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items🏆",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔乾麵線 Dried Vermicelli with Oyster",
+            "description": "滑嘟嘟的麵線遇上鮮美蚵仔，一口咬下，海味與幽默滿分，讓味蕾跳起探戈！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔煎 Oyster Omelette",
+            "description": "蚵仔鮮嫩多汁，搭配酥脆外皮，每一口都是鹹香滋味的完美演繹。一碟在手，幸福感滿溢！😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "115.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "痛風海鮮粥 Seafood Congee",
+            "description": "🦐海鮮滿載，每一口都是奢華的痛快！粥滑如絲，海味豐富，讓你笑著迎接每一次的痛風浪潮！",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮蝦魯肉飯 Braised Pork Rice with Shrimp",
+            "description": "鮮蝦跳躍，魯肉飄香，一碗在手，幸福感爆表！🍚米飯吸滿肉汁，每一口都是滿滿的滿足與笑容。😋",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸魷魚 Deep-Fried Squid",
+            "description": "🦑外酥內嫩，金黃誘人，一口咬下，酥脆聲響伴隨海洋的味道，令人忍不住一再回味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麵類 Noodles 🍜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "海鮮麵 Noodles with Seafood",
+            "description": "海味滿載的海鮮，內有蝦子、蛤蜊、魷魚、虱目魚柳、新鮮蚵仔、虱目魚丸，每一口都是鮮香，超滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔麵 Noodles with Oyster",
+            "description": "每日新鮮蚵仔俗稱『海中牛奶』，海味滿滿，越吃越想再來一口！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺虱目魚肚麵 Noodles with Boneless Milk Fish Belly",
+            "description": "新鮮台南虱目魚肚，魚肚滑嫩好入口，海味與麵香相擁，一口接一口停不下來！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚皮麵 Noodles with Milk Fish Skin",
+            "description": "虱目魚皮，口感滑嫩帶膠質，鹹香順口，海味豐富，營養價值滿滿，簡單卻到位的一碗。",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣麵 Noodles with Clam",
+            "description": "蛤蠣麵，一口海味一口麵香，麵條滑順、鹹香順口，越吃越涮嘴！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "純湯麵",
+            "description": "大骨湯頭、滷汁\n配料為豆芽菜、韭菜、油蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "純乾麵",
+            "description": "香濃滷汁\n配料為豆芽菜+韭菜+油蔥",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "煎類 Pan-Fried Food 🍳",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蔥花煎蛋 Pan-Fried Egg with Scallion",
+            "description": "1 人份。",
+            "offers": {
+              "@type": "Offer",
+              "price": "40.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁煎 Shrimp Omelette",
+            "description": "蝦仁Q彈，蛋香相伴，煎出金黃邊，外微酥內滑嫩，每口都是海味與鹹香的默契。",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "綜合煎 Assorted Omelette",
+            "description": "多樣配料拌入雞蛋，煎至金黃香嫩，層次豐富、蛋香滿溢，口口滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雙蛋煎 Double Omelette",
+            "description": "雙顆雞蛋香煎，厚實飽滿、蛋香十足，簡單卻過癮的好味道！",
+            "offers": {
+              "@type": "Offer",
+              "price": "90.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔蔥蛋 Scallion Egg with Osyter",
+            "description": "蚵仔與蔥花拌入蛋香，煎出海味與蔥香的經典組合，每口都濃濃鹹香，簡單好吃。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蔥蛋 Scallion Egg with Shrimp",
+            "description": "蝦仁與蔥花拌入蛋液，煎至金黃滑嫩；蝦仁彈口、蔥香四溢，簡單卻耐吃的鹹香組合。",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺虱目魚肚煎 Pan-Fried Boneless Milk Fish Belly",
+            "description": "無刺虱目魚肚煎至金黃，外酥內嫩，魚肚滑嫩不卡刺，海味鹹香，越吃越涮嘴！",
+            "offers": {
+              "@type": "Offer",
+              "price": "230.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "粥&飯類 Congee & Rice 🍲",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "魯肉飯 Braised Pork Rice",
+            "description": "白飯淋上滷肉香汁，米飯粒粒入味，鹹香順口，肥瘦相間不膩，一碗簡單卻滿足。",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌海鮮粥 Signature Seafood Congee",
+            "description": "粥滑如絲，海味滿滿，暖胃順口，一碗就滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔粥 Oyster Congee",
+            "description": "蚵仔飽滿入粥，海味豐富、粥滑順口，一碗在手，暖心暖胃！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺虱目魚肚粥 Boneless Milk Fish Belly Congee",
+            "description": "綿滑白粥配上無刺虱目魚肚，魚肉細嫩好入口，海味清雅，一碗簡單卻剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺魚肉虱目粥 Boneless Milk Fish Congee",
+            "description": "去刺虱目魚肉與綿滑白粥相融，入口細嫩無負擔，海味清爽、暖胃順口，一口接一口的療癒滋味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚皮粥 Milk Fish Skin Congee",
+            "description": "粥體滑順，搭配虱目魚皮的Q彈口感，海味清香、順口不膩，一碗在手，滿足感直升！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣粥 Clam Congee",
+            "description": "粥滑如絲，蛤蠣鮮甜多汁，海味滿滿，暖胃順口，一碗就滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔魯肉飯 Braised Pork Rice with Oyster",
+            "description": "白飯淋上滷肉香汁，鋪上蚵仔，海味與肉香相互堆疊，米飯粒粒入味，一碗就滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "白飯 Rice",
+            "description": "白飯粒粒分明、香Q順口，簡單卻到位，搭配各式菜色剛剛好，一碗就滿足！",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯類 Soup 🥣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔湯 Oyster Soup",
+            "description": "蚵仔入湯，海味飄香，滑口暖胃，每一口都是簡單卻滿足的滋味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "海鮮湯 Seafood Soup",
+            "description": "海味滿滿的一碗湯，湯頭鮮美順口、暖胃，簡單卻到位，想來點清爽就選它！",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺虱目魚肚湯 Boneless Milk Fish Belly Soup",
+            "description": "滑嫩無刺的虱目魚肚，鮮美湯頭暖心暖胃，海味滿點、吃得安心。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "無刺虱目魚肉湯 Boneless Milk Fish Soup",
+            "description": "魚肉。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚皮湯 Milk Fish Skin Soup",
+            "description": "虱目魚皮Q彈滑嫩，湯頭清爽鮮美，入口滿是海味與膠質，暖胃不負擔，喝完忍不住再來一碗！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣湯 Clam Soup",
+            "description": "清澈甘甜的湯頭，滿滿蛤蠣釋放海味，暖胃順喉；一碗在手，幸福感滿溢！",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "虱目魚丸湯 Milk Fish Ball Soup",
+            "description": "清爽湯頭、彈牙虱目魚丸，海味滿滿，暖心暖胃的一碗好湯！",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "炸物類 Deep-Fried Food 🍤",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蚵仔酥 Deep-Fried Crispy Oyster",
+            "description": "外酥內嫩的蚵仔酥，金黃酥脆，一口咬下海味爆發，鹹香不膩，越吃越涮嘴！",
+            "offers": {
+              "@type": "Offer",
+              "price": "190.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "泰式月亮蝦餅 Thai Deep-Fried Shrimp Pancake",
+            "description": "外酥內嫩、金黃厚實的泰式月亮蝦餅，咬下滿滿蝦香與彈牙口感，一片接一片，鹹香過癮。",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙拉蝦球 Shrimp Ball with Salad",
+            "description": "外酥內彈的金黃蝦球，入口咔滋，佐沙拉醬更涮嘴，海味在舌尖綻放，讓人一口接一口停不下來。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸虱目魚柳 Deep-Fried Milk Fish Finger",
+            "description": "虱目魚柳裹粉炸至金黃酥脆，外酥內嫩、魚香四溢，一口接一口，海味滿分、越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸虱目魚皮 Deep-Fried Milk Fish Skin",
+            "description": "金黃酥脆的虱目魚皮，一口咬下卡滋作響，海味與鹹香在口中綻放，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸蝦捲 Deep-Fried Shrimp Roll",
+            "description": "外酥內嫩的炸蝦捲，金黃脆皮包裹彈牙蝦肉，一口咬下鹹香四溢，越吃越涮嘴。",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "招牌炸豆腐 Signature Deep-Fried Tofu",
+            "description": "外酥內嫩的金黃炸豆腐，咬下卡滋作響，豆香綿密、鹹香涮嘴，一口接一口停不下來！",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "配菜類 Side Dishes 🧆",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥乾蚵 Dried Oyster with Mashed Garlic",
+            "description": "乾蚵拌上蒜泥，蒜香濃郁、海味厚實，口感紮實涮嘴，作為配菜剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒜泥白肉 Sliced Boiled Pork with Garlic Sauce",
+            "description": "薄切白肉水煮至軟嫩帶彈，淋上蒜泥醬，蒜香濃郁、肉片滑口，鹹香開胃，清爽不膩，配菜剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "110.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙魷魚 Blanched Squid",
+            "description": "川燙呈現魷魚本味，口感Q彈爽脆，海味直奔味蕾；清爽無負擔，當配菜剛剛好，一口接一口停不下來！",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙鮮蝦 Blanched Shrimp",
+            "description": "川燙呈現蝦肉原味，口感彈牙清爽，簡單好吃，配菜剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "170.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "川燙虱目魚皮 Blanched Milk Fish Skin",
+            "description": "川燙虱目魚皮，保留Q彈滑嫩口感，清爽不油膩，吃得到純粹海味，配菜首選！",
+            "offers": {
+              "@type": "Offer",
+              "price": "120.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣燙 Blanched Clam",
+            "description": "清燙處理，讓蛤蠣原味上桌，殼開肉嫩，湯汁鮮潤，一口就是海味的直球對決！",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燙青菜 Blanched Vegetables",
+            "description": "川燙呈現青菜本味，脆嫩爽口、清香解膩，簡單卻到位，配菜剛剛好。",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魯蛋 Braised Egg",
+            "description": "經典滷蛋，滷汁醬香沁入蛋心，蛋白Q彈、蛋黃綿密，鹹香迷人，一顆就讓人回味！",
+            "offers": {
+              "@type": "Offer",
+              "price": "20.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "現萃飲品🥤",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "嚴選桂花烏龍（無糖）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選油切綠茶（無糖）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選冷泡高山茶（無糖）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選麥茶（無糖）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

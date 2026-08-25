@@ -1,0 +1,1072 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%B7%9D%E6%B9%98%E9%BA%BB%E8%BE%A3%E7%87%99-%E5%8C%97%E6%8A%95%E8%87%AA%E5%BC%B7%E5%BA%97/oF7ebz07V56WUFiXxZorDg",
+  "name": "川湘麻辣燙 北投自強店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市北投區自強街5巷4號 Taipei",
+    "addressLocality": "",
+    "addressRegion": "",
+    "postalCode": "",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1101223,
+    "longitude": 121.5122894
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 500
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉多多麻辣燙套餐",
+            "description": "[原價200，圖片僅供參考] 🥇激省30元！\n• （豬肉麻辣燙－豬肉 8 片、麵食、精選火鍋料 1 份、蔬食 1 份）皆為雙倍肉量",
+            "offers": {
+              "@type": "Offer",
+              "price": "177.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉麻辣燙",
+            "description": "鮮嫩牛肉配上麻辣湯頭，無人能抗拒的美味佳餚！[圖片僅供參考] \n• 牛肉(4片/1份)、麵食、精選火鍋料(1份)、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "生豆包",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.40",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血豆腐煲",
+            "description": "小孩子才做選擇，麻辣鴨血跟麻辣豆腐我都不願意錯過！[圖片僅供參考]\n• 鴨血豆腐各2塊(大塊)、麵食、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工臭豆腐",
+            "description": "精心燉製的手工臭豆腐，入口後讓舌尖感受多層次的美味。[圖片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餃（3 個）",
+            "description": "一份 3 個，\n⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍（4 個）",
+            "description": "一份 4 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉麻辣燙",
+            "description": "柔嫩豬肉配上麻辣湯頭，無人能抗拒的美味佳餚！[圖片僅供參考]\n• 豬肉(4片/1份)、麵食、精選火鍋料(1份)、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小貢丸（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血煲",
+            "description": "滑嫩的鴨血配上麻辣湯頭，一吃就上癮！[圖片僅供參考]\n• 鴨血3塊(大塊)、麵食、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.60",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國Ｑ拉麵",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血 3 大塊",
+            "description": "入味後的麻辣鴨血，滑嫩好入口，不可錯過的好滋味。[圖片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "娃娃菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉片（4 片）",
+            "description": "一份 4 片，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.80",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Save on Select Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血豆腐煲",
+            "description": "小孩子才做選擇，麻辣鴨血跟麻辣豆腐我都不願意錯過！[圖片僅供參考]\n• 鴨血豆腐各2塊(大塊)、麵食、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬食麻辣燙",
+            "description": "愛吃蔬菜的你一定不能錯過 [圖片僅供參考]\n• 蔬食類3份、麵食",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.50",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉麻辣燙",
+            "description": "柔嫩豬肉配上麻辣湯頭，無人能抗拒的美味佳餚！[圖片僅供參考]\n• 豬肉(4片/1份)、麵食、精選火鍋料(1份)、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉片（4 片）",
+            "description": "一份 4 片，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉麻辣燙",
+            "description": "鮮嫩牛肉配上麻辣湯頭，無人能抗拒的美味佳餚！[圖片僅供參考] \n• 牛肉(4片/1份)、麵食、精選火鍋料(1份)、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹肉棒（2 個）",
+            "description": "一份 2 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉多多麻辣燙套餐",
+            "description": "[原價200，圖片僅供參考] 🥇激省30元！\n• （豬肉麻辣燙－豬肉 8 片、麵食、精選火鍋料 1 份、蔬食 1 份）皆為雙倍肉量",
+            "offers": {
+              "@type": "Offer",
+              "price": "177.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血 3 大塊",
+            "description": "入味後的麻辣鴨血，滑嫩好入口，不可錯過的好滋味。[圖片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "娃娃菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑木耳",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆芽菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燕餃（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣條（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒟蒻絲（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.90",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "優惠好相報 Special Offer🎊",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🌟「新顧客限定」Initial Order Only",
+            "description": "首次下單滿$300並留下5星評論，送你$60優惠券🤩數量有限趕快訂起來🔥【Limited】Receive a $60 voucher when you place your first order over $300 and leave a 5-star review! Order now and save!",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🎖品牌故事",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "品牌故事",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "時蔬、精選火鍋料 如賣完依同價位品項替代 (商品圖片僅供參考)",
+            "description": "時蔬、精選火鍋料 如賣完依同價位品項替代 (照片僅供參考)",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小資套餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "肉多多麻辣燙套餐",
+            "description": "[原價200，圖片僅供參考] 🥇激省30元！\n• （豬肉麻辣燙－豬肉 8 片、麵食、精選火鍋料 1 份、蔬食 1 份）皆為雙倍肉量",
+            "offers": {
+              "@type": "Offer",
+              "price": "177.10",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "麻辣燙",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血煲",
+            "description": "滑嫩的鴨血配上麻辣湯頭，一吃就上癮！[圖片僅供參考]\n• 鴨血3塊(大塊)、麵食、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.60",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腐煲",
+            "description": "紮實的豆腐配上麻辣湯頭，每一口都美味誘人！[圖片僅供參考]\n• 手工臭豆腐1.5塊(大塊)、麵食、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.60",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬食麻辣燙",
+            "description": "愛吃蔬菜的你一定不能錯過 [圖片僅供參考]\n• 蔬食類3份、麵食",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.50",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉麻辣燙",
+            "description": "鮮嫩牛肉配上麻辣湯頭，無人能抗拒的美味佳餚！[圖片僅供參考] \n• 牛肉(4片/1份)、麵食、精選火鍋料(1份)、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉麻辣燙",
+            "description": "柔嫩豬肉配上麻辣湯頭，無人能抗拒的美味佳餚！[圖片僅供參考]\n• 豬肉(4片/1份)、麵食、精選火鍋料(1份)、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血豆腐煲",
+            "description": "小孩子才做選擇，麻辣鴨血跟麻辣豆腐我都不願意錯過！[圖片僅供參考]\n• 鴨血豆腐各2塊(大塊)、麵食、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.80",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "配餐",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "手工臭豆腐",
+            "description": "精心燉製的手工臭豆腐，入口後讓舌尖感受多層次的美味。[圖片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血 3 大塊",
+            "description": "入味後的麻辣鴨血，滑嫩好入口，不可錯過的好滋味。[圖片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "單點",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "生豆包",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.40",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉片（4 片）",
+            "description": "一份 4 片，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小貢丸（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹肉棒（2 個）",
+            "description": "一份 2 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "娃娃菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.90",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餃（3 個）",
+            "description": "一份 3 個，\n⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉片（4 片）",
+            "description": "一份 4 片，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍（4 個）",
+            "description": "一份 4 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國Ｑ拉麵",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆芽菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑木耳",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬粉",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒸煮麵",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.40",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚餃（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒟蒻絲（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.90",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣條（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燕餃（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大陸妹",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🙈 菜單總覽",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "生豆包",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.40",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉片（4 片）",
+            "description": "一份 4 片，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "娃娃菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鑫鑫腸（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.90",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋餃（3 個）",
+            "description": "一份 3 個，\n⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工臭豆腐",
+            "description": "精心燉製的手工臭豆腐，入口後讓舌尖感受多層次的美味。[圖片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蟹肉棒（2 個）",
+            "description": "一份 2 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "王子麵",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍（4 個）",
+            "description": "一份 4 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉片（4 片）",
+            "description": "一份 4 片，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "51.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆芽菜",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小貢丸（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黑木耳",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "米血糕",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血煲",
+            "description": "滑嫩的鴨血配上麻辣湯頭，一吃就上癮！[圖片僅供參考]\n• 鴨血3塊(大塊)、麵食、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.60",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韓國Ｑ拉麵",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "44.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "冬粉",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "28.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蔬食麻辣燙",
+            "description": "愛吃蔬菜的你一定不能錯過 [圖片僅供參考]\n• 蔬食類3份、麵食",
+            "offers": {
+              "@type": "Offer",
+              "price": "150.50",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣豆腐煲",
+            "description": "紮實的豆腐配上麻辣湯頭，每一口都美味誘人！[圖片僅供參考]\n• 手工臭豆腐1.5塊(大塊)、麵食、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "124.60",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒸煮麵",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "36.40",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉多多麻辣燙套餐",
+            "description": "[原價200，圖片僅供參考] 🥇激省30元！\n• （豬肉麻辣燙－豬肉 8 片、麵食、精選火鍋料 1 份、蔬食 1 份）皆為雙倍肉量",
+            "offers": {
+              "@type": "Offer",
+              "price": "177.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉麻辣燙",
+            "description": "鮮嫩牛肉配上麻辣湯頭，無人能抗拒的美味佳餚！[圖片僅供參考] \n• 牛肉(4片/1份)、麵食、精選火鍋料(1份)、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豬肉麻辣燙",
+            "description": "柔嫩豬肉配上麻辣湯頭，無人能抗拒的美味佳餚！[圖片僅供參考]\n• 豬肉(4片/1份)、麵食、精選火鍋料(1份)、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "156.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血豆腐煲",
+            "description": "小孩子才做選擇，麻辣鴨血跟麻辣豆腐我都不願意錯過！[圖片僅供參考]\n• 鴨血豆腐各2塊(大塊)、麵食、蔬食(1份)",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "麻辣鴨血 3 大塊",
+            "description": "入味後的麻辣鴨血，滑嫩好入口，不可錯過的好滋味。[圖片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蒟蒻絲（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.90",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚餃（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "燕餃（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "甜不辣條（3 個）",
+            "description": "一份 3 個，⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.80",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "大陸妹",
+            "description": "⚠️請備註加哪一碗，無備註統一加第一碗⚠️",
+            "offers": {
+              "@type": "Offer",
+              "price": "46.20",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

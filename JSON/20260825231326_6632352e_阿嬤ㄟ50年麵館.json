@@ -1,0 +1,499 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E9%98%BF%E5%AC%A4%E3%84%9F50%E5%B9%B4%E9%BA%B5%E9%A4%A8/4Vu0RRspWW2L-c2JA79DDw",
+  "name": "阿嬤ㄟ50年麵館",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": " 台北市士林區德行東路331巷50弄2號 Taipei, 士林區 111",
+    "addressLocality": "台北市士林區",
+    "addressRegion": "",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.112154579368855,
+    "longitude": 121.53822416605311
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 17
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Noodles"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "香辣皮蛋醬拌麵/含滷蛋",
+            "description": "細拉麵，含滷蛋+阿嬤特製辣椒＋白菜/豆芽菜\n皮蛋醬另外放才不會乾乾的。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋醬蔥拌麵/含滷蛋",
+            "description": "細拉麵，含滷蛋＋白菜/豆芽菜\n皮蛋醬另外放才不會乾乾的。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🔥韭菜水餃（熟食）🥟 Chive Dumplings🥟",
+            "description": "每份10顆，韭菜好鮮香。\n阿嬤有說他的配方，沒有在外面吃過喔！\n每顆下水前重達25g-28g，是扎實飽滿的水餃啊！\n（含一眯眯黑胡椒，有看到黑黑一點一點是正常的喔）",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮肉大餛飩湯麵套餐🍜 Soup Noodles with Large Pork Wonton Combo🍜",
+            "description": "拉麵，套餐含飲品，大餛飩4顆＋小白菜＋蛋花。\n我們大餛飩超好吃，會上癮的那種！\n圖中皮蛋醬豆腐為加購品項喔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香辣皮蛋醬拌麵套餐🍜 Tossed Noodles with Spicy Century Egg Paste Combo🍜",
+            "description": "拉麵，套餐含滷蛋＋白菜/豆芽菜＋湯品＋古早味紅茶。阿嬤說他的特製辣椒很好吃😋喜歡吃辣的絕對會喜歡特製辣椒！\n阿嬤有交代皮蛋醬另外放才不會乾乾的，大家回去請自己攪拌喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🔥限量｜四季豆木耳水餃（熟食）",
+            "description": "⚠️真的是有冷凍水餃訂單才會出現的，非常備品\n（四季豆水餃超級費工費時，會邊做邊抱怨的那種，但是吃了以後又覺得真的有夠好吃，下次必須繼續做的水餃無限城。）",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜水餃（熟食）🥟 Cabbage Dumplings🥟",
+            "description": "高麗菜水餃10顆。\n阿嬤50年配方的水餃，餃皮Ｑ彈內餡鮮美，還吃得到高麗菜脆脆的口感！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小資水餃套餐🥟 Economic Dumplings Combo🥟",
+            "description": "水餃10顆＋湯品＋古早味紅茶。\n（照片只是為了好看才擺幾顆水餃意思意思😆）",
+            "offers": {
+              "@type": "Offer",
+              "price": "178.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋醬蔥拌麵套餐🍜 Tossed Noodles with Scallion and Century Egg Paste Combo🍜",
+            "description": "拉麵，套餐含滷蛋＋白菜/豆芽菜＋湯品＋古早味紅茶。\n阿嬤有交代皮蛋醬幫你們另外放了才不會乾乾的，大家回去自己攪拌喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "📢 阿媽ㄟ話📢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "有任何問題歡迎致電0955227009，您的五星肯定對我們意義非凡！",
+            "description": "官方Line訂購： @958edfjv\n🥟冷凍水餃/鮮肉大餛飩｜BIO-PRO手釀康普茶｜",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "被麵店耽誤的手工水餃🥟 Dumplings🥟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🔥韭菜水餃（熟食）🥟 Chive Dumplings🥟",
+            "description": "每份10顆，韭菜好鮮香。\n阿嬤有說他的配方，沒有在外面吃過喔！\n每顆下水前重達25g-28g，是扎實飽滿的水餃啊！\n（含一眯眯黑胡椒，有看到黑黑一點一點是正常的喔）",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜水餃（熟食）🥟 Cabbage Dumplings🥟",
+            "description": "高麗菜水餃10顆。\n阿嬤50年配方的水餃，餃皮Ｑ彈內餡鮮美，還吃得到高麗菜脆脆的口感！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🔥限量｜四季豆木耳水餃（熟食）",
+            "description": "⚠️真的是有冷凍水餃訂單才會出現的，非常備品\n（四季豆水餃超級費工費時，會邊做邊抱怨的那種，但是吃了以後又覺得真的有夠好吃，下次必須繼續做的水餃無限城。）",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "套餐較划算🍱Set Menu",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋醬蔥拌麵套餐🍜 Tossed Noodles with Scallion and Century Egg Paste Combo🍜",
+            "description": "拉麵，套餐含滷蛋＋白菜/豆芽菜＋湯品＋古早味紅茶。\n阿嬤有交代皮蛋醬幫你們另外放了才不會乾乾的，大家回去自己攪拌喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "188.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香辣皮蛋醬拌麵套餐🍜 Tossed Noodles with Spicy Century Egg Paste Combo🍜",
+            "description": "拉麵，套餐含滷蛋＋白菜/豆芽菜＋湯品＋古早味紅茶。阿嬤說他的特製辣椒很好吃😋喜歡吃辣的絕對會喜歡特製辣椒！\n阿嬤有交代皮蛋醬另外放才不會乾乾的，大家回去請自己攪拌喔！",
+            "offers": {
+              "@type": "Offer",
+              "price": "198.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮肉大餛飩湯麵套餐🍜 Soup Noodles with Large Pork Wonton Combo🍜",
+            "description": "拉麵，套餐含飲品，大餛飩4顆＋小白菜＋蛋花。\n我們大餛飩超好吃，會上癮的那種！\n圖中皮蛋醬豆腐為加購品項喔。",
+            "offers": {
+              "@type": "Offer",
+              "price": "140.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小資水餃套餐🥟 Economic Dumplings Combo🥟",
+            "description": "水餃10顆＋湯品＋古早味紅茶。\n（照片只是為了好看才擺幾顆水餃意思意思😆）",
+            "offers": {
+              "@type": "Offer",
+              "price": "178.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "阿嬤ㄟ麵🍜 Noodles🍜",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋醬蔥拌麵/含滷蛋",
+            "description": "細拉麵，含滷蛋＋白菜/豆芽菜\n皮蛋醬另外放才不會乾乾的。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香辣皮蛋醬拌麵/含滷蛋",
+            "description": "細拉麵，含滷蛋+阿嬤特製辣椒＋白菜/豆芽菜\n皮蛋醬另外放才不會乾乾的。",
+            "offers": {
+              "@type": "Offer",
+              "price": "138.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "湯品🥣 Soup🥣",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鮮肉貢丸湯🥣 Pork Meatball Soup🥣",
+            "description": "貢丸2顆＋小白菜",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮肉大餛飩湯🥣 Large Pork Wonton Soup🥣",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "100.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "小東西🥢 Side Dish🥢",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋醬豆腐🥢 Tofu with Century Egg Paste🥢",
+            "description": "不同於一般的醬油膏版的皮蛋豆腐\n淋上阿嬤特製的皮蛋醬，整個風味都更上一個檔次了～",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "古早味紅茶",
+            "description": "阿嬤熬製的古早味紅茶，不會太甜有回甘",
+            "offers": {
+              "@type": "Offer",
+              "price": "30.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "滷蛋",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "❄️冷凍商品直送你家❄️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "爆汁高麗菜水餃（冷凍）｜30顆",
+            "description": "冷凍水餃。Uber抽成太貴啦，如果你就在附近，就直接來現場買就好，還比較便宜呢！",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜黑胡椒水餃（冷凍）｜30顆",
+            "description": "冷凍水餃。韭菜鹹香，每個吃過都說好吃耶！\n阿嬤的配方是外面吃不到的調味～\n（含一眯眯黑胡椒，有看到黑黑一點一點是正常的喔）",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋香菜水餃（冷凍）｜20顆",
+            "description": "冷凍水餃。阿嬤說這是不敢吃香菜的客人也敢吃的水餃口味喔！\n皮蛋好香濃～",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆木耳水餃（冷凍）｜20顆",
+            "description": "冷凍水餃。鮮嫩四季豆、木耳、香菇和溫體豬絞肉製成\n吃起來清爽又有料，小孩子吃時蔬的最佳選擇\n\n瞬間都不挑食了～",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花素水餃（純素冷凍）｜20顆",
+            "description": "冷凍水餃。香菇、木耳、高麗菜、香菜、紅蘿蔔、冬粉、豆乾，無素料的水餃喔，滿滿鮮蔬！！\n\n這個回家做蒸餃超好吃！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮肉大餛飩（冷凍）｜10顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "⚠️阿嬤ㄟ話⚠️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "麵食目前只有中午供應喔！！",
+            "description": "週二～週六 11am-3pm",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "被麵店耽誤的手工水餃🥟 Dumplings🥟",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "🔥韭菜水餃（熟食）🥟 Chive Dumplings🥟",
+            "description": "每份10顆，韭菜好鮮香。\n阿嬤有說他的配方，沒有在外面吃過喔！\n每顆下水前重達25g-28g，是扎實飽滿的水餃啊！\n（含一眯眯黑胡椒，有看到黑黑一點一點是正常的喔）",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜水餃（熟食）🥟 Cabbage Dumplings🥟",
+            "description": "高麗菜水餃10顆。\n阿嬤50年配方的水餃，餃皮Ｑ彈內餡鮮美，還吃得到高麗菜脆脆的口感！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "109.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "🔥限量｜四季豆木耳水餃（熟食）",
+            "description": "⚠️真的是有冷凍水餃訂單才會出現的，非常備品\n（四季豆水餃超級費工費時，會邊做邊抱怨的那種，但是吃了以後又覺得真的有夠好吃，下次必須繼續做的水餃無限城。）",
+            "offers": {
+              "@type": "Offer",
+              "price": "125.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "❄️冷凍商品直送你家❄️",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "爆汁高麗菜水餃（冷凍）｜30顆",
+            "description": "冷凍水餃。Uber抽成太貴啦，如果你就在附近，就直接來現場買就好，還比較便宜呢！",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "韭菜黑胡椒水餃（冷凍）｜30顆",
+            "description": "冷凍水餃。韭菜鹹香，每個吃過都說好吃耶！\n阿嬤的配方是外面吃不到的調味～\n（含一眯眯黑胡椒，有看到黑黑一點一點是正常的喔）",
+            "offers": {
+              "@type": "Offer",
+              "price": "260.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮蛋香菜水餃（冷凍）｜20顆",
+            "description": "冷凍水餃。阿嬤說這是不敢吃香菜的客人也敢吃的水餃口味喔！\n皮蛋好香濃～",
+            "offers": {
+              "@type": "Offer",
+              "price": "220.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆木耳水餃（冷凍）｜20顆",
+            "description": "冷凍水餃。鮮嫩四季豆、木耳、香菇和溫體豬絞肉製成\n吃起來清爽又有料，小孩子吃時蔬的最佳選擇\n\n瞬間都不挑食了～",
+            "offers": {
+              "@type": "Offer",
+              "price": "210.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花素水餃（純素冷凍）｜20顆",
+            "description": "冷凍水餃。香菇、木耳、高麗菜、香菜、紅蘿蔔、冬粉、豆乾，無素料的水餃喔，滿滿鮮蔬！！\n\n這個回家做蒸餃超好吃！！",
+            "offers": {
+              "@type": "Offer",
+              "price": "240.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鮮肉大餛飩（冷凍）｜10顆",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "145.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
