@@ -30,8 +30,8 @@ if hasattr(sys.stdout, 'reconfigure'):
     except Exception:
         pass
 
-# 引入本地模組目錄
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "local_scr")))
+# 引入模組目錄
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from json_to_db import UberEatsDBImporter
