@@ -1,4 +1,4 @@
-name: Distributed 15-Workers UberEats Crawler
+name: Uber Crawler
 
 on:
   schedule:
@@ -14,6 +14,9 @@ on:
         description: '最大並行工作機數量 (上限 15)'
         required: false
         default: '15'
+
+env:
+  TZ: 'Asia/Taipei'
 
 jobs:
   # ==========================================

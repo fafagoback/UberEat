@@ -26,7 +26,9 @@ import html
 import re
 import sqlite3
 import hashlib
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+TW_TZ = timezone(timedelta(hours=8))
 from typing import Dict, List, Tuple, Any, Optional
 
 # 確保標準輸出支援 UTF-8
@@ -867,7 +869,7 @@ def main():
     print("=" * 90)
     print("🚀 【外送平台價格與商品監控系統 (Uber Eats Price & Store Monitor)】")
     print("📌 第二階段 ETL 轉檔模組: JSON 資料湖 ➔ 時序關聯資料庫 (SQLite)")
-    print(f"⏰ 執行時間: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"⏰ 執行時間: {datetime.now(TW_TZ).strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"📁 來源目錄: {json_dir}")
     print(f"🗄️ 目標資料庫: {db_path}")
     print("=" * 90)

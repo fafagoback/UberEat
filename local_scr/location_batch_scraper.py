@@ -28,7 +28,9 @@ import html
 import random
 import hashlib
 import threading
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+TW_TZ = timezone(timedelta(hours=8))
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
@@ -600,7 +602,7 @@ def main():
             if len(sys.argv) > 2 and sys.argv[2].isdigit():
                 max_stores_limit = int(sys.argv[2])
 
-    now = datetime.now()
+    now = datetime.now(TW_TZ)
     today_str = now.strftime("%Y-%m-%d")
     timestamp_str = now.strftime("%Y-%m-%d %H:%M:%S")
     file_time_prefix = now.strftime("%Y%m%d%H%M%S_")

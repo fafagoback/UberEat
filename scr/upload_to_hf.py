@@ -12,7 +12,9 @@ import os
 import sys
 import time
 import argparse
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+TW_TZ = timezone(timedelta(hours=8))
 
 # 確保標準輸出與標準錯誤支援 UTF-8
 if hasattr(sys.stdout, 'reconfigure'):
@@ -138,7 +140,7 @@ def upload_to_huggingface(src_dir: str, repo_id: str, path_in_repo: str = "Json"
         )
 
     api = HfApi(token=token)
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    today_str = datetime.now(TW_TZ).strftime("%Y-%m-%d")
 
     # 3. 確保 Dataset 存在 (3 次重試)
     repo_ok = False

@@ -12,8 +12,9 @@ import os
 import sys
 import json
 import time
-import argparse
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+TW_TZ = timezone(timedelta(hours=8))
 
 # 確保標準輸出與標準錯誤支援 UTF-8
 if hasattr(sys.stdout, 'reconfigure'):
@@ -88,7 +89,9 @@ def main():
     args = parser.parse_args()
 
     start_time = time.time()
-    now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    now_dt = datetime.now(TW_TZ)
+    batch_time_str = now_dt.strftime("%Y%m%d%H%M%S")
+    now_str = now_dt.strftime("%Y-%m-%d %H:%M:%S")
 
     print("=" * 80)
     print("🚀 【階段 1: Coordinator 調度節點】啟動 (嚴格檢核與 3 次重試模式)")
@@ -196,6 +199,7 @@ def main():
         chunk_file = f"tasks/chunk_{i}.json"
         task_payload = {
             "chunk_id": i,
+            "crawled_time": batch_time_str,
             "total_chunks": num_workers,
             "stores_count": len(chunks[i]),
             "stores": chunks[i]

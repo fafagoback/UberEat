@@ -15,7 +15,9 @@ import os
 import sys
 import json
 import sqlite3
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+TW_TZ = timezone(timedelta(hours=8))
 from typing import Dict, List, Tuple, Any, Optional
 
 # 確保標準輸出支援 UTF-8
@@ -174,7 +176,7 @@ class UberEatsAlertEngine:
             "new_products": new_products,
             "promotions": promotions,
             "stats": stats,
-            "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            "generated_at": datetime.now(TW_TZ).strftime("%Y-%m-%d %H:%M:%S")
         }
 
         # 7. 匯出靜態展示檔案

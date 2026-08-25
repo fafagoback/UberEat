@@ -15,7 +15,9 @@ import glob
 import json
 import time
 import argparse
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+TW_TZ = timezone(timedelta(hours=8))
 
 # 確保標準輸出與標準錯誤支援 UTF-8
 if hasattr(sys.stdout, 'reconfigure'):
@@ -142,8 +144,10 @@ def main():
             retries=0
         )
 
+    crawled_time = task_data.get("crawled_time") or datetime.now(TW_TZ).strftime("%Y%m%d%H%M%S")
+
     os.makedirs(args.output_dir, exist_ok=True)
-    file_time_prefix = datetime.now().strftime("%Y%m%d%H%M%S_") + f"w{chunk_id}_"
+    file_time_prefix = f"{crawled_time}_"
 
     # ---------------------------------------------------------
     # 步驟 2.2：看門狗並發採集 (內建多輪補爬)
