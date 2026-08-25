@@ -36,8 +36,8 @@ if %ERRORLEVEL% NEQ 0 (
 echo.
 echo ============================================================
 echo   [SUCCESS] Deployment pushed successfully!
-echo   Repository:   https://github.com/hub-google/UberEat
-echo   GitHub Pages: https://hub-google.github.io/UberEat/
+echo   Repository:   https://github.com/fafagoback/UberEat
+echo   GitHub Pages: https://fafagoback.github.io/UberEat/
 echo ============================================================
 
 :END
