@@ -37,34 +37,35 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 // -----------------------------------------------------------------------------
-// 1. 資料載入與模式判斷
+// 1. API 網址產生與資料載入
 // -----------------------------------------------------------------------------
+function getApiUrl(endpoint) {
+  const base = (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.API_BASE_URL) || '';
+  return `${base}${endpoint}`;
+}
+
 async function loadDashboardData() {
   let loadedFromServer = false;
-  const isLocalHost = window.location.protocol.startsWith('http') && 
-    (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
-  if (isLocalHost) {
-    try {
-      const res = await fetch('/api/stats');
-      if (res.ok) {
-        APP_STATE.isServerMode = true;
-        const statsData = await res.json();
-        updateStatsUI(statsData);
-        await fetchDiscounts();
-        await fetchNewStores();
-        await fetchNewProducts();
-        await fetchPromotions();
-        await fetchGlobalProducts();
-        loadedFromServer = true;
-      }
-    } catch (err) {
-      console.warn('無法連線本機後端 API，將切換為靜態資料模式:', err);
+  try {
+    const res = await fetch(getApiUrl('/api/stats'));
+    if (res.ok) {
+      APP_STATE.isServerMode = true;
+      const statsData = await res.json();
+      updateStatsUI(statsData);
+      await fetchDiscounts();
+      await fetchNewStores();
+      await fetchNewProducts();
+      await fetchPromotions();
+      await fetchGlobalProducts();
+      loadedFromServer = true;
     }
+  } catch (err) {
+    console.warn('無法連線動態 API，切換為離線備援資料:', err);
   }
 
   if (!loadedFromServer) {
-    // 離線靜態模式 / GitHub Pages 模式: 讀取 window.UBER_RADAR_DATA
+    // 離線備援模式: 僅在無網路或 API 離線時讀取 window.UBER_RADAR_DATA
     APP_STATE.isServerMode = false;
     if (window.UBER_RADAR_DATA) {
       const data = window.UBER_RADAR_DATA;
@@ -78,7 +79,7 @@ async function loadDashboardData() {
       renderNewProducts();
       renderPromotions();
     } else {
-      console.warn('未偵測到離線快照資料 (dashboard_data.js)。');
+      console.warn('未偵測到備援資料。');
     }
   }
 }
@@ -122,7 +123,7 @@ async function fetchDiscounts() {
   });
 
   try {
-    const res = await fetch(`/api/discounts?${params.toString()}`);
+    const res = await fetch(getApiUrl(`/api/discounts?${params.toString()}`));
     if (res.ok) {
       const data = await res.json();
       APP_STATE.discounts = data.items || [];
@@ -268,7 +269,7 @@ function renderDiscounts() {
 async function fetchNewStores() {
   if (!APP_STATE.isServerMode) return;
   try {
-    const res = await fetch('/api/new-stores');
+    const res = await fetch(getApiUrl('/api/new-stores'));
     if (res.ok) {
       const data = await res.json();
       APP_STATE.newStores = data.items || [];
@@ -347,7 +348,7 @@ function renderNewStores() {
 async function fetchNewProducts() {
   if (!APP_STATE.isServerMode) return;
   try {
-    const res = await fetch('/api/new-products');
+    const res = await fetch(getApiUrl('/api/new-products'));
     if (res.ok) {
       const data = await res.json();
       APP_STATE.newProducts = data.items || [];
@@ -433,7 +434,7 @@ function renderNewProducts() {
 async function fetchPromotions() {
   if (!APP_STATE.isServerMode) return;
   try {
-    const res = await fetch('/api/promotions');
+    const res = await fetch(getApiUrl('/api/promotions'));
     if (res.ok) {
       const data = await res.json();
       APP_STATE.promotions = data.items || [];
@@ -521,7 +522,7 @@ async function fetchGlobalProducts(page = 1) {
   });
 
   try {
-    const res = await fetch(`/api/products?${params.toString()}`);
+    const res = await fetch(getApiUrl(`/api/products?${params.toString()}`));
     if (res.ok) {
       const data = await res.json();
       APP_STATE.globalProducts = data.items || [];
@@ -645,7 +646,7 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
   let history = [];
   if (APP_STATE.isServerMode) {
     try {
-      const res = await fetch(`/api/history?product_id=${productId}`);
+      const res = await fetch(getApiUrl(`/api/history?product_id=${productId}`));
       if (res.ok) {
         const data = await res.json();
         history = data.history || [];
@@ -807,7 +808,7 @@ function initEventListeners() {
     icon?.classList.add('animate-spin');
     if (APP_STATE.isServerMode) {
       try {
-        await fetch('/api/refresh', { method: 'POST' });
+        await fetch(getApiUrl('/api/refresh'), { method: 'POST' });
         await loadDashboardData();
       } catch (e) {
         console.error(e);

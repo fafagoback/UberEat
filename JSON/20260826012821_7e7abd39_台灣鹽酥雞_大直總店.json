@@ -1,0 +1,1473 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E5%8F%B0%E7%81%A3%E9%B9%BD%E9%85%A5%E9%9B%9E-%E5%A4%A7%E7%9B%B4%E7%B8%BD%E5%BA%97/CeO3JJoVSKObnwrdlOpIzA",
+  "name": "台灣鹽酥雞 大直總店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 530",
+    "addressLocality": "",
+    "addressRegion": "Taipei City",
+    "postalCode": "104",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.079769010658566,
+    "longitude": 121.5466258630233
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 45000
+  },
+  "servesCuisine": [
+    "Taiwanese",
+    "Taiwanese Fried Chicken"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "(素) 人氣精選",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(素) 素鹽酥雞 Taiwanese Deep-Fried Chicken",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 雞蛋豆腐 Deep-Fried Egg Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 馬鈴薯條 French Fries",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 地瓜薯條 Sweet Potato Fries",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 蘿蔔糕 Deep-Fried Turnip Cake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 芋頭糕（甜）Deep-Fried Taro Cake (Sweet)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 芋頭糕（鹹）Deep-Fried Taro Cake (Salty)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 豆干 Deep-Fried Dried Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 百葉豆腐 Deep-Fried Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 五彩湯圓 Deep-Fried Rice Balls",
+            "description": "加花生粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "(素) 鮮蔬時菜 Vegetables",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(素) 香菇 Deep-Fried Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 花椰菜 Deep-Fried Cauliflower",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 四季豆 Deep-Fried String Beans",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 玉米 Deep-Fried Corn",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 高麗菜 Deep-Fried Cabbage",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 養生南瓜 Deep-Fried Pumpkin",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 茭白筍 Deep-Fried Water Bamboo",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 金針菇 Deep-Fried Winter Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 杏鮑菇 Deep-Fried King Oyster Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 玉米筍（小玉米）Deep-Fried Baby Corn",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "(素) 精選炸物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "(素) 黃金炸豆皮 Deep-Fried Tofu Skin",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 炸麻吉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 手工大甲芋頭餅 Taiwanese Taro Pie",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 螺絲捲（三顆）",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 奶黃芋泥球（三顆）Deep-Fried Custard Taro Paste Balls (Three Pieces)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 酥皮炸絲瓜 Deep-Fried Sponge Gourd",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 香甜炸蘋果 Deep-Fried Apple",
+            "description": "加糖粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 炸OREO Deep-Fried OREO",
+            "description": "加糖粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 米血糕 Deep-Fried Pig Blood Cake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "50.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 甜不辣 Deep-Fried Tempura",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 手工花枝丸 Deep-Fried Cuttlefish Balls",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 花枝圈",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 麥克雞塊",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 黑胡椒香酥排",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 酥炸黃金鯛",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "(素) 黃金蚵仔酥",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "80.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "[買一送一] 甜不辣 Deep-Fried Tempura",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "鹽酥雞 Taiwanese Deep-Fried Chicken",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷魚 Deep-Fried Squid",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[買一送一] 米血糕 Deep-Fried Pig Blood Cake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮 Deep-Fried Chicken Skin",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳葉魚 Deep-Fried Shishamo Fish",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍（小玉米）Deep-Fried Baby Corn",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞排 Deep-Fried Chicken Cutlet",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金雞軟骨 Deep-Fried Chicken Cartilage",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍珠 Deep-Fried Squid Mouth",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心 Deep-Fried Chicken Heart",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "四季豆 Deep-Fried String Beans",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干 Deep-Fried Dried Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞蛋豆腐 Deep-Fried Egg Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇 Deep-Fried Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五彩湯圓 Deep-Fried Rice Balls",
+            "description": "加花生粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Offers",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "[買一送一] 百葉豆腐 Deep-Fried Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[買一送一] 米血糕 Deep-Fried Pig Blood Cake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[買一送一] 甜不辣 Deep-Fried Tempura",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜 Deep-Fried Cabbage",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞排 Deep-Fried Chicken Cutlet",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "注意事項",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "辣椒包加購",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽包加購",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "餐點皆無生蒜，九層塔為特定品項之添加物",
+            "description": "若無附九層塔，則代表當日已提供完畢",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "調味粉包如需求量較大可加購",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "6.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "好消息！即日起提供『素食』菜單！！歡迎有此需求者前往素食菜單訂購",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "近期颱風豪雨影響，蔬菜成本大幅上升，本店暫時調整價格，感謝您的體諒與支持。",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "餐點會混裝，如需分開請務必清楚備註",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣精選 Popular Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "鹽酥雞 Taiwanese Deep-Fried Chicken",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魷魚 Deep-Fried Squid",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "89.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "糯米腸 Deep-Fried Glutinous Rice Sausage",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "地瓜薯條 Sweet Potato Fries",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "豆干 Deep-Fried Dried Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞蛋豆腐 Deep-Fried Egg Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "68.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬鈴薯條 French Fries",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞排 Deep-Fried Chicken Cutlet",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蘿蔔糕 Deep-Fried Turnip Cake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "49.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "五彩湯圓 Deep-Fried Rice Balls",
+            "description": "加花生粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "黃金雞軟骨 Deep-Fried Chicken Cartilage",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "83.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "龍珠 Deep-Fried Squid Mouth",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭糕（鹹）Deep-Fried Taro Cake (Salty)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞皮 Deep-Fried Chicken Skin",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "柳葉魚 Deep-Fried Shishamo Fish",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "芋頭糕（甜）Deep-Fried Taro Cake (Sweet)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "馬鈴薯丁 Deep-Fried Potato Dices",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "魚板（兩片）Deep-Fried Kamaboko (Two Pieces)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "螃蟹 Deep-Fried Crab",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "新鮮章魚腳身 Deep-Fried Octopus Tentacle",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "95.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "洋蔥圈 Onion Rings",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞米花 Chicken Popcorn",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胸骨 Deep-Fried Chicken Breast Bone",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "25.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腿 Deep-Fried Chicken Drumsticks",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[買一送一] 百葉豆腐 Deep-Fried Tofu",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[買一送一] 米血糕 Deep-Fried Pig Blood Cake",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "[買一送一] 甜不辣 Deep-Fried Tempura",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "人氣串燒 Popular Yakitori",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "雞屁股 Deep-Fried Chicken Butt",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞心 Deep-Fried Chicken Heart",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸皮蛋 Deep-Fried Century Egg",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮肥腸 Deep-Fried Crispy Pork Intestines",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "160.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花枝燒 Deep-Fried Cuttlefish",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "頂級牛肉串 Beef Skewers",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "脆皮雞翅 Chrispy Chicken Wing",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞腸 Deep-Fried Chicken Intestine",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "培根肉串 Deep-Fried Bacon Skewers",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞胗 Deep-Fried Chicken Gizzard",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇丸 Deep-Fried Mushroom Balls",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "雞脖子（兩支）Deep-Fried Chicken Neck (Two Pieces)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "嚴選豬肉串 Pork Skewers",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鮮蔬時菜 Vegetables",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "四季豆 Deep-Fried String Beans",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "杏鮑菇 Deep-Fried King Oyster Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香菇 Deep-Fried Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "花椰菜 Deep-Fried Cauliflower",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米筍（小玉米）Deep-Fried Baby Corn",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "茭白筍 Deep-Fried Water Bamboo",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "73.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "高麗菜 Deep-Fried Cabbage",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "玉米 Deep-Fried Corn",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "金針菇 Deep-Fried Winter Mushroom",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "養生南瓜 Deep-Fried Pumpkin",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "70.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "新品推薦 New Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "黃金炸豆皮 Deep-Fried Tofu Skin",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工花枝丸 Deep-Fried Cuttlefish Balls",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "48.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥炸小卷 Deep-Fried Neritic Squid",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "銀絲卷（三顆）Deep-Fried Steam Bun (Three Pieces)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "69.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛蒡天婦羅 Deep-Fried Burdock Tempura",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "小熱狗（鑫鑫腸） Deep-Fried Mini sausage",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "和風麻糬 Mochi",
+            "description": "加花生粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "59.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "三角骨 Deep-Fried Chicken Wrist Bone",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "手工大甲芋頭餅 Taiwanese Taro Pie",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "45.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "奶黃芋泥球（三顆）Deep-Fried Custard Taro Paste Balls (Three Pieces)",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "拔絲起司條 Melted Cheese Sticks",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "炸OREO Deep-Fried OREO",
+            "description": "加糖粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "月亮蝦餅 Full-Moon Shrimp Patties",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "酥皮炸絲瓜 Deep-Fried Sponge Gourd",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "74.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "爆漿鮭魚卵  Deep-Fried Salmon Roe",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香甜炸蘋果 Deep-Fried Apple",
+            "description": "加糖粉",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "噴汁豬肉餡餅 Pork Meat Pie",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "60.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "調味粉",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "辣椒包加購",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "椒鹽包加購",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "5.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "罐裝辣椒粉",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "罐裝椒鹽粉 Spiced Salt Powder",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "85.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "盒裝椒鹽粉 Spiced Salt Powder in Box",
+            "description": "",
+            "offers": {
+              "@type": "Offer",
+              "price": "520.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "potentialAction": {
+    "@type": "OrderAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.ubereats.com/tw/store/%E5%8F%B0%E7%81%A3%E9%B9%BD%E9%85%A5%E9%9B%9E-%E5%A4%A7%E7%9B%B4%E7%B8%BD%E5%BA%97/CeO3JJoVSKObnwrdlOpIzA",
+      "inLanguage": "zh-TW",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform",
+        "http://schema.org/IOSPlatform",
+        "http://schema.org/AndroidPlatform"
+      ]
+    }
+  }
+}

@@ -37,6 +37,7 @@ output_*/
 all_json_lake/
 all_json_outputs/
 d1_migration.sql
+d1_sync.sql
 
 # Operating System
 .DS_Store

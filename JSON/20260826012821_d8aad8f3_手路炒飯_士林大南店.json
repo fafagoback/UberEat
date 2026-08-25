@@ -1,0 +1,818 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://www.ubereats.com/tw/store/%E6%89%8B%E8%B7%AF%E7%82%92%E9%A3%AF-%E5%A3%AB%E6%9E%97%E5%A4%A7%E5%8D%97%E5%BA%97/tMjkd7aQV-Ghc78YgwO_Pw",
+  "name": "手路炒飯 士林大南店",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "台北市",
+    "addressLocality": "士林區",
+    "addressRegion": "台北市",
+    "postalCode": "111",
+    "addressCountry": "TW"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.0884156,
+    "longitude": 121.5208837
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.3,
+    "reviewCount": 700
+  },
+  "servesCuisine": [
+    "Chinese"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Featured items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋炒飯 Egg Fried Rice ( Shrimp )",
+            "description": "新鮮 Q 彈蝦仁, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉蛋炒飯 Egg Fried Rice ( Shacha Beef )",
+            "description": "濃郁台式沙茶醬, 加上新嫩牛肉絲。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣湯 Clam Soup",
+            "description": "新鮮肥滿的蛤蠣肉, 加上薑絲條提味。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸蛋花湯 Egg Drop Soup ( Pork Ball Soup )",
+            "description": "扎實貢丸，加上新鮮蔬菜，最後再打上嫩蛋花，飽足感十足又暖胃！ [照片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香腸蛋炒飯 Egg Fried Rice ( Sausage )",
+            "description": "嫩切香腸快炒嫩蛋和炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉燴飯 Stewed Rice ( Shacha Mutton  )",
+            "description": "濃郁台式沙茶羊, 大火快炒, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉炒麵 Fried Noodles  ( Shacha Mutton )",
+            "description": "濃郁台式沙茶羊, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵 Fried Noodles ( Beef )",
+            "description": "嫩牛肉絲片, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲蛋炒飯 Egg Fried Rice ( Pork )",
+            "description": "每口都吃得到嫩肉絲, 粒粒分明的肉絲蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉蛋炒飯 Egg Fried Rice ( Beef )",
+            "description": "嫩牛肉條, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒麵  Fried Noodles ( Pork )",
+            "description": "新嫩豬肉絲, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉蛋炒飯 Egg Fried Rice ( Shacha Mutton )",
+            "description": "濃郁台式沙茶醬, 加上新鮮羊肉絲。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵 Fried Noodles ( Mutton )",
+            "description": "嫩羊肉絲片, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒麵 Fried Noodles ( Shrimp )",
+            "description": "每日新鮮海撈鮮蝦, 青菜等食材, 大火快炒 Q 彈細油麵, 海鮮味十足的美食饗宴。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉蛋炒飯 Egg Fried Rice ( Mutton )",
+            "description": "鮮嫩羊肉絲, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒飯 Egg Fried Rice",
+            "description": "滑嫩順口的炒蛋, 加上粒粒分明的炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Save on Select Items",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒麵 Fried Noodles ( Shrimp )",
+            "description": "每日新鮮海撈鮮蝦, 青菜等食材, 大火快炒 Q 彈細油麵, 海鮮味十足的美食饗宴。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉炒麵 Fried Noodles  ( Shacha Mutton )",
+            "description": "濃郁台式沙茶羊, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉燴飯 Stewed Rice ( Beef )",
+            "description": "大火快炒嫩牛肉片, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵 Fried Noodles ( Beef )",
+            "description": "嫩牛肉絲片, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋炒飯 Egg Fried Rice ( Shrimp )",
+            "description": "新鮮 Q 彈蝦仁, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉蛋炒飯 Egg Fried Rice ( Shacha Mutton )",
+            "description": "濃郁台式沙茶醬, 加上新鮮羊肉絲。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒麵  Fried Noodles ( Pork )",
+            "description": "新嫩豬肉絲, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉燴飯 Stewed Rice ( Shacha Mutton  )",
+            "description": "濃郁台式沙茶羊, 大火快炒, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉蛋炒飯 Egg Fried Rice ( Shacha Beef )",
+            "description": "濃郁台式沙茶醬, 加上新嫩牛肉絲。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉蛋炒飯 Egg Fried Rice ( Mutton )",
+            "description": "鮮嫩羊肉絲, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵 Fried Noodles ( Mutton )",
+            "description": "嫩羊肉絲片, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉燴飯",
+            "description": "濃郁台式沙茶牛, 大火快炒, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒飯 Egg Fried Rice",
+            "description": "滑嫩順口的炒蛋, 加上粒粒分明的炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁燴飯 Stewed Rice ( Shrimp )",
+            "description": "大火快炒海撈鮮蝦, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸蛋花湯 Egg Drop Soup ( Pork Ball Soup )",
+            "description": "扎實貢丸，加上新鮮蔬菜，最後再打上嫩蛋花，飽足感十足又暖胃！ [照片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.10",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍛 傳世炒飯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋炒飯 Egg Fried Rice ( Shrimp )",
+            "description": "新鮮 Q 彈蝦仁, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉蛋炒飯 Egg Fried Rice ( Mutton )",
+            "description": "鮮嫩羊肉絲, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉蛋炒飯 Egg Fried Rice ( Shacha Mutton )",
+            "description": "濃郁台式沙茶醬, 加上新鮮羊肉絲。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉蛋炒飯 Egg Fried Rice ( Shacha Beef )",
+            "description": "濃郁台式沙茶醬, 加上新嫩牛肉絲。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒飯 Egg Fried Rice",
+            "description": "滑嫩順口的炒蛋, 加上粒粒分明的炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲蛋炒飯 Egg Fried Rice ( Pork )",
+            "description": "每口都吃得到嫩肉絲, 粒粒分明的肉絲蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉蛋炒飯 Egg Fried Rice ( Beef )",
+            "description": "嫩牛肉條, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香腸蛋炒飯 Egg Fried Rice ( Sausage )",
+            "description": "嫩切香腸快炒嫩蛋和炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍜 手路炒麵",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒麵 Fried Noodles ( Shrimp )",
+            "description": "每日新鮮海撈鮮蝦, 青菜等食材, 大火快炒 Q 彈細油麵, 海鮮味十足的美食饗宴。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒麵  Fried Noodles ( Pork )",
+            "description": "新嫩豬肉絲, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉炒麵 Fried Noodles  ( Shacha Mutton )",
+            "description": "濃郁台式沙茶羊, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵 Fried Noodles ( Mutton )",
+            "description": "嫩羊肉絲片, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵 Fried Noodles ( Beef )",
+            "description": "嫩牛肉絲片, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🍛 手路燴飯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁燴飯 Stewed Rice ( Shrimp )",
+            "description": "大火快炒海撈鮮蝦, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉燴飯 Stewed Rice ( Shacha Mutton  )",
+            "description": "濃郁台式沙茶羊, 大火快炒, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉燴飯",
+            "description": "濃郁台式沙茶牛, 大火快炒, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉燴飯 Stewed Rice ( Beef )",
+            "description": "大火快炒嫩牛肉片, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🥣 手路熱湯",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣湯 Clam Soup",
+            "description": "新鮮肥滿的蛤蠣肉, 加上薑絲條提味。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸蛋花湯 Egg Drop Soup ( Pork Ball Soup )",
+            "description": "扎實貢丸，加上新鮮蔬菜，最後再打上嫩蛋花，飽足感十足又暖胃！ [照片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜蛋花湯 Egg Drop Soup ( Greens )",
+            "description": "新鮮蔬菜, 加上滑嫩蛋花, 樸實而美味。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.30",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸湯 Pork Ball Soup",
+            "description": "扎實的貢丸, 加上胡椒, 芹菜調味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.30",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "🙈 菜單總覽",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "蛤蠣湯 Clam Soup",
+            "description": "新鮮肥滿的蛤蠣肉, 加上薑絲條提味。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸蛋花湯 Egg Drop Soup ( Pork Ball Soup )",
+            "description": "扎實貢丸，加上新鮮蔬菜，最後再打上嫩蛋花，飽足感十足又暖胃！ [照片僅供參考]",
+            "offers": {
+              "@type": "Offer",
+              "price": "65.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁炒麵 Fried Noodles ( Shrimp )",
+            "description": "每日新鮮海撈鮮蝦, 青菜等食材, 大火快炒 Q 彈細油麵, 海鮮味十足的美食饗宴。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁蛋炒飯 Egg Fried Rice ( Shrimp )",
+            "description": "新鮮 Q 彈蝦仁, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲炒麵  Fried Noodles ( Pork )",
+            "description": "新嫩豬肉絲, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉炒麵 Fried Noodles ( Beef )",
+            "description": "嫩牛肉絲片, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉炒麵 Fried Noodles  ( Shacha Mutton )",
+            "description": "濃郁台式沙茶羊, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蝦仁燴飯 Stewed Rice ( Shrimp )",
+            "description": "大火快炒海撈鮮蝦, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉炒麵 Fried Noodles ( Mutton )",
+            "description": "嫩羊肉絲片, 加上 Q 彈細油麵, 大火快炒。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉燴飯 Stewed Rice ( Shacha Mutton  )",
+            "description": "濃郁台式沙茶羊, 大火快炒, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶羊肉蛋炒飯 Egg Fried Rice ( Shacha Mutton )",
+            "description": "濃郁台式沙茶醬, 加上新鮮羊肉絲。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "羊肉蛋炒飯 Egg Fried Rice ( Mutton )",
+            "description": "鮮嫩羊肉絲, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉蛋炒飯 Egg Fried Rice ( Shacha Beef )",
+            "description": "濃郁台式沙茶醬, 加上新嫩牛肉絲。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "蛋炒飯 Egg Fried Rice",
+            "description": "滑嫩順口的炒蛋, 加上粒粒分明的炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "105.00",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "肉絲蛋炒飯 Egg Fried Rice ( Pork )",
+            "description": "每口都吃得到嫩肉絲, 粒粒分明的肉絲蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉蛋炒飯 Egg Fried Rice ( Beef )",
+            "description": "嫩牛肉條, 加上粒粒分明蛋炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "香腸蛋炒飯 Egg Fried Rice ( Sausage )",
+            "description": "嫩切香腸快炒嫩蛋和炒飯。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "119.70",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "沙茶牛肉燴飯",
+            "description": "濃郁台式沙茶牛, 大火快炒, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "135.10",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "牛肉燴飯 Stewed Rice ( Beef )",
+            "description": "大火快炒嫩牛肉片, 淋在香噴噴的白飯上。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "130.20",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "青菜蛋花湯 Egg Drop Soup ( Greens )",
+            "description": "新鮮蔬菜, 加上滑嫩蛋花, 樸實而美味。[照片僅供參考]。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.30",
+              "priceCurrency": "TWD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "貢丸湯 Pork Ball Soup",
+            "description": "扎實的貢丸, 加上胡椒, 芹菜調味。",
+            "offers": {
+              "@type": "Offer",
+              "price": "55.30",
+              "priceCurrency": "TWD"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "potentialAction": {
+    "@type": "OrderAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.ubereats.com/tw/store/%E6%89%8B%E8%B7%AF%E7%82%92%E9%A3%AF-%E5%A3%AB%E6%9E%97%E5%A4%A7%E5%8D%97%E5%BA%97/tMjkd7aQV-Ghc78YgwO_Pw",
+      "inLanguage": "zh-TW",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform",
+        "http://schema.org/IOSPlatform",
+        "http://schema.org/AndroidPlatform"
+      ]
+    }
+  }
+}
