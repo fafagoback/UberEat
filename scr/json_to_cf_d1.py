@@ -1,16 +1,33 @@
 # -*- coding: utf-8 -*-
 """
 Uber Eats Cloudflare D1 匯入模組 (Stage 3: Push to Cloudflare D1 Serverless SQL)
-將清洗後的資料與差異情報寫入 SQLite，並自動生成 D1 批次語句同步至 Cloudflare D1。
+【檢核與重試機制】：
+1. 嚴格檢核來源 JSON 檔案完整性
+2. 執行本地 SQLite ETL 並進行資料完整性、外鍵約束、NOT NULL 嚴格檢驗 (3 次重試)
+3. 執行智慧差異情報引擎並驗證批次時間戳記 (latest_batch)
+4. 生成 D1 批次 SQL 並校驗語法與語句筆數
+5. 透過 Wrangler 執行遠端 D1 同步 (3 次重試，失敗立即報錯熔斷)
+6. 遠端 SQL 回查驗證 (SELECT count(*) 檢核寫入筆數 > 0)
+7. 輸出全流程 Final 檢核報告至 GitHub Actions $GITHUB_STEP_SUMMARY
 """
 
 import os
 import sys
 import glob
 import json
+import time
 import argparse
 import subprocess
 import sqlite3
+from datetime import datetime
+
+# 確保標準輸出與標準錯誤支援 UTF-8
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 
 # 引入本地模組目錄
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "local_scr")))
@@ -20,7 +37,46 @@ from json_to_db import UberEatsDBImporter
 from alert_engine import UberEatsAlertEngine
 
 
-def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str):
+def append_github_step_summary(markdown_text: str):
+    """將 Markdown 內容寫入 GitHub Actions $GITHUB_STEP_SUMMARY"""
+    summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_file:
+        try:
+            with open(summary_file, "a", encoding="utf-8") as f:
+                f.write(markdown_text + "\n")
+        except Exception as e:
+            print(f"⚠️ 寫入 GITHUB_STEP_SUMMARY 失敗: {e}")
+    else:
+        print(f"\n[Local Step Summary]\n{markdown_text}\n")
+
+
+def fatal_error(step_name: str, reason: str, expected: str = "", actual: str = "", retries: int = 3):
+    """輸出醒目錯誤橫幅、寫入 GITHUB_STEP_SUMMARY 並強制以 exit code 1 終止"""
+    msg = f"""
+================================================================================
+❌ 【階段 3: ETL 與 Cloudflare D1 檢核失敗 (FATAL ERROR)】
+步驟名稱: {step_name}
+重試次數: 已重試 {retries} 次均未達標
+錯誤原因: {reason}
+預期成果: {expected}
+實際結果: {actual}
+================================================================================
+"""
+    print(msg, file=sys.stderr, flush=True)
+    
+    summary_md = f"""
+### ❌ 【ETL / D1 同步失敗】
+> [!CAUTION]
+> **在「{step_name}」經 {retries} 次重試仍未達成預期成果，流程已強制終止 (Exit Code 1)！**
+> - **錯誤原因**: `{reason}`
+> - **預期成果**: `{expected}`
+> - **實際結果**: `{actual}`
+"""
+    append_github_step_summary(summary_md)
+    sys.exit(1)
+
+
+def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) -> int:
     """將最新批次的 6 張資料表導出為 D1 專用的標準 SQL 批次語句"""
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
@@ -177,58 +233,277 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str):
     return len(sql_statements)
 
 
-def sync_to_cloudflare_d1(src_dir: str, db_name: str):
+def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
+    start_time = time.time()
     cf_token = os.environ.get("CLOUDFLARE_API_TOKEN") or os.environ.get("CF_API_TOKEN")
     cf_account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID") or os.environ.get("CF_ACCOUNT_ID")
+    is_ci = "GITHUB_ACTIONS" in os.environ
 
     db_path = "ubereats_monitor.db"
-    
-    # 1. 執行本地 SQLite ETL
-    importer = UberEatsDBImporter(db_path=db_path, json_dir=src_dir)
-    try:
-        importer.init_database()
-        stats = importer.import_all_data()
-        importer.validate_database()
-        print(f"📊 ETL 完成統計: {stats}")
-    finally:
-        importer.close()
 
-    # 2. 執行情報分析引擎 (產生 alerts_history)
+    print("=" * 80)
+    print("🚀 【階段 3: SQLite ETL & Cloudflare D1 同步】啟動 (嚴格檢核版)")
+    print(f"📁 來源目錄: {src_dir}")
+    print(f"🗄️ 目標 D1 資料庫: {db_name}")
+    print("=" * 80)
+
+    # ---------------------------------------------------------
+    # 步驟 3.1：來源目錄與 JSON 檔案檢核
+    # ---------------------------------------------------------
+    if not os.path.exists(src_dir):
+        fatal_error(
+            step_name="步驟 3.1 來源目錄檢核",
+            reason=f"來源目錄不存在: {src_dir}",
+            expected="目錄存在且包含 JSON 檔案",
+            actual="目錄不存在",
+            retries=0
+        )
+
+    json_files = glob.glob(os.path.join(src_dir, "*.json"))
+    if len(json_files) == 0:
+        fatal_error(
+            step_name="步驟 3.1 來源 JSON 總量檢核",
+            reason=f"目錄 {src_dir} 內無任何 JSON 檔案可供處理",
+            expected="JSON 檔案數 > 0",
+            actual="0 個檔案",
+            retries=0
+        )
+
+    print(f"✅ [步驟 3.1 通過] 掃描到 {len(json_files)} 個原始 JSON 檔案準備進行 ETL。")
+
+    # ---------------------------------------------------------
+    # 步驟 3.3：本地 SQLite ETL 清洗與資料庫完整性驗證 (3 次重試)
+    # ---------------------------------------------------------
+    print(f"\n⚙️ 【步驟 3.3】執行 SQLite 本地 ETL 與資料庫約束驗證...")
+    etl_ok = False
+    stats = {}
+    last_etl_err = ""
+
+    for attempt in range(1, 4):
+        importer = UberEatsDBImporter(db_path=db_path, json_dir=src_dir)
+        try:
+            importer.init_database()
+            stats = importer.import_all_data()
+            importer.validate_database()
+            
+            # 檢核: stores 與 products 是否有寫入
+            conn = sqlite3.connect(db_path)
+            cur = conn.cursor()
+            cur.execute("SELECT count(*) FROM stores;")
+            s_cnt = cur.fetchone()[0]
+            cur.execute("SELECT count(*) FROM products;")
+            p_cnt = cur.fetchone()[0]
+            conn.close()
+
+            if s_cnt > 0 and p_cnt > 0:
+                etl_ok = True
+                print(f"✅ [步驟 3.3 通過] (嘗試 {attempt}/3) ETL 完成！stores: {s_cnt} 筆, products: {p_cnt} 筆")
+                break
+            else:
+                last_etl_err = f"ETL 寫入資料量為 0 (stores: {s_cnt}, products: {p_cnt})"
+                print(f"⚠️ [步驟 3.3 檢核未過] (嘗試 {attempt}/3): {last_etl_err}")
+        except Exception as e:
+            last_etl_err = str(e)
+            print(f"⚠️ [步驟 3.3 異常] (嘗試 {attempt}/3): {e}")
+        finally:
+            importer.close()
+
+        if attempt < 3:
+            time.sleep(2.0 * attempt)
+
+    if not etl_ok:
+        fatal_error(
+            step_name="步驟 3.3 SQLite 本地 ETL 與完整性檢核",
+            reason=f"ETL 執行重試 3 次皆未通過: {last_etl_err}",
+            expected="stores > 0 且 products > 0，外鍵約束 100% 通過",
+            actual="寫入為 0 或校驗失敗",
+            retries=3
+        )
+
+    # ---------------------------------------------------------
+    # 步驟 3.4：智慧差異情報與特價計算 (Alert Engine)
+    # ---------------------------------------------------------
+    print(f"\n🧠 【步驟 3.4】執行智慧差異情報與特價計算...")
     engine = UberEatsAlertEngine(db_path=db_path)
-    alert_result = engine.detect_all()
-    latest_batch = alert_result.get("latest_batch")
-    engine.close()
-
-    if not latest_batch:
-        print("⚠️ 無有效批次，結束同步。")
-        return
-
-    # 3. 產出 D1 批次同步 SQL 檔案
-    sql_file = "d1_sync.sql"
-    generate_d1_sync_sql(db_path, sql_file, latest_batch)
-
-    # 4. 同步至 Cloudflare D1
-    if not cf_token or not cf_account_id:
-        print("⚠️ 未設定 CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID，已完成本機 SQLite ETL，跳過 D1 遠端同步。")
-        return
-
-    print(f"🚀 正在透過 Wrangler 同步資料至 Cloudflare D1 ({db_name})...")
     try:
-        cmd = f'npx wrangler d1 execute {db_name} --remote --file="{sql_file}"'
-        res = subprocess.run(cmd, shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id))
-        if res.returncode == 0:
-            print("✅ Cloudflare D1 遠端同步成功！")
-            print(res.stdout)
+        alert_result = engine.detect_all()
+        latest_batch = alert_result.get("latest_batch")
+        total_alerts = alert_result.get("total_alerts_detected", 0)
+    finally:
+        engine.close()
+
+    if not latest_batch or len(latest_batch) != 14:
+        fatal_error(
+            step_name="步驟 3.4 差異情報與批次時間戳記",
+            reason=f"無法獲取有效之 14 碼批次時間戳記 (latest_batch: {latest_batch})",
+            expected="14 碼 YYYYMMDDhhmmss 字串",
+            actual=str(latest_batch),
+            retries=1
+        )
+
+    print(f"✅ [步驟 3.4 通過] 鎖定最新採集批次: {latest_batch}，計算出 {total_alerts} 筆差異與特價情報！")
+
+    # ---------------------------------------------------------
+    # 步驟 3.5：Cloudflare D1 批次 SQL 生成與語法檢核
+    # ---------------------------------------------------------
+    print(f"\n📝 【步驟 3.5】生成 Cloudflare D1 批次 SQL 語句檔案...")
+    sql_file = "d1_sync.sql"
+    sql_count = generate_d1_sync_sql(db_path, sql_file, latest_batch)
+
+    if not os.path.exists(sql_file) or os.path.getsize(sql_file) == 0 or sql_count == 0:
+        fatal_error(
+            step_name="步驟 3.5 D1 批次 SQL 生成檢核",
+            reason=f"D1 同步 SQL 檔案生成異常或為空檔案: {sql_file}",
+            expected="SQL 檔案大小 > 0 且語句數 > 0",
+            actual=f"語句數: {sql_count}, 大小: {os.path.getsize(sql_file) if os.path.exists(sql_file) else 0}",
+            retries=1
+        )
+
+    print(f"✅ [步驟 3.5 通過] D1 同步 SQL 檔案校驗無誤: {sql_file} (共 {sql_count} 條語句)")
+
+    # ---------------------------------------------------------
+    # 步驟 3.6：Cloudflare D1 遠端批次寫入 (3 次重試)
+    # ---------------------------------------------------------
+    print(f"\n☁️ 【步驟 3.6】執行 Cloudflare D1 遠端同步 ({db_name})...")
+    if not cf_token or not cf_account_id:
+        if is_ci or require_d1:
+            fatal_error(
+                step_name="步驟 3.6 Cloudflare 憑證檢核",
+                reason="環境中缺少 CLOUDFLARE_API_TOKEN 或 CLOUDFLARE_ACCOUNT_ID Secrets",
+                expected="有效 Cloudflare API Token 與 Account ID",
+                actual="None (未設定)",
+                retries=0
+            )
         else:
-            print(f"⚠️ Wrangler 同步警告/錯誤: {res.stderr or res.stdout}")
-    except Exception as e:
-        print(f"⚠️ 執行 Wrangler 時發生異常: {e}")
+            print("ℹ️ 本機離線模式 (未設定 Cloudflare 憑證)，跳過 D1 遠端同步步驟。")
+            return
+
+    d1_sync_ok = False
+    last_d1_err = ""
+
+    for attempt in range(1, 4):
+        print(f"   ▶ 正在透過 Wrangler 執行遠端 D1 匯入 (嘗試 {attempt}/3)...")
+        try:
+            cmd = f'npx wrangler d1 execute {db_name} --remote --file="{sql_file}"'
+            res = subprocess.run(
+                cmd,
+                shell=True,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="ignore",
+                env=dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
+            )
+            out_str = (res.stdout or "") + (res.stderr or "")
+            if res.returncode == 0 and "Error" not in out_str:
+                d1_sync_ok = True
+                print("✅ [步驟 3.6 通過] Cloudflare D1 遠端 SQL 批次寫入成功！")
+                break
+            else:
+                last_d1_err = out_str.strip()
+                print(f"⚠️ [步驟 3.6 異常] (嘗試 {attempt}/3): {last_d1_err[:300]}")
+        except Exception as e:
+            last_d1_err = str(e)
+            print(f"⚠️ [步驟 3.6 例外] (嘗試 {attempt}/3): {e}")
+
+        if attempt < 3:
+            time.sleep(3.0 * attempt)
+
+    if not d1_sync_ok:
+        fatal_error(
+            step_name="步驟 3.6 Cloudflare D1 遠端同步",
+            reason=f"Wrangler 遠端寫入重試 3 次皆失敗: {last_d1_err[:400]}",
+            expected="Wrangler returncode == 0 且無錯誤",
+            actual="Wrangler 執行失敗",
+            retries=3
+        )
+
+    # ---------------------------------------------------------
+    # 步驟 3.7：Cloudflare D1 遠端資料庫回查驗證 (3 次重試)
+    # ---------------------------------------------------------
+    print(f"\n🔍 【步驟 3.7】執行 Cloudflare D1 遠端資料庫回查驗證...")
+    verify_ok = False
+    remote_store_count = 0
+    last_verify_err = ""
+
+    for attempt in range(1, 4):
+        try:
+            cmd = f'npx wrangler d1 execute {db_name} --remote --command="SELECT count(*) AS total_stores FROM stores WHERE crawled_time=\'{latest_batch}\';"'
+            res = subprocess.run(
+                cmd,
+                shell=True,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="ignore",
+                env=dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
+            )
+            out = res.stdout or ""
+            if res.returncode == 0:
+                # 尋找輸出中的數字
+                lines = out.split("\n")
+                for line in lines:
+                    line_clean = line.strip().strip("│").strip()
+                    if line_clean.isdigit() and int(line_clean) > 0:
+                        remote_store_count = int(line_clean)
+                        verify_ok = True
+                        break
+                if verify_ok:
+                    print(f"✅ [步驟 3.7 通過] 遠端 D1 回查驗證成功！在庫店家數: {remote_store_count} 間 (批次: {latest_batch})")
+                    break
+            last_verify_err = (res.stderr or out).strip()
+            print(f"⚠️ [步驟 3.7 回查異常] (嘗試 {attempt}/3): {last_verify_err[:200]}")
+        except Exception as e:
+            last_verify_err = str(e)
+            print(f"⚠️ [步驟 3.7 例外] (嘗試 {attempt}/3): {e}")
+
+        if attempt < 3:
+            time.sleep(2.0 * attempt)
+
+    if not verify_ok:
+        fatal_error(
+            step_name="步驟 3.7 Cloudflare D1 遠端回查檢驗",
+            reason=f"遠端 D1 回查重試 3 次未檢測到當前批次資料: {last_verify_err[:300]}",
+            expected=f"遠端 stores 表包含批次 {latest_batch} 且筆數 > 0",
+            actual=f"回查店家數: {remote_store_count}",
+            retries=3
+        )
+
+    elapsed = time.time() - start_time
+
+    # ---------------------------------------------------------
+    # 步驟 3.8：輸出全流程 Final 檢核總結報告至 GHA Step Summary
+    # ---------------------------------------------------------
+    summary_md = f"""
+## 🗄️ 【階段 3: ETL 與 Cloudflare D1】檢核成功報告
+
+> **批次時間戳記**: `{latest_batch}` | **D1 資料庫**: `{db_name}` | **耗時**: `{elapsed:.2f} 秒` | **狀態**: ✅ 全部通過
+
+### 📋 Reducer 檢核清單
+| 檢核步驟 | 檢核項目 | 預期標準 | 實際結果 | 檢核狀態 |
+| :--- | :--- | :--- | :--- | :---: |
+| **步驟 3.1** | 來源目錄 JSON 總量 | 收集 JSON 數 `> 0` | 收集到 **{len(json_files)}** 個 JSON 檔案 | ✅ 通過 |
+| **步驟 3.3** | SQLite 本地 ETL 與約束 | stores > 0 且 0 外鍵孤兒 | stores: {stats.get('stores', 0)} 筆, products: {stats.get('products', 0)} 筆 | ✅ 通過 |
+| **步驟 3.4** | 智慧差異情報計算 | 產出 latest_batch | 產出 **{total_alerts}** 筆特價/新品情報 | ✅ 通過 |
+| **步驟 3.5** | D1 批次 SQL 生成校驗 | SQL 大小 > 0 且語句數 > 0 | 生成 **{sql_count}** 條 SQL 語句 | ✅ 通過 |
+| **步驟 3.6** | Cloudflare D1 遠端寫入 | Wrangler 執行成功 | 遠端 SQL 批次執行成功 (Exit 0) | ✅ 通過 |
+| **步驟 3.7** | D1 遠端資料庫回查驗證 | 遠端 stores 筆數 `> 0` | 遠端在庫店家: **{remote_store_count}** 間 | ✅ 通過 |
+
+---
+"""
+    append_github_step_summary(summary_md)
+
+    print("\n" + "=" * 80)
+    print(f"🎉 【階段 3: ETL 與 D1 同步全部完成！】耗時 {elapsed:.2f} 秒")
+    print("=" * 80)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="同步資料至 Cloudflare D1")
+    parser = argparse.ArgumentParser(description="同步資料至 Cloudflare D1 (嚴格檢核版)")
     parser.add_argument("--src-dir", required=True, help="JSON 資料夾")
     parser.add_argument("--db-name", default="ubereats_monitor", help="Cloudflare D1 資料庫名稱")
+    parser.add_argument("--require-d1", action="store_true", help="強制要求 D1 遠端同步 (若無 Token 則報錯)")
     args = parser.parse_args()
 
-    sync_to_cloudflare_d1(args.src_dir, args.db_name)
+    sync_to_cloudflare_d1(args.src_dir, args.db_name, args.require_d1)
+

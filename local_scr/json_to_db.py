@@ -826,6 +826,25 @@ class UberEatsDBImporter:
         for sr in summary_rows:
             print(f"      - {sr['promo_type']:<10}: {sr['count']:>5} 項商品 (平均取得數量: {sr['avg_qty']:.1f})")
 
+        # 嚴格校驗判定：若外鍵錯誤或 NOT NULL 約束失敗，直接拋錯中斷
+        errors = []
+        if not validation_results["fk_check"]:
+            errors.append(f"外鍵約束檢查失敗，存在孤兒記錄: {fk_errors}")
+        for tbl, status in validation_results["not_null_checks"].items():
+            if status != "OK":
+                errors.append(f"資料表 [{tbl}] NOT NULL 約束違規: {status}")
+        if not validation_results["format_checks"]["crawled_time_14_digits"]:
+            errors.append("時間戳記格式非 14 碼標準數字")
+        if not validation_results["format_checks"]["prices_non_negative"]:
+            errors.append("檢測到負數商品價格")
+        if not validation_results["format_checks"]["quantity_positive"]:
+            errors.append("檢測到 quantity < 1 之異常商品數量")
+
+        if errors:
+            err_msg = "【資料庫完整性檢核失敗】" + "; ".join(errors)
+            print(f"\n❌ {err_msg}\n", file=sys.stderr)
+            raise RuntimeError(err_msg)
+
         print("=" * 90)
         return validation_results
 
