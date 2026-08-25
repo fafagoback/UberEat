@@ -56,6 +56,12 @@ def upload_to_huggingface(src_dir: str, repo_id: str, path_in_repo: str = "Json"
         print(f"❌ 來源目錄不存在: {src_dir}")
         return
 
+    json_files = [f for f in os.listdir(src_dir) if f.endswith(".json")] if os.path.isdir(src_dir) else []
+    print(f"📦 掃描到 {len(json_files)} 個 JSON 檔案準備上傳。")
+    if len(json_files) == 0:
+        print(f"⚠️ {src_dir} 內無任何 JSON 檔案，跳過 Hugging Face 上傳。")
+        return
+
     today_str = datetime.now().strftime("%Y-%m-%d")
     print(f"🚀 正在上傳 {src_dir} 內的所有原始 JSON 至 Hugging Face Dataset: {repo_id} (目標目錄: {path_in_repo})...")
     
@@ -68,20 +74,24 @@ def upload_to_huggingface(src_dir: str, repo_id: str, path_in_repo: str = "Json"
     except Exception as e:
         print(f"ℹ️ 建立/確認 Repo 狀態: {e}")
 
-    api.upload_folder(
-        folder_path=src_dir,
-        path_in_repo=path_in_repo,
-        repo_id=repo_id,
-        repo_type="dataset",
-        commit_message=f"Upload UberEats crawl JSON snapshot {today_str}"
-    )
-    print(f"✅ Hugging Face 資料湖上傳成功！網址: https://huggingface.co/datasets/{repo_id}")
+    try:
+        api.upload_folder(
+            folder_path=src_dir,
+            path_in_repo=path_in_repo,
+            repo_id=repo_id,
+            repo_type="dataset",
+            commit_message=f"Upload UberEats crawl JSON snapshot {today_str}"
+        )
+        print(f"✅ Hugging Face 資料湖上傳成功！網址: https://huggingface.co/datasets/{repo_id}")
+    except Exception as e:
+        print(f"❌ Hugging Face 上傳失敗: {e}")
+        raise e
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="上傳資料至 Hugging Face Datasets")
     parser.add_argument("--src-dir", default="JSON", help="原始 JSON 資料夾 (預設 JSON)")
-    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "hub-google/UberEat"), help="Hugging Face Dataset Repo ID (例如 hub-google/UberEat)")
+    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "fafagoback/UberEat"), help="Hugging Face Dataset Repo ID (例如 fafagoback/UberEat)")
     parser.add_argument("--path-in-repo", default="Json", help="Dataset 內部存放路徑 (預設 Json)")
     args = parser.parse_args()
 

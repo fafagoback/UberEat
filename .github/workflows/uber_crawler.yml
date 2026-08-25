@@ -74,6 +74,15 @@ jobs:
 
       - name: 下載分片任務設定
         uses: actions/download-artifact@v4
+        continue-on-error: true
+        id: dl-task-1
+        with:
+          name: task-chunks
+          path: tasks/
+
+      - name: 重試下載分片任務設定 (若初次連線異常)
+        if: steps.dl-task-1.outcome == 'failure'
+        uses: actions/download-artifact@v4
         with:
           name: task-chunks
           path: tasks/
@@ -94,6 +103,7 @@ jobs:
   # ==========================================
   reducer:
     needs: [coordinator, workers]
+    if: always() && !cancelled() && needs.coordinator.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: 檢出專案代碼
@@ -125,7 +135,7 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
         run: |
-          python scr/upload_to_hf.py --src-dir all_json_lake/ --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" --path-in-repo "Json"
+          python scr/upload_to_hf.py --src-dir all_json_lake/ --repo-id "${{ secrets.HF_REPO_ID || 'fafagoback/UberEat' }}" --path-in-repo "Json"
 
       - name: ② 執行 ETL 並將資料同步至 Cloudflare D1
         env:
