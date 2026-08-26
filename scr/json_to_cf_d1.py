@@ -278,6 +278,58 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
     return len(sql_statements)
 
 
+def ensure_d1_schema_columns(db_name: str, cf_token: str, cf_account_id: str):
+    """確保遠端 Cloudflare D1 資料庫具備最新 schema 欄位 (自動執行 Schema Migration)"""
+    print(f"🔧 正在檢查 Cloudflare D1 ({db_name}) 資料表結構相容性...")
+    env_vars = dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
+
+    # 1. 檢查 stores 表結構
+    try:
+        res = subprocess.run(
+            f'npx wrangler d1 execute {db_name} --remote --json --command="PRAGMA table_info(stores);"',
+            shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
+        )
+        if res.returncode == 0:
+            out = res.stdout or ""
+            if "is_open" not in out and ("store_id" in out or "results" in out):
+                print("   ▶ 正在為遠端 stores 表新增 is_open 欄位...")
+                subprocess.run(
+                    f'npx wrangler d1 execute {db_name} --remote --command="ALTER TABLE stores ADD COLUMN is_open INT NOT NULL DEFAULT 1;"',
+                    shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
+                )
+    except Exception as e:
+        print(f"⚠️ 檢查 stores 欄位失敗: {e}")
+
+    # 2. 檢查 products 表結構
+    try:
+        res = subprocess.run(
+            f'npx wrangler d1 execute {db_name} --remote --json --command="PRAGMA table_info(products);"',
+            shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
+        )
+        if res.returncode == 0:
+            out = res.stdout or ""
+            if "promo_type" not in out and ("product_id" in out or "results" in out):
+                print("   ▶ 正在為遠端 products 表新增 promo_type 欄位...")
+                subprocess.run(
+                    f'npx wrangler d1 execute {db_name} --remote --command="ALTER TABLE products ADD COLUMN promo_type VARCHAR(50) NOT NULL DEFAULT \'無\';"',
+                    shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
+                )
+            if "quantity" not in out and ("product_id" in out or "results" in out):
+                print("   ▶ 正在為遠端 products 表新增 quantity 欄位...")
+                subprocess.run(
+                    f'npx wrangler d1 execute {db_name} --remote --command="ALTER TABLE products ADD COLUMN quantity INT NOT NULL DEFAULT 1;"',
+                    shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
+                )
+            if "is_open" not in out and ("product_id" in out or "results" in out):
+                print("   ▶ 正在為遠端 products 表新增 is_open 欄位...")
+                subprocess.run(
+                    f'npx wrangler d1 execute {db_name} --remote --command="ALTER TABLE products ADD COLUMN is_open INT NOT NULL DEFAULT 1;"',
+                    shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
+                )
+    except Exception as e:
+        print(f"⚠️ 檢查 products 欄位失敗: {e}")
+
+
 def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
     start_time = time.time()
     cf_token = os.environ.get("CLOUDFLARE_API_TOKEN") or os.environ.get("CF_API_TOKEN")
@@ -422,6 +474,9 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
         else:
             print("ℹ️ 本機離線模式 (未設定 Cloudflare 憑證)，跳過 D1 遠端同步步驟。")
             return
+
+    # 先執行遠端 D1 Schema 檢查與欄位遷移 (確保 stores/products 具備 is_open/promo_type/quantity)
+    ensure_d1_schema_columns(db_name, cf_token, cf_account_id)
 
     d1_sync_ok = False
     last_d1_err = ""
