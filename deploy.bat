@@ -38,17 +38,17 @@ if %ERRORLEVEL% NEQ 0 (
 echo.
 echo [3/3] Pushing to GitHub branch (!CURRENT_BRANCH!)...
 git push origin !CURRENT_BRANCH!
-if %ERRORLEVEL% NEQ 0 (
+if !ERRORLEVEL! NEQ 0 (
     where gh >nul 2>&1
-    if %ERRORLEVEL% EQU 0 (
+    if !ERRORLEVEL! EQU 0 (
         if defined REPO_OWNER (
-            echo [INFO] Primary push failed. Retrying by switching account to: !REPO_OWNER!...
+            echo [INFO] Primary push failed. Retrying with account: !REPO_OWNER!...
             gh auth switch --user !REPO_OWNER! >nul 2>&1
             git push origin !CURRENT_BRANCH!
         )
     )
 )
-if %ERRORLEVEL% NEQ 0 (
+if !ERRORLEVEL! NEQ 0 (
     echo.
     echo [ERROR] Push to GitHub failed. Please check network connection or account permissions.
     goto END
