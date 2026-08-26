@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 強制防快取標頭 (保證每次進站向伺服器驗證最新內容) -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  
   <title>Uber Eats 特價與新品情報監控系統 | UberEats Radar</title>
   
   <!-- Tailwind CSS CDN -->
@@ -33,11 +39,34 @@
   <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- 網站圖示 Favicon 與 Apple Touch Icon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
 
-  <!-- 全域配置與 API 設定 -->
-  <script src="config.js"></script>
+  <!-- 動態時間戳記防快取載入器 (CSS & Config & Favicon) -->
+  <script>
+    (function() {
+      window.__APP_LOAD_TIME__ = Date.now();
+      
+      // 動態更新 Favicon 防止快取地球圖示
+      const iconLink = document.createElement('link');
+      iconLink.rel = 'icon';
+      iconLink.type = 'image/svg+xml';
+      iconLink.href = 'favicon.svg?_t=' + window.__APP_LOAD_TIME__;
+      document.head.appendChild(iconLink);
+
+      // 動態載入 Custom CSS (帶時間戳記)
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'style.css?_t=' + window.__APP_LOAD_TIME__;
+      document.head.appendChild(link);
+      
+      // 同步載入 config.js (帶時間戳記)
+      document.write('<script src="config.js?_t=' + window.__APP_LOAD_TIME__ + '"><\/script>');
+    })();
+  </script>
 </head>
 
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen transition-colors duration-200 antialiased flex flex-col">
@@ -467,7 +496,36 @@
   <!-- 浮動提示 Toast (Toast Notification Container) -->
   <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
 
-  <!-- App Core JS -->
-  <script src="app.js"></script>
+  <!-- 清理舊快取、手機 bfcache 喚醒更新與動態載入 App Core JS -->
+  <script>
+    (function() {
+      // 1. 清理可能殘留的 ServiceWorker 與 CacheStorage
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (var i = 0; i < registrations.length; i++) {
+            registrations[i].unregister();
+          }
+        }).catch(function() {});
+      }
+      if ('caches' in window) {
+        caches.keys().then(function(names) {
+          for (var i = 0; i < names.length; i++) {
+            caches.delete(names[i]);
+          }
+        }).catch(function() {});
+      }
+
+      // 2. 手機端 Back-Forward Cache (bfcache) 喚醒時自動重整至最新
+      window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      });
+
+      // 3. 動態注入 app.js (帶唯一時間戳記)
+      var t = window.__APP_LOAD_TIME__ || Date.now();
+      document.write('<script src="app.js?_t=' + t + '"><\/script>');
+    })();
+  </script>
 </body>
 </html>

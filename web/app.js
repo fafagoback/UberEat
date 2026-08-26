@@ -28,20 +28,79 @@ let APP_STATE = {
   }
 };
 
-// 初始化
-document.addEventListener('DOMContentLoaded', async () => {
+// -----------------------------------------------------------------------------
+// 0. 版本追蹤與即時發佈自動偵測
+// -----------------------------------------------------------------------------
+let CURRENT_VERSION = null;
+
+async function checkVersionUpdate(isInitial = false) {
+  try {
+    const res = await fetch(`version.json?_t=${Date.now()}`, { cache: 'no-store' });
+    if (!res.ok) return;
+    const info = await res.json();
+    if (!info || !info.version) return;
+
+    if (isInitial) {
+      CURRENT_VERSION = info.version;
+      console.log(`[UberEats Radar] 當前系統版本: ${CURRENT_VERSION} (${info.buildTime || '最新'})`);
+      return;
+    }
+
+    if (CURRENT_VERSION && info.version !== CURRENT_VERSION) {
+      console.log(`[UberEats Radar] 發現新版本發佈: ${info.version} (目前: ${CURRENT_VERSION})，準備自動更新...`);
+      showToast('發現新版本發佈', '系統正在為您載入最新架構...', 'external', 2500);
+      setTimeout(() => {
+        window.location.reload();
+      }, 1200);
+    }
+  } catch (e) {
+    // 忽略檢查錯誤 (例如離線時)
+  }
+}
+
+function startVersionWatcher() {
+  // 1. 初始化讀取當前版本
+  checkVersionUpdate(true);
+
+  // 2. 當使用者在手機/電腦切換回此分頁時立即檢查是否有更新
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      checkVersionUpdate(false);
+    }
+  });
+
+  // 3. 每 2 分鐘在背景輪詢一次版本更新
+  setInterval(() => {
+    checkVersionUpdate(false);
+  }, 2 * 60 * 1000);
+}
+
+// -----------------------------------------------------------------------------
+// 初始化啟動 (支援動態載入與 DOMContentLoaded 相容模式)
+// -----------------------------------------------------------------------------
+async function bootstrap() {
   initTheme();
   initEventListeners();
   await loadDashboardData();
-  lucide.createIcons();
-});
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+  startVersionWatcher();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', bootstrap);
+} else {
+  bootstrap();
+}
 
 // -----------------------------------------------------------------------------
-// 1. API 網址產生與資料載入
+// 1. API 網址產生與資料載入 (附加動態時間戳記避免快取)
 // -----------------------------------------------------------------------------
 function getApiUrl(endpoint) {
   const base = (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.API_BASE_URL) || '';
-  return `${base}${endpoint}`;
+  const separator = endpoint.includes('?') ? '&' : '?';
+  return `${base}${endpoint}${separator}_t=${Date.now()}`;
 }
 
 async function loadDashboardData() {
