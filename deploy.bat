@@ -26,6 +26,10 @@ if %ERRORLEVEL% NEQ 0 (
 
 echo.
 echo [3/3] Pushing to GitHub branch (%CURRENT_BRANCH%)...
+where gh >nul 2>&1
+if %ERRORLEVEL% EQU 0 (
+    gh auth switch --user fafagoback >nul 2>&1
+)
 git push origin %CURRENT_BRANCH%
 if %ERRORLEVEL% NEQ 0 (
     echo.
