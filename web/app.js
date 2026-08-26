@@ -300,6 +300,9 @@ function renderNewStores() {
   const badgeStoresEl = document.getElementById('badge-stores');
   if (badgeStoresEl) badgeStoresEl.textContent = items.length;
 
+  const statNewStoresEl = document.getElementById('stat-new-stores');
+  if (statNewStoresEl) statNewStoresEl.textContent = items.length;
+
   document.getElementById('new-stores-counter').textContent = `${items.length} 間新店`;
 
   if (items.length === 0) {
@@ -381,6 +384,9 @@ function renderNewProducts() {
 
   const badgeProductsEl = document.getElementById('badge-products');
   if (badgeProductsEl) badgeProductsEl.textContent = items.length;
+
+  const statNewProductsEl = document.getElementById('stat-new-products');
+  if (statNewProductsEl) statNewProductsEl.textContent = items.length;
 
   document.getElementById('new-products-counter').textContent = `${items.length} 道新品`;
 
@@ -466,10 +472,13 @@ async function fetchPromotions() {
 function renderPromotions() {
   const container = document.getElementById('promos-grid');
   // 嚴格過濾非商品廣告與 price <= 0 之項目
-  const items = APP_STATE.promotions.filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type.includes('送'))));
+  const items = APP_STATE.promotions.filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type.includes('送')) || (p.promo_type && p.promo_type.includes('折'))));
 
   const badgePromosEl = document.getElementById('badge-promos');
   if (badgePromosEl) badgePromosEl.textContent = items.length;
+
+  const statPromosEl = document.getElementById('stat-promotions');
+  if (statPromosEl) statPromosEl.textContent = items.length;
 
   document.getElementById('promos-counter').textContent = `${items.length} 筆特惠`;
 
@@ -541,6 +550,10 @@ async function fetchGlobalProducts(page = 1) {
     return;
   }
   APP_STATE.globalPage = page;
+  const container = document.getElementById('global-products-grid');
+  if (container) {
+    container.style.opacity = '0.5';
+  }
   const params = new URLSearchParams({
     q: APP_STATE.filters.globalSearch,
     sort: APP_STATE.filters.globalSort,
@@ -560,12 +573,20 @@ async function fetchGlobalProducts(page = 1) {
     }
   } catch (err) {
     console.error('全庫搜尋失敗:', err);
+  } finally {
+    if (container) {
+      container.style.opacity = '1';
+    }
   }
 }
 
 function renderGlobalProducts() {
   const container = document.getElementById('global-products-grid');
   const items = APP_STATE.globalProducts;
+
+  if (container) {
+    container.style.opacity = '1';
+  }
 
   if (items.length === 0) {
     container.innerHTML = '<div class="col-span-3 py-16 text-center text-slate-400">查無相符商品</div>';

@@ -146,4 +146,11 @@ jobs:
         run: |
           python scr/json_to_cf_d1.py --src-dir all_json_lake/ --db-name "ubereats_monitor" --require-d1
 
+      - name: ③ 自動部署最新 Cloudflare Worker API
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          npx wrangler deploy
+
 
