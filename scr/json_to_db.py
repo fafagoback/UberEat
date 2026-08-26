@@ -108,7 +108,17 @@ def extract_promo_info(sec_name: Optional[str], product_name: Optional[str], des
         if re.search(r"\bBOGO\b", text, re.IGNORECASE):
             return "買1送1", 2
 
-    # 5. 匹配特定折扣與限時特惠 (quantity 為 1，但標註 promo_type)
+    # 5. 匹配「加1元多1件」/「加一元多一件」
+    for text in texts:
+        if re.search(r"加\s*[1一]\s*元多\s*[1一]\s*件", text):
+            return "加1元多1件", 2
+
+    # 6. 匹配「第二件半價」/「第二杯半價」/「第2件半價」/「第2杯半價」
+    for text in texts:
+        if re.search(r"第\s*[2二兩]\s*[件杯項份]\s*半價", text):
+            return "第2件半價", 1
+
+    # 7. 匹配特定折扣與限時特惠 (quantity 為 1，但標註 promo_type)
     for text in [sec, pname]:
         m_disc = re.search(r"([1-9](?:\.[1-9])?)\s*折", text)
         if m_disc:
