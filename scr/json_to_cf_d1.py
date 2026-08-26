@@ -183,51 +183,91 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
             return "NULL"
         if isinstance(val, (int, float)):
             return str(val)
-        return "'" + str(val).replace("'", "''") + "'"
+        # 清理換行與回車符號，避免影響 Wrangler 與 D1 語法解析
+        s = str(val).replace("\r\n", " ").replace("\n", " ").replace("\r", " ")
+        return "'" + s.replace("'", "''") + "'"
+
+    def build_batch_insert(table_name: str, columns: list, rows: list, or_action: str = "REPLACE", batch_size: int = 50) -> list:
+        """生成多列 INSERT 語句 (Multi-row INSERT)，大幅縮減 SQL 語句數量與 Cloudflare API 請求數"""
+        if not rows:
+            return []
+        statements = []
+        col_str = ", ".join(columns)
+        for i in range(0, len(rows), batch_size):
+            chunk = rows[i:i + batch_size]
+            values_list = []
+            for r in chunk:
+                row_vals = ", ".join(escape_sql(v) for v in r)
+                values_list.append(f"({row_vals})")
+            values_str = ",\n    ".join(values_list)
+            statements.append(f"INSERT OR {or_action} INTO {table_name} ({col_str}) VALUES\n    {values_str};")
+        return statements
 
     # 2. 導出 crawl_batches
     cursor.execute("SELECT * FROM crawl_batches WHERE crawled_time = ?", (latest_batch,))
-    for row in cursor.fetchall():
-        sql_statements.append(
-            f"INSERT OR REPLACE INTO crawl_batches (crawled_time, benchmark_address, benchmark_lat, benchmark_lon, total_discovered, success_count, fail_count) VALUES ({escape_sql(row['crawled_time'])}, {escape_sql(row['benchmark_address'])}, {escape_sql(row['benchmark_lat'])}, {escape_sql(row['benchmark_lon'])}, {row['total_discovered']}, {row['success_count']}, {row['fail_count']});"
-        )
+    batch_rows = [(row['crawled_time'], row['benchmark_address'], row['benchmark_lat'], row['benchmark_lon'], row['total_discovered'], row['success_count'], row['fail_count']) for row in cursor.fetchall()]
+    sql_statements.extend(build_batch_insert(
+        "crawl_batches",
+        ["crawled_time", "benchmark_address", "benchmark_lat", "benchmark_lon", "total_discovered", "success_count", "fail_count"],
+        batch_rows,
+        or_action="REPLACE",
+        batch_size=50
+    ))
 
-    # 3. 導出 stores
+    # 3. 導出 stores (批量打包: 每條 50 筆)
     cursor.execute("SELECT * FROM stores WHERE crawled_time = ?", (latest_batch,))
-    for row in cursor.fetchall():
-        is_open_val = row['is_open'] if 'is_open' in row.keys() else 1
-        sql_statements.append(
-            f"INSERT OR REPLACE INTO stores (store_id, crawled_time, store_name, store_type, store_url, rating_value, review_count, price_range, telephone, country_code, region, locality, street_address, postal_code, latitude, longitude, order_action_url, total_menu_items, is_open) VALUES ({escape_sql(row['store_id'])}, {escape_sql(row['crawled_time'])}, {escape_sql(row['store_name'])}, {escape_sql(row['store_type'])}, {escape_sql(row['store_url'])}, {escape_sql(row['rating_value'])}, {escape_sql(row['review_count'])}, {escape_sql(row['price_range'])}, {escape_sql(row['telephone'])}, {escape_sql(row['country_code'])}, {escape_sql(row['region'])}, {escape_sql(row['locality'])}, {escape_sql(row['street_address'])}, {escape_sql(row['postal_code'])}, {escape_sql(row['latitude'])}, {escape_sql(row['longitude'])}, {escape_sql(row['order_action_url'])}, {row['total_menu_items']}, {is_open_val});"
-        )
+    store_rows = [(row['store_id'], row['crawled_time'], row['store_name'], row['store_type'], row['store_url'], row['rating_value'], row['review_count'], row['price_range'], row['telephone'], row['country_code'], row['region'], row['locality'], row['street_address'], row['postal_code'], row['latitude'], row['longitude'], row['order_action_url'], row['total_menu_items'], row['is_open'] if 'is_open' in row.keys() else 1) for row in cursor.fetchall()]
+    sql_statements.extend(build_batch_insert(
+        "stores",
+        ["store_id", "crawled_time", "store_name", "store_type", "store_url", "rating_value", "review_count", "price_range", "telephone", "country_code", "region", "locality", "street_address", "postal_code", "latitude", "longitude", "order_action_url", "total_menu_items", "is_open"],
+        store_rows,
+        or_action="REPLACE",
+        batch_size=50
+    ))
 
-    # 4. 導出 products
+    # 4. 導出 products (批量打包: 每條 50 筆，降低 API 呼叫量 98%)
     cursor.execute("SELECT * FROM products WHERE crawled_time = ?", (latest_batch,))
-    for row in cursor.fetchall():
-        is_open_val = row['is_open'] if 'is_open' in row.keys() else 1
-        sql_statements.append(
-            f"INSERT OR REPLACE INTO products (product_id, crawled_time, store_id, store_name, category_name, product_name, price, currency, description, promo_type, quantity, is_open) VALUES ({escape_sql(row['product_id'])}, {escape_sql(row['crawled_time'])}, {escape_sql(row['store_id'])}, {escape_sql(row['store_name'])}, {escape_sql(row['category_name'])}, {escape_sql(row['product_name'])}, {row['price']}, {escape_sql(row['currency'])}, {escape_sql(row['description'])}, {escape_sql(row['promo_type'])}, {row['quantity']}, {is_open_val});"
-        )
+    product_rows = [(row['product_id'], row['crawled_time'], row['store_id'], row['store_name'], row['category_name'], row['product_name'], row['price'], row['currency'], row['description'], row['promo_type'], row['quantity'], row['is_open'] if 'is_open' in row.keys() else 1) for row in cursor.fetchall()]
+    sql_statements.extend(build_batch_insert(
+        "products",
+        ["product_id", "crawled_time", "store_id", "store_name", "category_name", "product_name", "price", "currency", "description", "promo_type", "quantity", "is_open"],
+        product_rows,
+        or_action="REPLACE",
+        batch_size=50
+    ))
 
-    # 5. 導出 store_cuisines
+    # 5. 導出 store_cuisines (批量打包: 每條 100 筆)
     cursor.execute("SELECT * FROM store_cuisines WHERE crawled_time = ?", (latest_batch,))
-    for row in cursor.fetchall():
-        sql_statements.append(
-            f"INSERT OR IGNORE INTO store_cuisines (store_id, crawled_time, cuisine_name) VALUES ({escape_sql(row['store_id'])}, {escape_sql(row['crawled_time'])}, {escape_sql(row['cuisine_name'])});"
-        )
+    cuisine_rows = [(row['store_id'], row['crawled_time'], row['cuisine_name']) for row in cursor.fetchall()]
+    sql_statements.extend(build_batch_insert(
+        "store_cuisines",
+        ["store_id", "crawled_time", "cuisine_name"],
+        cuisine_rows,
+        or_action="IGNORE",
+        batch_size=100
+    ))
 
-    # 6. 導出 store_business_hours
+    # 6. 導出 store_business_hours (批量打包: 每條 100 筆)
     cursor.execute("SELECT * FROM store_business_hours WHERE crawled_time = ?", (latest_batch,))
-    for row in cursor.fetchall():
-        sql_statements.append(
-            f"INSERT OR IGNORE INTO store_business_hours (store_id, crawled_time, day_of_week, opens_at, closes_at) VALUES ({escape_sql(row['store_id'])}, {escape_sql(row['crawled_time'])}, {escape_sql(row['day_of_week'])}, {escape_sql(row['opens_at'])}, {escape_sql(row['closes_at'])});"
-        )
+    hour_rows = [(row['store_id'], row['crawled_time'], row['day_of_week'], row['opens_at'], row['closes_at']) for row in cursor.fetchall()]
+    sql_statements.extend(build_batch_insert(
+        "store_business_hours",
+        ["store_id", "crawled_time", "day_of_week", "opens_at", "closes_at"],
+        hour_rows,
+        or_action="IGNORE",
+        batch_size=100
+    ))
 
-    # 7. 導出 alerts_history
+    # 7. 導出 alerts_history (批量打包: 每條 50 筆)
     cursor.execute("SELECT * FROM alerts_history WHERE crawled_time = ?", (latest_batch,))
-    for row in cursor.fetchall():
-        sql_statements.append(
-            f"INSERT OR REPLACE INTO alerts_history (alert_type, target_id, store_id, store_name, product_name, category_name, original_price, current_price, discount_pct, savings_amount, promo_type, order_action_url, crawled_time) VALUES ({escape_sql(row['alert_type'])}, {escape_sql(row['target_id'])}, {escape_sql(row['store_id'])}, {escape_sql(row['store_name'])}, {escape_sql(row['product_name'])}, {escape_sql(row['category_name'])}, {escape_sql(row['original_price'])}, {escape_sql(row['current_price'])}, {escape_sql(row['discount_pct'])}, {escape_sql(row['savings_amount'])}, {escape_sql(row['promo_type'])}, {escape_sql(row['order_action_url'])}, {escape_sql(row['crawled_time'])});"
-        )
+    alert_rows = [(row['alert_type'], row['target_id'], row['store_id'], row['store_name'], row['product_name'], row['category_name'], row['original_price'], row['current_price'], row['discount_pct'], row['savings_amount'], row['promo_type'], row['order_action_url'], row['crawled_time']) for row in cursor.fetchall()]
+    sql_statements.extend(build_batch_insert(
+        "alerts_history",
+        ["alert_type", "target_id", "store_id", "store_name", "product_name", "category_name", "original_price", "current_price", "discount_pct", "savings_amount", "promo_type", "order_action_url", "crawled_time"],
+        alert_rows,
+        or_action="REPLACE",
+        batch_size=50
+    ))
 
     conn.close()
 
@@ -406,7 +446,8 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
                 break
             else:
                 last_d1_err = out_str.strip()
-                print(f"⚠️ [步驟 3.6 異常] (嘗試 {attempt}/3): {last_d1_err[:300]}")
+                err_display = last_d1_err[-1500:] if len(last_d1_err) > 1500 else last_d1_err
+                print(f"⚠️ [步驟 3.6 異常] (嘗試 {attempt}/3):\n{err_display}")
         except Exception as e:
             last_d1_err = str(e)
             print(f"⚠️ [步驟 3.6 例外] (嘗試 {attempt}/3): {e}")
@@ -415,9 +456,10 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
             time.sleep(3.0 * attempt)
 
     if not d1_sync_ok:
+        err_report = last_d1_err[-1500:] if len(last_d1_err) > 1500 else last_d1_err
         fatal_error(
             step_name="步驟 3.6 Cloudflare D1 遠端同步",
-            reason=f"Wrangler 遠端寫入重試 3 次皆失敗: {last_d1_err[:400]}",
+            reason=f"Wrangler 遠端寫入重試 3 次皆失敗:\n{err_report}",
             expected="Wrangler returncode == 0 且無錯誤",
             actual="Wrangler 執行失敗",
             retries=3
