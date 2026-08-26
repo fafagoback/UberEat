@@ -175,7 +175,7 @@ jobs:
           retention-days: 1
 
   # ============================================================
-  # Stage 4: 15 台平行工作機全台菜單採集與獨立 Commit (Menu Scraper Matrix)
+  # Stage 4: 15 台平行工作機全台菜單採集與 Artifact 產出 (Menu Scraper Matrix)
   # ============================================================
   menu_scraper_workers:
     name: "階段 4: 菜單 Worker ${{ matrix.chunk_id }}"
@@ -195,8 +195,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 安裝爬蟲與上傳依賴
-        run: pip install requests huggingface_hub
+      - name: 安裝爬蟲依賴
+        run: pip install requests
 
       - name: 下載菜單採集任務設定
         uses: actions/download-artifact@v4
@@ -204,33 +204,105 @@ jobs:
           name: menu-task-chunks
           path: menu_tasks/
 
-      - name: 執行菜單採集與獨立 Commit 推送至 HF (Worker ${{ matrix.chunk_id }})
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
+      - name: 執行菜單採集並產出 Artifact 來源 (Worker ${{ matrix.chunk_id }})
         run: |
           python scr/taiwan_menu_worker.py \
             --chunk-file "menu_tasks/chunk_${{ matrix.chunk_id }}.json" \
             --output-dir "output_menu_worker_${{ matrix.chunk_id }}" \
-            --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" \
-            --path-in-repo "Json" \
             --concurrency 5
 
       - name: 上傳本節點菜單 JSON 結果 Artifact (雙重保險)
+        id: upload-menu-artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: menu-result-chunk-${{ matrix.chunk_id }}
           path: output_menu_worker_${{ matrix.chunk_id }}/
-          retention-days: 2
+          retention-days: 14
+
+      - name: 寫入 Stage 4 Artifact Checkpoint
+        if: always()
+        shell: bash
+        env:
+          ARTIFACT_OUTCOME: ${{ steps.upload-menu-artifact.outcome }}
+        run: |
+          if [[ "$ARTIFACT_OUTCOME" == "success" ]]; then status="✅"; actual="上傳成功，保留 14 天"; else status="❌"; actual="${ARTIFACT_OUTCOME:-未執行}"; fi
+          {
+            echo "### Stage 4 Artifact Checkpoint"
+            echo "| 檢核項目 | 通過標準 | 實際結果 | 狀態 |"
+            echo "| :--- | :--- | :--- | :---: |"
+            echo "| Worker Artifact | 成功上傳且可供 Stage 5 下載 | $actual | $status |"
+          } >> "$GITHUB_STEP_SUMMARY"
+          [[ "$ARTIFACT_OUTCOME" == "success" ]]
 
   # ============================================================
-  # Stage 5: 全局資料庫 ETL、差異情報分析與 Cloudflare D1 同步 (Final Sync)
+  # Stage 5: 彙整所有菜單 Artifact、單檔壓縮與 Hugging Face 單次 Commit
+  # ============================================================
+  package_and_archive_menu_snapshot:
+    name: "階段 5: 菜單完整快照封存與 HF 單次 Commit"
+    needs: [store_reducer_and_menu_dispatcher, menu_scraper_workers]
+    if: needs.store_reducer_and_menu_dispatcher.result == 'success' && needs.menu_scraper_workers.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 檢出專案代碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 下載全部 Menu Worker Artifacts（保留分片目錄）
+        uses: actions/download-artifact@v4
+        with:
+          pattern: menu-result-chunk-*
+          path: menu_worker_artifacts/
+
+      - name: 下載全台店家清單供完整率檢核
+        uses: actions/download-artifact@v4
+        with:
+          name: taiwan-stores-full-dataset
+          path: taiwan_stores_dataset/
+
+      - name: 安裝 Hugging Face 上傳工具
+        run: pip install huggingface_hub
+
+      - name: 檢核、打包並以單一 Commit 上傳 HF
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
+          EXPECTED_WORKERS: ${{ github.event.inputs.max_workers || 15 }}
+          BATCH_ID: ${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          actual_workers="$(find menu_worker_artifacts -mindepth 1 -maxdepth 1 -type d -name 'menu-result-chunk-*' | wc -l | tr -d ' ')"
+          python scr/package_and_upload_menu_snapshot.py \
+            --src-dir menu_worker_artifacts/ \
+            --stores-file taiwan_stores_dataset/taiwan_all_stores.json \
+            --output-dir packaged_snapshot/ \
+            --batch-id "$BATCH_ID" \
+            --expected-workers "$EXPECTED_WORKERS" \
+            --actual-workers "$actual_workers" \
+            --repo-id "${HF_REPO_ID:-hub-google/UberEat}" \
+            --path-in-repo "TaiwanMenuSnapshots"
+
+      - name: 保存 Stage 5 壓縮快照 Artifact（供補跑與稽核）
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: taiwan-menu-snapshot-${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
+          path: packaged_snapshot/
+          if-no-files-found: warn
+          retention-days: 30
+
+  # ============================================================
+  # Stage 6: 全局資料庫 ETL、差異情報分析與 Cloudflare D1 同步 (Final Sync)
   # ============================================================
   db_etl_and_cloudflare_sync:
-    name: "階段 5: 資料庫 ETL 與 Cloudflare D1 同步"
-    needs: [store_reducer_and_menu_dispatcher, menu_scraper_workers]
-    if: always() && needs.store_reducer_and_menu_dispatcher.result == 'success'
+    name: "階段 6: 資料庫 ETL 與 Cloudflare D1 同步"
+    needs: [store_reducer_and_menu_dispatcher, menu_scraper_workers, package_and_archive_menu_snapshot]
+    if: needs.store_reducer_and_menu_dispatcher.result == 'success' && needs.menu_scraper_workers.result == 'success' && needs.package_and_archive_menu_snapshot.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: 檢出專案代碼
@@ -277,6 +349,15 @@ jobs:
 
           coverage = valid / expected if expected else 0
           print(f"📦 菜單成果：有效 {valid:,} / 指派 {expected:,} 間（{coverage:.2%}）")
+          status = "✅" if valid == expected and expected > 0 else "❌"
+          summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary:
+              with open(summary, "a", encoding="utf-8") as out:
+                  out.write("## Stage 6 ETL 輸入檢核\n\n")
+                  out.write("| 檢核項目 | 通過標準 | 實際結果 | 狀態 |\n")
+                  out.write("| :--- | :--- | :--- | :---: |\n")
+                  out.write(f"| 菜單 JSON 完整率 | `{expected}` / `{expected}`（100%） | `{valid}` / `{expected}`（{coverage:.2%}） | {status} |\n")
+                  out.write("| 部分批次覆寫保護 | 不允許缺件 | " + ("完整批次" if status == "✅" else "已阻擋不完整批次") + f" | {status} |\n\n")
           if valid <= 0:
               print("❌ 未收集到任何有效菜單 JSON。", file=sys.stderr)
               sys.exit(1)
@@ -287,21 +368,10 @@ jobs:
 
       - name: 安裝同步工具
         run: |
-          pip install huggingface_hub requests
+          pip install requests
           npm install -g wrangler
 
-      - name: ① 兜底確認：確保完整資料湖同步至 Hugging Face Datasets
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
-        run: |
-          python scr/upload_to_hf.py \
-            --src-dir all_menu_lake/ \
-            --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" \
-            --path-in-repo "Json" \
-            --commit-message "Final sync full Taiwan menu lake snapshot"
-
-      - name: ② 執行 ETL 並批次同步至 Cloudflare D1
+      - name: ① 執行 ETL 並批次同步至 Cloudflare D1
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
@@ -311,14 +381,14 @@ jobs:
             --db-name "ubereats_monitor" \
             --require-d1
 
-      - name: ③ 自動部署最新 Cloudflare Worker API
+      - name: ② 自動部署最新 Cloudflare Worker API
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         run: |
           npx wrangler deploy
 
-      - name: ④ Production API 與 GitHub Pages 最終回查
+      - name: ③ Production API 與 GitHub Pages 最終回查
         shell: bash
         run: |
           set -euo pipefail
@@ -338,7 +408,7 @@ jobs:
           PY
           grep -q "UberEats Radar" <<<"$page_body"
           {
-            echo "### ✅ Stage 5 Production Checkpoint"
+            echo "### ✅ Stage 6 Production Checkpoint"
             echo "| 檢核項目 | 預期 | 實際 | 狀態 |"
             echo "| :--- | :--- | :--- | :---: |"
             echo "| Cloudflare Worker API | HTTP 200 且 stores/products > 0 | 回查通過 | ✅ |"

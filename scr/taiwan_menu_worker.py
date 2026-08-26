@@ -7,7 +7,7 @@ Uber Eats 全台店家菜單分散式採集工作節點 (Stage 4: Parallel Matri
 3. 輸出符合 Schema.org Restaurant JSON-LD 規範之時序檔案：
    - 檔名規範：{crawled_time}_{store_id_8碼}_{safe_name}.json (與 location_batch_scraper.py 格式 100% 一致)
 4. 節點內自動執行實體 JSON 完整性與欄位檢核。
-5. 採集完畢後，本節點獨立發動一次 Commit 將產出的 JSON 檔案推送至 Hugging Face (hub-google/UberEat) 之 Json/ 目錄。
+5. 僅將成果交給 GitHub Actions Artifact；Hugging Face 備份由 Stage 5 統一處理。
 6. 產出詳細檢核報表至 GitHub Actions $GITHUB_STEP_SUMMARY。
 """
 
@@ -34,7 +34,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from location_batch_scraper import crawl_stores_with_watchdog, get_md5_hash
-from upload_to_hf import upload_to_huggingface
 
 
 def append_github_step_summary(markdown_text: str):
@@ -96,9 +95,6 @@ def main():
     parser = argparse.ArgumentParser(description="Uber Eats 全台店家菜單分散式工作節點 (Stage 4 Menu Worker)")
     parser.add_argument("--chunk-file", required=True, help="分片任務檔案路徑 (menu_tasks/chunk_X.json)")
     parser.add_argument("--output-dir", required=True, help="菜單 JSON 結果輸出目錄")
-    parser.add_argument("--push-to-hf", action="store_true", default=True, help="採集完成後是否自動 Commit 推送至 Hugging Face")
-    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "hub-google/UberEat"), help="Hugging Face Dataset Repo ID")
-    parser.add_argument("--path-in-repo", default="Json", help="HF Dataset 內部存放路徑")
     parser.add_argument("--concurrency", type=int, default=5, help="內部並發執行緒數 (預設 5)")
     args = parser.parse_args()
 
@@ -131,7 +127,7 @@ def main():
     print(f"⏰ 執行時間: {now_str} (Batch: {batch_id})")
     print(f"🏪 本節點分配店家總數: {total_assigned} 間")
     print(f"⚙️ 內部並發執行緒: {args.concurrency} | 輸出目錄: {args.output_dir}")
-    print(f"🎯 目標 Hugging Face: {args.repo_id} (目錄: {args.path_in_repo}/)")
+    print("📦 本階段只產出菜單 JSON；由 GitHub Artifact 傳遞給 Stage 5 統一備份")
     print("=" * 80)
 
     if total_assigned == 0:
@@ -193,29 +189,6 @@ def main():
 
     print(f"✅ [步驟 4.3 通過] Menu Worker {chunk_id} 採集完成！成功率: {success_rate:.1f}% ({success_count}/{total_assigned})，擷取商品: {total_menu_items:,} 道")
 
-    # 4. 本節點獨立發動 Commit 推送至 Hugging Face
-    hf_upload_success = False
-    hf_err_msg = ""
-    if args.push_to_hf:
-        hf_token = os.environ.get("HF_TOKEN")
-        if hf_token:
-            print(f"\n☁️ 【步驟 4.4】Menu Worker {chunk_id} 發動獨立 Git Commit 推送至 Hugging Face Datasets...")
-            commit_msg = f"Upload Taiwan menu chunk {chunk_id} by Worker {chunk_id} ({valid_json_count} stores, batch {batch_id})"
-            try:
-                upload_to_huggingface(
-                    src_dir=args.output_dir,
-                    repo_id=args.repo_id,
-                    path_in_repo=args.path_in_repo,
-                    commit_message=commit_msg
-                )
-                hf_upload_success = True
-                print(f"✅ [步驟 4.4 通過] Menu Worker {chunk_id} 已成功獨立 Commit 至 HF Dataset ({args.repo_id}/{args.path_in_repo}/)！")
-            except Exception as e:
-                hf_err_msg = str(e)
-                print(f"⚠️ [步驟 4.4 異常] HF 上傳失敗: {e}")
-        else:
-            print("ℹ️ 未檢測到 HF_TOKEN 環境變數，跳過即時 Hugging Face 上傳 (將依賴 GHA Artifact 傳遞)。")
-
     total_elapsed = time.time() - start_time
 
     # 5. 輸出 GITHUB_STEP_SUMMARY
@@ -223,13 +196,13 @@ def main():
 - **分配店家**: `{total_assigned:,}` 間 | **成功採集**: **`{success_count:,}`** 間 ({success_rate:.1f}%) | **失敗**: `{fail_count}` 間
 - **擷取商品總數**: **`{total_menu_items:,}`** 道菜品 | **產出有效 JSON**: `{valid_json_count:,}` 個
 - **採集耗時**: `{crawl_elapsed:.1f}` 秒 (平均 `{crawl_elapsed/max(1, total_assigned):.2f}` 秒/店) | **總耗時**: `{total_elapsed:.1f}` 秒
-- **HF 獨立 Commit 狀態**: `{'✅ 成功推送至 HF (' + args.repo_id + ')' if hf_upload_success else ('⚠️ 未推送 (' + hf_err_msg + ')' if hf_err_msg else 'ℹ️ 本機離線模式')}`
+- **下游傳遞方式**: `GitHub Actions Artifact（HF 由 Stage 5 統一單次 Commit）`
 
 | Checkpoint | 預期 | 實際 | 狀態 |
 | :--- | :--- | :--- | :---: |
 | 店家處理完成 | `{total_assigned}` 間 | 成功 `{success_count}` / 失敗 `{fail_count}` | {'✅' if success_count == total_assigned else '❌'} |
 | Schema JSON | `{total_assigned}` 個有效檔案 | `{valid_json_count}` 個有效 / `{len(invalid_files)}` 個無效 | {'✅' if valid_json_count == total_assigned and not invalid_files else '❌'} |
-| HF Commit | 成功 | {'成功' if hf_upload_success else '未完成'} | {'✅' if hf_upload_success else '❌'} |
+| Stage 4 職責邊界 | 不直接呼叫 HF | 僅產出本 Worker JSON | ✅ |
 """
     append_github_step_summary(summary_md)
 
@@ -241,18 +214,6 @@ def main():
             expected="每個指派店家皆產出一個有效 Schema.org JSON",
             actual=f"缺少 {total_assigned - valid_json_count} 個有效結果",
             retries=2
-        )
-
-    # 線上工作機必須讓 HF Commit 失敗向上傳遞，才能觸發最終 Artifact 兜底；
-    # 本機沒有 HF_TOKEN 時仍允許離線測試。
-    if args.push_to_hf and os.environ.get("HF_TOKEN") and not hf_upload_success:
-        fatal_error(
-            chunk_id=chunk_id,
-            step_name="步驟 4.4 Hugging Face 獨立 Commit",
-            reason=hf_err_msg or "Hugging Face 上傳未完成",
-            expected="Worker 成果已 Commit，或由失敗狀態觸發最終 Artifact 兜底",
-            actual="上傳失敗",
-            retries=5
         )
 
     print("\n" + "=" * 80)
