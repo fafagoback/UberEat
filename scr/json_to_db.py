@@ -194,6 +194,7 @@ class UberEatsDBImporter:
             longitude DECIMAL(10, 7),
             order_action_url TEXT,
             total_menu_items INT NOT NULL DEFAULT 0,
+            is_open INT NOT NULL DEFAULT 1,
             PRIMARY KEY (store_id, crawled_time),
             FOREIGN KEY (crawled_time) REFERENCES crawl_batches(crawled_time) ON DELETE CASCADE
         );
@@ -213,18 +214,26 @@ class UberEatsDBImporter:
             description TEXT,
             promo_type VARCHAR(50) NOT NULL DEFAULT '無',
             quantity INT NOT NULL DEFAULT 1,
+            is_open INT NOT NULL DEFAULT 1,
             PRIMARY KEY (product_id, crawled_time),
             FOREIGN KEY (crawled_time) REFERENCES crawl_batches(crawled_time) ON DELETE CASCADE
         );
         """)
 
         # 防呆檢查：若現有資料庫缺少新欄位則自動擴充 (Schema Migration)
+        cursor.execute("PRAGMA table_info(stores);")
+        s_cols = [c[1] for c in cursor.fetchall()]
+        if "is_open" not in s_cols and len(s_cols) > 0:
+            cursor.execute("ALTER TABLE stores ADD COLUMN is_open INT NOT NULL DEFAULT 1;")
+
         cursor.execute("PRAGMA table_info(products);")
         p_cols = [c[1] for c in cursor.fetchall()]
         if "promo_type" not in p_cols and len(p_cols) > 0:
             cursor.execute("ALTER TABLE products ADD COLUMN promo_type VARCHAR(50) NOT NULL DEFAULT '無';")
         if "quantity" not in p_cols and len(p_cols) > 0:
             cursor.execute("ALTER TABLE products ADD COLUMN quantity INT NOT NULL DEFAULT 1;")
+        if "is_open" not in p_cols and len(p_cols) > 0:
+            cursor.execute("ALTER TABLE products ADD COLUMN is_open INT NOT NULL DEFAULT 1;")
 
         # 4. 店家營業時間表
         cursor.execute("""
@@ -471,6 +480,10 @@ class UberEatsDBImporter:
                             seen_cuisines.add(c_clean)
                             cuisines_rows.append((store_id, crawled_time, c_clean))
 
+            # 營業狀態解析 (is_open: 1=營業中, 0=打烊)
+            is_open_val = data.get("isOpen")
+            is_open = 1 if (is_open_val is True or is_open_val == 1 or is_open_val is None) else 0
+
             # 營業時間解析 (store_business_hours)
             hours_list = data.get("openingHoursSpecification", [])
             seen_hours = set()
@@ -569,10 +582,11 @@ class UberEatsDBImporter:
                                         "currency": curr,
                                         "description": desc,
                                         "promo_type": promo_type,
-                                        "quantity": qty
+                                        "quantity": qty,
+                                        "is_open": is_open
                                     }
 
-            # 轉換為商品寫入列
+            # 轉換為商品寫入列 (直接繼承所屬店家之 is_open)
             for p in store_products.values():
                 products_rows.append((
                     p["product_id"],
@@ -585,10 +599,11 @@ class UberEatsDBImporter:
                     p["currency"],
                     p["description"],
                     p["promo_type"],
-                    p["quantity"]
+                    p["quantity"],
+                    p["is_open"]
                 ))
 
-            # 店家快照寫入列 (商品總數以實際抓取之商品數為準)
+            # 店家快照寫入列 (含 is_open)
             stores_rows.append((
                 store_id,
                 crawled_time,
@@ -607,7 +622,8 @@ class UberEatsDBImporter:
                 latitude,
                 longitude,
                 order_action_url,
-                len(store_products)
+                len(store_products),
+                is_open
             ))
 
         # -------------------------------------------------------------
@@ -621,8 +637,8 @@ class UberEatsDBImporter:
             store_id, crawled_time, store_name, store_type, store_url,
             rating_value, review_count, price_range, telephone, country_code,
             region, locality, street_address, postal_code, latitude, longitude,
-            order_action_url, total_menu_items
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            order_action_url, total_menu_items, is_open
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
         """, stores_rows)
 
         # 寫入 store_cuisines
@@ -637,12 +653,12 @@ class UberEatsDBImporter:
         VALUES (?, ?, ?, ?, ?);
         """, hours_rows)
 
-        # 寫入 products
+        # 寫入 products (含 is_open)
         cursor.executemany("""
         INSERT OR REPLACE INTO products (
             product_id, crawled_time, store_id, store_name, category_name,
-            product_name, price, currency, description, promo_type, quantity
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            product_name, price, currency, description, promo_type, quantity, is_open
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
         """, products_rows)
 
         conn.commit()

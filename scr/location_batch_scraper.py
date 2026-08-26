@@ -291,8 +291,73 @@ def discover_nearby_stores(lat: float, lon: float, address_str: str) -> list:
     return stores_list
 
 
+ALL_DAYS_OF_WEEK = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+
+def minutes_to_time_str(mins: int) -> str:
+    """將自午夜起算之分鐘數轉換為 HH:MM:SS 格式"""
+    if mins is None:
+        return "00:00:00"
+    if mins >= 1440:
+        mins = 1439
+    h = mins // 60
+    m = mins % 60
+    return f"{h:02d}:{m:02d}:00"
+
+
+def parse_day_range_to_days(day_range_str: str) -> list:
+    """將 'Monday - Thursday', 'Sunday', 'Daily' 等字串展開為星期清單"""
+    if not day_range_str:
+        return ALL_DAYS_OF_WEEK
+    s = day_range_str.strip()
+    if s.lower() in ["daily", "everyday", "every day", "整週", "每天"]:
+        return ALL_DAYS_OF_WEEK
+    if " - " in s or "-" in s:
+        parts = [p.strip() for p in s.split("-")]
+        if len(parts) == 2:
+            start_day, end_day = parts[0], parts[1]
+            try:
+                start_idx = ALL_DAYS_OF_WEEK.index(start_day)
+                end_idx = ALL_DAYS_OF_WEEK.index(end_day)
+                if start_idx <= end_idx:
+                    return ALL_DAYS_OF_WEEK[start_idx:end_idx + 1]
+                else:
+                    return ALL_DAYS_OF_WEEK[start_idx:] + ALL_DAYS_OF_WEEK[:end_idx + 1]
+            except ValueError:
+                pass
+    for d in ALL_DAYS_OF_WEEK:
+        if d.lower() == s.lower():
+            return [d]
+    return [s]
+
+
+def parse_hours_to_opening_hours_specification(hours_list: list) -> list:
+    """將 getStoreV1 原生 hours 分鐘制時段標準化解析為 Schema.org OpeningHoursSpecification"""
+    specs = []
+    if not isinstance(hours_list, list):
+        return specs
+    for item in hours_list:
+        if not isinstance(item, dict):
+            continue
+        day_range = item.get("dayRange", "")
+        days = parse_day_range_to_days(day_range)
+        sections = item.get("sectionHours", [])
+        if isinstance(sections, list):
+            for sec in sections:
+                if isinstance(sec, dict):
+                    start_min = sec.get("startTime", 0)
+                    end_min = sec.get("endTime", 1440)
+                    specs.append({
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": days,
+                        "opens": minutes_to_time_str(start_min),
+                        "closes": minutes_to_time_str(end_min)
+                    })
+    return specs
+
+
 def convert_api_data_to_schema(api_data: dict, store_url: str, fallback_name: str = "") -> dict:
-    """將 Uber Eats getStoreV1 API 原始 JSON 轉換為標準 Schema.org Restaurant JSON-LD 規格"""
+    """將 Uber Eats getStoreV1 API 原始 JSON 轉換為標準 Schema.org Restaurant JSON-LD 規格 (100% 完整保留欄位)"""
     title = api_data.get('title') or fallback_name or '未命名店家'
     loc = api_data.get('location') or {}
     rating_obj = api_data.get('rating') or {}
@@ -300,6 +365,14 @@ def convert_api_data_to_schema(api_data: dict, store_url: str, fallback_name: st
     rating_val = rating_obj.get('ratingValue')
     rev_cnt = parse_review_count(rating_obj.get('reviewCount'))
     cuisines = api_data.get('cuisineList') or []
+    
+    # 解析原生營業時間
+    raw_hours = api_data.get('hours') or []
+    opening_hours_specs = parse_hours_to_opening_hours_specification(raw_hours)
+    
+    # 解析原生營業狀態 (即時布林值)
+    is_open_val = api_data.get('isOpen')
+    is_open_bool = bool(is_open_val) if is_open_val is not None else True
     
     sections = []
     catalog = api_data.get('catalogSectionsMap') or {}
@@ -350,6 +423,11 @@ def convert_api_data_to_schema(api_data: dict, store_url: str, fallback_name: st
         "@type": "Restaurant",
         "@id": store_url,
         "name": title,
+        "isOpen": is_open_bool,
+        "telephone": api_data.get('phoneNumber') or "",
+        "workingHoursTagline": api_data.get('workingHoursTagline') or "",
+        "closedMessage": api_data.get('closedMessage') or "",
+        "hasStorePromotion": bool(api_data.get('hasStorePromotion')),
         "address": {
             "@type": "PostalAddress",
             "streetAddress": loc.get('streetAddress') or loc.get('address'),
@@ -369,6 +447,7 @@ def convert_api_data_to_schema(api_data: dict, store_url: str, fallback_name: st
             "reviewCount": rev_cnt
         },
         "servesCuisine": cuisines,
+        "openingHoursSpecification": opening_hours_specs,
         "hasMenu": {
             "@type": "Menu",
             "hasMenuSection": sections

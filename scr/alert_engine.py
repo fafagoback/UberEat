@@ -223,6 +223,8 @@ class UberEatsAlertEngine:
           AND p1.crawled_time = ?
           AND p0.price > 0
           AND p1.price > 0
+          AND (p0.is_open = 1 OR p0.is_open IS NULL)
+          AND (p1.is_open = 1 OR p1.is_open IS NULL)
         """
         cursor.execute(query, (prev_batch, latest_batch))
         rows = cursor.fetchall()

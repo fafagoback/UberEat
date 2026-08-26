@@ -119,7 +119,7 @@ export default {
           `).bind(latestBatch).first(),
         ]);
 
-        // 大特價計數與最大現省: 今日價 vs 過去7天最高價 (降幅 >= 30% 且 現省 >= $20)
+        // 大特價計數與最大現省: 今日價 vs 過去7天最高價 (降幅 >= 30% 且 現省 >= $20，排除打烊牌價)
         const discountStatsQuery = `
           SELECT 
             COUNT(*) as cnt,
@@ -135,10 +135,12 @@ export default {
                   AND p0.crawled_time >= ?
                   AND p0.crawled_time < p1.crawled_time
                   AND p0.price >= 1
+                  AND (p0.is_open = 1 OR p0.is_open IS NULL)
               ) as max_7d_eff
             FROM products p1
             WHERE p1.crawled_time = ?
               AND p1.price >= 1
+              AND (p1.is_open = 1 OR p1.is_open IS NULL)
           ) sub
           WHERE sub.max_7d_eff IS NOT NULL
             AND sub.max_7d_eff > 0
@@ -170,7 +172,7 @@ export default {
 
       // -------------------------------------------------------------
       // 2. GET /api/discounts (大特價即時篩選)
-      //    邏輯: 今日實質單價 vs 過去 7 天內該商品最高實質單價
+      //    邏輯: 今日實質單價 vs 過去 7 天內該商品最高實質單價 (排除打烊牌價)
       // -------------------------------------------------------------
       if (path === "/api/discounts") {
         const minDiscount = parseFloat(params.get("min_discount") || "30.0");
@@ -202,16 +204,19 @@ export default {
                 AND p0.crawled_time >= ?
                 AND p0.crawled_time < p1.crawled_time
                 AND p0.price >= 1
+                AND (p0.is_open = 1 OR p0.is_open IS NULL)
             ) as max_7day_eff_price,
             COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             s.review_count,
             s.locality,
-            s.street_address
+            s.street_address,
+            COALESCE(p1.is_open, s.is_open, 1) as is_open
           FROM products p1
           LEFT JOIN stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
           WHERE p1.crawled_time = ?
             AND p1.price >= 1
+            AND (p1.is_open = 1 OR p1.is_open IS NULL)
         `;
 
         const res = await env.DB.prepare(query).bind(sevenDaysAgoStr, latestBatch).all();
@@ -298,6 +303,7 @@ export default {
             COALESCE(NULLIF(s1.order_action_url, ''), s1.store_url, '') as order_action_url,
             s1.total_menu_items,
             s1.crawled_time,
+            COALESCE(s1.is_open, 1) as is_open,
             (
               SELECT GROUP_CONCAT(cuisine_name, '、')
               FROM store_cuisines sc
@@ -337,6 +343,7 @@ export default {
             ROUND(p1.price * 1.0 / p1.quantity, 2) as eff_price,
             COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
+            COALESCE(p1.is_open, s.is_open, 1) as is_open,
             (SELECT MIN(p0.crawled_time) FROM products p0 WHERE p0.product_id = p1.product_id) as product_first_seen
           FROM products p1
           JOIN stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
@@ -373,7 +380,8 @@ export default {
             p.description,
             COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
-            s.locality
+            s.locality,
+            COALESCE(p.is_open, s.is_open, 1) as is_open
           FROM products p
           LEFT JOIN stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
           WHERE p.crawled_time = ?
@@ -504,7 +512,8 @@ export default {
             COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             s.review_count,
-            s.locality
+            s.locality,
+            COALESCE(p.is_open, s.is_open, 1) as is_open
           FROM products p
           LEFT JOIN stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
           ${whereClause}

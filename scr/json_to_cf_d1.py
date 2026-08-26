@@ -116,6 +116,7 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
         longitude DECIMAL(10, 7),
         order_action_url TEXT,
         total_menu_items INT NOT NULL DEFAULT 0,
+        is_open INT NOT NULL DEFAULT 1,
         PRIMARY KEY (store_id, crawled_time)
     );
 
@@ -131,6 +132,7 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
         description TEXT,
         promo_type VARCHAR(50) NOT NULL DEFAULT '無',
         quantity INT NOT NULL DEFAULT 1,
+        is_open INT NOT NULL DEFAULT 1,
         PRIMARY KEY (product_id, crawled_time)
     );
 
@@ -193,15 +195,17 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
     # 3. 導出 stores
     cursor.execute("SELECT * FROM stores WHERE crawled_time = ?", (latest_batch,))
     for row in cursor.fetchall():
+        is_open_val = row['is_open'] if 'is_open' in row.keys() else 1
         sql_statements.append(
-            f"INSERT OR REPLACE INTO stores (store_id, crawled_time, store_name, store_type, store_url, rating_value, review_count, price_range, telephone, country_code, region, locality, street_address, postal_code, latitude, longitude, order_action_url, total_menu_items) VALUES ({escape_sql(row['store_id'])}, {escape_sql(row['crawled_time'])}, {escape_sql(row['store_name'])}, {escape_sql(row['store_type'])}, {escape_sql(row['store_url'])}, {escape_sql(row['rating_value'])}, {escape_sql(row['review_count'])}, {escape_sql(row['price_range'])}, {escape_sql(row['telephone'])}, {escape_sql(row['country_code'])}, {escape_sql(row['region'])}, {escape_sql(row['locality'])}, {escape_sql(row['street_address'])}, {escape_sql(row['postal_code'])}, {escape_sql(row['latitude'])}, {escape_sql(row['longitude'])}, {escape_sql(row['order_action_url'])}, {row['total_menu_items']});"
+            f"INSERT OR REPLACE INTO stores (store_id, crawled_time, store_name, store_type, store_url, rating_value, review_count, price_range, telephone, country_code, region, locality, street_address, postal_code, latitude, longitude, order_action_url, total_menu_items, is_open) VALUES ({escape_sql(row['store_id'])}, {escape_sql(row['crawled_time'])}, {escape_sql(row['store_name'])}, {escape_sql(row['store_type'])}, {escape_sql(row['store_url'])}, {escape_sql(row['rating_value'])}, {escape_sql(row['review_count'])}, {escape_sql(row['price_range'])}, {escape_sql(row['telephone'])}, {escape_sql(row['country_code'])}, {escape_sql(row['region'])}, {escape_sql(row['locality'])}, {escape_sql(row['street_address'])}, {escape_sql(row['postal_code'])}, {escape_sql(row['latitude'])}, {escape_sql(row['longitude'])}, {escape_sql(row['order_action_url'])}, {row['total_menu_items']}, {is_open_val});"
         )
 
     # 4. 導出 products
     cursor.execute("SELECT * FROM products WHERE crawled_time = ?", (latest_batch,))
     for row in cursor.fetchall():
+        is_open_val = row['is_open'] if 'is_open' in row.keys() else 1
         sql_statements.append(
-            f"INSERT OR REPLACE INTO products (product_id, crawled_time, store_id, store_name, category_name, product_name, price, currency, description, promo_type, quantity) VALUES ({escape_sql(row['product_id'])}, {escape_sql(row['crawled_time'])}, {escape_sql(row['store_id'])}, {escape_sql(row['store_name'])}, {escape_sql(row['category_name'])}, {escape_sql(row['product_name'])}, {row['price']}, {escape_sql(row['currency'])}, {escape_sql(row['description'])}, {escape_sql(row['promo_type'])}, {row['quantity']});"
+            f"INSERT OR REPLACE INTO products (product_id, crawled_time, store_id, store_name, category_name, product_name, price, currency, description, promo_type, quantity, is_open) VALUES ({escape_sql(row['product_id'])}, {escape_sql(row['crawled_time'])}, {escape_sql(row['store_id'])}, {escape_sql(row['store_name'])}, {escape_sql(row['category_name'])}, {escape_sql(row['product_name'])}, {row['price']}, {escape_sql(row['currency'])}, {escape_sql(row['description'])}, {escape_sql(row['promo_type'])}, {row['quantity']}, {is_open_val});"
         )
 
     # 5. 導出 store_cuisines

@@ -83,6 +83,7 @@ erDiagram
         decimal longitude "WGS84 經度"
         text order_action_url "下單入口連結"
         int total_menu_items "當下有效菜單品項數"
+        int is_open "當下營業狀態 (1 營業中, 0 打烊)"
     }
 
     products {
@@ -97,6 +98,7 @@ erDiagram
         text description "商品食材與細節描述"
         varchar promo_type "促銷活動標籤 (如 買1送1, 無)"
         int quantity "實質取得數量 (買1送1為2, 常態為1)"
+        int is_open "所屬店家當下營業狀態 (1 營業中, 0 打烊)"
     }
 
     store_business_hours {
@@ -176,6 +178,7 @@ erDiagram
 | `longitude` | `DECIMAL(10, 7)`| - | NULL | `None` | 店家實體門市之 **WGS84 經度座標**。 | `121.5303496` |
 | `order_action_url`| `TEXT` | - | NULL | `None` | 帶有官方導購活動參數（UTM Campaign）的直接點餐下單網址。 | `'https://www.ubereats.com/...utm_campaign=order-action'` |
 | `total_menu_items`| `INT` | - | **NOT NULL** | `0` | 採集當下該店家**有效上架之菜單商品總品項數**。 | `42` |
+| **`is_open`** | `INT` | - | **NOT NULL** | `1` | 採集當下店家之**營業狀態**（`1`: 營業中, `0`: 打烊/休息中，由 Uber Eats 原生 API `isOpen` 取得）。 | `1` |
 
 ---
 
@@ -195,6 +198,7 @@ erDiagram
 | `description` | `TEXT` | - | NULL | `None` | 商品食材用料、口感、份量、口味選擇或客製化說明文字。 | `'嚴選去骨雞腿肉，搭配當日鮮蔬與自製醬料'` |
 | `promo_type` | `VARCHAR(50)` | - | **NOT NULL** | `'無'` | **促銷活動類型**。由 NLP 正則規則由品名/分類/描述自動提取（如：`買1送1`, `買2送1`, `買2送2`, `無`）。 | `'買1送1'` |
 | `quantity` | `INT` | - | **NOT NULL** | `1` | **該價格可實質獲得之商品份數**。常態為 `1`；若為 `買1送1` 則為 `2`；`買2送1` 則為 `3`。用於計算實質單件單價 (`price / quantity`)。 | `2` |
+| **`is_open`** | `INT` | - | **NOT NULL** | `1` | 所屬店家於該抓取批次之**營業狀態**（繼承自 `stores.is_open`，`1`: 營業中, `0`: 打烊；歷史價格比對與特價分析強制限定 `is_open = 1`）。 | `1` |
 
 ---
 
@@ -278,9 +282,9 @@ $$\text{實質單價 (Effective Unit Price)} = \frac{\text{平台標價 (price)}
 - **買 1 送 1**：標價 \$200，`quantity = 2` $\rightarrow$ 實質單價 = \$100。
 
 ### 5.2 大特價 (Big Discount) 判定標準
-以該商品「今日批次實質單價」與「過去 7 天內所有批次中該商品最高實質單價」進行比對，滿足以下條件即觸發 `BIG_DISCOUNT` 警報：
+以該商品「今日批次實質單價」與「過去 7 天內所有批次中該商品最高實質單價」進行比對，**歷史基準價與當前價均強制限定在營業中快照 (`is_open = 1 且 price >= 1`)，徹底排除非營業時段（打烊）之牌價干擾**。滿足以下條件即觸發 `BIG_DISCOUNT` 警報：
 
-設 $P_{max7d}$ 為過去 7 天內該商品最高實質單價，$P_{curr}$ 為今日實質單價：
+設 $P_{max7d}$ 為過去 7 天內該商品於營業中 (`is_open = 1`) 之最高實質單價，$P_{curr}$ 為今日營業中之實質單價：
 
 1. **降價幅度 (Discount Percentage)**：
    $$\text{discount\_pct} = \frac{P_{max7d} - P_{curr}}{P_{max7d}} \times 100\% \ge 30.0\%$$
