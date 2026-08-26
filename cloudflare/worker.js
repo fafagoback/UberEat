@@ -76,7 +76,7 @@ export default {
       ].join('');
 
       // 正向匹配促銷條件 SQL 片段
-      const PROMO_CONDITION = "(p.quantity > 1 OR p.promo_type LIKE '%買%送%' OR p.promo_type LIKE '%折%')";
+      const PROMO_CONDITION = "(p.quantity > 1 OR (p.promo_type IS NOT NULL AND p.promo_type != '無' AND p.promo_type != ''))";
 
       // -------------------------------------------------------------
       // 1. GET /api/stats (系統概覽統計)
@@ -406,9 +406,45 @@ export default {
         const sqlParams = [latestBatch];
 
         if (keyword) {
-          sqlWhere.push("(p.product_name LIKE ? OR p.store_name LIKE ? OR p.description LIKE ?)");
-          const kwLike = `%${keyword}%`;
-          sqlParams.push(kwLike, kwLike, kwLike);
+          // 支援常用品牌/品項中英同義詞與特殊字展開 (例如 dazs / haagen / 哈根達斯)
+          const synonymMap = [
+            { pattern: /dazs|haagen|häagen|哈根/i, terms: ['dazs', 'haagen', 'häagen', '哈根', '哈根達斯'] },
+            { pattern: /movenpick|mövenpick|莫凡彼/i, terms: ['movenpick', 'mövenpick', '莫凡彼'] },
+            { pattern: /cold\s*stone|酷聖石/i, terms: ['cold stone', 'coldstone', '酷聖石'] },
+            { pattern: /starbucks|星巴克/i, terms: ['starbucks', '星巴克'] },
+            { pattern: /mcdonald|麥當勞/i, terms: ['mcdonald', '麥當勞'] },
+            { pattern: /kfc|肯德基/i, terms: ['kfc', '肯德基'] },
+            { pattern: /coca|coke|可樂|可口可樂/i, terms: ['coca', 'coke', '可樂', '可口可樂'] },
+            { pattern: /costco|好市多/i, terms: ['costco', '好市多'] },
+            { pattern: /全家|familymart/i, terms: ['全家', 'familymart'] },
+            { pattern: /7-11|7-eleven|統一超商/i, terms: ['7-11', '7-eleven', '統一超商'] }
+          ];
+
+          let matchedTerms = null;
+          for (const s of synonymMap) {
+            if (s.pattern.test(keyword)) {
+              matchedTerms = s.terms;
+              break;
+            }
+          }
+
+          if (matchedTerms) {
+            const orClauses = [];
+            for (const t of matchedTerms) {
+              orClauses.push("p.product_name LIKE ?");
+              orClauses.push("p.store_name LIKE ?");
+              orClauses.push("p.description LIKE ?");
+              sqlParams.push(`%${t}%`, `%${t}%`, `%${t}%`);
+            }
+            sqlWhere.push(`(${orClauses.join(" OR ")})`);
+          } else {
+            const terms = keyword.split(/\s+/).filter(Boolean);
+            for (const term of terms) {
+              sqlWhere.push("(p.product_name LIKE ? OR p.store_name LIKE ? OR p.description LIKE ?)");
+              const kwLike = `%${term}%`;
+              sqlParams.push(kwLike, kwLike, kwLike);
+            }
+          }
         }
         if (category && category !== "全部") {
           sqlWhere.push("p.category_name LIKE ?");
@@ -429,12 +465,12 @@ export default {
 
         let sortClause = "ORDER BY s.rating_value DESC, (p.price * 1.0 / p.quantity) ASC";
         if (sortBy === "promo_only") {
-          // 僅顯示促銷: 正向匹配過濾 + 排序
-          sqlWhere.push("(p.quantity > 1 OR p.promo_type LIKE '%買%送%' OR p.promo_type LIKE '%折%')");
-          sortClause = "ORDER BY (CASE WHEN p.quantity > 1 THEN 0 ELSE 1 END) ASC, (p.price * 1.0 / p.quantity) ASC, s.rating_value DESC";
+          // 僅顯示促銷: 嚴格正向匹配過濾 + 排序
+          sqlWhere.push("(p.quantity > 1 OR (p.promo_type IS NOT NULL AND p.promo_type != '無' AND p.promo_type != ''))");
+          sortClause = "ORDER BY (CASE WHEN (p.quantity > 1 OR (p.promo_type IS NOT NULL AND p.promo_type != '無' AND p.promo_type != '')) THEN 0 ELSE 1 END) ASC, (p.price * 1.0 / p.quantity) ASC, s.rating_value DESC";
         } else if (sortBy === "promo_first") {
           // 優惠活動優先: 促銷商品排在前，無促銷商品排在後
-          sortClause = "ORDER BY (CASE WHEN (p.quantity > 1 OR p.promo_type LIKE '%買%送%' OR p.promo_type LIKE '%折%') THEN 0 ELSE 1 END) ASC, s.rating_value DESC, (p.price * 1.0 / p.quantity) ASC";
+          sortClause = "ORDER BY (CASE WHEN (p.quantity > 1 OR (p.promo_type IS NOT NULL AND p.promo_type != '無' AND p.promo_type != '')) THEN 0 ELSE 1 END) ASC, s.rating_value DESC, (p.price * 1.0 / p.quantity) ASC";
         } else if (sortBy === "price_asc") {
           sortClause = "ORDER BY (p.price * 1.0 / p.quantity) ASC, s.rating_value DESC";
         } else if (sortBy === "price_desc") {

@@ -415,7 +415,20 @@ class UberEatsAlertEngine:
         for r in rows:
             price = float(r["price"])
             qty = int(r["quantity"])
+            promo_t = r["promo_type"] or ""
+            
+            # 精確計算買X送Y與促銷實質單價
             eff = float(r["eff_price"])
+            m_buy = re.search(r"買\s*([0-9一二兩三四五])\s*送\s*([0-9一二兩三四五])", promo_t)
+            if m_buy:
+                digit_map = {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '一': 1, '二': 2, '兩': 2, '三': 3, '四': 4, '五': 5}
+                b = digit_map.get(m_buy.group(1), 1)
+                f = digit_map.get(m_buy.group(2), 1)
+                if b + f > 0:
+                    eff = round((price * b) / (b + f), 2)
+            elif re.search(r"第\s*[2二兩]\s*[件杯項份]\s*半價", promo_t):
+                eff = round((price * 1.5) / 2.0, 2)
+
             raw_url = r["order_action_url"] or ""
             promos.append({
                 "product_id": r["product_id"],

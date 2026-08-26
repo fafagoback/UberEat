@@ -9,7 +9,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   
-  <title>Uber Eats 特價與新品情報監控系統 | UberEats Radar</title>
+  <title>UberEats 特價與新品雷達</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -83,13 +83,7 @@
           <i data-lucide="radar" class="w-6 h-6"></i>
         </div>
         <div>
-          <div class="flex items-center space-x-2">
-            <h1 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">UberEats Radar</h1>
-            <span class="px-2 py-0.5 text-xs font-semibold rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-400 border border-emerald-300 dark:border-emerald-800">
-              Cloudflare D1 雲端即時版
-            </span>
-          </div>
-          <p class="text-xs text-slate-500 dark:text-slate-400">大特價跳水偵測 • 新店新品即時情報</p>
+          <h1 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">UberEats 特價與新品雷達</h1>
         </div>
       </div>
 
@@ -98,14 +92,14 @@
         <!-- 批次時間標籤 -->
         <div class="hidden md:flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-xs text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
           <i data-lucide="clock" class="w-3.5 h-3.5 text-emerald-500"></i>
-          <span>最新採集：</span>
+          <span>更新資料時間：</span>
           <strong id="batch-time-text" class="font-mono text-emerald-600 dark:text-emerald-400">載入中...</strong>
         </div>
 
-        <!-- 重新分析按鈕 -->
+        <!-- 重新整理/更新資料按鈕 -->
         <button id="btn-refresh" class="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-medium rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950/50 dark:text-emerald-300 dark:hover:bg-emerald-900/50 border border-emerald-200 dark:border-emerald-800 transition-all active:scale-95">
           <i data-lucide="refresh-cw" class="w-3.5 h-3.5" id="refresh-icon"></i>
-          <span class="hidden sm:inline">重新計算</span>
+          <span class="hidden sm:inline">更新資料</span>
         </button>
 
         <!-- 深色 / 淺色模式切換 -->
@@ -180,13 +174,13 @@
         </div>
       </div>
 
-      <!-- 卡片 4: 買一送一/超值促銷 -->
+      <!-- 卡片 4: 折扣活動專區 -->
       <div id="stat-card-promos" class="radar-card cursor-pointer bg-white dark:bg-slate-900 p-4 sm:p-5 rounded-2xl border border-purple-100 dark:border-purple-950/50 shadow-sm hover:border-purple-300 dark:hover:border-purple-800 relative overflow-hidden group">
         <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/5 rounded-full -mr-6 -mt-6 group-hover:scale-125 transition-transform duration-500"></div>
         <div class="flex items-center justify-between">
           <span class="text-xs font-semibold tracking-wider text-purple-600 dark:text-purple-400 uppercase flex items-center gap-1">
             <i data-lucide="gift" class="w-3.5 h-3.5"></i>
-            買1送1 / 促銷
+            折扣活動 / 促銷
           </span>
           <span class="p-2 rounded-xl bg-purple-50 dark:bg-purple-950/80 text-purple-600 dark:text-purple-400">
             <i data-lucide="tag" class="w-4 h-4"></i>
@@ -194,7 +188,7 @@
         </div>
         <div class="mt-3 flex items-baseline justify-between">
           <div class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white" id="stat-promotions">0</div>
-          <span class="text-xs text-purple-500 font-medium">實質半價專區</span>
+          <span class="text-xs text-purple-500 font-medium">買多送多 / 折扣專區</span>
         </div>
       </div>
 
@@ -224,7 +218,7 @@
 
         <button class="nav-tab flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm transition-all whitespace-nowrap text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800" data-target="tab-promos">
           <i data-lucide="gift" class="w-4 h-4"></i>
-          買一送一專區
+          折扣活動專區
           <span class="tab-badge px-1.5 py-0.5 text-xs bg-slate-200 dark:bg-slate-800 rounded-full font-mono" id="badge-promos">0</span>
         </button>
 
@@ -370,16 +364,16 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 6. TAB 4: 買一送一/促銷專區 (Promotions) -->
+    <!-- 6. TAB 4: 折扣活動專區 (Promotions) -->
     <!-- ================================================================= -->
     <section id="tab-promos" class="tab-content hidden space-y-5">
       <div class="flex items-center justify-between">
         <div>
           <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
             <i data-lucide="gift" class="w-5 h-5 text-purple-500"></i>
-            買1送1 & 組合促銷特惠
+            折扣活動專區
           </h2>
-          <p class="text-xs text-slate-500 dark:text-slate-400">全自動辨識買一送一與促銷活動，折算實質單件價格</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">全自動辨識買一送一、多件折抵與促銷活動，折算實質單件價格</p>
         </div>
         <span class="text-xs px-2.5 py-1 rounded-lg bg-purple-50 dark:bg-purple-950/80 text-purple-700 dark:text-purple-300 font-mono" id="promos-counter">0 筆特惠</span>
       </div>

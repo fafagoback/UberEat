@@ -457,12 +457,12 @@ function renderNewProducts() {
 
   emptyView.classList.add('hidden');
   container.innerHTML = items.map(prod => {
-    const hasPromo = prod.promo_type && prod.promo_type !== '無';
-    const hasQtyPromo = prod.quantity && prod.quantity > 1;
-    const unitPrice = (prod.eff_price !== undefined && prod.eff_price !== null && !isNaN(prod.eff_price))
-      ? Number(prod.eff_price)
-      : (hasQtyPromo ? (prod.price / prod.quantity) : prod.price);
+    const promoInfo = calculateEffectivePromo(prod.price, prod.promo_type, prod.quantity);
+    const hasPromo = promoInfo.isPromo;
+    const hasQtyPromo = promoInfo.totalQty > 1;
+    const unitPrice = promoInfo.effPrice;
     const displayUnitPrice = Math.round(unitPrice);
+    const discountLabel = promoInfo.discountText ? `折合 ${promoInfo.discountText}` : '';
 
     return `
       <div class="radar-card bg-white dark:bg-slate-900 rounded-2xl p-5 border border-blue-100 dark:border-blue-950/60 shadow-sm flex flex-col justify-between group">
@@ -475,6 +475,11 @@ function renderNewProducts() {
               ${hasPromo ? `
                 <span class="inline-flex items-center gap-0.5 text-[11px] font-bold px-1.5 py-0.5 rounded-md bg-purple-50 text-purple-700 dark:bg-purple-950/80 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
                   <i data-lucide="gift" class="w-3 h-3"></i>${escapeHtml(prod.promo_type)}
+                </span>
+              ` : ''}
+              ${discountLabel ? `
+                <span class="inline-block text-[11px] font-bold px-1.5 py-0.5 rounded-md bg-red-50 text-red-600 dark:bg-red-950/80 dark:text-red-300 border border-red-200 dark:border-red-800">
+                  ${escapeHtml(discountLabel)}
                 </span>
               ` : ''}
             </div>
@@ -512,7 +517,123 @@ function renderNewProducts() {
 }
 
 // -----------------------------------------------------------------------------
-// 6. 買一送一/促銷專區 (Tab 4)
+// 促銷計算與台灣用語折數工具
+// -----------------------------------------------------------------------------
+function formatTaiwanDiscount(ratio) {
+  if (ratio <= 0 || ratio >= 1 || isNaN(ratio)) return '';
+  const pct = Math.round(ratio * 100);
+  if (pct % 10 === 0) {
+    return `${pct / 10}折`;
+  }
+  return `${pct}折`;
+}
+
+function calculateEffectivePromo(price, promoType, quantity) {
+  const p = Number(price) || 0;
+  const qty = Number(quantity) || 1;
+  const type = String(promoType || '').trim();
+
+  // 1. 匹配「買X送Y」中文或數字 (例: 買1送1, 買2送1, 買3送1, 買一送一, 買二送一)
+  const mBuy = type.match(/買\s*([0-9一二兩三四五])\s*送\s*([0-9一二兩三四五])/);
+  if (mBuy) {
+    const digitMap = { '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '一': 1, '二': 2, '兩': 2, '三': 3, '四': 4, '五': 5 };
+    const b = digitMap[mBuy[1]] || 1;
+    const f = digitMap[mBuy[2]] || 1;
+    const totalQty = b + f;
+    const totalCost = p * b;
+    const eff = totalQty > 0 ? (totalCost / totalQty) : p;
+    const ratio = totalQty > 0 ? (b / totalQty) : 1;
+    return {
+      effPrice: eff,
+      totalQty: totalQty,
+      buyQty: b,
+      freeQty: f,
+      ratio: ratio,
+      discountText: formatTaiwanDiscount(ratio),
+      rawPrice: p,
+      isPromo: true
+    };
+  }
+
+  // 2. 匹配「第2件半價」/「第2杯半價」
+  if (/第\s*[2二兩]\s*[件杯項份]\s*半價/.test(type)) {
+    const eff = (p * 1.5) / 2;
+    const ratio = 0.75;
+    return {
+      effPrice: eff,
+      totalQty: 2,
+      buyQty: 2,
+      freeQty: 0,
+      ratio: ratio,
+      discountText: "75折",
+      rawPrice: p,
+      isPromo: true
+    };
+  }
+
+  // 3. 匹配「加1元多1件」
+  if (/加\s*[1一]\s*元多\s*[1一]\s*件/.test(type)) {
+    const eff = (p + 1) / 2;
+    const ratio = p > 0 ? (eff / p) : 0.5;
+    return {
+      effPrice: eff,
+      totalQty: 2,
+      buyQty: 1,
+      freeQty: 1,
+      ratio: ratio,
+      discountText: formatTaiwanDiscount(ratio),
+      rawPrice: p,
+      isPromo: true
+    };
+  }
+
+  // 4. 匹配「N折」/「N折特惠」
+  const mDisc = type.match(/([1-9](?:\.[1-9])?)\s*折/);
+  if (mDisc) {
+    const discNum = parseFloat(mDisc[1]);
+    const ratio = discNum < 10 ? (discNum / 10) : (discNum / 100);
+    return {
+      effPrice: p,
+      totalQty: qty,
+      buyQty: qty,
+      freeQty: 0,
+      ratio: ratio,
+      discountText: `${discNum}折`,
+      rawPrice: p,
+      isPromo: true
+    };
+  }
+
+  // 5. 若 quantity > 1 (組合多入包裝)
+  if (qty > 1) {
+    const eff = p / qty;
+    const ratio = 1 / qty;
+    return {
+      effPrice: eff,
+      totalQty: qty,
+      buyQty: qty,
+      freeQty: 0,
+      ratio: ratio,
+      discountText: formatTaiwanDiscount(ratio),
+      rawPrice: p,
+      isPromo: true
+    };
+  }
+
+  return {
+    effPrice: p,
+    totalQty: 1,
+    buyQty: 1,
+    freeQty: 0,
+    ratio: 1,
+    discountText: '',
+    rawPrice: p,
+    isPromo: (type !== '無' && type !== '')
+  };
+}
+
+// -----------------------------------------------------------------------------
+// 6. 折扣活動專區 (Tab 4)
 // -----------------------------------------------------------------------------
 async function fetchPromotions() {
   if (!APP_STATE.isServerMode) return;
@@ -531,7 +652,7 @@ async function fetchPromotions() {
 function renderPromotions() {
   const container = document.getElementById('promos-grid');
   // 嚴格過濾非商品廣告與 price <= 0 之項目
-  const items = APP_STATE.promotions.filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type.includes('送')) || (p.promo_type && p.promo_type.includes('折'))));
+  const items = APP_STATE.promotions.filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
 
   const badgePromosEl = document.getElementById('badge-promos');
   if (badgePromosEl) badgePromosEl.textContent = items.length;
@@ -539,7 +660,8 @@ function renderPromotions() {
   const statPromosEl = document.getElementById('stat-promotions');
   if (statPromosEl) statPromosEl.textContent = items.length;
 
-  document.getElementById('promos-counter').textContent = `${items.length} 筆特惠`;
+  const counterEl = document.getElementById('promos-counter');
+  if (counterEl) counterEl.textContent = `${items.length} 筆特惠`;
 
   if (items.length === 0) {
     container.innerHTML = '<div class="col-span-3 py-12 text-center text-slate-400">目前沒有促銷活動</div>';
@@ -547,10 +669,9 @@ function renderPromotions() {
   }
 
   container.innerHTML = items.map(p => {
-    const eff = (p.eff_price !== undefined && p.eff_price !== null && !isNaN(p.eff_price))
-      ? Number(p.eff_price)
-      : (p.quantity > 1 ? (p.price / p.quantity) : p.price);
-    const discountPct = (p.price > 0 && eff > 0) ? Math.max(0, Math.round((1 - eff / p.price) * 100)) : 50;
+    const promoInfo = calculateEffectivePromo(p.price, p.promo_type, p.quantity);
+    const eff = promoInfo.effPrice;
+    const discountLabel = promoInfo.discountText ? `折合 ${promoInfo.discountText}` : '';
     
     return `
       <div class="radar-card bg-white dark:bg-slate-900 rounded-2xl p-5 border border-purple-100 dark:border-purple-950/60 shadow-sm flex flex-col justify-between group">
@@ -576,14 +697,14 @@ function renderPromotions() {
         <div class="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800">
           <div class="flex items-baseline justify-between mb-3">
             <div>
-              <div class="text-xs text-slate-400">標價 $${Math.round(p.price)}${p.quantity > 1 ? ` (共 ${p.quantity} 份)` : ''}</div>
+              <div class="text-xs text-slate-400">標價 $${Math.round(p.price)}${promoInfo.totalQty > 1 ? ` (共 ${promoInfo.totalQty} 份)` : (p.quantity > 1 ? ` (共 ${p.quantity} 份)` : '')}</div>
               <div class="text-xl font-black text-purple-600 dark:text-purple-400 font-mono">
                 實質單價 $${Math.round(eff)}
               </div>
             </div>
-            ${discountPct > 0 ? `
-              <span class="text-xs font-semibold px-2 py-1 rounded-lg bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300">
-                折合 ${discountPct}% OFF
+            ${discountLabel ? `
+              <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
+                ${escapeHtml(discountLabel)}
               </span>
             ` : ''}
           </div>
@@ -610,12 +731,21 @@ async function fetchGlobalProducts(page = 1) {
   }
   APP_STATE.globalPage = page;
   const container = document.getElementById('global-products-grid');
+  const countEl = document.getElementById('global-total-count');
   if (container) {
-    container.style.opacity = '0.5';
+    container.style.opacity = '0.4';
+    container.style.transition = 'opacity 0.2s ease';
   }
+  if (countEl) {
+    countEl.textContent = '搜尋中...';
+  }
+
+  const sortMode = APP_STATE.filters.globalSort || 'rating_desc';
+  const rawSearch = APP_STATE.filters.globalSearch || '';
+
   const params = new URLSearchParams({
-    q: APP_STATE.filters.globalSearch,
-    sort: APP_STATE.filters.globalSort,
+    q: rawSearch,
+    sort: sortMode,
     page: page,
     limit: 24
   });
@@ -624,9 +754,45 @@ async function fetchGlobalProducts(page = 1) {
     const res = await fetch(getApiUrl(`/api/products?${params.toString()}`));
     if (res.ok) {
       const data = await res.json();
-      APP_STATE.globalProducts = data.items || [];
+      let items = data.items || [];
+
+      // 前端健全性二次過濾與排序保證 (防後端快取或 API 延遲)
+      if (sortMode === 'promo_only') {
+        items = items.filter(p => {
+          const info = calculateEffectivePromo(p.price, p.promo_type, p.quantity);
+          return (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '') || info.isPromo);
+        });
+      }
+
+      // 前端二次排序校準
+      items.sort((a, b) => {
+        const infoA = calculateEffectivePromo(a.price, a.promo_type, a.quantity);
+        const infoB = calculateEffectivePromo(b.price, b.promo_type, b.quantity);
+        const effA = infoA.effPrice;
+        const effB = infoB.effPrice;
+
+        if (sortMode === 'promo_first') {
+          const promoA = (a.quantity > 1 || (a.promo_type && a.promo_type !== '無' && a.promo_type !== '')) ? 1 : 0;
+          const promoB = (b.quantity > 1 || (b.promo_type && b.promo_type !== '無' && b.promo_type !== '')) ? 1 : 0;
+          if (promoB !== promoA) return promoB - promoA;
+          return (b.rating_value || 0) - (a.rating_value || 0) || effA - effB;
+        } else if (sortMode === 'price_asc') {
+          return effA - effB || (b.rating_value || 0) - (a.rating_value || 0);
+        } else if (sortMode === 'price_desc') {
+          return effB - effA || (b.rating_value || 0) - (a.rating_value || 0);
+        } else if (sortMode === 'name_asc') {
+          return (a.product_name || '').localeCompare(b.product_name || '', 'zh-TW');
+        } else if (sortMode === 'rating_desc') {
+          return (b.rating_value || 0) - (a.rating_value || 0) || effA - effB;
+        }
+        return 0;
+      });
+
+      APP_STATE.globalProducts = items;
       APP_STATE.globalTotalPages = data.total_pages || 1;
-      document.getElementById('global-total-count').textContent = `${data.total || 0} 筆`;
+      if (countEl) {
+        countEl.textContent = `${(sortMode === 'promo_only' ? items.length : (data.total !== undefined ? data.total : items.length))} 筆`;
+      }
       renderGlobalProducts();
       renderGlobalPagination();
     }
@@ -653,12 +819,12 @@ function renderGlobalProducts() {
   }
 
   container.innerHTML = items.map(p => {
-    const hasPromo = p.promo_type && p.promo_type !== '無';
-    const hasQtyPromo = p.quantity && p.quantity > 1;
-    const unitPrice = (p.eff_price !== undefined && p.eff_price !== null && !isNaN(p.eff_price))
-      ? Number(p.eff_price)
-      : (hasQtyPromo ? (p.price / p.quantity) : p.price);
+    const promoInfo = calculateEffectivePromo(p.price, p.promo_type, p.quantity);
+    const hasPromo = promoInfo.isPromo;
+    const hasQtyPromo = promoInfo.totalQty > 1;
+    const unitPrice = promoInfo.effPrice;
     const displayUnitPrice = Math.round(unitPrice);
+    const discountLabel = promoInfo.discountText ? `折合 ${promoInfo.discountText}` : '';
 
     return `
       <div class="radar-card bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between group">
@@ -689,12 +855,17 @@ function renderGlobalProducts() {
                 <i data-lucide="gift" class="w-3 h-3"></i>${escapeHtml(p.promo_type)}
               </span>
             ` : ''}
+            ${discountLabel ? `
+              <span class="inline-block text-[11px] font-bold px-2 py-0.5 rounded-md bg-red-50 text-red-600 dark:bg-red-950/80 dark:text-red-300 border border-red-200 dark:border-red-800">
+                ${escapeHtml(discountLabel)}
+              </span>
+            ` : ''}
             <span class="inline-block text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
               ${escapeHtml(p.category_name || '一般')}
             </span>
             ${hasQtyPromo ? `
               <span class="text-[11px] text-slate-400 dark:text-slate-500 font-mono">
-                (整份標價 $${Math.round(p.price)} 共 ${p.quantity} 件)
+                (標價 $${Math.round(p.price)} 共 ${promoInfo.totalQty} 件)
               </span>
             ` : ''}
           </div>
