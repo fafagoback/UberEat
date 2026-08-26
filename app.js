@@ -167,7 +167,18 @@ function renderDiscounts() {
     }
   }
 
-  document.getElementById('badge-discounts').textContent = items.length;
+  // 同步分頁徽章與頂部大特價統計指標
+  const badgeDiscountsEl = document.getElementById('badge-discounts');
+  if (badgeDiscountsEl) badgeDiscountsEl.textContent = items.length;
+
+  const statBigDiscountsEl = document.getElementById('stat-big-discounts');
+  if (statBigDiscountsEl) statBigDiscountsEl.textContent = items.length;
+
+  const statMaxSavingsEl = document.getElementById('stat-max-savings');
+  if (statMaxSavingsEl) {
+    const maxSavings = items.length > 0 ? Math.max(...items.map(i => i.savings_amount || 0)) : 0;
+    statMaxSavingsEl.textContent = `現省最高 $${Math.round(maxSavings)}`;
+  }
 
   if (items.length === 0) {
     container.innerHTML = '';
@@ -286,6 +297,9 @@ function renderNewStores() {
   const emptyView = document.getElementById('new-stores-empty');
   const items = APP_STATE.newStores;
 
+  const badgeStoresEl = document.getElementById('badge-stores');
+  if (badgeStoresEl) badgeStoresEl.textContent = items.length;
+
   document.getElementById('new-stores-counter').textContent = `${items.length} 間新店`;
 
   if (items.length === 0) {
@@ -364,6 +378,9 @@ function renderNewProducts() {
   const container = document.getElementById('new-products-grid');
   const emptyView = document.getElementById('new-products-empty');
   const items = APP_STATE.newProducts;
+
+  const badgeProductsEl = document.getElementById('badge-products');
+  if (badgeProductsEl) badgeProductsEl.textContent = items.length;
 
   document.getElementById('new-products-counter').textContent = `${items.length} 道新品`;
 
@@ -450,6 +467,9 @@ function renderPromotions() {
   const container = document.getElementById('promos-grid');
   // 嚴格過濾非商品廣告與 price <= 0 之項目
   const items = APP_STATE.promotions.filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type.includes('送'))));
+
+  const badgePromosEl = document.getElementById('badge-promos');
+  if (badgePromosEl) badgePromosEl.textContent = items.length;
 
   document.getElementById('promos-counter').textContent = `${items.length} 筆特惠`;
 

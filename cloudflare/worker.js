@@ -116,9 +116,12 @@ export default {
           `).bind(latestBatch, sevenDaysAgoStr, sevenDaysAgoStr).first(),
         ]);
 
-        // 大特價計數: 今日價 vs 過去7天最高價
-        const discountCountQuery = `
-          SELECT COUNT(*) as cnt FROM (
+        // 大特價計數與最大現省: 今日價 vs 過去7天最高價
+        const discountStatsQuery = `
+          SELECT 
+            COUNT(*) as cnt,
+            COALESCE(MAX(sub.max_7d_eff - sub.curr_eff), 0) as max_savings
+          FROM (
             SELECT
               p1.product_id,
               ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff,
@@ -127,7 +130,7 @@ export default {
                 FROM products p0
                 WHERE p0.product_id = p1.product_id
                   AND p0.crawled_time >= ?
-                  AND p0.crawled_time < p1.crawled_time
+                  AND p0.crawled_time < ?
                   AND p0.price > 0
               ) as max_7d_eff
             FROM products p1
@@ -139,31 +142,7 @@ export default {
             AND ((sub.max_7d_eff - sub.curr_eff) / sub.max_7d_eff * 100.0) >= 30.0
             AND (sub.max_7d_eff - sub.curr_eff) >= 20.0
         `;
-        const discountCountRes = await env.DB.prepare(discountCountQuery).bind(sevenDaysAgoStr, latestBatch).first();
-
-        // 找最大現省金額
-        const maxSavingsQuery = `
-          SELECT MAX(sub.max_7d_eff - sub.curr_eff) as max_savings FROM (
-            SELECT
-              ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff,
-              (
-                SELECT MAX(p0.price * 1.0 / p0.quantity)
-                FROM products p0
-                WHERE p0.product_id = p1.product_id
-                  AND p0.crawled_time >= ?
-                  AND p0.crawled_time < p1.crawled_time
-                  AND p0.price > 0
-              ) as max_7d_eff
-            FROM products p1
-            WHERE p1.crawled_time = ?
-              AND p1.price > 0
-          ) sub
-          WHERE sub.max_7d_eff IS NOT NULL
-            AND sub.max_7d_eff > 0
-            AND ((sub.max_7d_eff - sub.curr_eff) / sub.max_7d_eff * 100.0) >= 30.0
-            AND (sub.max_7d_eff - sub.curr_eff) >= 20.0
-        `;
-        const maxSavingsRes = await env.DB.prepare(maxSavingsQuery).bind(sevenDaysAgoStr, latestBatch).first();
+        const discountStatsRes = await env.DB.prepare(discountStatsQuery).bind(sevenDaysAgoStr, latestBatch, latestBatch).first();
 
         let dateFmt = "";
         if (latestBatch.length === 14) {
@@ -178,11 +157,11 @@ export default {
           batches: batches,
           total_stores: storeRes?.cnt || 0,
           total_products: prodRes?.cnt || 0,
-          big_discounts_count: discountCountRes?.cnt || 0,
+          big_discounts_count: discountStatsRes?.cnt || 0,
           new_stores_count: newStoreRes?.cnt || 0,
           new_products_count: newProdRes?.cnt || 0,
           promotions_count: promoRes?.cnt || 0,
-          max_savings_twd: Math.round(maxSavingsRes?.max_savings || 0),
+          max_savings_twd: Math.round(discountStatsRes?.max_savings || 0),
         });
       }
 
