@@ -29,7 +29,7 @@ concurrency:
 
 jobs:
   # ============================================================
-  # Stage 1: Point Coordinator 點位調度節點 (分片 1,559 陸地網格點)
+  # Stage 1: Point Coordinator 點位調度節點 (分片 1,558 陸地網格點)
   # ============================================================
   point_coordinator:
     name: "階段 1: 點位調度 (Coordinator)"
@@ -280,8 +280,8 @@ jobs:
           if valid <= 0:
               print("❌ 未收集到任何有效菜單 JSON。", file=sys.stderr)
               sys.exit(1)
-          if coverage < 0.95:
-              print("❌ 菜單採集完整率低於 95%，拒絕以明顯不完整批次覆寫正式 D1。", file=sys.stderr)
+          if valid != expected:
+              print("❌ 菜單採集並非 100% 完整，拒絕以部分批次覆寫正式 D1。", file=sys.stderr)
               sys.exit(1)
           PY
 
@@ -317,3 +317,30 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         run: |
           npx wrangler deploy
+
+      - name: ④ Production API 與 GitHub Pages 最終回查
+        shell: bash
+        run: |
+          set -euo pipefail
+          API_URL="https://ubereats-monitor-api.ber-at.workers.dev/api/stats"
+          PAGE_URL="https://fafagoback.github.io/UberEat/"
+          api_body="$(curl --fail --silent --show-error --retry 3 "$API_URL")"
+          page_body="$(curl --fail --silent --show-error --retry 3 "$PAGE_URL")"
+          python - "$api_body" <<'PY'
+          import json, sys
+          payload = json.loads(sys.argv[1])
+          stats = payload.get("stats", payload)
+          stores = stats.get("total_stores") or stats.get("total_monitored_stores") or 0
+          products = stats.get("total_products") or stats.get("total_monitored_products") or 0
+          if stores <= 0 or products <= 0:
+              raise SystemExit(f"❌ Production API 回查失敗：stores={stores}, products={products}")
+          print(f"✅ Production API：stores={stores:,}, products={products:,}")
+          PY
+          grep -q "UberEats Radar" <<<"$page_body"
+          {
+            echo "### ✅ Stage 5 Production Checkpoint"
+            echo "| 檢核項目 | 預期 | 實際 | 狀態 |"
+            echo "| :--- | :--- | :--- | :---: |"
+            echo "| Cloudflare Worker API | HTTP 200 且 stores/products > 0 | 回查通過 | ✅ |"
+            echo "| GitHub Pages | HTTP 200 且包含 UberEats Radar | 回查通過 | ✅ |"
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -343,13 +343,44 @@ def main():
 
     print(f"💾 已成功產出:\n   ├─ {out_json_path}\n   └─ {out_csv_path}")
 
+    # Hard checkpoint: every assigned point must finish, both files must exist,
+    # and JSON/CSV row counts must agree. Any mismatch makes the job red.
+    with open(out_json_path, "r", encoding="utf-8") as f:
+        checkpoint_json = json.load(f)
+    with open(out_csv_path, "r", encoding="utf-8-sig", newline="") as f:
+        checkpoint_csv_rows = list(csv.DictReader(f))
+    checkpoint_errors = []
+    if completed_points != total_points:
+        checkpoint_errors.append(f"掃描點位 {completed_points}/{total_points}")
+    if total_unique_stores <= 0:
+        checkpoint_errors.append("未發現任何店家")
+    if checkpoint_json.get("total_stores") != len(checkpoint_json.get("stores", [])):
+        checkpoint_errors.append("JSON total_stores 與 stores 陣列不符")
+    if len(checkpoint_csv_rows) != total_unique_stores:
+        checkpoint_errors.append(f"CSV {len(checkpoint_csv_rows)} 筆 != JSON {total_unique_stores} 筆")
+    if os.path.getsize(out_json_path) <= 0 or os.path.getsize(out_csv_path) <= 0:
+        checkpoint_errors.append("產出檔案為空")
+
     # GITHUB_STEP_SUMMARY
+    checkpoint_status = "❌ 失敗" if checkpoint_errors else "✅ 通過"
     summary_md = f"""### ⚡ 【Worker {chunk_id} 成果報告】
 - **掃描點位數**: `{completed_points}/{total_points}` 點 (翻頁次數: `{total_pages_scanned}`)
 - **發現不重複店家**: **{total_unique_stores:,}** 間
 - **執行耗時**: `{elapsed:.1f}` 秒 (平均 `{elapsed/max(1, total_points):.2f}` 秒/點)
+
+| Checkpoint | 預期 | 實際 | 狀態 |
+| :--- | :--- | :--- | :---: |
+| 點位完成率 | `{total_points}/{total_points}` | `{completed_points}/{total_points}` | {'✅' if completed_points == total_points else '❌'} |
+| JSON 產出 | 非空且 `{total_unique_stores}` 筆 | `{os.path.getsize(out_json_path):,}` bytes / `{len(checkpoint_json.get('stores', []))}` 筆 | {'✅' if os.path.getsize(out_json_path) > 0 else '❌'} |
+| CSV 產出 | 非空且與 JSON 同筆數 | `{os.path.getsize(out_csv_path):,}` bytes / `{len(checkpoint_csv_rows)}` 筆 | {'✅' if len(checkpoint_csv_rows) == total_unique_stores else '❌'} |
+
+**Worker Checkpoint：{checkpoint_status}**
 """
     append_github_step_summary(summary_md)
+
+    if checkpoint_errors:
+        print("❌ Worker checkpoint 失敗：" + "；".join(checkpoint_errors), file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

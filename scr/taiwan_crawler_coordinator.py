@@ -139,6 +139,20 @@ def main():
         matrix_include.append({"chunk_id": i})
         print(f"   ├─ Worker {i:>2}: 分配 {len(chunk_points):>4} 個點位 ➔ {chunk_file}")
 
+    # Hard checkpoint: all source points must appear exactly once in non-empty
+    # chunk files. A broken dispatcher must never launch a green partial run.
+    checkpoint_files = [os.path.join(args.output_dir, f"chunk_{i}.json") for i in range(num_workers)]
+    checkpoint_points = [pt for chunk in chunks for pt in chunk]
+    checkpoint_ids = [str(pt.get("id")) for pt in checkpoint_points]
+    checkpoint_errors = []
+    if len(checkpoint_points) != total_points:
+        checkpoint_errors.append(f"分片點位合計 {len(checkpoint_points)} != 來源 {total_points}")
+    if len(checkpoint_ids) != len(set(checkpoint_ids)):
+        checkpoint_errors.append("分片中存在重複 point_id")
+    empty_files = [p for p in checkpoint_files if not os.path.isfile(p) or os.path.getsize(p) <= 0]
+    if empty_files:
+        checkpoint_errors.append(f"缺少或空白分片: {empty_files}")
+
     # 3. 輸出 GitHub Actions 變數
     matrix_json = json.dumps({"include": matrix_include})
     set_github_output("matrix", matrix_json)
@@ -158,6 +172,13 @@ def main():
 - **啟動工作機台數**: **{num_workers}** 台 (平行並發)
 - **平均每台負擔**: 約 **{total_points // num_workers} ~ {total_points // num_workers + 1}** 個座標點
 
+### {'❌' if checkpoint_errors else '✅'} Stage 1 產出 Checkpoint
+| 檢核項目 | 預期 | 實際 | 狀態 |
+| :--- | :--- | :--- | :---: |
+| 分片檔案 | `{num_workers}` 個非空 JSON | `{sum(1 for p in checkpoint_files if os.path.isfile(p) and os.path.getsize(p) > 0)}` 個 | {'✅' if not empty_files else '❌'} |
+| 點位總和 | `{total_points}` 點 | `{len(checkpoint_points)}` 點 | {'✅' if len(checkpoint_points) == total_points else '❌'} |
+| point_id 唯一性 | 0 筆重複 | `{len(checkpoint_ids) - len(set(checkpoint_ids))}` 筆重複 | {'✅' if len(checkpoint_ids) == len(set(checkpoint_ids)) else '❌'} |
+
 ### 🏙️ 採樣點縣市分佈 Top 10
 | 縣市 | 採樣點數 | 佔比 |
 | :--- | :---: | :---: |
@@ -168,6 +189,10 @@ def main():
         summary_md += f"| {c_name} | {c_cnt:,} | {pct:.1f}% |\n"
 
     append_github_step_summary(summary_md)
+
+    if checkpoint_errors:
+        print("❌ Stage 1 checkpoint 失敗：" + "；".join(checkpoint_errors), file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

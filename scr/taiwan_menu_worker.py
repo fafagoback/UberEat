@@ -224,8 +224,24 @@ def main():
 - **擷取商品總數**: **`{total_menu_items:,}`** 道菜品 | **產出有效 JSON**: `{valid_json_count:,}` 個
 - **採集耗時**: `{crawl_elapsed:.1f}` 秒 (平均 `{crawl_elapsed/max(1, total_assigned):.2f}` 秒/店) | **總耗時**: `{total_elapsed:.1f}` 秒
 - **HF 獨立 Commit 狀態**: `{'✅ 成功推送至 HF (' + args.repo_id + ')' if hf_upload_success else ('⚠️ 未推送 (' + hf_err_msg + ')' if hf_err_msg else 'ℹ️ 本機離線模式')}`
+
+| Checkpoint | 預期 | 實際 | 狀態 |
+| :--- | :--- | :--- | :---: |
+| 店家處理完成 | `{total_assigned}` 間 | 成功 `{success_count}` / 失敗 `{fail_count}` | {'✅' if success_count == total_assigned else '❌'} |
+| Schema JSON | `{total_assigned}` 個有效檔案 | `{valid_json_count}` 個有效 / `{len(invalid_files)}` 個無效 | {'✅' if valid_json_count == total_assigned and not invalid_files else '❌'} |
+| HF Commit | 成功 | {'成功' if hf_upload_success else '未完成'} | {'✅' if hf_upload_success else '❌'} |
 """
     append_github_step_summary(summary_md)
+
+    if success_count != total_assigned or valid_json_count != total_assigned or invalid_files:
+        fatal_error(
+            chunk_id=chunk_id,
+            step_name="步驟 4.3 菜單全量產出 Checkpoint",
+            reason=f"成功 {success_count}/{total_assigned}，有效 JSON {valid_json_count}/{total_assigned}，無效檔 {len(invalid_files)}",
+            expected="每個指派店家皆產出一個有效 Schema.org JSON",
+            actual=f"缺少 {total_assigned - valid_json_count} 個有效結果",
+            retries=2
+        )
 
     # 線上工作機必須讓 HF Commit 失敗向上傳遞，才能觸發最終 Artifact 兜底；
     # 本機沒有 HF_TOKEN 時仍允許離線測試。

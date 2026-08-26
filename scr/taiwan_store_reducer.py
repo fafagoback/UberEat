@@ -175,14 +175,15 @@ def main():
 
     print(f"🔍 找到 {len(chunk_files)} 個 Worker 結果分片檔案。")
 
-    if not chunk_files:
-        print("❌ 錯誤：未找到任何有效的 Worker JSON 結果檔案！", file=sys.stderr)
+    if len(chunk_files) != args.max_menu_workers:
+        print(f"❌ 錯誤：預期 {args.max_menu_workers} 個 Worker JSON，實際 {len(chunk_files)} 個！", file=sys.stderr)
         sys.exit(1)
 
     global_stores = {}
     batch_id = now_dt.strftime("%Y%m%d%H%M%S")
     worker_stats = []
     total_raw_store_sightings = 0
+    parse_errors = []
 
     # 2. 逐一讀取並合併去重
     for cf in chunk_files:
@@ -228,6 +229,11 @@ def main():
 
         except Exception as e:
             print(f"⚠️ 解析檔案 {cf} 失敗: {e}")
+            parse_errors.append(f"{cf}: {e}")
+
+    if parse_errors:
+        print("❌ 有 Worker 分片無法解析，拒絕產生部分資料集。", file=sys.stderr)
+        sys.exit(1)
 
     # 3. 二次精煉：計算 primary_county 與 counties_available
     final_stores_list = []
@@ -385,6 +391,25 @@ def main():
         menu_matrix_include.append({"chunk_id": i})
         print(f"   ├─ Menu Worker {i:>2}: 分配 {len(m_chunk_points):>5} 間店家 ➔ {m_chunk_file}")
 
+    checkpoint_menu_total = sum(len(chunk) for chunk in menu_chunks)
+    checkpoint_files = [
+        out_all_json, out_all_csv, out_by_county_json, out_summary_json,
+        *[os.path.join(args.menu_tasks_dir, f"chunk_{i}.json") for i in range(num_menu_workers)]
+    ]
+    checkpoint_errors = []
+    if total_unique_stores <= 0:
+        checkpoint_errors.append("全台去重店家數為 0")
+    if checkpoint_menu_total != total_unique_stores:
+        checkpoint_errors.append(f"菜單分片合計 {checkpoint_menu_total} != 店家總數 {total_unique_stores}")
+    empty_files = [p for p in checkpoint_files if not os.path.isfile(p) or os.path.getsize(p) <= 0]
+    if empty_files:
+        checkpoint_errors.append(f"缺少或空白產出檔 {empty_files}")
+    menu_ids = [s.get("store_uuid") or s.get("store_url") for chunk in menu_chunks for s in chunk]
+    if len(menu_ids) != len(set(menu_ids)):
+        checkpoint_errors.append("菜單分片含重複店家主鍵")
+    if os.environ.get("HF_TOKEN") and not hf_store_dataset_ok:
+        checkpoint_errors.append("Hugging Face TaiwanStores 資料集 Commit 未完成")
+
     # 8. 輸出 GitHub Actions 變數供 Stage 4 動態調度
     menu_matrix_json = json.dumps({"include": menu_matrix_include})
     set_github_output("menu_matrix", menu_matrix_json)
@@ -402,11 +427,20 @@ def main():
 ### 📊 核心成果摘要
 | 項目 | 數值 | 說明 |
 | :--- | :---: | :--- |
-| 🏪 **全台不重複店家總數** | **`{total_unique_stores:,}` 間** | 經全台 1,559 點全局去重 |
+| 🏪 **全台不重複店家總數** | **`{total_unique_stores:,}` 間** | 經全台 1,558 點全局去重 |
 | 👁️ **原始店家觀測總次數** | **`{total_raw_store_sightings:,}` 次** | 重複半徑交叉觀測總量 |
 | 🏙️ **有效涵蓋縣市數** | **`{len(county_store_counts)}` 個** | 包含台灣各直轄市與縣市 |
 | ⚡ **店家探索工作機數** | **`{len(worker_stats)}` 台** | Stage 2 平行採集 |
 | 🍽️ **菜單採集調度台數** | **`{num_menu_workers}` 台** | Stage 4 準備平行開跑 (平均每台 `{total_unique_stores // max(1, num_menu_workers)}` 店) |
+
+### ✅ Stage 3 產出 Checkpoint
+| 檢核項目 | 預期 | 實際 | 狀態 |
+| :--- | :--- | :--- | :---: |
+| Store Worker 分片 | `{args.max_menu_workers}` 份 | `{len(chunk_files)}` 份 | {'✅' if len(chunk_files) == args.max_menu_workers else '❌'} |
+| 標準資料集 | 4 個非空檔案 | `{sum(1 for p in checkpoint_files[:4] if os.path.isfile(p) and os.path.getsize(p) > 0)}` 個 | {'✅' if not empty_files else '❌'} |
+| 菜單任務分片 | `{num_menu_workers}` 份、合計 `{total_unique_stores}` 店 | `{num_menu_workers}` 份、合計 `{checkpoint_menu_total}` 店 | {'✅' if checkpoint_menu_total == total_unique_stores else '❌'} |
+| 店家主鍵唯一性 | 無重複 | `{len(menu_ids) - len(set(menu_ids))}` 筆重複 | {'✅' if len(menu_ids) == len(set(menu_ids)) else '❌'} |
+| HF TaiwanStores Commit | 成功 | {'成功' if hf_store_dataset_ok else '未完成'} | {'✅' if hf_store_dataset_ok else ('❌' if os.environ.get('HF_TOKEN') else 'ℹ️')} |
 
 ---
 
@@ -441,6 +475,10 @@ def main():
         summary_md += f"| Worker {ws['chunk_id']} | {ws.get('points_scanned', 0)} | {ws.get('stores_found', 0):,} | {ws.get('elapsed', 0.0):.1f}s |\n"
 
     append_github_step_summary(summary_md)
+
+    if checkpoint_errors:
+        print("❌ Stage 3 checkpoint 失敗：" + "；".join(checkpoint_errors), file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
