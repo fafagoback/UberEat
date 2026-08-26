@@ -1,0 +1,146 @@
+name: Taiwan Uber Eats Stores Crawler (15 Workers)
+
+on:
+  schedule:
+    # 每天台灣時間 早上 06:30 與 晚上 18:30 自動執行兩次全台大掃描 (UTC 22:30 (前一日), 10:30)
+    - cron: '30 22,10 * * *'
+  workflow_dispatch:
+    inputs:
+      scan_file:
+        description: '掃描基準點 CSV 檔案'
+        required: false
+        default: 'taiwan_scan_points_3km_land_only.csv'
+      max_workers:
+        description: '平行工作機台數 (預設 15 台)'
+        required: false
+        default: '15'
+      max_pages_per_point:
+        description: '單點最大翻頁數 (預設 10 頁，0為無限制直到見底)'
+        required: false
+        default: '10'
+
+env:
+  TZ: 'Asia/Taipei'
+
+jobs:
+  # ============================================================
+  # Stage 1: Coordinator 調度節點 (分片 1,559 陸地網格點)
+  # ============================================================
+  coordinator:
+    name: "調度分片 (Coordinator)"
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.gen-matrix.outputs.matrix }}
+      has_tasks: ${{ steps.gen-matrix.outputs.has_tasks }}
+      batch_id: ${{ steps.gen-matrix.outputs.batch_id }}
+      total_points: ${{ steps.gen-matrix.outputs.total_points }}
+    steps:
+      - name: 檢出專案代碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝基礎依賴
+        run: pip install requests
+
+      - name: 執行點位調度與動態 Matrix 生成
+        id: gen-matrix
+        run: |
+          python scr/taiwan_crawler_coordinator.py \
+            --scan-file "${{ github.event.inputs.scan_file || 'taiwan_scan_points_3km_land_only.csv' }}" \
+            --max-workers ${{ github.event.inputs.max_workers || 15 }} \
+            --output-dir "tasks"
+
+      - name: 上傳分片任務設定 Artifact
+        if: steps.gen-matrix.outputs.has_tasks == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: task-chunks
+          path: tasks/
+          retention-days: 1
+
+  # ============================================================
+  # Stage 2: 15 台平行工作機 (Parallel Matrix Workers)
+  # ============================================================
+  workers:
+    name: "Worker ${{ matrix.chunk_id }}"
+    needs: coordinator
+    if: needs.coordinator.result == 'success' && needs.coordinator.outputs.has_tasks == 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJson(needs.coordinator.outputs.matrix) }}
+      max-parallel: 15
+      fail-fast: false
+    steps:
+      - name: 檢出專案代碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝爬蟲依賴
+        run: pip install requests
+
+      - name: 下載分片任務設定
+        uses: actions/download-artifact@v4
+        with:
+          name: task-chunks
+          path: tasks/
+
+      - name: 執行本節點店家探索 (Worker ${{ matrix.chunk_id }})
+        run: |
+          python scr/taiwan_store_worker.py \
+            --chunk-file "tasks/chunk_${{ matrix.chunk_id }}.json" \
+            --output-dir "output_worker_${{ matrix.chunk_id }}" \
+            --max-pages-per-point ${{ github.event.inputs.max_pages_per_point || 10 }} \
+            --concurrency 2
+
+      - name: 上傳本節點 JSON/CSV 成果
+        uses: actions/upload-artifact@v4
+        with:
+          name: chunk-result-${{ matrix.chunk_id }}
+          path: output_worker_${{ matrix.chunk_id }}/
+          retention-days: 1
+
+  # ============================================================
+  # Stage 3: Reducer 全台店家去重、彙整與資料集產出
+  # ============================================================
+  reducer:
+    name: "全台去重彙整 (Reducer)"
+    needs: [coordinator, workers]
+    if: always() && needs.coordinator.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 檢出專案代碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 下載所有 Worker 的店家採集結果
+        uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-result-*
+          path: all_worker_outputs/
+          merge-multiple: true
+
+      - name: 執行全局去重與統計資料集產出
+        run: |
+          python scr/taiwan_store_reducer.py \
+            --src-dir "all_worker_outputs" \
+            --output-dir "taiwan_stores_dataset" \
+            --db-path "ubereats_monitor.db"
+
+      - name: 上傳最終全台店家完整資料集 (90天留存)
+        uses: actions/upload-artifact@v4
+        with:
+          name: taiwan-stores-full-dataset
+          path: taiwan_stores_dataset/
+          retention-days: 90
