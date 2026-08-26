@@ -271,11 +271,27 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
 
     conn.close()
 
+    # 寫入完整 SQL 檔
     with open(output_sql_path, "w", encoding="utf-8") as f:
         f.write("\n".join(sql_statements))
 
-    print(f"📝 已生成 D1 同步 SQL 檔案: {output_sql_path} (共 {len(sql_statements)} 條語句)")
-    return len(sql_statements)
+    # 若語句數量超過 80 條或大於 2MB，自動切分為多個 sub-SQL 檔案避免 Wrangler D1 傳輸超時
+    sql_files = [output_sql_path]
+    chunk_stmt_size = 60  # 每個子檔案包含最多 60 條 Multi-row INSERT 語句 (約 3,000~6,000 筆資料)
+    if len(sql_statements) > chunk_stmt_size:
+        sql_files = []
+        # 保留 DDL 於第一個分片
+        for part_idx, i in enumerate(range(0, len(sql_statements), chunk_stmt_size)):
+            part_stmts = sql_statements[i:i + chunk_stmt_size]
+            part_path = f"d1_sync_part_{part_idx}.sql"
+            with open(part_path, "w", encoding="utf-8") as pf:
+                pf.write("\n".join(part_stmts))
+            sql_files.append(part_path)
+        print(f"📦 已自動切分為 {len(sql_files)} 個 D1 批次子檔案 (每檔約 {chunk_stmt_size} 條語句)")
+
+    print(f"📝 已生成 D1 同步 SQL 檔案: {output_sql_path} (共 {len(sql_statements)} 條語句, 分為 {len(sql_files)} 個執行檔)")
+    return len(sql_statements), sql_files
+
 
 
 def ensure_d1_schema_columns(db_name: str, cf_token: str, cf_account_id: str):
@@ -445,7 +461,7 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
     # ---------------------------------------------------------
     print(f"\n📝 【步驟 3.5】生成 Cloudflare D1 批次 SQL 語句檔案...")
     sql_file = "d1_sync.sql"
-    sql_count = generate_d1_sync_sql(db_path, sql_file, latest_batch)
+    sql_count, sql_files = generate_d1_sync_sql(db_path, sql_file, latest_batch)
 
     if not os.path.exists(sql_file) or os.path.getsize(sql_file) == 0 or sql_count == 0:
         fatal_error(
@@ -456,10 +472,10 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
             retries=1
         )
 
-    print(f"✅ [步驟 3.5 通過] D1 同步 SQL 檔案校驗無誤: {sql_file} (共 {sql_count} 條語句)")
+    print(f"✅ [步驟 3.5 通過] D1 同步 SQL 檔案校驗無誤: {sql_file} (共 {sql_count} 條語句, {len(sql_files)} 個分塊檔)")
 
     # ---------------------------------------------------------
-    # 步驟 3.6：Cloudflare D1 遠端批次寫入 (3 次重試)
+    # 步驟 3.6：Cloudflare D1 遠端批次寫入 (支援分塊迴圈與 3 次重試)
     # ---------------------------------------------------------
     print(f"\n☁️ 【步驟 3.6】執行 Cloudflare D1 遠端同步 ({db_name})...")
     if not cf_token or not cf_account_id:
@@ -478,47 +494,52 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
     # 先執行遠端 D1 Schema 檢查與欄位遷移 (確保 stores/products 具備 is_open/promo_type/quantity)
     ensure_d1_schema_columns(db_name, cf_token, cf_account_id)
 
-    d1_sync_ok = False
-    last_d1_err = ""
+    # 依序執行所有 SQL 分塊檔案
+    for f_idx, current_sql_target in enumerate(sql_files, 1):
+        print(f"   ▶ 正在匯入分塊 SQL [{f_idx}/{len(sql_files)}]: {current_sql_target}...")
+        d1_sync_ok = False
+        last_d1_err = ""
 
-    for attempt in range(1, 4):
-        print(f"   ▶ 正在透過 Wrangler 執行遠端 D1 匯入 (嘗試 {attempt}/3)...")
-        try:
-            cmd = f'npx wrangler d1 execute {db_name} --remote --file="{sql_file}"'
-            res = subprocess.run(
-                cmd,
-                shell=True,
-                capture_output=True,
-                text=True,
-                encoding="utf-8",
-                errors="ignore",
-                env=dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
+        for attempt in range(1, 4):
+            try:
+                cmd = f'npx wrangler d1 execute {db_name} --remote --file="{current_sql_target}"'
+                res = subprocess.run(
+                    cmd,
+                    shell=True,
+                    capture_output=True,
+                    text=True,
+                    encoding="utf-8",
+                    errors="ignore",
+                    env=dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
+                )
+                out_str = (res.stdout or "") + (res.stderr or "")
+                if res.returncode == 0 and "Error" not in out_str:
+                    d1_sync_ok = True
+                    print(f"      ✅ 分塊 {current_sql_target} 寫入成功！")
+                    break
+                else:
+                    last_d1_err = out_str.strip()
+                    err_display = last_d1_err[-1500:] if len(last_d1_err) > 1500 else last_d1_err
+                    print(f"      ⚠️ [嘗試 {attempt}/3 異常]:\n{err_display}")
+            except Exception as e:
+                last_d1_err = str(e)
+                print(f"      ⚠️ [嘗試 {attempt}/3 例外]: {e}")
+
+            if attempt < 3:
+                time.sleep(3.0 * attempt)
+
+        if not d1_sync_ok:
+            err_report = last_d1_err[-1500:] if len(last_d1_err) > 1500 else last_d1_err
+            fatal_error(
+                step_name=f"步驟 3.6 Cloudflare D1 分塊匯入 ({current_sql_target})",
+                reason=f"Wrangler 遠端寫入分塊 {current_sql_target} 重試 3 次皆失敗:\n{err_report}",
+                expected="Wrangler returncode == 0 且無錯誤",
+                actual="Wrangler 執行失敗",
+                retries=3
             )
-            out_str = (res.stdout or "") + (res.stderr or "")
-            if res.returncode == 0 and "Error" not in out_str:
-                d1_sync_ok = True
-                print("✅ [步驟 3.6 通過] Cloudflare D1 遠端 SQL 批次寫入成功！")
-                break
-            else:
-                last_d1_err = out_str.strip()
-                err_display = last_d1_err[-1500:] if len(last_d1_err) > 1500 else last_d1_err
-                print(f"⚠️ [步驟 3.6 異常] (嘗試 {attempt}/3):\n{err_display}")
-        except Exception as e:
-            last_d1_err = str(e)
-            print(f"⚠️ [步驟 3.6 例外] (嘗試 {attempt}/3): {e}")
 
-        if attempt < 3:
-            time.sleep(3.0 * attempt)
+    print("✅ [步驟 3.6 通過] 所有 Cloudflare D1 遠端 SQL 批次分塊寫入成功！")
 
-    if not d1_sync_ok:
-        err_report = last_d1_err[-1500:] if len(last_d1_err) > 1500 else last_d1_err
-        fatal_error(
-            step_name="步驟 3.6 Cloudflare D1 遠端同步",
-            reason=f"Wrangler 遠端寫入重試 3 次皆失敗:\n{err_report}",
-            expected="Wrangler returncode == 0 且無錯誤",
-            actual="Wrangler 執行失敗",
-            retries=3
-        )
 
     # ---------------------------------------------------------
     # 步驟 3.7：Cloudflare D1 遠端資料庫回查驗證 (3 次重試)

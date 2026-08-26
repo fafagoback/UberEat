@@ -1,8 +1,8 @@
-name: Taiwan Uber Eats Stores Crawler (15 Workers)
+name: Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)
 
 on:
   schedule:
-    # 每天台灣時間 早上 06:30 與 晚上 18:30 自動執行兩次全台大掃描 (UTC 22:30 (前一日), 10:30)
+    # 每天台灣時間 早上 06:30 與 晚上 18:30 (UTC 22:30 (前一日), 10:30) 自動執行兩次全台大採集
     - cron: '30 22,10 * * *'
   workflow_dispatch:
     inputs:
@@ -15,19 +15,24 @@ on:
         required: false
         default: '15'
       max_pages_per_point:
-        description: '單點最大翻頁數 (預設 10 頁，0為無限制直到見底)'
+        description: '單點店家探索最大翻頁數 (預設 10 頁，0為無限制直到見底)'
         required: false
         default: '10'
 
 env:
   TZ: 'Asia/Taipei'
 
+# 全台批次共用同一個 D1/HF 目標；禁止排程與手動執行彼此覆寫。
+concurrency:
+  group: taiwan-store-menu-production
+  cancel-in-progress: false
+
 jobs:
   # ============================================================
-  # Stage 1: Coordinator 調度節點 (分片 1,559 陸地網格點)
+  # Stage 1: Point Coordinator 點位調度節點 (分片 1,559 陸地網格點)
   # ============================================================
-  coordinator:
-    name: "調度分片 (Coordinator)"
+  point_coordinator:
+    name: "階段 1: 點位調度 (Coordinator)"
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.gen-matrix.outputs.matrix }}
@@ -54,24 +59,24 @@ jobs:
             --max-workers ${{ github.event.inputs.max_workers || 15 }} \
             --output-dir "tasks"
 
-      - name: 上傳分片任務設定 Artifact
+      - name: 上傳點位分片任務設定 Artifact
         if: steps.gen-matrix.outputs.has_tasks == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: task-chunks
+          name: point-task-chunks
           path: tasks/
           retention-days: 1
 
   # ============================================================
-  # Stage 2: 15 台平行工作機 (Parallel Matrix Workers)
+  # Stage 2: 15 台平行工作機全台店家探索 (Store Discovery Matrix)
   # ============================================================
-  workers:
-    name: "Worker ${{ matrix.chunk_id }}"
-    needs: coordinator
-    if: needs.coordinator.result == 'success' && needs.coordinator.outputs.has_tasks == 'true'
+  store_discovery_workers:
+    name: "階段 2: 店家探索 Worker ${{ matrix.chunk_id }}"
+    needs: point_coordinator
+    if: needs.point_coordinator.result == 'success' && needs.point_coordinator.outputs.has_tasks == 'true'
     runs-on: ubuntu-latest
     strategy:
-      matrix: ${{ fromJson(needs.coordinator.outputs.matrix) }}
+      matrix: ${{ fromJson(needs.point_coordinator.outputs.matrix) }}
       max-parallel: 15
       fail-fast: false
     steps:
@@ -86,10 +91,10 @@ jobs:
       - name: 安裝爬蟲依賴
         run: pip install requests
 
-      - name: 下載分片任務設定
+      - name: 下載點位分片任務
         uses: actions/download-artifact@v4
         with:
-          name: task-chunks
+          name: point-task-chunks
           path: tasks/
 
       - name: 執行本節點店家探索 (Worker ${{ matrix.chunk_id }})
@@ -100,21 +105,26 @@ jobs:
             --max-pages-per-point ${{ github.event.inputs.max_pages_per_point || 10 }} \
             --concurrency 2
 
-      - name: 上傳本節點 JSON/CSV 成果
+      - name: 上傳本節點店家探索成果
         uses: actions/upload-artifact@v4
         with:
-          name: chunk-result-${{ matrix.chunk_id }}
+          name: store-chunk-result-${{ matrix.chunk_id }}
           path: output_worker_${{ matrix.chunk_id }}/
           retention-days: 1
 
   # ============================================================
-  # Stage 3: Reducer 全台店家去重、彙整與資料集產出
+  # Stage 3: 全台店家全局去重、HF資料集上傳與菜單任務調度 (Reducer & Dispatcher)
   # ============================================================
-  reducer:
-    name: "全台去重彙整 (Reducer)"
-    needs: [coordinator, workers]
-    if: always() && needs.coordinator.result == 'success'
+  store_reducer_and_menu_dispatcher:
+    name: "階段 3: 全台去重與菜單調度 (Reducer)"
+    needs: [point_coordinator, store_discovery_workers]
+    if: needs.point_coordinator.result == 'success' && needs.store_discovery_workers.result == 'success'
     runs-on: ubuntu-latest
+    outputs:
+      menu_matrix: ${{ steps.run-reducer.outputs.menu_matrix }}
+      has_menu_tasks: ${{ steps.run-reducer.outputs.has_menu_tasks }}
+      total_unique_stores: ${{ steps.run-reducer.outputs.total_unique_stores }}
+      batch_id: ${{ steps.run-reducer.outputs.batch_id }}
     steps:
       - name: 檢出專案代碼
         uses: actions/checkout@v4
@@ -124,23 +134,186 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 下載所有 Worker 的店家採集結果
+      - name: 安裝依賴
+        run: pip install huggingface_hub requests
+
+      - name: 下載所有 Worker 的店家探索結果
         uses: actions/download-artifact@v4
         with:
-          pattern: chunk-result-*
-          path: all_worker_outputs/
+          pattern: store-chunk-result-*
+          path: all_store_discovery_outputs/
           merge-multiple: true
 
-      - name: 執行全局去重與統計資料集產出
+      - name: 執行全台去重、HF 店家清單推送與 15 組菜單任務分片生成
+        id: run-reducer
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
         run: |
           python scr/taiwan_store_reducer.py \
-            --src-dir "all_worker_outputs" \
+            --src-dir "all_store_discovery_outputs" \
             --output-dir "taiwan_stores_dataset" \
+            --menu-tasks-dir "menu_tasks" \
+            --max-menu-workers ${{ github.event.inputs.max_workers || 15 }} \
+            --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" \
+            --path-in-repo "TaiwanStores" \
             --db-path "ubereats_monitor.db"
 
-      - name: 上傳最終全台店家完整資料集 (90天留存)
+      - name: 上傳全台店家完整資料集 Artifact (90天留存)
         uses: actions/upload-artifact@v4
         with:
           name: taiwan-stores-full-dataset
           path: taiwan_stores_dataset/
           retention-days: 90
+
+      - name: 上傳菜單採集任務分片 Artifact
+        if: steps.run-reducer.outputs.has_menu_tasks == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: menu-task-chunks
+          path: menu_tasks/
+          retention-days: 1
+
+  # ============================================================
+  # Stage 4: 15 台平行工作機全台菜單採集與獨立 Commit (Menu Scraper Matrix)
+  # ============================================================
+  menu_scraper_workers:
+    name: "階段 4: 菜單 Worker ${{ matrix.chunk_id }}"
+    needs: store_reducer_and_menu_dispatcher
+    if: needs.store_reducer_and_menu_dispatcher.result == 'success' && needs.store_reducer_and_menu_dispatcher.outputs.has_menu_tasks == 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJson(needs.store_reducer_and_menu_dispatcher.outputs.menu_matrix) }}
+      max-parallel: 15
+      fail-fast: false
+    steps:
+      - name: 檢出專案代碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝爬蟲與上傳依賴
+        run: pip install requests huggingface_hub
+
+      - name: 下載菜單採集任務設定
+        uses: actions/download-artifact@v4
+        with:
+          name: menu-task-chunks
+          path: menu_tasks/
+
+      - name: 執行菜單採集與獨立 Commit 推送至 HF (Worker ${{ matrix.chunk_id }})
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
+        run: |
+          python scr/taiwan_menu_worker.py \
+            --chunk-file "menu_tasks/chunk_${{ matrix.chunk_id }}.json" \
+            --output-dir "output_menu_worker_${{ matrix.chunk_id }}" \
+            --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" \
+            --path-in-repo "Json" \
+            --concurrency 5
+
+      - name: 上傳本節點菜單 JSON 結果 Artifact (雙重保險)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: menu-result-chunk-${{ matrix.chunk_id }}
+          path: output_menu_worker_${{ matrix.chunk_id }}/
+          retention-days: 2
+
+  # ============================================================
+  # Stage 5: 全局資料庫 ETL、差異情報分析與 Cloudflare D1 同步 (Final Sync)
+  # ============================================================
+  db_etl_and_cloudflare_sync:
+    name: "階段 5: 資料庫 ETL 與 Cloudflare D1 同步"
+    needs: [store_reducer_and_menu_dispatcher, menu_scraper_workers]
+    if: always() && needs.store_reducer_and_menu_dispatcher.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 檢出專案代碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python & Node.js 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 下載所有 Menu Worker 的 JSON 成果
+        uses: actions/download-artifact@v4
+        with:
+          pattern: menu-result-chunk-*
+          path: all_menu_lake/
+          merge-multiple: true
+
+      - name: 下載全台店家清單供完整率檢核
+        uses: actions/download-artifact@v4
+        with:
+          name: taiwan-stores-full-dataset
+          path: taiwan_stores_dataset/
+
+      - name: 驗證下載之菜單 JSON 檔案
+        run: |
+          python - <<'PY'
+          import glob, json, os, sys
+
+          with open("taiwan_stores_dataset/taiwan_all_stores.json", encoding="utf-8") as fh:
+              expected = len(json.load(fh))
+          files = glob.glob("all_menu_lake/*.json")
+          valid = 0
+          for path in files:
+              try:
+                  with open(path, encoding="utf-8") as fh:
+                      doc = json.load(fh)
+                  if isinstance(doc, dict) and doc.get("name"):
+                      valid += 1
+              except Exception:
+                  pass
+
+          coverage = valid / expected if expected else 0
+          print(f"📦 菜單成果：有效 {valid:,} / 指派 {expected:,} 間（{coverage:.2%}）")
+          if valid <= 0:
+              print("❌ 未收集到任何有效菜單 JSON。", file=sys.stderr)
+              sys.exit(1)
+          if coverage < 0.95:
+              print("❌ 菜單採集完整率低於 95%，拒絕以明顯不完整批次覆寫正式 D1。", file=sys.stderr)
+              sys.exit(1)
+          PY
+
+      - name: 安裝同步工具
+        run: |
+          pip install huggingface_hub requests
+          npm install -g wrangler
+
+      - name: ① 兜底確認：確保完整資料湖同步至 Hugging Face Datasets
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
+        run: |
+          python scr/upload_to_hf.py \
+            --src-dir all_menu_lake/ \
+            --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" \
+            --path-in-repo "Json" \
+            --commit-message "Final sync full Taiwan menu lake snapshot"
+
+      - name: ② 執行 ETL 並批次同步至 Cloudflare D1
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          python scr/json_to_cf_d1.py \
+            --src-dir all_menu_lake/ \
+            --db-name "ubereats_monitor" \
+            --require-d1
+
+      - name: ③ 自動部署最新 Cloudflare Worker API
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          npx wrangler deploy

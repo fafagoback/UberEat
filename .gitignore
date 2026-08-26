@@ -40,8 +40,15 @@ tasks/
 output_*/
 all_json_lake/
 all_json_outputs/
+all_worker_chunks/
+all_store_discovery_outputs/
+all_menu_lake/
+menu_tasks/
+taiwan_stores_dataset/
+scratch/
 d1_migration.sql
 d1_sync.sql
+d1_sync_part_*.sql
 *.sql
 
 # Operating System

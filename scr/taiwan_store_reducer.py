@@ -35,6 +35,16 @@ if hasattr(sys.stdout, 'reconfigure'):
         pass
 
 
+def set_github_output(name: str, value: str):
+    """將變數寫入 GitHub Actions $GITHUB_OUTPUT 供下游 Job 讀取"""
+    github_output_path = os.environ.get("GITHUB_OUTPUT")
+    if github_output_path:
+        with open(github_output_path, "a", encoding="utf-8") as f:
+            f.write(f"{name}={value}\n")
+    else:
+        print(f"[Local Output] {name}={value}")
+
+
 def append_github_step_summary(markdown_text: str):
     """將 Markdown 內容寫入 GitHub Actions $GITHUB_STEP_SUMMARY"""
     summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -123,10 +133,18 @@ def sort_chunk_key(ws: dict):
     return (num, cid)
 
 
+from upload_to_hf import upload_to_huggingface
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Uber Eats 全台店家資料湖彙整引擎 (Reducer)")
+    parser = argparse.ArgumentParser(description="Uber Eats 全台店家資料湖彙整與菜單任務調度引擎 (Reducer)")
     parser.add_argument("--src-dir", required=True, help="存放所有 Worker 輸出的目錄路徑")
     parser.add_argument("--output-dir", default="taiwan_stores_dataset", help="最終資料集匯出目錄")
+    parser.add_argument("--menu-tasks-dir", default="menu_tasks", help="菜單採集分片任務輸出目錄")
+    parser.add_argument("--max-menu-workers", type=int, default=15, help="菜單工作機台數 (預設 15)")
+    parser.add_argument("--push-to-hf", action="store_true", default=True, help="是否將店家資料集推送至 Hugging Face")
+    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "hub-google/UberEat"), help="Hugging Face Dataset Repo ID")
+    parser.add_argument("--path-in-repo", default="TaiwanStores", help="店家清單在 HF Dataset 內部的目錄路徑")
     parser.add_argument("--db-path", default="ubereats_monitor.db", help="SQLite 資料庫路徑")
     args = parser.parse_args()
 
@@ -135,13 +153,16 @@ def main():
     now_str = now_dt.strftime("%Y-%m-%d %H:%M:%S")
 
     print("=" * 80)
-    print("🚀 【Stage 3: Reducer 全台店家去重彙整引擎】啟動")
+    print("🚀 【Stage 3: Reducer 全台店家去重彙整與菜單任務調度】啟動")
     print(f"⏰ 執行時間: {now_str}")
     print(f"📦 來源目錄: {args.src_dir}")
     print(f"📁 匯出目錄: {args.output_dir}")
+    print(f"🍽️ 菜單分片目錄: {args.menu_tasks_dir} (目標工作機: {args.max_menu_workers} 台)")
+    print(f"🎯 HF 目標目錄: {args.repo_id}/{args.path_in_repo}/")
     print("=" * 80)
 
     os.makedirs(args.output_dir, exist_ok=True)
+    os.makedirs(args.menu_tasks_dir, exist_ok=True)
 
     # 1. 搜尋所有 chunk json 檔案
     search_pattern = os.path.join(args.src_dir, "**", "*.json")
@@ -317,11 +338,66 @@ def main():
     except Exception as e:
         print(f"⚠️ 寫入 SQLite 異常: {e}")
 
+    # 6. 推送全台店家資料集至 Hugging Face (TaiwanStores/)
+    hf_store_dataset_ok = False
+    if args.push_to_hf:
+        hf_token = os.environ.get("HF_TOKEN")
+        if hf_token:
+            print(f"\n☁️ 正在推送全台店家資料集至 Hugging Face ({args.repo_id}/{args.path_in_repo}/)...")
+            try:
+                commit_msg = f"Upload Taiwan stores snapshot {batch_id} ({total_unique_stores} unique stores)"
+                upload_to_huggingface(
+                    src_dir=args.output_dir,
+                    repo_id=args.repo_id,
+                    path_in_repo=args.path_in_repo,
+                    commit_message=commit_msg
+                )
+                hf_store_dataset_ok = True
+                print("✅ 全台店家資料集已成功同步至 Hugging Face！")
+            except Exception as e:
+                print(f"⚠️ 推送店家資料集至 HF 失敗: {e}")
+        else:
+            print("ℹ️ 未檢測到 HF_TOKEN，跳過 Hugging Face 店家資料集推送。")
+
+    # 7. 生成 Stage 4 菜單採集任務分片 (均分至 15 台工作機)
+    num_menu_workers = min(args.max_menu_workers, total_unique_stores) if total_unique_stores > 0 else 0
+    menu_chunks = [[] for _ in range(num_menu_workers)]
+    for idx, s in enumerate(final_stores_list):
+        chunk_idx = idx % num_menu_workers
+        menu_chunks[chunk_idx].append(s)
+
+    menu_matrix_include = []
+    print(f"\n🍽️ 【菜單採集任務分片】已均分全台 {total_unique_stores:,} 間店家至 {num_menu_workers} 台工作機：")
+    for i in range(num_menu_workers):
+        m_chunk_points = menu_chunks[i]
+        m_chunk_file = os.path.join(args.menu_tasks_dir, f"chunk_{i}.json")
+        m_chunk_data = {
+            "chunk_id": i,
+            "total_chunks": num_menu_workers,
+            "batch_id": batch_id,
+            "crawled_time": batch_id,
+            "stores_count": len(m_chunk_points),
+            "stores": m_chunk_points
+        }
+        with open(m_chunk_file, "w", encoding="utf-8") as cf:
+            json.dump(m_chunk_data, cf, ensure_ascii=False, indent=2)
+
+        menu_matrix_include.append({"chunk_id": i})
+        print(f"   ├─ Menu Worker {i:>2}: 分配 {len(m_chunk_points):>5} 間店家 ➔ {m_chunk_file}")
+
+    # 8. 輸出 GitHub Actions 變數供 Stage 4 動態調度
+    menu_matrix_json = json.dumps({"include": menu_matrix_include})
+    set_github_output("menu_matrix", menu_matrix_json)
+    set_github_output("has_menu_tasks", "true" if num_menu_workers > 0 else "false")
+    set_github_output("total_unique_stores", str(total_unique_stores))
+    set_github_output("batch_id", batch_id)
+
     elapsed_total = time.time() - start_time
 
-    # 6. 生成 GitHub Actions $GITHUB_STEP_SUMMARY 報表
-    summary_md = f"""## 🇹🇼 【全台 Uber Eats 店家掃描成果大儀表板】
+    # 9. 生成 GitHub Actions $GITHUB_STEP_SUMMARY 報表
+    summary_md = f"""## 🇹🇼 【全台 Uber Eats 店家掃描與菜單調度成果大儀表板】
 > ⏰ **採集批次**: `{batch_id}` ({now_str}) | ⏱️ **總整併耗時**: `{elapsed_total:.2f}` 秒
+> 📦 **Hugging Face 店家資料庫**: `{'✅ 已同步 (' + args.repo_id + '/' + args.path_in_repo + ')' if hf_store_dataset_ok else 'ℹ️ 本機/未推送'}`
 
 ### 📊 核心成果摘要
 | 項目 | 數值 | 說明 |
@@ -329,7 +405,8 @@ def main():
 | 🏪 **全台不重複店家總數** | **`{total_unique_stores:,}` 間** | 經全台 1,559 點全局去重 |
 | 👁️ **原始店家觀測總次數** | **`{total_raw_store_sightings:,}` 次** | 重複半徑交叉觀測總量 |
 | 🏙️ **有效涵蓋縣市數** | **`{len(county_store_counts)}` 個** | 包含台灣各直轄市與縣市 |
-| ⚡ **平行工作機台數** | **`{len(worker_stats)}` 台** | 15 台 Matrix 平行採集 |
+| ⚡ **店家探索工作機數** | **`{len(worker_stats)}` 台** | Stage 2 平行採集 |
+| 🍽️ **菜單採集調度台數** | **`{num_menu_workers}` 台** | Stage 4 準備平行開跑 (平均每台 `{total_unique_stores // max(1, num_menu_workers)}` 店) |
 
 ---
 
@@ -356,7 +433,7 @@ def main():
     summary_md += """
 ---
 
-### 💻 15 台工作機採集效能
+### 💻 15 台店家探索機採集效能
 | Worker ID | 掃描點數 | 發現店家數 | 耗時 (秒) |
 | :---: | :---: | :---: | :---: |
 """
