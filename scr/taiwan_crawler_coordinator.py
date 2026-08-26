@@ -2,7 +2,7 @@
 """
 Uber Eats 全台店家大規模掃描調度器 (Stage 1: Coordinator)
 【核心功能】：
-1. 讀取全台 3km 陸地掃描基準點 CSV (例如 taiwan_scan_points_3km_land_only.csv，共 1,559 點)。
+1. 讀取全台 3km 陸地掃描基準點 CSV (taiwan_scan_points_3km_land_only.csv，共 1,558 點)。
 2. 採用輪流分片法 (Round-Robin) 平均分配給 15 台 (或自訂台數) 工作機。
 3. 輸出 tasks/chunk_0.json ~ tasks/chunk_14.json 任務檔。
 4. 輸出 GitHub Actions 專用 Matrix JSON 與統計資訊至 $GITHUB_OUTPUT 與 $GITHUB_STEP_SUMMARY。
