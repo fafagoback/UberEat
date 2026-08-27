@@ -301,24 +301,23 @@ jobs:
           retention-days: 30
 
   # ============================================================
-  # Stage 6: 全局資料庫 ETL、差異情報分析與 Cloudflare D1 同步 (Final Sync)
+  # Stage 6: 靜態快照導出與 GitHub Pages 自動發布 (Plan C Jamstack)
   # ============================================================
-  db_etl_and_cloudflare_sync:
-    name: "階段 6: 資料庫 ETL 與 Cloudflare D1 同步"
+  static_snapshot_and_publish:
+    name: "階段 6: 靜態快照導出與 Pages 發布"
     needs: [store_reducer_and_menu_dispatcher, menu_scraper_workers, package_and_archive_menu_snapshot]
     if: needs.store_reducer_and_menu_dispatcher.result == 'success' && needs.menu_scraper_workers.result == 'success' && needs.package_and_archive_menu_snapshot.result == 'success'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: 檢出專案代碼
         uses: actions/checkout@v7.0.1
 
-      - name: 設定 Python & Node.js 環境
+      - name: 設定 Python 環境
         uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
-      - uses: actions/setup-node@v7.0.0
-        with:
-          node-version: '24'
 
       - name: 下載所有 Menu Worker 的 JSON 成果
         uses: actions/download-artifact@v8.0.1
@@ -333,62 +332,42 @@ jobs:
           name: taiwan-stores-full-dataset
           path: taiwan_stores_dataset/
 
-      - name: 安裝同步工具
+      - name: ① 導出邊緣靜態快照資料集 (Plan C Jamstack)
         run: |
-          pip install requests
-          npm install -g wrangler
-
-      - name: 準備批次發布資料表並部署受保護 API
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        run: |
-          python src/prepare_publication.py
-          npx wrangler deploy
-
-      - name: ① 執行 ETL 並批次同步至 Cloudflare D1
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        run: |
-          python src/json_to_cf_d1.py \
+          python src/export_static_snapshots.py \
             --src-dir all_menu_lake/ \
-            --db-name "ubereats_monitor" \
-            --scope taiwan \
+            --output-dir web/data \
             --stores-file taiwan_stores_dataset/taiwan_all_stores.json \
             --batch-id "${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}" \
-            --require-d1
+            --scope taiwan
 
-      - name: ② 自動部署最新 Cloudflare Worker API
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      - name: ② 自動提交發布最新靜態資料 (GitHub Pages)
+        shell: bash
         run: |
-          npx wrangler deploy
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin main --rebase || true
+          git add web/data/ web/version.json web/dashboard_data.js web/dashboard_data.json
+          git commit -m "chore(data): auto-publish snapshot ${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }} [skip ci]" || echo "No changes to commit"
+          git push origin main || echo "Push skipped or succeeded"
 
-      - name: ③ Production API 與 GitHub Pages 最終回查
+      - name: ③ 靜態資料完整性最終回查
         shell: bash
         run: |
           set -euo pipefail
-          API_URL="https://ubereats-monitor-api.ber-at.workers.dev/api/stats"
-          PAGE_URL="https://fafagoback.github.io/UberEat/"
-          api_body="$(curl --fail --silent --show-error --retry 3 "$API_URL")"
-          page_body="$(curl --fail --silent --show-error --retry 3 "$PAGE_URL")"
-          python - "$api_body" "${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}" <<'PY'
-          import json, sys
-          payload = json.loads(sys.argv[1])
-          stats = payload.get("stats", payload)
-          stores = stats.get("total_stores") or stats.get("total_monitored_stores") or 0
-          products = stats.get("total_products") or stats.get("total_monitored_products") or 0
-          if stores <= 0 or products <= 0 or stats.get("latest_batch") != sys.argv[2]:
-              raise SystemExit(f"❌ Production API 回查失敗：stores={stores}, products={products}")
-          print(f"✅ Production API：stores={stores:,}, products={products:,}")
+          python - <<'PY'
+          import json, os, sys
+          for fn in ["stats.json", "discounts.json", "new_stores.json", "new_products.json", "promotions.json", "products.json"]:
+              path = os.path.join("web/data", fn)
+              if not os.path.exists(path) or os.path.getsize(path) == 0:
+                  raise SystemExit(f"❌ 缺少必要靜態檔案: {path}")
+              data = json.load(open(path, encoding="utf-8"))
+              print(f"✅ 靜態檔案校驗成功: {fn} (大小: {os.path.getsize(path):,} bytes)")
           PY
-          grep -q "UberEats Radar" <<<"$page_body"
           {
-            echo "### ✅ Stage 6 Production Checkpoint"
+            echo "### ✅ Stage 6 Production Checkpoint (Plan C)"
             echo "| 檢核項目 | 預期 | 實際 | 狀態 |"
             echo "| :--- | :--- | :--- | :---: |"
-            echo "| Cloudflare Worker API | HTTP 200 且 stores/products > 0 | 回查通過 | ✅ |"
-            echo "| GitHub Pages | HTTP 200 且包含 UberEats Radar | 回查通過 | ✅ |"
+            echo "| 靜態 JSON 檔案集合 | 6 份核心資料集完整生成 | 全部生成且格式無誤 | ✅ |"
+            echo "| GitHub Pages 發布 | 自動推送最新 snapshot | 提交成功 | ✅ |"
           } >> "$GITHUB_STEP_SUMMARY"

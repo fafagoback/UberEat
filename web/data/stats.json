@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "latest_batch": "20260827120000",
+  "latest_batch_formatted": "2026-08-27 12:00",
+  "prev_batch": null,
+  "total_stores": 2,
+  "total_monitored_stores": 2,
+  "total_products": 4,
+  "total_monitored_products": 4,
+  "big_discounts_count": 0,
+  "new_stores_count": 2,
+  "new_products_count": 0,
+  "promotions_count": 2,
+  "max_savings_twd": 0
+}

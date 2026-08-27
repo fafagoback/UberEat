@@ -1,9 +1,0 @@
-name = "ubereats-monitor-api"
-main = "cloudflare/worker.js"
-compatibility_date = "2024-04-01"
-
-# 綁定 Cloudflare D1 資料庫
-[[d1_databases]]
-binding = "DB"
-database_name = "ubereats_monitor"
-database_id = "9a107803-29be-4486-9d01-899b93da6b35"

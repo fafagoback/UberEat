@@ -24,16 +24,18 @@ test('only latest search response may mutate displayed products', () => {
   const helper = source.slice(source.indexOf('let globalSearchController'), source.indexOf('function renderGlobalProducts'));
   assert.match(helper, /globalSearchController\?\.abort\(\)/);
   assert.match(helper, /if \(sequence !== globalSearchSequence\) return;/);
-  assert.match(helper, /signal: controller.signal/);
 });
 
-test('API reads published snapshots and rejects invalid pagination', async () => {
-  const workerSource = fs.readFileSync('cloudflare/worker.js', 'utf8');
-  assert.doesNotMatch(workerSource, /(?:FROM|JOIN) (?:products|stores)\b/);
-  const {default: worker} = await import('data:text/javascript;base64,' + Buffer.from(workerSource).toString('base64'));
-  const DB = {prepare: () => ({all: async () => ({results: []})})};
-  for (const query of ['limit=-1', 'page=0', 'page=foo', 'limit=101']) {
-    const response = await worker.fetch(new Request('https://api.test/api/products?' + query), {DB}, {});
-    assert.equal(response.status, 400);
-  }
+test('frontend correctly routes API endpoints to static JSON files in Jamstack mode', () => {
+  const helper = source.slice(source.indexOf('function getApiUrl'), source.indexOf('async function loadDashboardData'));
+  const context = vm.createContext({
+    window: {
+      UBER_RADAR_CONFIG: { API_BASE_URL: './data' }
+    },
+    Date: { now: () => 1234567890 }
+  });
+  vm.runInContext(helper, context);
+  assert.equal(context.getApiUrl('/api/stats'), './data/stats.json?_t=1234567890');
+  assert.equal(context.getApiUrl('/api/discounts?min_discount=30'), './data/discounts.json?_t=1234567890');
+  assert.equal(context.getApiUrl('/api/products?q=test'), './data/products.json?_t=1234567890');
 });

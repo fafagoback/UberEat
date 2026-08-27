@@ -1,9 +1,5 @@
-import contextlib
-import io
 import json
-import os
 from pathlib import Path
-import sqlite3
 import sys
 import tempfile
 import unittest
@@ -11,10 +7,7 @@ from unittest.mock import MagicMock, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from snapshot_validation import validate_document, validate_snapshot, archive_member
-from d1_publication import PUBLICATION_DDL, TABLES, parse_results, verify_counts
 from json_to_db import UberEatsDBImporter, menu_identity_keys
-from json_to_cf_d1 import generate_d1_sync_sql
-from alert_engine import UberEatsAlertEngine
 import taiwan_store_worker as discovery
 from location_batch_scraper import convert_api_data_to_schema
 
@@ -22,12 +15,24 @@ BATCH = "20260827110614"
 
 
 def document(slug="one", name="店家"):
-    return {"@id": f"https://www.ubereats.com/tw/store/{slug}/uuid-{slug}", "name": name,
-            "hasMenu": {"hasMenuSection": [{"name": "主食", "hasMenuItem": [
-                {"name": "餐點", "identifier": "item-1", "offers": {"price": "100", "priceCurrency": "TWD"}}
-            ]}]}, "servesCuisine": ["台式"], "openingHoursSpecification": [
-                {"dayOfWeek": "Monday", "opens": "09:00", "closes": "21:00"}
-            ]}
+    return {
+        "@id": f"https://www.ubereats.com/tw/store/{slug}/uuid-{slug}",
+        "name": name,
+        "hasMenu": {
+            "hasMenuSection": [
+                {
+                    "name": "主食",
+                    "hasMenuItem": [
+                        {"name": "餐點", "identifier": "item-1", "offers": {"price": "100", "priceCurrency": "TWD"}}
+                    ]
+                }
+            ]
+        },
+        "servesCuisine": ["台式"],
+        "openingHoursSpecification": [
+            {"dayOfWeek": "Monday", "opens": "09:00", "closes": "21:00"}
+        ]
+    }
 
 
 class SnapshotTests(unittest.TestCase):
@@ -92,54 +97,6 @@ class DiscoveryTests(unittest.TestCase):
             response.json.return_value = {"data": {"feedItems": [], "meta": {"hasMore": False}}}
             session.return_value.post.return_value = response
             self.assertEqual(discovery.scan_single_point({"id": 1, "latitude": 25, "longitude": 121}, 0), (1, [], 1))
-
-
-class PublicationTests(unittest.TestCase):
-    def test_zero_counts_and_unstructured_stdout_rejected(self):
-        expected = {table: 1 for table in TABLES}
-        with self.assertRaises(ValueError):
-            verify_counts([{table: 0 for table in TABLES}], expected)
-        with self.assertRaises(ValueError):
-            parse_results('Executing on remote database: 123 milliseconds')
-        with self.assertRaises(ValueError):
-            parse_results('[{"results": [{"stores": 1}]}]')
-        self.assertEqual(parse_results('[{"success":true,"results":[]}]'), [])
-
-    def test_staging_and_regional_batches_are_invisible(self):
-        connection = sqlite3.connect(":memory:")
-        connection.executescript("CREATE TABLE products(crawled_time TEXT); CREATE TABLE stores(crawled_time TEXT);")
-        connection.executescript(PUBLICATION_DDL)
-        for batch, scope, status in [("1", "taiwan", "complete"), ("2", "taiwan", "staging"), ("3", "regional", "complete")]:
-            connection.execute("INSERT INTO products VALUES (?)", (batch,))
-            connection.execute("INSERT INTO batch_publications VALUES (?,?,?,?,NULL)", (batch, scope, status, "test"))
-        self.assertEqual(connection.execute("SELECT * FROM published_products").fetchall(), [("1",)])
-        connection.execute("UPDATE batch_publications SET status='complete' WHERE crawled_time='2'")
-        self.assertEqual(connection.execute("SELECT * FROM published_products ORDER BY crawled_time").fetchall(), [("1",), ("2",)])
-
-    def test_generated_sql_replay_does_not_duplicate_auxiliary_rows(self):
-        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
-            original = os.getcwd()
-            try:
-                os.chdir(directory)
-                Path(f"{BATCH}_test.json").write_text(json.dumps(document()), encoding="utf-8")
-                importer = UberEatsDBImporter("source.db", directory)
-                importer.init_database()
-                importer.import_all_data()
-                importer.close()
-                engine = UberEatsAlertEngine("source.db")
-                engine.init_alert_tables()
-                engine.close()
-                _, parts = generate_d1_sync_sql("source.db", "full.sql", BATCH, "taiwan")
-                target = sqlite3.connect(":memory:")
-                for _ in range(2):
-                    for part in parts:
-                        target.executescript(Path(part).read_text(encoding="utf-8"))
-                self.assertEqual(target.execute("SELECT count(*) FROM store_cuisines").fetchone()[0], 1)
-                self.assertEqual(target.execute("SELECT count(*) FROM store_business_hours").fetchone()[0], 1)
-                self.assertEqual(target.execute("SELECT count(*) FROM published_products").fetchone()[0], 0)
-                target.close()
-            finally:
-                os.chdir(original)
 
 
 class ProductIdentityTests(unittest.TestCase):

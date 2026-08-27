@@ -1,7 +1,7 @@
-﻿/**
+/**
  * UberEats Radar - 全域前端配置
- * 直連 Cloudflare Worker API，100% 即時向 D1 抓取資料。
+ * 方案 C: 邊緣靜態快照與 Jamstack CDN 模式 (0ms 本地記憶體即時檢索)
  */
 window.UBER_RADAR_CONFIG = {
-  API_BASE_URL: 'https://ubereats-monitor-api.ber-at.workers.dev'
+  API_BASE_URL: './data'
 };

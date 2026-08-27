@@ -1,7 +1,8 @@
 /**
  * UberEats Radar - 前端分析儀表板核心互動邏輯
+ * 方案 C: 邊緣靜態快照與 Jamstack CDN 極速架構 (0ms 本地記憶體即時檢索)
  * 支援:
- * 1. Live Server 模式 (透過 REST API 即時查詢 SQLite)
+ * 1. CDN 靜態 API 模式 (透過 web/data/*.json 秒級載入)
  * 2. Standalone 離線模式 (透過 dashboard_data.js 直接開啟)
  */
 
@@ -9,13 +10,16 @@ let APP_STATE = {
   isServerMode: false,
   currentTab: 'tab-discounts',
   stats: {},
+  rawDiscounts: [],
   discounts: [],
   newStores: [],
   newProducts: [],
   promotions: [],
+  allProducts: [],
   globalProducts: [],
   globalPage: 1,
   globalTotalPages: 1,
+  historyMap: {},
   chartInstance: null,
   filters: {
     discountMinPct: 30,
@@ -48,7 +52,7 @@ async function checkVersionUpdate(isInitial = false) {
 
     if (CURRENT_VERSION && info.version !== CURRENT_VERSION) {
       console.log(`[UberEats Radar] 發現新版本發佈: ${info.version} (目前: ${CURRENT_VERSION})，準備自動更新...`);
-      showToast('發現新版本發佈', '系統正在為您載入最新架構...', 'external', 2500);
+      showToast('發現新版本發佈', '系統正在為您載入最新快照資料...', 'external', 2500);
       setTimeout(() => {
         window.location.reload();
       }, 1200);
@@ -59,17 +63,14 @@ async function checkVersionUpdate(isInitial = false) {
 }
 
 function startVersionWatcher() {
-  // 1. 初始化讀取當前版本
   checkVersionUpdate(true);
 
-  // 2. 當使用者在手機/電腦切換回此分頁時立即檢查是否有更新
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
       checkVersionUpdate(false);
     }
   });
 
-  // 3. 每 2 分鐘在背景輪詢一次版本更新
   setInterval(() => {
     checkVersionUpdate(false);
   }, 2 * 60 * 1000);
@@ -95,48 +96,99 @@ if (document.readyState === 'loading') {
 }
 
 // -----------------------------------------------------------------------------
-// 1. API 網址產生與資料載入 (附加動態時間戳記避免快取)
+// 1. 靜態 API 網址映射與資料載入 (Plan C Jamstack)
 // -----------------------------------------------------------------------------
 function getApiUrl(endpoint) {
-  const base = (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.API_BASE_URL) || '';
-  const separator = endpoint.includes('?') ? '&' : '?';
-  return `${base}${endpoint}${separator}_t=${Date.now()}`;
+  const base = (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.API_BASE_URL) || './data';
+  const cleanBase = base.replace(/\/+$/, '');
+  const path = endpoint.split('?')[0];
+
+  const map = {
+    '/api/stats': '/stats.json',
+    '/api/discounts': '/discounts.json',
+    '/api/new-stores': '/new_stores.json',
+    '/api/new-products': '/new_products.json',
+    '/api/promotions': '/promotions.json',
+    '/api/products': '/products.json',
+    '/api/history': '/history.json'
+  };
+
+  const mapped = map[path] || (path.endsWith('.json') ? path : `${path}.json`);
+  return `${cleanBase}${mapped}?_t=${Date.now()}`;
 }
 
 async function loadDashboardData() {
   let loadedFromServer = false;
 
   try {
-    const res = await fetch(getApiUrl('/api/stats'));
-    if (res.ok) {
+    const [statsRes, discRes, storesRes, prodsRes, promosRes, catalogRes, histRes] = await Promise.all([
+      fetch(getApiUrl('/api/stats')),
+      fetch(getApiUrl('/api/discounts')),
+      fetch(getApiUrl('/api/new-stores')),
+      fetch(getApiUrl('/api/new-products')),
+      fetch(getApiUrl('/api/promotions')),
+      fetch(getApiUrl('/api/products')),
+      fetch(getApiUrl('/api/history')).catch(() => null)
+    ]);
+
+    if (statsRes && statsRes.ok) {
       APP_STATE.isServerMode = true;
-      const statsData = await res.json();
+      const statsData = await statsRes.json();
       updateStatsUI(statsData);
+
+      if (discRes && discRes.ok) {
+        const d = await discRes.json();
+        APP_STATE.rawDiscounts = d.items || d || [];
+      }
+      if (storesRes && storesRes.ok) {
+        const d = await storesRes.json();
+        APP_STATE.newStores = d.items || d || [];
+      }
+      if (prodsRes && prodsRes.ok) {
+        const d = await prodsRes.json();
+        APP_STATE.newProducts = d.items || d || [];
+      }
+      if (promosRes && promosRes.ok) {
+        const d = await promosRes.json();
+        APP_STATE.promotions = d.items || d || [];
+      }
+      if (catalogRes && catalogRes.ok) {
+        const d = await catalogRes.json();
+        APP_STATE.allProducts = d.items || d || [];
+      }
+      if (histRes && histRes.ok) {
+        const d = await histRes.json();
+        APP_STATE.historyMap = d.history || {};
+      }
+
+      renderNewStores();
+      renderNewProducts();
+      renderPromotions();
       await fetchDiscounts();
-      await fetchNewStores();
-      await fetchNewProducts();
-      await fetchPromotions();
-      await fetchGlobalProducts();
+      await fetchGlobalProducts(1);
       loadedFromServer = true;
     }
   } catch (err) {
-    console.warn('無法連線動態 API，切換為離線備援資料:', err);
+    console.warn('無法連線靜態 API，切換為離線備援資料:', err);
   }
 
   if (!loadedFromServer) {
-    // 離線備援模式: 僅在無網路或 API 離線時讀取 window.UBER_RADAR_DATA
+    // 離線備援模式: 讀取 window.UBER_RADAR_DATA
     APP_STATE.isServerMode = false;
     if (window.UBER_RADAR_DATA) {
       const data = window.UBER_RADAR_DATA;
       updateStatsUI(data.stats || {});
-      APP_STATE.discounts = data.big_discounts || [];
+      APP_STATE.rawDiscounts = data.big_discounts || [];
       APP_STATE.newStores = data.new_stores || [];
       APP_STATE.newProducts = data.new_products || [];
       APP_STATE.promotions = data.promotions || [];
-      renderDiscounts();
+      APP_STATE.allProducts = data.all_products || [];
+      APP_STATE.historyMap = data.history || {};
       renderNewStores();
       renderNewProducts();
       renderPromotions();
+      renderDiscounts();
+      await fetchGlobalProducts(1);
     } else {
       console.warn('未偵測到備援資料。');
     }
@@ -165,66 +217,44 @@ function updateStatsUI(stats) {
 }
 
 // -----------------------------------------------------------------------------
-// 3. 大特價資料處理與渲染 (Tab 1)
+// 3. 大特價資料處理與渲染 (Tab 1) - 0ms 本地記憶體極速篩選
 // -----------------------------------------------------------------------------
 async function fetchDiscounts() {
-  if (!APP_STATE.isServerMode) {
-    renderDiscounts();
-    return;
-  }
   const { discountMinPct, discountMinSavings, discountSort, discountCategory, discountSearch } = APP_STATE.filters;
-  const params = new URLSearchParams({
-    min_discount: discountMinPct,
-    min_savings: discountMinSavings,
-    sort: discountSort,
-    category: discountCategory,
-    q: discountSearch
+  let items = APP_STATE.rawDiscounts && APP_STATE.rawDiscounts.length > 0 ? APP_STATE.rawDiscounts : (APP_STATE.discounts || []);
+
+  items = items.filter(item => {
+    if (!item.current_price || item.current_price <= 0) return false;
+    if (item.discount_pct < discountMinPct) return false;
+    if (item.savings_amount < discountMinSavings) return false;
+    if (discountCategory !== '全部' && !item.category_name.includes(discountCategory)) return false;
+    if (discountSearch) {
+      const kw = discountSearch.toLowerCase();
+      if (!item.product_name.toLowerCase().includes(kw) && !item.store_name.toLowerCase().includes(kw)) {
+        return false;
+      }
+    }
+    return true;
   });
 
-  try {
-    const res = await fetch(getApiUrl(`/api/discounts?${params.toString()}`));
-    if (res.ok) {
-      const data = await res.json();
-      APP_STATE.discounts = data.items || [];
-      renderDiscounts();
-    }
-  } catch (err) {
-    console.error('載入大特價失敗:', err);
+  if (discountSort === 'discount_desc') {
+    items.sort((a, b) => b.discount_pct - a.discount_pct || b.savings_amount - a.savings_amount);
+  } else if (discountSort === 'savings_desc') {
+    items.sort((a, b) => b.savings_amount - a.savings_amount || b.discount_pct - a.discount_pct);
+  } else if (discountSort === 'price_asc') {
+    items.sort((a, b) => a.current_price - b.current_price);
+  } else if (discountSort === 'price_desc') {
+    items.sort((a, b) => b.current_price - a.current_price);
   }
+
+  APP_STATE.discounts = items;
+  renderDiscounts();
 }
 
 function renderDiscounts() {
   const container = document.getElementById('discounts-grid');
   const emptyView = document.getElementById('discounts-empty');
-  let items = APP_STATE.discounts;
-
-  // 若在離線模式，執行本機篩選
-  if (!APP_STATE.isServerMode) {
-    const { discountMinPct, discountMinSavings, discountSort, discountCategory, discountSearch } = APP_STATE.filters;
-    items = items.filter(item => {
-      if (!item.current_price || item.current_price <= 0) return false;
-      if (item.discount_pct < discountMinPct) return false;
-      if (item.savings_amount < discountMinSavings) return false;
-      if (discountCategory !== '全部' && !item.category_name.includes(discountCategory)) return false;
-      if (discountSearch) {
-        const kw = discountSearch.toLowerCase();
-        if (!item.product_name.toLowerCase().includes(kw) && !item.store_name.toLowerCase().includes(kw)) {
-          return false;
-        }
-      }
-      return true;
-    });
-
-    if (discountSort === 'discount_desc') {
-      items.sort((a, b) => b.discount_pct - a.discount_pct);
-    } else if (discountSort === 'savings_desc') {
-      items.sort((a, b) => b.savings_amount - a.savings_amount);
-    } else if (discountSort === 'price_asc') {
-      items.sort((a, b) => a.current_price - b.current_price);
-    } else if (discountSort === 'price_desc') {
-      items.sort((a, b) => b.current_price - a.current_price);
-    }
-  }
+  const items = APP_STATE.discounts || [];
 
   // 同步分頁徽章與頂部大特價統計指標
   const badgeDiscountsEl = document.getElementById('badge-discounts');
@@ -338,23 +368,13 @@ function renderDiscounts() {
 // 4. 新進店家情報 (Tab 2)
 // -----------------------------------------------------------------------------
 async function fetchNewStores() {
-  if (!APP_STATE.isServerMode) return;
-  try {
-    const res = await fetch(getApiUrl('/api/new-stores'));
-    if (res.ok) {
-      const data = await res.json();
-      APP_STATE.newStores = data.items || [];
-      renderNewStores();
-    }
-  } catch (err) {
-    console.error('載入新店家失敗:', err);
-  }
+  renderNewStores();
 }
 
 function renderNewStores() {
   const container = document.getElementById('new-stores-grid');
   const emptyView = document.getElementById('new-stores-empty');
-  const items = APP_STATE.newStores;
+  const items = APP_STATE.newStores || [];
 
   const badgeStoresEl = document.getElementById('badge-stores');
   if (badgeStoresEl) badgeStoresEl.textContent = items.length;
@@ -423,23 +443,13 @@ function renderNewStores() {
 // 5. 老店新菜推薦 (Tab 3)
 // -----------------------------------------------------------------------------
 async function fetchNewProducts() {
-  if (!APP_STATE.isServerMode) return;
-  try {
-    const res = await fetch(getApiUrl('/api/new-products'));
-    if (res.ok) {
-      const data = await res.json();
-      APP_STATE.newProducts = data.items || [];
-      renderNewProducts();
-    }
-  } catch (err) {
-    console.error('載入新品失敗:', err);
-  }
+  renderNewProducts();
 }
 
 function renderNewProducts() {
   const container = document.getElementById('new-products-grid');
   const emptyView = document.getElementById('new-products-empty');
-  const items = APP_STATE.newProducts;
+  const items = APP_STATE.newProducts || [];
 
   const badgeProductsEl = document.getElementById('badge-products');
   if (badgeProductsEl) badgeProductsEl.textContent = items.length;
@@ -533,7 +543,7 @@ function calculateEffectivePromo(price, promoType, quantity) {
   const qty = Number(quantity) || 1;
   const type = String(promoType || '').trim();
 
-  // 1. 匹配「買X送Y」中文或數字 (例: 買1送1, 買2送1, 買3送1, 買一送一, 買二送一)
+  // 1. 匹配「買X送Y」中文或數字
   const mBuy = type.match(/買\s*([0-9一二兩三四五])\s*送\s*([0-9一二兩三四五])/);
   if (mBuy) {
     const digitMap = { '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '一': 1, '二': 2, '兩': 2, '三': 3, '四': 4, '五': 5 };
@@ -636,23 +646,12 @@ function calculateEffectivePromo(price, promoType, quantity) {
 // 6. 折扣活動專區 (Tab 4)
 // -----------------------------------------------------------------------------
 async function fetchPromotions() {
-  if (!APP_STATE.isServerMode) return;
-  try {
-    const res = await fetch(getApiUrl('/api/promotions'));
-    if (res.ok) {
-      const data = await res.json();
-      APP_STATE.promotions = data.items || [];
-      renderPromotions();
-    }
-  } catch (err) {
-    console.error('載入促銷失敗:', err);
-  }
+  renderPromotions();
 }
 
 function renderPromotions() {
   const container = document.getElementById('promos-grid');
-  // 嚴格過濾非商品廣告與 price <= 0 之項目
-  const items = APP_STATE.promotions.filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
+  const items = (APP_STATE.promotions || []).filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
 
   const badgePromosEl = document.getElementById('badge-promos');
   if (badgePromosEl) badgePromosEl.textContent = items.length;
@@ -722,7 +721,7 @@ function renderPromotions() {
 }
 
 // -----------------------------------------------------------------------------
-// 7. 全庫商品搜尋 (Tab 5)
+// 7. 全庫商品即時檢索 (Tab 5) - 0ms 本地記憶體即打即搜
 // -----------------------------------------------------------------------------
 let globalSearchController;
 let globalSearchSequence = 0;
@@ -731,84 +730,111 @@ async function fetchGlobalProducts(page = 1) {
   const controller = new AbortController();
   globalSearchController = controller;
   const sequence = ++globalSearchSequence;
-  if (!APP_STATE.isServerMode) {
-    document.getElementById('global-total-count').textContent = '僅在伺服器模式支援全品檢索';
-    return;
-  }
+
   APP_STATE.globalPage = page;
   const container = document.getElementById('global-products-grid');
   const countEl = document.getElementById('global-total-count');
   if (container) {
     container.style.opacity = '0.4';
-    container.style.transition = 'opacity 0.2s ease';
+    container.style.transition = 'opacity 0.15s ease';
   }
   if (countEl) {
-    countEl.textContent = '搜尋中...';
+    countEl.textContent = '檢索中...';
   }
 
   const sortMode = APP_STATE.filters.globalSort || 'rating_desc';
-  const rawSearch = APP_STATE.filters.globalSearch || '';
+  const rawSearch = (APP_STATE.filters.globalSearch || '').trim();
 
-  const params = new URLSearchParams({
-    q: rawSearch,
-    sort: sortMode,
-    page: page,
-    limit: 24
+  let items = APP_STATE.allProducts && APP_STATE.allProducts.length > 0 ? [...APP_STATE.allProducts] : [];
+
+  // 關鍵字與同義詞檢索
+  if (rawSearch) {
+    const synonymMap = [
+      { pattern: /dazs|haagen|häagen|哈根/i, terms: ['dazs', 'haagen', 'häagen', '哈根', '哈根達斯'] },
+      { pattern: /movenpick|mövenpick|莫凡彼/i, terms: ['movenpick', 'mövenpick', '莫凡彼'] },
+      { pattern: /cold\s*stone|酷聖石/i, terms: ['cold stone', 'coldstone', '酷聖石'] },
+      { pattern: /starbucks|星巴克/i, terms: ['starbucks', '星巴克'] },
+      { pattern: /mcdonald|麥當勞/i, terms: ['mcdonald', '麥當勞'] },
+      { pattern: /kfc|肯德基/i, terms: ['kfc', '肯德基'] },
+      { pattern: /coca|coke|可樂|可口可樂/i, terms: ['coca', 'coke', '可樂', '可口可樂'] },
+      { pattern: /costco|好市多/i, terms: ['costco', '好市多'] },
+      { pattern: /全家|familymart/i, terms: ['全家', 'familymart'] },
+      { pattern: /7-11|7-eleven|統一超商/i, terms: ['7-11', '7-eleven', '統一超商'] }
+    ];
+
+    let matchedTerms = null;
+    for (const s of synonymMap) {
+      if (s.pattern.test(rawSearch)) {
+        matchedTerms = s.terms.map(t => t.toLowerCase());
+        break;
+      }
+    }
+
+    if (matchedTerms) {
+      items = items.filter(p => {
+        const text = `${p.product_name || ''} ${p.store_name || ''} ${p.description || ''}`.toLowerCase();
+        return matchedTerms.some(t => text.includes(t));
+      });
+    } else {
+      const terms = rawSearch.toLowerCase().split(/\s+/).filter(Boolean);
+      items = items.filter(p => {
+        const text = `${p.product_name || ''} ${p.store_name || ''} ${p.description || ''}`.toLowerCase();
+        return terms.every(t => text.includes(t));
+      });
+    }
+  }
+
+  // 促銷篩選
+  if (sortMode === 'promo_only') {
+    items = items.filter(p => {
+      const info = calculateEffectivePromo(p.price, p.promo_type, p.quantity);
+      return (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '') || info.isPromo);
+    });
+  }
+
+  // 排序
+  items.sort((a, b) => {
+    const infoA = calculateEffectivePromo(a.price, a.promo_type, a.quantity);
+    const infoB = calculateEffectivePromo(b.price, b.promo_type, b.quantity);
+    const effA = infoA.effPrice;
+    const effB = infoB.effPrice;
+
+    if (sortMode === 'promo_first') {
+      const promoA = (a.quantity > 1 || (a.promo_type && a.promo_type !== '無' && a.promo_type !== '')) ? 1 : 0;
+      const promoB = (b.quantity > 1 || (b.promo_type && b.promo_type !== '無' && b.promo_type !== '')) ? 1 : 0;
+      if (promoB !== promoA) return promoB - promoA;
+      return (b.rating_value || 0) - (a.rating_value || 0) || effA - effB;
+    } else if (sortMode === 'price_asc') {
+      return effA - effB || (b.rating_value || 0) - (a.rating_value || 0);
+    } else if (sortMode === 'price_desc') {
+      return effB - effA || (b.rating_value || 0) - (a.rating_value || 0);
+    } else if (sortMode === 'name_asc') {
+      return (a.product_name || '').localeCompare(b.product_name || '', 'zh-TW');
+    } else if (sortMode === 'rating_desc') {
+      return (b.rating_value || 0) - (a.rating_value || 0) || effA - effB;
+    }
+    return 0;
   });
 
-  try {
-    const res = await fetch(getApiUrl(`/api/products?${params.toString()}`), { signal: controller.signal });
-    if (res.ok) {
-      const data = await res.json();
-      let items = data.items || [];
+  if (sequence !== globalSearchSequence) return;
 
-      // 前端健全性二次過濾與排序保證 (防後端快取或 API 延遲)
-      if (sortMode === 'promo_only') {
-        items = items.filter(p => {
-          const info = calculateEffectivePromo(p.price, p.promo_type, p.quantity);
-          return (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '') || info.isPromo);
-        });
-      }
+  const limit = 24;
+  const total = items.length;
+  const totalPages = Math.ceil(total / limit) || 1;
+  const offset = (page - 1) * limit;
+  const pageItems = items.slice(offset, offset + limit);
 
-      // 前端二次排序校準
-      items.sort((a, b) => {
-        const infoA = calculateEffectivePromo(a.price, a.promo_type, a.quantity);
-        const infoB = calculateEffectivePromo(b.price, b.promo_type, b.quantity);
-        const effA = infoA.effPrice;
-        const effB = infoB.effPrice;
+  APP_STATE.globalProducts = pageItems;
+  APP_STATE.globalTotalPages = totalPages;
 
-        if (sortMode === 'promo_first') {
-          const promoA = (a.quantity > 1 || (a.promo_type && a.promo_type !== '無' && a.promo_type !== '')) ? 1 : 0;
-          const promoB = (b.quantity > 1 || (b.promo_type && b.promo_type !== '無' && b.promo_type !== '')) ? 1 : 0;
-          if (promoB !== promoA) return promoB - promoA;
-          return (b.rating_value || 0) - (a.rating_value || 0) || effA - effB;
-        } else if (sortMode === 'price_asc') {
-          return effA - effB || (b.rating_value || 0) - (a.rating_value || 0);
-        } else if (sortMode === 'price_desc') {
-          return effB - effA || (b.rating_value || 0) - (a.rating_value || 0);
-        } else if (sortMode === 'name_asc') {
-          return (a.product_name || '').localeCompare(b.product_name || '', 'zh-TW');
-        } else if (sortMode === 'rating_desc') {
-          return (b.rating_value || 0) - (a.rating_value || 0) || effA - effB;
-        }
-        return 0;
-      });
+  if (countEl) {
+    countEl.textContent = `${total} 筆`;
+  }
+  renderGlobalProducts();
+  renderGlobalPagination();
 
-      if (sequence !== globalSearchSequence) return;
-      APP_STATE.globalProducts = items;
-      APP_STATE.globalTotalPages = data.total_pages || 1;
-      if (countEl) {
-        countEl.textContent = `${(sortMode === 'promo_only' ? items.length : (data.total !== undefined ? data.total : items.length))} 筆`;
-      }
-      renderGlobalProducts();
-      renderGlobalPagination();
-    }
-  } catch (err) {
-    if (err.name !== 'AbortError') console.error('全庫搜尋失敗:', err);
-  } finally {
-    if (container && sequence === globalSearchSequence) {
-      container.style.opacity = '1';
-    }
+  if (container && sequence === globalSearchSequence) {
+    container.style.opacity = '1';
   }
 }
 
@@ -934,20 +960,9 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
   modal.classList.remove('hidden');
   modal.classList.add('flex');
 
-  // 取得歷史資料
-  let history = [];
-  if (APP_STATE.isServerMode) {
-    try {
-      const res = await fetch(getApiUrl(`/api/history?product_id=${productId}`));
-      if (res.ok) {
-        const data = await res.json();
-        history = data.history || [];
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  }
-
+  // 取得歷史資料 (優先讀取記憶體字典)
+  let history = (APP_STATE.historyMap && APP_STATE.historyMap[productId]) || [];
+  
   // 繪製表格
   const tbody = document.getElementById('modal-history-tbody');
   if (history.length > 0) {
@@ -1047,7 +1062,7 @@ function initEventListeners() {
   document.getElementById('stat-card-products')?.addEventListener('click', () => switchTab('tab-products'));
   document.getElementById('stat-card-promos')?.addEventListener('click', () => switchTab('tab-promos'));
 
-  // 大特價篩選事件
+  // 大特價篩選事件 (0ms 即時反應)
   document.getElementById('discount-pct-select').addEventListener('change', e => {
     APP_STATE.filters.discountMinPct = parseFloat(e.target.value);
     fetchDiscounts();
@@ -1066,7 +1081,7 @@ function initEventListeners() {
   document.getElementById('discount-search-input').addEventListener('input', debounce(e => {
     APP_STATE.filters.discountSearch = e.target.value;
     fetchDiscounts();
-  }, 250));
+  }, 100));
 
   // 分類標籤點擊
   document.querySelectorAll('.cat-tag').forEach(tag => {
@@ -1083,11 +1098,11 @@ function initEventListeners() {
     });
   });
 
-  // 全庫搜尋事件
+  // 全庫搜尋事件 (0ms 即打即搜)
   document.getElementById('global-search-input')?.addEventListener('input', debounce(e => {
     APP_STATE.filters.globalSearch = e.target.value;
     fetchGlobalProducts(1);
-  }, 300));
+  }, 100));
 
   document.getElementById('global-sort-select')?.addEventListener('change', e => {
     APP_STATE.filters.globalSort = e.target.value;
@@ -1098,16 +1113,8 @@ function initEventListeners() {
   document.getElementById('btn-refresh')?.addEventListener('click', async () => {
     const icon = document.getElementById('refresh-icon');
     icon?.classList.add('animate-spin');
-    if (APP_STATE.isServerMode) {
-      try {
-        await fetch(getApiUrl('/api/refresh'), { method: 'POST' });
-        await loadDashboardData();
-      } catch (e) {
-        console.error(e);
-      }
-    } else {
-      location.reload();
-    }
+    await loadDashboardData();
+    showToast('資料已刷新', '已為您同步最新快照情報！', 'external', 2000);
     setTimeout(() => icon?.classList.remove('animate-spin'), 600);
   });
 
@@ -1140,7 +1147,6 @@ function initTheme() {
     const dark = document.documentElement.classList.toggle('dark');
     localStorage.setItem('uber_radar_theme', dark ? 'dark' : 'light');
     if (APP_STATE.chartInstance) {
-      // 重新渲染圖表適配深淺色
       showPriceHistoryModal(
         document.getElementById('modal-product-id').textContent.replace('Product ID: ', ''),
         document.getElementById('modal-product-name').textContent,
@@ -1151,7 +1157,7 @@ function initTheme() {
   });
 }
 
-function debounce(func, delay = 250) {
+function debounce(func, delay = 100) {
   let timer = null;
   return function(...args) {
     clearTimeout(timer);
@@ -1188,10 +1194,8 @@ async function openUberEatsOrder(event, url, productName = '', storeName = '') {
     event.stopPropagation();
   }
 
-  // 清理 URL 實體編碼
   let targetUrl = safeOrderUrl(url);
 
-  // 若目標 URL 為空或無效，自動 fallback 透過 Uber Eats 搜尋店家或商品
   if (!targetUrl || targetUrl === '#' || targetUrl === '') {
     const query = (storeName || productName || '').trim();
     if (query) {
@@ -1207,7 +1211,6 @@ async function openUberEatsOrder(event, url, productName = '', storeName = '') {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(cleanName);
       } else {
-        // Fallback for non-https/local
         const textArea = document.createElement('textarea');
         textArea.value = cleanName;
         textArea.style.position = 'fixed';
@@ -1236,7 +1239,6 @@ async function openUberEatsOrder(event, url, productName = '', storeName = '') {
     showToast('前往 Uber Eats', '已為您在新分頁開啟 Uber Eats 店家網頁！', 'external', 3000);
   }
 
-  // 在新分頁開啟 Uber Eats 店家頁面
   window.open(targetUrl, '_blank', 'noopener,noreferrer');
 }
 
@@ -1270,21 +1272,17 @@ function showToast(title, message, iconType = 'copy', duration = 4000) {
   container.appendChild(toast);
   lucide.createIcons({ root: toast });
 
-  // 動畫淡入
   requestAnimationFrame(() => {
     toast.classList.remove('translate-y-4', 'opacity-0');
     toast.classList.add('translate-y-0', 'opacity-100');
   });
 
-  // 自動計時消失
   setTimeout(() => {
     toast.classList.remove('translate-y-0', 'opacity-100');
     toast.classList.add('translate-y-4', 'opacity-0');
     setTimeout(() => toast.remove(), 300);
   }, duration);
 }
-
-
 
 function safeOrderUrl(value) {
   try {

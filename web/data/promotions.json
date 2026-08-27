@@ -1,0 +1,38 @@
+{
+  "status": "success",
+  "total": 2,
+  "items": [
+    {
+      "product_id": "505a452a116edf13ebe40d94bfc3a455",
+      "store_id": "5b057eac8dc711f9fa571af6891038a5",
+      "store_name": "鼎泰豐 信義店",
+      "category_name": "人氣精選",
+      "product_name": "【買1送1】招牌飲品",
+      "price": 50.0,
+      "quantity": 2,
+      "promo_type": "買1送1",
+      "eff_price": 25.0,
+      "description": "清涼可口",
+      "order_action_url": "https://www.ubereats.com/tw/store/dingtaifeng-xinyi/uuid-dingtaifeng-xinyi",
+      "rating_value": 4.8,
+      "locality": "信義區",
+      "crawled_time": "20260827120000"
+    },
+    {
+      "product_id": "ae04e9b7efed615a1576550240e75d28",
+      "store_id": "7d162c7eb3b5110259204cdc89d9fe5e",
+      "store_name": "麥當勞 台北館前店",
+      "category_name": "人氣精選",
+      "product_name": "買一送一可樂",
+      "price": 50.0,
+      "quantity": 2,
+      "promo_type": "買1送1",
+      "eff_price": 25.0,
+      "description": "清涼可口",
+      "order_action_url": "https://www.ubereats.com/tw/store/mcdonalds-guanqian/uuid-mcdonalds-guanqian",
+      "rating_value": 4.8,
+      "locality": "信義區",
+      "crawled_time": "20260827120000"
+    }
+  ]
+}

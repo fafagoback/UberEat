@@ -1,0 +1,41 @@
+{
+  "status": "success",
+  "history": {
+    "505a452a116edf13ebe40d94bfc3a455": [
+      {
+        "crawled_time": "20260827120000",
+        "price": 50.0,
+        "quantity": 2,
+        "promo_type": "買1送1",
+        "eff_price": 25.0
+      }
+    ],
+    "6745e256d2a7763b33c264727c2f206a": [
+      {
+        "crawled_time": "20260827120000",
+        "price": 149.0,
+        "quantity": 1,
+        "promo_type": "無",
+        "eff_price": 149.0
+      }
+    ],
+    "ae04e9b7efed615a1576550240e75d28": [
+      {
+        "crawled_time": "20260827120000",
+        "price": 50.0,
+        "quantity": 2,
+        "promo_type": "買1送1",
+        "eff_price": 25.0
+      }
+    ],
+    "fe80634a7955eaac438a7e532295a50b": [
+      {
+        "crawled_time": "20260827120000",
+        "price": 220.0,
+        "quantity": 1,
+        "promo_type": "無",
+        "eff_price": 220.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "status": "success",
+  "total": 2,
+  "items": [
+    {
+      "store_id": "5b057eac8dc711f9fa571af6891038a5",
+      "store_name": "鼎泰豐 信義店",
+      "store_type": "Restaurant",
+      "store_url": "https://www.ubereats.com/tw/store/dingtaifeng-xinyi/uuid-dingtaifeng-xinyi",
+      "rating_value": 4.8,
+      "review_count": 350,
+      "price_range": "$",
+      "telephone": "+886212345678",
+      "locality": "信義區",
+      "street_address": "信義路五段7號",
+      "order_action_url": "https://www.ubereats.com/tw/store/dingtaifeng-xinyi/uuid-dingtaifeng-xinyi",
+      "total_menu_items": 2,
+      "cuisines": "漢堡、美式",
+      "crawled_time": "20260827120000"
+    },
+    {
+      "store_id": "7d162c7eb3b5110259204cdc89d9fe5e",
+      "store_name": "麥當勞 台北館前店",
+      "store_type": "Restaurant",
+      "store_url": "https://www.ubereats.com/tw/store/mcdonalds-guanqian/uuid-mcdonalds-guanqian",
+      "rating_value": 4.8,
+      "review_count": 350,
+      "price_range": "$",
+      "telephone": "+886212345678",
+      "locality": "信義區",
+      "street_address": "信義路五段7號",
+      "order_action_url": "https://www.ubereats.com/tw/store/mcdonalds-guanqian/uuid-mcdonalds-guanqian",
+      "total_menu_items": 2,
+      "cuisines": "漢堡、美式",
+      "crawled_time": "20260827120000"
+    }
+  ]
+}

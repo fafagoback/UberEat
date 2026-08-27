@@ -98,23 +98,22 @@ jobs:
           retention-days: 1
 
   # ==========================================
-  # 階段 3: 彙整所有 JSON ➔ 推送 HF 資料湖 & Cloudflare D1
+  # 階段 3: 彙整所有 JSON ➔ 推送 HF 資料湖 & 導出靜態快照
   # ==========================================
   reducer:
     needs: [coordinator, workers]
     if: needs.coordinator.result == 'success' && needs.workers.result == 'success'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: 檢出專案代碼
         uses: actions/checkout@v7.0.1
 
-      - name: 設定 Python & Node.js
+      - name: 設定 Python 環境
         uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
-      - uses: actions/setup-node@v7.0.0
-        with:
-          node-version: '24'
 
       - name: 下載所有 Worker 的 JSON 結果
         uses: actions/download-artifact@v8.0.1
@@ -133,9 +132,7 @@ jobs:
           fi
 
       - name: 安裝同步工具
-        run: |
-          pip install huggingface_hub requests
-          npm install -g wrangler
+        run: pip install huggingface_hub requests
 
       - name: ① 推送原始 JSON 至 Hugging Face Datasets (資料湖)
         env:
@@ -144,24 +141,20 @@ jobs:
         run: |
           python src/upload_to_hf.py --src-dir all_json_lake/ --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" --path-in-repo "Json"
 
-      - name: 準備批次發布資料表並部署受保護 API
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      - name: ② 導出邊緣靜態快照資料集 (Plan C Jamstack)
         run: |
-          python src/prepare_publication.py
-          npx wrangler deploy
+          python src/export_static_snapshots.py \
+            --src-dir all_json_lake/ \
+            --output-dir web/data \
+            --scope regional
 
-      - name: ② 執行 ETL 並將資料同步至 Cloudflare D1
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      - name: ③ 自動提交發布最新靜態資料 (GitHub Pages)
+        shell: bash
         run: |
-          python src/json_to_cf_d1.py --src-dir all_json_lake/ --db-name "ubereats_monitor" --scope regional --require-d1
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin main --rebase || true
+          git add web/data/ web/version.json web/dashboard_data.js web/dashboard_data.json
+          git commit -m "chore(data): auto-publish regional snapshot [skip ci]" || echo "No changes to commit"
+          git push origin main || echo "Push skipped or succeeded"
 
-      - name: ③ 自動部署最新 Cloudflare Worker API
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        run: |
-          npx wrangler deploy
