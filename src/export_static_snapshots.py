@@ -762,7 +762,7 @@ def export_all_static_snapshots(
     print("\n📝 【步驟 6.4】生成前端靜態 JSON 檔案集合...")
     discounts = calculate_7day_discounts(conn, batch_id, min_discount_pct=20.0, min_savings_twd=20.0)
 
-    # 促銷專區 (買一送一/組合優惠)
+    # 促銷專區 (買一送一/組合優惠) - 匯出精選前 3,000 筆供前端快速載入
     cursor.execute("""
     SELECT 
         p.product_id, p.store_id, p.store_name, p.category_name, p.product_name,
@@ -778,6 +778,13 @@ def export_all_static_snapshots(
     """, (batch_id,))
     promotions = [dict(r) for r in cursor.fetchall()]
 
+    # 計算全庫真實促銷商品總筆數 (全盤無上限真實統計)
+    cursor.execute("""
+    SELECT COUNT(*) FROM products 
+    WHERE crawled_time = ? AND (promo_type != '無' OR quantity > 1) AND price >= 1;
+    """, (batch_id,))
+    total_promotions_count = cursor.fetchone()[0]
+
     # 精選全品庫 (4,000 筆離線備援)
     curated_catalog = extract_curated_catalog(conn, batch_id, max_items=4000)
 
@@ -786,7 +793,7 @@ def export_all_static_snapshots(
     target_pids.update({p["product_id"] for p in promotions[:500]})
     history_map = extract_price_history_map(conn, target_product_ids=target_pids)
 
-    # 新進店家清單
+    # 新進店家清單 (精選前 200 間快照)
     new_stores = []
     for s in store_rows[:200]:
         new_stores.append({
@@ -818,7 +825,7 @@ def export_all_static_snapshots(
         "big_discounts_count": len([d for d in discounts if d["discount_pct"] >= 30.0]),
         "new_stores_count": len(store_rows),
         "new_products_count": 0,
-        "promotions_count": len(promotions),
+        "promotions_count": total_promotions_count,
         "max_savings_twd": round(max_savings_val)
     }
 

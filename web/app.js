@@ -266,22 +266,20 @@ async function loadDashboardData() {
 // -----------------------------------------------------------------------------
 // 2. 更新統計指標 UI
 // -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// 2. 更新統計指標 UI
+// -----------------------------------------------------------------------------
 function updateStatsUI(stats) {
   APP_STATE.stats = stats;
   document.getElementById('batch-time-text').textContent = stats.latest_batch_formatted || stats.latest_batch || '已載入';
-  document.getElementById('stat-big-discounts').textContent = stats.big_discounts_count ?? 0;
-  document.getElementById('stat-new-stores').textContent = stats.new_stores_count ?? 0;
-  document.getElementById('stat-new-products').textContent = stats.new_products_count ?? 0;
-  document.getElementById('stat-promotions').textContent = stats.promotions_count ?? 0;
+  document.getElementById('stat-big-discounts').textContent = (stats.big_discounts_count ?? 0).toLocaleString();
+  document.getElementById('stat-new-stores').textContent = (stats.new_stores_count ?? stats.total_stores ?? 0).toLocaleString();
+  document.getElementById('stat-new-products').textContent = (stats.new_products_count ?? 0).toLocaleString();
+  document.getElementById('stat-promotions').textContent = (stats.promotions_count ?? 0).toLocaleString();
 
   document.getElementById('stat-max-savings').textContent = `現省最高 $${stats.max_savings_twd || 0}`;
-  document.getElementById('stat-total-stores').textContent = `總監控 ${stats.total_monitored_stores || stats.total_stores || 0} 間`;
-  document.getElementById('stat-total-products').textContent = `總菜品 ${stats.total_monitored_products || stats.total_products || 0} 項`;
-
-  document.getElementById('badge-discounts').textContent = stats.big_discounts_count ?? 0;
-  document.getElementById('badge-stores').textContent = stats.new_stores_count ?? 0;
-  document.getElementById('badge-products').textContent = stats.new_products_count ?? 0;
-  document.getElementById('badge-promos').textContent = stats.promotions_count ?? 0;
+  document.getElementById('stat-total-stores').textContent = `總監控 ${(stats.total_monitored_stores || stats.total_stores || 0).toLocaleString()} 間`;
+  document.getElementById('stat-total-products').textContent = `總菜品 ${(stats.total_monitored_products || stats.total_products || 0).toLocaleString()} 項`;
 }
 
 // -----------------------------------------------------------------------------
@@ -324,16 +322,9 @@ function renderDiscounts() {
   const emptyView = document.getElementById('discounts-empty');
   const items = APP_STATE.discounts || [];
 
-  // 同步分頁徽章與頂部大特價統計指標
-  const badgeDiscountsEl = document.getElementById('badge-discounts');
-  if (badgeDiscountsEl) badgeDiscountsEl.textContent = items.length;
-
-  const statBigDiscountsEl = document.getElementById('stat-big-discounts');
-  if (statBigDiscountsEl) statBigDiscountsEl.textContent = items.length;
-
   const statMaxSavingsEl = document.getElementById('stat-max-savings');
-  if (statMaxSavingsEl) {
-    const maxSavings = items.length > 0 ? Math.max(...items.map(i => i.savings_amount || 0)) : 0;
+  if (statMaxSavingsEl && items.length > 0) {
+    const maxSavings = Math.max(...items.map(i => i.savings_amount || 0));
     statMaxSavingsEl.textContent = `現省最高 $${Math.round(maxSavings)}`;
   }
 
@@ -444,13 +435,10 @@ function renderNewStores() {
   const emptyView = document.getElementById('new-stores-empty');
   const items = APP_STATE.newStores || [];
 
-  const badgeStoresEl = document.getElementById('badge-stores');
-  if (badgeStoresEl) badgeStoresEl.textContent = items.length;
-
-  const statNewStoresEl = document.getElementById('stat-new-stores');
-  if (statNewStoresEl) statNewStoresEl.textContent = items.length;
-
-  document.getElementById('new-stores-counter').textContent = `${items.length} 間新店`;
+  const counterEl = document.getElementById('new-stores-counter');
+  if (counterEl) {
+    counterEl.textContent = `${items.length} 間新店`;
+  }
 
   if (items.length === 0) {
     container.innerHTML = '';
@@ -519,13 +507,10 @@ function renderNewProducts() {
   const emptyView = document.getElementById('new-products-empty');
   const items = APP_STATE.newProducts || [];
 
-  const badgeProductsEl = document.getElementById('badge-products');
-  if (badgeProductsEl) badgeProductsEl.textContent = items.length;
-
-  const statNewProductsEl = document.getElementById('stat-new-products');
-  if (statNewProductsEl) statNewProductsEl.textContent = items.length;
-
-  document.getElementById('new-products-counter').textContent = `${items.length} 道新品`;
+  const counterEl = document.getElementById('new-products-counter');
+  if (counterEl) {
+    counterEl.textContent = `${items.length} 道新品`;
+  }
 
   if (items.length === 0) {
     container.innerHTML = '';
@@ -721,14 +706,10 @@ function renderPromotions() {
   const container = document.getElementById('promos-grid');
   const items = (APP_STATE.promotions || []).filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
 
-  const badgePromosEl = document.getElementById('badge-promos');
-  if (badgePromosEl) badgePromosEl.textContent = items.length;
-
-  const statPromosEl = document.getElementById('stat-promotions');
-  if (statPromosEl) statPromosEl.textContent = items.length;
-
   const counterEl = document.getElementById('promos-counter');
-  if (counterEl) counterEl.textContent = `${items.length} 筆特惠`;
+  if (counterEl) {
+    counterEl.textContent = `${items.length} 筆特惠`;
+  }
 
   if (items.length === 0) {
     container.innerHTML = '<div class="col-span-3 py-12 text-center text-slate-400">目前沒有促銷活動</div>';
@@ -793,6 +774,8 @@ function renderPromotions() {
 // -----------------------------------------------------------------------------
 let globalSearchController;
 let globalSearchSequence = 0;
+let globalSearchHasNextPage = false;
+
 async function fetchGlobalProducts(page = 1) {
   globalSearchController?.abort();
   const controller = new AbortController();
@@ -801,13 +784,9 @@ async function fetchGlobalProducts(page = 1) {
 
   APP_STATE.globalPage = page;
   const container = document.getElementById('global-products-grid');
-  const countEl = document.getElementById('global-total-count');
   if (container) {
     container.style.opacity = '0.4';
     container.style.transition = 'opacity 0.15s ease';
-  }
-  if (countEl) {
-    countEl.textContent = '檢索中...';
   }
 
   const sortMode = APP_STATE.filters.globalSort || 'rating_desc';
@@ -815,7 +794,7 @@ async function fetchGlobalProducts(page = 1) {
   const cityFilter = APP_STATE.filters.globalCity || '全部';
   const limit = 24;
 
-  // 1. DuckDB-WASM 邊緣 SQL 查詢 (直連 Hugging Face Parquet 資料湖)
+  // 1. DuckDB-WASM 邊緣 SQL 查詢 (直連 Hugging Face Parquet 資料湖，帶逾時自動降級)
   if (DUCKDB_READY && DUCKDB_CONN) {
     try {
       let whereClauses = ["price >= 1"];
@@ -831,11 +810,10 @@ async function fetchGlobalProducts(page = 1) {
 
       if (rawSearch) {
         const safeSearch = rawSearch.replace(/'/g, "''");
+        // 僅針對菜品名稱與店家名稱搜尋，避免掃描巨量 description 欄位造成網路堵塞
         whereClauses.push(`(
           product_name LIKE '%${safeSearch}%' 
-          OR store_name LIKE '%${safeSearch}%' 
-          OR category_name LIKE '%${safeSearch}%' 
-          OR description LIKE '%${safeSearch}%'
+          OR store_name LIKE '%${safeSearch}%'
         )`);
       }
 
@@ -849,23 +827,23 @@ async function fetchGlobalProducts(page = 1) {
 
       const offset = (page - 1) * limit;
 
-      const [countResult, dataResult] = await Promise.all([
-        DUCKDB_CONN.query(`SELECT COUNT(*) as cnt FROM 'taiwan_catalog.parquet' WHERE ${whereSql}`),
-        DUCKDB_CONN.query(`SELECT * FROM 'taiwan_catalog.parquet' WHERE ${whereSql} ORDER BY ${orderSql} LIMIT ${limit} OFFSET ${offset}`)
-      ]);
+      // 查詢 limit + 1 筆以判斷是否有下一頁，不執行耗算力的全表 COUNT(*) 掃描
+      const queryPromise = DUCKDB_CONN.query(
+        `SELECT * FROM 'taiwan_catalog.parquet' WHERE ${whereSql} ORDER BY ${orderSql} LIMIT ${limit + 1} OFFSET ${offset}`
+      );
+      const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('DuckDB query timeout')), 2500));
+
+      const dataResult = await Promise.race([queryPromise, timeoutPromise]);
 
       if (sequence !== globalSearchSequence) return;
 
-      const totalCount = Number(countResult.toArray()[0].cnt);
-      const totalPages = Math.ceil(totalCount / limit) || 1;
-      const rows = dataResult.toArray().map(r => Object.fromEntries(Object.entries(r)));
+      const rawRows = dataResult.toArray().map(r => Object.fromEntries(Object.entries(r)));
+      globalSearchHasNextPage = rawRows.length > limit;
+      const rows = rawRows.slice(0, limit);
 
       APP_STATE.globalProducts = rows;
-      APP_STATE.globalTotalPages = totalPages;
+      APP_STATE.globalTotalPages = globalSearchHasNextPage ? page + 1 : page;
 
-      if (countEl) {
-        countEl.textContent = `${totalCount.toLocaleString()} 筆 (DuckDB)`;
-      }
       renderGlobalProducts();
       renderGlobalPagination();
 
@@ -874,11 +852,11 @@ async function fetchGlobalProducts(page = 1) {
       }
       return;
     } catch (err) {
-      console.warn('⚠️ DuckDB 查詢失敗，切換為本地快照備援:', err);
+      console.warn('⚠️ DuckDB 查詢逾時或未就緒，平滑切換為本地記憶體快照備援:', err);
     }
   }
 
-  // 2. 本地精選快照備援模式
+  // 2. 本地精選快照備援模式 (0ms 即打即搜)
   let items = APP_STATE.allProducts && APP_STATE.allProducts.length > 0 ? [...APP_STATE.allProducts] : [];
 
   if (cityFilter && cityFilter !== '全部') {
@@ -888,7 +866,7 @@ async function fetchGlobalProducts(page = 1) {
   if (rawSearch) {
     const sLower = rawSearch.toLowerCase();
     items = items.filter(p => {
-      const text = `${p.product_name || ''} ${p.store_name || ''} ${p.category_name || ''} ${p.description || ''}`.toLowerCase();
+      const text = `${p.product_name || ''} ${p.store_name || ''} ${p.category_name || ''}`.toLowerCase();
       return text.includes(sLower);
     });
   }
@@ -926,10 +904,8 @@ async function fetchGlobalProducts(page = 1) {
 
   APP_STATE.globalProducts = pageItems;
   APP_STATE.globalTotalPages = totalPages;
+  globalSearchHasNextPage = page < totalPages;
 
-  if (countEl) {
-    countEl.textContent = `${total.toLocaleString()} 筆 (本地備援)`;
-  }
   renderGlobalProducts();
   renderGlobalPagination();
 
@@ -1022,21 +998,22 @@ function renderGlobalProducts() {
 
 function renderGlobalPagination() {
   const container = document.getElementById('global-pagination');
+  if (!container) return;
   const current = APP_STATE.globalPage;
   const total = APP_STATE.globalTotalPages;
 
-  if (total <= 1) {
+  if (current <= 1 && !globalSearchHasNextPage && total <= 1) {
     container.innerHTML = '';
     return;
   }
 
   let html = '';
   if (current > 1) {
-    html += `<button onclick="fetchGlobalProducts(${current - 1})" class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">上一頁</button>`;
+    html += `<button onclick="fetchGlobalProducts(${current - 1})" class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">上一頁</button>`;
   }
-  html += `<span class="text-xs text-slate-500 font-mono px-2">第 ${current} / ${total} 頁</span>`;
-  if (current < total) {
-    html += `<button onclick="fetchGlobalProducts(${current + 1})" class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">下一頁</button>`;
+  html += `<span class="text-xs text-slate-500 font-mono px-2">第 ${current} 頁</span>`;
+  if (globalSearchHasNextPage || current < total) {
+    html += `<button onclick="fetchGlobalProducts(${current + 1})" class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">下一頁</button>`;
   }
 
   container.innerHTML = html;
@@ -1202,7 +1179,7 @@ function initEventListeners() {
   document.getElementById('global-search-input')?.addEventListener('input', debounce(e => {
     APP_STATE.filters.globalSearch = e.target.value;
     fetchGlobalProducts(1);
-  }, 100));
+  }, 300));
 
   document.getElementById('global-sort-select')?.addEventListener('change', e => {
     APP_STATE.filters.globalSort = e.target.value;
