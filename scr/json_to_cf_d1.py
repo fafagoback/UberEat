@@ -38,6 +38,89 @@ from json_to_db import UberEatsDBImporter
 from alert_engine import UberEatsAlertEngine
 
 
+# D1/SQLite 對單條 SQL 有長度限制。保留足夠餘裕給 Wrangler 與遠端解析層，
+# 並限制每個上傳檔大小，避免以「語句數」估算時被長商品描述突破限制。
+MAX_INSERT_BYTES = 80 * 1024
+MAX_SQL_FILE_BYTES = 1024 * 1024
+
+
+def sql_utf8_size(value: str) -> int:
+    return len(value.encode("utf-8"))
+
+
+def build_batch_insert(
+    table_name: str,
+    columns: list,
+    rows: list,
+    escape_value,
+    or_action: str = "REPLACE",
+    batch_size: int = 50,
+    max_statement_bytes: int = MAX_INSERT_BYTES,
+) -> list:
+    """建立同時受列數與 UTF-8 byte 大小限制的 multi-row INSERT。"""
+    if not rows:
+        return []
+
+    prefix = f"INSERT OR {or_action} INTO {table_name} ({', '.join(columns)}) VALUES\n    "
+    statements = []
+    values = []
+
+    def flush() -> None:
+        if values:
+            statements.append(prefix + ",\n    ".join(values) + ";")
+            values.clear()
+
+    for row_index, row in enumerate(rows):
+        encoded_row = "(" + ", ".join(escape_value(value) for value in row) + ")"
+        single_statement = prefix + encoded_row + ";"
+        single_size = sql_utf8_size(single_statement)
+        if single_size > max_statement_bytes:
+            raise ValueError(
+                f"{table_name} 第 {row_index + 1} 列單筆 INSERT 為 {single_size:,} bytes，"
+                f"超過安全上限 {max_statement_bytes:,} bytes"
+            )
+
+        candidate = prefix + ",\n    ".join(values + [encoded_row]) + ";"
+        if values and (len(values) >= batch_size or sql_utf8_size(candidate) > max_statement_bytes):
+            flush()
+        values.append(encoded_row)
+
+    flush()
+    return statements
+
+
+def split_sql_files(sql_statements: list, output_prefix: str = "d1_sync_part") -> list:
+    """依 UTF-8 byte 大小分割 Wrangler 上傳檔，且不拆開任何 SQL 語句。"""
+    groups = []
+    current = []
+    current_bytes = 0
+    for statement_index, statement in enumerate(sql_statements):
+        statement_bytes = sql_utf8_size(statement)
+        if statement_bytes > MAX_INSERT_BYTES and not statement.lstrip().upper().startswith("CREATE "):
+            raise ValueError(
+                f"第 {statement_index + 1} 條 SQL 為 {statement_bytes:,} bytes，"
+                f"超過安全上限 {MAX_INSERT_BYTES:,} bytes"
+            )
+        separator_bytes = 1 if current else 0
+        if current and current_bytes + separator_bytes + statement_bytes > MAX_SQL_FILE_BYTES:
+            groups.append(current)
+            current = []
+            current_bytes = 0
+            separator_bytes = 0
+        current.append(statement)
+        current_bytes += separator_bytes + statement_bytes
+    if current:
+        groups.append(current)
+
+    paths = []
+    for part_index, statements in enumerate(groups):
+        path = f"{output_prefix}_{part_index}.sql"
+        with open(path, "w", encoding="utf-8") as handle:
+            handle.write("\n".join(statements))
+        paths.append(path)
+    return paths
+
+
 def append_github_step_summary(markdown_text: str):
     """將 Markdown 內容寫入 GitHub Actions $GITHUB_STEP_SUMMARY"""
     summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -187,22 +270,6 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
         s = str(val).replace("\r\n", " ").replace("\n", " ").replace("\r", " ")
         return "'" + s.replace("'", "''") + "'"
 
-    def build_batch_insert(table_name: str, columns: list, rows: list, or_action: str = "REPLACE", batch_size: int = 50) -> list:
-        """生成多列 INSERT 語句 (Multi-row INSERT)，大幅縮減 SQL 語句數量與 Cloudflare API 請求數"""
-        if not rows:
-            return []
-        statements = []
-        col_str = ", ".join(columns)
-        for i in range(0, len(rows), batch_size):
-            chunk = rows[i:i + batch_size]
-            values_list = []
-            for r in chunk:
-                row_vals = ", ".join(escape_sql(v) for v in r)
-                values_list.append(f"({row_vals})")
-            values_str = ",\n    ".join(values_list)
-            statements.append(f"INSERT OR {or_action} INTO {table_name} ({col_str}) VALUES\n    {values_str};")
-        return statements
-
     # 2. 導出 crawl_batches
     cursor.execute("SELECT * FROM crawl_batches WHERE crawled_time = ?", (latest_batch,))
     batch_rows = [(row['crawled_time'], row['benchmark_address'], row['benchmark_lat'], row['benchmark_lon'], row['total_discovered'], row['success_count'], row['fail_count']) for row in cursor.fetchall()]
@@ -210,6 +277,7 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
         "crawl_batches",
         ["crawled_time", "benchmark_address", "benchmark_lat", "benchmark_lon", "total_discovered", "success_count", "fail_count"],
         batch_rows,
+        escape_sql,
         or_action="REPLACE",
         batch_size=50
     ))
@@ -221,6 +289,7 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
         "stores",
         ["store_id", "crawled_time", "store_name", "store_type", "store_url", "rating_value", "review_count", "price_range", "telephone", "country_code", "region", "locality", "street_address", "postal_code", "latitude", "longitude", "order_action_url", "total_menu_items", "is_open"],
         store_rows,
+        escape_sql,
         or_action="REPLACE",
         batch_size=50
     ))
@@ -232,6 +301,7 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
         "products",
         ["product_id", "crawled_time", "store_id", "store_name", "category_name", "product_name", "price", "currency", "description", "promo_type", "quantity", "is_open"],
         product_rows,
+        escape_sql,
         or_action="REPLACE",
         batch_size=50
     ))
@@ -243,6 +313,7 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
         "store_cuisines",
         ["store_id", "crawled_time", "cuisine_name"],
         cuisine_rows,
+        escape_sql,
         or_action="IGNORE",
         batch_size=100
     ))
@@ -254,6 +325,7 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
         "store_business_hours",
         ["store_id", "crawled_time", "day_of_week", "opens_at", "closes_at"],
         hour_rows,
+        escape_sql,
         or_action="IGNORE",
         batch_size=100
     ))
@@ -265,6 +337,7 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
         "alerts_history",
         ["alert_type", "target_id", "store_id", "store_name", "product_name", "category_name", "original_price", "current_price", "discount_pct", "savings_amount", "promo_type", "order_action_url", "crawled_time"],
         alert_rows,
+        escape_sql,
         or_action="REPLACE",
         batch_size=50
     ))
@@ -275,19 +348,14 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
     with open(output_sql_path, "w", encoding="utf-8") as f:
         f.write("\n".join(sql_statements))
 
-    # 若語句數量超過 80 條或大於 2MB，自動切分為多個 sub-SQL 檔案避免 Wrangler D1 傳輸超時
-    sql_files = [output_sql_path]
-    chunk_stmt_size = 60  # 每個子檔案包含最多 60 條 Multi-row INSERT 語句 (約 3,000~6,000 筆資料)
-    if len(sql_statements) > chunk_stmt_size:
-        sql_files = []
-        # 保留 DDL 於第一個分片
-        for part_idx, i in enumerate(range(0, len(sql_statements), chunk_stmt_size)):
-            part_stmts = sql_statements[i:i + chunk_stmt_size]
-            part_path = f"d1_sync_part_{part_idx}.sql"
-            with open(part_path, "w", encoding="utf-8") as pf:
-                pf.write("\n".join(part_stmts))
-            sql_files.append(part_path)
-        print(f"📦 已自動切分為 {len(sql_files)} 個 D1 批次子檔案 (每檔約 {chunk_stmt_size} 條語句)")
+    # 固定依實際 UTF-8 大小分檔，避免中文字與長描述讓 byte 數遠高於字元估算。
+    sql_files = split_sql_files(sql_statements)
+    largest_statement = max(sql_utf8_size(statement) for statement in sql_statements)
+    largest_file = max(os.path.getsize(path) for path in sql_files)
+    print(
+        f"📦 已依 byte 大小切分為 {len(sql_files)} 個 D1 子檔案 "
+        f"(最大語句 {largest_statement:,} bytes；最大檔案 {largest_file:,} bytes)"
+    )
 
     print(f"📝 已生成 D1 同步 SQL 檔案: {output_sql_path} (共 {len(sql_statements)} 條語句, 分為 {len(sql_files)} 個執行檔)")
     return len(sql_statements), sql_files
@@ -499,8 +567,10 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
         print(f"   ▶ 正在匯入分塊 SQL [{f_idx}/{len(sql_files)}]: {current_sql_target}...")
         d1_sync_ok = False
         last_d1_err = ""
+        attempts_made = 0
 
         for attempt in range(1, 4):
+            attempts_made = attempt
             try:
                 cmd = f'npx wrangler d1 execute {db_name} --remote --file="{current_sql_target}"'
                 res = subprocess.run(
@@ -521,6 +591,9 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
                     last_d1_err = out_str.strip()
                     err_display = last_d1_err[-1500:] if len(last_d1_err) > 1500 else last_d1_err
                     print(f"      ⚠️ [嘗試 {attempt}/3 異常]:\n{err_display}")
+                    if "SQLITE_TOOBIG" in out_str or "statement too long" in out_str.lower():
+                        print("      ❌ SQL 大小錯誤不可藉由重試恢復，立即停止。")
+                        break
             except Exception as e:
                 last_d1_err = str(e)
                 print(f"      ⚠️ [嘗試 {attempt}/3 例外]: {e}")
@@ -532,10 +605,10 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
             err_report = last_d1_err[-1500:] if len(last_d1_err) > 1500 else last_d1_err
             fatal_error(
                 step_name=f"步驟 3.6 Cloudflare D1 分塊匯入 ({current_sql_target})",
-                reason=f"Wrangler 遠端寫入分塊 {current_sql_target} 重試 3 次皆失敗:\n{err_report}",
+                reason=f"Wrangler 遠端寫入分塊 {current_sql_target} 嘗試 {attempts_made} 次後失敗:\n{err_report}",
                 expected="Wrangler returncode == 0 且無錯誤",
                 actual="Wrangler 執行失敗",
-                retries=3
+                retries=attempts_made
             )
 
     print("✅ [步驟 3.6 通過] 所有 Cloudflare D1 遠端 SQL 批次分塊寫入成功！")
@@ -655,4 +728,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     sync_to_cloudflare_d1(args.src_dir, args.db_name, args.require_d1)
-
