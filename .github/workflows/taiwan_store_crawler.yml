@@ -15,16 +15,16 @@ on:
         required: false
         default: '15'
       max_pages_per_point:
-        description: '單點店家探索最大翻頁數 (預設 10 頁，0為無限制直到見底)'
+        description: '單點店家探索最大翻頁數 (預設 0，無限制直到見底)'
         required: false
-        default: '10'
+        default: '0'
 
 env:
   TZ: 'Asia/Taipei'
 
 # 全台批次共用同一個 D1/HF 目標；禁止排程與手動執行彼此覆寫。
 concurrency:
-  group: taiwan-store-menu-production
+  group: ubereats-production
   cancel-in-progress: false
 
 jobs:
@@ -39,12 +39,13 @@ jobs:
       has_tasks: ${{ steps.gen-matrix.outputs.has_tasks }}
       batch_id: ${{ steps.gen-matrix.outputs.batch_id }}
       total_points: ${{ steps.gen-matrix.outputs.total_points }}
+      num_workers: ${{ steps.gen-matrix.outputs.num_workers }}
     steps:
       - name: 檢出專案代碼
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: 設定 Python 環境
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
 
@@ -61,7 +62,7 @@ jobs:
 
       - name: 上傳點位分片任務設定 Artifact
         if: steps.gen-matrix.outputs.has_tasks == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: point-task-chunks
           path: tasks/
@@ -81,10 +82,10 @@ jobs:
       fail-fast: false
     steps:
       - name: 檢出專案代碼
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: 設定 Python 環境
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
 
@@ -92,7 +93,7 @@ jobs:
         run: pip install requests
 
       - name: 下載點位分片任務
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.1
         with:
           name: point-task-chunks
           path: tasks/
@@ -102,11 +103,11 @@ jobs:
           python scr/taiwan_store_worker.py \
             --chunk-file "tasks/chunk_${{ matrix.chunk_id }}.json" \
             --output-dir "output_worker_${{ matrix.chunk_id }}" \
-            --max-pages-per-point ${{ github.event.inputs.max_pages_per_point || 10 }} \
+            --max-pages-per-point ${{ github.event.inputs.max_pages_per_point || 0 }} \
             --concurrency 2
 
       - name: 上傳本節點店家探索成果
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: store-chunk-result-${{ matrix.chunk_id }}
           path: output_worker_${{ matrix.chunk_id }}/
@@ -125,12 +126,13 @@ jobs:
       has_menu_tasks: ${{ steps.run-reducer.outputs.has_menu_tasks }}
       total_unique_stores: ${{ steps.run-reducer.outputs.total_unique_stores }}
       batch_id: ${{ steps.run-reducer.outputs.batch_id }}
+      num_menu_workers: ${{ steps.run-reducer.outputs.num_menu_workers }}
     steps:
       - name: 檢出專案代碼
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: 設定 Python 環境
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
 
@@ -138,7 +140,7 @@ jobs:
         run: pip install huggingface_hub requests
 
       - name: 下載所有 Worker 的店家探索結果
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.1
         with:
           pattern: store-chunk-result-*
           path: all_store_discovery_outputs/
@@ -155,12 +157,13 @@ jobs:
             --output-dir "taiwan_stores_dataset" \
             --menu-tasks-dir "menu_tasks" \
             --max-menu-workers ${{ github.event.inputs.max_workers || 15 }} \
+            --expected-store-workers ${{ needs.point_coordinator.outputs.num_workers }} \
             --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" \
             --path-in-repo "TaiwanStores" \
             --db-path "ubereats_monitor.db"
 
       - name: 上傳全台店家完整資料集 Artifact (90天留存)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: taiwan-stores-full-dataset
           path: taiwan_stores_dataset/
@@ -168,7 +171,7 @@ jobs:
 
       - name: 上傳菜單採集任務分片 Artifact
         if: steps.run-reducer.outputs.has_menu_tasks == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: menu-task-chunks
           path: menu_tasks/
@@ -188,10 +191,10 @@ jobs:
       fail-fast: false
     steps:
       - name: 檢出專案代碼
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: 設定 Python 環境
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
 
@@ -199,7 +202,7 @@ jobs:
         run: pip install requests
 
       - name: 下載菜單採集任務設定
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.1
         with:
           name: menu-task-chunks
           path: menu_tasks/
@@ -214,10 +217,11 @@ jobs:
       - name: 上傳本節點菜單 JSON 結果 Artifact (雙重保險)
         id: upload-menu-artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: menu-result-chunk-${{ matrix.chunk_id }}
           path: output_menu_worker_${{ matrix.chunk_id }}/
+          if-no-files-found: error
           retention-days: 14
 
       - name: 寫入 Stage 4 Artifact Checkpoint
@@ -245,21 +249,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 檢出專案代碼
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: 設定 Python 環境
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
 
       - name: 下載全部 Menu Worker Artifacts（保留分片目錄）
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.1
         with:
           pattern: menu-result-chunk-*
           path: menu_worker_artifacts/
 
       - name: 下載全台店家清單供完整率檢核
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.1
         with:
           name: taiwan-stores-full-dataset
           path: taiwan_stores_dataset/
@@ -271,7 +275,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
-          EXPECTED_WORKERS: ${{ github.event.inputs.max_workers || 15 }}
+          EXPECTED_WORKERS: ${{ needs.store_reducer_and_menu_dispatcher.outputs.num_menu_workers }}
           BATCH_ID: ${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
         shell: bash
         run: |
@@ -289,7 +293,7 @@ jobs:
 
       - name: 保存 Stage 5 壓縮快照 Artifact（供補跑與稽核）
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: taiwan-menu-snapshot-${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
           path: packaged_snapshot/
@@ -306,70 +310,41 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 檢出專案代碼
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: 設定 Python & Node.js 環境
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7.0.0
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: 下載所有 Menu Worker 的 JSON 成果
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.1
         with:
           pattern: menu-result-chunk-*
           path: all_menu_lake/
           merge-multiple: true
 
       - name: 下載全台店家清單供完整率檢核
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.1
         with:
           name: taiwan-stores-full-dataset
           path: taiwan_stores_dataset/
-
-      - name: 驗證下載之菜單 JSON 檔案
-        run: |
-          python - <<'PY'
-          import glob, json, os, sys
-
-          with open("taiwan_stores_dataset/taiwan_all_stores.json", encoding="utf-8") as fh:
-              expected = len(json.load(fh))
-          files = glob.glob("all_menu_lake/*.json")
-          valid = 0
-          for path in files:
-              try:
-                  with open(path, encoding="utf-8") as fh:
-                      doc = json.load(fh)
-                  if isinstance(doc, dict) and doc.get("name"):
-                      valid += 1
-              except Exception:
-                  pass
-
-          coverage = valid / expected if expected else 0
-          print(f"📦 菜單成果：有效 {valid:,} / 指派 {expected:,} 間（{coverage:.2%}）")
-          status = "✅" if valid == expected and expected > 0 else "❌"
-          summary = os.environ.get("GITHUB_STEP_SUMMARY")
-          if summary:
-              with open(summary, "a", encoding="utf-8") as out:
-                  out.write("## Stage 6 ETL 輸入檢核\n\n")
-                  out.write("| 檢核項目 | 通過標準 | 實際結果 | 狀態 |\n")
-                  out.write("| :--- | :--- | :--- | :---: |\n")
-                  out.write(f"| 菜單 JSON 完整率 | `{expected}` / `{expected}`（100%） | `{valid}` / `{expected}`（{coverage:.2%}） | {status} |\n")
-                  out.write("| 部分批次覆寫保護 | 不允許缺件 | " + ("完整批次" if status == "✅" else "已阻擋不完整批次") + f" | {status} |\n\n")
-          if valid <= 0:
-              print("❌ 未收集到任何有效菜單 JSON。", file=sys.stderr)
-              sys.exit(1)
-          if valid != expected:
-              print("❌ 菜單採集並非 100% 完整，拒絕以部分批次覆寫正式 D1。", file=sys.stderr)
-              sys.exit(1)
-          PY
 
       - name: 安裝同步工具
         run: |
           pip install requests
           npm install -g wrangler
+
+      - name: 準備批次發布資料表並部署受保護 API
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          python scr/prepare_publication.py
+          npx wrangler deploy
 
       - name: ① 執行 ETL 並批次同步至 Cloudflare D1
         env:
@@ -379,6 +354,9 @@ jobs:
           python scr/json_to_cf_d1.py \
             --src-dir all_menu_lake/ \
             --db-name "ubereats_monitor" \
+            --scope taiwan \
+            --stores-file taiwan_stores_dataset/taiwan_all_stores.json \
+            --batch-id "${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}" \
             --require-d1
 
       - name: ② 自動部署最新 Cloudflare Worker API
@@ -396,13 +374,13 @@ jobs:
           PAGE_URL="https://fafagoback.github.io/UberEat/"
           api_body="$(curl --fail --silent --show-error --retry 3 "$API_URL")"
           page_body="$(curl --fail --silent --show-error --retry 3 "$PAGE_URL")"
-          python - "$api_body" <<'PY'
+          python - "$api_body" "${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}" <<'PY'
           import json, sys
           payload = json.loads(sys.argv[1])
           stats = payload.get("stats", payload)
           stores = stats.get("total_stores") or stats.get("total_monitored_stores") or 0
           products = stats.get("total_products") or stats.get("total_monitored_products") or 0
-          if stores <= 0 or products <= 0:
+          if stores <= 0 or products <= 0 or stats.get("latest_batch") != sys.argv[2]:
               raise SystemExit(f"❌ Production API 回查失敗：stores={stores}, products={products}")
           print(f"✅ Production API：stores={stores:,}, products={products:,}")
           PY

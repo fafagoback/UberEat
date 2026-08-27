@@ -30,6 +30,7 @@ from datetime import datetime, timezone, timedelta
 
 TW_TZ = timezone(timedelta(hours=8))
 from typing import Dict, List, Tuple, Any, Optional
+from collections import defaultdict
 
 # 確保標準輸出支援 UTF-8
 if hasattr(sys.stdout, 'reconfigure'):
@@ -42,6 +43,30 @@ if hasattr(sys.stdout, 'reconfigure'):
 def get_md5_hash(text: str) -> str:
     """產生字串的 MD5 雜湊值 (32 碼小寫十六進位字串)"""
     return hashlib.md5(text.encode('utf-8')).hexdigest()
+
+
+def menu_identity_keys(sections, store_id):
+    """Preserve legacy IDs for unambiguous names, split genuinely distinct items.
+
+    Historical same-name variants cannot be reliably separated retroactively.
+    Their new IDs intentionally start separate histories instead of guessing.
+    """
+    variants = defaultdict(set)
+    for section in sections:
+        for item in section.get("hasMenuItem", []):
+            name = html.unescape(str(item.get("name", ""))).strip()
+            source_id = item.get("identifier")
+            if source_id:
+                variants[name].add(str(source_id))
+    def key(item):
+        name = html.unescape(str(item.get("name", ""))).strip()
+        if len(variants[name]) > 1:
+            source_id = item.get("identifier")
+            if not source_id:
+                raise ValueError(f"ambiguous same-name menu item without identifier: {name}")
+            return get_md5_hash(f"{store_id}_source:{source_id}")
+        return get_md5_hash(f"{store_id}_{name}")
+    return key
 
 
 def normalize_time_str(t_str: Optional[str]) -> str:
@@ -139,6 +164,8 @@ class UberEatsDBImporter:
 
     def connect(self) -> sqlite3.Connection:
         """建立資料庫連線並啟用外鍵與 WAL 模式"""
+        if self.conn is not None:
+            return self.conn
         self.conn = sqlite3.connect(self.db_path)
         self.conn.execute("PRAGMA foreign_keys = ON;")
         self.conn.execute("PRAGMA journal_mode = WAL;")
@@ -514,6 +541,7 @@ class UberEatsDBImporter:
             if isinstance(has_menu, dict):
                 sections = has_menu.get("hasMenuSection", [])
                 if isinstance(sections, list):
+                    item_identity = menu_identity_keys(sections, store_id)
                     for sec in sections:
                         if not isinstance(sec, dict):
                             continue
@@ -528,7 +556,7 @@ class UberEatsDBImporter:
                                 if not pname:
                                     continue
 
-                                pid = get_md5_hash(f"{store_id}_{pname}")
+                                pid = item_identity(item)
                                 
                                 offers = item.get("offers", {})
                                 p_raw = offers.get("price") if isinstance(offers, dict) else None

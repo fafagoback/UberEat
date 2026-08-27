@@ -45,6 +45,8 @@ class UberEatsAlertEngine:
 
     def connect(self) -> sqlite3.Connection:
         """建立資料庫連線"""
+        if self.conn is not None:
+            return self.conn
         self.conn = sqlite3.connect(self.db_path)
         self.conn.execute("PRAGMA foreign_keys = ON;")
         self.conn.execute("PRAGMA journal_mode = WAL;")

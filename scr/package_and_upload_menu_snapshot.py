@@ -10,6 +10,7 @@ import sys
 import tarfile
 import time
 from datetime import datetime, timedelta, timezone
+from snapshot_validation import validate_snapshot, archive_member
 
 TW_TZ = timezone(timedelta(hours=8))
 
@@ -52,6 +53,7 @@ def main() -> None:
     parser.add_argument("--actual-workers", type=int, required=True)
     parser.add_argument("--repo-id", required=True)
     parser.add_argument("--path-in-repo", default="TaiwanMenuSnapshots")
+    parser.add_argument("--offline", action="store_true", help="Validate and package without uploading")
     args = parser.parse_args()
 
     started = time.time()
@@ -66,30 +68,11 @@ def main() -> None:
     with open(args.stores_file, encoding="utf-8") as fh:
         stores = json.load(fh)
     expected = len(stores)
-    files = sorted(glob.glob(os.path.join(args.src_dir, "**", "*.json"), recursive=True))
-    valid_files: list[str] = []
-    store_keys: list[str] = []
-    invalid = 0
-    for path in files:
-        try:
-            with open(path, encoding="utf-8") as fh:
-                doc = json.load(fh)
-            if not isinstance(doc, dict) or not doc.get("name"):
-                raise ValueError("missing name")
-            valid_files.append(path)
-            store_keys.append(str(doc.get("store_id") or doc.get("identifier") or os.path.basename(path).split("_", 2)[1]))
-        except Exception:
-            invalid += 1
-
-    complete = len(valid_files) == expected and invalid == 0
-    rows.append(f"| JSON 完整性 | `{expected}` 個有效、0 個無效 | `{len(valid_files)}` 個有效、`{invalid}` 個無效 | {'✅' if complete else '❌'} |")
-    if not complete:
-        fail(batch_id, "菜單 JSON 未達 100% 完整", rows)
-
-    duplicate_count = len(store_keys) - len(set(store_keys))
-    rows.append(f"| 店家主鍵唯一性 | 0 筆重複 | `{duplicate_count}` 筆重複 | {'✅' if duplicate_count == 0 else '❌'} |")
-    if duplicate_count:
-        fail(batch_id, "菜單成果含重複店家", rows)
+    try:
+        valid_files = validate_snapshot(args.src_dir, stores, batch_id)
+    except ValueError as exc:
+        fail(batch_id, str(exc), rows)
+    rows.append(f"| 身分、批次與 Schema | 指派集合完全相同 | `{len(valid_files)}` 個唯一店家 | ✅ |")
 
     os.makedirs(args.output_dir, exist_ok=True)
     archive_name = f"taiwan_menus_{batch_id}.tar.gz"
@@ -109,7 +92,7 @@ def main() -> None:
     with tarfile.open(archive_path, "w:gz") as tar:
         tar.add(manifest_path, arcname="manifest.json")
         for path in valid_files:
-            tar.add(path, arcname=f"Json/{os.path.basename(path)}")
+            tar.add(path, arcname=archive_member(path, batch_id))
 
     with tarfile.open(archive_path, "r:gz") as tar:
         members = tar.getmembers()
@@ -121,6 +104,10 @@ def main() -> None:
     rows.append(f"| SHA-256 | 64 字元 digest | `{digest}` | ✅ |")
     if not archive_ok:
         fail(batch_id, "壓縮檔回讀數量不一致", rows)
+
+    if args.offline:
+        print(f"Validated offline snapshot: {archive_path} ({digest})")
+        return
 
     token = os.environ.get("HF_TOKEN")
     if not token:

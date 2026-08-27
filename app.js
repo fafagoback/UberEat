@@ -314,12 +314,12 @@ function renderDiscounts() {
 
           <!-- 操作按鈕 (價格歷程 & Uber Eats 下單) -->
           <div class="grid grid-cols-2 gap-2 pt-1">
-            <button onclick="showPriceHistoryModal('${item.product_id}', '${escapeJs(item.product_name)}', '${escapeJs(item.store_name)}', '${escapeJs(orderUrl)}')" class="px-3 py-2 text-xs font-medium rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-1.5">
+            <button data-action="history" data-args="${escapeHtml(JSON.stringify([item.product_id, item.product_name, item.store_name, orderUrl]))}" class="px-3 py-2 text-xs font-medium rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-1.5">
               <i data-lucide="line-chart" class="w-3.5 h-3.5"></i>
               價格走勢
             </button>
 
-            <a href="${orderUrl}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(orderUrl)}', '${escapeJs(item.product_name)}', '${escapeJs(item.store_name)}')" class="px-3 py-2 text-xs font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white shadow-md shadow-emerald-600/20 transition-all flex items-center justify-center gap-1.5 active:scale-95">
+            <a href="${escapeHtml(safeOrderUrl(orderUrl))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([orderUrl, item.product_name, item.store_name]))}" class="px-3 py-2 text-xs font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white shadow-md shadow-emerald-600/20 transition-all flex items-center justify-center gap-1.5 active:scale-95">
               <span>前往下單</span>
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
@@ -407,7 +407,7 @@ function renderNewStores() {
             菜單共 <strong>${store.total_menu_items || 0}</strong> 道菜品
           </span>
 
-          <a href="${store.order_action_url || store.store_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(store.order_action_url || store.store_url || '')}', '', '${escapeJs(store.store_name)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-300 dark:hover:bg-emerald-900 transition-colors">
+          <a href="${escapeHtml(safeOrderUrl(store.order_action_url || store.store_url || '#'))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([store.order_action_url || store.store_url || '', "", store.store_name]))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-300 dark:hover:bg-emerald-900 transition-colors">
             <span>瀏覽店家</span>
             <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
           </a>
@@ -504,7 +504,7 @@ function renderNewProducts() {
         </div>
 
         <div class="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-end">
-          <a href="${prod.order_action_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(prod.order_action_url || '')}', '${escapeJs(prod.product_name)}', '${escapeJs(prod.store_name)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-600/20 transition-all active:scale-95">
+          <a href="${escapeHtml(safeOrderUrl(prod.order_action_url || '#'))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([prod.order_action_url || '', prod.product_name, prod.store_name]))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-600/20 transition-all active:scale-95">
             <span>前往點餐</span>
             <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
           </a>
@@ -709,7 +709,7 @@ function renderPromotions() {
             ` : ''}
           </div>
 
-          <a href="${p.order_action_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(p.order_action_url || '')}', '${escapeJs(p.product_name)}', '${escapeJs(p.store_name)}')" class="w-full py-2 rounded-xl text-xs font-semibold bg-purple-600 hover:bg-purple-700 text-white shadow-md shadow-purple-600/20 transition-all flex items-center justify-center gap-1.5 active:scale-95">
+          <a href="${escapeHtml(safeOrderUrl(p.order_action_url || '#'))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([p.order_action_url || '', p.product_name, p.store_name]))}" class="w-full py-2 rounded-xl text-xs font-semibold bg-purple-600 hover:bg-purple-700 text-white shadow-md shadow-purple-600/20 transition-all flex items-center justify-center gap-1.5 active:scale-95">
             <span>前往搶購</span>
             <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
           </a>
@@ -724,7 +724,13 @@ function renderPromotions() {
 // -----------------------------------------------------------------------------
 // 7. 全庫商品搜尋 (Tab 5)
 // -----------------------------------------------------------------------------
+let globalSearchController;
+let globalSearchSequence = 0;
 async function fetchGlobalProducts(page = 1) {
+  globalSearchController?.abort();
+  const controller = new AbortController();
+  globalSearchController = controller;
+  const sequence = ++globalSearchSequence;
   if (!APP_STATE.isServerMode) {
     document.getElementById('global-total-count').textContent = '僅在伺服器模式支援全品檢索';
     return;
@@ -751,7 +757,7 @@ async function fetchGlobalProducts(page = 1) {
   });
 
   try {
-    const res = await fetch(getApiUrl(`/api/products?${params.toString()}`));
+    const res = await fetch(getApiUrl(`/api/products?${params.toString()}`), { signal: controller.signal });
     if (res.ok) {
       const data = await res.json();
       let items = data.items || [];
@@ -788,6 +794,7 @@ async function fetchGlobalProducts(page = 1) {
         return 0;
       });
 
+      if (sequence !== globalSearchSequence) return;
       APP_STATE.globalProducts = items;
       APP_STATE.globalTotalPages = data.total_pages || 1;
       if (countEl) {
@@ -797,9 +804,9 @@ async function fetchGlobalProducts(page = 1) {
       renderGlobalPagination();
     }
   } catch (err) {
-    console.error('全庫搜尋失敗:', err);
+    if (err.name !== 'AbortError') console.error('全庫搜尋失敗:', err);
   } finally {
-    if (container) {
+    if (container && sequence === globalSearchSequence) {
       container.style.opacity = '1';
     }
   }
@@ -873,10 +880,10 @@ function renderGlobalProducts() {
 
         <!-- 底部按鈕：走勢 & 直達 Uber Eats 下單 -->
         <div class="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
-          <button onclick="showPriceHistoryModal('${p.product_id}', '${escapeJs(p.product_name)}', '${escapeJs(p.store_name)}', '${escapeJs(p.order_action_url || '')}')" class="text-xs text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-1">
+          <button data-action="history" data-args="${escapeHtml(JSON.stringify([p.product_id, p.product_name, p.store_name, p.order_action_url || '']))}" class="text-xs text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-1">
             <i data-lucide="line-chart" class="w-3.5 h-3.5"></i>走勢
           </button>
-          <a href="${p.order_action_url || '#'}" target="_blank" rel="noopener noreferrer" onclick="openUberEatsOrder(event, '${escapeJs(p.order_action_url || '')}', '${escapeJs(p.product_name)}', '${escapeJs(p.store_name)}')" class="text-xs text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1 active:scale-95 transition-transform">
+          <a href="${escapeHtml(safeOrderUrl(p.order_action_url || '#'))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([p.order_action_url || '', p.product_name, p.store_name]))}" class="text-xs text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1 active:scale-95 transition-transform">
             下單 <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
           </a>
         </div>
@@ -920,7 +927,7 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
   
   const orderBtn = document.getElementById('modal-order-btn');
   if (orderBtn) {
-    orderBtn.href = orderUrl || '#';
+    orderBtn.href = safeOrderUrl(orderUrl);
     orderBtn.onclick = (e) => openUberEatsOrder(e, orderUrl, productName, storeName);
   }
 
@@ -948,7 +955,7 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
       <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
         <td class="px-3 py-2 font-mono text-slate-600 dark:text-slate-300">${formatBatchDate(h.crawled_time)}</td>
         <td class="px-3 py-2 font-mono font-medium">$${h.price}</td>
-        <td class="px-3 py-2"><span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 dark:bg-slate-800">${h.promo_type || '無'}</span></td>
+        <td class="px-3 py-2"><span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 dark:bg-slate-800">${escapeHtml(h.promo_type || '無')}</span></td>
         <td class="px-3 py-2 text-right font-mono font-bold text-emerald-600 dark:text-emerald-400">$${h.eff_price}</td>
       </tr>
     `).join('');
@@ -1182,7 +1189,7 @@ async function openUberEatsOrder(event, url, productName = '', storeName = '') {
   }
 
   // 清理 URL 實體編碼
-  let targetUrl = (url || '').replace(/&amp;/g, '&').trim();
+  let targetUrl = safeOrderUrl(url);
 
   // 若目標 URL 為空或無效，自動 fallback 透過 Uber Eats 搜尋店家或商品
   if (!targetUrl || targetUrl === '#' || targetUrl === '') {
@@ -1277,3 +1284,23 @@ function showToast(title, message, iconType = 'copy', duration = 4000) {
   }, duration);
 }
 
+
+
+function safeOrderUrl(value) {
+  try {
+    const url = new URL(String(value || '').replace(/&amp;/g, '&'));
+    return url.protocol === 'https:' && ['www.ubereats.com', 'ubereats.com'].includes(url.hostname)
+      && !url.username && !url.password ? url.href : '#';
+  } catch { return '#'; }
+}
+
+// Dataset text is data, never executable HTML event-handler code.
+document.addEventListener('click', event => {
+  const element = event.target.closest('[data-action][data-args]');
+  if (!element) return;
+  try {
+    const args = JSON.parse(element.dataset.args);
+    if (element.dataset.action === 'history') showPriceHistoryModal(...args);
+    else if (element.dataset.action === 'order') openUberEatsOrder(event, ...args);
+  } catch (error) { console.error('Invalid action data', error); }
+});

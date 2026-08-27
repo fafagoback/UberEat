@@ -142,11 +142,14 @@ def main():
     parser.add_argument("--output-dir", default="taiwan_stores_dataset", help="最終資料集匯出目錄")
     parser.add_argument("--menu-tasks-dir", default="menu_tasks", help="菜單採集分片任務輸出目錄")
     parser.add_argument("--max-menu-workers", type=int, default=15, help="菜單工作機台數 (預設 15)")
+    parser.add_argument("--expected-store-workers", type=int, required=True)
     parser.add_argument("--push-to-hf", action="store_true", default=True, help="是否將店家資料集推送至 Hugging Face")
     parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "hub-google/UberEat"), help="Hugging Face Dataset Repo ID")
     parser.add_argument("--path-in-repo", default="TaiwanStores", help="店家清單在 HF Dataset 內部的目錄路徑")
     parser.add_argument("--db-path", default="ubereats_monitor.db", help="SQLite 資料庫路徑")
     args = parser.parse_args()
+    if not 1 <= args.max_menu_workers <= 15:
+        parser.error("max-menu-workers must be between 1 and 15")
 
     start_time = time.time()
     now_dt = datetime.now(TW_TZ)
@@ -175,8 +178,8 @@ def main():
 
     print(f"🔍 找到 {len(chunk_files)} 個 Worker 結果分片檔案。")
 
-    if len(chunk_files) != args.max_menu_workers:
-        print(f"❌ 錯誤：預期 {args.max_menu_workers} 個 Worker JSON，實際 {len(chunk_files)} 個！", file=sys.stderr)
+    if len(chunk_files) != args.expected_store_workers:
+        print(f"❌ 錯誤：預期 {args.expected_store_workers} 個 Worker JSON，實際 {len(chunk_files)} 個！", file=sys.stderr)
         sys.exit(1)
 
     global_stores = {}
@@ -184,6 +187,8 @@ def main():
     worker_stats = []
     total_raw_store_sightings = 0
     parse_errors = []
+    seen_chunks = set()
+    seen_batches = set()
 
     # 2. 逐一讀取並合併去重
     for cf in chunk_files:
@@ -193,6 +198,12 @@ def main():
 
             c_id = data.get("chunk_id", os.path.basename(cf))
             b_id = data.get("batch_id")
+            if c_id in seen_chunks or c_id not in range(args.expected_store_workers):
+                raise ValueError("duplicate or unexpected chunk ID")
+            seen_chunks.add(c_id)
+            seen_batches.add(b_id)
+            if not b_id or len(seen_batches) != 1:
+                raise ValueError("missing or mixed batch IDs")
             if b_id:
                 batch_id = b_id
 
@@ -414,6 +425,7 @@ def main():
     menu_matrix_json = json.dumps({"include": menu_matrix_include})
     set_github_output("menu_matrix", menu_matrix_json)
     set_github_output("has_menu_tasks", "true" if num_menu_workers > 0 else "false")
+    set_github_output("num_menu_workers", str(num_menu_workers))
     set_github_output("total_unique_stores", str(total_unique_stores))
     set_github_output("batch_id", batch_id)
 
@@ -436,7 +448,7 @@ def main():
 ### ✅ Stage 3 產出 Checkpoint
 | 檢核項目 | 預期 | 實際 | 狀態 |
 | :--- | :--- | :--- | :---: |
-| Store Worker 分片 | `{args.max_menu_workers}` 份 | `{len(chunk_files)}` 份 | {'✅' if len(chunk_files) == args.max_menu_workers else '❌'} |
+| Store Worker 分片 | `{args.expected_store_workers}` 份 | `{len(chunk_files)}` 份 | {'✅' if len(chunk_files) == args.expected_store_workers else '❌'} |
 | 標準資料集 | 4 個非空檔案 | `{sum(1 for p in checkpoint_files[:4] if os.path.isfile(p) and os.path.getsize(p) > 0)}` 個 | {'✅' if not empty_files else '❌'} |
 | 菜單任務分片 | `{num_menu_workers}` 份、合計 `{total_unique_stores}` 店 | `{num_menu_workers}` 份、合計 `{checkpoint_menu_total}` 店 | {'✅' if checkpoint_menu_total == total_unique_stores else '❌'} |
 | 店家主鍵唯一性 | 無重複 | `{len(menu_ids) - len(set(menu_ids))}` 筆重複 | {'✅' if len(menu_ids) == len(set(menu_ids)) else '❌'} |

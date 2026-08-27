@@ -34,6 +34,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from location_batch_scraper import crawl_stores_with_watchdog, get_md5_hash
+from snapshot_validation import validate_document, validate_snapshot
 
 
 def append_github_step_summary(markdown_text: str):
@@ -84,8 +85,7 @@ def validate_schema_json(file_path: str) -> tuple:
             data = json.load(f)
         if not isinstance(data, dict):
             return False, "JSON 根節點不是物件"
-        if not data.get("name"):
-            return False, "缺少店家名稱 (name)"
+        validate_document(data)
         return True, "OK"
     except Exception as e:
         return False, f"JSON 解析異常: {e}"
@@ -159,6 +159,7 @@ def main():
     # 3. 實體產出檢核
     print(f"\n🔍 【步驟 4.3】執行產出 Schema.org JSON 檔案實體檢核...")
     json_files = glob.glob(os.path.join(args.output_dir, "*.json"))
+    validate_snapshot(args.output_dir, stores, batch_id)
     valid_json_count = 0
     invalid_files = []
 

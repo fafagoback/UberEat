@@ -34,6 +34,7 @@ TW_TZ = timezone(timedelta(hours=8))
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
+from snapshot_validation import validate_document
 
 # 確保標準輸出支援 UTF-8
 if hasattr(sys.stdout, 'reconfigure'):
@@ -372,7 +373,7 @@ def convert_api_data_to_schema(api_data: dict, store_url: str, fallback_name: st
     
     # 解析原生營業狀態 (即時布林值)
     is_open_val = api_data.get('isOpen')
-    is_open_bool = bool(is_open_val) if is_open_val is not None else True
+    is_open_bool = bool(is_open_val) if is_open_val is not None else None
     
     sections = []
     catalog = api_data.get('catalogSectionsMap') or {}
@@ -402,6 +403,7 @@ def convert_api_data_to_schema(api_data: dict, store_url: str, fallback_name: st
                         
                     menu_items.append({
                         "@type": "MenuItem",
+                        "identifier": it.get("uuid") or it.get("itemUuid") or it.get("id"),
                         "name": pname,
                         "description": it.get('itemDescription') or '',
                         "offers": {
@@ -424,6 +426,7 @@ def convert_api_data_to_schema(api_data: dict, store_url: str, fallback_name: st
         "@id": store_url,
         "name": title,
         "isOpen": is_open_bool,
+        "menu_status": "empty_confirmed" if api_data.get("catalogSectionsMap") == {} else "present",
         "telephone": api_data.get('phoneNumber') or "",
         "workingHoursTagline": api_data.get('workingHoursTagline') or "",
         "closedMessage": api_data.get('closedMessage') or "",
@@ -508,14 +511,16 @@ def fetch_single_store(store_item: dict, output_dir: str, time_prefix: str = "",
                     continue
                 elif resp.status_code == 200:
                     res_json = resp.json()
-                    if res_json.get("status") == "success" or "data" in res_json:
+                    if res_json.get("status") in (None, "success") and "data" in res_json:
                         api_data = res_json.get("data", {})
                         if api_data and (api_data.get("title") or api_data.get("catalogSectionsMap")):
                             schema_doc = convert_api_data_to_schema(api_data, store_url, store_item.get("name", ""))
+                            schema_doc.update(store_id=store_id, store_uuid=store_uuid, batch_id=time_prefix.rstrip("_"))
+                            validate_document(schema_doc)
                             
                             real_name = schema_doc["name"]
                             safe_name = clean_filename(real_name)
-                            filename = f"{time_prefix}{store_id[:8]}_{safe_name}.json"
+                            filename = f"{time_prefix}{store_id}_{safe_name}.json"
                             file_path = os.path.join(output_dir, filename)
                             
                             with open(file_path, "w", encoding="utf-8") as f:
@@ -552,10 +557,13 @@ def fetch_single_store(store_item: dict, output_dir: str, time_prefix: str = "",
                     try:
                         d = json.loads(s)
                         if d.get("@type") in ["Restaurant", "Store", "GroceryStore", "FoodEstablishment", "LocalBusiness"]:
+                            d["@id"] = store_url
+                            d.update(store_id=store_id, store_uuid=store_uuid, batch_id=time_prefix.rstrip("_"))
+                            validate_document(d)
                             raw_name = d.get("name") or store_item.get("name") or "未命名店家"
                             real_name = html.unescape(str(raw_name)).strip()
                             safe_name = clean_filename(real_name)
-                            filename = f"{time_prefix}{store_id[:8]}_{safe_name}.json"
+                            filename = f"{time_prefix}{store_id}_{safe_name}.json"
                             file_path = os.path.join(output_dir, filename)
                             with open(file_path, "w", encoding="utf-8") as f:
                                 json.dump(d, f, ensure_ascii=False, indent=2)
@@ -564,7 +572,7 @@ def fetch_single_store(store_item: dict, output_dir: str, time_prefix: str = "",
                                 "store_name": real_name,
                                 "store_id": store_id,
                                 "store_url": store_url,
-                                "total_items": 0,
+                                "total_items": sum(len(section["hasMenuItem"]) for section in d["hasMenu"]["hasMenuSection"]),
                                 "rating": d.get("aggregateRating", {}).get("ratingValue"),
                                 "review_count": d.get("aggregateRating", {}).get("reviewCount"),
                                 "file_path": file_path,

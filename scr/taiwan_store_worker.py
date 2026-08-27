@@ -192,9 +192,14 @@ def scan_single_point(point: dict, max_pages: int = 10) -> tuple:
                     time.sleep(1.0 * attempt)
                     continue
 
-                data = resp.json().get("data", {})
+                envelope = resp.json()
+                data = envelope.get("data")
+                if not isinstance(data, dict) or "feedItems" not in data or not isinstance(data.get("meta"), dict):
+                    raise ValueError("invalid feed response")
                 feed_items = data.get("feedItems", [])
                 meta = data.get("meta", {})
+                if not isinstance(meta.get("hasMore"), bool):
+                    raise ValueError("missing or invalid feed pagination metadata")
                 has_more = meta.get("hasMore", False)
                 next_offset = meta.get("offset", offset)
 
@@ -218,7 +223,9 @@ def scan_single_point(point: dict, max_pages: int = 10) -> tuple:
                             if s.get(f) and not stores_found[key].get(f):
                                 stores_found[key][f] = s[f]
 
-                if not has_more or next_offset == offset or len(feed_items) == 0:
+                if has_more and (next_offset == offset or len(feed_items) == 0):
+                    raise ValueError("feed pagination stalled while hasMore=true")
+                if not has_more:
                     has_more = False
 
                 offset = next_offset
@@ -229,7 +236,10 @@ def scan_single_point(point: dict, max_pages: int = 10) -> tuple:
                 time.sleep(1.0 * attempt)
 
         if not page_success:
-            break
+            raise RuntimeError(f"point {p_id}: page {page} failed after 3 attempts")
+
+    if has_more:
+        raise RuntimeError(f"point {p_id}: truncated at max_pages={max_pages}; use 0 for complete discovery")
 
     return p_id, list(stores_found.values()), page - 1
 
@@ -241,6 +251,8 @@ def main():
     parser.add_argument("--max-pages-per-point", type=int, default=10, help="每個座標點最大翻頁數 (預設 10，0為無限制)")
     parser.add_argument("--concurrency", type=int, default=2, help="本節點內部平行連線數 (預設 2)")
     args = parser.parse_args()
+    if args.max_pages_per_point < 0 or args.concurrency < 1:
+        parser.error("max-pages-per-point must be >= 0 and concurrency must be >= 1")
 
     start_time = time.time()
 

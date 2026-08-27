@@ -32,6 +32,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from location_batch_scraper import crawl_stores_with_watchdog
+from snapshot_validation import validate_snapshot, validate_document
 
 
 def append_github_step_summary(markdown_text: str):
@@ -82,8 +83,7 @@ def validate_json_file(file_path: str) -> tuple:
             data = json.load(f)
         if not isinstance(data, dict):
             return False, "JSON 根節點不是物件"
-        if not data.get("name"):
-            return False, "缺少店家名稱 (name)"
+        validate_document(data)
         return True, "OK"
     except Exception as e:
         return False, f"JSON 解析異常: {e}"
@@ -169,6 +169,7 @@ def main():
     # ---------------------------------------------------------
     print(f"\n🔍 【步驟 2.3】執行產出 JSON 檔案實體檢核...")
     json_files = glob.glob(os.path.join(args.output_dir, "*.json"))
+    validate_snapshot(args.output_dir, stores, crawled_time)
     valid_json_count = 0
     invalid_files = []
 
@@ -185,7 +186,7 @@ def main():
         print(f"   └─ ⚠️ 格式異常檔案: {len(invalid_files)} 個 ({', '.join(invalid_files[:3])})")
 
     # 熔斷檢核判定: 成功店家數必須 > 0 且產出的有效 JSON 檔案數必須 > 0
-    if success_count == 0 or valid_json_count == 0:
+    if success_count != total_assigned or valid_json_count != total_assigned or invalid_files:
         fatal_error(
             chunk_id=chunk_id,
             step_name="步驟 2.3 採集產出檢核",

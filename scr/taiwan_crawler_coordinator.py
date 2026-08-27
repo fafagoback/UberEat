@@ -56,6 +56,8 @@ def main():
     parser.add_argument("--max-workers", type=int, default=15, help="工作機台數 (預設 15)")
     parser.add_argument("--output-dir", default="tasks", help="任務分片輸出目錄")
     args = parser.parse_args()
+    if not 1 <= args.max_workers <= 15:
+        parser.error("max-workers must be between 1 and 15")
 
     start_time = time.time()
     now_dt = datetime.now(TW_TZ)

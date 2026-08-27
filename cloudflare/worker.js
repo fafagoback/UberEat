@@ -56,7 +56,7 @@ export default {
     try {
       // 取得最新與前一次批次
       const batchQuery = await env.DB.prepare(
-        "SELECT DISTINCT crawled_time FROM products ORDER BY crawled_time DESC LIMIT 2"
+        "SELECT DISTINCT crawled_time FROM published_products ORDER BY crawled_time DESC LIMIT 2"
       ).all();
       const batches = (batchQuery.results || []).map((r) => r.crawled_time);
       const latestBatch = batches[0] || "";
@@ -98,24 +98,24 @@ export default {
         // 直接查詢計算各項統計，與清單顯示邏輯 100% 一致
         const [storeRes, prodRes, promoRes, newStoreRes, newProdRes] = await Promise.all([
           // 總店家數 (當前批次)
-          env.DB.prepare("SELECT COUNT(DISTINCT store_id) as cnt FROM stores WHERE crawled_time = ?").bind(latestBatch).first(),
+          env.DB.prepare("SELECT COUNT(DISTINCT store_id) as cnt FROM published_stores WHERE crawled_time = ?").bind(latestBatch).first(),
           // 總商品數 (當前批次，正常商品價格 >= 1)
-          env.DB.prepare("SELECT COUNT(*) as cnt FROM products WHERE crawled_time = ? AND price >= 1").bind(latestBatch).first(),
+          env.DB.prepare("SELECT COUNT(*) as cnt FROM published_products WHERE crawled_time = ? AND price >= 1").bind(latestBatch).first(),
           // 促銷特惠數 (當前批次)
-          env.DB.prepare(`SELECT COUNT(*) as cnt FROM products p WHERE p.crawled_time = ? AND p.price >= 1 AND ${PROMO_CONDITION}`).bind(latestBatch).first(),
+          env.DB.prepare(`SELECT COUNT(*) as cnt FROM published_products p WHERE p.crawled_time = ? AND p.price >= 1 AND ${PROMO_CONDITION}`).bind(latestBatch).first(),
           // 全新進駐店家數: 首次出現在最新批次的店家
           env.DB.prepare(`
-            SELECT COUNT(DISTINCT s1.store_id) as cnt FROM stores s1
+            SELECT COUNT(DISTINCT s1.store_id) as cnt FROM published_stores s1
             WHERE s1.crawled_time = ?
-              AND (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = s1.store_id) = s1.crawled_time
+              AND (SELECT MIN(s0.crawled_time) FROM published_stores s0 WHERE s0.store_id = s1.store_id) = s1.crawled_time
           `).bind(latestBatch).first(),
           // 老店新推菜色數: 菜品首次出現在最新批次，且所屬店家在更早批次就已存在
           env.DB.prepare(`
-            SELECT COUNT(*) as cnt FROM products p1
+            SELECT COUNT(*) as cnt FROM published_products p1
             WHERE p1.crawled_time = ?
               AND p1.price >= 1
-              AND (SELECT MIN(p0.crawled_time) FROM products p0 WHERE p0.product_id = p1.product_id) = p1.crawled_time
-              AND (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = p1.store_id) < p1.crawled_time
+              AND (SELECT MIN(p0.crawled_time) FROM published_products p0 WHERE p0.product_id = p1.product_id) = p1.crawled_time
+              AND (SELECT MIN(s0.crawled_time) FROM published_stores s0 WHERE s0.store_id = p1.store_id) < p1.crawled_time
           `).bind(latestBatch).first(),
         ]);
 
@@ -130,14 +130,14 @@ export default {
               ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff,
               (
                 SELECT MAX(p0.price * 1.0 / p0.quantity)
-                FROM products p0
+                FROM published_products p0
                 WHERE p0.product_id = p1.product_id
                   AND p0.crawled_time >= ?
                   AND p0.crawled_time < p1.crawled_time
                   AND p0.price >= 1
                   AND (p0.is_open = 1 OR p0.is_open IS NULL)
               ) as max_7d_eff
-            FROM products p1
+            FROM published_products p1
             WHERE p1.crawled_time = ?
               AND p1.price >= 1
               AND (p1.is_open = 1 OR p1.is_open IS NULL)
@@ -180,6 +180,9 @@ export default {
         const keyword = (params.get("q") || "").trim().toLowerCase();
         const category = (params.get("category") || "").trim();
         const sortBy = params.get("sort") || "discount_desc";
+        if (!Number.isFinite(minDiscount) || !Number.isFinite(minSavings) || minDiscount < 0 || minDiscount > 100 || minSavings < 0) {
+          return errorResponse("Invalid discount thresholds", 400);
+        }
 
         if (!latestBatch) {
           return jsonResponse({ status: "success", total: 0, items: [] });
@@ -199,21 +202,21 @@ export default {
             ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff_price,
             (
               SELECT MAX(p0.price * 1.0 / p0.quantity)
-              FROM products p0
+              FROM published_products p0
               WHERE p0.product_id = p1.product_id
                 AND p0.crawled_time >= ?
                 AND p0.crawled_time < p1.crawled_time
                 AND p0.price >= 1
                 AND (p0.is_open = 1 OR p0.is_open IS NULL)
             ) as max_7day_eff_price,
-            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
+            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM published_stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             s.review_count,
             s.locality,
             s.street_address,
             COALESCE(p1.is_open, s.is_open, 1) as is_open
-          FROM products p1
-          LEFT JOIN stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
+          FROM published_products p1
+          LEFT JOIN published_stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
           WHERE p1.crawled_time = ?
             AND p1.price >= 1
             AND (p1.is_open = 1 OR p1.is_open IS NULL)
@@ -309,10 +312,10 @@ export default {
               FROM store_cuisines sc
               WHERE sc.store_id = s1.store_id AND sc.crawled_time = s1.crawled_time
             ) as cuisines,
-            (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = s1.store_id) as first_seen
-          FROM stores s1
+            (SELECT MIN(s0.crawled_time) FROM published_stores s0 WHERE s0.store_id = s1.store_id) as first_seen
+          FROM published_stores s1
           WHERE s1.crawled_time = ?
-            AND (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = s1.store_id) = s1.crawled_time
+            AND (SELECT MIN(s0.crawled_time) FROM published_stores s0 WHERE s0.store_id = s1.store_id) = s1.crawled_time
           ORDER BY s1.rating_value DESC, s1.total_menu_items DESC;
         `;
         const res = await env.DB.prepare(query).bind(latestBatch).all();
@@ -341,16 +344,16 @@ export default {
             p1.promo_type,
             p1.quantity,
             ROUND(p1.price * 1.0 / p1.quantity, 2) as eff_price,
-            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
+            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM published_stores WHERE store_id = p1.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             COALESCE(p1.is_open, s.is_open, 1) as is_open,
-            (SELECT MIN(p0.crawled_time) FROM products p0 WHERE p0.product_id = p1.product_id) as product_first_seen
-          FROM products p1
-          JOIN stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
+            (SELECT MIN(p0.crawled_time) FROM published_products p0 WHERE p0.product_id = p1.product_id) as product_first_seen
+          FROM published_products p1
+          JOIN published_stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
           WHERE p1.crawled_time = ?
             AND p1.price >= 1
-            AND (SELECT MIN(p0.crawled_time) FROM products p0 WHERE p0.product_id = p1.product_id) = p1.crawled_time
-            AND (SELECT MIN(s0.crawled_time) FROM stores s0 WHERE s0.store_id = p1.store_id) < p1.crawled_time
+            AND (SELECT MIN(p0.crawled_time) FROM published_products p0 WHERE p0.product_id = p1.product_id) = p1.crawled_time
+            AND (SELECT MIN(s0.crawled_time) FROM published_stores s0 WHERE s0.store_id = p1.store_id) < p1.crawled_time
           ORDER BY p1.store_name, (p1.price * 1.0 / p1.quantity) DESC;
         `;
         const res = await env.DB.prepare(query).bind(latestBatch).all();
@@ -378,12 +381,12 @@ export default {
             p.promo_type,
             ROUND(p.price * 1.0 / p.quantity, 2) as eff_price,
             p.description,
-            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p.store_id LIMIT 1), '') as order_action_url,
+            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM published_stores WHERE store_id = p.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             s.locality,
             COALESCE(p.is_open, s.is_open, 1) as is_open
-          FROM products p
-          LEFT JOIN stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
+          FROM published_products p
+          LEFT JOIN published_stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
           WHERE p.crawled_time = ?
             AND ${PROMO_CONDITION}
             AND p.price >= 1
@@ -406,8 +409,13 @@ export default {
         const storeId = (params.get("store_id") || "").trim();
         const minPrice = parseFloat(params.get("min_price") || "0");
         const maxPrice = parseFloat(params.get("max_price") || "99999");
-        const page = parseInt(params.get("page") || "1", 10);
-        const limit = parseInt(params.get("limit") || "24", 10);
+        const page = Number(params.get("page") || "1");
+        const limit = Number(params.get("limit") || "24");
+        if (!Number.isSafeInteger(page) || page < 1 || page > 1000000 ||
+            !Number.isSafeInteger(limit) || limit < 1 || limit > 100 ||
+            !Number.isFinite(minPrice) || !Number.isFinite(maxPrice) || minPrice < 0 || maxPrice < minPrice) {
+          return errorResponse("Invalid pagination or price range", 400);
+        }
         const sortBy = params.get("sort") || "rating_desc";
 
         const sqlWhere = ["p.crawled_time = ?", "p.price >= 1"];
@@ -492,7 +500,7 @@ export default {
         const whereClause = " WHERE " + sqlWhere.join(" AND ");
 
         // 總數
-        const countQuery = `SELECT COUNT(*) as total FROM products p LEFT JOIN stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time ${whereClause}`;
+        const countQuery = `SELECT COUNT(*) as total FROM published_products p LEFT JOIN published_stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time ${whereClause}`;
         const countRes = await env.DB.prepare(countQuery).bind(...sqlParams).first();
         const total = countRes?.total || 0;
 
@@ -509,13 +517,13 @@ export default {
             p.promo_type,
             ROUND(p.price * 1.0 / p.quantity, 2) as eff_price,
             p.description,
-            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM stores WHERE store_id = p.store_id LIMIT 1), '') as order_action_url,
+            COALESCE(NULLIF(s.order_action_url, ''), s.store_url, (SELECT store_url FROM published_stores WHERE store_id = p.store_id LIMIT 1), '') as order_action_url,
             s.rating_value,
             s.review_count,
             s.locality,
             COALESCE(p.is_open, s.is_open, 1) as is_open
-          FROM products p
-          LEFT JOIN stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
+          FROM published_products p
+          LEFT JOIN published_stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
           ${whereClause}
           ${sortClause}
           LIMIT ? OFFSET ?;
@@ -556,7 +564,7 @@ export default {
             p.quantity,
             p.promo_type,
             ROUND(p.price * 1.0 / p.quantity, 2) as eff_price
-          FROM products p
+          FROM published_products p
           WHERE p.product_id = ?
           ORDER BY p.crawled_time ASC;
         `;

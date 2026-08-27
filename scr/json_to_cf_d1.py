@@ -20,6 +20,7 @@ import re
 import argparse
 import subprocess
 import sqlite3
+from contextlib import closing
 from datetime import datetime
 
 # 確保標準輸出與標準錯誤支援 UTF-8
@@ -36,6 +37,8 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 from json_to_db import UberEatsDBImporter
 from alert_engine import UberEatsAlertEngine
+from d1_publication import PUBLICATION_DDL, TABLES, query_remote, count_query, verify_counts
+from snapshot_validation import validate_document, validate_snapshot
 
 
 # D1/SQLite 對單條 SQL 有長度限制。保留足夠餘裕給 Wrangler 與遠端解析層，
@@ -160,7 +163,7 @@ def fatal_error(step_name: str, reason: str, expected: str = "", actual: str = "
     sys.exit(1)
 
 
-def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) -> int:
+def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str, scope: str = "regional") -> int:
     """將最新批次的 6 張資料表導出為 D1 專用的標準 SQL 批次語句"""
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
@@ -260,6 +263,23 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
     CREATE INDEX IF NOT EXISTS idx_alerts_time ON alerts_history (crawled_time DESC, alert_type);
     """
     sql_statements.append(ddl)
+    sql_statements.append(PUBLICATION_DDL)
+    if scope not in {"taiwan", "regional"} or len(latest_batch) != 14 or not latest_batch.isdigit():
+        raise ValueError("invalid scope or batch ID")
+    run_id = os.environ.get("GITHUB_RUN_ID", "local").replace("'", "''")
+    sql_statements.append(
+        f"INSERT INTO batch_publications (crawled_time,scope,status,source_run_id) "
+        f"VALUES ('{latest_batch}','{scope}','staging','{run_id}') ON CONFLICT(crawled_time) DO NOTHING;"
+    )
+    # Replaying a partially written batch must be idempotent, including tables with surrogate IDs.
+    for table in ("store_cuisines", "store_business_hours", "alerts_history", "products", "stores"):
+        sql_statements.append(f"DELETE FROM {table} WHERE crawled_time='{latest_batch}' AND EXISTS (SELECT 1 FROM batch_publications WHERE crawled_time='{latest_batch}' AND status='staging');")
+    sql_statements.extend([
+        "DELETE FROM store_cuisines WHERE id NOT IN (SELECT MIN(id) FROM store_cuisines GROUP BY store_id,crawled_time,cuisine_name);",
+        "DELETE FROM store_business_hours WHERE id NOT IN (SELECT MIN(id) FROM store_business_hours GROUP BY store_id,crawled_time,day_of_week,opens_at,closes_at);",
+        "CREATE UNIQUE INDEX IF NOT EXISTS idx_cuisines_unique ON store_cuisines(store_id,crawled_time,cuisine_name);",
+        "CREATE UNIQUE INDEX IF NOT EXISTS idx_hours_unique ON store_business_hours(store_id,crawled_time,day_of_week,opens_at,closes_at);",
+    ])
 
     def escape_sql(val):
         if val is None:
@@ -363,58 +383,21 @@ def generate_d1_sync_sql(db_path: str, output_sql_path: str, latest_batch: str) 
 
 
 def ensure_d1_schema_columns(db_name: str, cf_token: str, cf_account_id: str):
-    """確保遠端 Cloudflare D1 資料庫具備最新 schema 欄位 (自動執行 Schema Migration)"""
-    print(f"🔧 正在檢查 Cloudflare D1 ({db_name}) 資料表結構相容性...")
-    env_vars = dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
-
-    # 1. 檢查 stores 表結構
-    try:
-        res = subprocess.run(
-            f'npx wrangler d1 execute {db_name} --remote --json --command="PRAGMA table_info(stores);"',
-            shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
-        )
-        if res.returncode == 0:
-            out = res.stdout or ""
-            if "is_open" not in out and ("store_id" in out or "results" in out):
-                print("   ▶ 正在為遠端 stores 表新增 is_open 欄位...")
-                subprocess.run(
-                    f'npx wrangler d1 execute {db_name} --remote --command="ALTER TABLE stores ADD COLUMN is_open INT NOT NULL DEFAULT 1;"',
-                    shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
-                )
-    except Exception as e:
-        print(f"⚠️ 檢查 stores 欄位失敗: {e}")
-
-    # 2. 檢查 products 表結構
-    try:
-        res = subprocess.run(
-            f'npx wrangler d1 execute {db_name} --remote --json --command="PRAGMA table_info(products);"',
-            shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
-        )
-        if res.returncode == 0:
-            out = res.stdout or ""
-            if "promo_type" not in out and ("product_id" in out or "results" in out):
-                print("   ▶ 正在為遠端 products 表新增 promo_type 欄位...")
-                subprocess.run(
-                    f'npx wrangler d1 execute {db_name} --remote --command="ALTER TABLE products ADD COLUMN promo_type VARCHAR(50) NOT NULL DEFAULT \'無\';"',
-                    shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
-                )
-            if "quantity" not in out and ("product_id" in out or "results" in out):
-                print("   ▶ 正在為遠端 products 表新增 quantity 欄位...")
-                subprocess.run(
-                    f'npx wrangler d1 execute {db_name} --remote --command="ALTER TABLE products ADD COLUMN quantity INT NOT NULL DEFAULT 1;"',
-                    shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
-                )
-            if "is_open" not in out and ("product_id" in out or "results" in out):
-                print("   ▶ 正在為遠端 products 表新增 is_open 欄位...")
-                subprocess.run(
-                    f'npx wrangler d1 execute {db_name} --remote --command="ALTER TABLE products ADD COLUMN is_open INT NOT NULL DEFAULT 1;"',
-                    shell=True, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env_vars
-                )
-    except Exception as e:
-        print(f"⚠️ 檢查 products 欄位失敗: {e}")
+    """Migrate only known columns; query/migration failures are never ignored."""
+    env = dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
+    for table, additions in {
+        "stores": {"is_open": "INT NOT NULL DEFAULT 1"},
+        "products": {"is_open": "INT NOT NULL DEFAULT 1", "quantity": "INT NOT NULL DEFAULT 1", "promo_type": "TEXT NOT NULL DEFAULT '無'"},
+    }.items():
+        rows = query_remote(db_name, f"PRAGMA table_info({table});", env)
+        columns = {row["name"] for row in rows}
+        if columns:
+            for column, definition in additions.items():
+                if column not in columns:
+                    query_remote(db_name, f"ALTER TABLE {table} ADD COLUMN {column} {definition};", env)
 
 
-def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
+def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False, scope: str = "regional", stores_file=None, batch_id=None):
     start_time = time.time()
     cf_token = os.environ.get("CLOUDFLARE_API_TOKEN") or os.environ.get("CF_API_TOKEN")
     cf_account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID") or os.environ.get("CF_ACCOUNT_ID")
@@ -451,6 +434,27 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
         )
 
     print(f"✅ [步驟 3.1 通過] 掃描到 {len(json_files)} 個原始 JSON 檔案準備進行 ETL。")
+    batches = set()
+    identities = set()
+    for path in json_files:
+        with open(path, encoding="utf-8") as handle:
+            doc = json.load(handle)
+        current_batch = os.path.basename(path).split("_", 1)[0]
+        if len(current_batch) != 14 or not current_batch.isdigit():
+            raise ValueError(f"invalid batch filename: {path}")
+        identity = validate_document(doc, current_batch, path)
+        if identity in identities:
+            raise ValueError(f"duplicate store: {identity}")
+        identities.add(identity)
+        batches.add(current_batch)
+    if len(batches) != 1 or (batch_id and batch_id not in batches):
+        raise ValueError("mixed or unexpected input batch")
+    batch_id = batches.pop()
+    if scope == "taiwan" and not stores_file:
+        raise ValueError("Taiwan publication requires an assigned store manifest")
+    if stores_file:
+        with open(stores_file, encoding="utf-8") as handle:
+            validate_snapshot(src_dir, json.load(handle), batch_id)
 
     # ---------------------------------------------------------
     # 步驟 3.3：本地 SQLite ETL 清洗與資料庫完整性驗證 (3 次重試)
@@ -507,7 +511,7 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
     print(f"\n🧠 【步驟 3.4】執行智慧差異情報與特價計算...")
     engine = UberEatsAlertEngine(db_path=db_path)
     try:
-        alert_result = engine.detect_all()
+        alert_result = engine.detect_all(latest_batch=batch_id)
         latest_batch = alert_result.get("latest_batch")
         total_alerts = alert_result.get("total_alerts_detected", 0)
     finally:
@@ -529,7 +533,7 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
     # ---------------------------------------------------------
     print(f"\n📝 【步驟 3.5】生成 Cloudflare D1 批次 SQL 語句檔案...")
     sql_file = "d1_sync.sql"
-    sql_count, sql_files = generate_d1_sync_sql(db_path, sql_file, latest_batch)
+    sql_count, sql_files = generate_d1_sync_sql(db_path, sql_file, latest_batch, scope)
 
     if not os.path.exists(sql_file) or os.path.getsize(sql_file) == 0 or sql_count == 0:
         fatal_error(
@@ -561,6 +565,19 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
 
     # 先執行遠端 D1 Schema 檢查與欄位遷移 (確保 stores/products 具備 is_open/promo_type/quantity)
     ensure_d1_schema_columns(db_name, cf_token, cf_account_id)
+    env_vars = dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
+    exists = query_remote(db_name, "SELECT name FROM sqlite_master WHERE type='table' AND name='batch_publications';", env_vars)
+    if exists:
+        published = query_remote(db_name, f"SELECT status,scope FROM batch_publications WHERE crawled_time='{latest_batch}';", env_vars)
+        if published:
+            if published[0]["scope"] != scope:
+                raise ValueError("batch ID already belongs to a different scope")
+            if published[0]["status"] == "complete":
+                with closing(sqlite3.connect(db_path)) as connection:
+                    expected = {table: connection.execute(f"SELECT count(*) FROM {table} WHERE crawled_time=?", (latest_batch,)).fetchone()[0] for table in TABLES}
+                verify_counts(query_remote(db_name, count_query(latest_batch), env_vars), expected)
+                print("Batch already published and verified; refusing to mutate immutable data")
+                return
 
     # 依序執行所有 SQL 分塊檔案
     for f_idx, current_sql_target in enumerate(sql_files, 1):
@@ -618,78 +635,18 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False):
     # 步驟 3.7：Cloudflare D1 遠端資料庫回查驗證 (3 次重試)
     # ---------------------------------------------------------
     print(f"\n🔍 【步驟 3.7】執行 Cloudflare D1 遠端資料庫回查驗證...")
-    verify_ok = False
-    remote_store_count = 0
-    last_verify_err = ""
-
-    for attempt in range(1, 4):
-        try:
-            cmd = f'npx wrangler d1 execute {db_name} --remote --json --command="SELECT count(*) AS total_stores FROM stores WHERE crawled_time=\'{latest_batch}\';"'
-            res = subprocess.run(
-                cmd,
-                shell=True,
-                capture_output=True,
-                text=True,
-                encoding="utf-8",
-                errors="ignore",
-                env=dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
-            )
-            out = res.stdout or ""
-            err = res.stderr or ""
-            combined = (out + "\n" + err).strip()
-            clean_out = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', combined)
-
-            if res.returncode == 0:
-                # 1. 嘗試解析 JSON 輸出
-                json_match = re.search(r'\[\s*\{.*\}\s*\]', clean_out, re.DOTALL)
-                if json_match:
-                    try:
-                        data = json.loads(json_match.group(0))
-                        if isinstance(data, list) and len(data) > 0:
-                            results = data[0].get("results", [])
-                            if results and isinstance(results[0], dict):
-                                count_val = list(results[0].values())[0]
-                                if count_val is not None and int(count_val) > 0:
-                                    remote_store_count = int(count_val)
-                                    verify_ok = True
-                    except Exception:
-                        pass
-
-                # 2. 若 JSON 解析未命中，嘗試由輸出文字提取正整數
-                if not verify_ok:
-                    for line in clean_out.splitlines():
-                        line_digits = re.sub(r'[^\d]', '', line)
-                        if line_digits.isdigit() and 0 < int(line_digits) < 1000000 and len(line_digits) <= 6:
-                            remote_store_count = int(line_digits)
-                            verify_ok = True
-                            break
-
-                # 3. 若 returncode 為 0 且無 Error 字眼，視為回查成功
-                if not verify_ok and ("total_stores" in clean_out or "Executing on remote database" in clean_out) and "Error" not in clean_out:
-                    remote_store_count = s_cnt
-                    verify_ok = True
-
-                if verify_ok:
-                    print(f"✅ [步驟 3.7 通過] 遠端 D1 回查驗證成功！在庫店家數: {remote_store_count} 間 (批次: {latest_batch})")
-                    break
-
-            last_verify_err = clean_out
-            print(f"⚠️ [步驟 3.7 回查異常] (嘗試 {attempt}/3): {last_verify_err[:200]}")
-        except Exception as e:
-            last_verify_err = str(e)
-            print(f"⚠️ [步驟 3.7 例外] (嘗試 {attempt}/3): {e}")
-
-        if attempt < 3:
-            time.sleep(2.0 * attempt)
-
-    if not verify_ok:
-        fatal_error(
-            step_name="步驟 3.7 Cloudflare D1 遠端回查檢驗",
-            reason=f"遠端 D1 回查重試 3 次未檢測到當前批次資料: {last_verify_err[:300]}",
-            expected=f"遠端 stores 表包含批次 {latest_batch} 且筆數 > 0",
-            actual=f"回查店家數: {remote_store_count}",
-            retries=3
-        )
+    env_vars = dict(os.environ, CLOUDFLARE_API_TOKEN=cf_token, CLOUDFLARE_ACCOUNT_ID=cf_account_id)
+    with closing(sqlite3.connect(db_path)) as connection:
+        expected_counts = {table: connection.execute(f"SELECT count(*) FROM {table} WHERE crawled_time=?", (latest_batch,)).fetchone()[0] for table in TABLES}
+    if expected_counts["stores"] != len(identities):
+        raise ValueError("ETL store identities do not cover the input manifest")
+    verified = verify_counts(query_remote(db_name, count_query(latest_batch), env_vars), expected_counts)
+    remote_store_count = verified["stores"]
+    # Commit the publication pointer only after every table matches the local batch.
+    query_remote(db_name, f"UPDATE batch_publications SET status='complete', published_at=CURRENT_TIMESTAMP WHERE crawled_time='{latest_batch}' AND scope='{scope}';", env_vars)
+    published = query_remote(db_name, f"SELECT status,scope FROM batch_publications WHERE crawled_time='{latest_batch}';", env_vars)
+    if published != [{"status": "complete", "scope": scope}]:
+        raise ValueError("publication marker verification failed")
 
     elapsed = time.time() - start_time
 
@@ -725,6 +682,9 @@ if __name__ == "__main__":
     parser.add_argument("--src-dir", required=True, help="JSON 資料夾")
     parser.add_argument("--db-name", default="ubereats_monitor", help="Cloudflare D1 資料庫名稱")
     parser.add_argument("--require-d1", action="store_true", help="強制要求 D1 遠端同步 (若無 Token 則報錯)")
+    parser.add_argument("--scope", choices=["taiwan", "regional"], default="regional")
+    parser.add_argument("--stores-file")
+    parser.add_argument("--batch-id")
     args = parser.parse_args()
 
-    sync_to_cloudflare_d1(args.src_dir, args.db_name, args.require_d1)
+    sync_to_cloudflare_d1(args.src_dir, args.db_name, args.require_d1, args.scope, args.stores_file, args.batch_id)
