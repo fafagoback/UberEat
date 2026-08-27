@@ -159,8 +159,7 @@ jobs:
             --max-menu-workers ${{ github.event.inputs.max_workers || 15 }} \
             --expected-store-workers ${{ needs.point_coordinator.outputs.num_workers }} \
             --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" \
-            --path-in-repo "TaiwanStores" \
-            --db-path "ubereats_monitor.db"
+            --path-in-repo "TaiwanStores"
 
       - name: 上傳全台店家完整資料集 Artifact (90天留存)
         uses: actions/upload-artifact@v7.0.1
@@ -347,7 +346,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
-          git add web/data/ web/version.json web/dashboard_data.js web/dashboard_data.json
+          git add web/data/ web/version.json
           git commit -m "chore(data): auto-publish snapshot ${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }} [skip ci]" || echo "No changes to commit"
           git push origin main || echo "Push skipped or succeeded"
 

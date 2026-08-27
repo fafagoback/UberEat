@@ -120,9 +120,7 @@ class StaticExportTests(unittest.TestCase):
                 "promotions.json",
                 "products.json",
                 "history.json",
-                "version.json",
-                "dashboard_data.json",
-                "dashboard_data.js"
+                "version.json"
             ]
 
             for filename in expected_files:

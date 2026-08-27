@@ -43,7 +43,7 @@ class UberEatsAlertEngine:
     """Uber Eats 差異偵測與特價/新品情報引擎"""
 
     def __init__(self, db_path: Optional[str] = None, output_dir: Optional[str] = None):
-        self.db_path = os.path.abspath(db_path) if db_path else DEFAULT_DB_PATH
+        self.db_path = db_path if db_path == ":memory:" else (os.path.abspath(db_path) if db_path else DEFAULT_DB_PATH)
         self.output_dir = os.path.abspath(output_dir) if output_dir else DEFAULT_WEB_DIR
         self.conn: Optional[sqlite3.Connection] = None
 
@@ -185,9 +185,6 @@ class UberEatsAlertEngine:
             "stats": stats,
             "generated_at": datetime.now(TW_TZ).strftime("%Y-%m-%d %H:%M:%S")
         }
-
-        # 7. 匯出靜態展示檔案
-        self.export_static_data(result)
 
         return result
 

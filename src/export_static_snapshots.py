@@ -412,26 +412,6 @@ def export_all_static_snapshots(
         json.dump(version_data, f, ensure_ascii=False, indent=2)
     print(f"   ├─ 📄 version.json        (版本: {batch_id})")
 
-    # (I) 寫入離線備援獨立 JS 檔 (web/dashboard_data.js)
-    offline_bundle = {
-        "stats": stats_data,
-        "big_discounts": discounts,
-        "new_stores": new_stores,
-        "new_products": new_products,
-        "promotions": promotions,
-        "all_products": catalog,
-        "history": history_map
-    }
-    with open(os.path.join(web_dir, "dashboard_data.json"), "w", encoding="utf-8") as f:
-        json.dump(offline_bundle, f, ensure_ascii=False, indent=2)
-
-    with open(os.path.join(web_dir, "dashboard_data.js"), "w", encoding="utf-8") as f:
-        f.write("// UberEats Radar 靜態快照資料集 (Plan C Jamstack)\n")
-        f.write("window.UBER_RADAR_DATA = ")
-        json.dump(offline_bundle, f, ensure_ascii=False, indent=2)
-        f.write(";\n")
-    print(f"   └─ 📄 dashboard_data.js   (離線單檔開啟支援)")
-
     elapsed = time.time() - start_time
 
     # 6. 輸出 Step Summary
@@ -450,7 +430,6 @@ def export_all_static_snapshots(
 | `promotions.json` | **{len(promotions):,}** 筆 | 買一送一與促銷活動 | ✅ 完成 |
 | `products.json` | **{len(catalog):,}** 筆 | 全品庫檢索商品清單 | ✅ 完成 |
 | `history.json` | **{len(history_map):,}** 款 | 各商品歷史價格走勢索引 | ✅ 完成 |
-| `dashboard_data.js` | 1 份 | 離線單檔直開相容包 | ✅ 完成 |
 
 ---
 """
@@ -467,7 +446,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="導出 Uber Eats 邊緣靜態快照 (Plan C Jamstack)")
     parser.add_argument("--src-dir", required=True, help="原始菜單 JSON 資料夾")
     parser.add_argument("--output-dir", default="web/data", help="靜態資料輸出資料夾")
-    parser.add_argument("--db-path", default="ubereats_monitor.db", help="本地 SQLite 資料庫路徑")
+    parser.add_argument("--db-path", default=":memory:", help="本地 SQLite 資料庫路徑 (預設使用記憶體資料庫)")
     parser.add_argument("--batch-id", help="指定 14 碼批次時間戳記")
     parser.add_argument("--stores-file", help="全台店家 Manifest 清單")
     parser.add_argument("--scope", choices=["taiwan", "regional"], default="taiwan")
@@ -481,3 +460,4 @@ if __name__ == "__main__":
         stores_file=args.stores_file,
         scope=args.scope
     )
+

@@ -148,7 +148,7 @@ def main():
     parser.add_argument("--push-to-hf", action="store_true", default=True, help="是否將店家資料集推送至 Hugging Face")
     parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "hub-google/UberEat"), help="Hugging Face Dataset Repo ID")
     parser.add_argument("--path-in-repo", default="TaiwanStores", help="店家清單在 HF Dataset 內部的目錄路徑")
-    parser.add_argument("--db-path", default="ubereats_monitor.db", help="SQLite 資料庫路徑")
+    parser.add_argument("--db-path", default=None, help="SQLite 資料庫路徑 (選填，未指定則不建立本機 db 檔)")
     args = parser.parse_args()
     if not 1 <= args.max_menu_workers <= 15:
         parser.error("max-menu-workers must be between 1 and 15")
@@ -351,11 +351,12 @@ def main():
 
     print(f"💾 資料集匯出完成：\n   ├─ {out_all_json}\n   ├─ {out_all_csv}\n   ├─ {out_by_county_json}\n   └─ {out_summary_json}")
 
-    # 5. 寫入 SQLite
-    try:
-        save_to_sqlite(args.db_path, final_stores_list, batch_id)
-    except Exception as e:
-        print(f"⚠️ 寫入 SQLite 異常: {e}")
+    # 5. 寫入 SQLite (選填)
+    if args.db_path:
+        try:
+            save_to_sqlite(args.db_path, final_stores_list, batch_id)
+        except Exception as e:
+            print(f"⚠️ 寫入 SQLite 異常: {e}")
 
     # 6. 推送全台店家資料集至 Hugging Face (TaiwanStores/)
     hf_store_dataset_ok = False

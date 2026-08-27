@@ -158,7 +158,7 @@ class UberEatsDBImporter:
     """Uber Eats 資料庫匯入與驗證引擎"""
 
     def __init__(self, db_path: str, json_dir: str):
-        self.db_path = os.path.abspath(db_path)
+        self.db_path = db_path if db_path == ":memory:" else os.path.abspath(db_path)
         self.json_dir = os.path.abspath(json_dir)
         self.conn: Optional[sqlite3.Connection] = None
 
