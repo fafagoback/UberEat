@@ -36,7 +36,7 @@ def validate_document(doc, batch_id=None, filename=None):
                 raise ValueError("invalid menu item")
     if not any(section["hasMenuItem"] for section in sections):
         # An empty, explicitly closed store is legitimate; an incomplete response is not.
-        if doc.get("isOpen") is not False and doc.get("menu_status") != "empty_confirmed":
+        if doc.get("isOpen") is not False and doc.get("menu_status") not in ("empty_confirmed", "inactive_account"):
             raise ValueError("empty menu without explicit closed status")
     return key
 

@@ -153,7 +153,11 @@ def main():
     )
 
     success_count = sum(1 for r in results if r["status"] == "SUCCESS")
-    fail_count = total_assigned - success_count
+    inactive_count = sum(1 for r in results if r["status"] == "INACTIVE")
+    fail_count = sum(1 for r in results if r["status"] == "FAILED")
+    
+    inactive_stores = [r["store_name"] for r in results if r["status"] == "INACTIVE"]
+    failed_stores = [r["store_name"] for r in results if r["status"] == "FAILED"]
     total_menu_items = sum(r.get("total_items", 0) for r in results if r["status"] == "SUCCESS")
 
     # 3. 實體產出檢核
@@ -175,47 +179,85 @@ def main():
         invalid_files.append(f"snapshot: {e}")
 
     print(f"   ├─ 實體 JSON 檔案數: {len(json_files)} 個")
-    print(f"   ├─ 格式檢核通過數:   {valid_json_count} 個")
+    print(f"   ├─ 格式檢核通過數:   {valid_json_count} 個 (含 {inactive_count} 間已失效店家快照)")
     if invalid_files:
         print(f"   └─ ⚠️ 格式異常檔案: {len(invalid_files)} 個 ({', '.join(invalid_files[:3])})")
 
-    if success_count == 0 or valid_json_count == 0:
-        fatal_error(
-            chunk_id=chunk_id,
-            step_name="步驟 4.3 菜單產出檢核",
-            reason="本節點採集成功數為 0 或未產出任何有效 JSON 檔案",
-            expected="成功店家 > 0 且有效 JSON > 0",
-            actual=f"成功店家: {success_count}, 有效 JSON: {valid_json_count}",
-            retries=3
-        )
-
     crawl_elapsed = time.time() - start_time
-    success_rate = (success_count / total_assigned) * 100.0
-
-    print(f"✅ [步驟 4.3 通過] Menu Worker {chunk_id} 採集完成！成功率: {success_rate:.1f}% ({success_count}/{total_assigned})，擷取商品: {total_menu_items:,} 道")
-
     total_elapsed = time.time() - start_time
+    success_rate = (success_count / max(1, total_assigned)) * 100.0
+    inactive_rate = (inactive_count / max(1, total_assigned)) * 100.0
+    abnormal_rate = ((inactive_count + fail_count) / max(1, total_assigned)) * 100.0
 
-    # 5. 輸出 GITHUB_STEP_SUMMARY
+    print(f"✅ [步驟 4.3 統計] Menu Worker {chunk_id} 採集完畢！成功: {success_count} 間 ({success_rate:.1f}%)，網頁已失效: {inactive_count} 間 ({inactive_rate:.2f}%)，商品: {total_menu_items:,} 道")
+
+    # 4. 輸出 GITHUB_STEP_SUMMARY
+    inactive_list_md = ""
+    if inactive_stores:
+        items_md = "\n".join([f"- `{name}`" for name in inactive_stores])
+        inactive_list_md = f"""
+<details>
+<summary><b>⚠️ 網頁已失效店家名單 (共 {len(inactive_stores)} 間)</b></summary>
+
+{items_md}
+
+</details>
+"""
+
     summary_md = f"""### 🍽️ 【Menu Worker {chunk_id} 菜單採集報告】
-- **分配店家**: `{total_assigned:,}` 間 | **成功採集**: **`{success_count:,}`** 間 ({success_rate:.1f}%) | **失敗**: `{fail_count}` 間
+- **分配店家**: `{total_assigned:,}` 間 | **成功採集**: **`{success_count:,}`** 間 ({success_rate:.1f}%)
+- **網頁已失效**: **`{inactive_count:,}`** 間 ({inactive_rate:.2f}%) | **採集失敗**: `{fail_count}` 間
 - **擷取商品總數**: **`{total_menu_items:,}`** 道菜品 | **產出有效 JSON**: `{valid_json_count:,}` 個
 - **採集耗時**: `{crawl_elapsed:.1f}` 秒 (平均 `{crawl_elapsed/max(1, total_assigned):.2f}` 秒/店) | **總耗時**: `{total_elapsed:.1f}` 秒
 - **下游傳遞方式**: `GitHub Actions Artifact（HF 由 Stage 5 統一單次 Commit）`
 
 | Checkpoint | 預期 | 實際 | 狀態 |
 | :--- | :--- | :--- | :---: |
-| 店家處理完成 | `{total_assigned}` 間 | 成功 `{success_count}` / 失敗 `{fail_count}` | {'✅' if success_count == total_assigned else '❌'} |
-| Schema JSON | `{total_assigned}` 個有效檔案 | `{valid_json_count}` 個有效 / `{len(invalid_files)}` 個無效 | {'✅' if valid_json_count == total_assigned and not invalid_files else '❌'} |
-| Stage 4 職責邊界 | 不直接呼叫 HF | 僅產出本 Worker JSON | ✅ |
+| 實體快照產出 | `{total_assigned}` 個有效檔案 | `{valid_json_count}` 個有效 / `{len(invalid_files)}` 個無效 | {'✅' if valid_json_count == total_assigned and not invalid_files else '❌'} |
+| 失效與異常率門檻 | 異常率 < 10.0% | 實際異常率: `{abnormal_rate:.2f}%` ({inactive_count + fail_count}/{total_assigned}) | {'✅' if abnormal_rate < 10.0 else '❌'} |
+| 未捕獲錯誤檢查 | 0 間未捕獲失敗 | 失敗 `{fail_count}` 間 | {'✅' if fail_count == 0 else '❌'} |
+{inactive_list_md}
 """
     append_github_step_summary(summary_md)
 
-    if success_count != total_assigned or valid_json_count != total_assigned or invalid_files:
+    # 5. 檢核阻斷判斷
+    if valid_json_count == 0:
+        fatal_error(
+            chunk_id=chunk_id,
+            step_name="步驟 4.3 菜單產出檢核",
+            reason="本節點未產出任何有效 JSON 檔案",
+            expected="有效 JSON > 0",
+            actual=f"有效 JSON: {valid_json_count}",
+            retries=3
+        )
+
+    # 若異常/失效比例超過 10%，報錯終止 (可能遭遇網路封鎖或風控改版)
+    if abnormal_rate >= 10.0:
+        fatal_error(
+            chunk_id=chunk_id,
+            step_name="步驟 4.3 失效/異常率熔斷檢核 (門檻 10%)",
+            reason=f"異常與失效店家比例達 {abnormal_rate:.2f}% (門檻 10.0%)！網頁已失效: {inactive_count} 間, 未預期失敗: {fail_count} 間",
+            expected="異常率 < 10.0%",
+            actual=f"{abnormal_rate:.2f}% ({inactive_count + fail_count}/{total_assigned})",
+            retries=0
+        )
+
+    # 若存在未處理的失敗 (不是 INACTIVE 也不是 SUCCESS)
+    if fail_count > 0:
+        fatal_error(
+            chunk_id=chunk_id,
+            step_name="步驟 4.3 採集失敗檢核",
+            reason=f"有 {fail_count} 間店家發生未預期錯誤: {', '.join(failed_stores[:5])}",
+            expected="未預期失敗數 == 0",
+            actual=f"失敗 {fail_count} 間",
+            retries=2
+        )
+
+    if valid_json_count != total_assigned or invalid_files:
         fatal_error(
             chunk_id=chunk_id,
             step_name="步驟 4.3 菜單全量產出 Checkpoint",
-            reason=f"成功 {success_count}/{total_assigned}，有效 JSON {valid_json_count}/{total_assigned}，無效檔 {len(invalid_files)}",
+            reason=f"有效 JSON {valid_json_count}/{total_assigned}，無效檔 {len(invalid_files)}",
             expected="每個指派店家皆產出一個有效 Schema.org JSON",
             actual=f"缺少 {total_assigned - valid_json_count} 個有效結果",
             retries=2

@@ -306,17 +306,18 @@ def export_all_static_snapshots(
 
         batches = set()
         identities = set()
-        for path in json_files:
-            with open(path, encoding="utf-8") as handle:
-                doc = json.load(handle)
-            current_batch = os.path.basename(path).split("_", 1)[0]
-            if len(current_batch) != 14 or not current_batch.isdigit():
-                raise ValueError(f"invalid batch filename: {path}")
+        inactive_stores = []
+        for path in sorted(glob.glob(os.path.join(src_dir, "*.json"))):
+            with open(path, "r", encoding="utf-8") as f:
+                doc = json.load(f)
+            current_batch = os.path.basename(path).split("_")[0]
             identity = validate_document(doc, current_batch, path)
             if identity in identities:
                 raise ValueError(f"duplicate store: {identity}")
             identities.add(identity)
             batches.add(current_batch)
+            if doc.get("menu_status") == "inactive_account":
+                inactive_stores.append(doc.get("name", "未命名店家"))
 
         if len(batches) != 1 or (batch_id and batch_id not in batches):
             raise ValueError("mixed or unexpected input batch")
@@ -388,6 +389,7 @@ def export_all_static_snapshots(
             "total_monitored_stores": total_stores_cnt,
             "total_products": total_products_cnt,
             "total_monitored_products": total_products_cnt,
+            "inactive_stores_count": len(inactive_stores),
             "big_discounts_count": len([d for d in discounts if d["discount_pct"] >= 30.0]),
             "new_stores_count": len(new_stores),
             "new_products_count": len(new_products),
@@ -426,6 +428,18 @@ def export_all_static_snapshots(
 
         elapsed = time.time() - start_time
 
+        inactive_section_md = ""
+        if inactive_stores:
+            items_md = "\n".join([f"- `{name}`" for name in inactive_stores])
+            inactive_section_md = f"""
+<details>
+<summary><b>⚠️ 全台網頁已失效店家名單 (共 {len(inactive_stores)} 間)</b></summary>
+
+{items_md}
+
+</details>
+"""
+
         # 6. 輸出 Step Summary
         summary_md = f"""
 ## ⚡ 【階段 6: 邊緣靜態快照導出 (Plan C)】成功報告
@@ -435,14 +449,14 @@ def export_all_static_snapshots(
 ### 📊 產出資料集指標
 | 靜態資料檔 | 項目數 | 說明 | 狀態 |
 | :--- | :---: | :--- | :---: |
-| `stats.json` | 1 份 | 總店家 **{total_stores_cnt:,}** 間、總商品 **{total_products_cnt:,}** 項 | ✅ 完成 |
+| `stats.json` | 1 份 | 總店家 **{total_stores_cnt:,}** 間 (含 {len(inactive_stores)} 間失效停業)、總商品 **{total_products_cnt:,}** 項 | ✅ 完成 |
 | `discounts.json` | **{len(discounts):,}** 筆 | 7 天價差降幅 ≥ 20% 大特價 (現省最高 ${round(max_savings_val)}) | ✅ 完成 |
 | `new_stores.json` | **{len(new_stores):,}** 間 | 本批次全新進駐店家 | ✅ 完成 |
 | `new_products.json` | **{len(new_products):,}** 筆 | 老店新上架菜色 | ✅ 完成 |
 | `promotions.json` | **{len(promotions):,}** 筆 | 買一送一與促銷活動 | ✅ 完成 |
 | `products.json` | **{len(catalog):,}** 筆 | 全品庫檢索商品清單 | ✅ 完成 |
 | `history.json` | **{len(history_map):,}** 款 | 各商品歷史價格走勢索引 | ✅ 完成 |
-
+{inactive_section_md}
 ---
 """
         append_github_step_summary(summary_md)

@@ -77,12 +77,34 @@ def main() -> None:
     os.makedirs(args.output_dir, exist_ok=True)
     archive_name = f"taiwan_menus_{batch_id}.tar.gz"
     archive_path = os.path.join(args.output_dir, archive_name)
+
+    inactive_stores = []
+    for path in valid_files:
+        try:
+            with open(path, encoding="utf-8") as handle:
+                doc = json.load(handle)
+                if doc.get("menu_status") == "inactive_account":
+                    inactive_stores.append(doc.get("name", "未命名店家"))
+        except Exception:
+            pass
+
+    inactive_count = len(inactive_stores)
+    active_count = expected - inactive_count
+    inactive_rate = (inactive_count / max(1, expected)) * 100.0
+
+    inactive_ok = inactive_rate < 10.0
+    rows.append(f"| 全台失效店家率 | 失效比例 < 10.0% | 正常: `{active_count:,}` 間, 失效: `{inactive_count:,}` 間 (`{inactive_rate:.2f}%`) | {'✅' if inactive_ok else '❌'} |")
+    if not inactive_ok:
+        fail(batch_id, f"全台網頁已失效店家比例達 {inactive_rate:.2f}% (超過 10% 門檻)", rows)
+
     manifest = {
         "batch_id": batch_id,
         "source_run_id": os.environ.get("GITHUB_RUN_ID", "local"),
         "created_at": datetime.now(TW_TZ).isoformat(),
         "worker_artifacts": args.actual_workers,
         "store_count": expected,
+        "active_store_count": active_count,
+        "inactive_store_count": inactive_count,
         "format": "Schema.org Restaurant JSON files",
     }
     manifest_path = os.path.join(args.output_dir, "manifest.json")
@@ -132,12 +154,18 @@ def main() -> None:
         fail(batch_id, "HF Commit 後遠端回查失敗", rows)
 
     elapsed = time.time() - started
+    inactive_section_md = ""
+    if inactive_stores:
+        items_md = "\n".join([f"- `{name}`" for name in inactive_stores])
+        inactive_section_md = f"\n\n<details>\n<summary><b>⚠️ 全台網頁已失效店家名單 (共 {inactive_count} 間)</b></summary>\n\n{items_md}\n\n</details>"
+
     append_summary(
         f"## ✅ Stage 5 菜單快照封存完成\n"
-        f"> 批次：`{batch_id}`｜JSON：`{expected:,}`｜壓縮檔：`{archive_name}`｜耗時：`{elapsed:.1f}` 秒\n\n"
+        f"> 批次：`{batch_id}`｜總店家：`{expected:,}` (正常: `{active_count:,}` / 失效: `{inactive_count:,}`)｜壓縮檔：`{archive_name}`｜耗時：`{elapsed:.1f}` 秒\n\n"
         "| 檢核項目 | 通過標準 | 實際結果 | 狀態 |\n"
         "| :--- | :--- | :--- | :---: |\n" + "\n".join(rows) +
         "\n| 最終結果 | 所有 checkpoint 通過 | HF 單一檔案已完成一次 Commit | ✅ |"
+        + inactive_section_md
     )
     print(f"✅ Stage 5 完成：{remote_path} ({digest})")
 
