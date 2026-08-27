@@ -22,7 +22,7 @@ on:
 env:
   TZ: 'Asia/Taipei'
 
-# 全台批次共用同一個 D1/HF 目標；禁止排程與手動執行彼此覆寫。
+# 全台批次共用同一個發布目標；禁止排程與手動執行彼此覆寫。
 concurrency:
   group: ubereats-production
   cancel-in-progress: false
