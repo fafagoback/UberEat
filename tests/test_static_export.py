@@ -142,6 +142,25 @@ class StaticExportTests(unittest.TestCase):
             history_json = json.loads(Path(out_dir, "history.json").read_text(encoding="utf-8"))
             self.assertIn("history", history_json)
 
+    def test_export_all_static_snapshots_default_temp_db(self):
+        """測試不傳入 db_path (預設安全暫存資料庫) 的完整流程"""
+        with tempfile.TemporaryDirectory() as src_dir, tempfile.TemporaryDirectory() as out_dir:
+            doc1 = make_sample_doc("store-1", "麥當勞台北館前店")
+            Path(src_dir, f"{BATCH}_829fe4fb_store1.json").write_text(json.dumps(doc1, ensure_ascii=False), encoding="utf-8")
+
+            stats = export_all_static_snapshots(
+                src_dir=src_dir,
+                output_dir=out_dir,
+                batch_id=BATCH,
+                scope="taiwan"
+            )
+
+            self.assertEqual(stats["latest_batch"], BATCH)
+            self.assertEqual(stats["total_stores"], 1)
+            self.assertTrue(os.path.exists(os.path.join(out_dir, "stats.json")))
+            self.assertTrue(os.path.exists(os.path.join(out_dir, "discounts.json")))
+            self.assertTrue(os.path.exists(os.path.join(out_dir, "products.json")))
+
 
 if __name__ == "__main__":
     unittest.main()

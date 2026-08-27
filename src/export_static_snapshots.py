@@ -27,6 +27,7 @@ import time
 import re
 import argparse
 import sqlite3
+import tempfile
 from datetime import datetime, timezone, timedelta
 from typing import Dict, List, Any, Optional
 
@@ -264,7 +265,7 @@ def extract_price_history_map(conn: sqlite3.Connection) -> Dict[str, List[Dict[s
 def export_all_static_snapshots(
     src_dir: str,
     output_dir: str = "web/data",
-    db_path: str = "ubereats_monitor.db",
+    db_path: Optional[str] = None,
     batch_id: Optional[str] = None,
     stores_file: Optional[str] = None,
     scope: str = "taiwan"
@@ -277,145 +278,156 @@ def export_all_static_snapshots(
     print("🚀 【階段 6: 邊緣靜態快照導出 (Plan C Jamstack CDN)】啟動")
     print(f"📁 原始菜單來源: {src_dir}")
     print(f"📦 靜態導出目錄: {output_dir}")
+
+    # 處理 SQLite DB 路徑 (若未指定或為 :memory:，使用安全獨立的暫存 SQLite 檔案確保 ETL、AlertEngine 與查詢共享相同資料庫)
+    is_temp_db = False
+    if not db_path or db_path == ":memory:":
+        is_temp_db = True
+        temp_dir = tempfile.gettempdir()
+        db_path = os.path.join(temp_dir, f"ubereats_snapshot_{int(time.time() * 1000)}_{os.getpid()}.db")
+    else:
+        db_path = os.path.abspath(db_path)
+
     # 確保輸出目錄與 DB 目錄存在
     os.makedirs(output_dir, exist_ok=True)
     if os.path.dirname(db_path):
         os.makedirs(os.path.dirname(os.path.abspath(db_path)), exist_ok=True)
 
-    # 1. 檢核來源目錄與檔案
-    if not os.path.exists(src_dir):
-        fatal_error("步驟 6.1 來源目錄檢核", f"來源目錄不存在: {src_dir}")
-
-    json_files = glob.glob(os.path.join(src_dir, "*.json"))
-    if not json_files:
-        fatal_error("步驟 6.1 來源 JSON 總量檢核", f"目錄 {src_dir} 內無任何 JSON 檔案")
-
-    print(f"✅ [步驟 6.1 通過] 掃描到 {len(json_files)} 個原始 JSON 檔案。")
-
-    batches = set()
-    identities = set()
-    for path in json_files:
-        with open(path, encoding="utf-8") as handle:
-            doc = json.load(handle)
-        current_batch = os.path.basename(path).split("_", 1)[0]
-        if len(current_batch) != 14 or not current_batch.isdigit():
-            raise ValueError(f"invalid batch filename: {path}")
-        identity = validate_document(doc, current_batch, path)
-        if identity in identities:
-            raise ValueError(f"duplicate store: {identity}")
-        identities.add(identity)
-        batches.add(current_batch)
-
-    if len(batches) != 1 or (batch_id and batch_id not in batches):
-        raise ValueError("mixed or unexpected input batch")
-    batch_id = batches.pop()
-
-    if stores_file and os.path.exists(stores_file):
-        with open(stores_file, encoding="utf-8") as handle:
-            validate_snapshot(src_dir, json.load(handle), batch_id)
-
-    # 2. 執行本地 SQLite ETL
-    print(f"\n⚙️ 【步驟 6.2】執行本地 SQLite ETL 洗淨資料庫...")
-    importer = UberEatsDBImporter(db_path=db_path, json_dir=src_dir)
     try:
-        importer.init_database()
-        importer.import_all_data()
-        importer.validate_database()
-    finally:
-        importer.close()
+        # 1. 檢核來源目錄與檔案
+        if not os.path.exists(src_dir):
+            fatal_error("步驟 6.1 來源目錄檢核", f"來源目錄不存在: {src_dir}")
 
-    # 3. 執行智慧差異情報計算 (Alert Engine)
-    print(f"\n🧠 【步驟 6.3】執行智慧差異情報與特價分析...")
-    engine = UberEatsAlertEngine(db_path=db_path)
-    try:
-        alert_result = engine.detect_all(latest_batch=batch_id)
-    finally:
-        engine.close()
+        json_files = glob.glob(os.path.join(src_dir, "*.json"))
+        if not json_files:
+            fatal_error("步驟 6.1 來源 JSON 總量檢核", f"目錄 {src_dir} 內無任何 JSON 檔案")
 
-    # 4. 連線本地資料庫並生成高精準靜態資料集
-    print(f"\n📝 【步驟 6.4】生成靜態 JSON 檔案集合...")
-    os.makedirs(output_dir, exist_ok=True)
-    conn = sqlite3.connect(db_path)
-    conn.row_factory = sqlite3.Row
+        print(f"✅ [步驟 6.1 通過] 掃描到 {len(json_files)} 個原始 JSON 檔案。")
 
-    # (A) 大特價清單 (7天最高價比較)
-    discounts = calculate_7day_discounts(conn, batch_id, min_discount_pct=20.0, min_savings_twd=20.0)
+        batches = set()
+        identities = set()
+        for path in json_files:
+            with open(path, encoding="utf-8") as handle:
+                doc = json.load(handle)
+            current_batch = os.path.basename(path).split("_", 1)[0]
+            if len(current_batch) != 14 or not current_batch.isdigit():
+                raise ValueError(f"invalid batch filename: {path}")
+            identity = validate_document(doc, current_batch, path)
+            if identity in identities:
+                raise ValueError(f"duplicate store: {identity}")
+            identities.add(identity)
+            batches.add(current_batch)
 
-    # (B) 新進店家
-    new_stores = alert_result.get("new_stores", [])
+        if len(batches) != 1 or (batch_id and batch_id not in batches):
+            raise ValueError("mixed or unexpected input batch")
+        batch_id = batches.pop()
 
-    # (C) 老店新菜
-    new_products = alert_result.get("new_products", [])
+        if stores_file and os.path.exists(stores_file):
+            with open(stores_file, encoding="utf-8") as handle:
+                validate_snapshot(src_dir, json.load(handle), batch_id)
 
-    # (D) 促銷專區 (正向匹配買一送一/多件優惠)
-    promotions = alert_result.get("promotions", [])
+        # 2. 執行本地 SQLite ETL
+        print(f"\n⚙️ 【步驟 6.2】執行本地 SQLite ETL 洗淨資料庫...")
+        importer = UberEatsDBImporter(db_path=db_path, json_dir=src_dir)
+        try:
+            importer.init_database()
+            importer.import_all_data()
+            importer.validate_database()
+        finally:
+            importer.close()
 
-    # (E) 全品庫檢索清單
-    catalog = extract_full_catalog(conn, batch_id)
+        # 3. 執行智慧差異情報計算 (Alert Engine)
+        print(f"\n🧠 【步驟 6.3】執行智慧差異情報與特價分析...")
+        engine = UberEatsAlertEngine(db_path=db_path)
+        try:
+            alert_result = engine.detect_all(latest_batch=batch_id)
+        finally:
+            engine.close()
 
-    # (F) 商品價格歷程字典
-    history_map = extract_price_history_map(conn)
+        # 4. 連線本地資料庫並生成高精準靜態資料集
+        print(f"\n📝 【步驟 6.4】生成靜態 JSON 檔案集合...")
+        os.makedirs(output_dir, exist_ok=True)
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
 
-    # (G) 大盤總覽統計
-    cursor = conn.cursor()
-    cursor.execute("SELECT COUNT(DISTINCT store_id) as cnt FROM stores WHERE crawled_time = ?;", (batch_id,))
-    total_stores_cnt = cursor.fetchone()["cnt"]
-    cursor.execute("SELECT COUNT(*) as cnt FROM products WHERE crawled_time = ? AND price >= 1;", (batch_id,))
-    total_products_cnt = cursor.fetchone()["cnt"]
+        # (A) 大特價清單 (7天最高價比較)
+        discounts = calculate_7day_discounts(conn, batch_id, min_discount_pct=20.0, min_savings_twd=20.0)
 
-    max_savings_val = max([d["savings_amount"] for d in discounts], default=0.0)
+        # (B) 新進店家
+        new_stores = alert_result.get("new_stores", [])
 
-    formatted_date = f"{batch_id[:4]}-{batch_id[4:6]}-{batch_id[6:8]} {batch_id[8:10]}:{batch_id[10:12]}"
+        # (C) 老店新菜
+        new_products = alert_result.get("new_products", [])
 
-    stats_data = {
-        "status": "success",
-        "latest_batch": batch_id,
-        "latest_batch_formatted": formatted_date,
-        "prev_batch": alert_result.get("prev_batch", ""),
-        "total_stores": total_stores_cnt,
-        "total_monitored_stores": total_stores_cnt,
-        "total_products": total_products_cnt,
-        "total_monitored_products": total_products_cnt,
-        "big_discounts_count": len([d for d in discounts if d["discount_pct"] >= 30.0]),
-        "new_stores_count": len(new_stores),
-        "new_products_count": len(new_products),
-        "promotions_count": len(promotions),
-        "max_savings_twd": round(max_savings_val)
-    }
+        # (D) 促銷專區 (正向匹配買一送一/多件優惠)
+        promotions = alert_result.get("promotions", [])
 
-    conn.close()
+        # (E) 全品庫檢索清單
+        catalog = extract_full_catalog(conn, batch_id)
 
-    # 5. 寫入各靜態 JSON 檔案
-    def save_json(filename: str, payload: Any):
-        filepath = os.path.join(output_dir, filename)
-        with open(filepath, "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=2)
-        size_kb = os.path.getsize(filepath) / 1024
-        print(f"   ├─ 📄 {filename:<20} ({size_kb:6.1f} KB)")
+        # (F) 商品價格歷程字典
+        history_map = extract_price_history_map(conn)
 
-    print(f"💾 正在寫入靜態 API 檔案至 {output_dir}:")
-    save_json("stats.json", stats_data)
-    save_json("discounts.json", {"status": "success", "total": len(discounts), "items": discounts})
-    save_json("new_stores.json", {"status": "success", "total": len(new_stores), "items": new_stores})
-    save_json("new_products.json", {"status": "success", "total": len(new_products), "items": new_products})
-    save_json("promotions.json", {"status": "success", "total": len(promotions), "items": promotions})
-    save_json("products.json", {"status": "success", "total": len(catalog), "items": catalog})
-    save_json("history.json", {"status": "success", "history": history_map})
+        # (G) 大盤總覽統計
+        cursor = conn.cursor()
+        cursor.execute("SELECT COUNT(DISTINCT store_id) as cnt FROM stores WHERE crawled_time = ?;", (batch_id,))
+        total_stores_cnt = cursor.fetchone()["cnt"]
+        cursor.execute("SELECT COUNT(*) as cnt FROM products WHERE crawled_time = ? AND price >= 1;", (batch_id,))
+        total_products_cnt = cursor.fetchone()["cnt"]
 
-    # (H) 寫入前端版本時間戳記 (web/version.json)
-    web_dir = os.path.dirname(output_dir) if output_dir.endswith("data") else output_dir
-    version_data = {
-        "version": batch_id,
-        "buildTime": datetime.now(TW_TZ).strftime("%Y-%m-%d %H:%M:%S")
-    }
-    with open(os.path.join(web_dir, "version.json"), "w", encoding="utf-8") as f:
-        json.dump(version_data, f, ensure_ascii=False, indent=2)
-    print(f"   ├─ 📄 version.json        (版本: {batch_id})")
+        max_savings_val = max([d["savings_amount"] for d in discounts], default=0.0)
 
-    elapsed = time.time() - start_time
+        formatted_date = f"{batch_id[:4]}-{batch_id[4:6]}-{batch_id[6:8]} {batch_id[8:10]}:{batch_id[10:12]}"
 
-    # 6. 輸出 Step Summary
-    summary_md = f"""
+        stats_data = {
+            "status": "success",
+            "latest_batch": batch_id,
+            "latest_batch_formatted": formatted_date,
+            "prev_batch": alert_result.get("prev_batch", ""),
+            "total_stores": total_stores_cnt,
+            "total_monitored_stores": total_stores_cnt,
+            "total_products": total_products_cnt,
+            "total_monitored_products": total_products_cnt,
+            "big_discounts_count": len([d for d in discounts if d["discount_pct"] >= 30.0]),
+            "new_stores_count": len(new_stores),
+            "new_products_count": len(new_products),
+            "promotions_count": len(promotions),
+            "max_savings_twd": round(max_savings_val)
+        }
+
+        conn.close()
+
+        # 5. 寫入各靜態 JSON 檔案
+        def save_json(filename: str, payload: Any):
+            filepath = os.path.join(output_dir, filename)
+            with open(filepath, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+            size_kb = os.path.getsize(filepath) / 1024
+            print(f"   ├─ 📄 {filename:<20} ({size_kb:6.1f} KB)")
+
+        print(f"💾 正在寫入靜態 API 檔案至 {output_dir}:")
+        save_json("stats.json", stats_data)
+        save_json("discounts.json", {"status": "success", "total": len(discounts), "items": discounts})
+        save_json("new_stores.json", {"status": "success", "total": len(new_stores), "items": new_stores})
+        save_json("new_products.json", {"status": "success", "total": len(new_products), "items": new_products})
+        save_json("promotions.json", {"status": "success", "total": len(promotions), "items": promotions})
+        save_json("products.json", {"status": "success", "total": len(catalog), "items": catalog})
+        save_json("history.json", {"status": "success", "history": history_map})
+
+        # (H) 寫入前端版本時間戳記 (web/version.json)
+        web_dir = os.path.dirname(output_dir) if output_dir.endswith("data") else output_dir
+        version_data = {
+            "version": batch_id,
+            "buildTime": datetime.now(TW_TZ).strftime("%Y-%m-%d %H:%M:%S")
+        }
+        with open(os.path.join(web_dir, "version.json"), "w", encoding="utf-8") as f:
+            json.dump(version_data, f, ensure_ascii=False, indent=2)
+        print(f"   ├─ 📄 version.json        (版本: {batch_id})")
+
+        elapsed = time.time() - start_time
+
+        # 6. 輸出 Step Summary
+        summary_md = f"""
 ## ⚡ 【階段 6: 邊緣靜態快照導出 (Plan C)】成功報告
 
 > **批次時間戳記**: `{batch_id}` | **輸出目錄**: `{output_dir}` | **耗時**: `{elapsed:.2f} 秒` | **架構狀態**: ✅ Jamstack CDN 準備完成
@@ -433,20 +445,26 @@ def export_all_static_snapshots(
 
 ---
 """
-    append_github_step_summary(summary_md)
+        append_github_step_summary(summary_md)
 
-    print("\n" + "=" * 80)
-    print(f"🎉 【階段 6: 靜態快照導出全部完成！】耗時 {elapsed:.2f} 秒")
-    print("=" * 80)
+        print("\n" + "=" * 80)
+        print(f"🎉 【階段 6: 靜態快照導出全部完成！】耗時 {elapsed:.2f} 秒")
+        print("=" * 80)
 
-    return stats_data
+        return stats_data
+    finally:
+        if is_temp_db and os.path.exists(db_path):
+            try:
+                os.remove(db_path)
+            except Exception:
+                pass
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="導出 Uber Eats 邊緣靜態快照 (Plan C Jamstack)")
     parser.add_argument("--src-dir", required=True, help="原始菜單 JSON 資料夾")
     parser.add_argument("--output-dir", default="web/data", help="靜態資料輸出資料夾")
-    parser.add_argument("--db-path", default=":memory:", help="本地 SQLite 資料庫路徑 (預設使用記憶體資料庫)")
+    parser.add_argument("--db-path", default=None, help="本地 SQLite 資料庫路徑 (選填，預設使用安全暫存資料庫)")
     parser.add_argument("--batch-id", help="指定 14 碼批次時間戳記")
     parser.add_argument("--stores-file", help="全台店家 Manifest 清單")
     parser.add_argument("--scope", choices=["taiwan", "regional"], default="taiwan")

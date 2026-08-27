@@ -99,6 +99,9 @@ class UberEatsAlertEngine:
         """取得資料庫中所有的採集批次時間戳記 (由新到舊排序)"""
         conn = self.connect()
         cursor = conn.cursor()
+        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='products';")
+        if not cursor.fetchone():
+            return []
         cursor.execute("SELECT DISTINCT crawled_time FROM products ORDER BY crawled_time DESC;")
         rows = cursor.fetchall()
         return [r["crawled_time"] for r in rows]
