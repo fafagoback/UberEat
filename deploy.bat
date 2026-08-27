@@ -13,7 +13,7 @@ for /f %%i in ('git branch --show-current 2^>nul') do set CURRENT_BRANCH=%%i
 if "%CURRENT_BRANCH%"=="" set CURRENT_BRANCH=main
 
 set "COMMIT_MSG=%*"
-if "%COMMIT_MSG%"=="" set "COMMIT_MSG=update: %date% %time% [skip ci]"
+if "%COMMIT_MSG%"=="" set "COMMIT_MSG=update: %date% %time%"
 
 echo [1/2] Staging all files (git add)...
 git add -A
