@@ -25,6 +25,7 @@ wheels/
 .venv
 venv/
 ENV/
+.wrangler/
 
 # Logs and databases
 *.log
