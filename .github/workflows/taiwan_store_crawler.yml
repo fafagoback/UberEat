@@ -9,7 +9,7 @@ on:
       scan_file:
         description: '掃描基準點 CSV 檔案'
         required: false
-        default: 'taiwan_scan_points_3km_land_only.csv'
+        default: 'data/seeds/taiwan_scan_points_3km_land_only.csv'
       max_workers:
         description: '平行工作機台數 (預設 15 台)'
         required: false
@@ -55,8 +55,8 @@ jobs:
       - name: 執行點位調度與動態 Matrix 生成
         id: gen-matrix
         run: |
-          python scr/taiwan_crawler_coordinator.py \
-            --scan-file "${{ github.event.inputs.scan_file || 'taiwan_scan_points_3km_land_only.csv' }}" \
+          python src/taiwan_crawler_coordinator.py \
+            --scan-file "${{ github.event.inputs.scan_file || 'data/seeds/taiwan_scan_points_3km_land_only.csv' }}" \
             --max-workers ${{ github.event.inputs.max_workers || 15 }} \
             --output-dir "tasks"
 
@@ -100,7 +100,7 @@ jobs:
 
       - name: 執行本節點店家探索 (Worker ${{ matrix.chunk_id }})
         run: |
-          python scr/taiwan_store_worker.py \
+          python src/taiwan_store_worker.py \
             --chunk-file "tasks/chunk_${{ matrix.chunk_id }}.json" \
             --output-dir "output_worker_${{ matrix.chunk_id }}" \
             --max-pages-per-point ${{ github.event.inputs.max_pages_per_point || 0 }} \
@@ -152,7 +152,7 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
         run: |
-          python scr/taiwan_store_reducer.py \
+          python src/taiwan_store_reducer.py \
             --src-dir "all_store_discovery_outputs" \
             --output-dir "taiwan_stores_dataset" \
             --menu-tasks-dir "menu_tasks" \
@@ -209,7 +209,7 @@ jobs:
 
       - name: 執行菜單採集並產出 Artifact 來源 (Worker ${{ matrix.chunk_id }})
         run: |
-          python scr/taiwan_menu_worker.py \
+          python src/taiwan_menu_worker.py \
             --chunk-file "menu_tasks/chunk_${{ matrix.chunk_id }}.json" \
             --output-dir "output_menu_worker_${{ matrix.chunk_id }}" \
             --concurrency 5
@@ -281,7 +281,7 @@ jobs:
         run: |
           set -euo pipefail
           actual_workers="$(find menu_worker_artifacts -mindepth 1 -maxdepth 1 -type d -name 'menu-result-chunk-*' | wc -l | tr -d ' ')"
-          python scr/package_and_upload_menu_snapshot.py \
+          python src/package_and_upload_menu_snapshot.py \
             --src-dir menu_worker_artifacts/ \
             --stores-file taiwan_stores_dataset/taiwan_all_stores.json \
             --output-dir packaged_snapshot/ \
@@ -343,7 +343,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         run: |
-          python scr/prepare_publication.py
+          python src/prepare_publication.py
           npx wrangler deploy
 
       - name: ① 執行 ETL 並批次同步至 Cloudflare D1
@@ -351,7 +351,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         run: |
-          python scr/json_to_cf_d1.py \
+          python src/json_to_cf_d1.py \
             --src-dir all_menu_lake/ \
             --db-name "ubereats_monitor" \
             --scope taiwan \

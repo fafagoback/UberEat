@@ -36,6 +36,7 @@ dashboard_data.js
 web/dashboard_data.json
 web/dashboard_data.js
 local_scr/
+local_src/
 tasks/
 output_*/
 all_json_lake/
@@ -46,6 +47,12 @@ all_menu_lake/
 menu_tasks/
 taiwan_stores_dataset/
 scratch/
+data/scratch/
+data/chunks/
+data/datasets/
+data/db/*.db
+data/db/*.sqlite*
+data/db/*.sql
 d1_migration.sql
 d1_sync.sql
 d1_sync_part_*.sql
@@ -58,3 +65,4 @@ Thumbs.db
 # Secrets
 .env
 .env.local
+

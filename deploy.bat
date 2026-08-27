@@ -25,27 +25,17 @@ for /f "tokens=1,2,3,4 delims=/:" %%a in ('git remote get-url origin 2^>nul') do
 )
 if defined REPO_NAME set "REPO_NAME=!REPO_NAME:.git=!"
 
-REM Auto-generate build version timestamp & synchronize web/ folder
-echo [0/3] Generating build version and syncing frontend files...
+REM Auto-generate build version timestamp for frontend
+echo [0/3] Generating build version timestamp...
 where py >nul 2>&1
 if !ERRORLEVEL! EQU 0 (
-    py -3 -c "import json, datetime; now = datetime.datetime.now(); v = {'version': now.strftime('%%Y%%m%%d%%H%%M%%S'), 'buildTime': now.strftime('%%Y-%%m-%%d %%H:%%M:%%S')}; open('version.json','w',encoding='utf-8').write(json.dumps(v,indent=2)); open('web/version.json','w',encoding='utf-8').write(json.dumps(v,indent=2))"
+    py -3 -c "import json, datetime; now = datetime.datetime.now(); v = {'version': now.strftime('%%Y%%m%%d%%H%%M%%S'), 'buildTime': now.strftime('%%Y-%%m-%%d %%H:%%M:%%S')}; open('web/version.json','w',encoding='utf-8').write(json.dumps(v,indent=2))"
 ) else (
     where python >nul 2>&1
     if !ERRORLEVEL! EQU 0 (
-        python -c "import json, datetime; now = datetime.datetime.now(); v = {'version': now.strftime('%%Y%%m%%d%%H%%M%%S'), 'buildTime': now.strftime('%%Y-%%m-%%d %%H:%%M:%%S')}; open('version.json','w',encoding='utf-8').write(json.dumps(v,indent=2)); open('web/version.json','w',encoding='utf-8').write(json.dumps(v,indent=2))"
+        python -c "import json, datetime; now = datetime.datetime.now(); v = {'version': now.strftime('%%Y%%m%%d%%H%%M%%S'), 'buildTime': now.strftime('%%Y-%%m-%%d %%H:%%M:%%S')}; open('web/version.json','w',encoding='utf-8').write(json.dumps(v,indent=2))"
     )
 )
-if not exist "web" mkdir "web"
-copy /y index.html web\index.html >nul
-copy /y app.js web\app.js >nul
-copy /y style.css web\style.css >nul
-copy /y config.js web\config.js >nul
-if exist "version.json" copy /y version.json web\version.json >nul
-if exist "favicon.svg" copy /y favicon.svg web\favicon.svg >nul
-if exist "favicon.png" copy /y favicon.png web\favicon.png >nul
-if exist "favicon.ico" copy /y favicon.ico web\favicon.ico >nul
-if exist "apple-touch-icon.png" copy /y apple-touch-icon.png web\apple-touch-icon.png >nul
 
 echo.
 echo [1/3] Staging all files (git add)...

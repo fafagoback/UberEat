@@ -1,8 +1,11 @@
 import os
+from pathlib import Path
+import sys
 import tempfile
 import unittest
 
-from scr.json_to_cf_d1 import build_batch_insert, split_sql_files, sql_utf8_size
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from json_to_cf_d1 import build_batch_insert, split_sql_files, sql_utf8_size
 
 
 def escape_sql(value):

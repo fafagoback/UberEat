@@ -31,7 +31,11 @@ if hasattr(sys.stdout, 'reconfigure'):
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-DEFAULT_DB_PATH = os.path.join(PROJECT_ROOT, "ubereats_monitor.db")
+DEFAULT_DB_PATH = (
+    os.path.join(PROJECT_ROOT, "data", "db", "ubereats_monitor.db")
+    if os.path.exists(os.path.join(PROJECT_ROOT, "data", "db", "ubereats_monitor.db"))
+    else os.path.join(PROJECT_ROOT, "ubereats_monitor.db")
+)
 DEFAULT_WEB_DIR = os.path.join(PROJECT_ROOT, "web") if os.path.exists(os.path.join(PROJECT_ROOT, "web")) else PROJECT_ROOT
 
 

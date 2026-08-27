@@ -60,6 +60,8 @@ def append_github_step_summary(markdown_text: str):
 
 def save_to_sqlite(db_path: str, stores: list, batch_id: str):
     """將全台店家寫入 SQLite 資料庫 (taiwan_stores 表)"""
+    if db_path == "ubereats_monitor.db" and (os.path.exists("data/db/ubereats_monitor.db") or os.path.isdir("data/db")):
+        db_path = "data/db/ubereats_monitor.db"
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 

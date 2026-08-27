@@ -401,9 +401,11 @@ def sync_to_cloudflare_d1(src_dir: str, db_name: str, require_d1: bool = False, 
     start_time = time.time()
     cf_token = os.environ.get("CLOUDFLARE_API_TOKEN") or os.environ.get("CF_API_TOKEN")
     cf_account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID") or os.environ.get("CF_ACCOUNT_ID")
-    is_ci = "GITHUB_ACTIONS" in os.environ
-
-    db_path = "ubereats_monitor.db"
+    db_candidates = [
+        os.path.join("data", "db", "ubereats_monitor.db"),
+        "ubereats_monitor.db",
+    ]
+    db_path = next((p for p in db_candidates if os.path.exists(p)), ("data/db/ubereats_monitor.db" if os.path.isdir("data/db") else "ubereats_monitor.db"))
 
     print("=" * 80)
     print("🚀 【階段 3: SQLite ETL & Cloudflare D1 同步】啟動 (嚴格檢核版)")

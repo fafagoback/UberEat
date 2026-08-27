@@ -2,12 +2,12 @@ const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
-const source = fs.readFileSync('app.js', 'utf8');
+const appPath = fs.existsSync('web/app.js') ? 'web/app.js' : 'app.js';
+const source = fs.readFileSync(appPath, 'utf8');
 
 test('dataset values are not interpolated into executable onclick attributes', () => {
   assert.doesNotMatch(source, /onclick="(?:showPriceHistoryModal|openUberEatsOrder)/);
   assert.match(source, /data-args="\$\{escapeHtml\(JSON.stringify/);
-  assert.equal(source, fs.readFileSync('web/app.js', 'utf8'));
 });
 
 test('order URLs reject scripts, credentials and unrelated hosts', () => {

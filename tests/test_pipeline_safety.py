@@ -9,7 +9,7 @@ import tempfile
 import unittest
 from unittest.mock import MagicMock, patch
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scr"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from snapshot_validation import validate_document, validate_snapshot, archive_member
 from d1_publication import PUBLICATION_DDL, TABLES, parse_results, verify_counts
 from json_to_db import UberEatsDBImporter, menu_identity_keys

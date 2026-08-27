@@ -926,9 +926,15 @@ class UberEatsDBImporter:
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.dirname(script_dir)
-    base_dir = parent_dir if os.path.exists(os.path.join(parent_dir, "JSON")) or os.path.exists(os.path.join(parent_dir, "ubereats_monitor.db")) else script_dir
+    db_candidates = [
+        os.path.join(parent_dir, "data", "db", "ubereats_monitor.db"),
+        os.path.join(parent_dir, "ubereats_monitor.db"),
+        os.path.join(script_dir, "data", "db", "ubereats_monitor.db"),
+        os.path.join(script_dir, "ubereats_monitor.db"),
+    ]
+    db_path = next((p for p in db_candidates if os.path.exists(p)), os.path.join(parent_dir, "data", "db", "ubereats_monitor.db"))
+    base_dir = parent_dir
     json_dir = os.path.join(base_dir, "JSON")
-    db_path = os.path.join(base_dir, "ubereats_monitor.db")
 
     # 支援自訂命令列參數
     if len(sys.argv) > 1:

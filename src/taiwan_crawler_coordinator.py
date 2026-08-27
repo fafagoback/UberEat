@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 Uber Eats 全台店家大規模掃描調度器 (Stage 1: Coordinator)
 【核心功能】：
@@ -52,7 +52,7 @@ def set_github_output(name: str, value: str):
 
 def main():
     parser = argparse.ArgumentParser(description="Uber Eats 全台店家採集調度器 (Coordinator)")
-    parser.add_argument("--scan-file", default="taiwan_scan_points_3km_land_only.csv", help="掃描基準點 CSV 檔案路徑")
+    parser.add_argument("--scan-file", default="data/seeds/taiwan_scan_points_3km_land_only.csv", help="掃描基準點 CSV 檔案路徑")
     parser.add_argument("--max-workers", type=int, default=15, help="工作機台數 (預設 15)")
     parser.add_argument("--output-dir", default="tasks", help="任務分片輸出目錄")
     args = parser.parse_args()
@@ -71,14 +71,28 @@ def main():
     print(f"⚙️ 目標工作機台數: {args.max_workers}")
     print("=" * 80)
 
-    # 1. 讀取並檢驗 CSV 檔案
-    if not os.path.exists(args.scan_file):
-        alt_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), args.scan_file)
-        if os.path.exists(alt_path):
-            args.scan_file = alt_path
+    # 1. 讀取並檢驗 CSV 檔案 (支援多種路徑自動解析)
+    target_scan_file = args.scan_file
+    if not os.path.exists(target_scan_file):
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        filename = os.path.basename(args.scan_file)
+        candidates = [
+            os.path.join(project_root, "data", "seeds", filename),
+            os.path.join(project_root, "data", filename),
+            os.path.join(project_root, args.scan_file),
+            os.path.join(project_root, filename),
+            os.path.join("data", "seeds", filename),
+            os.path.join("data", filename),
+            os.path.join(filename),
+        ]
+        for candidate in candidates:
+            if os.path.exists(candidate):
+                target_scan_file = candidate
+                break
         else:
             print(f"❌ 找不到掃描點檔案: {args.scan_file}", file=sys.stderr)
             sys.exit(1)
+    args.scan_file = target_scan_file
 
     points = []
     county_counts = {}
