@@ -1,15 +1,15 @@
 {
   "status": "success",
-  "latest_batch": "20260827120000",
-  "latest_batch_formatted": "2026-08-27 12:00",
+  "latest_batch": "20260827154155",
+  "latest_batch_formatted": "2026-08-27 15:41",
   "prev_batch": null,
-  "total_stores": 2,
-  "total_monitored_stores": 2,
-  "total_products": 4,
-  "total_monitored_products": 4,
+  "total_stores": 29,
+  "total_monitored_stores": 29,
+  "total_products": 1472,
+  "total_monitored_products": 1472,
   "big_discounts_count": 0,
-  "new_stores_count": 2,
+  "new_stores_count": 29,
   "new_products_count": 0,
-  "promotions_count": 2,
+  "promotions_count": 8,
   "max_savings_twd": 0
 }
