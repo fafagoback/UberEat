@@ -67,3 +67,11 @@ Thumbs.db
 .env
 .env.local
 
+# Large datasets & lakehouse local files
+*.parquet
+web/data/*.parquet
+*.tar.gz
+*.tar
+temp_all_menu_lake/
+packaged_snapshot/
+

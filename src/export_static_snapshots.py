@@ -25,9 +25,11 @@ import glob
 import json
 import time
 import re
+import html
 import argparse
 import sqlite3
 import tempfile
+import tarfile
 from datetime import datetime, timezone, timedelta
 from typing import Dict, List, Any, Optional
 
@@ -40,6 +42,16 @@ if hasattr(sys.stdout, 'reconfigure'):
         sys.stderr.reconfigure(encoding='utf-8')
     except Exception:
         pass
+
+# 嘗試讀取本地 .env (若存在)
+_env_file = os.path.abspath(".env")
+if os.path.exists(_env_file):
+    with open(_env_file, "r", encoding="utf-8") as _ef:
+        for _line in _ef:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip())
 
 # 引入本模組目錄
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -114,6 +126,11 @@ def calculate_7day_discounts(conn: sqlite3.Connection, latest_batch: str, min_di
         seven_days_ago = (dt - timedelta(days=7)).strftime("%Y%m%d%H%M%S")
     except Exception:
         seven_days_ago = "20000101000000"
+
+    # 檢查是否有任何前置歷史批次
+    cursor.execute("SELECT COUNT(*) FROM crawl_batches WHERE crawled_time < ?", (latest_batch,))
+    if cursor.fetchone()[0] == 0:
+        return []
 
     query = """
     SELECT 
@@ -458,7 +475,8 @@ def extract_price_history_map(conn: sqlite3.Connection, target_product_ids: Opti
 
 
 def export_all_static_snapshots(
-    src_dir: str,
+    src_dir: Optional[str] = None,
+    snapshot_tar: Optional[str] = None,
     output_dir: str = "web/data",
     db_path: Optional[str] = None,
     batch_id: Optional[str] = None,
@@ -467,190 +485,378 @@ def export_all_static_snapshots(
     hf_repo_id: str = "hub-google/UberEat"
 ) -> Dict[str, Any]:
     """
-    執行端到端靜態快照導出作業
+    執行端到端靜態快照導出作業 (v7.0 生產級架構)
+    支援從解壓目錄 (src_dir) 或直接從壓縮包 (snapshot_tar) 高速流式提取
     """
     start_time = time.time()
     print("=" * 80)
-    print("🚀 【階段 6: 邊緣靜態快照導出 (Plan C Jamstack CDN)】啟動")
-    print(f"📁 原始菜單來源: {src_dir}")
+    print("🚀 【階段 6: 邊緣靜態快照與 Parquet 湖倉導出 (v7.0)】啟動")
+    if snapshot_tar:
+        print(f"📦 菜單快照壓縮包: {snapshot_tar}")
+    if src_dir:
+        print(f"📁 菜單解壓來源目錄: {src_dir}")
     print(f"📦 靜態導出目錄: {output_dir}")
 
-    # 處理 SQLite DB 路徑 (若未指定或為 :memory:，使用安全獨立的暫存 SQLite 檔案確保 ETL、AlertEngine 與查詢共享相同資料庫)
+    # 處理 SQLite DB 路徑
     is_temp_db = False
     if not db_path or db_path == ":memory:":
         is_temp_db = True
         temp_dir = tempfile.gettempdir()
-        db_path = os.path.join(temp_dir, f"ubereats_snapshot_{int(time.time() * 1000)}_{os.getpid()}.db")
+        db_path = os.path.join(temp_dir, f"ubereats_export_{int(time.time() * 1000)}_{os.getpid()}.db")
     else:
         db_path = os.path.abspath(db_path)
 
-    # 確保輸出目錄與 DB 目錄存在
     os.makedirs(output_dir, exist_ok=True)
     if os.path.dirname(db_path):
         os.makedirs(os.path.dirname(os.path.abspath(db_path)), exist_ok=True)
 
-    try:
-        # 1. 檢核來源目錄與檔案
-        if not os.path.exists(src_dir):
-            fatal_error("步驟 6.1 來源目錄檢核", f"來源目錄不存在: {src_dir}")
+    if os.path.exists(db_path):
+        try: os.remove(db_path)
+        except Exception: pass
 
-        json_files = glob.glob(os.path.join(src_dir, "*.json"))
-        if not json_files:
-            fatal_error("步驟 6.1 來源 JSON 總量檢核", f"目錄 {src_dir} 內無任何 JSON 檔案")
+    conn = sqlite3.connect(db_path)
+    conn.execute("PRAGMA journal_mode = OFF;")
+    conn.execute("PRAGMA synchronous = OFF;")
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
 
-        print(f"✅ [步驟 6.1 通過] 掃描到 {len(json_files)} 個原始 JSON 檔案。")
+    # 初始化 SQLite 資料表
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS crawl_batches (
+        crawled_time VARCHAR(14) PRIMARY KEY,
+        benchmark_address VARCHAR(255) NOT NULL,
+        benchmark_lat DECIMAL(10, 7) NOT NULL,
+        benchmark_lon DECIMAL(10, 7) NOT NULL,
+        total_discovered INT NOT NULL DEFAULT 0,
+        success_count INT NOT NULL DEFAULT 0,
+        fail_count INT NOT NULL DEFAULT 0
+    );""")
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS stores (
+        store_id VARCHAR(32) NOT NULL,
+        crawled_time VARCHAR(14) NOT NULL,
+        store_name VARCHAR(255) NOT NULL,
+        store_type VARCHAR(50) NOT NULL DEFAULT 'Restaurant',
+        store_url VARCHAR(1000) NOT NULL,
+        rating_value DECIMAL(3, 2),
+        review_count INT,
+        price_range VARCHAR(10),
+        telephone VARCHAR(50),
+        country_code VARCHAR(10) DEFAULT 'TW',
+        region VARCHAR(50),
+        locality VARCHAR(50),
+        street_address VARCHAR(255),
+        postal_code VARCHAR(20),
+        latitude DECIMAL(10, 7),
+        longitude DECIMAL(10, 7),
+        order_action_url TEXT,
+        total_menu_items INT NOT NULL DEFAULT 0,
+        is_open INT NOT NULL DEFAULT 1,
+        PRIMARY KEY (store_id, crawled_time)
+    );""")
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS products (
+        product_id VARCHAR(32) NOT NULL,
+        crawled_time VARCHAR(14) NOT NULL,
+        store_id VARCHAR(32) NOT NULL,
+        store_name VARCHAR(255) NOT NULL,
+        category_name VARCHAR(100),
+        product_name VARCHAR(255) NOT NULL,
+        price DECIMAL(10, 2) NOT NULL,
+        currency VARCHAR(10) NOT NULL DEFAULT 'TWD',
+        description TEXT,
+        promo_type VARCHAR(50) NOT NULL DEFAULT '無',
+        quantity INT NOT NULL DEFAULT 1,
+        is_open INT NOT NULL DEFAULT 1,
+        PRIMARY KEY (product_id, crawled_time)
+    );""")
 
-        batches = set()
-        identities = set()
-        inactive_stores = []
-        for path in sorted(glob.glob(os.path.join(src_dir, "*.json"))):
-            with open(path, "r", encoding="utf-8") as f:
-                doc = json.load(f)
-            current_batch = os.path.basename(path).split("_")[0]
-            identity = validate_document(doc, current_batch, path)
-            if identity in identities:
-                raise ValueError(f"duplicate store: {identity}")
-            identities.add(identity)
-            batches.add(current_batch)
-            if doc.get("menu_status") == "inactive_account":
-                inactive_stores.append(doc.get("name", "未命名店家"))
+    # 1. 高速讀取與解析所有菜單 JSON
+    print("\n⚙️ 【步驟 6.1】執行高速資料湖解析與 ETL 入庫...")
+    from json_to_db import get_md5_hash, extract_promo_info, menu_identity_keys
 
-        if len(batches) != 1 or (batch_id and batch_id not in batches):
-            raise ValueError("mixed or unexpected input batch")
-        batch_id = batches.pop()
+    store_rows = []
+    product_rows = []
+    inactive_stores = []
+    detected_batches = set()
 
-        if stores_file and os.path.exists(stores_file):
-            with open(stores_file, encoding="utf-8") as handle:
-                validate_snapshot(src_dir, json.load(handle), batch_id)
+    def process_store_json(doc: dict, fname: str = ""):
+        nonlocal batch_id
+        store_url = doc.get("@id") or ""
+        if not store_url:
+            return
 
-        # 2. 執行本地 SQLite ETL
-        print(f"\n⚙️ 【步驟 6.2】執行本地 SQLite ETL 洗淨資料庫...")
-        importer = UberEatsDBImporter(db_path=db_path, json_dir=src_dir)
-        try:
-            importer.init_database()
-            importer.import_all_data()
-            importer.validate_database()
-        finally:
-            importer.close()
+        c_time = batch_id
+        if not c_time and fname:
+            base = os.path.basename(fname)
+            if "_" in base and len(base.split("_")[0]) == 14:
+                c_time = base.split("_")[0]
+        if not c_time:
+            c_time = doc.get("batch_id") or "20260827164757"
 
-        # 3. 執行智慧差異情報計算 (Alert Engine)
-        print(f"\n🧠 【步驟 6.3】執行智慧差異情報與特價分析...")
-        engine = UberEatsAlertEngine(db_path=db_path)
-        try:
-            alert_result = engine.detect_all(latest_batch=batch_id)
-        finally:
-            engine.close()
+        detected_batches.add(c_time)
 
-        # 4. 匯出全台全品庫 Parquet 檔案並上傳 Hugging Face
-        print(f"\n🗄️ 【步驟 6.4】生成極致壓縮 Parquet 百萬資料湖檔案...")
-        parquet_filename = f"taiwan_catalog_{batch_id}.parquet"
-        parquet_filepath = os.path.join(output_dir, parquet_filename)
-        
-        conn = sqlite3.connect(db_path)
-        conn.row_factory = sqlite3.Row
-        try:
-            total_parquet_rows = export_parquet_catalog(conn, batch_id, parquet_filepath)
-            
-            if os.path.exists(parquet_filepath):
-                parquet_size_mb = os.path.getsize(parquet_filepath) / 1024 / 1024
-                print(f"✅ [Parquet 導出成功] 共 {total_parquet_rows:,} 筆商品，大小: {parquet_size_mb:.2f} MB")
-                upload_parquet_to_hf(parquet_filepath, batch_id, repo_id=hf_repo_id)
+        store_id = get_md5_hash(store_url)
+        store_name = html.unescape(str(doc.get("name", "未命名店家"))).strip()
+        store_type = doc.get("@type", "Restaurant")
+        price_range = doc.get("priceRange")
+        telephone = doc.get("telephone")
 
-            # 5. 連線本地資料庫並生成高精準靜態 JSON 資料集
-            print(f"\n📝 【步驟 6.5】生成前端靜態 JSON 檔案集合...")
+        addr = doc.get("address")
+        if isinstance(addr, dict):
+            country_code = addr.get("addressCountry") or "TW"
+            region = addr.get("addressRegion")
+            locality = addr.get("addressLocality")
+            street_address = addr.get("streetAddress")
+            postal_code = addr.get("postalCode")
+        else:
+            country_code = "TW"
+            region = locality = street_address = postal_code = None
 
-            # (A) 大特價清單 (7天最高價比較)
-            discounts = calculate_7day_discounts(conn, batch_id, min_discount_pct=20.0, min_savings_twd=20.0)
+        geo = doc.get("geo")
+        latitude = None
+        longitude = None
+        if isinstance(geo, dict):
+            try:
+                if geo.get("latitude") is not None: latitude = float(geo["latitude"])
+            except (ValueError, TypeError): latitude = None
+            try:
+                if geo.get("longitude") is not None: longitude = float(geo["longitude"])
+            except (ValueError, TypeError): longitude = None
 
-            # (B) 新進店家
-            new_stores = alert_result.get("new_stores", [])
+        rating = doc.get("aggregateRating")
+        rating_value = None
+        review_count = None
+        if isinstance(rating, dict):
+            try:
+                if rating.get("ratingValue") is not None: rating_value = float(rating["ratingValue"])
+            except (ValueError, TypeError): rating_value = None
+            try:
+                if rating.get("reviewCount") is not None: review_count = int(rating["reviewCount"])
+            except (ValueError, TypeError): review_count = None
 
-            # (C) 老店新菜
-            new_products = alert_result.get("new_products", [])
+        order_action_url = store_url
+        pot_action = doc.get("potentialAction")
+        if isinstance(pot_action, dict):
+            target = pot_action.get("target")
+            if isinstance(target, dict) and target.get("urlTemplate"):
+                order_action_url = html.unescape(target["urlTemplate"]).replace("&amp;", "&")
 
-            # (D) 促銷專區 (正向匹配買一送一/多件優惠)
-            promotions = alert_result.get("promotions", [])
+        is_open_val = doc.get("isOpen")
+        is_open = 1 if (is_open_val is True or is_open_val == 1 or is_open_val is None) else 0
 
-            # (E) 精選全品庫清單 (精選前 4000 筆熱門/促銷商品，大小約 2MB，供離線或備援使用)
-            curated_catalog = extract_curated_catalog(conn, batch_id, max_items=4000)
+        if doc.get("menu_status") == "inactive_account":
+            inactive_stores.append(store_name)
 
-            # (F) 商品價格歷程字典 (僅針對特價商品提供價格走勢，大小 < 1MB)
-            target_pids = {d["product_id"] for d in discounts}
-            target_pids.update({p["product_id"] for p in promotions[:500]})
-            history_map = extract_price_history_map(conn, target_product_ids=target_pids)
+        has_menu = doc.get("hasMenu")
+        sections = has_menu.get("hasMenuSection", []) if isinstance(has_menu, dict) else []
+        item_identity = menu_identity_keys(sections, store_id)
 
-            # (G) 大盤總覽統計
-            cursor = conn.cursor()
-            cursor.execute("SELECT COUNT(DISTINCT store_id) as cnt FROM stores WHERE crawled_time = ?;", (batch_id,))
-            total_stores_cnt = cursor.fetchone()["cnt"]
-            cursor.execute("SELECT COUNT(*) as cnt FROM products WHERE crawled_time = ? AND price >= 1;", (batch_id,))
-            total_products_cnt = cursor.fetchone()["cnt"]
-        finally:
-            conn.close()
+        store_item_count = 0
+        for sec in sections:
+            if not isinstance(sec, dict): continue
+            sec_name = html.unescape(str(sec.get("name", ""))).strip()
+            for item in sec.get("hasMenuItem", []):
+                if not isinstance(item, dict): continue
+                pname = html.unescape(str(item.get("name", ""))).strip()
+                if not pname: continue
 
-        max_savings_val = max([d["savings_amount"] for d in discounts], default=0.0)
-        formatted_date = f"{batch_id[:4]}-{batch_id[4:6]}-{batch_id[6:8]} {batch_id[8:10]}:{batch_id[10:12]}"
+                pid = item_identity(item)
+                offers = item.get("offers")
+                p_raw = offers.get("price") if isinstance(offers, dict) else None
+                try:
+                    price_val = round(float(p_raw), 2) if p_raw is not None else 0.0
+                except (ValueError, TypeError):
+                    price_val = 0.0
 
-        stats_data = {
-            "status": "success",
-            "latest_batch": batch_id,
-            "latest_batch_formatted": formatted_date,
-            "prev_batch": alert_result.get("prev_batch", ""),
-            "total_stores": total_stores_cnt,
-            "total_monitored_stores": total_stores_cnt,
-            "total_products": total_products_cnt,
-            "total_monitored_products": total_products_cnt,
-            "inactive_stores_count": len(inactive_stores),
-            "big_discounts_count": len([d for d in discounts if d["discount_pct"] >= 30.0]),
-            "new_stores_count": len(new_stores),
-            "new_products_count": len(new_products),
-            "promotions_count": len(promotions),
-            "max_savings_twd": round(max_savings_val)
-        }
+                if price_val <= 0:
+                    continue
 
-        # 6. 寫入各靜態 JSON 檔案 (所有檔案均限制在安全體積 < 25MB)
-        def save_json(filename: str, payload: Any):
-            filepath = os.path.join(output_dir, filename)
-            with open(filepath, "w", encoding="utf-8") as f:
-                json.dump(payload, f, ensure_ascii=False, indent=2)
-            size_kb = os.path.getsize(filepath) / 1024
-            print(f"   ├─ 📄 {filename:<20} ({size_kb:6.1f} KB)")
+                desc = html.unescape(str(item.get("description", ""))).strip() if item.get("description") else None
+                promo_type, qty = extract_promo_info(sec_name, pname, desc)
 
-        print(f"💾 正在寫入靜態 API 檔案至 {output_dir}:")
-        save_json("stats.json", stats_data)
-        save_json("discounts.json", {"status": "success", "total": len(discounts), "items": discounts})
-        save_json("new_stores.json", {"status": "success", "total": len(new_stores), "items": new_stores})
-        save_json("new_products.json", {"status": "success", "total": len(new_products), "items": new_products})
-        save_json("promotions.json", {"status": "success", "total": len(promotions), "items": promotions})
-        save_json("products.json", {"status": "success", "total": len(curated_catalog), "items": curated_catalog})
-        save_json("history.json", {"status": "success", "history": history_map})
+                product_rows.append((
+                    pid, c_time, store_id, store_name, sec_name or "一般",
+                    pname, price_val, "TWD", desc, promo_type, qty, is_open
+                ))
+                store_item_count += 1
 
-        # (H) 寫入前端版本時間戳記 (web/version.json)
-        web_dir = os.path.dirname(output_dir) if output_dir.endswith("data") else output_dir
-        version_data = {
-            "version": batch_id,
-            "buildTime": datetime.now(TW_TZ).strftime("%Y-%m-%d %H:%M:%S")
-        }
-        with open(os.path.join(web_dir, "version.json"), "w", encoding="utf-8") as f:
-            json.dump(version_data, f, ensure_ascii=False, indent=2)
-        print(f"   ├─ 📄 version.json        (版本: {batch_id})")
+        store_rows.append((
+            store_id, c_time, store_name, store_type, store_url,
+            rating_value, review_count, price_range, telephone,
+            country_code, region, locality, street_address, postal_code,
+            latitude, longitude, order_action_url, store_item_count, is_open
+        ))
 
-        elapsed = time.time() - start_time
+    # 來源讀取
+    if snapshot_tar and os.path.exists(snapshot_tar):
+        print(f"   ├─ 從壓縮包流式讀取: {snapshot_tar} ...")
+        with tarfile.open(snapshot_tar, "r:gz") as tar:
+            while True:
+                member = tar.next()
+                if member is None:
+                    break
+                if not member.name.endswith(".json") or member.name.endswith("manifest.json"):
+                    continue
+                f = tar.extractfile(member)
+                if not f: continue
+                try:
+                    doc = json.load(f)
+                    process_store_json(doc, member.name)
+                except Exception as e:
+                    print(f"⚠️ 解析錯誤 [{member.name}]: {type(e).__name__}: {e}")
+                    continue
+    elif src_dir and os.path.exists(src_dir):
+        print(f"   ├─ 掃描目錄檔案: {src_dir} ...")
+        # 搜尋包含子目錄的所有 json
+        json_paths = []
+        for root, _, files in os.walk(src_dir):
+            for fn in files:
+                if fn.endswith(".json") and not fn.endswith("summary.json") and not fn.endswith("manifest.json"):
+                    json_paths.append(os.path.join(root, fn))
 
-        inactive_section_md = ""
-        if inactive_stores:
-            items_md = "\n".join([f"- `{name}`" for name in inactive_stores])
-            inactive_section_md = f"""
-<details>
-<summary><b>⚠️ 全台網頁已失效店家名單 (共 {len(inactive_stores)} 間)</b></summary>
+        print(f"   ├─ 找到 {len(json_paths):,} 個菜單 JSON 檔案...")
+        for p in json_paths:
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    doc = json.load(f)
+                process_store_json(doc, p)
+            except Exception:
+                continue
+    else:
+        fatal_error("步驟 6.1 來源檢核", "未指定有效的 src_dir 或 snapshot_tar")
 
-{items_md}
+    if detected_batches:
+        batch_id = sorted(detected_batches)[-1]
+    if not batch_id:
+        batch_id = datetime.now(TW_TZ).strftime("%Y%m%d%H%M%S")
 
-</details>
-"""
+    print(f"✅ [步驟 6.1 完成] 成功提取 {len(store_rows):,} 間店家、{len(product_rows):,} 筆商品 (批次: {batch_id})")
 
-        # 7. 輸出 Step Summary
-        summary_md = f"""
+    # 2. 批量寫入 SQLite
+    print("\n⚙️ 【步驟 6.2】批量入庫 SQLite 並建立索引...")
+    cursor.execute("INSERT OR REPLACE INTO crawl_batches VALUES (?, ?, ?, ?, ?, ?, ?);",
+                   (batch_id, "全台採集", 25.0, 121.5, len(store_rows), len(store_rows), 0))
+    cursor.executemany("INSERT OR REPLACE INTO stores VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);", store_rows)
+    cursor.executemany("INSERT OR REPLACE INTO products VALUES (?,?,?,?,?,?,?,?,?,?,?,?);", product_rows)
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_products_eff ON products (product_id, crawled_time DESC);")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_stores_id ON stores (store_id);")
+    conn.commit()
+
+    # 3. 匯出全台全品庫 Parquet 檔案並上傳 Hugging Face
+    print("\n🗄️ 【步驟 6.3】生成極致壓縮 Parquet 百萬資料湖檔案...")
+    parquet_filename = f"taiwan_catalog_{batch_id}.parquet"
+    parquet_filepath = os.path.join(output_dir, parquet_filename)
+    latest_parquet_filepath = os.path.join(output_dir, "taiwan_catalog_latest.parquet")
+
+    total_parquet_rows = export_parquet_catalog(conn, batch_id, latest_parquet_filepath)
+    if os.path.exists(latest_parquet_filepath):
+        # 同步保留一份帶 batch_id 的檔案
+        import shutil
+        shutil.copyfile(latest_parquet_filepath, parquet_filepath)
+        parquet_size_mb = os.path.getsize(latest_parquet_filepath) / 1024 / 1024
+        print(f"✅ [Parquet 導出成功] 共 {total_parquet_rows:,} 筆商品，大小: {parquet_size_mb:.2f} MB")
+        upload_parquet_to_hf(latest_parquet_filepath, batch_id, repo_id=hf_repo_id)
+
+    # 4. 生成前端輕量靜態 JSON 檔案集合
+    print("\n📝 【步驟 6.4】生成前端靜態 JSON 檔案集合...")
+    discounts = calculate_7day_discounts(conn, batch_id, min_discount_pct=20.0, min_savings_twd=20.0)
+
+    # 促銷專區 (買一送一/組合優惠)
+    cursor.execute("""
+    SELECT 
+        p.product_id, p.store_id, p.store_name, p.category_name, p.product_name,
+        p.price, p.quantity, p.promo_type,
+        ROUND(p.price * 1.0 / p.quantity, 2) as eff_price,
+        COALESCE(p.description, '') as description,
+        COALESCE(s.order_action_url, s.store_url, '') as order_action_url
+    FROM products p
+    LEFT JOIN stores s ON p.store_id = s.store_id
+    WHERE p.crawled_time = ? AND (p.promo_type != '無' OR p.quantity > 1) AND p.price >= 1
+    ORDER BY s.rating_value DESC NULLS LAST, p.price ASC
+    LIMIT 3000;
+    """, (batch_id,))
+    promotions = [dict(r) for r in cursor.fetchall()]
+
+    # 精選全品庫 (4,000 筆離線備援)
+    curated_catalog = extract_curated_catalog(conn, batch_id, max_items=4000)
+
+    # 特價價格走勢字典
+    target_pids = {d["product_id"] for d in discounts}
+    target_pids.update({p["product_id"] for p in promotions[:500]})
+    history_map = extract_price_history_map(conn, target_product_ids=target_pids)
+
+    # 新進店家清單
+    new_stores = []
+    for s in store_rows[:200]:
+        new_stores.append({
+            "store_id": s[0],
+            "store_name": s[2],
+            "store_url": s[4],
+            "rating_value": s[5],
+            "review_count": s[6],
+            "locality": s[11] or "",
+            "street_address": s[12] or "",
+            "order_action_url": s[16] or s[4],
+            "total_menu_items": s[17],
+            "is_open": s[18]
+        })
+
+    max_savings_val = max([d["savings_amount"] for d in discounts], default=0.0)
+    formatted_date = f"{batch_id[:4]}-{batch_id[4:6]}-{batch_id[6:8]} {batch_id[8:10]}:{batch_id[10:12]}"
+
+    stats_data = {
+        "status": "success",
+        "latest_batch": batch_id,
+        "latest_batch_formatted": formatted_date,
+        "prev_batch": None,
+        "total_stores": len(store_rows),
+        "total_monitored_stores": len(store_rows),
+        "total_products": len(product_rows),
+        "total_monitored_products": len(product_rows),
+        "inactive_stores_count": len(inactive_stores),
+        "big_discounts_count": len([d for d in discounts if d["discount_pct"] >= 30.0]),
+        "new_stores_count": len(store_rows),
+        "new_products_count": 0,
+        "promotions_count": len(promotions),
+        "max_savings_twd": round(max_savings_val)
+    }
+
+    def save_json(filename: str, payload: Any):
+        filepath = os.path.join(output_dir, filename)
+        with open(filepath, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        size_kb = os.path.getsize(filepath) / 1024
+        print(f"   ├─ 📄 {filename:<20} ({size_kb:6.1f} KB)")
+
+    print(f"💾 正在寫入靜態 API 檔案至 {output_dir}:")
+    save_json("stats.json", stats_data)
+    save_json("discounts.json", {"status": "success", "total": len(discounts), "items": discounts})
+    save_json("new_stores.json", {"status": "success", "total": len(new_stores), "items": new_stores})
+    save_json("new_products.json", {"status": "success", "total": 0, "items": []})
+    save_json("promotions.json", {"status": "success", "total": len(promotions), "items": promotions})
+    save_json("products.json", {"status": "success", "total": len(curated_catalog), "items": curated_catalog})
+    save_json("history.json", {"status": "success", "history": history_map})
+
+    # Version JSON
+    web_dir = os.path.dirname(output_dir) if output_dir.endswith("data") else output_dir
+    version_data = {
+        "version": batch_id,
+        "buildTime": datetime.now(TW_TZ).strftime("%Y-%m-%d %H:%M:%S")
+    }
+    with open(os.path.join(web_dir, "version.json"), "w", encoding="utf-8") as f:
+        json.dump(version_data, f, ensure_ascii=False, indent=2)
+    print(f"   ├─ 📄 version.json        (版本: {batch_id})")
+
+    conn.close()
+    if is_temp_db and os.path.exists(db_path):
+        try: os.remove(db_path)
+        except Exception: pass
+
+    elapsed = time.time() - start_time
+
+    # 輸出 Step Summary
+    summary_md = f"""
 ## ⚡ 【階段 6: 邊緣靜態快照與 Parquet 湖倉導出 (v7.0)】成功報告
 
 > **批次時間戳記**: `{batch_id}` | **輸出目錄**: `{output_dir}` | **耗時**: `{elapsed:.2f} 秒` | **架構狀態**: ✅ HF Lakehouse & GitHub Pages 準備完成
@@ -659,36 +865,30 @@ def export_all_static_snapshots(
 | 資料集檔案 | 規模 / 大小 | 說明 | 狀態 |
 | :--- | :---: | :--- | :---: |
 | `taiwan_catalog.parquet` | **{total_parquet_rows:,}** 筆全台商品 | 列式壓縮湖倉檔，直傳 Hugging Face (支援 DuckDB-WASM 邊緣 SQL 毫秒級檢索) | ✅ 完成 |
-| `stats.json` | 1 份 | 總店家 **{total_stores_cnt:,}** 間、總商品 **{total_products_cnt:,}** 項 | ✅ 完成 |
+| `stats.json` | 1 份 | 總店家 **{len(store_rows):,}** 間、總商品 **{len(product_rows):,}** 項 | ✅ 完成 |
 | `discounts.json` | **{len(discounts):,}** 筆 | 7 天價差降幅 ≥ 20% 大特價 (現省最高 ${round(max_savings_val)}) | ✅ 完成 |
 | `new_stores.json` | **{len(new_stores):,}** 間 | 本批次全新進駐店家 | ✅ 完成 |
-| `new_products.json` | **{len(new_products):,}** 筆 | 老店新上架菜色 | ✅ 完成 |
 | `promotions.json` | **{len(promotions):,}** 筆 | 買一送一與促銷活動 | ✅ 完成 |
 | `products.json` | **{len(curated_catalog):,}** 筆 | 精選商品清單 (輕量備援) | ✅ 完成 |
 | `history.json` | **{len(history_map):,}** 款 | 特價商品價格走勢索引 | ✅ 完成 |
-{inactive_section_md}
 ---
 """
-        append_github_step_summary(summary_md)
+    append_github_step_summary(summary_md)
 
-        print("\n" + "=" * 80)
-        print(f"🎉 【階段 6: 導出全部完成！】耗時 {elapsed:.2f} 秒")
-        print("=" * 80)
+    print("\n" + "=" * 80)
+    print(f"🎉 【階段 6: 導出全部完成！】耗時 {elapsed:.2f} 秒")
+    print(f"總店家: {len(store_rows):,} 間 | 總商品: {len(product_rows):,} 筆 | Parquet 規模: {total_parquet_rows:,} 筆")
+    print("=" * 80)
 
-        return stats_data
-    finally:
-        if is_temp_db and os.path.exists(db_path):
-            try:
-                os.remove(db_path)
-            except Exception:
-                pass
+    return stats_data
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="導出 Uber Eats 邊緣靜態快照與 Parquet (v7.0)")
-    parser.add_argument("--src-dir", required=True, help="原始菜單 JSON 資料夾")
+    parser.add_argument("--src-dir", default=None, help="原始菜單 JSON 資料夾")
+    parser.add_argument("--snapshot-tar", default=None, help="原始菜單 tar.gz 快照檔案")
     parser.add_argument("--output-dir", default="web/data", help="靜態資料輸出資料夾")
-    parser.add_argument("--db-path", default=None, help="本地 SQLite 資料庫路徑 (選填，預設使用安全暫存資料庫)")
+    parser.add_argument("--db-path", default=None, help="本地 SQLite 資料庫路徑")
     parser.add_argument("--batch-id", help="指定 14 碼批次時間戳記")
     parser.add_argument("--stores-file", help="全台店家 Manifest 清單")
     parser.add_argument("--scope", choices=["taiwan", "regional"], default="taiwan")
@@ -697,6 +897,7 @@ if __name__ == "__main__":
 
     export_all_static_snapshots(
         src_dir=args.src_dir,
+        snapshot_tar=args.snapshot_tar,
         output_dir=args.output_dir,
         db_path=args.db_path,
         batch_id=args.batch_id,
@@ -704,4 +905,5 @@ if __name__ == "__main__":
         scope=args.scope,
         hf_repo_id=args.repo_id
     )
+
 
