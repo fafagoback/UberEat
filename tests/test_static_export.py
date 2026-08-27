@@ -142,6 +142,16 @@ class StaticExportTests(unittest.TestCase):
             history_json = json.loads(Path(out_dir, "history.json").read_text(encoding="utf-8"))
             self.assertIn("history", history_json)
 
+            # 驗證 Parquet 檔案生成與欄位結構
+            parquet_path = os.path.join(out_dir, f"taiwan_catalog_{BATCH}.parquet")
+            self.assertTrue(os.path.exists(parquet_path), "缺少 Parquet 資料湖檔案")
+            import pyarrow.parquet as pq
+            table = pq.read_table(parquet_path)
+            self.assertGreaterEqual(table.num_rows, 4)
+            columns = table.column_names
+            for col in ["product_id", "store_id", "product_name", "price", "city", "locality", "eff_price"]:
+                self.assertIn(col, columns, f"Parquet 缺少核心欄位: {col}")
+
     def test_export_all_static_snapshots_default_temp_db(self):
         """測試不傳入 db_path (預設安全暫存資料庫) 的完整流程"""
         with tempfile.TemporaryDirectory() as src_dir, tempfile.TemporaryDirectory() as out_dir:
@@ -160,6 +170,7 @@ class StaticExportTests(unittest.TestCase):
             self.assertTrue(os.path.exists(os.path.join(out_dir, "stats.json")))
             self.assertTrue(os.path.exists(os.path.join(out_dir, "discounts.json")))
             self.assertTrue(os.path.exists(os.path.join(out_dir, "products.json")))
+            self.assertTrue(os.path.exists(os.path.join(out_dir, f"taiwan_catalog_{BATCH}.parquet")))
 
 
 if __name__ == "__main__":

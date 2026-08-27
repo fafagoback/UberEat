@@ -388,15 +388,58 @@
     <!-- ================================================================= -->
     <section id="tab-global-search" class="tab-content hidden space-y-5">
       
-      <!-- 搜尋工具列 -->
+      <!-- 搜尋工具列 (v7.0 湖倉百萬級篩選) -->
       <div class="bg-white dark:bg-slate-900 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+          <div class="flex items-center gap-2">
+            <h2 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+              <i data-lucide="database" class="w-4 h-4 text-emerald-500"></i>
+              全台全品庫百萬即時檢索
+            </h2>
+            <span id="lakehouse-badge" class="px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-50 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>DuckDB 湖倉引擎</span>
+            </span>
+          </div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">
+            支援全台 200 萬筆商品即時過濾、分頁與模糊搜尋
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+          <!-- 關鍵字搜尋 -->
           <div class="relative sm:col-span-2">
             <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
-            <input type="text" id="global-search-input" placeholder="即時搜尋 4000+ 筆商品、店家或食材描述..." class="w-full pl-10 pr-4 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100">
+            <input type="text" id="global-search-input" placeholder="搜尋菜品、店家、類別或食材描述..." class="w-full pl-10 pr-4 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100">
           </div>
 
+          <!-- 縣市選單 -->
+          <div class="relative">
+            <select id="global-city-select" class="w-full px-3.5 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100 appearance-none pr-8">
+              <option value="全部" selected>🗺️ 全台灣 (全部縣市)</option>
+              <option value="台北市">📍 台北市</option>
+              <option value="新北市">📍 新北市</option>
+              <option value="桃園市">📍 桃園市</option>
+              <option value="台中市">📍 台中市</option>
+              <option value="台南市">📍 台南市</option>
+              <option value="高雄市">📍 高雄市</option>
+              <option value="新竹市">📍 新竹市 / 縣</option>
+              <option value="彰化縣">📍 彰化縣</option>
+              <option value="基隆市">📍 基隆市</option>
+              <option value="宜蘭縣">📍 宜蘭縣</option>
+              <option value="花蓮縣">📍 花蓮縣</option>
+              <option value="屏東縣">📍 屏東縣</option>
+              <option value="苗栗縣">📍 苗栗縣</option>
+              <option value="雲林縣">📍 雲林縣</option>
+              <option value="嘉義市">📍 嘉義市 / 縣</option>
+              <option value="南投縣">📍 南投縣</option>
+              <option value="台東縣">📍 台東縣</option>
+              <option value="澎湖縣">📍 澎湖縣 / 金門</option>
+            </select>
+            <i data-lucide="chevron-down" class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+          </div>
+
+          <!-- 排序選單 -->
           <div class="relative">
             <select id="global-sort-select" class="w-full px-3.5 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100 appearance-none pr-8">
               <option value="rating_desc" selected>⭐ 店家評分最高優先</option>
@@ -409,11 +452,11 @@
             <i data-lucide="chevron-down" class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
           </div>
 
+          <!-- 結果計數 -->
           <div class="flex items-center justify-between px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300">
             <span>找到結果：</span>
             <strong id="global-total-count" class="font-mono text-emerald-600 dark:text-emerald-400 text-sm">0 筆</strong>
           </div>
-
         </div>
       </div>
 

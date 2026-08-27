@@ -300,7 +300,7 @@ jobs:
           retention-days: 30
 
   # ============================================================
-  # Stage 6: 靜態快照導出與 GitHub Pages 自動發布 (Plan C Jamstack)
+  # Stage 6: 靜態快照導出、Parquet 湖倉直傳與 GitHub Pages 發布 (v7.0)
   # ============================================================
   static_snapshot_and_publish:
     name: "階段 6: 靜態快照導出與 Pages 發布"
@@ -309,6 +309,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
     steps:
       - name: 檢出專案代碼
         uses: actions/checkout@v7.0.1
@@ -317,6 +319,9 @@ jobs:
         uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
+
+      - name: 安裝導出依賴套件 (PyArrow & HF Hub)
+        run: pip install requests pyarrow huggingface_hub
 
       - name: 下載所有 Menu Worker 的 JSON 成果
         uses: actions/download-artifact@v8.0.1
@@ -331,23 +336,28 @@ jobs:
           name: taiwan-stores-full-dataset
           path: taiwan_stores_dataset/
 
-      - name: ① 導出邊緣靜態快照資料集 (Plan C Jamstack)
+      - name: ① 導出靜態快照與 Parquet 百萬資料湖 (v7.0)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO_ID: hub-google/UberEat
         run: |
           python src/export_static_snapshots.py \
             --src-dir all_menu_lake/ \
             --output-dir web/data \
             --stores-file taiwan_stores_dataset/taiwan_all_stores.json \
             --batch-id "${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}" \
-            --scope taiwan
+            --scope taiwan \
+            --repo-id "hub-google/UberEat"
 
-      - name: ② 自動提交發布最新靜態資料 (GitHub Pages)
+      - name: ② 自動提交發布最新靜態資料 (GitHub Repo)
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          rm -f web/data/*.parquet
           git pull origin main --rebase || true
-          git add web/data/ web/version.json
-          git commit -m "chore(data): auto-publish snapshot ${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }} [skip ci]" || echo "No changes to commit"
+          git add web/data/*.json web/version.json
+          git commit -m "chore(data): auto-publish snapshot ${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}" || echo "No changes to commit"
           git push origin main || echo "Push skipped or succeeded"
 
       - name: ③ 靜態資料完整性最終回查
@@ -360,13 +370,30 @@ jobs:
               path = os.path.join("web/data", fn)
               if not os.path.exists(path) or os.path.getsize(path) == 0:
                   raise SystemExit(f"❌ 缺少必要靜態檔案: {path}")
+              size_mb = os.path.getsize(path) / 1024 / 1024
+              if size_mb > 50.0:
+                  raise SystemExit(f"❌ 檔案 {fn} 體積超過 50MB 安全上限 ({size_mb:.1f}MB)")
               data = json.load(open(path, encoding="utf-8"))
-              print(f"✅ 靜態檔案校驗成功: {fn} (大小: {os.path.getsize(path):,} bytes)")
+              print(f"✅ 靜態檔案校驗成功: {fn} (大小: {os.path.getsize(path):,} bytes, {size_mb:.2f} MB)")
           PY
           {
-            echo "### ✅ Stage 6 Production Checkpoint (Plan C)"
+            echo "### ✅ Stage 6 Production Checkpoint (v7.0 Lakehouse)"
             echo "| 檢核項目 | 預期 | 實際 | 狀態 |"
             echo "| :--- | :--- | :--- | :---: |"
-            echo "| 靜態 JSON 檔案集合 | 6 份核心資料集完整生成 | 全部生成且格式無誤 | ✅ |"
-            echo "| GitHub Pages 發布 | 自動推送最新 snapshot | 提交成功 | ✅ |"
+            echo "| 靜態 JSON 檔案集合 | 6 份核心資料集完整生成且單檔 < 50MB | 全部生成且格式無誤 | ✅ |"
+            echo "| Parquet 資料湖 | 直傳 Hugging Face Dataset | 上傳完成 (支援 DuckDB) | ✅ |"
+            echo "| GitHub 存檔發布 | 自動推送最新 snapshot | 提交成功 | ✅ |"
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: ④ 設定 GitHub Pages 環境
+        uses: actions/configure-pages@v5
+
+      - name: ⑤ 上傳 Pages 靜態網站產物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'web'
+
+      - name: ⑥ 部署發布至 GitHub Pages (即時生效)
+        id: deployment
+        uses: actions/deploy-pages@v4
+
