@@ -27,6 +27,8 @@ import csv
 import html
 import random
 import hashlib
+import base64
+import uuid
 import threading
 from datetime import datetime, timezone, timedelta
 
@@ -40,8 +42,38 @@ from snapshot_validation import validate_document
 if hasattr(sys.stdout, 'reconfigure'):
     try:
         sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
     except Exception:
         pass
+
+
+def normalize_store_uuid(raw_uuid: str, store_url: str = "") -> str:
+    """將 22/24 碼 base64 slug、32 碼 hex 或 36 碼 UUID 標準化為 36 碼小寫標準 UUID"""
+    candidates = [raw_uuid]
+    if store_url:
+        m = re.search(r'/store/[^/?#]+/([a-zA-Z0-9_-]+)', store_url)
+        if m:
+            candidates.append(m.group(1))
+    for val in candidates:
+        if not val or not isinstance(val, str):
+            continue
+        val = val.strip()
+        if len(val) == 36 and val.count('-') == 4:
+            return val.lower()
+        if len(val) in (22, 24):
+            try:
+                padded = val.replace('-', '+').replace('_', '/') + '=='
+                raw_bytes = base64.b64decode(padded)
+                if len(raw_bytes) == 16:
+                    return str(uuid.UUID(bytes=raw_bytes)).lower()
+            except Exception:
+                pass
+        if len(val) == 32:
+            try:
+                return str(uuid.UUID(hex=val)).lower()
+            except Exception:
+                pass
+    return raw_uuid or ''
 
 
 def get_md5_hash(text: str) -> str:
@@ -420,13 +452,23 @@ def convert_api_data_to_schema(api_data: dict, store_url: str, fallback_name: st
                         "hasMenuItem": menu_items
                     })
 
+    has_any_item = any(sec.get("hasMenuItem") for sec in sections)
+    is_catalog_present = isinstance(api_data.get("catalogSectionsMap"), dict)
+    
+    if has_any_item:
+        menu_status = "present"
+    elif is_catalog_present:
+        menu_status = "empty_confirmed"
+    else:
+        menu_status = "missing"
+
     schema_doc = {
         "@context": "http://schema.org",
         "@type": "Restaurant",
         "@id": store_url,
         "name": title,
         "isOpen": is_open_bool,
-        "menu_status": "empty_confirmed" if api_data.get("catalogSectionsMap") == {} else "present",
+        "menu_status": menu_status,
         "telephone": api_data.get('phoneNumber') or "",
         "workingHoursTagline": api_data.get('workingHoursTagline') or "",
         "closedMessage": api_data.get('closedMessage') or "",
@@ -481,7 +523,7 @@ def fetch_single_store(store_item: dict, output_dir: str, time_prefix: str = "",
     2. 若無 store_uuid 則 Fallback 請求 HTML
     """
     store_url = store_item["store_url"]
-    store_uuid = store_item.get("store_uuid")
+    store_uuid = normalize_store_uuid(store_item.get("store_uuid"), store_url)
     store_id = get_md5_hash(store_url)
     
     session = requests.Session()

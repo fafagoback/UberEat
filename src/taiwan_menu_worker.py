@@ -159,7 +159,6 @@ def main():
     # 3. 實體產出檢核
     print(f"\n🔍 【步驟 4.3】執行產出 Schema.org JSON 檔案實體檢核...")
     json_files = glob.glob(os.path.join(args.output_dir, "*.json"))
-    validate_snapshot(args.output_dir, stores, batch_id)
     valid_json_count = 0
     invalid_files = []
 
@@ -169,6 +168,11 @@ def main():
             valid_json_count += 1
         else:
             invalid_files.append(f"{os.path.basename(jf)}: {msg}")
+
+    try:
+        validate_snapshot(args.output_dir, stores, batch_id)
+    except Exception as e:
+        invalid_files.append(f"snapshot: {e}")
 
     print(f"   ├─ 實體 JSON 檔案數: {len(json_files)} 個")
     print(f"   ├─ 格式檢核通過數:   {valid_json_count} 個")
