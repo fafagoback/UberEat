@@ -97,32 +97,53 @@ async function ensureParquetRegistered(tableName) {
     remoteUrl = `${partitionsBase.replace(/\/+$/, '')}/${tableName}`;
   }
 
-  let registered = false;
-  try {
-    if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
-      await DUCKDB_INSTANCE.registerFileURL(tableName, localUrl, duckdb.DuckDBDataProtocol.HTTP, false);
-      await DUCKDB_CONN.query(`SELECT COUNT(*) FROM '${tableName}' LIMIT 1`);
-      registered = true;
-      console.log(`✅ [DuckDB-WASM] 成功連線本地切片: ${tableName}`);
-    }
-  } catch (e) {
-    console.warn(`⚠️ 本地切片 ${tableName} 未命中，嘗試遠端 Hugging Face 湖倉...`, e);
-  }
-
-  if (!registered) {
+  // 1. 先檢測本地是否存在切片 (快速 HEAD 探測，避免把 404 HTML 註冊到 DuckDB)
+  let targetUrl = '';
+  if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
     try {
-      await DUCKDB_INSTANCE.registerFileURL(tableName, remoteUrl, duckdb.DuckDBDataProtocol.HTTP, false);
-      await DUCKDB_CONN.query(`SELECT COUNT(*) FROM '${tableName}' LIMIT 1`);
-      registered = true;
-      console.log(`✅ [DuckDB-WASM] 成功連線遠端切片: ${tableName}`);
+      const headRes = await Promise.race([
+        fetch(localUrl, { method: 'HEAD', cache: 'no-store' }),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), 1200))
+      ]);
+      if (headRes && headRes.ok) {
+        targetUrl = localUrl;
+        console.log(`🎯 [DuckDB-WASM] 命中本地切片: ${tableName}`);
+      }
     } catch (e) {
-      console.error(`❌ 無法連線切片 ${tableName}:`, e);
-      return false;
+      // 本地無此切片，切換遠端
     }
   }
 
-  REGISTERED_PARQUET_TABLES.add(tableName);
-  return true;
+  if (!targetUrl) {
+    targetUrl = remoteUrl;
+    console.log(`🌐 [DuckDB-WASM] 使用遠端 Hugging Face 湖倉: ${tableName}`);
+  }
+
+  // 2. 註冊至 DuckDB (先 dropFile 避免重名註冊錯誤)
+  try {
+    await DUCKDB_INSTANCE.dropFile(tableName).catch(() => {});
+    await DUCKDB_INSTANCE.registerFileURL(tableName, targetUrl, duckdb.DuckDBDataProtocol.HTTP, false);
+    await DUCKDB_CONN.query(`SELECT COUNT(*) FROM '${tableName}' LIMIT 1`);
+    REGISTERED_PARQUET_TABLES.add(tableName);
+    console.log(`✅ [DuckDB-WASM] 成功連線切片: ${tableName}`);
+    return true;
+  } catch (err) {
+    console.warn(`⚠️ [DuckDB-WASM] 切片連線失敗: ${tableName}`, err);
+    // 若原 targetUrl 失敗且原本嘗試本地，嘗試遠端
+    if (targetUrl === localUrl && remoteUrl) {
+      try {
+        await DUCKDB_INSTANCE.dropFile(tableName).catch(() => {});
+        await DUCKDB_INSTANCE.registerFileURL(tableName, remoteUrl, duckdb.DuckDBDataProtocol.HTTP, false);
+        await DUCKDB_CONN.query(`SELECT COUNT(*) FROM '${tableName}' LIMIT 1`);
+        REGISTERED_PARQUET_TABLES.add(tableName);
+        console.log(`✅ [DuckDB-WASM] 遠端切片備援成功: ${tableName}`);
+        return true;
+      } catch (err2) {
+        console.error(`❌ [DuckDB-WASM] 遠端切片備援亦失敗: ${tableName}`, err2);
+      }
+    }
+    return false;
+  }
 }
 
 // -----------------------------------------------------------------------------
@@ -180,43 +201,56 @@ async function initDuckDBEngine() {
   const badgeEl = document.getElementById('lakehouse-badge');
   if (badgeEl) {
     badgeEl.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span><span>連線湖倉中...</span>`;
+    badgeEl.className = "px-2 py-0.5 rounded-full text-[11px] font-medium bg-amber-50 text-amber-700 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-200 dark:border-amber-800 flex items-center gap-1";
   }
 
   try {
-    const duckdb = await import('https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.28.0/+esm');
-    const JSDELIVR_BUNDLES = duckdb.getJsDelivrBundles();
-    const bundle = await duckdb.selectBundle(JSDELIVR_BUNDLES);
+    const initPromise = (async () => {
+      const duckdb = await import('https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.28.0/+esm');
+      const JSDELIVR_BUNDLES = duckdb.getJsDelivrBundles();
+      const bundle = await duckdb.selectBundle(JSDELIVR_BUNDLES);
 
-    const worker = await duckdb.createWorker(bundle.mainWorker);
-    const logger = new duckdb.ConsoleLogger();
-    const db = new duckdb.AsyncDuckDB(logger, worker);
-    await db.instantiate(bundle.mainModule, bundle.pthreadWorker);
+      const worker = await duckdb.createWorker(bundle.mainWorker);
+      const logger = new duckdb.ConsoleLogger();
+      const db = new duckdb.AsyncDuckDB(logger, worker);
+      await db.instantiate(bundle.mainModule, bundle.pthreadWorker);
 
-    const conn = await db.connect();
+      const conn = await db.connect();
+      DUCKDB_INSTANCE = db;
+      DUCKDB_CONN = conn;
 
-    DUCKDB_INSTANCE = db;
-    DUCKDB_CONN = conn;
+      // 嘗試預先快取台北市切片 (最常用分區，20MB，非阻塞)
+      ensureParquetRegistered('catalog_taipei.parquet').catch(() => null);
+      return true;
+    })();
 
-    // 優先預先連線台北市切片 (最常用分區) 與全台切片
-    await ensureParquetRegistered('catalog_taipei.parquet').catch(() => null);
-    await ensureParquetRegistered('taiwan_catalog.parquet').catch(() => null);
+    // 8 秒逾時防護，若逾時則無縫維持本地快照模式
+    await Promise.race([
+      initPromise,
+      new Promise((_, reject) => setTimeout(() => reject(new Error('DuckDB 連線超時')), 8000))
+    ]);
 
     DUCKDB_READY = true;
+    console.log('✅ [DuckDB-WASM] 湖倉 SQL 查詢引擎已就緒');
 
     if (badgeEl) {
       badgeEl.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span><span>DuckDB 湖倉在線</span>`;
       badgeEl.className = "px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-50 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-1";
     }
 
+    // 若使用者當前正停留在全庫檢索分頁，無縫升級為湖倉深度檢索
     if (APP_STATE.currentTab === 'tab-global-search') {
       fetchGlobalProducts(APP_STATE.globalPage || 1);
     }
   } catch (err) {
-    console.warn('⚠️ [DuckDB-WASM] 湖倉連線未啟動:', err);
+    console.warn('⚠️ [DuckDB-WASM] 湖倉連線未啟動 (維持本地極速快照檢索模式):', err);
     DUCKDB_READY = false;
     if (badgeEl) {
-      badgeEl.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span><span>湖倉離線</span>`;
+      badgeEl.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span><span>本地快照搜尋</span>`;
       badgeEl.className = "px-2 py-0.5 rounded-full text-[11px] font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 border border-slate-200 dark:border-slate-700 flex items-center gap-1";
+    }
+    if (APP_STATE.currentTab === 'tab-global-search') {
+      executeInMemoryGlobalSearch(APP_STATE.globalPage || 1);
     }
   } finally {
     DUCKDB_INITIALIZING = false;
@@ -1305,6 +1339,75 @@ const CITY_PARTITION_MAP = {
   '澎湖縣': 'catalog_other.parquet'
 };
 
+function executeInMemoryGlobalSearch(page = 1) {
+  const sortMode = APP_STATE.filters.globalSort || 'rating_desc';
+  const rawSearch = (APP_STATE.filters.globalSearch || '').trim();
+  const cityFilter = APP_STATE.filters.globalCity || '全部';
+  const limit = PAGE_SIZE;
+
+  // 1. 取得品庫快照資料集 (20,000+ 筆)
+  let items = APP_STATE.allProducts && APP_STATE.allProducts.length > 0 
+    ? [...APP_STATE.allProducts] 
+    : [...(APP_STATE.rawDiscounts || []), ...(APP_STATE.newProducts || []), ...(APP_STATE.promotions || [])];
+
+  // 2. 關鍵字多語意與品牌同義字比對
+  if (rawSearch) {
+    const tokens = rawSearch.toLowerCase().split(/\s+/).filter(Boolean);
+    items = items.filter(p => {
+      const pName = (p.product_name || '').toLowerCase();
+      const sName = (p.store_name || '').toLowerCase();
+      const cName = (p.category_name || '').toLowerCase();
+      const fullText = `${pName} ${sName} ${cName}`;
+
+      return tokens.every(token => {
+        const syns = BRAND_SYNONYMS[token] || [token];
+        return syns.some(s => fullText.includes(s.toLowerCase()));
+      });
+    });
+  }
+
+  // 3. 縣市分區比對
+  if (cityFilter && cityFilter !== '全部') {
+    items = items.filter(p => matchCityInMemory(p, cityFilter));
+  }
+
+  // 4. 促銷活動過濾
+  if (sortMode === 'promo_only') {
+    items = items.filter(p => p.promo_type && p.promo_type !== '無' && p.promo_type !== '');
+  }
+
+  // 5. 排序演算法
+  if (sortMode === 'price_asc') {
+    items.sort((a, b) => (Number(a.eff_price || a.price) || 0) - (Number(b.eff_price || b.price) || 0) || (b.rating_value || 0) - (a.rating_value || 0));
+  } else if (sortMode === 'price_desc') {
+    items.sort((a, b) => (Number(b.eff_price || b.price) || 0) - (Number(a.eff_price || a.price) || 0) || (b.rating_value || 0) - (a.rating_value || 0));
+  } else if (sortMode === 'name_asc') {
+    items.sort((a, b) => String(a.product_name || '').localeCompare(String(b.product_name || '')));
+  } else if (sortMode === 'promo_first') {
+    items.sort((a, b) => {
+      const aPromo = (a.promo_type && a.promo_type !== '無' && a.promo_type !== '') ? 0 : 1;
+      const bPromo = (b.promo_type && b.promo_type !== '無' && b.promo_type !== '') ? 0 : 1;
+      if (aPromo !== bPromo) return aPromo - bPromo;
+      return (b.rating_value || 0) - (a.rating_value || 0) || (Number(a.eff_price || a.price) || 0) - (Number(b.eff_price || b.price) || 0);
+    });
+  } else {
+    // 預設: 店家評分最高優先 (rating_desc)
+    items.sort((a, b) => (b.rating_value || 0) - (a.rating_value || 0) || (Number(a.eff_price || a.price) || 0) - (Number(b.eff_price || b.price) || 0));
+  }
+
+  const total = items.length;
+  const offset = (page - 1) * limit;
+  const pageRows = items.slice(offset, offset + limit);
+  const totalPages = Math.ceil(total / limit) || 1;
+
+  APP_STATE.globalProducts = pageRows;
+  APP_STATE.globalHasNext = page < totalPages;
+  APP_STATE.globalTotalPages = totalPages;
+  APP_STATE.globalTotalItems = total;
+
+  renderGlobalProducts();
+}
+
 async function fetchGlobalProducts(page = 1) {
   globalSearchController?.abort();
   const controller = new AbortController();
@@ -1312,51 +1415,36 @@ async function fetchGlobalProducts(page = 1) {
   const sequence = ++globalSearchSequence;
 
   APP_STATE.globalPage = page;
-  const container = document.getElementById('global-products-grid');
-
   const sortMode = APP_STATE.filters.globalSort || 'rating_desc';
   const rawSearch = (APP_STATE.filters.globalSearch || '').trim();
   const cityFilter = APP_STATE.filters.globalCity || '全部';
   const limit = PAGE_SIZE;
   const offset = (page - 1) * limit;
 
-  // 決定此縣市所對應的 Parquet 切片
+  // 1. DuckDB 尚未就緒或不可用時，立即執行極速本地記憶體快照檢索 (0ms 延遲)
+  if (!DUCKDB_READY || !DUCKDB_CONN) {
+    executeInMemoryGlobalSearch(page);
+    return;
+  }
+
+  // 2. 決定此縣市所對應的 Parquet 切片
   let targetTable = 'taiwan_catalog.parquet';
   if (cityFilter && cityFilter !== '全部' && CITY_PARTITION_MAP[cityFilter]) {
     targetTable = CITY_PARTITION_MAP[cityFilter];
   }
 
-  // 1. DuckDB 尚未就緒時顯示載入狀態
-  if (!DUCKDB_READY || !DUCKDB_CONN) {
-    if (container) {
-      container.innerHTML = `
-        <div class="col-span-1 md:col-span-2 lg:col-span-3 py-16 text-center text-slate-500">
-          <div class="inline-block animate-spin rounded-full h-8 w-8 border-2 border-emerald-500 border-t-transparent mb-3"></div>
-          <p class="text-sm font-medium text-slate-700 dark:text-slate-300">DuckDB 湖倉引擎連線中...</p>
-          <p class="text-xs text-slate-400 mt-1">正在連線 ${cityFilter !== '全部' ? cityFilter : '全台'} 100% 完整品庫切片</p>
-        </div>
-      `;
-    }
-    return;
+  // 3. 若當前畫面尚未有商品，先以本地記憶體快速預填，防止畫面空白卡頓
+  if (!APP_STATE.globalProducts || APP_STATE.globalProducts.length === 0) {
+    executeInMemoryGlobalSearch(page);
   }
 
-  // 2. 顯示即時檢索中狀態
-  if (container) {
-    container.innerHTML = `
-      <div class="col-span-1 md:col-span-2 lg:col-span-3 py-16 text-center text-slate-500">
-        <div class="inline-block animate-spin rounded-full h-8 w-8 border-2 border-emerald-500 border-t-transparent mb-3"></div>
-        <p class="text-sm font-medium text-slate-700 dark:text-slate-300">
-          ${cityFilter !== '全部' ? `${cityFilter}全庫` : '全台全品庫'} 100% 深度檢索中...
-        </p>
-        ${rawSearch ? `<p class="text-xs text-slate-400 mt-1">關鍵字: 「${escapeHtml(rawSearch)}」</p>` : ''}
-      </div>
-    `;
-  }
-
-  // 3. 動態掛載縣市切片並執行全量 SQL 查詢 (無截斷、100% 完整涵蓋)
+  // 4. 動態掛載縣市切片並執行全量 DuckDB SQL 查詢 (100% 完整百萬品庫)
   try {
-    await ensureParquetRegistered(targetTable);
-    if (controller.signal.aborted || sequence !== globalSearchSequence) return;
+    const ok = await ensureParquetRegistered(targetTable);
+    if (!ok || controller.signal.aborted || sequence !== globalSearchSequence) {
+      if (!ok) executeInMemoryGlobalSearch(page);
+      return;
+    }
 
     let whereClauses = ["price >= 1"];
 
@@ -1407,12 +1495,8 @@ async function fetchGlobalProducts(page = 1) {
     renderGlobalProducts();
   } catch (err) {
     if (sequence !== globalSearchSequence) return;
-    console.error('DuckDB 全庫檢索失敗:', err);
-    APP_STATE.globalProducts = [];
-    APP_STATE.globalHasNext = false;
-    APP_STATE.globalTotalPages = 1;
-    APP_STATE.globalTotalItems = 0;
-    renderGlobalProducts();
+    console.warn('DuckDB 湖倉查詢未果，切換為本地記憶體即時檢索:', err);
+    executeInMemoryGlobalSearch(page);
   }
 }
 
