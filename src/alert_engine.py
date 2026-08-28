@@ -21,6 +21,11 @@ from datetime import datetime, timezone, timedelta
 TW_TZ = timezone(timedelta(hours=8))
 from typing import Dict, List, Tuple, Any, Optional
 
+try:
+    from json_to_db import calculate_effective_price
+except ImportError:
+    from .json_to_db import calculate_effective_price
+
 # 確保標準輸出支援 UTF-8
 if hasattr(sys.stdout, 'reconfigure'):
     try:
@@ -212,11 +217,9 @@ class UberEatsAlertEngine:
             p0.price as prev_raw_price,
             p0.quantity as prev_qty,
             p0.promo_type as prev_promo,
-            ROUND(p0.price * 1.0 / p0.quantity, 2) as prev_eff_price,
             p1.price as curr_raw_price,
             p1.quantity as curr_qty,
             p1.promo_type as curr_promo,
-            ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff_price,
             COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
             s.rating_value,
             s.review_count,
@@ -229,22 +232,27 @@ class UberEatsAlertEngine:
           AND p1.crawled_time = ?
           AND p0.price > 0
           AND p1.price > 0
-          AND (p0.is_open = 1 OR p0.is_open IS NULL)
-          AND (p1.is_open = 1 OR p1.is_open IS NULL)
+          AND p0.is_open = 1
+          AND p1.is_open = 1
         """
         cursor.execute(query, (prev_batch, latest_batch))
         rows = cursor.fetchall()
 
         discounts = []
         for r in rows:
-            prev_eff = float(r["prev_eff_price"])
-            curr_eff = float(r["curr_eff_price"])
+            prev_eff = calculate_effective_price(float(r["prev_raw_price"]), r["prev_promo"], int(r["prev_qty"]))
+            curr_eff = calculate_effective_price(float(r["curr_raw_price"]), r["curr_promo"], int(r["curr_qty"]))
 
             if prev_eff <= 0:
                 continue
 
             savings = prev_eff - curr_eff
             drop_pct = (savings / prev_eff) * 100.0
+
+            # 防呆機制：排除無促銷標籤但降幅 > 80% 的疑似店家漏打 0 手誤標價
+            curr_promo = r["curr_promo"] or "無"
+            if curr_promo == "無" and drop_pct > 80.0:
+                continue
 
             if drop_pct >= min_discount_pct and savings >= min_savings_twd:
                 raw_url = r["order_action_url"] or ""
@@ -262,7 +270,7 @@ class UberEatsAlertEngine:
                     "curr_raw_price": float(r["curr_raw_price"]),
                     "prev_qty": int(r["prev_qty"]),
                     "curr_qty": int(r["curr_qty"]),
-                    "promo_type": r["curr_promo"],
+                    "promo_type": curr_promo,
                     "discount_pct": round(drop_pct, 1),
                     "savings_amount": round(savings, 1),
                     "order_action_url": clean_url,
@@ -425,18 +433,7 @@ class UberEatsAlertEngine:
             price = float(r["price"])
             qty = int(r["quantity"])
             promo_t = r["promo_type"] or ""
-            
-            # 精確計算買X送Y與促銷實質單價
-            eff = float(r["eff_price"])
-            m_buy = re.search(r"買\s*([0-9一二兩三四五])\s*送\s*([0-9一二兩三四五])", promo_t)
-            if m_buy:
-                digit_map = {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '一': 1, '二': 2, '兩': 2, '三': 3, '四': 4, '五': 5}
-                b = digit_map.get(m_buy.group(1), 1)
-                f = digit_map.get(m_buy.group(2), 1)
-                if b + f > 0:
-                    eff = round((price * b) / (b + f), 2)
-            elif re.search(r"第\s*[2二兩]\s*[件杯項份]\s*半價", promo_t):
-                eff = round((price * 1.5) / 2.0, 2)
+            eff = calculate_effective_price(price, promo_t, qty)
 
             raw_url = r["order_action_url"] or ""
             promos.append({

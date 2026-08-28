@@ -117,7 +117,7 @@ def fatal_error(step_name: str, reason: str, expected: str = "", actual: str = "
 
 
 def calculate_7day_discounts(conn: sqlite3.Connection, latest_batch: str, min_discount_pct: float = 20.0, min_savings_twd: float = 20.0) -> List[Dict[str, Any]]:
-    """計算相較於過去 7 天內最高實質單價的降價商品"""
+    """計算相較於前次快照營業中實質單價的降價商品"""
     cursor = conn.cursor()
 
     # 計算 7 天前時間戳記 (YYYYMMDDhhmmss)
@@ -133,6 +133,21 @@ def calculate_7day_discounts(conn: sqlite3.Connection, latest_batch: str, min_di
         return []
 
     query = """
+    WITH ranked_prev AS (
+        SELECT 
+            p0.product_id,
+            p0.store_id,
+            p0.price as prev_raw_price,
+            p0.quantity as prev_qty,
+            p0.promo_type as prev_promo,
+            p0.eff_price as prev_eff_price,
+            ROW_NUMBER() OVER (PARTITION BY p0.product_id, p0.store_id ORDER BY p0.crawled_time DESC) as rn
+        FROM products p0
+        WHERE p0.crawled_time >= ?
+          AND p0.crawled_time < ?
+          AND p0.price >= 1
+          AND p0.is_open = 1
+    )
     SELECT 
         p1.product_id,
         p1.store_id,
@@ -143,41 +158,41 @@ def calculate_7day_discounts(conn: sqlite3.Connection, latest_batch: str, min_di
         p1.price as curr_raw_price,
         p1.quantity as curr_qty,
         p1.promo_type,
-        ROUND(p1.price * 1.0 / p1.quantity, 2) as curr_eff_price,
-        (
-            SELECT MAX(p0.price * 1.0 / p0.quantity)
-            FROM products p0
-            WHERE p0.product_id = p1.product_id
-              AND p0.crawled_time >= ?
-              AND p0.crawled_time < p1.crawled_time
-              AND p0.price >= 1
-              AND (p0.is_open = 1 OR p0.is_open IS NULL)
-        ) as max_7day_eff_price,
+        p1.eff_price as curr_eff_price,
+        h.prev_eff_price,
+        h.prev_raw_price,
+        h.prev_qty,
         COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
         s.rating_value,
         s.review_count,
         s.locality,
         s.street_address,
-        COALESCE(p1.is_open, s.is_open, 1) as is_open
+        p1.is_open
     FROM products p1
+    JOIN ranked_prev h ON p1.product_id = h.product_id AND p1.store_id = h.store_id AND h.rn = 1
     LEFT JOIN stores s ON p1.store_id = s.store_id AND p1.crawled_time = s.crawled_time
     WHERE p1.crawled_time = ?
       AND p1.price >= 1
-      AND (p1.is_open = 1 OR p1.is_open IS NULL);
+      AND p1.is_open = 1;
     """
-    cursor.execute(query, (seven_days_ago, latest_batch))
+    cursor.execute(query, (seven_days_ago, latest_batch, latest_batch))
     rows = cursor.fetchall()
 
     discounts = []
     for r in rows:
         curr_eff = float(r["curr_eff_price"])
-        max_eff = float(r["max_7day_eff_price"]) if r["max_7day_eff_price"] is not None else None
+        prev_eff = float(r["prev_eff_price"]) if r["prev_eff_price"] is not None else None
 
-        if max_eff is None or max_eff <= 0:
+        if prev_eff is None or prev_eff <= 0:
             continue
 
-        savings = max_eff - curr_eff
-        drop_pct = (savings / max_eff) * 100.0
+        savings = prev_eff - curr_eff
+        drop_pct = (savings / prev_eff) * 100.0
+
+        promo_t = r["promo_type"] or "無"
+        # 防呆機制：排除無促銷標籤但降幅 > 80% 的疑似店家漏打 0 錯誤
+        if promo_t == "無" and drop_pct > 80.0:
+            continue
 
         if drop_pct >= min_discount_pct and savings >= min_savings_twd:
             raw_url = r["order_action_url"] or ""
@@ -189,15 +204,15 @@ def calculate_7day_discounts(conn: sqlite3.Connection, latest_batch: str, min_di
                 "product_name": r["product_name"],
                 "category_name": r["category_name"] or "未分類",
                 "description": r["description"] or "",
-                "original_price": max_eff,
+                "original_price": prev_eff,
                 "current_price": curr_eff,
-                "prev_raw_price": max_eff,
+                "prev_raw_price": float(r["prev_raw_price"]),
                 "curr_raw_price": float(r["curr_raw_price"]),
-                "prev_qty": 1,
+                "prev_qty": int(r["prev_qty"]),
                 "curr_qty": int(r["curr_qty"]),
                 "discount_pct": round(drop_pct, 1),
                 "savings_amount": round(savings, 1),
-                "promo_type": r["promo_type"] or "無",
+                "promo_type": promo_t,
                 "order_action_url": clean_url,
                 "rating_value": float(r["rating_value"]) if r["rating_value"] is not None else None,
                 "review_count": int(r["review_count"]) if r["review_count"] is not None else None,
@@ -223,7 +238,7 @@ def extract_curated_catalog(conn: sqlite3.Connection, latest_batch: str, max_ite
         p.price,
         p.quantity,
         p.promo_type,
-        ROUND(p.price * 1.0 / p.quantity, 2) as eff_price,
+        COALESCE(p.eff_price, ROUND(p.price * 1.0 / p.quantity, 2)) as eff_price,
         p.description,
         COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
         s.rating_value,
@@ -238,7 +253,7 @@ def extract_curated_catalog(conn: sqlite3.Connection, latest_batch: str, max_ite
     ORDER BY 
         CASE WHEN p.promo_type != '無' AND p.promo_type != '' THEN 0 ELSE 1 END,
         s.rating_value DESC NULLS LAST,
-        (p.price * 1.0 / p.quantity) ASC
+        COALESCE(p.eff_price, p.price) ASC
     LIMIT ?;
     """
     cursor.execute(query, (latest_batch, max_items))
@@ -292,7 +307,7 @@ def export_parquet_catalog(conn: sqlite3.Connection, latest_batch: str, output_p
         CAST(p.price AS REAL) as price,
         CAST(p.quantity AS INTEGER) as quantity,
         COALESCE(p.promo_type, '無') as promo_type,
-        ROUND(p.price * 1.0 / p.quantity, 2) as eff_price,
+        COALESCE(p.eff_price, ROUND(p.price * 1.0 / p.quantity, 2)) as eff_price,
         COALESCE(p.description, '') as description,
         COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
         s.rating_value,
@@ -305,7 +320,7 @@ def export_parquet_catalog(conn: sqlite3.Connection, latest_batch: str, output_p
     LEFT JOIN stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
     WHERE p.crawled_time = ?
       AND p.price >= 1
-    ORDER BY s.rating_value DESC NULLS LAST, (p.price * 1.0 / p.quantity) ASC;
+    ORDER BY s.rating_value DESC NULLS LAST, COALESCE(p.eff_price, p.price) ASC;
     """
     cursor.execute(query, (latest_batch,))
     rows = cursor.fetchall()
@@ -434,7 +449,7 @@ def extract_price_history_map(conn: sqlite3.Connection, target_product_ids: Opti
             price,
             quantity,
             promo_type,
-            ROUND(price * 1.0 / quantity, 2) as eff_price
+            COALESCE(eff_price, ROUND(price * 1.0 / quantity, 2)) as eff_price
         FROM products
         WHERE product_id IN ({placeholders})
         ORDER BY product_id, crawled_time ASC;
@@ -450,7 +465,7 @@ def extract_price_history_map(conn: sqlite3.Connection, target_product_ids: Opti
             price,
             quantity,
             promo_type,
-            ROUND(price * 1.0 / quantity, 2) as eff_price
+            COALESCE(eff_price, ROUND(price * 1.0 / quantity, 2)) as eff_price
         FROM products
         WHERE promo_type != '無' AND promo_type != ''
         ORDER BY product_id, crawled_time ASC
@@ -473,297 +488,6 @@ def extract_price_history_map(conn: sqlite3.Connection, target_product_ids: Opti
         })
     return history_map
 
-
-def export_all_static_snapshots(
-    src_dir: Optional[str] = None,
-    snapshot_tar: Optional[str] = None,
-    output_dir: str = "web/data",
-    db_path: Optional[str] = None,
-    batch_id: Optional[str] = None,
-    stores_file: Optional[str] = None,
-    scope: str = "taiwan",
-    hf_repo_id: str = "hub-google/UberEat",
-    upload_hf: bool = True
-) -> Dict[str, Any]:
-    """
-    執行端到端靜態快照導出作業 (v7.0 生產級架構)
-    支援從解壓目錄 (src_dir) 或直接從壓縮包 (snapshot_tar) 高速流式提取
-    """
-    start_time = time.time()
-    print("=" * 80)
-    print("🚀 【階段 6: 邊緣靜態快照與 Parquet 湖倉導出 (v7.0)】啟動")
-    if snapshot_tar:
-        print(f"📦 菜單快照壓縮包: {snapshot_tar}")
-    if src_dir:
-        print(f"📁 菜單解壓來源目錄: {src_dir}")
-    print(f"📦 靜態導出目錄: {output_dir}")
-
-    # 處理 SQLite DB 路徑
-    is_temp_db = False
-    if not db_path or db_path == ":memory:":
-        is_temp_db = True
-        temp_dir = tempfile.gettempdir()
-        db_path = os.path.join(temp_dir, f"ubereats_export_{int(time.time() * 1000)}_{os.getpid()}.db")
-    else:
-        db_path = os.path.abspath(db_path)
-
-    os.makedirs(output_dir, exist_ok=True)
-    if os.path.dirname(db_path):
-        os.makedirs(os.path.dirname(os.path.abspath(db_path)), exist_ok=True)
-
-    if os.path.exists(db_path):
-        try: os.remove(db_path)
-        except Exception: pass
-
-    conn = sqlite3.connect(db_path)
-    conn.execute("PRAGMA journal_mode = OFF;")
-    conn.execute("PRAGMA synchronous = OFF;")
-    conn.row_factory = sqlite3.Row
-    cursor = conn.cursor()
-
-    # 初始化 SQLite 資料表
-    cursor.execute("""
-    CREATE TABLE IF NOT EXISTS crawl_batches (
-        crawled_time VARCHAR(14) PRIMARY KEY,
-        benchmark_address VARCHAR(255) NOT NULL,
-        benchmark_lat DECIMAL(10, 7) NOT NULL,
-        benchmark_lon DECIMAL(10, 7) NOT NULL,
-        total_discovered INT NOT NULL DEFAULT 0,
-        success_count INT NOT NULL DEFAULT 0,
-        fail_count INT NOT NULL DEFAULT 0
-    );""")
-    cursor.execute("""
-    CREATE TABLE IF NOT EXISTS stores (
-        store_id VARCHAR(32) NOT NULL,
-        crawled_time VARCHAR(14) NOT NULL,
-        store_name VARCHAR(255) NOT NULL,
-        store_type VARCHAR(50) NOT NULL DEFAULT 'Restaurant',
-        store_url VARCHAR(1000) NOT NULL,
-        rating_value DECIMAL(3, 2),
-        review_count INT,
-        price_range VARCHAR(10),
-        telephone VARCHAR(50),
-        country_code VARCHAR(10) DEFAULT 'TW',
-        region VARCHAR(50),
-        locality VARCHAR(50),
-        street_address VARCHAR(255),
-        postal_code VARCHAR(20),
-        latitude DECIMAL(10, 7),
-        longitude DECIMAL(10, 7),
-        order_action_url TEXT,
-        total_menu_items INT NOT NULL DEFAULT 0,
-        is_open INT NOT NULL DEFAULT 1,
-        PRIMARY KEY (store_id, crawled_time)
-    );""")
-    cursor.execute("""
-    CREATE TABLE IF NOT EXISTS products (
-        product_id VARCHAR(32) NOT NULL,
-        crawled_time VARCHAR(14) NOT NULL,
-        store_id VARCHAR(32) NOT NULL,
-        store_name VARCHAR(255) NOT NULL,
-        category_name VARCHAR(100),
-        product_name VARCHAR(255) NOT NULL,
-        price DECIMAL(10, 2) NOT NULL,
-        currency VARCHAR(10) NOT NULL DEFAULT 'TWD',
-        description TEXT,
-        promo_type VARCHAR(50) NOT NULL DEFAULT '無',
-        quantity INT NOT NULL DEFAULT 1,
-        is_open INT NOT NULL DEFAULT 1,
-        PRIMARY KEY (product_id, crawled_time)
-    );""")
-
-    # 1. 高速讀取與解析所有菜單 JSON
-    print("\n⚙️ 【步驟 6.1】執行高速資料湖解析與 ETL 入庫...")
-    from json_to_db import get_md5_hash, extract_promo_info, menu_identity_keys
-
-    store_rows = []
-    product_rows = []
-    inactive_stores = []
-    detected_batches = set()
-
-    def process_store_json(doc: dict, fname: str = ""):
-        nonlocal batch_id
-        store_url = doc.get("@id") or ""
-        if not store_url:
-            return
-
-        c_time = batch_id
-        if not c_time and fname:
-            base = os.path.basename(fname)
-            if "_" in base and len(base.split("_")[0]) == 14:
-                c_time = base.split("_")[0]
-        if not c_time:
-            c_time = doc.get("batch_id") or "20260827164757"
-
-        detected_batches.add(c_time)
-
-        store_id = get_md5_hash(store_url)
-        store_name = html.unescape(str(doc.get("name", "未命名店家"))).strip()
-        store_type = doc.get("@type", "Restaurant")
-        price_range = doc.get("priceRange")
-        telephone = doc.get("telephone")
-
-        addr = doc.get("address")
-        if isinstance(addr, dict):
-            country_code = addr.get("addressCountry") or "TW"
-            region = addr.get("addressRegion")
-            locality = addr.get("addressLocality")
-            street_address = addr.get("streetAddress")
-            postal_code = addr.get("postalCode")
-        else:
-            country_code = "TW"
-            region = locality = street_address = postal_code = None
-
-        geo = doc.get("geo")
-        latitude = None
-        longitude = None
-        if isinstance(geo, dict):
-            try:
-                if geo.get("latitude") is not None: latitude = float(geo["latitude"])
-            except (ValueError, TypeError): latitude = None
-            try:
-                if geo.get("longitude") is not None: longitude = float(geo["longitude"])
-            except (ValueError, TypeError): longitude = None
-
-        rating = doc.get("aggregateRating")
-        rating_value = None
-        review_count = None
-        if isinstance(rating, dict):
-            try:
-                if rating.get("ratingValue") is not None: rating_value = float(rating["ratingValue"])
-            except (ValueError, TypeError): rating_value = None
-            try:
-                if rating.get("reviewCount") is not None: review_count = int(rating["reviewCount"])
-            except (ValueError, TypeError): review_count = None
-
-        order_action_url = store_url
-        pot_action = doc.get("potentialAction")
-        if isinstance(pot_action, dict):
-            target = pot_action.get("target")
-            if isinstance(target, dict) and target.get("urlTemplate"):
-                order_action_url = html.unescape(target["urlTemplate"]).replace("&amp;", "&")
-
-        is_open_val = doc.get("isOpen")
-        is_open = 1 if (is_open_val is True or is_open_val == 1 or is_open_val is None) else 0
-
-        if doc.get("menu_status") == "inactive_account":
-            inactive_stores.append(store_name)
-
-        has_menu = doc.get("hasMenu")
-        sections = has_menu.get("hasMenuSection", []) if isinstance(has_menu, dict) else []
-        item_identity = menu_identity_keys(sections, store_id)
-
-        store_item_count = 0
-        for sec in sections:
-            if not isinstance(sec, dict): continue
-            sec_name = html.unescape(str(sec.get("name", ""))).strip()
-            for item in sec.get("hasMenuItem", []):
-                if not isinstance(item, dict): continue
-                pname = html.unescape(str(item.get("name", ""))).strip()
-                if not pname: continue
-
-                pid = item_identity(item)
-                offers = item.get("offers")
-                p_raw = offers.get("price") if isinstance(offers, dict) else None
-                try:
-                    price_val = round(float(p_raw), 2) if p_raw is not None else 0.0
-                except (ValueError, TypeError):
-                    price_val = 0.0
-
-                if price_val <= 0:
-                    continue
-
-                desc = html.unescape(str(item.get("description", ""))).strip() if item.get("description") else None
-                promo_type, qty = extract_promo_info(sec_name, pname, desc)
-
-                product_rows.append((
-                    pid, c_time, store_id, store_name, sec_name or "一般",
-                    pname, price_val, "TWD", desc, promo_type, qty, is_open
-                ))
-                store_item_count += 1
-
-        store_rows.append((
-            store_id, c_time, store_name, store_type, store_url,
-            rating_value, review_count, price_range, telephone,
-            country_code, region, locality, street_address, postal_code,
-            latitude, longitude, order_action_url, store_item_count, is_open
-        ))
-
-    # 來源讀取
-    if snapshot_tar and os.path.exists(snapshot_tar):
-        print(f"   ├─ 從壓縮包流式讀取: {snapshot_tar} ...")
-        with tarfile.open(snapshot_tar, "r:gz") as tar:
-            while True:
-                member = tar.next()
-                if member is None:
-                    break
-                if not member.name.endswith(".json") or member.name.endswith("manifest.json"):
-                    continue
-                f = tar.extractfile(member)
-                if not f: continue
-                try:
-                    doc = json.load(f)
-                    process_store_json(doc, member.name)
-                except Exception as e:
-                    print(f"⚠️ 解析錯誤 [{member.name}]: {type(e).__name__}: {e}")
-                    continue
-    elif src_dir and os.path.exists(src_dir):
-        print(f"   ├─ 掃描目錄檔案: {src_dir} ...")
-        # 搜尋包含子目錄的所有 json
-        json_paths = []
-        for root, _, files in os.walk(src_dir):
-            for fn in files:
-                if fn.endswith(".json") and not fn.endswith("summary.json") and not fn.endswith("manifest.json"):
-                    json_paths.append(os.path.join(root, fn))
-
-        print(f"   ├─ 找到 {len(json_paths):,} 個菜單 JSON 檔案...")
-        for p in json_paths:
-            try:
-                with open(p, "r", encoding="utf-8") as f:
-                    doc = json.load(f)
-                process_store_json(doc, p)
-            except Exception:
-                continue
-    else:
-        fatal_error("步驟 6.1 來源檢核", "未指定有效的 src_dir 或 snapshot_tar")
-
-    if detected_batches:
-        batch_id = sorted(detected_batches)[-1]
-    if not batch_id:
-        batch_id = datetime.now(TW_TZ).strftime("%Y%m%d%H%M%S")
-
-    print(f"✅ [步驟 6.1 完成] 成功提取 {len(store_rows):,} 間店家、{len(product_rows):,} 筆商品 (批次: {batch_id})")
-
-    # 2. 批量寫入 SQLite
-    print("\n⚙️ 【步驟 6.2】批量入庫 SQLite 並建立索引...")
-    cursor.execute("INSERT OR REPLACE INTO crawl_batches VALUES (?, ?, ?, ?, ?, ?, ?);",
-                   (batch_id, "全台採集", 25.0, 121.5, len(store_rows), len(store_rows), 0))
-    cursor.executemany("INSERT OR REPLACE INTO stores VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);", store_rows)
-    cursor.executemany("INSERT OR REPLACE INTO products VALUES (?,?,?,?,?,?,?,?,?,?,?,?);", product_rows)
-    cursor.execute("CREATE INDEX IF NOT EXISTS idx_products_eff ON products (product_id, crawled_time DESC);")
-    cursor.execute("CREATE INDEX IF NOT EXISTS idx_stores_id ON stores (store_id);")
-    conn.commit()
-
-    # 3. 匯出全台全品庫 Parquet 檔案並上傳 Hugging Face
-    print("\n🗄️ 【步驟 6.3】生成極致壓縮 Parquet 百萬資料湖檔案...")
-    parquet_filename = f"taiwan_catalog_{batch_id}.parquet"
-    parquet_filepath = os.path.join(output_dir, parquet_filename)
-    latest_parquet_filepath = os.path.join(output_dir, "taiwan_catalog_latest.parquet")
-
-    total_parquet_rows = export_parquet_catalog(conn, batch_id, latest_parquet_filepath)
-    if os.path.exists(latest_parquet_filepath):
-        # 同步保留一份帶 batch_id 的檔案
-        import shutil
-        shutil.copyfile(latest_parquet_filepath, parquet_filepath)
-        parquet_size_mb = os.path.getsize(latest_parquet_filepath) / 1024 / 1024
-        print(f"✅ [Parquet 導出成功] 共 {total_parquet_rows:,} 筆商品，大小: {parquet_size_mb:.2f} MB")
-        if upload_hf:
-            if total_parquet_rows >= 1000:
-                upload_parquet_to_hf(latest_parquet_filepath, batch_id, repo_id=hf_repo_id)
-            else:
-                print(f"⚠️ [安全保護] Parquet 筆數 ({total_parquet_rows:,} 筆) 未達生產門檻 (1,000 筆)，自動略過 Hugging Face 生產湖倉覆蓋。")
-        else:
-            print("ℹ️ 依設定跳過 Hugging Face Parquet 上傳。")
 
 def compute_cross_snapshot_intelligence(
     latest_parquet_path: str,
@@ -833,20 +557,32 @@ def compute_cross_snapshot_intelligence(
     if prev_parquet_path and os.path.exists(prev_parquet_path):
         print(f"🔍 正在與歷史快照 (前置批次: {prev_batch_id}) 執行 DuckDB 湖倉極速差異分析...")
         
-        # 降價查詢 (相較前 7 天最高價格)
-        history_union_subquery = " UNION ALL ".join([f"SELECT product_id, store_id, eff_price, price, quantity, promo_type, is_open FROM '{p}'" for _, p in all_downloaded_history_paths])
+        # 降價查詢 (相較前次快照實質單價)
+        history_union_subquery = " UNION ALL ".join([f"SELECT product_id, store_id, crawled_time, eff_price, price, quantity, promo_type, is_open FROM '{p}'" for _, p in all_downloaded_history_paths])
         
         q_disc = f"""
-        WITH hist_max AS (
+        WITH ranked_hist AS (
             SELECT 
                 product_id,
                 store_id,
-                MAX(eff_price) AS max_7day_eff,
-                MAX(price) AS prev_raw_price,
-                MAX(quantity) AS prev_qty
+                eff_price AS prev_eff_price,
+                price AS prev_raw_price,
+                quantity AS prev_qty,
+                promo_type AS prev_promo,
+                ROW_NUMBER() OVER (PARTITION BY product_id, store_id ORDER BY crawled_time DESC) as rn
             FROM ({history_union_subquery})
-            WHERE eff_price > 0 AND (is_open = 1 OR is_open IS NULL)
-            GROUP BY product_id, store_id
+            WHERE eff_price > 0 AND is_open = 1
+        ),
+        hist_prev AS (
+            SELECT 
+                product_id,
+                store_id,
+                prev_eff_price,
+                prev_raw_price,
+                prev_qty,
+                prev_promo
+            FROM ranked_hist
+            WHERE rn = 1
         )
         SELECT 
             curr.product_id,
@@ -855,14 +591,14 @@ def compute_cross_snapshot_intelligence(
             curr.product_name,
             curr.category_name,
             curr.description,
-            h.max_7day_eff AS original_price,
+            h.prev_eff_price AS original_price,
             curr.eff_price AS current_price,
             h.prev_raw_price,
             curr.price AS curr_raw_price,
             h.prev_qty,
             curr.quantity AS curr_qty,
-            ROUND((h.max_7day_eff - curr.eff_price) * 100.0 / h.max_7day_eff, 1) AS discount_pct,
-            ROUND(h.max_7day_eff - curr.eff_price, 1) AS savings_amount,
+            ROUND((h.prev_eff_price - curr.eff_price) * 100.0 / h.prev_eff_price, 1) AS discount_pct,
+            ROUND(h.prev_eff_price - curr.eff_price, 1) AS savings_amount,
             curr.promo_type,
             curr.order_action_url,
             curr.rating_value,
@@ -872,10 +608,13 @@ def compute_cross_snapshot_intelligence(
             curr.city,
             curr.crawled_time
         FROM '{p_curr}' curr
-        JOIN hist_max h ON curr.product_id = h.product_id AND curr.store_id = h.store_id
+        JOIN hist_prev h ON curr.product_id = h.product_id AND curr.store_id = h.store_id
         WHERE curr.eff_price > 0 
-          AND (h.max_7day_eff - curr.eff_price) >= {min_savings_twd}
-          AND (h.max_7day_eff - curr.eff_price) * 100.0 / h.max_7day_eff >= {min_discount_pct}
+          AND curr.is_open = 1
+          AND (h.prev_eff_price - curr.eff_price) >= {min_savings_twd}
+          AND (h.prev_eff_price - curr.eff_price) * 100.0 / h.prev_eff_price >= {min_discount_pct}
+          -- 防呆機制：過濾無促銷標籤但降幅 > 80% 的疑似店家漏打 0 錯誤
+          AND NOT (curr.promo_type = '無' AND (h.prev_eff_price - curr.eff_price) * 100.0 / h.prev_eff_price > 80.0)
         ORDER BY discount_pct DESC, savings_amount DESC;
         """
         try:
@@ -930,8 +669,7 @@ def compute_cross_snapshot_intelligence(
         WHERE curr.store_id IN (SELECT DISTINCT store_id FROM '{prev_parquet_path}')
           AND curr.product_id NOT IN (SELECT DISTINCT product_id FROM '{prev_parquet_path}')
           AND curr.price >= 1
-        ORDER BY curr.rating_value DESC NULLS LAST, curr.price ASC
-        LIMIT 5000;
+        ORDER BY curr.rating_value DESC NULLS LAST, curr.price ASC;
         """
         try:
             new_products = [dict(r) for r in conn.execute(q_prods).to_arrow_table().to_pylist()]
@@ -1116,13 +854,14 @@ def export_all_static_snapshots(
         description TEXT,
         promo_type VARCHAR(50) NOT NULL DEFAULT '無',
         quantity INT NOT NULL DEFAULT 1,
+        eff_price DECIMAL(10, 2) NOT NULL,
         is_open INT NOT NULL DEFAULT 1,
         PRIMARY KEY (product_id, crawled_time)
     );""")
 
     # 1. 高速讀取與解析所有菜單 JSON
     print("\n⚙️ 【步驟 6.1】執行高速資料湖解析與 ETL 入庫...")
-    from json_to_db import get_md5_hash, extract_promo_info, menu_identity_keys
+    from json_to_db import get_md5_hash, extract_promo_info, calculate_effective_price, menu_identity_keys
 
     store_rows = []
     product_rows = []
@@ -1223,10 +962,11 @@ def export_all_static_snapshots(
 
                 desc = html.unescape(str(item.get("description", ""))).strip() if item.get("description") else None
                 promo_type, qty = extract_promo_info(sec_name, pname, desc)
+                eff_price = calculate_effective_price(price_val, promo_type, qty)
 
                 product_rows.append((
                     pid, c_time, store_id, store_name, sec_name or "一般",
-                    pname, price_val, "TWD", desc, promo_type, qty, is_open
+                    pname, price_val, "TWD", desc, promo_type, qty, eff_price, is_open
                 ))
                 store_item_count += 1
 
@@ -1286,7 +1026,7 @@ def export_all_static_snapshots(
     cursor.execute("INSERT OR REPLACE INTO crawl_batches VALUES (?, ?, ?, ?, ?, ?, ?);",
                    (batch_id, "全台採集", 25.0, 121.5, len(store_rows), len(store_rows), 0))
     cursor.executemany("INSERT OR REPLACE INTO stores VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);", store_rows)
-    cursor.executemany("INSERT OR REPLACE INTO products VALUES (?,?,?,?,?,?,?,?,?,?,?,?);", product_rows)
+    cursor.executemany("INSERT OR REPLACE INTO products VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);", product_rows)
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_products_eff ON products (product_id, crawled_time DESC);")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_stores_id ON stores (store_id);")
     conn.commit()

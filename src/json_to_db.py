@@ -154,6 +154,66 @@ def extract_promo_info(sec_name: Optional[str], product_name: Optional[str], des
     return "無", 1
 
 
+def calculate_effective_price(price: float, promo_type: Optional[str], quantity: int = 1) -> float:
+    """
+    計算實質單件價格 (Effective Unit Price)
+    
+    規則：
+    1. 買 B 送 F (例如 買2送1, 買1送1):
+       消費者購買 B 件、實質取得 B+F 件。
+       實質單價 = (標價 * B) / (B + F)
+       - 買2送1 ($90): (90 * 2) / 3 = $60 (67折 / -33.3%)
+       - 買1送1 ($90): (90 * 1) / 2 = $45 (5折 / -50.0%)
+    2. 買A送B / BOGO:
+       等同買1送1，實質單價 = (標價 * 1) / 2
+    3. 加1元多1件 / 加一元多一件:
+       實質單價 = (標價 + 1.0) / 2
+    4. 第2件半價 / 第2杯半價:
+       實質單價 = (標價 * 1.5) / 2 = 標價 * 0.75
+    5. N折特惠 (如 8折):
+       實質單價 = 標價 * (N / 10.0)
+    6. 一般無促銷:
+       若 quantity > 1 則 標價 / quantity，否則即為標價
+    """
+    if price is None or price <= 0:
+        return 0.0
+        
+    p_type = str(promo_type or "無").strip()
+    p_float = float(price)
+
+    # 1. 買 B 送 F (包含中文與英文 Buy X Get Y)
+    m_buy = re.search(r"買\s*([0-9一二兩三四五])\s*送\s*([0-9一二兩三四五])", p_type)
+    if m_buy:
+        b_val = CHINESE_DIGIT_MAP.get(m_buy.group(1), 1)
+        f_val = CHINESE_DIGIT_MAP.get(m_buy.group(2), 1)
+        if b_val + f_val > 0:
+            return round((p_float * b_val) / float(b_val + f_val), 2)
+
+    # 2. 買A送B / BOGO
+    if p_type in ("買A送B", "BOGO"):
+        return round(p_float * 0.5, 2)
+
+    # 3. 加1元多1件
+    if "加1元多1件" in p_type or "加一元多一件" in p_type:
+        return round((p_float + 1.0) / 2.0, 2)
+
+    # 4. 第2件半價 / 第2杯半價
+    if any(k in p_type for k in ["第2件半價", "第二件半價", "第2杯半價", "第二杯半價"]):
+        return round((p_float * 1.5) / 2.0, 2)
+
+    # 5. N折特惠
+    m_disc = re.search(r"([1-9](?:\.[1-9])?)\s*折", p_type)
+    if m_disc:
+        factor = float(m_disc.group(1)) / 10.0
+        return round(p_float * factor, 2)
+
+    # 6. 一般無促銷商品 (若 quantity > 1 進行多件拆分)
+    if quantity and quantity > 1:
+        return round(p_float / float(quantity), 2)
+
+    return round(p_float, 2)
+
+
 class UberEatsDBImporter:
     """Uber Eats 資料庫匯入與驗證引擎"""
 
