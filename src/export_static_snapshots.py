@@ -1256,7 +1256,7 @@ def export_all_static_snapshots(
     SELECT 
         p.product_id, p.store_id, p.store_name, p.category_name, p.product_name,
         p.price, p.quantity, p.promo_type,
-        ROUND(p.price * 1.0 / p.quantity, 2) as eff_price,
+        COALESCE(p.eff_price, ROUND(p.price * 1.0 / p.quantity, 2)) as eff_price,
         COALESCE(p.description, '') as description,
         COALESCE(s.order_action_url, s.store_url, '') as order_action_url,
         s.rating_value,
