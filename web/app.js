@@ -1,32 +1,67 @@
 /**
  * UberEats Radar - 前端分析儀表板核心互動邏輯
- * 方案 C: 邊緣靜態快照與 Jamstack CDN 極速架構 (0ms 本地記憶體即時檢索)
- * 支援:
- * 1. CDN 靜態 API 模式 (透過 web/data/*.json 秒級載入)
- * 2. Standalone 離線模式 (透過 dashboard_data.js 直接開啟)
+ * 方案 C: 邊緣靜態快照與 Jamstack CDN 極速架構 (0ms 本地記憶體即時檢索 + DuckDB-WASM 邊緣湖倉)
+ * 完整全資料集分頁展示 (每頁 50 筆，無截斷限制)
  */
+
+const PAGE_SIZE = 50;
 
 let APP_STATE = {
   isServerMode: false,
   currentTab: 'tab-discounts',
   stats: {},
+  
+  // Tab 1: 今日大特價
   rawDiscounts: [],
   discounts: [],
+  discountsPage: 1,
+
+  // Tab 2: 新進店家
   newStores: [],
+  filteredStores: [],
+  storesPage: 1,
+
+  // Tab 3: 老店新菜
   newProducts: [],
+  filteredProducts: [],
+  productsPage: 1,
+
+  // Tab 4: 促銷活動
   promotions: [],
+  filteredPromotions: [],
+  promosPage: 1,
+
+  // Tab 5: 全庫檢索
   allProducts: [],
   globalProducts: [],
   globalPage: 1,
   globalTotalPages: 1,
+  globalTotalItems: 0,
+
   historyMap: {},
   chartInstance: null,
   filters: {
+    // Tab 1
     discountMinPct: 30,
     discountMinSavings: 20,
     discountSort: 'discount_desc',
     discountCategory: '全部',
     discountSearch: '',
+
+    // Tab 2
+    storeSearch: '',
+    storeCity: '全部',
+    storeSort: 'rating_desc',
+
+    // Tab 3
+    productSearch: '',
+
+    // Tab 4
+    promoSearch: '',
+    promoType: '全部',
+    promoSort: 'price_asc',
+
+    // Tab 5
     globalSearch: '',
     globalCity: '全部',
     globalSort: 'rating_desc'
@@ -108,31 +143,43 @@ async function initDuckDBEngine() {
 
     const conn = await db.connect();
 
-    const parquetUrl = window.UBER_RADAR_CONFIG.PARQUET_CATALOG_URL 
+    // 優先使用本地同源 Parquet 檔案（速度極快、支援 Range Requests 且無跨域/302 跳轉問題）
+    const localParquetUrl = new URL('./data/taiwan_catalog_latest.parquet', window.location.href).href;
+    const remoteParquetUrl = window.UBER_RADAR_CONFIG.PARQUET_CATALOG_URL 
       || 'https://huggingface.co/datasets/hub-google/UberEat/resolve/main/Parquet/taiwan_catalog_latest.parquet';
 
-    // 註冊遠端 Parquet 資料檔案 (HTTP Range Requests 直連)
-    await db.registerFileURL('taiwan_catalog.parquet', parquetUrl, duckdb.DuckDBDataProtocol.HTTP, false);
+    let registered = false;
+    try {
+      if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+        await db.registerFileURL('taiwan_catalog.parquet', localParquetUrl, duckdb.DuckDBDataProtocol.HTTP, false);
+        await conn.query(`SELECT COUNT(*) FROM 'taiwan_catalog.parquet' LIMIT 1`);
+        registered = true;
+        console.log('✅ [DuckDB-WASM] 成功連線本地 Parquet 資料湖！');
+      }
+    } catch (e) {
+      console.warn('⚠️ 本地 Parquet 註冊未成功，嘗試遠端 Hugging Face 湖倉...', e);
+    }
 
-    // 預熱查詢
-    await conn.query(`SELECT COUNT(*) FROM 'taiwan_catalog.parquet' LIMIT 1`);
+    if (!registered) {
+      await db.registerFileURL('taiwan_catalog.parquet', remoteParquetUrl, duckdb.DuckDBDataProtocol.HTTP, false);
+      await conn.query(`SELECT COUNT(*) FROM 'taiwan_catalog.parquet' LIMIT 1`);
+      console.log('✅ [DuckDB-WASM] 成功連線 Hugging Face Parquet 遠端資料湖！');
+    }
 
     DUCKDB_INSTANCE = db;
     DUCKDB_CONN = conn;
     DUCKDB_READY = true;
 
-    console.log('✅ [DuckDB-WASM] 成功連線 Hugging Face Parquet 百萬資料湖！');
     if (badgeEl) {
       badgeEl.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span><span>DuckDB 湖倉在線</span>`;
       badgeEl.className = "px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-50 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-1";
     }
 
-    // 若使用者正在全品庫分頁，自動重新查詢以取得最新百萬資料
     if (APP_STATE.currentTab === 'tab-global-search') {
       fetchGlobalProducts(APP_STATE.globalPage || 1);
     }
   } catch (err) {
-    console.warn('⚠️ [DuckDB-WASM] 遠端 Parquet 湖倉連線未啟動 (使用本地精選快照降級運行):', err);
+    console.warn('⚠️ [DuckDB-WASM] 湖倉連線未啟動 (使用本地精選快照降級運行):', err);
     DUCKDB_READY = false;
     if (badgeEl) {
       badgeEl.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span><span>本地快照備援</span>`;
@@ -144,7 +191,7 @@ async function initDuckDBEngine() {
 }
 
 // -----------------------------------------------------------------------------
-// 初始化啟動 (支援動態載入與 DOMContentLoaded 相容模式)
+// 初始化啟動
 // -----------------------------------------------------------------------------
 async function bootstrap() {
   initTheme();
@@ -164,7 +211,7 @@ if (document.readyState === 'loading') {
 }
 
 // -----------------------------------------------------------------------------
-// 1. 靜態 API 網址映射與資料載入 (Plan C Jamstack)
+// 1. 靜態 API 網址映射與資料載入
 // -----------------------------------------------------------------------------
 function getApiUrl(endpoint) {
   const base = (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.API_BASE_URL) || './data';
@@ -229,10 +276,10 @@ async function loadDashboardData() {
         APP_STATE.historyMap = d.history || {};
       }
 
-      renderNewStores();
-      renderNewProducts();
-      renderPromotions();
-      await fetchDiscounts();
+      await fetchDiscounts(1);
+      await fetchNewStores(1);
+      await fetchNewProducts(1);
+      await fetchPromotions(1);
       await fetchGlobalProducts(1);
       loadedFromServer = true;
     }
@@ -241,7 +288,6 @@ async function loadDashboardData() {
   }
 
   if (!loadedFromServer) {
-    // 離線備援模式: 讀取 window.UBER_RADAR_DATA
     APP_STATE.isServerMode = false;
     if (window.UBER_RADAR_DATA) {
       const data = window.UBER_RADAR_DATA;
@@ -252,10 +298,10 @@ async function loadDashboardData() {
       APP_STATE.promotions = data.promotions || [];
       APP_STATE.allProducts = data.all_products || [];
       APP_STATE.historyMap = data.history || {};
-      renderNewStores();
-      renderNewProducts();
-      renderPromotions();
-      renderDiscounts();
+      await fetchDiscounts(1);
+      await fetchNewStores(1);
+      await fetchNewProducts(1);
+      await fetchPromotions(1);
       await fetchGlobalProducts(1);
     } else {
       console.warn('未偵測到備援資料。');
@@ -263,9 +309,6 @@ async function loadDashboardData() {
   }
 }
 
-// -----------------------------------------------------------------------------
-// 2. 更新統計指標 UI
-// -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 // 2. 更新統計指標 UI
 // -----------------------------------------------------------------------------
@@ -283,9 +326,94 @@ function updateStatsUI(stats) {
 }
 
 // -----------------------------------------------------------------------------
-// 3. 大特價資料處理與渲染 (Tab 1) - 0ms 本地記憶體極速篩選
+// 通用分頁控制條產生器 (每頁 50 筆)
 // -----------------------------------------------------------------------------
-async function fetchDiscounts() {
+function renderPaginationComponent({
+  containerId,
+  currentPage,
+  totalPages,
+  totalItems,
+  pageSize = PAGE_SIZE,
+  onPageChange
+}) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  if (totalItems === 0 || totalPages <= 1) {
+    container.innerHTML = '';
+    return;
+  }
+
+  const startIdx = (currentPage - 1) * pageSize + 1;
+  const endIdx = Math.min(currentPage * pageSize, totalItems);
+
+  let html = `
+    <div class="w-full flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400 py-3 border-t border-slate-100 dark:border-slate-800">
+      <div>
+        顯示第 <strong class="font-mono text-slate-700 dark:text-slate-200">${startIdx.toLocaleString()}</strong> - <strong class="font-mono text-slate-700 dark:text-slate-200">${endIdx.toLocaleString()}</strong> 筆，共 <strong class="font-mono text-slate-700 dark:text-slate-200">${totalItems.toLocaleString()}</strong> 筆 (第 ${currentPage} / ${totalPages} 頁)
+      </div>
+      <div class="flex items-center gap-1 flex-wrap justify-center">
+  `;
+
+  // First page & Prev button
+  if (currentPage > 1) {
+    html += `<button onclick="${onPageChange}(1)" class="px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 font-medium transition-colors">首頁</button>`;
+    html += `<button onclick="${onPageChange}(${currentPage - 1})" class="px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 font-medium transition-colors">上一頁</button>`;
+  } else {
+    html += `<button disabled class="px-2.5 py-1 rounded-lg border border-slate-100 dark:border-slate-800 text-slate-300 dark:text-slate-700 cursor-not-allowed">上一頁</button>`;
+  }
+
+  // Page numbers (smart window)
+  const maxButtons = 5;
+  let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+  let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+  if (endPage - startPage + 1 < maxButtons) {
+    startPage = Math.max(1, endPage - maxButtons + 1);
+  }
+
+  for (let p = startPage; p <= endPage; p++) {
+    if (p === currentPage) {
+      html += `<button class="px-3 py-1 rounded-lg bg-emerald-600 text-white font-bold font-mono shadow-sm shadow-emerald-600/20">${p}</button>`;
+    } else {
+      html += `<button onclick="${onPageChange}(${p})" class="px-3 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono transition-colors">${p}</button>`;
+    }
+  }
+
+  // Next and Last buttons
+  if (currentPage < totalPages) {
+    html += `<button onclick="${onPageChange}(${currentPage + 1})" class="px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 font-medium transition-colors">下一頁</button>`;
+    html += `<button onclick="${onPageChange}(${totalPages})" class="px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 font-medium transition-colors">末頁</button>`;
+  } else {
+    html += `<button disabled class="px-2.5 py-1 rounded-lg border border-slate-100 dark:border-slate-800 text-slate-300 dark:text-slate-700 cursor-not-allowed">下一頁</button>`;
+  }
+
+  // Quick jump input
+  if (totalPages > 5) {
+    html += `
+      <div class="flex items-center gap-1 ml-1 text-slate-400">
+        <span>跳至</span>
+        <input type="number" min="1" max="${totalPages}" class="w-12 px-1 py-0.5 text-center font-mono rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-xs" onkeydown="if(event.key==='Enter'){const v=parseInt(this.value);if(v>=1&&v<=${totalPages})${onPageChange}(v);}" placeholder="${currentPage}">
+        <span>頁</span>
+      </div>
+    `;
+  }
+
+  html += `</div></div>`;
+  container.innerHTML = html;
+}
+
+function smoothScrollToTab(tabId) {
+  const el = document.getElementById(tabId);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 3. TAB 1: 今日大特價 (-30%+) (每頁 50 筆)
+// -----------------------------------------------------------------------------
+async function fetchDiscounts(page = 1) {
+  APP_STATE.discountsPage = page;
   const { discountMinPct, discountMinSavings, discountSort, discountCategory, discountSearch } = APP_STATE.filters;
   let items = APP_STATE.rawDiscounts && APP_STATE.rawDiscounts.length > 0 ? APP_STATE.rawDiscounts : (APP_STATE.discounts || []);
 
@@ -317,10 +445,18 @@ async function fetchDiscounts() {
   renderDiscounts();
 }
 
+function changeDiscountsPage(page) {
+  fetchDiscounts(page);
+  smoothScrollToTab('tab-discounts');
+}
+
 function renderDiscounts() {
   const container = document.getElementById('discounts-grid');
   const emptyView = document.getElementById('discounts-empty');
   const items = APP_STATE.discounts || [];
+  const total = items.length;
+  const page = APP_STATE.discountsPage || 1;
+  const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
 
   const statMaxSavingsEl = document.getElementById('stat-max-savings');
   if (statMaxSavingsEl && items.length > 0) {
@@ -328,14 +464,25 @@ function renderDiscounts() {
     statMaxSavingsEl.textContent = `現省最高 $${Math.round(maxSavings)}`;
   }
 
-  if (items.length === 0) {
+  if (total === 0) {
     container.innerHTML = '';
     emptyView.classList.remove('hidden');
+    renderPaginationComponent({
+      containerId: 'discounts-pagination',
+      currentPage: 1,
+      totalPages: 0,
+      totalItems: 0,
+      pageSize: PAGE_SIZE,
+      onPageChange: 'changeDiscountsPage'
+    });
     return;
   }
 
   emptyView.classList.add('hidden');
-  container.innerHTML = items.map(item => {
+  const offset = (page - 1) * PAGE_SIZE;
+  const pageItems = items.slice(offset, offset + PAGE_SIZE);
+
+  container.innerHTML = pageItems.map(item => {
     const orderUrl = item.order_action_url || '#';
     const hasPromo = item.promo_type && item.promo_type !== '無';
     const ratingBadge = item.rating_value 
@@ -344,8 +491,6 @@ function renderDiscounts() {
 
     return `
       <div class="radar-card bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between relative overflow-hidden group">
-        
-        <!-- 頂部店家與分類 -->
         <div>
           <div class="flex items-start justify-between gap-2 mb-2">
             <div class="flex-1 min-w-0">
@@ -360,18 +505,14 @@ function renderDiscounts() {
             ${ratingBadge}
           </div>
 
-          <!-- 商品名稱 -->
           <h4 class="text-base font-bold text-slate-900 dark:text-white line-clamp-2 mt-1 mb-2 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors" title="${escapeHtml(item.product_name)}">
             ${escapeHtml(item.product_name)}
           </h4>
 
-          <!-- 商品描述 -->
           ${item.description ? `<p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-3">${escapeHtml(item.description)}</p>` : ''}
         </div>
 
-        <!-- 價格與折數區域 -->
         <div class="pt-3 border-t border-slate-100 dark:border-slate-800 space-y-3">
-          
           <div class="flex items-baseline justify-between">
             <div>
               <div class="text-xs text-slate-400 line-through">原價 $${Math.round(item.original_price)}</div>
@@ -381,7 +522,6 @@ function renderDiscounts() {
               </div>
             </div>
 
-            <!-- 折扣標籤 -->
             <div class="text-right">
               <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-bold text-white badge-discount shadow-sm shadow-red-500/30">
                 <i data-lucide="trending-down" class="w-3.5 h-3.5"></i>
@@ -393,7 +533,6 @@ function renderDiscounts() {
             </div>
           </div>
 
-          <!-- 促銷活動標籤 -->
           ${hasPromo ? `
             <div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg text-xs font-medium bg-purple-50 text-purple-700 dark:bg-purple-950/80 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
               <i data-lucide="gift" class="w-3 h-3"></i>
@@ -401,7 +540,6 @@ function renderDiscounts() {
             </div>
           ` : ''}
 
-          <!-- 操作按鈕 (價格歷程 & Uber Eats 下單) -->
           <div class="grid grid-cols-2 gap-2 pt-1">
             <button data-action="history" data-args="${escapeHtml(JSON.stringify([item.product_id, item.product_name, item.store_name, orderUrl]))}" class="px-3 py-2 text-xs font-medium rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-1.5">
               <i data-lucide="line-chart" class="w-3.5 h-3.5"></i>
@@ -413,41 +551,98 @@ function renderDiscounts() {
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
           </div>
-
         </div>
-
       </div>
     `;
   }).join('');
+
+  renderPaginationComponent({
+    containerId: 'discounts-pagination',
+    currentPage: page,
+    totalPages: totalPages,
+    totalItems: total,
+    pageSize: PAGE_SIZE,
+    onPageChange: 'changeDiscountsPage'
+  });
 
   lucide.createIcons();
 }
 
 // -----------------------------------------------------------------------------
-// 4. 新進店家情報 (Tab 2)
+// 4. TAB 2: 新進店家速報 (New Stores) (每頁 50 筆)
 // -----------------------------------------------------------------------------
-async function fetchNewStores() {
+async function fetchNewStores(page = 1) {
+  APP_STATE.storesPage = page;
+  const { storeSearch, storeCity, storeSort } = APP_STATE.filters;
+  let items = APP_STATE.newStores || [];
+
+  // 地區篩選
+  if (storeCity && storeCity !== '全部') {
+    items = items.filter(s => matchCityInMemory(s, storeCity));
+  }
+
+  // 關鍵字搜尋
+  if (storeSearch) {
+    const kw = storeSearch.toLowerCase();
+    items = items.filter(s => 
+      (s.store_name && s.store_name.toLowerCase().includes(kw)) ||
+      (s.locality && s.locality.toLowerCase().includes(kw)) ||
+      (s.street_address && s.street_address.toLowerCase().includes(kw))
+    );
+  }
+
+  // 排序
+  if (storeSort === 'rating_desc') {
+    items.sort((a, b) => (b.rating_value || 0) - (a.rating_value || 0) || (b.review_count || 0) - (a.review_count || 0));
+  } else if (storeSort === 'reviews_desc') {
+    items.sort((a, b) => (b.review_count || 0) - (a.review_count || 0) || (b.rating_value || 0) - (a.rating_value || 0));
+  } else if (storeSort === 'items_desc') {
+    items.sort((a, b) => (b.total_menu_items || 0) - (a.total_menu_items || 0));
+  } else if (storeSort === 'name_asc') {
+    items.sort((a, b) => (a.store_name || '').localeCompare(b.store_name || '', 'zh-TW'));
+  }
+
+  APP_STATE.filteredStores = items;
   renderNewStores();
+}
+
+function changeStoresPage(page) {
+  fetchNewStores(page);
+  smoothScrollToTab('tab-stores');
 }
 
 function renderNewStores() {
   const container = document.getElementById('new-stores-grid');
   const emptyView = document.getElementById('new-stores-empty');
-  const items = APP_STATE.newStores || [];
+  const items = APP_STATE.filteredStores || [];
+  const total = items.length;
+  const page = APP_STATE.storesPage || 1;
+  const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
 
   const counterEl = document.getElementById('new-stores-counter');
   if (counterEl) {
-    counterEl.textContent = `${items.length} 間新店`;
+    counterEl.textContent = `${total.toLocaleString()} 間新店`;
   }
 
-  if (items.length === 0) {
+  if (total === 0) {
     container.innerHTML = '';
     emptyView.classList.remove('hidden');
+    renderPaginationComponent({
+      containerId: 'new-stores-pagination',
+      currentPage: 1,
+      totalPages: 0,
+      totalItems: 0,
+      pageSize: PAGE_SIZE,
+      onPageChange: 'changeStoresPage'
+    });
     return;
   }
 
   emptyView.classList.add('hidden');
-  container.innerHTML = items.map(store => {
+  const offset = (page - 1) * PAGE_SIZE;
+  const pageItems = items.slice(offset, offset + PAGE_SIZE);
+
+  container.innerHTML = pageItems.map(store => {
     const ratingHtml = store.rating_value 
       ? `<span class="inline-flex items-center gap-1 text-xs text-amber-500 font-bold bg-amber-50 dark:bg-amber-950/80 px-2 py-0.5 rounded-lg"><i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>${store.rating_value} (${store.review_count || 0})</span>` 
       : '<span class="text-xs text-slate-400">全新開張</span>';
@@ -483,7 +678,7 @@ function renderNewStores() {
             菜單共 <strong>${store.total_menu_items || 0}</strong> 道菜品
           </span>
 
-          <a href="${escapeHtml(safeOrderUrl(store.order_action_url || store.store_url || '#'))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([store.order_action_url || store.store_url || '', "", store.store_name]))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-300 dark:hover:bg-emerald-900 transition-colors">
+          <a href="${escapeHtml(safeOrderUrl(store.order_action_url || store.store_url || '#'))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([store.order_action_url || store.store_url || '', '', store.store_name]))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-300 dark:hover:bg-emerald-900 transition-colors">
             <span>瀏覽店家</span>
             <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
           </a>
@@ -492,34 +687,75 @@ function renderNewStores() {
     `;
   }).join('');
 
+  renderPaginationComponent({
+    containerId: 'new-stores-pagination',
+    currentPage: page,
+    totalPages: totalPages,
+    totalItems: total,
+    pageSize: PAGE_SIZE,
+    onPageChange: 'changeStoresPage'
+  });
+
   lucide.createIcons();
 }
 
 // -----------------------------------------------------------------------------
-// 5. 老店新菜推薦 (Tab 3)
+// 5. TAB 3: 老店新菜推薦 (Tab 3) (每頁 50 筆)
 // -----------------------------------------------------------------------------
-async function fetchNewProducts() {
+async function fetchNewProducts(page = 1) {
+  APP_STATE.productsPage = page;
+  const { productSearch } = APP_STATE.filters;
+  let items = APP_STATE.newProducts || [];
+
+  if (productSearch) {
+    const kw = productSearch.toLowerCase();
+    items = items.filter(p => 
+      (p.product_name && p.product_name.toLowerCase().includes(kw)) ||
+      (p.store_name && p.store_name.toLowerCase().includes(kw))
+    );
+  }
+
+  APP_STATE.filteredProducts = items;
   renderNewProducts();
+}
+
+function changeProductsPage(page) {
+  fetchNewProducts(page);
+  smoothScrollToTab('tab-products');
 }
 
 function renderNewProducts() {
   const container = document.getElementById('new-products-grid');
   const emptyView = document.getElementById('new-products-empty');
-  const items = APP_STATE.newProducts || [];
+  const items = APP_STATE.filteredProducts || [];
+  const total = items.length;
+  const page = APP_STATE.productsPage || 1;
+  const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
 
   const counterEl = document.getElementById('new-products-counter');
   if (counterEl) {
-    counterEl.textContent = `${items.length} 道新品`;
+    counterEl.textContent = `${total.toLocaleString()} 道新品`;
   }
 
-  if (items.length === 0) {
+  if (total === 0) {
     container.innerHTML = '';
     emptyView.classList.remove('hidden');
+    renderPaginationComponent({
+      containerId: 'new-products-pagination',
+      currentPage: 1,
+      totalPages: 0,
+      totalItems: 0,
+      pageSize: PAGE_SIZE,
+      onPageChange: 'changeProductsPage'
+    });
     return;
   }
 
   emptyView.classList.add('hidden');
-  container.innerHTML = items.map(prod => {
+  const offset = (page - 1) * PAGE_SIZE;
+  const pageItems = items.slice(offset, offset + PAGE_SIZE);
+
+  container.innerHTML = pageItems.map(prod => {
     const promoInfo = calculateEffectivePromo(prod.price, prod.promo_type, prod.quantity);
     const hasPromo = promoInfo.isPromo;
     const hasQtyPromo = promoInfo.totalQty > 1;
@@ -576,6 +812,15 @@ function renderNewProducts() {
     `;
   }).join('');
 
+  renderPaginationComponent({
+    containerId: 'new-products-pagination',
+    currentPage: page,
+    totalPages: totalPages,
+    totalItems: total,
+    pageSize: PAGE_SIZE,
+    onPageChange: 'changeProductsPage'
+  });
+
   lucide.createIcons();
 }
 
@@ -628,7 +873,7 @@ function calculateEffectivePromo(price, promoType, quantity) {
       buyQty: 2,
       freeQty: 0,
       ratio: ratio,
-      discountText: "75折",
+      discountText: '75折',
       rawPrice: p,
       isPromo: true
     };
@@ -696,27 +941,90 @@ function calculateEffectivePromo(price, promoType, quantity) {
 }
 
 // -----------------------------------------------------------------------------
-// 6. 折扣活動專區 (Tab 4)
+// 6. TAB 4: 折扣活動專區 (Promotions) (每頁 50 筆)
 // -----------------------------------------------------------------------------
-async function fetchPromotions() {
+async function fetchPromotions(page = 1) {
+  APP_STATE.promosPage = page;
+  const { promoSearch, promoType, promoSort } = APP_STATE.filters;
+  let items = (APP_STATE.promotions || []).filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
+
+  // 活動類型篩選
+  if (promoType && promoType !== '全部') {
+    if (promoType === '買一送一') {
+      items = items.filter(p => /買.*送/.test(p.promo_type));
+    } else if (promoType === '半價') {
+      items = items.filter(p => /半價/.test(p.promo_type));
+    } else if (promoType === '加1元') {
+      items = items.filter(p => /加.*元多.*件/.test(p.promo_type));
+    } else if (promoType === '折') {
+      items = items.filter(p => /折/.test(p.promo_type));
+    } else if (promoType === '多入') {
+      items = items.filter(p => p.quantity > 1);
+    }
+  }
+
+  // 關鍵字搜尋
+  if (promoSearch) {
+    const kw = promoSearch.toLowerCase();
+    items = items.filter(p => 
+      (p.product_name && p.product_name.toLowerCase().includes(kw)) ||
+      (p.store_name && p.store_name.toLowerCase().includes(kw)) ||
+      (p.category_name && p.category_name.toLowerCase().includes(kw))
+    );
+  }
+
+  // 排序
+  if (promoSort === 'price_asc') {
+    items.sort((a, b) => (a.eff_price || a.price || 0) - (b.eff_price || b.price || 0));
+  } else if (promoSort === 'price_desc') {
+    items.sort((a, b) => (b.eff_price || b.price || 0) - (a.eff_price || a.price || 0));
+  } else if (promoSort === 'rating_desc') {
+    items.sort((a, b) => (b.rating_value || 0) - (a.rating_value || 0) || (a.eff_price || 0) - (b.eff_price || 0));
+  } else if (promoSort === 'name_asc') {
+    items.sort((a, b) => (a.product_name || '').localeCompare(p.product_name || '', 'zh-TW'));
+  }
+
+  APP_STATE.filteredPromotions = items;
   renderPromotions();
+}
+
+function changePromosPage(page) {
+  fetchPromotions(page);
+  smoothScrollToTab('tab-promos');
 }
 
 function renderPromotions() {
   const container = document.getElementById('promos-grid');
-  const items = (APP_STATE.promotions || []).filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
+  const emptyView = document.getElementById('promos-empty');
+  const items = APP_STATE.filteredPromotions || [];
+  const total = items.length;
+  const page = APP_STATE.promosPage || 1;
+  const totalPages = Math.ceil(total / PAGE_SIZE) || 1;
 
   const counterEl = document.getElementById('promos-counter');
   if (counterEl) {
-    counterEl.textContent = `${items.length} 筆特惠`;
+    counterEl.textContent = `${total.toLocaleString()} 筆特惠`;
   }
 
-  if (items.length === 0) {
-    container.innerHTML = '<div class="col-span-3 py-12 text-center text-slate-400">目前沒有促銷活動</div>';
+  if (total === 0) {
+    container.innerHTML = '';
+    emptyView.classList.remove('hidden');
+    renderPaginationComponent({
+      containerId: 'promos-pagination',
+      currentPage: 1,
+      totalPages: 0,
+      totalItems: 0,
+      pageSize: PAGE_SIZE,
+      onPageChange: 'changePromosPage'
+    });
     return;
   }
 
-  container.innerHTML = items.map(p => {
+  emptyView.classList.add('hidden');
+  const offset = (page - 1) * PAGE_SIZE;
+  const pageItems = items.slice(offset, offset + PAGE_SIZE);
+
+  container.innerHTML = pageItems.map(p => {
     const promoInfo = calculateEffectivePromo(p.price, p.promo_type, p.quantity);
     const eff = promoInfo.effPrice;
     const discountLabel = promoInfo.discountText ? `折合 ${promoInfo.discountText}` : '';
@@ -766,15 +1074,108 @@ function renderPromotions() {
     `;
   }).join('');
 
+  renderPaginationComponent({
+    containerId: 'promos-pagination',
+    currentPage: page,
+    totalPages: totalPages,
+    totalItems: total,
+    pageSize: PAGE_SIZE,
+    onPageChange: 'changePromosPage'
+  });
+
   lucide.createIcons();
 }
 
 // -----------------------------------------------------------------------------
-// 7. 全庫商品即時檢索 (Tab 5) - 0ms 本地記憶體即打即搜
+// 7. TAB 5: 全庫商品即時檢索 (DuckDB-WASM 百萬大數據湖倉 + 本地記憶體即打即搜)
 // -----------------------------------------------------------------------------
 let globalSearchController;
 let globalSearchSequence = 0;
-let globalSearchHasNextPage = false;
+
+const CITY_DISTRICT_MAP = {
+  '台北市': ['台北', '臺北', '大安', '信義', '中正', '中山', '松山', '萬華', '文山', '大同', '南港', '內湖', '士林', '北投'],
+  '新北市': ['新北', '板橋', '三重', '中和', '永和', '新莊', '新店', '土城', '蘆洲', '樹林', '汐止', '鶯歌', '三峽', '淡水', '瑞芳', '五股', '泰山', '林口', '深坑', '八里'],
+  '桃園市': ['桃園', '中壢', '平鎮', '八德', '楊梅', '蘆竹', '大溪', '龜山', '大園', '觀音', '新屋', '龍潭'],
+  '台中市': ['台中', '臺中', '南屯', '西屯', '北屯', '豐原', '大里', '太平', '沙鹿', '清水', '大甲', '烏日', '霧峰', '潭子', '大雅', '后里', '神岡', '大肚', '龍井'],
+  '台南市': ['台南', '臺南', '永康', '安南', '安平', '新營', '善化', '麻豆', '佳里', '新化', '歸仁', '仁德'],
+  '高雄市': ['高雄', '新興', '前金', '苓雅', '鹽埕', '鼓山', '旗津', '前鎮', '三民', '楠梓', '小港', '左營', '仁武', '大社', '岡山', '鳳山', '大寮', '鳥松'],
+  '新竹市': ['新竹', '竹北', '竹東', '新埔', '湖口', '新豐', '芎林', '香山'],
+  '彰化縣': ['彰化', '員林', '和美', '鹿港', '溪湖', '二林', '田中', '北斗', '花壇', '大村'],
+  '基隆市': ['基隆', '仁愛', '七堵', '安樂'],
+  '宜蘭縣': ['宜蘭', '羅東', '蘇澳', '頭城', '礁溪', '冬山'],
+  '花蓮縣': ['花蓮', '吉安', '新城', '壽豐', '玉里'],
+  '屏東縣': ['屏東', '潮州', '東港', '恆春', '萬丹', '內埔'],
+  '苗栗縣': ['苗栗', '竹南', '頭份', '後龍', '苑裡', '通霄'],
+  '雲林縣': ['雲林', '斗六', '斗南', '虎尾', '西螺', '北港', '麥寮'],
+  '嘉義市': ['嘉義', '太保', '朴子', '民雄', '水上', '中埔'],
+  '南投縣': ['南投', '埔里', '草屯', '竹山'],
+  '台東縣': ['台東', '臺東', '成功', '關山', '卑南'],
+  '澎湖縣': ['澎湖', '金門', '連江', '馬公']
+};
+
+function buildCitySqlCondition(cityFilter) {
+  if (!cityFilter || cityFilter === '全部') return '';
+  const dists = CITY_DISTRICT_MAP[cityFilter];
+  if (dists && dists.length > 0) {
+    const likeClauses = dists.map(d => {
+      const safe = d.replace(/'/g, "''");
+      return `(city LIKE '%${safe}%' OR locality LIKE '%${safe}%' OR street_address LIKE '%${safe}%' OR store_name LIKE '%${safe}%')`;
+    });
+    return `(${likeClauses.join(' OR ')})`;
+  }
+  const safe = cityFilter.replace(/'/g, "''");
+  return `(city ILIKE '%${safe}%' OR locality ILIKE '%${safe}%' OR street_address ILIKE '%${safe}%' OR store_name ILIKE '%${safe}%')`;
+}
+
+function matchCityInMemory(item, cityFilter) {
+  if (!cityFilter || cityFilter === '全部') return true;
+  const dists = CITY_DISTRICT_MAP[cityFilter];
+  const full = `${item.city || ''} ${item.locality || ''} ${item.street_address || ''} ${item.store_name || ''}`.toLowerCase();
+  if (dists) {
+    return dists.some(d => full.includes(d.toLowerCase()));
+  }
+  return full.includes(cityFilter.toLowerCase());
+}
+
+function convertArrowTableToObjects(table) {
+  if (!table) return [];
+  const fields = table.schema ? table.schema.fields.map(f => f.name) : [];
+  const rows = [];
+  const numRows = table.numRows || 0;
+
+  if (numRows > 0 && fields.length > 0) {
+    const columns = {};
+    for (const f of fields) {
+      columns[f] = table.getChild(f);
+    }
+    for (let i = 0; i < numRows; i++) {
+      const row = {};
+      for (const f of fields) {
+        let v = columns[f] ? columns[f].get(i) : null;
+        if (typeof v === 'bigint') {
+          v = Number(v);
+        }
+        row[f] = v;
+      }
+      rows.push(row);
+    }
+    return rows;
+  }
+
+  try {
+    return table.toArray().map(r => {
+      const obj = typeof r.toJSON === 'function' ? r.toJSON() : Object.fromEntries(Object.entries(r));
+      const clean = {};
+      for (const [k, v] of Object.entries(obj)) {
+        clean[k] = typeof v === 'bigint' ? Number(v) : v;
+      }
+      return clean;
+    });
+  } catch (e) {
+    console.error('Arrow table conversion fallback error:', e);
+    return [];
+  }
+}
 
 async function fetchGlobalProducts(page = 1) {
   globalSearchController?.abort();
@@ -785,23 +1186,23 @@ async function fetchGlobalProducts(page = 1) {
   APP_STATE.globalPage = page;
   const container = document.getElementById('global-products-grid');
   if (container) {
-    container.style.opacity = '0.4';
+    container.style.opacity = '0.5';
     container.style.transition = 'opacity 0.15s ease';
   }
 
   const sortMode = APP_STATE.filters.globalSort || 'rating_desc';
   const rawSearch = (APP_STATE.filters.globalSearch || '').trim();
   const cityFilter = APP_STATE.filters.globalCity || '全部';
-  const limit = 24;
+  const limit = PAGE_SIZE;
 
-  // 1. DuckDB-WASM 邊緣 SQL 查詢 (直連 Hugging Face Parquet 資料湖，帶逾時自動降級)
+  // 1. DuckDB-WASM 邊緣 SQL 查詢 (直連全台百萬 Parquet 湖倉)
   if (DUCKDB_READY && DUCKDB_CONN) {
     try {
       let whereClauses = ["price >= 1"];
 
       if (cityFilter && cityFilter !== '全部') {
-        const safeCity = cityFilter.replace(/'/g, "''");
-        whereClauses.push(`(city = '${safeCity}' OR locality LIKE '%${safeCity}%')`);
+        const cityClause = buildCitySqlCondition(cityFilter);
+        if (cityClause) whereClauses.push(cityClause);
       }
 
       if (sortMode === 'promo_only') {
@@ -809,43 +1210,49 @@ async function fetchGlobalProducts(page = 1) {
       }
 
       if (rawSearch) {
-        const safeSearch = rawSearch.replace(/'/g, "''");
-        // 僅針對菜品名稱與店家名稱搜尋，避免掃描巨量 description 欄位造成網路堵塞
-        whereClauses.push(`(
-          product_name LIKE '%${safeSearch}%' 
-          OR store_name LIKE '%${safeSearch}%'
-        )`);
+        const keywords = rawSearch.split(/\s+/).filter(Boolean);
+        if (keywords.length > 0) {
+          const kwClauses = keywords.map(kw => {
+            const safe = kw.replace(/'/g, "''");
+            return `(product_name ILIKE '%${safe}%' OR store_name ILIKE '%${safe}%' OR category_name ILIKE '%${safe}%')`;
+          });
+          whereClauses.push(`(${kwClauses.join(' AND ')})`);
+        }
       }
 
       const whereSql = whereClauses.join(" AND ");
 
       let orderSql = "rating_value DESC NULLS LAST, eff_price ASC";
-      if (sortMode === 'price_asc') orderSql = "eff_price ASC";
-      if (sortMode === 'price_desc') orderSql = "eff_price DESC";
-      if (sortMode === 'name_asc') orderSql = "product_name ASC";
-      if (sortMode === 'promo_first') orderSql = "CASE WHEN promo_type != '無' AND promo_type != '' THEN 0 ELSE 1 END, rating_value DESC NULLS LAST";
+      if (sortMode === 'price_asc') orderSql = "eff_price ASC, rating_value DESC NULLS LAST";
+      if (sortMode === 'price_desc') orderSql = "eff_price DESC, rating_value DESC NULLS LAST";
+      if (sortMode === 'name_asc') orderSql = "product_name ASC, rating_value DESC NULLS LAST";
+      if (sortMode === 'promo_first') orderSql = "CASE WHEN promo_type != '無' AND promo_type != '' THEN 0 ELSE 1 END, rating_value DESC NULLS LAST, eff_price ASC";
 
       const offset = (page - 1) * limit;
 
-      // 查詢 limit + 1 筆以判斷是否有下一頁，不執行耗算力的全表 COUNT(*) 掃描
-      const queryPromise = DUCKDB_CONN.query(
-        `SELECT * FROM 'taiwan_catalog.parquet' WHERE ${whereSql} ORDER BY ${orderSql} LIMIT ${limit + 1} OFFSET ${offset}`
-      );
-      const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('DuckDB query timeout')), 2500));
+      // 查詢總筆數
+      const countPromise = DUCKDB_CONN.query(`SELECT COUNT(*) as total_count FROM 'taiwan_catalog.parquet' WHERE ${whereSql}`);
+      const queryPromise = DUCKDB_CONN.query(`SELECT * FROM 'taiwan_catalog.parquet' WHERE ${whereSql} ORDER BY ${orderSql} LIMIT ${limit} OFFSET ${offset}`);
+      const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('DuckDB query timeout')), 10000));
 
-      const dataResult = await Promise.race([queryPromise, timeoutPromise]);
+      const [countResult, dataResult] = await Promise.race([
+        Promise.all([countPromise, queryPromise]),
+        timeoutPromise
+      ]);
 
       if (sequence !== globalSearchSequence) return;
 
-      const rawRows = dataResult.toArray().map(r => Object.fromEntries(Object.entries(r)));
-      globalSearchHasNextPage = rawRows.length > limit;
-      const rows = rawRows.slice(0, limit);
+      const countRows = convertArrowTableToObjects(countResult);
+      const totalItems = countRows.length > 0 ? (countRows[0].total_count || 0) : 0;
+      const totalPages = Math.ceil(totalItems / limit) || 1;
+
+      const rows = convertArrowTableToObjects(dataResult);
 
       APP_STATE.globalProducts = rows;
-      APP_STATE.globalTotalPages = globalSearchHasNextPage ? page + 1 : page;
+      APP_STATE.globalTotalItems = totalItems;
+      APP_STATE.globalTotalPages = totalPages;
 
       renderGlobalProducts();
-      renderGlobalPagination();
 
       if (container && sequence === globalSearchSequence) {
         container.style.opacity = '1';
@@ -860,14 +1267,14 @@ async function fetchGlobalProducts(page = 1) {
   let items = APP_STATE.allProducts && APP_STATE.allProducts.length > 0 ? [...APP_STATE.allProducts] : [];
 
   if (cityFilter && cityFilter !== '全部') {
-    items = items.filter(p => (p.city === cityFilter || (p.locality && p.locality.includes(cityFilter))));
+    items = items.filter(p => matchCityInMemory(p, cityFilter));
   }
 
   if (rawSearch) {
-    const sLower = rawSearch.toLowerCase();
+    const keywords = rawSearch.toLowerCase().split(/\s+/).filter(Boolean);
     items = items.filter(p => {
       const text = `${p.product_name || ''} ${p.store_name || ''} ${p.category_name || ''}`.toLowerCase();
-      return text.includes(sLower);
+      return keywords.every(kw => text.includes(kw));
     });
   }
 
@@ -903,11 +1310,10 @@ async function fetchGlobalProducts(page = 1) {
   const pageItems = items.slice(offset, offset + limit);
 
   APP_STATE.globalProducts = pageItems;
+  APP_STATE.globalTotalItems = total;
   APP_STATE.globalTotalPages = totalPages;
-  globalSearchHasNextPage = page < totalPages;
 
   renderGlobalProducts();
-  renderGlobalPagination();
 
   if (container && sequence === globalSearchSequence) {
     container.style.opacity = '1';
@@ -917,13 +1323,33 @@ async function fetchGlobalProducts(page = 1) {
 function renderGlobalProducts() {
   const container = document.getElementById('global-products-grid');
   const items = APP_STATE.globalProducts;
+  const page = APP_STATE.globalPage || 1;
+  const totalPages = APP_STATE.globalTotalPages || 1;
+  const totalItems = APP_STATE.globalTotalItems || 0;
 
   if (container) {
     container.style.opacity = '1';
   }
 
-  if (items.length === 0) {
-    container.innerHTML = '<div class="col-span-3 py-16 text-center text-slate-400">查無相符商品</div>';
+  if (!items || items.length === 0) {
+    container.innerHTML = `
+      <div class="col-span-1 md:col-span-2 lg:col-span-3 py-16 text-center">
+        <div class="w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 mx-auto mb-3">
+          <i data-lucide="search-x" class="w-8 h-8"></i>
+        </div>
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">查無相符商品</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">請嘗試縮短關鍵字、切換縣市為「全台灣」或選擇不同排序條件</p>
+      </div>
+    `;
+    renderPaginationComponent({
+      containerId: 'global-pagination',
+      currentPage: 1,
+      totalPages: 0,
+      totalItems: 0,
+      pageSize: PAGE_SIZE,
+      onPageChange: 'changeGlobalPage'
+    });
+    lucide.createIcons();
     return;
   }
 
@@ -934,15 +1360,18 @@ function renderGlobalProducts() {
     const unitPrice = promoInfo.effPrice;
     const displayUnitPrice = Math.round(unitPrice);
     const discountLabel = promoInfo.discountText ? `折合 ${promoInfo.discountText}` : '';
+    const ratingHtml = p.rating_value 
+      ? `<span class="inline-flex items-center gap-0.5 text-xs text-amber-500 font-bold"><i data-lucide="star" class="w-3 h-3 fill-amber-400"></i>${p.rating_value}</span>`
+      : '';
 
     return `
       <div class="radar-card bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between group">
         <div>
-          <!-- 頂部：店家名稱 & 實質單價 -->
           <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1.5 gap-2">
-            <div class="flex items-center gap-1.5 truncate min-w-0" title="${escapeHtml(p.store_name)}">
+            <div class="flex items-center gap-1.5 truncate min-w-0 flex-1" title="${escapeHtml(p.store_name)}">
               <i data-lucide="store" class="w-3.5 h-3.5 shrink-0 text-slate-400"></i>
-              <span class="truncate font-medium">${escapeHtml(p.store_name)}</span>
+              <span class="truncate font-semibold text-slate-700 dark:text-slate-300">${escapeHtml(p.store_name)}</span>
+              ${ratingHtml}
             </div>
             <div class="text-right shrink-0 flex items-baseline gap-0.5">
               <span class="font-bold text-slate-900 dark:text-white font-mono text-base ${hasQtyPromo ? 'text-purple-600 dark:text-purple-400' : ''}">
@@ -952,12 +1381,10 @@ function renderGlobalProducts() {
             </div>
           </div>
 
-          <!-- 商品名稱 -->
           <h4 class="text-sm font-bold text-slate-900 dark:text-white line-clamp-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors mb-2" title="${escapeHtml(p.product_name)}">
             ${escapeHtml(p.product_name)}
           </h4>
 
-          <!-- 活動與分類標籤 -->
           <div class="flex items-center gap-1.5 flex-wrap text-xs">
             ${hasPromo ? `
               <span class="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 dark:bg-purple-950/80 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
@@ -972,6 +1399,11 @@ function renderGlobalProducts() {
             <span class="inline-block text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
               ${escapeHtml(p.category_name || '一般')}
             </span>
+            ${p.city ? `
+              <span class="inline-block text-[11px] px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300">
+                ${escapeHtml(p.city)}
+              </span>
+            ` : ''}
             ${hasQtyPromo ? `
               <span class="text-[11px] text-slate-400 dark:text-slate-500 font-mono">
                 (標價 $${Math.round(p.price)} 共 ${promoInfo.totalQty} 件)
@@ -980,12 +1412,11 @@ function renderGlobalProducts() {
           </div>
         </div>
 
-        <!-- 底部按鈕：走勢 & 直達 Uber Eats 下單 -->
         <div class="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
-          <button data-action="history" data-args="${escapeHtml(JSON.stringify([p.product_id, p.product_name, p.store_name, p.order_action_url || '']))}" class="text-xs text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-1">
+          <button data-action="history" data-args="${escapeHtml(JSON.stringify([String(p.product_id), String(p.product_name), String(p.store_name), String(p.order_action_url || '')]))}" class="text-xs text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-1">
             <i data-lucide="line-chart" class="w-3.5 h-3.5"></i>走勢
           </button>
-          <a href="${escapeHtml(safeOrderUrl(p.order_action_url || '#'))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([p.order_action_url || '', p.product_name, p.store_name]))}" class="text-xs text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1 active:scale-95 transition-transform">
+          <a href="${escapeHtml(safeOrderUrl(p.order_action_url || '#'))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([String(p.order_action_url || ''), String(p.product_name), String(p.store_name)]))}" class="text-xs text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1 active:scale-95 transition-transform">
             下單 <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
           </a>
         </div>
@@ -993,30 +1424,21 @@ function renderGlobalProducts() {
     `;
   }).join('');
 
+  renderPaginationComponent({
+    containerId: 'global-pagination',
+    currentPage: page,
+    totalPages: totalPages,
+    totalItems: totalItems,
+    pageSize: PAGE_SIZE,
+    onPageChange: 'changeGlobalPage'
+  });
+
   lucide.createIcons();
 }
 
-function renderGlobalPagination() {
-  const container = document.getElementById('global-pagination');
-  if (!container) return;
-  const current = APP_STATE.globalPage;
-  const total = APP_STATE.globalTotalPages;
-
-  if (current <= 1 && !globalSearchHasNextPage && total <= 1) {
-    container.innerHTML = '';
-    return;
-  }
-
-  let html = '';
-  if (current > 1) {
-    html += `<button onclick="fetchGlobalProducts(${current - 1})" class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">上一頁</button>`;
-  }
-  html += `<span class="text-xs text-slate-500 font-mono px-2">第 ${current} 頁</span>`;
-  if (globalSearchHasNextPage || current < total) {
-    html += `<button onclick="fetchGlobalProducts(${current + 1})" class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">下一頁</button>`;
-  }
-
-  container.innerHTML = html;
+function changeGlobalPage(page) {
+  fetchGlobalProducts(page);
+  smoothScrollToTab('tab-global-search');
 }
 
 // -----------------------------------------------------------------------------
@@ -1037,10 +1459,8 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
   modal.classList.remove('hidden');
   modal.classList.add('flex');
 
-  // 取得歷史資料 (優先讀取記憶體字典)
   let history = (APP_STATE.historyMap && APP_STATE.historyMap[productId]) || [];
   
-  // 繪製表格
   const tbody = document.getElementById('modal-history-tbody');
   if (history.length > 0) {
     tbody.innerHTML = history.map(h => `
@@ -1055,7 +1475,6 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
     tbody.innerHTML = `<tr><td colspan="4" class="px-3 py-4 text-center text-slate-400">目前批次為最新快照記錄</td></tr>`;
   }
 
-  // 繪製 Chart.js
   const ctx = document.getElementById('priceHistoryChart').getContext('2d');
   if (APP_STATE.chartInstance) {
     APP_STATE.chartInstance.destroy();
@@ -1130,6 +1549,10 @@ function initEventListeners() {
       document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
       document.getElementById(target).classList.remove('hidden');
       APP_STATE.currentTab = target;
+
+      if (target === 'tab-global-search') {
+        fetchGlobalProducts(APP_STATE.globalPage || 1);
+      }
     });
   });
 
@@ -1139,25 +1562,25 @@ function initEventListeners() {
   document.getElementById('stat-card-products')?.addEventListener('click', () => switchTab('tab-products'));
   document.getElementById('stat-card-promos')?.addEventListener('click', () => switchTab('tab-promos'));
 
-  // 大特價篩選事件 (0ms 即時反應)
-  document.getElementById('discount-pct-select').addEventListener('change', e => {
+  // Tab 1: 大特價篩選事件
+  document.getElementById('discount-pct-select')?.addEventListener('change', e => {
     APP_STATE.filters.discountMinPct = parseFloat(e.target.value);
-    fetchDiscounts();
+    fetchDiscounts(1);
   });
 
-  document.getElementById('discount-savings-select').addEventListener('change', e => {
+  document.getElementById('discount-savings-select')?.addEventListener('change', e => {
     APP_STATE.filters.discountMinSavings = parseFloat(e.target.value);
-    fetchDiscounts();
+    fetchDiscounts(1);
   });
 
-  document.getElementById('discount-sort-select').addEventListener('change', e => {
+  document.getElementById('discount-sort-select')?.addEventListener('change', e => {
     APP_STATE.filters.discountSort = e.target.value;
-    fetchDiscounts();
+    fetchDiscounts(1);
   });
 
-  document.getElementById('discount-search-input').addEventListener('input', debounce(e => {
+  document.getElementById('discount-search-input')?.addEventListener('input', debounce(e => {
     APP_STATE.filters.discountSearch = e.target.value;
-    fetchDiscounts();
+    fetchDiscounts(1);
   }, 100));
 
   // 分類標籤點擊
@@ -1171,15 +1594,57 @@ function initEventListeners() {
       tag.classList.remove('bg-slate-100', 'text-slate-600', 'dark:bg-slate-800', 'dark:text-slate-400');
 
       APP_STATE.filters.discountCategory = tag.getAttribute('data-cat');
-      fetchDiscounts();
+      fetchDiscounts(1);
     });
   });
 
-  // 全庫搜尋事件 (0ms 即打即搜)
-  document.getElementById('global-search-input')?.addEventListener('input', debounce(e => {
-    APP_STATE.filters.globalSearch = e.target.value;
-    fetchGlobalProducts(1);
-  }, 300));
+  // Tab 2: 新店家篩選事件
+  document.getElementById('store-search-input')?.addEventListener('input', debounce(e => {
+    APP_STATE.filters.storeSearch = e.target.value;
+    fetchNewStores(1);
+  }, 150));
+
+  document.getElementById('store-city-select')?.addEventListener('change', e => {
+    APP_STATE.filters.storeCity = e.target.value;
+    fetchNewStores(1);
+  });
+
+  document.getElementById('store-sort-select')?.addEventListener('change', e => {
+    APP_STATE.filters.storeSort = e.target.value;
+    fetchNewStores(1);
+  });
+
+  // Tab 4: 促銷活動篩選事件
+  document.getElementById('promo-search-input')?.addEventListener('input', debounce(e => {
+    APP_STATE.filters.promoSearch = e.target.value;
+    fetchPromotions(1);
+  }, 150));
+
+  document.getElementById('promo-type-select')?.addEventListener('change', e => {
+    APP_STATE.filters.promoType = e.target.value;
+    fetchPromotions(1);
+  });
+
+  document.getElementById('promo-sort-select')?.addEventListener('change', e => {
+    APP_STATE.filters.promoSort = e.target.value;
+    fetchPromotions(1);
+  });
+
+  // Tab 5: 全庫搜尋事件
+  const globalInput = document.getElementById('global-search-input');
+  if (globalInput) {
+    globalInput.addEventListener('input', debounce(e => {
+      APP_STATE.filters.globalSearch = e.target.value;
+      fetchGlobalProducts(1);
+    }, 200));
+
+    globalInput.addEventListener('keydown', e => {
+      if (e.key === 'Enter') {
+        APP_STATE.filters.globalSearch = e.target.value;
+        fetchGlobalProducts(1);
+      }
+    });
+  }
 
   document.getElementById('global-sort-select')?.addEventListener('change', e => {
     APP_STATE.filters.globalSort = e.target.value;
@@ -1260,11 +1725,6 @@ function escapeHtml(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
-}
-
-function escapeJs(str) {
-  if (!str) return '';
-  return String(str).replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '\\"');
 }
 
 // -----------------------------------------------------------------------------

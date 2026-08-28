@@ -482,7 +482,8 @@ def export_all_static_snapshots(
     batch_id: Optional[str] = None,
     stores_file: Optional[str] = None,
     scope: str = "taiwan",
-    hf_repo_id: str = "hub-google/UberEat"
+    hf_repo_id: str = "hub-google/UberEat",
+    upload_hf: bool = True
 ) -> Dict[str, Any]:
     """
     執行端到端靜態快照導出作業 (v7.0 生產級架構)
@@ -756,25 +757,34 @@ def export_all_static_snapshots(
         shutil.copyfile(latest_parquet_filepath, parquet_filepath)
         parquet_size_mb = os.path.getsize(latest_parquet_filepath) / 1024 / 1024
         print(f"✅ [Parquet 導出成功] 共 {total_parquet_rows:,} 筆商品，大小: {parquet_size_mb:.2f} MB")
-        upload_parquet_to_hf(latest_parquet_filepath, batch_id, repo_id=hf_repo_id)
+        if upload_hf:
+            if total_parquet_rows >= 1000:
+                upload_parquet_to_hf(latest_parquet_filepath, batch_id, repo_id=hf_repo_id)
+            else:
+                print(f"⚠️ [安全保護] Parquet 筆數 ({total_parquet_rows:,} 筆) 未達生產門檻 (1,000 筆)，自動略過 Hugging Face 生產湖倉覆蓋。")
+        else:
+            print("ℹ️ 依設定跳過 Hugging Face Parquet 上傳。")
 
     # 4. 生成前端輕量靜態 JSON 檔案集合
     print("\n📝 【步驟 6.4】生成前端靜態 JSON 檔案集合...")
     discounts = calculate_7day_discounts(conn, batch_id, min_discount_pct=20.0, min_savings_twd=20.0)
 
-    # 促銷專區 (買一送一/組合優惠) - 匯出精選前 3,000 筆供前端快速載入
+    # 促銷專區 (買一送一/組合優惠) - 匯出全部促銷商品 (無截斷)
     cursor.execute("""
     SELECT 
         p.product_id, p.store_id, p.store_name, p.category_name, p.product_name,
         p.price, p.quantity, p.promo_type,
         ROUND(p.price * 1.0 / p.quantity, 2) as eff_price,
         COALESCE(p.description, '') as description,
-        COALESCE(s.order_action_url, s.store_url, '') as order_action_url
+        COALESCE(s.order_action_url, s.store_url, '') as order_action_url,
+        s.rating_value,
+        s.review_count,
+        COALESCE(s.locality, '') as locality,
+        COALESCE(s.street_address, '') as street_address
     FROM products p
     LEFT JOIN stores s ON p.store_id = s.store_id
     WHERE p.crawled_time = ? AND (p.promo_type != '無' OR p.quantity > 1) AND p.price >= 1
-    ORDER BY s.rating_value DESC NULLS LAST, p.price ASC
-    LIMIT 3000;
+    ORDER BY s.rating_value DESC NULLS LAST, p.price ASC;
     """, (batch_id,))
     promotions = [dict(r) for r in cursor.fetchall()]
 
@@ -785,25 +795,29 @@ def export_all_static_snapshots(
     """, (batch_id,))
     total_promotions_count = cursor.fetchone()[0]
 
-    # 精選全品庫 (4,000 筆離線備援)
-    curated_catalog = extract_curated_catalog(conn, batch_id, max_items=4000)
+    # 精選全品庫 (完整離線備援)
+    curated_catalog = extract_curated_catalog(conn, batch_id, max_items=20000)
 
     # 特價價格走勢字典
     target_pids = {d["product_id"] for d in discounts}
-    target_pids.update({p["product_id"] for p in promotions[:500]})
+    target_pids.update({p["product_id"] for p in promotions[:1000]})
     history_map = extract_price_history_map(conn, target_product_ids=target_pids)
 
-    # 新進店家清單 (精選前 200 間快照)
+    # 新進店家清單 (完整全部店家快照，不設上限限制)
     new_stores = []
-    for s in store_rows[:200]:
+    for s in store_rows:
+        loc = s[11] or ""
+        addr = s[12] or ""
+        city = extract_city(loc, addr)
         new_stores.append({
             "store_id": s[0],
             "store_name": s[2],
             "store_url": s[4],
             "rating_value": s[5],
             "review_count": s[6],
-            "locality": s[11] or "",
-            "street_address": s[12] or "",
+            "locality": loc,
+            "street_address": addr,
+            "city": city,
             "order_action_url": s[16] or s[4],
             "total_menu_items": s[17],
             "is_open": s[18]
@@ -832,7 +846,10 @@ def export_all_static_snapshots(
     def save_json(filename: str, payload: Any):
         filepath = os.path.join(output_dir, filename)
         with open(filepath, "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=2)
+            if isinstance(payload, dict) and "items" in payload and len(payload.get("items", [])) > 500:
+                json.dump(payload, f, ensure_ascii=False, separators=(',', ':'))
+            else:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
         size_kb = os.path.getsize(filepath) / 1024
         print(f"   ├─ 📄 {filename:<20} ({size_kb:6.1f} KB)")
 

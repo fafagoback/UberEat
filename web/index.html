@@ -292,6 +292,9 @@
         <!-- JS 動態渲染卡片 -->
       </div>
 
+      <!-- 分頁導航 -->
+      <div id="discounts-pagination" class="py-2"></div>
+
       <!-- 查無資料提示 -->
       <div id="discounts-empty" class="hidden py-16 text-center">
         <div class="w-16 h-16 rounded-full bg-red-100 dark:bg-red-950/50 flex items-center justify-center text-red-500 mx-auto mb-3">
@@ -307,27 +310,78 @@
     <!-- 4. TAB 2: 新進店家速報 (New Stores) -->
     <!-- ================================================================= -->
     <section id="tab-stores" class="tab-content hidden space-y-5">
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between flex-wrap gap-2">
         <div>
           <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
             <i data-lucide="sparkles" class="w-5 h-5 text-emerald-500"></i>
             全新進駐店家情報
           </h2>
-          <p class="text-xs text-slate-500 dark:text-slate-400">最新採集批次首度發現之全新餐飲店家</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">最新採集批次首度發現之全新餐飲店家（每頁 50 筆）</p>
         </div>
-        <span class="text-xs px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 font-mono" id="new-stores-counter">0 間新店</span>
+        <span class="text-xs px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 font-mono font-bold" id="new-stores-counter">載入中...</span>
+      </div>
+
+      <!-- 店家篩選工具列 -->
+      <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <!-- 關鍵字搜尋 -->
+          <div class="relative sm:col-span-1">
+            <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input type="text" id="store-search-input" placeholder="搜尋店家名稱或地址..." class="w-full pl-10 pr-4 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100">
+          </div>
+
+          <!-- 縣市選單 -->
+          <div class="relative">
+            <select id="store-city-select" class="w-full px-3.5 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100 appearance-none pr-8">
+              <option value="全部" selected>🗺️ 全台灣 (全部縣市)</option>
+              <option value="台北市">📍 台北市</option>
+              <option value="新北市">📍 新北市</option>
+              <option value="桃園市">📍 桃園市</option>
+              <option value="台中市">📍 台中市</option>
+              <option value="台南市">📍 台南市</option>
+              <option value="高雄市">📍 高雄市</option>
+              <option value="新竹市">📍 新竹市 / 縣</option>
+              <option value="彰化縣">📍 彰化縣</option>
+              <option value="基隆市">📍 基隆市</option>
+              <option value="宜蘭縣">📍 宜蘭縣</option>
+              <option value="花蓮縣">📍 花蓮縣</option>
+              <option value="屏東縣">📍 屏東縣</option>
+              <option value="苗栗縣">📍 苗栗縣</option>
+              <option value="雲林縣">📍 雲林縣</option>
+              <option value="嘉義市">📍 嘉義市 / 縣</option>
+              <option value="南投縣">📍 南投縣</option>
+              <option value="台東縣">📍 台東縣</option>
+              <option value="澎湖縣">📍 澎湖縣 / 金門</option>
+            </select>
+            <i data-lucide="chevron-down" class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+          </div>
+
+          <!-- 排序選單 -->
+          <div class="relative">
+            <select id="store-sort-select" class="w-full px-3.5 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100 appearance-none pr-8">
+              <option value="rating_desc" selected>⭐ 評分最高優先</option>
+              <option value="reviews_desc">💬 評論數最多優先</option>
+              <option value="items_desc">🍽️ 菜單品項最多優先</option>
+              <option value="name_asc">🔤 店家名稱 A-Z</option>
+            </select>
+            <i data-lucide="chevron-down" class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+          </div>
+        </div>
       </div>
 
       <div id="new-stores-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <!-- JS 動態渲染卡片 -->
       </div>
 
+      <!-- 分頁導航 -->
+      <div id="new-stores-pagination" class="py-2"></div>
+
       <div id="new-stores-empty" class="hidden py-16 text-center bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
         <div class="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-950/50 flex items-center justify-center text-emerald-500 mx-auto mb-3">
           <i data-lucide="store" class="w-8 h-8"></i>
         </div>
-        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">本批次暫無全新進駐店家</h3>
-        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">所有店家均為既有監控之成熟名單</p>
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">查無相符店家</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">請嘗試變更搜尋關鍵字或切換地區篩選</p>
       </div>
     </section>
 
@@ -335,20 +389,23 @@
     <!-- 5. TAB 3: 老店新菜推薦 (New Products) -->
     <!-- ================================================================= -->
     <section id="tab-products" class="tab-content hidden space-y-5">
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between flex-wrap gap-2">
         <div>
           <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
             <i data-lucide="utensils" class="w-5 h-5 text-blue-500"></i>
             既有店家全新菜色上架
           </h2>
-          <p class="text-xs text-slate-500 dark:text-slate-400">老店新推美味，第一時間搶先品嚐</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">老店新推美味，第一時間搶先品嚐（每頁 50 筆）</p>
         </div>
-        <span class="text-xs px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300 font-mono" id="new-products-counter">0 道新品</span>
+        <span class="text-xs px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300 font-mono font-bold" id="new-products-counter">0 道新品</span>
       </div>
 
       <div id="new-products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <!-- JS 動態渲染卡片 -->
       </div>
+
+      <!-- 分頁導航 -->
+      <div id="new-products-pagination" class="py-2"></div>
 
       <div id="new-products-empty" class="hidden py-16 text-center bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
         <div class="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-950/50 flex items-center justify-center text-blue-500 mx-auto mb-3">
@@ -363,19 +420,65 @@
     <!-- 6. TAB 4: 折扣活動專區 (Promotions) -->
     <!-- ================================================================= -->
     <section id="tab-promos" class="tab-content hidden space-y-5">
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between flex-wrap gap-2">
         <div>
           <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
             <i data-lucide="gift" class="w-5 h-5 text-purple-500"></i>
             折扣活動專區
           </h2>
-          <p class="text-xs text-slate-500 dark:text-slate-400">全自動辨識買一送一、多件折抵與促銷活動，折算實質單件價格</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">全自動辨識買一送一、多件折抵與促銷活動，折算實質單件價格（每頁 50 筆）</p>
         </div>
-        <span class="text-xs px-2.5 py-1 rounded-lg bg-purple-50 dark:bg-purple-950/80 text-purple-700 dark:text-purple-300 font-mono" id="promos-counter">0 筆特惠</span>
+        <span class="text-xs px-2.5 py-1 rounded-lg bg-purple-50 dark:bg-purple-950/80 text-purple-700 dark:text-purple-300 font-mono font-bold" id="promos-counter">載入中...</span>
+      </div>
+
+      <!-- 促銷活動篩選工具列 -->
+      <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <!-- 關鍵字搜尋 -->
+          <div class="relative">
+            <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input type="text" id="promo-search-input" placeholder="搜尋特惠菜色或店家..." class="w-full pl-10 pr-4 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-slate-800 dark:text-slate-100">
+          </div>
+
+          <!-- 活動型態選單 -->
+          <div class="relative">
+            <select id="promo-type-select" class="w-full px-3.5 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-slate-800 dark:text-slate-100 appearance-none pr-8">
+              <option value="全部" selected>🎁 全部優惠型態</option>
+              <option value="買一送一">🔥 買一送一 / 買多送多</option>
+              <option value="半價">⚡ 第2件半價</option>
+              <option value="加1元">💰 加1元多1件</option>
+              <option value="折">🏷️ 折數優惠</option>
+              <option value="多入">📦 多件多入特惠組</option>
+            </select>
+            <i data-lucide="chevron-down" class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+          </div>
+
+          <!-- 排序選單 -->
+          <div class="relative">
+            <select id="promo-sort-select" class="w-full px-3.5 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-slate-800 dark:text-slate-100 appearance-none pr-8">
+              <option value="price_asc" selected>🏷️ 實質單價由低到高</option>
+              <option value="rating_desc">⭐ 店家評分最高優先</option>
+              <option value="price_desc">🏷️ 實質單價由高到低</option>
+              <option value="name_asc">🔤 菜品名稱 A-Z</option>
+            </select>
+            <i data-lucide="chevron-down" class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+          </div>
+        </div>
       </div>
 
       <div id="promos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <!-- JS 動態渲染卡片 -->
+      </div>
+
+      <!-- 分頁導航 -->
+      <div id="promos-pagination" class="py-2"></div>
+
+      <div id="promos-empty" class="hidden py-16 text-center bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
+        <div class="w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-950/50 flex items-center justify-center text-purple-500 mx-auto mb-3">
+          <i data-lucide="gift" class="w-8 h-8"></i>
+        </div>
+        <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">查無符合條件的促銷商品</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">請嘗試切換其他活動型態或關鍵字</p>
       </div>
     </section>
 

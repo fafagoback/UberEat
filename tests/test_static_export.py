@@ -104,7 +104,8 @@ class StaticExportTests(unittest.TestCase):
                 output_dir=out_dir,
                 db_path=db_path,
                 batch_id=BATCH,
-                scope="taiwan"
+                scope="taiwan",
+                upload_hf=False
             )
 
             self.assertEqual(stats["latest_batch"], BATCH)
@@ -162,7 +163,8 @@ class StaticExportTests(unittest.TestCase):
                 src_dir=src_dir,
                 output_dir=out_dir,
                 batch_id=BATCH,
-                scope="taiwan"
+                scope="taiwan",
+                upload_hf=False
             )
 
             self.assertEqual(stats["latest_batch"], BATCH)
