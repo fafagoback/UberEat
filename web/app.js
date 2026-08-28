@@ -2,6 +2,7 @@
  * UberEats Radar - 前端分析儀表板核心互動邏輯
  * 方案 C: 邊緣靜態快照與 Jamstack CDN 極速架構 (0ms 本地記憶體即時檢索 + DuckDB-WASM 邊緣湖倉)
  * 完整全資料集分頁展示 (每頁 50 筆，無截斷限制)
+ * [Live Sync Support]
  */
 
 const PAGE_SIZE = 50;
