@@ -68,6 +68,24 @@ TW_CITIES = [
     "金門縣", "連江縣"
 ]
 
+DISTRICT_CITY_MAP = {
+    "大安": "台北市", "信義": "台北市", "中正": "台北市", "中山": "台北市", "松山": "台北市",
+    "萬華": "台北市", "文山": "台北市", "大同": "台北市", "南港": "台北市", "內湖": "台北市",
+    "士林": "台北市", "北投": "台北市",
+    "板橋": "新北市", "三重": "新北市", "中和": "新北市", "永和": "新北市", "新莊": "新北市",
+    "新店": "新北市", "土城": "新北市", "蘆洲": "新北市", "樹林": "新北市", "汐止": "新北市",
+    "鶯歌": "新北市", "三峽": "新北市", "淡水": "新北市", "瑞芳": "新北市", "五股": "新北市",
+    "泰山": "新北市", "林口": "新北市", "深坑": "新北市", "八里": "新北市",
+    "中壢": "桃園市", "平鎮": "桃園市", "八德": "桃園市", "楊梅": "桃園市", "蘆竹": "桃園市",
+    "大溪": "桃園市", "龜山": "桃園市", "大園": "桃園市", "觀音": "桃園市", "新屋": "桃園市", "龍潭": "桃園市",
+    "西屯": "台中市", "南屯": "台中市", "北屯": "台中市", "豐原": "台中市", "大里": "台中市",
+    "太平": "台中市", "沙鹿": "台中市", "清水": "台中市", "大甲": "台中市", "烏日": "台中市",
+    "永康": "台南市", "安南": "台南市", "安平": "台南市", "新營": "台南市", "善化": "台南市",
+    "左營": "高雄市", "鳳山": "高雄市", "三民": "高雄市", "苓雅": "高雄市", "鼓山": "高雄市",
+    "前鎮": "高雄市", "楠梓": "高雄市", "小港": "高雄市", "仁武": "高雄市",
+    "竹北": "新竹市", "竹東": "新竹市", "香山": "新竹市"
+}
+
 
 def extract_city(locality: str, street_address: str) -> str:
     """自地址與行政區文字中識別台灣主要縣市名稱"""
@@ -75,6 +93,9 @@ def extract_city(locality: str, street_address: str) -> str:
     for city in TW_CITIES:
         if city in combined or city.replace("臺", "台") in combined or city.replace("台", "臺") in combined:
             return city.replace("臺", "台")
+    for dist, city in DISTRICT_CITY_MAP.items():
+        if dist in combined:
+            return city
     return locality or "其他"
 
 
@@ -432,6 +453,159 @@ def upload_parquet_to_hf(parquet_path: str, batch_id: str, repo_id: str = "hub-g
         return True
     except Exception as e:
         print(f"⚠️ 上傳 Parquet 至 Hugging Face 失敗: {e}")
+        return False
+
+
+CITY_SLUG_MAPPING = {
+    "台北市": "taipei",
+    "臺北市": "taipei",
+    "新北市": "newtaipei",
+    "桃園市": "taoyuan",
+    "台中市": "taichung",
+    "臺中市": "taichung",
+    "台南市": "tainan",
+    "臺南市": "tainan",
+    "高雄市": "kaohsiung",
+    "新竹市": "hsinchu",
+    "新竹縣": "hsinchu"
+}
+
+
+def export_partitioned_parquet(conn: sqlite3.Connection, latest_batch: str, partitions_dir: str) -> Dict[str, int]:
+    """將全台百萬商品按主要縣市導出為獨立輕量 Parquet 切片，大幅降低邊緣查詢 Range Requests 延遲"""
+    try:
+        import pyarrow as pa
+        import pyarrow.parquet as pq
+    except ImportError:
+        return {}
+
+    os.makedirs(partitions_dir, exist_ok=True)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+
+    query = """
+    SELECT 
+        p.product_id,
+        p.store_id,
+        p.store_name,
+        p.category_name,
+        p.product_name,
+        CAST(p.price AS REAL) as price,
+        CAST(p.quantity AS INTEGER) as quantity,
+        COALESCE(p.promo_type, '無') as promo_type,
+        COALESCE(p.eff_price, ROUND(p.price * 1.0 / p.quantity, 2)) as eff_price,
+        COALESCE(p.description, '') as description,
+        COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
+        s.rating_value,
+        s.review_count,
+        COALESCE(s.locality, '') as locality,
+        COALESCE(s.street_address, '') as street_address,
+        COALESCE(p.is_open, s.is_open, 1) as is_open,
+        p.crawled_time
+    FROM products p
+    LEFT JOIN stores s ON p.store_id = s.store_id AND p.crawled_time = s.crawled_time
+    WHERE p.crawled_time = ? AND p.price >= 1
+    ORDER BY s.rating_value DESC NULLS LAST, COALESCE(p.eff_price, p.price) ASC;
+    """
+    cursor.execute(query, (latest_batch,))
+    rows = cursor.fetchall()
+    if not rows:
+        return {}
+
+    partition_buckets: Dict[str, Dict[str, List[Any]]] = {}
+
+    def get_bucket(slug: str):
+        if slug not in partition_buckets:
+            partition_buckets[slug] = {
+                "product_id": [], "store_id": [], "store_name": [], "category_name": [],
+                "product_name": [], "price": [], "quantity": [], "promo_type": [],
+                "eff_price": [], "description": [], "order_action_url": [],
+                "rating_value": [], "review_count": [], "locality": [],
+                "street_address": [], "city": [], "is_open": [], "crawled_time": []
+            }
+        return partition_buckets[slug]
+
+    for r in rows:
+        loc = r["locality"] or ""
+        addr = r["street_address"] or ""
+        city = extract_city(loc, addr)
+        slug = CITY_SLUG_MAPPING.get(city, "other")
+        b = get_bucket(slug)
+
+        b["product_id"].append(str(r["product_id"]))
+        b["store_id"].append(str(r["store_id"]))
+        b["store_name"].append(str(r["store_name"] or ""))
+        b["category_name"].append(str(r["category_name"] or "一般"))
+        b["product_name"].append(str(r["product_name"] or ""))
+        b["price"].append(float(r["price"]))
+        b["quantity"].append(int(r["quantity"]))
+        b["promo_type"].append(str(r["promo_type"] or "無"))
+        b["eff_price"].append(float(r["eff_price"]))
+        b["description"].append(str(r["description"] or ""))
+        b["order_action_url"].append(str(r["order_action_url"] or "").replace("&amp;", "&"))
+        b["rating_value"].append(float(r["rating_value"]) if r["rating_value"] is not None else None)
+        b["review_count"].append(int(r["review_count"]) if r["review_count"] is not None else None)
+        b["locality"].append(loc)
+        b["street_address"].append(addr)
+        b["city"].append(city)
+        b["is_open"].append(int(r["is_open"] or 1))
+        b["crawled_time"].append(str(r["crawled_time"]))
+
+    schema = pa.schema([
+        pa.field("product_id", pa.string()),
+        pa.field("store_id", pa.string()),
+        pa.field("store_name", pa.string()),
+        pa.field("category_name", pa.string()),
+        pa.field("product_name", pa.string()),
+        pa.field("price", pa.float64()),
+        pa.field("quantity", pa.int64()),
+        pa.field("promo_type", pa.string()),
+        pa.field("eff_price", pa.float64()),
+        pa.field("description", pa.string()),
+        pa.field("order_action_url", pa.string()),
+        pa.field("rating_value", pa.float64()),
+        pa.field("review_count", pa.int64()),
+        pa.field("locality", pa.string()),
+        pa.field("street_address", pa.string()),
+        pa.field("city", pa.string()),
+        pa.field("is_open", pa.int64()),
+        pa.field("crawled_time", pa.string())
+    ])
+
+    results = {}
+    for slug, data in partition_buckets.items():
+        if len(data["product_id"]) == 0:
+            continue
+        table = pa.Table.from_pydict(data, schema=schema)
+        out_path = os.path.join(partitions_dir, f"catalog_{slug}.parquet")
+        pq.write_table(table, out_path, compression="zstd")
+        results[slug] = len(data["product_id"])
+
+    return results
+
+
+def upload_partitions_to_hf(partitions_dir: str, repo_id: str = "hub-google/UberEat") -> bool:
+    """將各縣市分區 Parquet 檔案批次上傳至 Hugging Face Datasets"""
+    token = os.environ.get("HF_TOKEN")
+    if not token or not os.path.exists(partitions_dir):
+        return False
+    try:
+        from huggingface_hub import HfApi
+        api = HfApi(token=token)
+        for fn in os.listdir(partitions_dir):
+            if fn.endswith(".parquet"):
+                fpath = os.path.join(partitions_dir, fn)
+                api.upload_file(
+                    path_or_fileobj=fpath,
+                    path_in_repo=f"Parquet/partitions/{fn}",
+                    repo_id=repo_id,
+                    repo_type="dataset",
+                    commit_message=f"Update partition {fn}"
+                )
+        print("✅ [HF 分區 Parquet 批次上傳成功]")
+        return True
+    except Exception as e:
+        print(f"⚠️ 上傳分區 Parquet 失敗: {e}")
         return False
 
 
@@ -1043,9 +1217,18 @@ def export_all_static_snapshots(
         shutil.copyfile(latest_parquet_filepath, parquet_filepath)
         parquet_size_mb = os.path.getsize(latest_parquet_filepath) / 1024 / 1024
         print(f"✅ [Parquet 導出成功] 共 {total_parquet_rows:,} 筆商品，大小: {parquet_size_mb:.2f} MB")
+
+        # 導出主要縣市分區切片
+        partitions_dir = os.path.join(output_dir, "partitions")
+        partition_results = export_partitioned_parquet(conn, batch_id, partitions_dir)
+        if partition_results:
+            print(f"✅ [縣市分區 Parquet 導出成功] 共 {len(partition_results)} 個分區: {list(partition_results.keys())}")
+
         if upload_hf:
             if total_parquet_rows >= 1000:
                 upload_parquet_to_hf(latest_parquet_filepath, batch_id, repo_id=hf_repo_id)
+                if partition_results:
+                    upload_partitions_to_hf(partitions_dir, repo_id=hf_repo_id)
             else:
                 print(f"⚠️ [安全保護] Parquet 筆數 ({total_parquet_rows:,} 筆) 未達生產門檻 (1,000 筆)，自動略過 Hugging Face 生產湖倉覆蓋。")
         else:

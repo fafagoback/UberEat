@@ -153,6 +153,11 @@ class StaticExportTests(unittest.TestCase):
             for col in ["product_id", "store_id", "product_name", "price", "city", "locality", "eff_price"]:
                 self.assertIn(col, columns, f"Parquet 缺少核心欄位: {col}")
 
+            # 驗證縣市分區 Parquet 目錄與檔案生成
+            partitions_dir = os.path.join(out_dir, "partitions")
+            self.assertTrue(os.path.exists(partitions_dir), "缺少 partitions 目錄")
+            self.assertTrue(os.path.exists(os.path.join(partitions_dir, "catalog_taipei.parquet")), "缺少台北市分區 Parquet")
+
     def test_export_all_static_snapshots_default_temp_db(self):
         """測試不傳入 db_path (預設安全暫存資料庫) 的完整流程"""
         with tempfile.TemporaryDirectory() as src_dir, tempfile.TemporaryDirectory() as out_dir:

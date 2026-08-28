@@ -1246,6 +1246,27 @@ function convertArrowTableToObjects(table) {
   }
 }
 
+const CITY_PARTITION_MAP = {
+  '台北市': 'catalog_taipei.parquet',
+  '新北市': 'catalog_newtaipei.parquet',
+  '桃園市': 'catalog_taoyuan.parquet',
+  '台中市': 'catalog_taichung.parquet',
+  '台南市': 'catalog_tainan.parquet',
+  '高雄市': 'catalog_kaohsiung.parquet',
+  '新竹市': 'catalog_hsinchu.parquet',
+  '彰化縣': 'catalog_other.parquet',
+  '基隆市': 'catalog_other.parquet',
+  '宜蘭縣': 'catalog_other.parquet',
+  '花蓮縣': 'catalog_other.parquet',
+  '屏東縣': 'catalog_other.parquet',
+  '苗栗縣': 'catalog_other.parquet',
+  '雲林縣': 'catalog_other.parquet',
+  '嘉義市': 'catalog_other.parquet',
+  '南投縣': 'catalog_other.parquet',
+  '台東縣': 'catalog_other.parquet',
+  '澎湖縣': 'catalog_other.parquet'
+};
+
 async function fetchGlobalProducts(page = 1) {
   globalSearchController?.abort();
   const controller = new AbortController();
@@ -1260,87 +1281,10 @@ async function fetchGlobalProducts(page = 1) {
   const cityFilter = APP_STATE.filters.globalCity || '全部';
   const limit = PAGE_SIZE;
 
-  if (container) {
-    container.style.opacity = '1';
-    if (page === 1 && (APP_STATE.globalProducts?.length === 0 || rawSearch !== '')) {
-      container.innerHTML = `
-        <div class="col-span-1 md:col-span-2 lg:col-span-3 py-16 flex flex-col items-center justify-center text-center">
-          <div class="w-9 h-9 border-3 border-emerald-500/20 border-t-emerald-600 rounded-full animate-spin mb-3"></div>
-          <p class="text-sm font-bold text-slate-700 dark:text-slate-200">正在即時檢索全台 238 萬全品資料庫...</p>
-          <p class="text-xs text-slate-400 mt-1 font-mono">DuckDB-WASM 邊緣湖倉毫秒檢索中</p>
-        </div>
-      `;
-    } else {
-      container.style.opacity = '0.5';
-      container.style.transition = 'opacity 0.15s ease';
-    }
-  }
-
-  // 1. DuckDB-WASM 邊緣 SQL 查詢 (直連全台百萬 Parquet 湖倉)
-  if (DUCKDB_READY && DUCKDB_CONN) {
-    try {
-      let whereClauses = ["price >= 1"];
-
-      if (cityFilter && cityFilter !== '全部') {
-        const cityClause = buildCitySqlCondition(cityFilter);
-        if (cityClause) whereClauses.push(cityClause);
-      }
-
-      if (sortMode === 'promo_only') {
-        whereClauses.push(`promo_type != '無' AND promo_type != ''`);
-      }
-
-      if (rawSearch) {
-        const kwClause = buildKeywordSqlCondition(rawSearch);
-        if (kwClause) whereClauses.push(`(${kwClause})`);
-      }
-
-      const whereSql = whereClauses.join(" AND ");
-
-      let orderSql = "";
-      if (sortMode === 'price_asc') orderSql = "ORDER BY eff_price ASC, rating_value DESC NULLS LAST";
-      else if (sortMode === 'price_desc') orderSql = "ORDER BY eff_price DESC, rating_value DESC NULLS LAST";
-      else if (sortMode === 'name_asc') orderSql = "ORDER BY product_name ASC, rating_value DESC NULLS LAST";
-      else if (sortMode === 'promo_first') orderSql = "ORDER BY CASE WHEN promo_type != '無' AND promo_type != '' THEN 0 ELSE 1 END, rating_value DESC NULLS LAST, eff_price ASC";
-      // 備註：預設評分排序 (rating_desc) 在湖倉 Parquet 匯出時已預先實體排序，省略 ORDER BY 可讓 DuckDB 啟用毫秒級 Early-Out
-
-      const offset = (page - 1) * limit;
-      const fetchLimit = limit + 1;
-
-      const sql = `SELECT product_id, store_id, store_name, category_name, product_name, price, quantity, promo_type, eff_price, description, order_action_url, rating_value, review_count, locality, street_address, city, is_open, crawled_time ` +
-        `FROM 'taiwan_catalog.parquet' ` +
-        `WHERE ${whereSql} ${orderSql} LIMIT ${fetchLimit} OFFSET ${offset}`;
-      console.log('🔍 [DuckDB SQL]:', sql);
-
-      const queryPromise = DUCKDB_CONN.query(sql);
-      const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('DuckDB query timeout')), 25000));
-
-      const dataResult = await Promise.race([queryPromise, timeoutPromise]);
-      console.log('✅ [DuckDB Result rows]:', dataResult ? dataResult.numRows : 0);
-
-      if (sequence !== globalSearchSequence) return;
-
-      const allRows = convertArrowTableToObjects(dataResult);
-      const hasNextPage = allRows.length > limit;
-      const pageRows = allRows.slice(0, limit);
-
-      APP_STATE.globalProducts = pageRows;
-      APP_STATE.globalHasNext = hasNextPage;
-      APP_STATE.globalTotalPages = hasNextPage ? Math.max(page + 1, APP_STATE.globalTotalPages || 1) : page;
-      APP_STATE.globalTotalItems = hasNextPage ? `${page * limit}+` : `${(page - 1) * limit + pageRows.length}`;
-
-      renderGlobalProducts();
-
-      if (container && sequence === globalSearchSequence) {
-        container.style.opacity = '1';
-      }
-      return;
-    } catch (err) {
-      console.warn('⚠️ DuckDB 查詢逾時或未就緒，平滑切換為本地記憶體快照備援:', err);
-    }
-  }
-
-  // 2. 本地精選快照備援模式 (0ms 即打即搜)
+  // =========================================================================
+  // 1. 【第 0 毫秒極速層 (0ms Instant In-Memory Layer)】
+  // 立刻過濾並渲染記憶體資料，使用者打字或切換 Tab 瞬間 0ms 秒出，絕不白屏轉圈
+  // =========================================================================
   let items = APP_STATE.allProducts && APP_STATE.allProducts.length > 0 ? [...APP_STATE.allProducts] : [];
 
   if (cityFilter && cityFilter !== '全部') {
@@ -1382,8 +1326,6 @@ async function fetchGlobalProducts(page = 1) {
     return 0;
   });
 
-  if (sequence !== globalSearchSequence) return;
-
   const total = items.length;
   const totalPages = Math.ceil(total / limit) || 1;
   const offset = (page - 1) * limit;
@@ -1394,10 +1336,70 @@ async function fetchGlobalProducts(page = 1) {
   APP_STATE.globalTotalItems = total;
   APP_STATE.globalTotalPages = totalPages;
 
+  // 瞬間渲染第一波即時結果
   renderGlobalProducts();
 
-  if (container && sequence === globalSearchSequence) {
-    container.style.opacity = '1';
+  // =========================================================================
+  // 2. 【非同步背景深度檢索層 (Async DuckDB-WASM Deep Search)】
+  // 在背景非同步向湖倉查詢百萬全庫，不鎖定 UI；完成後無縫替換，超時 2.5s 自動略過
+  // =========================================================================
+  if (DUCKDB_READY && DUCKDB_CONN) {
+    (async () => {
+      try {
+        let whereClauses = ["price >= 1"];
+
+        if (cityFilter && cityFilter !== '全部') {
+          const cityClause = buildCitySqlCondition(cityFilter);
+          if (cityClause) whereClauses.push(cityClause);
+        }
+
+        if (sortMode === 'promo_only') {
+          whereClauses.push(`promo_type != '無' AND promo_type != ''`);
+        }
+
+        if (rawSearch) {
+          const kwClause = buildKeywordSqlCondition(rawSearch);
+          if (kwClause) whereClauses.push(`(${kwClause})`);
+        }
+
+        const whereSql = whereClauses.join(" AND ");
+
+        let orderSql = "";
+        if (sortMode === 'price_asc') orderSql = "ORDER BY eff_price ASC, rating_value DESC NULLS LAST";
+        else if (sortMode === 'price_desc') orderSql = "ORDER BY eff_price DESC, rating_value DESC NULLS LAST";
+        else if (sortMode === 'name_asc') orderSql = "ORDER BY product_name ASC, rating_value DESC NULLS LAST";
+        else if (sortMode === 'promo_first') orderSql = "ORDER BY CASE WHEN promo_type != '無' AND promo_type != '' THEN 0 ELSE 1 END, rating_value DESC NULLS LAST, eff_price ASC";
+
+        const fetchLimit = limit + 1;
+        const targetTable = 'taiwan_catalog.parquet';
+
+        const sql = `SELECT product_id, store_id, store_name, category_name, product_name, price, quantity, promo_type, eff_price, description, order_action_url, rating_value, review_count, locality, street_address, city, is_open, crawled_time ` +
+          `FROM '${targetTable}' ` +
+          `WHERE ${whereSql} ${orderSql} LIMIT ${fetchLimit} OFFSET ${offset}`;
+
+        const queryPromise = DUCKDB_CONN.query(sql);
+        const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('DuckDB query timeout')), 2500));
+
+        const dataResult = await Promise.race([queryPromise, timeoutPromise]);
+
+        if (sequence !== globalSearchSequence) return;
+        if (!dataResult || dataResult.numRows === 0) return;
+
+        const allRows = convertArrowTableToObjects(dataResult);
+        const hasNextPage = allRows.length > limit;
+        const pageRows = allRows.slice(0, limit);
+
+        APP_STATE.globalProducts = pageRows;
+        APP_STATE.globalHasNext = hasNextPage;
+        APP_STATE.globalTotalPages = hasNextPage ? Math.max(page + 1, APP_STATE.globalTotalPages || 1) : page;
+        APP_STATE.globalTotalItems = hasNextPage ? `${page * limit}+` : `${(page - 1) * limit + pageRows.length}`;
+
+        renderGlobalProducts();
+      } catch (err) {
+        // 背景深度檢索超時或未就緒，靜默保留已呈現的即時結果
+        console.debug('DuckDB background query finished/fallback active:', err);
+      }
+    })();
   }
 }
 
@@ -1764,7 +1766,7 @@ function initEventListeners() {
     globalInput.addEventListener('input', debounce(e => {
       APP_STATE.filters.globalSearch = e.target.value;
       fetchGlobalProducts(1);
-    }, 300));
+    }, 150));
 
     globalInput.addEventListener('keydown', e => {
       if (e.key === 'Enter') {
