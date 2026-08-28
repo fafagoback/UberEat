@@ -84,7 +84,7 @@ for /L %%i in (1,1,12) do (
             set "RUN_ID=%%r"
         )
         if "!RUN_ID!"=="" (
-            timeout /t 2 /nobreak >nul
+            ping 127.0.0.1 -n 3 >nul
         )
     )
 )
