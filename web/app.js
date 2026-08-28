@@ -334,23 +334,43 @@ function renderPaginationComponent({
   totalPages,
   totalItems,
   pageSize = PAGE_SIZE,
+  hasNextPage = false,
   onPageChange
 }) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  if (totalItems === 0 || totalPages <= 1) {
+  const numTotalItems = typeof totalItems === 'number' ? totalItems : (parseInt(totalItems, 10) || 0);
+
+  if ((totalItems === 0 || totalItems === '0') && !hasNextPage && totalPages <= 1) {
     container.innerHTML = '';
     return;
   }
 
+  if (currentPage === 1 && !hasNextPage && (totalPages <= 1 || (numTotalItems > 0 && numTotalItems <= pageSize))) {
+    if (numTotalItems > 0) {
+      container.innerHTML = `
+        <div class="w-full flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 py-3 border-t border-slate-100 dark:border-slate-800">
+          <div>共 <strong class="font-mono text-slate-700 dark:text-slate-200">${typeof totalItems === 'number' ? totalItems.toLocaleString() : totalItems}</strong> 筆</div>
+        </div>
+      `;
+    } else {
+      container.innerHTML = '';
+    }
+    return;
+  }
+
   const startIdx = (currentPage - 1) * pageSize + 1;
-  const endIdx = Math.min(currentPage * pageSize, totalItems);
+  const endIdx = typeof totalItems === 'number' ? Math.min(currentPage * pageSize, totalItems) : `${currentPage * pageSize}`;
+  const totalDisplay = typeof totalItems === 'number' ? totalItems.toLocaleString() : totalItems;
+  const canGoNext = hasNextPage || (totalPages && currentPage < totalPages);
 
   let html = `
     <div class="w-full flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400 py-3 border-t border-slate-100 dark:border-slate-800">
       <div>
-        顯示第 <strong class="font-mono text-slate-700 dark:text-slate-200">${startIdx.toLocaleString()}</strong> - <strong class="font-mono text-slate-700 dark:text-slate-200">${endIdx.toLocaleString()}</strong> 筆，共 <strong class="font-mono text-slate-700 dark:text-slate-200">${totalItems.toLocaleString()}</strong> 筆 (第 ${currentPage} / ${totalPages} 頁)
+        顯示第 <strong class="font-mono text-slate-700 dark:text-slate-200">${startIdx.toLocaleString()}</strong> - <strong class="font-mono text-slate-700 dark:text-slate-200">${typeof endIdx === 'number' ? endIdx.toLocaleString() : endIdx}</strong> 筆
+        ${totalDisplay ? `，共 <strong class="font-mono text-slate-700 dark:text-slate-200">${totalDisplay}</strong> 筆` : ''} 
+        (第 <strong class="font-mono text-slate-700 dark:text-slate-200">${currentPage}</strong>${totalPages && totalPages > 1 ? ` / ${totalPages}` : ''} 頁)
       </div>
       <div class="flex items-center gap-1 flex-wrap justify-center">
   `;
@@ -364,9 +384,10 @@ function renderPaginationComponent({
   }
 
   // Page numbers (smart window)
+  const effTotalPages = totalPages || (canGoNext ? currentPage + 1 : currentPage);
   const maxButtons = 5;
   let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
-  let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+  let endPage = Math.min(effTotalPages, startPage + maxButtons - 1);
   if (endPage - startPage + 1 < maxButtons) {
     startPage = Math.max(1, endPage - maxButtons + 1);
   }
@@ -380,15 +401,17 @@ function renderPaginationComponent({
   }
 
   // Next and Last buttons
-  if (currentPage < totalPages) {
+  if (canGoNext) {
     html += `<button onclick="${onPageChange}(${currentPage + 1})" class="px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 font-medium transition-colors">下一頁</button>`;
-    html += `<button onclick="${onPageChange}(${totalPages})" class="px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 font-medium transition-colors">末頁</button>`;
+    if (totalPages && totalPages > 1) {
+      html += `<button onclick="${onPageChange}(${totalPages})" class="px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 font-medium transition-colors">末頁</button>`;
+    }
   } else {
     html += `<button disabled class="px-2.5 py-1 rounded-lg border border-slate-100 dark:border-slate-800 text-slate-300 dark:text-slate-700 cursor-not-allowed">下一頁</button>`;
   }
 
   // Quick jump input
-  if (totalPages > 5) {
+  if (totalPages && totalPages > 5) {
     html += `
       <div class="flex items-center gap-1 ml-1 text-slate-400">
         <span>跳至</span>
@@ -1092,6 +1115,47 @@ function renderPromotions() {
 let globalSearchController;
 let globalSearchSequence = 0;
 
+const BRAND_SYNONYMS = {
+  'cosico': ['costco', '好市多', 'cosico'],
+  'costco': ['costco', '好市多'],
+  '好市多': ['costco', '好市多'],
+  'mcdonald': ['mcdonald', '麥當勞'],
+  'mcdonalds': ['mcdonald', '麥當勞'],
+  '麥當勞': ['mcdonald', '麥當勞'],
+  'kfc': ['kfc', '肯德基'],
+  '肯德基': ['kfc', '肯德基'],
+  'starbucks': ['starbucks', '星巴克'],
+  '星巴克': ['starbucks', '星巴克'],
+  '50嵐': ['50嵐', '五十嵐', '50lan'],
+  '五十嵐': ['50嵐', '五十嵐', '50lan'],
+  '全聯': ['全聯', 'pxmart'],
+  'pxmart': ['全聯', 'pxmart'],
+  '家樂福': ['家樂福', 'carrefour'],
+  'carrefour': ['家樂福', 'carrefour'],
+  'subway': ['subway', '潛艇堡'],
+  '摩斯': ['摩斯', 'mos burger', 'mos漢堡'],
+  '漢堡王': ['漢堡王', 'burger king'],
+  '必勝客': ['必勝客', 'pizza hut', 'pizzahut'],
+  '達美樂': ['達美樂', 'dominos']
+};
+
+function buildKeywordSqlCondition(rawSearch) {
+  if (!rawSearch) return '';
+  const tokens = rawSearch.toLowerCase().split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return '';
+
+  const tokenClauses = tokens.map(token => {
+    const syns = BRAND_SYNONYMS[token] || [token];
+    const subClauses = syns.map(s => {
+      const safe = s.replace(/'/g, "''");
+      return `(product_name ILIKE '%${safe}%' OR store_name ILIKE '%${safe}%' OR category_name ILIKE '%${safe}%')`;
+    });
+    return subClauses.length === 1 ? subClauses[0] : `(${subClauses.join(' OR ')})`;
+  });
+
+  return tokenClauses.join(' AND ');
+}
+
 const CITY_DISTRICT_MAP = {
   '台北市': ['台北', '臺北', '大安', '信義', '中正', '中山', '松山', '萬華', '文山', '大同', '南港', '內湖', '士林', '北投'],
   '新北市': ['新北', '板橋', '三重', '中和', '永和', '新莊', '新店', '土城', '蘆洲', '樹林', '汐止', '鶯歌', '三峽', '淡水', '瑞芳', '五股', '泰山', '林口', '深坑', '八里'],
@@ -1144,22 +1208,26 @@ function convertArrowTableToObjects(table) {
   const numRows = table.numRows || 0;
 
   if (numRows > 0 && fields.length > 0) {
-    const columns = {};
-    for (const f of fields) {
-      columns[f] = table.getChild(f);
-    }
-    for (let i = 0; i < numRows; i++) {
-      const row = {};
+    try {
+      const columns = {};
       for (const f of fields) {
-        let v = columns[f] ? columns[f].get(i) : null;
-        if (typeof v === 'bigint') {
-          v = Number(v);
-        }
-        row[f] = v;
+        columns[f] = table.getChild(f);
       }
-      rows.push(row);
+      for (let i = 0; i < numRows; i++) {
+        const row = {};
+        for (const f of fields) {
+          let v = columns[f] ? columns[f].get(i) : null;
+          if (typeof v === 'bigint') {
+            v = Number(v);
+          }
+          row[f] = v;
+        }
+        rows.push(row);
+      }
+      return rows;
+    } catch (e) {
+      console.warn('Arrow fast column extract fallback:', e);
     }
-    return rows;
   }
 
   try {
@@ -1185,15 +1253,27 @@ async function fetchGlobalProducts(page = 1) {
 
   APP_STATE.globalPage = page;
   const container = document.getElementById('global-products-grid');
-  if (container) {
-    container.style.opacity = '0.5';
-    container.style.transition = 'opacity 0.15s ease';
-  }
 
   const sortMode = APP_STATE.filters.globalSort || 'rating_desc';
   const rawSearch = (APP_STATE.filters.globalSearch || '').trim();
   const cityFilter = APP_STATE.filters.globalCity || '全部';
   const limit = PAGE_SIZE;
+
+  if (container) {
+    container.style.opacity = '1';
+    if (page === 1 && (APP_STATE.globalProducts?.length === 0 || rawSearch !== '')) {
+      container.innerHTML = `
+        <div class="col-span-1 md:col-span-2 lg:col-span-3 py-16 flex flex-col items-center justify-center text-center">
+          <div class="w-9 h-9 border-3 border-emerald-500/20 border-t-emerald-600 rounded-full animate-spin mb-3"></div>
+          <p class="text-sm font-bold text-slate-700 dark:text-slate-200">正在即時檢索全台 238 萬全品資料庫...</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">DuckDB-WASM 邊緣湖倉毫秒檢索中</p>
+        </div>
+      `;
+    } else {
+      container.style.opacity = '0.5';
+      container.style.transition = 'opacity 0.15s ease';
+    }
+  }
 
   // 1. DuckDB-WASM 邊緣 SQL 查詢 (直連全台百萬 Parquet 湖倉)
   if (DUCKDB_READY && DUCKDB_CONN) {
@@ -1210,47 +1290,43 @@ async function fetchGlobalProducts(page = 1) {
       }
 
       if (rawSearch) {
-        const keywords = rawSearch.split(/\s+/).filter(Boolean);
-        if (keywords.length > 0) {
-          const kwClauses = keywords.map(kw => {
-            const safe = kw.replace(/'/g, "''");
-            return `(product_name ILIKE '%${safe}%' OR store_name ILIKE '%${safe}%' OR category_name ILIKE '%${safe}%')`;
-          });
-          whereClauses.push(`(${kwClauses.join(' AND ')})`);
-        }
+        const kwClause = buildKeywordSqlCondition(rawSearch);
+        if (kwClause) whereClauses.push(`(${kwClause})`);
       }
 
       const whereSql = whereClauses.join(" AND ");
 
-      let orderSql = "rating_value DESC NULLS LAST, eff_price ASC";
-      if (sortMode === 'price_asc') orderSql = "eff_price ASC, rating_value DESC NULLS LAST";
-      if (sortMode === 'price_desc') orderSql = "eff_price DESC, rating_value DESC NULLS LAST";
-      if (sortMode === 'name_asc') orderSql = "product_name ASC, rating_value DESC NULLS LAST";
-      if (sortMode === 'promo_first') orderSql = "CASE WHEN promo_type != '無' AND promo_type != '' THEN 0 ELSE 1 END, rating_value DESC NULLS LAST, eff_price ASC";
+      let orderSql = "";
+      if (sortMode === 'price_asc') orderSql = "ORDER BY eff_price ASC, rating_value DESC NULLS LAST";
+      else if (sortMode === 'price_desc') orderSql = "ORDER BY eff_price DESC, rating_value DESC NULLS LAST";
+      else if (sortMode === 'name_asc') orderSql = "ORDER BY product_name ASC, rating_value DESC NULLS LAST";
+      else if (sortMode === 'promo_first') orderSql = "ORDER BY CASE WHEN promo_type != '無' AND promo_type != '' THEN 0 ELSE 1 END, rating_value DESC NULLS LAST, eff_price ASC";
+      // 備註：預設評分排序 (rating_desc) 在湖倉 Parquet 匯出時已預先實體排序，省略 ORDER BY 可讓 DuckDB 啟用毫秒級 Early-Out
 
       const offset = (page - 1) * limit;
+      const fetchLimit = limit + 1;
 
-      // 查詢總筆數
-      const countPromise = DUCKDB_CONN.query(`SELECT COUNT(*) as total_count FROM 'taiwan_catalog.parquet' WHERE ${whereSql}`);
-      const queryPromise = DUCKDB_CONN.query(`SELECT * FROM 'taiwan_catalog.parquet' WHERE ${whereSql} ORDER BY ${orderSql} LIMIT ${limit} OFFSET ${offset}`);
-      const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('DuckDB query timeout')), 10000));
+      const sql = `SELECT product_id, store_id, store_name, category_name, product_name, price, quantity, promo_type, eff_price, description, order_action_url, rating_value, review_count, locality, street_address, city, is_open, crawled_time ` +
+        `FROM 'taiwan_catalog.parquet' ` +
+        `WHERE ${whereSql} ${orderSql} LIMIT ${fetchLimit} OFFSET ${offset}`;
+      console.log('🔍 [DuckDB SQL]:', sql);
 
-      const [countResult, dataResult] = await Promise.race([
-        Promise.all([countPromise, queryPromise]),
-        timeoutPromise
-      ]);
+      const queryPromise = DUCKDB_CONN.query(sql);
+      const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('DuckDB query timeout')), 25000));
+
+      const dataResult = await Promise.race([queryPromise, timeoutPromise]);
+      console.log('✅ [DuckDB Result rows]:', dataResult ? dataResult.numRows : 0);
 
       if (sequence !== globalSearchSequence) return;
 
-      const countRows = convertArrowTableToObjects(countResult);
-      const totalItems = countRows.length > 0 ? (countRows[0].total_count || 0) : 0;
-      const totalPages = Math.ceil(totalItems / limit) || 1;
+      const allRows = convertArrowTableToObjects(dataResult);
+      const hasNextPage = allRows.length > limit;
+      const pageRows = allRows.slice(0, limit);
 
-      const rows = convertArrowTableToObjects(dataResult);
-
-      APP_STATE.globalProducts = rows;
-      APP_STATE.globalTotalItems = totalItems;
-      APP_STATE.globalTotalPages = totalPages;
+      APP_STATE.globalProducts = pageRows;
+      APP_STATE.globalHasNext = hasNextPage;
+      APP_STATE.globalTotalPages = hasNextPage ? Math.max(page + 1, APP_STATE.globalTotalPages || 1) : page;
+      APP_STATE.globalTotalItems = hasNextPage ? `${page * limit}+` : `${(page - 1) * limit + pageRows.length}`;
 
       renderGlobalProducts();
 
@@ -1271,10 +1347,13 @@ async function fetchGlobalProducts(page = 1) {
   }
 
   if (rawSearch) {
-    const keywords = rawSearch.toLowerCase().split(/\s+/).filter(Boolean);
+    const tokens = rawSearch.toLowerCase().split(/\s+/).filter(Boolean);
     items = items.filter(p => {
       const text = `${p.product_name || ''} ${p.store_name || ''} ${p.category_name || ''}`.toLowerCase();
-      return keywords.every(kw => text.includes(kw));
+      return tokens.every(token => {
+        const syns = BRAND_SYNONYMS[token] || [token];
+        return syns.some(s => text.includes(s.toLowerCase()));
+      });
     });
   }
 
@@ -1310,6 +1389,7 @@ async function fetchGlobalProducts(page = 1) {
   const pageItems = items.slice(offset, offset + limit);
 
   APP_STATE.globalProducts = pageItems;
+  APP_STATE.globalHasNext = page * limit < total;
   APP_STATE.globalTotalItems = total;
   APP_STATE.globalTotalPages = totalPages;
 
@@ -1326,6 +1406,7 @@ function renderGlobalProducts() {
   const page = APP_STATE.globalPage || 1;
   const totalPages = APP_STATE.globalTotalPages || 1;
   const totalItems = APP_STATE.globalTotalItems || 0;
+  const hasNextPage = APP_STATE.globalHasNext || false;
 
   if (container) {
     container.style.opacity = '1';
@@ -1347,6 +1428,7 @@ function renderGlobalProducts() {
       totalPages: 0,
       totalItems: 0,
       pageSize: PAGE_SIZE,
+      hasNextPage: false,
       onPageChange: 'changeGlobalPage'
     });
     lucide.createIcons();
@@ -1430,6 +1512,7 @@ function renderGlobalProducts() {
     totalPages: totalPages,
     totalItems: totalItems,
     pageSize: PAGE_SIZE,
+    hasNextPage: hasNextPage,
     onPageChange: 'changeGlobalPage'
   });
 
@@ -1636,7 +1719,7 @@ function initEventListeners() {
     globalInput.addEventListener('input', debounce(e => {
       APP_STATE.filters.globalSearch = e.target.value;
       fetchGlobalProducts(1);
-    }, 200));
+    }, 300));
 
     globalInput.addEventListener('keydown', e => {
       if (e.key === 'Enter') {
