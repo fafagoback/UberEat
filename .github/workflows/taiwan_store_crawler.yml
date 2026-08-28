@@ -320,8 +320,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 安裝導出依賴套件 (PyArrow & HF Hub)
-        run: pip install requests pyarrow huggingface_hub
+      - name: 安裝導出依賴套件 (PyArrow & HF Hub & DuckDB)
+        run: pip install requests pyarrow huggingface_hub duckdb
 
       - name: 下載所有 Menu Worker 的 JSON 成果
         uses: actions/download-artifact@v8.0.1

@@ -1525,7 +1525,7 @@ function changeGlobalPage(page) {
 }
 
 // -----------------------------------------------------------------------------
-// 8. 價格走勢圖彈窗 (Price Trend Modal with Chart.js)
+// 8. 價格走勢圖彈窗 (Price Trend Modal with Chart.js & DuckDB Edge SQL)
 // -----------------------------------------------------------------------------
 async function showPriceHistoryModal(productId, productName, storeName, orderUrl) {
   const modal = document.getElementById('price-history-modal');
@@ -1542,20 +1542,51 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
   modal.classList.remove('hidden');
   modal.classList.add('flex');
 
-  let history = (APP_STATE.historyMap && APP_STATE.historyMap[productId]) || [];
+  let history = (APP_STATE.historyMap && APP_STATE.historyMap[productId]) ? [...APP_STATE.historyMap[productId]] : [];
   
+  // 若 history.json 未命中，嘗試從當前已載入之各資料集中尋找該商品的真實即時資訊
+  if (history.length === 0) {
+    const found = (APP_STATE.rawDiscounts || []).find(x => String(x.product_id) === String(productId))
+      || (APP_STATE.promotions || []).find(x => String(x.product_id) === String(productId))
+      || (APP_STATE.newProducts || []).find(x => String(x.product_id) === String(productId))
+      || (APP_STATE.allProducts || []).find(x => String(x.product_id) === String(productId))
+      || (APP_STATE.globalProducts || []).find(x => String(x.product_id) === String(productId));
+
+    if (found) {
+      const eff = found.eff_price || (found.quantity > 1 ? Math.round((found.price / found.quantity) * 10) / 10 : found.price);
+      history = [{
+        crawled_time: found.crawled_time || (APP_STATE.stats && APP_STATE.stats.latest_batch) || '最新',
+        price: Number(found.price || eff),
+        quantity: Number(found.quantity || 1),
+        promo_type: found.promo_type || '無',
+        eff_price: Number(eff)
+      }];
+    }
+  }
+
+  // 若歷史紀錄大於 1 筆，按採集時間升冪排序
+  if (history.length > 1) {
+    history.sort((a, b) => String(a.crawled_time).localeCompare(String(b.crawled_time)));
+  }
+
   const tbody = document.getElementById('modal-history-tbody');
   if (history.length > 0) {
-    tbody.innerHTML = history.map(h => `
-      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-        <td class="px-3 py-2 font-mono text-slate-600 dark:text-slate-300">${formatBatchDate(h.crawled_time)}</td>
-        <td class="px-3 py-2 font-mono font-medium">$${h.price}</td>
-        <td class="px-3 py-2"><span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 dark:bg-slate-800">${escapeHtml(h.promo_type || '無')}</span></td>
-        <td class="px-3 py-2 text-right font-mono font-bold text-emerald-600 dark:text-emerald-400">$${h.eff_price}</td>
+    const rowsHtml = history.map(h => `
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+        <td class="px-3 py-2 font-mono text-slate-600 dark:text-slate-300 text-xs">${formatBatchDate(h.crawled_time)}</td>
+        <td class="px-3 py-2 font-mono font-medium text-xs">$${Math.round(h.price)}</td>
+        <td class="px-3 py-2"><span class="px-2 py-0.5 rounded text-[11px] font-medium ${h.promo_type && h.promo_type !== '無' ? 'bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400'}">${escapeHtml(h.promo_type || '無')}</span></td>
+        <td class="px-3 py-2 text-right font-mono font-bold text-emerald-600 dark:text-emerald-400 text-xs">$${Number(h.eff_price).toFixed(h.eff_price % 1 === 0 ? 0 : 1)}</td>
       </tr>
     `).join('');
+
+    const hintHtml = history.length === 1 
+      ? `<tr><td colspan="4" class="px-3 py-2 text-center text-xs text-slate-400 bg-slate-50/50 dark:bg-slate-800/30">📌 本品項首度收錄於此批次，後續每日採集將持續自動累積價格趨勢曲線</td></tr>`
+      : '';
+
+    tbody.innerHTML = rowsHtml + hintHtml;
   } else {
-    tbody.innerHTML = `<tr><td colspan="4" class="px-3 py-4 text-center text-slate-400">目前批次為最新快照記錄</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="4" class="px-3 py-4 text-center text-slate-400 text-xs">目前批次為最新快照記錄</td></tr>`;
   }
 
   const ctx = document.getElementById('priceHistoryChart').getContext('2d');
@@ -1568,7 +1599,7 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
   const textColor = isDark ? '#94a3b8' : '#64748b';
 
   const labels = history.length > 0 ? history.map(h => formatBatchDate(h.crawled_time)) : ['當前批次'];
-  const prices = history.length > 0 ? history.map(h => h.eff_price) : [100];
+  const prices = history.length > 0 ? history.map(h => Number(h.eff_price)) : [0];
 
   APP_STATE.chartInstance = new Chart(ctx, {
     type: 'line',
@@ -1578,11 +1609,13 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
         label: '實質單價 (TWD)',
         data: prices,
         borderColor: '#10b981',
-        backgroundColor: 'rgba(16, 185, 129, 0.1)',
+        backgroundColor: 'rgba(16, 185, 129, 0.12)',
         fill: true,
         tension: 0.3,
         pointBackgroundColor: '#10b981',
-        pointRadius: 5,
+        pointBorderColor: '#ffffff',
+        pointBorderWidth: 2,
+        pointRadius: history.length > 1 ? 5 : 6,
         pointHoverRadius: 7
       }]
     },
@@ -1590,7 +1623,12 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        legend: { display: false }
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => ` 實質單價: $${ctx.parsed.y} TWD`
+          }
+        }
       },
       scales: {
         x: {
@@ -1599,7 +1637,13 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
         },
         y: {
           grid: { color: gridColor },
-          ticks: { color: textColor, font: { size: 11 } }
+          ticks: { 
+            color: textColor, 
+            font: { size: 11 },
+            callback: (v) => `$${v}`
+          },
+          suggestedMin: Math.max(0, Math.min(...prices) * 0.85),
+          suggestedMax: Math.max(...prices) * 1.15
         }
       }
     }
