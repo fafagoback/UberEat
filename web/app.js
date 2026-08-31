@@ -1421,6 +1421,15 @@ async function fetchGlobalProducts(page = 1) {
   const limit = PAGE_SIZE;
   const offset = (page - 1) * limit;
 
+  // 無篩選的首屏不需要掃描 250 萬筆 Parquet。這類查詢會佔住唯一的
+  // DuckDB connection，令緊接著輸入的關鍵字查詢只能排隊，看起來像搜尋失效。
+  // 本地快照已有足夠的預設瀏覽資料；真正有搜尋/縣市條件時才進湖倉。
+  const requiresLakehouseQuery = Boolean(rawSearch) || (cityFilter && cityFilter !== '全部');
+  if (!requiresLakehouseQuery) {
+    executeInMemoryGlobalSearch(page);
+    return;
+  }
+
   // 1. DuckDB 尚未就緒或不可用時，立即執行極速本地記憶體快照檢索 (0ms 延遲)
   if (!DUCKDB_READY || !DUCKDB_CONN) {
     executeInMemoryGlobalSearch(page);
@@ -1433,9 +1442,11 @@ async function fetchGlobalProducts(page = 1) {
     targetTable = CITY_PARTITION_MAP[cityFilter];
   }
 
-  // 3. 若當前畫面尚未有商品，先以本地記憶體快速預填，防止畫面空白卡頓
-  if (!APP_STATE.globalProducts || APP_STATE.globalProducts.length === 0) {
-    executeInMemoryGlobalSearch(page);
+  // 3. 每次條件改變都先套用本地篩選，絕不可在湖倉查詢期間繼續顯示上一個
+  // 關鍵字的結果。湖倉完成後會再以完整資料覆蓋。
+  executeInMemoryGlobalSearch(page);
+  if (rawSearch && APP_STATE.globalProducts.length === 0) {
+    renderGlobalSearchPending(rawSearch);
   }
 
   // 4. 動態掛載縣市切片並執行全量 DuckDB SQL 查詢 (100% 完整百萬品庫)
@@ -1498,6 +1509,20 @@ async function fetchGlobalProducts(page = 1) {
     console.warn('DuckDB 湖倉查詢未果，切換為本地記憶體即時檢索:', err);
     executeInMemoryGlobalSearch(page);
   }
+}
+
+function renderGlobalSearchPending(rawSearch) {
+  const container = document.getElementById('global-products-grid');
+  if (!container) return;
+  container.innerHTML = `
+    <div class="col-span-1 md:col-span-2 lg:col-span-3 py-16 text-center" role="status" aria-live="polite">
+      <div class="w-10 h-10 rounded-full border-4 border-emerald-100 border-t-emerald-500 animate-spin mx-auto mb-3"></div>
+      <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">正在搜尋完整商品庫</h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">搜尋「${escapeHtml(rawSearch)}」中，找到結果後會立即更新</p>
+    </div>
+  `;
+  const pagination = document.getElementById('global-pagination');
+  if (pagination) pagination.innerHTML = '';
 }
 
 function renderGlobalProducts() {

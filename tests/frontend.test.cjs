@@ -26,6 +26,20 @@ test('only latest search response may mutate displayed products', () => {
   assert.match(helper, /if \(sequence !== globalSearchSequence\) return;/);
 });
 
+test('unfiltered global catalog uses the local snapshot instead of blocking DuckDB', () => {
+  const helper = source.slice(source.indexOf('async function fetchGlobalProducts'), source.indexOf('function renderGlobalProducts'));
+  assert.match(helper, /const requiresLakehouseQuery = Boolean\(rawSearch\)/);
+  assert.match(helper, /if \(!requiresLakehouseQuery\) \{\s*executeInMemoryGlobalSearch\(page\);\s*return;/);
+});
+
+test('a deep search never leaves stale products visible while DuckDB is running', () => {
+  const helper = source.slice(source.indexOf('async function fetchGlobalProducts'), source.indexOf('function renderGlobalProducts'));
+  const immediateFilter = helper.indexOf('executeInMemoryGlobalSearch(page);', helper.indexOf('// 3.'));
+  const parquetRegistration = helper.indexOf('await ensureParquetRegistered(targetTable)');
+  assert.ok(immediateFilter > -1 && immediateFilter < parquetRegistration);
+  assert.match(helper, /renderGlobalSearchPending\(rawSearch\)/);
+});
+
 test('frontend correctly routes API endpoints to static JSON files in Jamstack mode', () => {
   const helper = source.slice(source.indexOf('function getApiUrl'), source.indexOf('async function loadDashboardData'));
   const context = vm.createContext({
