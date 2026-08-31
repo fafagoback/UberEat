@@ -210,12 +210,6 @@ def main():
 - **擷取商品總數**: **`{total_menu_items:,}`** 道菜品 | **產出有效 JSON**: `{valid_json_count:,}` 個
 - **採集耗時**: `{crawl_elapsed:.1f}` 秒 (平均 `{crawl_elapsed/max(1, total_assigned):.2f}` 秒/店) | **總耗時**: `{total_elapsed:.1f}` 秒
 - **下游傳遞方式**: `GitHub Actions Artifact（HF 由 Stage 5 統一單次 Commit）`
-
-| Checkpoint | 預期 | 實際 | 狀態 |
-| :--- | :--- | :--- | :---: |
-| 實體快照產出 | `{total_assigned}` 個有效檔案 | `{valid_json_count}` 個有效 / `{len(invalid_files)}` 個無效 | {'✅' if valid_json_count == total_assigned and not invalid_files else '❌'} |
-| 失效與異常率門檻 | 異常率 < 10.0% | 實際異常率: `{abnormal_rate:.2f}%` ({inactive_count + fail_count}/{total_assigned}) | {'✅' if abnormal_rate < 10.0 else '❌'} |
-| 未捕獲錯誤檢查 | 0 間未捕獲失敗 | 失敗 `{fail_count}` 間 | {'✅' if fail_count == 0 else '❌'} |
 {inactive_list_md}
 """
     append_github_step_summary(summary_md)
