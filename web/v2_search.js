@@ -13,11 +13,7 @@
   let manifestsPromise = null;
 
   function normalize(value) {
-    return String(value || '')
-      .normalize('NFKC')
-      .toLowerCase()
-      .replace(/\s+/g, ' ')
-      .trim();
+    return String(value || '').normalize('NFKC').toLowerCase().replace(/\s+/g, ' ').trim();
   }
 
   async function sha1hex(text) {
@@ -34,11 +30,8 @@
     const runs = normalize(query).match(/[0-9a-z\u3400-\u9fff]+/g) || [];
     const out = [];
     for (const run of runs) {
-      if (run.length <= 3) {
-        out.push(run);
-        continue;
-      }
-      for (let i = 0; i <= run.length - 3; i++) out.push(run.slice(i, i + 3));
+      if (run.length <= 3) out.push(run);
+      else for (let i = 0; i <= run.length - 3; i++) out.push(run.slice(i, i + 3));
     }
     return [...new Set(out)];
   }
@@ -52,35 +45,26 @@
   async function fetchGzipJson(url) {
     const res = await fetch(url, { cache: 'force-cache' });
     if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`);
-    if (typeof DecompressionStream === 'undefined') {
-      throw new Error('Browser does not support DecompressionStream(gzip)');
-    }
-    const ds = new DecompressionStream('gzip');
-    const text = await new Response(res.body.pipeThrough(ds)).text();
+    if (typeof DecompressionStream === 'undefined') throw new Error('Browser does not support DecompressionStream(gzip)');
+    const text = await new Response(res.body.pipeThrough(new DecompressionStream('gzip'))).text();
     return JSON.parse(text);
   }
 
   async function loadManifests() {
     if (!manifestsPromise) {
-      manifestsPromise = Promise.all([
-        fetchJson(SEARCH_MANIFEST_URL),
-        fetchJson(CURRENT_MANIFEST_URL)
-      ]).then(([search, current]) => ({ search, current }));
+      manifestsPromise = Promise.all([fetchJson(SEARCH_MANIFEST_URL), fetchJson(CURRENT_MANIFEST_URL)])
+        .then(([search, current]) => ({ search, current }));
     }
     return manifestsPromise;
   }
 
   async function loadSearchShard(bucket) {
-    if (!searchShardCache.has(bucket)) {
-      searchShardCache.set(bucket, fetchGzipJson(`${HF_BASE}/search/shards/${bucket}.json.gz`));
-    }
+    if (!searchShardCache.has(bucket)) searchShardCache.set(bucket, fetchGzipJson(`${HF_BASE}/search/shards/${bucket}.json.gz`));
     return searchShardCache.get(bucket);
   }
 
   async function loadCurrentShard(bucket) {
-    if (!currentShardCache.has(bucket)) {
-      currentShardCache.set(bucket, fetchGzipJson(`${HF_BASE}/current/shards/${bucket}.json.gz`));
-    }
+    if (!currentShardCache.has(bucket)) currentShardCache.set(bucket, fetchGzipJson(`${HF_BASE}/current/shards/${bucket}.json.gz`));
     return currentShardCache.get(bucket);
   }
 
@@ -114,7 +98,6 @@
     await loadManifests();
     const q = normalize(query);
     if (!q) return [];
-
     const tokens = queryTokens(q);
     if (!tokens.length) return [];
 
@@ -128,9 +111,7 @@
     const tokenSets = [];
     for (const [bucket, neededTokens] of bucketToTokens.entries()) {
       const shard = await loadSearchShard(bucket);
-      for (const token of neededTokens) {
-        tokenSets.push(new Set(shard[token] || []));
-      }
+      for (const token of neededTokens) tokenSets.push(new Set(shard[token] || []));
     }
 
     const candidateIds = intersectSets(tokenSets);
@@ -157,34 +138,30 @@
   }
 
   async function installOverride() {
-    // Wait until app.js has defined its functions/state.
     let attempts = 0;
-    while ((typeof window.fetchGlobalProducts !== 'function' || typeof window.APP_STATE === 'undefined') && attempts < 100) {
+    while ((typeof fetchGlobalProducts !== 'function' || typeof APP_STATE === 'undefined') && attempts < 100) {
       await new Promise(r => setTimeout(r, 50));
       attempts++;
     }
-    if (typeof window.fetchGlobalProducts !== 'function' || typeof window.APP_STATE === 'undefined') {
+    if (typeof fetchGlobalProducts !== 'function' || typeof APP_STATE === 'undefined') {
       console.warn('[v2 search] app core was not ready; legacy search remains active');
       return;
     }
 
-    const legacyFetchGlobalProducts = window.fetchGlobalProducts;
-    window.fetchGlobalProducts = async function (page = 1) {
-      const state = window.APP_STATE;
+    const legacyFetchGlobalProducts = fetchGlobalProducts;
+    fetchGlobalProducts = async function (page = 1) {
+      const state = APP_STATE;
       const query = (state.filters && state.filters.globalSearch) || '';
       const city = (state.filters && state.filters.globalCity) || '全部';
       const sortMode = (state.filters && state.filters.globalSort) || 'rating_desc';
 
-      if (!normalize(query)) {
-        // Browsing without a keyword is not a search; keep the lightweight legacy fallback.
-        return legacyFetchGlobalProducts(page);
-      }
+      if (!normalize(query)) return legacyFetchGlobalProducts(page);
 
       try {
         const badgeEl = document.getElementById('lakehouse-badge');
         if (badgeEl) badgeEl.textContent = 'v2 全台索引搜尋中...';
         const rows = sortRows(await searchAll(query, city), sortMode);
-        const pageSize = window.PAGE_SIZE || 50;
+        const pageSize = (typeof PAGE_SIZE !== 'undefined' ? PAGE_SIZE : 50);
         const total = rows.length;
         const totalPages = Math.max(1, Math.ceil(total / pageSize));
         const safePage = Math.min(Math.max(1, page), totalPages);
@@ -194,7 +171,7 @@
         state.globalPage = safePage;
         state.globalTotalPages = totalPages;
         state.globalTotalItems = total;
-        if (typeof window.renderGlobalProducts === 'function') window.renderGlobalProducts();
+        if (typeof renderGlobalProducts === 'function') renderGlobalProducts();
         if (badgeEl) badgeEl.textContent = `v2 真實全台索引 · ${total.toLocaleString()} 筆`;
       } catch (err) {
         console.error('[v2 search] failed, falling back to legacy path', err);
@@ -202,8 +179,6 @@
       }
     };
 
-    // Disable expensive DuckDB initialization for global keyword search; other legacy
-    // dashboard features can continue to use their static JSON data.
     if (window.UBER_RADAR_CONFIG) window.UBER_RADAR_CONFIG.ENABLE_DUCKDB = false;
     console.log('[v2 search] sharded full-catalog search installed');
   }
