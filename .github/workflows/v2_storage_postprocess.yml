@@ -16,7 +16,7 @@ on:
 
 concurrency:
   group: ubereats-v2-postprocess
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build-v2:
@@ -85,7 +85,7 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
-          import gzip, hashlib, json, os
+          import gzip, hashlib, json
           from pathlib import Path
           token = 'costco'
           bucket = hashlib.sha1(token.encode('utf-8')).hexdigest()[:2]
