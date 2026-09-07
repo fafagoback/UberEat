@@ -1,0 +1,115 @@
+name: UberEat v2 Storage Postprocess
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'src/build_v2_storage.py'
+      - 'src/cleanup_hf_legacy.py'
+      - 'web/v2_search.js'
+      - 'web/config.js'
+      - '.github/workflows/v2_storage_postprocess.yml'
+  workflow_run:
+    workflows: ['Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)']
+    types: [completed]
+
+concurrency:
+  group: ubereats-v2-postprocess
+  cancel-in-progress: false
+
+jobs:
+  build-v2:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: read
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyarrow huggingface_hub
+
+      - name: Resolve latest batch and download current full catalog
+        id: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          BATCH_ID="$(python - <<'PY'
+          import json
+          try:
+              print(json.load(open('web/version.json', encoding='utf-8')).get('version', ''))
+          except Exception:
+              print('')
+          PY
+          )"
+          if [[ ! "$BATCH_ID" =~ ^[0-9]{14}$ ]]; then
+            BATCH_ID="$(TZ=Asia/Taipei date +%Y%m%d%H%M%S)"
+          fi
+          echo "batch_id=$BATCH_ID" >> "$GITHUB_OUTPUT"
+          python - <<'PY'
+          import os
+          from huggingface_hub import hf_hub_download
+          repo = os.environ.get('HF_REPO_ID') or 'hub-google/UberEat'
+          token = os.environ.get('HF_TOKEN')
+          path = hf_hub_download(
+              repo_id=repo,
+              filename='Parquet/taiwan_catalog_latest.parquet',
+              repo_type='dataset',
+              token=token,
+          )
+          print(path)
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as f:
+              f.write('SOURCE_PARQUET=' + path + '\n')
+          PY
+
+      - name: Build and publish v2 current/history/search
+        run: |
+          python src/build_v2_storage.py \
+            --input-parquet "$SOURCE_PARQUET" \
+            --batch-id "${{ steps.source.outputs.batch_id }}" \
+            --repo-id "$HF_REPO_ID" \
+            --output-dir v2_build
+
+      - name: Verify Costco/full keyword index path
+        shell: bash
+        run: |
+          python - <<'PY'
+          import gzip, hashlib, json, os
+          from pathlib import Path
+          token = 'costco'
+          bucket = hashlib.sha1(token.encode('utf-8')).hexdigest()[:2]
+          p = Path('v2_build/search/shards') / f'{bucket}.json.gz'
+          with gzip.open(p, 'rt', encoding='utf-8') as f:
+              idx = json.load(f)
+          ids = idx.get(token, [])
+          print(f"costco candidate documents: {len(ids):,}")
+          if not ids:
+              print('NOTE: zero Costco candidates in the source catalog; index itself is still valid for arbitrary keywords.')
+          PY
+
+      - name: Cleanup obsolete HF serving artifacts
+        run: |
+          python src/cleanup_hf_legacy.py --repo-id "$HF_REPO_ID"
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '## UberEat v2 storage postprocess'
+            echo '- Daily crawler archives under `TaiwanMenuSnapshots/` are preserved.'
+            echo '- `TaiwanStores/` is preserved.'
+            echo '- v2 current/search manifests must exist before cleanup is allowed.'
+            echo '- Obsolete `Parquet/partitions/` and `Parquet/taiwan_catalog_latest.parquet` are removed after v2 publish.'
+            echo '- `Parquet/history/` is temporarily preserved only because the legacy discount/new-product engine still reads it.'
+          } >> "$GITHUB_STEP_SUMMARY"
