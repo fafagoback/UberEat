@@ -1,0 +1,92 @@
+name: Hugging Face Cleanup After v2
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['UberEat v2 Storage Postprocess']
+    types: [completed]
+
+concurrency:
+  group: ubereats-hf-cleanup
+  cancel-in-progress: true
+
+jobs:
+  cleanup:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+    steps:
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+      - run: pip install huggingface_hub
+      - name: Delete only explicitly obsolete formats
+        shell: bash
+        run: |
+          python - <<'PY'
+          import os
+          from huggingface_hub import CommitOperationDelete, HfApi
+
+          repo = os.environ.get('HF_REPO_ID') or 'hub-google/UberEat'
+          token = os.environ.get('HF_TOKEN')
+          api = HfApi(token=token)
+          files = sorted(api.list_repo_files(repo_id=repo, repo_type='dataset'))
+          remote = set(files)
+
+          # Never clean before both serving layers are actually published.
+          required = {'v2/current/manifest.json', 'v2/search/manifest.json'}
+          missing = sorted(required - remote)
+          if missing:
+              raise SystemExit(f'Refusing cleanup; missing verified v2 files: {missing}')
+
+          # User explicitly asked to keep daily crawler archives. These are hard protected.
+          protected = ('TaiwanMenuSnapshots/', 'TaiwanStores/', 'v2/', 'Parquet/history/')
+          def protected_path(p):
+              return any(p.startswith(x) for x in protected)
+
+          # `Json/` is the old one-store-one-JSON format from the 2026-08-26 experiment.
+          # Daily archives now live under TaiwanMenuSnapshots and are NOT touched.
+          delete = []
+          for p in files:
+              if protected_path(p):
+                  continue
+              if p.startswith('Json/'):
+                  delete.append(p)
+              elif p.startswith('Parquet/partitions/'):
+                  delete.append(p)
+              elif p == 'Parquet/taiwan_catalog_latest.parquet':
+                  delete.append(p)
+
+          print(f'Files selected: {len(delete)}')
+          print(f'  old Json/: {sum(p.startswith("Json/") for p in delete)}')
+          print(f'  old Parquet partitions: {sum(p.startswith("Parquet/partitions/") for p in delete)}')
+          print(f'  old latest Parquet: {sum(p == "Parquet/taiwan_catalog_latest.parquet" for p in delete)}')
+          print(f'Protected daily archives: {sum(p.startswith("TaiwanMenuSnapshots/") for p in files)}')
+
+          # HF commits with thousands of operations can be rejected; chunk them.
+          for i in range(0, len(delete), 80):
+              batch = delete[i:i+80]
+              api.create_commit(
+                  repo_id=repo,
+                  repo_type='dataset',
+                  operations=[CommitOperationDelete(path_in_repo=p) for p in batch],
+                  commit_message=f'cleanup obsolete pre-v2 storage {i//80 + 1}',
+              )
+              print(f'Deleted {min(i+80, len(delete))}/{len(delete)}')
+
+          after = set(api.list_repo_files(repo_id=repo, repo_type='dataset'))
+          survivors = [p for p in delete if p in after]
+          if survivors:
+              raise SystemExit(f'Cleanup verification failed: {len(survivors)} survivors')
+          if not {'v2/current/manifest.json', 'v2/search/manifest.json'} <= after:
+              raise SystemExit('Safety failure: v2 manifests disappeared')
+          daily_before = sum(p.startswith('TaiwanMenuSnapshots/') for p in files)
+          daily_after = sum(p.startswith('TaiwanMenuSnapshots/') for p in after)
+          if daily_after != daily_before:
+              raise SystemExit(f'Safety failure: daily archive count changed {daily_before}->{daily_after}')
+          print(f'Cleanup verified. Daily archives preserved: {daily_after}')
+          PY
