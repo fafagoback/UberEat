@@ -1,0 +1,50 @@
+name: Hugging Face Storage Inventory
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/hf_inventory.yml'
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+    steps:
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+      - run: pip install huggingface_hub
+      - name: List dataset storage
+        shell: bash
+        run: |
+          python - <<'PY'
+          import collections, os
+          from huggingface_hub import HfApi
+          repo = os.environ.get('HF_REPO_ID') or 'hub-google/UberEat'
+          token = os.environ.get('HF_TOKEN')
+          api = HfApi(token=token)
+          files = sorted(api.list_repo_files(repo_id=repo, repo_type='dataset'))
+          groups = collections.defaultdict(list)
+          for p in files:
+              top = p.split('/', 1)[0] if '/' in p else '(root)'
+              groups[top].append(p)
+          print(f'HF_REPO={repo}')
+          print(f'TOTAL_FILES={len(files)}')
+          for top, paths in sorted(groups.items()):
+              print(f'\n## {top}: {len(paths)} files')
+              for p in paths[:200]:
+                  print(p)
+              if len(paths) > 200:
+                  print(f'... {len(paths)-200} more')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+              f.write(f'## HF inventory: `{repo}`\n\n')
+              f.write('| top-level | files |\n|---|---:|\n')
+              for top, paths in sorted(groups.items()):
+                  f.write(f'| `{top}` | {len(paths):,} |\n')
+          PY
