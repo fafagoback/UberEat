@@ -1,15 +1,13 @@
 # -*- coding: utf-8 -*-
 """Build UberEat v2 storage on Hugging Face.
 
-Design goals:
-- keep crawler coverage unchanged;
-- store only changed records in history;
-- keep one current sharded serving view;
-- build a real full-catalog substring index (CJK/Latin n-grams);
-- upload only shards whose canonical content changed.
-
-The browser never scans the full Parquet catalog. Parquet is used only as the
-Stage-6 ETL input and compact change-event history format.
+Principles:
+- crawler coverage/frequency is unchanged;
+- current serving data is sharded and content-hashed;
+- history stores only actual product-state changes, never repeated snapshots;
+- first migration is a baseline and does NOT duplicate the whole catalog into history;
+- full-catalog keyword search uses a sharded CJK/Latin n-gram inverted index;
+- processing is streamed/spooled so a million-row catalog does not live in RAM twice.
 """
 
 from __future__ import annotations
@@ -26,16 +24,15 @@ import unicodedata
 from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Tuple
+from typing import Any, Dict, Iterable, Iterator, List, Tuple
 
 TW_TZ = timezone(timedelta(hours=8))
 BUCKETS = 256
+BATCH_SIZE = 10_000
 
 
 def norm_text(value: Any) -> str:
-    text = unicodedata.normalize("NFKC", str(value or "")).lower()
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+    return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", str(value or "")).lower()).strip()
 
 
 def doc_id(store_id: Any, product_id: Any) -> str:
@@ -101,32 +98,57 @@ def normalize_record(row: Dict[str, Any]) -> Dict[str, Any]:
         record["store_name"], record["product_name"], record["category_name"],
         record["description"], record["city"], record["locality"], record["street_address"]
     ]))
-    hash_payload = {k: v for k, v in record.items() if k not in {"id", "search_text"}}
-    record["_h"] = sha256_bytes(canonical_json_bytes(hash_payload))
+
+    # IMPORTANT: history hash is product-state only. Store rating/address/name changes
+    # must not create thousands of fake product history rows for one restaurant.
+    product_state = {
+        "product_id": record["product_id"],
+        "store_id": record["store_id"],
+        "product_name": record["product_name"],
+        "category_name": record["category_name"],
+        "description": record["description"],
+        "price": record["price"],
+        "quantity": record["quantity"],
+        "promo_type": record["promo_type"],
+        "eff_price": record["eff_price"],
+        "is_open": record["is_open"],
+    }
+    record["_h"] = sha256_bytes(canonical_json_bytes(product_state))
     return record
 
 
 def grams(text: str) -> Iterable[str]:
-    """Generate exact-substring candidate grams. Final results are verified."""
+    """All 1/2/3-grams for exact substring candidate lookup.
+
+    This is intentionally exhaustive for names/descriptions: a query is never
+    restricted to popular products. Final candidates are re-verified against
+    full normalized search_text in the browser.
+    """
     seen = set()
     for run in re.findall(r"[0-9a-z\u3400-\u9fff]+", norm_text(text)):
-        length = len(run)
-        max_n = min(3, length)
+        max_n = min(3, len(run))
         for n in range(1, max_n + 1):
-            for i in range(0, length - n + 1):
-                token = run[i:i+n]
+            for i in range(0, len(run) - n + 1):
+                token = run[i:i + n]
                 if token not in seen:
                     seen.add(token)
                     yield token
 
 
-def load_parquet(path: str) -> List[Dict[str, Any]]:
+def iter_parquet_rows(path: str) -> Iterator[Dict[str, Any]]:
     try:
         import pyarrow.parquet as pq
     except ImportError as exc:
         raise SystemExit("pyarrow is required") from exc
-    table = pq.read_table(path)
-    return table.to_pylist()
+    pf = pq.ParquetFile(path)
+    for batch in pf.iter_batches(batch_size=BATCH_SIZE):
+        for row in batch.to_pylist():
+            yield row
+
+
+def parquet_row_count(path: str) -> int:
+    import pyarrow.parquet as pq
+    return pq.ParquetFile(path).metadata.num_rows
 
 
 def download_optional(repo_id: str, filename: str, token: str | None) -> str | None:
@@ -147,25 +169,39 @@ def old_manifest(repo_id: str, token: str | None, kind: str) -> Dict[str, Any]:
         return {}
 
 
+def remote_record_shard(repo_id: str, token: str | None, bucket: str) -> Dict[str, Dict[str, Any]]:
+    path = download_optional(repo_id, f"v2/current/shards/{bucket}.json.gz", token)
+    if not path:
+        return {}
+    try:
+        return {str(r["id"]): r for r in read_gzip_json(path)}
+    except Exception:
+        return {}
+
+
 def write_history_parquet(path: Path, events: List[Dict[str, Any]]) -> None:
     if not events:
         return
     import pyarrow as pa
     import pyarrow.parquet as pq
     path.parent.mkdir(parents=True, exist_ok=True)
-    table = pa.Table.from_pylist(events)
-    pq.write_table(table, path, compression="zstd")
+    pq.write_table(pa.Table.from_pylist(events), path, compression="zstd")
 
 
-def remote_record_shard(repo_id: str, token: str | None, bucket: str) -> Dict[str, Dict[str, Any]]:
-    path = download_optional(repo_id, f"v2/current/shards/{bucket}.json.gz", token)
-    if not path:
-        return {}
-    try:
-        rows = read_gzip_json(path)
-        return {str(r["id"]): r for r in rows}
-    except Exception:
-        return {}
+def open_spool_handles(directory: Path, suffix: str):
+    directory.mkdir(parents=True, exist_ok=True)
+    return {
+        f"{i:02x}": open(directory / f"{i:02x}.{suffix}", "w", encoding="utf-8", buffering=1024 * 1024)
+        for i in range(BUCKETS)
+    }
+
+
+def close_handles(handles: Dict[str, Any]) -> None:
+    for fh in handles.values():
+        try:
+            fh.close()
+        except Exception:
+            pass
 
 
 def build(args: argparse.Namespace) -> None:
@@ -179,41 +215,69 @@ def build(args: argparse.Namespace) -> None:
         shutil.rmtree(root)
     root.mkdir(parents=True, exist_ok=True)
 
-    print(f"[v2] loading full current catalog: {args.input_parquet}")
-    raw_rows = load_parquet(args.input_parquet)
-    records: List[Dict[str, Any]] = []
-    for row in raw_rows:
-        try:
-            rec = normalize_record(row)
-            if rec["store_id"] and rec["product_id"] and rec["product_name"] and rec["price"] > 0:
-                records.append(rec)
-        except Exception as exc:
-            print(f"[v2] skip malformed row: {exc}")
-
-    # Deterministic order makes unchanged shard hashes stable.
-    records.sort(key=lambda r: r["id"])
-    current_buckets: Dict[str, List[Dict[str, Any]]] = {f"{i:02x}": [] for i in range(BUCKETS)}
-    for rec in records:
-        current_buckets[bucket_for_id(rec["id"])].append(rec)
-
     prev_current_manifest = old_manifest(args.repo_id, token, "current") if not args.offline else {}
+    prev_search_manifest = old_manifest(args.repo_id, token, "search") if not args.offline else {}
     prev_current_hashes = prev_current_manifest.get("shards", {})
+    prev_search_hashes = prev_search_manifest.get("shards", {})
+    is_baseline = not bool(prev_current_manifest)
+
+    current_spool = root / "_spool" / "current"
+    search_spool = root / "_spool" / "search"
+    current_handles = open_spool_handles(current_spool, "jsonl")
+    search_handles = open_spool_handles(search_spool, "tsv")
+
+    source_rows = parquet_row_count(args.input_parquet)
+    valid_rows = 0
+    malformed = 0
+    print(f"[v2] stream catalog: {args.input_parquet} ({source_rows:,} parquet rows)")
+
+    try:
+        for row in iter_parquet_rows(args.input_parquet):
+            try:
+                rec = normalize_record(row)
+                if not (rec["store_id"] and rec["product_id"] and rec["product_name"] and rec["price"] > 0):
+                    malformed += 1
+                    continue
+                did = rec["id"]
+                current_handles[bucket_for_id(did)].write(json.dumps(rec, ensure_ascii=False, separators=(",", ":")) + "\n")
+                for token_value in grams(rec["search_text"]):
+                    search_handles[bucket_for_token(token_value)].write(f"{token_value}\t{did}\n")
+                valid_rows += 1
+                if valid_rows % 100_000 == 0:
+                    print(f"[v2] streamed {valid_rows:,} valid documents")
+            except Exception:
+                malformed += 1
+    finally:
+        close_handles(current_handles)
+        close_handles(search_handles)
 
     current_manifest = {
         "version": 2,
+        "schema": "current-product-record-v2",
         "batch_id": batch_id,
         "generated_at": datetime.now(TW_TZ).isoformat(),
-        "total_documents": len(records),
+        "total_documents": valid_rows,
         "shards": {},
     }
     changed_current_buckets: List[str] = []
     history_events: List[Dict[str, Any]] = []
     added = updated = removed = 0
-
     current_dir = root / "current" / "shards"
-    for bucket, rows in current_buckets.items():
-        path = current_dir / f"{bucket}.json.gz"
-        canonical_hash, size_bytes = write_gzip_json(path, rows)
+
+    print("[v2] materializing current shards + product change events")
+    for i in range(BUCKETS):
+        bucket = f"{i:02x}"
+        spool_path = current_spool / f"{bucket}.jsonl"
+        rows: List[Dict[str, Any]] = []
+        if spool_path.exists():
+            with open(spool_path, encoding="utf-8") as fh:
+                for line in fh:
+                    if line.strip():
+                        rows.append(json.loads(line))
+        rows.sort(key=lambda r: r["id"])
+
+        out_path = current_dir / f"{bucket}.json.gz"
+        canonical_hash, size_bytes = write_gzip_json(out_path, rows)
         current_manifest["shards"][bucket] = {
             "sha256": canonical_hash,
             "rows": len(rows),
@@ -224,65 +288,72 @@ def build(args: argparse.Namespace) -> None:
         if canonical_hash == old_hash:
             continue
         changed_current_buckets.append(bucket)
-        old_rows = remote_record_shard(args.repo_id, token, bucket) if old_hash and not args.offline else {}
-        new_rows = {r["id"]: r for r in rows}
+
+        # Baseline is only current state; never duplicate a million rows into history.
+        if is_baseline or args.offline:
+            continue
+
+        old_rows = remote_record_shard(args.repo_id, token, bucket) if old_hash else {}
+        new_rows = {str(r["id"]): r for r in rows}
+        changed_at = datetime.now(TW_TZ).isoformat()
         for did, rec in new_rows.items():
             old = old_rows.get(did)
             if old is None:
-                change_type = "added"
                 added += 1
+                history_events.append({
+                    "batch_id": batch_id, "changed_at": changed_at, "change_type": "added",
+                    **{k: v for k, v in rec.items() if k != "search_text"}, "previous_hash": None,
+                })
             elif old.get("_h") != rec.get("_h"):
-                change_type = "updated"
                 updated += 1
-            else:
-                continue
-            history_events.append({
-                "batch_id": batch_id,
-                "changed_at": datetime.now(TW_TZ).isoformat(),
-                "change_type": change_type,
-                **{k: v for k, v in rec.items() if k not in {"search_text"}},
-                "previous_hash": old.get("_h") if old else None,
-            })
+                history_events.append({
+                    "batch_id": batch_id, "changed_at": changed_at, "change_type": "updated",
+                    **{k: v for k, v in rec.items() if k != "search_text"}, "previous_hash": old.get("_h"),
+                    "previous_price": old.get("price"), "previous_eff_price": old.get("eff_price"),
+                })
         for did, old in old_rows.items():
             if did not in new_rows:
                 removed += 1
                 history_events.append({
-                    "batch_id": batch_id,
-                    "changed_at": datetime.now(TW_TZ).isoformat(),
-                    "change_type": "removed",
-                    **{k: v for k, v in old.items() if k not in {"search_text"}},
-                    "previous_hash": old.get("_h"),
+                    "batch_id": batch_id, "changed_at": changed_at, "change_type": "removed",
+                    **{k: v for k, v in old.items() if k != "search_text"}, "previous_hash": old.get("_h"),
                 })
 
-    unchanged = len(records) - added - updated
-    if not prev_current_manifest:
-        # First migration is a baseline, not a meaningful "all products changed" day.
-        added = len(records)
+    if is_baseline:
+        added = valid_rows
+        updated = removed = 0
         unchanged = 0
+    else:
+        unchanged = max(0, valid_rows - added - updated)
 
-    # Search postings. Every candidate is verified against record.search_text by the browser.
-    postings_by_bucket: Dict[str, Dict[str, List[str]]] = {f"{i:02x}": defaultdict(list) for i in range(BUCKETS)}
-    for rec in records:
-        did = rec["id"]
-        for token_value in grams(rec["search_text"]):
-            postings_by_bucket[bucket_for_token(token_value)][token_value].append(did)
-
-    prev_search_manifest = old_manifest(args.repo_id, token, "search") if not args.offline else {}
-    prev_search_hashes = prev_search_manifest.get("shards", {})
     search_manifest = {
         "version": 2,
+        "schema": "ngram-postings-v2",
         "batch_id": batch_id,
         "generated_at": datetime.now(TW_TZ).isoformat(),
         "algorithm": "nfkc-lower-exact-verify-ngram-1-3",
-        "total_documents": len(records),
+        "total_documents": valid_rows,
         "shards": {},
     }
     changed_search_buckets: List[str] = []
     search_dir = root / "search" / "shards"
-    for bucket in [f"{i:02x}" for i in range(BUCKETS)]:
-        data = {token_value: sorted(ids) for token_value, ids in sorted(postings_by_bucket[bucket].items())}
-        path = search_dir / f"{bucket}.json.gz"
-        canonical_hash, size_bytes = write_gzip_json(path, data)
+
+    print("[v2] materializing search shards")
+    for i in range(BUCKETS):
+        bucket = f"{i:02x}"
+        postings: Dict[str, List[str]] = defaultdict(list)
+        spool_path = search_spool / f"{bucket}.tsv"
+        if spool_path.exists():
+            with open(spool_path, encoding="utf-8") as fh:
+                for line in fh:
+                    line = line.rstrip("\n")
+                    if not line:
+                        continue
+                    token_value, did = line.split("\t", 1)
+                    postings[token_value].append(did)
+        data = {token_value: sorted(ids) for token_value, ids in sorted(postings.items())}
+        out_path = search_dir / f"{bucket}.json.gz"
+        canonical_hash, size_bytes = write_gzip_json(out_path, data)
         search_manifest["shards"][bucket] = {
             "sha256": canonical_hash,
             "tokens": len(data),
@@ -292,78 +363,95 @@ def build(args: argparse.Namespace) -> None:
         old_hash = (prev_search_hashes.get(bucket) or {}).get("sha256")
         if canonical_hash != old_hash:
             changed_search_buckets.append(bucket)
+        del postings, data
 
     manifest_dir = root / "manifests"
     manifest_dir.mkdir(parents=True, exist_ok=True)
     current_manifest_path = manifest_dir / "current.json"
     search_manifest_path = manifest_dir / "search.json"
+    json.dump(current_manifest, open(current_manifest_path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    json.dump(search_manifest, open(search_manifest_path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+
     scan_manifest = {
         "version": 2,
         "batch_id": batch_id,
         "generated_at": datetime.now(TW_TZ).isoformat(),
         "full_scan": True,
-        "source_rows": len(raw_rows),
-        "current_documents": len(records),
+        "baseline": is_baseline,
+        "source_rows": source_rows,
+        "current_documents": valid_rows,
+        "malformed_or_filtered": malformed,
         "added": added,
         "updated": updated,
         "removed": removed,
-        "unchanged": max(0, unchanged),
+        "unchanged": unchanged,
+        "history_events_written": 0 if is_baseline else len(history_events),
         "changed_current_shards": len(changed_current_buckets),
         "changed_search_shards": len(changed_search_buckets),
-        "note": "Crawler coverage is unchanged; unchanged business state is deduplicated by shard/content hashes.",
+        "note": "Full crawler scan retained. Repeated unchanged business state is not appended to history.",
     }
-    json.dump(current_manifest, open(current_manifest_path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-    json.dump(search_manifest, open(search_manifest_path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     scan_path = manifest_dir / f"scan_{batch_id}.json"
     json.dump(scan_manifest, open(scan_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
     history_path = root / "history" / f"events_{batch_id}.parquet"
-    write_history_parquet(history_path, history_events)
+    if not is_baseline:
+        write_history_parquet(history_path, history_events)
 
     print(json.dumps(scan_manifest, ensure_ascii=False, indent=2))
     if args.offline:
         print(f"[v2] offline build complete: {root}")
         return
 
-    from huggingface_hub import CommitOperationAdd, CommitOperationDelete, HfApi
+    from huggingface_hub import CommitOperationAdd, HfApi
     api = HfApi(token=token)
     api.create_repo(repo_id=args.repo_id, repo_type="dataset", exist_ok=True)
 
-    operations = []
+    # Data shards first; manifests are added last so readers never observe a manifest
+    # that points at not-yet-uploaded shards.
+    data_operations = []
     for bucket in changed_current_buckets:
-        local_path = current_dir / f"{bucket}.json.gz"
-        operations.append(CommitOperationAdd(path_in_repo=f"v2/current/shards/{bucket}.json.gz", path_or_fileobj=str(local_path)))
+        data_operations.append(CommitOperationAdd(
+            path_in_repo=f"v2/current/shards/{bucket}.json.gz",
+            path_or_fileobj=str(current_dir / f"{bucket}.json.gz"),
+        ))
     for bucket in changed_search_buckets:
-        local_path = search_dir / f"{bucket}.json.gz"
-        operations.append(CommitOperationAdd(path_in_repo=f"v2/search/shards/{bucket}.json.gz", path_or_fileobj=str(local_path)))
-
-    # If a previously non-empty shard becomes empty the local empty shard replaces it, so no stale data survives.
-    operations.extend([
-        CommitOperationAdd(path_in_repo="v2/current/manifest.json", path_or_fileobj=str(current_manifest_path)),
-        CommitOperationAdd(path_in_repo="v2/search/manifest.json", path_or_fileobj=str(search_manifest_path)),
-        CommitOperationAdd(path_in_repo=f"v2/scans/{batch_id}.json", path_or_fileobj=str(scan_path)),
-    ])
+        data_operations.append(CommitOperationAdd(
+            path_in_repo=f"v2/search/shards/{bucket}.json.gz",
+            path_or_fileobj=str(search_dir / f"{bucket}.json.gz"),
+        ))
     if history_path.exists() and history_events:
-        operations.append(CommitOperationAdd(path_in_repo=f"v2/history/events/{batch_id}.parquet", path_or_fileobj=str(history_path)))
+        data_operations.append(CommitOperationAdd(
+            path_in_repo=f"v2/history/events/{batch_id}.parquet",
+            path_or_fileobj=str(history_path),
+        ))
 
-    # HF recommends smaller commits. Split while keeping manifests in the last chunk.
-    chunk_size = 80
-    for index in range(0, len(operations), chunk_size):
-        chunk = operations[index:index + chunk_size]
+    chunk_size = 60
+    for index in range(0, len(data_operations), chunk_size):
         api.create_commit(
             repo_id=args.repo_id,
             repo_type="dataset",
-            operations=chunk,
-            commit_message=f"v2 storage {batch_id} chunk {index // chunk_size + 1}",
+            operations=data_operations[index:index + chunk_size],
+            commit_message=f"v2 data {batch_id} chunk {index // chunk_size + 1}",
         )
 
-    # Validate required manifests exist remotely before the caller may clean legacy data.
+    manifest_operations = [
+        CommitOperationAdd(path_in_repo="v2/current/manifest.json", path_or_fileobj=str(current_manifest_path)),
+        CommitOperationAdd(path_in_repo="v2/search/manifest.json", path_or_fileobj=str(search_manifest_path)),
+        CommitOperationAdd(path_in_repo=f"v2/scans/{batch_id}.json", path_or_fileobj=str(scan_path)),
+    ]
+    api.create_commit(
+        repo_id=args.repo_id,
+        repo_type="dataset",
+        operations=manifest_operations,
+        commit_message=f"v2 manifests {batch_id}",
+    )
+
     remote_files = set(api.list_repo_files(repo_id=args.repo_id, repo_type="dataset"))
     required = {"v2/current/manifest.json", "v2/search/manifest.json", f"v2/scans/{batch_id}.json"}
     missing = sorted(required - remote_files)
     if missing:
         raise SystemExit(f"v2 remote validation failed, missing: {missing}")
-    print(f"[v2] remote publish complete; changed current shards={len(changed_current_buckets)}, search shards={len(changed_search_buckets)}")
+    print(f"[v2] publish complete: current shards changed={len(changed_current_buckets)}, search shards changed={len(changed_search_buckets)}, history events={0 if is_baseline else len(history_events)}")
 
 
 def main() -> None:
