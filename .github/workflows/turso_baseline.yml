@@ -16,7 +16,8 @@ jobs:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-python@v7.0.0
         with: { python-version: '3.11' }
-      - run: pip install huggingface_hub libsql-client
+      - run: pip install huggingface_hub
+      - run: npm install --no-save @libsql/client better-sqlite3
       - name: Resolve and download latest complete Raw snapshot
         id: raw
         run: |
@@ -47,9 +48,9 @@ jobs:
           if not stores or not products or events: raise SystemExit(f'invalid baseline stores={stores} products={products} events={events}')
           print(f'stores={stores:,} products={products:,} baseline_events={events} costco={costco:,} query_ms={elapsed:.1f} db_bytes={os.path.getsize("serving.db"):,}')
           PY
-      - name: Publish to Turso and verify remote counts
-        run: python src/publish_turso.py --database serving.db
       - uses: actions/cache/save@v4
         with:
           path: serving.db
           key: serving-db-${{ steps.raw.outputs.batch }}
+      - name: Publish to Turso and verify remote counts
+        run: node scripts/publish_turso.mjs serving.db
