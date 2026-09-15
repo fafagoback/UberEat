@@ -1,0 +1,36 @@
+import json, sqlite3, tempfile, unittest
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from src.serving_state import apply_snapshot
+from src.hf_retention import retention_plan
+
+S='11111111-1111-4111-8111-111111111111'; P='22222222-2222-4222-8222-222222222222'
+def doc(price=100, product=P, name='COSTCO 牛肉', store='COSTCO 台北', products=True):
+    return {'@id':'https://example/'+S,'store_uuid':S,'name':store,'address':{'addressLocality':'台北市'},
+      'aggregateRating':{'ratingValue':4.8,'reviewCount':10},'hasMenu':{'hasMenuSection':[{'name':'食品','hasMenuItem':([{'identifier':product,'name':name,'description':'','offers':{'price':str(price)}}] if products else [])}]}}
+
+class ServingStateTest(unittest.TestCase):
+  def setUp(self):
+    self.db=tempfile.NamedTemporaryFile(suffix='.db',delete=False).name; self.c=sqlite3.connect(self.db); self.c.row_factory=sqlite3.Row
+  def run_batch(self,n,docs,threshold=3): return apply_snapshot(self.c,docs,f'202609{n:02d}120000',threshold)
+  def test_unchanged_and_price_events(self):
+    self.run_batch(1,[doc()]); r=self.run_batch(2,[doc()]); self.assertEqual(r['unchanged'],1); self.assertEqual(self.c.execute('select count(*) from events').fetchone()[0],0)
+    self.run_batch(3,[doc(80)]); self.assertEqual(self.c.execute("select event_type from events").fetchone()[0],'PRICE_CHANGED')
+  def test_missing_threshold_and_reappeared_not_new(self):
+    self.run_batch(1,[doc()]); self.run_batch(2,[doc(products=False)]); self.assertEqual(self.c.execute('select status from products').fetchone()[0],'active')
+    self.run_batch(3,[doc(products=False)]); self.run_batch(4,[doc(products=False)]); self.assertEqual(self.c.execute('select status from products').fetchone()[0],'inactive')
+    r=self.run_batch(5,[doc()]); self.assertEqual(r['new'],0); self.assertEqual(r['reappeared'],1)
+  def test_first_seen_and_search(self):
+    self.run_batch(1,[doc()]); row=self.c.execute("select p.product_uuid from product_search f join products p using(store_uuid,product_uuid) where product_search match 'costco'").fetchone(); self.assertEqual(row[0],P)
+    first=self.c.execute('select first_seen from products').fetchone()[0]; self.run_batch(9,[doc()]); self.assertEqual(self.c.execute('select first_seen from products').fetchone()[0],first)
+    anchor=datetime.fromisoformat(first)+timedelta(days=6)
+    self.assertEqual(self.c.execute("select count(*) from products where first_seen>=?",((anchor-timedelta(days=7)).isoformat(),)).fetchone()[0],1)
+    anchor=datetime.fromisoformat(first)+timedelta(days=8)
+    self.assertEqual(self.c.execute("select count(*) from products where first_seen>=?",((anchor-timedelta(days=7)).isoformat(),)).fetchone()[0],0)
+
+class RetentionTest(unittest.TestCase):
+  def test_only_old_allowlisted_paths(self):
+    now=datetime(2026,9,15,tzinfo=timezone.utc); paths=['TaiwanMenuSnapshots/20260701000000/a.tar.gz','TaiwanMenuSnapshots/20260901000000/a.tar.gz','v2/history/events/20260701000000.parquet','v2/current/state.db','serving/current.db']
+    delete,keep=retention_plan(paths,now); self.assertEqual(len(delete),2); self.assertIn(paths[1],keep); self.assertNotIn(paths[3],delete); self.assertNotIn(paths[4],delete)
+
+if __name__=='__main__': unittest.main()

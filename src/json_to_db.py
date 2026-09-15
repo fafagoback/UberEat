@@ -46,26 +46,15 @@ def get_md5_hash(text: str) -> str:
 
 
 def menu_identity_keys(sections, store_id):
-    """Preserve legacy IDs for unambiguous names, split genuinely distinct items.
-
-    Historical same-name variants cannot be reliably separated retroactively.
-    Their new IDs intentionally start separate histories instead of guessing.
-    """
-    variants = defaultdict(set)
-    for section in sections:
-        for item in section.get("hasMenuItem", []):
-            name = html.unescape(str(item.get("name", ""))).strip()
-            source_id = item.get("identifier")
-            if source_id:
-                variants[name].add(str(source_id))
+    """Use Uber's menu item UUID; visibly namespace the legacy fallback."""
     def key(item):
         name = html.unescape(str(item.get("name", ""))).strip()
-        if len(variants[name]) > 1:
-            source_id = item.get("identifier")
-            if not source_id:
-                raise ValueError(f"ambiguous same-name menu item without identifier: {name}")
-            return get_md5_hash(f"{store_id}_source:{source_id}")
-        return get_md5_hash(f"{store_id}_{name}")
+        source_id = str(item.get("identifier") or "").strip().lower()
+        if source_id:
+            # This compatibility importer has a legacy single-column product PK.
+            # Encode the real composite key without replacing either UUID.
+            return f"{store_id}:{source_id}"
+        return "fallback:item-name:" + hashlib.sha256(f"{store_id}\x1f{name}".encode()).hexdigest()[:32]
     return key
 
 

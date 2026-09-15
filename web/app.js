@@ -631,7 +631,7 @@ function renderDiscounts() {
           ` : ''}
 
           <div class="grid grid-cols-2 gap-2 pt-1">
-            <button data-action="history" data-args="${escapeHtml(JSON.stringify([item.product_id, item.product_name, item.store_name, orderUrl]))}" class="px-3 py-2 text-xs font-medium rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-1.5">
+            <button data-action="history" data-args="${escapeHtml(JSON.stringify([item.store_uuid || item.store_id || '', item.product_uuid || item.product_id, item.product_name, item.store_name, orderUrl]))}" class="px-3 py-2 text-xs font-medium rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-1.5">
               <i data-lucide="line-chart" class="w-3.5 h-3.5"></i>
               價格走勢
             </button>
@@ -1620,7 +1620,7 @@ function renderGlobalProducts() {
         </div>
 
         <div class="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
-          <button data-action="history" data-args="${escapeHtml(JSON.stringify([String(p.product_id), String(p.product_name), String(p.store_name), String(p.order_action_url || '')]))}" class="text-xs text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-1">
+          <button data-action="history" data-args="${escapeHtml(JSON.stringify([String(p.store_uuid || p.store_id || ''), String(p.product_uuid || p.product_id), String(p.product_name), String(p.store_name), String(p.order_action_url || '')]))}" class="text-xs text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-1">
             <i data-lucide="line-chart" class="w-3.5 h-3.5"></i>走勢
           </button>
           <a href="${escapeHtml(safeOrderUrl(p.order_action_url || '#'))}" target="_blank" rel="noopener noreferrer" data-action="order" data-args="${escapeHtml(JSON.stringify([String(p.order_action_url || ''), String(p.product_name), String(p.store_name)]))}" class="text-xs text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1 active:scale-95 transition-transform">
@@ -1652,7 +1652,7 @@ function changeGlobalPage(page) {
 // -----------------------------------------------------------------------------
 // 8. 價格走勢圖彈窗 (Price Trend Modal with Chart.js & DuckDB Edge SQL)
 // -----------------------------------------------------------------------------
-async function showPriceHistoryModal(productId, productName, storeName, orderUrl) {
+async function showPriceHistoryModal(storeUuid, productId, productName, storeName, orderUrl) {
   const modal = document.getElementById('price-history-modal');
   document.getElementById('modal-store-name').textContent = storeName;
   document.getElementById('modal-product-name').textContent = productName;
@@ -1668,6 +1668,19 @@ async function showPriceHistoryModal(productId, productName, storeName, orderUrl
   modal.classList.add('flex');
 
   let history = (APP_STATE.historyMap && APP_STATE.historyMap[productId]) ? [...APP_STATE.historyMap[productId]] : [];
+  if (window.UBER_RADAR_SERVING_API && storeUuid) {
+    try {
+      const base = String(window.UBER_RADAR_CONFIG.WORKER_API_BASE_URL).replace(/\/$/, '');
+      const response = await fetch(`${base}/product/${encodeURIComponent(storeUuid)}/${encodeURIComponent(productId)}/history?days=60`);
+      if (response.ok) {
+        const payload = await response.json();
+        history = (payload.items || []).map(event => {
+          const state = JSON.parse(event.new_state || '{}');
+          return { crawled_time: event.event_time, price: state.price || 0, eff_price: state.effective_price || state.price || 0, quantity: state.quantity || 1, promo_type: state.promo_type || '無' };
+        });
+      }
+    } catch (error) { console.warn('Serving history unavailable', error); }
+  }
   
   // 若 history.json 未命中，嘗試從當前已載入之各資料集中尋找該商品的真實即時資訊
   if (history.length === 0) {

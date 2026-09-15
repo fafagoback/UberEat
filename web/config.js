@@ -1,14 +1,11 @@
 /**
  * UberEats Radar - 全域前端配置
- * v8.0: HF v2 去重 current + 分片全文索引。
- * 舊 DuckDB/Parquet 路徑不再作為全庫關鍵字搜尋主路徑。
+ * v9.0: GitHub Pages -> Cloudflare Worker -> Turso.
  */
 window.UBER_RADAR_CONFIG = {
-  API_BASE_URL: './data',
-  V2_BASE_URL: 'https://huggingface.co/datasets/hub-google/UberEat/resolve/main/v2',
+  API_BASE_URL: './data', // rollback source until Worker cutover is validated
+  WORKER_API_BASE_URL: 'https://ubereat-api.YOUR-SUBDOMAIN.workers.dev',
   // Legacy URLs are kept only for rollback diagnostics during migration.
-  PARQUET_CATALOG_URL: 'https://huggingface.co/datasets/hub-google/UberEat/resolve/main/Parquet/taiwan_catalog_latest.parquet',
-  PARQUET_PARTITIONS_BASE_URL: 'https://huggingface.co/datasets/hub-google/UberEat/resolve/main/Parquet/partitions',
   ENABLE_DUCKDB: false
 };
 

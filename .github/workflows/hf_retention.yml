@@ -1,0 +1,44 @@
+name: HF Raw and Events 60-day Retention
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: Apply deletion after dry-run validation
+        type: boolean
+        default: false
+  workflow_run:
+    workflows: ['Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)']
+    types: [completed]
+
+jobs:
+  retention:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with: { python-version: '3.11' }
+      - run: pip install huggingface_hub
+      - name: Mandatory dry-run
+        run: python src/hf_retention.py --repo-id "$HF_REPO_ID" | tee retention.txt
+      - name: Validate deletion namespace
+        run: |
+          if grep '^DELETE ' retention.txt | grep -Ev '^DELETE (TaiwanMenuSnapshots/|v2/history/events/)'; then
+            echo 'Unsafe retention target detected' >&2; exit 1
+          fi
+      - name: Apply and verify
+        if: github.event_name == 'workflow_run' || inputs.apply
+        run: python src/hf_retention.py --repo-id "$HF_REPO_ID" --apply | tee retention-applied.txt
+      - name: Summary
+        if: always()
+        run: |
+          echo '## HF 60-day retention' >> "$GITHUB_STEP_SUMMARY"
+          echo '```text' >> "$GITHUB_STEP_SUMMARY"
+          (cat retention-applied.txt 2>/dev/null || cat retention.txt) >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
