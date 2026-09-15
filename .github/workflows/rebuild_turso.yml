@@ -14,8 +14,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  prepare-rebuild-target:
+    name: Reset Turso rebuild target before workers
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Delete and recreate the Turso rebuild database
+        if: inputs.publish
+        env:
+          TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_REBUILD_NAME: ubereats-rebuilt-v10
+          TURSO_RESET_TARGET: '1'
+        run: node scripts/provision_turso_rebuild.mjs
+
   rebuild-workers:
     name: Shard Worker (${{ matrix.shard }}/15)
+    needs: prepare-rebuild-target
     runs-on: ubuntu-latest
     timeout-minutes: 60
     strategy:
@@ -91,6 +107,7 @@ jobs:
           TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
           TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
           TURSO_REBUILD_NAME: ubereats-rebuilt-v10
+          TURSO_RESET_TARGET: '0'
         run: node scripts/provision_turso_rebuild.mjs
       - name: Publish only to the isolated rebuild database
         if: inputs.publish
