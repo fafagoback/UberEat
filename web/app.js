@@ -278,6 +278,168 @@ if (document.readyState === 'loading') {
 }
 
 // -----------------------------------------------------------------------------
+// 0. Turso 直連客戶端 (HTTP Pipeline API)
+// -----------------------------------------------------------------------------
+async function executeTursoQuery(sql) {
+  const cfg = window.UBER_RADAR_CONFIG;
+  if (!cfg || !cfg.ENABLE_TURSO || !cfg.TURSO_DATABASE_URL || !cfg.TURSO_READONLY_TOKEN) {
+    return null;
+  }
+  const cleanUrl = cfg.TURSO_DATABASE_URL.replace(/\/+$/, '');
+  const pipelineUrl = `${cleanUrl}/v2/pipeline`;
+
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 12000);
+
+  try {
+    const res = await fetch(pipelineUrl, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${cfg.TURSO_READONLY_TOKEN}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        requests: [{ type: 'execute', stmt: { sql } }]
+      }),
+      signal: controller.signal
+    });
+    clearTimeout(timeoutId);
+
+    if (!res.ok) {
+      throw new Error(`Turso HTTP error: ${res.status}`);
+    }
+
+    const data = await res.json();
+    if (data.results && data.results[0] && data.results[0].response && data.results[0].response.result) {
+      const result = data.results[0].response.result;
+      const cols = result.cols.map(c => c.name);
+      return result.rows.map(row => {
+        const item = {};
+        row.forEach((cell, idx) => {
+          item[cols[idx]] = cell.value;
+        });
+        return item;
+      });
+    }
+    return [];
+  } catch (err) {
+    clearTimeout(timeoutId);
+    console.warn('Turso query error:', err);
+    return null;
+  }
+}
+
+async function loadFromTurso() {
+  console.log('⚡ [Turso] 正在直連 Turso 取得即時大盤資料庫...');
+  try {
+    const statsRows = await executeTursoQuery(`
+      SELECT 
+        (SELECT count(*) FROM stores) as total_stores,
+        (SELECT count(*) FROM products) as total_products,
+        (SELECT count(*) FROM products WHERE promo_type != '' AND promo_type != '無') as promotions_count,
+        (SELECT max(last_seen) FROM products) as latest_batch
+    `);
+
+    if (!statsRows || statsRows.length === 0) return false;
+
+    const s = statsRows[0];
+    const totalStores = Number(s.total_stores || 0);
+    const totalProducts = Number(s.total_products || 0);
+    const promoCount = Number(s.promotions_count || 0);
+
+    const statsData = {
+      status: 'success',
+      latest_batch: s.latest_batch || '即時連線',
+      latest_batch_formatted: s.latest_batch ? s.latest_batch.replace('T', ' ').substring(0, 16) : '即時更新',
+      total_stores: totalStores,
+      total_monitored_stores: totalStores,
+      total_products: totalProducts,
+      total_monitored_products: totalProducts,
+      big_discounts_count: 0,
+      new_stores_count: totalStores,
+      new_products_count: 0,
+      promotions_count: promoCount,
+      max_savings_twd: 0
+    };
+    updateStatsUI(statsData);
+
+    const [storesRows, prodsRows] = await Promise.all([
+      executeTursoQuery(`
+        SELECT s.store_uuid as store_id, s.name as store_name, s.rating as rating_value,
+               s.review_count, s.locality, s.address as street_address, s.city,
+               s.order_url as order_action_url,
+               1 as is_open
+        FROM stores s
+        WHERE s.name != ''
+        ORDER BY s.rating DESC NULLS LAST, s.review_count DESC
+        LIMIT 200
+      `),
+      executeTursoQuery(`
+        SELECT p.product_uuid as product_id, p.store_uuid as store_id, s.name as store_name,
+               p.product_name, p.category as category_name, p.description,
+               p.price, p.quantity, p.promo_type, p.effective_price as eff_price,
+               p.order_url as order_action_url,
+               s.rating as rating_value, s.review_count, s.locality, s.address as street_address,
+               s.city, p.last_seen as crawled_time
+        FROM products p
+        JOIN stores s ON p.store_uuid = s.store_uuid
+        ORDER BY p.first_seen DESC
+        LIMIT 200
+      `)
+    ]);
+
+    if (storesRows) {
+      APP_STATE.newStores = storesRows.map(r => ({
+        ...r,
+        rating_value: r.rating_value !== undefined ? Number(r.rating_value) : null,
+        review_count: r.review_count ? Number(r.review_count) : 0,
+        total_menu_items: 0
+      }));
+    }
+
+    if (prodsRows) {
+      const formattedProds = prodsRows.map(p => ({
+        ...p,
+        price: Number(p.price || 0),
+        quantity: Number(p.quantity || 1),
+        eff_price: Number(p.eff_price || p.price || 0),
+        rating_value: p.rating_value !== undefined ? Number(p.rating_value) : null,
+        review_count: p.review_count ? Number(p.review_count) : 0
+      }));
+
+      APP_STATE.allProducts = formattedProds;
+      APP_STATE.newProducts = formattedProds.slice(0, 100);
+      APP_STATE.promotions = formattedProds.filter(p => p.promo_type && p.promo_type !== '無');
+      APP_STATE.rawDiscounts = formattedProds.filter(p => p.price > p.eff_price).map(p => ({
+        ...p,
+        original_price: p.price,
+        current_price: p.eff_price,
+        discount_pct: Math.round(((p.price - p.eff_price) / p.price) * 100),
+        savings_amount: Math.round(p.price - p.eff_price)
+      }));
+    }
+
+    await fetchDiscounts(1);
+    await fetchNewStores(1);
+    await fetchNewProducts(1);
+    await fetchPromotions(1);
+    await fetchGlobalProducts(1);
+
+    const badgeEl = document.getElementById('lakehouse-badge');
+    if (badgeEl) {
+      badgeEl.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span><span>Turso 邊緣連線</span>`;
+      badgeEl.className = "px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-50 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 flex items-center gap-1";
+    }
+
+    console.log('✅ [Turso] 資料庫載入成功！');
+    return true;
+  } catch (err) {
+    console.warn('⚠️ [Turso] 連線失敗，切換為靜態快照:', err);
+    return false;
+  }
+}
+
+// -----------------------------------------------------------------------------
 // 1. 靜態 API 網址映射與資料載入
 // -----------------------------------------------------------------------------
 function getApiUrl(endpoint) {
@@ -302,56 +464,64 @@ function getApiUrl(endpoint) {
 async function loadDashboardData() {
   let loadedFromServer = false;
 
-  try {
-    const [statsRes, discRes, storesRes, prodsRes, promosRes, catalogRes, histRes] = await Promise.all([
-      fetch(getApiUrl('/api/stats')),
-      fetch(getApiUrl('/api/discounts')),
-      fetch(getApiUrl('/api/new-stores')),
-      fetch(getApiUrl('/api/new-products')),
-      fetch(getApiUrl('/api/promotions')),
-      fetch(getApiUrl('/api/products')),
-      fetch(getApiUrl('/api/history')).catch(() => null)
-    ]);
+  // 優先嘗試從 Turso 直連讀取即時大數據
+  if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
+    loadedFromServer = await loadFromTurso();
+  }
 
-    if (statsRes && statsRes.ok) {
-      APP_STATE.isServerMode = true;
-      const statsData = await statsRes.json();
-      updateStatsUI(statsData);
+  // 若 Turso 未啟用或連線失敗，自動無縫回退至靜態 JSON 快照
+  if (!loadedFromServer) {
+    try {
+      const [statsRes, discRes, storesRes, prodsRes, promosRes, catalogRes, histRes] = await Promise.all([
+        fetch(getApiUrl('/api/stats')),
+        fetch(getApiUrl('/api/discounts')),
+        fetch(getApiUrl('/api/new-stores')),
+        fetch(getApiUrl('/api/new-products')),
+        fetch(getApiUrl('/api/promotions')),
+        fetch(getApiUrl('/api/products')),
+        fetch(getApiUrl('/api/history')).catch(() => null)
+      ]);
 
-      if (discRes && discRes.ok) {
-        const d = await discRes.json();
-        APP_STATE.rawDiscounts = d.items || d || [];
-      }
-      if (storesRes && storesRes.ok) {
-        const d = await storesRes.json();
-        APP_STATE.newStores = d.items || d || [];
-      }
-      if (prodsRes && prodsRes.ok) {
-        const d = await prodsRes.json();
-        APP_STATE.newProducts = d.items || d || [];
-      }
-      if (promosRes && promosRes.ok) {
-        const d = await promosRes.json();
-        APP_STATE.promotions = d.items || d || [];
-      }
-      if (catalogRes && catalogRes.ok) {
-        const d = await catalogRes.json();
-        APP_STATE.allProducts = d.items || d || [];
-      }
-      if (histRes && histRes.ok) {
-        const d = await histRes.json();
-        APP_STATE.historyMap = d.history || {};
-      }
+      if (statsRes && statsRes.ok) {
+        APP_STATE.isServerMode = true;
+        const statsData = await statsRes.json();
+        updateStatsUI(statsData);
 
-      await fetchDiscounts(1);
-      await fetchNewStores(1);
-      await fetchNewProducts(1);
-      await fetchPromotions(1);
-      await fetchGlobalProducts(1);
-      loadedFromServer = true;
+        if (discRes && discRes.ok) {
+          const d = await discRes.json();
+          APP_STATE.rawDiscounts = d.items || d || [];
+        }
+        if (storesRes && storesRes.ok) {
+          const d = await storesRes.json();
+          APP_STATE.newStores = d.items || d || [];
+        }
+        if (prodsRes && prodsRes.ok) {
+          const d = await prodsRes.json();
+          APP_STATE.newProducts = d.items || d || [];
+        }
+        if (promosRes && promosRes.ok) {
+          const d = await promosRes.json();
+          APP_STATE.promotions = d.items || d || [];
+        }
+        if (catalogRes && catalogRes.ok) {
+          const d = await catalogRes.json();
+          APP_STATE.allProducts = d.items || d || [];
+        }
+        if (histRes && histRes.ok) {
+          const d = await histRes.json();
+          APP_STATE.historyMap = d.history || {};
+        }
+
+        await fetchDiscounts(1);
+        await fetchNewStores(1);
+        await fetchNewProducts(1);
+        await fetchPromotions(1);
+        await fetchGlobalProducts(1);
+        loadedFromServer = true;
+      }
+    } catch (err) {
+      console.warn('無法連線靜態 API，切換為離線備援資料:', err);
     }
-  } catch (err) {
-    console.warn('無法連線靜態 API，切換為離線備援資料:', err);
   }
 
   if (!loadedFromServer) {
@@ -1430,7 +1600,68 @@ async function fetchGlobalProducts(page = 1) {
     return;
   }
 
-  // 1. DuckDB 尚未就緒或不可用時，立即執行極速本地記憶體快照檢索 (0ms 延遲)
+  // 1. 若啟用 Turso 直連，優先以 Turso 雲端資料庫進行極速模糊搜尋
+  if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
+    let whereClauses = ["p.price >= 1"];
+    if (rawSearch) {
+      const safeKw = rawSearch.replace(/'/g, "''");
+      whereClauses.push(`(p.product_name LIKE '%${safeKw}%' OR s.name LIKE '%${safeKw}%' OR p.category LIKE '%${safeKw}%')`);
+    }
+    if (cityFilter && cityFilter !== '全部') {
+      const safeCity = cityFilter.replace(/'/g, "''");
+      whereClauses.push(`(s.city LIKE '%${safeCity}%' OR s.locality LIKE '%${safeCity}%' OR s.address LIKE '%${safeCity}%')`);
+    }
+    if (sortMode === 'promo_only') {
+      whereClauses.push(`p.promo_type != '' AND p.promo_type != '無'`);
+    }
+
+    let orderSql = "ORDER BY s.rating DESC NULLS LAST, p.price ASC";
+    if (sortMode === 'price_asc') orderSql = "ORDER BY p.price ASC";
+    else if (sortMode === 'price_desc') orderSql = "ORDER BY p.price DESC";
+    else if (sortMode === 'name_asc') orderSql = "ORDER BY p.product_name ASC";
+    else if (sortMode === 'promo_first') orderSql = "ORDER BY CASE WHEN p.promo_type != '' AND p.promo_type != '無' THEN 0 ELSE 1 END, s.rating DESC NULLS LAST";
+
+    const fetchLimit = limit + 1;
+    const sql = `
+      SELECT p.product_uuid as product_id, p.store_uuid as store_id, s.name as store_name,
+             p.category as category_name, p.product_name, p.price, p.quantity,
+             p.promo_type, p.effective_price as eff_price, p.description,
+             p.order_url as order_action_url, s.rating as rating_value, s.review_count,
+             s.locality, s.address as street_address, s.city, 1 as is_open, p.last_seen as crawled_time
+      FROM products p
+      JOIN stores s ON p.store_uuid = s.store_uuid
+      WHERE ${whereClauses.join(' AND ')}
+      ${orderSql}
+      LIMIT ${fetchLimit} OFFSET ${offset}
+    `;
+
+    try {
+      const rows = await executeTursoQuery(sql);
+      if (rows && sequence === globalSearchSequence) {
+        const hasNextPage = rows.length > limit;
+        const pageRows = rows.slice(0, limit).map(p => ({
+          ...p,
+          price: Number(p.price || 0),
+          quantity: Number(p.quantity || 1),
+          eff_price: Number(p.eff_price || p.price || 0),
+          rating_value: p.rating_value !== undefined ? Number(p.rating_value) : null,
+          review_count: p.review_count ? Number(p.review_count) : 0
+        }));
+
+        APP_STATE.globalProducts = pageRows;
+        APP_STATE.globalHasNext = hasNextPage;
+        APP_STATE.globalTotalPages = hasNextPage ? Math.max(page + 1, APP_STATE.globalTotalPages || 1) : page;
+        APP_STATE.globalTotalItems = hasNextPage ? `${page * limit}+` : `${(page - 1) * limit + pageRows.length}`;
+
+        renderGlobalProducts();
+        return;
+      }
+    } catch (err) {
+      console.warn('Turso 搜尋失敗，切換後續搜尋引擎:', err);
+    }
+  }
+
+  // 2. DuckDB 尚未就緒或不可用時，立即執行極速本地記憶體快照檢索 (0ms 延遲)
   if (!DUCKDB_READY || !DUCKDB_CONN) {
     executeInMemoryGlobalSearch(page);
     return;
@@ -1668,7 +1899,43 @@ async function showPriceHistoryModal(storeUuid, productId, productName, storeNam
   modal.classList.add('flex');
 
   let history = (APP_STATE.historyMap && APP_STATE.historyMap[productId]) ? [...APP_STATE.historyMap[productId]] : [];
-  if (window.UBER_RADAR_SERVING_API && storeUuid) {
+
+  // 若啟用 Turso 直連，向 Turso 查詢該商品在 events 中的所有歷史異動紀錄
+  if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO && (storeUuid || productId)) {
+    try {
+      const safeStore = String(storeUuid || '').replace(/'/g, "''");
+      const safeProd = String(productId || '').replace(/'/g, "''");
+      let filter = "";
+      if (safeStore && safeProd) filter = `store_uuid = '${safeStore}' AND product_uuid = '${safeProd}'`;
+      else if (safeProd) filter = `product_uuid = '${safeProd}'`;
+
+      if (filter) {
+        const events = await executeTursoQuery(`
+          SELECT event_time, new_state, old_state
+          FROM events
+          WHERE ${filter}
+          ORDER BY event_time ASC
+          LIMIT 50
+        `);
+        if (events && events.length > 0) {
+          history = events.map(e => {
+            const state = JSON.parse(e.new_state || e.old_state || '{}');
+            return {
+              crawled_time: e.event_time,
+              price: Number(state.price || 0),
+              eff_price: Number(state.effective_price || state.price || 0),
+              quantity: Number(state.quantity || 1),
+              promo_type: state.promo_type || '無'
+            };
+          });
+        }
+      }
+    } catch (err) {
+      console.warn('Turso 歷史記錄查詢失敗:', err);
+    }
+  }
+
+  if (window.UBER_RADAR_SERVING_API && storeUuid && history.length === 0) {
     try {
       const base = String(window.UBER_RADAR_CONFIG.WORKER_API_BASE_URL).replace(/\/$/, '');
       const response = await fetch(`${base}/product/${encodeURIComponent(storeUuid)}/${encodeURIComponent(productId)}/history?days=60`);
