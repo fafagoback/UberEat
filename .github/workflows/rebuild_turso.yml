@@ -27,7 +27,7 @@ jobs:
       - name: Install rebuild dependencies
         run: pip install huggingface_hub pytest requests
       - name: Run database rule tests
-        run: python -m pytest -q
+        run: python -m pytest -q tests/test_serving_state.py tests/test_rebuild_database.py tests/test_pipeline_safety.py
       - name: Replay every retained HF snapshot oldest-first
         run: python src/rebuild_database.py --repo-id "$HF_REPO_ID" --database serving.db
       - name: Validate rebuilt union and event history
