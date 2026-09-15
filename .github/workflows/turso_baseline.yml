@@ -33,7 +33,13 @@ jobs:
           with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write(f'batch={batch}\nsource={local}\n')
           print(path)
           PY
+      - uses: actions/cache/restore@v4
+        id: baseline-cache
+        with:
+          path: serving.db
+          key: serving-db-${{ steps.raw.outputs.batch }}
       - name: Build normalized SQLite baseline
+        if: steps.baseline-cache.outputs.cache-hit != 'true'
         run: python src/serving_state.py --source "${{ steps.raw.outputs.source }}" --database serving.db --batch-id "${{ steps.raw.outputs.batch }}" --baseline
       - name: Validate baseline and COSTCO search
         run: |

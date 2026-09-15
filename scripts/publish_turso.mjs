@@ -7,7 +7,9 @@ const src=new Database(file,{readonly:true});
 const db=createClient({url:process.env.TURSO_DATABASE_URL,authToken:process.env.TURSO_AUTH_TOKEN});
 const batchSize=Number(process.env.TURSO_BATCH_SIZE||1000);
 
-for(const {sql} of src.prepare("SELECT sql FROM sqlite_schema WHERE sql IS NOT NULL AND name NOT LIKE 'sqlite_%' AND name NOT LIKE 'product_search%' AND type IN ('table','index') ORDER BY CASE type WHEN 'table' THEN 0 ELSE 1 END").all()) await db.execute(sql);
+for(const {sql} of src.prepare("SELECT sql FROM sqlite_schema WHERE sql IS NOT NULL AND name NOT LIKE 'sqlite_%' AND name NOT LIKE 'product_search%' AND type IN ('table','index') ORDER BY CASE type WHEN 'table' THEN 0 ELSE 1 END").all()){
+  try{await db.execute(sql);}catch(error){if(!String(error.message||error).includes('already exists'))throw error;}
+}
 
 for(const [table,keys] of Object.entries({stores:['store_uuid'],products:['store_uuid','product_uuid'],crawl_batches:['batch_id'],metadata:['key']})){
   const cols=src.prepare(`PRAGMA table_info(${table})`).all().map(x=>x.name);
