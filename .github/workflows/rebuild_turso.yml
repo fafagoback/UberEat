@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-python@v7.0.0
         with: { python-version: '3.11' }
       - name: Install rebuild dependencies
-        run: pip install huggingface_hub pytest
+        run: pip install huggingface_hub pytest requests
       - name: Run database rule tests
         run: python -m pytest -q
       - name: Replay every retained HF snapshot oldest-first
