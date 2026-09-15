@@ -7,7 +7,31 @@ const src=new Database(file,{readonly:true});
 const db=createClient({url:process.env.TURSO_DATABASE_URL,authToken:process.env.TURSO_AUTH_TOKEN});
 const batchSize=Number(process.env.TURSO_BATCH_SIZE||1000);
 
-for(const {sql} of src.prepare("SELECT sql FROM sqlite_schema WHERE sql IS NOT NULL AND name NOT LIKE 'sqlite_%' AND name NOT LIKE 'product_search%' AND type IN ('table','index') ORDER BY CASE type WHEN 'table' THEN 0 ELSE 1 END").all()){
+if(process.env.TURSO_REQUIRE_EMPTY==='1'){
+  const existing=await db.execute("SELECT count(*) AS count FROM sqlite_schema WHERE type='table' AND name IN ('stores','products','events','crawl_batches','metadata')");
+  if(Number(existing.rows[0].count)!==0) throw new Error('rebuild target is not empty; refusing to mix old and rebuilt data');
+}
+
+for(const {sql} of src.prepare("SELECT sql FROM sqlite_schema WHERE sql IS NOT NULL AND name NOT LIKE 'sqlite_%' AND name NOT LIKE 'product_search%' AND type='table'").all()){
+  try{await db.execute(sql);}catch(error){if(!String(error.message||error).includes('already exists'))throw error;}
+}
+
+// Migrate databases created before the rolling three-snapshot price fields.
+for(const sql of [
+  "ALTER TABLE products ADD COLUMN recent_prices TEXT NOT NULL DEFAULT '[]'",
+  "ALTER TABLE products ADD COLUMN price_novel_vs_previous_3 INTEGER NOT NULL DEFAULT 0",
+  "ALTER TABLE products ADD COLUMN reference_price REAL",
+  "ALTER TABLE products ADD COLUMN discount_amount REAL NOT NULL DEFAULT 0",
+  "ALTER TABLE products ADD COLUMN discount_pct REAL NOT NULL DEFAULT 0",
+  "ALTER TABLE products ADD COLUMN is_price_deal INTEGER NOT NULL DEFAULT 0"
+]){
+  try{await db.execute(sql);}catch(error){
+    const message=String(error.message||error).toLowerCase();
+    if(!message.includes('duplicate column')&&!message.includes('already exists'))throw error;
+  }
+}
+
+for(const {sql} of src.prepare("SELECT sql FROM sqlite_schema WHERE sql IS NOT NULL AND name NOT LIKE 'sqlite_%' AND name NOT LIKE 'product_search%' AND type='index'").all()){
   try{await db.execute(sql);}catch(error){if(!String(error.message||error).includes('already exists'))throw error;}
 }
 
@@ -31,6 +55,5 @@ for(const row of src.prepare('SELECT * FROM events').iterate()){
   if(pending.length===batchSize){const values=pending.map(()=>'(?,?,?,?,?,?)').join(',');await db.execute({sql:`INSERT OR IGNORE INTO events(${eventCols.join(',')}) VALUES ${values}`,args:pending.flatMap(r=>eventCols.map(c=>r[c]))});pending=[];}
 }
 if(pending.length){const values=pending.map(()=>'(?,?,?,?,?,?)').join(',');await db.execute({sql:`INSERT OR IGNORE INTO events(${eventCols.join(',')}) VALUES ${values}`,args:pending.flatMap(r=>eventCols.map(c=>r[c]))});}
-await db.execute("DELETE FROM events WHERE event_time < datetime('now','-60 days')");
 const result=await db.execute("SELECT (SELECT count(*) FROM stores) stores,(SELECT count(*) FROM products) products,(SELECT count(*) FROM events) events");
 console.log('remote_counts',result.rows[0]);src.close();db.close();

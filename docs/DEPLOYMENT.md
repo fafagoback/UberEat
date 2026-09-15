@@ -12,9 +12,9 @@ Crawler 頻率、worker 數量與 Raw 上傳均未變。Stage 6 改為建立並�
 
 ## Safe migration
 
-1. 用最新完整 Raw 執行 `python src/serving_state.py --source <dir-or-tar> --database serving.db --batch-id <timestamp> --baseline`。
-2. 比對 Raw、stores、products 數量與 fallback count；baseline events 必須為 0。
-3. 執行 `Build and Publish Turso Baseline` workflow，讓 GitHub runner 建庫並寫入 Turso。
+1. 在 GitHub Actions 執行 `Rebuild Turso From All HF Snapshots`，先保持 `publish=false`。
+2. workflow 依時間重播 HF 全部可用快照；比對 batches、stores、products、events 與 fallback count，第一批 baseline 的 NEW/STORE_NEW 必須為 0。
+3. 建立隔離的新 Turso database，設定 `TURSO_REBUILD_DATABASE_URL` / `TURSO_REBUILD_AUTH_TOKEN`，再以 `publish=true` 重跑。禁止由使用者本機寫入 production Turso。
 4. 實測 COSTCO、麥當勞、雞排、牛肉、咖啡，以及新品/新店/歷史 API。
 5. GitHub Pages 不得嵌入 Turso token；若明確拒絕任何 API proxy，維持靜態 fallback，任意全庫查詢只能在可信任後端或 Actions 中執行。
 6. 觀察至少一個下一批 incremental update，再依 `docs/STORAGE_ARCHITECTURE.md` 順序清 legacy。

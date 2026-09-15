@@ -334,12 +334,27 @@ jobs:
           merge-multiple: true
 
       - name: 還原上一批 Current/Event state
+        id: serving-cache
         uses: actions/cache@v4
         with:
           path: serving.db
-          key: serving-db-${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
+          key: serving-db-rebuilt-${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
           restore-keys: |
-            serving-db-
+            serving-db-rebuilt-
+
+      - name: 拒絕未經全快照重建的舊 baseline
+        shell: bash
+        run: |
+          python - <<'PY'
+          import os,sqlite3
+          if not os.path.exists('serving.db'):
+              raise SystemExit('No full-history serving DB cache. Run Rebuild Turso From All HF Snapshots first.')
+          c=sqlite3.connect('serving.db')
+          marker=c.execute("select value from metadata where key='rebuild_snapshot_count'").fetchone()
+          if not marker or int(marker[0]) < 3:
+              raise SystemExit('Refusing legacy latest-snapshot baseline; full-history rebuild marker is absent.')
+          print(f'full-history cache verified: {marker[0]} snapshots')
+          PY
 
       - name: ① 建立 normalized Current + Events SQLite
         env:

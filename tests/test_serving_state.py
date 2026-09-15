@@ -15,7 +15,29 @@ class ServingStateTest(unittest.TestCase):
   def run_batch(self,n,docs,threshold=3): return apply_snapshot(self.c,docs,f'202609{n:02d}120000',threshold)
   def test_unchanged_and_price_events(self):
     self.run_batch(1,[doc()]); r=self.run_batch(2,[doc()]); self.assertEqual(r['unchanged'],1); self.assertEqual(self.c.execute('select count(*) from events').fetchone()[0],0)
-    self.run_batch(3,[doc(80)]); self.assertEqual(self.c.execute("select event_type from events").fetchone()[0],'PRICE_CHANGED')
+    self.run_batch(3,[doc(100)]); self.run_batch(4,[doc(80)])
+    self.assertEqual(self.c.execute("select event_type from events").fetchone()[0],'PRICE_CHANGED')
+    self.assertEqual(self.c.execute("select price_novel_vs_previous_3 from products").fetchone()[0],1)
+    row=self.c.execute("select reference_price,discount_amount,discount_pct,is_price_deal from products").fetchone()
+    self.assertEqual(tuple(row),(100,20,20,1))
+
+  def test_recurring_price_in_previous_three_is_not_a_change(self):
+    self.run_batch(1,[doc(100)]); self.run_batch(2,[doc(1)]); self.run_batch(3,[doc(100)]); self.run_batch(4,[doc(1)])
+    self.assertEqual(self.c.execute("select count(*) from events where event_type='PRICE_CHANGED'").fetchone()[0],0)
+    row=self.c.execute("select price,recent_prices,price_novel_vs_previous_3 from products").fetchone()
+    self.assertEqual(row['price'],1)
+    self.assertEqual(json.loads(row['recent_prices']),[1.0,100.0,1.0])
+    self.assertEqual(row['price_novel_vs_previous_3'],0)
+    self.assertEqual(self.c.execute("select is_price_deal from products").fetchone()[0],0)
+  def test_less_than_three_previous_prices_is_never_a_price_change(self):
+    self.run_batch(1,[doc(100)]); self.run_batch(2,[doc(70)]); self.run_batch(3,[doc(50)])
+    self.assertEqual(self.c.execute("select count(*) from events where event_type='PRICE_CHANGED'").fetchone()[0],0)
+    self.assertEqual(self.c.execute("select price_novel_vs_previous_3 from products").fetchone()[0],0)
+    self.assertEqual(self.c.execute("select is_price_deal from products").fetchone()[0],0)
+  def test_store_events_start_after_baseline(self):
+    self.run_batch(1,[doc(store='A')]); self.run_batch(2,[doc(store='B')])
+    self.assertEqual(self.c.execute("select count(*) from events where event_type='STORE_NEW'").fetchone()[0],0)
+    self.assertEqual(self.c.execute("select count(*) from events where event_type='STORE_CHANGED'").fetchone()[0],1)
   def test_missing_threshold_and_reappeared_not_new(self):
     self.run_batch(1,[doc()]); self.run_batch(2,[doc(products=False)]); self.assertEqual(self.c.execute('select status from products').fetchone()[0],'active')
     self.run_batch(3,[doc(products=False)]); self.run_batch(4,[doc(products=False)]); self.assertEqual(self.c.execute('select status from products').fetchone()[0],'inactive')

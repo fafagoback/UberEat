@@ -1,0 +1,63 @@
+name: Rebuild Turso From All HF Snapshots
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish the verified rebuild to the NEW Turso database
+        type: boolean
+        required: true
+        default: false
+
+concurrency:
+  group: ubereats-database-rebuild
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with: { python-version: '3.11' }
+      - name: Install rebuild dependencies
+        run: pip install huggingface_hub pytest
+      - name: Run database rule tests
+        run: python -m pytest -q
+      - name: Replay every retained HF snapshot oldest-first
+        run: python src/rebuild_database.py --repo-id "$HF_REPO_ID" --database serving.db
+      - name: Validate rebuilt union and event history
+        run: |
+          python - <<'PY'
+          import sqlite3
+          c=sqlite3.connect('serving.db')
+          batches=c.execute('select count(*) from crawl_batches').fetchone()[0]
+          stores=c.execute('select count(*) from stores').fetchone()[0]
+          products=c.execute('select count(*) from products').fetchone()[0]
+          baseline_new=c.execute("select count(*) from events e join crawl_batches b on e.event_time=b.processed_at where b.batch_id=(select min(batch_id) from crawl_batches) and e.event_type in ('NEW','STORE_NEW')").fetchone()[0]
+          if batches < 3 or not stores or not products or baseline_new:
+              raise SystemExit(f'invalid rebuild batches={batches} stores={stores} products={products} baseline_new={baseline_new}')
+          print(f'verified batches={batches:,} stores={stores:,} products={products:,}')
+          PY
+      - name: Seed the twice-daily incremental database cache
+        uses: actions/cache/save@v4
+        with:
+          path: serving.db
+          key: serving-db-rebuilt-${{ github.run_id }}
+      - name: Install Turso publisher
+        if: inputs.publish
+        run: npm install --no-save @libsql/client better-sqlite3
+      - name: Publish only to the isolated rebuild database
+        if: inputs.publish
+        env:
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_REBUILD_DATABASE_URL }}
+          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_REBUILD_AUTH_TOKEN }}
+          TURSO_REQUIRE_EMPTY: '1'
+        run: |
+          test -n "$TURSO_DATABASE_URL"
+          test -n "$TURSO_AUTH_TOKEN"
+          node scripts/publish_turso.mjs serving.db

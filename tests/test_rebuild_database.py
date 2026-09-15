@@ -1,0 +1,48 @@
+import io
+import json
+import sqlite3
+import tarfile
+from argparse import Namespace
+
+from src.rebuild_database import rebuild
+
+S = "11111111-1111-4111-8111-111111111111"
+P = "22222222-2222-4222-8222-222222222222"
+
+
+def write_snapshot(root, batch, price):
+    path = root / batch / f"taiwan_menus_{batch}.tar.gz"
+    path.parent.mkdir(parents=True)
+    doc = {
+        "store_uuid": S,
+        "name": "COSTCO",
+        "hasMenu": {"hasMenuSection": [{"name": "食品", "hasMenuItem": [{
+            "identifier": P, "name": "牛肉", "offers": {"price": str(price)}
+        }]}]},
+    }
+    with tarfile.open(path, "w:gz") as archive:
+        for name, payload in (("manifest.json", {"batch_id": batch, "store_count": 1}), (f"Json/{S}.json", doc)):
+            raw = json.dumps(payload).encode()
+            info = tarfile.TarInfo(name)
+            info.size = len(raw)
+            archive.addfile(info, io.BytesIO(raw))
+
+
+def test_rebuild_replays_every_snapshot_and_skips_manifest(tmp_path):
+    prices = [100, 1, 100, 1, 80]
+    for day, price in enumerate(prices, 1):
+        write_snapshot(tmp_path / "snapshots", f"202609{day:02d}120000", price)
+    output = tmp_path / "rebuilt.db"
+    summary = rebuild(Namespace(
+        source_dir=str(tmp_path / "snapshots"), repo_id=None, database=str(output),
+        replace=False, missing_threshold=3, minimum_stores=1, max_snapshots=None,
+    ))
+    assert summary["snapshots"] == 5
+    assert summary["stores"] == 1
+    assert summary["products"] == 1
+    conn = sqlite3.connect(output)
+    assert conn.execute("select first_seen from products").fetchone()[0].startswith("2026-09-01")
+    price_events = conn.execute("select event_time from events where event_type='PRICE_CHANGED'").fetchall()
+    assert len(price_events) == 1
+    assert price_events[0][0].startswith("2026-09-05")
+    assert conn.execute("select count(*) from stores where store_uuid like 'fallback:%'").fetchone()[0] == 0

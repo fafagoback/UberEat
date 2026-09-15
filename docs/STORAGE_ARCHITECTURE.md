@@ -1,4 +1,4 @@
-# Storage architecture v9
+# Storage architecture v10
 
 ## Identity
 
@@ -10,9 +10,13 @@
 
 ## Current / Events
 
-`src/serving_state.py` 直接讀完整 Raw 目錄或 tar.gz。相同 identity 且 `state_hash` 相同只更新 `last_seen`，不寫 event。首次 baseline 不產生數百萬筆 `NEW`。消失一次只增加 `missing_streak`；預設連續 3 批才 inactive，設定為 `MISSING_STREAK_THRESHOLD`。
+`src/rebuild_database.py` 依時間由舊到新重播 HF 所有可用且通過 manifest、JSON 數量及最低店數檢核的完整 Raw tar.gz。異常小批次記錄在 `rebuild_skipped_snapshots`，不可參與 missing/event 判斷。`stores` 與 `products` 是所有有效快照 identity 的聯集，不是最新快照的覆蓋檔；第一批只建立 baseline，後續每批才產生事件。因此 `first_seen` / `last_seen`、inactive 與重新出現都來自完整可用歷史。
 
-新品、新店 API 都查 `first_seen >= now - 7 days`。重新出現不改 `first_seen`，只寫 `REAPPEARED`。Events 超過 60 天於每次更新時清除。
+`src/serving_state.py` 同時是重建與每天兩批增量更新共用的唯一規則來源。相同 identity 且 `state_hash` 相同只更新 `last_seen`，不寫 event。消失一次只增加 `missing_streak`；預設連續 3 批才 inactive。
+
+價格型特價必須已經有完整三次先前價格，且本次價格未曾在該三次出現，並低於三次價格的中位數。新品即使帶有買一送一 `promo_type`，在歷史不足三次時 `is_price_deal=0`，不宣稱價格型特價。`recent_prices` 保存滾動三次觀察值，`reference_price` / `discount_amount` / `discount_pct` / `is_price_deal` 保存當批可發布判斷。
+
+新品、新店 API 都查 `first_seen >= now - 7 days`。重新出現不改 `first_seen`，只寫 `REAPPEARED`。Raw 依 HF retention 保存；已由完整 Raw 推導出的 Turso events 不再自動刪除，避免失去可用的完整分析歷史。
 
 SQLite schema 將店家欄位只放在 `stores`；`products` 以外鍵關聯，並建有 first_seen、price、promotion、event history 與 FTS5 索引。全文索引只含店名、商品名、category，不含 description。
 
@@ -24,7 +28,7 @@ SQLite schema 將店家欄位只放在 `stores`；`products` 以外鍵關聯，�
 
 ## Turso publish
 
-`turso_baseline.yml` 與 crawler Stage 6 都在 GitHub-hosted Ubuntu runner 運算。Actions cache 保存上一批 `serving.db`，使 `first_seen`、`missing_streak` 和 events 能跨批延續；`publish_turso.py` 以 upsert 同步到 Turso。使用者電腦不參與 production ETL。
+`rebuild_turso.yml` 與 crawler Stage 6 都只在 GitHub-hosted Ubuntu runner 運算。重建 workflow 先產生隔離的新資料庫並驗證，再按明確的 `publish` input 寫入 `TURSO_REBUILD_DATABASE_URL`。它同時建立 `serving-db-rebuilt-*` cache；每天的增量流程拒絕任何沒有 `rebuild_snapshot_count` marker 的舊 baseline。使用者電腦不參與 production Turso 寫入。
 
 ## Legacy dependency status
 
