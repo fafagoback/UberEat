@@ -27,13 +27,17 @@ let database;
 try{
   const result=await api(`/organizations/${encodeURIComponent(slug)}/databases/${encodeURIComponent(targetName)}`);
   database=result.database;
+  await api(`/organizations/${encodeURIComponent(slug)}/databases/${encodeURIComponent(targetName)}`,{method:'DELETE'});
+  console.log(`Deleted existing isolated rebuild target: ${targetName}`);
 }catch(error){
   if(error.status!==404) throw error;
-  const result=await api(`/organizations/${encodeURIComponent(slug)}/databases`,{
-    method:'POST',body:JSON.stringify({name:targetName,group:selected.group})
-  });
-  database=result.database;
 }
+
+const result=await api(`/organizations/${encodeURIComponent(slug)}/databases`,{
+  method:'POST',body:JSON.stringify({name:targetName,group:selected.group})
+});
+database=result.database;
+console.log(`Created empty isolated rebuild target: ${targetName}`);
 
 const auth=await api(`/organizations/${encodeURIComponent(slug)}/databases/${encodeURIComponent(targetName)}/auth/tokens?authorization=full-access`,{method:'POST'});
 const url=`libsql://${database.Hostname}`;
