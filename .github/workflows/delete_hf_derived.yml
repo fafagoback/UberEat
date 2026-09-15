@@ -1,0 +1,48 @@
+name: Delete HF Parquet and v2
+
+on:
+  workflow_dispatch:
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+    steps:
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+      - run: pip install huggingface_hub
+      - name: Delete only Parquet and v2
+        run: |
+          python - <<'PY'
+          import os
+          from huggingface_hub import CommitOperationDelete, HfApi
+
+          repo = os.environ['HF_REPO_ID']
+          api = HfApi(token=os.environ['HF_TOKEN'])
+          before = sorted(api.list_repo_files(repo_id=repo, repo_type='dataset'))
+          targets = [p for p in before if p.startswith(('Parquet/', 'v2/'))]
+          protected = [p for p in before if p.startswith(('TaiwanMenuSnapshots/', 'TaiwanStores/'))]
+          if not protected:
+              raise SystemExit('Protected source datasets were not found; refusing deletion')
+          print(f'Deleting {len(targets)} files under Parquet/ and v2/ only')
+          for offset in range(0, len(targets), 80):
+              batch = targets[offset:offset + 80]
+              api.create_commit(
+                  repo_id=repo,
+                  repo_type='dataset',
+                  operations=[CommitOperationDelete(path_in_repo=p) for p in batch],
+                  commit_message=f'Delete obsolete Parquet and v2 files ({offset + 1}-{offset + len(batch)})',
+              )
+          after = set(api.list_repo_files(repo_id=repo, repo_type='dataset'))
+          survivors = [p for p in targets if p in after]
+          missing_protected = [p for p in protected if p not in after]
+          if survivors:
+              raise SystemExit(f'Deletion incomplete; survivors: {survivors[:20]}')
+          if missing_protected:
+              raise SystemExit(f'Protected source files disappeared: {missing_protected[:20]}')
+          print(f'Verified: removed {len(targets)} files; protected {len(protected)} source files')
+          PY
