@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS crawl_batches(
 );
 CREATE TABLE IF NOT EXISTS stores(
   store_uuid TEXT PRIMARY KEY, name TEXT NOT NULL, address TEXT, city TEXT, locality TEXT,
-  rating REAL, review_count INTEGER, order_url TEXT, first_seen TEXT NOT NULL,
+  latitude REAL, longitude REAL, rating REAL, review_count INTEGER, order_url TEXT, first_seen TEXT NOT NULL,
   last_seen TEXT NOT NULL, status TEXT NOT NULL, missing_streak INTEGER NOT NULL DEFAULT 0,
   state_hash TEXT NOT NULL
 );
@@ -149,6 +149,13 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                    event_retention_days: int | None = None,
                    refresh_search: bool = True) -> dict[str, int]:
     conn.executescript(SCHEMA)
+    # Keep existing serving databases in place and backfill coordinates as stores
+    # appear in subsequent snapshots.
+    store_columns = {row[1] for row in conn.execute("PRAGMA table_info(stores)")}
+    for name in ("latitude", "longitude"):
+        if name not in store_columns:
+            conn.execute(f"ALTER TABLE stores ADD COLUMN {name} REAL")
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_stores_coordinates ON stores(latitude, longitude)")
     # Forward-compatible migration for serving.db files cached before the
     # three-snapshot price rule was introduced.
     product_columns = {row[1] for row in conn.execute("PRAGMA table_info(products)")}
@@ -179,14 +186,23 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
         if sid in seen_stores:
             continue
         seen_stores.add(sid); counts["stores"] += 1
-        address = doc.get("address") or {}; rating = doc.get("aggregateRating") or {}
+        address = doc.get("address") or {}; rating = doc.get("aggregateRating") or {}; geo = doc.get("geo") or {}
         order_url = str(doc.get("potentialAction", {}).get("target", {}).get("urlTemplate") or doc.get("@id") or "")
         sstate = {"name": str(doc.get("name") or ""), "address": str(address.get("streetAddress") or ""),
                   "city": str(address.get("addressRegion") or address.get("addressLocality") or ""),
-                  "locality": str(address.get("addressLocality") or ""), "rating": _num(rating.get("ratingValue"), float, None),
+                  "locality": str(address.get("addressLocality") or ""),
+                  "latitude": _num(geo.get("latitude"), float, None),
+                  "longitude": _num(geo.get("longitude"), float, None),
+                  "rating": _num(rating.get("ratingValue"), float, None),
                   "review_count": _num(rating.get("reviewCount"), int, None), "order_url": order_url}
-        sh = canonical_hash(sstate)
         old_s = conn.execute("SELECT * FROM stores WHERE store_uuid=?", (sid,)).fetchone()
+        # A temporarily incomplete crawl must not erase a previously known
+        # coordinate. A later non-null value can still correct it.
+        if old_s:
+            for coordinate in ("latitude", "longitude"):
+                if sstate[coordinate] is None:
+                    sstate[coordinate] = old_s[coordinate]
+        sh = canonical_hash(sstate)
         if old_s:
             if old_s["status"] != "active":
                 counts["store_reappeared"] += 1
@@ -195,10 +211,11 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                 counts["store_changed"] += 1
                 if not baseline: _event(conn, now, sid, None, "STORE_CHANGED", dict(old_s), sstate)
             status = "active"
-            conn.execute("UPDATE stores SET name=?,address=?,city=?,locality=?,rating=?,review_count=?,order_url=?,last_seen=?,status=?,missing_streak=0,state_hash=? WHERE store_uuid=?",
+            conn.execute("UPDATE stores SET name=?,address=?,city=?,locality=?,latitude=?,longitude=?,rating=?,review_count=?,order_url=?,last_seen=?,status=?,missing_streak=0,state_hash=? WHERE store_uuid=?",
                          (*sstate.values(), now, status, sh, sid))
         else:
-            conn.execute("INSERT INTO stores VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)", (sid, *sstate.values(), now, now, "active", 0, sh))
+            conn.execute("INSERT INTO stores(store_uuid,name,address,city,locality,latitude,longitude,rating,review_count,order_url,first_seen,last_seen,status,missing_streak,state_hash) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                         (sid, *sstate.values(), now, now, "active", 0, sh))
             counts["store_new"] += 1
             if not baseline: _event(conn, now, sid, None, "STORE_NEW", None, sstate)
 

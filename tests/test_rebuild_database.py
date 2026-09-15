@@ -11,12 +11,13 @@ S = "11111111-1111-4111-8111-111111111111"
 P = "22222222-2222-4222-8222-222222222222"
 
 
-def write_snapshot(root, batch, price):
+def write_snapshot(root, batch, price, latitude=25.033, longitude=121.5654):
     path = root / batch / f"taiwan_menus_{batch}.tar.gz"
     path.parent.mkdir(parents=True)
     doc = {
         "store_uuid": S,
         "name": "COSTCO",
+        "geo": {"latitude": latitude, "longitude": longitude},
         "hasMenu": {"hasMenuSection": [{"name": "食品", "hasMenuItem": [{
             "identifier": P, "name": "牛肉", "offers": {"price": str(price)}
         }]}]},
@@ -47,6 +48,7 @@ def test_rebuild_replays_every_snapshot_and_skips_manifest(tmp_path):
     assert len(price_events) == 1
     assert price_events[0][0].startswith("2026-09-05")
     assert conn.execute("select count(*) from stores where store_uuid like 'fallback:%'").fetchone()[0] == 0
+    assert conn.execute("select latitude, longitude from stores").fetchone() == (25.033, 121.5654)
 
 
 def test_sync_catches_up_every_snapshot_after_latest_batch(tmp_path):
@@ -88,3 +90,45 @@ def test_rebuild_skips_archive_with_corrupt_store_json(tmp_path):
     ))
     assert summary["snapshots"] == 1
     assert summary["skipped"][0]["batch_id"] == corrupt_batch
+
+
+def test_sync_migrates_existing_store_and_backfills_coordinates(tmp_path):
+    source = tmp_path / "snapshots"
+    write_snapshot(source, "20260901120000", 100)
+    output = tmp_path / "serving.db"
+    rebuild(Namespace(
+        source_dir=str(source), repo_id=None, database=str(output), replace=False,
+        missing_threshold=3, minimum_stores=1, max_snapshots=None,
+    ))
+
+    conn = sqlite3.connect(output)
+    conn.execute("DROP INDEX idx_stores_coordinates")
+    conn.execute("ALTER TABLE stores DROP COLUMN latitude")
+    conn.execute("ALTER TABLE stores DROP COLUMN longitude")
+    conn.commit()
+    conn.close()
+
+    write_snapshot(source, "20260902120000", 100, 24.1477, 120.6736)
+    result = sync(Namespace(source_dir=str(source), repo_id=None, database=str(output),
+                            missing_threshold=3, minimum_stores=1))
+
+    assert result["processed"] == ["20260902120000"]
+    conn = sqlite3.connect(output)
+    assert conn.execute("select latitude, longitude from stores where store_uuid=?", (S,)).fetchone() == (24.1477, 120.6736)
+    assert conn.execute("select count(*) from events where event_type='STORE_CHANGED'").fetchone()[0] == 1
+
+
+def test_sync_does_not_erase_coordinates_when_geo_is_missing(tmp_path):
+    source = tmp_path / "snapshots"
+    write_snapshot(source, "20260901120000", 100, 25.033, 121.5654)
+    output = tmp_path / "serving.db"
+    rebuild(Namespace(
+        source_dir=str(source), repo_id=None, database=str(output), replace=False,
+        missing_threshold=3, minimum_stores=1, max_snapshots=None,
+    ))
+    write_snapshot(source, "20260902120000", 100, None, None)
+    sync(Namespace(source_dir=str(source), repo_id=None, database=str(output),
+                   missing_threshold=3, minimum_stores=1))
+
+    conn = sqlite3.connect(output)
+    assert conn.execute("select latitude, longitude from stores where store_uuid=?", (S,)).fetchone() == (25.033, 121.5654)
