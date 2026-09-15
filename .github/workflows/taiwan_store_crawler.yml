@@ -321,7 +321,7 @@ jobs:
           python-version: '3.11'
 
       - name: 安裝 Serving 與 HF 依賴
-        run: pip install huggingface_hub libsql
+        run: pip install huggingface_hub libsql-client
 
       - name: 下載所有 Menu Worker 的 JSON 成果
         uses: actions/download-artifact@v8.0.1
@@ -329,6 +329,14 @@ jobs:
           pattern: menu-result-chunk-*
           path: all_menu_lake/
           merge-multiple: true
+
+      - name: 還原上一批 Current/Event state
+        uses: actions/cache@v4
+        with:
+          path: serving.db
+          key: serving-db-${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
+          restore-keys: |
+            serving-db-
 
       - name: ① 建立 normalized Current + Events SQLite
         env:
@@ -351,7 +359,7 @@ jobs:
           print(f'validated stores={stores:,} products={products:,}')
           PY
 
-      - name: ③ Turso publish gate
+      - name: ③ 發布 Current/Events 到 Turso
         env:
           TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
           TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
@@ -359,8 +367,7 @@ jobs:
           if [[ -z "$TURSO_DATABASE_URL" || -z "$TURSO_AUTH_TOKEN" ]]; then
             echo 'Turso credentials absent: local SQLite validation succeeded; publish safely skipped.' | tee -a "$GITHUB_STEP_SUMMARY"
           else
-            echo 'Turso credentials detected. Run the documented initial import/sync procedure.' | tee -a "$GITHUB_STEP_SUMMARY"
-            echo 'Automatic remote mutation remains gated until the baseline count validation is approved.' | tee -a "$GITHUB_STEP_SUMMARY"
+            python src/publish_turso.py --database serving.db
           fi
 
       - name: ④ Raw/Event 60-day retention dry-run

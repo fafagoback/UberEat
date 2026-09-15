@@ -32,6 +32,7 @@ ENV/
 *.db
 *.sqlite
 *.sqlite3
+*.db-journal
 dashboard_data.json
 dashboard_data.js
 web/dashboard_data.json
@@ -74,4 +75,3 @@ web/data/*.parquet
 *.tar
 temp_all_menu_lake/
 packaged_snapshot/
-

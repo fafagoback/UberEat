@@ -82,6 +82,8 @@ CREATE INDEX IF NOT EXISTS idx_stores_city ON stores(city);
 CREATE INDEX IF NOT EXISTS idx_products_first_seen ON products(first_seen);
 CREATE INDEX IF NOT EXISTS idx_products_price ON products(effective_price, price);
 CREATE INDEX IF NOT EXISTS idx_products_promo ON products(promo_type);
+CREATE INDEX IF NOT EXISTS idx_products_name ON products(product_name);
+CREATE INDEX IF NOT EXISTS idx_products_category ON products(category);
 CREATE INDEX IF NOT EXISTS idx_events_product_time ON events(store_uuid, product_uuid, event_time DESC);
 CREATE INDEX IF NOT EXISTS idx_events_time ON events(event_time);
 CREATE VIRTUAL TABLE IF NOT EXISTS product_search USING fts5(

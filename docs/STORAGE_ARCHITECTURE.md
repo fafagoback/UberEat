@@ -22,6 +22,10 @@ SQLite schema 將店家欄位只放在 `stores`；`products` 以外鍵關聯，�
 
 `TaiwanStores` 是 crawler reducer/menu dispatcher 的輸入，目前不能刪。後續可在 reducer 改成覆寫 `TaiwanStores/latest/` 後再清舊批次。
 
+## Turso publish
+
+`turso_baseline.yml` 與 crawler Stage 6 都在 GitHub-hosted Ubuntu runner 運算。Actions cache 保存上一批 `serving.db`，使 `first_seen`、`missing_streak` 和 events 能跨批延續；`publish_turso.py` 以 upsert 同步到 Turso。使用者電腦不參與 production ETL。
+
 ## Legacy dependency status
 
 - `Parquet/taiwan_catalog_latest.parquet`、`Parquet/partitions/`：新主流程不再產生或讀取，可在 Turso baseline 驗證後刪。
