@@ -1,9 +1,11 @@
 /**
  * UberEats Radar - 全域前端配置
- * v9.0: static rollback client. Turso writes run in GitHub Actions.
+ * v10.0: Turso Direct Client (Read-Only) + Static Fallback
  */
 window.UBER_RADAR_CONFIG = {
-  API_BASE_URL: './data', // rollback source until Worker cutover is validated
-  // Legacy URLs are kept only for rollback diagnostics during migration.
-  ENABLE_DUCKDB: false
+  API_BASE_URL: './data',
+  ENABLE_DUCKDB: false,
+  ENABLE_TURSO: true,
+  TURSO_DATABASE_URL: 'https://ubereat-cit5055.aws-ap-northeast-1.turso.io',
+  TURSO_READONLY_TOKEN: 'eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicm8iLCJpYXQiOjE3ODk0ODIxOTMsImlkIjoiMDFhMGEzYjQtZDUwMS03NmZmLTk2NDMtNjI4ODAwNmY1YjBmIiwia2lkIjoiYmdTR0VmbG10VVFhN1IwMUZ5Y05iRWJGNHJaZXZjZkZHQXNwRW00cW9MQSIsInJpZCI6IjViNGUyN2I5LTdlZmUtNGYzOC05NjIxLTM2OGNiMDBmNmZiZCJ9.hSWuGy17JTx18Yi5X8IvV0Cw8HA0SiQ4sI94po40GRSnGM-yVuXaMZjkjYj3UqXWloVtqHQjECxlu82_jxKYDg'
 };
