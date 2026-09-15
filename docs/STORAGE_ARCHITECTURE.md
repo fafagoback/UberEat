@@ -30,6 +30,8 @@ SQLite schema 將店家欄位只放在 `stores`；`products` 以外鍵關聯，�
 
 `rebuild_turso.yml` 與 crawler Stage 6 都只在 GitHub-hosted Ubuntu runner 運算。重建 workflow 先產生隔離的新資料庫並驗證，再按明確的 `publish` input 寫入 `TURSO_REBUILD_DATABASE_URL`。它同時建立 `serving-db-rebuilt-*` cache；每天的增量流程拒絕任何沒有 `rebuild_snapshot_count` marker 的舊 baseline。使用者電腦不參與 production Turso 寫入。
 
+每天 Stage 6 不假設上一批一定成功，而是由 `src/sync_database_from_hf.py` 比對 DB 的 `latest_batch` 與 HF 清單，依時間補齊所有較新的有效快照。因此重建期間或單次 Stage 6 失敗不會造成中間事件永久遺失。
+
 ## Legacy dependency status
 
 - `Parquet/taiwan_catalog_latest.parquet`、`Parquet/partitions/`：新主流程不再產生或讀取，可在 Turso baseline 驗證後刪。

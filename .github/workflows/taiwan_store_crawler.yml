@@ -326,13 +326,6 @@ jobs:
       - name: 安裝 Turso Node client
         run: npm install --no-save @libsql/client better-sqlite3
 
-      - name: 下載所有 Menu Worker 的 JSON 成果
-        uses: actions/download-artifact@v8.0.1
-        with:
-          pattern: menu-result-chunk-*
-          path: all_menu_lake/
-          merge-multiple: true
-
       - name: 還原上一批 Current/Event state
         id: serving-cache
         uses: actions/cache@v4
@@ -356,12 +349,13 @@ jobs:
           print(f'full-history cache verified: {marker[0]} snapshots')
           PY
 
-      - name: ① 建立 normalized Current + Events SQLite
+      - name: ① 依序補齊 HF 所有尚未處理的完整快照
         env:
           MISSING_STREAK_THRESHOLD: ${{ vars.MISSING_STREAK_THRESHOLD || '3' }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
         run: |
-          python src/serving_state.py --source all_menu_lake/ --database serving.db \
-            --batch-id "${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}" \
+          python src/sync_database_from_hf.py --database serving.db --repo-id "$HF_REPO_ID" \
             --missing-threshold "$MISSING_STREAK_THRESHOLD"
 
       - name: ② Serving DB 本地完整性驗證

@@ -48,13 +48,15 @@ def hf_snapshot_paths(repo_id: str, token: str | None) -> list[tuple[str, str]]:
     return sorted(found)
 
 
-def materialize_snapshots(args: argparse.Namespace) -> Iterator[tuple[str, str]]:
+def materialize_snapshots(args: argparse.Namespace, after_batch: str | None = None) -> Iterator[tuple[str, str]]:
     if args.source_dir:
-        yield from local_snapshots(Path(args.source_dir))
+        yield from ((batch, path) for batch, path in local_snapshots(Path(args.source_dir)) if not after_batch or batch > after_batch)
         return
 
     token = os.getenv("HF_TOKEN")
     for batch_id, remote_path in hf_snapshot_paths(args.repo_id, token):
+        if after_batch and batch_id <= after_batch:
+            continue
         with tempfile.TemporaryDirectory(prefix=f"snapshot-{batch_id}-") as cache_dir:
             from huggingface_hub import hf_hub_download
 
