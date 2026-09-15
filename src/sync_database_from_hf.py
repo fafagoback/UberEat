@@ -8,11 +8,11 @@ import os
 import sqlite3
 
 try:
-    from src.rebuild_database import materialize_snapshots, validate_archive
-    from src.serving_state import apply_snapshot, iter_documents, refresh_product_search
+    from src.rebuild_database import materialize_snapshots, validate_and_extract_archive, validate_archive
+    from src.serving_state import ServingStateCache, apply_snapshot, iter_documents, refresh_product_search
 except ModuleNotFoundError:
-    from rebuild_database import materialize_snapshots, validate_archive
-    from serving_state import apply_snapshot, iter_documents, refresh_product_search
+    from rebuild_database import materialize_snapshots, validate_and_extract_archive, validate_archive
+    from serving_state import ServingStateCache, apply_snapshot, iter_documents, refresh_product_search
 
 
 def sync(args: argparse.Namespace) -> dict[str, object]:
@@ -25,18 +25,20 @@ def sync(args: argparse.Namespace) -> dict[str, object]:
     if not marker or not latest:
         raise SystemExit("Legacy baseline rejected: full-history rebuild metadata is missing")
 
+    state_cache = ServingStateCache(conn)
     processed = []
     skipped = []
     for batch_id, source in materialize_snapshots(args, after_batch=latest[0]):
-        valid, reason = validate_archive(source, batch_id, args.minimum_stores)
-        if not valid:
+        valid, docs, reason = validate_and_extract_archive(source, batch_id, args.minimum_stores)
+        if not valid or docs is None:
             skipped.append({"batch_id": batch_id, "reason": reason})
             print(json.dumps({"batch_id": batch_id, "skipped": reason}, ensure_ascii=False))
             continue
         counts = apply_snapshot(
-            conn, iter_documents(source), batch_id,
+            conn, docs, batch_id,
             missing_threshold=args.missing_threshold,
             baseline=False, event_retention_days=None, refresh_search=False,
+            state_cache=state_cache,
         )
         processed.append(batch_id)
         print(json.dumps({"batch_id": batch_id, **counts}, ensure_ascii=False))

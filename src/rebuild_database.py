@@ -15,13 +15,35 @@ import shutil
 import sqlite3
 import tempfile
 import tarfile
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Iterator
+from typing import Any, Iterator
 
 try:
-    from src.serving_state import apply_snapshot, iter_documents, refresh_product_search, store_identity
+    import orjson
+
+    def json_loads(data: bytes | str) -> Any:
+        return orjson.loads(data)
+except ImportError:
+    def json_loads(data: bytes | str) -> Any:
+        return json.loads(data)
+
+try:
+    from src.serving_state import (
+        ServingStateCache,
+        apply_snapshot,
+        iter_documents,
+        refresh_product_search,
+        store_identity,
+    )
 except ModuleNotFoundError:  # direct execution: python src/rebuild_database.py
-    from serving_state import apply_snapshot, iter_documents, refresh_product_search, store_identity
+    from serving_state import (
+        ServingStateCache,
+        apply_snapshot,
+        iter_documents,
+        refresh_product_search,
+        store_identity,
+    )
 
 SNAPSHOT_RE = re.compile(r"(?:^|/)TaiwanMenuSnapshots/(20\d{12})/taiwan_menus_\1\.tar\.gz$")
 LOCAL_RE = re.compile(r"taiwan_menus_(20\d{12})\.tar\.gz$")
@@ -54,56 +76,101 @@ def materialize_snapshots(args: argparse.Namespace, after_batch: str | None = No
         return
 
     token = os.getenv("HF_TOKEN")
-    for batch_id, remote_path in hf_snapshot_paths(args.repo_id, token):
-        if after_batch and batch_id <= after_batch:
-            continue
-        with tempfile.TemporaryDirectory(prefix=f"snapshot-{batch_id}-") as cache_dir:
-            from huggingface_hub import hf_hub_download
+    items = [(batch_id, remote_path) for batch_id, remote_path in hf_snapshot_paths(args.repo_id, token) if not after_batch or batch_id > after_batch]
+    if not items:
+        return
 
-            local = hf_hub_download(
-                repo_id=args.repo_id,
-                filename=remote_path,
-                repo_type="dataset",
-                token=token,
-                cache_dir=cache_dir,
-            )
-            yield batch_id, local
+    from huggingface_hub import hf_hub_download
+
+    def _download(b_id: str, r_path: str):
+        c_dir = tempfile.mkdtemp(prefix=f"snapshot-{b_id}-")
+        local_p = hf_hub_download(
+            repo_id=args.repo_id,
+            filename=r_path,
+            repo_type="dataset",
+            token=token,
+            cache_dir=c_dir,
+        )
+        return b_id, local_p, c_dir
+
+    executor = ThreadPoolExecutor(max_workers=2)
+    futures = []
+    prefetch_depth = 2
+    item_iter = iter(items)
+    for _ in range(prefetch_depth):
+        try:
+            b, r = next(item_iter)
+            futures.append(executor.submit(_download, b, r))
+        except StopIteration:
+            break
+
+    try:
+        while futures:
+            fut = futures.pop(0)
+            b_id, local_path, c_dir = fut.result()
+            try:
+                next_b, next_r = next(item_iter)
+                futures.append(executor.submit(_download, next_b, next_r))
+            except StopIteration:
+                pass
+            try:
+                yield b_id, local_path
+            finally:
+                shutil.rmtree(c_dir, ignore_errors=True)
+    finally:
+        executor.shutdown(wait=False)
+
+
+def validate_and_extract_archive(path: str, batch_id: str, minimum_stores: int) -> tuple[bool, list[dict[str, Any]] | None, str]:
+    """Validate archive integrity and extract all JSON documents in a single streaming pass."""
+    try:
+        documents: list[dict[str, Any]] = []
+        manifest: dict[str, Any] | None = None
+        identities: set[str] = set()
+
+        with tarfile.open(path, "r:*") as archive:
+            for member in archive:
+                if not member.isfile():
+                    continue
+                if member.name == "manifest.json":
+                    handle = archive.extractfile(member)
+                    manifest = json_loads(handle.read()) if handle else {}
+                elif member.name.startswith("Json/") and member.name.endswith(".json"):
+                    handle = archive.extractfile(member)
+                    if not handle:
+                        return False, None, f"unable to extract {member.name}"
+                    try:
+                        document = json_loads(handle.read())
+                    except Exception:
+                        return False, None, f"invalid JSON document: {member.name}"
+                    if not isinstance(document, dict):
+                        return False, None, f"invalid JSON document: {member.name}"
+                    menu = document.get("hasMenu")
+                    if not isinstance(menu, dict) or not isinstance(menu.get("hasMenuSection"), list):
+                        return False, None, f"invalid menu structure: {member.name}"
+                    identity, _ = store_identity(document)
+                    if identity in identities:
+                        return False, None, f"duplicate store identity: {identity}"
+                    identities.add(identity)
+                    documents.append(document)
+
+        if manifest is None:
+            return False, None, "manifest.json missing"
+        declared = int(manifest.get("store_count") or 0)
+        if manifest.get("batch_id") != batch_id:
+            return False, None, f"manifest batch mismatch: {manifest.get('batch_id')}"
+        if declared != len(documents):
+            return False, None, f"manifest stores={declared} archive JSON={len(documents)}"
+        if len(documents) < minimum_stores:
+            return False, None, f"only {len(documents)} stores (minimum {minimum_stores})"
+        return True, documents, f"{len(documents)} stores"
+    except (OSError, tarfile.TarError, ValueError, TypeError, AttributeError, UnicodeDecodeError) as error:
+        return False, None, str(error)
 
 
 def validate_archive(path: str, batch_id: str, minimum_stores: int) -> tuple[bool, str]:
-    try:
-        with tarfile.open(path, "r:*") as archive:
-            members = archive.getmembers()
-            json_members = [member for member in members if member.isfile() and member.name.startswith("Json/") and member.name.endswith(".json")]
-            json_count = len(json_members)
-            manifest_member = next((member for member in members if member.name == "manifest.json"), None)
-            if manifest_member is None:
-                return False, "manifest.json missing"
-            handle = archive.extractfile(manifest_member)
-            manifest = json.load(handle) if handle else {}
-            identities = set()
-            for member in json_members:
-                handle = archive.extractfile(member)
-                document = json.load(handle) if handle else None
-                if not isinstance(document, dict):
-                    return False, f"invalid JSON document: {member.name}"
-                menu = document.get("hasMenu")
-                if not isinstance(menu, dict) or not isinstance(menu.get("hasMenuSection"), list):
-                    return False, f"invalid menu structure: {member.name}"
-                identity, _ = store_identity(document)
-                if identity in identities:
-                    return False, f"duplicate store identity: {identity}"
-                identities.add(identity)
-        declared = int(manifest.get("store_count") or 0)
-        if manifest.get("batch_id") != batch_id:
-            return False, f"manifest batch mismatch: {manifest.get('batch_id')}"
-        if declared != json_count:
-            return False, f"manifest stores={declared} archive JSON={json_count}"
-        if json_count < minimum_stores:
-            return False, f"only {json_count} stores (minimum {minimum_stores})"
-        return True, f"{json_count} stores"
-    except (OSError, tarfile.TarError, ValueError, TypeError, AttributeError, json.JSONDecodeError, UnicodeDecodeError) as error:
-        return False, str(error)
+    valid, _, reason = validate_and_extract_archive(path, batch_id, minimum_stores)
+    return valid, reason
 
 
 def rebuild(args: argparse.Namespace) -> dict[str, object]:
@@ -124,24 +191,28 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
         conn.execute("PRAGMA journal_mode=WAL")
         conn.execute("PRAGMA synchronous=NORMAL")
         conn.execute("PRAGMA temp_store=MEMORY")
+        conn.execute("PRAGMA cache_size=-64000")
+        conn.execute("PRAGMA mmap_size=268435456")
 
+        state_cache = ServingStateCache(conn)
         snapshots = materialize_snapshots(args)
         for batch_id, source in snapshots:
             if args.max_snapshots and len(processed) >= args.max_snapshots:
                 break
-            valid, reason = validate_archive(source, batch_id, args.minimum_stores)
-            if not valid:
+            valid, docs, reason = validate_and_extract_archive(source, batch_id, args.minimum_stores)
+            if not valid or docs is None:
                 skipped.append({"batch_id": batch_id, "reason": reason})
                 print(json.dumps({"batch_id": batch_id, "skipped": reason}, ensure_ascii=False))
                 continue
             counts = apply_snapshot(
                 conn,
-                iter_documents(source),
+                docs,
                 batch_id,
                 missing_threshold=args.missing_threshold,
                 baseline=(len(processed) == 0),
                 event_retention_days=None,
                 refresh_search=False,
+                state_cache=state_cache,
             )
             processed.append(batch_id)
             print(json.dumps({"batch_id": batch_id, **counts}, ensure_ascii=False))
