@@ -381,8 +381,11 @@ jobs:
         env:
           TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
           TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+          TURSO_ACTIVE_SCHEMA_VERSION: ${{ vars.TURSO_ACTIVE_SCHEMA_VERSION }}
         run: |
-          if [[ -z "$TURSO_DATABASE_URL" || -z "$TURSO_AUTH_TOKEN" ]]; then
+          if [[ "$TURSO_ACTIVE_SCHEMA_VERSION" != "v10" ]]; then
+            echo 'Turso v10 cutover is not enabled: rebuilt local state was validated, remote publish safely skipped.' | tee -a "$GITHUB_STEP_SUMMARY"
+          elif [[ -z "$TURSO_DATABASE_URL" || -z "$TURSO_AUTH_TOKEN" ]]; then
             echo 'Turso credentials absent: local SQLite validation succeeded; publish safely skipped.' | tee -a "$GITHUB_STEP_SUMMARY"
           else
             node scripts/publish_turso.mjs serving.db
