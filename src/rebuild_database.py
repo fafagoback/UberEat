@@ -18,7 +18,10 @@ import tarfile
 from pathlib import Path
 from typing import Iterator
 
-from serving_state import apply_snapshot, iter_documents, refresh_product_search
+try:
+    from src.serving_state import apply_snapshot, iter_documents, refresh_product_search
+except ModuleNotFoundError:  # direct execution: python src/rebuild_database.py
+    from serving_state import apply_snapshot, iter_documents, refresh_product_search
 
 SNAPSHOT_RE = re.compile(r"(?:^|/)TaiwanMenuSnapshots/(20\d{12})/taiwan_menus_\1\.tar\.gz$")
 LOCAL_RE = re.compile(r"taiwan_menus_(20\d{12})\.tar\.gz$")
