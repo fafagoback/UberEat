@@ -51,11 +51,19 @@ jobs:
       - name: Install Turso publisher
         if: inputs.publish
         run: npm install --no-save @libsql/client better-sqlite3
+      - name: Provision isolated empty Turso rebuild target
+        if: inputs.publish
+        id: turso
+        env:
+          TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_REBUILD_NAME: ubereats-rebuilt-v10
+        run: node scripts/provision_turso_rebuild.mjs
       - name: Publish only to the isolated rebuild database
         if: inputs.publish
         env:
-          TURSO_DATABASE_URL: ${{ secrets.TURSO_REBUILD_DATABASE_URL }}
-          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_REBUILD_AUTH_TOKEN }}
+          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
+          TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
           TURSO_REQUIRE_EMPTY: '1'
         run: |
           test -n "$TURSO_DATABASE_URL"
