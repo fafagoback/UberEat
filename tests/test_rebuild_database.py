@@ -65,3 +65,26 @@ def test_sync_catches_up_every_snapshot_after_latest_batch(tmp_path):
     conn = sqlite3.connect(output)
     assert conn.execute("select value from metadata where key='latest_batch'").fetchone()[0] == "20260905120000"
     assert conn.execute("select count(*) from crawl_batches").fetchone()[0] == 5
+
+
+def test_rebuild_skips_archive_with_corrupt_store_json(tmp_path):
+    source = tmp_path / "snapshots"
+    valid_batch = "20260901120000"
+    corrupt_batch = "20260902120000"
+    write_snapshot(source, valid_batch, 100)
+    corrupt = source / corrupt_batch / f"taiwan_menus_{corrupt_batch}.tar.gz"
+    corrupt.parent.mkdir(parents=True)
+    with tarfile.open(corrupt, "w:gz") as archive:
+        manifest = json.dumps({"batch_id": corrupt_batch, "store_count": 1}).encode()
+        info = tarfile.TarInfo("manifest.json"); info.size = len(manifest)
+        archive.addfile(info, io.BytesIO(manifest))
+        payload = b"{not valid json"
+        info = tarfile.TarInfo(f"Json/{S}.json"); info.size = len(payload)
+        archive.addfile(info, io.BytesIO(payload))
+    output = tmp_path / "serving.db"
+    summary = rebuild(Namespace(
+        source_dir=str(source), repo_id=None, database=str(output), replace=False,
+        missing_threshold=3, minimum_stores=1, max_snapshots=None,
+    ))
+    assert summary["snapshots"] == 1
+    assert summary["skipped"][0]["batch_id"] == corrupt_batch

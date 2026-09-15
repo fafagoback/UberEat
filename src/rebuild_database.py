@@ -19,9 +19,9 @@ from pathlib import Path
 from typing import Iterator
 
 try:
-    from src.serving_state import apply_snapshot, iter_documents, refresh_product_search
+    from src.serving_state import apply_snapshot, iter_documents, refresh_product_search, store_identity
 except ModuleNotFoundError:  # direct execution: python src/rebuild_database.py
-    from serving_state import apply_snapshot, iter_documents, refresh_product_search
+    from serving_state import apply_snapshot, iter_documents, refresh_product_search, store_identity
 
 SNAPSHOT_RE = re.compile(r"(?:^|/)TaiwanMenuSnapshots/(20\d{12})/taiwan_menus_\1\.tar\.gz$")
 LOCAL_RE = re.compile(r"taiwan_menus_(20\d{12})\.tar\.gz$")
@@ -74,12 +74,26 @@ def validate_archive(path: str, batch_id: str, minimum_stores: int) -> tuple[boo
     try:
         with tarfile.open(path, "r:*") as archive:
             members = archive.getmembers()
-            json_count = sum(1 for member in members if member.isfile() and member.name.startswith("Json/") and member.name.endswith(".json"))
+            json_members = [member for member in members if member.isfile() and member.name.startswith("Json/") and member.name.endswith(".json")]
+            json_count = len(json_members)
             manifest_member = next((member for member in members if member.name == "manifest.json"), None)
             if manifest_member is None:
                 return False, "manifest.json missing"
             handle = archive.extractfile(manifest_member)
             manifest = json.load(handle) if handle else {}
+            identities = set()
+            for member in json_members:
+                handle = archive.extractfile(member)
+                document = json.load(handle) if handle else None
+                if not isinstance(document, dict):
+                    return False, f"invalid JSON document: {member.name}"
+                menu = document.get("hasMenu")
+                if not isinstance(menu, dict) or not isinstance(menu.get("hasMenuSection"), list):
+                    return False, f"invalid menu structure: {member.name}"
+                identity, _ = store_identity(document)
+                if identity in identities:
+                    return False, f"duplicate store identity: {identity}"
+                identities.add(identity)
         declared = int(manifest.get("store_count") or 0)
         if manifest.get("batch_id") != batch_id:
             return False, f"manifest batch mismatch: {manifest.get('batch_id')}"
@@ -88,7 +102,7 @@ def validate_archive(path: str, batch_id: str, minimum_stores: int) -> tuple[boo
         if json_count < minimum_stores:
             return False, f"only {json_count} stores (minimum {minimum_stores})"
         return True, f"{json_count} stores"
-    except (OSError, tarfile.TarError, ValueError, json.JSONDecodeError) as error:
+    except (OSError, tarfile.TarError, ValueError, TypeError, AttributeError, json.JSONDecodeError, UnicodeDecodeError) as error:
         return False, str(error)
 
 

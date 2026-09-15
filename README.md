@@ -4,7 +4,7 @@ Production 目標架構分成三層：
 
 - **RAW**：每次完整全台爬蟲的 JSON/tar.gz，位於 HF `TaiwanMenuSnapshots/`，只保留 60 天。
 - **CURRENT**：Turso 的 normalized `stores` / `products`，每個官方 UUID 只有一筆 current。
-- **EVENTS**：只保存 `NEW`、`PRICE_CHANGED`、`PROMOTION_CHANGED`、`CONTENT_CHANGED`、`REMOVED`、`REAPPEARED`，保留 60 天。
+- **EVENTS**：保存店家與商品的新增、變更、下架及重新出現事件；Turso 保留可由現存 Raw 重建出的完整歷史，HF 舊版事件檔則依 retention 保留 60 天。
 
 資料庫更新流：GitHub Actions → Turso。瀏覽器不含 Turso token，也不直接讀 Raw 或完整 Parquet。
 

@@ -49,6 +49,13 @@ class ServingStateTest(unittest.TestCase):
     self.assertEqual(self.c.execute("select count(*) from products where first_seen>=?",((anchor-timedelta(days=7)).isoformat(),)).fetchone()[0],1)
     anchor=datetime.fromisoformat(first)+timedelta(days=8)
     self.assertEqual(self.c.execute("select count(*) from products where first_seen>=?",((anchor-timedelta(days=7)).isoformat(),)).fetchone()[0],0)
+  def test_duplicate_or_older_batch_is_rejected(self):
+    self.run_batch(2,[doc()])
+    with self.assertRaisesRegex(ValueError,'not newer'):
+      self.run_batch(2,[doc(80)])
+    with self.assertRaisesRegex(ValueError,'not newer'):
+      self.run_batch(1,[doc(80)])
+    self.assertEqual(self.c.execute('select price from products').fetchone()[0],100)
 
 class RetentionTest(unittest.TestCase):
   def test_only_old_allowlisted_paths(self):

@@ -166,6 +166,9 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
             conn.execute(f"ALTER TABLE products ADD COLUMN {name} {definition}")
     conn.execute("CREATE INDEX IF NOT EXISTS idx_products_deals ON products(is_price_deal, discount_pct DESC, discount_amount DESC)")
     now = datetime.strptime(batch_id, "%Y%m%d%H%M%S").replace(tzinfo=TW).isoformat()
+    latest = conn.execute("SELECT value FROM metadata WHERE key='latest_batch'").fetchone()
+    if latest and batch_id <= latest[0]:
+        raise ValueError(f"snapshot batch {batch_id} is not newer than latest batch {latest[0]}")
     if baseline is None:
         baseline = conn.execute("SELECT COUNT(*)=0 FROM crawl_batches").fetchone()[0] == 1
     seen_stores: set[str] = set(); seen_products: set[tuple[str, str]] = set()
