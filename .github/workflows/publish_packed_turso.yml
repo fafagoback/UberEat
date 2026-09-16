@@ -1,0 +1,71 @@
+name: Build and Publish Packed Turso
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ubereats-packed-publish
+  cancel-in-progress: false
+
+jobs:
+  pack-shards:
+    name: Pack shard (${{ matrix.shard }}/15)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: true
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with: {python-version: '3.11'}
+      - run: pip install huggingface_hub requests orjson msgpack zstandard
+      - name: Rebuild normalized shard from complete history
+        run: python -u src/rebuild_database.py --repo-id "$HF_REPO_ID" --database "shard_${{ matrix.shard }}.db" --shard-id ${{ matrix.shard }} --total-shards 15
+      - name: Pack shard
+        run: python -u scripts/prototype_pack_db.py build "shard_${{ matrix.shard }}.db" "packed_${{ matrix.shard }}.db" --buckets 8192 --level 10 --max-items 2048
+      - name: Prove lossless shard round trip
+        run: python -u scripts/prototype_pack_db.py verify "shard_${{ matrix.shard }}.db" "packed_${{ matrix.shard }}.db"
+      - uses: actions/upload-artifact@v7.0.1
+        with:
+          name: packed-${{ matrix.shard }}
+          path: packed_${{ matrix.shard }}.db
+          retention-days: 2
+
+  merge-and-publish:
+    name: Merge, validate, and publish packed database
+    needs: pack-shards
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with: {python-version: '3.11'}
+      - run: pip install msgpack zstandard
+      - uses: actions/download-artifact@v8.0.1
+        with:
+          pattern: packed-*
+          path: packed-shards
+      - name: Merge packed shards
+        run: python -u scripts/merge_packed_shards.py --shards-dir packed-shards --output packed-serving.db --expected-shards 15
+      - name: Enforce Turso Free storage safety margin
+        run: python -c "import os; n=os.path.getsize('packed-serving.db'); print(f'packed bytes={n:,}'); assert n < 4_750_000_000, 'packed database leaves less than 5% storage headroom'"
+      - run: npm install --no-save @libsql/client better-sqlite3
+      - name: Create database write token
+        id: turso
+        env:
+          TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_REBUILD_NAME: ubereats-packed-v1
+          TURSO_RESET_TARGET: '0'
+        run: node scripts/provision_turso_rebuild.mjs
+      - name: Publish packed rows
+        env:
+          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
+          TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
+        run: node scripts/publish_packed_turso.mjs packed-serving.db
