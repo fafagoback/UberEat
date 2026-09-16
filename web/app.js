@@ -438,13 +438,16 @@ async function loadFromTurso() {
     const client = await getPackedTursoClient();
     const packed = await client.loadPackedDashboard(APP_STATE.locationFilter);
     const counts = packed.meta.source_counts || {};
-    const totalStores = Number(counts.stores || packed.stores.length || 0);
-    const totalProducts = Number(counts.products || packed.meta.products || 0);
+    const isLoc = Boolean(APP_STATE.locationFilter?.enabled);
+    const totalStores = Number(isLoc ? packed.stores.length : (counts.stores || packed.stores.length || 0));
+    const totalProducts = Number(isLoc ? packed.products.length : (counts.products || packed.meta.products || 0));
 
     const statsData = {
       status: 'success',
       latest_batch: 'packed-v1',
-      latest_batch_formatted: 'Packed 即時資料庫',
+      latest_batch_formatted: isLoc
+        ? `座標周圍 ${APP_STATE.locationFilter.radiusKm} KM`
+        : 'Packed 即時資料庫',
       total_stores: totalStores,
       total_monitored_stores: totalStores,
       total_products: totalProducts,
@@ -458,20 +461,35 @@ async function loadFromTurso() {
     updateStatsUI(statsData);
     APP_STATE.newStores = packed.stores;
     APP_STATE.allProducts = packed.products;
-    const [newProducts,promotions,discounts] = await Promise.all([
-      client.searchPacked({newOnly:true,location:APP_STATE.locationFilter,limit:1000}),
-      client.searchPacked({promo:true,location:APP_STATE.locationFilter,limit:1000}),
-      client.searchPacked({minDiscount:30,location:APP_STATE.locationFilter,limit:1000})
-    ]);
-    APP_STATE.newProducts = newProducts;
-    APP_STATE.promotions = promotions;
-    APP_STATE.rawDiscounts = discounts;
+
+    // 優先渲染店家與全庫預設資料，確保首屏秒開
+    await fetchNewStores(1);
+    await fetchGlobalProducts(1);
+
+    // 背景載入特價與新品，不阻塞介面
+    try {
+      const [newProducts, discounts] = await Promise.all([
+        client.searchPacked({ newOnly: true, location: APP_STATE.locationFilter, limit: 120 }).catch(() => []),
+        client.searchPacked({ minDiscount: 30, location: APP_STATE.locationFilter, limit: 120 }).catch(() => [])
+      ]);
+      APP_STATE.newProducts = newProducts || [];
+      APP_STATE.rawDiscounts = discounts || [];
+      APP_STATE.promotions = (discounts || []).filter(d => d.promo_type && d.promo_type !== '無');
+
+      const updatedStats = {
+        ...statsData,
+        big_discounts_count: APP_STATE.rawDiscounts.length,
+        new_products_count: APP_STATE.newProducts.length,
+        promotions_count: APP_STATE.promotions.length
+      };
+      updateStatsUI(updatedStats);
+    } catch (subErr) {
+      console.warn('Turso sub-query warning:', subErr);
+    }
 
     await fetchDiscounts(1);
-    await fetchNewStores(1);
     await fetchNewProducts(1);
     await fetchPromotions(1);
-    await fetchGlobalProducts(1);
 
     const badgeEl = document.getElementById('lakehouse-badge');
     if (badgeEl) {
@@ -816,9 +834,12 @@ function renderDiscounts() {
         <div>
           <div class="flex items-start justify-between gap-2 mb-2">
             <div class="flex-1 min-w-0">
-              <span class="inline-block text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 truncate max-w-full">
-                ${escapeHtml(item.category_name || '餐飲主食')}
-              </span>
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="inline-block text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 truncate max-w-full">
+                  ${escapeHtml(item.category_name || '餐飲主食')}
+                </span>
+                ${distanceBadge(item)}
+              </div>
               <h3 class="text-sm font-semibold text-slate-700 dark:text-slate-300 truncate mt-1 flex items-center gap-1.5" title="${escapeHtml(item.store_name)}">
                 <i data-lucide="store" class="w-3.5 h-3.5 text-slate-400 shrink-0"></i>
                 ${escapeHtml(item.store_name)}
@@ -898,13 +919,27 @@ async function fetchNewStores(page = 1) {
   const { storeSearch, storeCity, storeSort } = APP_STATE.filters;
   let items = applyLocationFilter(APP_STATE.newStores || []);
 
+  if (storeSearch && window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
+    try {
+      const client = await getPackedTursoClient();
+      const stores = await client.searchStores({
+        keyword: storeSearch,
+        location: APP_STATE.locationFilter,
+        limit: 100
+      });
+      items = stores || [];
+    } catch (e) {
+      console.warn('Turso store search error:', e);
+    }
+  }
+
   // 地區篩選
   if (storeCity && storeCity !== '全部') {
     items = items.filter(s => matchCityInMemory(s, storeCity));
   }
 
-  // 關鍵字搜尋
-  if (storeSearch) {
+  // 關鍵字搜尋 (若 Turso 未開啟或本地備用篩選)
+  if (storeSearch && !window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
     const kw = storeSearch.toLowerCase();
     items = items.filter(s => 
       (s.store_name && s.store_name.toLowerCase().includes(kw)) ||
@@ -943,12 +978,23 @@ function renderNewStores() {
 
   const counterEl = document.getElementById('new-stores-counter');
   if (counterEl) {
-    counterEl.textContent = `${total.toLocaleString()} 間新店`;
+    counterEl.textContent = `${total.toLocaleString()} 間店家`;
   }
 
   if (total === 0) {
     container.innerHTML = '';
     emptyView.classList.remove('hidden');
+    const storeSearch = (APP_STATE.filters.storeSearch || '').toLowerCase();
+    const emptyMsgEl = emptyView.querySelector('p');
+    if (emptyMsgEl) {
+      if (APP_STATE.locationFilter.enabled && (storeSearch.includes('costco') || storeSearch.includes('好市多'))) {
+        emptyMsgEl.innerHTML = `目前鎖定範圍 ${APP_STATE.locationFilter.radiusKm} KM 內無 Costco 分店。<br><span class="text-emerald-600 dark:text-emerald-400 font-semibold">💡 最近的「Costco 好市多 北投店」距離約 5.95 KM</span>，建議將範圍擴大至 6 KM 或點選「顯示全台」！`;
+      } else if (APP_STATE.locationFilter.enabled) {
+        emptyMsgEl.textContent = `目前鎖定座標周圍 ${APP_STATE.locationFilter.radiusKm} KM 內查無店家，請嘗試放大範圍或點選「顯示全台」。`;
+      } else {
+        emptyMsgEl.textContent = `請嘗試變更搜尋關鍵字或切換地區篩選`;
+      }
+    }
     renderPaginationComponent({
       containerId: 'new-stores-pagination',
       currentPage: 1,
@@ -1117,9 +1163,12 @@ function renderNewProducts() {
             ${escapeHtml(prod.product_name)}
           </h4>
 
-          <div class="mt-1 flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400 truncate">
-            <i data-lucide="store" class="w-3.5 h-3.5 shrink-0"></i>
-            <span>${escapeHtml(prod.store_name)}</span>
+          <div class="mt-1 flex items-center justify-between gap-1 text-xs text-slate-500 dark:text-slate-400">
+            <div class="flex items-center gap-1 truncate">
+              <i data-lucide="store" class="w-3.5 h-3.5 shrink-0"></i>
+              <span class="truncate">${escapeHtml(prod.store_name)}</span>
+            </div>
+            ${distanceBadge(prod)}
           </div>
 
           ${prod.description ? `<p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mt-2">${escapeHtml(prod.description)}</p>` : ''}
@@ -1363,10 +1412,13 @@ function renderPromotions() {
             <span class="text-xs text-slate-400 truncate max-w-[120px]">${escapeHtml(p.category_name || '')}</span>
           </div>
 
-          <h3 class="text-sm font-semibold text-slate-600 dark:text-slate-400 flex items-center gap-1 truncate mb-1">
-            <i data-lucide="store" class="w-3.5 h-3.5 text-slate-400"></i>
-            ${escapeHtml(p.store_name)}
-          </h3>
+          <div class="flex items-center justify-between gap-1 mb-1">
+            <h3 class="text-sm font-semibold text-slate-600 dark:text-slate-400 flex items-center gap-1 truncate">
+              <i data-lucide="store" class="w-3.5 h-3.5 text-slate-400 shrink-0"></i>
+              <span class="truncate">${escapeHtml(p.store_name)}</span>
+            </h3>
+            ${distanceBadge(p)}
+          </div>
 
           <h4 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors line-clamp-2">
             ${escapeHtml(p.product_name)}
@@ -1674,7 +1726,7 @@ async function fetchGlobalProducts(page = 1) {
         city: cityFilter && cityFilter !== '全部' ? cityFilter : '',
         promo: sortMode === 'promo_only',
         location: APP_STATE.locationFilter,
-        limit: 100000
+        limit: 500
       });
       if (sequence === globalSearchSequence) {
         APP_STATE.allProducts = rows;
@@ -1686,157 +1738,37 @@ async function fetchGlobalProducts(page = 1) {
     }
   }
 
-  // Legacy normalized SQL path is deliberately disabled for packed-v1.
-  if (false && window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
-    let whereClauses = ["p.price >= 1", geo.where];
-    if (rawSearch) {
-      const safeKw = rawSearch.replace(/'/g, "''");
-      whereClauses.push(`(p.product_name LIKE '%${safeKw}%' OR s.name LIKE '%${safeKw}%' OR p.category LIKE '%${safeKw}%')`);
-    }
-    if (cityFilter && cityFilter !== '全部') {
-      const safeCity = cityFilter.replace(/'/g, "''");
-      whereClauses.push(`(s.city LIKE '%${safeCity}%' OR s.locality LIKE '%${safeCity}%' OR s.address LIKE '%${safeCity}%')`);
-    }
-    if (sortMode === 'promo_only') {
-      whereClauses.push(`p.promo_type != '' AND p.promo_type != '無'`);
-    }
-
-    let orderSql = "ORDER BY s.rating DESC NULLS LAST, p.price ASC";
-    if (sortMode === 'price_asc') orderSql = "ORDER BY p.price ASC";
-    else if (sortMode === 'price_desc') orderSql = "ORDER BY p.price DESC";
-    else if (sortMode === 'name_asc') orderSql = "ORDER BY p.product_name ASC";
-    else if (sortMode === 'promo_first') orderSql = "ORDER BY CASE WHEN p.promo_type != '' AND p.promo_type != '無' THEN 0 ELSE 1 END, s.rating DESC NULLS LAST";
-
-    const fetchLimit = limit + 1;
-    const sql = `
-      SELECT p.product_uuid as product_id, p.store_uuid as store_id, s.name as store_name,
-             p.category as category_name, p.product_name, p.price, p.quantity,
-             p.promo_type, p.effective_price as eff_price, p.description,
-             p.order_url as order_action_url, s.rating as rating_value, s.review_count,
-             s.locality, s.address as street_address, s.city, s.latitude, s.longitude,
-             ${geo.distance} as distance_km, 1 as is_open, p.last_seen as crawled_time
-      FROM products p
-      JOIN stores s ON p.store_uuid = s.store_uuid
-      WHERE ${whereClauses.join(' AND ')}
-      ${orderSql}
-      LIMIT ${fetchLimit} OFFSET ${offset}
-    `;
-
+  // 2. DuckDB WASM 搜尋
+  if (APP_STATE.isDuckDBReady && window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_DUCKDB) {
     try {
-      const rows = await executeTursoQuery(sql);
-      if (rows && sequence === globalSearchSequence) {
-        const hasNextPage = rows.length > limit;
-        const pageRows = rows.slice(0, limit).map(p => ({
-          ...p,
-          price: Number(p.price || 0),
-          quantity: Number(p.quantity || 1),
-          eff_price: Number(p.eff_price || p.price || 0),
-          rating_value: p.rating_value !== undefined ? Number(p.rating_value) : null,
-          review_count: p.review_count ? Number(p.review_count) : 0,
-          latitude: Number(p.latitude),
-          longitude: Number(p.longitude),
-          distance_km: p.distance_km === null ? null : Number(p.distance_km)
-        }));
-
-        APP_STATE.globalProducts = pageRows;
-        APP_STATE.globalHasNext = hasNextPage;
-        APP_STATE.globalTotalPages = hasNextPage ? Math.max(page + 1, APP_STATE.globalTotalPages || 1) : page;
-        APP_STATE.globalTotalItems = hasNextPage ? `${page * limit}+` : `${(page - 1) * limit + pageRows.length}`;
-
-        renderGlobalProducts();
+      const ok = await executeDuckDBGlobalSearch(page, controller.signal);
+      if (!ok || controller.signal.aborted || sequence !== globalSearchSequence) {
         return;
       }
-    } catch (err) {
-      console.warn('Turso 搜尋失敗，切換後續搜尋引擎:', err);
-    }
-  }
-
-  // 2. DuckDB 尚未就緒或不可用時，立即執行極速本地記憶體快照檢索 (0ms 延遲)
-  if (!DUCKDB_READY || !DUCKDB_CONN) {
-    executeInMemoryGlobalSearch(page);
-    return;
-  }
-
-  // 2. 決定此縣市所對應的 Parquet 切片
-  let targetTable = 'taiwan_catalog.parquet';
-  if (cityFilter && cityFilter !== '全部' && CITY_PARTITION_MAP[cityFilter]) {
-    targetTable = CITY_PARTITION_MAP[cityFilter];
-  }
-
-  // 3. 每次條件改變都先套用本地篩選，絕不可在湖倉查詢期間繼續顯示上一個
-  // 關鍵字的結果。湖倉完成後會再以完整資料覆蓋。
-  executeInMemoryGlobalSearch(page);
-  if (rawSearch && APP_STATE.globalProducts.length === 0) {
-    renderGlobalSearchPending(rawSearch);
-  }
-
-  // 4. 動態掛載縣市切片並執行全量 DuckDB SQL 查詢 (100% 完整百萬品庫)
-  try {
-    const ok = await ensureParquetRegistered(targetTable);
-    if (!ok || controller.signal.aborted || sequence !== globalSearchSequence) {
-      if (!ok) executeInMemoryGlobalSearch(page);
       return;
+    } catch (e) {
+      if (controller.signal.aborted) return;
+      console.warn('DuckDB WASM 查詢失敗，退回記憶體快照比對:', e);
     }
+  }
 
-    let whereClauses = ["price >= 1"];
-
-    // 若為全台總表或 other 分區，加入縣市行政區 LIKE 條件
-    if (cityFilter && cityFilter !== '全部') {
-      if (targetTable === 'taiwan_catalog.parquet' || targetTable === 'catalog_other.parquet') {
-        const cityClause = buildCitySqlCondition(cityFilter);
-        if (cityClause) whereClauses.push(cityClause);
-      }
-    }
-
-    if (sortMode === 'promo_only') {
-      whereClauses.push(`promo_type != '無' AND promo_type != ''`);
-    }
-
-    if (rawSearch) {
-      const kwClause = buildKeywordSqlCondition(rawSearch);
-      if (kwClause) whereClauses.push(`(${kwClause})`);
-    }
-
-    const whereSql = whereClauses.join(" AND ");
-
-    let orderSql = "";
-    if (sortMode === 'price_asc') orderSql = "ORDER BY eff_price ASC, rating_value DESC NULLS LAST";
-    else if (sortMode === 'price_desc') orderSql = "ORDER BY eff_price DESC, rating_value DESC NULLS LAST";
-    else if (sortMode === 'name_asc') orderSql = "ORDER BY product_name ASC, rating_value DESC NULLS LAST";
-    else if (sortMode === 'promo_first') orderSql = "ORDER BY CASE WHEN promo_type != '無' AND promo_type != '' THEN 0 ELSE 1 END, rating_value DESC NULLS LAST, eff_price ASC";
-    else orderSql = "ORDER BY rating_value DESC NULLS LAST, eff_price ASC";
-
-    const fetchLimit = limit + 1;
-    const sql = `SELECT product_id, store_id, store_name, category_name, product_name, price, quantity, promo_type, eff_price, description, order_action_url, rating_value, review_count, locality, street_address, city, is_open, crawled_time ` +
-      `FROM '${targetTable}' ` +
-      `WHERE ${whereSql} ${orderSql} LIMIT ${fetchLimit} OFFSET ${offset}`;
-
-    const dataResult = await DUCKDB_CONN.query(sql);
-
-    if (sequence !== globalSearchSequence) return;
-
-    const allRows = convertArrowTableToObjects(dataResult);
-    const hasNextPage = allRows.length > limit;
-    const pageRows = allRows.slice(0, limit);
-
-    APP_STATE.globalProducts = pageRows;
-    APP_STATE.globalHasNext = hasNextPage;
-    APP_STATE.globalTotalPages = hasNextPage ? Math.max(page + 1, APP_STATE.globalTotalPages || 1) : page;
-    APP_STATE.globalTotalItems = hasNextPage ? `${page * limit}+` : `${(page - 1) * limit + pageRows.length}`;
-
-    renderGlobalProducts();
-  } catch (err) {
-    if (sequence !== globalSearchSequence) return;
-    console.warn('DuckDB 湖倉查詢未果，切換為本地記憶體即時檢索:', err);
+  // 3. Fallback: 記憶體快照比對
+  if (sequence === globalSearchSequence) {
     executeInMemoryGlobalSearch(page);
   }
 }
 
-function renderGlobalSearchPending(rawSearch) {
+function changeGlobalPage(page) {
+  fetchGlobalProducts(page);
+  smoothScrollToTab('tab-global-search');
+}
+
+function renderGlobalLoadingState(rawSearch) {
   const container = document.getElementById('global-products-grid');
   if (!container) return;
+  container.style.opacity = '0.5';
   container.innerHTML = `
-    <div class="col-span-1 md:col-span-2 lg:col-span-3 py-16 text-center" role="status" aria-live="polite">
+    <div class="col-span-1 md:col-span-2 lg:col-span-3 py-16 text-center">
       <div class="w-10 h-10 rounded-full border-4 border-emerald-100 border-t-emerald-500 animate-spin mx-auto mb-3"></div>
       <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">正在搜尋完整商品庫</h3>
       <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">搜尋「${escapeHtml(rawSearch)}」中，找到結果後會立即更新</p>
@@ -1859,13 +1791,23 @@ function renderGlobalProducts() {
   }
 
   if (!items || items.length === 0) {
+    let emptyHint = '請嘗試縮短關鍵字、切換縣市為「全台灣」或選擇不同排序條件';
+    if (APP_STATE.locationFilter.enabled) {
+      const rawSearch = (APP_STATE.filters.globalSearch || '').toLowerCase();
+      if (rawSearch.includes('costco') || rawSearch.includes('好市多')) {
+        emptyHint = `目前鎖定範圍 ${APP_STATE.locationFilter.radiusKm} KM 內無 Costco 分店。<br><span class="text-emerald-600 dark:text-emerald-400 font-semibold">💡 最近的「Costco 好市多 北投店」距離約 5.95 KM</span>，建議將上方範圍擴大至 6 KM 或點選「顯示全台」！`;
+      } else {
+        emptyHint = `目前鎖定座標周圍 ${APP_STATE.locationFilter.radiusKm} KM 內查無相符商品，請嘗試將上方範圍公里數調大，或點選「顯示全台」。`;
+      }
+    }
+
     container.innerHTML = `
       <div class="col-span-1 md:col-span-2 lg:col-span-3 py-16 text-center">
         <div class="w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 mx-auto mb-3">
           <i data-lucide="search-x" class="w-8 h-8"></i>
         </div>
         <h3 class="text-base font-bold text-slate-800 dark:text-slate-200">查無相符商品</h3>
-        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">請嘗試縮短關鍵字、切換縣市為「全台灣」或選擇不同排序條件</p>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">${emptyHint}</p>
       </div>
     `;
     renderPaginationComponent({
@@ -1932,6 +1874,7 @@ function renderGlobalProducts() {
                 ${escapeHtml(p.city)}
               </span>
             ` : ''}
+            ${distanceBadge(p)}
             ${hasQtyPromo ? `
               <span class="text-[11px] text-slate-400 dark:text-slate-500 font-mono">
                 (標價 $${Math.round(p.price)} 共 ${promoInfo.totalQty} 件)

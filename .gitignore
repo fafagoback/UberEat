@@ -75,3 +75,4 @@ web/data/*.parquet
 *.tar
 temp_all_menu_lake/
 packaged_snapshot/
+.prototype-data/
