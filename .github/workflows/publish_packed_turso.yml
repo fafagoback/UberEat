@@ -10,7 +10,7 @@ on:
 
 permissions:
   actions: read
-  contents: read
+  contents: write
 
 concurrency:
   group: ubereats-packed-publish
@@ -100,3 +100,21 @@ jobs:
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
         run: node scripts/verify_uploaded_packed_turso.mjs packed-serving.db
+      - name: Verify browser read-only credentials
+        env:
+          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
+          TURSO_READONLY_TOKEN: ${{ steps.turso.outputs.readonly_token }}
+        run: |
+          TURSO_AUTH_TOKEN="$TURSO_READONLY_TOKEN" node scripts/verify_uploaded_packed_turso.mjs packed-serving.db
+      - name: Switch production web config to uploaded database
+        env:
+          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
+          TURSO_READONLY_TOKEN: ${{ steps.turso.outputs.readonly_token }}
+        run: |
+          node scripts/update_web_turso_config.mjs web/config.js
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add web/config.js
+          git diff --cached --quiet && exit 0
+          git commit -m "deploy: switch web to rebuilt Turso database"
+          git push origin HEAD:main

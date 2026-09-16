@@ -62,10 +62,12 @@ if(!database){
 }
 
 const auth=await api(`/organizations/${encodeURIComponent(slug)}/databases/${encodeURIComponent(targetName)}/auth/tokens?authorization=full-access`,{method:'POST'});
+const readonlyAuth=await api(`/organizations/${encodeURIComponent(slug)}/databases/${encodeURIComponent(targetName)}/auth/tokens?authorization=read-only`,{method:'POST'});
 const url=`libsql://${database.Hostname}`;
 console.log(`::add-mask::${auth.jwt}`);
+console.log(`::add-mask::${readonlyAuth.jwt}`);
 const output=process.env.GITHUB_OUTPUT;
 if(!output) throw new Error('GITHUB_OUTPUT is required');
 const fs=await import('node:fs');
-fs.appendFileSync(output,`database_name=${targetName}\ndatabase_url=${url}\nauth_token=${auth.jwt}\norganization=${slug}\n`);
+fs.appendFileSync(output,`database_name=${targetName}\ndatabase_url=${url}\nauth_token=${auth.jwt}\nreadonly_token=${readonlyAuth.jwt}\norganization=${slug}\n`);
 if(process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,`\n### Isolated Turso rebuild target\n- Organization: \`${slug}\`\n- Database: \`${targetName}\`\n- URL: \`${url}\`\n`);
