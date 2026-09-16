@@ -1,6 +1,7 @@
 const token=process.env.TURSO_PLATFORM_TOKEN;
 const targetName=process.env.TURSO_REBUILD_NAME||'ubereats-rebuilt-v10';
 const resetTarget=process.env.TURSO_RESET_TARGET==='1';
+const databaseUpload=process.env.TURSO_DATABASE_UPLOAD==='1';
 const currentHost=String(process.env.TURSO_DATABASE_URL||'').replace(/^libsql:\/\//,'').replace(/^https?:\/\//,'').split('/')[0];
 if(!token) throw new Error('TURSO_PLATFORM_TOKEN is required');
 
@@ -39,10 +40,14 @@ try{
 
 if(!database){
   const result=await api(`/organizations/${encodeURIComponent(slug)}/databases`,{
-    method:'POST',body:JSON.stringify({name:targetName,group:selected.group})
+    method:'POST',body:JSON.stringify({
+      name:targetName,
+      group:selected.group,
+      ...(databaseUpload?{seed:{type:'database_upload'}}:{})
+    })
   });
   database=result.database;
-  console.log(`Created empty isolated rebuild target: ${targetName}`);
+  console.log(`Created isolated rebuild target: ${targetName}${databaseUpload?' (database upload)':''}`);
 }
 
 const auth=await api(`/organizations/${encodeURIComponent(slug)}/databases/${encodeURIComponent(targetName)}/auth/tokens?authorization=full-access`,{method:'POST'});

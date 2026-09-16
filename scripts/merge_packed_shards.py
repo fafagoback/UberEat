@@ -47,7 +47,16 @@ def main():
     chunks=dst.execute('select count(*) from store_bundles').fetchone()[0]
     info={'format':1,'buckets':bucket_count,'chunks':chunks,'products':totals['products'],'max_raw_bundle':max_raw,'max_compressed_bundle':max_blob,'source_counts':dict(totals),'shards':len(files)}
     for k,v in info.items(): dst.execute('insert into metadata values(?,?)',(k,json.dumps(v,ensure_ascii=False,separators=(',',':'))))
-    dst.commit(); dst.execute('vacuum'); dst.close()
+    dst.commit(); dst.execute('vacuum')
+    # Turso's database-upload endpoint requires WAL mode. There are no pending
+    # writes after VACUUM, but checkpoint explicitly so the uploaded main file
+    # is complete and does not depend on a sidecar WAL file.
+    mode=dst.execute('pragma journal_mode=wal').fetchone()[0]
+    if mode.lower()!='wal': raise RuntimeError(f'failed to enable WAL mode: {mode}')
+    dst.execute('pragma wal_checkpoint(truncate)')
+    integrity=dst.execute('pragma integrity_check').fetchone()[0]
+    if integrity!='ok': raise RuntimeError(f'packed database integrity check failed: {integrity}')
+    dst.close()
     for src in sources: src.close()
     print(json.dumps({**info,'stores':next_store,'database_bytes':out.stat().st_size,'packed_rows':next_store+chunks+bucket_count+1+len(info)},indent=2))
 
