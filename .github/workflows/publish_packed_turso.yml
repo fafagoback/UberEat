@@ -2,6 +2,15 @@ name: Build and Publish Packed Turso
 
 on:
   workflow_dispatch:
+    inputs:
+      reuse_run_id:
+        description: Existing run ID whose packed shard artifacts should be reused
+        required: false
+        type: string
+
+permissions:
+  actions: read
+  contents: read
 
 concurrency:
   group: ubereats-packed-publish
@@ -9,6 +18,7 @@ concurrency:
 
 jobs:
   pack-shards:
+    if: ${{ inputs.reuse_run_id == '' }}
     name: Pack shard (${{ matrix.shard }}/15)
     runs-on: ubuntu-latest
     timeout-minutes: 90
@@ -40,6 +50,7 @@ jobs:
   merge-and-publish:
     name: Merge, validate, and publish packed database
     needs: pack-shards
+    if: ${{ always() && (needs.pack-shards.result == 'success' || inputs.reuse_run_id != '') }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
@@ -49,6 +60,8 @@ jobs:
       - run: pip install msgpack zstandard
       - uses: actions/download-artifact@v8.0.1
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ inputs.reuse_run_id || github.run_id }}
           pattern: packed-*
           path: packed-shards
       - name: Merge packed shards
