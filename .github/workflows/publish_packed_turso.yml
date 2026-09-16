@@ -81,7 +81,7 @@ jobs:
             -X POST "https://${host}/v1/upload" \
             -H "Authorization: Bearer ${TURSO_AUTH_TOKEN}" \
             -H "Content-Length: ${size}" \
-            --data-binary @packed-serving.db
+            --upload-file packed-serving.db
       - name: Verify uploaded database
         env:
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
