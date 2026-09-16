@@ -19,8 +19,19 @@ for(const organization of organizations){
   const current=(listing.databases||[]).find(database=>database.Hostname===currentHost);
   if(current){selected={organization,group:current.group||'default'};break;}
 }
+// The source database may already have been deleted. Its hostname still ends
+// with the owning organization slug, so use that stable part as a fallback.
+if(!selected&&currentHost){
+  const owner=organizations.find(organization=>
+    currentHost===`${organization.slug}.turso.io`||
+    currentHost.endsWith(`-${organization.slug}.turso.io`));
+  if(owner){
+    selected={organization:owner,group:'default'};
+    console.log(`Selected organization ${owner.slug} from the deleted database hostname`);
+  }
+}
 if(!selected){
-  if(organizations.length!==1) throw new Error('Unable to select Turso organization from the current database URL');
+  if(organizations.length!==1) throw new Error('Unable to select Turso organization from the database hostname');
   selected={organization:organizations[0],group:'default'};
 }
 
