@@ -113,7 +113,7 @@ function intersect(groups) {
 }
 
 export function distanceKm(a, b, c, d) {
-  const R = 6371, p = Math.PI / 180;
+  const R = 6371.0088, p = Math.PI / 180;
   const x = (c - a) * p, y = (d - b) * p;
   const q = Math.sin(x / 2) ** 2 + Math.cos(a * p) * Math.cos(c * p) * Math.sin(y / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(q));
@@ -255,7 +255,10 @@ async function productsFromRefs(refs, location, limit = 50000) {
 
   if (location?.enabled) {
     const lat = Number(location.latitude), lon = Number(location.longitude), r = Number(location.radiusKm);
-    const dy = r / 111.32, dx = r / Math.max(1, 111.32 * Math.cos(lat * Math.PI / 180));
+    // 預先過濾外接矩形 (Bounding Box)，加 5% 安全裕度避免地表橢球曲率造成邊界誤切
+    const dy = (r * 1.05) / 110.5;
+    const maxLat = Math.min(89, Math.abs(lat) + dy);
+    const dx = (r * 1.05) / Math.max(1, 111.32 * Math.cos(maxLat * Math.PI / 180));
     const validStoreIds = [];
 
     // 針對搜尋命中的候選店家直接進行座標與精確距離測算，不再盲取全區前 5000 家

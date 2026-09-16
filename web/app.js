@@ -334,7 +334,7 @@ function calculateDistanceKm(latitude, longitude) {
   const dLat = toRad(lat - filter.latitude);
   const dLon = toRad(lon - filter.longitude);
   const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(filter.latitude)) * Math.cos(toRad(lat)) * Math.sin(dLon / 2) ** 2;
-  return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return 6371.0088 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
 function applyLocationFilter(items) {
