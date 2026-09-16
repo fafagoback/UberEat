@@ -426,110 +426,46 @@ async function executeTursoQuery(sql) {
   }
 }
 
+let PACKED_TURSO_CLIENT = null;
+async function getPackedTursoClient() {
+  if (!PACKED_TURSO_CLIENT) PACKED_TURSO_CLIENT = await import('./packed-turso.js');
+  return PACKED_TURSO_CLIENT;
+}
+
 async function loadFromTurso() {
-  console.log('⚡ [Turso] 正在直連 Turso 取得即時大盤資料庫...');
+  console.log('⚡ [Turso] 正在載入 packed serving database...');
   try {
-    const geo = buildLocationSql('s');
-    const statsRows = await executeTursoQuery(`
-      SELECT 
-        count(DISTINCT s.store_uuid) as total_stores,
-        count(DISTINCT p.product_uuid) as total_products,
-        count(DISTINCT CASE WHEN p.promo_type != '' AND p.promo_type != '無' THEN p.product_uuid END) as promotions_count,
-        count(DISTINCT CASE WHEN p.price > p.effective_price AND p.effective_price > 0 AND ((p.price - p.effective_price) * 100.0 / p.price) >= 30 THEN p.product_uuid END) as big_discounts_count,
-        max(CASE WHEN p.price > p.effective_price THEN p.price - p.effective_price ELSE 0 END) as max_savings_twd,
-        (SELECT max(last_seen) FROM products) as latest_batch
-      FROM stores s
-      LEFT JOIN products p ON p.store_uuid = s.store_uuid
-      WHERE ${geo.where}
-    `);
-
-    if (!statsRows || statsRows.length === 0) return false;
-
-    const s = statsRows[0];
-    const totalStores = Number(s.total_stores || 0);
-    const totalProducts = Number(s.total_products || 0);
-    const promoCount = Number(s.promotions_count || 0);
+    const client = await getPackedTursoClient();
+    const packed = await client.loadPackedDashboard(APP_STATE.locationFilter);
+    const counts = packed.meta.source_counts || {};
+    const totalStores = Number(counts.stores || packed.stores.length || 0);
+    const totalProducts = Number(counts.products || packed.meta.products || 0);
 
     const statsData = {
       status: 'success',
-      latest_batch: s.latest_batch || '即時連線',
-      latest_batch_formatted: s.latest_batch ? s.latest_batch.replace('T', ' ').substring(0, 16) : '即時更新',
+      latest_batch: 'packed-v1',
+      latest_batch_formatted: 'Packed 即時資料庫',
       total_stores: totalStores,
       total_monitored_stores: totalStores,
       total_products: totalProducts,
       total_monitored_products: totalProducts,
-      big_discounts_count: Number(s.big_discounts_count || 0),
-      new_stores_count: totalStores,
-      new_products_count: totalProducts,
-      promotions_count: promoCount,
-      max_savings_twd: Math.round(Number(s.max_savings_twd || 0))
+      big_discounts_count: 0,
+      new_stores_count: packed.stores.length,
+      new_products_count: 0,
+      promotions_count: 0,
+      max_savings_twd: 0
     };
     updateStatsUI(statsData);
-
-    const [storesRows, prodsRows] = await Promise.all([
-      executeTursoQuery(`
-        SELECT s.store_uuid as store_id, s.name as store_name, s.rating as rating_value,
-               s.review_count, s.locality, s.address as street_address, s.city,
-               s.latitude, s.longitude, ${geo.distance} as distance_km,
-               s.order_url as order_action_url,
-               1 as is_open
-        FROM stores s
-        WHERE s.name != '' AND ${geo.where}
-        ORDER BY ${geo.order} s.rating DESC NULLS LAST, s.review_count DESC
-        LIMIT ${APP_STATE.locationFilter.enabled ? 5000 : 200}
-      `),
-      executeTursoQuery(`
-        SELECT p.product_uuid as product_id, p.store_uuid as store_id, s.name as store_name,
-               p.product_name, p.category as category_name, p.description,
-               p.price, p.quantity, p.promo_type, p.effective_price as eff_price,
-               p.order_url as order_action_url,
-               s.rating as rating_value, s.review_count, s.locality, s.address as street_address,
-               s.city, s.latitude, s.longitude, ${geo.distance} as distance_km,
-               p.last_seen as crawled_time
-        FROM products p
-        JOIN stores s ON p.store_uuid = s.store_uuid
-        WHERE ${geo.where}
-        ORDER BY ${geo.order} p.first_seen DESC
-        LIMIT ${APP_STATE.locationFilter.enabled ? 5000 : 200}
-      `)
+    APP_STATE.newStores = packed.stores;
+    APP_STATE.allProducts = packed.products;
+    const [newProducts,promotions,discounts] = await Promise.all([
+      client.searchPacked({newOnly:true,location:APP_STATE.locationFilter,limit:1000}),
+      client.searchPacked({promo:true,location:APP_STATE.locationFilter,limit:1000}),
+      client.searchPacked({minDiscount:30,location:APP_STATE.locationFilter,limit:1000})
     ]);
-
-    if (storesRows) {
-      APP_STATE.newStores = storesRows.map(r => ({
-        ...r,
-        rating_value: r.rating_value !== undefined ? Number(r.rating_value) : null,
-        review_count: r.review_count ? Number(r.review_count) : 0,
-        latitude: Number(r.latitude),
-        longitude: Number(r.longitude),
-        distance_km: r.distance_km === null ? null : Number(r.distance_km),
-        total_menu_items: 0
-      }));
-    }
-
-    if (prodsRows) {
-      const formattedProds = prodsRows.map(p => ({
-        ...p,
-        price: Number(p.price || 0),
-        quantity: Number(p.quantity || 1),
-        eff_price: Number(p.eff_price || p.price || 0),
-        rating_value: p.rating_value !== undefined ? Number(p.rating_value) : null,
-        review_count: p.review_count ? Number(p.review_count) : 0,
-        latitude: Number(p.latitude),
-        longitude: Number(p.longitude),
-        distance_km: p.distance_km === null ? null : Number(p.distance_km)
-      }));
-
-      APP_STATE.allProducts = formattedProds;
-      APP_STATE.newProducts = formattedProds.slice(0, 100);
-      APP_STATE.promotions = formattedProds.filter(p => p.promo_type && p.promo_type !== '無');
-      APP_STATE.rawDiscounts = formattedProds.filter(p => p.price > p.eff_price).map(p => ({
-        ...p,
-        original_price: p.price,
-        current_price: p.eff_price,
-        discount_pct: Math.round(((p.price - p.eff_price) / p.price) * 100),
-        savings_amount: Math.round(p.price - p.eff_price)
-      }));
-    }
+    APP_STATE.newProducts = newProducts;
+    APP_STATE.promotions = promotions;
+    APP_STATE.rawDiscounts = discounts;
 
     await fetchDiscounts(1);
     await fetchNewStores(1);
@@ -1729,8 +1665,29 @@ async function fetchGlobalProducts(page = 1) {
     return;
   }
 
-  // 1. 若啟用 Turso 直連，優先以 Turso 雲端資料庫進行極速模糊搜尋
+  // 1. Packed Turso inverted index + bundle reader.
   if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
+    try {
+      const client = await getPackedTursoClient();
+      const rows = await client.searchPacked({
+        keyword: rawSearch,
+        city: cityFilter && cityFilter !== '全部' ? cityFilter : '',
+        promo: sortMode === 'promo_only',
+        location: APP_STATE.locationFilter,
+        limit: 5000
+      });
+      if (sequence === globalSearchSequence) {
+        APP_STATE.allProducts = rows;
+        executeInMemoryGlobalSearch(page);
+        return;
+      }
+    } catch (err) {
+      console.warn('Packed Turso 搜尋失敗，切換後續搜尋引擎:', err);
+    }
+  }
+
+  // Legacy normalized SQL path is deliberately disabled for packed-v1.
+  if (false && window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
     let whereClauses = ["p.price >= 1", geo.where];
     if (rawSearch) {
       const safeKw = rawSearch.replace(/'/g, "''");
@@ -2033,38 +1990,17 @@ async function showPriceHistoryModal(storeUuid, productId, productName, storeNam
 
   let history = (APP_STATE.historyMap && APP_STATE.historyMap[productId]) ? [...APP_STATE.historyMap[productId]] : [];
 
-  // 若啟用 Turso 直連，向 Turso 查詢該商品在 events 中的所有歷史異動紀錄
+  // Packed DB: events live inside the selected store bundle.
   if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO && (storeUuid || productId)) {
     try {
-      const safeStore = String(storeUuid || '').replace(/'/g, "''");
-      const safeProd = String(productId || '').replace(/'/g, "''");
-      let filter = "";
-      if (safeStore && safeProd) filter = `store_uuid = '${safeStore}' AND product_uuid = '${safeProd}'`;
-      else if (safeProd) filter = `product_uuid = '${safeProd}'`;
-
-      if (filter) {
-        const events = await executeTursoQuery(`
-          SELECT event_time, new_state, old_state
-          FROM events
-          WHERE ${filter}
-          ORDER BY event_time ASC
-          LIMIT 50
-        `);
-        if (events && events.length > 0) {
-          history = events.map(e => {
-            const state = JSON.parse(e.new_state || e.old_state || '{}');
-            return {
-              crawled_time: e.event_time,
-              price: Number(state.price || 0),
-              eff_price: Number(state.effective_price || state.price || 0),
-              quantity: Number(state.quantity || 1),
-              promo_type: state.promo_type || '無'
-            };
-          });
-        }
-      }
+      const client = await getPackedTursoClient();
+      const events = await client.packedHistory(storeUuid, productId);
+      if (events.length) history = events.map(e => {
+        const state = JSON.parse(e.new_state || e.old_state || '{}');
+        return {crawled_time:e.event_time,price:Number(state.price||0),eff_price:Number(state.effective_price||state.price||0),quantity:Number(state.quantity||1),promo_type:state.promo_type||'無'};
+      });
     } catch (err) {
-      console.warn('Turso 歷史記錄查詢失敗:', err);
+      console.warn('Packed Turso 歷史記錄查詢失敗:', err);
     }
   }
 

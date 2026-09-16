@@ -72,16 +72,17 @@ test('location filter is persisted and defaults to five kilometers', () => {
   assert.match(source, /localStorage\.removeItem\(LOCATION_STORAGE_KEY/);
 });
 
-test('Turso statistics and catalog queries share the store location condition', () => {
+test('packed Turso dashboard passes the active location to every dataset query', () => {
   const helper = source.slice(source.indexOf('async function loadFromTurso'), source.indexOf('// -----------------------------------------------------------------------------\n// 1.'));
-  assert.match(helper, /const geo = buildLocationSql\('s'\)/);
-  assert.match(helper, /WHERE \$\{geo\.where\}/);
-  assert.match(helper, /s\.latitude, s\.longitude/);
-  assert.match(helper, /distance_km/);
+  assert.match(helper, /loadPackedDashboard\(APP_STATE\.locationFilter\)/);
+  assert.match(helper, /newOnly:true,location:APP_STATE\.locationFilter/);
+  assert.match(helper, /promo:true,location:APP_STATE\.locationFilter/);
+  assert.match(helper, /minDiscount:30,location:APP_STATE\.locationFilter/);
 });
 
 test('global Turso search treats an active location as a server query', () => {
   const helper = source.slice(source.indexOf('async function fetchGlobalProducts'), source.indexOf('function renderGlobalProducts'));
   assert.match(helper, /APP_STATE\.locationFilter\.enabled/);
-  assert.match(helper, /let whereClauses = \["p\.price >= 1", geo\.where\]/);
+  assert.match(helper, /client\.searchPacked/);
+  assert.match(helper, /location: APP_STATE\.locationFilter/);
 });

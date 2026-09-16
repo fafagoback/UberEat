@@ -2,6 +2,7 @@
 from __future__ import annotations
 import argparse, hashlib, json, sqlite3
 from collections import defaultdict
+from datetime import datetime, timedelta
 from pathlib import Path
 import msgpack, zstandard as zstd
 from prototype_pack_db import SCHEMA, packed
@@ -35,11 +36,34 @@ def main():
             agg=batch_agg[row[0]]; agg[0]=row[1]; agg[1]+=row[2]; agg[2]+=row[3]; agg[3]+=row[4]; agg[4]+=row[5]
         for row in aux['metadata']['rows']: metadata.setdefault(row[0],row[1])
         for t,v in info['source_tables'].items(): totals[t]+=v['count']
+    # Keep the compact directory queryable for browser-side geo filtering. The
+    # full records remain compressed in store_bundles; these columns add only a
+    # few megabytes and avoid expanding the multi-million-row product table.
+    for definition in ('latitude REAL','longitude REAL','address TEXT','order_url TEXT','first_seen TEXT','last_seen TEXT'):
+        dst.execute(f'alter table store_directory add column {definition}')
+    latest=max((v[0] for v in batch_agg.values() if v[0]),default='')
+    try: cutoff=(datetime.fromisoformat(latest.replace('Z','+00:00'))-timedelta(days=7)).isoformat()
+    except ValueError: cutoff=''
+    new_refs=[]; product_offsets=defaultdict(int); product_columns={}
+    for store_id,chunk_no,payload,checksum in dst.execute('select store_id,chunk_no,payload,checksum from store_bundles order by store_id,chunk_no'):
+        value=decode((payload,checksum),dec)
+        if value.get('store') is not None:
+            store=dict(zip(value['store_columns'],value['store']))
+            product_columns[store_id]=value.get('product_columns') or []
+            dst.execute('update store_directory set latitude=?,longitude=?,address=?,order_url=?,first_seen=?,last_seen=? where store_id=?',
+                        (store.get('latitude'),store.get('longitude'),store.get('address'),store.get('order_url'),store.get('first_seen'),store.get('last_seen'),store_id))
+        product_cols=product_columns.get(store_id) or value.get('product_columns')
+        for _,arr in value.get('products',[]):
+            local_index=product_offsets[store_id]; product_offsets[store_id]+=1
+            if cutoff and product_cols and str(dict(zip(product_cols,arr)).get('first_seen') or '')>=cutoff:
+                new_refs.append((store_id<<20)|local_index)
+    new_bucket=int.from_bytes(hashlib.blake2s(b'f:new',digest_size=4).digest(),'big')%bucket_count
     for bid in range(bucket_count):
         terms=defaultdict(list)
         for src,offset in zip(sources,offsets):
             row=src.execute('select payload,checksum from search_buckets where bucket_id=?',(bid,)).fetchone(); data=decode(row,dec)
             for term,refs in data.items(): terms[term].extend((((ref>>20)+offset)<<20)|(ref&((1<<20)-1)) for ref in refs)
+        if bid==new_bucket: terms['f:new'].extend(new_refs)
         raw,blob,digest=packed(dict(terms),comp); dst.execute('insert into search_buckets values(?,?,?,?,?)',(bid,'msgpack+zstd',len(raw),digest,blob))
         if bid%128==0: print(f'merged search buckets {bid:,}/{bucket_count:,}',flush=True)
     auxiliary={'crawl_batches':{'columns':['batch_id','processed_at','stores_seen','products_seen','fallback_stores','fallback_products'],'rows':[[k,*v] for k,v in sorted(batch_agg.items())]},'metadata':{'columns':['key','value'],'rows':[[k,v] for k,v in sorted(metadata.items())]}}
