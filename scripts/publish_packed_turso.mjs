@@ -1,19 +1,112 @@
 import Database from 'better-sqlite3';
 import {createClient} from '@libsql/client';
+import {createHash} from 'node:crypto';
+
 const file=process.argv[2];
 if(!file||!process.env.TURSO_DATABASE_URL||!process.env.TURSO_AUTH_TOKEN) throw new Error('packed database path and Turso credentials required');
-const src=new Database(file,{readonly:true}); const db=createClient({url:process.env.TURSO_DATABASE_URL,authToken:process.env.TURSO_AUTH_TOKEN});
+const src=new Database(file,{readonly:true});
+const db=createClient({url:process.env.TURSO_DATABASE_URL,authToken:process.env.TURSO_AUTH_TOKEN});
 const tables=['metadata','store_directory','store_bundles','search_buckets','auxiliary_bundles'];
-const existing=await db.execute("select count(*) count from sqlite_schema where type='table' and name in ('store_directory','store_bundles','search_buckets')");
-if(Number(existing.rows[0].count)!==0) throw new Error('packed target is not empty');
-for(const {sql} of src.prepare("select sql from sqlite_schema where type='table' and sql is not null and name not like 'sqlite_%'").all()) await db.execute(sql);
+const maxRows=Number(process.env.TURSO_BATCH_ROWS||100);
+const maxBytes=Number(process.env.TURSO_BATCH_BYTES||4*1024*1024);
+const started=Date.now();
+const bytes=v=>v==null?0:Buffer.isBuffer(v)||v instanceof Uint8Array?v.byteLength:Buffer.byteLength(String(v));
+const human=n=>{const u=['B','KB','MB','GB'];let i=0;while(n>=1024&&i<u.length-1){n/=1024;i++;}return `${n.toFixed(i?1:0)} ${u[i]}`;};
+const elapsed=s=>{s=Math.max(0,Math.round(s));return `${Math.floor(s/3600)}h ${Math.floor(s%3600/60)}m ${s%60}s`;};
+
+// Bind checkpoints to the exact packed input. Packed payloads already have checksums,
+// so hashing identities and checksums avoids rereading every multi-GB blob.
+const hash=createHash('sha256');
 for(const table of tables){
-  const cols=src.prepare(`pragma table_info(${table})`).all().map(x=>x.name); let n=0;
-  for(const row of src.prepare(`select * from ${table}`).iterate()){
-    await db.execute({sql:`insert into ${table}(${cols.join(',')}) values(${cols.map(()=>'?').join(',')})`,args:cols.map(c=>row[c])});
-    if(++n%10000===0) console.log(`published ${table}: ${n.toLocaleString()}`);
-  }
-  console.log(`published ${table}: ${n.toLocaleString()}`);
+  const cols=src.prepare(`pragma table_info(${table})`).all().map(x=>x.name);
+  // build_seconds in metadata is intentionally excluded: rebuilding identical
+  // source data must produce the same resumable identity.
+  const ids=table==='metadata'?['key']:cols.filter(c=>c!=='payload');
+  hash.update(`${table}\0`);
+  for(const row of src.prepare(`select ${ids.join(',')} from ${table} order by rowid`).iterate())
+    for(const col of ids) hash.update(`${col}=${String(row[col])}\0`);
 }
-for(const table of tables){const local=src.prepare(`select count(*) n from ${table}`).get().n;const remote=Number((await db.execute(`select count(*) n from ${table}`)).rows[0].n);if(local!==remote)throw new Error(`${table} count mismatch ${local} != ${remote}`);}
-console.log('packed publish verified'); src.close(); db.close();
+const sourceId=hash.digest('hex');
+
+for(const {sql} of src.prepare("select sql from sqlite_schema where type='table' and sql is not null and name not like 'sqlite_%'").all()){
+  try{await db.execute(sql);}catch(error){if(!String(error.message||error).toLowerCase().includes('already exists'))throw error;}
+}
+await db.execute(`create table if not exists _packed_publish_progress(
+ source_id text not null,table_name text not null,last_rowid integer not null,
+ rows_done integer not null,bytes_done integer not null,updated_at text not null,
+ primary key(source_id,table_name))`);
+
+const totals={};let totalRows=0,totalBytes=0;
+for(const table of tables){
+  const cols=src.prepare(`pragma table_info(${table})`).all().map(x=>x.name);
+  const sizeSql=cols.map(c=>`coalesce(length(cast(${c} as blob)),0)`).join('+');
+  let rowCount=0,byteCount=0,batchRows=0,batchBytes=0;const batchEnds=[];
+  for(const row of src.prepare(`select rowid,${sizeSql} size from ${table} order by rowid`).iterate()){
+    if(batchRows&&(batchRows===maxRows||batchBytes+Number(row.size)>maxBytes)){
+      batchEnds.push(rowCount);batchRows=0;batchBytes=0;
+    }
+    rowCount++;byteCount+=Number(row.size);batchRows++;batchBytes+=Number(row.size);
+  }
+  if(batchRows)batchEnds.push(rowCount);
+  totals[table]={rows:rowCount,bytes:byteCount,batches:batchEnds.length,batchEnds};totalRows+=rowCount;totalBytes+=byteCount;
+}
+console.log(`source ${sourceId.slice(0,12)}: ${totalRows.toLocaleString()} rows, ${human(totalBytes)}; batch limits ${maxRows} rows/${human(maxBytes)}`);
+
+let globalRows=0,globalBytes=0;
+for(const table of tables){
+  const cols=src.prepare(`pragma table_info(${table})`).all().map(x=>x.name);
+  const insertSql=`insert or replace into ${table}(${cols.join(',')}) values(${cols.map(()=>'?').join(',')})`;
+  let saved=(await db.execute({sql:'select last_rowid,rows_done,bytes_done from _packed_publish_progress where source_id=? and table_name=?',args:[sourceId,table]})).rows[0];
+
+  // The first upgraded rerun can adopt rows written by the old non-checkpointed publisher.
+  if(!saved){
+    const remote=(await db.execute(`select count(*) n,coalesce(max(rowid),0) last_rowid from ${table}`)).rows[0];
+    const count=Number(remote.n),last=Number(remote.last_rowid);
+    if(count&&table!=='metadata'){
+      if(Number(src.prepare(`select count(*) n from ${table} where rowid<=?`).get(last).n)!==count)
+        throw new Error(`${table}: remote data is not a contiguous resumable prefix`);
+      const localLast=src.prepare(`select * from ${table} where rowid=?`).get(last);
+      const remoteLast=(await db.execute(`select * from ${table} where rowid=${last}`)).rows[0];
+      const comparable=cols.filter(c=>c!=='payload');
+      if(!localLast||!remoteLast||comparable.some(c=>String(localLast[c])!==String(remoteLast[c])))
+        throw new Error(`${table}: existing remote prefix does not match this source`);
+      let doneBytes=0;
+      for(const row of src.prepare(`select * from ${table} where rowid<=?`).iterate(last)) doneBytes+=cols.reduce((n,c)=>n+bytes(row[c]),0);
+      await db.execute({sql:'insert into _packed_publish_progress values(?,?,?,?,?,?)',args:[sourceId,table,last,count,doneBytes,new Date().toISOString()]});
+      saved={last_rowid:last,rows_done:count,bytes_done:doneBytes};
+      console.log(`${table}: adopted existing prefix ${count.toLocaleString()}/${totals[table].rows.toLocaleString()} rows`);
+    }
+    // Metadata is tiny and can contain non-deterministic build timings. Replacing
+    // it is safer and cheaper than trying to adopt an old prefix.
+  }
+
+  let last=Number(saved?.last_rowid||0),done=Number(saved?.rows_done||0),doneBytes=Number(saved?.bytes_done||0),batch=0;
+  const resumedBatches=totals[table].batchEnds.filter(end=>end<=done).length;
+  globalRows+=done;globalBytes+=doneBytes;
+  if(done)console.log(`${table}: resuming at ${done.toLocaleString()}/${totals[table].rows.toLocaleString()} rows`);
+  while(done<totals[table].rows){
+    const candidates=src.prepare(`select rowid __rowid,* from ${table} where rowid>? order by rowid limit ?`).all(last,maxRows);
+    if(!candidates.length)throw new Error(`${table}: source ended before expected row count`);
+    const chunk=[];let chunkBytes=0;
+    for(const row of candidates){
+      const size=cols.reduce((n,c)=>n+bytes(row[c]),0);
+      if(chunk.length&&chunkBytes+size>maxBytes)break;
+      chunk.push(row);chunkBytes+=size;
+    }
+    const nextLast=chunk.at(-1).__rowid,nextDone=done+chunk.length,nextBytes=doneBytes+chunkBytes;
+    const statements=chunk.map(row=>({sql:insertSql,args:cols.map(c=>row[c])}));
+    statements.push({sql:'insert or replace into _packed_publish_progress values(?,?,?,?,?,?)',args:[sourceId,table,nextLast,nextDone,nextBytes,new Date().toISOString()]});
+    await db.batch(statements,'write'); // rows and checkpoint commit atomically
+    last=nextLast;done=nextDone;doneBytes=nextBytes;batch++;globalRows+=chunk.length;globalBytes+=chunkBytes;
+    const seconds=(Date.now()-started)/1000,rate=globalBytes/Math.max(seconds,0.001),remaining=totalBytes-globalBytes;
+    const percent=totalBytes?globalBytes/totalBytes*100:globalRows/totalRows*100;
+    console.log(`${table} batch ${resumedBatches+batch}/${totals[table].batches}: ${done.toLocaleString()}/${totals[table].rows.toLocaleString()} rows | total ${percent.toFixed(2)}% (${human(globalBytes)}/${human(totalBytes)}) | ${human(rate)}/s | ETA ${elapsed(remaining/rate)}`);
+  }
+}
+
+for(const table of tables){
+  const remote=Number((await db.execute(`select count(*) n from ${table}`)).rows[0].n);
+  if(totals[table].rows!==remote)throw new Error(`${table} count mismatch ${totals[table].rows} != ${remote}`);
+}
+console.log(`packed publish verified in ${elapsed((Date.now()-started)/1000)}`);
+src.close();db.close();
