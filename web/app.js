@@ -6,6 +6,7 @@
  */
 
 const PAGE_SIZE = 50;
+const LOCATION_STORAGE_KEY = 'uber-radar-location-filter-v1';
 
 let APP_STATE = {
   isServerMode: false,
@@ -41,6 +42,12 @@ let APP_STATE = {
 
   historyMap: {},
   chartInstance: null,
+  locationFilter: {
+    latitude: null,
+    longitude: null,
+    radiusKm: 5,
+    enabled: false
+  },
   filters: {
     // Tab 1
     discountMinPct: 30,
@@ -262,6 +269,8 @@ async function initDuckDBEngine() {
 // -----------------------------------------------------------------------------
 async function bootstrap() {
   initTheme();
+  loadLocationFilter();
+  syncLocationFilterUI();
   initEventListeners();
   await loadDashboardData();
   if (window.lucide) {
@@ -269,6 +278,94 @@ async function bootstrap() {
   }
   startVersionWatcher();
   initDuckDBEngine().catch(e => console.warn('DuckDB init background error:', e));
+}
+
+function validateLocationFilter(latitude, longitude, radiusKm) {
+  if (String(latitude ?? '').trim() === '' || String(longitude ?? '').trim() === '') return '請同時輸入有效的緯度與經度。';
+  const lat = Number(latitude);
+  const lon = Number(longitude);
+  const radius = Number(radiusKm);
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return '請同時輸入有效的緯度與經度。';
+  if (lat < -90 || lat > 90) return '緯度必須介於 -90 到 90。';
+  if (lon < -180 || lon > 180) return '經度必須介於 -180 到 180。';
+  if (!Number.isFinite(radius) || radius <= 0) return '範圍公里數必須大於 0。';
+  return '';
+}
+
+function loadLocationFilter() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(LOCATION_STORAGE_KEY) || 'null');
+    if (!saved || !saved.enabled || validateLocationFilter(saved.latitude, saved.longitude, saved.radiusKm)) return;
+    APP_STATE.locationFilter = {
+      latitude: Number(saved.latitude),
+      longitude: Number(saved.longitude),
+      radiusKm: Number(saved.radiusKm),
+      enabled: true
+    };
+  } catch (e) {
+    localStorage.removeItem(LOCATION_STORAGE_KEY);
+  }
+}
+
+function saveLocationFilter() {
+  localStorage.setItem(LOCATION_STORAGE_KEY, JSON.stringify(APP_STATE.locationFilter));
+}
+
+function syncLocationFilterUI() {
+  const filter = APP_STATE.locationFilter;
+  const latInput = document.getElementById('location-latitude');
+  const lonInput = document.getElementById('location-longitude');
+  const radiusInput = document.getElementById('location-radius');
+  if (latInput) latInput.value = filter.enabled ? filter.latitude : '';
+  if (lonInput) lonInput.value = filter.enabled ? filter.longitude : '';
+  if (radiusInput) radiusInput.value = filter.radiusKm || 5;
+  const status = document.getElementById('location-filter-status');
+  if (status) status.textContent = filter.enabled
+    ? `顯示座標 ${filter.latitude.toFixed(6)}, ${filter.longitude.toFixed(6)} 周圍 ${filter.radiusKm} KM 內資料`
+    : '目前顯示全台灣資料';
+}
+
+function calculateDistanceKm(latitude, longitude) {
+  const filter = APP_STATE.locationFilter;
+  const lat = Number(latitude);
+  const lon = Number(longitude);
+  if (!filter.enabled || !Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+  const toRad = value => value * Math.PI / 180;
+  const dLat = toRad(lat - filter.latitude);
+  const dLon = toRad(lon - filter.longitude);
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(filter.latitude)) * Math.cos(toRad(lat)) * Math.sin(dLon / 2) ** 2;
+  return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function applyLocationFilter(items) {
+  if (!APP_STATE.locationFilter.enabled) return [...(items || [])];
+  return (items || []).map(item => {
+    const distanceKm = item.distance_km !== undefined && item.distance_km !== null
+      ? Number(item.distance_km)
+      : calculateDistanceKm(item.latitude, item.longitude);
+    return { ...item, distance_km: distanceKm };
+  }).filter(item => Number.isFinite(item.distance_km) && item.distance_km <= APP_STATE.locationFilter.radiusKm);
+}
+
+function buildLocationSql(alias = 's') {
+  const filter = APP_STATE.locationFilter;
+  if (!filter.enabled) return { where: '1=1', distance: 'NULL', order: '' };
+  const lat = Number(filter.latitude);
+  const lon = Number(filter.longitude);
+  const radius = Number(filter.radiusKm);
+  const latDelta = radius / 111.32;
+  const lonDelta = radius / Math.max(1, 111.32 * Math.cos(lat * Math.PI / 180));
+  const distance = `(6371.0 * 2.0 * asin(sqrt(pow(sin(((${alias}.latitude - ${lat}) * 0.017453292519943295) / 2.0), 2) + cos(${lat} * 0.017453292519943295) * cos(${alias}.latitude * 0.017453292519943295) * pow(sin(((${alias}.longitude - ${lon}) * 0.017453292519943295) / 2.0), 2))))`;
+  return {
+    where: `${alias}.latitude IS NOT NULL AND ${alias}.longitude IS NOT NULL AND ${alias}.latitude BETWEEN ${lat - latDelta} AND ${lat + latDelta} AND ${alias}.longitude BETWEEN ${lon - lonDelta} AND ${lon + lonDelta} AND ${distance} <= ${radius}`,
+    distance,
+    order: 'distance_km ASC,'
+  };
+}
+
+function distanceBadge(item) {
+  if (!APP_STATE.locationFilter.enabled || !Number.isFinite(Number(item.distance_km))) return '';
+  return `<span class="inline-flex items-center gap-1 text-[11px] font-medium text-emerald-600 dark:text-emerald-400"><i data-lucide="navigation" class="w-3 h-3"></i>${Number(item.distance_km).toFixed(1)} KM</span>`;
 }
 
 if (document.readyState === 'loading') {
@@ -332,12 +429,18 @@ async function executeTursoQuery(sql) {
 async function loadFromTurso() {
   console.log('⚡ [Turso] 正在直連 Turso 取得即時大盤資料庫...');
   try {
+    const geo = buildLocationSql('s');
     const statsRows = await executeTursoQuery(`
       SELECT 
-        (SELECT count(*) FROM stores) as total_stores,
-        (SELECT count(*) FROM products) as total_products,
-        (SELECT count(*) FROM products WHERE promo_type != '' AND promo_type != '無') as promotions_count,
+        count(DISTINCT s.store_uuid) as total_stores,
+        count(DISTINCT p.product_uuid) as total_products,
+        count(DISTINCT CASE WHEN p.promo_type != '' AND p.promo_type != '無' THEN p.product_uuid END) as promotions_count,
+        count(DISTINCT CASE WHEN p.price > p.effective_price AND p.effective_price > 0 AND ((p.price - p.effective_price) * 100.0 / p.price) >= 30 THEN p.product_uuid END) as big_discounts_count,
+        max(CASE WHEN p.price > p.effective_price THEN p.price - p.effective_price ELSE 0 END) as max_savings_twd,
         (SELECT max(last_seen) FROM products) as latest_batch
+      FROM stores s
+      LEFT JOIN products p ON p.store_uuid = s.store_uuid
+      WHERE ${geo.where}
     `);
 
     if (!statsRows || statsRows.length === 0) return false;
@@ -355,11 +458,11 @@ async function loadFromTurso() {
       total_monitored_stores: totalStores,
       total_products: totalProducts,
       total_monitored_products: totalProducts,
-      big_discounts_count: 0,
+      big_discounts_count: Number(s.big_discounts_count || 0),
       new_stores_count: totalStores,
-      new_products_count: 0,
+      new_products_count: totalProducts,
       promotions_count: promoCount,
-      max_savings_twd: 0
+      max_savings_twd: Math.round(Number(s.max_savings_twd || 0))
     };
     updateStatsUI(statsData);
 
@@ -367,12 +470,13 @@ async function loadFromTurso() {
       executeTursoQuery(`
         SELECT s.store_uuid as store_id, s.name as store_name, s.rating as rating_value,
                s.review_count, s.locality, s.address as street_address, s.city,
+               s.latitude, s.longitude, ${geo.distance} as distance_km,
                s.order_url as order_action_url,
                1 as is_open
         FROM stores s
-        WHERE s.name != ''
-        ORDER BY s.rating DESC NULLS LAST, s.review_count DESC
-        LIMIT 200
+        WHERE s.name != '' AND ${geo.where}
+        ORDER BY ${geo.order} s.rating DESC NULLS LAST, s.review_count DESC
+        LIMIT ${APP_STATE.locationFilter.enabled ? 5000 : 200}
       `),
       executeTursoQuery(`
         SELECT p.product_uuid as product_id, p.store_uuid as store_id, s.name as store_name,
@@ -380,11 +484,13 @@ async function loadFromTurso() {
                p.price, p.quantity, p.promo_type, p.effective_price as eff_price,
                p.order_url as order_action_url,
                s.rating as rating_value, s.review_count, s.locality, s.address as street_address,
-               s.city, p.last_seen as crawled_time
+               s.city, s.latitude, s.longitude, ${geo.distance} as distance_km,
+               p.last_seen as crawled_time
         FROM products p
         JOIN stores s ON p.store_uuid = s.store_uuid
-        ORDER BY p.first_seen DESC
-        LIMIT 200
+        WHERE ${geo.where}
+        ORDER BY ${geo.order} p.first_seen DESC
+        LIMIT ${APP_STATE.locationFilter.enabled ? 5000 : 200}
       `)
     ]);
 
@@ -393,6 +499,9 @@ async function loadFromTurso() {
         ...r,
         rating_value: r.rating_value !== undefined ? Number(r.rating_value) : null,
         review_count: r.review_count ? Number(r.review_count) : 0,
+        latitude: Number(r.latitude),
+        longitude: Number(r.longitude),
+        distance_km: r.distance_km === null ? null : Number(r.distance_km),
         total_menu_items: 0
       }));
     }
@@ -404,7 +513,10 @@ async function loadFromTurso() {
         quantity: Number(p.quantity || 1),
         eff_price: Number(p.eff_price || p.price || 0),
         rating_value: p.rating_value !== undefined ? Number(p.rating_value) : null,
-        review_count: p.review_count ? Number(p.review_count) : 0
+        review_count: p.review_count ? Number(p.review_count) : 0,
+        latitude: Number(p.latitude),
+        longitude: Number(p.longitude),
+        distance_km: p.distance_km === null ? null : Number(p.distance_km)
       }));
 
       APP_STATE.allProducts = formattedProds;
@@ -467,6 +579,20 @@ async function loadDashboardData() {
   // 優先嘗試從 Turso 直連讀取即時大數據
   if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
     loadedFromServer = await loadFromTurso();
+  }
+
+  // 舊的靜態快照沒有座標。範圍模式下不可回退後假裝它是附近資料。
+  if (!loadedFromServer && APP_STATE.locationFilter.enabled) {
+    APP_STATE.rawDiscounts = [];
+    APP_STATE.newStores = [];
+    APP_STATE.newProducts = [];
+    APP_STATE.promotions = [];
+    APP_STATE.allProducts = [];
+    updateStatsUI({ latest_batch_formatted: 'Turso 暫時無法連線' });
+    await Promise.all([fetchDiscounts(1), fetchNewStores(1), fetchNewProducts(1), fetchPromotions(1)]);
+    executeInMemoryGlobalSearch(1);
+    showToast('附近資料載入失敗', 'Turso 暫時無法連線，未使用不含座標的舊快照。', 'alert-triangle', 5000);
+    return;
   }
 
   // 若 Turso 未啟用或連線失敗，自動無縫回退至靜態 JSON 快照
@@ -675,7 +801,7 @@ function smoothScrollToTab(tabId) {
 async function fetchDiscounts(page = 1) {
   APP_STATE.discountsPage = page;
   const { discountMinPct, discountMinSavings, discountSort, discountCategory, discountSearch } = APP_STATE.filters;
-  let items = APP_STATE.rawDiscounts && APP_STATE.rawDiscounts.length > 0 ? APP_STATE.rawDiscounts : (APP_STATE.discounts || []);
+  let items = applyLocationFilter(APP_STATE.rawDiscounts && APP_STATE.rawDiscounts.length > 0 ? APP_STATE.rawDiscounts : (APP_STATE.discounts || []));
 
   items = items.filter(item => {
     if (!item.current_price || item.current_price <= 0) return false;
@@ -834,7 +960,7 @@ function renderDiscounts() {
 async function fetchNewStores(page = 1) {
   APP_STATE.storesPage = page;
   const { storeSearch, storeCity, storeSort } = APP_STATE.filters;
-  let items = APP_STATE.newStores || [];
+  let items = applyLocationFilter(APP_STATE.newStores || []);
 
   // 地區篩選
   if (storeCity && storeCity !== '全部') {
@@ -922,6 +1048,7 @@ function renderNewStores() {
           </h3>
 
           <div class="mt-2 space-y-1 text-xs text-slate-500 dark:text-slate-400">
+            ${distanceBadge(store)}
             <div class="flex items-center gap-1.5 truncate">
               <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400 shrink-0"></i>
               <span>${escapeHtml(store.locality || '')} ${escapeHtml(store.street_address || '')}</span>
@@ -965,7 +1092,7 @@ function renderNewStores() {
 async function fetchNewProducts(page = 1) {
   APP_STATE.productsPage = page;
   const { productSearch } = APP_STATE.filters;
-  let items = APP_STATE.newProducts || [];
+  let items = applyLocationFilter(APP_STATE.newProducts || []);
 
   if (productSearch) {
     const kw = productSearch.toLowerCase();
@@ -1206,7 +1333,7 @@ function calculateEffectivePromo(price, promoType, quantity) {
 async function fetchPromotions(page = 1) {
   APP_STATE.promosPage = page;
   const { promoSearch, promoType, promoSort } = APP_STATE.filters;
-  let items = (APP_STATE.promotions || []).filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
+  let items = applyLocationFilter(APP_STATE.promotions || []).filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
 
   // 活動類型篩選
   if (promoType && promoType !== '全部') {
@@ -1519,6 +1646,7 @@ function executeInMemoryGlobalSearch(page = 1) {
   let items = APP_STATE.allProducts && APP_STATE.allProducts.length > 0 
     ? [...APP_STATE.allProducts] 
     : [...(APP_STATE.rawDiscounts || []), ...(APP_STATE.newProducts || []), ...(APP_STATE.promotions || [])];
+  items = applyLocationFilter(items);
 
   // 2. 關鍵字多語意與品牌同義字比對
   if (rawSearch) {
@@ -1588,13 +1716,14 @@ async function fetchGlobalProducts(page = 1) {
   const sortMode = APP_STATE.filters.globalSort || 'rating_desc';
   const rawSearch = (APP_STATE.filters.globalSearch || '').trim();
   const cityFilter = APP_STATE.filters.globalCity || '全部';
+  const geo = buildLocationSql('s');
   const limit = PAGE_SIZE;
   const offset = (page - 1) * limit;
 
   // 無篩選的首屏不需要掃描 250 萬筆 Parquet。這類查詢會佔住唯一的
   // DuckDB connection，令緊接著輸入的關鍵字查詢只能排隊，看起來像搜尋失效。
   // 本地快照已有足夠的預設瀏覽資料；真正有搜尋/縣市條件時才進湖倉。
-  const requiresLakehouseQuery = Boolean(rawSearch) || (cityFilter && cityFilter !== '全部');
+  const requiresLakehouseQuery = Boolean(rawSearch) || (cityFilter && cityFilter !== '全部') || APP_STATE.locationFilter.enabled;
   if (!requiresLakehouseQuery) {
     executeInMemoryGlobalSearch(page);
     return;
@@ -1602,7 +1731,7 @@ async function fetchGlobalProducts(page = 1) {
 
   // 1. 若啟用 Turso 直連，優先以 Turso 雲端資料庫進行極速模糊搜尋
   if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
-    let whereClauses = ["p.price >= 1"];
+    let whereClauses = ["p.price >= 1", geo.where];
     if (rawSearch) {
       const safeKw = rawSearch.replace(/'/g, "''");
       whereClauses.push(`(p.product_name LIKE '%${safeKw}%' OR s.name LIKE '%${safeKw}%' OR p.category LIKE '%${safeKw}%')`);
@@ -1627,7 +1756,8 @@ async function fetchGlobalProducts(page = 1) {
              p.category as category_name, p.product_name, p.price, p.quantity,
              p.promo_type, p.effective_price as eff_price, p.description,
              p.order_url as order_action_url, s.rating as rating_value, s.review_count,
-             s.locality, s.address as street_address, s.city, 1 as is_open, p.last_seen as crawled_time
+             s.locality, s.address as street_address, s.city, s.latitude, s.longitude,
+             ${geo.distance} as distance_km, 1 as is_open, p.last_seen as crawled_time
       FROM products p
       JOIN stores s ON p.store_uuid = s.store_uuid
       WHERE ${whereClauses.join(' AND ')}
@@ -1645,7 +1775,10 @@ async function fetchGlobalProducts(page = 1) {
           quantity: Number(p.quantity || 1),
           eff_price: Number(p.eff_price || p.price || 0),
           rating_value: p.rating_value !== undefined ? Number(p.rating_value) : null,
-          review_count: p.review_count ? Number(p.review_count) : 0
+          review_count: p.review_count ? Number(p.review_count) : 0,
+          latitude: Number(p.latitude),
+          longitude: Number(p.longitude),
+          distance_km: p.distance_km === null ? null : Number(p.distance_km)
         }));
 
         APP_STATE.globalProducts = pageRows;
@@ -2067,6 +2200,47 @@ function hidePriceHistoryModal() {
 // 9. 事件監聽與控制器綁定
 // -----------------------------------------------------------------------------
 function initEventListeners() {
+  const applyLocation = async () => {
+    const latInput = document.getElementById('location-latitude');
+    const lonInput = document.getElementById('location-longitude');
+    const radiusInput = document.getElementById('location-radius');
+    const errorEl = document.getElementById('location-filter-error');
+    const error = validateLocationFilter(latInput?.value, lonInput?.value, radiusInput?.value);
+    if (error) {
+      if (errorEl) {
+        errorEl.textContent = error;
+        errorEl.classList.remove('hidden');
+      }
+      return;
+    }
+    errorEl?.classList.add('hidden');
+    APP_STATE.locationFilter = {
+      latitude: Number(latInput.value),
+      longitude: Number(lonInput.value),
+      radiusKm: Number(radiusInput.value),
+      enabled: true
+    };
+    saveLocationFilter();
+    syncLocationFilterUI();
+    await loadDashboardData();
+    showToast('範圍篩選已套用', `正在顯示 ${APP_STATE.locationFilter.radiusKm} KM 內資料`, 'map-pin', 2500);
+  };
+
+  document.getElementById('location-apply')?.addEventListener('click', applyLocation);
+  ['location-latitude', 'location-longitude', 'location-radius'].forEach(id => {
+    document.getElementById(id)?.addEventListener('keydown', event => {
+      if (event.key === 'Enter') applyLocation();
+    });
+  });
+  document.getElementById('location-clear')?.addEventListener('click', async () => {
+    APP_STATE.locationFilter = { latitude: null, longitude: null, radiusKm: 5, enabled: false };
+    localStorage.removeItem(LOCATION_STORAGE_KEY);
+    document.getElementById('location-filter-error')?.classList.add('hidden');
+    syncLocationFilterUI();
+    await loadDashboardData();
+    showToast('已清除範圍篩選', '目前顯示全台灣資料', 'map', 2500);
+  });
+
   // Tab 切換
   document.querySelectorAll('.nav-tab').forEach(tab => {
     tab.addEventListener('click', () => {

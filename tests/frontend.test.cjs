@@ -53,3 +53,35 @@ test('frontend correctly routes API endpoints to static JSON files in Jamstack m
   assert.equal(context.getApiUrl('/api/discounts?min_discount=30'), './data/discounts.json?_t=1234567890');
   assert.equal(context.getApiUrl('/api/products?q=test'), './data/products.json?_t=1234567890');
 });
+
+test('location filter validates coordinates and positive radius', () => {
+  const helper = source.slice(source.indexOf('function validateLocationFilter'), source.indexOf('function loadLocationFilter'));
+  const context = vm.createContext({Number});
+  vm.runInContext(helper, context);
+  assert.equal(context.validateLocationFilter('25.033', '121.5654', '5'), '');
+  assert.match(context.validateLocationFilter('', '121.5654', '5'), /同時輸入/);
+  assert.match(context.validateLocationFilter('91', '121.5654', '5'), /緯度/);
+  assert.match(context.validateLocationFilter('25', '181', '5'), /經度/);
+  assert.match(context.validateLocationFilter('25', '121', '0'), /大於 0/);
+});
+
+test('location filter is persisted and defaults to five kilometers', () => {
+  assert.match(source, /radiusKm:\s*5/);
+  assert.match(source, /localStorage\.setItem\(LOCATION_STORAGE_KEY/);
+  assert.match(source, /localStorage\.getItem\(LOCATION_STORAGE_KEY/);
+  assert.match(source, /localStorage\.removeItem\(LOCATION_STORAGE_KEY/);
+});
+
+test('Turso statistics and catalog queries share the store location condition', () => {
+  const helper = source.slice(source.indexOf('async function loadFromTurso'), source.indexOf('// -----------------------------------------------------------------------------\n// 1.'));
+  assert.match(helper, /const geo = buildLocationSql\('s'\)/);
+  assert.match(helper, /WHERE \$\{geo\.where\}/);
+  assert.match(helper, /s\.latitude, s\.longitude/);
+  assert.match(helper, /distance_km/);
+});
+
+test('global Turso search treats an active location as a server query', () => {
+  const helper = source.slice(source.indexOf('async function fetchGlobalProducts'), source.indexOf('function renderGlobalProducts'));
+  assert.match(helper, /APP_STATE\.locationFilter\.enabled/);
+  assert.match(helper, /let whereClauses = \["p\.price >= 1", geo\.where\]/);
+});

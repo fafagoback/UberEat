@@ -117,6 +117,38 @@
   <!-- ================================================================= -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 flex-1 w-full">
 
+    <!-- 全站共用位置篩選 -->
+    <section class="bg-white dark:bg-slate-900 p-4 sm:p-5 rounded-2xl border border-emerald-100 dark:border-emerald-950/60 shadow-sm" aria-labelledby="location-filter-title">
+      <div class="flex flex-col lg:flex-row lg:items-end gap-4">
+        <div class="lg:flex-1">
+          <h2 id="location-filter-title" class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4 text-emerald-600"></i>
+            店家距離篩選
+          </h2>
+          <p id="location-filter-status" class="mt-1 text-xs text-slate-500 dark:text-slate-400" aria-live="polite">目前顯示全台灣資料</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 lg:w-[610px]">
+          <label class="text-xs font-medium text-slate-600 dark:text-slate-300">
+            緯度
+            <input id="location-latitude" type="number" step="any" min="-90" max="90" inputmode="decimal" placeholder="例如 25.0330" class="mt-1 w-full px-3.5 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100">
+          </label>
+          <label class="text-xs font-medium text-slate-600 dark:text-slate-300">
+            經度
+            <input id="location-longitude" type="number" step="any" min="-180" max="180" inputmode="decimal" placeholder="例如 121.5654" class="mt-1 w-full px-3.5 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100">
+          </label>
+          <label class="text-xs font-medium text-slate-600 dark:text-slate-300">
+            範圍（KM）
+            <input id="location-radius" type="number" value="5" step="0.1" min="0.1" inputmode="decimal" class="mt-1 w-full px-3.5 py-2 text-sm rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-slate-800 dark:text-slate-100">
+          </label>
+        </div>
+        <div class="flex gap-2">
+          <button id="location-apply" type="button" class="px-4 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white transition-colors">套用</button>
+          <button id="location-clear" type="button" class="px-4 py-2 rounded-xl text-sm font-semibold border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">顯示全台</button>
+        </div>
+      </div>
+      <p id="location-filter-error" class="hidden mt-3 text-xs font-medium text-red-600 dark:text-red-400" role="alert"></p>
+    </section>
+
     <!-- 1. 頂部四大關鍵數據卡片 (Quick Metrics) -->
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
       
