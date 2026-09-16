@@ -984,12 +984,9 @@ function renderNewStores() {
   if (total === 0) {
     container.innerHTML = '';
     emptyView.classList.remove('hidden');
-    const storeSearch = (APP_STATE.filters.storeSearch || '').toLowerCase();
     const emptyMsgEl = emptyView.querySelector('p');
     if (emptyMsgEl) {
-      if (APP_STATE.locationFilter.enabled && (storeSearch.includes('costco') || storeSearch.includes('好市多'))) {
-        emptyMsgEl.innerHTML = `目前鎖定範圍 ${APP_STATE.locationFilter.radiusKm} KM 內無 Costco 分店。<br><span class="text-emerald-600 dark:text-emerald-400 font-semibold">💡 最近的「Costco 好市多 北投店」距離約 5.95 KM</span>，建議將範圍擴大至 6 KM 或點選「顯示全台」！`;
-      } else if (APP_STATE.locationFilter.enabled) {
+      if (APP_STATE.locationFilter.enabled) {
         emptyMsgEl.textContent = `目前鎖定座標周圍 ${APP_STATE.locationFilter.radiusKm} KM 內查無店家，請嘗試放大範圍或點選「顯示全台」。`;
       } else {
         emptyMsgEl.textContent = `請嘗試變更搜尋關鍵字或切換地區篩選`;
@@ -1677,8 +1674,16 @@ function executeInMemoryGlobalSearch(page = 1) {
       return (b.rating_value || 0) - (a.rating_value || 0) || (Number(a.eff_price || a.price) || 0) - (Number(b.eff_price || b.price) || 0);
     });
   } else {
-    // 預設: 店家評分最高優先 (rating_desc)
-    items.sort((a, b) => (b.rating_value || 0) - (a.rating_value || 0) || (Number(a.eff_price || a.price) || 0) - (Number(b.eff_price || b.price) || 0));
+    // 預設: 店家評分最高優先 (rating_desc)；若啟用定位篩選，評分相同時距離近者優先
+    if (APP_STATE.locationFilter.enabled) {
+      items.sort((a, b) => 
+        (b.rating_value || 0) - (a.rating_value || 0) ||
+        (Number(a.distance_km || 9999) - Number(b.distance_km || 9999)) ||
+        (Number(a.eff_price || a.price) || 0) - (Number(b.eff_price || b.price) || 0)
+      );
+    } else {
+      items.sort((a, b) => (b.rating_value || 0) - (a.rating_value || 0) || (Number(a.eff_price || a.price) || 0) - (Number(b.eff_price || b.price) || 0));
+    }
   }
 
   const total = items.length;
@@ -1726,7 +1731,7 @@ async function fetchGlobalProducts(page = 1) {
         city: cityFilter && cityFilter !== '全部' ? cityFilter : '',
         promo: sortMode === 'promo_only',
         location: APP_STATE.locationFilter,
-        limit: 500
+        limit: 50000
       });
       if (sequence === globalSearchSequence) {
         APP_STATE.allProducts = rows;
@@ -1793,12 +1798,7 @@ function renderGlobalProducts() {
   if (!items || items.length === 0) {
     let emptyHint = '請嘗試縮短關鍵字、切換縣市為「全台灣」或選擇不同排序條件';
     if (APP_STATE.locationFilter.enabled) {
-      const rawSearch = (APP_STATE.filters.globalSearch || '').toLowerCase();
-      if (rawSearch.includes('costco') || rawSearch.includes('好市多')) {
-        emptyHint = `目前鎖定範圍 ${APP_STATE.locationFilter.radiusKm} KM 內無 Costco 分店。<br><span class="text-emerald-600 dark:text-emerald-400 font-semibold">💡 最近的「Costco 好市多 北投店」距離約 5.95 KM</span>，建議將上方範圍擴大至 6 KM 或點選「顯示全台」！`;
-      } else {
-        emptyHint = `目前鎖定座標周圍 ${APP_STATE.locationFilter.radiusKm} KM 內查無相符商品，請嘗試將上方範圍公里數調大，或點選「顯示全台」。`;
-      }
+      emptyHint = `目前鎖定座標周圍 ${APP_STATE.locationFilter.radiusKm} KM 內查無相符商品，請嘗試將上方範圍公里數調大，或點選「顯示全台」。`;
     }
 
     container.innerHTML = `

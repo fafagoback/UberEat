@@ -239,17 +239,47 @@ export async function getStoresInLocation(location) {
   return locationStoresCache;
 }
 
-async function productsFromRefs(refs, location, limit = 500) {
-  const locInfo = await getStoresInLocation(location);
+async function productsFromRefs(refs, location, limit = 50000) {
   const wanted = new Map();
   for (const ref of refs) {
     const sid = Math.floor(Number(ref) / 1048576);
     const idx = Number(ref) % 1048576;
-    if (locInfo && !locInfo.storeIds.has(sid)) continue;
     if (!wanted.has(sid)) wanted.set(sid, new Set());
     wanted.get(sid).add(idx);
   }
-  const storeIds = [...wanted.keys()];
+
+  let storeIds = [...wanted.keys()];
+  if (storeIds.length === 0) return [];
+
+  const storeMetaMap = new Map();
+
+  if (location?.enabled) {
+    const lat = Number(location.latitude), lon = Number(location.longitude), r = Number(location.radiusKm);
+    const dy = r / 111.32, dx = r / Math.max(1, 111.32 * Math.cos(lat * Math.PI / 180));
+    const validStoreIds = [];
+
+    // 針對搜尋命中的候選店家直接進行座標與精確距離測算，不再盲取全區前 5000 家
+    for (let i = 0; i < storeIds.length; i += 100) {
+      const batch = storeIds.slice(i, i + 100);
+      const rows = await sql(`select store_id, name, latitude, longitude, rating, review_count from store_directory where store_id in (${batch.join(',')}) and latitude between ${lat - dy} and ${lat + dy} and longitude between ${lon - dx} and ${lon + dx}`);
+      for (const row of rows) {
+        const sid = Number(row.store_id);
+        const sLat = Number(row.latitude), sLon = Number(row.longitude);
+        if (Number.isFinite(sLat) && Number.isFinite(sLon)) {
+          const d = distanceKm(lat, lon, sLat, sLon);
+          if (d <= r) {
+            row.distance_km = d;
+            storeMetaMap.set(sid, row);
+            validStoreIds.push(sid);
+          }
+        }
+      }
+    }
+    // 由近至遠排序，確保最近的門市排在最前面
+    validStoreIds.sort((a, b) => (storeMetaMap.get(a)?.distance_km || 0) - (storeMetaMap.get(b)?.distance_km || 0));
+    storeIds = validStoreIds;
+  }
+
   const out = [];
   for (let i = 0; i < storeIds.length; i += 30) {
     const batch = storeIds.slice(i, i + 30);
@@ -262,15 +292,23 @@ async function productsFromRefs(refs, location, limit = 500) {
           store = Object.fromEntries(chunk.store_columns.map((c, j) => [c, chunk.store[j]]));
           cols = chunk.product_columns;
         }
-        if (!store || !inLocation(store, location)) {
+        if (!store) {
           offset += (chunk.products || []).length;
           continue;
+        }
+        if (storeMetaMap.has(sid)) {
+          store.distance_km = storeMetaMap.get(sid).distance_km;
+        } else if (location?.enabled) {
+          if (!inLocation(store, location)) {
+            offset += (chunk.products || []).length;
+            continue;
+          }
         }
         for (const pair of chunk.products || []) {
           if (indexes.has(offset)) {
             const p = Object.fromEntries(cols.map((c, j) => [c, pair[1][j]]));
             out.push(productView(p, store));
-            if (out.length >= limit) return out;
+            if (out.length >= limit) return dedupeProducts(out);
           }
           offset++;
         }
@@ -382,7 +420,7 @@ export async function loadPackedDashboard(location) {
   return { meta, stores, products };
 }
 
-export async function searchPacked({ keyword = '', city = '', promo = false, newOnly = false, minDiscount = null, location = null, limit = 500 } = {}) {
+export async function searchPacked({ keyword = '', city = '', promo = false, newOnly = false, minDiscount = null, location = null, limit = 50000 } = {}) {
   const meta = await metadata();
   const count = Number(meta.buckets || 8192);
   const terms = [...queryTokens(keyword), ...queryTokens(city)];
