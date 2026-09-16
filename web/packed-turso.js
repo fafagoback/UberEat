@@ -69,8 +69,8 @@ async function bundlesForStores(storeIds) {
   for(let i=0;i<missing.length;i+=80){const ids=missing.slice(i,i+80);const rows=await sql(`select store_id,chunk_no,payload from store_bundles where store_id in (${ids.join(',')}) order by store_id,chunk_no`);for(const row of rows){const decoded=await unpack(row.payload);if(!bundleCache.has(Number(row.store_id))) bundleCache.set(Number(row.store_id),[]);bundleCache.get(Number(row.store_id)).push(decoded);}}
   return storeIds.flatMap(id=>bundleCache.get(Number(id))||[]);
 }
-async function productsFromRefs(refs,location,limit=5000){
-  const wanted=new Map(); for(const ref of refs){const sid=Math.floor(Number(ref)/1048576),idx=Number(ref)%1048576;if(!wanted.has(sid))wanted.set(sid,new Set());wanted.get(sid).add(idx);if(wanted.size>=400)break;}
+async function productsFromRefs(refs,location,limit=100000){
+  const wanted=new Map(); for(const ref of refs){const sid=Math.floor(Number(ref)/1048576),idx=Number(ref)%1048576;if(!wanted.has(sid))wanted.set(sid,new Set());wanted.get(sid).add(idx);}
   await bundlesForStores([...wanted.keys()]); const out=[];
   for(const [sid,indexes] of wanted){let store,cols,offset=0;for(const chunk of bundleCache.get(sid)||[]){if(chunk.store){store=Object.fromEntries(chunk.store_columns.map((c,i)=>[c,chunk.store[i]]));cols=chunk.product_columns;}if(!store||!inLocation(store,location)){offset+=chunk.products.length;continue;}for(const pair of chunk.products){if(indexes.has(offset)){const p=Object.fromEntries(cols.map((c,i)=>[c,pair[1][i]]));out.push(productView(p,store));if(out.length>=limit)return out;}offset++;}}} return out;
 }
@@ -82,7 +82,7 @@ async function directory(location,limit=200){
 }
 async function sampleProducts(stores,location,limit=1500){await bundlesForStores(stores.map(s=>s.store_id));const out=[];for(const d of stores){let store,cols;for(const chunk of bundleCache.get(d.store_id)||[]){if(chunk.store){store=Object.fromEntries(chunk.store_columns.map((c,i)=>[c,chunk.store[i]]));cols=chunk.product_columns;}if(!store||!inLocation(store,location))continue;for(const pair of chunk.products){const p=Object.fromEntries(cols.map((c,i)=>[c,pair[1][i]]));out.push(productView(p,store));if(out.length>=limit)return out;}}}return out;}
 export async function loadPackedDashboard(location){const meta=await metadata();const stores=await directory(location,80);const products=await sampleProducts(stores,location);return{meta,stores,products};}
-export async function searchPacked({keyword='',city='',promo=false,newOnly=false,minDiscount=null,location=null,limit=5000}={}){
+export async function searchPacked({keyword='',city='',promo=false,newOnly=false,minDiscount=null,location=null,limit=100000}={}){
   const meta=await metadata(),count=Number(meta.buckets||8192),terms=[...queryTokens(keyword),...queryTokens(city)];
   if(promo)terms.push('f:promo'); if(newOnly)terms.push('f:new');
   const groups=[]; for(const term of terms) groups.push(await posting(term,count));

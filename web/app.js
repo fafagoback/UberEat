@@ -1674,7 +1674,7 @@ async function fetchGlobalProducts(page = 1) {
         city: cityFilter && cityFilter !== '全部' ? cityFilter : '',
         promo: sortMode === 'promo_only',
         location: APP_STATE.locationFilter,
-        limit: 5000
+        limit: 100000
       });
       if (sequence === globalSearchSequence) {
         APP_STATE.allProducts = rows;
