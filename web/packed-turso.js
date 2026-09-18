@@ -212,7 +212,7 @@ export async function getStoresInLocation(location) {
   if (locationStoresCache.key === key) return locationStoresCache;
   const lat = Number(location.latitude), lon = Number(location.longitude), r = Number(location.radiusKm);
   const dy = r / 111.32, dx = r / Math.max(1, 111.32 * Math.cos(lat * Math.PI / 180));
-  const rows = await sql(`select * from store_directory where latitude between ${lat - dy} and ${lat + dy} and longitude between ${lon - dx} and ${lon + dx} order by rating desc nulls last, review_count desc limit 5000`);
+  const rows = await sql(`select * from store_directory where latitude between ${lat - dy} and ${lat + dy} and longitude between ${lon - dx} and ${lon + dx} order by rating desc nulls last, review_count desc limit 50000`);
   const allStores = rows.map(r => ({
     store_id: Number(r.store_id),
     store_uuid: r.store_uuid,
@@ -322,10 +322,10 @@ async function productsFromRefs(refs, location, limit = 50000) {
   return dedupeProducts(out);
 }
 
-export async function directory(location, limit = 200) {
+export async function directory(location, limit = 50000) {
   if (location?.enabled) {
     const locInfo = await getStoresInLocation(location);
-    return locInfo.stores.slice(0, limit);
+    return locInfo.stores;
   }
   const rows = await sql(`select * from store_directory where name != '' order by rating desc nulls last, review_count desc limit ${limit}`);
   const stores = rows.map(r => ({
@@ -347,10 +347,10 @@ export async function directory(location, limit = 200) {
     first_seen: r.first_seen,
     last_seen: r.last_seen
   })).filter(s => inLocation(s, location));
-  return dedupeStores(stores).slice(0, limit);
+  return dedupeStores(stores);
 }
 
-export async function searchStores({ keyword = '', location = null, limit = 100 } = {}) {
+export async function searchStores({ keyword = '', location = null, limit = 50000 } = {}) {
   const k = normalize(keyword);
   let where = "name != ''";
   if (k) {
@@ -368,7 +368,7 @@ export async function searchStores({ keyword = '', location = null, limit = 100 
     const dy = r / 111.32, dx = r / Math.max(1, 111.32 * Math.cos(lat * Math.PI / 180));
     where += ` and latitude between ${lat - dy} and ${lat + dy} and longitude between ${lon - dx} and ${lon + dx}`;
   }
-  const rows = await sql(`select * from store_directory where ${where} order by rating desc nulls last, review_count desc limit ${Math.max(limit, location?.enabled ? 5000 : limit)}`);
+  const rows = await sql(`select * from store_directory where ${where} order by rating desc nulls last, review_count desc limit ${limit}`);
   const stores = rows.map(r => ({
     store_id: Number(r.store_id),
     store_uuid: r.store_uuid,
@@ -391,12 +391,12 @@ export async function searchStores({ keyword = '', location = null, limit = 100 
   if (location?.enabled) {
     stores.sort((a, b) => (a.distance_km || 0) - (b.distance_km || 0) || (b.rating || 0) - (a.rating || 0));
   }
-  return dedupeStores(stores).slice(0, limit);
+  return dedupeStores(stores);
 }
 
-async function sampleProducts(stores, location, limit = 1000) {
+async function sampleProducts(stores, location, limit = 50000) {
   const sids = stores.map(s => s.store_id);
-  await bundlesForStores(sids.slice(0, 40));
+  await bundlesForStores(sids.slice(0, 100));
   const out = [];
   for (const d of stores) {
     let store, cols;
@@ -418,8 +418,8 @@ async function sampleProducts(stores, location, limit = 1000) {
 
 export async function loadPackedDashboard(location) {
   const meta = await metadata();
-  const stores = await directory(location, location?.enabled ? 300 : 100);
-  const products = await sampleProducts(stores, location, 1000);
+  const stores = await directory(location, 50000);
+  const products = await sampleProducts(stores, location, 50000);
   return { meta, stores, products };
 }
 
@@ -452,7 +452,7 @@ export async function searchPacked({ keyword = '', city = '', promo = false, new
   }
 
   if (!groups.length) {
-    const stores = await directory(location, location?.enabled ? 200 : 80);
+    const stores = await directory(location, 50000);
     return sampleProducts(stores, location, limit);
   }
 

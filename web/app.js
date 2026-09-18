@@ -340,10 +340,27 @@ function calculateDistanceKm(latitude, longitude) {
 function applyLocationFilter(items) {
   if (!APP_STATE.locationFilter.enabled) return [...(items || [])];
   return (items || []).map(item => {
-    const distanceKm = item.distance_km !== undefined && item.distance_km !== null
-      ? Number(item.distance_km)
-      : calculateDistanceKm(item.latitude, item.longitude);
-    return { ...item, distance_km: distanceKm };
+    let lat = item.latitude;
+    let lon = item.longitude;
+    let d = item.distance_km;
+
+    if ((!Number.isFinite(Number(lat)) || !Number.isFinite(Number(lon))) && APP_STATE.storeLocationMap) {
+      const match = (item.store_id && APP_STATE.storeLocationMap.get(String(item.store_id))) ||
+                    (item.store_uuid && APP_STATE.storeLocationMap.get(String(item.store_uuid))) ||
+                    (item.store_name && APP_STATE.storeLocationMap.get(String(item.store_name))) ||
+                    (item.name && APP_STATE.storeLocationMap.get(String(item.name)));
+      if (match) {
+        lat = match.latitude;
+        lon = match.longitude;
+        if (Number.isFinite(match.distance_km)) d = match.distance_km;
+      }
+    }
+
+    const distanceKm = (d !== undefined && d !== null && Number.isFinite(Number(d)))
+      ? Number(d)
+      : calculateDistanceKm(lat, lon);
+
+    return { ...item, latitude: lat, longitude: lon, distance_km: distanceKm };
   }).filter(item => Number.isFinite(item.distance_km) && item.distance_km <= APP_STATE.locationFilter.radiusKm);
 }
 
@@ -439,54 +456,119 @@ async function loadFromTurso() {
     const packed = await client.loadPackedDashboard(APP_STATE.locationFilter);
     const counts = packed.meta.source_counts || {};
     const isLoc = Boolean(APP_STATE.locationFilter?.enabled);
-    const totalStores = Number(isLoc ? packed.stores.length : (counts.stores || packed.stores.length || 0));
-    const totalProducts = Number(isLoc ? packed.products.length : (counts.products || packed.meta.products || 0));
 
-    const statsData = {
-      status: 'success',
-      latest_batch: 'packed-v1',
-      latest_batch_formatted: isLoc
-        ? `座標周圍 ${APP_STATE.locationFilter.radiusKm} KM`
-        : 'Packed 即時資料庫',
-      total_stores: totalStores,
-      total_monitored_stores: totalStores,
-      total_products: totalProducts,
-      total_monitored_products: totalProducts,
-      big_discounts_count: 0,
-      new_stores_count: packed.stores.length,
-      new_products_count: 0,
-      promotions_count: 0,
-      max_savings_twd: 0
-    };
-    updateStatsUI(statsData);
-    APP_STATE.newStores = packed.stores;
-    APP_STATE.allProducts = packed.products;
-
-    // 優先渲染店家與全庫預設資料，確保首屏秒開
-    await fetchNewStores(1);
-    await fetchGlobalProducts(1);
-
-    // 背景載入特價與新品，不阻塞介面
-    try {
-      const [newProducts, discounts] = await Promise.all([
-        client.searchPacked({ newOnly: true, location: APP_STATE.locationFilter, limit: 120 }).catch(() => []),
-        client.searchPacked({ minDiscount: 30, location: APP_STATE.locationFilter, limit: 120 }).catch(() => [])
-      ]);
-      APP_STATE.newProducts = newProducts || [];
-      APP_STATE.rawDiscounts = discounts || [];
-      APP_STATE.promotions = (discounts || []).filter(d => d.promo_type && d.promo_type !== '無');
-
-      const updatedStats = {
-        ...statsData,
-        big_discounts_count: APP_STATE.rawDiscounts.length,
-        new_products_count: APP_STATE.newProducts.length,
-        promotions_count: APP_STATE.promotions.length
+    // 建立範圍內店家經緯度與距離快速查找索引
+    APP_STATE.storeLocationMap = new Map();
+    for (const s of (packed.stores || [])) {
+      const info = {
+        latitude: Number(s.latitude),
+        longitude: Number(s.longitude),
+        distance_km: Number(s.distance_km)
       };
-      updateStatsUI(updatedStats);
-    } catch (subErr) {
-      console.warn('Turso sub-query warning:', subErr);
+      if (s.store_uuid) APP_STATE.storeLocationMap.set(String(s.store_uuid), info);
+      if (s.store_id) APP_STATE.storeLocationMap.set(String(s.store_id), info);
+      if (s.store_name) APP_STATE.storeLocationMap.set(String(s.store_name), info);
+      if (s.name) APP_STATE.storeLocationMap.set(String(s.name), info);
     }
 
+    let baselineStats = {};
+    try {
+      const sRes = await fetch(getApiUrl('/api/stats')).catch(() => null);
+      if (sRes && sRes.ok) baselineStats = await sRes.json();
+    } catch (_) {}
+
+    // 取得爬蟲抓取資料的真實批次時間
+    const latestBatchTime = baselineStats.latest_batch_formatted 
+      || (baselineStats.latest_batch ? formatBatchDate(baselineStats.latest_batch) : '')
+      || (packed.meta && packed.meta.latest_batch ? formatBatchDate(packed.meta.latest_batch) : '已載入');
+
+    // 載入全量特價/新進店家/新品/促銷完整資料集
+    let rawDiscounts = [];
+    let newStores = [];
+    let newProducts = [];
+    let promotions = [];
+
+    try {
+      const [discRes, storesRes, prodsRes, promosRes] = await Promise.all([
+        fetch(getApiUrl('/api/discounts')).catch(() => null),
+        fetch(getApiUrl('/api/new-stores')).catch(() => null),
+        fetch(getApiUrl('/api/new-products')).catch(() => null),
+        fetch(getApiUrl('/api/promotions')).catch(() => null)
+      ]);
+      if (discRes && discRes.ok) {
+        const d = await discRes.json();
+        rawDiscounts = d.items || d || [];
+      }
+      if (storesRes && storesRes.ok) {
+        const d = await storesRes.json();
+        newStores = d.items || d || [];
+      }
+      if (prodsRes && prodsRes.ok) {
+        const d = await prodsRes.json();
+        newProducts = d.items || d || [];
+      }
+      if (promosRes && promosRes.ok) {
+        const d = await promosRes.json();
+        promotions = d.items || d || [];
+      }
+    } catch (snapErr) {
+      console.warn('快照資料預載警告:', snapErr);
+    }
+
+    APP_STATE.rawDiscounts = rawDiscounts;
+    APP_STATE.newStores = newStores.length > 0 ? newStores : packed.stores;
+    APP_STATE.newProducts = newProducts;
+    APP_STATE.promotions = promotions;
+    APP_STATE.allProducts = packed.products;
+
+    let statsData;
+    if (isLoc) {
+      // 範圍過濾模式：根據指定經緯度與半徑，真實計算周圍符合條件的各項數據
+      const filteredDiscounts = applyLocationFilter(rawDiscounts);
+      const filteredNewStores = applyLocationFilter(newStores.length > 0 ? newStores : packed.stores);
+      const filteredNewProducts = applyLocationFilter(newProducts);
+      const filteredPromos = applyLocationFilter(promotions);
+
+      const maxSavings = filteredDiscounts.length > 0
+        ? Math.max(0, ...filteredDiscounts.map(i => Number(i.savings_amount || 0)))
+        : 0;
+
+      statsData = {
+        status: 'success',
+        latest_batch: baselineStats.latest_batch || 'packed-v1',
+        latest_batch_formatted: latestBatchTime,
+        total_stores: packed.stores.length,
+        total_monitored_stores: packed.stores.length,
+        total_products: packed.products.length,
+        total_monitored_products: packed.products.length,
+        big_discounts_count: filteredDiscounts.length,
+        new_stores_count: filteredNewStores.length,
+        new_products_count: filteredNewProducts.length,
+        promotions_count: filteredPromos.length,
+        max_savings_twd: Math.round(maxSavings)
+      };
+    } else {
+      // 全台模式：呈現全台大盤真實爬蟲統計
+      statsData = {
+        status: 'success',
+        latest_batch: baselineStats.latest_batch || 'packed-v1',
+        latest_batch_formatted: latestBatchTime,
+        total_stores: Number(baselineStats.total_stores || counts.stores || packed.stores.length || 0),
+        total_monitored_stores: Number(baselineStats.total_monitored_stores || baselineStats.total_stores || counts.stores || 0),
+        total_products: Number(baselineStats.total_products || counts.products || packed.meta.products || 0),
+        total_monitored_products: Number(baselineStats.total_monitored_products || baselineStats.total_products || counts.products || 0),
+        big_discounts_count: Number(baselineStats.big_discounts_count ?? rawDiscounts.length),
+        new_stores_count: Number(baselineStats.new_stores_count ?? (newStores.length || packed.stores.length)),
+        new_products_count: Number(baselineStats.new_products_count ?? newProducts.length),
+        promotions_count: Number(baselineStats.promotions_count ?? promotions.length),
+        max_savings_twd: Number(baselineStats.max_savings_twd || (rawDiscounts.length > 0 ? Math.max(...rawDiscounts.map(i => i.savings_amount || 0)) : 0))
+      };
+    }
+    updateStatsUI(statsData);
+
+    // 渲染各頁籤
+    await fetchNewStores(1);
+    await fetchGlobalProducts(1);
     await fetchDiscounts(1);
     await fetchNewProducts(1);
     await fetchPromotions(1);
@@ -755,16 +837,40 @@ function smoothScrollToTab(tabId) {
 async function fetchDiscounts(page = 1) {
   APP_STATE.discountsPage = page;
   const { discountMinPct, discountMinSavings, discountSort, discountCategory, discountSearch } = APP_STATE.filters;
-  let items = applyLocationFilter(APP_STATE.rawDiscounts && APP_STATE.rawDiscounts.length > 0 ? APP_STATE.rawDiscounts : (APP_STATE.discounts || []));
+
+  let items = [];
+  let fetchedRemote = false;
+
+  // 若輸入關鍵字且啟用了 Turso，直接使用倒排索引向 Turso 全庫檢索（無筆數截斷）
+  if (discountSearch && discountSearch.trim() && window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
+    try {
+      const client = await getPackedTursoClient();
+      const remote = await client.searchPacked({
+        keyword: discountSearch.trim(),
+        location: APP_STATE.locationFilter,
+        limit: 50000
+      });
+      if (remote && Array.isArray(remote)) {
+        items = remote;
+        fetchedRemote = true;
+      }
+    } catch (err) {
+      console.warn('Turso 即時大特價搜尋異常，降級使用本地快照:', err);
+    }
+  }
+
+  if (!fetchedRemote) {
+    items = applyLocationFilter(APP_STATE.rawDiscounts && APP_STATE.rawDiscounts.length > 0 ? APP_STATE.rawDiscounts : (APP_STATE.discounts || []));
+  }
 
   items = items.filter(item => {
     if (!item.current_price || item.current_price <= 0) return false;
     if (item.discount_pct < discountMinPct) return false;
     if (item.savings_amount < discountMinSavings) return false;
-    if (discountCategory !== '全部' && !item.category_name.includes(discountCategory)) return false;
+    if (discountCategory !== '全部' && !item.category_name?.includes(discountCategory)) return false;
     if (discountSearch) {
       const kw = discountSearch.toLowerCase();
-      if (!item.product_name.toLowerCase().includes(kw) && !item.store_name.toLowerCase().includes(kw)) {
+      if (!item.product_name?.toLowerCase().includes(kw) && !item.store_name?.toLowerCase().includes(kw)) {
         return false;
       }
     }
@@ -925,7 +1031,7 @@ async function fetchNewStores(page = 1) {
       const stores = await client.searchStores({
         keyword: storeSearch,
         location: APP_STATE.locationFilter,
-        limit: 100
+        limit: 50000
       });
       items = stores || [];
     } catch (e) {
@@ -1071,7 +1177,30 @@ function renderNewStores() {
 async function fetchNewProducts(page = 1) {
   APP_STATE.productsPage = page;
   const { productSearch } = APP_STATE.filters;
-  let items = applyLocationFilter(APP_STATE.newProducts || []);
+  let items = [];
+  let fetchedRemote = false;
+
+  if (productSearch && productSearch.trim() && window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
+    try {
+      const client = await getPackedTursoClient();
+      const remote = await client.searchPacked({
+        keyword: productSearch.trim(),
+        newOnly: true,
+        location: APP_STATE.locationFilter,
+        limit: 50000
+      });
+      if (remote && Array.isArray(remote)) {
+        items = remote;
+        fetchedRemote = true;
+      }
+    } catch (err) {
+      console.warn('Turso 新品搜尋異常，降級使用本地快照:', err);
+    }
+  }
+
+  if (!fetchedRemote) {
+    items = applyLocationFilter(APP_STATE.newProducts || []);
+  }
 
   if (productSearch) {
     const kw = productSearch.toLowerCase();
@@ -1315,7 +1444,32 @@ function calculateEffectivePromo(price, promoType, quantity) {
 async function fetchPromotions(page = 1) {
   APP_STATE.promosPage = page;
   const { promoSearch, promoType, promoSort } = APP_STATE.filters;
-  let items = applyLocationFilter(APP_STATE.promotions || []).filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
+  let items = [];
+  let fetchedRemote = false;
+
+  if (promoSearch && promoSearch.trim() && window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
+    try {
+      const client = await getPackedTursoClient();
+      const remote = await client.searchPacked({
+        keyword: promoSearch.trim(),
+        promo: true,
+        location: APP_STATE.locationFilter,
+        limit: 50000
+      });
+      if (remote && Array.isArray(remote)) {
+        items = remote;
+        fetchedRemote = true;
+      }
+    } catch (err) {
+      console.warn('Turso 促銷活動搜尋異常，降級使用本地快照:', err);
+    }
+  }
+
+  if (!fetchedRemote) {
+    items = applyLocationFilter(APP_STATE.promotions || []);
+  }
+
+  items = items.filter(p => p.price > 0 && (p.quantity > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== '')));
 
   // 活動類型篩選
   if (promoType && promoType !== '全部') {

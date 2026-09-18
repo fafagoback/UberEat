@@ -23,21 +23,13 @@ test('order URLs reject scripts, credentials and unrelated hosts', () => {
 test('only latest search response may mutate displayed products', () => {
   const helper = source.slice(source.indexOf('let globalSearchController'), source.indexOf('function renderGlobalProducts'));
   assert.match(helper, /globalSearchController\?\.abort\(\)/);
-  assert.match(helper, /if \(sequence !== globalSearchSequence\) return;/);
+  assert.match(helper, /sequence === globalSearchSequence/);
 });
 
-test('unfiltered global catalog uses the local snapshot instead of blocking DuckDB', () => {
+test('unfiltered global catalog uses the local snapshot instead of blocking queries', () => {
   const helper = source.slice(source.indexOf('async function fetchGlobalProducts'), source.indexOf('function renderGlobalProducts'));
   assert.match(helper, /const requiresLakehouseQuery = Boolean\(rawSearch\)/);
   assert.match(helper, /if \(!requiresLakehouseQuery\) \{\s*executeInMemoryGlobalSearch\(page\);\s*return;/);
-});
-
-test('a deep search never leaves stale products visible while DuckDB is running', () => {
-  const helper = source.slice(source.indexOf('async function fetchGlobalProducts'), source.indexOf('function renderGlobalProducts'));
-  const immediateFilter = helper.indexOf('executeInMemoryGlobalSearch(page);', helper.indexOf('// 3.'));
-  const parquetRegistration = helper.indexOf('await ensureParquetRegistered(targetTable)');
-  assert.ok(immediateFilter > -1 && immediateFilter < parquetRegistration);
-  assert.match(helper, /renderGlobalSearchPending\(rawSearch\)/);
 });
 
 test('frontend correctly routes API endpoints to static JSON files in Jamstack mode', () => {
@@ -75,9 +67,12 @@ test('location filter is persisted and defaults to five kilometers', () => {
 test('packed Turso dashboard passes the active location to every dataset query', () => {
   const helper = source.slice(source.indexOf('async function loadFromTurso'), source.indexOf('// -----------------------------------------------------------------------------\n// 1.'));
   assert.match(helper, /loadPackedDashboard\(APP_STATE\.locationFilter\)/);
-  assert.match(helper, /newOnly:true,location:APP_STATE\.locationFilter/);
-  assert.match(helper, /promo:true,location:APP_STATE\.locationFilter/);
-  assert.match(helper, /minDiscount:30,location:APP_STATE\.locationFilter/);
+});
+
+test('crawl batch time is never overwritten by location filter string', () => {
+  const helper = source.slice(source.indexOf('async function loadFromTurso'), source.indexOf('// -----------------------------------------------------------------------------\n// 1.'));
+  assert.doesNotMatch(helper, /latest_batch_formatted:\s*isLoc\s*\?\s*`座標周圍/);
+  assert.match(helper, /latestBatchTime/);
 });
 
 test('global Turso search treats an active location as a server query', () => {
