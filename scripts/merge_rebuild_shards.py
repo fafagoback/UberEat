@@ -98,12 +98,12 @@ def merge_shards(shards_dir: Path, output_path: Path, expected_shards: int | Non
                 INSERT OR REPLACE INTO stores (
                     store_uuid, name, address, city, locality, latitude, longitude,
                     rating, review_count, order_url, first_seen, last_seen, status,
-                    missing_streak, state_hash
+                    missing_streak, state_hash, is_open
                 )
                 SELECT
                     store_uuid, name, address, city, locality, latitude, longitude,
                     rating, review_count, order_url, first_seen, last_seen, status,
-                    missing_streak, state_hash
+                    missing_streak, state_hash, coalesce(is_open, 1)
                 FROM shard.stores
             """)
             conn.execute("""
@@ -112,14 +112,14 @@ def merge_shards(shards_dir: Path, output_path: Path, expected_shards: int | Non
                     price, quantity, promo_type, effective_price, order_url, first_seen,
                     last_seen, status, missing_streak, state_hash, recent_prices,
                     price_novel_vs_previous_3, reference_price, discount_amount,
-                    discount_pct, is_price_deal
+                    discount_pct, is_price_deal, is_open
                 )
                 SELECT
                     store_uuid, product_uuid, product_name, category, description,
                     price, quantity, promo_type, effective_price, order_url, first_seen,
                     last_seen, status, missing_streak, state_hash, recent_prices,
                     price_novel_vs_previous_3, reference_price, discount_amount,
-                    discount_pct, is_price_deal
+                    discount_pct, is_price_deal, coalesce(is_open, 1)
                 FROM shard.products
             """)
             conn.execute("""

@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS stores(
   store_uuid TEXT PRIMARY KEY, name TEXT NOT NULL, address TEXT, city TEXT, locality TEXT,
   latitude REAL, longitude REAL, rating REAL, review_count INTEGER, order_url TEXT, first_seen TEXT NOT NULL,
   last_seen TEXT NOT NULL, status TEXT NOT NULL, missing_streak INTEGER NOT NULL DEFAULT 0,
-  state_hash TEXT NOT NULL
+  state_hash TEXT NOT NULL, is_open INTEGER NOT NULL DEFAULT 1
 );
 CREATE TABLE IF NOT EXISTS products(
   store_uuid TEXT NOT NULL, product_uuid TEXT NOT NULL, product_name TEXT NOT NULL,
@@ -89,6 +89,7 @@ CREATE TABLE IF NOT EXISTS products(
   price_novel_vs_previous_3 INTEGER NOT NULL DEFAULT 0,
   reference_price REAL, discount_amount REAL NOT NULL DEFAULT 0,
   discount_pct REAL NOT NULL DEFAULT 0, is_price_deal INTEGER NOT NULL DEFAULT 0,
+  is_open INTEGER NOT NULL DEFAULT 1,
   PRIMARY KEY(store_uuid, product_uuid),
   FOREIGN KEY(store_uuid) REFERENCES stores(store_uuid)
 );
@@ -169,7 +170,10 @@ def ensure_schema_and_migrations(conn: sqlite3.Connection) -> None:
     for name in ("latitude", "longitude"):
         if name not in store_columns:
             conn.execute(f"ALTER TABLE stores ADD COLUMN {name} REAL")
+    if "is_open" not in store_columns:
+        conn.execute("ALTER TABLE stores ADD COLUMN is_open INTEGER NOT NULL DEFAULT 1")
     conn.execute("CREATE INDEX IF NOT EXISTS idx_stores_coordinates ON stores(latitude, longitude)")
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_stores_is_open ON stores(is_open)")
     product_columns = {row[1] for row in conn.execute("PRAGMA table_info(products)")}
     if "recent_prices" not in product_columns:
         conn.execute("ALTER TABLE products ADD COLUMN recent_prices TEXT NOT NULL DEFAULT '[]'")
@@ -180,10 +184,12 @@ def ensure_schema_and_migrations(conn: sqlite3.Connection) -> None:
         ("discount_amount", "REAL NOT NULL DEFAULT 0"),
         ("discount_pct", "REAL NOT NULL DEFAULT 0"),
         ("is_price_deal", "INTEGER NOT NULL DEFAULT 0"),
+        ("is_open", "INTEGER NOT NULL DEFAULT 1"),
     ):
         if name not in product_columns:
             conn.execute(f"ALTER TABLE products ADD COLUMN {name} {definition}")
     conn.execute("CREATE INDEX IF NOT EXISTS idx_products_deals ON products(is_price_deal, discount_pct DESC, discount_amount DESC)")
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_products_is_open ON products(is_open)")
 
 
 class ServingStateCache:
@@ -206,7 +212,7 @@ class ServingStateCache:
 
         cursor.execute(
             "SELECT store_uuid, name, address, city, locality, latitude, longitude, "
-            "rating, review_count, order_url, first_seen, last_seen, status, missing_streak, state_hash FROM stores"
+            "rating, review_count, order_url, first_seen, last_seen, status, missing_streak, state_hash, is_open FROM stores"
         )
         for row in cursor.fetchall():
             sid = row[0]
@@ -215,6 +221,7 @@ class ServingStateCache:
                 "latitude": row[5], "longitude": row[6], "rating": row[7], "review_count": row[8],
                 "order_url": row[9], "first_seen": row[10], "last_seen": row[11], "status": row[12],
                 "missing_streak": row[13], "state_hash": row[14],
+                "is_open": int(row[15]) if len(row) > 15 and row[15] is not None else 1,
             }
             self.stores[sid] = sdata
             if row[12] == "active":
@@ -224,7 +231,7 @@ class ServingStateCache:
             "SELECT store_uuid, product_uuid, product_name, category, description, price, "
             "quantity, promo_type, effective_price, order_url, first_seen, last_seen, "
             "status, missing_streak, state_hash, recent_prices, price_novel_vs_previous_3, "
-            "reference_price, discount_amount, discount_pct, is_price_deal FROM products"
+            "reference_price, discount_amount, discount_pct, is_price_deal, is_open FROM products"
         )
         for row in cursor.fetchall():
             key = (row[0], row[1])
@@ -240,6 +247,7 @@ class ServingStateCache:
                 "missing_streak": row[13], "state_hash": row[14], "recent_prices": rec_prices,
                 "price_novel_vs_previous_3": row[16], "reference_price": row[17],
                 "discount_amount": row[18], "discount_pct": row[19], "is_price_deal": row[20],
+                "is_open": int(row[21]) if len(row) > 21 and row[21] is not None else 1,
             }
             self.products[key] = pdata
             if row[12] == "active":
@@ -251,30 +259,7 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                    event_retention_days: int | None = None,
                    refresh_search: bool = True,
                    state_cache: ServingStateCache | None = None) -> dict[str, int]:
-    conn.executescript(SCHEMA)
-    # Keep existing serving databases in place and backfill coordinates as stores
-    # appear in subsequent snapshots.
-    store_columns = {row[1] for row in conn.execute("PRAGMA table_info(stores)")}
-    for name in ("latitude", "longitude"):
-        if name not in store_columns:
-            conn.execute(f"ALTER TABLE stores ADD COLUMN {name} REAL")
-    conn.execute("CREATE INDEX IF NOT EXISTS idx_stores_coordinates ON stores(latitude, longitude)")
-    # Forward-compatible migration for serving.db files cached before the
-    # three-snapshot price rule was introduced.
-    product_columns = {row[1] for row in conn.execute("PRAGMA table_info(products)")}
-    if "recent_prices" not in product_columns:
-        conn.execute("ALTER TABLE products ADD COLUMN recent_prices TEXT NOT NULL DEFAULT '[]'")
-    if "price_novel_vs_previous_3" not in product_columns:
-        conn.execute("ALTER TABLE products ADD COLUMN price_novel_vs_previous_3 INTEGER NOT NULL DEFAULT 0")
-    for name, definition in (
-        ("reference_price", "REAL"),
-        ("discount_amount", "REAL NOT NULL DEFAULT 0"),
-        ("discount_pct", "REAL NOT NULL DEFAULT 0"),
-        ("is_price_deal", "INTEGER NOT NULL DEFAULT 0"),
-    ):
-        if name not in product_columns:
-            conn.execute(f"ALTER TABLE products ADD COLUMN {name} {definition}")
-    conn.execute("CREATE INDEX IF NOT EXISTS idx_products_deals ON products(is_price_deal, discount_pct DESC, discount_amount DESC)")
+    ensure_schema_and_migrations(conn)
     now = datetime.strptime(batch_id, "%Y%m%d%H%M%S").replace(tzinfo=TW).isoformat()
     latest = conn.execute("SELECT value FROM metadata WHERE key='latest_batch'").fetchone()
     if latest and batch_id <= latest[0]:
@@ -286,6 +271,7 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
         state_cache = ServingStateCache(conn)
 
     seen_stores: set[str] = set()
+    seen_store_open: dict[str, int] = {}
     seen_products: set[tuple[str, str]] = set()
     counts = {k: 0 for k in ("stores", "products", "new", "changed", "reappeared", "removed", "unchanged", "store_new", "store_changed", "store_reappeared", "store_removed", "fallback_stores", "fallback_products")}
 
@@ -303,6 +289,10 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
         seen_stores.add(sid)
         counts["stores"] += 1
 
+        is_open_val = doc.get("isOpen")
+        is_open = 1 if (is_open_val is True or is_open_val == 1 or is_open_val is None) else 0
+        seen_store_open[sid] = is_open
+
         address = doc.get("address") or {}
         rating = doc.get("aggregateRating") or {}
         geo = doc.get("geo") or {}
@@ -317,6 +307,7 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
             "rating": _num(rating.get("ratingValue"), float, None),
             "review_count": _num(rating.get("reviewCount"), int, None),
             "order_url": order_url,
+            "is_open": is_open,
         }
 
         old_s = state_cache.stores.get(sid)
@@ -377,19 +368,21 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                     "product_name": name, "category": category, "description": desc,
                     "price": price, "quantity": qty, "promo_type": promo,
                     "effective_price": effective, "order_url": order_url,
+                    "is_open": is_open,
                 }
                 ph = canonical_hash(state)
                 old = state_cache.products.get(key)
 
                 if old is None:
-                    insert_products_batch.append((sid, pid, *state.values(), now, now, "active", 0, ph, json_dumps([price]), 0, None, 0, 0, 0))
+                    init_recent = [price] if (is_open == 1 and price > 0) else []
+                    insert_products_batch.append((sid, pid, *state.values(), now, now, "active", 0, ph, json_dumps(init_recent), 0, None, 0, 0, 0))
                     counts["new"] += 1
                     if not baseline:
                         events_batch.append((now, sid, pid, "NEW", None, json_dumps(state)))
                     state_cache.products[key] = {
                         "store_uuid": sid, "product_uuid": pid, **state,
                         "first_seen": now, "last_seen": now, "status": "active",
-                        "missing_streak": 0, "state_hash": ph, "recent_prices": [price],
+                        "missing_streak": 0, "state_hash": ph, "recent_prices": init_recent,
                         "price_novel_vs_previous_3": 0, "reference_price": None,
                         "discount_amount": 0, "discount_pct": 0, "is_price_deal": 0,
                     }
@@ -397,13 +390,21 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                 else:
                     old_state = dict(old)
                     old_state["recent_prices"] = json_dumps(old["recent_prices"])
-                    previous_prices = old["recent_prices"][-3:]
-                    price_novel = int(len(previous_prices) == 3 and price not in previous_prices)
-                    reference_price = float(statistics.median(previous_prices)) if len(previous_prices) == 3 else None
-                    discount_amount = round(reference_price - price, 2) if price_novel and reference_price and price < reference_price else 0
-                    discount_pct = round(discount_amount / reference_price * 100, 2) if discount_amount and reference_price else 0
-                    is_price_deal = int(discount_amount > 0)
-                    next_recent_prices = (previous_prices + [price])[-3:]
+                    if is_open == 1 and price > 0:
+                        previous_prices = old["recent_prices"][-3:]
+                        price_novel = int(len(previous_prices) == 3 and price not in previous_prices)
+                        reference_price = float(statistics.median(previous_prices)) if len(previous_prices) == 3 else None
+                        discount_amount = round(reference_price - price, 2) if price_novel and reference_price and price < reference_price else 0
+                        discount_pct = round(discount_amount / reference_price * 100, 2) if discount_amount and reference_price else 0
+                        is_price_deal = int(discount_amount > 0)
+                        next_recent_prices = (previous_prices + [price])[-3:]
+                    else:
+                        price_novel = 0
+                        reference_price = old.get("reference_price")
+                        discount_amount = 0
+                        discount_pct = 0
+                        is_price_deal = 0
+                        next_recent_prices = old["recent_prices"]
 
                     if old["status"] != "active":
                         counts["reappeared"] += 1
@@ -411,7 +412,7 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                             events_batch.append((now, sid, pid, "REAPPEARED", json_dumps({"status": old["status"]}), json_dumps({"status": "active"})))
                     if old["state_hash"] != ph:
                         kinds = []
-                        if (old["price"] != price or old["effective_price"] != effective) and price_novel:
+                        if is_open == 1 and price > 0 and (old["price"] != price or old["effective_price"] != effective) and price_novel:
                             kinds.append("PRICE_CHANGED")
                         if old["promo_type"] != promo or old["quantity"] != qty:
                             kinds.append("PROMOTION_CHANGED")
@@ -441,6 +442,13 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
     missing_products_batch: list[tuple] = []
     missing_product_keys = list(state_cache.active_product_keys - seen_products)
     for key in missing_product_keys:
+        store_id = key[0]
+        store_open = seen_store_open.get(store_id)
+        if store_open is None:
+            store_open = state_cache.stores.get(store_id, {}).get("is_open", 1)
+        if store_open == 0:
+            continue
+
         old = state_cache.products[key]
         streak = old["missing_streak"] + 1
         status = "inactive" if streak >= missing_threshold else "active"
@@ -471,12 +479,12 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
     # Execute batched queries
     if insert_stores_batch:
         conn.executemany(
-            "INSERT INTO stores(store_uuid,name,address,city,locality,latitude,longitude,rating,review_count,order_url,first_seen,last_seen,status,missing_streak,state_hash) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            "INSERT INTO stores(store_uuid,name,address,city,locality,latitude,longitude,rating,review_count,order_url,is_open,first_seen,last_seen,status,missing_streak,state_hash) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             insert_stores_batch,
         )
     if update_stores_batch:
         conn.executemany(
-            "UPDATE stores SET name=?,address=?,city=?,locality=?,latitude=?,longitude=?,rating=?,review_count=?,order_url=?,last_seen=?,status=?,missing_streak=0,state_hash=? WHERE store_uuid=?",
+            "UPDATE stores SET name=?,address=?,city=?,locality=?,latitude=?,longitude=?,rating=?,review_count=?,order_url=?,is_open=?,last_seen=?,status=?,missing_streak=0,state_hash=? WHERE store_uuid=?",
             update_stores_batch,
         )
     if missing_stores_batch:
@@ -484,12 +492,12 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
 
     if insert_products_batch:
         conn.executemany(
-            "INSERT INTO products(store_uuid,product_uuid,product_name,category,description,price,quantity,promo_type,effective_price,order_url,first_seen,last_seen,status,missing_streak,state_hash,recent_prices,price_novel_vs_previous_3,reference_price,discount_amount,discount_pct,is_price_deal) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            "INSERT INTO products(store_uuid,product_uuid,product_name,category,description,price,quantity,promo_type,effective_price,order_url,is_open,first_seen,last_seen,status,missing_streak,state_hash,recent_prices,price_novel_vs_previous_3,reference_price,discount_amount,discount_pct,is_price_deal) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             insert_products_batch,
         )
     if update_products_batch:
         conn.executemany(
-            "UPDATE products SET product_name=?,category=?,description=?,price=?,quantity=?,promo_type=?,effective_price=?,order_url=?,last_seen=?,status='active',missing_streak=0,state_hash=?,recent_prices=?,price_novel_vs_previous_3=?,reference_price=?,discount_amount=?,discount_pct=?,is_price_deal=? WHERE store_uuid=? AND product_uuid=?",
+            "UPDATE products SET product_name=?,category=?,description=?,price=?,quantity=?,promo_type=?,effective_price=?,order_url=?,is_open=?,last_seen=?,status='active',missing_streak=0,state_hash=?,recent_prices=?,price_novel_vs_previous_3=?,reference_price=?,discount_amount=?,discount_pct=?,is_price_deal=? WHERE store_uuid=? AND product_uuid=?",
             update_products_batch,
         )
     if missing_products_batch:

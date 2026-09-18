@@ -16,14 +16,16 @@ for(const {sql} of src.prepare("SELECT sql FROM sqlite_schema WHERE sql IS NOT N
   try{await db.execute(sql);}catch(error){if(!String(error.message||error).includes('already exists'))throw error;}
 }
 
-// Migrate databases created before the rolling three-snapshot price fields.
+// Migrate databases created before the rolling three-snapshot price fields and is_open.
 for(const sql of [
+  "ALTER TABLE stores ADD COLUMN is_open INTEGER NOT NULL DEFAULT 1",
   "ALTER TABLE products ADD COLUMN recent_prices TEXT NOT NULL DEFAULT '[]'",
   "ALTER TABLE products ADD COLUMN price_novel_vs_previous_3 INTEGER NOT NULL DEFAULT 0",
   "ALTER TABLE products ADD COLUMN reference_price REAL",
   "ALTER TABLE products ADD COLUMN discount_amount REAL NOT NULL DEFAULT 0",
   "ALTER TABLE products ADD COLUMN discount_pct REAL NOT NULL DEFAULT 0",
-  "ALTER TABLE products ADD COLUMN is_price_deal INTEGER NOT NULL DEFAULT 0"
+  "ALTER TABLE products ADD COLUMN is_price_deal INTEGER NOT NULL DEFAULT 0",
+  "ALTER TABLE products ADD COLUMN is_open INTEGER NOT NULL DEFAULT 1"
 ]){
   try{await db.execute(sql);}catch(error){
     const message=String(error.message||error).toLowerCase();

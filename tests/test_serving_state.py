@@ -5,14 +5,30 @@ from src.serving_state import apply_snapshot
 from src.hf_retention import retention_plan
 
 S='11111111-1111-4111-8111-111111111111'; P='22222222-2222-4222-8222-222222222222'
-def doc(price=100, product=P, name='COSTCO 牛肉', store='COSTCO 台北', products=True):
+def doc(price=100, product=P, name='COSTCO 牛肉', store='COSTCO 台北', products=True, is_open=True):
     return {'@id':'https://example/'+S,'store_uuid':S,'name':store,'address':{'addressLocality':'台北市'},
+      'isOpen': is_open,
       'aggregateRating':{'ratingValue':4.8,'reviewCount':10},'hasMenu':{'hasMenuSection':[{'name':'食品','hasMenuItem':([{'identifier':product,'name':name,'description':'','offers':{'price':str(price)}}] if products else [])}]}}
 
 class ServingStateTest(unittest.TestCase):
   def setUp(self):
     self.db=tempfile.NamedTemporaryFile(suffix='.db',delete=False).name; self.c=sqlite3.connect(self.db); self.c.row_factory=sqlite3.Row
   def run_batch(self,n,docs,threshold=3): return apply_snapshot(self.c,docs,f'202609{n:02d}120000',threshold)
+  def test_closed_store_does_not_track_deals_or_remove_products(self):
+    self.run_batch(1,[doc(100)])
+    # Batch 2: Store is closed, returns empty menu
+    self.run_batch(2,[doc(products=False, is_open=False)])
+    prod = self.c.execute("select status, missing_streak, is_open from products").fetchone()
+    self.assertEqual(prod["status"], "active")
+    self.assertEqual(prod["missing_streak"], 0) # missing_streak not incremented
+    store = self.c.execute("select is_open from stores").fetchone()
+    self.assertEqual(store["is_open"], 0)
+    # Batch 3: Store closed, returns product with different price
+    self.run_batch(3,[doc(50, is_open=False)])
+    prod = self.c.execute("select is_open, is_price_deal from products").fetchone()
+    self.assertEqual(prod["is_open"], 0)
+    self.assertEqual(prod["is_price_deal"], 0)
+    self.assertEqual(self.c.execute("select count(*) from events where event_type='PRICE_CHANGED'").fetchone()[0], 0)
   def test_unchanged_and_price_events(self):
     self.run_batch(1,[doc()]); r=self.run_batch(2,[doc()]); self.assertEqual(r['unchanged'],1); self.assertEqual(self.c.execute('select count(*) from events').fetchone()[0],0)
     self.run_batch(3,[doc(100)]); self.run_batch(4,[doc(80)])

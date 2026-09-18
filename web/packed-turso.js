@@ -158,7 +158,9 @@ function dedupeProducts(products) {
 function productView(product, store) {
   const price = Number(product.price || 0);
   const effective = Number(product.effective_price || price);
-  const saving = Math.max(0, price - effective);
+  const refPrice = Number(product.reference_price || 0);
+  const originalPrice = (refPrice > price) ? refPrice : price;
+  const saving = Math.max(0, originalPrice - effective);
   return {
     product_id: product.product_uuid,
     product_uuid: product.product_uuid,
@@ -184,9 +186,9 @@ function productView(product, store) {
     distance_km: store.distance_km ?? null,
     crawled_time: product.last_seen,
     first_seen: product.first_seen,
-    original_price: price,
+    original_price: originalPrice,
     current_price: effective,
-    discount_pct: Number(product.discount_pct || Math.round(price ? saving * 100 / price : 0)),
+    discount_pct: Number(product.discount_pct || Math.round(originalPrice ? saving * 100 / originalPrice : 0)),
     savings_amount: Number(product.discount_amount || saving)
   };
 }

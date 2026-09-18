@@ -385,10 +385,10 @@ def create_inactive_store_schema(store_item: dict, store_url: str, store_uuid: s
 def fetch_single_store(store_item: dict, output_dir: str, time_prefix: str = "", max_retries: int = 3) -> dict:
     """
     採集單一店家資料並轉換為 Schema.org JSON 存檔
-    【雙引擎架構】：
-    1. 優先使用原生 RPC getStoreV1 API (高速、免驗證)
-    2. 若無 store_uuid 則 Fallback 請求 HTML
-    3. 若遇店家停權/下架 (410 Inactive)，產出停業快照並回報「網頁已失效」
+    【純原生 RPC getStoreV1 API 引擎】：
+    1. 僅使用官方原生 RPC getStoreV1 API (高速、純 JSON、單位分自動換算為元)
+    2. 若遇店家停權/下架 (410/404)，產出停業快照並回報「網頁已失效」
+    3. 遇到暫時性錯誤、超時或 429 限流時，重試並退避，嚴禁使用 HTML 爬蟲
     """
     store_url = store_item["store_url"]
     store_uuid = normalize_store_uuid(store_item.get("store_uuid"), store_url)
@@ -405,113 +405,35 @@ def fetch_single_store(store_item: dict, output_dir: str, time_prefix: str = "",
 
     last_err = None
 
+    if not (store_uuid and len(store_uuid) == 36):
+        return {
+            "status": "FAILED",
+            "store_name": store_item.get("name", "未命名店家"),
+            "store_id": store_id,
+            "store_url": store_url,
+            "total_items": 0,
+            "rating": None,
+            "review_count": None,
+            "error": f"無效的 store_uuid: '{store_uuid}'"
+        }
+
     for attempt in range(1, max_retries + 1):
         try:
             global_limiter.wait()
             
-            # 方法 1: 原生 RPC getStoreV1 API
-            if store_uuid and len(store_uuid) == 36:
-                payload = {"storeUuid": store_uuid, "sfNuggetCount": 24}
-                resp = session.post("https://www.ubereats.com/api/getStoreV1", json=payload, headers=headers, timeout=12)
-                
-                if resp.status_code == 429:
-                    backoff = 6.0 * attempt + random.uniform(1.0, 2.0)
-                    global_limiter.trigger_backoff(backoff, f"getStoreV1 [{store_item.get('name')}] 429")
-                    last_err = "HTTP 429"
-                    continue
-                elif resp.status_code == 410 or resp.status_code == 404:
-                    # 明確停業/下架
-                    schema_doc = create_inactive_store_schema(store_item, store_url, store_uuid, store_id, time_prefix, reason=f"HTTP_{resp.status_code}")
-                    validate_document(schema_doc)
-                    real_name = schema_doc["name"]
-                    safe_name = clean_filename(real_name)
-                    filename = f"{time_prefix}{store_id}_{safe_name}.json"
-                    file_path = os.path.join(output_dir, filename)
-                    with open(file_path, "w", encoding="utf-8") as f:
-                        json.dump(schema_doc, f, ensure_ascii=False, indent=2)
-                    return {
-                        "status": "INACTIVE",
-                        "store_name": real_name,
-                        "store_id": store_id,
-                        "store_url": store_url,
-                        "total_items": 0,
-                        "rating": store_item.get("rating_score"),
-                        "review_count": store_item.get("rating_count"),
-                        "file_path": file_path,
-                        "filename": filename,
-                        "message": "網頁已失效"
-                    }
-                elif resp.status_code == 200:
-                    res_json = resp.json()
-                    # 檢查是否為 410 Inactive Account
-                    if res_json.get("status") == "failure":
-                        data_obj = res_json.get("data", {})
-                        code_val = str(data_obj.get("code", ""))
-                        msg_val = str(data_obj.get("message", ""))
-                        if code_val in ("410", "404") or "inactive_account" in msg_val or "store_inactive" in msg_val:
-                            schema_doc = create_inactive_store_schema(store_item, store_url, store_uuid, store_id, time_prefix, reason=msg_val or "inactive_account")
-                            validate_document(schema_doc)
-                            real_name = schema_doc["name"]
-                            safe_name = clean_filename(real_name)
-                            filename = f"{time_prefix}{store_id}_{safe_name}.json"
-                            file_path = os.path.join(output_dir, filename)
-                            with open(file_path, "w", encoding="utf-8") as f:
-                                json.dump(schema_doc, f, ensure_ascii=False, indent=2)
-                            return {
-                                "status": "INACTIVE",
-                                "store_name": real_name,
-                                "store_id": store_id,
-                                "store_url": store_url,
-                                "total_items": 0,
-                                "rating": store_item.get("rating_score"),
-                                "review_count": store_item.get("rating_count"),
-                                "file_path": file_path,
-                                "filename": filename,
-                                "message": "網頁已失效"
-                            }
-
-                    if res_json.get("status") in (None, "success") and "data" in res_json:
-                        api_data = res_json.get("data", {})
-                        if api_data and (api_data.get("title") or api_data.get("catalogSectionsMap")):
-                            schema_doc = convert_api_data_to_schema(api_data, store_url, store_item.get("name", ""))
-                            schema_doc.update(store_id=store_id, store_uuid=store_uuid, batch_id=time_prefix.rstrip("_"))
-                            validate_document(schema_doc)
-                            
-                            real_name = schema_doc["name"]
-                            safe_name = clean_filename(real_name)
-                            filename = f"{time_prefix}{store_id}_{safe_name}.json"
-                            file_path = os.path.join(output_dir, filename)
-                            
-                            with open(file_path, "w", encoding="utf-8") as f:
-                                json.dump(schema_doc, f, ensure_ascii=False, indent=2)
-                                
-                            sections = schema_doc.get("hasMenu", {}).get("hasMenuSection", [])
-                            total_items = sum(len(sec.get("hasMenuItem", [])) for sec in sections)
-                            rating_val = schema_doc.get("aggregateRating", {}).get("ratingValue")
-                            rev_cnt = schema_doc.get("aggregateRating", {}).get("reviewCount")
-                            
-                            return {
-                                "status": "SUCCESS",
-                                "store_name": real_name,
-                                "store_id": store_id,
-                                "store_url": store_url,
-                                "total_items": total_items,
-                                "rating": rating_val,
-                                "review_count": rev_cnt,
-                                "file_path": file_path,
-                                "filename": filename
-                            }
-                last_err = f"API 狀態碼 {resp.status_code}"
+            payload = {"storeUuid": store_uuid, "sfNuggetCount": 24}
+            resp = session.post("https://www.ubereats.com/api/getStoreV1", json=payload, headers=headers, timeout=12)
             
-            # 方法 2: Fallback 抓取 HTML Schema.org
-            html_headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                "Accept-Language": "zh-TW,zh;q=0.9"
-            }
-            resp_html = session.get(store_url, headers=html_headers, timeout=12)
-            if resp_html.status_code in (404, 410):
-                schema_doc = create_inactive_store_schema(store_item, store_url, store_uuid, store_id, time_prefix, reason=f"HTML_{resp_html.status_code}")
+            if resp.status_code == 429:
+                backoff = 6.0 * attempt + random.uniform(1.0, 2.0)
+                global_limiter.trigger_backoff(backoff, f"getStoreV1 [{store_item.get('name')}] 429")
+                last_err = "HTTP 429"
+                if attempt < max_retries:
+                    time.sleep(1.0 * attempt)
+                continue
+            elif resp.status_code in (410, 404):
+                # 明確停業/下架
+                schema_doc = create_inactive_store_schema(store_item, store_url, store_uuid, store_id, time_prefix, reason=f"HTTP_{resp.status_code}")
                 validate_document(schema_doc)
                 real_name = schema_doc["name"]
                 safe_name = clean_filename(real_name)
@@ -531,66 +453,73 @@ def fetch_single_store(store_item: dict, output_dir: str, time_prefix: str = "",
                     "filename": filename,
                     "message": "網頁已失效"
                 }
+            elif resp.status_code == 200:
+                res_json = resp.json()
+                # 檢查是否為 410 Inactive Account
+                if res_json.get("status") == "failure":
+                    data_obj = res_json.get("data", {})
+                    code_val = str(data_obj.get("code", ""))
+                    msg_val = str(data_obj.get("message", ""))
+                    if code_val in ("410", "404") or "inactive_account" in msg_val or "store_inactive" in msg_val:
+                        schema_doc = create_inactive_store_schema(store_item, store_url, store_uuid, store_id, time_prefix, reason=msg_val or "inactive_account")
+                        validate_document(schema_doc)
+                        real_name = schema_doc["name"]
+                        safe_name = clean_filename(real_name)
+                        filename = f"{time_prefix}{store_id}_{safe_name}.json"
+                        file_path = os.path.join(output_dir, filename)
+                        with open(file_path, "w", encoding="utf-8") as f:
+                            json.dump(schema_doc, f, ensure_ascii=False, indent=2)
+                        return {
+                            "status": "INACTIVE",
+                            "store_name": real_name,
+                            "store_id": store_id,
+                            "store_url": store_url,
+                            "total_items": 0,
+                            "rating": store_item.get("rating_score"),
+                            "review_count": store_item.get("rating_count"),
+                            "file_path": file_path,
+                            "filename": filename,
+                            "message": "網頁已失效"
+                        }
+                    last_err = f"API failure: {code_val} {msg_val}"
+                    if attempt < max_retries:
+                        time.sleep(1.0 * attempt)
+                    continue
 
-            if resp_html.status_code == 200 and len(resp_html.text) > 1000:
-                # 檢查是否被跳轉到 challenge 且未含 Schema.org
-                is_challenge = "challenge" in str(resp_html.url) or "def.uber.com" in str(resp_html.url)
-                scripts = re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', resp_html.text, re.DOTALL)
-                found_valid_schema = False
-                for s in scripts:
-                    try:
-                        d = json.loads(s)
-                        if d.get("@type") in ["Restaurant", "Store", "GroceryStore", "FoodEstablishment", "LocalBusiness"]:
-                            d["@id"] = store_url
-                            d.update(store_id=store_id, store_uuid=store_uuid, batch_id=time_prefix.rstrip("_"))
-                            validate_document(d)
-                            raw_name = d.get("name") or store_item.get("name") or "未命名店家"
-                            real_name = html.unescape(str(raw_name)).strip()
-                            safe_name = clean_filename(real_name)
-                            filename = f"{time_prefix}{store_id}_{safe_name}.json"
-                            file_path = os.path.join(output_dir, filename)
-                            with open(file_path, "w", encoding="utf-8") as f:
-                                json.dump(d, f, ensure_ascii=False, indent=2)
-                            return {
-                                "status": "SUCCESS",
-                                "store_name": real_name,
-                                "store_id": store_id,
-                                "store_url": store_url,
-                                "total_items": sum(len(section["hasMenuItem"]) for section in d["hasMenu"]["hasMenuSection"]),
-                                "rating": d.get("aggregateRating", {}).get("ratingValue"),
-                                "review_count": d.get("aggregateRating", {}).get("reviewCount"),
-                                "file_path": file_path,
-                                "filename": filename
-                            }
-                    except Exception:
-                        continue
-                
-                if is_challenge and not found_valid_schema:
-                    # 被跳轉至 challenge/無店家資訊，視為網頁失效
-                    schema_doc = create_inactive_store_schema(store_item, store_url, store_uuid, store_id, time_prefix, reason="challenge_redirect")
-                    validate_document(schema_doc)
-                    real_name = schema_doc["name"]
-                    safe_name = clean_filename(real_name)
-                    filename = f"{time_prefix}{store_id}_{safe_name}.json"
-                    file_path = os.path.join(output_dir, filename)
-                    with open(file_path, "w", encoding="utf-8") as f:
-                        json.dump(schema_doc, f, ensure_ascii=False, indent=2)
-                    return {
-                        "status": "INACTIVE",
-                        "store_name": real_name,
-                        "store_id": store_id,
-                        "store_url": store_url,
-                        "total_items": 0,
-                        "rating": store_item.get("rating_score"),
-                        "review_count": store_item.get("rating_count"),
-                        "file_path": file_path,
-                        "filename": filename,
-                        "message": "網頁已失效"
-                    }
-
-                last_err = "HTML 未含 Schema.org"
+                if res_json.get("status") in (None, "success") and "data" in res_json:
+                    api_data = res_json.get("data", {})
+                    if api_data and (api_data.get("title") or api_data.get("catalogSectionsMap")):
+                        schema_doc = convert_api_data_to_schema(api_data, store_url, store_item.get("name", ""))
+                        schema_doc.update(store_id=store_id, store_uuid=store_uuid, batch_id=time_prefix.rstrip("_"))
+                        validate_document(schema_doc)
+                        
+                        real_name = schema_doc["name"]
+                        safe_name = clean_filename(real_name)
+                        filename = f"{time_prefix}{store_id}_{safe_name}.json"
+                        file_path = os.path.join(output_dir, filename)
+                        
+                        with open(file_path, "w", encoding="utf-8") as f:
+                            json.dump(schema_doc, f, ensure_ascii=False, indent=2)
+                            
+                        sections = schema_doc.get("hasMenu", {}).get("hasMenuSection", [])
+                        total_items = sum(len(sec.get("hasMenuItem", [])) for sec in sections)
+                        rating_val = schema_doc.get("aggregateRating", {}).get("ratingValue")
+                        rev_cnt = schema_doc.get("aggregateRating", {}).get("reviewCount")
+                        
+                        return {
+                            "status": "SUCCESS",
+                            "store_name": real_name,
+                            "store_id": store_id,
+                            "store_url": store_url,
+                            "total_items": total_items,
+                            "rating": rating_val,
+                            "review_count": rev_cnt,
+                            "file_path": file_path,
+                            "filename": filename
+                        }
+                last_err = "API 回傳缺少店家資料"
             else:
-                last_err = f"HTML HTTP {resp_html.status_code}"
+                last_err = f"API 狀態碼 {resp.status_code}"
 
         except Exception as e:
             last_err = str(e)

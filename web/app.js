@@ -2092,10 +2092,22 @@ async function showPriceHistoryModal(storeUuid, productId, productName, storeNam
     try {
       const client = await getPackedTursoClient();
       const events = await client.packedHistory(storeUuid, productId);
-      if (events.length) history = events.map(e => {
-        const state = JSON.parse(e.new_state || e.old_state || '{}');
-        return {crawled_time:e.event_time,price:Number(state.price||0),eff_price:Number(state.effective_price||state.price||0),quantity:Number(state.quantity||1),promo_type:state.promo_type||'無'};
-      });
+      if (events.length) {
+        history = events
+          .map(e => {
+            const state = JSON.parse(e.new_state || e.old_state || '{}');
+            const p = Number(state.price || 0);
+            const eff = Number(state.effective_price || p);
+            return {
+              crawled_time: e.event_time,
+              price: p,
+              eff_price: eff,
+              quantity: Number(state.quantity || 1),
+              promo_type: state.promo_type || '無'
+            };
+          })
+          .filter(h => h.price > 0 && h.eff_price > 0);
+      }
     } catch (err) {
       console.warn('Packed Turso 歷史記錄查詢失敗:', err);
     }
@@ -2107,10 +2119,20 @@ async function showPriceHistoryModal(storeUuid, productId, productName, storeNam
       const response = await fetch(`${base}/product/${encodeURIComponent(storeUuid)}/${encodeURIComponent(productId)}/history?days=60`);
       if (response.ok) {
         const payload = await response.json();
-        history = (payload.items || []).map(event => {
-          const state = JSON.parse(event.new_state || '{}');
-          return { crawled_time: event.event_time, price: state.price || 0, eff_price: state.effective_price || state.price || 0, quantity: state.quantity || 1, promo_type: state.promo_type || '無' };
-        });
+        history = (payload.items || [])
+          .map(event => {
+            const state = JSON.parse(event.new_state || '{}');
+            const p = Number(state.price || 0);
+            const eff = Number(state.effective_price || p);
+            return {
+              crawled_time: event.event_time,
+              price: p,
+              eff_price: eff,
+              quantity: Number(state.quantity || 1),
+              promo_type: state.promo_type || '無'
+            };
+          })
+          .filter(h => h.price > 0 && h.eff_price > 0);
       }
     } catch (error) { console.warn('Serving history unavailable', error); }
   }
@@ -2123,15 +2145,17 @@ async function showPriceHistoryModal(storeUuid, productId, productName, storeNam
       || (APP_STATE.allProducts || []).find(x => String(x.product_id) === String(productId))
       || (APP_STATE.globalProducts || []).find(x => String(x.product_id) === String(productId));
 
-    if (found) {
+    if (found && Number(found.price || 0) > 0) {
       const eff = found.eff_price || (found.quantity > 1 ? Math.round((found.price / found.quantity) * 10) / 10 : found.price);
-      history = [{
-        crawled_time: found.crawled_time || (APP_STATE.stats && APP_STATE.stats.latest_batch) || '最新',
-        price: Number(found.price || eff),
-        quantity: Number(found.quantity || 1),
-        promo_type: found.promo_type || '無',
-        eff_price: Number(eff)
-      }];
+      if (Number(eff) > 0) {
+        history = [{
+          crawled_time: found.crawled_time || (APP_STATE.stats && APP_STATE.stats.latest_batch) || '最新',
+          price: Number(found.price || eff),
+          quantity: Number(found.quantity || 1),
+          promo_type: found.promo_type || '無',
+          eff_price: Number(eff)
+        }];
+      }
     }
   }
 
