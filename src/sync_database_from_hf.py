@@ -9,10 +9,10 @@ import sqlite3
 import time
 
 try:
-    from src.rebuild_database import format_duration, materialize_snapshots, validate_and_extract_archive, validate_archive
+    from src.rebuild_database import format_duration, iter_snapshot_documents, materialize_snapshots, validate_archive
     from src.serving_state import ServingStateCache, apply_snapshot, iter_documents, refresh_product_search
 except ModuleNotFoundError:
-    from rebuild_database import format_duration, materialize_snapshots, validate_and_extract_archive, validate_archive
+    from rebuild_database import format_duration, iter_snapshot_documents, materialize_snapshots, validate_archive
     from serving_state import ServingStateCache, apply_snapshot, iter_documents, refresh_product_search
 
 
@@ -46,20 +46,20 @@ def sync(args: argparse.Namespace) -> dict[str, object]:
             print(f"{prefix} STEP 1/3: Download finished in {dl_sec:.2f}s ({size_mb:.2f} MB)", flush=True)
 
         t_extract_start = time.perf_counter()
-        valid, docs, reason = validate_and_extract_archive(source, batch_id, args.minimum_stores)
+        valid, reason = validate_archive(source, batch_id, args.minimum_stores)
         t_extract = time.perf_counter() - t_extract_start
-        if not valid or docs is None:
+        if not valid:
             skipped.append({"batch_id": batch_id, "reason": reason, "extract_duration_seconds": round(t_extract, 2)})
             print(f"{prefix} STEP 2/3: Validation FAILED in {t_extract:.2f}s -> SKIPPED ({reason})", flush=True)
             print(json.dumps({"batch_id": batch_id, "skipped": reason, "extract_duration_seconds": round(t_extract, 2)}, ensure_ascii=False), flush=True)
             continue
-        print(f"{prefix} STEP 2/3: Validated & extracted in {t_extract:.2f}s ({len(docs)} stores)", flush=True)
+        print(f"{prefix} STEP 2/3: Archive validated in {t_extract:.2f}s ({reason})", flush=True)
 
         t_apply_start = time.perf_counter()
         counts = apply_snapshot(
-            conn, docs, batch_id,
+            conn, iter_snapshot_documents(source), batch_id,
             missing_threshold=args.missing_threshold,
-            baseline=False, event_retention_days=None, refresh_search=False,
+            baseline=False, event_retention_days=getattr(args, "event_retention_days", 60), refresh_search=False,
             state_cache=state_cache,
         )
         t_apply = time.perf_counter() - t_apply_start
@@ -108,6 +108,7 @@ def main() -> None:
     parser.add_argument("--source-dir")
     parser.add_argument("--minimum-stores", type=int, default=10000)
     parser.add_argument("--missing-threshold", type=int, default=3)
+    parser.add_argument("--event-retention-days", type=int, default=60)
     sync(parser.parse_args())
 
 

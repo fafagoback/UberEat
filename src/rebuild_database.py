@@ -167,10 +167,9 @@ def validate_and_extract_archive(
     minimum_stores: int,
     shard_id: int | None = None,
     total_shards: int = 1,
-) -> tuple[bool, list[dict[str, Any]] | None, str]:
-    """Validate archive integrity and extract all JSON documents in a single streaming pass."""
+) -> tuple[bool, None, str]:
+    """Validate an archive without retaining its documents in memory."""
     try:
-        documents: list[dict[str, Any]] = []
         manifest: dict[str, Any] | None = None
         identities: set[str] = set()
 
@@ -198,8 +197,6 @@ def validate_and_extract_archive(
                     if identity in identities:
                         return False, None, f"duplicate store identity: {identity}"
                     identities.add(identity)
-                    if is_store_in_shard(identity, shard_id, total_shards):
-                        documents.append(document)
 
         if manifest is None:
             return False, None, "manifest.json missing"
@@ -210,7 +207,7 @@ def validate_and_extract_archive(
             return False, None, f"manifest stores={declared} archive JSON={len(identities)}"
         if len(identities) < minimum_stores:
             return False, None, f"only {len(identities)} stores (minimum {minimum_stores})"
-        return True, documents, f"{len(documents)} stores (shard {shard_id}/{total_shards})"
+        return True, None, f"{len(identities)} stores validated"
     except (OSError, tarfile.TarError, ValueError, TypeError, AttributeError, UnicodeDecodeError) as error:
         return False, None, str(error)
 
@@ -218,6 +215,14 @@ def validate_and_extract_archive(
 def validate_archive(path: str, batch_id: str, minimum_stores: int) -> tuple[bool, str]:
     valid, _, reason = validate_and_extract_archive(path, batch_id, minimum_stores)
     return valid, reason
+
+
+def iter_snapshot_documents(path: str, shard_id: int | None = None, total_shards: int = 1):
+    """Stream validated store documents, optionally selecting one rebuild shard."""
+    for document in iter_documents(path):
+        identity, _ = store_identity(document)
+        if is_store_in_shard(identity, shard_id, total_shards):
+            yield document
 
 
 def rebuild(args: argparse.Namespace) -> dict[str, object]:
@@ -243,7 +248,7 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
         conn.row_factory = sqlite3.Row
         conn.execute("PRAGMA journal_mode=WAL")
         conn.execute("PRAGMA synchronous=NORMAL")
-        conn.execute("PRAGMA temp_store=MEMORY")
+        conn.execute("PRAGMA temp_store=FILE")
         conn.execute("PRAGMA cache_size=-64000")
         conn.execute("PRAGMA mmap_size=268435456")
 
@@ -287,7 +292,7 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
 
             # 2. Extract & Validate
             t_extract_start = time.perf_counter()
-            valid, docs, reason = validate_and_extract_archive(
+            valid, _, reason = validate_and_extract_archive(
                 source,
                 batch_id,
                 args.minimum_stores,
@@ -296,7 +301,7 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
             )
             t_extract = time.perf_counter() - t_extract_start
 
-            if not valid or docs is None:
+            if not valid:
                 skipped.append({"batch_id": batch_id, "reason": reason, "extract_duration_seconds": round(t_extract, 2)})
                 print(f"{prefix} STEP 2/3: Extract & Validate FAILED in {t_extract:.2f}s -> SKIPPED ({reason})", flush=True)
                 print(json.dumps({
@@ -307,13 +312,13 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
                 }, ensure_ascii=False), flush=True)
                 continue
 
-            print(f"{prefix} STEP 2/3: Extract & Validate finished in {t_extract:.2f}s ({len(docs)} stores selected)", flush=True)
+            print(f"{prefix} STEP 2/3: Archive validation finished in {t_extract:.2f}s ({reason})", flush=True)
 
             # 3. Apply Snapshot Diff
             t_apply_start = time.perf_counter()
             counts = apply_snapshot(
                 conn,
-                docs,
+                iter_snapshot_documents(source, shard_id, total_shards),
                 batch_id,
                 missing_threshold=args.missing_threshold,
                 baseline=(len(processed) == 0),

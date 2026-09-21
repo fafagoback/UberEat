@@ -73,6 +73,20 @@ class ServingStateTest(unittest.TestCase):
       self.run_batch(1,[doc(80)])
     self.assertEqual(self.c.execute('select price from products').fetchone()[0],100)
 
+  def test_incremental_publish_queue_contains_only_changed_rows(self):
+    self.run_batch(1,[doc(100)])
+    self.c.execute('delete from pending_store_changes')
+    self.c.execute('delete from pending_product_changes')
+    self.c.commit()
+    self.run_batch(2,[doc(100)])
+    self.assertEqual(self.c.execute('select count(*) from pending_store_changes').fetchone()[0],0)
+    self.assertEqual(self.c.execute('select count(*) from pending_product_changes').fetchone()[0],1)
+    self.c.execute('delete from pending_product_changes'); self.c.commit()
+    self.run_batch(3,[doc(100)]); self.c.execute('delete from pending_product_changes'); self.c.commit()
+    self.run_batch(4,[doc(100)]); self.c.execute('delete from pending_product_changes'); self.c.commit()
+    self.run_batch(5,[doc(100)])
+    self.assertEqual(self.c.execute('select count(*) from pending_product_changes').fetchone()[0],0)
+
 class RetentionTest(unittest.TestCase):
   def test_only_old_allowlisted_paths(self):
     now=datetime(2026,9,15,tzinfo=timezone.utc); paths=['TaiwanMenuSnapshots/20260701000000/a.tar.gz','TaiwanMenuSnapshots/20260901000000/a.tar.gz','v2/history/events/20260701000000.parquet','v2/current/state.db','serving/current.db']

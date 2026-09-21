@@ -356,7 +356,14 @@ jobs:
           HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
         run: |
           python src/sync_database_from_hf.py --database serving.db --repo-id "$HF_REPO_ID" \
-            --missing-threshold "$MISSING_STREAK_THRESHOLD"
+            --missing-threshold "$MISSING_STREAK_THRESHOLD" --event-retention-days 60
+
+      - name: 顯示同步後 runner 資源
+        shell: bash
+        run: |
+          free -h
+          df -h .
+          du -h serving.db serving.db-wal serving.db-shm 2>/dev/null || true
 
       - name: ② Serving DB 本地完整性驗證
         shell: bash
@@ -390,6 +397,19 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
         run: python src/hf_retention.py --repo-id "$HF_REPO_ID"
+
+      - name: 壓縮下一批使用的狀態 checkpoint
+        shell: bash
+        run: |
+          python - <<'PY'
+          import sqlite3
+          c=sqlite3.connect('serving.db')
+          c.execute('DROP TABLE IF EXISTS product_search')
+          c.execute('PRAGMA wal_checkpoint(TRUNCATE)')
+          c.execute('VACUUM')
+          c.close()
+          PY
+          du -h serving.db
 
       - name: ⑤ 設定 GitHub Pages 環境
         uses: actions/configure-pages@v5
