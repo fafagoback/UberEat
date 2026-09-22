@@ -80,19 +80,16 @@ jobs:
         run: node scripts/provision_turso_rebuild.mjs
       - name: Incrementally update the existing packed database in place
         env:
-          GH_TOKEN: ${{ github.token }}
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
         run: node scripts/publish_packed_turso.mjs packed-serving.db
       - name: Verify uploaded database
         env:
-          GH_TOKEN: ${{ github.token }}
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
         run: node scripts/verify_uploaded_packed_turso.mjs packed-serving.db
       - name: Verify browser read-only credentials
         env:
-          GH_TOKEN: ${{ github.token }}
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_READONLY_TOKEN: ${{ steps.turso.outputs.readonly_token }}
         run: |
