@@ -58,23 +58,26 @@ for(const table of tables){
   const insertSql=`insert or replace into ${table}(${cols.join(',')}) values(${cols.map(()=>'?').join(',')})`;
   let saved=(await db.execute({sql:'select last_rowid,rows_done,bytes_done from _packed_publish_progress where source_id=? and table_name=?',args:[sourceId,table]})).rows[0];
 
-  // The first upgraded rerun can adopt rows written by the old non-checkpointed publisher.
+  // A different packed source must be replayed from row 1. INSERT OR REPLACE
+  // updates the existing database in place; it never drops or recreates it.
   if(!saved){
     const remote=(await db.execute(`select count(*) n,coalesce(max(rowid),0) last_rowid from ${table}`)).rows[0];
     const count=Number(remote.n),last=Number(remote.last_rowid);
     if(count&&table!=='metadata'){
-      if(Number(src.prepare(`select count(*) n from ${table} where rowid<=?`).get(last).n)!==count)
-        throw new Error(`${table}: remote data is not a contiguous resumable prefix`);
       const localLast=src.prepare(`select * from ${table} where rowid=?`).get(last);
       const remoteLast=(await db.execute(`select * from ${table} where rowid=${last}`)).rows[0];
       const comparable=cols.filter(c=>c!=='payload');
-      if(!localLast||!remoteLast||comparable.some(c=>String(localLast[c])!==String(remoteLast[c])))
-        throw new Error(`${table}: existing remote prefix does not match this source`);
-      let doneBytes=0;
-      for(const row of src.prepare(`select * from ${table} where rowid<=?`).iterate(last)) doneBytes+=cols.reduce((n,c)=>n+bytes(row[c]),0);
-      await db.execute({sql:'insert into _packed_publish_progress values(?,?,?,?,?,?)',args:[sourceId,table,last,count,doneBytes,new Date().toISOString()]});
-      saved={last_rowid:last,rows_done:count,bytes_done:doneBytes};
-      console.log(`${table}: adopted existing prefix ${count.toLocaleString()}/${totals[table].rows.toLocaleString()} rows`);
+      const prefixMatches=Number(src.prepare(`select count(*) n from ${table} where rowid<=?`).get(last).n)===count
+        && localLast&&remoteLast&&!comparable.some(c=>String(localLast[c])!==String(remoteLast[c]));
+      if(prefixMatches){
+        let doneBytes=0;
+        for(const row of src.prepare(`select * from ${table} where rowid<=?`).iterate(last)) doneBytes+=cols.reduce((n,c)=>n+bytes(row[c]),0);
+        await db.execute({sql:'insert into _packed_publish_progress values(?,?,?,?,?,?)',args:[sourceId,table,last,count,doneBytes,new Date().toISOString()]});
+        saved={last_rowid:last,rows_done:count,bytes_done:doneBytes};
+        console.log(`${table}: adopted matching existing prefix ${count.toLocaleString()}/${totals[table].rows.toLocaleString()} rows`);
+      }else{
+        console.log(`${table}: existing rows belong to an older snapshot; updating in place from row 1`);
+      }
     }
     // Metadata is tiny and can contain non-deterministic build timings. Replacing
     // it is safer and cheaper than trying to adopt an old prefix.
@@ -102,7 +105,30 @@ for(const table of tables){
     const percent=totalBytes?globalBytes/totalBytes*100:globalRows/totalRows*100;
     console.log(`${table} batch ${resumedBatches+batch}/${totals[table].batches}: ${done.toLocaleString()}/${totals[table].rows.toLocaleString()} rows | total ${percent.toFixed(2)}% (${human(globalBytes)}/${human(totalBytes)}) | ${human(rate)}/s | ETA ${elapsed(remaining/rate)}`);
   }
+
+  // Remove only rows left behind by an older, larger packed snapshot. The
+  // database and all rows represented by the new cumulative snapshot remain.
+  if(table==='metadata'||table==='auxiliary_bundles'){
+    const key=table==='metadata'?'key':'name';
+    const keys=src.prepare(`select ${key} value from ${table}`).all().map(row=>row.value);
+    if(keys.length) await db.execute({sql:`delete from ${table} where ${key} not in (${keys.map(()=>'?').join(',')})`,args:keys});
+  }else if(table==='store_directory'){
+    const maxId=Number(src.prepare('select coalesce(max(store_id),-1) n from store_directory').get().n);
+    await db.execute({sql:'delete from store_directory where store_id>?',args:[maxId]});
+  }else if(table==='search_buckets'){
+    const maxId=Number(src.prepare('select coalesce(max(bucket_id),-1) n from search_buckets').get().n);
+    await db.execute({sql:'delete from search_buckets where bucket_id>?',args:[maxId]});
+  }
 }
+
+// A store can shrink from multiple chunks to fewer chunks without changing
+// the maximum table rowid, so remove only obsolete chunks for that store.
+await db.execute(`delete from store_bundles
+  where not exists (
+    select 1 from store_directory d
+    where d.store_id=store_bundles.store_id
+      and store_bundles.chunk_no<d.chunk_count
+  )`);
 
 for(const table of tables){
   const remote=Number((await db.execute(`select count(*) n from ${table}`)).rows[0].n);

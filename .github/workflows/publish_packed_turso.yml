@@ -75,26 +75,14 @@ jobs:
           TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
           TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
           TURSO_REBUILD_NAME: ubereats-packed-v1
-          # Upload seeds only work while creating a database. Always replace
-          # this isolated rebuild target so a partial prior run cannot survive.
-          TURSO_RESET_TARGET: '1'
-          TURSO_DATABASE_UPLOAD: '1'
+          TURSO_RESET_TARGET: '0'
+          TURSO_REQUIRE_EXISTING: '1'
         run: node scripts/provision_turso_rebuild.mjs
-      - name: Upload packed SQLite database
+      - name: Incrementally update the existing packed database in place
         env:
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
-        run: |
-          set -euo pipefail
-          host="${TURSO_DATABASE_URL#libsql://}"
-          size="$(stat -c%s packed-serving.db)"
-          echo "Streaming $size bytes to Turso database upload endpoint"
-          curl --fail-with-body --show-error --silent \
-            --retry 3 --retry-all-errors --connect-timeout 30 \
-            -X POST "https://${host}/v1/upload" \
-            -H "Authorization: Bearer ${TURSO_AUTH_TOKEN}" \
-            -H "Content-Length: ${size}" \
-            --upload-file packed-serving.db
+        run: node scripts/publish_packed_turso.mjs packed-serving.db
       - name: Verify uploaded database
         env:
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
