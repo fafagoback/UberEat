@@ -56,7 +56,13 @@ let globalRows=0,globalBytes=0;
 for(const table of tables){
   const cols=src.prepare(`pragma table_info(${table})`).all().map(x=>x.name);
   const insertSql=`insert or replace into ${table}(${cols.join(',')}) values(${cols.map(()=>'?').join(',')})`;
+  const minRowid=Number(src.prepare(`select coalesce(min(rowid),1) n from ${table}`).get().n);
   let saved=(await db.execute({sql:'select last_rowid,rows_done,bytes_done from _packed_publish_progress where source_id=? and table_name=?',args:[sourceId,table]})).rows[0];
+  if(saved&&Number(saved.rows_done)!==Number(saved.last_rowid)-minRowid+1){
+    console.log(`${table}: discarding inconsistent checkpoint (rowid ${saved.last_rowid}, rows ${saved.rows_done})`);
+    await db.execute({sql:'delete from _packed_publish_progress where source_id=? and table_name=?',args:[sourceId,table]});
+    saved=undefined;
+  }
 
   // A different packed source must be replayed from row 1. INSERT OR REPLACE
   // updates the existing database in place; it never drops or recreates it.
@@ -83,7 +89,7 @@ for(const table of tables){
     // it is safer and cheaper than trying to adopt an old prefix.
   }
 
-  let last=Number(saved?.last_rowid||0),done=Number(saved?.rows_done||0),doneBytes=Number(saved?.bytes_done||0),batch=0;
+  let last=saved?Number(saved.last_rowid):minRowid-1,done=Number(saved?.rows_done||0),doneBytes=Number(saved?.bytes_done||0),batch=0;
   const resumedBatches=totals[table].batchEnds.filter(end=>end<=done).length;
   globalRows+=done;globalBytes+=doneBytes;
   if(done)console.log(`${table}: resuming at ${done.toLocaleString()}/${totals[table].rows.toLocaleString()} rows`);
