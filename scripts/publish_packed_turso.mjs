@@ -5,7 +5,6 @@ import {createHash} from 'node:crypto';
 const file=process.argv[2];
 if(!file||!process.env.TURSO_DATABASE_URL||!process.env.TURSO_AUTH_TOKEN)
   throw new Error('packed database path and Turso credentials required');
-const maxDelta=Number(process.env.TURSO_MAX_DELTA_BYTES||250*1024*1024);
 const src=new Database(file,{readonly:true});
 const db=createClient({url:process.env.TURSO_DATABASE_URL,authToken:process.env.TURSO_AUTH_TOKEN});
 const tables=[
@@ -58,8 +57,6 @@ for(const spec of tables){
     if(different) deltaBytes+=l.cols.reduce((n,c)=>n+bytes(row[c]),0);
     return different;
   });
-  if(deltaBytes>maxDelta)
-    throw new Error(`refusing packed full-like publish: estimated delta ${deltaBytes} exceeds ${maxDelta}`);
 }
 const stale={};
 for(const spec of tables) stale[spec.name]=[...remote[spec.name].keys].filter(k=>!local[spec.name].byKey.has(k));
@@ -67,7 +64,8 @@ for(const spec of tables) stale[spec.name]=[...remote[spec.name].keys].filter(k=
 const batchSize=Number(process.env.TURSO_BATCH_ROWS||100);
 for(const spec of tables){
   const l=local[spec.name];
-  const insert=`insert or replace into ${spec.name}(${l.cols.join(',')}) values(${l.cols.map(()=>'?').join(',')})`;
+  const updates=l.cols.filter(c=>!spec.keys.includes(c));
+  const insert=`insert into ${spec.name}(${l.cols.join(',')}) values(${l.cols.map(()=>'?').join(',')}) on conflict(${spec.keys.join(',')}) do update set ${updates.map(c=>`${c}=excluded.${c}`).join(',')}`;
   for(let i=0;i<changed[spec.name].length;i+=batchSize){
     const statements=changed[spec.name].slice(i,i+batchSize).map(row=>({sql:insert,args:l.cols.map(c=>row[c])}));
     if(statements.length) await db.batch(statements,'write');
@@ -83,5 +81,5 @@ for(const spec of tables){
   if(count!==local[spec.name].rows.length)
     throw new Error(`${spec.name} count mismatch ${count} != ${local[spec.name].rows.length}`);
 }
-console.log(`packed delta published: ${deltaBytes} bytes (${changed.store_directory.length} stores, ${changed.store_bundles.length} bundles, ${changed.search_buckets.length} buckets) in ${Math.round((Date.now()-started)/1000)}s`);
+console.log(`packed delta updated: ${deltaBytes} bytes (${changed.store_directory.length} stores, ${changed.store_bundles.length} bundles, ${changed.search_buckets.length} buckets) in ${Math.round((Date.now()-started)/1000)}s`);
 src.close();db.close();
