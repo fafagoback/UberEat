@@ -22,7 +22,7 @@ def main() -> None:
     src = sqlite3.connect(args.source); src.row_factory = sqlite3.Row
     out = Path(args.output); out.unlink(missing_ok=True)
     dst = sqlite3.connect(out); dst.executescript(SCHEMA)
-    for definition in ("latitude REAL", "longitude REAL", "address TEXT", "order_url TEXT", "first_seen TEXT", "last_seen TEXT"):
+    for definition in ("latitude REAL", "longitude REAL", "address TEXT", "order_url TEXT", "first_seen TEXT", "last_seen TEXT", "status TEXT", "is_open INTEGER"):
         dst.execute(f"alter table store_directory add column {definition}")
     local_to_stable = {}; next_id = max(mapping.values(), default=-1) + 1
     for row in src.execute("select * from store_directory order by store_id"):
@@ -30,7 +30,7 @@ def main() -> None:
         if stable_id is None: stable_id, next_id = next_id, next_id + 1
         local_to_stable[old_id] = stable_id
         values = list(row); values[0] = stable_id
-        dst.execute("insert into store_directory values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)", values)
+        dst.execute(f"insert into store_directory values({','.join('?' for _ in values)})", values)
     for row in src.execute("select store_id,chunk_no,codec,raw_bytes,checksum,payload from store_bundles order by store_id,chunk_no"):
         dst.execute("insert into store_bundles values(?,?,?,?,?,?)", (local_to_stable[int(row[0])], *row[1:]))
     dec = zstd.ZstdDecompressor(); comp = zstd.ZstdCompressor(level=10)

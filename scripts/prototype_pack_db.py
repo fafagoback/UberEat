@@ -108,6 +108,8 @@ def build(source, output, bucket_count=1024, level=10, max_items=2048):
     product_gid = 0
     max_raw = max_blob = chunks = 0
 
+    # Bundles remain lossless archives of normalized current/events data. Only
+    # active rows are added to the serving search postings below.
     stores = list(src.execute("SELECT * FROM stores ORDER BY store_uuid"))
     for store_id, store in enumerate(stores):
         sid = store["store_uuid"]
@@ -116,16 +118,24 @@ def build(source, output, bucket_count=1024, level=10, max_items=2048):
         product_arrays = []
         store_terms = tokens(store["name"]) | tokens(store["city"]) | tokens(store["locality"]) | tokens(store["address"])
         for local_index, product in enumerate(products):
+            if local_index >= (1 << 20):
+                raise ValueError(f"store {sid} exceeds the packed 20-bit product index capacity")
             product_gid += 1
             arr = row_array(product, pc)
             product_arrays.append([product_gid, arr])
-            terms = store_terms | tokens(product["product_name"]) | tokens(product["category"]) | tokens(product["promo_type"])
+            searchable = (store["status"] == "active" and int(store["is_open"] or 0) == 1
+                          and product["status"] == "active"
+                          and int(product["is_open"] or 0) == 1
+                          and float(product["effective_price"] or product["price"] or 0) > 0)
+            terms = (store_terms | tokens(product["product_name"]) | tokens(product["category"]) | tokens(product["promo_type"])) if searchable else set()
             price = float(product["effective_price"] or product["price"] or 0)
-            terms.add(f"f:price:{int(price // 50)}")
-            if product["promo_type"] not in (None, "", "無"):
-                terms.add("f:promo")
-            if "discount_pct" in pc and float(product["discount_pct"] or 0) > 0:
-                terms.add(f"f:discount:{int(float(product['discount_pct']) // 5)}")
+            if searchable:
+                terms.add(f"f:price:{int(price // 50)}")
+                terms.add("f:catalog")
+                if int(product["quantity"] or 1) > 1 or product["promo_type"] not in (None, "", "無"):
+                    terms.add("f:promo")
+                if "discount_pct" in pc and float(product["discount_pct"] or 0) > 0:
+                    terms.add(f"f:discount:{int(float(product['discount_pct']) // 5)}")
             for term in terms:
                 bid = int.from_bytes(hashlib.blake2s(term.encode(), digest_size=4).digest(), "big") % bucket_count
                 # One integer identifies store and product without a row-per-product

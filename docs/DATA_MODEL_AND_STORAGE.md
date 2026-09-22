@@ -1,5 +1,7 @@
 # 資料表與儲存位置
 
+> Current 搜尋索引只包含 active 且可供應的資料；normalized bundle 仍完整保存 inactive current rows 與 events，兩者不可混為同一集合。
+
 ## 1 儲存分層
 
 | 層級 | 內容 | 位置 | 保留方式 |
@@ -8,8 +10,8 @@
 | 店家發現資料 | 合併後全台店家資料 | Hugging Face `TaiwanStores`；GitHub artifact 90 天 | 依各自政策 |
 | Current | 每個店家一筆、每個店家商品一筆的目前狀態 | 建置時 `serving.db`，正式發布至 Turso | 持續 upsert，保留 first_seen |
 | Events | 店家及商品新增、異動、下架、重現事件 | `serving.db.events` 與 Turso packed store bundles | 由保留 Raw 重建；目前正式重建不主動裁掉 |
-| Packed | Current、Events、batch、metadata 的無損壓縮表示 | Turso `ubereats-packed-v1` 類型資料庫 | 每次 packed publish 建立隔離新庫並切換 |
-| 前端備援 | 統計、特價、新店、新品、促銷、部分商品、歷史 | Git repo 的 `web/data/*.json`，由 GitHub Pages 發布 | 隨程式碼版本；目前主 crawler 不重建它們 |
+| Packed | Current、Events、batch、metadata 的無損壓縮表示；倒排索引只服務 active current | Turso `ubereats-packed-v1` 類型資料庫 | 增量更新既有庫前先穩定化 store ID 並驗證差異 |
+| 前端備援 | 統計、特價、新店、新品、促銷、部分商品、歷史 | Git repo 的 `web/data/*.json`，由 GitHub Pages 發布 | 必須與 production release 同批次；不同批次不得發布 |
 | 暫存與本機 | SQLite、Parquet、壓縮包、worker 輸出 | 工作目錄或 GitHub artifacts/cache | 多數被 `.gitignore` 排除 |
 
 密鑰放在 GitHub Secrets 或本機 `.env`，不應寫入文件或 commit。`web/config.js` 包含瀏覽器可見的唯讀 Turso token；它只應具讀取權限，不能當成秘密或寫入憑證。

@@ -478,9 +478,10 @@ async function loadFromTurso() {
     } catch (_) {}
 
     // 取得爬蟲抓取資料的真實批次時間
-    const latestBatchTime = baselineStats.latest_batch_formatted 
-      || (baselineStats.latest_batch ? formatBatchDate(baselineStats.latest_batch) : '')
-      || (packed.meta && packed.meta.latest_batch ? formatBatchDate(packed.meta.latest_batch) : '已載入');
+    const latestBatchTime = packed.meta?.latest_processed_at
+      || (packed.meta?.latest_batch ? formatBatchDate(packed.meta.latest_batch) : '')
+      || baselineStats.latest_batch_formatted
+      || (baselineStats.latest_batch ? formatBatchDate(baselineStats.latest_batch) : '已載入');
 
     // 載入全量特價/新進店家/新品/促銷完整資料集
     let rawDiscounts = [];
@@ -515,8 +516,21 @@ async function loadFromTurso() {
       console.warn('快照資料預載警告:', snapErr);
     }
 
+    // Never blend intelligence lists from a different release with current
+    // packed search data. Empty is safer than confidently showing stale or
+    // semantically incompatible results when the remote query later fails.
+    const packedBatch = String(packed.meta?.latest_batch || '');
+    const staticBatch = String(baselineStats.latest_batch || '');
+    if (packedBatch && staticBatch && packedBatch !== staticBatch) {
+      console.warn(`靜態情報批次 ${staticBatch} 與 packed ${packedBatch} 不一致，已停用舊備援清單`);
+      rawDiscounts = [];
+      newStores = [];
+      newProducts = [];
+      promotions = [];
+    }
+
     APP_STATE.rawDiscounts = rawDiscounts;
-    APP_STATE.newStores = newStores.length > 0 ? newStores : packed.stores;
+    APP_STATE.newStores = newStores;
     APP_STATE.newProducts = newProducts;
     APP_STATE.promotions = promotions;
     APP_STATE.allProducts = packed.products;
@@ -525,7 +539,7 @@ async function loadFromTurso() {
     if (isLoc) {
       // 範圍過濾模式：根據指定經緯度與半徑，真實計算周圍符合條件的各項數據
       const filteredDiscounts = applyLocationFilter(rawDiscounts);
-      const filteredNewStores = applyLocationFilter(newStores.length > 0 ? newStores : packed.stores);
+      const filteredNewStores = applyLocationFilter(newStores);
       const filteredNewProducts = applyLocationFilter(newProducts);
       const filteredPromos = applyLocationFilter(promotions);
 
@@ -535,7 +549,7 @@ async function loadFromTurso() {
 
       statsData = {
         status: 'success',
-        latest_batch: baselineStats.latest_batch || 'packed-v1',
+        latest_batch: packed.meta?.latest_batch || baselineStats.latest_batch || 'packed-v1',
         latest_batch_formatted: latestBatchTime,
         total_stores: packed.stores.length,
         total_monitored_stores: packed.stores.length,
@@ -551,14 +565,14 @@ async function loadFromTurso() {
       // 全台模式：呈現全台大盤真實爬蟲統計
       statsData = {
         status: 'success',
-        latest_batch: baselineStats.latest_batch || 'packed-v1',
+        latest_batch: packed.meta?.latest_batch || baselineStats.latest_batch || 'packed-v1',
         latest_batch_formatted: latestBatchTime,
-        total_stores: Number(baselineStats.total_stores || counts.stores || packed.stores.length || 0),
-        total_monitored_stores: Number(baselineStats.total_monitored_stores || baselineStats.total_stores || counts.stores || 0),
-        total_products: Number(baselineStats.total_products || counts.products || packed.meta.products || 0),
-        total_monitored_products: Number(baselineStats.total_monitored_products || baselineStats.total_products || counts.products || 0),
+        total_stores: Number(packed.meta.active_stores || packed.stores.length || 0),
+        total_monitored_stores: Number(counts.stores || packed.meta.active_stores || 0),
+        total_products: Number(packed.meta.active_products || packed.products.length || 0),
+        total_monitored_products: Number(counts.products || packed.meta.products || 0),
         big_discounts_count: Number(baselineStats.big_discounts_count ?? rawDiscounts.length),
-        new_stores_count: Number(baselineStats.new_stores_count ?? (newStores.length || packed.stores.length)),
+        new_stores_count: Number(newStores.length),
         new_products_count: Number(baselineStats.new_products_count ?? newProducts.length),
         promotions_count: Number(baselineStats.promotions_count ?? promotions.length),
         max_savings_twd: Number(baselineStats.max_savings_twd || (rawDiscounts.length > 0 ? Math.max(...rawDiscounts.map(i => i.savings_amount || 0)) : 0))
@@ -842,11 +856,12 @@ async function fetchDiscounts(page = 1) {
   let fetchedRemote = false;
 
   // 若輸入關鍵字且啟用了 Turso，直接使用倒排索引向 Turso 全庫檢索（無筆數截斷）
-  if (discountSearch && discountSearch.trim() && window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
+  if (window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
     try {
       const client = await getPackedTursoClient();
       const remote = await client.searchPacked({
         keyword: discountSearch.trim(),
+        minDiscount: discountMinPct,
         location: APP_STATE.locationFilter,
         limit: 50000
       });
@@ -1025,11 +1040,12 @@ async function fetchNewStores(page = 1) {
   const { storeSearch, storeCity, storeSort } = APP_STATE.filters;
   let items = applyLocationFilter(APP_STATE.newStores || []);
 
-  if (storeSearch && window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
+  if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
     try {
       const client = await getPackedTursoClient();
       const stores = await client.searchStores({
         keyword: storeSearch,
+        newOnly: true,
         location: APP_STATE.locationFilter,
         limit: 50000
       });
@@ -1180,7 +1196,7 @@ async function fetchNewProducts(page = 1) {
   let items = [];
   let fetchedRemote = false;
 
-  if (productSearch && productSearch.trim() && window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
+  if (window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
     try {
       const client = await getPackedTursoClient();
       const remote = await client.searchPacked({
@@ -1447,7 +1463,7 @@ async function fetchPromotions(page = 1) {
   let items = [];
   let fetchedRemote = false;
 
-  if (promoSearch && promoSearch.trim() && window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
+  if (window.UBER_RADAR_CONFIG?.ENABLE_TURSO) {
     try {
       const client = await getPackedTursoClient();
       const remote = await client.searchPacked({
@@ -1504,7 +1520,7 @@ async function fetchPromotions(page = 1) {
   } else if (promoSort === 'rating_desc') {
     items.sort((a, b) => (b.rating_value || 0) - (a.rating_value || 0) || (a.eff_price || 0) - (b.eff_price || 0));
   } else if (promoSort === 'name_asc') {
-    items.sort((a, b) => (a.product_name || '').localeCompare(p.product_name || '', 'zh-TW'));
+    items.sort((a, b) => String(a.product_name || '').localeCompare(String(b.product_name || ''), 'zh-TW'));
   }
 
   APP_STATE.filteredPromotions = items;
@@ -1810,7 +1826,7 @@ function executeInMemoryGlobalSearch(page = 1) {
 
   // 4. 促銷活動過濾
   if (sortMode === 'promo_only') {
-    items = items.filter(p => p.promo_type && p.promo_type !== '無' && p.promo_type !== '');
+    items = items.filter(p => Number(p.quantity || 1) > 1 || (p.promo_type && p.promo_type !== '無' && p.promo_type !== ''));
   }
 
   // 5. 排序演算法
@@ -2085,7 +2101,8 @@ async function showPriceHistoryModal(storeUuid, productId, productName, storeNam
   modal.classList.remove('hidden');
   modal.classList.add('flex');
 
-  let history = (APP_STATE.historyMap && APP_STATE.historyMap[productId]) ? [...APP_STATE.historyMap[productId]] : [];
+  const historyKey = `${storeUuid}::${productId}`;
+  let history = (APP_STATE.historyMap && APP_STATE.historyMap[historyKey]) ? [...APP_STATE.historyMap[historyKey]] : [];
 
   // Packed DB: events live inside the selected store bundle.
   if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO && (storeUuid || productId)) {

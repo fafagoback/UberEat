@@ -39,23 +39,31 @@ def main():
     # Keep the compact directory queryable for browser-side geo filtering. The
     # full records remain compressed in store_bundles; these columns add only a
     # few megabytes and avoid expanding the multi-million-row product table.
-    for definition in ('latitude REAL','longitude REAL','address TEXT','order_url TEXT','first_seen TEXT','last_seen TEXT'):
+    for definition in ('latitude REAL','longitude REAL','address TEXT','order_url TEXT','first_seen TEXT','last_seen TEXT','status TEXT','is_open INTEGER'):
         dst.execute(f'alter table store_directory add column {definition}')
     latest=max((v[0] for v in batch_agg.values() if v[0]),default='')
     try: cutoff=(datetime.fromisoformat(latest.replace('Z','+00:00'))-timedelta(days=7)).isoformat()
     except ValueError: cutoff=''
-    new_refs=[]; product_offsets=defaultdict(int); product_columns={}
+    new_refs=[]; product_offsets=defaultdict(int); product_columns={}; active_stores=active_products=0
     for store_id,chunk_no,payload,checksum in dst.execute('select store_id,chunk_no,payload,checksum from store_bundles order by store_id,chunk_no'):
         value=decode((payload,checksum),dec)
         if value.get('store') is not None:
             store=dict(zip(value['store_columns'],value['store']))
+            if store.get('status')=='active' and int(store.get('is_open') or 0)==1: active_stores+=1
             product_columns[store_id]=value.get('product_columns') or []
-            dst.execute('update store_directory set latitude=?,longitude=?,address=?,order_url=?,first_seen=?,last_seen=? where store_id=?',
-                        (store.get('latitude'),store.get('longitude'),store.get('address'),store.get('order_url'),store.get('first_seen'),store.get('last_seen'),store_id))
+            dst.execute('update store_directory set latitude=?,longitude=?,address=?,order_url=?,first_seen=?,last_seen=?,status=?,is_open=? where store_id=?',
+                        (store.get('latitude'),store.get('longitude'),store.get('address'),store.get('order_url'),store.get('first_seen'),store.get('last_seen'),store.get('status'),store.get('is_open'),store_id))
         product_cols=product_columns.get(store_id) or value.get('product_columns')
         for _,arr in value.get('products',[]):
             local_index=product_offsets[store_id]; product_offsets[store_id]+=1
-            if cutoff and product_cols and str(dict(zip(product_cols,arr)).get('first_seen') or '')>=cutoff:
+            product=dict(zip(product_cols,arr)) if product_cols else {}
+            if (store.get('status')=='active' and int(store.get('is_open') or 0)==1
+                    and product.get('status')=='active' and int(product.get('is_open') or 0)==1
+                    and float(product.get('effective_price') or product.get('price') or 0)>0): active_products+=1
+            product_first=str(product.get('first_seen') or '')
+            store_first=str(store.get('first_seen') or '')
+            if (cutoff and product_first>=cutoff and store_first and store_first<product_first
+                    and product.get('status')=='active' and int(product.get('is_open') or 0)==1):
                 new_refs.append((store_id<<20)|local_index)
     new_bucket=int.from_bytes(hashlib.blake2s(b'f:new',digest_size=4).digest(),'big')%bucket_count
     for bid in range(bucket_count):
@@ -69,7 +77,8 @@ def main():
     auxiliary={'crawl_batches':{'columns':['batch_id','processed_at','stores_seen','products_seen','fallback_stores','fallback_products'],'rows':[[k,*v] for k,v in sorted(batch_agg.items())]},'metadata':{'columns':['key','value'],'rows':[[k,v] for k,v in sorted(metadata.items())]}}
     raw,blob,digest=packed(auxiliary,comp); dst.execute('insert into auxiliary_bundles values(?,?,?,?,?)',('normalized_auxiliary','msgpack+zstd',len(raw),digest,blob))
     chunks=dst.execute('select count(*) from store_bundles').fetchone()[0]
-    info={'format':1,'buckets':bucket_count,'chunks':chunks,'products':totals['products'],'max_raw_bundle':max_raw,'max_compressed_bundle':max_blob,'source_counts':dict(totals),'shards':len(files)}
+    latest_batch=max(batch_agg,default='')
+    info={'format':1,'buckets':bucket_count,'chunks':chunks,'products':sum(product_offsets.values()),'active_stores':active_stores,'active_products':active_products,'max_raw_bundle':max_raw,'max_compressed_bundle':max_blob,'source_counts':dict(totals),'shards':len(files),'latest_batch':latest_batch,'latest_processed_at':latest,'definition_version':'2026-09-search-v2'}
     for k,v in info.items(): dst.execute('insert into metadata values(?,?)',(k,json.dumps(v,ensure_ascii=False,separators=(',',':'))))
     dst.commit(); dst.execute('vacuum')
     # Turso's database-upload endpoint requires WAL mode. There are no pending

@@ -610,13 +610,13 @@ def upload_partitions_to_hf(partitions_dir: str, repo_id: str = "hub-google/Uber
 
 
 def extract_price_history_map(conn: sqlite3.Connection, target_product_ids: Optional[set] = None) -> Dict[str, List[Dict[str, Any]]]:
-    """匯出特價/促銷商品按 product_id 聚合之歷史價格字典，控制在安全大小避免撐爆 Git"""
+    """匯出價格歷史；輸出一律以 store_id::product_id 隔離不同店家。"""
     cursor = conn.cursor()
     if target_product_ids:
         placeholders = ",".join(["?"] * len(target_product_ids))
         query = f"""
         SELECT 
-            product_id,
+            store_id, product_id,
             crawled_time,
             store_name,
             product_name,
@@ -632,7 +632,7 @@ def extract_price_history_map(conn: sqlite3.Connection, target_product_ids: Opti
     else:
         query = """
         SELECT 
-            product_id,
+            store_id, product_id,
             crawled_time,
             store_name,
             product_name,
@@ -641,8 +641,8 @@ def extract_price_history_map(conn: sqlite3.Connection, target_product_ids: Opti
             promo_type,
             COALESCE(eff_price, ROUND(price * 1.0 / quantity, 2)) as eff_price
         FROM products
-        WHERE promo_type != '無' AND promo_type != ''
-        ORDER BY product_id, crawled_time ASC
+        WHERE (promo_type != '無' AND promo_type != '') OR quantity > 1
+        ORDER BY store_id, product_id, crawled_time ASC
         LIMIT 5000;
         """
         cursor.execute(query)
@@ -650,10 +650,10 @@ def extract_price_history_map(conn: sqlite3.Connection, target_product_ids: Opti
     rows = cursor.fetchall()
     history_map: Dict[str, List[Dict[str, Any]]] = {}
     for r in rows:
-        pid = r["product_id"]
-        if pid not in history_map:
-            history_map[pid] = []
-        history_map[pid].append({
+        history_key = f'{r["store_id"]}::{r["product_id"]}'
+        if history_key not in history_map:
+            history_map[history_key] = []
+        history_map[history_key].append({
             "crawled_time": r["crawled_time"],
             "price": float(r["price"]),
             "quantity": int(r["quantity"]),
@@ -841,7 +841,11 @@ def compute_cross_snapshot_intelligence(
             curr.city
         FROM '{p_curr}' curr
         WHERE curr.store_id IN (SELECT DISTINCT store_id FROM '{prev_parquet_path}')
-          AND curr.product_id NOT IN (SELECT DISTINCT product_id FROM '{prev_parquet_path}')
+          AND NOT EXISTS (
+              SELECT 1 FROM '{prev_parquet_path}' prev
+              WHERE prev.store_id = curr.store_id
+                AND prev.product_id = curr.product_id
+          )
           AND curr.price >= 1
         ORDER BY curr.rating_value DESC NULLS LAST, curr.price ASC;
         """
@@ -871,49 +875,49 @@ def compute_cross_snapshot_intelligence(
                 })
 
     # 4. 建立跨批次商品歷史價格走勢字典 (history_map)
-    target_pids = set()
+    target_products = set()
     for d in discounts:
-        target_pids.add(str(d["product_id"]))
+        target_products.add((str(d["store_id"]), str(d["product_id"])))
     for np in new_products:
-        target_pids.add(str(np["product_id"]))
+        target_products.add((str(np["store_id"]), str(np["product_id"])))
     
     try:
-        q_promos_pids = f"SELECT product_id FROM '{p_curr}' WHERE promo_type != '無' AND price >= 1 LIMIT 5000"
+        q_promos_pids = f"SELECT store_id,product_id FROM '{p_curr}' WHERE (promo_type != '無' OR quantity > 1) AND price >= 1 LIMIT 5000"
         for r in conn.execute(q_promos_pids).fetchall():
-            target_pids.add(str(r[0]))
+            target_products.add((str(r[0]), str(r[1])))
     except Exception:
         pass
 
     try:
-        q_curated_pids = f"SELECT product_id FROM '{p_curr}' WHERE rating_value >= 4.5 AND price >= 1 LIMIT 3000"
+        q_curated_pids = f"SELECT store_id,product_id FROM '{p_curr}' WHERE rating_value >= 4.5 AND price >= 1 LIMIT 3000"
         for r in conn.execute(q_curated_pids).fetchall():
-            target_pids.add(str(r[0]))
+            target_products.add((str(r[0]), str(r[1])))
     except Exception:
         pass
 
     history_map = {}
-    if target_pids:
+    if target_products:
         all_parquet_paths = [p for _, p in all_downloaded_history_paths] + [p_curr]
-        union_hist_query = " UNION ALL ".join([f"SELECT product_id, crawled_time, store_name, product_name, price, quantity, promo_type, eff_price FROM '{p}'" for p in all_parquet_paths])
+        union_hist_query = " UNION ALL ".join([f"SELECT store_id, product_id, crawled_time, store_name, product_name, price, quantity, promo_type, eff_price FROM '{p}'" for p in all_parquet_paths])
         
-        target_list = list(target_pids)
+        target_list = list(target_products)
         chunk_size = 2000
         for i in range(0, len(target_list), chunk_size):
             chunk = target_list[i:i+chunk_size]
-            pids_sql = "('" + "','".join(chunk) + "')"
+            pairs_sql = ",".join("('" + sid.replace("'", "''") + "','" + pid.replace("'", "''") + "')" for sid, pid in chunk)
             q_hist = f"""
-            SELECT product_id, crawled_time, store_name, product_name, price, quantity, promo_type, eff_price
+            SELECT store_id, product_id, crawled_time, store_name, product_name, price, quantity, promo_type, eff_price
             FROM ({union_hist_query})
-            WHERE product_id IN {pids_sql}
-            ORDER BY product_id, crawled_time ASC;
+            WHERE (store_id,product_id) IN ({pairs_sql})
+            ORDER BY store_id, product_id, crawled_time ASC;
             """
             try:
                 hist_rows = conn.execute(q_hist).to_arrow_table().to_pylist()
                 for r in hist_rows:
-                    pid = str(r["product_id"])
-                    if pid not in history_map:
-                        history_map[pid] = []
-                    history_map[pid].append({
+                    history_key = f'{r["store_id"]}::{r["product_id"]}'
+                    if history_key not in history_map:
+                        history_map[history_key] = []
+                    history_map[history_key].append({
                         "crawled_time": str(r["crawled_time"]),
                         "price": float(r["price"]),
                         "quantity": int(r["quantity"]),
@@ -1387,5 +1391,3 @@ if __name__ == "__main__":
         scope=args.scope,
         hf_repo_id=args.repo_id
     )
-
-

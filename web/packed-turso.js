@@ -8,10 +8,17 @@ function cfg() { return window.UBER_RADAR_CONFIG || {}; }
 function normalize(value) { return String(value || '').normalize('NFKC').toLocaleLowerCase().replace(/\s+/g, ''); }
 
 function queryTokens(value) {
-  const s = normalize(value);
-  if (s.length >= 3) return Array.from({length: s.length - 2}, (_, i) => `t:${s.slice(i, i + 3)}`);
-  if (s.length === 2) return [`b:${s}`];
-  return s ? [`u:${s}`] : [];
+  return String(value || '').trim().split(/\s+/).filter(Boolean).flatMap(part => {
+    const s = normalize(part);
+    if (s.length >= 3) return Array.from({length: s.length - 2}, (_, i) => `t:${s.slice(i, i + 3)}`);
+    if (s.length === 2) return [`b:${s}`];
+    return s ? [`u:${s}`] : [];
+  });
+}
+
+function matchesWords(haystack, query) {
+  const text = normalize(haystack);
+  return String(query || '').trim().split(/\s+/).filter(Boolean).every(word => text.includes(normalize(word)));
 }
 
 async function runtime() {
@@ -131,9 +138,7 @@ function dedupeStores(stores) {
   const seen = new Set();
   const out = [];
   for (const s of stores) {
-    const lat = Number(s.latitude || 0).toFixed(2);
-    const lon = Number(s.longitude || 0).toFixed(2);
-    const k = `${s.store_name}::${lat}::${lon}`;
+    const k = String(s.store_uuid || s.store_id);
     if (!seen.has(k)) {
       seen.add(k);
       out.push(s);
@@ -146,7 +151,7 @@ function dedupeProducts(products) {
   const seen = new Set();
   const out = [];
   for (const p of products) {
-    const k = `${p.store_name}::${p.product_name}`;
+    const k = `${p.store_uuid || p.store_id}\x1f${p.product_uuid || p.product_id}`;
     if (!seen.has(k)) {
       seen.add(k);
       out.push(p);
@@ -160,7 +165,7 @@ function productView(product, store) {
   const effective = Number(product.effective_price || price);
   const refPrice = Number(product.reference_price || 0);
   const originalPrice = (refPrice > price) ? refPrice : price;
-  const saving = Math.max(0, originalPrice - effective);
+  const historicalSaving = Number(product.discount_amount || 0);
   return {
     product_id: product.product_uuid,
     product_uuid: product.product_uuid,
@@ -188,8 +193,11 @@ function productView(product, store) {
     first_seen: product.first_seen,
     original_price: originalPrice,
     current_price: effective,
-    discount_pct: Number(product.discount_pct || Math.round(originalPrice ? saving * 100 / originalPrice : 0)),
-    savings_amount: Number(product.discount_amount || saving)
+    discount_pct: Number(product.discount_pct || 0),
+    savings_amount: historicalSaving,
+    is_price_deal: Number(product.is_price_deal || 0),
+    status: product.status,
+    is_open: Number(product.is_open ?? store.is_open ?? 0)
   };
 }
 
@@ -214,7 +222,7 @@ export async function getStoresInLocation(location) {
   if (locationStoresCache.key === key) return locationStoresCache;
   const lat = Number(location.latitude), lon = Number(location.longitude), r = Number(location.radiusKm);
   const dy = r / 111.32, dx = r / Math.max(1, 111.32 * Math.cos(lat * Math.PI / 180));
-  const rows = await sql(`select * from store_directory where latitude between ${lat - dy} and ${lat + dy} and longitude between ${lon - dx} and ${lon + dx} order by rating desc nulls last, review_count desc limit 50000`);
+  const rows = await sql(`select * from store_directory where status='active' and is_open=1 and latitude between ${lat - dy} and ${lat + dy} and longitude between ${lon - dx} and ${lon + dx} order by rating desc nulls last, review_count desc limit 50000`);
   const allStores = rows.map(r => ({
     store_id: Number(r.store_id),
     store_uuid: r.store_uuid,
@@ -312,7 +320,7 @@ async function productsFromRefs(refs, location, limit = 50000) {
         for (const pair of chunk.products || []) {
           if (indexes.has(offset)) {
             const p = Object.fromEntries(cols.map((c, j) => [c, pair[1][j]]));
-            out.push(productView(p, store));
+            if (p.status === 'active' && Number(p.is_open) === 1) out.push(productView(p, store));
             if (out.length >= limit) return dedupeProducts(out);
           }
           offset++;
@@ -329,7 +337,7 @@ export async function directory(location, limit = 50000) {
     const locInfo = await getStoresInLocation(location);
     return locInfo.stores;
   }
-  const rows = await sql(`select * from store_directory where name != '' order by rating desc nulls last, review_count desc limit ${limit}`);
+  const rows = await sql(`select * from store_directory where name != '' and status='active' and is_open=1 order by rating desc nulls last, review_count desc limit ${limit}`);
   const stores = rows.map(r => ({
     store_id: Number(r.store_id),
     store_uuid: r.store_uuid,
@@ -352,9 +360,9 @@ export async function directory(location, limit = 50000) {
   return dedupeStores(stores);
 }
 
-export async function searchStores({ keyword = '', location = null, limit = 50000 } = {}) {
+export async function searchStores({ keyword = '', location = null, newOnly = false, limit = 50000 } = {}) {
   const k = normalize(keyword);
-  let where = "name != ''";
+  let where = "name != '' and status='active' and is_open=1";
   if (k) {
     const safe = k.replace(/'/g, "''");
     if (k.includes('costco') || k.includes('好市多')) {
@@ -369,6 +377,13 @@ export async function searchStores({ keyword = '', location = null, limit = 5000
     const lat = Number(location.latitude), lon = Number(location.longitude), r = Number(location.radiusKm);
     const dy = r / 111.32, dx = r / Math.max(1, 111.32 * Math.cos(lat * Math.PI / 180));
     where += ` and latitude between ${lat - dy} and ${lat + dy} and longitude between ${lon - dx} and ${lon + dx}`;
+  }
+  if (newOnly) {
+    const meta = await metadata();
+    const anchor = new Date(meta.latest_processed_at || Date.now());
+    anchor.setDate(anchor.getDate() - 7);
+    const cutoff = anchor.toISOString().replace(/'/g, "''");
+    where += ` and first_seen >= '${cutoff}'`;
   }
   const rows = await sql(`select * from store_directory where ${where} order by rating desc nulls last, review_count desc limit ${limit}`);
   const stores = rows.map(r => ({
@@ -398,7 +413,7 @@ export async function searchStores({ keyword = '', location = null, limit = 5000
 
 async function sampleProducts(stores, location, limit = 50000) {
   const sids = stores.map(s => s.store_id);
-  await bundlesForStores(sids.slice(0, 100));
+  await bundlesForStores(sids);
   const out = [];
   for (const d of stores) {
     let store, cols;
@@ -410,7 +425,7 @@ async function sampleProducts(stores, location, limit = 50000) {
       if (!store || !inLocation(store, location)) continue;
       for (const pair of chunk.products || []) {
         const p = Object.fromEntries(cols.map((c, i) => [c, pair[1][i]]));
-        out.push(productView(p, store));
+        if (p.status === 'active' && Number(p.is_open) === 1) out.push(productView(p, store));
         if (out.length >= limit) return dedupeProducts(out);
       }
     }
@@ -421,7 +436,7 @@ async function sampleProducts(stores, location, limit = 50000) {
 export async function loadPackedDashboard(location) {
   const meta = await metadata();
   const stores = await directory(location, 50000);
-  const products = await sampleProducts(stores, location, 50000);
+  const products = await searchPacked({ location, limit: 50000 });
   return { meta, stores, products };
 }
 
@@ -454,13 +469,17 @@ export async function searchPacked({ keyword = '', city = '', promo = false, new
   }
 
   if (!groups.length) {
-    const stores = await directory(location, 50000);
-    return sampleProducts(stores, location, limit);
+    groups.push(await posting('f:catalog', count));
   }
 
   const rows = await productsFromRefs(intersect(groups), location, limit);
   const k = normalize(keyword), c = normalize(city);
-  return rows.filter(p => (!k || normalize(`${p.product_name}${p.store_name}${p.category_name}`).includes(k)) && (!c || normalize(`${p.city}${p.locality}${p.street_address}`).includes(c)));
+  return rows.filter(p =>
+    p.status === 'active' && Number(p.is_open) === 1 &&
+    (!k || matchesWords(`${p.product_name}${p.store_name}${p.category_name}`, keyword)) &&
+    (!c || matchesWords(`${p.city}${p.locality}${p.street_address}`, city)) &&
+    (minDiscount === null || Number(p.discount_pct || 0) >= Number(minDiscount))
+  );
 }
 
 export async function packedHistory(storeUuid, productUuid) {

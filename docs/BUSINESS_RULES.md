@@ -1,5 +1,7 @@
 # 商品與店家判定規則
 
+> 搜尋與發布的強制驗收契約另見 `SYSTEM_REQUIREMENTS.md`。Current 搜尋一律使用正式 ID 去重，並排除 inactive／關閉／無有效價格資料。
+
 ## 1 身分識別規則
 
 所有跨批次比較都先依賴穩定 ID。名稱只用於顯示或 fallback，不是正式主要鍵。
@@ -50,7 +52,7 @@
 
 對已存在的商品，每次遇到店家營業中且 `price > 0` 時：
 
-1. 取該商品先前保存的最近三個有效 `price`，即 `recent_prices[-3:]`。
+1. 取該商品先前保存的最近三個有效批次 `price`，即 `recent_prices[-3:]`；相同價格可重複，代表價格已連續穩定多批。
 2. 必須已累積滿三筆，否則不判為價格優惠。
 3. 新 `price` 必須不等於前三筆中的任何一個價格，才設 `price_novel_vs_previous_3=1`。
 4. 以前三筆價格的中位數作為 `reference_price`。
@@ -128,7 +130,7 @@ discount_pct = savings_amount / previous_effective_price × 100
 
 ### 5.3 Packed 前端索引
 
-合併 packed shards 時，系統會以所有 batch 中最新 `processed_at` 往前 7 天作 cutoff，將 `first_seen >= cutoff` 的商品加入 `f:new` 搜尋索引。目前這個索引用於商品 `newOnly` 查詢，不代表靜態新店家頁籤的來源。
+合併 packed shards 時，系統會以所有 batch 中最新 `processed_at` 往前 7 天作 cutoff，只將 active、營業中、`first_seen >= cutoff` 且店家 `first_seen` 早於商品的資料加入 `f:new` 搜尋索引。店家搜尋使用 `first_seen` 與相同 7 天 cutoff。輸入關鍵字不得取消 new-only 條件。
 
 ## 6 新商品判定
 
@@ -153,7 +155,7 @@ discount_pct = savings_amount / previous_effective_price × 100
 
 Current 狀態保存 Raw 的 `promo_type` 與 `quantity`。若兩者任一改變，產生 `PROMOTION_CHANGED` 事件。
 
-靜態促銷清單的條件為：
+靜態及 packed 促銷搜尋的共同條件為：
 
 ```text
 (promo_type != '無' OR quantity > 1) AND price >= 1

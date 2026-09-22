@@ -1,5 +1,13 @@
 # 執行維運與已知注意事項
 
+## 0. 發布硬性條件
+
+- Packed metadata 必須直接包含 `latest_batch`、`latest_processed_at` 與 `definition_version`。
+- Packed、靜態摘要與 Pages release 必須使用相同批次；不一致應阻止發布。
+- Current 搜尋索引不得包含 inactive 店家／商品。
+- 發布前必須執行 Python、前端與 packed index 測試。
+- 60 天 Raw 無法代表永久歷史；identity registry、checkpoint 與 append-only events archive 是正式長期需求。
+
 ## 1 排程與發布
 
 | 工作流 | 觸發 | 作用 |

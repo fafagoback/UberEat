@@ -441,6 +441,9 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                         discount_amount = round(reference_price - price, 2) if price_novel and reference_price and price < reference_price else 0
                         discount_pct = round(discount_amount / reference_price * 100, 2) if discount_amount and reference_price else 0
                         is_price_deal = int(discount_amount > 0)
+                        # This is deliberately the last three valid crawl
+                        # observations (not three distinct price levels): three
+                        # stable observations establish a usable baseline.
                         next_recent_prices = (previous_prices + [price])[-3:]
                     else:
                         price_novel = 0

@@ -25,6 +25,22 @@ for(const {sql} of src.prepare("select sql from sqlite_schema where type='table'
   }
 }
 
+// CREATE TABLE IF NOT EXISTS does not evolve an existing packed database.
+// Add newly introduced nullable serving columns before reading/comparing rows.
+for(const spec of tables){
+  const localCols=src.prepare(`pragma table_info(${spec.name})`).all();
+  const remoteInfo=await db.execute(`pragma table_info(${spec.name})`);
+  const remoteCols=new Set(remoteInfo.rows.map(row=>String(row.name)));
+  for(const col of localCols){
+    if(remoteCols.has(col.name)) continue;
+    if(Number(col.notnull) && col.dflt_value==null)
+      throw new Error(`cannot safely add required column ${spec.name}.${col.name}`);
+    const type=String(col.type||'TEXT').replace(/[^A-Za-z0-9_() ,]/g,'');
+    const defaultSql=col.dflt_value==null?'':` default ${col.dflt_value}`;
+    await db.execute(`alter table ${spec.name} add column ${col.name} ${type}${defaultSql}`);
+  }
+}
+
 const local={};
 for(const spec of tables){
   const cols=src.prepare(`pragma table_info(${spec.name})`).all().map(x=>x.name);
@@ -58,10 +74,14 @@ for(const spec of tables){
     return different;
   });
 }
+
 const stale={};
 for(const spec of tables) stale[spec.name]=[...remote[spec.name].keys].filter(k=>!local[spec.name].byKey.has(k));
 
 const batchSize=Number(process.env.TURSO_BATCH_ROWS||100);
+const maxDeltaBytes=Number(process.env.TURSO_MAX_DELTA_BYTES||0);
+if(maxDeltaBytes>0 && deltaBytes>maxDeltaBytes)
+  throw new Error(`packed delta ${deltaBytes} exceeds TURSO_MAX_DELTA_BYTES=${maxDeltaBytes}`);
 for(const spec of tables){
   const l=local[spec.name];
   const updates=l.cols.filter(c=>!spec.keys.includes(c));

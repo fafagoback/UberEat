@@ -1,6 +1,9 @@
 name: Build and Publish Packed Turso
 
 on:
+  workflow_run:
+    workflows: ["Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       reuse_run_id:
@@ -18,7 +21,7 @@ concurrency:
 
 jobs:
   pack-shards:
-    if: ${{ inputs.reuse_run_id == '' }}
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.reuse_run_id == '' || github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' }}
     name: Pack shard (${{ matrix.shard }}/15)
     runs-on: ubuntu-latest
     timeout-minutes: 90

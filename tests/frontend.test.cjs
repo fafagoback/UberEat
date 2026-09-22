@@ -81,3 +81,24 @@ test('global Turso search treats an active location as a server query', () => {
   assert.match(helper, /client\.searchPacked/);
   assert.match(helper, /location: APP_STATE\.locationFilter/);
 });
+
+test('identity dedupe uses stable store and product IDs', () => {
+  const packed = fs.readFileSync('web/packed-turso.js', 'utf8');
+  assert.match(packed, /String\(s\.store_uuid \|\| s\.store_id\)/);
+  assert.match(packed, /p\.store_uuid \|\| p\.store_id/);
+  assert.match(packed, /p\.product_uuid \|\| p\.product_id/);
+  assert.doesNotMatch(packed, /`\$\{p\.store_name\}::\$\{p\.product_name\}`/);
+});
+
+test('new-store and promotional searches preserve their business filters', () => {
+  const stores = source.slice(source.indexOf('async function fetchNewStores'), source.indexOf('function changeStoresPage'));
+  const promos = source.slice(source.indexOf('async function fetchPromotions'), source.indexOf('function changePromosPage'));
+  assert.match(stores, /newOnly:\s*true/);
+  assert.match(promos, /promo:\s*true/);
+  assert.match(source, /Number\(p\.quantity \|\| 1\) > 1/);
+});
+
+test('promotion name sorting compares a and b without an undefined variable', () => {
+  assert.match(source, /localeCompare\(String\(b\.product_name \|\| ''\), 'zh-TW'\)/);
+  assert.doesNotMatch(source, /localeCompare\(p\.product_name/);
+});
