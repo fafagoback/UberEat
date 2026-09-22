@@ -78,22 +78,30 @@ jobs:
           TURSO_RESET_TARGET: '0'
           TURSO_REQUIRE_EXISTING: '1'
         run: node scripts/provision_turso_rebuild.mjs
+      - name: Export published store ID map
+        env:
+          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
+          TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
+        run: node scripts/export_packed_store_ids.mjs > store-id-map.json
+      - name: Rekey packed snapshot to stable published IDs
+        run: python -u scripts/rekey_packed_db.py packed-serving.db store-id-map.json --output packed-serving-stable.db
       - name: Incrementally update the existing packed database in place
         env:
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
-        run: node scripts/publish_packed_turso.mjs packed-serving.db
+          TURSO_MAX_DELTA_BYTES: '262144000'
+        run: node scripts/publish_packed_turso.mjs packed-serving-stable.db
       - name: Verify uploaded database
         env:
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
-        run: node scripts/verify_uploaded_packed_turso.mjs packed-serving.db
+        run: node scripts/verify_uploaded_packed_turso.mjs packed-serving-stable.db
       - name: Verify browser read-only credentials
         env:
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_READONLY_TOKEN: ${{ steps.turso.outputs.readonly_token }}
         run: |
-          TURSO_AUTH_TOKEN="$TURSO_READONLY_TOKEN" node scripts/verify_uploaded_packed_turso.mjs packed-serving.db
+          TURSO_AUTH_TOKEN="$TURSO_READONLY_TOKEN" node scripts/verify_uploaded_packed_turso.mjs packed-serving-stable.db
       - name: Switch production web config to uploaded database
         env:
           GH_TOKEN: ${{ github.token }}
