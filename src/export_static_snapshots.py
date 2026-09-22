@@ -87,16 +87,12 @@ DISTRICT_CITY_MAP = {
 }
 
 
-def extract_city(locality: str, street_address: str) -> str:
-    """自地址與行政區文字中識別台灣主要縣市名稱"""
-    combined = f"{locality or ''} {street_address or ''}"
-    for city in TW_CITIES:
-        if city in combined or city.replace("臺", "台") in combined or city.replace("台", "臺") in combined:
-            return city.replace("臺", "台")
-    for dist, city in DISTRICT_CITY_MAP.items():
-        if dist in combined:
-            return city
-    return locality or "其他"
+def extract_city(locality: str, street_address: str, region: str = "") -> str:
+    try:
+        from .city_normalization import canonical_city
+    except ImportError:
+        from city_normalization import canonical_city
+    return canonical_city(region=region, locality=locality, address=street_address) or "其他"
 
 
 def append_github_step_summary(markdown_text: str):
@@ -186,6 +182,7 @@ def calculate_7day_discounts(conn: sqlite3.Connection, latest_batch: str, min_di
         COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
         s.rating_value,
         s.review_count,
+        s.region,
         s.locality,
         s.street_address,
         p1.is_open
@@ -264,6 +261,7 @@ def extract_curated_catalog(conn: sqlite3.Connection, latest_batch: str, max_ite
         COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
         s.rating_value,
         s.review_count,
+        s.region,
         s.locality,
         s.street_address,
         COALESCE(p.is_open, s.is_open, 1) as is_open
@@ -284,7 +282,7 @@ def extract_curated_catalog(conn: sqlite3.Connection, latest_batch: str, max_ite
     for r in rows:
         loc = r["locality"] or ""
         addr = r["street_address"] or ""
-        city = extract_city(loc, addr)
+        city = extract_city(loc, addr, r["region"])
 
         catalog.append({
             "product_id": r["product_id"],
@@ -333,6 +331,7 @@ def export_parquet_catalog(conn: sqlite3.Connection, latest_batch: str, output_p
         COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
         s.rating_value,
         s.review_count,
+        COALESCE(s.region, '') as region,
         COALESCE(s.locality, '') as locality,
         COALESCE(s.street_address, '') as street_address,
         COALESCE(p.is_open, s.is_open, 1) as is_open,
@@ -372,7 +371,7 @@ def export_parquet_catalog(conn: sqlite3.Connection, latest_batch: str, output_p
     for r in rows:
         loc = r["locality"] or ""
         addr = r["street_address"] or ""
-        city = extract_city(loc, addr)
+        city = extract_city(loc, addr, r["region"])
 
         data["product_id"].append(str(r["product_id"]))
         data["store_id"].append(str(r["store_id"]))
@@ -498,6 +497,7 @@ def export_partitioned_parquet(conn: sqlite3.Connection, latest_batch: str, part
         COALESCE(NULLIF(s.order_action_url, ''), s.store_url, '') as order_action_url,
         s.rating_value,
         s.review_count,
+        COALESCE(s.region, '') as region,
         COALESCE(s.locality, '') as locality,
         COALESCE(s.street_address, '') as street_address,
         COALESCE(p.is_open, s.is_open, 1) as is_open,
@@ -528,7 +528,7 @@ def export_partitioned_parquet(conn: sqlite3.Connection, latest_batch: str, part
     for r in rows:
         loc = r["locality"] or ""
         addr = r["street_address"] or ""
-        city = extract_city(loc, addr)
+        city = extract_city(loc, addr, r["region"])
         slug = CITY_SLUG_MAPPING.get(city, "other")
         b = get_bucket(slug)
 
@@ -1265,6 +1265,7 @@ def export_all_static_snapshots(
         COALESCE(s.order_action_url, s.store_url, '') as order_action_url,
         s.rating_value,
         s.review_count,
+        COALESCE(s.region, '') as region,
         COALESCE(s.locality, '') as locality,
         COALESCE(s.street_address, '') as street_address
     FROM products p

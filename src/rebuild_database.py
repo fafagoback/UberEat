@@ -84,10 +84,10 @@ def local_snapshots(source_dir: Path) -> list[tuple[str, str]]:
     return sorted(found.items())
 
 
-def hf_snapshot_paths(repo_id: str, token: str | None) -> list[tuple[str, str]]:
+def hf_snapshot_paths(repo_id: str, token: str | None, revision: str | None = None) -> list[tuple[str, str]]:
     from huggingface_hub import HfApi
 
-    files = HfApi(token=token).list_repo_files(repo_id=repo_id, repo_type="dataset")
+    files = HfApi(token=token).list_repo_files(repo_id=repo_id, repo_type="dataset", revision=revision)
     found = []
     for path in files:
         match = SNAPSHOT_RE.search(path)
@@ -105,7 +105,7 @@ def materialize_snapshots(args: argparse.Namespace, after_batch: str | None = No
         return
 
     token = os.getenv("HF_TOKEN")
-    items = [(batch_id, remote_path) for batch_id, remote_path in hf_snapshot_paths(args.repo_id, token) if not after_batch or batch_id > after_batch]
+    items = [(batch_id, remote_path) for batch_id, remote_path in hf_snapshot_paths(args.repo_id, token, getattr(args, "revision", None)) if not after_batch or batch_id > after_batch]
     if not items:
         return
 
@@ -120,6 +120,7 @@ def materialize_snapshots(args: argparse.Namespace, after_batch: str | None = No
             repo_type="dataset",
             token=token,
             cache_dir=c_dir,
+            revision=getattr(args, "revision", None),
         )
         duration = time.perf_counter() - t0
         size_mb = os.path.getsize(local_p) / (1024 * 1024) if os.path.exists(local_p) else 0.0
@@ -127,7 +128,7 @@ def materialize_snapshots(args: argparse.Namespace, after_batch: str | None = No
 
     executor = ThreadPoolExecutor(max_workers=2)
     futures = []
-    prefetch_depth = 2
+    prefetch_depth = 1
     item_iter = iter(items)
     for _ in range(prefetch_depth):
         try:
@@ -258,7 +259,7 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
             available_batches = [b for b, _ in local_snapshots(Path(args.source_dir))]
         else:
             token = os.getenv("HF_TOKEN")
-            available_batches = [b for b, _ in hf_snapshot_paths(args.repo_id, token)]
+            available_batches = [b for b, _ in hf_snapshot_paths(args.repo_id, token, getattr(args, "revision", None))]
         total_snapshots = min(len(available_batches), args.max_snapshots) if args.max_snapshots else len(available_batches)
 
         shard_desc = f" (Shard {shard_id + 1}/{total_shards})" if shard_id is not None else ""
@@ -279,6 +280,9 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
             dl_sec = getattr(snapshot, "download_seconds", 0.0)
             size_mb = getattr(snapshot, "size_mb", 0.0)
 
+            # Bound downloads/DB growth before each batch, not after disk exhaustion.
+            if shutil.disk_usage(output.parent).free < 2 * 1024**3:
+                raise RuntimeError('Less than 2 GiB reserve remains; increase shards before retrying')
             batch_start_time = time.perf_counter()
             prefix = f"[{idx}/{total_snapshots}][{batch_id}]"
 
@@ -322,7 +326,7 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
                 batch_id,
                 missing_threshold=args.missing_threshold,
                 baseline=(len(processed) == 0),
-                event_retention_days=None,
+                event_retention_days=getattr(args, "event_retention_days", 60),
                 refresh_search=False,
                 state_cache=state_cache,
             )
@@ -369,10 +373,14 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
         print("==================================================================", flush=True)
         print("[POST-PROCESSING] Refreshing FTS product search index...", flush=True)
         t_fts_start = time.perf_counter()
-        refresh_product_search(conn)
+        if not getattr(args, "skip_fts", False):
+            refresh_product_search(conn)
         t_fts = time.perf_counter() - t_fts_start
         print(f"[POST-PROCESSING] FTS product search index refreshed in {t_fts:.2f}s", flush=True)
 
+        if skipped and getattr(args, "strict", False):
+            raise RuntimeError(f"Incomplete source history: {len(skipped)} archives rejected")
+        conn.execute("INSERT OR REPLACE INTO metadata VALUES('source_revision',?)", (getattr(args, "revision", None) or 'local',))
         t_meta_start = time.perf_counter()
         conn.execute("INSERT OR REPLACE INTO metadata VALUES('rebuild_first_batch',?)", (processed[0],))
         conn.execute("INSERT OR REPLACE INTO metadata VALUES('rebuild_last_batch',?)", (processed[-1],))
@@ -423,6 +431,10 @@ def main() -> None:
     source = parser.add_mutually_exclusive_group()
     source.add_argument("--source-dir", help="Directory containing downloaded snapshot archives")
     source.add_argument("--repo-id", default=os.getenv("HF_REPO_ID", "hub-google/UberEat"))
+    parser.add_argument("--revision", help="Immutable HF source revision shared by every shard")
+    parser.add_argument("--strict", action="store_true", help="Reject builds with source gaps")
+    parser.add_argument("--skip-fts", action="store_true", help="Packed serving has its own search index")
+    parser.add_argument("--event-retention-days", type=int, default=60)
     parser.add_argument("--database", required=True)
     parser.add_argument("--replace", action="store_true")
     parser.add_argument("--missing-threshold", type=int, default=3)

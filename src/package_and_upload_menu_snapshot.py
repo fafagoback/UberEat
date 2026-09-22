@@ -135,18 +135,23 @@ def main() -> None:
     if not token:
         fail(batch_id, "缺少 HF_TOKEN", rows)
 
-    from huggingface_hub import HfApi
+    from huggingface_hub import HfApi, CommitOperationAdd
 
     api = HfApi(token=token)
     api.create_repo(repo_id=args.repo_id, repo_type="dataset", exist_ok=True)
     remote_path = f"{args.path_in_repo.strip('/')}/{batch_id}/{archive_name}"
-    api.upload_file(
-        path_or_fileobj=archive_path,
-        path_in_repo=remote_path,
-        repo_id=args.repo_id,
-        repo_type="dataset",
-        commit_message=f"Archive Taiwan menu snapshot {batch_id} ({expected} stores, sha256 {digest[:12]})",
+    release_manifest = {**manifest, "archive_path": remote_path, "sha256": digest,
+                        "archive_bytes": os.path.getsize(archive_path), "schema_version": 1,
+                        "source_sha": os.environ.get("GITHUB_SHA", "local"), "complete": True}
+    commit = api.create_commit(
+        repo_id=args.repo_id, repo_type="dataset",
+        operations=[CommitOperationAdd(path_in_repo=remote_path, path_or_fileobj=archive_path),
+                    CommitOperationAdd(path_in_repo=f"{args.path_in_repo.strip('/')}/{batch_id}/complete.json",
+                                       path_or_fileobj=json.dumps(release_manifest, ensure_ascii=False).encode('utf-8'))],
+        commit_message=f"Archive complete Taiwan menu snapshot {batch_id} ({digest[:12]})",
     )
+    with open(os.path.join(args.output_dir, 'release-manifest.json'), 'w', encoding='utf-8') as f:
+        json.dump({**release_manifest, "hf_revision": commit.oid}, f, ensure_ascii=False, indent=2)
     remote_files = set(api.list_repo_files(repo_id=args.repo_id, repo_type="dataset"))
     remote_ok = remote_path in remote_files
     rows.append(f"| HF 單檔 Commit | 遠端存在 `{remote_path}` | `{'已確認' if remote_ok else '未找到'}` | {'✅' if remote_ok else '❌'} |")

@@ -136,7 +136,7 @@ def build(source, output, bucket_count=1024, level=10, max_items=2048):
                     terms.add("f:promo")
                 if "discount_pct" in pc and float(product["discount_pct"] or 0) > 0:
                     terms.add(f"f:discount:{int(float(product['discount_pct']) // 5)}")
-            for term in terms:
+            for term in sorted(terms):
                 bid = int.from_bytes(hashlib.blake2s(term.encode(), digest_size=4).digest(), "big") % bucket_count
                 # One integer identifies store and product without a row-per-product
                 # lookup table (20 bits allows >1M products in one store).
@@ -165,7 +165,7 @@ def build(source, output, bucket_count=1024, level=10, max_items=2048):
             print(f"packed stores {store_id:,}/{len(stores):,}", flush=True)
 
     for bid, terms in enumerate(postings):
-        raw, blob, digest = packed(dict(terms), compressor)
+        raw, blob, digest = packed(dict(sorted(terms.items())), compressor)
         dst.execute("INSERT INTO search_buckets VALUES(?,?,?,?,?)", (bid, "msgpack+zstd", len(raw), digest, blob))
 
     auxiliary = {}
@@ -178,13 +178,16 @@ def build(source, output, bucket_count=1024, level=10, max_items=2048):
     for table, order in (("stores", "store_uuid"), ("products", "store_uuid,product_uuid"), ("events", "store_uuid,id"), ("crawl_batches", "batch_id"), ("metadata", "key")):
         count, digest = source_digest(src, table, order)
         digests[table] = {"count": count, "sha256": digest}
-    info = {"format": 1, "source": str(source), "buckets": bucket_count, "chunks": chunks,
+    source_meta = dict(src.execute("select key,value from metadata"))
+    info = {"definition_version": "2026-09-search-v3", "source_revision": source_meta.get("source_revision", "local"),
+            "latest_batch": source_meta.get("latest_batch", ""),
+            "shard_id": source_meta.get("rebuild_shard_id"), "total_shards": source_meta.get("rebuild_total_shards"),
+            "format": 1, "source": str(source), "buckets": bucket_count, "chunks": chunks,
             "products": product_gid, "max_raw_bundle": max_raw, "max_compressed_bundle": max_blob,
             "source_tables": digests}
     for key, value in info.items():
         dst.execute("INSERT INTO metadata VALUES(?,?)", (key, json.dumps(value, ensure_ascii=False, separators=(",", ":"))))
     dst.commit()
-    dst.execute("VACUUM")
     dst.close(); src.close()
     info["database_bytes"] = out_path.stat().st_size
     info["build_seconds"] = round(time.perf_counter() - started, 3)

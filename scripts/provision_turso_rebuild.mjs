@@ -1,6 +1,7 @@
 const token=process.env.TURSO_PLATFORM_TOKEN;
 const targetName=process.env.TURSO_REBUILD_NAME||'ubereats-rebuilt-v10';
-const resetTarget=process.env.TURSO_RESET_TARGET==='1';
+if(process.env.TURSO_RESET_TARGET==='1') throw new Error('Database reset is prohibited');
+if(!/^ubereats-packed-v[2-9][0-9]*-[a-z0-9-]+$/.test(targetName)) throw new Error('A new versioned packed database name is required');
 const databaseUpload=process.env.TURSO_DATABASE_UPLOAD==='1';
 const requireExisting=process.env.TURSO_REQUIRE_EXISTING==='1';
 const currentHost=String(process.env.TURSO_DATABASE_URL||'').replace(/^libsql:\/\//,'').replace(/^https?:\/\//,'').split('/')[0];
@@ -41,11 +42,8 @@ let database;
 try{
   const result=await api(`/organizations/${encodeURIComponent(slug)}/databases/${encodeURIComponent(targetName)}`);
   database=result.database;
-  if(resetTarget){
-    await api(`/organizations/${encodeURIComponent(slug)}/databases/${encodeURIComponent(targetName)}`,{method:'DELETE'});
-    console.log(`Deleted existing isolated rebuild target: ${targetName}`);
-    database=null;
-  }
+  if(!requireExisting) throw new Error('Bootstrap target already exists; choose a new versioned name');
+
 }catch(error){
   if(error.status!==404) throw error;
 }

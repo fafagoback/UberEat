@@ -69,9 +69,15 @@ async function sql(statement) {
   return result.rows.map(row => Object.fromEntries(row.map((cell, i) => [names[i], cell.type === 'blob' ? blobBytes(cell) : cell.value])));
 }
 
-async function unpack(payload) {
+async function unpack(payload, checksum) {
   const r = await runtime();
-  return r.decode(r.decompress(payload));
+  const raw = r.decompress(payload);
+  if (checksum) {
+    const digest = await crypto.subtle.digest('SHA-256', raw);
+    const hex = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('');
+    if (hex !== checksum) throw new Error('Packed payload checksum mismatch');
+  }
+  return r.decode(raw);
 }
 
 async function bucketId(term, count) {
@@ -93,9 +99,9 @@ async function fetchBuckets(bucketIds) {
   if (missing.length === 0) return;
   for (let i = 0; i < missing.length; i += 60) {
     const ids = missing.slice(i, i + 60);
-    const rows = await sql(`select bucket_id, payload from search_buckets where bucket_id in (${ids.join(',')})`);
+    const rows = await sql(`select bucket_id, payload, checksum from search_buckets where bucket_id in (${ids.join(',')})`);
     for (const r of rows) {
-      bucketCache.set(Number(r.bucket_id), r.payload ? await unpack(r.payload) : {});
+      bucketCache.set(Number(r.bucket_id), r.payload ? await unpack(r.payload, r.checksum) : {});
     }
   }
 }
@@ -185,7 +191,7 @@ function productView(product, store) {
     review_count: Number(store.review_count || 0),
     locality: store.locality,
     street_address: store.address || store.street_address,
-    city: store.city,
+    city: window.UBER_DATA_CONTRACT.city(store.address || store.street_address, store.city),
     latitude: Number(store.latitude),
     longitude: Number(store.longitude),
     distance_km: store.distance_km ?? null,
@@ -205,9 +211,9 @@ async function bundlesForStores(storeIds) {
   const missing = [...new Set(storeIds)].filter(id => !bundleCache.has(id));
   for (let i = 0; i < missing.length; i += 60) {
     const ids = missing.slice(i, i + 60);
-    const rows = await sql(`select store_id, chunk_no, payload from store_bundles where store_id in (${ids.join(',')}) order by store_id, chunk_no`);
+    const rows = await sql(`select store_id, chunk_no, payload, checksum from store_bundles where store_id in (${ids.join(',')}) order by store_id, chunk_no`);
     for (const row of rows) {
-      const decoded = await unpack(row.payload);
+      const decoded = await unpack(row.payload, row.checksum);
       const sid = Number(row.store_id);
       if (!bundleCache.has(sid)) bundleCache.set(sid, []);
       bundleCache.get(sid).push(decoded);
@@ -228,7 +234,7 @@ export async function getStoresInLocation(location) {
     store_uuid: r.store_uuid,
     store_name: r.name,
     name: r.name,
-    city: r.city,
+    city: window.UBER_DATA_CONTRACT.city(r.address, r.city),
     locality: r.locality,
     rating_value: r.rating === null ? null : Number(r.rating),
     rating: r.rating === null ? null : Number(r.rating),
@@ -249,7 +255,7 @@ export async function getStoresInLocation(location) {
   return locationStoresCache;
 }
 
-async function productsFromRefs(refs, location, limit = 50000) {
+async function productsFromRefs(refs, location, limit = 50000, accepts = () => true) {
   const wanted = new Map();
   for (const ref of refs) {
     const sid = Math.floor(Number(ref) / 1048576);
@@ -320,7 +326,10 @@ async function productsFromRefs(refs, location, limit = 50000) {
         for (const pair of chunk.products || []) {
           if (indexes.has(offset)) {
             const p = Object.fromEntries(cols.map((c, j) => [c, pair[1][j]]));
-            if (p.status === 'active' && Number(p.is_open) === 1) out.push(productView(p, store));
+            if (store.status === 'active' && Number(store.is_open) === 1 && p.status === 'active' && Number(p.is_open) === 1 && Number.isFinite(Number(p.price)) && Number(p.price) > 0) {
+              const view = productView(p, store);
+              if (accepts(view)) out.push(view);
+            }
             if (out.length >= limit) return dedupeProducts(out);
           }
           offset++;
@@ -337,13 +346,15 @@ export async function directory(location, limit = 50000) {
     const locInfo = await getStoresInLocation(location);
     return locInfo.stores;
   }
-  const rows = await sql(`select * from store_directory where name != '' and status='active' and is_open=1 order by rating desc nulls last, review_count desc limit ${limit}`);
+  const meta = await metadata();
+  const active = meta.definition_version ? "and status='active' and is_open=1" : '';
+  const rows = await sql(`select * from store_directory where name != '' ${active} order by rating desc nulls last, review_count desc limit ${limit}`);
   const stores = rows.map(r => ({
     store_id: Number(r.store_id),
     store_uuid: r.store_uuid,
     store_name: r.name,
     name: r.name,
-    city: r.city,
+    city: window.UBER_DATA_CONTRACT.city(r.address, r.city),
     locality: r.locality,
     rating_value: r.rating === null ? null : Number(r.rating),
     rating: r.rating === null ? null : Number(r.rating),
@@ -380,6 +391,7 @@ export async function searchStores({ keyword = '', location = null, newOnly = fa
   }
   if (newOnly) {
     const meta = await metadata();
+    if (!meta.latest_processed_at || !meta.definition_version) return [];
     const anchor = new Date(meta.latest_processed_at || Date.now());
     anchor.setDate(anchor.getDate() - 7);
     const cutoff = anchor.toISOString().replace(/'/g, "''");
@@ -391,7 +403,7 @@ export async function searchStores({ keyword = '', location = null, newOnly = fa
     store_uuid: r.store_uuid,
     store_name: r.name,
     name: r.name,
-    city: r.city,
+    city: window.UBER_DATA_CONTRACT.city(r.address, r.city),
     locality: r.locality,
     rating_value: r.rating === null ? null : Number(r.rating),
     rating: r.rating === null ? null : Number(r.rating),
@@ -425,7 +437,7 @@ async function sampleProducts(stores, location, limit = 50000) {
       if (!store || !inLocation(store, location)) continue;
       for (const pair of chunk.products || []) {
         const p = Object.fromEntries(cols.map((c, i) => [c, pair[1][i]]));
-        if (p.status === 'active' && Number(p.is_open) === 1) out.push(productView(p, store));
+        if (store.status === 'active' && Number(store.is_open) === 1 && p.status === 'active' && Number(p.is_open) === 1 && Number.isFinite(Number(p.price)) && Number(p.price) > 0) out.push(productView(p, store));
         if (out.length >= limit) return dedupeProducts(out);
       }
     }
@@ -442,6 +454,7 @@ export async function loadPackedDashboard(location) {
 
 export async function searchPacked({ keyword = '', city = '', promo = false, newOnly = false, minDiscount = null, location = null, limit = 50000 } = {}) {
   const meta = await metadata();
+  if (newOnly && !meta.definition_version) return [];
   const count = Number(meta.buckets || 8192);
   const terms = [...queryTokens(keyword), ...queryTokens(city)];
   if (promo) terms.push('f:promo');
@@ -469,17 +482,19 @@ export async function searchPacked({ keyword = '', city = '', promo = false, new
   }
 
   if (!groups.length) {
-    groups.push(await posting('f:catalog', count));
+    const catalog = await posting('f:catalog', count);
+    if (!catalog.length && !meta.definition_version) return sampleProducts(await directory(location, 50), location, Math.min(limit, 2000));
+    groups.push(catalog);
   }
 
-  const rows = await productsFromRefs(intersect(groups), location, limit);
   const k = normalize(keyword), c = normalize(city);
-  return rows.filter(p =>
+  const accepts = p =>
     p.status === 'active' && Number(p.is_open) === 1 &&
     (!k || matchesWords(`${p.product_name}${p.store_name}${p.category_name}`, keyword)) &&
     (!c || matchesWords(`${p.city}${p.locality}${p.street_address}`, city)) &&
-    (minDiscount === null || Number(p.discount_pct || 0) >= Number(minDiscount))
-  );
+    (minDiscount === null || Number(p.discount_pct || 0) >= Number(minDiscount));
+  return productsFromRefs(intersect(groups), location, limit, accepts);
+
 }
 
 export async function packedHistory(storeUuid, productUuid) {
@@ -487,9 +502,10 @@ export async function packedHistory(storeUuid, productUuid) {
   if (!row) return [];
   await bundlesForStores([Number(row.store_id)]);
   const out = [];
+  let cols;
   for (const chunk of bundleCache.get(Number(row.store_id)) || []) {
+    cols = chunk.event_columns || cols;
     for (const event of chunk.events || []) {
-      const cols = chunk.event_columns;
       if (!cols) continue;
       const e = Object.fromEntries(cols.map((c, i) => [c, event[i]]));
       if (String(e.product_uuid) === String(productUuid)) out.push(e);

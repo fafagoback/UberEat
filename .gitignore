@@ -76,3 +76,9 @@ web/data/*.parquet
 temp_all_menu_lake/
 packaged_snapshot/
 .prototype-data/
+node_modules/
+playwright-report/
+test-results/
+
+_site/
+browser-smoke.json

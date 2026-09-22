@@ -33,7 +33,7 @@ jobs:
             echo 'Unsafe retention target detected' >&2; exit 1
           fi
       - name: Apply and verify
-        if: github.event_name == 'workflow_run' || inputs.apply
+        if: github.event_name == 'workflow_dispatch' && inputs.apply
         run: python src/hf_retention.py --repo-id "$HF_REPO_ID" --apply | tee retention-applied.txt
       - name: Summary
         if: always()

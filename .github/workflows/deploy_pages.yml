@@ -27,13 +27,37 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Frontend contract tests
+        run: node --test tests/frontend.test.cjs tests/data-contract.test.cjs
+      - name: Stage bounded static site
+        run: |
+          free -b
+          df -B1 .
+          python scripts/build_pages.py --output _site
+      - name: Install headless browser
+        run: |
+          pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: CLI browser smoke against candidate and current read-only database
+        run: python scripts/browser_smoke.py --directory _site
+      - name: Record acceptance report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-smoke
+          path: browser-smoke.json
+          retention-days: 2
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'web'
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment

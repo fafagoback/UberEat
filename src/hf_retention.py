@@ -11,7 +11,7 @@ BATCH_RE = re.compile(r"(?<!\d)(20\d{12})(?!\d)")
 def batch_time(path: str):
     m = BATCH_RE.search(path)
     if not m: return None
-    try: return datetime.strptime(m.group(1), "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc)
+    try: return datetime.strptime(m.group(1), "%Y%m%d%H%M%S").replace(tzinfo=timezone(timedelta(hours=8)))
     except ValueError: return None
 
 def retention_plan(paths, now, days=60):
@@ -32,12 +32,7 @@ def main():
     print(f"mode={'APPLY' if a.apply else 'DRY-RUN'} cutoff={now-timedelta(days=a.days):%Y-%m-%dT%H:%M:%SZ} delete={len(delete)} keep={len(keep)}")
     for x in delete: print("DELETE",x)
     if a.apply and delete:
-        for i in range(0,len(delete),80):
-            api.create_commit(repo_id=a.repo_id,repo_type="dataset",operations=[CommitOperationDelete(path_in_repo=x) for x in delete[i:i+80]],commit_message=f"retention: remove raw/events older than {a.days} days")
-        after=set(api.list_repo_files(a.repo_id,repo_type="dataset")); survivors=[x for x in delete if x in after]
-        if survivors: raise SystemExit(f"verification failed: {survivors[:10]}")
-        protected_before={x for x in before if not x.startswith((RAW_PREFIX,EVENT_PREFIX))}; protected_after={x for x in after if not x.startswith((RAW_PREFIX,EVENT_PREFIX))}
-        if protected_before != protected_after: raise SystemExit("verification failed: non-retention paths changed")
+        raise SystemExit("Deletion blocked: no verified durable baseline/recovery manifest is implemented. Keep Raw for rebuild.")
     print(f"oldest_kept={keep[0] if keep else '-'} newest_kept={keep[-1] if keep else '-'} verified={'yes' if a.apply else 'dry-run'}")
 
 if __name__ == "__main__": main()

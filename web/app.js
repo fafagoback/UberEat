@@ -480,8 +480,7 @@ async function loadFromTurso() {
     // 取得爬蟲抓取資料的真實批次時間
     const latestBatchTime = packed.meta?.latest_processed_at
       || (packed.meta?.latest_batch ? formatBatchDate(packed.meta.latest_batch) : '')
-      || baselineStats.latest_batch_formatted
-      || (baselineStats.latest_batch ? formatBatchDate(baselineStats.latest_batch) : '已載入');
+      || '資料版本待更新';
 
     // 載入全量特價/新進店家/新品/促銷完整資料集
     let rawDiscounts = [];
@@ -521,8 +520,9 @@ async function loadFromTurso() {
     // semantically incompatible results when the remote query later fails.
     const packedBatch = String(packed.meta?.latest_batch || '');
     const staticBatch = String(baselineStats.latest_batch || '');
-    if (packedBatch && staticBatch && packedBatch !== staticBatch) {
+    if (!packedBatch || packedBatch !== staticBatch) {
       console.warn(`靜態情報批次 ${staticBatch} 與 packed ${packedBatch} 不一致，已停用舊備援清單`);
+      baselineStats = {};
       rawDiscounts = [];
       newStores = [];
       newProducts = [];
@@ -578,6 +578,7 @@ async function loadFromTurso() {
         max_savings_twd: Number(baselineStats.max_savings_twd || (rawDiscounts.length > 0 ? Math.max(...rawDiscounts.map(i => i.savings_amount || 0)) : 0))
       };
     }
+    statsData.intelligence_unavailable = !packedBatch || packedBatch !== staticBatch;
     updateStatsUI(statsData);
 
     // 渲染各頁籤
@@ -733,7 +734,10 @@ function updateStatsUI(stats) {
   document.getElementById('stat-new-products').textContent = (stats.new_products_count ?? 0).toLocaleString();
   document.getElementById('stat-promotions').textContent = (stats.promotions_count ?? 0).toLocaleString();
 
-  document.getElementById('stat-max-savings').textContent = `現省最高 $${stats.max_savings_twd || 0}`;
+  document.getElementById('stat-max-savings').textContent = stats.max_savings_twd > 0 ? `現省最高 $${stats.max_savings_twd}` : '尚無同批次統計';
+  if (stats.intelligence_unavailable) {
+    for (const id of ['stat-big-discounts', 'stat-new-stores', 'stat-new-products', 'stat-promotions']) document.getElementById(id).textContent = '待同步';
+  }
   document.getElementById('stat-total-stores').textContent = `總監控 ${(stats.total_monitored_stores || stats.total_stores || 0).toLocaleString()} 間`;
   document.getElementById('stat-total-products').textContent = `總菜品 ${(stats.total_monitored_products || stats.total_products || 0).toLocaleString()} 項`;
 }
@@ -1267,7 +1271,7 @@ function renderNewProducts() {
   const pageItems = items.slice(offset, offset + PAGE_SIZE);
 
   container.innerHTML = pageItems.map(prod => {
-    const promoInfo = calculateEffectivePromo(prod.price, prod.promo_type, prod.quantity);
+    const promoInfo = productPromo(prod);
     const hasPromo = promoInfo.isPromo;
     const hasQtyPromo = promoInfo.totalQty > 1;
     const unitPrice = promoInfo.effPrice;
@@ -1295,7 +1299,7 @@ function renderNewProducts() {
             </div>
             <div class="flex items-baseline gap-0.5">
               <span class="text-xs font-mono font-bold text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-md">
-                $${displayUnitPrice}
+                ${window.UBER_DATA_CONTRACT.money(unitPrice)}
               </span>
               ${hasQtyPromo ? `<span class="text-[10px] text-slate-400">/件</span>` : ''}
             </div>
@@ -1350,8 +1354,17 @@ function formatTaiwanDiscount(ratio) {
   return `${pct}折`;
 }
 
+function productPromo(row) {
+  const p = window.UBER_DATA_CONTRACT.product(row);
+  const promo = calculateEffectivePromo(p.price, p.promo_type, p.quantity);
+  if (!p.valid_price) return {...promo, effPrice: null, isPromo: false, totalQty: 1, discountText: ''};
+  if (p.effective_price !== null) promo.effPrice = p.effective_price;
+  return promo;
+}
+
 function calculateEffectivePromo(price, promoType, quantity) {
-  const p = Number(price) || 0;
+  const p = Number(price);
+  if (!Number.isFinite(p) || p <= 0) return {effPrice: null, totalQty: 1, isPromo: false, discountText: '', rawPrice: null};
   const qty = Number(quantity) || 1;
   const type = String(promoType || '').trim();
 
@@ -1564,7 +1577,7 @@ function renderPromotions() {
   const pageItems = items.slice(offset, offset + PAGE_SIZE);
 
   container.innerHTML = pageItems.map(p => {
-    const promoInfo = calculateEffectivePromo(p.price, p.promo_type, p.quantity);
+    const promoInfo = productPromo(p);
     const eff = promoInfo.effPrice;
     const discountLabel = promoInfo.discountText ? `折合 ${promoInfo.discountText}` : '';
     
@@ -1595,7 +1608,7 @@ function renderPromotions() {
         <div class="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800">
           <div class="flex items-baseline justify-between mb-3">
             <div>
-              <div class="text-xs text-slate-400">標價 $${Math.round(p.price)}${promoInfo.totalQty > 1 ? ` (共 ${promoInfo.totalQty} 份)` : (p.quantity > 1 ? ` (共 ${p.quantity} 份)` : '')}</div>
+              <div class="text-xs text-slate-400">標價 ${window.UBER_DATA_CONTRACT.money(p.price)}${promoInfo.totalQty > 1 ? ` (共 ${promoInfo.totalQty} 份)` : (p.quantity > 1 ? ` (共 ${p.quantity} 份)` : '')}</div>
               <div class="text-xl font-black text-purple-600 dark:text-purple-400 font-mono">
                 實質單價 $${Math.round(eff)}
               </div>
@@ -1801,7 +1814,7 @@ function executeInMemoryGlobalSearch(page = 1) {
   let items = APP_STATE.allProducts && APP_STATE.allProducts.length > 0 
     ? [...APP_STATE.allProducts] 
     : [...(APP_STATE.rawDiscounts || []), ...(APP_STATE.newProducts || []), ...(APP_STATE.promotions || [])];
-  items = applyLocationFilter(items);
+  items = applyLocationFilter(items).map(window.UBER_DATA_CONTRACT.product).filter(p => p.valid_price);
 
   // 2. 關鍵字多語意與品牌同義字比對
   if (rawSearch) {
@@ -1862,8 +1875,8 @@ function executeInMemoryGlobalSearch(page = 1) {
   const totalPages = Math.ceil(total / limit) || 1;
 
   APP_STATE.globalProducts = pageRows;
-  APP_STATE.globalHasNext = page < totalPages;
-  APP_STATE.globalTotalPages = totalPages;
+  APP_STATE.globalHasNext = page < totalPages || Boolean(APP_STATE.globalResultLimit);
+  APP_STATE.globalTotalPages = APP_STATE.globalResultLimit ? Math.max(totalPages, page + 1) : totalPages;
   APP_STATE.globalTotalItems = total;
 
   renderGlobalProducts();
@@ -1896,14 +1909,17 @@ async function fetchGlobalProducts(page = 1) {
   if (window.UBER_RADAR_CONFIG && window.UBER_RADAR_CONFIG.ENABLE_TURSO) {
     try {
       const client = await getPackedTursoClient();
+      renderGlobalLoadingState(rawSearch || cityFilter);
+      const requestLimit = Math.min(50000, Math.max(200, page * PAGE_SIZE + 1));
       const rows = await client.searchPacked({
         keyword: rawSearch,
         city: cityFilter && cityFilter !== '全部' ? cityFilter : '',
         promo: sortMode === 'promo_only',
         location: APP_STATE.locationFilter,
-        limit: 50000
+        limit: requestLimit
       });
       if (sequence === globalSearchSequence) {
+        APP_STATE.globalResultLimit = rows.length >= requestLimit ? requestLimit : null;
         APP_STATE.allProducts = rows;
         executeInMemoryGlobalSearch(page);
         return;
@@ -1993,8 +2009,8 @@ function renderGlobalProducts() {
     return;
   }
 
-  container.innerHTML = items.map(p => {
-    const promoInfo = calculateEffectivePromo(p.price, p.promo_type, p.quantity);
+  container.innerHTML = (APP_STATE.globalResultLimit ? '<p class="col-span-full text-xs text-slate-500">目前依已載入結果排序；繼續翻頁載入更多。筆數為已載入範圍。</p>' : '') + items.map(p => {
+    const promoInfo = productPromo(p);
     const hasPromo = promoInfo.isPromo;
     const hasQtyPromo = promoInfo.totalQty > 1;
     const unitPrice = promoInfo.effPrice;
@@ -2015,7 +2031,7 @@ function renderGlobalProducts() {
             </div>
             <div class="text-right shrink-0 flex items-baseline gap-0.5">
               <span class="font-bold text-slate-900 dark:text-white font-mono text-base ${hasQtyPromo ? 'text-purple-600 dark:text-purple-400' : ''}">
-                $${displayUnitPrice}
+                ${window.UBER_DATA_CONTRACT.money(unitPrice)}
               </span>
               ${hasQtyPromo ? `<span class="text-[11px] font-semibold text-purple-600 dark:text-purple-400">/件</span>` : ''}
             </div>
@@ -2047,7 +2063,7 @@ function renderGlobalProducts() {
             ${distanceBadge(p)}
             ${hasQtyPromo ? `
               <span class="text-[11px] text-slate-400 dark:text-slate-500 font-mono">
-                (標價 $${Math.round(p.price)} 共 ${promoInfo.totalQty} 件)
+                (標價 ${window.UBER_DATA_CONTRACT.money(p.price)} 共 ${promoInfo.totalQty} 件)
               </span>
             ` : ''}
           </div>

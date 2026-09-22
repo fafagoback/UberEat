@@ -1,0 +1,6 @@
+{
+  "name": "ubereat-serving-tools",
+  "private": true,
+  "scripts": {"test": "node --test tests/frontend.test.cjs tests/data-contract.test.cjs"},
+  "dependencies": {"@libsql/client": "0.15.15", "better-sqlite3": "11.10.0", "fzstd": "0.1.1"}
+}

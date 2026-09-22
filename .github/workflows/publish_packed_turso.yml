@@ -1,121 +1,153 @@
 name: Build and Publish Packed Turso
-
 on:
   workflow_run:
-    workflows: ["Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)"]
+    workflows: ['Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)']
     types: [completed]
   workflow_dispatch:
     inputs:
-      reuse_run_id:
-        description: Existing run ID whose packed shard artifacts should be reused
-        required: false
-        type: string
-
+      mode:
+        description: Validate build or upload isolated candidate (no production cutover)
+        type: choice
+        options: [plan, bootstrap]
+        default: plan
 permissions:
-  actions: write
-  contents: write
-
+  contents: read
+  actions: read
 concurrency:
   group: ubereats-packed-publish
   cancel-in-progress: false
-
 jobs:
-  pack-shards:
-    if: ${{ github.event_name == 'workflow_dispatch' && inputs.reuse_run_id == '' || github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' }}
-    name: Pack shard (${{ matrix.shard }}/15)
+  source:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    outputs:
+      revision: ${{ steps.source.outputs.revision }}
+      batch: ${{ steps.source.outputs.latest_batch }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements-build.txt
+      - id: source
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+        run: python scripts/pin_hf_source.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: source-manifest
+          path: source-manifest.json
+          retention-days: 2
+  pack-shards:
+    needs: source
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
     strategy:
       fail-fast: true
+      max-parallel: 15
       matrix:
         shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     env:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
       HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+      SOURCE_REVISION: ${{ needs.source.outputs.revision }}
       PYTHONUNBUFFERED: '1'
     steps:
-      - uses: actions/checkout@v7.0.1
-      - uses: actions/setup-python@v7.0.0
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
-      - run: pip install huggingface_hub requests orjson msgpack zstandard
-      - name: Rebuild normalized shard from complete history
-        run: python -u src/rebuild_database.py --repo-id "$HF_REPO_ID" --database "shard_${{ matrix.shard }}.db" --shard-id ${{ matrix.shard }} --total-shards 15
-      - name: Pack shard
-        run: python -u scripts/prototype_pack_db.py build "shard_${{ matrix.shard }}.db" "packed_${{ matrix.shard }}.db" --buckets 8192 --level 10 --max-items 2048
-      - name: Prove lossless shard round trip
-        run: python -u scripts/prototype_pack_db.py verify "shard_${{ matrix.shard }}.db" "packed_${{ matrix.shard }}.db"
-      - uses: actions/upload-artifact@v7.0.1
+      - run: pip install -r requirements-build.txt
+      - name: Resource budget before rebuild
+        run: |
+          free -b
+          df -B1 .
+          python scripts/check_capacity.py --required-bytes 6000000000
+      - name: Replay pinned Raw history for one shard
+        run: python -u src/rebuild_database.py --repo-id "$HF_REPO_ID" --revision "$SOURCE_REVISION" --strict --skip-fts --event-retention-days 60 --database shard.db --shard-id ${{ matrix.shard }} --total-shards 15
+      - name: Pack and prove lossless round trip
+        run: |
+          python scripts/check_capacity.py --required-bytes 1000000000
+          python -u scripts/prototype_pack_db.py build shard.db packed_${{ matrix.shard }}.db --buckets 8192 --level 10 --max-items 2048
+          python -u scripts/prototype_pack_db.py verify shard.db packed_${{ matrix.shard }}.db
+          du -B1 shard.db packed_${{ matrix.shard }}.db
+          free -b
+          df -B1 .
+      - uses: actions/upload-artifact@v4
         with:
           name: packed-${{ matrix.shard }}
           path: packed_${{ matrix.shard }}.db
+          compression-level: 0
           retention-days: 2
-
-  merge-and-publish:
-    name: Merge, validate, and publish packed database
-    needs: pack-shards
-    if: ${{ always() && (needs.pack-shards.result == 'success' || inputs.reuse_run_id != '') }}
+  merge-and-validate:
+    needs: [source, pack-shards]
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
-      - uses: actions/checkout@v7.0.1
-      - uses: actions/setup-python@v7.0.0
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
-      - run: pip install msgpack zstandard
-      - uses: actions/download-artifact@v8.0.1
+      - run: pip install -r requirements-build.txt
+      - name: Check disk before downloading shards
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          free -b
+          df -B1 .
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts" --paginate --jq '.artifacts[] | select(.name | startswith("packed-")) | .size_in_bytes' > artifact-sizes.txt
+          python -c "from scripts.check_capacity import check; sizes=[int(x) for x in open('artifact-sizes.txt')]; assert len(sizes)==15; check(required=sum(sizes)*2)"
+      - uses: actions/download-artifact@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          run-id: ${{ inputs.reuse_run_id || github.run_id }}
           pattern: packed-*
           path: packed-shards
-      - name: Merge packed shards
-        run: python -u scripts/merge_packed_shards.py --shards-dir packed-shards --output packed-serving.db --expected-shards 15
-      - name: Enforce Turso Free storage safety margin
-        run: python -c "import os; n=os.path.getsize('packed-serving.db'); print(f'packed bytes={n:,}'); assert n < 4_750_000_000, 'packed database leaves less than 5% storage headroom'"
-      - run: npm install --no-save @libsql/client better-sqlite3
-      - name: Create database write token
+      - name: Merge and validate without VACUUM or rekey copy
+        run: |
+          python scripts/check_capacity.py --input-dir packed-shards
+          python -u scripts/merge_packed_shards.py --shards-dir packed-shards --output packed-serving.db --expected-shards 15
+          python scripts/check_capacity.py --packed packed-serving.db
+          python scripts/verify_packed_local.py packed-serving.db --report packed-report.json
+      - name: Record validation result (not a production release)
+        env:
+          SOURCE_REVISION: ${{ needs.source.outputs.revision }}
+          SOURCE_BATCH: ${{ needs.source.outputs.batch }}
+        run: |
+          echo '## Packed build validation; production unchanged' >> "$GITHUB_STEP_SUMMARY"
+          echo "Commit: $GITHUB_SHA; HF: $SOURCE_REVISION; batch: $SOURCE_BATCH" >> "$GITHUB_STEP_SUMMARY"
+          cat packed-report.json >> "$GITHUB_STEP_SUMMARY"
+          echo 'Artifacts retained for 2 days. No daily delta or config cutover performed.' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packed-validation-report
+          path: packed-report.json
+          retention-days: 2
+      - uses: actions/setup-node@v4
+        if: inputs.mode == 'bootstrap'
+        with: {node-version: '22'}
+      - run: npm ci
+        if: inputs.mode == 'bootstrap'
+      - name: Confirm account capacity before creating any database
+        if: inputs.mode == 'bootstrap'
+        env:
+          TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
+          TURSO_ORGANIZATION: ${{ vars.TURSO_ORGANIZATION }}
+          TURSO_CONFIRMED_QUOTA_BYTES: ${{ vars.TURSO_CONFIRMED_QUOTA_BYTES }}
+          TURSO_CONFIRMED_PLAN: ${{ vars.TURSO_CONFIRMED_PLAN }}
+        run: node scripts/check_turso_capacity.mjs packed-serving.db
+      - name: Provision isolated version without delete or reset
+        if: inputs.mode == 'bootstrap'
         id: turso
         env:
           TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
           TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
-          TURSO_REBUILD_NAME: ubereats-packed-v1
-          TURSO_RESET_TARGET: '0'
-          TURSO_REQUIRE_EXISTING: '1'
+          TURSO_REBUILD_NAME: ubereats-packed-v3-${{ github.run_id }}-${{ github.run_attempt }}
         run: node scripts/provision_turso_rebuild.mjs
-      - name: Export published store ID map
+      - name: Upload and verify isolated candidate only
+        if: inputs.mode == 'bootstrap'
         env:
           TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
-        run: node scripts/export_packed_store_ids.mjs > store-id-map.json
-      - name: Rekey packed snapshot to stable published IDs
-        run: python -u scripts/rekey_packed_db.py packed-serving.db store-id-map.json --output packed-serving-stable.db
-      - name: Incrementally update the existing packed database in place
-        env:
-          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
-          TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
-          TURSO_MAX_DELTA_BYTES: '262144000'
-        run: node scripts/publish_packed_turso.mjs packed-serving-stable.db
-      - name: Verify uploaded database
-        env:
-          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
-          TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
-        run: node scripts/verify_uploaded_packed_turso.mjs packed-serving-stable.db
-      - name: Verify browser read-only credentials
-        env:
-          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
           TURSO_READONLY_TOKEN: ${{ steps.turso.outputs.readonly_token }}
+          TURSO_PUBLISH_MODE: bootstrap
         run: |
-          TURSO_AUTH_TOKEN="$TURSO_READONLY_TOKEN" node scripts/verify_uploaded_packed_turso.mjs packed-serving-stable.db
-      - name: Switch production web config to uploaded database
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
-          TURSO_READONLY_TOKEN: ${{ steps.turso.outputs.readonly_token }}
-        run: |
-          node scripts/update_web_turso_config.mjs web/config.js
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add web/config.js
-          git diff --cached --quiet && exit 0
-          git commit -m "deploy: switch web to rebuilt Turso database"
-          git push origin HEAD:main
-          gh workflow run deploy_pages.yml --ref main
+          node scripts/publish_packed_turso.mjs packed-serving.db
+          TURSO_AUTH_TOKEN="$TURSO_READONLY_TOKEN" node scripts/verify_uploaded_packed_turso.mjs packed-serving.db
+          echo 'Candidate checked. Full browser acceptance is required before production cutover.' >> "$GITHUB_STEP_SUMMARY"

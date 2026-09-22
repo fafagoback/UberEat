@@ -6,6 +6,11 @@ Fallback identities are deliberately namespaced and counted in the batch report.
 """
 from __future__ import annotations
 
+try:
+    from .city_normalization import canonical_city
+except ImportError:
+    from city_normalization import canonical_city
+
 import argparse
 import hashlib
 import html
@@ -340,7 +345,7 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
         sstate = {
             "name": str(doc.get("name") or ""),
             "address": str(address.get("streetAddress") or ""),
-            "city": str(address.get("addressRegion") or address.get("addressLocality") or ""),
+            "city": canonical_city(address.get("addressRegion"), address.get("addressLocality"), address.get("streetAddress")),
             "locality": str(address.get("addressLocality") or ""),
             "latitude": _num(geo.get("latitude"), float, None),
             "longitude": _num(geo.get("longitude"), float, None),

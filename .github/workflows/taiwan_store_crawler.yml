@@ -161,12 +161,12 @@ jobs:
             --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" \
             --path-in-repo "TaiwanStores"
 
-      - name: 上傳全台店家完整資料集 Artifact (90天留存)
+      - name: 上傳全台店家完整資料集 Artifact (2天留存)
         uses: actions/upload-artifact@v7.0.1
         with:
           name: taiwan-stores-full-dataset
           path: taiwan_stores_dataset/
-          retention-days: 90
+          retention-days: 2
 
       - name: 上傳菜單採集任務分片 Artifact
         if: steps.run-reducer.outputs.has_menu_tasks == 'true'
@@ -221,7 +221,7 @@ jobs:
           name: menu-result-chunk-${{ matrix.chunk_id }}
           path: output_menu_worker_${{ matrix.chunk_id }}/
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 2
 
       - name: 寫入 Stage 4 Artifact Checkpoint
         if: always()
@@ -229,7 +229,7 @@ jobs:
         env:
           ARTIFACT_OUTCOME: ${{ steps.upload-menu-artifact.outcome }}
         run: |
-          if [[ "$ARTIFACT_OUTCOME" == "success" ]]; then status="✅"; actual="上傳成功，保留 14 天"; else status="❌"; actual="${ARTIFACT_OUTCOME:-未執行}"; fi
+          if [[ "$ARTIFACT_OUTCOME" == "success" ]]; then status="✅"; actual="上傳成功，保留 2 天"; else status="❌"; actual="${ARTIFACT_OUTCOME:-未執行}"; fi
           {
             echo "### Stage 4 Artifact Checkpoint"
             echo "| 檢核項目 | 通過標準 | 實際結果 | 狀態 |"
@@ -297,129 +297,4 @@ jobs:
           name: taiwan-menu-snapshot-${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
           path: packaged_snapshot/
           if-no-files-found: warn
-          retention-days: 30
-
-  # ============================================================
-  # Stage 6: normalized CURRENT/EVENTS build and Pages publish
-  # ============================================================
-  static_snapshot_and_publish:
-    name: "階段 6: Serving DB 驗證與 Pages 發布"
-    timeout-minutes: 120
-    needs: [store_reducer_and_menu_dispatcher, menu_scraper_workers, package_and_archive_menu_snapshot]
-    if: needs.store_reducer_and_menu_dispatcher.result == 'success' && needs.menu_scraper_workers.result == 'success' && needs.package_and_archive_menu_snapshot.result == 'success'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    steps:
-      - name: 檢出專案代碼
-        uses: actions/checkout@v7.0.1
-
-      - name: 設定 Python 環境
-        uses: actions/setup-python@v7.0.0
-        with:
-          python-version: '3.11'
-
-      - name: 安裝 Serving 與 HF 依賴
-        run: pip install huggingface_hub
-
-      - name: 安裝 Turso Node client
-        run: npm install --no-save @libsql/client better-sqlite3
-
-      - name: 還原上一批 Current/Event state
-        id: serving-cache
-        uses: actions/cache@v4
-        with:
-          path: serving.db
-          key: serving-db-rebuilt-${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
-          restore-keys: |
-            serving-db-rebuilt-
-
-      - name: 拒絕未經全快照重建的舊 baseline
-        shell: bash
-        run: |
-          python - <<'PY'
-          import os,sqlite3
-          if not os.path.exists('serving.db'):
-              raise SystemExit('No full-history serving DB cache. Run Rebuild Turso From All HF Snapshots first.')
-          c=sqlite3.connect('serving.db')
-          marker=c.execute("select value from metadata where key='rebuild_snapshot_count'").fetchone()
-          if not marker or int(marker[0]) < 3:
-              raise SystemExit('Refusing legacy latest-snapshot baseline; full-history rebuild marker is absent.')
-          print(f'full-history cache verified: {marker[0]} snapshots')
-          PY
-
-      - name: ① 依序補齊 HF 所有尚未處理的完整快照
-        env:
-          MISSING_STREAK_THRESHOLD: ${{ vars.MISSING_STREAK_THRESHOLD || '3' }}
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
-        run: |
-          python src/sync_database_from_hf.py --database serving.db --repo-id "$HF_REPO_ID" \
-            --missing-threshold "$MISSING_STREAK_THRESHOLD" --event-retention-days 60
-
-      - name: 顯示同步後 runner 資源
-        shell: bash
-        run: |
-          free -h
-          df -h .
-          du -h serving.db serving.db-wal serving.db-shm 2>/dev/null || true
-
-      - name: ② Serving DB 本地完整性驗證
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          import sqlite3
-          c=sqlite3.connect('serving.db')
-          stores=c.execute('select count(*) from stores').fetchone()[0]
-          products=c.execute('select count(*) from products').fetchone()[0]
-          if not stores or not products: raise SystemExit('empty serving database')
-          print(f'validated stores={stores:,} products={products:,}')
-          PY
-
-      - name: ③ 發布 Current/Events 到 Turso
-        env:
-          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
-          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
-          TURSO_ACTIVE_SCHEMA_VERSION: ${{ vars.TURSO_ACTIVE_SCHEMA_VERSION }}
-        run: |
-          if [[ "$TURSO_ACTIVE_SCHEMA_VERSION" != "v10" ]]; then
-            echo 'Turso v10 cutover is not enabled: rebuilt local state was validated, remote publish safely skipped.' | tee -a "$GITHUB_STEP_SUMMARY"
-          elif [[ -z "$TURSO_DATABASE_URL" || -z "$TURSO_AUTH_TOKEN" ]]; then
-            echo 'Turso credentials absent: local SQLite validation succeeded; publish safely skipped.' | tee -a "$GITHUB_STEP_SUMMARY"
-          else
-            node scripts/publish_turso.mjs serving.db
-          fi
-
-      - name: ④ Raw/Event 60-day retention dry-run
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
-        run: python src/hf_retention.py --repo-id "$HF_REPO_ID"
-
-      - name: 壓縮下一批使用的狀態 checkpoint
-        shell: bash
-        run: |
-          python - <<'PY'
-          import sqlite3
-          c=sqlite3.connect('serving.db')
-          c.execute('DROP TABLE IF EXISTS product_search')
-          c.execute('PRAGMA wal_checkpoint(TRUNCATE)')
-          c.execute('VACUUM')
-          c.close()
-          PY
-          du -h serving.db
-
-      - name: ⑤ 設定 GitHub Pages 環境
-        uses: actions/configure-pages@v5
-
-      - name: ⑥ 上傳 Pages 靜態網站產物
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'web'
-
-      - name: ⑦ 部署發布至 GitHub Pages (即時生效)
-        id: deployment
-        uses: actions/deploy-pages@v4
+          retention-days: 2

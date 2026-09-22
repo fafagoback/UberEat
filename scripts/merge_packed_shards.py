@@ -21,8 +21,16 @@ def main():
     out=Path(a.output); out.unlink(missing_ok=True); dst=sqlite3.connect(out); dst.executescript(SCHEMA)
     dec=zstd.ZstdDecompressor(); comp=zstd.ZstdCompressor(level=10); offsets=[]; next_store=0; bucket_count=None; sources=[]
     batch_agg=defaultdict(lambda:[None,0,0,0,0]); metadata={}; totals=defaultdict(int); max_raw=max_blob=0
+    identities=set(); release=None
     for path in files:
         src=sqlite3.connect(path); sources.append(src); info={r[0]:json.loads(r[1]) for r in src.execute('select key,value from metadata')}
+        identity=info.get('shard_id')
+        fingerprint=(info.get('definition_version'),info.get('source_revision'),info.get('latest_batch'),info.get('total_shards'))
+        if identity is None or identity in identities: raise ValueError('missing or duplicate shard identity')
+        identities.add(identity)
+        if release is None: release=fingerprint
+        if fingerprint!=release: raise ValueError('mixed shard release/revision/batch')
+        if int(info['total_shards'])!=a.expected_shards: raise ValueError('shard topology mismatch')
         if bucket_count is None: bucket_count=info['buckets']
         elif bucket_count!=info['buckets']: raise ValueError('bucket count mismatch')
         offset=next_store; offsets.append(offset)
@@ -36,6 +44,7 @@ def main():
             agg=batch_agg[row[0]]; agg[0]=row[1]; agg[1]+=row[2]; agg[2]+=row[3]; agg[3]+=row[4]; agg[4]+=row[5]
         for row in aux['metadata']['rows']: metadata.setdefault(row[0],row[1])
         for t,v in info['source_tables'].items(): totals[t]+=v['count']
+    if {int(i) for i in identities}!=set(range(a.expected_shards)): raise ValueError('incomplete shard identity set')
     # Keep the compact directory queryable for browser-side geo filtering. The
     # full records remain compressed in store_bundles; these columns add only a
     # few megabytes and avoid expanding the multi-million-row product table.
@@ -72,15 +81,15 @@ def main():
             row=src.execute('select payload,checksum from search_buckets where bucket_id=?',(bid,)).fetchone(); data=decode(row,dec)
             for term,refs in data.items(): terms[term].extend((((ref>>20)+offset)<<20)|(ref&((1<<20)-1)) for ref in refs)
         if bid==new_bucket: terms['f:new'].extend(new_refs)
-        raw,blob,digest=packed(dict(terms),comp); dst.execute('insert into search_buckets values(?,?,?,?,?)',(bid,'msgpack+zstd',len(raw),digest,blob))
+        raw,blob,digest=packed(dict(sorted(terms.items())),comp); dst.execute('insert into search_buckets values(?,?,?,?,?)',(bid,'msgpack+zstd',len(raw),digest,blob))
         if bid%128==0: print(f'merged search buckets {bid:,}/{bucket_count:,}',flush=True)
     auxiliary={'crawl_batches':{'columns':['batch_id','processed_at','stores_seen','products_seen','fallback_stores','fallback_products'],'rows':[[k,*v] for k,v in sorted(batch_agg.items())]},'metadata':{'columns':['key','value'],'rows':[[k,v] for k,v in sorted(metadata.items())]}}
     raw,blob,digest=packed(auxiliary,comp); dst.execute('insert into auxiliary_bundles values(?,?,?,?,?)',('normalized_auxiliary','msgpack+zstd',len(raw),digest,blob))
     chunks=dst.execute('select count(*) from store_bundles').fetchone()[0]
     latest_batch=max(batch_agg,default='')
-    info={'format':1,'buckets':bucket_count,'chunks':chunks,'products':sum(product_offsets.values()),'active_stores':active_stores,'active_products':active_products,'max_raw_bundle':max_raw,'max_compressed_bundle':max_blob,'source_counts':dict(totals),'shards':len(files),'latest_batch':latest_batch,'latest_processed_at':latest,'definition_version':'2026-09-search-v2'}
+    info={'format':1,'buckets':bucket_count,'chunks':chunks,'products':sum(product_offsets.values()),'active_stores':active_stores,'active_products':active_products,'max_raw_bundle':max_raw,'max_compressed_bundle':max_blob,'source_counts':dict(totals),'shards':len(files),'latest_batch':latest_batch,'latest_processed_at':latest,'definition_version':release[0],'source_revision':release[1],'unique_batches':len(batch_agg)}
     for k,v in info.items(): dst.execute('insert into metadata values(?,?)',(k,json.dumps(v,ensure_ascii=False,separators=(',',':'))))
-    dst.commit(); dst.execute('vacuum')
+    dst.commit()
     # Turso's database-upload endpoint requires WAL mode. There are no pending
     # writes after VACUUM, but checkpoint explicitly so the uploaded main file
     # is complete and does not depend on a sidecar WAL file.
