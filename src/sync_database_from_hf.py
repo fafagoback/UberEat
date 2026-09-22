@@ -54,6 +54,7 @@ def sync(args: argparse.Namespace) -> dict[str, object]:
             print(json.dumps({"batch_id": batch_id, "skipped": reason, "extract_duration_seconds": round(t_extract, 2)}, ensure_ascii=False), flush=True)
             continue
         print(f"{prefix} STEP 2/3: Archive validated in {t_extract:.2f}s ({reason})", flush=True)
+        print(f"{prefix} STEP 3/3: Applying snapshot with disk-backed identity tracking...", flush=True)
 
         t_apply_start = time.perf_counter()
         counts = apply_snapshot(

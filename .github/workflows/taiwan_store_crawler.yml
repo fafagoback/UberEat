@@ -304,6 +304,7 @@ jobs:
   # ============================================================
   static_snapshot_and_publish:
     name: "階段 6: Serving DB 驗證與 Pages 發布"
+    timeout-minutes: 120
     needs: [store_reducer_and_menu_dispatcher, menu_scraper_workers, package_and_archive_menu_snapshot]
     if: needs.store_reducer_and_menu_dispatcher.result == 'success' && needs.menu_scraper_workers.result == 'success' && needs.package_and_archive_menu_snapshot.result == 'success'
     runs-on: ubuntu-latest

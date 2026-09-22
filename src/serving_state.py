@@ -199,23 +199,24 @@ def ensure_schema_and_migrations(conn: sqlite3.Connection) -> None:
 
 
 class ServingStateCache:
-    """Bounded read-through cache; active identities stay in memory, full rows do not."""
+    """Bounded read-through cache for full rows.
+
+    Active/seen identities intentionally live in SQLite, not Python sets: production
+    databases contain millions of products and two identity sets can exhaust a
+    GitHub-hosted runner before a snapshot starts applying.
+    """
 
     def __init__(self, conn: sqlite3.Connection | None = None, max_rows: int = 20_000):
         self.conn = conn
         self.max_rows = max_rows
         self.stores: OrderedDict[str, dict[str, Any]] = OrderedDict()
         self.products: OrderedDict[tuple[str, str], dict[str, Any]] = OrderedDict()
-        self.active_store_keys: set[str] = set()
-        self.active_product_keys: set[tuple[str, str]] = set()
         if conn is not None:
             ensure_schema_and_migrations(conn)
             self.load(conn)
 
     def load(self, conn: sqlite3.Connection) -> None:
         self.conn = conn
-        self.active_store_keys = {row[0] for row in conn.execute("SELECT store_uuid FROM stores WHERE status='active'")}
-        self.active_product_keys = {(row[0], row[1]) for row in conn.execute("SELECT store_uuid,product_uuid FROM products WHERE status='active'")}
 
     def _remember(self, cache: OrderedDict, key, value):
         cache[key] = value
@@ -270,9 +271,20 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
     if state_cache is None:
         state_cache = ServingStateCache(conn)
 
+    # TEMP tables are connection-local and backed by SQLite's temp_store policy.
+    # They bound Python memory while retaining indexed missing-item lookups.
+    conn.executescript("""
+        CREATE TEMP TABLE IF NOT EXISTS snapshot_seen_stores(
+            store_uuid TEXT PRIMARY KEY, is_open INTEGER NOT NULL
+        ) WITHOUT ROWID;
+        CREATE TEMP TABLE IF NOT EXISTS snapshot_seen_products(
+            store_uuid TEXT NOT NULL, product_uuid TEXT NOT NULL,
+            PRIMARY KEY(store_uuid, product_uuid)
+        ) WITHOUT ROWID;
+        DELETE FROM snapshot_seen_stores;
+        DELETE FROM snapshot_seen_products;
+    """)
     seen_stores: set[str] = set()
-    seen_store_open: dict[str, int] = {}
-    seen_products: set[tuple[str, str]] = set()
     counts = {k: 0 for k in ("stores", "products", "new", "changed", "reappeared", "removed", "unchanged", "store_new", "store_changed", "store_reappeared", "store_removed", "fallback_stores", "fallback_products")}
 
     insert_stores_batch: list[tuple] = []
@@ -281,7 +293,8 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
     update_products_batch: list[tuple] = []
     events_batch: list[tuple] = []
     changed_store_keys: set[str] = set()
-    changed_product_keys: set[tuple[str, str]] = set()
+    seen_product_rows: list[tuple[str, str]] = []
+    changed_product_rows: list[tuple[str, str]] = []
 
     def flush_snapshot_batches() -> None:
         if insert_stores_batch:
@@ -299,6 +312,12 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
         if events_batch:
             conn.executemany("INSERT INTO events(event_time,store_uuid,product_uuid,event_type,old_state,new_state) VALUES(?,?,?,?,?,?)", events_batch)
             events_batch.clear()
+        if seen_product_rows:
+            conn.executemany("INSERT OR IGNORE INTO snapshot_seen_products VALUES(?,?)", seen_product_rows)
+            seen_product_rows.clear()
+        if changed_product_rows:
+            conn.executemany("INSERT OR IGNORE INTO pending_product_changes VALUES(?,?)", changed_product_rows)
+            changed_product_rows.clear()
 
     for doc in docs:
         sid, sfallback = store_identity(doc)
@@ -312,7 +331,7 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
 
         is_open_val = doc.get("isOpen")
         is_open = 1 if (is_open_val is True or is_open_val == 1 or is_open_val is None) else 0
-        seen_store_open[sid] = is_open
+        conn.execute("INSERT OR REPLACE INTO snapshot_seen_stores VALUES(?,?)", (sid, is_open))
 
         address = doc.get("address") or {}
         rating = doc.get("aggregateRating") or {}
@@ -354,7 +373,6 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
             old_s["status"] = "active"
             old_s["missing_streak"] = 0
             old_s["state_hash"] = sh
-            state_cache.active_store_keys.add(sid)
             if store_needs_publish:
                 changed_store_keys.add(sid)
         else:
@@ -366,10 +384,10 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                 "store_uuid": sid, **sstate, "first_seen": now, "last_seen": now,
                 "status": "active", "missing_streak": 0, "state_hash": sh
             })
-            state_cache.active_store_keys.add(sid)
             changed_store_keys.add(sid)
 
         sections = (doc.get("hasMenu") or {}).get("hasMenuSection") or []
+        store_product_keys: set[str] = set()
         for sec in sections:
             category = html.unescape(str(sec.get("name") or "一般"))
             for item in sec.get("hasMenuItem") or []:
@@ -379,9 +397,10 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                 pid, pfallback = product_identity(item, sid)
                 counts["fallback_products"] += int(pfallback)
                 key = (sid, pid)
-                if key in seen_products:
+                if pid in store_product_keys:
                     continue
-                seen_products.add(key)
+                store_product_keys.add(pid)
+                seen_product_rows.append(key)
                 counts["products"] += 1
 
                 price = _num((item.get("offers") or {}).get("price"), float, 0)
@@ -411,8 +430,7 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                         "price_novel_vs_previous_3": 0, "reference_price": None,
                         "discount_amount": 0, "discount_pct": 0, "is_price_deal": 0,
                     })
-                    state_cache.active_product_keys.add(key)
-                    changed_product_keys.add(key)
+                    changed_product_rows.append(key)
                 else:
                     old_state = dict(old)
                     old_state["recent_prices"] = json_dumps(old["recent_prices"])
@@ -473,38 +491,46 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
                     old["discount_amount"] = discount_amount
                     old["discount_pct"] = discount_pct
                     old["is_price_deal"] = is_price_deal
-                    state_cache.active_product_keys.add(key)
                     if product_needs_publish:
-                        changed_product_keys.add(key)
+                        changed_product_rows.append(key)
+
+    flush_snapshot_batches()
 
     missing_products_batch: list[tuple] = []
-    missing_product_keys = list(state_cache.active_product_keys - seen_products)
-    for key in missing_product_keys:
-        store_id = key[0]
-        store_open = seen_store_open.get(store_id)
-        if store_open is None:
-            store_open = (state_cache.get_store(store_id) or {}).get("is_open", 1)
-        if store_open == 0:
-            continue
-
-        old = state_cache.get_product(key)
-        if old is None:
-            continue
-        streak = old["missing_streak"] + 1
+    missing_products = conn.execute("""
+        SELECT p.store_uuid,p.product_uuid,p.missing_streak
+        FROM products p
+        LEFT JOIN snapshot_seen_stores ss ON ss.store_uuid=p.store_uuid
+        LEFT JOIN stores s ON s.store_uuid=p.store_uuid
+        WHERE p.status='active'
+          AND NOT EXISTS (
+              SELECT 1 FROM snapshot_seen_products sp
+              WHERE sp.store_uuid=p.store_uuid AND sp.product_uuid=p.product_uuid
+          )
+          AND COALESCE(ss.is_open,s.is_open,1)=1
+    """)
+    for store_id, product_id, old_streak in missing_products:
+        key = (store_id, product_id)
+        streak = old_streak + 1
         status = "inactive" if streak >= missing_threshold else "active"
-        old["missing_streak"] = streak
-        old["status"] = status
-        missing_products_batch.append((streak, status, key[0], key[1]))
-        changed_product_keys.add(key)
+        missing_products_batch.append((streak, status, store_id, product_id))
+        changed_product_rows.append(key)
         if status == "inactive":
-            state_cache.active_product_keys.discard(key)
             counts["removed"] += 1
             if not baseline:
-                events_batch.append((now, key[0], key[1], "REMOVED", json_dumps({"status": "active"}), json_dumps({"status": "inactive"})))
+                events_batch.append((now, store_id, product_id, "REMOVED", json_dumps({"status": "active"}), json_dumps({"status": "inactive"})))
+        if len(missing_products_batch) >= 10_000:
+            conn.executemany("UPDATE products SET missing_streak=?,status=? WHERE store_uuid=? AND product_uuid=?", missing_products_batch)
+            missing_products_batch.clear()
+            flush_snapshot_batches()
 
     missing_stores_batch: list[tuple] = []
-    missing_store_keys = list(state_cache.active_store_keys - seen_stores)
-    for sid in missing_store_keys:
+    missing_store_keys = conn.execute("""
+        SELECT s.store_uuid FROM stores s
+        WHERE s.status='active'
+          AND NOT EXISTS (SELECT 1 FROM snapshot_seen_stores ss WHERE ss.store_uuid=s.store_uuid)
+    """)
+    for (sid,) in missing_store_keys:
         old = state_cache.get_store(sid)
         if old is None:
             continue
@@ -515,7 +541,6 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
         missing_stores_batch.append((streak, status, sid))
         changed_store_keys.add(sid)
         if status == "inactive":
-            state_cache.active_store_keys.discard(sid)
             counts["store_removed"] += 1
             if not baseline:
                 events_batch.append((now, sid, None, "STORE_REMOVED", json_dumps({"status": "active"}), json_dumps({"status": "inactive"})))
@@ -555,11 +580,8 @@ def apply_snapshot(conn: sqlite3.Connection, docs: Iterable[dict[str, Any]], bat
 
     if changed_store_keys:
         conn.executemany("INSERT OR IGNORE INTO pending_store_changes(store_uuid) VALUES(?)", ((sid,) for sid in changed_store_keys))
-    if changed_product_keys:
-        conn.executemany(
-            "INSERT OR IGNORE INTO pending_product_changes(store_uuid,product_uuid) VALUES(?,?)",
-            changed_product_keys,
-        )
+    if changed_product_rows:
+        conn.executemany("INSERT OR IGNORE INTO pending_product_changes VALUES(?,?)", changed_product_rows)
 
     if event_retention_days is not None:
         cutoff = (datetime.fromisoformat(now) - timedelta(days=event_retention_days)).isoformat()
