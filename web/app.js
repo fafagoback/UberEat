@@ -588,6 +588,25 @@ async function loadFromTurso() {
     await fetchNewProducts(1);
     await fetchPromotions(1);
 
+    // The checked-in JSON is only an offline fallback. Once all four live
+    // queries have completed, derive the cards from the same packed release
+    // that supplies the visible lists instead of the older fallback batch.
+    if (packed.meta?.latest_batch && packed.meta?.definition_version) {
+      const liveDiscounts = APP_STATE.discounts || [];
+      const liveStores = APP_STATE.filteredStores || [];
+      const liveProducts = APP_STATE.filteredProducts || [];
+      const livePromotions = APP_STATE.filteredPromotions || [];
+      if (liveDiscounts.length || liveStores.length || liveProducts.length || livePromotions.length) {
+        statsData.big_discounts_count = liveDiscounts.length;
+        statsData.new_stores_count = liveStores.length;
+        statsData.new_products_count = liveProducts.length;
+        statsData.promotions_count = livePromotions.length;
+        statsData.max_savings_twd = liveDiscounts.reduce((best, item) => Math.max(best, Number(item.savings_amount) || 0), 0);
+        statsData.intelligence_unavailable = false;
+        updateStatsUI(statsData);
+      }
+    }
+
     const badgeEl = document.getElementById('lakehouse-badge');
     if (badgeEl) {
       badgeEl.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span><span>Turso 邊緣連線</span>`;
