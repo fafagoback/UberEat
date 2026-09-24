@@ -61,7 +61,10 @@ def run(url=None, directory="web"):
             check('price history modal')
             page.keyboard.press('Escape')
             # Reload to close a modal without depending on an implementation-specific close control.
-            page.reload(wait_until='networkidle')
+            # Live Turso requests can keep the network busy after navigation.
+            # Wait for the app's own ready signal instead of network idleness.
+            page.reload(wait_until='domcontentloaded')
+            page.wait_for_function("document.getElementById('batch-time-text').textContent !== '載入中...'", timeout=90000)
             page.get_by_role('button', name='全庫商品即時檢索', exact=True).click()
             page.locator('#global-search-input').fill('雞排')
             page.wait_for_function("APP_STATE.globalProducts?.length > 0 && APP_STATE.globalProducts.every(p => (p.product_name + p.store_name + p.category_name).includes('雞排'))", timeout=60000)
