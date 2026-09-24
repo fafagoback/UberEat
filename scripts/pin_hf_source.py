@@ -19,11 +19,12 @@ for item in all_raw:
     if batch in rejections:
         excluded.append({'batch_id': batch, 'path': item.rfilename, 'reason': rejections[batch]})
         continue
-    # New archives must carry the atomic completion marker written in the same
-    # HF commit. Historical archives predate that marker and are covered by the
-    # checked-in rejection audit above until a signed baseline manifest replaces it.
+    # First marker-bearing release, verified against the HF file listing on
+    # 2026-09-24. Earlier archives predate this protocol; strict replay still
+    # validates their nationwide store floor and the rejection audit excludes
+    # the three known partial releases.
     complete_path = f'TaiwanMenuSnapshots/{batch}/complete.json'
-    if batch >= '20260923000000' and complete_path not in files:
+    if batch >= '20260923183927' and complete_path not in files:
         raise SystemExit(f'Raw archive lacks complete.json: {item.rfilename}')
     if complete_path in files:
         marker_path = hf_hub_download(repo_id=repo, repo_type='dataset', filename=complete_path,
