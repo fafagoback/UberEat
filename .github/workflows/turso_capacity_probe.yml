@@ -1,0 +1,32 @@
+name: Probe Turso Capacity
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read subscription and storage usage
+        env:
+          TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
+          TURSO_ORGANIZATION: eeetchen
+        run: |
+          node --input-type=module <<'EOF'
+          const org = process.env.TURSO_ORGANIZATION;
+          const token = process.env.TURSO_PLATFORM_TOKEN;
+          if (!token) throw new Error('TURSO_PLATFORM_TOKEN missing');
+          async function read(path) {
+            const response = await fetch(`https://api.turso.tech/v1/organizations/${org}/${path}`, {
+              headers: {Authorization: `Bearer ${token}`}
+            });
+            if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+            return response.json();
+          }
+          const [subscription, usage] = await Promise.all([read('subscription'), read('usage')]);
+          const plan = subscription.subscription?.plan;
+          const used = usage.total?.storage_bytes ?? usage.organization?.usage?.storage_bytes;
+          if (!plan || !Number.isSafeInteger(Number(used))) throw new Error('Plan or storage usage unavailable');
+          const report = {organization: org, plan, storage_bytes_used: Number(used)};
+          console.log(JSON.stringify(report));
+          EOF
