@@ -55,6 +55,10 @@ def main():
     parser.add_argument("--scan-file", default="data/seeds/taiwan_scan_points_3km_land_only.csv", help="掃描基準點 CSV 檔案路徑")
     parser.add_argument("--max-workers", type=int, default=15, help="工作機台數 (預設 15)")
     parser.add_argument("--output-dir", default="tasks", help="任務分片輸出目錄")
+    parser.add_argument("--minimum-points", type=int, default=1500,
+                        help="正式全台掃描的最少有效點位；不足時在派工前失敗")
+    parser.add_argument("--minimum-counties", type=int, default=20,
+                        help="正式全台掃描的最少縣市覆蓋數")
     args = parser.parse_args()
     if not 1 <= args.max_workers <= 15:
         parser.error("max-workers must be between 1 and 15")
@@ -122,8 +126,13 @@ def main():
     total_points = len(points)
     print(f"✅ 成功載入 {total_points} 個掃描基準點，涵蓋 {len(county_counts)} 個縣市區域。")
 
-    if total_points == 0:
-        print("❌ 錯誤：未讀取到任何有效掃描點！", file=sys.stderr)
+    if total_points < args.minimum_points or len(county_counts) < args.minimum_counties:
+        print(
+            f"❌ 拒絕假全台批次：有效點位 {total_points} "
+            f"(最少 {args.minimum_points})，縣市 {len(county_counts)} "
+            f"(最少 {args.minimum_counties})",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     # 2. 計算工作機分片 (Round-Robin 分配)

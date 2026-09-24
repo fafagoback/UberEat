@@ -1,8 +1,5 @@
-name: Build and Publish Packed Turso
+name: Manual Packed Recovery and Bootstrap
 on:
-  workflow_run:
-    workflows: ['Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)']
-    types: [completed]
   workflow_dispatch:
     inputs:
       mode:
@@ -18,7 +15,6 @@ concurrency:
   cancel-in-progress: false
 jobs:
   source:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     outputs:
       revision: ${{ steps.source.outputs.revision }}
@@ -54,6 +50,10 @@ jobs:
       PYTHONUNBUFFERED: '1'
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: source-manifest
+          path: .
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
       - run: pip install -r requirements-build.txt
@@ -63,7 +63,7 @@ jobs:
           df -B1 .
           python scripts/check_capacity.py --required-bytes 6000000000
       - name: Replay pinned Raw history for one shard
-        run: python -u src/rebuild_database.py --repo-id "$HF_REPO_ID" --revision "$SOURCE_REVISION" --strict --skip-fts --event-retention-days 60 --database shard.db --shard-id ${{ matrix.shard }} --total-shards 15
+        run: python -u src/rebuild_database.py --repo-id "$HF_REPO_ID" --revision "$SOURCE_REVISION" --source-manifest source-manifest.json --strict --skip-fts --event-retention-days 60 --database shard.db --shard-id ${{ matrix.shard }} --total-shards 15
       - name: Pack and prove lossless round trip
         run: |
           python scripts/check_capacity.py --required-bytes 1000000000

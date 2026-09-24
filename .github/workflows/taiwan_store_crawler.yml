@@ -6,10 +6,6 @@ on:
     - cron: '30 22,10 * * *'
   workflow_dispatch:
     inputs:
-      scan_file:
-        description: '掃描基準點 CSV 檔案'
-        required: false
-        default: 'data/seeds/taiwan_scan_points_3km_land_only.csv'
       max_workers:
         description: '平行工作機台數 (預設 15 台)'
         required: false
@@ -56,7 +52,9 @@ jobs:
         id: gen-matrix
         run: |
           python src/taiwan_crawler_coordinator.py \
-            --scan-file "${{ github.event.inputs.scan_file || 'data/seeds/taiwan_scan_points_3km_land_only.csv' }}" \
+            --scan-file "data/seeds/taiwan_scan_points_3km_land_only.csv" \
+            --minimum-points 1500 \
+            --minimum-counties 20 \
             --max-workers ${{ github.event.inputs.max_workers || 15 }} \
             --output-dir "tasks"
 

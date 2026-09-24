@@ -53,6 +53,8 @@ def main() -> None:
     parser.add_argument("--actual-workers", type=int, required=True)
     parser.add_argument("--repo-id", required=True)
     parser.add_argument("--path-in-repo", default="TaiwanMenuSnapshots")
+    parser.add_argument("--minimum-stores", type=int, default=10000,
+                        help="Never publish a purported nationwide snapshot below this floor")
     parser.add_argument("--offline", action="store_true", help="Validate and package without uploading")
     args = parser.parse_args()
 
@@ -68,6 +70,8 @@ def main() -> None:
     with open(args.stores_file, encoding="utf-8") as fh:
         stores = json.load(fh)
     expected = len(stores)
+    if expected < args.minimum_stores:
+        fail(batch_id, f"全台店家只有 {expected} 家，低於安全下限 {args.minimum_stores}，禁止上傳 HF", rows)
     try:
         valid_files = validate_snapshot(args.src_dir, stores, batch_id)
     except ValueError as exc:

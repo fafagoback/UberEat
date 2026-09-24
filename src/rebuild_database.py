@@ -96,6 +96,26 @@ def hf_snapshot_paths(repo_id: str, token: str | None, revision: str | None = No
     return sorted(found)
 
 
+def selected_hf_snapshot_paths(args: argparse.Namespace, token: str | None) -> list[tuple[str, str]]:
+    """Use the pinned source job's audited list when one was supplied."""
+    manifest_path = getattr(args, "source_manifest", None)
+    if not manifest_path:
+        return hf_snapshot_paths(args.repo_id, token, getattr(args, "revision", None))
+    manifest = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
+    if manifest.get("revision") != getattr(args, "revision", None):
+        raise ValueError("source manifest revision does not match pinned revision")
+    selected = []
+    for entry in manifest.get("archives", []):
+        path = str(entry.get("path") or "")
+        match = SNAPSHOT_RE.search(path)
+        if not match or not entry.get("sha256") or not int(entry.get("bytes") or 0):
+            raise ValueError(f"invalid pinned archive entry: {path}")
+        selected.append((match.group(1), path))
+    if len(selected) != int(manifest.get("raw_count") or -1):
+        raise ValueError("source manifest archive count mismatch")
+    return sorted(selected)
+
+
 def materialize_snapshots(args: argparse.Namespace, after_batch: str | None = None) -> Iterator[SnapshotItem]:
     if args.source_dir:
         for batch, path in local_snapshots(Path(args.source_dir)):
@@ -105,7 +125,7 @@ def materialize_snapshots(args: argparse.Namespace, after_batch: str | None = No
         return
 
     token = os.getenv("HF_TOKEN")
-    items = [(batch_id, remote_path) for batch_id, remote_path in hf_snapshot_paths(args.repo_id, token, getattr(args, "revision", None)) if not after_batch or batch_id > after_batch]
+    items = [(batch_id, remote_path) for batch_id, remote_path in selected_hf_snapshot_paths(args, token) if not after_batch or batch_id > after_batch]
     if not items:
         return
 
@@ -259,7 +279,7 @@ def rebuild(args: argparse.Namespace) -> dict[str, object]:
             available_batches = [b for b, _ in local_snapshots(Path(args.source_dir))]
         else:
             token = os.getenv("HF_TOKEN")
-            available_batches = [b for b, _ in hf_snapshot_paths(args.repo_id, token, getattr(args, "revision", None))]
+            available_batches = [b for b, _ in selected_hf_snapshot_paths(args, token)]
         total_snapshots = min(len(available_batches), args.max_snapshots) if args.max_snapshots else len(available_batches)
 
         shard_desc = f" (Shard {shard_id + 1}/{total_shards})" if shard_id is not None else ""
@@ -432,6 +452,7 @@ def main() -> None:
     source.add_argument("--source-dir", help="Directory containing downloaded snapshot archives")
     source.add_argument("--repo-id", default=os.getenv("HF_REPO_ID", "hub-google/UberEat"))
     parser.add_argument("--revision", help="Immutable HF source revision shared by every shard")
+    parser.add_argument("--source-manifest", help="Audited archive list produced by the source job")
     parser.add_argument("--strict", action="store_true", help="Reject builds with source gaps")
     parser.add_argument("--skip-fts", action="store_true", help="Packed serving has its own search index")
     parser.add_argument("--event-retention-days", type=int, default=60)
