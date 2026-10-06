@@ -1,11 +1,11 @@
-name: Manual Packed Recovery and Bootstrap
+name: Offline Packed Validation (Turso Upload Disabled)
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: Validate build or upload isolated candidate (no production cutover)
+        description: Offline validation only; Turso uploads are suspended
         type: choice
-        options: [plan, bootstrap]
+        options: [plan]
         default: plan
 permissions:
   contents: read
@@ -119,35 +119,3 @@ jobs:
           name: packed-validation-report
           path: packed-report.json
           retention-days: 2
-      - uses: actions/setup-node@v4
-        if: inputs.mode == 'bootstrap'
-        with: {node-version: '22'}
-      - run: npm ci
-        if: inputs.mode == 'bootstrap'
-      - name: Confirm account capacity before creating any database
-        if: inputs.mode == 'bootstrap'
-        env:
-          TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
-          TURSO_ORGANIZATION: ${{ vars.TURSO_ORGANIZATION }}
-          TURSO_CONFIRMED_QUOTA_BYTES: ${{ vars.TURSO_CONFIRMED_QUOTA_BYTES }}
-          TURSO_CONFIRMED_PLAN: ${{ vars.TURSO_CONFIRMED_PLAN }}
-        run: node scripts/check_turso_capacity.mjs packed-serving.db
-      - name: Provision isolated version without delete or reset
-        if: inputs.mode == 'bootstrap'
-        id: turso
-        env:
-          TURSO_PLATFORM_TOKEN: ${{ secrets.TURSO_PLATFORM_TOKEN }}
-          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
-          TURSO_REBUILD_NAME: ubereats-packed-v3-${{ github.run_id }}-${{ github.run_attempt }}
-        run: node scripts/provision_turso_rebuild.mjs
-      - name: Upload and verify isolated candidate only
-        if: inputs.mode == 'bootstrap'
-        env:
-          TURSO_DATABASE_URL: ${{ steps.turso.outputs.database_url }}
-          TURSO_AUTH_TOKEN: ${{ steps.turso.outputs.auth_token }}
-          TURSO_READONLY_TOKEN: ${{ steps.turso.outputs.readonly_token }}
-          TURSO_PUBLISH_MODE: bootstrap
-        run: |
-          node scripts/publish_packed_turso.mjs packed-serving.db
-          TURSO_AUTH_TOKEN="$TURSO_READONLY_TOKEN" node scripts/verify_uploaded_packed_turso.mjs packed-serving.db
-          echo 'Candidate checked. Full browser acceptance is required before production cutover.' >> "$GITHUB_STEP_SUMMARY"

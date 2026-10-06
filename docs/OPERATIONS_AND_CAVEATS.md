@@ -1,5 +1,9 @@
 # 執行維運與已知注意事項
 
+## 目前狀態（2026-10-06）
+
+擁有者已停止所有 Turso 上傳與建庫。每日爬蟲仍於台灣時間 06:30、18:30 執行，店家與菜單快照只封存至 HF。GitHub 上兩個 Turso 發布工作流已停用；腳本亦直接拒絕寫入。重新啟用前需擁有者明確授權。既有 DB 與網站設定保留。
+
 ## 0. 發布硬性條件
 
 - Packed metadata 必須直接包含 `latest_batch`、`latest_processed_at` 與 `definition_version`。
@@ -12,9 +16,9 @@
 
 | 工作流 | 觸發 | 作用 |
 |---|---|---|
-| `taiwan_store_crawler.yml` | 每日台灣時間 06:30、18:30，或手動 | 全台採集、Raw 上傳、增量 Current/Events、Turso v10 發布、Pages 部署 |
-| `rebuild_turso.yml` | 手動 | 由全部保留 Raw 重建正規化 DB，可用 15 shard，驗證後發布隔離 Turso |
-| `publish_packed_turso.yml` | 手動 | 全歷史重建、無損壓縮、發布新的 packed Turso，更新 web config |
+| `taiwan_store_crawler.yml` | 每日台灣時間 06:30、18:30，或手動 | 全台店家與菜單採集、驗證、HF Raw 封存（無 Turso／Pages 相依） |
+| `rebuild_turso.yml` | 手動 | 已停用；僅保留停止發布的說明 |
+| `publish_packed_turso.yml` | 手動 | 已停用；程式僅保留 HF 重建與離線 packed 驗證，無上傳入口 |
 | `hf_retention.yml` | crawler 成功後或手動 | 先 dry run，再刪除過期 Raw 與舊 HF event 檔 |
 | `deploy_pages.yml` | `main` 的 `web/**` 變更或手動 | 將 `web` 部署至 GitHub Pages |
 | `hf_inventory.yml` | 手動 | 列出 HF Dataset 儲存清單，不修改資料 |
@@ -24,7 +28,7 @@
 - `src/hf_retention.py` 只允許刪除 `TaiwanMenuSnapshots/` 與 `v2/history/events/` 下超過 60 天的項目。
 - workflow 會先 dry run，並以正規表示式確認沒有其他 namespace 被列入刪除。
 - `TaiwanStores`、Parquet 或其他 HF 路徑不在這支 retention 程式的刪除範圍。
-- GitHub menu worker artifact 保留 14 天，封裝後 snapshot artifact 保留 30 天，全台店家 artifact 保留 90 天；packed shard artifact 保留 2 天。
+- GitHub 任務分片與店家探索 artifact 保留 1 天；menu worker、封裝快照、全台店家及 packed shard artifact 保留 2 天。
 - 正規化重建能得到的事件歷史受 Raw 保留範圍限制。若只保留 60 天 Raw，從零重建就無法恢復更早、且沒有其他保存副本的事件。
 
 ## 3 Baseline 與 first_seen 的意義

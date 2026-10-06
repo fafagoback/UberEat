@@ -18,7 +18,8 @@ on:
 env:
   TZ: 'Asia/Taipei'
 
-# 全台批次共用同一個發布目標；禁止排程與手動執行彼此覆寫。
+# 僅採集並封存到 HF；Turso 上傳已於 2026-10-06 停用。
+# 全台批次共用 HF 封存目標；禁止排程與手動執行彼此覆寫。
 concurrency:
   group: ubereats-production
   cancel-in-progress: false

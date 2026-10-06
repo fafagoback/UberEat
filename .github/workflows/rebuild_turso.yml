@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo 'Retired normalized publisher. Run Build and Publish Packed Turso in plan mode.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Turso uploads and provisioning are suspended. Daily crawler archives to Hugging Face only.' >> "$GITHUB_STEP_SUMMARY"
           echo 'serving.db is offline only; no database was changed.' >> "$GITHUB_STEP_SUMMARY"
