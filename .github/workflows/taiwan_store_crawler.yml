@@ -1,6 +1,11 @@
 name: Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)
 
 on:
+  # 工作流程修復提交時立即啟動整批驗收，避免只能等待下次排程。
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/taiwan_store_crawler.yml'
   schedule:
     # 每天台灣時間 早上 06:30 與 晚上 18:30 (UTC 22:30 (前一日), 10:30) 自動執行兩次全台大採集
     - cron: '30 22,10 * * *'
@@ -59,14 +64,6 @@ jobs:
             --max-workers ${{ github.event.inputs.max_workers || 15 }} \
             --output-dir "tasks"
 
-      - name: 上傳點位分片任務設定 Artifact
-        if: steps.gen-matrix.outputs.has_tasks == 'true'
-        uses: actions/upload-artifact@v7.0.1
-        with:
-          name: point-task-chunks
-          path: tasks/
-          retention-days: 1
-
   # ============================================================
   # Stage 2: 15 台平行工作機全台店家探索 (Store Discovery Matrix)
   # ============================================================
@@ -91,11 +88,43 @@ jobs:
       - name: 安裝爬蟲依賴
         run: pip install requests
 
-      - name: 下載點位分片任務
-        uses: actions/download-artifact@v8.0.1
-        with:
-          name: point-task-chunks
-          path: tasks/
+      # 1,558 點的 Round-Robin 分片是確定性的；不再讓 15 台 Worker
+      # 同時下載同一份 GitHub Artifact（2026-10-31 曾有 3 台下載失敗）。
+      - name: 本機重建點位分片與檢查批次一致性
+        env:
+          EXPECTED_BATCH_ID: ${{ needs.point_coordinator.outputs.batch_id }}
+          EXPECTED_CHUNK_ID: ${{ matrix.chunk_id }}
+          EXPECTED_WORKERS: ${{ needs.point_coordinator.outputs.num_workers }}
+          EXPECTED_TOTAL_POINTS: ${{ needs.point_coordinator.outputs.total_points }}
+        run: |
+          set -euo pipefail
+          python src/taiwan_crawler_coordinator.py \
+            --scan-file "data/seeds/taiwan_scan_points_3km_land_only.csv" \
+            --minimum-points 1500 \
+            --minimum-counties 20 \
+            --max-workers "$EXPECTED_WORKERS" \
+            --batch-id "$EXPECTED_BATCH_ID" \
+            --output-dir "tasks"
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          chunk_id = int(os.environ["EXPECTED_CHUNK_ID"])
+          workers = int(os.environ["EXPECTED_WORKERS"])
+          total = int(os.environ["EXPECTED_TOTAL_POINTS"])
+          batch = os.environ["EXPECTED_BATCH_ID"]
+          files = sorted(Path("tasks").glob("chunk_*.json"))
+          assert len(files) == workers, f"missing chunk files: {len(files)} != {workers}"
+          chunks = [json.loads(p.read_text(encoding="utf-8")) for p in files]
+          assert {c["chunk_id"] for c in chunks} == set(range(workers))
+          assert all(c["batch_id"] == batch and c["total_chunks"] == workers for c in chunks)
+          points = [p for c in chunks for p in c["points"]]
+          assert len(points) == total, f"point count mismatch: {len(points)} != {total}"
+          assert len({p["id"] for p in points}) == total, "duplicate point ids"
+          assert len(chunks[chunk_id]["points"]) > 0
+          print(f"Batch {batch}: Worker {chunk_id}/{workers} has {len(chunks[chunk_id]['points'])} points, total {total} unique")
+          PY
 
       - name: 執行本節點店家探索 (Worker ${{ matrix.chunk_id }})
         run: |
