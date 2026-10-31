@@ -54,6 +54,7 @@ def main():
     parser = argparse.ArgumentParser(description="Uber Eats 全台店家採集調度器 (Coordinator)")
     parser.add_argument("--scan-file", default="data/seeds/taiwan_scan_points_3km_land_only.csv", help="掃描基準點 CSV 檔案路徑")
     parser.add_argument("--max-workers", type=int, default=15, help="工作機台數 (預設 15)")
+    parser.add_argument("--batch-id", default=None, help="沿用 Stage 1 的批次識別碼；供 Worker 在本機重建相同分片")
     parser.add_argument("--output-dir", default="tasks", help="任務分片輸出目錄")
     parser.add_argument("--minimum-points", type=int, default=1500,
                         help="正式全台掃描的最少有效點位；不足時在派工前失敗")
@@ -64,7 +65,13 @@ def main():
         parser.error("max-workers must be between 1 and 15")
 
     start_time = time.time()
-    now_dt = datetime.now(TW_TZ)
+    if args.batch_id:
+        try:
+            now_dt = datetime.strptime(args.batch_id, "%Y%m%d%H%M%S").replace(tzinfo=TW_TZ)
+        except ValueError:
+            parser.error("batch-id must be a valid YYYYMMDDHHMMSS timestamp")
+    else:
+        now_dt = datetime.now(TW_TZ)
     now_str = now_dt.strftime("%Y-%m-%d %H:%M:%S")
     batch_id = now_dt.strftime("%Y%m%d%H%M%S")
 
