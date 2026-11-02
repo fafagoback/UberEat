@@ -1,7 +1,7 @@
-name: Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)
+name: UberEat 15 Workers｜全台原始 API 採集 → 獨立 HF Raw
 
 on:
-  # 工作流程修復提交時立即啟動整批驗收，避免只能等待下次排程。
+  # 修改正式工作流程後，自動啟動原始資料格式驗收及全台採集。
   push:
     branches: [main]
     paths:
@@ -53,6 +53,9 @@ jobs:
 
       - name: 安裝基礎依賴
         run: pip install requests
+
+      - name: 測試原始 API 回應保存與 HF 格式
+        run: python -m unittest discover -s tests -p 'test_ubereat_raw_contract.py' -v
 
       - name: 執行點位調度與動態 Matrix 生成
         id: gen-matrix
@@ -142,7 +145,7 @@ jobs:
           retention-days: 1
 
   # ============================================================
-  # Stage 3: 全台店家全局去重、HF資料集上傳與菜單任務調度 (Reducer & Dispatcher)
+  # Stage 3: 全台去重及菜單任務分派（此階段不寫入 HF）
   # ============================================================
   store_reducer_and_menu_dispatcher:
     name: "階段 3: 全台去重與菜單調度 (Reducer)"
@@ -174,20 +177,15 @@ jobs:
           path: all_store_discovery_outputs/
           merge-multiple: true
 
-      - name: 執行全台去重、HF 店家清單推送與 15 組菜單任務分片生成
+      - name: 全台去重及 15 組菜單任務分片生成
         id: run-reducer
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
         run: |
           python src/taiwan_store_reducer.py \
             --src-dir "all_store_discovery_outputs" \
             --output-dir "taiwan_stores_dataset" \
             --menu-tasks-dir "menu_tasks" \
             --max-menu-workers ${{ github.event.inputs.max_workers || 15 }} \
-            --expected-store-workers ${{ needs.point_coordinator.outputs.num_workers }} \
-            --repo-id "${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}" \
-            --path-in-repo "TaiwanStores"
+            --expected-store-workers ${{ needs.point_coordinator.outputs.num_workers }}
 
       - name: 上傳全台店家完整資料集 Artifact (2天留存)
         uses: actions/upload-artifact@v7.0.1
@@ -234,14 +232,14 @@ jobs:
           name: menu-task-chunks
           path: menu_tasks/
 
-      - name: 執行菜單採集並產出 Artifact 來源 (Worker ${{ matrix.chunk_id }})
+      - name: 原封不動保存 getStoreV1 HTTP 回應（Worker ${{ matrix.chunk_id }}）
         run: |
-          python src/taiwan_menu_worker.py \
+          python src/taiwan_raw_menu_worker.py \
             --chunk-file "menu_tasks/chunk_${{ matrix.chunk_id }}.json" \
             --output-dir "output_menu_worker_${{ matrix.chunk_id }}" \
             --concurrency 5
 
-      - name: 上傳本節點菜單 JSON 結果 Artifact (雙重保險)
+      - name: 保存本節點原始 HTTP 回應及採集索引 Artifact
         id: upload-menu-artifact
         if: always()
         uses: actions/upload-artifact@v7.0.1
@@ -267,11 +265,11 @@ jobs:
           [[ "$ARTIFACT_OUTCOME" == "success" ]]
 
   # ============================================================
-  # Stage 5: 彙整所有菜單 Artifact、單檔壓縮與 Hugging Face 單次 Commit
+  # Stage 5: 驗證完整全台 Feed + 菜單原始回應，寫入獨立 UberEat HF Raw
   # ============================================================
   package_and_archive_menu_snapshot:
-    name: "階段 5: 菜單完整快照封存與 HF 單次 Commit"
-    needs: [store_reducer_and_menu_dispatcher, menu_scraper_workers]
+    name: "階段 5: 全台 Raw 校驗、重建 HF Dataset 與發布完整批次"
+    needs: [point_coordinator, store_reducer_and_menu_dispatcher, menu_scraper_workers]
     if: needs.store_reducer_and_menu_dispatcher.result == 'success' && needs.menu_scraper_workers.result == 'success'
     runs-on: ubuntu-latest
     steps:
@@ -282,6 +280,12 @@ jobs:
         uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
+
+      - name: 下載全台原始 Feed Worker Artifacts（保留分片目錄）
+        uses: actions/download-artifact@v8.0.1
+        with:
+          pattern: store-chunk-result-*
+          path: feed_worker_artifacts/
 
       - name: 下載全部 Menu Worker Artifacts（保留分片目錄）
         uses: actions/download-artifact@v8.0.1
@@ -298,27 +302,25 @@ jobs:
       - name: 安裝 Hugging Face 上傳工具
         run: pip install huggingface_hub
 
-      - name: 檢核、打包並以單一 Commit 上傳 HF
+      - name: 校驗、分片壓縮並上傳至獨立 hub-google/UberEat/Raw
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_REPO_ID: ${{ secrets.HF_REPO_ID }}
-          EXPECTED_WORKERS: ${{ needs.store_reducer_and_menu_dispatcher.outputs.num_menu_workers }}
           BATCH_ID: ${{ needs.store_reducer_and_menu_dispatcher.outputs.batch_id }}
         shell: bash
         run: |
           set -euo pipefail
-          actual_workers="$(find menu_worker_artifacts -mindepth 1 -maxdepth 1 -type d -name 'menu-result-chunk-*' | wc -l | tr -d ' ')"
-          python src/package_and_upload_menu_snapshot.py \
-            --src-dir menu_worker_artifacts/ \
+          python src/package_and_upload_raw_snapshot.py \
+            --feed-dir feed_worker_artifacts/ \
+            --menu-dir menu_worker_artifacts/ \
+            --scan-file data/seeds/taiwan_scan_points_3km_land_only.csv \
             --stores-file taiwan_stores_dataset/taiwan_all_stores.json \
             --output-dir packaged_snapshot/ \
             --batch-id "$BATCH_ID" \
-            --expected-workers "$EXPECTED_WORKERS" \
-            --actual-workers "$actual_workers" \
-            --repo-id "${HF_REPO_ID:-hub-google/UberEat}" \
-            --path-in-repo "TaiwanMenuSnapshots"
+            --expected-feed-workers ${{ needs.point_coordinator.outputs.num_workers }} \
+            --expected-menu-workers ${{ needs.store_reducer_and_menu_dispatcher.outputs.num_menu_workers }} \
+            --repo-id "hub-google/UberEat"
 
-      - name: 保存 Stage 5 壓縮快照 Artifact（供補跑與稽核）
+      - name: 保存 Stage 5 manifest 與部分壓縮快照 Artifact（供稽核）
         if: always()
         uses: actions/upload-artifact@v7.0.1
         with:
