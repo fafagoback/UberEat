@@ -1,4 +1,4 @@
-name: UberEat 15 Workers｜全台原始 API 採集 → 獨立 HF Raw
+name: UberEat 01｜全台原始資料爬蟲
 
 on:
   # 修改正式工作流程後，自動啟動原始資料格式驗收及全台採集。
@@ -170,7 +170,7 @@ jobs:
       - name: 安裝依賴
         run: pip install huggingface_hub requests
 
-      - name: 下載所有 Worker 的店家探索結果
+      - name: 下載全台 15 台 Worker 的店家探索結果
         uses: actions/download-artifact@v8.0.1
         with:
           pattern: store-chunk-result-*
@@ -265,10 +265,10 @@ jobs:
           [[ "$ARTIFACT_OUTCOME" == "success" ]]
 
   # ============================================================
-  # Stage 5: 驗證完整全台 Feed + 菜單原始回應，寫入獨立 UberEat HF Raw
+  # Stage 5: 驗證完整全台 Feed + 菜單原始回應，僅寫入 UberEat Hugging Face Raw
   # ============================================================
   package_and_archive_menu_snapshot:
-    name: "階段 5: 全台 Raw 校驗、重建 HF Dataset 與發布完整批次"
+    name: "階段 5：全台原始資料校驗與 Hugging Face 發布"
     needs: [point_coordinator, store_reducer_and_menu_dispatcher, menu_scraper_workers]
     if: needs.store_reducer_and_menu_dispatcher.result == 'success' && needs.menu_scraper_workers.result == 'success'
     runs-on: ubuntu-latest
