@@ -41,8 +41,7 @@ def capture_entry(path, root):
     if not path.is_file() or path.is_symlink() or path.suffix != ".body":
         raise ValueError(f"Not a raw HTTP body: {path}")
     relative = path.relative_to(root).as_posix()
-    if path.stat().st_size == 0:
-        raise ValueError(f"Empty HTTP response body: {path}")
+    # An HTTP error may legitimately return zero bytes; preserve it unchanged.
     return {
         "path": relative,
         "size": path.stat().st_size,
