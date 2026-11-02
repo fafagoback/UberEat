@@ -7,19 +7,25 @@ on:
         description: Apply deletion after dry-run validation
         type: boolean
         default: false
+  schedule:
+    - cron: '10 21 * * *'
   workflow_run:
-    workflows: ['Taiwan Uber Eats Stores & Menu Pipeline (15 Workers)']
+    workflows: ['UberEat 01｜全台原始資料爬蟲']
     types: [completed]
+
+concurrency:
+  group: ubereats-production
+  cancel-in-progress: false
 
 jobs:
   retention:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: read
     env:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
-      HF_REPO_ID: ${{ secrets.HF_REPO_ID || 'hub-google/UberEat' }}
+      HF_REPO_ID: hub-google/UberEat
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-python@v7.0.0
