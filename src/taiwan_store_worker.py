@@ -20,6 +20,7 @@ import urllib.parse
 import argparse
 from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 import requests
 
 TW_TZ = timezone(timedelta(hours=8))
@@ -119,7 +120,7 @@ def extract_stores_from_feed(obj, current_store_uuid=None):
     return res
 
 
-def scan_single_point(point: dict, max_pages: int = 10) -> tuple:
+def scan_single_point(point: dict, max_pages: int = 10, raw_root=None) -> tuple:
     """針對單一經緯度點位進行動態翻頁掃描"""
     p_id = point["id"]
     lat = point["latitude"]
@@ -127,6 +128,10 @@ def scan_single_point(point: dict, max_pages: int = 10) -> tuple:
     county = point.get("county", "台灣")
     addr_ref = f"{county}座標點#{p_id}"
 
+    # 每個座標保留完整的 getFeedV1 HTTP response bytes，不進行 JSON 轉換。
+    capture_dir = Path(raw_root) / f"point_{int(p_id)}" if raw_root is not None else None
+    if capture_dir is not None:
+        capture_dir.mkdir(parents=True, exist_ok=True)
     session = requests.Session()
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
@@ -183,7 +188,13 @@ def scan_single_point(point: dict, max_pages: int = 10) -> tuple:
             try:
                 time.sleep(random.uniform(0.1, 0.25))
                 resp = session.post("https://www.ubereats.com/api/getFeedV1", json=payload, headers=headers, timeout=12)
-                
+                if capture_dir is not None:
+                    # 包括重試與非 200 回應，均在解碼前原封不動寫入。
+                    raw_file = capture_dir / f"page-{page:04d}-attempt-{attempt:02d}-status-{resp.status_code}.body"
+                    if raw_file.exists():
+                        raise FileExistsError(f"Raw response already exists: {raw_file}")
+                    raw_file.write_bytes(resp.content)
+
                 if resp.status_code == 429:
                     sleep_s = 3.0 * attempt + random.uniform(1.0, 2.0)
                     time.sleep(sleep_s)
@@ -233,6 +244,7 @@ def scan_single_point(point: dict, max_pages: int = 10) -> tuple:
                 page_success = True
                 break
             except Exception as e:
+                print(f"Feed point {p_id} page {page} attempt {attempt}: {type(e).__name__}: {e}", flush=True)
                 time.sleep(1.0 * attempt)
 
         if not page_success:
@@ -283,7 +295,7 @@ def main():
     # 執行掃描 (支援內部小規模執行緒池)
     with ThreadPoolExecutor(max_workers=args.concurrency) as executor:
         future_to_point = {
-            executor.submit(scan_single_point, pt, args.max_pages_per_point): pt
+            executor.submit(scan_single_point, pt, args.max_pages_per_point, Path(args.output_dir) / "raw_feed"): pt
             for pt in points
         }
 
@@ -332,6 +344,7 @@ def main():
             "chunk_id": chunk_id,
             "batch_id": batch_id,
             "points_scanned": completed_points,
+            "point_ids": [pt["id"] for pt in points],
             "total_stores": total_unique_stores,
             "elapsed_seconds": round(elapsed, 2),
             "stores": list(all_stores.values())
@@ -366,6 +379,9 @@ def main():
         checkpoint_errors.append(f"掃描點位 {completed_points}/{total_points}")
     if total_unique_stores <= 0:
         checkpoint_errors.append("未發現任何店家")
+    for pt in points:
+        if not list((Path(args.output_dir) / "raw_feed" / f"point_{int(pt['id'])}").glob("*.body")):
+            checkpoint_errors.append(f"點位 {pt['id']} 缺少原始 Feed HTTP 回應")
     if checkpoint_json.get("total_stores") != len(checkpoint_json.get("stores", [])):
         checkpoint_errors.append("JSON total_stores 與 stores 陣列不符")
     if len(checkpoint_csv_rows) != total_unique_stores:
