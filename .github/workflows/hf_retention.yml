@@ -1,10 +1,10 @@
-name: UberEat 02｜HF 60 天資料清理
+name: UberEat 02｜HF 60 天資料與歷史清理
 
 on:
   workflow_dispatch:
     inputs:
-      apply:
-        description: Apply deletion after dry-run validation
+      dry_run:
+        description: 僅預覽清理計畫，不實際刪除
         type: boolean
         default: false
   schedule:
@@ -13,38 +13,37 @@ on:
     workflows: ['UberEat 01｜全台原始資料爬蟲']
     types: [completed]
 
+permissions:
+  contents: read
+
 concurrency:
   group: ubereats-production
   cancel-in-progress: false
 
 jobs:
   retention:
+    name: 刪除過期 Raw 與 HF Git/LFS 歷史版本
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
+    timeout-minutes: 120
     env:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
-      HF_REPO_ID: hub-google/UberEat
     steps:
-      - uses: actions/checkout@v7.0.1
-      - uses: actions/setup-python@v7.0.0
-        with: { python-version: '3.11' }
-      - run: pip install huggingface_hub
-      - name: Mandatory dry-run
-        run: python src/hf_retention.py --repo-id "$HF_REPO_ID" | tee retention.txt
-      - name: Validate deletion namespace
+      - name: 檢出專案
+        uses: actions/checkout@v7.0.1
+      - name: 設定 Python 3.11
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+      - name: 安裝 Hugging Face API
+        run: pip install 'huggingface_hub>=0.30,<2'
+      - name: 檢查並自動清除 60 天前資料及歷史版本
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '0' }}
         run: |
-          if grep '^DELETE ' retention.txt | grep -Ev '^DELETE (TaiwanMenuSnapshots/|v2/history/events/)'; then
-            echo 'Unsafe retention target detected' >&2; exit 1
+          set -euo pipefail
+          if [ "$DRY_RUN" = "1" ]; then
+            python src/hf_retention.py --repo-id hub-google/UberEat --days 60
+          else
+            python src/hf_retention.py --repo-id hub-google/UberEat --days 60 --apply
           fi
-      - name: Apply and verify
-        if: github.event_name == 'workflow_dispatch' && inputs.apply
-        run: python src/hf_retention.py --repo-id "$HF_REPO_ID" --apply | tee retention-applied.txt
-      - name: Summary
-        if: always()
-        run: |
-          echo '## HF 60-day retention' >> "$GITHUB_STEP_SUMMARY"
-          echo '```text' >> "$GITHUB_STEP_SUMMARY"
-          (cat retention-applied.txt 2>/dev/null || cat retention.txt) >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
