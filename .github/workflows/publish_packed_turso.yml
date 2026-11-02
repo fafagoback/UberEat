@@ -1,4 +1,4 @@
-name: Offline Packed Validation (Turso Upload Disabled)
+name: 已停用｜離線資料庫驗證（不會發布）
 on:
   workflow_dispatch:
     inputs:
