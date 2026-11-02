@@ -1,4 +1,4 @@
-name: HF Raw and Events 60-day Retention
+name: UberEat 02｜HF 60 天資料清理
 
 on:
   workflow_dispatch:
