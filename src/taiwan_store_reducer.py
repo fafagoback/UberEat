@@ -135,8 +135,6 @@ def sort_chunk_key(ws: dict):
     return (num, cid)
 
 
-from upload_to_hf import upload_to_huggingface
-
 
 def main():
     parser = argparse.ArgumentParser(description="Uber Eats 全台店家資料湖彙整與菜單任務調度引擎 (Reducer)")
@@ -145,7 +143,6 @@ def main():
     parser.add_argument("--menu-tasks-dir", default="menu_tasks", help="菜單採集分片任務輸出目錄")
     parser.add_argument("--max-menu-workers", type=int, default=15, help="菜單工作機台數 (預設 15)")
     parser.add_argument("--expected-store-workers", type=int, required=True)
-    parser.add_argument("--push-to-hf", action="store_true", default=True, help="是否將店家資料集推送至 Hugging Face")
     parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "hub-google/UberEat"), help="Hugging Face Dataset Repo ID")
     parser.add_argument("--path-in-repo", default="TaiwanStores", help="店家清單在 HF Dataset 內部的目錄路徑")
     parser.add_argument("--db-path", default=None, help="SQLite 資料庫路徑 (選填，未指定則不建立本機 db 檔)")
@@ -358,26 +355,9 @@ def main():
         except Exception as e:
             print(f"⚠️ 寫入 SQLite 異常: {e}")
 
-    # 6. 推送全台店家資料集至 Hugging Face (TaiwanStores/)
-    hf_store_dataset_ok = False
-    if args.push_to_hf:
-        hf_token = os.environ.get("HF_TOKEN")
-        if hf_token:
-            print(f"\n☁️ 正在推送全台店家資料集至 Hugging Face ({args.repo_id}/{args.path_in_repo}/)...")
-            try:
-                commit_msg = f"Upload Taiwan stores snapshot {batch_id} ({total_unique_stores} unique stores)"
-                upload_to_huggingface(
-                    src_dir=args.output_dir,
-                    repo_id=args.repo_id,
-                    path_in_repo=args.path_in_repo,
-                    commit_message=commit_msg
-                )
-                hf_store_dataset_ok = True
-                print("✅ 全台店家資料集已成功同步至 Hugging Face！")
-            except Exception as e:
-                print(f"⚠️ 推送店家資料集至 HF 失敗: {e}")
-        else:
-            print("ℹ️ 未檢測到 HF_TOKEN，跳過 Hugging Face 店家資料集推送。")
+    # 6. 不在 Reducer 階段寫入 HF。全台 Raw 經 Feed 與菜單完整校驗後，
+    #    由最後的封存階段一次發布完成標記，避免半成品誤認為正式資料。
+    print("☁️ HF 上傳延後至 Stage 5，這裡僅建立本次全台菜單分片。")
 
     # 7. 生成 Stage 4 菜單採集任務分片 (均分至 15 台工作機)
     num_menu_workers = min(args.max_menu_workers, total_unique_stores) if total_unique_stores > 0 else 0
@@ -421,8 +401,6 @@ def main():
     menu_ids = [s.get("store_uuid") or s.get("store_url") for chunk in menu_chunks for s in chunk]
     if len(menu_ids) != len(set(menu_ids)):
         checkpoint_errors.append("菜單分片含重複店家主鍵")
-    if os.environ.get("HF_TOKEN") and not hf_store_dataset_ok:
-        checkpoint_errors.append("Hugging Face TaiwanStores 資料集 Commit 未完成")
 
     # 8. 輸出 GitHub Actions 變數供 Stage 4 動態調度
     menu_matrix_json = json.dumps({"include": menu_matrix_include})
@@ -437,7 +415,7 @@ def main():
     # 9. 生成 GitHub Actions $GITHUB_STEP_SUMMARY 報表
     summary_md = f"""## 🇹🇼 【全台 Uber Eats 店家掃描與菜單調度成果大儀表板】
 > ⏰ **採集批次**: `{batch_id}` ({now_str}) | ⏱️ **總整併耗時**: `{elapsed_total:.2f}` 秒
-> 📦 **Hugging Face 店家資料庫**: `{'✅ 已同步 (' + args.repo_id + '/' + args.path_in_repo + ')' if hf_store_dataset_ok else 'ℹ️ 本機/未推送'}`
+> 📦 **Hugging Face**: `Stage 5 才上傳完整原始 Feed 與菜單，Stage 3 不寫入`
 
 ### 📊 核心成果摘要
 | 項目 | 數值 | 說明 |
@@ -455,7 +433,6 @@ def main():
 | 標準資料集 | 4 個非空檔案 | `{sum(1 for p in checkpoint_files[:4] if os.path.isfile(p) and os.path.getsize(p) > 0)}` 個 | {'✅' if not empty_files else '❌'} |
 | 菜單任務分片 | `{num_menu_workers}` 份、合計 `{total_unique_stores}` 店 | `{num_menu_workers}` 份、合計 `{checkpoint_menu_total}` 店 | {'✅' if checkpoint_menu_total == total_unique_stores else '❌'} |
 | 店家主鍵唯一性 | 無重複 | `{len(menu_ids) - len(set(menu_ids))}` 筆重複 | {'✅' if len(menu_ids) == len(set(menu_ids)) else '❌'} |
-| HF TaiwanStores Commit | 成功 | {'成功' if hf_store_dataset_ok else '未完成'} | {'✅' if hf_store_dataset_ok else ('❌' if os.environ.get('HF_TOKEN') else 'ℹ️')} |
 
 ---
 
