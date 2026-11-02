@@ -1,4 +1,4 @@
-name: Rebuild Turso From All HF Snapshots
+name: 已停用｜資料庫重建（不會發布）
 on:
   workflow_dispatch:
 permissions:
