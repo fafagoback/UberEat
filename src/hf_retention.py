@@ -160,14 +160,15 @@ def main():
         return
 
     # Explicitly check refs: old commits can stay referenced by branches/PRs.
-    refs = api.list_repo_refs(repo_id=REPOSITORY, repo_type="dataset")
+    refs = api.list_repo_refs(repo_id=REPOSITORY, repo_type="dataset", include_pull_requests=True)
     branches = [x.name for x in refs.branches]
     tags = [x.name for x in refs.tags]
-    other_refs = [x.name for x in getattr(refs, "converts", [])]
-    if branches != ["main"] or tags or other_refs:
+    other_refs = [x.name for x in (getattr(refs, "converts", None) or [])]
+    pull_requests = [x.name for x in (getattr(refs, "pull_requests", None) or [])]
+    if branches != ["main"] or tags or other_refs or pull_requests:
         raise RuntimeError(
             "Additional HF refs may pin old LFS history; refuse destructive "
-            f"squash until resolved: branches={branches}, tags={tags}, extra={other_refs}"
+            f"squash until resolved: branches={branches}, tags={tags}, extra={other_refs}, pull_requests={pull_requests}"
         )
 
     # Delete old visible files first, in bounded commits; then remove old
